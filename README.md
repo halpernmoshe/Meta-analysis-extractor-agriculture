@@ -1,6 +1,6 @@
 # Multi-Model AI Consensus Pipeline for Meta-Analysis Data Extraction
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18670296.svg)](https://doi.org/10.5281/zenodo.18670296)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An automated system for extracting quantitative data from scientific papers for meta-analysis, using multi-model LLM consensus (Claude Sonnet 4 + Kimi K2.5 + Gemini 3 Flash).
