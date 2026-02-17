@@ -1,0 +1,66 @@
+{
+  "name": "Silicon Effects on Wheat Yield and Quality",
+  "description": "This meta-analysis examines how silicon (Si) application affects wheat grain yield, biomass, and mineral composition. Silicon is a beneficial element that improves stress tolerance. Based on Li et al. 2022 dataset.",
+
+  "intervention": "Silicon fertilization (various forms: sodium silicate, potassium silicate, calcium silicate, diatomaceous earth)",
+  "control": "No silicon application or zero Si treatment",
+
+  "primary_outcomes": [
+    "Grain yield (GWAD)",
+    "Biomass/dry weight (CWAD)",
+    "Plant height (PLHT)",
+    "Mineral concentrations (Si, N, P, K, Ca, Mg, Fe, Zn, Mn)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+5% to +25% for grain yield; variable for minerals",
+
+  "important_moderators": [
+    "Wheat cultivar",
+    "Silicon source (sodium silicate, potassium silicate, etc.)",
+    "Silicon application rate (kg/ha Si)",
+    "Application method (soil, foliar, seed treatment)",
+    "Study type (field, greenhouse, growth chamber)",
+    "Stress conditions (drought, salinity, heavy metal, none)",
+    "Soil pH",
+    "N fertilization level"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY ROW from tables - NO POOLING across cultivars, rates, or stress levels",
+    "2. If table has Si rate x stress level = 8 rows, extract all 8",
+    "3. Control = zero Si or no Si treatment",
+    "4. Get variance (SE/SD/LSD) and sample size (n)",
+    "5. Record the Si rate/dose for each treatment",
+    "6. Note stress conditions (drought, salinity, Cd, Cr) as moderators"
+  ],
+
+  "tc_confusion_warnings": [
+    "Control is the zero-Si treatment, NOT untreated plants",
+    "Some papers use multiple Si rates - extract EACH rate vs control separately",
+    "Factorial designs with Si x stress: extract each combination as separate observation",
+    "LSD is common in agronomy papers - extract it as a variance measure",
+    "If effect is strongly negative (-50%), verify the correct control group"
+  ],
+
+  "pico": {
+    "population": {
+      "crop_species": ["wheat", "Triticum aestivum", "Triticum durum"],
+      "environments": ["field", "greenhouse", "growth chamber"]
+    },
+    "intervention": {
+      "treatment_variable": "SILICON",
+      "treatment_keywords": ["silicon", "Si", "silicate", "diatomaceous", "silicic acid"]
+    },
+    "comparison": {
+      "control_definition": "No silicon application (0 Si)",
+      "control_keywords": ["control", "no silicon", "without Si", "0 Si", "0 kg", "-Si", "zero"]
+    }
+  },
+
+  "ground_truth": {
+    "dataset": "Li 2022/summary.csv",
+    "papers_dir": "face_wheat_mineral/pdfs/",
+    "reference": "Li et al. 2022"
+  }
+}

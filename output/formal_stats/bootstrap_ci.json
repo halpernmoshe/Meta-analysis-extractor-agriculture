@@ -1,0 +1,72 @@
+{
+  "pearson_r": {
+    "observed": 0.6688,
+    "bootstrap_mean": 0.6611,
+    "bootstrap_se": 0.0735,
+    "percentile_ci_95": [
+      0.5202,
+      0.7956
+    ],
+    "bca_ci_95": [
+      0.545,
+      0.8335
+    ],
+    "n_bootstrap": 10000
+  },
+  "mae_pct": {
+    "observed": 7.9491,
+    "bootstrap_mean": 7.9503,
+    "bootstrap_se": 0.5174,
+    "percentile_ci_95": [
+      6.9642,
+      8.9934
+    ],
+    "bca_ci_95": [
+      7.0279,
+      9.0593
+    ],
+    "n_bootstrap": 10000
+  },
+  "direction_agreement_pct": {
+    "observed": 84.5024,
+    "bootstrap_mean": 84.5305,
+    "bootstrap_se": 1.4571,
+    "percentile_ci_95": [
+      81.5961,
+      87.3198
+    ],
+    "bca_ci_95": [
+      81.4029,
+      87.1336
+    ],
+    "n_bootstrap": 10000
+  },
+  "overall_effect_diff_pp": {
+    "observed": 0.0525,
+    "bootstrap_mean": 0.4947,
+    "bootstrap_se": 0.3775,
+    "percentile_ci_95": [
+      0.0198,
+      1.402
+    ],
+    "bca_ci_95": [
+      0.0,
+      0.1203
+    ],
+    "n_bootstrap": 10000
+  },
+  "within_10pct": {
+    "observed": 73.7008,
+    "bootstrap_mean": 73.7433,
+    "bootstrap_se": 1.7529,
+    "percentile_ci_95": [
+      70.2362,
+      77.1654
+    ],
+    "bca_ci_95": [
+      69.9213,
+      76.8504
+    ],
+    "n_bootstrap": 10000
+  }
+}

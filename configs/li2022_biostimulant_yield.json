@@ -1,0 +1,64 @@
+{
+  "name": "Biostimulant Effects on Crop Yield in Field Trials",
+  "description": "This meta-analysis examines the effect of non-microbial plant biostimulants on crop yield in open-field trials. Biostimulant categories include seaweed extracts (SWE), protein hydrolysates (PHs), protein extracts (PE), humic/fulvic acids (HFA), chitosan (Chi), silicon (Si), and phosphite (Phi). Based on Li et al. 2022 (Frontiers in Plant Science 13:836702).",
+
+  "intervention": "Plant biostimulant application (seaweed extract, humic acid, fulvic acid, protein hydrolysate, chitosan, silicon, phosphite)",
+  "control": "No biostimulant application (untreated control)",
+
+  "primary_outcomes": [
+    "Fresh yield (kg/ha, t/ha, g/plant, kg/m2)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+17.9% average yield increase across all biostimulant categories",
+
+  "important_moderators": [
+    "Biostimulant type (SWE, PHs, PE, HFA, Chi, Si, Phi)",
+    "Crop species",
+    "Application method (soil drench, foliar spray, seed treatment)",
+    "Application rate/concentration",
+    "Climate zone (arid, temperate, tropical)",
+    "Soil type and organic matter content",
+    "Number of applications"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY treatment combination separately",
+    "2. Control = untreated/no biostimulant; treatment = with biostimulant",
+    "3. If multiple rates or application timings, extract EACH vs control",
+    "4. Get variance (SE/SD/LSD) and sample size (n)",
+    "5. Record biostimulant type, rate, and application method",
+    "6. Focus on FRESH YIELD as primary outcome"
+  ],
+
+  "tc_confusion_warnings": [
+    "Control is the untreated/no-biostimulant treatment",
+    "Some papers test multiple biostimulant products - extract each vs control",
+    "Factorial designs (biostimulant x rate x timing): extract each combination",
+    "LSD is common - extract as variance measure",
+    "Watch for different units (g/plant vs kg/ha vs t/ha)"
+  ],
+
+  "pico": {
+    "population": {
+      "crop_groups": ["vegetables", "cereals", "fruits", "legumes"],
+      "environments": ["field", "open field"]
+    },
+    "intervention": {
+      "treatment_variable": "BIOSTIMULANT",
+      "treatment_keywords": ["biostimulant", "seaweed", "humic", "fulvic", "protein hydrolysate", "chitosan", "Ascophyllum", "extract"]
+    },
+    "comparison": {
+      "control_definition": "No biostimulant application (untreated control)",
+      "control_keywords": ["control", "untreated", "CK", "no biostimulant", "water only", "0"]
+    }
+  },
+
+  "ground_truth": {
+    "dataset": "../Li 2022/Data_Sheet_2.XLSX",
+    "papers_dir": "../Li 2022/downloaded_papers/",
+    "reference": "Li et al. 2022, Frontiers in Plant Science 13:836702",
+    "total_observations": 1108,
+    "total_studies": 181
+  }
+}

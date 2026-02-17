@@ -1,0 +1,430 @@
+{
+  "full": {
+    "n": 635,
+    "r": 0.6688,
+    "mae": 7.95,
+    "dir_pct": 84.5,
+    "effect_diff_pp": 0.052
+  },
+  "n_papers": 46,
+  "per_paper": [
+    {
+      "paper": "043_Natali_2009",
+      "n_removed": 60,
+      "paper_mae": 19.06,
+      "loo_r": 0.7608,
+      "loo_mae": 6.79,
+      "delta_r": 0.092,
+      "delta_mae": -1.16
+    },
+    {
+      "paper": "030_Wroblewitz_2013",
+      "n_removed": 40,
+      "paper_mae": 11.51,
+      "loo_r": 0.6862,
+      "loo_mae": 7.71,
+      "delta_r": 0.0174,
+      "delta_mae": -0.24
+    },
+    {
+      "paper": "039_Heagle_1993",
+      "n_removed": 22,
+      "paper_mae": 14.0,
+      "loo_r": 0.6765,
+      "loo_mae": 7.73,
+      "delta_r": 0.0077,
+      "delta_mae": -0.22
+    },
+    {
+      "paper": "051_Niu_2013",
+      "n_removed": 2,
+      "paper_mae": 58.0,
+      "loo_r": 0.6814,
+      "loo_mae": 7.79,
+      "delta_r": 0.0126,
+      "delta_mae": -0.16
+    },
+    {
+      "paper": "033_Johnson_2003",
+      "n_removed": 20,
+      "paper_mae": 12.49,
+      "loo_r": 0.677,
+      "loo_mae": 7.8,
+      "delta_r": 0.0082,
+      "delta_mae": -0.15
+    },
+    {
+      "paper": "040_Pfirrmann_1996",
+      "n_removed": 22,
+      "paper_mae": 11.98,
+      "loo_r": 0.6775,
+      "loo_mae": 7.8,
+      "delta_r": 0.0087,
+      "delta_mae": -0.15
+    },
+    {
+      "paper": "011_Huluka_1994",
+      "n_removed": 10,
+      "paper_mae": 15.82,
+      "loo_r": 0.6722,
+      "loo_mae": 7.82,
+      "delta_r": 0.0034,
+      "delta_mae": -0.13
+    },
+    {
+      "paper": "014_Lieffering_2004",
+      "n_removed": 10,
+      "paper_mae": 14.51,
+      "loo_r": 0.677,
+      "loo_mae": 7.84,
+      "delta_r": 0.0082,
+      "delta_mae": -0.11
+    },
+    {
+      "paper": "041_Mjwara_1996",
+      "n_removed": 9,
+      "paper_mae": 14.13,
+      "loo_r": 0.6723,
+      "loo_mae": 7.86,
+      "delta_r": 0.0035,
+      "delta_mae": -0.09
+    },
+    {
+      "paper": "025_Guo_2011",
+      "n_removed": 16,
+      "paper_mae": 11.05,
+      "loo_r": 0.6682,
+      "loo_mae": 7.87,
+      "delta_r": -0.0006,
+      "delta_mae": -0.08
+    },
+    {
+      "paper": "026_Seneweera_1997",
+      "n_removed": 28,
+      "paper_mae": 9.64,
+      "loo_r": 0.6744,
+      "loo_mae": 7.87,
+      "delta_r": 0.0056,
+      "delta_mae": -0.08
+    },
+    {
+      "paper": "032_Kanowski_2001",
+      "n_removed": 20,
+      "paper_mae": 10.45,
+      "loo_r": 0.6625,
+      "loo_mae": 7.87,
+      "delta_r": -0.0063,
+      "delta_mae": -0.08
+    },
+    {
+      "paper": "027_Peet_1986",
+      "n_removed": 5,
+      "paper_mae": 11.13,
+      "loo_r": 0.67,
+      "loo_mae": 7.92,
+      "delta_r": 0.0012,
+      "delta_mae": -0.03
+    },
+    {
+      "paper": "007_Woodin_1992",
+      "n_removed": 2,
+      "paper_mae": 14.64,
+      "loo_r": 0.6691,
+      "loo_mae": 7.93,
+      "delta_r": 0.0003,
+      "delta_mae": -0.02
+    },
+    {
+      "paper": "050_Polley_2011",
+      "n_removed": 30,
+      "paper_mae": 8.38,
+      "loo_r": 0.6706,
+      "loo_mae": 7.93,
+      "delta_r": 0.0018,
+      "delta_mae": -0.02
+    },
+    {
+      "paper": "028_Mishra_2011",
+      "n_removed": 1,
+      "paper_mae": 14.41,
+      "loo_r": 0.6691,
+      "loo_mae": 7.94,
+      "delta_r": 0.0003,
+      "delta_mae": -0.01
+    },
+    {
+      "paper": "042_Luomala_2005",
+      "n_removed": 11,
+      "paper_mae": 8.48,
+      "loo_r": 0.6675,
+      "loo_mae": 7.94,
+      "delta_r": -0.0013,
+      "delta_mae": -0.01
+    },
+    {
+      "paper": "017_Fangmeier_2002",
+      "n_removed": 32,
+      "paper_mae": 7.97,
+      "loo_r": 0.6744,
+      "loo_mae": 7.95,
+      "delta_r": 0.0056,
+      "delta_mae": 0.0
+    },
+    {
+      "paper": "037_de_2000",
+      "n_removed": 1,
+      "paper_mae": 5.5,
+      "loo_r": 0.6688,
+      "loo_mae": 7.95,
+      "delta_r": 0.0,
+      "delta_mae": 0.0
+    },
+    {
+      "paper": "002_Ziska_1997",
+      "n_removed": 2,
+      "paper_mae": 4.14,
+      "loo_r": 0.6689,
+      "loo_mae": 7.96,
+      "delta_r": 0.0001,
+      "delta_mae": 0.01
+    },
+    {
+      "paper": "009_Barnes_1992",
+      "n_removed": 6,
+      "paper_mae": 6.96,
+      "loo_r": 0.6684,
+      "loo_mae": 7.96,
+      "delta_r": -0.0004,
+      "delta_mae": 0.01
+    },
+    {
+      "paper": "035_Oksanen_2005",
+      "n_removed": 10,
+      "paper_mae": 7.56,
+      "loo_r": 0.6694,
+      "loo_mae": 7.96,
+      "delta_r": 0.0006,
+      "delta_mae": 0.01
+    },
+    {
+      "paper": "046_Porter_1984",
+      "n_removed": 5,
+      "paper_mae": 4.74,
+      "loo_r": 0.6638,
+      "loo_mae": 7.97,
+      "delta_r": -0.005,
+      "delta_mae": 0.02
+    },
+    {
+      "paper": "010_Li_2010",
+      "n_removed": 13,
+      "paper_mae": 6.49,
+      "loo_r": 0.6695,
+      "loo_mae": 7.98,
+      "delta_r": 0.0007,
+      "delta_mae": 0.03
+    },
+    {
+      "paper": "016_Fernando_2012a",
+      "n_removed": 3,
+      "paper_mae": 1.83,
+      "loo_r": 0.6688,
+      "loo_mae": 7.98,
+      "delta_r": 0.0,
+      "delta_mae": 0.03
+    },
+    {
+      "paper": "018_Al-Rawahy_2013",
+      "n_removed": 7,
+      "paper_mae": 5.12,
+      "loo_r": 0.6675,
+      "loo_mae": 7.98,
+      "delta_r": -0.0013,
+      "delta_mae": 0.03
+    },
+    {
+      "paper": "038_Newbery_1995",
+      "n_removed": 3,
+      "paper_mae": 1.11,
+      "loo_r": 0.6671,
+      "loo_mae": 7.98,
+      "delta_r": -0.0017,
+      "delta_mae": 0.03
+    },
+    {
+      "paper": "015_Pleijel_2009",
+      "n_removed": 3,
+      "paper_mae": 0.0,
+      "loo_r": 0.6688,
+      "loo_mae": 7.99,
+      "delta_r": 0.0,
+      "delta_mae": 0.04
+    },
+    {
+      "paper": "021_Wilsey_1994",
+      "n_removed": 13,
+      "paper_mae": 6.11,
+      "loo_r": 0.6728,
+      "loo_mae": 7.99,
+      "delta_r": 0.004,
+      "delta_mae": 0.04
+    },
+    {
+      "paper": "031_Pal_2003",
+      "n_removed": 4,
+      "paper_mae": 1.65,
+      "loo_r": 0.6676,
+      "loo_mae": 7.99,
+      "delta_r": -0.0012,
+      "delta_mae": 0.04
+    },
+    {
+      "paper": "044_Housman_2012",
+      "n_removed": 8,
+      "paper_mae": 4.41,
+      "loo_r": 0.6659,
+      "loo_mae": 7.99,
+      "delta_r": -0.0029,
+      "delta_mae": 0.04
+    },
+    {
+      "paper": "012_Wu_2004",
+      "n_removed": 4,
+      "paper_mae": 0.0,
+      "loo_r": 0.6656,
+      "loo_mae": 8.0,
+      "delta_r": -0.0032,
+      "delta_mae": 0.05
+    },
+    {
+      "paper": "029_Kuehny_1991",
+      "n_removed": 10,
+      "paper_mae": 4.93,
+      "loo_r": 0.6693,
+      "loo_mae": 8.0,
+      "delta_r": 0.0005,
+      "delta_mae": 0.05
+    },
+    {
+      "paper": "013_Keutgen_2001",
+      "n_removed": 5,
+      "paper_mae": 0.0,
+      "loo_r": 0.6678,
+      "loo_mae": 8.01,
+      "delta_r": -0.001,
+      "delta_mae": 0.06
+    },
+    {
+      "paper": "024_Nowak_2002",
+      "n_removed": 5,
+      "paper_mae": 0.04,
+      "loo_r": 0.6677,
+      "loo_mae": 8.01,
+      "delta_r": -0.0011,
+      "delta_mae": 0.06
+    },
+    {
+      "paper": "001_Ma_2007",
+      "n_removed": 8,
+      "paper_mae": 2.26,
+      "loo_r": 0.6685,
+      "loo_mae": 8.02,
+      "delta_r": -0.0003,
+      "delta_mae": 0.07
+    },
+    {
+      "paper": "058_ONeill_1987",
+      "n_removed": 14,
+      "paper_mae": 4.56,
+      "loo_r": 0.6674,
+      "loo_mae": 8.03,
+      "delta_r": -0.0014,
+      "delta_mae": 0.08
+    },
+    {
+      "paper": "004_Finzi_2001",
+      "n_removed": 10,
+      "paper_mae": 2.34,
+      "loo_r": 0.6687,
+      "loo_mae": 8.04,
+      "delta_r": -0.0001,
+      "delta_mae": 0.09
+    },
+    {
+      "paper": "049_Singh_2013",
+      "n_removed": 10,
+      "paper_mae": 1.74,
+      "loo_r": 0.6687,
+      "loo_mae": 8.05,
+      "delta_r": -0.0001,
+      "delta_mae": 0.1
+    },
+    {
+      "paper": "005_Niinemets_1999",
+      "n_removed": 10,
+      "paper_mae": 0.0,
+      "loo_r": 0.6594,
+      "loo_mae": 8.08,
+      "delta_r": -0.0094,
+      "delta_mae": 0.13
+    },
+    {
+      "paper": "003_Baslam_2012",
+      "n_removed": 18,
+      "paper_mae": 1.04,
+      "loo_r": 0.5532,
+      "loo_mae": 8.15,
+      "delta_r": -0.1156,
+      "delta_mae": 0.2
+    },
+    {
+      "paper": "048_Khan_2013",
+      "n_removed": 20,
+      "paper_mae": 0.78,
+      "loo_r": 0.6584,
+      "loo_mae": 8.18,
+      "delta_r": -0.0104,
+      "delta_mae": 0.23
+    },
+    {
+      "paper": "020_Overdieck_1993",
+      "n_removed": 32,
+      "paper_mae": 3.05,
+      "loo_r": 0.669,
+      "loo_mae": 8.21,
+      "delta_r": 0.0002,
+      "delta_mae": 0.26
+    },
+    {
+      "paper": "034_Johnson_1997",
+      "n_removed": 22,
+      "paper_mae": 0.07,
+      "loo_r": 0.6563,
+      "loo_mae": 8.23,
+      "delta_r": -0.0125,
+      "delta_mae": 0.28
+    },
+    {
+      "paper": "006_Azam_2013",
+      "n_removed": 25,
+      "paper_mae": 0.39,
+      "loo_r": 0.6633,
+      "loo_mae": 8.26,
+      "delta_r": -0.0055,
+      "delta_mae": 0.31
+    },
+    {
+      "paper": "036_Schenk_1997",
+      "n_removed": 24,
+      "paper_mae": 0.0,
+      "loo_r": 0.6665,
+      "loo_mae": 8.26,
+      "delta_r": -0.0023,
+      "delta_mae": 0.31
+    }
+  ],
+  "mae_range": [
+    6.79,
+    8.26
+  ]
+}

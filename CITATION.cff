@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Multi-Model AI Consensus Pipeline for Automated Data Extraction in Meta-Analysis"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Halpern"
+    given-names: "Moshe"
+repository-code: "https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture"
+url: "https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture"
+abstract: >-
+  A multi-model AI consensus pipeline for automated quantitative data
+  extraction from scientific research papers for meta-analysis. Uses
+  challenge-aware routing and dual-model extraction (Claude Sonnet 4,
+  Kimi K2.5) with Gemini 3 Flash tiebreaker. Validated against three
+  published meta-analysis datasets with formal TOST equivalence testing.
+keywords:
+  - meta-analysis
+  - data extraction
+  - large language models
+  - consensus
+  - automation
+  - plant science
+  - systematic review
+license: MIT
+version: "1.0.0"
+date-released: "2026-02-17"

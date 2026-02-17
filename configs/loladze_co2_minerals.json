@@ -1,0 +1,63 @@
+{
+  "name": "CO2 Effects on Plant Mineral Concentrations",
+  "description": "This meta-analysis investigates how elevated atmospheric CO2 affects mineral element concentrations in plants. The key hypothesis is that elevated CO2 causes a 'dilution effect' - plants grow larger but mineral uptake doesn't keep pace, resulting in lower mineral concentrations. Based on Loladze et al. 2014 (eLife 3:e02245).",
+
+  "intervention": "Elevated atmospheric CO2 (typically 550-700 ppm)",
+  "control": "Ambient CO2 (typically 350-400 ppm)",
+
+  "primary_outcomes": [
+    "Mineral element concentrations: N, P, K, Ca, Mg, Fe, Zn, Mn, Cu, S, B, Mo, Na, Cd, Cr, Ni, Pb, Se, Si, V, Al, Sr, Ba, Co, Cl"
+  ],
+
+  "expected_direction": "negative",
+  "typical_effect_size": "-5% to -15% for most minerals",
+
+  "important_moderators": [
+    "Plant species/cultivar",
+    "Tissue type (grain, leaf, root, shoot)",
+    "Experimental system (FACE, OTC, greenhouse)",
+    "Nitrogen fertilization level",
+    "Study duration",
+    "C3 vs C4 photosynthetic pathway"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY ROW from tables - NO POOLING across cultivars, years, or treatments",
+    "2. If table has 20 rows, you should have ~20 observations. Count them!",
+    "3. Prioritize mineral concentration data over biomass data",
+    "4. Get variance (SE/SD) and sample size (n) for meta-analysis weighting",
+    "5. Record tissue type (grain vs leaf vs root) as it affects interpretation",
+    "6. Record the specific CO2 levels (ppm) for both control and treatment"
+  ],
+
+  "tc_confusion_warnings": [
+    "Watch for papers that report 'ambient' vs 'elevated' - ambient is control",
+    "Some papers report percentage of ambient - 100% = control, >100% = elevated",
+    "Water stress treatments (FWC levels) are NOT CO2 treatments",
+    "If effect is strongly positive (+50%), verify T/C assignment",
+    "AMF (mycorrhizal) treatments create factorial designs - extract both levels separately"
+  ],
+
+  "pico": {
+    "population": {
+      "crop_groups": ["C3 plants", "C4 plants", "crops", "wild plants"],
+      "environments": ["FACE", "OTC", "greenhouse", "growth chamber"]
+    },
+    "intervention": {
+      "treatment_variable": "CO2_CONC",
+      "treatment_keywords": ["elevated", "enriched", "high", "eCO2", "FACE", "550", "600", "700"]
+    },
+    "comparison": {
+      "control_definition": "Ambient CO2 concentration (~350-400 ppm)",
+      "control_keywords": ["ambient", "control", "aCO2", "current", "350", "370", "380", "400"]
+    }
+  },
+
+  "ground_truth": {
+    "dataset": "../Loladze/CO2+Dataset.xlsx",
+    "papers_dir": "../Loladze/validated/",
+    "reference": "Loladze 2014, eLife 3:e02245",
+    "total_observations": 1482,
+    "total_papers": 100
+  }
+}

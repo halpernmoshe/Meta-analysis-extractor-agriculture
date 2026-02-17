@@ -1,0 +1,77 @@
+{
+  "name": "Zinc Biofortification in Wheat",
+  "description": "This meta-analysis examines how Zn fertilizer application (soil, foliar, and soil+foliar) affects grain Zn concentration in wheat. The goal is agronomic biofortification to address Zn deficiency in human nutrition. Based on Hui et al. 2025 (Nature Communications 16:3913), 139 studies, 2,771 observations.",
+
+  "intervention": "Zinc fertilizer application (ZnSO4, ZnO, Zn-EDTA, etc. via soil, foliar, or combined application)",
+  "control": "No Zn fertilizer application (CK = control)",
+
+  "primary_outcomes": [
+    "Grain Zn concentration (mg/kg)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+29% for soil application, +55% for foliar, +62% for soil+foliar",
+
+  "important_moderators": [
+    "Zn application method (soil, foliar, soil+foliar)",
+    "Zn fertilizer type (ZnSO4, ZnO, Zn-EDTA, etc.)",
+    "Zn application rate (kg Zn/ha)",
+    "Spraying concentration (g Zn/L) for foliar",
+    "Spraying timing (booting, heading, flowering, grain filling)",
+    "Spraying frequency",
+    "Country",
+    "Soil available Zn (mg/kg)",
+    "Soil pH",
+    "CaCO3 content",
+    "Organic matter (g/kg)",
+    "N, P, K fertilization rates",
+    "Initial grain Zn concentration",
+    "Initial grain yield"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY treatment combination separately - no pooling across Zn rates, application methods, or timings",
+    "2. Control = no Zn application (CK), treatment = with Zn application",
+    "3. If factorial design (Zn rate x timing x form), extract each combination vs its control",
+    "4. Get variance (SE/SD/LSD) and sample size (n) - many papers use LSD",
+    "5. Record the Zn application rate, method, and fertilizer type for each observation",
+    "6. Also extract grain yield and biomass when available alongside Zn concentration"
+  ],
+
+  "tc_confusion_warnings": [
+    "Control is the zero-Zn treatment, not untreated plants",
+    "Some papers use multiple Zn rates - extract EACH rate vs the zero-Zn control",
+    "Foliar vs soil application are different treatments, not replicates",
+    "LSD is very common - extract it as a variance measure",
+    "Some papers report Zn biofortification index - this is derived, extract raw concentrations"
+  ],
+
+  "pico": {
+    "population": {
+      "crop_species": ["wheat", "Triticum aestivum", "Triticum durum"],
+      "environments": ["field", "greenhouse", "growth chamber"]
+    },
+    "intervention": {
+      "treatment_variable": "ZN_FERT",
+      "treatment_keywords": ["zinc", "Zn", "ZnSO4", "ZnO", "Zn-EDTA", "zinc sulfate", "zinc oxide"]
+    },
+    "comparison": {
+      "control_definition": "No Zn fertilizer application (CK)",
+      "control_keywords": ["control", "CK", "no Zn", "without Zn", "0 Zn", "no zinc", "-Zn", "zero Zn"]
+    }
+  },
+
+  "ground_truth": {
+    "dataset": "../Hui 2023 source data/Source Data/pdfs/ground.xlsx",
+    "papers_dir": "../Hui 2023 source data/Source Data/pdfs/",
+    "reference": "Hui et al. 2025, Nature Communications 16:3913",
+    "total_observations": 2771,
+    "total_studies": 139,
+    "available_pdfs": 8,
+    "sheets": {
+      "Data 1 Global wheat": "2772 observations - grain Zn by country",
+      "Data 2 Soil application": "857 observations with full moderators",
+      "Data 3 Foliar application": "828 observations with full moderators"
+    }
+  }
+}

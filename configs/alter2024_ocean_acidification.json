@@ -1,0 +1,71 @@
+{
+  "meta_analysis": {
+    "name": "Alter 2024 - Ocean Acidification Effects on Marine Organisms",
+    "reference": "Alter et al. 2024, Nature Communications",
+    "doi": "10.1038/s41467-024-XXXXX",
+    "zenodo_doi": "10.5281/zenodo.10607028"
+  },
+  "pico": {
+    "population": "Marine organisms (fish and invertebrates)",
+    "intervention": "Elevated CO2 / ocean acidification / ocean warming",
+    "comparison": "Ambient conditions (control)",
+    "outcomes": [
+      "Growth",
+      "Survival",
+      "Reproduction",
+      "Calcification",
+      "Physiology",
+      "Development",
+      "Behavior",
+      "Respiration"
+    ]
+  },
+  "extraction": {
+    "primary_outcome": "PERCENT_CHANGE",
+    "effect_type": "log_response_ratio",
+    "required_fields": ["ControlMean", "ControlSE", "ControlN", "TreatmentMean", "TreatmentSE", "TreatmentN"],
+    "moderators": [
+      "Species",
+      "LifeStage",
+      "ResponseCategory",
+      "ResponseVariable",
+      "CO2Treatment",
+      "TempTreatment",
+      "Stressor",
+      "Habitat",
+      "ClimaticZone"
+    ],
+    "variance_type": "SE",
+    "notes": "GT data uses SE. Papers may report SD or SE - extract as reported."
+  },
+  "ground_truth": {
+    "fish_csv": "../Alter_2024/DataFish.csv",
+    "inverts_csv": "../Alter_2024/DataInverts.csv",
+    "total_observations": 3175,
+    "total_papers": 217,
+    "fish_papers": 59,
+    "inverts_papers": 158,
+    "data_completeness": "100% (all rows have means, SE, and N)"
+  },
+  "validation": {
+    "suggested_subset_size": 40,
+    "stratification": "By organism type (fish/inverts) and response category",
+    "estimated_cost": "$15-20 for 40-paper subset",
+    "challenges": [
+      "Factorial CO2 x Temperature designs - need to specify which comparison to extract",
+      "Diverse response variables across 12 categories",
+      "Marine biology domain requires adapted prompts",
+      "Some studies may have multiple species per paper"
+    ]
+  },
+  "models": {
+    "recon": "gemini-3-flash-preview",
+    "extract_primary": "claude-sonnet-4",
+    "extract_secondary": "kimi-k2.5",
+    "tiebreaker": "gemini-3-flash-preview"
+  },
+  "pdf_source": {
+    "status": "NOT_ACQUIRED",
+    "notes": "217 papers need to be downloaded. Most should be available via DOI. Consider using Unpaywall API or institutional access."
+  }
+}

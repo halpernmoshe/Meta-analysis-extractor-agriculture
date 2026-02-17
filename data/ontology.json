@@ -1,0 +1,1074 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "description": "Ontology for agricultural meta-analysis data extraction",
+    "sources": {
+      "ICASA": "International Consortium for Agricultural Systems Applications - AgMIP standard variable names",
+      "Köppen": "Köppen-Geiger climate classification system",
+      "USDA": "USDA soil texture classification",
+      "BBCH": "Biologische Bundesanstalt, Bundessortenamt und CHemische Industrie growth stage scale",
+      "custom": "Working definitions based on common practice in agricultural meta-analyses"
+    },
+    "notes": "Variables prefixed with comments indicating source: [ICASA], [Köppen], [USDA], [BBCH], or [Custom]"
+  },
+
+  "moderators": {
+    "environmental": {
+      "SL_PH": {
+        "name": "Soil pH",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "pH",
+        "range": [3.0, 10.0],
+        "categories": {
+          "field": "SL_PH_CAT",
+          "source": "USDA",
+          "values": {
+            "Strongly Acid": {"min": null, "max": 5.1},
+            "Moderately Acid": {"min": 5.1, "max": 6.0},
+            "Slightly Acid": {"min": 6.0, "max": 6.5},
+            "Neutral": {"min": 6.5, "max": 7.3},
+            "Slightly Alkaline": {"min": 7.3, "max": 7.8},
+            "Moderately Alkaline": {"min": 7.8, "max": 8.4},
+            "Strongly Alkaline": {"min": 8.4, "max": null}
+          }
+        },
+        "extraction_hints": ["soil pH", "pH of soil", "pH (H2O)", "pH (CaCl2)", "pH value"],
+        "notes": "If pH method not specified, assume H2O. pH (CaCl2) typically 0.5 units lower."
+      },
+
+      "SL_TEXTURE": {
+        "name": "Soil Texture Class",
+        "source": "USDA",
+        "type": "categorical",
+        "values": [
+          "Sand", "Loamy Sand", "Sandy Loam", "Loam", "Silt Loam", "Silt",
+          "Sandy Clay Loam", "Clay Loam", "Silty Clay Loam",
+          "Sandy Clay", "Silty Clay", "Clay"
+        ],
+        "simplification": {
+          "field": "SL_TEXTURE_SIMPLE",
+          "mapping": {
+            "Coarse": ["Sand", "Loamy Sand", "Sandy Loam"],
+            "Medium": ["Loam", "Silt Loam", "Silt"],
+            "Fine": ["Sandy Clay Loam", "Clay Loam", "Silty Clay Loam", "Sandy Clay", "Silty Clay", "Clay"]
+          }
+        },
+        "extraction_hints": ["soil texture", "textural class", "sandy soil", "loamy soil", "clay soil", "loam"]
+      },
+
+      "SL_OC": {
+        "name": "Soil Organic Carbon",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "g/kg",
+        "range": [0, 100],
+        "categories": {
+          "field": "SL_OC_CAT",
+          "source": "Custom",
+          "values": {
+            "Very Low": {"min": null, "max": 5},
+            "Low": {"min": 5, "max": 10},
+            "Medium": {"min": 10, "max": 20},
+            "High": {"min": 20, "max": null}
+          }
+        },
+        "unit_conversions": {
+          "%": 10,
+          "g/100g": 10
+        },
+        "extraction_hints": ["soil organic carbon", "SOC", "organic C", "soil carbon"],
+        "notes": "SOM (organic matter) ≈ SOC × 1.724"
+      },
+
+      "SL_TN": {
+        "name": "Soil Total Nitrogen",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "g/kg",
+        "range": [0, 10],
+        "categories": {
+          "field": "SL_TN_CAT",
+          "source": "Custom",
+          "values": {
+            "Low": {"min": null, "max": 1.0},
+            "Medium": {"min": 1.0, "max": 2.0},
+            "High": {"min": 2.0, "max": null}
+          }
+        },
+        "unit_conversions": {
+          "%": 10,
+          "g/100g": 10
+        },
+        "extraction_hints": ["total nitrogen", "total N", "soil nitrogen", "soil N content"]
+      },
+
+      "SL_AP": {
+        "name": "Soil Available Phosphorus",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "mg/kg",
+        "range": [0, 200],
+        "extraction_hints": ["available P", "Olsen P", "Bray P", "Mehlich P", "extractable P"],
+        "notes": "Note extraction method: Olsen (alkaline soils), Bray (acid soils), Mehlich (general)"
+      },
+
+      "SL_AK": {
+        "name": "Soil Available Potassium",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "mg/kg",
+        "range": [0, 500],
+        "extraction_hints": ["available K", "exchangeable K", "extractable K"]
+      },
+
+      "SL_EC": {
+        "name": "Soil Electrical Conductivity (Salinity)",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "dS/m",
+        "range": [0, 50],
+        "categories": {
+          "field": "SL_SALINITY_CAT",
+          "source": "USDA",
+          "values": {
+            "Non-saline": {"min": null, "max": 2},
+            "Slightly Saline": {"min": 2, "max": 4},
+            "Moderately Saline": {"min": 4, "max": 8},
+            "Strongly Saline": {"min": 8, "max": 16},
+            "Very Strongly Saline": {"min": 16, "max": null}
+          }
+        },
+        "extraction_hints": ["EC", "electrical conductivity", "salinity", "soil salinity"]
+      },
+
+      "CLIM_ZONE": {
+        "name": "Köppen Climate Zone",
+        "source": "Köppen",
+        "type": "categorical",
+        "values": [
+          "Af", "Am", "Aw", "As",
+          "BWh", "BWk", "BSh", "BSk",
+          "Csa", "Csb", "Csc", "Cwa", "Cwb", "Cwc", "Cfa", "Cfb", "Cfc",
+          "Dsa", "Dsb", "Dsc", "Dsd", "Dwa", "Dwb", "Dwc", "Dwd", "Dfa", "Dfb", "Dfc", "Dfd",
+          "ET", "EF"
+        ],
+        "simplification": {
+          "field": "CLIM_ZONE_SIMPLE",
+          "mapping": {
+            "Tropical": ["Af", "Am", "Aw", "As"],
+            "Arid": ["BWh", "BWk", "BSh", "BSk"],
+            "Subtropical": ["Csa", "Csb", "Cwa", "Cwb", "Cfa"],
+            "Temperate": ["Csc", "Cwc", "Cfb", "Cfc"],
+            "Continental": ["Dsa", "Dsb", "Dsc", "Dsd", "Dwa", "Dwb", "Dwc", "Dwd", "Dfa", "Dfb", "Dfc", "Dfd"],
+            "Polar": ["ET", "EF"]
+          }
+        },
+        "derivable_from": ["LAT", "LON"],
+        "notes": "Can be derived from coordinates using Köppen-Geiger classification maps"
+      },
+
+      "MAP": {
+        "name": "Mean Annual Precipitation",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "mm",
+        "range": [0, 5000],
+        "categories": {
+          "field": "MAP_CAT",
+          "values": {
+            "Arid": {"min": null, "max": 250},
+            "Semi-arid": {"min": 250, "max": 500},
+            "Sub-humid": {"min": 500, "max": 1000},
+            "Humid": {"min": 1000, "max": null}
+          }
+        },
+        "derivable_from": ["LAT", "LON"],
+        "extraction_hints": ["annual precipitation", "annual rainfall", "MAP", "mean precipitation"]
+      },
+
+      "MAT": {
+        "name": "Mean Annual Temperature",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "°C",
+        "range": [-30, 40],
+        "categories": {
+          "field": "MAT_CAT",
+          "values": {
+            "Cold": {"min": null, "max": 5},
+            "Cool": {"min": 5, "max": 10},
+            "Temperate": {"min": 10, "max": 20},
+            "Warm": {"min": 20, "max": 30},
+            "Hot": {"min": 30, "max": null}
+          }
+        },
+        "derivable_from": ["LAT", "LON"],
+        "extraction_hints": ["annual temperature", "mean temperature", "MAT", "average temperature"]
+      },
+
+      "WATER_REGIME": {
+        "name": "Water Regime",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Rainfed", "Irrigated", "Supplemental Irrigation"],
+        "extraction_hints": ["rainfed", "irrigated", "dryland", "irrigation", "non-irrigated", "water regime"]
+      }
+    },
+
+    "management": {
+      "FERT_N": {
+        "name": "Nitrogen Application Rate",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "kg N/ha",
+        "range": [0, 500],
+        "categories": {
+          "field": "FERT_N_CAT",
+          "source": "Custom",
+          "values": {
+            "Zero": {"min": 0, "max": 0},
+            "Very Low": {"min": 0, "max": 30},
+            "Low": {"min": 30, "max": 75},
+            "Moderate": {"min": 75, "max": 150},
+            "High": {"min": 150, "max": 250},
+            "Very High": {"min": 250, "max": null}
+          }
+        },
+        "unit_conversions": {
+          "lb N/acre": 1.12,
+          "kg N/acre": 2.47,
+          "g N/m2": 10
+        },
+        "extraction_hints": ["N rate", "nitrogen rate", "N application", "N fertilizer", "kg N", "nitrogen applied"]
+      },
+
+      "FERT_P": {
+        "name": "Phosphorus Application Rate",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "kg P/ha",
+        "range": [0, 200],
+        "unit_conversions": {
+          "kg P2O5/ha": 0.4364,
+          "lb P/acre": 1.12,
+          "lb P2O5/acre": 0.489
+        },
+        "extraction_hints": ["P rate", "phosphorus rate", "P application", "P fertilizer", "P2O5"],
+        "notes": "P2O5 to P: multiply by 0.4364"
+      },
+
+      "FERT_K": {
+        "name": "Potassium Application Rate",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "kg K/ha",
+        "range": [0, 300],
+        "unit_conversions": {
+          "kg K2O/ha": 0.8301,
+          "lb K/acre": 1.12,
+          "lb K2O/acre": 0.929
+        },
+        "extraction_hints": ["K rate", "potassium rate", "K application", "K fertilizer", "K2O"],
+        "notes": "K2O to K: multiply by 0.8301"
+      },
+
+      "FERT_TYPE": {
+        "name": "Fertilizer Type",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Mineral", "Organic", "Organic+Mineral", "None"],
+        "extraction_hints": ["fertilizer type", "mineral fertilizer", "organic fertilizer", "manure", "compost"]
+      },
+
+      "FERT_N_SOURCE": {
+        "name": "Nitrogen Source",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Urea", "Ammonium Nitrate", "Ammonium Sulfate", "Calcium Ammonium Nitrate", "UAN Solution", "Anhydrous Ammonia", "Manure", "Compost", "Legume Residue", "Other Organic", "Mixed"],
+        "extraction_hints": ["urea", "ammonium nitrate", "ammonium sulfate", "CAN", "UAN", "manure", "compost"]
+      },
+
+      "APP_METHOD": {
+        "name": "Application Method",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Broadcast", "Banded", "Incorporated", "Side-dress", "Top-dress", "Foliar", "Fertigation", "Injected"],
+        "extraction_hints": ["broadcast", "banded", "incorporated", "side-dress", "topdress", "foliar spray", "fertigation", "injected"]
+      },
+
+      "APP_TIMING": {
+        "name": "Application Timing",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Pre-plant", "At Planting", "Early Season", "Mid-season", "Late Season", "Split", "Multiple"],
+        "extraction_hints": ["preplant", "at planting", "basal", "side-dress", "split application", "multiple applications"]
+      },
+
+      "APP_NUM": {
+        "name": "Number of Applications",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "count",
+        "range": [1, 10],
+        "extraction_hints": ["number of applications", "split", "applications"]
+      },
+
+      "TILL_SYS": {
+        "name": "Tillage System",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Conventional", "Reduced", "Minimum", "No-till", "Strip-till", "Ridge-till"],
+        "extraction_hints": ["conventional tillage", "no-till", "zero tillage", "reduced tillage", "minimum tillage", "conservation tillage", "strip-till"]
+      },
+
+      "PREV_CROP": {
+        "name": "Previous Crop Type",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Cereal", "Legume", "Oilseed", "Root/Tuber", "Vegetable", "Fallow", "Grass/Pasture", "Cover Crop", "Other"],
+        "extraction_hints": ["previous crop", "preceding crop", "crop rotation", "following", "after"]
+      },
+
+      "IRR_TOT": {
+        "name": "Total Irrigation Amount",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "mm",
+        "range": [0, 2000],
+        "extraction_hints": ["irrigation amount", "total irrigation", "irrigation applied", "water applied"]
+      },
+
+      "IRR_METHOD": {
+        "name": "Irrigation Method",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Furrow", "Flood", "Sprinkler", "Center Pivot", "Drip", "Subsurface Drip"],
+        "extraction_hints": ["furrow irrigation", "flood irrigation", "sprinkler", "pivot", "drip irrigation"]
+      },
+
+      "PL_DENS": {
+        "name": "Planting Density",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "plants/m²",
+        "range": [1, 1000],
+        "unit_conversions": {
+          "plants/ha": 0.0001,
+          "plants/acre": 0.000247
+        },
+        "extraction_hints": ["plant density", "planting density", "plant population", "plants per"]
+      },
+
+      "ROW_SPACE": {
+        "name": "Row Spacing",
+        "source": "ICASA",
+        "type": "continuous",
+        "unit": "cm",
+        "range": [10, 200],
+        "unit_conversions": {
+          "m": 100,
+          "in": 2.54
+        },
+        "extraction_hints": ["row spacing", "row width", "inter-row"]
+      }
+    },
+
+    "crop": {
+      "CROP_SP": {
+        "name": "Crop Species",
+        "source": "Custom",
+        "type": "categorical",
+        "values": "see crop_taxonomy",
+        "extraction_hints": ["crop", "species", "plant species"]
+      },
+
+      "CROP_GROUP": {
+        "name": "Crop Functional Group",
+        "source": "FAO",
+        "type": "categorical",
+        "values": ["Cereals", "Legumes", "Oilseeds", "Root/Tuber", "Vegetables", "Fruits", "Fiber", "Sugar", "Forage", "Other"],
+        "derivable_from": ["CROP_SP"]
+      },
+
+      "C3_C4": {
+        "name": "Photosynthetic Pathway",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["C3", "C4", "CAM"],
+        "derivable_from": ["CROP_SP"]
+      },
+
+      "CULTIVAR": {
+        "name": "Cultivar/Variety Name",
+        "source": "Custom",
+        "type": "free_text",
+        "extraction_hints": ["cultivar", "variety", "cv.", "var.", "genotype"]
+      },
+
+      "PLANT_PART": {
+        "name": "Plant Part Measured",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Grain", "Seed", "Leaf", "Stem", "Root", "Shoot", "Whole Plant", "Fruit", "Tuber", "Stover", "Straw", "Husk", "Cob"],
+        "extraction_hints": ["grain", "seed", "leaf", "leaves", "stem", "root", "shoot", "whole plant", "fruit", "tuber"]
+      },
+
+      "GROWTH_STAGE": {
+        "name": "Growth Stage at Measurement",
+        "source": "BBCH",
+        "type": "categorical",
+        "values": ["Germination", "Seedling", "Tillering", "Stem Elongation", "Booting", "Heading", "Flowering", "Grain Development", "Ripening", "Maturity"],
+        "bbch_mapping": {
+          "Germination": [0, 9],
+          "Seedling": [10, 19],
+          "Tillering": [20, 29],
+          "Stem Elongation": [30, 39],
+          "Booting": [40, 49],
+          "Heading": [50, 59],
+          "Flowering": [60, 69],
+          "Grain Development": [70, 79],
+          "Ripening": [80, 89],
+          "Maturity": [90, 99]
+        },
+        "extraction_hints": ["growth stage", "phenological stage", "BBCH", "flowering", "maturity", "vegetative", "reproductive"]
+      }
+    },
+
+    "experimental": {
+      "STUDY_TYPE": {
+        "name": "Study Type/Facility",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Field", "Greenhouse", "Growth Chamber", "FACE", "OTC", "Pot (Outdoor)", "Pot (Indoor)", "Lysimeter", "Phytotron"],
+        "extraction_hints": ["field experiment", "field trial", "greenhouse", "glasshouse", "growth chamber", "FACE", "free-air", "open-top chamber", "OTC", "pot experiment"],
+        "effect_size_notes": {
+          "FACE": "Most representative of field conditions for CO2 studies",
+          "OTC": "Effect sizes typically ~1.5x those from FACE",
+          "Growth Chamber": "Highly controlled but less representative",
+          "Greenhouse": "Intermediate representativeness"
+        }
+      },
+
+      "EXP_DESIGN": {
+        "name": "Experimental Design",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["RCBD", "CRD", "Split-plot", "Strip-plot", "Latin Square", "Factorial", "Nested", "Augmented", "Alpha-lattice", "Other"],
+        "extraction_hints": ["randomized complete block", "RCBD", "completely randomized", "CRD", "split-plot", "strip-plot", "latin square", "factorial", "nested"],
+        "variance_implications": {
+          "RCBD": {
+            "error_terms": 1,
+            "notes": "Single pooled error term"
+          },
+          "CRD": {
+            "error_terms": 1,
+            "notes": "Single pooled error term"
+          },
+          "Split-plot": {
+            "error_terms": 2,
+            "notes": "Whole-plot error (Error A) and subplot error (Error B). Must extract appropriate error for the factor of interest."
+          },
+          "Strip-plot": {
+            "error_terms": 3,
+            "notes": "Row error, column error, and interaction error"
+          },
+          "Latin Square": {
+            "error_terms": 1,
+            "notes": "Often reports LSMeans (adjusted means)"
+          },
+          "Factorial": {
+            "error_terms": 1,
+            "notes": "May be implemented within another design"
+          }
+        }
+      },
+
+      "REPS": {
+        "name": "Number of Replicates",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "count",
+        "range": [2, 20],
+        "extraction_hints": ["replicates", "replications", "blocks", "reps", "n ="]
+      },
+
+      "PLOT_SIZE": {
+        "name": "Plot Size",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "m²",
+        "range": [0.1, 10000],
+        "unit_conversions": {
+          "ha": 10000,
+          "acre": 4047
+        },
+        "extraction_hints": ["plot size", "plot area", "experimental unit"]
+      },
+
+      "DURATION": {
+        "name": "Study Duration",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "years",
+        "range": [0.25, 50],
+        "categories": {
+          "field": "DURATION_CAT",
+          "values": {
+            "Single Season": {"min": 0, "max": 1},
+            "Short-term": {"min": 1, "max": 3},
+            "Medium-term": {"min": 3, "max": 10},
+            "Long-term": {"min": 10, "max": null}
+          }
+        },
+        "extraction_hints": ["years", "seasons", "duration", "study period"]
+      },
+
+      "STUDY_YEAR": {
+        "name": "Study Year(s)",
+        "source": "Custom",
+        "type": "free_text",
+        "extraction_hints": ["year", "season", "growing season"]
+      },
+
+      "COUNTRY": {
+        "name": "Country",
+        "source": "ISO 3166-1",
+        "type": "categorical",
+        "values": "ISO 3166-1 alpha-3 codes",
+        "extraction_hints": ["country", "location", "site"]
+      },
+
+      "REGION": {
+        "name": "Geographic Region",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["North America", "South America", "Europe", "Africa", "West Asia", "South Asia", "East Asia", "Southeast Asia", "Oceania"],
+        "derivable_from": ["COUNTRY", "LAT", "LON"]
+      },
+
+      "LAT": {
+        "name": "Latitude",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "degrees",
+        "range": [-90, 90],
+        "extraction_hints": ["latitude", "lat", "coordinates", "°N", "°S"]
+      },
+
+      "LON": {
+        "name": "Longitude",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "degrees",
+        "range": [-180, 180],
+        "extraction_hints": ["longitude", "long", "lon", "coordinates", "°E", "°W"]
+      }
+    },
+
+    "treatment_specific": {
+      "CO2_CONC": {
+        "name": "CO2 Concentration",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "ppm",
+        "range": [280, 1500],
+        "categories": {
+          "field": "CO2_LEVEL",
+          "values": {
+            "Pre-industrial": {"min": null, "max": 300},
+            "Ambient": {"min": 300, "max": 450},
+            "Moderately Elevated": {"min": 450, "max": 600},
+            "Elevated": {"min": 600, "max": 800},
+            "Highly Elevated": {"min": 800, "max": null}
+          }
+        },
+        "extraction_hints": ["CO2 concentration", "CO2 level", "ppm CO2", "elevated CO2", "ambient CO2", "eCO2", "aCO2"]
+      },
+
+      "CO2_ELEV": {
+        "name": "CO2 Elevation Above Ambient",
+        "source": "Custom",
+        "type": "continuous",
+        "unit": "ppm",
+        "range": [0, 1000],
+        "extraction_hints": ["elevation", "above ambient", "increase"]
+      },
+
+      "BIOSTIM_TYPE": {
+        "name": "Biostimulant Type",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["Humic/Fulvic Acids", "Seaweed Extract", "Protein Hydrolysate", "Chitosan", "Silicon", "Phosphite", "Plant Extract", "Microbial", "Other"],
+        "extraction_hints": ["humic acid", "fulvic acid", "seaweed", "algae extract", "protein hydrolysate", "amino acid", "chitosan", "silicon", "phosphite"]
+      },
+
+      "STRESS_TYPE": {
+        "name": "Stress Treatment Type",
+        "source": "Custom",
+        "type": "categorical",
+        "values": ["None", "Drought", "Heat", "Cold", "Salinity", "Nutrient Deficiency", "Waterlogging", "Combined"],
+        "extraction_hints": ["drought stress", "water stress", "heat stress", "temperature stress", "salt stress", "salinity stress", "nutrient stress", "waterlogging"]
+      }
+    }
+  },
+
+  "outcomes": {
+    "GWAD": {
+      "name": "Grain/Seed Yield (dry weight)",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "kg/ha",
+      "range": [0, 25000],
+      "unit_conversions": {
+        "t/ha": 1000,
+        "Mg/ha": 1000,
+        "g/m2": 10,
+        "bu/acre_corn": 62.77,
+        "bu/acre_wheat": 67.25,
+        "bu/acre_soybean": 67.25,
+        "bu/acre_barley": 53.81,
+        "lb/acre": 1.12,
+        "cwt/acre": 112.0,
+        "g/plant": "requires_plant_density"
+      },
+      "extraction_hints": ["grain yield", "seed yield", "yield", "grain weight", "kernel yield"],
+      "moisture_standards": {
+        "corn": 15.5,
+        "wheat": 13.0,
+        "soybean": 13.0,
+        "rice": 14.0,
+        "barley": 13.0,
+        "sorghum": 14.0
+      },
+      "notes": "Standardize to dry weight or specified moisture content"
+    },
+
+    "CWAD": {
+      "name": "Total Aboveground Biomass (dry weight)",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "kg/ha",
+      "range": [0, 50000],
+      "unit_conversions": {
+        "t/ha": 1000,
+        "Mg/ha": 1000,
+        "g/m2": 10,
+        "g/plant": "requires_plant_density"
+      },
+      "extraction_hints": ["biomass", "dry matter", "aboveground biomass", "total biomass", "shoot biomass", "DM yield"]
+    },
+
+    "RWAD": {
+      "name": "Root Biomass (dry weight)",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "kg/ha",
+      "range": [0, 20000],
+      "extraction_hints": ["root biomass", "root dry weight", "root mass", "belowground biomass"]
+    },
+
+    "HIAM": {
+      "name": "Harvest Index",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "fraction",
+      "range": [0, 1],
+      "extraction_hints": ["harvest index", "HI", "grain:biomass"],
+      "notes": "HIAM = GWAD / CWAD"
+    },
+
+    "GNC": {
+      "name": "Grain Nitrogen Concentration",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "%",
+      "range": [0, 6],
+      "unit_conversions": {
+        "g/kg": 0.1,
+        "mg/g": 0.1
+      },
+      "extraction_hints": ["grain nitrogen", "grain N concentration", "grain N content", "seed N"],
+      "related_calculations": {
+        "protein_wheat": "N% × 5.7",
+        "protein_general": "N% × 6.25"
+      }
+    },
+
+    "PROT": {
+      "name": "Grain Protein Concentration",
+      "source": "Custom",
+      "type": "continuous",
+      "unit": "%",
+      "range": [0, 40],
+      "extraction_hints": ["protein content", "protein concentration", "crude protein", "grain protein"]
+    },
+
+    "MINERAL_CONC": {
+      "name": "Mineral Element Concentration",
+      "source": "Custom",
+      "type": "continuous",
+      "unit": "mg/kg DW",
+      "elements": {
+        "Zn": {"name": "Zinc", "typical_range": [10, 100]},
+        "Fe": {"name": "Iron", "typical_range": [20, 200]},
+        "Mg": {"name": "Magnesium", "typical_range": [500, 3000]},
+        "Ca": {"name": "Calcium", "typical_range": [100, 1000]},
+        "K": {"name": "Potassium", "typical_range": [2000, 8000]},
+        "P": {"name": "Phosphorus", "typical_range": [1000, 5000]},
+        "Mn": {"name": "Manganese", "typical_range": [10, 100]},
+        "Cu": {"name": "Copper", "typical_range": [1, 20]},
+        "S": {"name": "Sulfur", "typical_range": [500, 3000]},
+        "Se": {"name": "Selenium", "typical_range": [0.01, 1]},
+        "Na": {"name": "Sodium", "typical_range": [10, 500]},
+        "B": {"name": "Boron", "typical_range": [1, 30]}
+      },
+      "unit_conversions": {
+        "μg/g": 1,
+        "ppm": 1,
+        "mg/g": 1000,
+        "%": 10000
+      },
+      "extraction_hints": ["mineral concentration", "element concentration", "zinc", "iron", "nutrient concentration"],
+      "measurement_types": {
+        "concentration": "Amount per unit tissue mass (e.g., mg/kg) - affected by dilution",
+        "content": "Total amount per plant or area (e.g., mg/plant, kg/ha) - represents uptake",
+        "proportion": "Fraction of total (e.g., % of total minerals)"
+      }
+    },
+
+    "NUPT": {
+      "name": "Nitrogen Uptake",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "kg N/ha",
+      "range": [0, 500],
+      "extraction_hints": ["N uptake", "nitrogen uptake", "N accumulation", "total N"]
+    },
+
+    "NUE": {
+      "name": "Nitrogen Use Efficiency",
+      "source": "Custom",
+      "type": "continuous",
+      "unit": "kg grain/kg N",
+      "range": [0, 200],
+      "extraction_hints": ["NUE", "nitrogen use efficiency", "N efficiency"],
+      "notes": "Multiple definitions exist: agronomic (yield/N applied), physiological (yield/N uptake), etc."
+    },
+
+    "WUE": {
+      "name": "Water Use Efficiency",
+      "source": "Custom",
+      "type": "continuous",
+      "unit": "kg/ha/mm",
+      "range": [0, 50],
+      "extraction_hints": ["WUE", "water use efficiency", "water productivity"],
+      "notes": "Can be expressed as yield/ET or yield/water applied"
+    },
+
+    "PHT": {
+      "name": "Plant Height",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "cm",
+      "range": [0, 500],
+      "extraction_hints": ["plant height", "height", "stem height"]
+    },
+
+    "LAID": {
+      "name": "Leaf Area Index",
+      "source": "ICASA",
+      "type": "continuous",
+      "unit": "m²/m²",
+      "range": [0, 15],
+      "extraction_hints": ["LAI", "leaf area index", "leaf area"]
+    },
+
+    "PHOT": {
+      "name": "Photosynthesis Rate",
+      "source": "Custom",
+      "type": "continuous",
+      "unit": "μmol CO2/m²/s",
+      "range": [0, 60],
+      "extraction_hints": ["photosynthesis", "photosynthetic rate", "Amax", "Asat", "net CO2 assimilation"]
+    },
+
+    "COND": {
+      "name": "Stomatal Conductance",
+      "source": "Custom",
+      "type": "continuous",
+      "unit": "mol H2O/m²/s",
+      "range": [0, 1],
+      "extraction_hints": ["stomatal conductance", "gs", "conductance"]
+    }
+  },
+
+  "crop_taxonomy": {
+    "wheat": {
+      "scientific": "Triticum aestivum",
+      "common_names": ["wheat", "bread wheat", "winter wheat", "spring wheat", "common wheat"],
+      "group": "Cereals",
+      "c3_c4": "C3",
+      "typical_yield_range": [1000, 12000]
+    },
+    "durum_wheat": {
+      "scientific": "Triticum durum",
+      "common_names": ["durum wheat", "durum", "pasta wheat", "macaroni wheat"],
+      "group": "Cereals",
+      "c3_c4": "C3",
+      "typical_yield_range": [1000, 8000]
+    },
+    "maize": {
+      "scientific": "Zea mays",
+      "common_names": ["maize", "corn", "sweetcorn", "sweet corn"],
+      "group": "Cereals",
+      "c3_c4": "C4",
+      "typical_yield_range": [2000, 18000]
+    },
+    "rice": {
+      "scientific": "Oryza sativa",
+      "common_names": ["rice", "paddy rice", "paddy", "lowland rice", "upland rice"],
+      "group": "Cereals",
+      "c3_c4": "C3",
+      "typical_yield_range": [1000, 12000]
+    },
+    "barley": {
+      "scientific": "Hordeum vulgare",
+      "common_names": ["barley", "spring barley", "winter barley"],
+      "group": "Cereals",
+      "c3_c4": "C3",
+      "typical_yield_range": [1000, 10000]
+    },
+    "sorghum": {
+      "scientific": "Sorghum bicolor",
+      "common_names": ["sorghum", "grain sorghum", "milo"],
+      "group": "Cereals",
+      "c3_c4": "C4",
+      "typical_yield_range": [1000, 10000]
+    },
+    "oat": {
+      "scientific": "Avena sativa",
+      "common_names": ["oat", "oats"],
+      "group": "Cereals",
+      "c3_c4": "C3",
+      "typical_yield_range": [1000, 8000]
+    },
+    "millet": {
+      "scientific": "various",
+      "common_names": ["millet", "pearl millet", "finger millet", "foxtail millet"],
+      "group": "Cereals",
+      "c3_c4": "C4",
+      "typical_yield_range": [500, 4000]
+    },
+    "soybean": {
+      "scientific": "Glycine max",
+      "common_names": ["soybean", "soya", "soy", "soya bean"],
+      "group": "Legumes",
+      "c3_c4": "C3",
+      "typical_yield_range": [500, 6000]
+    },
+    "common_bean": {
+      "scientific": "Phaseolus vulgaris",
+      "common_names": ["common bean", "dry bean", "kidney bean", "navy bean", "pinto bean"],
+      "group": "Legumes",
+      "c3_c4": "C3",
+      "typical_yield_range": [500, 4000]
+    },
+    "pea": {
+      "scientific": "Pisum sativum",
+      "common_names": ["pea", "field pea", "dry pea", "garden pea"],
+      "group": "Legumes",
+      "c3_c4": "C3",
+      "typical_yield_range": [500, 5000]
+    },
+    "chickpea": {
+      "scientific": "Cicer arietinum",
+      "common_names": ["chickpea", "garbanzo", "gram"],
+      "group": "Legumes",
+      "c3_c4": "C3",
+      "typical_yield_range": [500, 4000]
+    },
+    "lentil": {
+      "scientific": "Lens culinaris",
+      "common_names": ["lentil", "lentils"],
+      "group": "Legumes",
+      "c3_c4": "C3",
+      "typical_yield_range": [500, 3000]
+    },
+    "groundnut": {
+      "scientific": "Arachis hypogaea",
+      "common_names": ["groundnut", "peanut", "peanuts"],
+      "group": "Legumes",
+      "c3_c4": "C3",
+      "typical_yield_range": [500, 5000]
+    },
+    "canola": {
+      "scientific": "Brassica napus",
+      "common_names": ["canola", "rapeseed", "oilseed rape"],
+      "group": "Oilseeds",
+      "c3_c4": "C3",
+      "typical_yield_range": [1000, 5000]
+    },
+    "sunflower": {
+      "scientific": "Helianthus annuus",
+      "common_names": ["sunflower"],
+      "group": "Oilseeds",
+      "c3_c4": "C3",
+      "typical_yield_range": [1000, 4000]
+    },
+    "potato": {
+      "scientific": "Solanum tuberosum",
+      "common_names": ["potato", "potatoes", "irish potato"],
+      "group": "Root/Tuber",
+      "c3_c4": "C3",
+      "typical_yield_range": [10000, 60000]
+    },
+    "cassava": {
+      "scientific": "Manihot esculenta",
+      "common_names": ["cassava", "manioc", "tapioca"],
+      "group": "Root/Tuber",
+      "c3_c4": "C3",
+      "typical_yield_range": [5000, 40000]
+    },
+    "sweet_potato": {
+      "scientific": "Ipomoea batatas",
+      "common_names": ["sweet potato", "sweetpotato"],
+      "group": "Root/Tuber",
+      "c3_c4": "C3",
+      "typical_yield_range": [5000, 30000]
+    },
+    "sugarbeet": {
+      "scientific": "Beta vulgaris",
+      "common_names": ["sugar beet", "sugarbeet", "beet"],
+      "group": "Sugar",
+      "c3_c4": "C3",
+      "typical_yield_range": [30000, 80000]
+    },
+    "sugarcane": {
+      "scientific": "Saccharum officinarum",
+      "common_names": ["sugarcane", "sugar cane"],
+      "group": "Sugar",
+      "c3_c4": "C4",
+      "typical_yield_range": [50000, 150000]
+    },
+    "cotton": {
+      "scientific": "Gossypium hirsutum",
+      "common_names": ["cotton", "upland cotton"],
+      "group": "Fiber",
+      "c3_c4": "C3",
+      "typical_yield_range": [500, 3000],
+      "notes": "Lint yield; seed cotton yield is higher"
+    },
+    "tomato": {
+      "scientific": "Solanum lycopersicum",
+      "common_names": ["tomato", "tomatoes"],
+      "group": "Vegetables",
+      "c3_c4": "C3",
+      "typical_yield_range": [20000, 150000]
+    },
+    "lettuce": {
+      "scientific": "Lactuca sativa",
+      "common_names": ["lettuce"],
+      "group": "Vegetables",
+      "c3_c4": "C3",
+      "typical_yield_range": [10000, 60000]
+    }
+  },
+
+  "control_heuristics": {
+    "fertilizer": {
+      "rule": "min",
+      "variable": "FERT_N",
+      "description": "Zero or lowest nutrient application rate",
+      "keywords": ["0 kg", "zero", "0N", "N0", "unfertilized", "no fertilizer", "control", "check", "nil"],
+      "notes": "For factorial N studies, control is typically 0 kg N/ha"
+    },
+    "co2": {
+      "rule": "min",
+      "variable": "CO2_CONC",
+      "description": "Ambient CO2 concentration (~380-420 ppm)",
+      "keywords": ["ambient", "aCO2", "current", "control", "atmospheric", "normal"],
+      "notes": "Ambient CO2 has increased over time; older studies may use ~350 ppm as ambient"
+    },
+    "tillage": {
+      "rule": "max",
+      "variable": "TILL_INT",
+      "description": "Conventional/intensive tillage as baseline",
+      "keywords": ["conventional", "CT", "moldboard", "intensive", "traditional"],
+      "notes": "In conservation ag studies, conventional tillage is the control"
+    },
+    "variety": {
+      "rule": "keyword",
+      "keywords": ["check", "local", "standard", "control", "reference", "local variety", "local cultivar", "check variety"],
+      "description": "Standard or local check variety"
+    },
+    "irrigation": {
+      "rule": "keyword",
+      "keywords": ["full irrigation", "well-watered", "100% ET", "non-stressed", "control"],
+      "description": "Full irrigation or well-watered control"
+    },
+    "biostimulant": {
+      "rule": "keyword",
+      "keywords": ["control", "untreated", "no biostimulant", "water only", "without"],
+      "description": "Untreated control without biostimulant application"
+    },
+    "pest_control": {
+      "rule": "keyword",
+      "keywords": ["untreated", "no spray", "control", "unprotected", "without"],
+      "description": "Untreated control for efficacy studies"
+    },
+    "general": {
+      "rule": "keyword",
+      "keywords": ["control", "untreated", "check", "reference", "baseline", "standard", "conventional"],
+      "description": "Generic control identification"
+    }
+  },
+
+  "variance_types": {
+    "SD": {
+      "name": "Standard Deviation",
+      "conversion_to_sd": "direct",
+      "notes": "Use directly"
+    },
+    "SE": {
+      "name": "Standard Error",
+      "conversion_to_sd": "SE × √n",
+      "notes": "Requires sample size"
+    },
+    "CI_95": {
+      "name": "95% Confidence Interval",
+      "conversion_to_sd": "(Upper - Lower) / (2 × 1.96) × √n",
+      "notes": "For large samples; use t-value for small samples"
+    },
+    "CI_90": {
+      "name": "90% Confidence Interval",
+      "conversion_to_sd": "(Upper - Lower) / (2 × 1.645) × √n",
+      "notes": "Less common"
+    },
+    "LSD": {
+      "name": "Least Significant Difference",
+      "conversion_to_sd": "LSD / (t × √(2/n)) where t is critical value",
+      "notes": "Requires alpha level (usually 0.05) and df for t-value"
+    },
+    "CV": {
+      "name": "Coefficient of Variation",
+      "conversion_to_sd": "CV × Mean / 100",
+      "notes": "Gives pooled SD; apply to each treatment mean"
+    },
+    "MSE": {
+      "name": "Mean Square Error",
+      "conversion_to_sd": "√MSE",
+      "notes": "Pooled variance; gives common SD for all treatments"
+    },
+    "LETTERS": {
+      "name": "Significance Letters Only",
+      "conversion_to_sd": "complex",
+      "notes": "Can estimate LSD range from letter groupings; requires additional assumptions"
+    },
+    "NONE": {
+      "name": "No Variance Reported",
+      "conversion_to_sd": "imputation",
+      "notes": "Must impute from pooled CV or exclude"
+    }
+  }
+}

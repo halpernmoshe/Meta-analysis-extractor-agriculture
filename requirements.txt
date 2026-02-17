@@ -1,0 +1,31 @@
+# Meta-Analysis Extraction System Dependencies
+
+# Core LLM APIs
+anthropic>=0.39.0
+google-genai>=1.0.0       # Gemini models (new SDK)
+openai>=1.0.0             # Kimi/Moonshot (OpenAI-compatible API)
+python-dotenv>=1.0.0
+
+# PDF Processing
+PyMuPDF>=1.24.0           # PDF text extraction (import as fitz)
+pdfplumber>=0.11.0        # Alternative PDF table extraction
+Pillow>=10.0.0            # Image processing in figure extraction
+
+# Data Handling
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0           # Excel I/O
+
+# Statistics & Validation
+scipy>=1.10.0             # TOST, ICC, bootstrap, t-tests
+
+# Visualization
+matplotlib>=3.7.0         # Paper figures
+
+# Document Generation
+python-docx>=1.0.0        # Word document export
+
+# Utilities
+tqdm>=4.66.0              # Progress bars
+requests>=2.31.0          # HTTP requests (PDF download)
+beautifulsoup4>=4.12.0    # HTML parsing (acquisition module)

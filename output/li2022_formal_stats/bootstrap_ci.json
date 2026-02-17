@@ -1,0 +1,27 @@
+{
+  "pearson_r": {
+    "point_estimate": 0.4533,
+    "ci_95_lower": 0.263,
+    "ci_95_upper": 0.6118
+  },
+  "mae_pct": {
+    "point_estimate": 11.6187,
+    "ci_95_lower": 9.2169,
+    "ci_95_upper": 14.9515
+  },
+  "direction_agreement": {
+    "point_estimate": 0.8805,
+    "ci_95_lower": 0.8218,
+    "ci_95_upper": 0.9375
+  },
+  "overall_effect_diff_pp": {
+    "point_estimate": 0.0645,
+    "ci_95_lower": 0.0021,
+    "ci_95_upper": 0.0829
+  },
+  "within_10pp": {
+    "point_estimate": 0.6564,
+    "ci_95_lower": 0.5828,
+    "ci_95_upper": 0.7239
+  }
+}

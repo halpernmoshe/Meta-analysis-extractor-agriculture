@@ -1,0 +1,22 @@
+{
+  "observation_level": {
+    "icc_31_consistency": 0.6686,
+    "icc_21_agreement": 0.669,
+    "icc_31_95ci": [
+      0.6233,
+      0.7095
+    ],
+    "f_value": 5.04,
+    "p_value": 0.0,
+    "n_observations": 635,
+    "interpretation": "good"
+  },
+  "paper_level": {
+    "icc_consistency": 0.8376,
+    "n_papers": 46,
+    "interpretation": "excellent"
+  },
+  "pearson_r_obs": 0.6688,
+  "pearson_r_paper": 0.8381,
+  "summary": "Observation-level ICC(3,1) = 0.669 (95% CI: 0.623-0.709), interpreted as good. Paper-level ICC = 0.838 (excellent). For reference, human inter-rater ICC in meta-analysis is typically 0.70-0.90."
+}

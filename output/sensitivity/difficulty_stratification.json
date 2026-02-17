@@ -1,0 +1,66 @@
+{
+  "by_tier": {
+    "Excellent (<5%)": {
+      "n_papers": 22,
+      "n": 245,
+      "r": 0.9766,
+      "mae": 1.63,
+      "dir_pct": 95.8,
+      "effect_diff_pp": 0.007
+    },
+    "Good (5-10%)": {
+      "n_papers": 10,
+      "n": 151,
+      "r": 0.4696,
+      "mae": 7.9,
+      "dir_pct": 78.9,
+      "effect_diff_pp": 0.877
+    },
+    "Fair (10-20%)": {
+      "n_papers": 13,
+      "n": 237,
+      "r": 0.4167,
+      "mae": 14.1,
+      "dir_pct": 76.8,
+      "effect_diff_pp": 0.607
+    },
+    "Poor (>20%)": {
+      "n_papers": 1,
+      "n": 2,
+      "r": null,
+      "mae": 58.0,
+      "dir_pct": 0.0,
+      "effect_diff_pp": 10.069
+    }
+  },
+  "by_magnitude": {
+    "Small |eff|<5%": {
+      "n": 181,
+      "r": 0.2784,
+      "mae": 6.43,
+      "dir_pct": 74.8,
+      "effect_diff_pp": 1.508
+    },
+    "Medium 5-15%": {
+      "n": 249,
+      "r": 0.4631,
+      "mae": 6.01,
+      "dir_pct": 86.7,
+      "effect_diff_pp": 0.081
+    },
+    "Large 15-30%": {
+      "n": 144,
+      "r": 0.7028,
+      "mae": 8.36,
+      "dir_pct": 92.4,
+      "effect_diff_pp": 3.728
+    },
+    "Very large >30%": {
+      "n": 61,
+      "r": 0.805,
+      "mae": 19.4,
+      "dir_pct": 82.0,
+      "effect_diff_pp": 4.541
+    }
+  }
+}

@@ -1,0 +1,902 @@
+{
+  "timestamp": "2026-02-17T10:44:35.623475",
+  "methods": {
+    "consensus": {
+      "n": 560,
+      "mae": 7.49,
+      "median_ae": 2.78,
+      "r": 0.705,
+      "direction_pct": 84.8,
+      "w5": 332,
+      "w10": 420,
+      "w20": 513,
+      "w5_pct": 59.3,
+      "w10_pct": 75.0,
+      "w20_pct": 91.6,
+      "overall_our": -5.0,
+      "overall_gt": -5.11,
+      "papers_matched": 42
+    },
+    "kimi_primary_paper": {
+      "n": 523,
+      "mae": 4.85,
+      "median_ae": 0.8,
+      "r": 0.882,
+      "direction_pct": 87.8,
+      "w5": 371,
+      "w10": 431,
+      "w20": 491,
+      "w5_pct": 70.9,
+      "w10_pct": 82.4,
+      "w20_pct": 93.9,
+      "overall_our": -4.79,
+      "overall_gt": -5.93,
+      "papers_matched": 35
+    },
+    "kimi_primary_obs": {
+      "n": 604,
+      "mae": 5.63,
+      "median_ae": 1.42,
+      "r": 0.84,
+      "direction_pct": 86.3,
+      "w5": 413,
+      "w10": 488,
+      "w20": 557,
+      "w5_pct": 68.4,
+      "w10_pct": 80.8,
+      "w20_pct": 92.2,
+      "overall_our": -4.48,
+      "overall_gt": -6.26,
+      "papers_matched": 45
+    },
+    "kimi_solo": {
+      "n": 486,
+      "mae": 4.21,
+      "median_ae": 0.56,
+      "r": 0.902,
+      "direction_pct": 88.7,
+      "w5": 362,
+      "w10": 414,
+      "w20": 461,
+      "w5_pct": 74.5,
+      "w10_pct": 85.2,
+      "w20_pct": 94.9,
+      "overall_our": -4.81,
+      "overall_gt": -5.5,
+      "papers_matched": 30
+    },
+    "claude_solo": {
+      "n": 595,
+      "mae": 6.88,
+      "median_ae": 2.12,
+      "r": 0.762,
+      "direction_pct": 84.2,
+      "w5": 381,
+      "w10": 453,
+      "w20": 535,
+      "w5_pct": 64.0,
+      "w10_pct": 76.1,
+      "w20_pct": 89.9,
+      "overall_our": -5.27,
+      "overall_gt": -7.01,
+      "papers_matched": 44
+    },
+    "gemini_solo": {
+      "n": 464,
+      "mae": 6.37,
+      "median_ae": 1.95,
+      "r": 0.799,
+      "direction_pct": 85.7,
+      "w5": 304,
+      "w10": 370,
+      "w20": 415,
+      "w5_pct": 65.5,
+      "w10_pct": 79.7,
+      "w20_pct": 89.4,
+      "overall_our": -5.81,
+      "overall_gt": -7.73,
+      "papers_matched": 37
+    }
+  },
+  "routing": {
+    "paper_level": [
+      {
+        "paper_id": "001_Ma_2007",
+        "kimi_obs": 30,
+        "claude_obs": 24,
+        "gemini_obs": 30,
+        "source_used": "Kimi",
+        "obs_used": 30
+      },
+      {
+        "paper_id": "002_Ziska_1997",
+        "kimi_obs": 4,
+        "claude_obs": 4,
+        "gemini_obs": 8,
+        "source_used": "Kimi",
+        "obs_used": 4
+      },
+      {
+        "paper_id": "003_Baslam_2012",
+        "kimi_obs": 80,
+        "claude_obs": 32,
+        "gemini_obs": 80,
+        "source_used": "Kimi",
+        "obs_used": 80
+      },
+      {
+        "paper_id": "004_Finzi_2001",
+        "kimi_obs": 40,
+        "claude_obs": 36,
+        "gemini_obs": 44,
+        "source_used": "Kimi",
+        "obs_used": 40
+      },
+      {
+        "paper_id": "005_Niinemets_1999",
+        "kimi_obs": 10,
+        "claude_obs": 10,
+        "gemini_obs": 10,
+        "source_used": "Kimi",
+        "obs_used": 10
+      },
+      {
+        "paper_id": "006_Azam_2013",
+        "kimi_obs": 40,
+        "claude_obs": 38,
+        "gemini_obs": 38,
+        "source_used": "Kimi",
+        "obs_used": 40
+      },
+      {
+        "paper_id": "007_Woodin_1992",
+        "kimi_obs": 2,
+        "claude_obs": 20,
+        "gemini_obs": 20,
+        "source_used": "Kimi",
+        "obs_used": 2
+      },
+      {
+        "paper_id": "008_Campbell_2002",
+        "kimi_obs": 2,
+        "claude_obs": 8,
+        "gemini_obs": 4,
+        "source_used": "Kimi",
+        "obs_used": 2
+      },
+      {
+        "paper_id": "009_Barnes_1992",
+        "kimi_obs": 28,
+        "claude_obs": 12,
+        "gemini_obs": 12,
+        "source_used": "Kimi",
+        "obs_used": 28
+      },
+      {
+        "paper_id": "010_Li_2010",
+        "kimi_obs": 21,
+        "claude_obs": 20,
+        "gemini_obs": 20,
+        "source_used": "Kimi",
+        "obs_used": 21
+      },
+      {
+        "paper_id": "011_Huluka_1994",
+        "kimi_obs": 10,
+        "claude_obs": 10,
+        "gemini_obs": 10,
+        "source_used": "Kimi",
+        "obs_used": 10
+      },
+      {
+        "paper_id": "012_Wu_2004",
+        "kimi_obs": 4,
+        "claude_obs": 4,
+        "gemini_obs": 7,
+        "source_used": "Kimi",
+        "obs_used": 4
+      },
+      {
+        "paper_id": "013_Keutgen_2001",
+        "kimi_obs": 15,
+        "claude_obs": 60,
+        "gemini_obs": 30,
+        "source_used": "Kimi",
+        "obs_used": 15
+      },
+      {
+        "paper_id": "014_Lieffering_2004",
+        "kimi_obs": 30,
+        "claude_obs": 30,
+        "gemini_obs": 26,
+        "source_used": "Kimi",
+        "obs_used": 30
+      },
+      {
+        "paper_id": "015_Pleijel_2009",
+        "kimi_obs": 5,
+        "claude_obs": 5,
+        "gemini_obs": 7,
+        "source_used": "Kimi",
+        "obs_used": 5
+      },
+      {
+        "paper_id": "016_Fernando_2012a",
+        "kimi_obs": 1,
+        "claude_obs": 11,
+        "gemini_obs": 14,
+        "source_used": "Kimi",
+        "obs_used": 1
+      },
+      {
+        "paper_id": "017_Fangmeier_2002",
+        "kimi_obs": 62,
+        "claude_obs": 31,
+        "gemini_obs": 31,
+        "source_used": "Kimi",
+        "obs_used": 62
+      },
+      {
+        "paper_id": "018_Al-Rawahy_2013",
+        "kimi_obs": 14,
+        "claude_obs": 21,
+        "gemini_obs": 21,
+        "source_used": "Kimi",
+        "obs_used": 14
+      },
+      {
+        "paper_id": "019_Baxter_1994",
+        "kimi_obs": 15,
+        "claude_obs": 54,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "obs_used": 15
+      },
+      {
+        "paper_id": "020_Overdieck_1993",
+        "kimi_obs": 28,
+        "claude_obs": 28,
+        "gemini_obs": 28,
+        "source_used": "Kimi",
+        "obs_used": 28
+      },
+      {
+        "paper_id": "021_Wilsey_1994",
+        "kimi_obs": 26,
+        "claude_obs": 26,
+        "gemini_obs": 26,
+        "source_used": "Kimi",
+        "obs_used": 26
+      },
+      {
+        "paper_id": "022_Blank_2011",
+        "kimi_obs": 0,
+        "claude_obs": 23,
+        "gemini_obs": 0,
+        "source_used": "Claude (fallback)",
+        "obs_used": 23
+      },
+      {
+        "paper_id": "025_Guo_2011",
+        "kimi_obs": 17,
+        "claude_obs": 17,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "obs_used": 17
+      },
+      {
+        "paper_id": "026_Seneweera_1997",
+        "kimi_obs": 60,
+        "claude_obs": 60,
+        "gemini_obs": 78,
+        "source_used": "Kimi",
+        "obs_used": 60
+      },
+      {
+        "paper_id": "027_Peet_1986",
+        "kimi_obs": 0,
+        "claude_obs": 15,
+        "gemini_obs": 15,
+        "source_used": "Claude (fallback)",
+        "obs_used": 15
+      },
+      {
+        "paper_id": "028_Mishra_2011",
+        "kimi_obs": 0,
+        "claude_obs": 18,
+        "gemini_obs": 18,
+        "source_used": "Claude (fallback)",
+        "obs_used": 18
+      },
+      {
+        "paper_id": "031_Pal_2003",
+        "kimi_obs": 18,
+        "claude_obs": 12,
+        "gemini_obs": 12,
+        "source_used": "Kimi",
+        "obs_used": 18
+      },
+      {
+        "paper_id": "032_Kanowski_2001",
+        "kimi_obs": 4,
+        "claude_obs": 20,
+        "gemini_obs": 20,
+        "source_used": "Kimi",
+        "obs_used": 4
+      },
+      {
+        "paper_id": "034_Johnson_1997",
+        "kimi_obs": 99,
+        "claude_obs": 44,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "obs_used": 99
+      },
+      {
+        "paper_id": "035_Oksanen_2005",
+        "kimi_obs": 11,
+        "claude_obs": 11,
+        "gemini_obs": 15,
+        "source_used": "Kimi",
+        "obs_used": 11
+      },
+      {
+        "paper_id": "036_Schenk_1997",
+        "kimi_obs": 42,
+        "claude_obs": 42,
+        "gemini_obs": 42,
+        "source_used": "Kimi",
+        "obs_used": 42
+      },
+      {
+        "paper_id": "037_de_2000",
+        "kimi_obs": 4,
+        "claude_obs": 4,
+        "gemini_obs": 4,
+        "source_used": "Kimi",
+        "obs_used": 4
+      },
+      {
+        "paper_id": "038_Newbery_1995",
+        "kimi_obs": 70,
+        "claude_obs": 30,
+        "gemini_obs": 90,
+        "source_used": "Kimi",
+        "obs_used": 70
+      },
+      {
+        "paper_id": "039_Heagle_1993",
+        "kimi_obs": 0,
+        "claude_obs": 44,
+        "gemini_obs": 132,
+        "source_used": "Claude (fallback)",
+        "obs_used": 44
+      },
+      {
+        "paper_id": "040_Pfirrmann_1996",
+        "kimi_obs": 120,
+        "claude_obs": 24,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "obs_used": 120
+      },
+      {
+        "paper_id": "041_Mjwara_1996",
+        "kimi_obs": 9,
+        "claude_obs": 18,
+        "gemini_obs": 63,
+        "source_used": "Kimi",
+        "obs_used": 9
+      },
+      {
+        "paper_id": "042_Luomala_2005",
+        "kimi_obs": 52,
+        "claude_obs": 52,
+        "gemini_obs": 55,
+        "source_used": "Kimi",
+        "obs_used": 52
+      },
+      {
+        "paper_id": "043_Natali_2009",
+        "kimi_obs": 100,
+        "claude_obs": 70,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "obs_used": 100
+      },
+      {
+        "paper_id": "044_Housman_2012",
+        "kimi_obs": 30,
+        "claude_obs": 30,
+        "gemini_obs": 60,
+        "source_used": "Kimi",
+        "obs_used": 30
+      },
+      {
+        "paper_id": "046_Porter_1984",
+        "kimi_obs": 10,
+        "claude_obs": 10,
+        "gemini_obs": 10,
+        "source_used": "Kimi",
+        "obs_used": 10
+      },
+      {
+        "paper_id": "047_Rodenkirchen_2009",
+        "kimi_obs": 40,
+        "claude_obs": 45,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "obs_used": 40
+      },
+      {
+        "paper_id": "048_Khan_2013",
+        "kimi_obs": 26,
+        "claude_obs": 26,
+        "gemini_obs": 26,
+        "source_used": "Kimi",
+        "obs_used": 26
+      },
+      {
+        "paper_id": "049_Singh_2013",
+        "kimi_obs": 24,
+        "claude_obs": 10,
+        "gemini_obs": 24,
+        "source_used": "Kimi",
+        "obs_used": 24
+      },
+      {
+        "paper_id": "050_Polley_2011",
+        "kimi_obs": 14,
+        "claude_obs": 8,
+        "gemini_obs": 16,
+        "source_used": "Kimi",
+        "obs_used": 14
+      },
+      {
+        "paper_id": "051_Niu_2013",
+        "kimi_obs": 0,
+        "claude_obs": 14,
+        "gemini_obs": 18,
+        "source_used": "Claude (fallback)",
+        "obs_used": 14
+      },
+      {
+        "paper_id": "058_ONeill_1987",
+        "kimi_obs": 28,
+        "claude_obs": 28,
+        "gemini_obs": 28,
+        "source_used": "Kimi",
+        "obs_used": 28
+      }
+    ],
+    "obs_level": [
+      {
+        "paper_id": "001_Ma_2007",
+        "kimi_obs": 30,
+        "claude_obs": 24,
+        "gemini_obs": 30,
+        "source_used": "Kimi",
+        "gt_matches": 8
+      },
+      {
+        "paper_id": "002_Ziska_1997",
+        "kimi_obs": 4,
+        "claude_obs": 4,
+        "gemini_obs": 8,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 2
+      },
+      {
+        "paper_id": "003_Baslam_2012",
+        "kimi_obs": 80,
+        "claude_obs": 32,
+        "gemini_obs": 80,
+        "source_used": "Kimi",
+        "gt_matches": 20
+      },
+      {
+        "paper_id": "004_Finzi_2001",
+        "kimi_obs": 40,
+        "claude_obs": 36,
+        "gemini_obs": 44,
+        "source_used": "Kimi",
+        "gt_matches": 10
+      },
+      {
+        "paper_id": "005_Niinemets_1999",
+        "kimi_obs": 10,
+        "claude_obs": 10,
+        "gemini_obs": 10,
+        "source_used": "Kimi",
+        "gt_matches": 10
+      },
+      {
+        "paper_id": "006_Azam_2013",
+        "kimi_obs": 40,
+        "claude_obs": 38,
+        "gemini_obs": 38,
+        "source_used": "Kimi",
+        "gt_matches": 38
+      },
+      {
+        "paper_id": "007_Woodin_1992",
+        "kimi_obs": 2,
+        "claude_obs": 20,
+        "gemini_obs": 20,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 5
+      },
+      {
+        "paper_id": "008_Campbell_2002",
+        "kimi_obs": 2,
+        "claude_obs": 8,
+        "gemini_obs": 4,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 2
+      },
+      {
+        "paper_id": "009_Barnes_1992",
+        "kimi_obs": 28,
+        "claude_obs": 12,
+        "gemini_obs": 12,
+        "source_used": "Kimi",
+        "gt_matches": 6
+      },
+      {
+        "paper_id": "010_Li_2010",
+        "kimi_obs": 21,
+        "claude_obs": 20,
+        "gemini_obs": 20,
+        "source_used": "NONE",
+        "gt_matches": 0
+      },
+      {
+        "paper_id": "011_Huluka_1994",
+        "kimi_obs": 10,
+        "claude_obs": 10,
+        "gemini_obs": 10,
+        "source_used": "Kimi",
+        "gt_matches": 10
+      },
+      {
+        "paper_id": "012_Wu_2004",
+        "kimi_obs": 4,
+        "claude_obs": 4,
+        "gemini_obs": 7,
+        "source_used": "Kimi",
+        "gt_matches": 4
+      },
+      {
+        "paper_id": "013_Keutgen_2001",
+        "kimi_obs": 15,
+        "claude_obs": 60,
+        "gemini_obs": 30,
+        "source_used": "Kimi",
+        "gt_matches": 5
+      },
+      {
+        "paper_id": "014_Lieffering_2004",
+        "kimi_obs": 30,
+        "claude_obs": 30,
+        "gemini_obs": 26,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 22
+      },
+      {
+        "paper_id": "015_Pleijel_2009",
+        "kimi_obs": 5,
+        "claude_obs": 5,
+        "gemini_obs": 7,
+        "source_used": "Kimi",
+        "gt_matches": 3
+      },
+      {
+        "paper_id": "016_Fernando_2012a",
+        "kimi_obs": 1,
+        "claude_obs": 11,
+        "gemini_obs": 14,
+        "source_used": "Gemini (fallback)",
+        "gt_matches": 6
+      },
+      {
+        "paper_id": "017_Fangmeier_2002",
+        "kimi_obs": 62,
+        "claude_obs": 31,
+        "gemini_obs": 31,
+        "source_used": "Kimi",
+        "gt_matches": 32
+      },
+      {
+        "paper_id": "018_Al-Rawahy_2013",
+        "kimi_obs": 14,
+        "claude_obs": 21,
+        "gemini_obs": 21,
+        "source_used": "Kimi",
+        "gt_matches": 7
+      },
+      {
+        "paper_id": "019_Baxter_1994",
+        "kimi_obs": 15,
+        "claude_obs": 54,
+        "gemini_obs": 0,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 15
+      },
+      {
+        "paper_id": "020_Overdieck_1993",
+        "kimi_obs": 28,
+        "claude_obs": 28,
+        "gemini_obs": 28,
+        "source_used": "Kimi",
+        "gt_matches": 32
+      },
+      {
+        "paper_id": "021_Wilsey_1994",
+        "kimi_obs": 26,
+        "claude_obs": 26,
+        "gemini_obs": 26,
+        "source_used": "Kimi",
+        "gt_matches": 12
+      },
+      {
+        "paper_id": "022_Blank_2011",
+        "kimi_obs": 0,
+        "claude_obs": 23,
+        "gemini_obs": 0,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 6
+      },
+      {
+        "paper_id": "025_Guo_2011",
+        "kimi_obs": 17,
+        "claude_obs": 17,
+        "gemini_obs": 0,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 16
+      },
+      {
+        "paper_id": "026_Seneweera_1997",
+        "kimi_obs": 60,
+        "claude_obs": 60,
+        "gemini_obs": 78,
+        "source_used": "Kimi",
+        "gt_matches": 28
+      },
+      {
+        "paper_id": "027_Peet_1986",
+        "kimi_obs": 0,
+        "claude_obs": 15,
+        "gemini_obs": 15,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 5
+      },
+      {
+        "paper_id": "028_Mishra_2011",
+        "kimi_obs": 0,
+        "claude_obs": 18,
+        "gemini_obs": 18,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 2
+      },
+      {
+        "paper_id": "031_Pal_2003",
+        "kimi_obs": 18,
+        "claude_obs": 12,
+        "gemini_obs": 12,
+        "source_used": "Kimi",
+        "gt_matches": 5
+      },
+      {
+        "paper_id": "032_Kanowski_2001",
+        "kimi_obs": 4,
+        "claude_obs": 20,
+        "gemini_obs": 20,
+        "source_used": "Kimi",
+        "gt_matches": 4
+      },
+      {
+        "paper_id": "034_Johnson_1997",
+        "kimi_obs": 99,
+        "claude_obs": 44,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "gt_matches": 22
+      },
+      {
+        "paper_id": "035_Oksanen_2005",
+        "kimi_obs": 11,
+        "claude_obs": 11,
+        "gemini_obs": 15,
+        "source_used": "Kimi",
+        "gt_matches": 10
+      },
+      {
+        "paper_id": "036_Schenk_1997",
+        "kimi_obs": 42,
+        "claude_obs": 42,
+        "gemini_obs": 42,
+        "source_used": "Kimi",
+        "gt_matches": 28
+      },
+      {
+        "paper_id": "037_de_2000",
+        "kimi_obs": 4,
+        "claude_obs": 4,
+        "gemini_obs": 4,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 1
+      },
+      {
+        "paper_id": "038_Newbery_1995",
+        "kimi_obs": 70,
+        "claude_obs": 30,
+        "gemini_obs": 90,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 3
+      },
+      {
+        "paper_id": "039_Heagle_1993",
+        "kimi_obs": 0,
+        "claude_obs": 44,
+        "gemini_obs": 132,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 22
+      },
+      {
+        "paper_id": "040_Pfirrmann_1996",
+        "kimi_obs": 120,
+        "claude_obs": 24,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "gt_matches": 20
+      },
+      {
+        "paper_id": "041_Mjwara_1996",
+        "kimi_obs": 9,
+        "claude_obs": 18,
+        "gemini_obs": 63,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 9
+      },
+      {
+        "paper_id": "042_Luomala_2005",
+        "kimi_obs": 52,
+        "claude_obs": 52,
+        "gemini_obs": 55,
+        "source_used": "Kimi",
+        "gt_matches": 11
+      },
+      {
+        "paper_id": "043_Natali_2009",
+        "kimi_obs": 100,
+        "claude_obs": 70,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "gt_matches": 60
+      },
+      {
+        "paper_id": "044_Housman_2012",
+        "kimi_obs": 30,
+        "claude_obs": 30,
+        "gemini_obs": 60,
+        "source_used": "Kimi",
+        "gt_matches": 8
+      },
+      {
+        "paper_id": "046_Porter_1984",
+        "kimi_obs": 10,
+        "claude_obs": 10,
+        "gemini_obs": 10,
+        "source_used": "Kimi",
+        "gt_matches": 5
+      },
+      {
+        "paper_id": "047_Rodenkirchen_2009",
+        "kimi_obs": 40,
+        "claude_obs": 45,
+        "gemini_obs": 0,
+        "source_used": "Kimi",
+        "gt_matches": 20
+      },
+      {
+        "paper_id": "048_Khan_2013",
+        "kimi_obs": 26,
+        "claude_obs": 26,
+        "gemini_obs": 26,
+        "source_used": "Kimi",
+        "gt_matches": 26
+      },
+      {
+        "paper_id": "049_Singh_2013",
+        "kimi_obs": 24,
+        "claude_obs": 10,
+        "gemini_obs": 24,
+        "source_used": "Kimi",
+        "gt_matches": 10
+      },
+      {
+        "paper_id": "050_Polley_2011",
+        "kimi_obs": 14,
+        "claude_obs": 8,
+        "gemini_obs": 16,
+        "source_used": "Kimi",
+        "gt_matches": 18
+      },
+      {
+        "paper_id": "051_Niu_2013",
+        "kimi_obs": 0,
+        "claude_obs": 14,
+        "gemini_obs": 18,
+        "source_used": "Claude (fallback)",
+        "gt_matches": 2
+      },
+      {
+        "paper_id": "058_ONeill_1987",
+        "kimi_obs": 28,
+        "claude_obs": 28,
+        "gemini_obs": 28,
+        "source_used": "Kimi",
+        "gt_matches": 14
+      }
+    ]
+  },
+  "paper_comparison": {
+    "consensus_better": [
+      "010_Li_2010",
+      "013_Keutgen_2001",
+      "018_Al-Rawahy_2013",
+      "020_Overdieck_1993",
+      "021_Wilsey_1994",
+      "026_Seneweera_1997",
+      "032_Kanowski_2001",
+      "040_Pfirrmann_1996",
+      "050_Polley_2011"
+    ],
+    "kimi_primary_better": [
+      "001_Ma_2007",
+      "002_Ziska_1997",
+      "003_Baslam_2012",
+      "004_Finzi_2001",
+      "006_Azam_2013",
+      "007_Woodin_1992",
+      "008_Campbell_2002",
+      "014_Lieffering_2004",
+      "016_Fernando_2012a",
+      "019_Baxter_1994",
+      "022_Blank_2011",
+      "027_Peet_1986",
+      "028_Mishra_2011",
+      "031_Pal_2003",
+      "035_Oksanen_2005",
+      "036_Schenk_1997",
+      "037_de_2000",
+      "039_Heagle_1993",
+      "041_Mjwara_1996",
+      "042_Luomala_2005",
+      "043_Natali_2009",
+      "047_Rodenkirchen_2009",
+      "048_Khan_2013",
+      "058_ONeill_1987"
+    ],
+    "tied": [
+      "005_Niinemets_1999",
+      "009_Barnes_1992",
+      "011_Huluka_1994",
+      "012_Wu_2004",
+      "015_Pleijel_2009",
+      "017_Fangmeier_2002",
+      "025_Guo_2011",
+      "034_Johnson_1997",
+      "038_Newbery_1995",
+      "044_Housman_2012",
+      "046_Porter_1984",
+      "049_Singh_2013",
+      "051_Niu_2013"
+    ]
+  },
+  "cost_estimate": {
+    "consensus_cost": 5.28,
+    "kimi_primary_cost": 1.78,
+    "savings": 3.5
+  }
+}

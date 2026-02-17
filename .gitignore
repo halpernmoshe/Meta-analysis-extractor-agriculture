@@ -1,0 +1,107 @@
+# ===================================================
+# WHITELIST APPROACH: ignore everything, then un-ignore
+# what belongs in the public repo
+# ===================================================
+
+# Ignore everything by default
+*
+
+# ===== Allow: repo infrastructure =====
+!.gitignore
+!.env.example
+!LICENSE
+!CITATION.cff
+!README.md
+!requirements.txt
+
+# ===== Allow: core pipeline code =====
+!meta_extract.py
+!consensus_pipeline.py
+!config.py
+
+!core/
+!core/**
+
+!modules/
+!modules/**
+!modules/acquisition/
+!modules/acquisition/**
+
+!prompts/
+!prompts/**
+
+!gui/
+!gui/**
+
+# ===== Allow: configuration files =====
+!configs/
+!configs/**
+
+# ===== Allow: data files (ontology only) =====
+!data/
+!data/ontology.json
+!data/few_shot_examples/
+!data/few_shot_examples/**
+
+# ===== Allow: validation & analysis scripts =====
+!validate_full_46.py
+!validate_hui2023.py
+!validate_hui2023_full.py
+!validate_li2022.py
+!formal_statistics.py
+!formal_stats_hui2023.py
+!formal_stats_li2022.py
+!sensitivity_loo.py
+!tolerance_sensitivity.py
+!ablation_analysis.py
+!single_llm_baseline.py
+!kimi_primary_simulation.py
+!replicate_gt_meta.py
+!alignment_pass.py
+!integrate_alignment.py
+!deep_validation_analysis.py
+
+# ===== Allow: figure generation =====
+!paper_figures.py
+!fig_tost_equivalence.py
+!fig1_pipeline_architecture.py
+
+# ===== Allow: utility scripts =====
+!md_to_docx.py
+
+# ===== Allow: paper =====
+!PAPER_FULL_DRAFT.md
+!SPOT_CHECK_LOG.md
+
+# ===== Allow: output subdirectories (figures + stats only) =====
+!output/
+!output/paper_figures/
+!output/paper_figures/**
+!output/paper_supplementary/
+!output/paper_supplementary/**
+!output/formal_stats/
+!output/formal_stats/**
+!output/hui2023_formal_stats/
+!output/hui2023_formal_stats/**
+!output/li2022_formal_stats/
+!output/li2022_formal_stats/**
+!output/sensitivity/
+!output/sensitivity/**
+!output/tolerance_sensitivity.csv
+!output/kimi_primary_simulation.json
+
+# ===== Still exclude: secrets, binaries, caches =====
+.env
+.env.local
+*.key
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.docx
+.claude/
+tmpclaude-*.cwd
+nul
+Thumbs.db
+.DS_Store

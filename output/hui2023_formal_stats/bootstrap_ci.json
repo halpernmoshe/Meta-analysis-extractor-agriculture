@@ -1,0 +1,32 @@
+{
+  "pearson_r": {
+    "point_estimate": 0.9738,
+    "ci_95_lower": 0.9544,
+    "ci_95_upper": 0.9864
+  },
+  "mae_pct": {
+    "point_estimate": 5.1478,
+    "ci_95_lower": 3.5793,
+    "ci_95_upper": 6.8766
+  },
+  "direction_agreement": {
+    "point_estimate": 1.0138,
+    "ci_95_lower": 0.9955,
+    "ci_95_upper": 1.0374
+  },
+  "overall_effect_diff_pp": {
+    "point_estimate": 0.6289,
+    "ci_95_lower": 0.0352,
+    "ci_95_upper": 2.4466
+  },
+  "within_5pp": {
+    "point_estimate": 0.7838,
+    "ci_95_lower": 0.7297,
+    "ci_95_upper": 0.8378
+  },
+  "within_10pp": {
+    "point_estimate": 0.8514,
+    "ci_95_lower": 0.8018,
+    "ci_95_upper": 0.8964
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "description": "Silicon application effects on wheat crops",
+    "pico": {
+        "crop_species": ["Triticum aestivum", "Wheat", "wheat"],
+        "study_types": ["Field", "Greenhouse", "Pot", "Growth Chamber"],
+        "intervention_domain": "Silicon application",
+        "intervention_variable": "Si_TREATMENT",
+        "control_definition": "No silicon application (control/untreated)",
+        "control_heuristic": "zero",
+        "control_keywords": ["control", "no silicon", "no Si", "0 Si", "0 mg/L", "without Si", "untreated", "check"],
+        "primary_outcomes": ["GWAD", "MINERAL_CONC", "PHT"],
+        "secondary_outcomes": ["GW1000", "NGRS", "NSPS", "LAIX", "PROT", "RWAD", "CWAD"],
+        "required_moderators": [
+            "CROP_SP", "CULTIVAR", "COUNTRY", "LAT", "LON",
+            "STUDY_TYPE", "FERT_N", "FERT_P", "WATER_REGIME", "STRESS_TYPE"
+        ]
+    },
+    "models": {
+        "recon": "auto",
+        "extract": "auto"
+    },
+    "resume_if_exists": false,
+    "skip_confirmations": true
+}

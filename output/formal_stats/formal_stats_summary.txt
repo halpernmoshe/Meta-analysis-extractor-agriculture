@@ -1,0 +1,30 @@
+
+Formal Statistical Analysis - Loladze 2014 Validation
+=====================================================
+N = 635 matched observations, 46 papers
+
+AGREEMENT:
+  Bland-Altman mean bias: -0.05 pp (95% CI: -1.26 to 1.16)
+  95% Limits of Agreement: -30.6 to 30.5 pp
+  95% within LOAs
+
+RELIABILITY:
+  ICC(3,1) observation-level: 0.669 (95% CI: 0.623-0.710) [good]
+  ICC paper-level: 0.8376  [excellent]
+  Pearson r (obs): 0.669
+  Pearson r (paper): 0.8381
+
+EQUIVALENCE:
+  TOST ±2pp: p=0.0009 (EQUIVALENT)
+  TOST ±5pp: p=0.0000 (EQUIVALENT)
+  90% CI for mean diff: (-1.07, 0.97) pp
+
+BIAS:
+  Paired t-test: p=0.9324 (no bias)
+  Cohen's d: -0.003
+
+BOOTSTRAP 95% CIs:
+  Pearson r: 0.669 (0.545-0.834)
+  MAE: 7.9% (7.0-9.1)
+  Direction: 84.5% (81.4-87.1)
+  Overall effect diff: 0.05pp (0.00-0.12)

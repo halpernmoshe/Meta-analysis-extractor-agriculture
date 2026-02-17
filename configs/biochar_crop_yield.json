@@ -1,0 +1,104 @@
+{
+  "name": "Biochar Effects on Crop Yield",
+  "description": "This validation dataset examines how biochar amendment affects crop productivity. Based on BiocharDS v1.0 (Scientific Data 2024, 11:57). A subsample of ~40 studies from the 367-study global dataset is selected for validation.",
+
+  "intervention": "Biochar soil amendment (various feedstocks, pyrolysis temperatures, and application rates)",
+  "control": "No biochar application (unamended control)",
+
+  "primary_outcomes": [
+    "Crop yield (kg/ha or t/ha)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+10-15% crop yield increase on average",
+
+  "important_moderators": [
+    "Biochar feedstock type (wood, crop residue, manure, etc.)",
+    "Pyrolysis temperature",
+    "Biochar application rate (t/ha)",
+    "Soil texture (sandy, loamy, clay)",
+    "Soil pH",
+    "Crop type",
+    "Climate zone",
+    "Experimental duration"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY treatment combination separately (different biochar rates, types)",
+    "2. Control = unamended soil (no biochar); treatment = with biochar amendment",
+    "3. Get variance (SE/SD/LSD) and sample size (n/replicates)",
+    "4. Record biochar type, application rate, and pyrolysis temperature",
+    "5. Focus on CROP YIELD as primary outcome"
+  ],
+
+  "tc_confusion_warnings": [
+    "Control is the no-biochar treatment",
+    "Some papers test biochar + fertilizer combinations - extract each vs control",
+    "Multiple application rates should be extracted separately",
+    "Watch for units (g/plant vs kg/ha vs t/ha)"
+  ],
+
+  "pico": {
+    "population": {
+      "crop_groups": ["cereals", "vegetables", "legumes", "fruits", "root crops"],
+      "environments": ["field", "greenhouse", "pot experiment"]
+    },
+    "intervention": {
+      "treatment_variable": "BIOCHAR",
+      "treatment_keywords": ["biochar", "charcoal", "pyrolysis", "amendment"]
+    },
+    "comparison": {
+      "control_definition": "No biochar application (unamended control)",
+      "control_keywords": ["control", "CK", "unamended", "no biochar", "without biochar", "0 t/ha"]
+    }
+  },
+
+  "ground_truth": {
+    "dataset": "data/BiocharDS_V1.0.csv",
+    "dataset_encoding": "latin-1",
+    "dataset_sheet": null,
+    "reference_sheet": null,
+    "reference": "Scientific Data (2024) 11:57, DOI: 10.1038/s41597-023-02867-9",
+    "data_doi": "10.6084/m9.figshare.c.6622375.v1",
+    "total_observations": 2438,
+    "total_studies": 367,
+    "yield_observations": 1979,
+    "yield_studies": 295,
+    "gt_columns": {
+      "control_mean": "CropYield_CK",
+      "control_sd": "CropYield_CK_SD",
+      "control_n": "CropYield_CK_N",
+      "treatment_mean": "CropYield_T ",
+      "treatment_sd": "CropYield_T _SD",
+      "treatment_n": "CropYield_T _N",
+      "effect_ratio": "CropYield_RR",
+      "log_response_ratio": "CropYield_LNRR"
+    },
+    "subsample_strategy": "Select 40 studies with highest observation counts for manageable validation"
+  },
+
+  "models": {
+    "recon": "gemini-2.5-flash-lite",
+    "extract": "gemini-2.5-pro"
+  },
+
+  "gap_fill": {
+    "enabled": true,
+    "priority": "variance",
+    "max_papers": null
+  },
+
+  "variance_verification": {
+    "enabled": true,
+    "run_grim": true,
+    "run_grimmer": true,
+    "run_pvalue_triangulation": true,
+    "cv_bounds": [1, 100],
+    "flag_suspicious": true
+  },
+
+  "extraction": {
+    "max_tokens": 32768,
+    "prioritize_primary_outcome": true
+  }
+}

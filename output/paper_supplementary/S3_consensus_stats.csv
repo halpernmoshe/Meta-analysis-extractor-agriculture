@@ -1,0 +1,59 @@
+Dataset,Paper,Claude Obs,Kimi Obs,Gemini Obs,Consensus Obs,Both Agree,Vision,Tiebreaker,Other,Tiebreaker Used
+Loladze,001_Ma_2007,24,24,0,23,23,0,0,0,False
+Loladze,002_Ziska_1997,8,8,0,16,8,8,0,0,False
+Loladze,003_Baslam_2012,76,68,0,68,68,0,0,0,False
+Loladze,004_Finzi_2001,20,20,0,53,20,33,0,0,False
+Loladze,005_Niinemets_1999,10,10,0,29,10,19,0,0,False
+Loladze,006_Azam_2013,25,25,0,25,25,0,0,0,False
+Loladze,007_Woodin_1992,10,0,10,12,4,8,0,0,True
+Loladze,008_Campbell_2002,16,4,12,1,1,0,0,0,True
+Loladze,009_Barnes_1992,24,24,0,43,24,19,0,0,False
+Loladze,010_Li_2010,11,3,11,15,0,15,0,0,True
+Loladze,011_Huluka_1994,10,10,0,10,10,0,0,0,False
+Loladze,012_Wu_2004,4,4,0,4,4,0,0,0,False
+Loladze,013_Keutgen_2001,60,60,0,52,52,0,0,0,False
+Loladze,014_Lieffering_2004,0,0,0,6,3,0,0,3,False
+Loladze,015_Pleijel_2009,8,8,0,8,8,0,0,0,False
+Loladze,016_Fernando_2012a,10,0,10,4,4,0,0,0,True
+Loladze,017_Fangmeier_2002,0,31,62,134,31,103,0,0,True
+Loladze,018_Al-Rawahy_2013,21,21,0,21,21,0,0,0,False
+Loladze,019_Baxter_1994,15,15,0,15,15,0,0,0,False
+Loladze,020_Overdieck_1993,28,28,0,41,25,16,0,0,False
+Loladze,021_Wilsey_1994,22,26,0,40,21,19,0,0,False
+Loladze,022_Blank_2011,19,0,0,0,0,0,0,0,False
+Loladze,024_Nowak_2002,5,5,0,5,5,0,0,0,False
+Loladze,025_Guo_2011,0,0,0,27,27,0,0,0,False
+Loladze,026_Seneweera_1997,36,60,0,36,36,0,0,0,False
+Loladze,027_Peet_1986,15,0,15,16,8,8,0,0,True
+Loladze,028_Mishra_2011,18,10,18,3,3,0,0,0,True
+Loladze,029_Kuehny_1991,30,30,0,20,11,0,0,9,False
+Loladze,030_Wroblewitz_2013,40,40,0,39,39,0,0,0,False
+Loladze,031_Pal_2003,12,12,0,22,12,10,0,0,False
+Loladze,032_Kanowski_2001,0,0,0,16,0,0,0,16,False
+Loladze,033_Johnson_2003,36,30,0,60,30,30,0,0,False
+Loladze,034_Johnson_1997,44,44,0,160,44,116,0,0,False
+Loladze,035_Oksanen_2005,22,22,0,59,22,37,0,0,False
+Loladze,036_Schenk_1997,36,42,0,36,36,0,0,0,False
+Loladze,037_de_2000,4,0,4,3,1,2,0,0,True
+Loladze,038_Newbery_1995,30,30,0,30,30,0,0,0,False
+Loladze,039_Heagle_1993,12,0,0,75,0,75,0,0,False
+Loladze,040_Pfirrmann_1996,27,96,0,41,5,30,0,6,False
+Loladze,041_Mjwara_1996,9,0,54,44,2,42,0,0,True
+Loladze,042_Luomala_2005,35,16,55,121,21,100,0,0,True
+Loladze,043_Natali_2009,35,42,0,72,35,37,0,0,False
+Loladze,044_Housman_2012,30,30,0,52,30,22,0,0,False
+Loladze,046_Porter_1984,10,10,0,10,10,0,0,0,False
+Loladze,047_Rodenkirchen_2009,0,0,0,0,0,0,0,0,False
+Loladze,048_Khan_2013,20,22,0,19,19,0,0,0,False
+Loladze,049_Singh_2013,10,10,0,10,10,0,0,0,False
+Loladze,050_Polley_2011,0,27,0,36,0,10,0,26,False
+Loladze,051_Niu_2013,4,8,4,4,0,4,0,0,True
+Loladze,058_ONeill_1987,11,14,0,16,6,10,0,0,False
+Hui 2023,41598_2018_Article_25247,4,4,0,6,4,2,0,0,False
+Hui 2023,agronomy-10-01566-v2,16,0,16,22,3,19,0,0,True
+Hui 2023,fpls-08-00281,32,32,0,45,32,13,0,0,False
+Hui 2023,fpls-10-00426,10,10,0,15,10,5,0,0,False
+Hui 2023,HarevstPlus_Zouetal2012,68,68,0,101,68,33,0,0,False
+Hui 2023,pse_pse-201308-0003,40,40,0,62,40,22,0,0,False
+Hui 2023,s11104-015-2758-0,78,78,0,72,72,0,0,0,False
+Hui 2023,s11104-016-2815-3,48,72,0,115,48,67,0,0,False

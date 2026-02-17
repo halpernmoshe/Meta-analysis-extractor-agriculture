@@ -1,0 +1,11 @@
+{
+  "n": 163,
+  "mean_difference": 0.0645,
+  "sd_difference": 21.5279,
+  "ci_95_lower": -3.2653,
+  "ci_95_upper": 3.3942,
+  "loa_lower": -42.1302,
+  "loa_upper": 42.2592,
+  "proportional_bias_r": 0.3551,
+  "proportional_bias_p": 0.0
+}
