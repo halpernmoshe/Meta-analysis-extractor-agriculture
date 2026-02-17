@@ -1,6 +1,8 @@
 # Multi-Model AI Consensus Pipeline for Automated Data Extraction in Plant Science Meta-Analysis
 
-**Working Draft - Updated 2026-02-17**
+**Moshe Halpern**
+
+Institute of Soil, Water and Environmental Sciences, Agricultural Research Organization -- Volcani Center, Israel
 
 ---
 
@@ -515,27 +517,24 @@ The pipeline source code, configuration files, prompt templates, validation scri
 
 # Author Contributions (CRediT)
 
-[To be completed with author names]
-
-- **Conceptualization**: [Author 1]
-- **Methodology**: [Author 1]
-- **Software**: [Author 1]
-- **Validation**: [Author 1]
-- **Formal analysis**: [Author 1]
-- **Investigation**: [Author 1]
-- **Data curation**: [Author 1]
-- **Writing, original draft**: [Author 1]
-- **Writing, review and editing**: [Author 1, Author 2]
-- **Visualization**: [Author 1]
-- **Supervision**: [Author 2]
+- **Conceptualization**: Moshe Halpern
+- **Methodology**: Moshe Halpern
+- **Software**: Moshe Halpern
+- **Validation**: Moshe Halpern
+- **Formal analysis**: Moshe Halpern
+- **Investigation**: Moshe Halpern
+- **Data curation**: Moshe Halpern
+- **Writing, original draft**: Moshe Halpern
+- **Writing, review and editing**: Moshe Halpern
+- **Visualization**: Moshe Halpern
 
 # Conflict of Interest Statement
 
-The authors declare no conflicts of interest. The AI models used in the pipeline (Claude, Kimi, Gemini) are commercial products; the authors have no financial relationship with their providers beyond standard API usage fees.
+The author declares no conflicts of interest. The AI models used in the pipeline (Claude, Kimi, Gemini) are commercial products; the author has no financial relationship with their providers beyond standard API usage fees.
 
 # Funding
 
-[To be completed]
+No external funding was received for this research.
 
 
 ---
