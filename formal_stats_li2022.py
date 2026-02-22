@@ -20,15 +20,25 @@ import pandas as pd
 from scipy import stats
 
 BASE_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor")
-MATCHES_CSV = BASE_DIR / "output" / "li2022_consensus" / "validation_matches.csv"
+# Full-dataset stats (n=163, naive matching) — used for Table 1, Section 3.10 TOST/BA text
+MATCHES_CSV_FULL = BASE_DIR / "output" / "li2022_consensus" / "validation_matches.csv"
+# Clean-16 subset stats (n=200 pool, scale-invariant matching, filtered to 16 papers)
+MATCHES_CSV_CLEAN = BASE_DIR / "output" / "li2022_combined" / "validation_matches_improved.csv"
 OUT_DIR = BASE_DIR / "output" / "li2022_formal_stats"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def load_matches():
-    """Load matched observations from validation CSV."""
-    df = pd.read_csv(MATCHES_CSV)
+    """Load full-dataset matched observations (naive matching, n=163)."""
+    df = pd.read_csv(MATCHES_CSV_FULL)
     print(f"Loaded {len(df)} matched observations from {df['paper_id'].nunique()} papers")
+    return df
+
+
+def load_matches_clean():
+    """Load improved matched observations for clean-16 subset (n=200 pool)."""
+    df = pd.read_csv(MATCHES_CSV_CLEAN)
+    print(f"Loaded {len(df)} improved observations from {df['paper_id'].nunique()} papers (clean-16 source)")
     return df
 
 
@@ -172,10 +182,47 @@ def compute_icc(gt, ext):
     return result
 
 
-def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
-    """Bootstrap BCa confidence intervals for key metrics."""
+def bootstrap_ci(df_or_gt, ext=None, n_boot=10000, seed=42):
+    """Cluster-robust BCa bootstrap CIs, resampling papers not observations.
+
+    Accepts either:
+      bootstrap_ci(df)         where df has paper_id, gt_effect_pct, ext_effect_pct
+      bootstrap_ci(gt, ext)    legacy array interface (observation-level)
+    """
     rng = np.random.RandomState(seed)
-    n = len(gt)
+
+    if isinstance(df_or_gt, pd.DataFrame):
+        df_in = df_or_gt
+        papers = df_in['paper_id'].unique()
+        n_papers = len(papers)
+        gt = df_in['gt_effect_pct'].values
+        ext = df_in['ext_effect_pct'].values
+        n = n_papers  # for jackknife loop
+
+        def resample():
+            chosen = rng.choice(n_papers, n_papers, replace=True)
+            parts = [df_in[df_in['paper_id'] == papers[i]] for i in chosen]
+            sdf = pd.concat(parts)
+            return sdf['gt_effect_pct'].values, sdf['ext_effect_pct'].values
+
+        def jackknife_resample(leave_out_idx):
+            keep = np.delete(np.arange(n_papers), leave_out_idx)
+            parts = [df_in[df_in['paper_id'] == papers[i]] for i in keep]
+            sdf = pd.concat(parts)
+            return sdf['gt_effect_pct'].values, sdf['ext_effect_pct'].values
+
+        resampling_unit = f"paper ({n_papers} papers)"
+    else:
+        gt = np.asarray(df_or_gt)
+        ext = np.asarray(ext)
+        n = len(gt)
+        def resample():
+            idx = rng.choice(n, n, replace=True)
+            return gt[idx], ext[idx]
+        def jackknife_resample(leave_out_idx):
+            mask = np.arange(n) != leave_out_idx
+            return gt[mask], ext[mask]
+        resampling_unit = f"observation ({n} obs)"
 
     # Point estimates
     r_point = float(np.corrcoef(gt, ext)[0, 1])
@@ -183,8 +230,9 @@ def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
     mae_point = float(np.mean(diff))
 
     # Direction (for positive effects in Li 2022, both should be positive)
-    dir_match = np.sum(np.sign(gt) == np.sign(ext))
-    nonzero = np.sum(np.abs(gt) > 0.5)  # meaningful effects only
+    nonzero_mask = np.abs(gt) > 0.5  # meaningful effects only
+    dir_match = np.sum(np.sign(gt[nonzero_mask]) == np.sign(ext[nonzero_mask]))
+    nonzero = np.sum(nonzero_mask)
     dir_point = float(dir_match / max(nonzero, 1))
 
     effect_diff_point = float(abs(np.mean(ext) - np.mean(gt)))
@@ -198,8 +246,7 @@ def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
     boot_within10 = []
 
     for _ in range(n_boot):
-        idx = rng.choice(n, n, replace=True)
-        bg, be = gt[idx], ext[idx]
+        bg, be = resample()
 
         try:
             boot_r.append(float(np.corrcoef(bg, be)[0, 1]))
@@ -209,9 +256,9 @@ def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
         bd = np.abs(be - bg)
         boot_mae.append(float(np.mean(bd)))
 
-        nonz = np.sum(np.abs(bg) > 0.5)
-        dm = np.sum(np.sign(bg) == np.sign(be))
-        boot_dir.append(float(dm / max(nonz, 1)))
+        nonz_mask = np.abs(bg) > 0.5
+        dm = np.sum(np.sign(bg[nonz_mask]) == np.sign(be[nonz_mask]))
+        boot_dir.append(float(dm / max(np.sum(nonz_mask), 1)))
 
         boot_effect_diff.append(float(abs(np.mean(be) - np.mean(bg))))
         boot_within10.append(float(np.mean(bd <= 10)))
@@ -224,13 +271,10 @@ def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
         # Bias correction
         z0 = stats.norm.ppf(np.mean(boot_arr < point_est))
 
-        # Acceleration (jackknife)
+        # Acceleration (jackknife — leave one unit out)
         jack_vals = []
         for i in range(min(n, 200)):
-            mask = np.arange(n) != i
-            jg, je = gt[mask], ext[mask]
-            if 'r' in str(point_est):
-                pass
+            jg, je = jackknife_resample(i)
             jack_vals.append(np.mean(np.abs(je - jg)))
 
         jack_mean = np.mean(jack_vals)
@@ -306,6 +350,62 @@ def systematic_bias(gt, ext):
     return result
 
 
+# Papers excluded from the Structurally Concordant Subset (Clean-16)
+# These 12 paper IDs are excluded due to PDF/consensus failures, GT attribution
+# errors, outcome-category mismatches, aggregation-level mismatches, GT source
+# mismatches, or product-selection omissions. See Section 4.4 and Supplementary
+# Table S4 for detailed rationale for each exclusion.
+EXCLUDED_PAPER_IDS = [
+    # PDF/consensus failures (2)
+    "002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry",
+    "006_Alabdulla_2019_Effect of foliar application of humic ac",
+    # GT attribution / outcome-category errors (4)
+    "062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi",
+    "064_Godlewska_2016_The effect of growth regulator on dry ma",
+    "111_Mondal_2013_Foliar application of chitosan improves",
+    "120_Pohl_2019_The Eggplant Yield and Fruit Composition",
+    # Aggregation-level mismatches (3)
+    "091_Kocira_2018_Modeling biometric traits",
+    "090_Kocira_2020_Biochemical and economical effect of app",
+    "125_Procházka_2015_The possibilities of increasing the prod",
+    # Product-selection omission (1)
+    "088_Kocira_2019_Effect of amino acid biostimulant on the",
+    # GT source mismatches (2)
+    "095_Kuisma_1989_The effect of foliar application of seaw",
+    "124_Pramanick_2016_Effect of seaweed saps derived from two",
+]
+
+
+def run_analysis(df, label):
+    """Run full formal stats on a given DataFrame slice."""
+    gt = df['gt_effect_pct'].values
+    ext = df['ext_effect_pct'].values
+    n_papers = df['paper_id'].nunique()
+
+    print(f"\nBasic stats ({label}):")
+    print(f"  N obs: {len(gt)}, N papers: {n_papers}")
+    print(f"  GT mean effect: {np.mean(gt):.2f}%")
+    print(f"  Extracted mean effect: {np.mean(ext):.2f}%")
+    print(f"  Difference: {abs(np.mean(ext) - np.mean(gt)):.2f} pp")
+
+    ba = bland_altman(gt, ext)
+    for margin in [2, 3, 5, 10]:
+        tost_equivalence(gt, ext, margin=margin)
+    compute_icc(gt, ext)
+    print(f"\n=== Bootstrap CIs (10,000 BCa resamples, paper as resampling unit) ===")
+    boot = bootstrap_ci(df)
+    systematic_bias(gt, ext)
+
+    paper_gt = df.groupby('paper_id')['gt_effect_pct'].mean()
+    paper_ext = df.groupby('paper_id')['ext_effect_pct'].mean()
+    common = paper_gt.index.intersection(paper_ext.index)
+    if len(common) >= 5:
+        print(f"\n=== Paper-Level ICC ({len(common)} papers) ===")
+        compute_icc(paper_gt[common].values, paper_ext[common].values)
+
+    return ba, boot
+
+
 def main():
     print("=" * 60)
     print("FORMAL STATISTICS - Li 2022 (28 papers, biostimulant/yield)")
@@ -338,9 +438,9 @@ def main():
     with open(OUT_DIR / "icc_results.json", 'w') as f:
         json.dump(icc, f, indent=2)
 
-    # 4. Bootstrap CIs
-    print(f"\n=== Bootstrap CIs (10,000 BCa resamples) ===")
-    boot = bootstrap_ci(gt_effects, ext_effects)
+    # 4. Bootstrap CIs (cluster-robust, paper as resampling unit)
+    print(f"\n=== Bootstrap CIs (10,000 BCa resamples, paper as resampling unit) ===")
+    boot = bootstrap_ci(df)
     with open(OUT_DIR / "bootstrap_ci.json", 'w') as f:
         json.dump(boot, f, indent=2)
 
@@ -359,9 +459,9 @@ def main():
         with open(OUT_DIR / "paper_level_icc.json", 'w') as f:
             json.dump(paper_icc, f, indent=2)
 
-    # Summary
+    # Summary (full dataset)
     print("\n" + "=" * 60)
-    print("SUMMARY")
+    print("SUMMARY — Full Dataset")
     print("=" * 60)
     print(f"N observations: {len(gt_effects)}")
     print(f"N papers: {df['paper_id'].nunique()}")
@@ -375,6 +475,89 @@ def main():
     print(f"TOST (±5pp): p={tost_results['margin_5pp']['p_tost']:.6f} {'EQUIVALENT' if tost_results['margin_5pp']['equivalent'] else 'NOT EQUIVALENT'}")
     print(f"ICC(3,1): {icc['icc_31']:.3f}")
     print(f"Cohen's d: {bias['cohens_d']:.4f}")
+
+    # ─── STRUCTURALLY CONCORDANT SUBSET (Clean papers only) ──────────────────────
+    print("\n" + "=" * 60)
+    print("FORMAL STATISTICS — Structurally Concordant Subset")
+    print("(Excluding 12 papers with GT/PDF provenance issues)")
+    print("=" * 60)
+
+    # Load the improved CSV (scale-invariant matching) for the clean-16 subset
+    df_c_pool = load_matches_clean()
+
+    # Fuzzy match exclusion IDs (paper_ids may be truncated in CSV)
+    def is_excluded(pid):
+        for excl in EXCLUDED_PAPER_IDS:
+            # Match by prefix (first 30 chars covers paper number + author + year)
+            if pid.startswith(excl[:30]) or excl.startswith(pid[:30]):
+                return True
+        return False
+
+    df_clean = df_c_pool[~df_c_pool['paper_id'].apply(is_excluded)].copy()
+    n_clean_papers = df_clean['paper_id'].nunique()
+    n_clean_obs = len(df_clean)
+
+    print(f"\nClean subset: {n_clean_obs} observations from {n_clean_papers} papers")
+    print(f"Excluded papers: {df_c_pool['paper_id'].nunique() - n_clean_papers}")
+
+    if n_clean_obs < 10:
+        print("Too few observations for formal stats — check EXCLUDED_PAPER_IDS list")
+    else:
+        gt_c = df_clean['gt_effect_pct'].values
+        ext_c = df_clean['ext_effect_pct'].values
+
+        # Bland-Altman
+        ba_c = bland_altman(gt_c, ext_c)
+        with open(OUT_DIR / "bland_altman_clean.json", 'w') as f:
+            json.dump(ba_c, f, indent=2)
+
+        # TOST
+        tost_c = {}
+        for margin in [1, 2, 3, 5]:
+            tost_c[f"margin_{margin}pp"] = tost_equivalence(gt_c, ext_c, margin=margin)
+        with open(OUT_DIR / "tost_clean.json", 'w') as f:
+            json.dump(tost_c, f, indent=2)
+
+        # ICC
+        icc_c = compute_icc(gt_c, ext_c)
+        with open(OUT_DIR / "icc_clean.json", 'w') as f:
+            json.dump(icc_c, f, indent=2)
+
+        # Bootstrap
+        print(f"\n=== Bootstrap CIs (10,000 BCa resamples, paper as resampling unit) ===")
+        boot_c = bootstrap_ci(df_clean)
+        with open(OUT_DIR / "bootstrap_clean.json", 'w') as f:
+            json.dump(boot_c, f, indent=2)
+
+        # Systematic bias
+        bias_c = systematic_bias(gt_c, ext_c)
+        with open(OUT_DIR / "systematic_bias_clean.json", 'w') as f:
+            json.dump(bias_c, f, indent=2)
+
+        # Paper-level ICC for clean subset
+        pg_c = df_clean.groupby('paper_id')['gt_effect_pct'].mean()
+        pe_c = df_clean.groupby('paper_id')['ext_effect_pct'].mean()
+        comm_c = pg_c.index.intersection(pe_c.index)
+        if len(comm_c) >= 5:
+            print(f"\n=== Paper-Level ICC ({len(comm_c)} papers, clean subset) ===")
+            compute_icc(pg_c[comm_c].values, pe_c[comm_c].values)
+
+        # Direction agreement (|gt| > 0.5 filter)
+        nonzero = np.abs(gt_c) > 0.5
+        dir_agree = np.mean(np.sign(gt_c[nonzero]) == np.sign(ext_c[nonzero])) * 100
+
+        print("\n" + "=" * 60)
+        print("SUMMARY — Structurally Concordant Subset")
+        print("=" * 60)
+        print(f"N observations: {n_clean_obs}")
+        print(f"N papers: {n_clean_papers}")
+        print(f"Pearson r: {np.corrcoef(gt_c, ext_c)[0,1]:.4f}")
+        print(f"MAE: {np.mean(np.abs(ext_c - gt_c)):.4f} pp")
+        print(f"Median AE: {np.median(np.abs(ext_c - gt_c)):.4f} pp")
+        print(f"Direction agreement (|gt|>0.5): {dir_agree:.1f}%")
+        print(f"Overall effect diff: {abs(np.mean(ext_c) - np.mean(gt_c)):.4f} pp")
+        print(f"ICC(3,1): {icc_c['icc_31']:.4f}")
+        print(f"Cohen's d: {bias_c['cohens_d']:.4f}")
 
     print(f"\nAll results saved to {OUT_DIR}")
 

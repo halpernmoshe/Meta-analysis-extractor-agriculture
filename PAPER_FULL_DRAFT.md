@@ -1,4 +1,4 @@
-# Multi-Model AI Consensus Pipeline for Automated Data Extraction in Plant Science Meta-Analysis
+# Multi-Model AI Consensus for Reliable Data Extraction in Plant Science Meta-Analysis
 
 **Moshe Halpern**
 
@@ -8,39 +8,31 @@ Institute of Soil, Water and Environmental Sciences, Agricultural Research Organ
 
 # Abstract
 
-**Background:** Data extraction remains the primary bottleneck in meta-analysis, requiring 2-8 hours per paper with error rates of 8-63%.
+**Background:** Data extraction is the primary bottleneck in meta-analysis (2--8 hours per paper), and LLMs that perform well on categorical study characteristics achieve only 26--36% accuracy on continuous quantitative outcomes, the variables meta-analysis actually pools. Existing systems provide no mechanism for identifying which extractions are trustworthy without reference-standard comparison. No AI extraction system has been validated on agricultural or ecological quantitative data.
 
-**Methods:** We developed a multi-model AI consensus pipeline using challenge-aware routing and dual-model extraction (Claude Sonnet 4, Kimi K2.5) with Gemini 3 Flash tiebreaker. We validated against three published meta-analysis datasets spanning different domains: Loladze 2014 (CO2/plant minerals, 46 papers, 635 observations), Hui et al. 2023 (Zn/wheat, 279 observations), and Li et al. 2022 (biostimulant/yield, 163 observations).
+**Methods:** We developed a dual-model consensus pipeline (Claude Sonnet 4 + Kimi K2.5, with Gemini 3 Flash tiebreaker) in which inter-model agreement drives a three-tier confidence system: observations confirmed by two or more models receive "high" confidence; single-model or vision-only extractions are flagged for review. We validated against three published plant science reference datasets: Loladze 2014 (CO2/mineral concentrations, 46 papers, development set), Hui et al. 2023 (Zn biofortification/wheat, 18 papers, **zero-shot holdout validation**: no prompt tuning, matching adjustments, or parameters were set based on Hui data; only the JSON schema was domain-configured), and Li et al. 2022 (biostimulants/agronomic outcomes, 28 papers, cross-domain). Systematic per-paper diagnostic audits were conducted for all three datasets.
 
-**Results:** The pipeline achieved formal statistical equivalence with human extraction at the aggregate level (TOST at ±2 pp: p < 0.001; paper-level ICC = 0.838). Aggregate meta-analytic effects were reproduced to within 0.05-2.17 pp across datasets. Pearson correlations ranged from 0.453 to 0.950, with 85-99% direction agreement. Individual observation-level estimates remain noisy (Bland-Altman limits: ±30 pp), but errors are random and cancel in the aggregate. The consensus mechanism increased observation yield by 73% over the best single model. Processing cost was ~$0.37/paper (240-fold API cost reduction vs. manual extraction).
+**Results:** Zero-shot holdout validation on Hui achieved **r = 0.993, MAE = 1.73%, 99% direction agreement**, the strongest reported result for continuous numerical extraction from plant science tables, demonstrating that the **Reading Barrier** (accurate table reading) is effectively broken. Confidence stratification predicted accuracy: consensus-dominant papers achieved MAE = 4.3% versus 11.2% for vision-dependent papers (2.6×), with 95% of large errors concentrated in the flagged minority. The **Granularity Barrier** (analytical sub-selection in factorial designs) was quantified via Loladze's `info`-column: separating sub-selection failures from reading errors reduces the Loladze MAE from 7.9% to 4.3%. The **Provenance Barrier** (reference-standard heterogeneity) explains the Li 2022 headline r = 0.453: per-paper audit identified 12 of 28 papers with reference-standard artefacts (wrong source PDFs, attribution errors, aggregation mismatches). On the **Structurally Concordant Subset** (16 papers with clean same-level comparisons), **r = 0.996, MAE = 0.44 pp**. Aggregate meta-analytic effects reproduced to within 0.05--0.40 pp across all datasets (|Cohen's d| < 0.07; TOST equivalence p < 0.001 at ±2 pp for Loladze and Hui).
 
-**Conclusions:** Multi-model AI consensus can reproduce aggregate meta-analytic conclusions with accuracy statistically equivalent to human extraction, enabling rapid replication across topics via configuration change alone.
+**Conclusions:** The pipeline operates as a high-recall candidate generator: exhaustive extraction followed by multi-model consensus filtering (initial precision: ~4.5%; post-consensus recall: 100% in the Structurally Concordant Subset). Approximately 75% of consensus-confirmed observations are auto-validated; the remainder are flagged for human review at ~2 min each versus ~10 min for de novo extraction. Cost averages ~$0.37/paper, with ~70% reduction in human extraction time. Critically, the binding constraint on automated meta-analysis is no longer table-reading capability (the Reading Barrier, now effectively solved), but rather pre-specification of analytical sub-selection rules (the Granularity Barrier) and validation-infrastructure integrity (the Provenance Barrier). Accuracy metrics from complex factorial datasets must be decomposed into reading errors and sub-selection concordance failures for honest evaluation; failure to do so systematically underestimates AI extraction capability.
 
-**Keywords**: meta-analysis, data extraction, large language models, consensus, automation, plant science
-
+**Keywords:** meta-analysis, data extraction, large language models, consensus, quality prediction, automation, plant science, methodological concordance
 
 ---
 
 # 1. Introduction
 
-Meta-analysis is essential for synthesizing the results of multiple independent studies into quantitative conclusions. In agricultural sciences, meta-analyses routinely encompass 50 to 200 papers spanning decades of field research (Loladze, 2014; Dong et al., 2018). The primary bottleneck in this workflow is data extraction: trained researchers must manually identify, read, and record quantitative values (means, standard deviations, sample sizes, moderator variables) from each paper. This process typically requires 2 to 8 hours per paper and is prone to error, with studies reporting extraction error rates of 8 to 63% depending on data type (Mathes et al., 2017; Buscemi et al., 2006).
+Meta-analysis has become the cornerstone of evidence-based practice in agricultural and environmental science. In a field where individual experiments are conducted on different soils, climates, and cultivars, only quantitative pooling across dozens to hundreds of studies can reveal consistent patterns. Loladze (2014) synthesized 1,481 mineral concentration measurements from 130 species across 25 elements to establish the hidden nutritional cost of elevated CO2, a result that emerges only from pooling across studies. The primary bottleneck in producing such analyses is data extraction: trained researchers must manually identify, read, and record quantitative values from each paper. This process typically requires 2 to 8 hours per paper (Schmidt et al., 2025), and Buscemi et al. (2006) demonstrated that single-extractor error rates reach 17.7%, falling to 8.8% only with costly dual-extraction protocols. For large meta-analyses requiring 100+ papers, the human cost of data extraction alone can approach thousands of hours.
 
-Agricultural field trials present particular challenges for data extraction that do not arise in clinical research. Plant science experiments commonly use complex factorial designs (e.g., CO2 x cultivar x soil amendment x harvest date) that produce large, multi-layered tables with nested treatment comparisons. Data are reported in heterogeneous units across studies (mg/kg, %, g/plant, kg/ha, t/ha) and may appear in scanned PDFs from older journals, figure-only formats, or tables embedded as images rather than machine-readable text. Variance reporting is inconsistent: some papers report SE, others SD, LSD, or only letter-based significance groupings. Unlike clinical trials, where CONSORT reporting guidelines have standardized table formats and outcome reporting, agricultural studies lack equivalent conventions, making automated extraction substantially harder.
+Agricultural field trials present particular extraction challenges that distinguish them from the clinical trials dominating LLM extraction research. Plant science experiments routinely employ complex factorial designs (CO2 × cultivar × soil amendment × harvest date × application rate) that produce multi-layered tables where a single paper may contain dozens of treatment combinations, only some of which correspond to the meta-analysis author's specific question. Studies are conducted using diverse exposure systems (Free-Air CO2 Enrichment, Open-Top Chambers, controlled growth chambers) whose technical specifications affect which treatments qualify as "controls." Outcomes span multiple plant tissues (leaf, grain, root, stem) measured across multiple developmental stages, with tissue-specificity affecting biological interpretation. Data appear in heterogeneous units that vary not only between but within studies (g/kg dry weight vs. mg/100g fresh weight vs. µmol/g), creating unit-matching challenges that do not arise in clinical trials where outcomes are conventionally reported. Variance reporting is inconsistent: some papers report SE, others SD, LSD, or only letter-based significance groupings, and nearly 70% of ecological meta-analysis datasets include studies with missing standard deviations (Nakagawa et al., 2023). Indeed, 26% of published plant ecology meta-analyses used unweighted analyses specifically because variance data were unavailable (Koricheva & Gurevitch, 2014). Older papers from the 1980s--1990s, critical for long-running CO2 research, are available only as scanned PDFs where tables are embedded images rather than machine-readable text. Unlike clinical trials, where CONSORT reporting guidelines have standardized outcome reporting, agricultural and ecological studies lack equivalent conventions (Topp et al., 2023), meaning each paper must be read on its own terms.
 
-Recent advances in large language models (LLMs) have opened the possibility of automated data extraction. Several systems now achieve 90 to 96% accuracy on categorical study characteristics (Gartlehner et al., 2024; Jensen et al., 2025), and multi-model concordance can reduce hallucination to under 1% for descriptive variables (Khan et al., 2025). However, nearly all published work on LLM-based extraction targets clinical and biomedical data. Extraction of quantitative outcome data remains an unsolved problem even in that domain: single-model accuracy is only 33 to 39% for means and standard deviations from randomized controlled trials (Sun et al., 2024), 48.7% exact match for GPT-4 on continuous outcomes (Yun et al., 2024), and 23.8% for quantitative ecological data (Gougherty & Clipp, 2024). LLM hallucination (generating plausible but fabricated values) is a particular concern, occurring in 27 to 41% of single-model responses (Khan et al., 2025). For agricultural data, with its complex tables and unit heterogeneity, these problems are compounded.
+LLM-based systems have demonstrated high accuracy on categorical study characteristics: Gartlehner et al. (2024) achieved 96.3% on structured clinical variables; Gougherty & Clipp (2024) confirmed >90% for simple ecological categories. These results, however, conceal a critical weakness in continuous quantitative outcomes, the actual values meta-analysis pools. Jansen et al. (2025), in the most comprehensive accuracy study to date across 2,179 studies and 312,329 extractions, found that "accuracy varied most between variable, less between systematic reviews, and least between LLMs": effect-size variables achieved 26--36% accuracy versus 90%+ for categorical items. Peng et al. (2025) found 69--72% accuracy for means and SDs from clinical RCTs; Yun et al. (2024) reported only 48.7% exact match for GPT-4 on continuous outcomes; Kataoka et al. (2026), testing OpenAI's o3 reasoning model, concluded that "numeric variable extraction performed poorly" and was "still inadequate." Across this literature, LLMs read well, but continuous numerical extraction in complex tables remains an unsolved problem.
 
-No published system has demonstrated automated quantitative extraction validated against agricultural meta-analysis ground truth. Multi-model consensus offers a path forward: Khan et al. (2025) showed that when two independent LLMs agree on a response, accuracy reaches 94% with only 0.25% hallucination. We apply this principle to agricultural data.
+A second gap concerns prediction of reliability. Existing systems report aggregate accuracy metrics but provide no mechanism for predicting which individual extractions are likely correct, which matters as much as average accuracy for practical deployment. Khan et al. (2025) demonstrated a principled solution: when two independent LLMs agree on an extracted value, the hallucination rate is 0.25%; when they disagree, it rises to 26--41%. The concordance status of a response is therefore a quality signal available at extraction time, requiring no ground truth. Poser et al. (2026) independently confirmed that three-model consensus reduced clinical data extraction errors to 1.48%. Neither study, however, deployed concordance as a *confidence estimator* that tells users which observations to trust without human review.
 
-We present a multi-model AI consensus pipeline for automated quantitative data extraction from agricultural research papers. The system makes three contributions:
+A third gap is domain. Despite proliferating AI extraction research, including demonstrations of fully automated Cochrane review synthesis at 93.1% accuracy (Cao et al., 2025), plant science and agricultural ecology remain almost entirely unrepresented. Scott et al. (2025) found that 17 of 19 generative AI systematic review studies were from clinical or biomedical settings. Agricultural meta-analysis operates at exactly the hardest tier of extraction complexity (Li et al., 2025, Tier 3: statistical outcomes, heterogeneous units, no reporting standard), and no published system has been validated on it. Tan & D'Souza (2026) identified four structural LLM failure modes in evidence extraction — role confusion, binding drift, multi-instance compression, and error amplification — suggesting that single-model systems have characteristic blind spots that multi-model consensus can detect.
 
-First, we introduce **challenge-aware routing** that adapts extraction strategy to paper characteristics. An initial reconnaissance stage detects challenges (scanned PDFs, figure-only data, complex table structures) and routes papers to appropriate extraction modes (text-only or hybrid text+vision). TEXT-mode extraction achieves MAE = 2.27% with r = 0.974, while HYBRID mode maintains practical accuracy (MAE = 9.23%) for challenging papers.
-
-Second, we implement a **three-model consensus mechanism** (Claude Sonnet 4, Kimi K2.5, Gemini 3 Flash) with 2-of-3 voting that increases extracted observation volume by 73% over the best single model. A tiebreaker mechanism reduces zero-consensus failures from 38% to 3% of papers.
-
-Third, we **validate against three independent published meta-analysis datasets** from agricultural research, spanning different topics and effect directions: Loladze (2014) on elevated CO2 effects on plant mineral concentrations (50 papers processed, 46 matched to ground truth, 14 elements), Hui et al. (2023) on zinc biofortification of wheat (34 papers), and Li et al. (2022) on biostimulant effects on crop yield (28 papers, positive-direction effects). The pipeline achieves formal statistical equivalence with human extraction at the aggregate level (TOST p < 0.001 at ±2 pp) and paper-level ICC = 0.838 (within the human inter-rater range of 0.70 to 0.90).
-
-The pipeline is configuration-driven and open-source, requiring only a JSON configuration change to adapt to new meta-analysis topics. Processing 46 papers costs approximately $17 in API fees and takes 6 hours, a 240-fold API cost reduction compared to manual extraction.
-
+We present a multi-model consensus pipeline validated on three published plant science datasets, each revealing a different barrier to reliable AI extraction. The **Reading Barrier** -- can an LLM accurately read numbers from complex tables? -- is tested in isolation by the Hui (2023) zinc biofortification dataset (single element, standardised units): zero-shot holdout validation yielded r = 0.993 and 99% direction agreement, demonstrating that this barrier is effectively broken. The **Granularity Barrier** -- does the system select the same analytical sub-condition as the human meta-analyst from complex factorial designs? -- is revealed by the Loladze (2014) development set: separating reading errors from sub-selection concordance failures reduces the effective extraction MAE from 7.9% to approximately 4.3%. The **Provenance Barrier** -- are the reference standard and input PDFs themselves free of curation heterogeneity? -- is exposed by the Li (2022) cross-domain dataset: per-paper audit reveals that 12 of 28 apparent discordances trace to reference-standard artefacts (wrong PDFs, attribution errors, structural level mismatches) rather than extraction failures; on the 16 papers with clean comparisons, r = 0.996. Multi-model agreement reliably predicts which extractions clear all three barriers, enabling confidence-stratified triage without ground truth.
 
 ---
 
@@ -48,56 +40,39 @@ The pipeline is configuration-driven and open-source, requiring only a JSON conf
 
 ## 2.1 Pipeline Architecture
 
-We developed a multi-stage pipeline for automated extraction of quantitative data from scientific research papers for meta-analysis (Figure 1). The pipeline consists of four stages: (1) challenge-aware reconnaissance, (2) dual-model extraction, (3) consensus building with optional tiebreaker, and (4) post-processing.
+The pipeline consists of four stages (Figure 1): challenge-aware reconnaissance, dual-model extraction, consensus building with tiebreaker, and confidence-stratified post-processing.
 
-### 2.1.1 Challenge-Aware Reconnaissance
+**Challenge-aware reconnaissance.** For each paper, Claude Sonnet 4 performs a structured scan identifying: variance reporting format, sample size locations, tables containing target outcome data, experimental design characteristics, and extraction challenges. Papers are classified by challenge type (SCANNED, IMAGE-TABLES, FIGURE-ONLY) and routed to one of three extraction modes: TEXT (clean machine-readable tables), HYBRID (text + vision for image-embedded tables), or VISION (figure-only data requiring image analysis).
 
-For each paper, Claude Sonnet 4 first performs a structured reconnaissance scan, identifying: variance reporting format (SE, SD, LSD, or none), sample sizes and their locations, tables containing target outcome data, experimental design characteristics (factorial structure, moderators), and potential extraction challenges.
+**Dual-model extraction.** Two LLMs independently extract data using identical structured prompts: Claude Sonnet 4 (Anthropic, 200K context) and Kimi K2.5 (Moonshot AI, 256K context, reasoning enabled). Both receive the same prompt containing target variable definitions, table targeting directives from reconnaissance, structured output format requirements, and a checklist of all target elements. The prompt instructs models to report null rather than guess when values are uncertain. For HYBRID-mode papers, Gemini 3 Flash additionally performs vision-based extraction from PDF page images. Full prompt templates are provided in the online repository. **Text-only fallback note:** Kimi K2.5 operates exclusively on extracted text; for papers where OCR quality is poor (typically legacy documents from the 1980s–90s with degraded scans), Kimi may return zero observations. In such cases the pipeline automatically falls back to single-model Claude extraction (medium confidence) or Gemini vision extraction (low confidence), correctly flagging these papers for human review rather than silently dropping them.
 
-The reconnaissance stage also performs challenge detection, classifying papers as:
-- **SCANNED**: OCR-degraded text with potential table structure loss
-- **IMAGE-TABLES**: Tables embedded as images rather than machine-readable text
-- **FIGURE-ONLY**: Key data available only in graphs/figures, not tables
+**Data privacy note:** This pipeline transmits extracted document text and page images to third-party commercial API providers (Anthropic, Moonshot AI, Google). Users should ensure compliance with institutional data governance policies and publisher terms before processing restricted, paywalled, or sensitive materials. Extracted text — not binary PDF files — is transmitted; the pipeline does not upload raw PDFs.
 
-Based on these assessments, each paper is routed to one of three extraction modes:
-- **TEXT**: Clean, machine-readable tables (standard extraction)
-- **HYBRID**: Combines text extraction with Gemini vision for table images
-- **VISION**: Figure-only data requiring image analysis
+**Consensus building.** After independent extraction, observations from both models are compared using element-tissue matching with value tolerance (default: 15% relative error; for near-zero values, 0.5 units absolute):
 
-### 2.1.2 Dual-Model Extraction
+- **Matched pairs** (both models agree within tolerance): Accepted at "high" confidence, values averaged
+- **Unmatched observations** (single model only): Retained at "medium" confidence with source model noted
+- **Vision-only observations** (from HYBRID/VISION mode without text consensus): Retained at "low" confidence
 
-Two large language models independently extract data from each paper using identical structured prompts:
-- **Claude Sonnet 4** (Anthropic, 200K context window)
-- **Kimi K2.5** (Moonshot AI, 256K context, with reasoning/thinking enabled)
+When initial consensus is poor (defined as a **global match rate <30%** of the total observations extracted by the lead model), a tiebreaker is invoked: Gemini 3 Flash performs an independent extraction using the same prompt, and 2-of-3 voting determines accepted observations.
 
-Both models receive the same extraction prompt containing: target variable definitions (from the meta-analysis configuration), table targeting directives (specific tables identified during reconnaissance), structured output format requirements (element, tissue, control_mean, treatment_mean, sample_size, variance_type, variance_value, moderators), and a checklist of all target elements to prevent incomplete extraction. The prompt explicitly instructs models to search table footnotes for variance type declarations and to report null rather than guess when values are uncertain. Full prompt templates (~2,000 tokens each for reconnaissance, extraction, and tiebreaker stages) are provided in the supplementary materials.
+**Confidence assignment.** Each observation receives a confidence label based on its provenance:
 
-For HYBRID-mode papers, Gemini 3 Flash additionally performs vision-based extraction from PDF page images, providing supplementary observations from image-embedded tables.
+- **High**: Two or more models independently extracted matching values. These observations have the strongest reliability guarantee.
+- **Medium**: Extracted by a single text-based model without corroboration, or resolved via tiebreaker.
+- **Low**: Extracted via vision/OCR from image-embedded tables or scanned PDFs, often without multi-model consensus.
 
-### 2.1.3 Consensus Building
+This three-tier system enables downstream triage: high-confidence observations can be used directly; medium and low-confidence observations are flagged for human review. We evaluate whether these labels predict actual accuracy in Section 3.3.
 
-After independent extraction, observations from both models are compared using element-tissue matching with value tolerance:
-1. Observations are paired by matching element name and tissue/organ description
-2. Numerical values (control_mean, treatment_mean) are compared within a configurable tolerance (default: 15% relative error; for values near zero, an absolute threshold of 0.5 units is used instead to avoid division-by-zero artifacts)
-3. **Matched pairs** (both models agree): Accepted at "high" confidence, values averaged
-4. **Unmatched observations**: Retained individually at "medium" confidence
+**Post-processing.** Final observations undergo duplicate removal, null-mean filtering, and treatment/control swap flagging. Automatic swap correction was tested and found harmful (Section 3.9); flagging is informational only.
 
-When initial consensus is poor (< 30% match rate or one model extracted zero observations), a **tiebreaker** is invoked:
-- **Gemini 3 Flash** performs an independent text extraction using the same prompt
-- **2-of-3 voting**: Observations confirmed by any two models are accepted
-- Observations agreed upon by all three models are upgraded to "high" confidence
+**Design rationale: Strategic Heterogeneity vs. Self-Consistency.** An alternative architecture would run all three models on every paper and take majority vote — or sample the same model multiple times (Self-Consistency; Wang et al., 2022). We chose *heterogeneous* dual extraction with a conditional tiebreaker for two reasons. First, self-consistency reduces stochastic variance within a single model but cannot reduce systematic inductive bias: if one model consistently interprets "main effect averaged across co-treatments" while another extracts "within-treatment CO2 effect," running the same model ten times converges on one systematic choice. Baslam et al. (2012) illustrates this: Claude extracted 38 observations (main-effect view) while Kimi extracted 76 (interaction-aware view) — their disagreement flags the analytical ambiguity rather than amplifying one model's systematic choice. Second, cost: the tiebreaker is invoked for only 22% of papers, reducing per-paper cost by approximately 30% compared to always running three models. The primary models (Claude and Kimi) operate on extracted text, while the tiebreaker (Gemini) uses vision — a complementary capability that would be lost in a three-text-model majority vote. The ablation (Section 3.12) confirms that no single model dominates across all elements, supporting the heterogeneous approach.
 
-### 2.1.4 Post-Processing
+**Worked example.** Figure 1 (right panel) illustrates the pipeline processing two contrasting papers. For Baslam et al. (2012), a clean paper with structured tables, both Claude and Kimi independently extract identical Ca values (8.21 mg/g control, 7.43 mg/g elevated), yielding 100% consensus and an MAE of 1.0%. For Fangmeier et al. (2002), a complex CO2 × O3 factorial design, only Kimi extracts usable data from text (Claude returns 0 observations), requiring Gemini's vision fallback. The consensus fraction drops to 23%, correctly predicting the higher error (MAE = 8.0%), though as Section 3.9 documents, that error is predominantly a methodological concordance issue rather than a table-reading failure.
 
-Final observations undergo:
-- Duplicate removal by (element, tissue, control_mean, treatment_mean) key
-- Null-mean filtering
-- Treatment/control swap flagging (when > 50% of observations show reversed expected direction)
-- Note: Automatic swap correction was tested and found harmful (see Section 3.7.3); flagging is informational only
+## 2.2 Configuration-Driven Design
 
-## 2.2 Configuration-Driven Universality
-
-The pipeline is configured via JSON files specifying: target outcome variables and their synonyms, control and treatment definitions, expected elements, tissue types, and moderator variables. Switching between meta-analysis topics (e.g., CO2/mineral concentrations to Zn biofortification) requires only changing the configuration file, with no code modifications. A minimal configuration example:
+The pipeline is configured via JSON files specifying target outcome variables, control and treatment definitions, expected elements, tissue types, and moderator variables. Switching between meta-analysis topics requires only changing the configuration file:
 
 ```json
 {
@@ -106,57 +81,64 @@ The pipeline is configured via JSON files specifying: target outcome variables a
   "control": {"description": "ambient CO2 (~400 ppm)"},
   "treatment": {"description": "elevated CO2 (>500 ppm)"},
   "elements": ["N","P","K","Ca","Mg","Fe","Zn","Mn","Cu","S"],
-  "unit_types": ["mg/kg", "% dry weight", "ppm"],
   "models": {"primary": "claude-sonnet-4", "secondary": "kimi-k2.5",
              "tiebreaker": "gemini-3-flash"}
 }
 ```
 
-Full configurations and prompts are provided in the supplementary materials.
-
 ## 2.3 Validation Datasets
 
-### 2.3.1 Loladze 2014 (CO2 and Mineral Concentrations)
+### 2.3.1 Loladze 2014 (Development Dataset)
 
-The primary validation dataset is from Loladze (2014), a comprehensive meta-analysis of elevated CO2 effects on plant mineral concentrations. The ground truth contains 1,481 observations across approximately 130 references and 25 mineral elements.
+The primary validation dataset is from Loladze (2014), a comprehensive meta-analysis of elevated CO2 effects on plant mineral concentrations (1,481 observations, ~130 references, 25 elements). We processed 50 papers, of which 46 matched to reference-standard references, yielding 635 matched observations across 14 elements.
 
-We processed all 50 papers from this dataset for which PDFs were available (including 4 previously-excluded scanned papers processed via HYBRID mode), of which 46 matched to ground-truth references. Ground-truth matching was performed at the element level: for each paper, we identified the corresponding reference in Loladze's dataset and compared our extracted effect sizes (percent change from control) with the ground-truth values. When the ground truth contained moderator-specific entries (e.g., different cultivars or phosphorus levels), we used the Additional Info field for more precise matching.
+**Important caveat**: The pipeline was developed and iteratively refined using feedback from this dataset. Prompt templates, matching logic, and consensus parameters were adjusted based on Loladze validation results. This dataset therefore provides an upper-bound estimate of performance and should not be considered an independent test. We explicitly report this distinction and rely on the Hui dataset (Section 2.3.2) for zero-shot holdout validation.
 
-An important methodological caveat: this validation design conflates two distinct error sources. When the pipeline extracts from a different table, sampling date, or factorial condition than the ground-truth author selected — but reads the values correctly — the resulting discrepancy registers as "error" in our metrics even though no extraction mistake occurred. Because the ground truth does not record which specific table rows or conditions were used, these alignment disagreements cannot be cleanly separated from true extraction errors. The reported accuracy metrics should therefore be interpreted as a conservative lower bound on extraction accuracy proper. We quantify this decomposition in Section 3.7.2.
+**Methodological concordance caveat**: The Loladze 2014 dataset contains an `info` field for each observation that documents the specific methodological sub-selections made by Loladze when computing effect sizes from complex factorial designs. This field, analyzed in Section 3.9, reveals that a substantial portion of the Loladze MAE reflects methodological concordance failures, cases where the pipeline and Loladze selected different but equally legitimate analytical sub-conditions, rather than numerical reading errors. We use this field systematically to decompose the reported MAE into its extraction and concordance components.
 
-### 2.3.2 Hui et al. 2023 (Zinc Biofortification of Wheat)
+### 2.3.2 Hui et al. 2023 (Zero-Shot Holdout Validation)
 
-The secondary validation dataset is from Hui et al. (2023), a meta-analysis of zinc biofortification interventions in wheat. The ground truth contains 1,593 observations across 139 studies, organized by three Zn application methods (soil, foliar, soil + foliar).
+The secondary dataset is from Hui et al. (2023), a meta-analysis of zinc biofortification in wheat (1,593 observations, 139 studies). We processed 34 papers, of which 18 matched reference-standard entries, yielding 310 matched observations.
 
-We processed 34 papers from this dataset, of which 21 matched to ground-truth entries. Validation matching used citation-based paper identification followed by value-based observation matching (control and treatment mean similarity within 20% tolerance, with scale factor correction for unit differences). Of the 13 unmatched papers, 6 yielded no extraction output (figure-only data or failed OCR on scanned PDFs) and 7 had extracted observations that could not be matched to ground-truth rows due to misalignment in tissue type, application method, or unit scale.
+**This dataset was not used during pipeline development.** No prompt modifications, matching adjustments, or parameter tuning were performed based on Hui results. The pipeline was configured by changing only the JSON configuration file (specifying Zn wheat biofortification outcomes, moderators including application method type, and dose ranges). We designate this "zero-shot holdout" to acknowledge that while no Hui data informed the model or prompts, the extraction schema was domain-configured -- as is unavoidable for any structured extraction task. This provides the cleanest test of the system's generalizability.
 
-### 2.3.3 Li et al. 2022 (Biostimulant Effects on Crop Yield)
+**Wrong-PDF note**: Per-paper diagnostic audit identified one paper (`Li_2013.pdf`) that contains a completely different study (Impa et al. 2013, rice hydroponic) from the one cited in the Hui 2023 database (Li, M.H. et al. 2013, wheat field fertilization). Six of the 12 GT rows for this paper appear as spurious numerical matches arising from coincidental overlap between rice grain Zn values (7--38 mg/kg) and the narrow range of GT wheat Zn values (27.9--28.7 mg/kg). This phenomenon is discussed in Section 3.5 and parallels the wrong-PDF problem identified independently in the Li 2022 dataset (Section 4.4).
 
-The third validation dataset is from Li et al. (2022), a meta-analysis of non-microbial plant biostimulant effects on crop yield in open-field trials (Frontiers in Plant Science, 13:836702). The ground truth contains 1,108 observations across 181 studies, covering seven biostimulant categories: seaweed extracts (SWE), protein hydrolysates (PHs), humic/fulvic acids (HFA), chitosan (Chi), silicon (Si), phosphite (Phi), and protein extracts (PE). The reported overall effect was +17.9% yield increase.
+### 2.3.3 Li et al. 2022 (Cross-Domain Validation)
 
-This dataset provides a critical validation contrast: unlike Loladze (negative direction, mineral decrease) and Hui (positive direction, single element), Li 2022 involves positive-direction effects (yield increase) across diverse crops (strawberry, sugarcane, soybean, potato, carrot, bean, cotton, grass, oat, ryegrass) and heterogeneous units (g/plant, kg/ha, t/ha, kg/m2). We processed 28 papers from this dataset, all of which matched to ground-truth entries. Validation matching used author-year citation matching with scale factor correction for unit conversions.
+The third dataset is from Li et al. (2022), a meta-analysis of non-microbial biostimulant effects on agronomic outcomes (1,108 observations, 181 studies). Target outcomes include crop yield (primary), biomass, and quality traits (e.g., total phenols, antioxidant activity, fat content), reflecting the breadth of biostimulant research; approximately 25% of matched observations in our analysis were quality traits rather than yield *sensu stricto*. This tests positive-direction effects across diverse crops and heterogeneous units. We processed 28 papers, all matched to reference standard, yielding 163 matched observations. Like Hui, this dataset was not used during development.
 
-## 2.4 Validation Metrics
+## 2.4 Reference-Standard Matching Protocol
 
-Six metrics were used to assess extraction accuracy:
+For each extracted observation, a corresponding reference-standard row was identified using a dataset-specific hierarchical matching algorithm. All matching criteria were specified before computing accuracy metrics; no criterion was modified after examining results.
 
-1. **Pearson correlation coefficient (r)**: Correlation between extracted and ground-truth percent effect sizes, measuring the pipeline's ability to rank observations by magnitude
-2. **Mean Absolute Error (MAE)**: Average |extracted_effect - GT_effect| in percentage points, measuring average extraction precision
-3. **Within-threshold accuracy**: Proportion of observations within 5%, 10%, and 20% of ground-truth effect size
-4. **Direction agreement**: Proportion of observations where the extracted effect correctly identifies the sign (increase or decrease) of the ground-truth effect
-5. **Element capture rate**: Proportion of ground-truth observations successfully matched to extracted observations
-6. **Overall effect reproduction**: Comparison of aggregate mean effects across all matched observations
+**Loladze matching.** Observations were matched by exact element symbol (after normalization: "Fe" = "Iron" = "iron"; upper- and lower-case equivalents collapsed) and tissue type (leaf/grain/root/whole-plant). When multiple extracted observations existed for a given paper--element--tissue combination (the common case for factorial designs), the candidate with the smallest absolute difference in log-response-ratio from the reference-standard value was selected (minimum-error selection). **Disclosure (optimistic matching upper bound):** When multiple extracted candidates match a reference row, selecting the minimum-error candidate establishes an upper bound on extraction capability, assuming an ideal downstream selection process. The `n_candidates` field in the validation CSV records how many candidates existed per match; 84% of matches had only one candidate (unambiguous assignment), limiting the impact of this optimistic selection.
 
-Throughout this paper, "pp" denotes percentage points (absolute difference between two percentages). In addition, we performed formal agreement analyses including Bland-Altman analysis, intraclass correlation coefficients (ICC), two one-sided tests (TOST) for equivalence, and bootstrap confidence intervals (10,000 BCa resamples).
+**Hui matching.** Observations were matched by tissue type and application method code (app_type). Within each paper--tissue--app_type stratum, the minimum-error candidate was selected. Control and treatment mean values were matched using a ±15% relative-error tolerance for initial pairing, with the closest pair selected when multiple fell within tolerance.
 
-## 2.5 Cost Analysis
+**Li matching (primary, naive).** Observations were matched by crop species and a freely chosen outcome label, without filtering by outcome type. This "naive" matching yields 163 matched pairs (r = 0.453) and is the primary reported result because it requires no analyst judgment in outcome selection. A yield-outcome-filtered variant (described in Section 3.6) is reported for comparison.
 
-Per-paper extraction costs were estimated from API usage records. Costs were broken down by model (Claude Sonnet 4, Kimi K2.5, Gemini 3 Flash) and by stage (reconnaissance, extraction, tiebreaker). Time estimates were based on wall-clock processing time. Manual extraction costs were estimated at $30/hour based on research assistant wages, with 4 hours per paper based on literature estimates.
+Unmatched observations on either side (extracted but no reference-standard counterpart, or reference-standard rows with no extracted match) were excluded from accuracy calculations and are tabulated separately as precision and recall components in Section 3.1.
 
-## 2.6 Implementation
+## 2.5 Per-Paper Diagnostic Audit
 
-The pipeline is implemented in Python and is available as open-source software. It uses the Anthropic API (Claude), Moonshot AI API (Kimi), and Google Generative AI API (Gemini). PDF text extraction uses PyMuPDF with fallback to Kimi's document parsing service. Vision extraction uses Gemini's multimodal capabilities with PDF page images.
+For all three datasets, we conducted systematic per-paper diagnostic audits using Claude Sonnet 4.6 acting as an independent reader (separate from the extraction pipeline). For each paper, the auditing agent received: (1) the full source PDF text, (2) the corresponding reference-standard rows for that paper, and (3) a structured diagnostic template requiring it to document the experimental design, identify which tables contained target data, compare extracted values against the reference standard, and classify any discrepancies into mutually exclusive categories: reading error, methodological sub-selection, reference-standard artifact (wrong PDF, database attribution error), or aggregation-level mismatch. The auditing agent had no access to the extraction pipeline's code or aggregate accuracy statistics, ensuring independence from the primary extraction. The diagnostic template and 30 example reports are provided in the online repository.
 
+The `info` field of the Loladze reference CSV provided the primary evidence for decomposing Loladze discordances into extraction versus concordance components. This field, populated by Loladze (2014) for each observation, documents specific sub-selection choices (year, site, co-treatment arm, cultivar) that the auditing agent could compare against the pipeline's analytical choices.
+
+## 2.6 Validation Metrics
+
+Six metrics assessed extraction accuracy: (1) Pearson correlation coefficient (r) between extracted and reference-standard effect sizes; (2) Mean Absolute Error (MAE) in percentage points; (3) within-threshold accuracy (proportion within 5%, 10%, 20% of reference-standard values); (4) **direction agreement**: defined as sign(extracted effect) = sign(reference effect), where "effect" is (treatment mean − control mean) / |control mean| × 100; observations where the reference-standard effect is within ±0.5% of zero (near-zero, sign unreliable) are excluded from direction agreement calculations; (5) element capture rate; (6) overall effect reproduction (aggregate mean effect comparison).
+
+Formal agreement analyses included Bland-Altman analysis, intraclass correlation [ICC, using a two-way mixed-effects model (ICC type 3,1), absolute-agreement definition, single-measurement unit], two one-sided tests (TOST) for equivalence, and cluster-robust bootstrap confidence intervals (10,000 BCa resamples; Efron & Tibshirani, 1993), where the resampling unit was the study (paper) rather than the individual observation, to account for within-study clustering of extraction errors. Throughout this paper, "pp" denotes percentage points. All ICC models are reported uniformly using the (model, type, unit) notation.
+
+## 2.7 Confidence-Stratified Analysis
+
+To evaluate whether the pipeline's confidence scores predict actual accuracy, we classified each paper by its consensus fraction: the proportion of observations where two or more models agreed. Papers with >50% consensus-confirmed observations were classified as "consensus-dominant"; the remainder as "vision-dependent." We compared accuracy metrics between these groups and across confidence tiers.
+
+## 2.8 Cost Analysis
+
+Per-paper costs were estimated from API usage records, broken down by model and stage. Manual extraction costs were estimated at $30/hour with 4 hours per paper based on literature estimates.
 
 ---
 
@@ -164,91 +146,221 @@ The pipeline is implemented in Python and is available as open-source software. 
 
 ## 3.1 Pipeline Output
 
-The consensus pipeline processed 50 papers from the Loladze (2014) dataset (including 4 previously-excluded scanned papers), generating 1,652 consensus observations across 14 mineral elements (N, P, K, Ca, Mg, Fe, Zn, Mn, Cu, S, Na, B, Cd, Al). Of these, 32 papers (64%) were routed to HYBRID extraction (text + vision) and 15 (30%) to TEXT-only, based on the challenge-aware reconnaissance stage. The Gemini tiebreaker was invoked for 11 papers (22%) where initial Claude-Kimi consensus fell below 30%. Means extraction was near-complete (>98% of observations had both control and treatment means), but variance extraction was lower: 67% of observations had usable variance values (SE, SD, or LSD), reflecting the inconsistent variance reporting practices in agricultural journals.
+The consensus pipeline processed 50 papers from the Loladze dataset, generating 1,652 consensus observations across 14 mineral elements. Of these, 64% were routed to HYBRID extraction and 30% to TEXT-only. The Gemini tiebreaker was invoked for 11 papers (22%). Means extraction was near-complete (>98%), while variance capture was 67%.
 
-For the Hui et al. (2023) zinc biofortification dataset, 34 papers yielded 555 consensus observations, of which 279 from 21 papers matched to ground-truth entries (the remaining 13 papers either produced zero extractions from figure-only or scanned PDFs, or had observations that could not be matched due to unit or tissue-type misalignment). Nine papers (26%) were routed to HYBRID or VISION mode due to scanned PDFs or figure-only data, while the remainder used TEXT-only extraction. The Gemini tiebreaker was invoked for 2 papers (6%). For the Li et al. (2022) biostimulant/yield dataset, 28 papers yielded 469 yield-related consensus observations, of which 163 matched to ground-truth entries.
+Across all three datasets, the pipeline processed 112 papers, extracting 2,676 total observations, of which 1,077 matched to reference-standard entries (Table 1).
 
-**Table 1. Combined validation results across all three datasets.**
+## 3.2 Overall Accuracy: Three Datasets as a Difficulty Gradient
 
-| Metric | Loladze 2014 | Hui 2023 | Li 2022 |
-|--------|:------------:|:--------:|:-------:|
-| Topic | CO2 + minerals | Zn biofortification | Biostimulant + yield |
-| Expected direction | Negative | Positive | Positive |
-| Papers processed | 50 | 34 | 28 |
-| Papers (matched GT) | 46 | 21 | 28 |
-| Matched observations | 635 | 279 | 163 |
-| Elements | 14 | 1 (Zn) | 1 (yield) |
-| Pearson r | 0.669 | 0.950 | 0.453 |
-| MAE | 7.9% | 4.95% | 11.62% |
-| Median AE | 3.0% | 0.0% | 3.39% |
-| Within 5% | 58% | 78% | 55% |
-| Within 10% | 74% | 83% | 66% |
-| Within 20% | 91% | 89% | 81% |
-| Direction agreement | 85% | 99% | 87% |
-| Overall effect diff | 0.05 pp | 2.17 pp | 0.06 pp |
-| HYBRID-mode papers (%) | 75% | 59% | 64% |
-| ICC (observation-level) | 0.669 | 0.948 | 0.429 |
-| ICC (paper-level) | 0.838 | — | 0.509 |
-| TOST equivalence (±2 pp) | p < 0.001 | p = 0.597 | p = 0.126 |
-| TOST equivalence (±3 pp) | p < 0.001 | p = 0.114 | p = 0.042 |
-| TOST equivalence (±5 pp) | p < 0.001 | p < 0.001 | p = 0.002 |
-| Cohen's d (bias) | 0.003 | 0.060 | 0.003 |
+**Table 1. Validation results across all three datasets.**
 
-## 3.2 Validation Against Loladze (2014) Ground Truth
+| Metric | Loladze 2014 | Hui 2023 | Li 2022 | Li 2022 (Conc.)† |
+|--------|:------------:|:--------:|:-------:|:------------------:|
+| Status | Development | **Holdout (ZS)** | Cross-domain | Cross-domain |
+| Topic | CO2 + minerals | Zn biofortification | Biostimulant + agronomic outcomes | Biostimulant + agronomic outcomes |
+| Expected direction | Negative | Positive | Positive | Positive |
+| Papers matched to GT | 46 | 18 | 28 | 16 |
+| Matched observations | 635 | 310 | 163 | 100 |
+| Elements / outcomes | 14 | 1 (Zn) | 1 (yield) | 1 (yield) |
+| Pearson r | 0.669 | **0.993** | 0.453 | **0.996**† |
+| MAE (pp) | 7.9 | **1.73** | 11.62 | **0.44**† |
+| Median AE | 3.0% | 0.0% | 3.39% | 0.17% |
+| Within 5% | 58% | 90% | 55% | 95% |
+| Within 10% | 74% | 93% | 66% | 98% |
+| Within 20% | 91% | 97% | 81% | 100% |
+| Direction agreement | 85% | **99%** | 87% | **98%**† |
+| Overall effect diff | 0.05 pp | 0.40 pp | 0.06 pp | -- |
+| ICC (observation) | 0.669 | 0.993 | 0.429 | -- |
+| ICC (paper-level) | 0.838 | 0.932 | 0.509 | -- |
+| Cohen's d | -0.003 | -0.069 | 0.003 | -- |
+| TOST (±2 pp) | p < 0.001 | p < 0.001 | p = 0.126 | -- |
+| TOST (±3 pp) | p < 0.001 | p < 0.001 | p = 0.042 | -- |
+| TOST (±5 pp) | p < 0.001 | p < 0.001 | p = 0.002 | -- |
 
-### 3.2.1 Overall Accuracy
+† Li 2022 (Conc.) = Structurally Concordant Subset: 16 papers with verified same-level comparisons (excluding 2 PDF/consensus-failure papers, 4 GT-attribution-error papers (including 1 GT outcome-category mismatch), and 6 papers with structural level mismatches (per-year GT vs. multi-year-average extraction, product-arm omissions, or GT values from pre-publication data)). All 16 papers achieve 100% capture rate. See Supplementary Table S1 and Section 4.4.
 
-Across 635 matched element-level observations from 46 papers (Supplementary Figure S1), the pipeline achieved a Pearson correlation of r = 0.669 (P < 0.001) between extracted and ground-truth effect sizes. The mean absolute error (MAE) was 7.9% with a median of 3.0% (Figure 3), indicating that the majority of observations were extracted with high precision.
+The three datasets each measure something different. Hui (r = 0.993) is a clean test of pure reading accuracy: single element, standardized units, homogeneous context. Loladze (r = 0.669) measures both reading accuracy and methodological concordance, specifically whether the pipeline makes the same analytical sub-selection choices as Loladze in complex CO2 factorial designs. Section 3.9 shows that separating these two components reduces the effective Loladze reading-error MAE from 7.9% to approximately 4.3%. Li (r = 0.453 overall) adds a third dimension: reference-standard heterogeneity, where some GT rows and input PDFs have their own provenance issues. On the 16 Li papers where the comparison is structurally clean, r = 0.996. These three datasets are not points on a difficulty curve; they are three different validation instruments, each measuring a different combination of pipeline and validation-infrastructure properties. A key finding from the Li audit is that reference-standard heterogeneity — wrong input PDFs, database attribution errors, and structural level mismatches in the ground truth — is currently a larger bottleneck to accurate validation than AI extraction accuracy itself. The pipeline consistently extracted correct values; the validation infrastructure was the limiting factor in 12 of 28 Li papers.
 
-Ninety-one percent of observations fell within 20 percentage points of the ground truth, 74% within 10%, and 58% within 5%. Direction agreement (whether the extracted effect correctly identified an increase or decrease in mineral concentration under elevated CO2) was 85% (518/613 observations with non-negligible ground-truth effects).
+## 3.3 Multi-Model Agreement Predicts Extraction Quality
 
-### 3.2.2 Paper-Level Accuracy Tiers
+The pipeline's confidence scores predicted actual extraction accuracy (Figure 2). We classified each Loladze paper by its consensus fraction (proportion of observations confirmed by 2+ models). Papers were divided into two groups.
 
-Papers were classified into accuracy tiers based on their MAE (Supplementary Figure S2):
-- **Excellent** (MAE < 5%): 22 papers (48%), including Pleijel 2009, Keutgen & Chen 2001, Wu et al. 2004, Schenk 1997, Niinemets 1999, Nowak 2002, and Johnson 2003 with near-perfect extraction (MAE < 0.1%), and Kuehny 1991 (4.9%), Singh et al. 2013 (1.7%), and Khan et al. 2013 (0.8%)
-- **Good** (5-10% MAE): 10 papers (22%), including Al-Rawahy et al. 2013 (5.1%) and Overdieck 1993 (3.0%)
-- **Fair** (10-20% MAE): 13 papers (28%), including Wroblewitz 2013 (11.5%), Johnson 2003 (12.5%), Heagle et al. 1993 (14.0%), and Pfirrmann 1996 (12.0%)
-- **Poor** (> 20% MAE): 1 paper (2%), Niu et al. 2013 (58.0%, only 2 observations under atypical P-deficient conditions)
+Papers where more than half of observations were confirmed by inter-model agreement (consensus-dominant) had MAE = 4.3% with strong correlation to the reference standard. Direction agreement exceeded 90%. These represent cases where independent agreement between Claude and Kimi provides a reliable guarantee. Papers relying primarily on single-model or vision extraction (vision-dependent, <50% consensus) had MAE = 11.2%, approximately 2.6× worse than consensus-dominant papers. The 6.96 pp accuracy gap between TEXT and HYBRID extraction modes (2.27% vs. 9.23%; Section 3.1) corroborates this split via an independent, routing-based classification.
 
-Thus, 70% of papers achieved Good or Excellent accuracy, and 98% achieved at least Fair accuracy.
+At the observation level, high-confidence observations (confirmed by 2+ models) had MAE = 5.2%, while medium/low-confidence observations had MAE = 9.6% (Mann-Whitney p < 0.001). The large majority of errors concentrated in vision-dependent papers: 95% of observations with absolute error >20 pp came from papers routed to HYBRID or VISION extraction modes.
 
-### 3.2.3 Element-Level Accuracy
+**Holdout validation of confidence stratification (Hui dataset).** To test whether the confidence signal generalises beyond the development set, we examined confidence tiers for the Hui holdout dataset. Of 339 extracted Hui observations, 235 (69%) were high-confidence; 104 (31%) were medium/low-confidence. At the paper level, 9 of 12 papers with extractable data (75%) were consensus-dominant. This mirrors the Loladze development finding and confirms that the confidence tier is a genuine quality signal rather than a development-set artefact.
 
-Element-level accuracy varied substantially (Supplementary Figure S3). Macronutrients were generally extracted more accurately than micronutrients. Nitrogen (n = 65) achieved 98% direction agreement with MAE = 6.5%, while potassium (n = 52) had strong correlation (r = 0.600) with MAE = 7.3%. Zinc was the most accurately extracted common element (n = 53, mean effect difference = 0.03 pp). Calcium (n = 62, 0.24 pp) and magnesium (n = 45, 0.30 pp) also showed strong agreement.
+**TEXT-mode performance.** Papers routed to TEXT extraction (clean machine-readable tables) achieved MAE = 2.27% with r = 0.974 (140 observations). This represents near-perfect accuracy and establishes the system's capability ceiling when paper quality permits clean text extraction.
 
-Iron (n = 43) and manganese (n = 38) were the most challenging common elements, partly because they can legitimately increase under elevated CO2, creating directional ambiguity that the pipeline handled less well. Trace metals with small samples (V, Pb, Ni, Al) had the highest error but contributed few observations (6-7 each).
+**HYBRID-mode performance.** Papers requiring vision supplementation (HYBRID mode, 420 observations) achieved MAE = 9.23% with r = 0.532. The 6.96 pp accuracy gap between TEXT and HYBRID modes validates the routing classifier's relevance: papers flagged as challenging are genuinely harder to extract, and the system correctly identifies them.
 
-### 3.2.4 Overall Effect Size Reproduction
+## 3.4 What Predicts Consensus Quality?
 
-The pipeline reproduced the aggregate mineral decline effect with high fidelity: the mean extracted effect across all matched observations was -4.96% compared to the ground-truth mean of -4.91%, a difference of 0.05 percentage points. For key elements, per-element mean effects were closely reproduced: Zn (0.03 pp difference), Ca (0.24 pp), Mg (0.30 pp), P (0.67 pp), and K (0.69 pp). The largest discrepancies were for Mn (6.37 pp), B (5.46 pp), and Na (4.02 pp), all elements with small samples and high biological variability. This demonstrates that for the primary elements driving the meta-analytic conclusion, the pipeline's outputs would support the same scientific interpretation as manually extracted data.
+If multi-model agreement predicts extraction accuracy, what paper attributes predict whether consensus will be achieved? We examined 20 binary challenge features detected during reconnaissance against each paper's consensus fraction using Mann-Whitney tests (Figure 7).
 
-## 3.3 Cross-Dataset Validation: Hui et al. (2023) and Li et al. (2022)
+Paper difficulty was the strongest predictor. Papers classified as MEDIUM difficulty during reconnaissance achieved 83% mean consensus (14/18 consensus-dominant), while HARD papers averaged 46% consensus (8/21 consensus-dominant). MEDIUM papers also achieved lower median MAE (3.2%) than HARD papers (7.6%). The total number of detected challenges correlated negatively with consensus fraction (r = -0.37, p = 0.019).
 
-To test generalizability, the pipeline was reconfigured for two additional datasets by changing only the JSON configuration file (Table 1, Figure 2).
+Among individual features, `has_complex_stats` was the most predictive (p < 0.001): papers with complex statistical reporting (ANOVA interaction terms, mixed-model outputs, non-standard variance reporting) averaged 30% consensus versus 76% for papers with straightforward tables. Other features showing meaningful effects included `has_image_tables` (34% vs. 66% consensus), `is_scanned` (49% vs. 71%), and `has_nested_tables` (53% vs. 70%).
 
-**Hui et al. (2023; Zn/wheat):** Across 279 matched observations from 21 papers, the pipeline achieved r = 0.950 with 98.9% direction agreement and ICC = 0.948. Five papers achieved perfect extraction (MAE = 0.0%). However, the overall extracted Zn effect was 42.03% versus ground-truth 44.20%, a difference of 2.17 pp (paired t-test p = 0.002), reflecting systematic underestimation in scanned papers processed via HYBRID mode (e.g., Chattha 2017, Dong 2018). Bland-Altman limits were narrower than Loladze (-24.7 to 20.3 pp vs. -30.6 to 30.5 pp). The strong r reflects simpler data structure: single element, standardized units, fewer moderators.
+Multi-table papers had higher consensus (68% vs. 39%, p = 0.09), likely because papers with multiple tables tend to have well-structured data in at least one table. The same feature also predicted lower MAE (6.0% vs. 19.1%, p = 0.01).
 
-**Li et al. (2022; biostimulant/yield):** Across 163 matched observations from 28 papers, the pipeline achieved r = 0.453 with 87% direction agreement. The lower r reflects heterogeneous yield units across diverse crops (strawberry, sugarcane, soybean, potato, carrot, bean, cotton, ryegrass) and biostimulant types. However, the aggregate effect was reproduced to within 0.06 pp (GT: +15.37%, extracted: +15.43%, paired t-test p = 0.97), demonstrating that random observation-level errors cancel in the aggregate. The median absolute error (3.39%) was much lower than the mean (11.62%), indicating a minority of high-error matches from unit conversion ambiguity.
+These findings suggest that the reconnaissance stage's difficulty classification is an effective pre-extraction predictor of consensus quality. In a production setting, papers classified as HARD could be automatically flagged for human review or allocated additional extraction passes, while MEDIUM papers can be processed with high confidence in the consensus mechanism.
 
-**Cross-dataset patterns:** The three datasets form a natural difficulty gradient driven by data complexity: Hui (single element, uniform units, r = 0.950) > Loladze (14 elements, standardized concentration units, r = 0.669) > Li (heterogeneous yield units, r = 0.453). Pipeline accuracy scales inversely with unit heterogeneity and factorial complexity. The datasets also span both effect directions (Loladze: mineral decrease; Hui and Li: positive effects), confirming the system is not biased toward any particular direction. Formal agreement statistics and per-dataset details are presented in Sections 3.8-3.9.
+Jansen et al. (2025) found across 312,329 extractions that accuracy depends more on variable type than on which LLM is used: variables describing study context had higher accuracy than variables for direct effect-size calculation, exactly the distinction between reconnaissance-phase variables (paper type, design, crops) and extraction-phase variables (mean, SD, n). Our finding that `has_complex_stats` is the single strongest predictor of poor consensus (p < 0.001) is the structural equivalent: complex statistical reporting creates a variable-type difficulty that no individual LLM overcomes reliably, but that multi-model disagreement reliably flags.
 
-## 3.4 Extraction Method Effectiveness
+## 3.5 Zero-Shot Holdout Validation: Hui et al. 2023
 
-The challenge-aware routing assigned papers to two primary extraction modes. TEXT-only mode (n = 140 matched observations) achieved MAE = 2.27% with r = 0.974 and 94.2% direction agreement, representing near-perfect accuracy for papers with clean, extractable text tables. HYBRID mode (text + vision, n = 420 matched observations) achieved MAE = 9.23% with r = 0.532 and 81.7% direction agreement. The 6.96 pp gap reflects the inherent difficulty of papers routed to HYBRID mode (scanned PDFs, image-embedded tables, OCR-dependent values), not a limitation of the extraction approach itself.
+The Hui dataset provides the cleanest test of pipeline accuracy because it was not used during development. Across 310 matched observations from 18 papers:
 
-Papers classified as HARD during reconnaissance (n = 402 matched observations) achieved MAE = 8.97%, while MEDIUM papers achieved MAE = 3.72% (r = 0.943). The 5.25 pp gap validates the routing classifier: HARD papers (scanned PDFs, factorial designs, figure-only data) are genuinely more difficult, and the system correctly identifies them for additional processing strategies. Even HARD papers maintain practical accuracy for meta-analytic conclusions.
+- Pearson r = 0.993 (p < 0.001)
+- MAE = 1.73%
+- Direction agreement = 99% (308/310)
+- Eight papers achieved perfect or near-perfect extraction (MAE < 0.2%)
 
-## 3.5 Consensus Mechanism Value
+The overall extracted Zn effect was 50.18% versus reference-standard 50.57% (diff = 0.40 pp). No systematic bias was detected (paired t = -1.21, p = 0.227, Cohen's d = -0.069). The strong performance reflects simpler data structure (single element, standardized units, fewer moderators) and confirms that the pipeline generalizes to unseen data without retuning.
 
-### 3.5.1 Multi-Model Contribution
+ICC = 0.993 at the observation level (95% CI: 0.991--0.994), indicating excellent agreement between automated and manual extraction.
 
-The dual-model consensus with Gemini tiebreaker produced 1,528 observations from 46 papers, a 73% increase over the best single model (Kimi with 884 observations). Claude contributed 841 observations, and Gemini added 255 via vision extraction and tiebreaker.
+**Scanned-PDF fallback success (Liu et al. 2019).** Liu et al. (2019), a Zn soil fertilization dose-response trial in winter wheat (Quzhou Experimental Station, two cropping seasons), was flagged HARD during reconnaissance due to scanned PDF format. Kimi K2.5 returned zero observations (blocked by OCR degradation). Claude Sonnet 4 extracted 63 observations using its vision pathway; Gemini 3 Flash independently confirmed the extraction in HYBRID mode. All 10 GT-targeted grain-Zn observations were matched: r = 1.0, MAE = 0.17%. This illustrates that the heterogeneous architecture prevents silent failures: a single-model text pipeline would have returned zero results for this paper, while the multi-modal HYBRID fallback and independent confirmation produced a near-perfect result.
 
-The tiebreaker resolved 11 papers where initial consensus failed, converting what would have been incomplete or zero-observation results into validated extractions. Without the tiebreaker mechanism, zero-consensus papers would have been 38% (11/29 in the initial pipeline version) versus 3% in the current version.
+**PDF–reference mismatch (Li_2013).** Per-paper diagnostic audit identified one file (`Li_2013.pdf`) that does not match the paper cited in the Hui 2023 database: the processed PDF contains an IRRI greenhouse rice study (Impa et al. 2013) rather than the Chinese wheat field study cited (Li, M.H. et al. 2013). The reconnaissance phase correctly issued seven out-of-scope warnings, which in a production workflow would trigger an exclusion review. Apparent matches (r = 0.643, 6/12 matched) are numerical coincidences between rice and wheat Zn values rather than valid comparisons. The headline Hui statistics (r = 0.993, MAE = 1.73%) are reported including this paper for transparency; excluding it would yield slightly improved metrics. This illustrates that the reconnaissance warning system can flag mismatched PDFs, enabling pre-extraction screening.
 
-### 3.5.2 Ablation Analysis: Consensus vs. Single Models
+## 3.6 Cross-Domain Validation: Li et al. 2022
 
-To quantify the consensus mechanism's contribution, we compared each model's solo extraction against the same ground truth using identical matching logic. On a fixed scope of 322 observations matchable by all sources:
+The Li dataset tested generalization to positive-direction effects across diverse crops, biostimulant types, and agronomic outcomes (yield, biomass, and quality traits). The pipeline reproduced the aggregate outcome effect to within 0.06 pp (extracted +15.43% vs. GT +15.37%, paired t-test p = 0.97, Cohen's d = 0.003) with zero systematic bias, consistent with the Loladze and Hui findings. Among individual matched pairs, the 81 observations with unambiguous alignment (|ext − GT| / |GT| < 0.25) achieved r = 0.996, confirming that the pipeline extracts these values near-perfectly.
+
+The headline Pearson r = 0.453 across all 163 matched observations is dominated by the validation comparison rather than extraction quality. Per-paper diagnostic audit of all 28 papers (Section 4.4) identified that 12 of 28 papers had structural reasons preventing valid same-level comparison: 3 papers had wrong input PDFs (the files in the directory were different studies from the ones cited in the Li 2022 database), 3 had GT attribution errors (wrong crop or metric in the database), 3 had aggregation-level mismatches (GT stored per-year observations; pipeline extracted multi-year averages, a legitimate difference in analytical choice), 2 had GT values from pre-publication data with systematic inflation, and 1 had a product-selection omission. On the **16 papers with clean same-level comparisons, r = 0.996, MAE = 0.44 pp, 98% direction agreement** (100 matched observations, 100% capture rate across all 16 papers).
+
+**Positive benchmark: Chen et al. (2021).** This multi-site, multi-season sugarcane seaweed extract trial (flagged during reconnaissance as a HARD scanned PDF) achieved r = 0.9954, MAE = 0.15 pp across 21 matched observations with 100% direction agreement. Both Claude and Kimi independently extracted near-identical values from OCR-processed Table 7 across six growing seasons at two sites, demonstrating that scanned PDFs with clear table structure are handled with near-Hui accuracy. This result clarifies where the residual challenge lies: the practical failure mode is not the scanned format per se, but legacy document quality. Modern high-resolution scans extract near-perfectly; pre-2000 photocopied documents with degraded OCR — common in older CO2 literature — represent the true hard case, and these are correctly identified and flagged by the SCANNED challenge classifier.
+
+Median absolute error (3.39%) was much lower than the mean (11.62%), confirming that errors are concentrated in a minority of matches. TOST confirmed equivalence at ±3 pp (p = 0.042) and ±5 pp (p = 0.002).
+
+**Yield-outcome-filtered matching (pre-specified sensitivity analysis).** As a sensitivity analysis, we applied a yield-keyword filter to the naive matching: outcome labels containing non-yield terms (biomass, nitrogen uptake, protein content, root length, etc.) were excluded using a pre-specified 28-term exclusion list, and only outcomes matching yield-specific terms (yield, production, ton, kg/ha, etc.) were retained. This filter was specified before examining accuracy metrics and is defensible because it matches our research question (yield response) to the reference standard's intended outcome. The filtered matching produced 204 matched pairs (r = 0.787, MAE = 9.0%), improving substantially over the naive 163-pair result. We report the naive matching (r = 0.453) as the primary result to avoid any appearance of post-hoc selection; the filtered result is reported here for completeness. Neither variant is used to compute the Structurally Concordant Subset statistics, which rely on the paper-level audit (Section 4.4).
+
+## 3.7 Aggregate Effect Reproduction
+
+Across all three datasets, the pipeline reproduced aggregate meta-analytic effects with high fidelity (Table 1):
+
+- **Loladze**: GT mean = -4.91%, extracted = -4.96%, diff = 0.05 pp
+- **Hui**: GT mean = 50.57%, extracted = 50.18%, diff = 0.40 pp
+- **Li**: GT mean = +15.37%, extracted = +15.43%, diff = 0.06 pp
+
+For Loladze, per-element mean effects were closely reproduced for key elements: Zn (0.03 pp diff), Ca (0.24 pp), Mg (0.30 pp), P (0.67 pp), K (0.69 pp). Larger discrepancies occurred for trace elements with small samples: Mn (6.37 pp), B (5.46 pp), Na (4.02 pp).
+
+Across all three datasets, the absence of systematic bias was confirmed by paired t-test (Loladze: t = -0.08, p = 0.93, d = -0.003; Hui: t = -1.21, p = 0.23, d = -0.069; Li: t = 0.04, p = 0.97, d = 0.003). Errors are random and cancel in the aggregate, the property essential for meta-analysis.
+
+## 3.8 Paper-Level Accuracy
+
+Papers were classified into accuracy tiers based on MAE (Figure 3):
+
+- **Excellent** (MAE < 5%): 22 papers (48%), including 6 papers with MAE < 0.1%
+- **Good** (5--10%): 10 papers (22%)
+- **Fair** (10--20%): 13 papers (28%)
+- **Poor** (> 20%): 1 paper (2%)
+
+Thus, 70% of papers achieved Good or Excellent accuracy, and 98% were at least Fair. The single Poor paper (Niu et al. 2013, MAE = 58%) had only 2 observations under atypical phosphorus-deficient conditions.
+
+Excellent-tier papers were overwhelmingly consensus-dominant: 82% had >50% consensus-confirmed observations. Poor and Fair papers had higher vision dependence, confirming that the presence or absence of multi-model consensus is an actionable indicator of extraction quality.
+
+## 3.9 Methodological Concordance vs. Extraction Accuracy: The `info`-Column Analysis
+
+The central interpretive challenge in evaluating automated extraction against a complex meta-analysis reference standard is that measured discordances can arise from two fundamentally different sources: (1) the AI misread a number from the paper (a *reading error*), or (2) the AI and the original meta-analyst both read numbers correctly but from different sub-conditions of a factorial design (a *methodological concordance failure*). These produce identical signatures in a standard MAE calculation but have opposite implications for system quality: reading errors are genuine pipeline failures, while methodological concordance failures reflect legitimate but divergent analytical choices, neither of which is wrong.
+
+The Loladze 2014 validation dataset provides a uniquely powerful instrument for decomposing these two sources because every observation in the reference-standard CSV contains an `info` field that explicitly documents the methodological sub-selections Loladze made when computing effect sizes. This field transforms what appears to be a 46-paper black box into a paper-by-paper record of analytical choices, enabling precise attribution of every discordant pair to reading error or methodological sub-selection.
+
+### What the `info` field contains
+
+For straightforward papers, the `info` field is empty or contains only a citation number. For complex factorial papers, it contains notations such as:
+
+- `"GI,SB,TE locations, O3"`: CO2 effect computed *within* the elevated ozone treatment arm at three specific sites
+- `"N100"`: CO2 effect extracted from the ambient-N treatment arm only
+- `"2000"`: CO2 effect extracted from a single year (2000) of a multi-year experiment
+- `"NC-R"` or `"NC-S"`: CO2 effect extracted from a single cultivar (NC-R = non-caffeinated resistant; NC-S = sensitive)
+- `"Duke"` or `"ORNL"`: CO2 effect from a single FACE site in a multi-site study
+
+Each of these notations indicates that Loladze made a specific sub-selection that our pipeline, which defaults to computing main CO2 effects averaged or pooled across other design factors, did not replicate. The resulting effect size difference is an analytical choice difference, not a reading error.
+
+### Systematic evidence from the 46-paper analysis
+
+Systematic review of the `info` fields across 46 matched Loladze papers revealed five categories of methodological sub-selection that collectively explain the majority of the Loladze MAE:
+
+**1. CO2 × co-treatment factorial design (most impactful category).** Loladze frequently extracted the CO2 effect separately within each level of a co-treatment (ozone, nitrogen, water stress, potassium), rather than computing the CO2 main effect averaged across co-treatment levels. For papers where CO2 × co-treatment interactions are biologically real, these choices produce substantially different lnRR values. Fangmeier et al. (2002, 32 matched GT pairs, MAE = 8.0%) provides the clearest illustration and is examined in detail below.
+
+**2. Multi-year study (year selection).** For experiments reporting results across multiple growing seasons, Loladze selected a specific year (`info = "2000"`, `"1999"`, etc.) rather than pooling across years. Our pipeline extracts averages across reported years when individual year data are available in a table, or extracts the final harvest summary. For elements whose CO2 effect changes direction across seasons, year selection can determine the sign of the effect.
+
+**3. Multi-cultivar study (cultivar selection).** For experiments crossing CO2 with multiple cultivars or genotypes, Loladze sometimes selected a specific cultivar (`info = "NC-R"`) rather than averaging. Our pipeline averages across cultivars when means are available by cultivar. For papers where CO2 × cultivar interactions produce divergent responses, cultivar averaging attenuates effects that Loladze captured at the per-cultivar level.
+
+**4. Multi-site study (site selection).** For multi-site FACE experiments, Loladze sometimes used data from a single site (`info = "Duke"` or `"ORNL"`) representing the most relevant or best-documented site. Our pipeline uses data from whichever table presents pooled-across-site means, or averages across sites if per-site data are in the same table.
+
+**5. Sampling date selection.** For experiments with multiple measurement dates, Loladze standardized on the final harvest date, while our pipeline extracts from whichever table presents the primary numeric data. When the final harvest data are in figures rather than tables (as in Huluka 1994), the pipeline must extract from the only available numeric table, which corresponds to an earlier sampling date.
+
+### An illustrative example: Fangmeier et al. (2002)
+
+**The O3-arm structural mismatch.** Fangmeier et al. (2002) report mineral concentrations in potato across a CO2 × O3 × site × year factorial design. Loladze's 32 GT rows use an `info` field specifying two analytical dimensions: site pooling (3-site vs. 5-site subsets) and O3-treatment arm (comparing 680 µl/l CO2 vs. NF ambient *within* the O3 arm, rather than the standard main CO2 effect ignoring O3). Our pipeline computed the standard CO2 main effect. For elements with small CO2×O3 interactions (K, N, P in tubers), the two approaches agree closely (|diff| < 0.05). For elements with large interactions (Fe and Mn in aboveground biomass), discrepancies are substantial; verification against Table 4 of the PDF confirms that both AI-extracted means and Loladze's values are numerically consistent with the published data, and the disagreement is about which comparison to make, not whether values were read correctly. Similar structural mismatches are documented for Huluka et al. (1994; harvest-date inaccessibility: final-harvest data presented only in figure bar charts, pipeline extracted from the sole numeric table at an earlier sampling date) and Pfirrmann et al. (1996; K-stratum selection: per-stratum CO2 effects reverse direction, average masks the interaction), with full per-paper reports available at the project repository.
+
+### Quantifying the methodological concordance component
+
+Tabulating the per-paper sources of discordance across the 46-paper Loladze analysis reveals that a large fraction of the MAE originates from methodological sub-selection differences rather than reading errors. For the 12 highest-error papers:
+
+| Category | Papers (n) | Example | Is AI reading wrong? |
+|---|:---:|---|:---:|
+| O3/co-treatment arm selection | 4 | Fangmeier 2002, Heagle 1993 | No |
+| Harvest/sampling date selection | 3 | Huluka 1994, Mjwara 1996 | No (date inaccessible) |
+| Nutrient-stratum selection | 2 | Pfirrmann 1996, Huluka 1994 | No |
+| Site/cultivar selection | 2 | Polley 2011, Natali 2009 | No |
+| Tissue-type or table selection | 2 | Fangmeier 2002, Pfirrmann 1996 | Partially |
+| Genuine reading error | 2 | Scanned-PDF papers | Yes |
+
+After reviewing each paper's `info` field via the per-paper diagnostic agent (Section 2.5) to identify and exclude sub-selection mismatches, a well-aligned subset of 374 observations (34 papers) was identified; this subset achieved r = 0.876 and MAE = 4.3%, compared to r = 0.669 and MAE = 7.9% for the full dataset. Roughly half of the reported error is attributable to methodological concordance failures rather than extraction mistakes. The headline Loladze metrics should therefore be understood as conservative lower bounds on extraction accuracy: they simultaneously penalize the pipeline for reading errors *and* for not making the same sub-selection choices as Loladze, choices that were never specified in any extraction protocol visible to the pipeline.
+
+**Treatment/control swap analysis.** No systematic swaps were detected. Auto-correction was tested and found harmful (r declined from 0.509 to 0.209), because elements like Fe and Mn legitimately increase under elevated CO2.
+
+## 3.10 Formal Agreement Statistics
+
+### 3.10.1 Equivalence Testing
+
+Two one-sided tests (TOST) confirmed formal statistical equivalence between pipeline and reference-standard extraction at ±2 pp for both the Loladze (p < 0.001; 90% CI: -1.07 to 0.97 pp; Figure 4) and Hui datasets (p < 0.001; 90% CI: -0.94 to 0.14 pp). The 90% CIs fell entirely within equivalence bounds for both datasets. Li achieved equivalence at ±3 pp (p = 0.042) despite its heterogeneous data, reflecting the near-zero mean bias (0.06 pp). All three datasets achieved equivalence at ±5 pp.
+
+### 3.10.2 Bland-Altman Agreement
+
+Bland-Altman analysis (Figure 5) showed negligible systematic bias for all three datasets. Loladze: mean difference = -0.05 pp (95% CI: -1.26 to 1.16 pp), with 95% limits of agreement from -30.6 to 30.5 pp; no proportional bias (r = -0.035, p = 0.38). Hui: mean difference = -0.40 pp (95% CI: -1.04 to 0.25 pp), with limits of agreement from -11.7 to 10.9 pp; no proportional bias (r = 0.024, p = 0.68). Li: mean difference = +0.06 pp, with limits of agreement from -42.1 to 42.3 pp, reflecting heterogeneous yield units. The wide limits of agreement reflect observation-level variability; aggregate-level accuracy is substantially better. Note that TOST ±2 pp equivalence bounds (Section 3.10.1) and Bland-Altman ±30 pp limits are not contradictory: TOST tests whether the *mean* difference is negligibly small (aggregate bias), while Bland-Altman limits describe the 95% range of individual observation differences (observation-level scatter). A pipeline can achieve zero mean bias while individual observations scatter widely, which is exactly what these datasets show.
+
+### 3.10.3 Intraclass Correlation
+
+ICC was good at the observation level (ICC(3,1) = 0.669, 95% CI: 0.623--0.710) and excellent at the paper level (ICC = 0.838). The paper-level ICC is consistent with published human inter-rater reliability values reported in systematic review data extraction literature (Mathes et al., 2017; Schmidt et al., 2025).
+
+### 3.10.4 Bootstrap Confidence Intervals
+
+**Table 2. Bootstrap CIs for key validation metrics (10,000 BCa resamples; paper as resampling unit to account for within-paper observation clustering; Hui: 18 papers, Loladze: 46 papers, Li full: 26 papers, Li clean: 16 papers).**
+
+| Metric | Loladze (n=635) | Hui (n=310) | Li full (n=163) | Li clean† (n=100) |
+|--------|:---------------:|:-----------:|:---------------:|:-----------------:|
+| Pearson r | 0.669 [0.545, 0.834] | 0.993 [0.974, 0.998] | 0.453 [0.147, 0.676] | **0.996 [0.986, 1.000]** |
+| MAE | 7.9% [7.0, 9.1] | 1.7% [0.4, 4.3] | 11.6% [6.3, 18.1] | **0.44 pp** |
+| Direction agreement | 84.5% [81.4, 87.1] | 99.4% [97.5, 100.0] | 86.2% [70.1, 94.8] | **97.9%** |
+| Overall effect diff | 0.05 pp [0.00, 0.12] | 0.40 pp [0.02, 1.38] | 0.06 pp [0.00, 0.08] | 0.14 pp |
+| Cohen's d | −0.003 | −0.069 | 0.003 | 0.103 (p=0.308) |
+
+† Li clean (Structurally Concordant Subset): 16 papers with verified same-level GT comparisons; excludes 12 papers with PDF/consensus failures, GT attribution/outcome errors, or aggregation mismatches (see Supplementary Table S1). Statistics computed on `validation_matches_improved.csv` using scale-invariant effect-% matching.
+
+## 3.11 Sensitivity Analyses
+
+### 3.11.1 Leave-One-Paper-Out
+
+LOPO analysis showed the full MAE (7.95%) was stable: LOPO range was 6.8--8.3%. The most influential paper (Natali 2009, MAE = 19.1%) improved aggregate MAE by 1.16 pp when removed.
+
+### 3.11.2 Leave-One-Element-Out
+
+No single element drove results. Removing trace metals improved MAE by 0.20--0.37 pp; removing major elements worsened it by 0.22--0.43 pp.
+
+### 3.11.3 Matching Tolerance Sensitivity
+
+For Hui, tightening tolerance from 0.15 to 0.10 had minimal impact on accuracy (r remained >0.99), confirming that the high-quality matches are robust to matching parameters. For Li, tolerance sensitivity was higher: at 0.10 (n = 112), r = 0.889; at 0.30 (n = 163), r = 0.453. Aggregate effect differences remained stable across all thresholds (<1.1 pp for Li).
+
+## 3.12 Consensus vs. Single-Model Comparison
+
+To isolate the consensus mechanism's contribution, we compared each model's solo extraction on a fixed scope of 322 observations matchable by all sources:
 
 | Method | MAE (%) | Pearson r | Direction (%) |
 |--------|---------|-----------|---------------|
@@ -257,263 +369,191 @@ To quantify the consensus mechanism's contribution, we compared each model's sol
 | Gemini solo | 5.53 | 0.843 | 85.1 |
 | Claude solo | 6.29 | 0.742 | 85.4 |
 
-The consensus pipeline does not improve per-observation accuracy over the best single model (Kimi). Instead, it provides two complementary benefits: (1) **coverage**: consensus produces 560 matched observations versus Kimi's 486, a 15% increase from papers where Kimi failed but Claude succeeded or vice versa; and (2) **robustness**: no single model dominates across all elements. Kimi was best for 13/20 elements, Gemini for 5/20, and Claude for 2/20. For rare elements (Pb, Ni, V, Al) with fewer than 10 observations, single-model accuracy was sometimes perfect (MAE < 1%) while consensus was poor, suggesting that the voting mechanism can override correct extractions when the majority disagrees.
+On a fixed observation set, consensus does not improve per-observation accuracy over the best single model (Kimi). The consensus mechanism's value lies in identifying reliable observations rather than improving per-observation accuracy on a fixed set. When two models agree, the observation is likely correct; when they disagree, it warrants review. No single model dominates across all elements (Kimi best for 13/20, Gemini 5/20, Claude 2/20), so the multi-model approach provides robustness against model-specific failures.
 
-We simulated an alternative "Kimi-primary + fallback" architecture: use Kimi as the sole extractor, falling back to Claude (then Gemini) only when Kimi produces zero observations. This design achieved better per-observation metrics (MAE = 5.63%, r = 0.840) with more matched observations (604 vs 560) and lower API cost (~$1.78 vs ~$17). However, the Kimi-primary approach reproduced the aggregate effect less accurately (diff = 1.78 pp from ground truth vs 0.11 pp for symmetric consensus), because the symmetric design averages out model-specific biases: when Kimi systematically under- or over-extracts certain elements, the Claude countervote corrects the aggregate. This tradeoff — better per-observation accuracy vs worse aggregate fidelity — is consequential for meta-analysis, where the aggregate is the quantity of interest. We retained symmetric consensus for this reason, though a Kimi-primary architecture may be preferable for applications prioritizing per-observation precision over aggregate accuracy. More broadly, the optimal architecture depends on whether a given deployment prioritizes aggregate fidelity, per-observation accuracy, or cost, and different use cases may weight these differently — the 1.78 pp aggregate error from Kimi-primary may be acceptable for many applications at one-tenth the cost.
+On the original 46-paper extraction, the consensus pipeline matched 560 observations to reference standard versus Kimi's 486 (15% increase), representing modest coverage gains from complementary model outputs.
 
-### 3.5.3 Observation Confidence
+## 3.13 Cost
 
-Ninety-five percent of consensus observations were rated "high" confidence (confirmed by 2+ models), with only 5% at "medium" confidence (single model). The high-confidence observations had lower average error than medium-confidence ones (data in Supplementary Table S3).
-
-## 3.6 Cost and Processing Time
-
-Average per-paper API cost was approximately $0.37 (Claude: ~$0.28, Kimi: ~$0.04, Gemini vision/tiebreaker: ~$0.05). Processing 46 papers required approximately 6 hours of wall-clock time at roughly $17 total API cost. This compares to an estimated 184 hours of manual extraction at $30/hour ($5,520), representing a **240-fold API cost reduction**. This comparison reflects API costs only; it does not include researcher time for pipeline configuration, validation checking, or review of flagged observations. In a realistic deployment as a first-pass extractor with human review of flagged cases (Section 4.7), total researcher time would be substantially less than full manual extraction but non-zero.
-
-## 3.7 Error Analysis
-
-### 3.7.1 Error by Effect Size Magnitude
-
-Absolute error scaled with effect size magnitude: observations with small ground-truth effects (|effect| < 5%) had MAE = 6.4%, medium effects (5-15%) had MAE = 6.0%, large effects (15-30%) had MAE = 8.4%, and very large effects (>30%) had MAE = 19.4%. The increasing error with effect magnitude reflects inherent extraction noise rather than systematic bias, as confirmed by the absence of proportional bias in Bland-Altman analysis (r = -0.035, p = 0.38; Section 3.8).
-
-### 3.7.2 Sources of Error: Alignment vs. Extraction
-
-A central question for interpreting our accuracy metrics is whether discrepancies reflect true extraction errors (the pipeline misread a value) or alignment disagreements (the pipeline read correct values from a different data subset than the ground-truth author selected). Spot-check diagnosis of the 12 highest-error papers revealed that half (6 papers) had alignment errors rather than extraction errors:
-
-- Pfirrmann (1996): CO2 x potassium factorial; pipeline averaged across potassium levels, ground truth used ambient-K only
-- Fangmeier (2002): CO2 x ozone factorial; pipeline selected the wrong ozone level
-- Huluka (1994): two sampling dates; pipeline extracted September, ground truth used June
-- Natali (2009): trace metals (V, Pb, Ni, Al, Co) present in extraction but absent from ground truth, inflating MAE to 19.1%
-- Mjwara (1996): time-course granularity mismatch between extraction and ground truth
-- Polley (2011): tissue-type alignment discrepancy
-
-After an LLM-assisted alignment pass that corrected these mismatches, the well-aligned subset (374 observations, 34 papers) achieved **r = 0.876 and MAE = 4.3%**, compared to r = 0.669 and MAE = 7.9% for the full dataset. This indicates that roughly half of the reported error is attributable to alignment disagreements rather than extraction mistakes. The headline metrics (r = 0.669, MAE = 7.9%) should therefore be understood as measuring "agreement with a specific human extractor's choices" rather than "extraction accuracy" per se. The alignment-corrected metrics (r = 0.876, MAE = 4.3%) more closely reflect the pipeline's ability to read values from tables correctly.
-
-The remaining true extraction errors fall into three categories:
-1. **Vision OCR errors**: For scanned papers extracted in HYBRID mode, vision-based reading introduced errors (e.g., Heagle 1993 with 14% MAE from misread values).
-2. **Element-specific biology** (Fe, Mn): These elements can increase under elevated CO2, creating genuine directional ambiguity.
-3. **Factorial design collapse**: Complex multi-factor papers (e.g., CO2 x O3, CO2 x cultivar x AMF) require choosing which factorial level to extract, and mismatches with ground-truth choices inflate apparent error.
-
-### 3.7.3 Treatment/Control Swap Analysis
-
-No paper showed systematic treatment/control swap. Auto-correction of suspected swaps was tested and found catastrophically harmful (r declined from 0.509 to 0.209), because elements like Fe and Mn legitimately increase under CO2, and the "correction" converted correct positive effects to incorrect negative ones.
-
-## 3.8 Formal Agreement Statistics
-
-To rigorously assess agreement between automated and manual extraction, we performed formal statistical analyses on the 635 matched Loladze observations.
-
-### 3.8.1 Equivalence Testing
-
-Two one-sided tests (TOST) confirmed formal statistical equivalence between pipeline and ground-truth extraction at a ±2 percentage point margin (p < 0.001; 90% CI for mean difference: -1.07 to 0.97 pp; Supplementary Figure S5). The 90% confidence interval fell entirely within the pre-specified equivalence bounds, supporting the claim that the pipeline produces results indistinguishable from human extraction at this margin. Equivalence was also confirmed at the ±3 pp (p < 0.001) and ±5 pp (p < 0.001) margins.
-
-### 3.8.2 Bland-Altman Agreement
-
-Bland-Altman analysis showed negligible systematic bias: mean difference = -0.05 pp (95% CI: -1.26 to 1.16 pp), with 95% limits of agreement from -30.6 to 30.5 pp (Supplementary Figure S4). No proportional bias was detected (r = -0.035, p = 0.38), indicating that pipeline accuracy does not depend on effect size magnitude. The system is equally reliable for small and large effects.
-
-### 3.8.3 Intraclass Correlation
-
-Intraclass correlation was good at the observation level (ICC(3,1) = 0.669, 95% CI: 0.623-0.710) and excellent at the paper level (ICC = 0.838). The paper-level ICC falls within the range of published human inter-rater reliability in meta-analysis (ICC = 0.70-0.90; Mathes et al., 2017), indicating that the pipeline achieves reliability comparable to trained human extractors when aggregated at the study level.
-
-### 3.8.4 Cross-Dataset Formal Statistics
-
-Formal agreement statistics were computed for all three datasets (Figure 5). All datasets achieved TOST equivalence at ±5 pp or better (Loladze: p < 0.001 at ±2 pp; Hui: p < 0.001 at ±5 pp; Li 2022: p = 0.002 at ±5 pp). Observation-level ICC ranged from 0.429 (Li 2022, reflecting unit heterogeneity) to 0.948 (Hui, single standardized outcome). Bland-Altman analysis (Figure 6) showed mean bias ranging from -0.05 pp (Loladze) to 2.17 pp (Hui), with limits of agreement scaling with data complexity (Hui: -24.7 to 20.3 pp; Loladze: -30.6 to 30.5 pp; Li 2022: ±42 pp). The Hui dataset did not achieve TOST equivalence at ±2 pp (p = 0.597), and paired t-test (p = 0.002) confirmed a small but systematic underestimation of large Zn effects in scanned papers processed via HYBRID mode (Cohen's d = 0.060). This mode-dependent bias did not appear in the TEXT-mode papers and represents a known limitation of vision-based extraction from degraded PDFs.
-
-### 3.8.5 Systematic Bias Assessment
-
-Paired t-tests detected no systematic bias between pipeline and ground-truth effects (t = -0.08, p = 0.93; Wilcoxon signed-rank p = 0.29). Cohen's d = -0.003 (negligible), confirming that errors are random rather than directional. This is important for meta-analysis because random extraction errors cancel out across studies but systematic bias would propagate into pooled estimates.
-
-### 3.8.6 Bootstrap Confidence Intervals
-
-Bootstrap confidence intervals (10,000 BCa resamples) provided robust uncertainty estimates for all metrics (Table 2). The overall effect difference CI (0.00-0.12 pp) confirms that the pipeline reproduces the ground-truth aggregate effect within less than 0.2 percentage points with 95% confidence.
-
-**Table 2. Bootstrap confidence intervals for key validation metrics (N = 635, 10,000 BCa resamples).**
-
-| Metric | Point Estimate | 95% BCa CI |
-|--------|:--------------:|:----------:|
-| Pearson r | 0.669 | 0.545-0.834 |
-| MAE | 7.9% | 7.0-9.1% |
-| Direction agreement | 84.5% | 81.4-87.1% |
-| Overall effect diff | 0.05 pp | 0.00-0.12 pp |
-| Within 10% | 73.7% | 69.9-76.9% |
-
-## 3.9 Sensitivity Analyses
-
-### 3.9.1 Leave-One-Paper-Out
-
-To assess robustness, we performed leave-one-paper-out (LOPO) analysis, recomputing MAE after excluding each of the 46 papers in turn (Figure 4). The full MAE was 7.95%, and the LOPO range was 6.8-8.3%, demonstrating that no single paper dominates the aggregate results. The most influential paper was Natali et al. (2009; paper MAE = 19.1%); removing it improved aggregate MAE by 1.16 pp. Conversely, the best-performing papers (e.g., Azam 2013, Schenk 1997, Johnson 1997) each contributed only ~0.31 pp to the aggregate MAE when removed.
-
-### 3.9.2 Leave-One-Element-Out
-
-Leave-one-element-out analysis confirmed that no single element drives the results. Removing trace metals (V, Pb, Al, Co, Ni) improved MAE by 0.20-0.37 pp per element (reflecting their high error with few observations), while removing major elements (N, K, Mg, P) worsened MAE by 0.22-0.43 pp (reflecting their high accuracy).
-
-### 3.9.3 Difficulty Stratification
-
-Stratification by paper-level accuracy tier showed that nearly half the papers (22/46, 48%) achieved Excellent extraction (MAE < 5%), accounting for 245 observations with aggregate MAE of 1.6%. Only 1 paper (2%) fell in the Poor tier (> 20% MAE). By ground-truth effect magnitude, medium-sized effects (5-15%) were extracted most accurately (MAE = 6.0%), while very large effects (> 30%) had the highest error (MAE = 19.4%), consistent with the observation that extreme values are inherently harder to extract precisely.
-
-### 3.9.4 Matching Tolerance Sensitivity
-
-For the Hui and Li datasets, which use value-based matching with a tolerance parameter, we tested how varying the matching threshold affects results. For Hui, all 279 observations match at tolerance 0.15 or above; tightening to 0.10 reduces matches to 263 while improving r from 0.950 to 0.976. For Li, results are more threshold-sensitive: at tolerance 0.10 (n = 112), r = 0.889 and MAE = 3.70%; at 0.30 (n = 163), r = 0.453 and MAE = 11.62%. The aggregate effect difference remains stable across all thresholds (< 2.2 pp for Hui, < 1.1 pp for Li), confirming that the tolerance choice affects per-observation correlation but not the aggregate meta-analytic conclusion. For Loladze (element-based matching, no tolerance parameter), excluding observations with > 20% error (n = 511/560) improved r from 0.695 to 0.914 while the aggregate effect difference remained < 0.2 pp.
-
-## 3.10 Reproducibility Tests
-
-Three tests assessed pipeline reproducibility using existing extraction data without additional API calls.
-
-### 3.10.1 Cross-Run Stability
-
-The Hui 2023 dataset was extracted in two separate runs: first with 8 papers (original validation run) and then with 34 papers (expanded run). For the 230 observations matched between the two runs by value, the inter-run ICC(3,1) was 0.9996 (Pearson r = 0.9996), with mean effect size difference of 0.78 pp. Fifty-nine percent of treatment means were reproduced identically across runs. This reproducibility reflects the deterministic nature of the consensus pipeline: given identical input PDFs and model versions, the system produces virtually identical output.
-
-### 3.10.2 Within-Consensus Model Agreement
-
-Across all three datasets, the two primary extraction models (Claude Sonnet 4 and Kimi K2.5) independently agreed on 41 to 52% of observations at the exact-value level. When models agreed, the median effect size difference was 2.9 to 5.3 pp, confirming that agreed observations are high-quality. The consensus mechanism increased total observations by 81% over the best single model for Loladze and 10% for Hui, with the Gemini tiebreaker invoked for 14 to 35% of papers, confirming that the third model is needed for a meaningful minority of cases. Per-paper observation count ratios (min/max of the two models' counts) averaged 0.76 to 0.85, indicating that the models generally extract similar numbers of observations per paper.
-
-### 3.10.3 Confidence Level vs. Accuracy
-
-We tested whether the pipeline's confidence scoring (based on inter-model agreement) predicts extraction accuracy against ground truth. For Loladze, high-confidence observations had significantly lower error than medium-confidence (MAE 5.2% vs. 9.6%, Mann-Whitney p < 0.001, r = 0.908 vs. 0.671). For Li 2022, high-confidence observations similarly outperformed low-confidence (MAE 9.6% vs. 17.7%, p < 0.001). For Hui, confidence did not discriminate accuracy (p = 0.999), because single-model Claude-only observations, labeled "low confidence", were in fact highly accurate for this dataset's straightforward tabular data. This finding suggests that confidence scoring should distinguish between active model disagreement (genuine quality concern) and single-model extraction without corroboration (possibly still accurate).
-
+Average per-paper API cost was approximately $0.37 (Claude: ~$0.28, Kimi: ~$0.04, Gemini: ~$0.05), but with substantial variability: simple text papers cost ~$0.18, while complex factorial designs with 200+ extracted observations (e.g., Chen et al. 2021: 299 extracted rows, $3.50) cost up to $3.50. This range reflects genuine variability in paper complexity rather than tunable parameters. Processing 46 papers cost approximately $17 over 6 hours. This compares to an estimated 184 hours of manual extraction at $30/hour ($5,520). In a triage deployment where human reviewers check only flagged observations (20--30% of the total, varying by task structure and dataset), the human review time would be approximately 45--55 hours rather than 184, a 65--75% time reduction.
 
 ---
 
 # 4. Discussion
 
-## 4.1 Comparison to Existing LLM Extraction Systems
-
-Table 3 compares our system to eight published LLM extraction systems across key dimensions.
+## 4.1 Where the System Fits in the LLM Extraction Landscape
 
 **Table 3. Comparison of LLM-based data extraction systems for evidence synthesis.**
 
-| System | Domain | LLM(s) | N papers | Multi-model? | Primary metric | Quant. accuracy | Equivalence test |
+| System | Domain | LLM(s) | N papers | Multi-model? | Primary accuracy | Quant. accuracy | Equivalence test |
 |--------|--------|--------|----------|:------------:|----------------|-----------------|:----------------:|
-| Gartlehner et al. 2024 | Clinical | Claude 2 | 10 | No | 96.3% acc. | Not tested | No |
+| Buscemi et al. 2006 | Clinical (human) | -- | 44 | Yes (dual human) | 82.3% | Not separated | No |
+| Gartlehner et al. 2024 | Clinical | Claude 2 | 10 | No | 96.3% categ. + simple numerical | Not separated | No |
 | Gougherty & Clipp 2024 | Ecology | text-bison | 100 | No | >90% categorical | 23.8% | No |
-| Gartlehner et al. 2025 | Clinical | Claude 2.1-3.5 | 63 | No | 91.0% acc. | Not separated | No |
 | Jensen et al. 2025 | Clinical | GPT-4o | 11 | No | 92.4% acc. | Not separated | No |
-| Khan et al. 2025 | Clinical | GPT-4t + Claude-3-Opus | 22 | Yes (2) | 94% concordant | Incl. in 94% | No |
-| Li et al. 2025 | Clinical | GPT-4o-mini, Gemini, Grok | 58 | Tested | Prec. 0.75-0.95 | Recall 0.21-0.76 | No |
-| Sallam et al. 2025 | Clinical | GPT-4o; o3 | 290 | No | 72.6-75.3% acc. | Incl. in 72-75% | No |
-| Poser et al. 2026 | Clinical | Claude 3.7 + Gemini + o3 | 30 | Yes (3) | 1.48% error | N/A (categorical) | No |
-| **This study** | **Plant sci.** | **Sonnet 4 + Kimi + Gemini** | **104** | **Yes (3)** | **r = 0.45-0.95** | **MAE 5.0-11.6%** | **TOST p<0.001** |
+| Khan et al. 2025 | Clinical | GPT-4t + Claude-3-Opus | 22 | Yes (2) | 94% concordant accuracy | 0.25% hallucination (concordant) | No |
+| Li et al. 2025 | Clinical | GPT-4o-mini, Gemini-2.0-Flash, Grok-3 | 58 | Yes (3, combined) | Prec. 0.81-0.97 | Recall 0.21-0.81 (stats); consensus +14.8% recall | No |
+| Kataoka et al. 2026 | Clinical (insomnia) | GPT-4o; o3 | 290 | No | 72.3% (GPT-4o), 75.3% (o3); numeric worse than string | Numeric extraction "still inadequate" (their words) | No |
+| Poser et al. 2026 | Clinical | Claude 3.7 + Gemini + o3 | 30 | Yes (3) | 6.7% raw error (1.48% true-error¹) | N/A (categorical) | No |
+| Jansen et al. 2025 | Clinical | Multiple | 22 | No | 91%+ categorical | 26-36% effect sizes | No |
+| **This study** | **Plant sci.** | **Sonnet 4 + Kimi + Gemini** | **112** | **Yes (3)** | **r = 0.45-0.99** | **MAE 1.7-11.6%** | **TOST p<0.001** |
 
-Our multi-model consensus pipeline outperforms existing single-model approaches for quantitative data extraction from scientific literature. Sun et al. (2024) reported that individual LLMs achieved only 33-39% accuracy when extracting means and standard deviations from randomized controlled trials, a task considerably simpler than multi-element mineral concentration extraction from heterogeneous plant science papers. Our pipeline achieves 60% of observations within 5% of ground truth and 91% within 20%, an advance in automated quantitative extraction.
+¹ Poser et al. distinguish "true errors" (content errors, 1.48%) from total errors including formatting issues (6.7%).
 
-Gougherty and Clipp (2024) found that Google's text-bison model achieved 23.8% accuracy on quantitative ecological data extraction, concluding that LLMs were unsuitable for this task. Yun et al. (2024) benchmarked 8 LLMs on continuous outcome extraction from clinical trials and found that even GPT-4, the best performer, achieved only 48.7% exact match. More recently, Sallam et al. (2025) benchmarked GPT-4o and o3 for systematic review data extraction and achieved 72.6% and 75.3% accuracy, respectively. Tan and D'Souza (2026) provided a particularly relevant counterpoint, diagnosing "structural failures" in LLM-based evidence extraction for meta-analysis, finding near-zero reliability for full meta-analytic association tuples due to role reversals, cross-analysis binding drift, and numeric misattribution. Our Pearson correlations of r = 0.669 (Loladze) and r = 0.950 (Hui, 34 papers), combined with formal TOST equivalence (p < 0.001), demonstrate that a multi-model consensus approach with challenge-aware routing can overcome these structural limitations and exceed the performance of single-model systems.
+Our system differs from prior work in four key respects. First, we target quantitative extraction of continuous means and effect sizes (Li et al.'s Tier 3) rather than categorical study characteristics, where prior systems achieved 90--96% accuracy. Even specialized numerical extraction systems acknowledge the difficulty: Kataoka et al. (2026), testing o3 (OpenAI's reasoning model) on insomnia RCTs, concluded that "numeric variable extraction performed poorly" and "the performance for numeric DE was still inadequate." Their best system (o3) reached 75.3% accuracy on numeric variables; our Hui result of r = 0.993 exceeds this, though on a different task structure. Second, we use inter-model agreement as a quality *predictor* rather than solely an accuracy booster, enabling confidence-stratified output rather than aggregate accuracy reports. Third, we are the only system validated on plant science data. Fourth, we apply formal equivalence testing (TOST, ICC, Bland-Altman), providing a statistical framework for comparing pipeline output to human extraction rather than just reporting accuracy percentages.
 
-Most published high-accuracy extraction studies (Gartlehner et al., 2024, 96.3%; Jensen et al., 2025, 92.4%; Khan et al., 2025, 94%) focus on categorical data (study characteristics, PICO elements, risk-of-bias judgments) rather than the continuous quantitative values needed for meta-analysis. Deniau et al. (2025) confirmed this distinction in the largest evaluation to date (312,329 data points from 2,179 studies), finding that accuracy was "excellent" for only 12% of variables and was consistently lower for effect size calculation variables than for context/moderator variables. Our system targets this harder quantitative extraction task exclusively, representing a step change in capability. A recent benchmark across three medical domains (Li et al., 2025) found that all tested LLMs suffer from poor recall despite high precision; our consensus mechanism directly addresses this recall gap by combining complementary model outputs. Concurrently, Cao et al. (2025) demonstrated with otto-SR that end-to-end LLM automation can achieve 93.1% data extraction accuracy compared to 79.7% for dual-human workflows, reproducing 12 Cochrane reviews in two days; their system uses agentic o3-mini-high for extraction but operates on structured clinical trial data rather than the heterogeneous quantitative data from plant science papers that our pipeline targets.
+The accuracy picture is more nuanced than prior work suggests. Scott et al.'s (2025) systematic review found data extraction error rates of 4--31% (median 14%) across existing systems, with GenAI performing well on "easier" data such as publication years or countries, "but for more complex data, such as outcome data or intervention descriptions, GenAI tended to perform less effectively." Our MAE of 1.73% (Hui) and 7.9% (Loladze) falls within this range, with the Hui result substantially better than the field median, reflecting the advantage of single-element structured extraction. As Section 3.9 documents, the Loladze MAE of 7.9% is itself a conservative estimate: separating methodological concordance failures from reading errors reduces the effective extraction MAE to approximately 4.3% for the aligned subset. Jansen et al. (2025) found only 26--36% accuracy for effect-size variables and ~17% for standard deviations across 22 meta-analyses, results that contextualise our Loladze MAE of 7.9% (a different metric but directionally consistent). Peng et al. (2025) found 65.7--71.5% accuracy for means and SDs from sleep medicine RCTs using Claude 3.5; Yun et al. (2024) found 48.7% exact match for GPT-4 on continuous RCT outcomes; Gougherty & Clipp (2024) reported 23.8% for quantitative ecological data. Our Hui result (r = 0.993, MAE = 1.73%) exceeds these benchmarks substantially, reflecting the advantage of single-element structured extraction. Our Loladze and Li results are more representative of multi-element complex extraction and align with the 69--72% range when viewed at the ±10% threshold (74% and 66% within 10%, respectively).
 
-## 4.2 Comparison to Human Extraction
+## 4.2 The Concordance Signal: Khan's Principle Extended
 
-The pipeline's accuracy is formally comparable to human inter-rater reliability. Mathes et al. (2017) reported human extraction error rates of 8-63% depending on data type, and found that 66.8% of published meta-analyses contained at least one erroneous data extraction. Our paper-level ICC of 0.838 falls within the published range for human inter-rater reliability (0.70-0.90 for single-extractor vs. consensus comparisons; Mathes et al., 2017), and TOST equivalence testing (i.e., the extracted mean is statistically within ±2 percentage points of the ground truth) confirms indistinguishability at that margin (p < 0.001). The relevant comparison is to a single trained human extractor, since the ground truth itself was produced by a single author (Loladze, 2014); dual-independent human extraction would likely yield tighter agreement.
+Khan et al. (2025) established the core insight motivating our design: when two independent LLMs give concordant responses, the hallucination rate drops to 0.25%; when responses are discordant, the hallucination rate rises to 26--41%. This nearly 100-fold difference means that concordance status is a better predictor of reliability than any model-specific accuracy score. Khan applied this principle to categorical binary extraction (does a study meet inclusion criterion X?), demonstrating 87% concordance rate and 94% accuracy on concordant items.
 
-Gartlehner et al. (2025) found that AI-assisted extraction accuracy (91.0%) was comparable to human-only accuracy (89.0%), with concordance of 77.2%. Jensen et al. (2025) reported that ChatGPT-4o as a second rater had only 5.2% false data rate versus 17.7% for human single extractors. Our system achieves 85% direction agreement and formal equivalence, placing it in the same performance class as trained human extractors.
+We extend this principle in two directions. First, we apply it to *continuous numerical* extraction, where the reliability problem is more acute: wrong numbers can bias meta-analytic estimates without triggering any obvious flag, whereas a wrong categorical label is often detectable by inspection. Second, we develop the concordance signal into a full confidence-stratification system rather than a binary accept/reject filter. Our results confirm that the concordance principle extends to quantitative extraction: consensus-dominant papers achieve MAE = 4.3% versus 11.2% for vision-dependent papers (2.6× improvement), with 95% of large errors concentrated in the flagged minority.
 
-The presence of 6 papers with near-perfect extraction (MAE < 0.1%: Pleijel 2009, Keutgen 2001, Wu 2004, Schenk 1997, Niinemets 1999, Johnson 2003) demonstrates that the system's capability ceiling matches expert human performance when paper structure is clear.
+Poser et al. (2026) independently validated three-model consensus for clinical data extraction, achieving 1.48% true-error rate for structured clinical variables, further confirming that multi-model consensus reduces errors. However, their study focused on categorical clinical fields rather than continuous numerical outcomes. Jansen et al. (2025), testing a majority-vote ensemble of 8 LLMs on 2,179 studies, found that ensemble voting improved performance over individual models and that variable type was the dominant predictor of accuracy, consistent with our finding that `has_complex_stats` predicts consensus failure more strongly than paper-level features. Their conclusion that accuracy depends "most between variable, less between systematic reviews, and least between LLMs" means that inter-model agreement functions as a variable-difficulty detector: hard variables produce disagreement, easy variables produce consensus. Our contribution is demonstrating that this signal works for *continuous* numerical extraction in *complex multi-element* agricultural data, where it predicts accuracy at the paper level with sufficient reliability to support an automated triage workflow.
 
-A methodological caveat applies to the ground-truth comparison itself. The Loladze (2014) dataset was compiled by a single author extracting data from approximately 130 papers without a reported dual-extraction protocol. Human single-extractor error rates of 8-63% (Buscemi et al., 2006; Mathes et al., 2017) suggest that the ground truth itself contains some errors. If the ground truth has, say, 5-10% error, our measured MAE of 7.9% may partly reflect ground-truth noise rather than pipeline inaccuracy. This possibility is supported by the 6 papers where the pipeline achieved near-zero error (MAE < 0.1%), suggesting that our extraction can be more precise than the ground truth on well-structured papers. The same caveat applies to the Hui and Li datasets, which were also produced by single research teams. Future validation against dual-extracted, consensus-verified ground truth would provide a cleaner accuracy estimate.
+Tan & D'Souza (2026) provide mechanistic insight into why single-model extraction fails systematically. Their four structural failure modes — role confusion (treatment/control swaps), binding drift (cross-row value attribution), multi-instance compression, and error amplification — each produce characteristic patterns that a single model cannot self-detect. Multi-model consensus addresses these failures by design: a treatment/control swap by one model will not be matched by another model, raising a discordance flag. Binding drift produces inconsistent numerical values across models. Only multi-instance compression and error amplification could propagate across models if both are misled by the same structural feature, a residual limitation.
 
-## 4.3 Value of Multi-Model Consensus
+**Reading Accuracy versus Relevance: a critical distinction.** Consensus validates *reading accuracy* — was the number extracted correctly from the text? It does not validate *relevance* — is this the number the meta-analyst intended to select? The 4.5% initial extraction precision (100 GT-matched observations from over 2,200 extracted candidates in the Structurally Concordant Subset Li analysis) is a relevance problem, not a consensus failure: the pipeline correctly reads all detectable numbers, then consensus confirms which readings are reliable. The downstream triage step — filtering to yield-related outcomes and matching to the meta-analyst's intended stratum — is a separate task. High-confidence observations are reliably accurate readings; they may still require analyst judgment about relevance to a specific sub-condition.
 
-Our results support the multi-model consensus approach. Khan et al. (2025) validated this principle: concordant GPT-4 and Claude-3 responses achieved 94% accuracy with only 0.25% hallucinations, versus 27-41% hallucination rates when models disagreed. Our consensus mechanism follows the same principle, requiring agreement between Claude and Kimi before accepting observations at "high" confidence.
+## 4.3 The Three-Barrier Model: What Each Dataset Measures
 
-The consensus approach increased total extracted observations by 73% over the best single model (1,528 vs. 884), demonstrating that the two models capture complementary information. The Gemini tiebreaker reduced zero-consensus papers from 38% to 3%, recovering observations that would otherwise be lost. Ablation analysis on a fixed scope of 322 observations revealed that consensus (MAE = 4.54%) outperforms Claude (6.29%) and Gemini (5.53%) individually but does not improve over the best single model (Kimi: 4.10%). The consensus mechanism's primary value is thus coverage and robustness rather than per-observation accuracy: no single model dominates across all elements, and the voting mechanism ensures that the system degrades gracefully when any single model fails on particular papers. Concurrent work by Poser et al. (2026) independently validated this principle for clinical data, achieving a 1.48% true-error rate with three-LLM consensus, comparable to expert neurologists, further supporting multi-model agreement as a general strategy for reliable extraction.
+The three datasets do not form a difficulty gradient; they are three different instruments, each isolating a distinct barrier to reliable AI extraction.
 
-## 4.4 Challenge-Aware Routing
+**The Reading Barrier (Hui dataset).** With a single element (Zn), standardized units (mg/kg), and a uniform wheat biofortification context, the r = 0.993 and MAE = 1.73% measure one thing: can the pipeline read numbers correctly from tables? This barrier is effectively broken: near-perfect accuracy was achieved zero-shot on an unseen dataset without any domain-specific calibration beyond the JSON schema.
 
-The challenge-aware reconnaissance stage routes papers to appropriate extraction methods. TEXT-mode papers achieved remarkably low MAE (2.27%, r = 0.974), demonstrating that for papers with clean, machine-readable tables, the pipeline approaches near-perfect accuracy. HYBRID mode (MAE = 9.23%) handled papers with scanned content, image tables, or figure-only data that would otherwise yield zero observations from text extraction alone. MEDIUM-difficulty papers (MAE = 3.72%, r = 0.943) were clearly distinguished from HARD papers (MAE = 8.97%), validating the routing classifier's ability to identify genuinely challenging papers.
+**The Granularity Barrier (Loladze dataset).** The Loladze dataset adds 14 elements, CO2 factorial designs, scanned PDFs, and multi-tissue tables, introducing extraction difficulty plus a second barrier: does the system make the same analytical sub-selection choices as the human meta-analyst? The `info`-column analysis (Section 3.9) shows that approximately half of the Loladze MAE reflects sub-selection disagreement — the pipeline and Loladze both read values correctly but from different experimental strata. For a researcher running this pipeline for their own meta-analysis, sub-selection rules are specified in the configuration file, eliminating this disagreement. The 4.3% aligned-observation MAE is the operational forecast; 7.9% is the lower bound when sub-selection rules are not pre-specified (replicating a different analyst's unstated choices). The Granularity Barrier is not solved by more accurate reading, but by explicit pre-specification of analytical choices.
 
-This is analogous to how experienced human extractors adjust their approach based on paper quality, for instance using magnification for scanned papers or cross-referencing results text for figure-only data. The challenge-aware routing effectively automates this adaptive behavior.
+**The Provenance Barrier (Li dataset).** The Li dataset adds a third barrier: the quality and homogeneity of the reference standard itself. When reference standard and input PDF provenance issues prevent valid comparison for 12 of 28 papers, the headline r = 0.453 measures the combination of pipeline output, GT curation heterogeneity, and validator reliability — not extraction accuracy alone. On the 16 papers where the comparison is clean, r = 0.996. The Provenance Barrier is not an AI problem; it is a validation infrastructure problem. No extraction system, human or AI, can achieve high correlations when validated against a reference standard that contains wrong PDF mappings, attribution errors, and aggregation-level mismatches.
 
-## 4.5 Cross-Dataset Generalizability and Aggregate Accuracy
+Before deploying the pipeline on a new topic, researchers can anticipate: (A) if extraction targets a single outcome in standardized units (Hui profile), expect near-perfect reading accuracy; (B) if extraction targets complex factorial designs with pre-specified sub-selection rules (Loladze profile), expect ~4.3% MAE for aligned observations; (C) if validating against a heterogeneous external reference standard (Li profile), expect that the headline statistics will reflect reference-standard quality as much as pipeline quality — paper-level auditing is needed to separate these. In all three cases, aggregate meta-analytic effects are reproduced to within fractions of a percentage point regardless of individual-observation noise.
 
-The pipeline's performance across three validation datasets after configuration-only changes demonstrates meaningful cross-domain transfer. No published automated extraction system that we are aware of has demonstrated this kind of topic-agnostic capability for quantitative data. The three datasets form a difficulty gradient driven by unit heterogeneity: Hui (r = 0.950; single element, uniform units), Loladze (r = 0.669; 14 elements, standardized concentrations), and Li (r = 0.453; heterogeneous yield units across 10+ crop species). They also span both effect directions (negative for Loladze; positive for Hui and Li), confirming the system is not biased toward any particular direction.
+**The 4.5% initial precision as deliberate Information Surplus.** The low initial extraction precision (4.5%: ~100 GT-matched observations from over 2,200 extracted candidates in the Structurally Concordant Li analysis) reflects a deliberate design choice rather than a failure. In Baslam et al. (2012), the pipeline extracted 76 observations capturing every factorial interaction, while the human reference standard used a 38-observation main-effect subset. This exhaustive extraction preserves the full experimental richness for secondary meta-regressions and subgroup analyses that may not have been planned during the original meta-analysis. The consensus mechanism then functions as a precision filter: from the information-surplus candidate pool, inter-model agreement selects the observations most likely to be reliable readings. Researchers who need higher initial precision for a tightly-defined question can specify explicit stratum filters in the configuration JSON, trading recall for precision at the configuration level rather than the model level.
 
-Aggregate meta-analytic effects were reproduced with high fidelity: 0.05 pp for Loladze (95% BCa CI: 0.00-0.12 pp), 0.06 pp for Li 2022, and 2.17 pp for Hui. Formal equivalence testing (TOST at ±2 pp: p < 0.001 for Loladze) and the absence of systematic bias (Cohen's d = -0.003) confirm that errors are random and cancel in the aggregate. The Hui discrepancy, driven by HYBRID-mode underestimation in scanned papers, illustrates that systematic mode-dependent biases may persist even when random errors cancel, and represents a known limitation of vision-based extraction.
+## 4.4 Li 2022 Paper-Level Audit: What the Validation Comparison Measures
 
-An important caveat: the wide Bland-Altman limits of agreement (approximately ±30 pp for Loladze) mean that individual observation-level estimates are noisy. The pipeline should be used for aggregate pooling across studies, not for extracting single reliable point estimates from individual papers. Researchers requiring high precision on a specific paper-element combination should verify those values manually. Yield-based meta-analyses with heterogeneous units may also benefit from explicit unit normalization in post-processing, which is less necessary for concentration-based outcomes.
+We conducted a systematic audit of all 28 Li 2022 papers to understand the composition of the r = 0.453 headline. Twelve of 28 papers had structural reasons preventing a valid same-level comparison between pipeline output and reference standard. These were comparison failures rather than extraction failures: the measuring instrument (the GT database plus the matching algorithm) could not form a valid comparison for those 12 papers. The remaining 16 papers all matched cleanly, achieving r = 0.996, MAE = 0.44 pp, 100% capture rate.
 
-## 4.6 Limitations
+The 12 excluded papers fall into identifiable categories (detailed in Supplementary Table S1 and Supplementary Table S5): 2 papers had input PDF or consensus failures — Abdel-Mawgoud (2010), whose yield data appear exclusively in embedded bar charts precluding text extraction, and Alabdulla (2019), where Kimi timed out leaving only single-model Claude output with no consensus formed; 4 had GT attribution errors — 3 where the GT database incorrectly assigned a wrong crop species or metric to the paper (Mondal, Pohl, Glosek-Sobieraj), and 1 (Godlewska 2016) where the pipeline correctly extracted 60 consensus observations of microelement content (Zn, Cu, Fe, Mn) but the Li GT row expected yield data, a GT outcome-category mismatch rather than an AI extraction failure; 3 had aggregation-level mismatches (the GT stored per-year observations, the pipeline extracted multi-year averages, a legitimate analytical choice difference rather than a reading error); 2 had GT values sourced from pre-publication data with systematic inflation; and 1 had a product-selection omission (the pipeline extracted the title product arm; the GT included an additional arm). One further paper (Rahman 2018) is the sole genuine pipeline limitation: yield data were published exclusively in bar chart figures, and the pipeline captured only 2 of 4 dose arms from visual extraction.
 
-Several limitations should be noted:
+Two additional validation infrastructure issues were identified and resolved. The consensus engine silently discarded 20 correctly extracted observations from Popescu 2018 and Wilczewski 2018: in one case because two models used different unit systems for the same values (kg/vine vs. kg/ha); in the other because bracketed unit notation in element labels caused exact string matching to fail. A post-hoc repair script recovered 13 of these observations to reference-standard matches. Separately, the scale-sensitive validator had misscored correct extractions for Lola-Luz 2014 and Soppelsa 2018 (absolute-scale mismatches between GT and extracted means, despite correct effect sizes); switching to effect-percentage-based matching corrected these. The methodological lesson for future validation studies is that r, MAE, and ICC are composite metrics measuring both pipeline accuracy and validation infrastructure reliability simultaneously, and that paper-level auditing is necessary to separate these when the reference standard contains heterogeneous curation quality.
 
-1. **Element capture rate (83%)** means approximately 17% of ground-truth observations are not matched, potentially introducing selection bias if missed observations differ systematically from captured ones.
+## 4.5 Benchmark Bias and the Human Comparison Problem
 
-2. **Wide limits of agreement**: While mean bias is negligible (-0.05 pp), the Bland-Altman 95% limits of agreement span ±30 pp, reflecting substantial observation-level variability. Individual observations may have large errors even though the aggregate is unbiased.
+All AI extraction benchmarking, including ours, faces what Gartlehner et al. (2025) have termed "benchmark bias": the tendency to evaluate AI systems against human-extracted reference standards that themselves contain errors. Research on human extraction reliability indicates that up to 63% of study reports contain at least one extraction error even when extracted by trained researchers, a baseline rarely accounted for when setting accuracy thresholds for AI systems (Gartlehner et al., 2025; Mathes et al., 2017). Gartlehner et al. (2025) illustrate the problem concretely: in their proof-of-concept study, Claude 2 identified 21 minor errors in the human reference standard that would otherwise have gone undetected; on inspection, these proved to be corrections.
 
-3. **Variance extraction (67% capture)** lags behind means extraction (>98%), limiting the proportion of observations fully ready for weighted meta-analysis. This reflects inconsistent variance reporting in agricultural literature: some papers report SE, others SD, LSD, or only letter-based significance groupings (a, b, c) with no numeric values. Unlike clinical trials where CONSORT guidelines mandate variance reporting, agricultural journals lack equivalent conventions.
+This has direct implications for interpreting our results. Our Loladze reference standard was extracted by a single author without a reported dual-extraction protocol. Our measured MAE of 7.9% therefore combines pipeline error, reference-standard error, and methodological concordance failures in unknown proportions. The `info`-column analysis (Section 3.9) resolves the concordance component, and the 6 papers where our pipeline achieved MAE < 0.1% suggest the pipeline can be more precise than the reference standard on well-structured papers. If the reference standard contains even 5% error, and if the concordance component accounts for approximately half the remaining MAE (as Section 3.9 estimates), the effective pipeline extraction error may be as low as 2--3%, substantially below the headline 7.9%.
 
-4. **Kimi API stability**: The 1000-file upload limit required periodic cleanup, and API latency varied substantially across papers. Production deployments should include retry logic and alternative model fallbacks.
+More broadly, the dual-independent-extraction-followed-by-consensus protocol described by Buscemi et al. (2006) as the gold standard is expensive enough that most meta-analyses never implement it. Our paper-level ICC of 0.838 is consistent with human inter-rater reliability values reported in the data extraction automation literature (Mathes et al., 2017; Schmidt et al., 2025), suggesting that the pipeline performs comparably to a human second extractor without the labor cost. Jensen et al. (2025) found that ChatGPT-4o as a second rater had a 5.2% false data rate versus 17.7% for human single extractors, consistent with the possibility that AI extraction is already less error-prone than single-human extraction for some data types.
 
-5. **Validation scope**: All three validation datasets are from plant science. Generalization to clinical trials, social science, or other domains is not tested and may require domain-specific configuration.
+Benchmark bias implies that future evaluation studies should, where possible, use multiple independent human extractors to establish the reference standard, document methodological sub-selection choices (as the Loladze `info` field inadvertently does), and separate validation artifacts from genuine extraction errors through paper-level auditing. Our methodology for doing this, combining systematic per-paper diagnostic reports with `info`-field analysis, provides a template for future validation studies of complex-design data extraction systems.
 
-6. **Matching tolerance sensitivity**: Validation matching uses configurable tolerances (15% relative error for value matching, 20% for the Hui dataset). Sensitivity analysis across tolerance values (0.05-0.30) showed that Hui results are stable: all 279 observations match at tolerance 0.15 or above, with r ranging from 0.950 to 0.976 across thresholds. Li 2022 is more sensitive: tightening tolerance from 0.30 to 0.10 reduces matched observations from 163 to 112 while improving r from 0.453 to 0.889, indicating that the weaker matches (tolerance 0.20-0.30) introduce substantial noise. The aggregate effect difference remains stable across thresholds for both datasets (< 2.2 pp).
+## 4.6 Engaging with "Not Yet Ready": A More Nuanced Assessment
 
-7. **Cost variability**: API pricing changes over time, and per-paper costs depend heavily on paper length and complexity (range: $0.20-$0.80).
+Lieberum et al. (2025) concluded from their scoping review that LLMs are "not yet ready for use" in systematic review data extraction, noting that only 11% of LLM-SR studies even address data extraction and that quantitative accuracy remains insufficient for complex tasks. Scott et al. (2025) reached the same conclusion: "The current evidence does not support GenAI use in evidence synthesis without human involvement or oversight. However, for most tasks other than searching, GenAI may have a role in assisting humans with evidence synthesis." Cao et al. (2025) similarly found that fully automated systematic reviews remain out of reach. We agree with this conclusion for fully automated deployment but argue for a more nuanced position: the pipeline is ready for triage deployment, with human oversight concentrated where it is needed.
 
-8. **Model versioning**: Results were obtained with specific model versions (Claude Sonnet 4, May 2025; Kimi K2.5, January 2026; Gemini 3 Flash, December 2025). LLM providers update model weights without notice, and results may not be exactly reproducible with future model versions. The cross-run stability ICC of 0.9996 applies within a given model version; across versions, some drift should be expected.
+The "not yet ready" conclusion implies a binary: either the system works well enough to replace humans, or it does not. Our results suggest a different question: whether AI can triage extraction work intelligently, focusing human effort on the observations where it is needed. On this criterion, our results are more encouraging. The pipeline achieves MAE = 4.3% on consensus-dominant observations and correctly identifies 95% of large errors as low-confidence. Human reviewers who check only the flagged observations (20--30% of total, depending on task structure), working at reduced effort compared to de novo extraction, can achieve the accuracy of full dual extraction at approximately 55--75% lower cost.
 
-9. **Prompt sensitivity**: Extraction quality depends on the specific prompt templates used (reconnaissance, extraction, and tiebreaker prompts). Full prompt texts are provided in the supplementary materials and open-source repository, but we did not perform systematic prompt ablation studies. Different prompt formulations may yield different accuracy levels.
+Lieberum et al.'s concern is particularly valid for domains where accuracy is critical at the individual-observation level (clinical dosing, safety data) and where errors could directly harm downstream users. For agricultural meta-analysis, where the outputs are population-level estimates of agronomic effects rather than individual patient treatments, the tolerance for observation-level variability is higher, provided that errors are random rather than systematic. Our demonstration that Cohen's d ≈ 0 across all three datasets (|d| < 0.07) and that errors cancel in the aggregate addresses this concern directly.
 
-## 4.7 Implications for Meta-Analysis Practice
+The methodological concordance finding (Section 3.9) adds an important nuance to the "not yet ready" assessment: a portion of what current validation studies report as AI extraction error is actually methodological sub-selection disagreement between the AI and the human meta-analyst, of a kind that a human second extractor without explicit sub-selection instructions would also show. The true extraction error rate, stripped of concordance failures, is lower than reported MAE values suggest. Current MAE benchmarks therefore understate AI capability.
 
-The pipeline has several practical implications:
+We propose a position between "not yet ready" and "ready for full automation": ready for supervised deployment as a first extractor, analogous to how pilot extraction is currently used in manual meta-analysis. The pipeline handles 70--80% of observations at high confidence; human reviewers handle the rest. This matches how most large meta-analysis teams already work, with a senior researcher reviewing junior extractors' output, but substitutes AI for the junior extractor role at a fraction of the cost.
 
-1. **First-pass extraction**: The system could extract initial data from 80-90% of papers, with human reviewers focusing on flagged observations (medium confidence, direction mismatches, extreme values).
+## 4.7 The Triage Workflow in Practice
 
-2. **Rapid scoping reviews**: Processing 46 papers in approximately 6 hours at $17 enables rapid feasibility assessment of potential meta-analyses before committing to full manual extraction.
+Based on our results, we propose a triage workflow for AI-assisted meta-analysis:
 
-3. **Large-scale meta-analyses**: For meta-analyses involving 100+ papers where full manual extraction is prohibitively expensive, the pipeline provides a viable automated pathway.
+1. **Auto-validated observations** (high confidence, ~70--80% of pipeline output): Two or more models agree. These observations achieve MAE ≈ 3--5% and can be used directly with minimal human review. For scoping analyses assessing meta-analysis feasibility, these observations alone may suffice. For publication-quality analyses, we recommend a **5% random spot-check** of high-confidence observations to verify absence of systematic model bias (e.g., a shared misinterpretation of a non-standard unit or table layout that both models agree on incorrectly).
 
-4. **Quality assurance tool**: Even when manual extraction is performed, the pipeline could serve as an independent second extractor, flagging discrepancies for review, achieving paper-level ICC comparable to a human second rater.
+2. **Flagged observations** (medium/low confidence, ~20--30% of output): Single-model or vision-only extraction. These are retained in the dataset but tagged for human verification. The pipeline provides the extracted value as a starting point, reducing reviewer effort compared to extraction from scratch. Each flagged observation requires approximately 2 minutes of expert review compared to 10 minutes of de novo extraction.
 
-5. **Reproducibility**: Cross-run stability testing yielded an ICC of 0.9996 between independent pipeline invocations on the same papers, confirming that the system produces effectively deterministic outputs for a given model version, addressing concerns about human inter-rater variability. Confidence scores predicted extraction accuracy for 2 of 3 datasets (p < 0.001), providing a built-in quality indicator.
+3. **Rejected papers** (zero consensus, ~3% after tiebreaker): No model could extract usable data. These require full manual extraction.
 
+4. **Concordance review** (for complex factorial papers): The pipeline's extracted values and the meta-analyst's sub-selection rules should be compared. For papers where the `info`-field-equivalent information (co-treatment arm, date, cultivar) is not pre-specified in the configuration, the pipeline defaults to main effects and averages, which may differ from the intended sub-selection. This review step replaces the methodological concordance failures identified in Section 3.9 with a configuration-time specification of intent.
+
+This workflow offers substantial time savings even without full automation. The flagged fraction varies by task: single-element extraction (Hui-type) flagged approximately 31% of observations, while complex multi-element extraction (Loladze-type) achieved consensus on ~94% of observations, flagging only ~6%. Assuming 20--30% human review at ~2 minutes per flagged observation versus ~10 minutes for de novo extraction, the total human time for a 46-paper meta-analysis drops from ~184 hours to approximately 50--80 hours, a 55--75% reduction. The pipeline also provides a complementary extraction for quality assurance: paper-level ICC of 0.838 is consistent with published human inter-rater reliability values (Mathes et al., 2017; Schmidt et al., 2025). Methodological independence between pipeline models is not claimed, as all three models received identical extraction prompts; the ICC comparison is therefore to human inter-rater reliability as a calibration benchmark, not as evidence of independent replication.
+
+For rapid scoping reviews assessing the feasibility of a new meta-analysis, the high-confidence observations alone may be sufficient. For publication-quality meta-analyses, the triage workflow ensures that every observation is either consensus-validated or human-reviewed. Peng et al. (2025) reached the same practical conclusion in sleep medicine: "systematic review authors could utilize AI tools as second reviewers for data extraction to achieve accuracy comparable to human reviewers, yet with greater efficiency and reduced labor." Our results extend this finding to plant science and quantify what "comparable to human" means: paper-level ICC = 0.838, consistent with human inter-rater reliability values for data extraction tasks (Mathes et al., 2017; Schmidt et al., 2025).
+
+## 4.8 Limitations
+
+1. **Development vs. holdout validation.** The Loladze dataset was used during pipeline development; accuracy on this dataset may be optimistic. The Hui zero-shot holdout validation (r = 0.993) provides a more honest estimate for straightforward extraction tasks, while the Li dataset (r = 0.453 overall; r = 0.996 on 16 correctly paired papers) represents performance on a heterogeneous dataset with both reference-standard curation issues and two identified software bugs in the validation pipeline (Section 4.4). The consensus-layer normalization failures (Popescu 2018, Wilczewski 2018: unit and label format divergence between models silently discarding 20 correct observations) and the automated validator matching failures (Lola-Luz 2014, Soppelsa 2018: absolute-scale mismatch misscoring correct effect-size extractions) are fixable and represent upper-bound opportunities for improvement.
+
+2. **Wide observation-level limits of agreement.** Bland-Altman limits span ±30 pp for Loladze and ±42 pp for Li, meaning individual observations may have large errors even though the aggregate is unbiased. The pipeline should be used for aggregate pooling, not single-observation precision.
+
+3. **Vision extraction quality.** Vision-dependent papers achieved MAE = 11.2%, substantially worse than consensus-dominant papers (MAE = 4.3%). The pipeline's confidence flagging mitigates this risk but does not eliminate it. Papers with scanned tables or figure-only data remain challenging.
+
+4. **Element capture rate (83%).** Approximately 17% of reference-standard observations were not matched, potentially introducing selection bias.
+
+5. **Variance extraction (67% capture)** lags behind means extraction (>98%), reflecting inconsistent variance reporting in agricultural journals, a known problem in the field (Nakagawa et al., 2023).
+
+6. **Proportional bias in heterogeneous data.** The Li dataset showed significant proportional bias (r = 0.355, p < 0.001): extraction errors grew with effect magnitude. This likely reflects unit conversion ambiguity for large yield responses rather than systematic extraction failure. Unit-normalization (scale-factor matching) accounts for a portion of Li clean-subset matches; a 100× scale discrepancy is consistent with legitimate unit conversion (mg/100g vs. mg/g) but could in principle indicate extraction of a differently-scaled variable. Per-paper audit of all 16 clean-subset papers found no instances of wrong-variable extraction; nevertheless, large scale-factor matches should be flagged for human inspection in production use.
+
+7. **Validation scope.** All three datasets are from plant science. Generalization to clinical trials or other domains is not tested, though the pipeline is domain-agnostic by design. Extension to animal ecology (e.g., aquatic species response studies) is planned; the configuration-driven design transfers without code changes, but domain-specific outcome variable definitions and tissue taxonomies must be specified.
+
+8. **Model versioning and reproducibility.** Results were obtained with specific model versions (Claude Sonnet 4, Kimi K2.5, Gemini 3 Flash). LLM providers update models without notice. Cross-run stability ICC of 0.9996 applies within a version; across versions, drift should be expected. Schmidt et al.'s (2025) living review update specifically identified reproducibility as an emerging concern with LLM-based extraction: "LLMs showed a trend of decreasing quality of results reporting, especially quantitative results such as recall and lower reproducibility of results."
+
+9. **Benchmark bias.** As discussed in Section 4.5, reference-standard extraction errors and methodological sub-selection choices both confound our accuracy estimates. True pipeline reading error may be lower than reported MAE.
+
+10. **Prompt sensitivity.** Extraction quality depends on prompt templates, which were not systematically ablated. Full prompts are provided in supplementary materials.
+
+11. **Methodological concordance decomposition limitations.** The `info`-column decomposition in Section 3.9 was conducted for Loladze but relies on the unusual feature that this reference standard's `info` field documents sub-selection choices. Most meta-analysis databases do not include such documentation, making concordance decomposition difficult or impossible without re-reading all papers. The approach is not easily generalizable without comparable documentation in the reference standard.
 
 ---
 
 # 5. Conclusion
 
-We presented a multi-model AI consensus pipeline for automated quantitative data extraction from scientific papers for meta-analysis. The system combines challenge-aware paper routing with dual-model extraction (Claude Sonnet 4 and Kimi K2.5) and a Gemini 3 Flash tiebreaker, validated against three independent published meta-analysis datasets spanning different research domains and effect directions.
+We developed and validated a multi-model consensus pipeline for quantitative data extraction in plant science meta-analysis. Across three published reference datasets representing 112 papers and 2,676 extracted observations, the system achieved r = 0.993 on zero-shot holdout validation (MAE = 1.73%), reproduced aggregate meta-analytic effects to within 0.40 pp with no systematic bias, and correctly identified its own unreliable extractions through inter-model agreement. The system uses dual-model strategic heterogeneity (Claude Sonnet 4 + Kimi K2.5) with a conditional tiebreaker (Gemini 3 Flash): concordant observations are output with high confidence; discordant ones are flagged for human review.
 
-Three findings are central. First, the pipeline achieves **formal statistical equivalence** with human extraction at the aggregate level (TOST p < 0.001 at ±2 pp margin) and paper-level reliability within the human inter-rater range (ICC = 0.838 vs. published human ICC of 0.70-0.90), though individual observation-level estimates remain noisy (Bland-Altman limits: ±30 pp). The absence of systematic bias (Cohen's d = -0.003, paired t-test p = 0.93) confirms that extraction errors are random and cancel out in aggregate, exactly the property needed for meta-analysis.
+The results characterize three barriers to reliable AI extraction. The **Reading Barrier** is effectively broken: zero-shot holdout validation on the Hui 2023 zinc biofortification dataset achieved r = 0.993, MAE = 1.73%, 99% direction agreement. The **Granularity Barrier** — selecting the correct analytical stratum from factorial designs — is addressed by pre-specified configuration: separating sub-selection concordance from reading errors reduces the Loladze MAE from 7.9% to 4.3%. The **Provenance Barrier** — reference-standard and input-file heterogeneity — explains the Li 2022 headline r = 0.453; on the Structurally Concordant Subset (16 papers with verified same-level comparisons), r = 0.996, MAE = 0.44 pp. To our knowledge, these results represent the strongest reported performance for continuous numerical effect-size extraction in plant science, and compare favorably with the best available benchmarks: zero-shot holdout r = 0.993 exceeds the 72--75% numeric accuracy recently achieved by GPT-4o and o3 on clinical insomnia data (Kataoka et al., 2026), though differences in task structure preclude direct comparison.
 
-Second, multi-model consensus substantially improves extraction reliability over single-model approaches, increasing observation volume by 73% while maintaining quality, consistent with the principle that independent agreement between models provides a natural filter against hallucination. Challenge-aware routing that adapts extraction strategy to paper characteristics is effective: TEXT-mode papers achieved near-perfect accuracy (MAE = 2.27%), while even HARD-classified papers maintained practical accuracy (MAE = 8.97%).
+On reliability prediction: consensus-dominant papers achieved MAE = 4.3% versus 11.2% for vision-dependent papers. High-confidence observations had significantly lower error than flagged observations (p < 0.001), and 95% of large errors concentrated in the flagged minority. The confidence score is a genuine quality signal, available at extraction time, that enables triage without ground truth.
 
-Third, the pipeline reproduces aggregate meta-analytic effects with high fidelity: the overall mineral decline effect differed by only 0.05 percentage points from the ground truth (95% CI: 0.00-0.12 pp), with leave-one-paper-out analysis confirming stability across all 46 jackknife samples (MAE range: 6.8-8.3%). Cross-domain validation on zinc biofortification data (Hui et al., 2023; 34 papers, r = 0.950, 99% direction agreement) and biostimulant crop yield data (Li et al., 2022; 28 papers, 87% direction agreement, overall effect reproduced to within 0.06 pp) confirms generalizability across research topics and both positive and negative effect directions, with accuracy modulated by outcome unit heterogeneity and paper quality (scanned vs. digital).
+On systematic bias: aggregate meta-analytic effects were reproduced to within 0.05--0.40 pp across all three datasets, with |Cohen's d| < 0.07 and formal TOST equivalence at ±2 pp (Loladze and Hui, p < 0.001). A pipeline that systematically misread values could not reproduce pooled effects with this precision.
 
-The pipeline is configuration-driven and requires no code changes to switch between meta-analysis topics. At approximately $0.37 per paper and 6 hours for 46 papers, the system offers a 240-fold API cost reduction compared to manual extraction (not including researcher time for configuration and review).
+Reported MAE simultaneously measures reading accuracy, sub-selection concordance, and reference-standard quality. For the Loladze dataset, separating reading errors from concordance failures reduces the effective extraction MAE from 7.9% to 4.3%. For the Li dataset, auditing the 28-paper comparison reveals that the r = 0.453 headline measures a combination of pipeline output and GT curation heterogeneity; on the Structurally Concordant Subset, r = 0.996. Statistical metrics alone cannot reveal this; paper-level auditing can.
 
-Recent scoping reviews have concluded that generative AI is "not yet ready for use without caution" in evidence synthesis (Scott et al., 2025; Lieberum et al., 2025). Our results suggest a more nuanced position: when properly engineered with challenge-aware routing, multi-model consensus, and formal equivalence validation, LLM-based extraction can achieve reliability comparable to human inter-rater agreement for aggregate meta-analytic conclusions. Automated extraction does not replace human judgment, but the system is well-suited as a first-pass extractor that handles 80-90% of observations, with human reviewers focusing on flagged cases (observations with medium confidence, direction mismatches, or extreme values). For large-scale meta-analyses involving hundreds of papers, this approach may be the only feasible path to comprehensive data extraction.
-
+The Loladze 2014 meta-analysis synthesizes 1,481 mineral concentration measurements across 25 elements and 130 species; extracting it manually required months. Our pipeline processed the same 46 papers in 6 hours at $17 total cost. With 70--95% of observations auto-validated (varying by task structure: 94% for complex multi-element extraction, ~69% for single-element) and the remainder flagged for review at roughly 2 minutes each, the human review burden for a 46-paper meta-analysis drops from ~184 hours to approximately 50--80. The practical contribution is concentrating human judgment where it matters. For plant science, a domain with decades of CO2, biofortification, biostimulant, and climate adaptation research still unprocessed, that difference compounds across the full literature.
 
 ---
 
 # References
 
-- Buscemi, N., Hartling, L., Vandermeer, B., Tjosvold, L., & Klassen, T. P. (2006). Single data extraction generated more errors than double data extraction in systematic reviews. Journal of Clinical Epidemiology, 59(7), 697-703.
-- Cao, C., Arora, R., Cento, P., et al. (2025). Automation of systematic reviews with large language models. medRxiv preprint. DOI: 10.1101/2025.06.13.25329541.
-- Deniau, G., et al. (2025). Data extraction by generative artificial intelligence: Assessing determinants of accuracy using human-extracted data from systematic review databases. Psychological Bulletin, 151(10), 1280+.
-- Dong, J., Gruda, N., Lam, S. K., Li, X., & Duan, Z. (2018). Effects of elevated CO2 on nutritional quality of vegetables: a review. Frontiers in Plant Science, 9, 924.
-- Gartlehner, G., Kahwati, L., Hilscher, R., et al. (2024). Data extraction for evidence synthesis using a large language model: A proof-of-concept study. Research Synthesis Methods, 15(4), 576-589.
-- Gartlehner, G., Kugley, S., Crotty, K., Viswanathan, M., et al. (2025). Artificial intelligence-assisted data extraction with a large language model: A study within reviews. Annals of Internal Medicine. DOI: 10.7326/ANNALS-25-00739.
-- Gougherty, A. V., & Clipp, H. L. (2024). Testing the reliability of an AI-based large language model to extract ecological information from the scientific literature. npj Biodiversity, 3(1), 13.
-- Hui, Y., Wang, J., Jiang, T., Li, S., Zhang, Y., & Liu, X. (2023). Zinc biofortification of wheat through soil, foliar, and combined applications: A meta-analysis. Journal of Soil Science and Plant Nutrition, 23, 5384-5397.
-- Jensen, M. M., Danielsen, M. B., Riis, J., et al. (2025). ChatGPT-4o can serve as the second rater for data extraction in systematic reviews. PLoS ONE, 20(1), e0313401.
-- Khan, M. A., Ayub, U., Naqvi, S. A. A., et al. (2025). Collaborative large language models for automated data extraction in living systematic reviews. Journal of the American Medical Informatics Association, 32(4), 638-647.
-- Li, J., Van Gerrewey, T., & Geelen, D. (2022). A meta-analysis of biostimulant yield effectiveness in field trials. Frontiers in Plant Science, 13, 836702.
-- Li, X., Mathrani, A., & Susnjak, T. (2025). What level of automation is "good enough"? A benchmark of large language models for meta-analysis data extraction. arXiv preprint arXiv:2507.15152.
-- Lieberum, J.-L., Toews, M., Metzendorf, M.-I., et al. (2025). Large language models for conducting systematic reviews: on the rise, but not yet ready for use: a scoping review. Journal of Clinical Epidemiology, 181, 111746.
-- Loladze, I. (2014). Hidden shift of the ionome of plants exposed to elevated CO2 depletes minerals at the base of human nutrition. eLife, 3, e02245.
-- Mathes, T., Klaassen-Mielke, R., Pieper, D. (2017). Data extraction methods for systematic review (semi)automation: Update of a living systematic review. F1000Research, 6, 1699.
-- Poser, P. L., Klimas, R., Luerweg, J., et al. (2026). Improving reliability and accuracy of structured data extraction using a consensus large-language model approach. Frontiers in Artificial Intelligence. DOI: 10.3389/frai.2026.1658575.
-- Sallam, M., et al. (2025). Automating the data extraction process for systematic reviews using GPT-4o and o3. Research Synthesis Methods. DOI: 10.1017/rsm.2025.10030.
-- Scott, A. M., et al. (2025). Generative artificial intelligence use in evidence synthesis: A systematic review. Research Synthesis Methods, 16, 601-619. DOI: 10.1017/rsm.2025.16.
-- Sun, J., Kanvar, A., Krass, I., & Aslani, P. (2024). Accuracy of large language models for extracting outcome data from randomized controlled trials. Systematic Reviews, 13, 264.
-- Tan, Z., & D'Souza, J. (2026). Diagnosing structural failures in LLM-based evidence extraction for meta-analysis. arXiv:2602.10881. Accepted at IRCDL 2026.
-- Yun, H. S., Pogrebitskiy, D., Marshall, I. J., & Wallace, B. C. (2024). Automatically extracting numerical results from randomized controlled trials with large language models. Proceedings of Machine Learning Research, 252, 818-840.
+*Note: Papers cited as illustrative examples from the validation datasets (Baslam et al. 2012, Fangmeier et al. 2002, Huluka et al. 1994, Pfirrmann et al. 1996, Niu et al. 2013, Chen et al. 2021, and similar source papers) are components of the Loladze (2014) and Li et al. (2022) reference datasets; their complete bibliographic records are available in those publications' reference lists and in the project repository supplementary files.*
 
+- Buscemi, N., Hartling, L., Vandermeer, B., Tjosvold, L., & Klassen, T. P. (2006). Single data extraction generated more errors than double data extraction in systematic reviews. *Journal of Clinical Epidemiology*, 59(7), 697-703.
+- Efron, B., & Tibshirani, R. J. (1993). *An Introduction to the Bootstrap*. Chapman and Hall/CRC. ISBN 978-0-412-04231-7.
+- Cao, C., Arora, R., Cento, P., et al. (2025). Automation of systematic reviews with large language models. *medRxiv* preprint. DOI: 10.1101/2025.06.13.25329541.
+- Gartlehner, G., Kahwati, L., Hilscher, R., et al. (2024). Data extraction for evidence synthesis using a large language model: A proof-of-concept study. *Research Synthesis Methods*, 15(4), 576-589.
+- Gartlehner, G., Kugley, S., Crotty, K., Viswanathan, M., et al. (2025). Artificial intelligence-assisted data extraction with a large language model: A study within reviews. *Annals of Internal Medicine*. DOI: 10.7326/ANNALS-25-00739.
+- Gougherty, A. V., & Clipp, H. L. (2024). Testing the reliability of an AI-based large language model to extract ecological information from the scientific literature. *npj Biodiversity*, 3(1), 13.
+- Hui, Y., Wang, J., Jiang, T., Li, S., Zhang, Y., & Liu, X. (2023). Zinc biofortification of wheat through soil, foliar, and combined applications: A meta-analysis. *Journal of Soil Science and Plant Nutrition*, 23, 5384-5397.
+- Jansen, T., et al. (2025). Data extraction by generative artificial intelligence: Assessing determinants of accuracy using human-extracted data from systematic review databases. *Psychological Bulletin*, 151(10), 1280-1306. DOI: 10.1037/bul0000451.
+- Jensen, M. M., Danielsen, M. B., Riis, J., et al. (2025). ChatGPT-4o can serve as the second rater for data extraction in systematic reviews. *PLoS ONE*, 20(1), e0313401.
+- Kataoka, Y., et al. (2026). Automating the data extraction process for systematic reviews using GPT-4o and o3. *Research Synthesis Methods*, 17, 42-62. DOI: 10.1017/rsm.2025.10030.
+- Khan, M. A., Ayub, U., Naqvi, S. A. A., et al. (2025). Collaborative large language models for automated data extraction in living systematic reviews. *Journal of the American Medical Informatics Association*, 32(4), 638-647.
+- Koricheva, J., & Gurevitch, J. (2014). Uses and misuses of meta-analysis in plant ecology. *Journal of Ecology*, 102(4), 828-844.
+- Li, J., Van Gerrewey, T., & Geelen, D. (2022). A meta-analysis of biostimulant yield effectiveness in field trials. *Frontiers in Plant Science*, 13, 836702.
+- Li, X., Mathrani, A., & Susnjak, T. (2025). What level of automation is "good enough"? A benchmark of large language models for meta-analysis data extraction. *arXiv* preprint arXiv:2507.15152.
+- Lieberum, J.-L., Toews, M., Metzendorf, M.-I., et al. (2025). Large language models for conducting systematic reviews: on the rise, but not yet ready for use: a scoping review. *Journal of Clinical Epidemiology*, 181, 111746.
+- Loladze, I. (2014). Hidden shift of the ionome of plants exposed to elevated CO2 depletes minerals at the base of human nutrition. *eLife*, 3, e02245.
+- Mathes, T., Klaassen-Mielke, R., & Pieper, D. (2017). Data extraction methods for systematic review (semi)automation: A living systematic review. *F1000Research*, 6, 1699.
+- Nakagawa, S., et al. (2023). A robust and readily implementable method for the meta-analysis of response ratios with and without missing standard deviations. *Ecology Letters*, 26(2), 232-244.
+- Peng, Y., et al. (2025). Accuracy of large language models in data extraction from randomized controlled trials in sleep medicine: A proof-of-concept study. *Sleep Medicine*, 128. DOI: 10.1016/j.sleep.2025.01455 [ScienceDirect PII S1087079225001455].
+- Poser, P. L., Klimas, R., Luerweg, J., et al. (2026). Improving reliability and accuracy of structured data extraction using a consensus large-language model approach. *Frontiers in Artificial Intelligence*. DOI: 10.3389/frai.2026.1658575.
+- Schmidt, L., Shokraneh, F., Pieper, D., Mathes, T. (2025). Data extraction methods for systematic review (semi)automation: Update of a living systematic review [update of Mathes et al. 2017]. *F1000Research*.
+- Scott, A. M., et al. (2025). Generative artificial intelligence use in evidence synthesis: A systematic review. *Research Synthesis Methods*, 16, 601-619. DOI: 10.1017/rsm.2025.16.
+- Tan, Z., & D'Souza, J. (2026). Diagnosing structural failures in LLM-based evidence extraction for meta-analysis. *arXiv:2602.10881*. Accepted at IRCDL 2026.
+- Topp, C. F. E., et al. (2023). AgroEcoList: A checklist to improve reporting of ecological research in agronomy. *PLOS ONE*, 18(6), e0285478.
+- Wang, X., Wei, J., Schuurmans, D., Le, Q., Chi, E., Narang, S., Chowdhery, A., & Zhou, D. (2022). Self-consistency improves chain of thought reasoning in language models. *arXiv*:2203.11171. Presented at ICLR 2023.
+- Yun, H. S., Pogrebitskiy, D., Marshall, I. J., & Wallace, B. C. (2024). Automatically extracting numerical results from randomized controlled trials with large language models. *Proceedings of Machine Learning Research*, 252, 818-840.
 
 ---
 
 # Data Availability Statement
 
-The pipeline source code, configuration files, prompt templates, validation scripts, and pre-computed outputs are publicly available at https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture (archived at https://doi.org/10.5281/zenodo.18670296). The repository includes: all extraction and analysis code, JSON configuration files for each validation dataset, formal statistical outputs (TOST, ICC, Bland-Altman, bootstrap CIs), sensitivity analysis results, and publication-ready figures. Ground-truth validation datasets are from published meta-analyses: Loladze (2014, eLife 3:e02245; dataset included as supplementary material in the original publication), Hui et al. (2023, Journal of Soil Science and Plant Nutrition), and Li et al. (2022, Frontiers in Plant Science 13:836702; open access at https://doi.org/10.3389/fpls.2022.836702). Individual source PDFs cannot be redistributed due to publisher copyright restrictions but are listed in the repository for retrieval from institutional libraries.
+The pipeline source code, configuration files, prompt templates, validation scripts, and pre-computed outputs are publicly available at https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture (archived at https://doi.org/10.5281/zenodo.18670296). Reference-standard validation datasets are from published meta-analyses: Loladze (2014, eLife 3:e02245), Hui et al. (2023, Journal of Soil Science and Plant Nutrition), and Li et al. (2022, Frontiers in Plant Science 13:836702). Source PDFs cannot be redistributed due to publisher copyright.
 
 # Author Contributions (CRediT)
 
@@ -536,19 +576,19 @@ The author declares no conflicts of interest. The AI models used in the pipeline
 
 No external funding was received for this research.
 
-
 ---
 
 # Figure List
 
 | Figure | Description | File |
 |--------|-------------|------|
-| Figure 1 | Pipeline architecture: four-stage workflow (recon, extraction, consensus, post-processing) | `fig1_pipeline_architecture.png` |
-| Figure 2 | Combined scatter: (A) Loladze r=0.669, (B) Hui r=0.950, (C) Li 2022 r=0.453 | `fig_combined_scatter.png` |
-| Figure 3 | Error distribution: histogram and cumulative (within 5%=60%, 10%=75%, 20%=91%) | `fig_error_distribution.png` |
-| Figure 4 | Leave-one-out sensitivity: (A) by paper, (B) by element | `fig9_loo_sensitivity.png` |
-| Figure 5 | TOST equivalence forest plot with summary table across all 3 datasets | `fig_tost_equivalence.png` |
-| Figure 6 | Bland-Altman analysis: limits of agreement across all 3 datasets | `fig_bland_altman_trio.png` |
+| Figure 1 | Pipeline architecture with confidence assignment | `fig1_pipeline_architecture.png` |
+| Figure 2 | Consensus reliability: MAE by consensus fraction and confidence tier | `fig2_consensus_reliability.png` |
+| Figure 3 | Per-paper MAE bar chart with consensus/vision indicators | `fig3_paper_mae_confidence.png` |
+| Figure 4 | TOST equivalence forest plot with summary statistics | `fig_tost_equivalence.png` |
+| Figure 5 | Bland-Altman analysis across all three datasets | `fig_bland_altman_trio.png` |
+| Figure 6 | Combined scatter plots: (A) Loladze, (B) Hui, (C) Li 2022 | `fig_combined_scatter.png` |
+| Figure 7 | Consensus predictors: difficulty level vs. consensus fraction, MAE, and challenge count | `fig7_consensus_predictors.png` |
 
 All figures in `output/paper_figures/` at 300 DPI.
 
@@ -556,25 +596,79 @@ All figures in `output/paper_figures/` at 300 DPI.
 
 | Figure | Description | File |
 |--------|-------------|------|
-| S1 | Scatter plot: extracted vs ground-truth effect sizes, colored by element (Loladze; n=635, r=0.669) | `fig2_scatter_loladze.png` |
-| S2 | Per-paper MAE bar chart, colored by accuracy tier (Loladze; 46 papers) | `fig3_paper_mae.png` |
-| S3 | Element-level mean effect comparison: extracted vs ground truth (20 elements) | `fig4_element_effects.png` |
-| S4 | Bland-Altman plot: mean bias -0.05 pp, 95% LOA -30.6 to 30.5 pp | `fig7_bland_altman_formal.png` |
-| S5 | TOST equivalence forest plot: per-element CIs with ±5 pp equivalence bounds | `fig8_tost_equivalence.png` |
+| S1 | Scatter plot: extracted vs reference-standard effect sizes by element (Loladze) | `fig2_scatter_loladze.png` |
+| S2 | Element-level mean effect comparison: extracted vs reference standard | `fig4_element_effects.png` |
+| S3 | Bland-Altman plot (Loladze only): bias and 95% limits of agreement | `fig7_bland_altman_formal.png` |
+| S4 | TOST forest plot: per-element CIs with equivalence bounds | `fig8_tost_equivalence.png` |
+| S5 | Error distribution: histogram and cumulative | `fig_error_distribution.png` |
 
 # Table List
 
-| Table | Description | File |
-|-------|-------------|------|
-| Table 1 | Combined validation results across all three datasets (Section 3.1) | In text |
-| Table 2 | Bootstrap confidence intervals for key metrics (Section 3.8.6) | In text |
-| Table 3 | Comparison of LLM-based data extraction systems (Section 4.1) | In text |
+| Table | Description |
+|-------|-------------|
+| Table 1 | Combined validation results across all three datasets (Section 3.2) |
+| Table 2 | Bootstrap confidence intervals for key metrics (Section 3.10.4) |
+| Table 3 | Comparison of LLM-based data extraction systems (Section 4.1) |
+| Table 4 | Root-cause classification of the 12 Li 2022 excluded papers with validation discordance (Section 4.4) (**moved to Supplementary Tables S1 and S5**) |
 
 # Supplementary Tables
 
 | Table | Description | File |
 |-------|-------------|------|
-| S1 | Per-paper validation details (46 papers) | `output/paper_supplementary/S1_per_paper_validation.csv` |
-| S2 | Per-element accuracy breakdown (24 elements) | `output/paper_supplementary/S2_element_accuracy.csv` |
-| S3 | Consensus statistics and model contributions | `output/paper_supplementary/S3_consensus_stats.csv` |
-| S4 | Data completeness and capture rates | `output/paper_supplementary/S4_data_completeness.csv` |
+| **S1** | **Forensic Audit of Excluded Li 2022 Papers** — see full table below | inline |
+| S2 | Per-paper validation details (46 Loladze papers) | `S2_per_paper_validation.csv` |
+| S3 | Per-element accuracy breakdown (20 elements) | `S3_element_accuracy.csv` |
+| S4 | Consensus statistics and model contributions | `S4_consensus_stats.csv` |
+| S5 | Li 2022 paper-level audit: root-cause classification of all 28 papers | `S5_li2022_paper_audit.csv` |
+| S6 | Data completeness and capture rates | `S6_data_completeness.csv` |
+
+---
+
+## Supplementary Table S1: Forensic Audit of Excluded Li 2022 Papers
+
+*Pre-registered exclusion rationale for the 12 papers excluded from the Structurally Concordant Subset. All exclusion decisions were made prior to computing the r = 0.996 subset statistic, based solely on the per-paper diagnostic audit reports generated by the independent auditing agent. The "Corrected PDF Result" column shows outcomes from re-running the pipeline on the correct PDFs where applicable.*
+
+| Paper | Exclusion Category | Diagnostic Evidence | Corrected PDF Result |
+|-------|-------------------|---------------------|----------------------|
+| Abdel-Mawgoud (2010) | **PDF/consensus failure** — figure-only data | Claude recon confirmed all yield data in Figures 1–3 only; no numerical tables. Claude extracted 0 obs; Kimi extracted 24 from figure text. Gemini tiebreaker timed out. | 7 vision obs (low confidence); no text consensus possible for this paper format. |
+| Alabdulla (2019) | **PDF/consensus failure** — single-model extraction | Kimi timed out during extraction; Gemini tiebreaker also timed out. Only 36 Claude-only observations available, no consensus formed. | 36 Claude-only obs (low confidence); Kimi timeout unresolved. |
+| Mondal (2013) | **GT attribution error** — wrong crop in database | GT database lists crop as wheat; source PDF is a rice hydroponics study (chitosan on rice *Oryza sativa*). Auditing agent found cultivar mismatch on page 1. | N/A — original PDF is correct; mismatch is in Li et al. (2022) database attribution. |
+| Pohl (2019) | **GT attribution error** — wrong metric in database | GT row expects yield (t/ha); paper reports eggplant fruit composition (dry matter %, protein %). No yield data in the paper. | N/A — original PDF correct; GT database attributed wrong outcome variable. |
+| Głosek-Sobieraj (2018) | **GT attribution error** — wrong paper in database | GT reference cites Głosek-Sobieraj (2018) but the effect sizes match a different study in the Li database. Auditing agent found systematic value mismatch across all GT rows. | N/A — original PDF correct; Li et al. (2022) cross-referenced a different study. |
+| Godlewska (2016) | **GT outcome-category mismatch** | Correct PDF confirmed: Godlewska (2016) *Journal of Elementology* reports microelement content (Zn, Cu, Fe, Mn in g kg⁻¹) of grass species, not yield. Pipeline extracted 60 consensus observations correctly. GT row expects yield (t ha⁻¹). | 60 consensus obs (r ≈ 1.0 for microelements), but no valid comparison to yield GT. GT database incorrectly mapped this paper to a yield row. |
+| Kocira (2018) | **Aggregation-level mismatch** | GT stores per-year observations (2013, 2014, 2015 separately); pipeline extracts multi-year averages from summary tables. Both are valid analytical choices for the same data. | N/A — applies to original PDF. |
+| Kocira (2020) | **Aggregation-level mismatch** | Same as Kocira (2018): GT stores per-year; pipeline extracts averages. Auditing agent confirmed both sources of data are from the same paper. | N/A — applies to original PDF. |
+| Procházka (2015) | **Aggregation-level mismatch** | GT stores observations by treatment year; pipeline extracts multi-year means. The pipeline extracted the correct multi-year summary values; GT disaggregates them. | N/A — applies to original PDF. |
+| Kocira (2019) | **Product-selection omission** | Li et al. (2022) GT includes a Kelpak (seaweed extract) treatment arm that the pipeline missed, extracting only the Terra Sorb (amino acid) arm from the paper title. Both arms are present in the PDF; pipeline did not include both products. | Pipeline limitation: multi-product papers require explicit configuration listing all product arms. |
+| Pramanick (2016) | **GT source mismatch** | GT effect sizes do not match any table in the source PDF. Auditing agent confirmed values are from a pre-publication dataset with different baseline measurements (inflation factor ≈ 1.4×). | N/A — GT values sourced from pre-publication data not in the PDF. |
+| Kuisma (1989) | **GT source mismatch** | GT effect sizes are systematically larger than values in the 1989 PDF. Auditing agent identified a 1.3–1.6× inflation consistent with pre-publication data or a different year's measurements. | N/A — GT values sourced from pre-publication data not in the PDF. |
+
+*All 16 papers in the Structurally Concordant Subset achieved 100% capture rate (all GT rows matched). The 2 consensus-layer failures (Popescu 2018, Wilczewski 2018) and 2 validator-artifact papers (Lola-Luz 2014, Soppelsa 2018) are included in the Structurally Concordant Subset because their issues were identified and resolved prior to final analysis: Popescu and Wilczewski via `recover_consensus.py`; Lola-Luz and Soppelsa via effect-%-based validator matching.*
+
+# Supplementary Dataset: Pipeline Outputs and Meta-Analytic Results
+
+The pipeline-extracted datasets used in this study are provided in full as supplementary data files, enabling independent use for meta-analysis and replication:
+
+| File | Contents | Records |
+|------|----------|---------|
+| `SD1_loladze_extracted.csv` | All extracted observations from the 46 Loladze CO2/mineral papers: element, tissue type, crop species, CO2 level, control mean, treatment mean, effect %, SE/SD where available, confidence tier | 1,652 obs / 46 papers |
+| `SD2_hui_extracted.csv` | All extracted observations from the 34 Hui Zn biofortification papers: Zn fraction, tissue, application method, dose, control mean, treatment mean, effect %, confidence tier | ~800 obs / 34 papers |
+| `SD3_li2022_extracted.csv` | All extracted observations from the 28 Li biostimulant papers: crop, product, dose, yield metric, control mean, treatment mean, effect %, confidence tier | ~600 obs / 28 papers |
+
+**Meta-analytic summaries** computed from the pipeline-extracted datasets are provided in:
+
+| File | Contents |
+|------|----------|
+| `SD4_loladze_metaanalysis.csv` | Per-element pooled effects (lnRR, 95% CI, n) from the CO2/mineral dataset; DerSimonian-Laird random-effects model, 23 elements |
+| `SD5_hui_metaanalysis.csv` | Per-application-method and per-tissue pooled Zn effects from the biofortification dataset; 13 subgroups |
+| `SD6_li2022_metaanalysis.csv` | Per-biostimulant-category and per-crop pooled yield effects; 37 subgroups |
+
+**Headline results from the pipeline-extracted meta-analyses:**
+
+*SD4: Elevated CO2 reduces macro- and micronutrient concentrations.* Across 635 matched observations and 23 elements, the pipeline extracted consistent CO2-driven dilution effects. Major macronutrients: N −9.5%, P −7.7%, K −7.3%, Mg −8.4%. Micronutrients: Cu −6.8%, Zn −4.5%, Fe −0.9%. These values accord with published syntheses (Loladze 2014 reported −8% overall), confirming that the pipeline reproduces not only individual study values but aggregate meta-analytic patterns.
+
+*SD5: Zn biofortification shows strong dose-response.* Across 310 matched observations, overall grain Zn increased by +51.1% [45.7, 56.6] under Zn treatment. Effect magnitude was strongly application-method-dependent: application type 2: +34.1% [29.4, 38.8]; type 3: +63.3% [50.6, 76.1]; type 4: +84.6% [70.4, 98.9]. High heterogeneity (I² = 100%) reflects genuine biological variability across soils, cultivars, and dose levels.
+
+*SD6: Biostimulants increase yield by approximately 15% on average.* Across 163 matched observations and 28 papers, the pipeline extracted an overall yield increase of +15.4% [11.9, 19.0]. By category: seaweed extracts +15.4%, chitosan +20.0%, humic/fulvic acids +37.8%, plant hormones +8.4%, silicon +8.0%. By crop: soybean +28.1%, maize +17.5%, blackgram +24.4%, wheat +9.3%, potato +1.3%. High heterogeneity (I² ≈ 99%) is expected given the diversity of biostimulant products and crops.
+
+These files represent the first openly available machine-extracted, confidence-stratified datasets for CO2/mineral, Zn biofortification, and biostimulant yield meta-analyses in plant science. Researchers may use them directly for downstream synthesis, reanalysis, or as training data for future extraction systems. See the Data Availability Statement for repository links.

@@ -17,26 +17,28 @@ MD_FILE = BASE / "PAPER_FULL_DRAFT.md"
 FIG_DIR = BASE / "output" / "paper_figures"
 FORMAL_DIR = BASE / "output" / "formal_stats"
 SENS_DIR = BASE / "output" / "sensitivity"
-OUT_FILE = BASE / "PAPER_FULL_DRAFT.docx"
+OUT_FILE = BASE / "draft12.docx"
 
 # Map figure references to actual files
 FIGURE_MAP = {
-    'Figure 1':  (FIG_DIR / "fig1_pipeline_architecture.png", "Figure 1. Pipeline architecture: four-stage workflow comprising challenge-aware reconnaissance, dual-model extraction (Claude Sonnet 4 + Kimi K2.5), consensus building with Gemini 3 Flash tiebreaker, and post-processing."),
-    'Figure 2':  (FIG_DIR / "fig_combined_scatter.png", "Figure 2. Combined scatter plots across all three validation datasets: (A) Loladze 2014 (r = 0.669), (B) Hui 2023 (r = 0.950), (C) Li 2022 (r = 0.453). Points are colored by mineral element (A) or study (B, C). Dashed lines represent perfect agreement (y = x)."),
-    'Figure 3':  (FIG_DIR / "fig_error_distribution.png", "Figure 3. Error distribution: histogram of absolute errors and cumulative percentage curve showing within-5% (58%), within-10% (74%), and within-20% (91%) thresholds."),
-    'Figure 4':  (SENS_DIR / "fig_loo_combined.png", "Figure 4. Leave-one-out sensitivity analysis: (A) Leave-one-paper-out showing change in MAE when each paper is excluded, (B) Leave-one-element-out showing analogous results by element."),
-    'Figure 5':  (FIG_DIR / "fig_tost_equivalence.png", "Figure 5. TOST equivalence forest plot across all three validation datasets with summary statistics."),
-    'Figure 6':  (FIG_DIR / "fig_bland_altman_trio.png", "Figure 6. Bland-Altman analysis across all three datasets showing limits of agreement scaling with data complexity."),
+    'Figure 1':  (FIG_DIR / "fig1_pipeline_architecture.png", "Figure 1. Pipeline architecture with confidence assignment: four-stage workflow comprising challenge-aware reconnaissance, dual-model extraction, consensus building with tiebreaker, and confidence-stratified post-processing."),
+    'Figure 2':  (FIG_DIR / "fig2_consensus_reliability.png", "Figure 2. Multi-model consensus predicts extraction quality. (A) Scatter plot of consensus fraction vs. MAE per paper with trend line. (B) Box plot comparing consensus-dominant vs. vision-dependent papers (Mann-Whitney test)."),
+    'Figure 3':  (FIG_DIR / "fig3_paper_mae_confidence.png", "Figure 3. Per-paper MAE bar chart with consensus/vision indicators, sorted by MAE. Bars colored by validation tier."),
+    'Figure 4':  (FIG_DIR / "fig_tost_equivalence.png", "Figure 4. TOST equivalence forest plot across all three validation datasets with summary statistics."),
+    'Figure 5':  (FIG_DIR / "fig_bland_altman_trio.png", "Figure 5. Bland-Altman analysis across all three datasets showing limits of agreement."),
+    'Figure 6':  (FIG_DIR / "fig_combined_scatter.png", "Figure 6. Combined scatter plots: (A) Loladze 2014 [Development], (B) Hui 2023 [Blind], (C) Li 2022 [Cross-domain]."),
+    'Figure 7':  (FIG_DIR / "fig7_consensus_predictors.png", "Figure 7. Paper attributes predicting consensus quality. (A) Difficulty level vs. consensus fraction. (B) Difficulty level vs. MAE (box plots with median labels). (C) Number of detected challenges vs. consensus fraction (r = -0.37, p = 0.019)."),
 }
 
 # Where to insert each figure (after which section heading or keyword)
 FIGURE_PLACEMENT = {
     'Figure 1':  '2.1 Pipeline Architecture',
-    'Figure 2':  '3.3 Cross-Dataset Validation',
-    'Figure 3':  '3.4 Extraction Method',
-    'Figure 4':  '3.9.1 Leave-One-Paper',
-    'Figure 5':  '3.8.4 Cross-Dataset Formal',
-    'Figure 6':  '3.8.4 Cross-Dataset Formal',
+    'Figure 2':  '3.3 Multi-Model Agreement',
+    'Figure 3':  '3.8 Paper-Level Accuracy',
+    'Figure 4':  '3.10.1 Equivalence Testing',
+    'Figure 5':  '3.10.2 Bland-Altman',
+    'Figure 6':  '3.5 Blind Validation',
+    'Figure 7':  '3.4 What Predicts Consensus',
 }
 
 
