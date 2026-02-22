@@ -14,7 +14,7 @@ Institute of Soil, Water and Environmental Sciences, Agricultural Research Organ
 
 **Results:** Zero-shot holdout validation on Hui achieved **r = 0.993, MAE = 1.73%, 99% direction agreement**, the strongest reported result for continuous numerical extraction from plant science tables, demonstrating that the **Reading Barrier** (accurate table reading) is effectively broken. Confidence stratification predicted accuracy: consensus-dominant papers achieved MAE = 4.3% versus 11.2% for vision-dependent papers (2.6×), with 95% of large errors concentrated in the flagged minority. The **Granularity Barrier** (analytical sub-selection in factorial designs) was quantified via Loladze's `info`-column: separating sub-selection failures from reading errors reduces the Loladze MAE from 7.9% to 4.3%. The **Provenance Barrier** (reference-standard heterogeneity) explains the Li 2022 headline r = 0.453: per-paper audit identified 12 of 28 papers with reference-standard artefacts (wrong source PDFs, attribution errors, aggregation mismatches). On the **Structurally Concordant Subset** (16 papers with clean same-level comparisons), **r = 0.996, MAE = 0.44 pp**. Aggregate meta-analytic effects reproduced to within 0.05--0.40 pp across all datasets (|Cohen's d| < 0.07; TOST equivalence p < 0.001 at ±2 pp for Loladze and Hui).
 
-**Conclusions:** The pipeline operates as a high-recall candidate generator: exhaustive extraction followed by multi-model consensus filtering (initial precision: ~4.5%; post-consensus recall: 100% in the Structurally Concordant Subset). Approximately 75% of consensus-confirmed observations are auto-validated; the remainder are flagged for human review at ~2 min each versus ~10 min for de novo extraction. Cost averages ~$0.37/paper, with ~70% reduction in human extraction time. Critically, the binding constraint on automated meta-analysis is no longer table-reading capability (the Reading Barrier, now effectively solved), but rather pre-specification of analytical sub-selection rules (the Granularity Barrier) and validation-infrastructure integrity (the Provenance Barrier). Accuracy metrics from complex factorial datasets must be decomposed into reading errors and sub-selection concordance failures for honest evaluation; failure to do so systematically underestimates AI extraction capability.
+**Conclusions:** The pipeline operates as a high-recall candidate generator: exhaustive extraction followed by multi-model consensus filtering (initial precision: ~4.5%; post-consensus recall: 100% in the Structurally Concordant Subset). Approximately 75% of consensus-confirmed observations are auto-validated; the remainder are flagged for human review at ~2 min each versus ~10 min for de novo extraction. Median cost ~$0.24/paper (mean $0.37, range $0.12–$3.50), with ~70% reduction in human extraction time. Critically, the binding constraint on automated meta-analysis is no longer table-reading capability (the Reading Barrier, now effectively solved), but rather pre-specification of analytical sub-selection rules (the Granularity Barrier) and validation-infrastructure integrity (the Provenance Barrier). Accuracy metrics from complex factorial datasets must be decomposed into reading errors and sub-selection concordance failures for honest evaluation; failure to do so systematically underestimates AI extraction capability.
 
 **Keywords:** meta-analysis, data extraction, large language models, consensus, quality prediction, automation, plant science, methodological concordance
 
@@ -130,7 +130,7 @@ The `info` field of the Loladze reference CSV provided the primary evidence for 
 
 Six metrics assessed extraction accuracy: (1) Pearson correlation coefficient (r) between extracted and reference-standard effect sizes; (2) Mean Absolute Error (MAE) in percentage points; (3) within-threshold accuracy (proportion within 5%, 10%, 20% of reference-standard values); (4) **direction agreement**: defined as sign(extracted effect) = sign(reference effect), where "effect" is (treatment mean − control mean) / |control mean| × 100; observations where the reference-standard effect is within ±0.5% of zero (near-zero, sign unreliable) are excluded from direction agreement calculations; (5) element capture rate; (6) overall effect reproduction (aggregate mean effect comparison).
 
-Formal agreement analyses included Bland-Altman analysis, intraclass correlation [ICC, using a two-way mixed-effects model (ICC type 3,1), absolute-agreement definition, single-measurement unit], two one-sided tests (TOST) for equivalence, and cluster-robust bootstrap confidence intervals (10,000 BCa resamples; Efron & Tibshirani, 1993), where the resampling unit was the study (paper) rather than the individual observation, to account for within-study clustering of extraction errors. Throughout this paper, "pp" denotes percentage points. All ICC models are reported uniformly using the (model, type, unit) notation.
+Formal agreement analyses included Bland-Altman analysis, intraclass correlation [ICC, using a two-way mixed-effects model (ICC type 3,1), absolute-agreement definition, single-measurement unit], two one-sided tests (TOST) for equivalence, and cluster-robust percentile bootstrap confidence intervals (10,000 resamples), where the resampling unit was the study (paper) rather than the individual observation, to account for within-study clustering of extraction errors. The percentile method was preferred over BCa to avoid instability in the acceleration estimate when the number of independent clusters is small (n=16–46 papers). Throughout this paper, "pp" denotes percentage points. All ICC models are reported uniformly using the (model, type, unit) notation.
 
 ## 2.7 Confidence-Stratified Analysis
 
@@ -314,7 +314,7 @@ Tabulating the per-paper sources of discordance across the 46-paper Loladze anal
 
 After reviewing each paper's `info` field via the per-paper diagnostic agent (Section 2.5) to identify and exclude sub-selection mismatches, a well-aligned subset of 374 observations (34 papers) was identified; this subset achieved r = 0.876 and MAE = 4.3%, compared to r = 0.669 and MAE = 7.9% for the full dataset. Roughly half of the reported error is attributable to methodological concordance failures rather than extraction mistakes. The headline Loladze metrics should therefore be understood as conservative lower bounds on extraction accuracy: they simultaneously penalize the pipeline for reading errors *and* for not making the same sub-selection choices as Loladze, choices that were never specified in any extraction protocol visible to the pipeline.
 
-**Treatment/control swap analysis.** No systematic swaps were detected. Auto-correction was tested and found harmful (r declined from 0.509 to 0.209), because elements like Fe and Mn legitimately increase under elevated CO2.
+**Treatment/control swap analysis.** No systematic swaps were detected across the dataset. One individual case was flagged: the Sulfur 2009 main-effect row in Fernando et al. (2012a) received a `LIKELY T/C SWAP` warning from the post-processing gate (our_effect = +4.3% vs. Loladze GT = −9.5%), consistent with a transposition of the TOS2 sub-row values before averaging. The gate operated as designed — it flagged the anomaly — but did not auto-correct (tc_swaps_corrected = 0), which was intentional: auto-correction was tested and found harmful overall (r declined from 0.509 to 0.209 when applied globally, because elements like Fe and Mn legitimately increase under elevated CO2). This represents a manual error rate of approximately 1 in 635 observations (0.2%).
 
 ## 3.10 Formal Agreement Statistics
 
@@ -328,21 +328,23 @@ Bland-Altman analysis (Figure 5) showed negligible systematic bias for all three
 
 ### 3.10.3 Intraclass Correlation
 
-ICC was good at the observation level (ICC(3,1) = 0.669, 95% CI: 0.623--0.710) and excellent at the paper level (ICC = 0.838). The paper-level ICC is consistent with published human inter-rater reliability values reported in systematic review data extraction literature (Mathes et al., 2017; Schmidt et al., 2025).
+ICC was **moderate** at the observation level (ICC(3,1) = 0.669, 95% CI: 0.623--0.710; Koo & Li, 2016 classify 0.50–0.75 as moderate) and excellent at the paper level (ICC = 0.838). The discrepancy between observation- and paper-level ICC reflects the Granularity Barrier: observation-level agreement is diluted by sub-selection mismatches, while paper-level aggregation averages out these within-paper disagreements. The paper-level ICC is consistent with published human inter-rater reliability values reported in systematic review data extraction literature (Mathes et al., 2017; Schmidt et al., 2025).
 
 ### 3.10.4 Bootstrap Confidence Intervals
 
-**Table 2. Bootstrap CIs for key validation metrics (10,000 BCa resamples; paper as resampling unit to account for within-paper observation clustering; Hui: 18 papers, Loladze: 46 papers, Li full: 26 papers, Li clean: 16 papers).**
+**Table 2. Bootstrap CIs for key validation metrics (10,000 percentile resamples; paper as resampling unit to account for within-paper observation clustering; Hui: 18 papers, Loladze: 46 papers, Li full: 26 papers, Li clean: 16 papers).**
 
 | Metric | Loladze (n=635) | Hui (n=310) | Li full (n=163) | Li clean† (n=100) |
 |--------|:---------------:|:-----------:|:---------------:|:-----------------:|
-| Pearson r | 0.669 [0.545, 0.834] | 0.993 [0.974, 0.998] | 0.453 [0.147, 0.676] | **0.996 [0.986, 1.000]** |
-| MAE | 7.9% [7.0, 9.1] | 1.7% [0.4, 4.3] | 11.6% [6.3, 18.1] | **0.44 pp** |
-| Direction agreement | 84.5% [81.4, 87.1] | 99.4% [97.5, 100.0] | 86.2% [70.1, 94.8] | **97.9%** |
-| Overall effect diff | 0.05 pp [0.00, 0.12] | 0.40 pp [0.02, 1.38] | 0.06 pp [0.00, 0.08] | 0.14 pp |
+| Pearson r | 0.669 [0.545, 0.834] | 0.993 [0.974, 0.998] | 0.453 [0.183, 0.706] | **0.996 [0.985, 1.000]** |
+| MAE | 7.9% [7.0, 9.1] | 1.7% [0.4, 4.3] | 11.6% [6.2, 17.9] | **0.44 pp** |
+| Direction agreement | 84.5% [81.4, 87.1] | 99.4% [97.5, 100.0] | 86.2% [71.4, 95.1] | **97.9%** |
+| Mean diff (ext−GT)‡ | −0.05 pp [−1.26, 1.16] | −0.40 pp [−1.04, 0.25] | +0.06 pp [−3.27, 3.39] | +0.14 pp [−0.13, 0.40] |
 | Cohen's d | −0.003 | −0.069 | 0.003 | 0.103 (p=0.308) |
 
 † Li clean (Structurally Concordant Subset): 16 papers with verified same-level GT comparisons; excludes 12 papers with PDF/consensus failures, GT attribution/outcome errors, or aggregation mismatches (see Supplementary Table S1). Statistics computed on `validation_matches_improved.csv` using scale-invariant effect-% matching.
+
+‡ Mean diff (ext−GT) reported as Bland-Altman signed mean difference (see Section 3.10.2); 95% CI from within-sample t-distribution of paired differences. Bootstrap CIs for this metric are unreliable when the mean difference is near zero (the CI of |mean diff| collapses below the point estimate). The signed BA CIs are the appropriate summary.
 
 ## 3.11 Sensitivity Analyses
 
@@ -375,7 +377,7 @@ On the original 46-paper extraction, the consensus pipeline matched 560 observat
 
 ## 3.13 Cost
 
-Average per-paper API cost was approximately $0.37 (Claude: ~$0.28, Kimi: ~$0.04, Gemini: ~$0.05), but with substantial variability: simple text papers cost ~$0.18, while complex factorial designs with 200+ extracted observations (e.g., Chen et al. 2021: 299 extracted rows, $3.50) cost up to $3.50. This range reflects genuine variability in paper complexity rather than tunable parameters. Processing 46 papers cost approximately $17 over 6 hours. This compares to an estimated 184 hours of manual extraction at $30/hour ($5,520). In a triage deployment where human reviewers check only flagged observations (20--30% of the total, varying by task structure and dataset), the human review time would be approximately 45--55 hours rather than 184, a 65--75% time reduction.
+The median per-paper API cost was approximately $0.24 (mean: $0.37; range: $0.12–$3.50; Claude: ~$0.28, Kimi: ~$0.04, Gemini: ~$0.05). The mean exceeds the median because the distribution is right-skewed: simple text papers cost ~$0.12–$0.18, while complex factorial designs with 200+ extracted observations (e.g., Chen et al. 2021: 299 extracted rows, $3.50) dominate the tail. This variability reflects genuine differences in paper complexity rather than tunable parameters. Processing 46 papers cost approximately $17 over 6 hours. This compares to an estimated 184 hours of manual extraction at $30/hour ($5,520). In a triage deployment where human reviewers check only flagged observations (20--30% of the total, varying by task structure and dataset), the human review time would be approximately 45--55 hours rather than 184, a 65--75% time reduction.
 
 ---
 
@@ -533,6 +535,7 @@ The Loladze 2014 meta-analysis synthesizes 1,481 mineral concentration measureme
 - Jensen, M. M., Danielsen, M. B., Riis, J., et al. (2025). ChatGPT-4o can serve as the second rater for data extraction in systematic reviews. *PLoS ONE*, 20(1), e0313401.
 - Kataoka, Y., et al. (2026). Automating the data extraction process for systematic reviews using GPT-4o and o3. *Research Synthesis Methods*, 17, 42-62. DOI: 10.1017/rsm.2025.10030.
 - Khan, M. A., Ayub, U., Naqvi, S. A. A., et al. (2025). Collaborative large language models for automated data extraction in living systematic reviews. *Journal of the American Medical Informatics Association*, 32(4), 638-647.
+- Koo, T. K., & Li, M. Y. (2016). A guideline of selecting and reporting intraclass correlation coefficients for reliability research. *Journal of Chiropractic Medicine*, 15(2), 155-163.
 - Koricheva, J., & Gurevitch, J. (2014). Uses and misuses of meta-analysis in plant ecology. *Journal of Ecology*, 102(4), 828-844.
 - Li, J., Van Gerrewey, T., & Geelen, D. (2022). A meta-analysis of biostimulant yield effectiveness in field trials. *Frontiers in Plant Science*, 13, 836702.
 - Li, X., Mathrani, A., & Susnjak, T. (2025). What level of automation is "good enough"? A benchmark of large language models for meta-analysis data extraction. *arXiv* preprint arXiv:2507.15152.

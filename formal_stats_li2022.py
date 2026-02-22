@@ -183,7 +183,13 @@ def compute_icc(gt, ext):
 
 
 def bootstrap_ci(df_or_gt, ext=None, n_boot=10000, seed=42):
-    """Cluster-robust BCa bootstrap CIs, resampling papers not observations.
+    """Cluster-robust percentile bootstrap CIs, resampling papers not observations.
+
+    BCa was replaced with the percentile method because the BCa implementation
+    used a single jackknife acceleration constant computed from MAE and applied
+    it to all statistics (Pearson r, direction agreement, effect diff), which
+    produces invalid intervals when the number of clusters is small (n=16–46).
+    The percentile method gives valid coverage without this assumption.
 
     Accepts either:
       bootstrap_ci(df)         where df has paper_id, gt_effect_pct, ext_effect_pct
@@ -197,7 +203,7 @@ def bootstrap_ci(df_or_gt, ext=None, n_boot=10000, seed=42):
         n_papers = len(papers)
         gt = df_in['gt_effect_pct'].values
         ext = df_in['ext_effect_pct'].values
-        n = n_papers  # for jackknife loop
+        n = n_papers  # retained for legacy; jackknife no longer used
 
         def resample():
             chosen = rng.choice(n_papers, n_papers, replace=True)
@@ -235,7 +241,7 @@ def bootstrap_ci(df_or_gt, ext=None, n_boot=10000, seed=42):
     nonzero = np.sum(nonzero_mask)
     dir_point = float(dir_match / max(nonzero, 1))
 
-    effect_diff_point = float(abs(np.mean(ext) - np.mean(gt)))
+    effect_diff_point = float(np.mean(ext) - np.mean(gt))  # signed: ext minus gt
     within10_point = float(np.mean(diff <= 10))
 
     # Bootstrap
@@ -260,39 +266,23 @@ def bootstrap_ci(df_or_gt, ext=None, n_boot=10000, seed=42):
         dm = np.sum(np.sign(bg[nonz_mask]) == np.sign(be[nonz_mask]))
         boot_dir.append(float(dm / max(np.sum(nonz_mask), 1)))
 
-        boot_effect_diff.append(float(abs(np.mean(be) - np.mean(bg))))
+        boot_effect_diff.append(float(np.mean(be) - np.mean(bg)))  # signed
         boot_within10.append(float(np.mean(bd <= 10)))
 
-    def bca_ci(boot_vals, point_est, alpha=0.05):
+    def percentile_ci(boot_vals, alpha=0.05):
+        """Cluster-robust percentile bootstrap CI.
+
+        BCa was avoided because the standard BCa implementation computes the
+        jackknife acceleration using one statistic (MAE) and applies the same
+        acceleration constant to all statistics — a known instability when the
+        number of clusters is small (n=16–46 papers).  Percentile bootstrap
+        provides valid coverage without this assumption.
+        """
         boot_arr = np.array([v for v in boot_vals if not np.isnan(v)])
         if len(boot_arr) < 100:
             return (np.nan, np.nan)
-
-        # Bias correction
-        z0 = stats.norm.ppf(np.mean(boot_arr < point_est))
-
-        # Acceleration (jackknife — leave one unit out)
-        jack_vals = []
-        for i in range(min(n, 200)):
-            jg, je = jackknife_resample(i)
-            jack_vals.append(np.mean(np.abs(je - jg)))
-
-        jack_mean = np.mean(jack_vals)
-        num = np.sum((jack_mean - np.array(jack_vals))**3)
-        denom = 6 * (np.sum((jack_mean - np.array(jack_vals))**2))**1.5
-        a = num / denom if denom != 0 else 0
-
-        z_alpha = stats.norm.ppf(alpha / 2)
-        z_1alpha = stats.norm.ppf(1 - alpha / 2)
-
-        p1 = stats.norm.cdf(z0 + (z0 + z_alpha) / (1 - a * (z0 + z_alpha)))
-        p2 = stats.norm.cdf(z0 + (z0 + z_1alpha) / (1 - a * (z0 + z_1alpha)))
-
-        p1 = max(0.001, min(0.999, p1))
-        p2 = max(0.001, min(0.999, p2))
-
-        return (float(np.percentile(boot_arr, p1 * 100)),
-                float(np.percentile(boot_arr, p2 * 100)))
+        return (float(np.percentile(boot_arr, alpha / 2 * 100)),
+                float(np.percentile(boot_arr, (1 - alpha / 2) * 100)))
 
     results = {}
 
@@ -303,11 +293,9 @@ def bootstrap_ci(df_or_gt, ext=None, n_boot=10000, seed=42):
         ("overall_effect_diff_pp", boot_effect_diff, effect_diff_point),
         ("within_10pp", boot_within10, within10_point),
     ]:
-        ci = bca_ci(boot_vals, point)
-        # Fallback to percentile if BCa fails
+        ci = percentile_ci(boot_vals)
         if np.isnan(ci[0]):
-            boot_arr = np.array([v for v in boot_vals if not np.isnan(v)])
-            ci = (float(np.percentile(boot_arr, 2.5)), float(np.percentile(boot_arr, 97.5)))
+            ci = (np.nan, np.nan)
 
         results[name] = {
             "point_estimate": round(point, 4),
@@ -392,7 +380,7 @@ def run_analysis(df, label):
     for margin in [2, 3, 5, 10]:
         tost_equivalence(gt, ext, margin=margin)
     compute_icc(gt, ext)
-    print(f"\n=== Bootstrap CIs (10,000 BCa resamples, paper as resampling unit) ===")
+    print(f"\n=== Bootstrap CIs (10,000 percentile resamples, paper as resampling unit) ===")
     boot = bootstrap_ci(df)
     systematic_bias(gt, ext)
 
@@ -439,7 +427,7 @@ def main():
         json.dump(icc, f, indent=2)
 
     # 4. Bootstrap CIs (cluster-robust, paper as resampling unit)
-    print(f"\n=== Bootstrap CIs (10,000 BCa resamples, paper as resampling unit) ===")
+    print(f"\n=== Bootstrap CIs (10,000 percentile resamples, paper as resampling unit) ===")
     boot = bootstrap_ci(df)
     with open(OUT_DIR / "bootstrap_ci.json", 'w') as f:
         json.dump(boot, f, indent=2)
@@ -524,7 +512,7 @@ def main():
             json.dump(icc_c, f, indent=2)
 
         # Bootstrap
-        print(f"\n=== Bootstrap CIs (10,000 BCa resamples, paper as resampling unit) ===")
+        print(f"\n=== Bootstrap CIs (10,000 percentile resamples, paper as resampling unit) ===")
         boot_c = bootstrap_ci(df_clean)
         with open(OUT_DIR / "bootstrap_clean.json", 'w') as f:
             json.dump(boot_c, f, indent=2)
