@@ -52,7 +52,7 @@ def load_all_stats():
             ba = json.load(f)
         with open(lol_icc) as f:
             icc = json.load(f)
-        datasets['Loladze 2014\n(CO2/Minerals, 560 obs)'] = {
+        datasets['Loladze 2014\n(CO2/Minerals, 635 obs)'] = {
             'mean_diff': tost.get('mean_diff_pp', 0.243),
             'ci90_lower': tost.get('ci_90_pp', [-0.832, 1.318])[0],
             'ci90_upper': tost.get('ci_90_pp', [-0.832, 1.318])[1],
@@ -75,7 +75,7 @@ def load_all_stats():
             icc = json.load(f)
         m2 = tost.get('margin_2pp', {})
         m3 = tost.get('margin_3pp', {})
-        datasets['Hui 2023\n(Zn/Wheat, 222 obs)'] = {
+        datasets['Hui 2023\n(Zn/Wheat, 279 obs)'] = {
             'mean_diff': m2.get('mean_difference', 0.63),
             'ci90_lower': m2.get('ci90_lower', -0.87),
             'ci90_upper': m2.get('ci90_upper', 2.13),
@@ -117,7 +117,7 @@ def load_all_stats():
 
 def fig_tost_forest(datasets):
     """Create a TOST equivalence forest plot."""
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5), gridspec_kw={'width_ratios': [2, 1]})
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 5), gridspec_kw={'width_ratios': [1.8, 1.2]})
 
     names = list(datasets.keys())
     n_datasets = len(names)
@@ -150,10 +150,10 @@ def fig_tost_forest(datasets):
         ax1.axvline(-margin, color='red', linestyle=ls, alpha=0.5, linewidth=1)
         ax1.axvline(margin, color='red', linestyle=ls, alpha=0.5, linewidth=1)
 
-    # Add margin labels at top
-    ax1.text(2, n_datasets - 0.3, r'$\pm$2 pp', ha='center', fontsize=8, color='red', alpha=0.7)
-    ax1.text(3, n_datasets - 0.3, r'$\pm$3 pp', ha='center', fontsize=8, color='red', alpha=0.7)
-    ax1.text(5, n_datasets - 0.3, r'$\pm$5 pp', ha='center', fontsize=8, color='red', alpha=0.7)
+    # Add margin labels at bottom (avoid overlapping title)
+    ax1.text(2, -0.55, r'$\pm$2 pp', ha='center', fontsize=8, color='red', alpha=0.7)
+    ax1.text(3, -0.55, r'$\pm$3 pp', ha='center', fontsize=8, color='red', alpha=0.7)
+    ax1.text(5, -0.55, r'$\pm$5 pp', ha='center', fontsize=8, color='red', alpha=0.7)
 
     ax1.axvline(0, color='black', linewidth=0.8, alpha=0.5)
     ax1.set_yticks(y_positions)
@@ -161,7 +161,7 @@ def fig_tost_forest(datasets):
     ax1.set_xlabel('Mean Difference (extracted - ground truth, pp)')
     ax1.set_title('(A) TOST Equivalence: 90% CIs vs Equivalence Margins')
     ax1.set_xlim(-6, 8)
-    ax1.set_ylim(-0.7, n_datasets - 0.3)
+    ax1.set_ylim(-0.8, n_datasets + 0.2)
 
     # Shade the ±2pp equivalence zone
     ax1.axvspan(-2, 2, alpha=0.08, color='green')
@@ -188,7 +188,7 @@ def fig_tost_forest(datasets):
         colLabels=col_labels,
         cellLoc='center',
         loc='center',
-        colWidths=[0.22, 0.2, 0.2, 0.15, 0.15],
+        colWidths=[0.22, 0.20, 0.20, 0.17, 0.17],
     )
 
     table.auto_set_font_size(False)
@@ -229,9 +229,9 @@ def fig_bland_altman_trio():
 
     datasets_info = [
         ('Loladze 2014', 'output/formal_stats/bland_altman_results.json',
-         'output/loladze_full_46_v2/validation_matches.csv', 'gt', 'our', '#2ca02c'),
+         'output/loladze_combined_51/validation_matches.csv', 'gt', 'our', '#2ca02c'),
         ('Hui 2023', 'output/hui2023_formal_stats/bland_altman_results.json',
-         'output/hui2023_v2/validation_hui2023_matches.csv', 'gt_lnrr_pct', 'our_lnrr_pct', '#1f77b4'),
+         'output/hui2023_full_35/validation_matches.csv', 'gt_effect', 'ext_effect', '#1f77b4'),
         ('Li 2022', 'output/li2022_formal_stats/bland_altman_results.json',
          'output/li2022_consensus/validation_matches.csv', 'gt_effect_pct', 'ext_effect_pct', '#ff7f0e'),
     ]
@@ -262,12 +262,12 @@ def fig_bland_altman_trio():
                     elif name == 'Hui 2023':
                         gt_ctrl = float(row['gt_ctrl'])
                         gt_treat = float(row['gt_treat'])
-                        our_ctrl = float(row['our_ctrl'])
-                        our_treat = float(row['our_treat'])
-                        if gt_ctrl <= 0 or our_ctrl <= 0:
+                        ext_ctrl = float(row['ext_ctrl'])
+                        ext_treat = float(row['ext_treat'])
+                        if gt_ctrl <= 0 or ext_ctrl <= 0:
                             continue
                         gt_val = (gt_treat - gt_ctrl) / gt_ctrl * 100
-                        ext_val = (our_treat - our_ctrl) / our_ctrl * 100
+                        ext_val = (ext_treat - ext_ctrl) / ext_ctrl * 100
                     else:
                         gt_val = float(row['gt_effect_pct'])
                         ext_val = float(row['ext_effect_pct'])

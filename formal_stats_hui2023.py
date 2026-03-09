@@ -23,7 +23,7 @@ import pandas as pd
 from scipy import stats
 
 BASE_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor")
-MATCHES_CSV = BASE_DIR / "output" / "hui2023_v2" / "validation_hui2023_matches.csv"
+MATCHES_CSV = BASE_DIR / "output" / "hui2023_full_35" / "validation_matches.csv"
 OUT_DIR = BASE_DIR / "output" / "hui2023_formal_stats"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -31,7 +31,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 def load_matches():
     """Load matched observations from Hui validation CSV.
 
-    CSV columns: our_ctrl, our_treat, our_lnrr, gt_ctrl, gt_treat, gt_lnrr, gt_pub, match_qual
+    CSV columns (new format): ext_ctrl, ext_treat, gt_ctrl, gt_treat, ext_effect, gt_effect, abs_error, tissue, app_type
     We compute percent change from means for consistency.
     """
     rows = []
@@ -39,8 +39,9 @@ def load_matches():
         reader = csv.DictReader(f)
         for row in reader:
             try:
-                our_ctrl = float(row['our_ctrl'])
-                our_treat = float(row['our_treat'])
+                # Support both old (our_ctrl) and new (ext_ctrl) column names
+                our_ctrl = float(row.get('ext_ctrl', row.get('our_ctrl', 0)))
+                our_treat = float(row.get('ext_treat', row.get('our_treat', 0)))
                 gt_ctrl = float(row['gt_ctrl'])
                 gt_treat = float(row['gt_treat'])
 
@@ -53,16 +54,14 @@ def load_matches():
                 rows.append({
                     'gt_effect_pct': gt_pct,
                     'ext_effect_pct': our_pct,
-                    'gt_pub': row.get('gt_pub', ''),
-                    'our_lnrr': float(row['our_lnrr']) if row.get('our_lnrr') else None,
-                    'gt_lnrr': float(row['gt_lnrr']) if row.get('gt_lnrr') else None,
+                    'paper_id': row.get('paper_id', row.get('gt_pub', row.get('tissue', 'unknown'))),
+                    'our_lnrr': math.log(our_treat / our_ctrl) if our_ctrl > 0 and our_treat > 0 else None,
+                    'gt_lnrr': math.log(gt_treat / gt_ctrl) if gt_ctrl > 0 and gt_treat > 0 else None,
                 })
             except (ValueError, KeyError):
                 continue
 
     df = pd.DataFrame(rows)
-    # Create paper_id from gt_pub (first author)
-    df['paper_id'] = df['gt_pub'].apply(lambda x: x.split(',')[0].strip()[:30] if x else 'unknown')
     print(f"Loaded {len(df)} matched observations from {df['paper_id'].nunique()} papers")
     return df
 
@@ -197,20 +196,51 @@ def compute_icc(gt, ext):
     return result
 
 
-def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
-    """Bootstrap BCa confidence intervals for key metrics."""
-    rng = np.random.RandomState(seed)
-    n = len(gt)
+def bootstrap_ci(df_or_gt, ext=None, n_boot=10000, seed=42):
+    """Cluster-robust BCa bootstrap CIs, resampling papers not observations.
 
-    r_point = float(np.corrcoef(gt, ext)[0, 1])
-    diff = np.abs(ext - gt)
+    Accepts either:
+      bootstrap_ci(df)         where df has paper_id, gt_effect_pct, ext_effect_pct
+      bootstrap_ci(gt, ext)    legacy array interface (falls back to observation-level)
+    """
+    rng = np.random.RandomState(seed)
+
+    if isinstance(df_or_gt, pd.DataFrame):
+        df = df_or_gt
+        papers = df['paper_id'].unique()
+        n_papers = len(papers)
+
+        gt = df['gt_effect_pct'].values
+        ext_vals = df['ext_effect_pct'].values
+
+        def resample():
+            chosen = rng.choice(n_papers, n_papers, replace=True)
+            chosen_papers = papers[chosen]
+            parts = [df[df['paper_id'] == p] for p in chosen_papers]
+            sdf = pd.concat(parts)
+            return sdf['gt_effect_pct'].values, sdf['ext_effect_pct'].values
+
+        resampling_unit = f"paper ({n_papers} papers)"
+    else:
+        # Legacy: observation-level (kept for back-compat but not used for paper tables)
+        gt = np.asarray(df_or_gt)
+        ext_vals = np.asarray(ext)
+        n = len(gt)
+        def resample():
+            idx = rng.choice(n, n, replace=True)
+            return gt[idx], ext_vals[idx]
+        resampling_unit = f"observation ({n} obs)"
+
+    r_point = float(np.corrcoef(gt, ext_vals)[0, 1])
+    diff = np.abs(ext_vals - gt)
     mae_point = float(np.mean(diff))
 
-    dir_match = np.sum(np.sign(gt) == np.sign(ext))
-    nonzero = np.sum(np.abs(gt) > 0.5)
+    nonzero_mask = np.abs(gt) > 0.5
+    dir_match = np.sum(np.sign(gt[nonzero_mask]) == np.sign(ext_vals[nonzero_mask]))
+    nonzero = np.sum(nonzero_mask)
     dir_point = float(dir_match / max(nonzero, 1))
 
-    effect_diff_point = float(abs(np.mean(ext) - np.mean(gt)))
+    effect_diff_point = float(abs(np.mean(ext_vals) - np.mean(gt)))
     within5_point = float(np.mean(diff <= 5))
     within10_point = float(np.mean(diff <= 10))
 
@@ -218,8 +248,7 @@ def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
     boot_effect_diff, boot_within5, boot_within10 = [], [], []
 
     for _ in range(n_boot):
-        idx = rng.choice(n, n, replace=True)
-        bg, be = gt[idx], ext[idx]
+        bg, be = resample()
 
         try:
             boot_r.append(float(np.corrcoef(bg, be)[0, 1]))
@@ -229,9 +258,9 @@ def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
         bd = np.abs(be - bg)
         boot_mae.append(float(np.mean(bd)))
 
-        nonz = np.sum(np.abs(bg) > 0.5)
-        dm = np.sum(np.sign(bg) == np.sign(be))
-        boot_dir.append(float(dm / max(nonz, 1)))
+        nonz_mask = np.abs(bg) > 0.5
+        dm = np.sum(np.sign(bg[nonz_mask]) == np.sign(be[nonz_mask]))
+        boot_dir.append(float(dm / max(np.sum(nonz_mask), 1)))
 
         boot_effect_diff.append(float(abs(np.mean(be) - np.mean(bg))))
         boot_within5.append(float(np.mean(bd <= 5)))
@@ -245,7 +274,7 @@ def bootstrap_ci(gt, ext, n_boot=10000, seed=42):
                 float(np.percentile(boot_arr, (1 - alpha/2) * 100)))
 
     results = {}
-    print(f"\n=== Bootstrap CIs (10,000 resamples) ===")
+    print(f"\n=== Bootstrap CIs (10,000 resamples, resampling unit: {resampling_unit}) ===")
 
     for name, boot_vals, point in [
         ("pearson_r", boot_r, r_point),
@@ -331,8 +360,8 @@ def main():
     with open(OUT_DIR / "icc_results.json", 'w') as f:
         json.dump(icc, f, indent=2)
 
-    # 4. Bootstrap CIs
-    boot = bootstrap_ci(gt_effects, ext_effects)
+    # 4. Bootstrap CIs (cluster-robust, paper as resampling unit)
+    boot = bootstrap_ci(df)
     with open(OUT_DIR / "bootstrap_ci.json", 'w') as f:
         json.dump(boot, f, indent=2)
 

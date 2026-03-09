@@ -73,6 +73,17 @@
 !PAPER_FULL_DRAFT.md
 !SPOT_CHECK_LOG.md
 
+# ===== Allow: final submission =====
+!FINAL_SUBMISSION_2026-03-08/
+!FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v3.md
+!FINAL_SUBMISSION_2026-03-08/cover_letter.md
+!FINAL_SUBMISSION_2026-03-08/SUBMISSION_CHECKLIST.md
+!FINAL_SUBMISSION_2026-03-08/improved_formal_stats.json
+!FINAL_SUBMISSION_2026-03-08/fresh_stats.json
+
+# ===== Allow: programmatic classifier =====
+!programmatic_gt_classifier.py
+
 # ===== Allow: output subdirectories (figures + stats only) =====
 !output/
 !output/paper_figures/
@@ -89,6 +100,9 @@
 !output/sensitivity/**
 !output/tolerance_sensitivity.csv
 !output/kimi_primary_simulation.json
+!output/li2022_combined/
+!output/li2022_combined/programmatic_classification.json
+!output/li2022_combined/validation_matches_improved.csv
 
 # ===== Still exclude: secrets, binaries, caches =====
 .env

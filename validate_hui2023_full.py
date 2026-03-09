@@ -19,44 +19,141 @@ GT_PATH = r"C:\Users\moshe\Dropbox\Testing metaanalyis program\Hui 2023 source d
 RESULTS_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\hui2023_full_35")
 OUTPUT_DIR = RESULTS_DIR
 
-# Map paper filenames to GT study IDs
-# study_id from MOESM5 -> paper filename prefix
-PAPER_TO_STUDY_IDS = {
-    "11_Zhao_2020": [11],
-    "14_37_Liu_2019": [14, 37],
-    "18_Zulfiqar_2020": [18],
-    "21_Wang_2012": [21],
-    "27_Zou_2012": [27],
-    "3_Zhang_2012": [3],
-    "38_Yilmaz_1997": [38],
-    "40_Bharti_2013": [40, 14],  # Bharti has two study IDs
-    "42_Curtin_2008": [42],
-    "44_Cakmak_1997": [44],
-    "45_Chattha_2017": [45],
-    "46_Ghasal_2017": [46],
-    "49_Dawar_2022": [49],
-    "50_Erdal_2002": [50],
-    "52_Forster_2018": [52],
-    "53_Grant_1998": [53],
-    "58_Kalayci_1999": [58],
-    "59_Khoshgoftarmanesh_2013": [59],
-    "5_Yang_2011": [5],
-    "61_Kumar_2018": [61],
-    "62_Morshedi_2012": [62],
-    "63_Mosavian_2021": [63],
-    "65_Oliver_1994": [65],
-    "66_PahlavanRad_2009": [66],
-    "68_Peck_2008": [68],
-    "69_Ramzan_2020": [69],
-    "70_Rehman_2018": [70],
-    "82_Torun_2001": [82],
-    "84_Yilmaz_1998": [84],
-    "Dong_2018": [8, 31],
-    "Li_2013": [19],
-    "Liu_2014": [16],
-    "Rashid_2019": [72],
-    "Zhang_2017": [35],
+# Map paper filenames to GT study IDs PER SHEET.
+# CRITICAL: Study IDs are sheet-specific (different numbering in each sheet).
+# Using a single global ID pulled wrong-paper observations from other sheets.
+# Format: {paper: {sheet_name: [study_ids]}}
+PAPER_TO_SHEET_IDS = {
+    "11_Zhao_2020": {
+        "Data 2 Soil  application": [11],
+        "Data 3 Foliar application": [18],
+        "Data 4 Soil+Foliar application": [8],
+    },
+    "14_37_Liu_2019": {
+        "Data 2 Soil  application": [14, 37],
+    },
+    "18_Zulfiqar_2020": {
+        "Data 2 Soil  application": [18],
+        "Data 3 Foliar application": [71],
+    },
+    "21_Wang_2012": {
+        "Data 2 Soil  application": [21],
+        "Data 3 Foliar application": [11],
+    },
+    "27_Zou_2012": {
+        "Data 2 Soil  application": [27],
+        "Data 3 Foliar application": [4],
+        "Data 4 Soil+Foliar application": [11],
+    },
+    "3_Zhang_2012": {
+        "Data 3 Foliar application": [3],  # 0 Grain Zn data in GT
+    },
+    "38_Yilmaz_1997": {
+        "Data 2 Soil  application": [38],
+        "Data 3 Foliar application": [64],
+        "Data 4 Soil+Foliar application": [28],
+    },
+    "40_Bharti_2013": {
+        "Data 2 Soil  application": [40],
+        "Data 4 Soil+Foliar application": [14],
+    },
+    "42_Curtin_2008": {
+        "Data 2 Soil  application": [42],  # 0 Grain Zn data in GT
+    },
+    "44_Cakmak_1997": {
+        "Data 2 Soil  application": [44],
+    },
+    "45_Chattha_2017": {
+        "Data 2 Soil  application": [45],
+        "Data 3 Foliar application": [43],
+        "Data 4 Soil+Foliar application": [15],
+    },
+    "46_Ghasal_2017": {
+        "Data 2 Soil  application": [46],
+        "Data 4 Soil+Foliar application": [17],
+    },
+    "49_Dawar_2022": {
+        "Data 2 Soil  application": [49],  # 0 Grain Zn data in GT
+    },
+    "50_Erdal_2002": {
+        "Data 2 Soil  application": [50],
+    },
+    "52_Forster_2018": {
+        "Data 2 Soil  application": [52],
+        "Data 3 Foliar application": [48],
+    },
+    "53_Grant_1998": {
+        "Data 2 Soil  application": [53],  # 0 Grain Zn data in GT
+    },
+    "58_Kalayci_1999": {
+        "Data 2 Soil  application": [58],
+    },
+    "59_Khoshgoftarmanesh_2013": {
+        "Data 2 Soil  application": [59],
+        "Data 3 Foliar application": [58],
+    },
+    "5_Yang_2011": {
+        "Data 2 Soil  application": [5],
+        "Data 3 Foliar application": [19],  # compound 19/33 in sheet
+    },
+    "61_Kumar_2018": {
+        "Data 2 Soil  application": [61],  # 0 Grain Zn data
+        "Data 3 Foliar application": [60],
+        "Data 4 Soil+Foliar application": [13],
+    },
+    "62_Morshedi_2012": {
+        "Data 2 Soil  application": [62],  # 0 Grain Zn data in GT
+    },
+    "63_Mosavian_2021": {
+        "Data 2 Soil  application": [63],  # 0 Grain Zn data in GT
+    },
+    "65_Oliver_1994": {
+        "Data 2 Soil  application": [65],  # 0 Grain Zn data in GT
+    },
+    "66_PahlavanRad_2009": {
+        "Data 2 Soil  application": [66],
+        "Data 3 Foliar application": [66],
+    },
+    "68_Peck_2008": {
+        "Data 2 Soil  application": [68],
+        "Data 4 Soil+Foliar application": [21],
+    },
+    "69_Ramzan_2020": {
+        "Data 2 Soil  application": [69],
+        "Data 3 Foliar application": [69],
+    },
+    "70_Rehman_2018": {
+        "Data 2 Soil  application": [70],
+    },
+    "82_Torun_2001": {
+        "Data 2 Soil  application": [82],  # 0 Grain Zn data in GT
+    },
+    "84_Yilmaz_1998": {
+        "Data 2 Soil  application": [84],
+    },
+    "Dong_2018": {
+        "Data 3 Foliar application": [8, 31],
+    },
+    "Li_2013": {
+        "Data 2 Soil  application": [19],
+        "Data 3 Foliar application": [10],
+        "Data 4 Soil+Foliar application": [3],
+    },
+    "Liu_2014": {
+        "Data 2 Soil  application": [16],
+        "Data 3 Foliar application": [1],
+        "Data 4 Soil+Foliar application": [2],
+    },
+    "Rashid_2019": {
+        "Data 2 Soil  application": [72],
+    },
+    "Zhang_2017": {
+        "Data 2 Soil  application": [35],
+    },
 }
+
+# Flat view for iteration (paper list)
+PAPER_IDS = list(PAPER_TO_SHEET_IDS.keys())
 
 # Sheet configs: column indices for Grain Zn
 SHEET_COLS = {
@@ -67,17 +164,18 @@ SHEET_COLS = {
 
 
 def load_gt():
-    """Load GT from MOESM5, returning {study_id: [obs_list]}."""
+    """Load GT from MOESM5, returning {(sheet_name, study_id): [obs_list]}.
+
+    CRITICAL: Study IDs are sheet-specific. The same ID number refers to
+    different papers in different sheets. We key by (sheet, study_id) tuple.
+    """
     wb = openpyxl.load_workbook(GT_PATH, data_only=True)
-    gt_by_study = defaultdict(list)
+    gt_by_sheet_study = defaultdict(list)
 
     for sname, cols in SHEET_COLS.items():
         ws = wb[sname]
         app_type = sname.split()[1]  # "2"=Soil, "3"=Foliar, "4"=Soil+Foliar
 
-        # Need to find actual column positions - check row 3 for sub-headers
-        # The positions may differ between sheets
-        # Let's read headers to verify
         row2 = [str(c.value)[:50] if c.value else '' for c in ws[2]]
 
         # Find Grain Zn columns dynamically
@@ -101,7 +199,8 @@ def load_gt():
                 n_col = i
                 break
 
-        for row in ws.iter_rows(min_row=4, values_only=True):
+        seen_rows = set()  # Deduplicate compound IDs (e.g., "19/33")
+        for row_idx, row in enumerate(ws.iter_rows(min_row=4, values_only=True)):
             study_id = row[1]
             pub = str(row[2]).strip() if row[2] else ""
 
@@ -119,7 +218,7 @@ def load_gt():
             if ctrl is None or treat is None or ctrl <= 0:
                 continue
 
-            # Handle compound study IDs like "3/29"
+            # Handle compound study IDs like "19/33"
             sid_str = str(study_id)
             study_ids_parsed = []
             if '/' in sid_str:
@@ -134,19 +233,41 @@ def load_gt():
                 except ValueError:
                     continue
 
-            for sid_val in study_ids_parsed:
-                gt_by_study[sid_val].append({
-                    'study_id': sid_val,
-                    'publication': pub[:100],
-                    'ctrl': ctrl,
-                    'treat': treat,
-                    'effect': effect,
-                    'n': n,
-                    'sheet': sname,
-                    'app_type': app_type,
-                })
+            obs = {
+                'study_id': study_ids_parsed[0] if study_ids_parsed else 0,
+                'all_study_ids': study_ids_parsed,
+                'publication': pub[:100],
+                'ctrl': ctrl,
+                'treat': treat,
+                'effect': effect,
+                'n': n,
+                'sheet': sname,
+                'app_type': app_type,
+                'row_key': f"{sname}_{row_idx}",  # Unique row key for dedup
+            }
 
-    return gt_by_study
+            # Add to each parsed study_id under this sheet
+            for sid_val in study_ids_parsed:
+                gt_by_sheet_study[(sname, sid_val)].append(obs)
+
+    return gt_by_sheet_study
+
+
+def get_gt_for_paper(paper_id, gt_by_sheet_study):
+    """Get deduplicated GT observations for a paper using per-sheet mapping."""
+    sheet_ids = PAPER_TO_SHEET_IDS.get(paper_id, {})
+    seen_rows = set()
+    gt_rows = []
+
+    for sheet_name, study_ids in sheet_ids.items():
+        for sid in study_ids:
+            for obs in gt_by_sheet_study.get((sheet_name, sid), []):
+                row_key = obs['row_key']
+                if row_key not in seen_rows:
+                    seen_rows.add(row_key)
+                    gt_rows.append(obs)
+
+    return gt_rows
 
 
 def load_extraction(paper_id):
@@ -288,22 +409,25 @@ def main():
 
     # Load GT
     print("\n[1] Loading ground truth from MOESM5...")
-    gt_by_study = load_gt()
-    total_gt = sum(len(v) for v in gt_by_study.values())
-    print(f"  {len(gt_by_study)} studies, {total_gt} observations")
+    gt_by_sheet_study = load_gt()
+    # Count unique observations (deduplicate compound IDs)
+    all_row_keys = set()
+    for obs_list in gt_by_sheet_study.values():
+        for obs in obs_list:
+            all_row_keys.add(obs['row_key'])
+    total_gt = len(all_row_keys)
+    print(f"  {len(gt_by_sheet_study)} (sheet, study_id) entries, {total_gt} unique observations")
 
     # Process each paper
     print("\n[2] Matching extractions to GT...")
     all_matches = []
     paper_stats = []
 
-    for paper_id, study_ids in sorted(PAPER_TO_STUDY_IDS.items()):
+    for paper_id in sorted(PAPER_IDS):
         extracted = load_extraction(paper_id)
 
-        # Get GT for all study IDs associated with this paper
-        gt_rows = []
-        for sid in study_ids:
-            gt_rows.extend(gt_by_study.get(sid, []))
+        # Get GT using per-sheet study ID mapping (avoids cross-sheet collisions)
+        gt_rows = get_gt_for_paper(paper_id, gt_by_sheet_study)
 
         if not gt_rows:
             paper_stats.append({
@@ -326,6 +450,8 @@ def main():
             continue
 
         matches = match_observations(extracted, gt_rows)
+        for m in matches:
+            m['paper_id'] = paper_id  # tag each match with its source paper
         all_matches.extend(matches)
 
         metrics = compute_metrics(matches)
@@ -352,7 +478,7 @@ def main():
     print(f"\n{'=' * 70}")
     print("RESULTS")
     print(f"{'=' * 70}")
-    print(f"\n  Papers processed: {len(PAPER_TO_STUDY_IDS)}")
+    print(f"\n  Papers processed: {len(PAPER_TO_SHEET_IDS)}")
     print(f"  Papers with matches: {sum(1 for p in paper_stats if p['n_matched'] > 0)}")
     print(f"  Total GT observations: {sum(p['n_gt'] for p in paper_stats)}")
     print(f"  Total extracted Zn obs: {sum(p['n_extracted'] for p in paper_stats)}")
@@ -387,7 +513,7 @@ def main():
     report = {
         'timestamp': datetime.now().isoformat(),
         'dataset': 'Hui et al. 2023 - Zinc/Wheat (34 papers)',
-        'papers_processed': len(PAPER_TO_STUDY_IDS),
+        'papers_processed': len(PAPER_TO_SHEET_IDS),
         'papers_matched': sum(1 for p in paper_stats if p['n_matched'] > 0),
         'total_gt': sum(p['n_gt'] for p in paper_stats),
         'total_extracted_zn': sum(p['n_extracted'] for p in paper_stats),
@@ -410,10 +536,11 @@ def main():
     csv_path = OUTPUT_DIR / 'validation_matches.csv'
     with open(csv_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
-        writer.writerow(['ext_ctrl', 'ext_treat', 'gt_ctrl', 'gt_treat',
+        writer.writerow(['paper_id', 'ext_ctrl', 'ext_treat', 'gt_ctrl', 'gt_treat',
                          'ext_effect', 'gt_effect', 'abs_error', 'tissue', 'app_type'])
         for m in all_matches:
             writer.writerow([
+                m.get('paper_id', 'unknown'),
                 m['ext_ctrl'], m['ext_treat'], m['gt_ctrl'], m['gt_treat'],
                 round(m['ext_effect'], 2), round(m['gt_effect'], 2),
                 round(m['abs_error'], 2), m['tissue'], m['app_type'],
