@@ -1,0 +1,2117 @@
+{
+  "paper_id": "1542-1558-15(3)2018 BR-18-165",
+  "recon": {
+    "paper_id": "1542-1558-15(3)2018 BR-18-165",
+    "warnings": [
+      "This is a biostimulant study (actosol + yeast extract), not a CO2 study - wrong meta-analysis context",
+      "Complex factorial design with 12 treatments (3 actosol \u00d7 4 yeast levels) - each needs individual extraction",
+      "Multiple outcome variables in same tables - focus only on fresh yield data",
+      "Units vary between kg/fad (faddan) which needs conversion to standard units",
+      "Essential oil data is secondary outcome, not primary yield",
+      "Two growing seasons reported - treat as separate experiments or average",
+      "LSD values provided for statistical comparison",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "L.S.D values provided in tables, e.g. 'L.S.D 67.64' for fresh herb yield",
+    "variance_confidence": "high",
+    "control_definition": "T1: 0 cm3/L actosol plus 0 g/l yeast extract (no biostimulant)",
+    "treatment_definition": "Various combinations of actosol (10, 20 cm3/L) and yeast extract (5, 10, 15 g/L)",
+    "tables_with_target_data": [
+      "Table 3"
+    ],
+    "potential_tc_confusion": "Multiple treatments vs single control - need to extract each treatment vs T1",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "There were three replicates for each treatment",
+    "factorial_structure": "[\"actosol\", \"yeast extract\", \"season\"]",
+    "extraction_guidance": "Extract fresh herb yield data from Table 3 only. Control is T1 (0,0). Extract T2-T12 vs T1 separately. Convert kg/fad to kg/ha (1 fad = 4200 m\u00b2 = 0.42 ha). Use LSD as variance measure. Consider seasons 1 and 2 as separate experiments or average them. Focus on fresh yield as primary outcome, ignore essential oil data.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Impact of actosol and yeast extract on productivity and essential oil constituents of Zinnia elegans plants\",\n        \"species\": \"Zinnia elegans\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A - not CO2 study\"}\n    },\n    \"warnings\": [\n        \"This is a biostimulant study (actosol + yeast extract), not a CO2 study - wrong meta-analysis context\",\n        \"Complex factorial design with 12 treatments (3 actosol \u00d7 4 yeast levels) - each needs individual extraction\",\n        \"Multiple outcome variables in same tables - focus only on fresh yield data\",\n        \"Units vary between kg/fad (faddan) which needs conversion to standard units\",\n        \"Essential oil data is secondary outcome, not primary yield\",\n        \"Two growing seasons reported - treat as separate experiments or average\",\n        \"LSD values provided for statistical comparison\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"L.S.D values provided in tables, e.g. 'L.S.D 67.64' for fresh herb yield\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"T1: 0 cm3/L actosol plus 0 g/l yeast extract (no biostimulant)\",\n        \"treatment_definition\": \"Various combinations of actosol (10, 20 cm3/L) and yeast extract (5, 10, 15 g/L)\",\n        \"identification_method\": \"T1 is control (0,0), T2-T12 are treatments with different combinations\",\n        \"potential_confusion\": \"Multiple treatments vs single control - need to extract each treatment vs T1\"\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"There were three replicates for each treatment\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 3 independent replicates per treatment combination\"\n    },\n    \"data_locations\": {\n        \"tables_with_target_data\": [\"Table 3\"],\n        \"tables_without_target_data\": [\"Table 1\", \"Table 2\", \"Table 4\", \"Table 5\", \"Tab",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 4",
+      "Table 5",
+      "Table 6",
+      "Table 7"
+    ],
+    "table_descriptions": {
+      "Table 1": "Soil properties - not yield data",
+      "Table 2": "Treatment combinations list",
+      "Table 3": "Fresh and dry yields for herb, roots, and inflorescences",
+      "Table 4": "Essential oil percentages and yields - secondary outcome"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "Yield of fresh herb (kg/fad)",
+        "Yield of dry herb (kg/fad)",
+        "Yield of fresh roots (kg/fad)",
+        "Yield of dry roots (kg/fad)",
+        "Yield of fresh inflorescences (kg/fad)",
+        "Yield of dry inflorescences (kg/fad)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 18,
+  "kimi_obs": 0,
+  "gemini_obs": 0,
+  "matched_obs": 22,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 18",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 3902.9,
+        "control_mean": 2124.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T2 vs T1 comparison, season 1",
+        "effect_pct": 83.71775560158163,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 3992.9,
+        "control_mean": 2246.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T2 vs T1 comparison, season 2",
+        "effect_pct": 77.77827248441675,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 4265.0,
+        "control_mean": 2124.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 10 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "10 g/l"
+        },
+        "confidence": "high",
+        "notes": "T3 vs T1 comparison, season 1",
+        "effect_pct": 100.76256825456598,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 4396.7,
+        "control_mean": 2246.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 10 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "10 g/l"
+        },
+        "confidence": "high",
+        "notes": "T3 vs T1 comparison, season 2",
+        "effect_pct": 95.75690115761353,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 4058.4,
+        "control_mean": 2124.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 15 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "15 g/l"
+        },
+        "confidence": "high",
+        "notes": "T4 vs T1 comparison, season 1",
+        "effect_pct": 91.03746940312558,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 4180.2,
+        "control_mean": 2246.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 15 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "15 g/l"
+        },
+        "confidence": "high",
+        "notes": "T4 vs T1 comparison, season 2",
+        "effect_pct": 86.11754229741763,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 3402.0,
+        "control_mean": 2124.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 0 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "0 g/l"
+        },
+        "confidence": "high",
+        "notes": "T5 vs T1 comparison, season 1",
+        "effect_pct": 60.13933345885897,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 3504.1,
+        "control_mean": 2246.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 0 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "0 g/l"
+        },
+        "confidence": "high",
+        "notes": "T5 vs T1 comparison, season 2",
+        "effect_pct": 56.01513802315227,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 4904.4,
+        "control_mean": 2124.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T6 vs T1 comparison, season 1",
+        "effect_pct": 130.86047825268307,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 5011.1,
+        "control_mean": 2246.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T6 vs T1 comparison, season 2",
+        "effect_pct": 123.11219946571686,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 5470.1,
+        "control_mean": 2124.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "10 g/l"
+        },
+        "confidence": "high",
+        "notes": "T7 vs T1 comparison, season 1 - best treatment",
+        "effect_pct": 157.48917341366976,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "tissue": "shoot",
+        "treatment_mean": 5644.3,
+        "control_mean": 2246.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "10 g/l"
+        },
+        "confidence": "high",
+        "notes": "T7 vs T1 comparison, season 2 - best treatment",
+        "effect_pct": 151.3045414069457,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh roots (kg/fad)",
+      "tissue": "root",
+      "claude": {
+        "element": "Yield of fresh roots (kg/fad)",
+        "tissue": "root",
+        "treatment_mean": 260.5,
+        "control_mean": 138.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T2 vs T1 comparison, season 1",
+        "effect_pct": 87.81542898341746,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh roots (kg/fad)",
+      "tissue": "root",
+      "claude": {
+        "element": "Yield of fresh roots (kg/fad)",
+        "tissue": "root",
+        "treatment_mean": 255.4,
+        "control_mean": 145.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T2 vs T1 comparison, season 2",
+        "effect_pct": 75.05140507196711,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "tissue": "whole plant",
+        "treatment_mean": 544.2,
+        "control_mean": 372.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T2 vs T1 comparison, season 1 - inflorescences are flowers",
+        "effect_pct": 46.17244157937148,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "tissue": "whole plant",
+        "treatment_mean": 571.7,
+        "control_mean": 391.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "0 cm3/L",
+          "yeast_level": "5 g/l"
+        },
+        "confidence": "high",
+        "notes": "T2 vs T1 comparison, season 2 - inflorescences are flowers",
+        "effect_pct": 46.177448222960884,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "tissue": "whole plant",
+        "treatment_mean": 1636.2,
+        "control_mean": 372.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "1st",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "10 g/l"
+        },
+        "confidence": "high",
+        "notes": "T7 vs T1 comparison, season 1 - best treatment for inflorescences",
+        "effect_pct": 339.4842868654311,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "tissue": "whole plant",
+        "treatment_mean": 1855.9,
+        "control_mean": 391.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "kg/fad",
+        "data_source": "Table 3",
+        "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+        "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+        "moderators": {
+          "season": "2nd",
+          "actosol_level": "10 cm3/L",
+          "yeast_level": "10 g/l"
+        },
+        "confidence": "high",
+        "notes": "T7 vs T1 comparison, season 2 - best treatment for inflorescences",
+        "effect_pct": 374.533367425211,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 3902.9,
+      "control_mean": 2124.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T2 vs T1 comparison, season 1 [single-model fallback: Claude only]",
+      "effect_pct": 83.71775560158163,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 3992.9,
+      "control_mean": 2246.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T2 vs T1 comparison, season 2 [single-model fallback: Claude only]",
+      "effect_pct": 77.77827248441675,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 4265.0,
+      "control_mean": 2124.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 10 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "10 g/l"
+      },
+      "confidence": "low",
+      "notes": "T3 vs T1 comparison, season 1 [single-model fallback: Claude only]",
+      "effect_pct": 100.76256825456598,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 4396.7,
+      "control_mean": 2246.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 10 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "10 g/l"
+      },
+      "confidence": "low",
+      "notes": "T3 vs T1 comparison, season 2 [single-model fallback: Claude only]",
+      "effect_pct": 95.75690115761353,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 4058.4,
+      "control_mean": 2124.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 15 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "15 g/l"
+      },
+      "confidence": "low",
+      "notes": "T4 vs T1 comparison, season 1 [single-model fallback: Claude only]",
+      "effect_pct": 91.03746940312558,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 4180.2,
+      "control_mean": 2246.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 15 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "15 g/l"
+      },
+      "confidence": "low",
+      "notes": "T4 vs T1 comparison, season 2 [single-model fallback: Claude only]",
+      "effect_pct": 86.11754229741763,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 3402.0,
+      "control_mean": 2124.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 0 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "0 g/l"
+      },
+      "confidence": "low",
+      "notes": "T5 vs T1 comparison, season 1 [single-model fallback: Claude only]",
+      "effect_pct": 60.13933345885897,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 3504.1,
+      "control_mean": 2246.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 0 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "0 g/l"
+      },
+      "confidence": "low",
+      "notes": "T5 vs T1 comparison, season 2 [single-model fallback: Claude only]",
+      "effect_pct": 56.01513802315227,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 4904.4,
+      "control_mean": 2124.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T6 vs T1 comparison, season 1 [single-model fallback: Claude only]",
+      "effect_pct": 130.86047825268307,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 5011.1,
+      "control_mean": 2246.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T6 vs T1 comparison, season 2 [single-model fallback: Claude only]",
+      "effect_pct": 123.11219946571686,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 5470.1,
+      "control_mean": 2124.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "10 g/l"
+      },
+      "confidence": "low",
+      "notes": "T7 vs T1 comparison, season 1 - best treatment [single-model fallback: Claude only]",
+      "effect_pct": 157.48917341366976,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "treatment_mean": 5644.3,
+      "control_mean": 2246.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "10 g/l"
+      },
+      "confidence": "low",
+      "notes": "T7 vs T1 comparison, season 2 - best treatment [single-model fallback: Claude only]",
+      "effect_pct": 151.3045414069457,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh roots (kg/fad)",
+      "tissue": "root",
+      "treatment_mean": 260.5,
+      "control_mean": 138.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T2 vs T1 comparison, season 1 [single-model fallback: Claude only]",
+      "effect_pct": 87.81542898341746,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh roots (kg/fad)",
+      "tissue": "root",
+      "treatment_mean": 255.4,
+      "control_mean": 145.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T2 vs T1 comparison, season 2 [single-model fallback: Claude only]",
+      "effect_pct": 75.05140507196711,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "treatment_mean": 544.2,
+      "control_mean": 372.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T2 vs T1 comparison, season 1 - inflorescences are flowers [single-model fallback: Claude only]",
+      "effect_pct": 46.17244157937148,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "treatment_mean": 571.7,
+      "control_mean": 391.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/l"
+      },
+      "confidence": "low",
+      "notes": "T2 vs T1 comparison, season 2 - inflorescences are flowers [single-model fallback: Claude only]",
+      "effect_pct": 46.177448222960884,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "treatment_mean": 1636.2,
+      "control_mean": 372.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "1st",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "10 g/l"
+      },
+      "confidence": "low",
+      "notes": "T7 vs T1 comparison, season 1 - best treatment for inflorescences [single-model fallback: Claude only]",
+      "effect_pct": 339.4842868654311,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "treatment_mean": 1855.9,
+      "control_mean": 391.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/fad",
+      "data_source": "Table 3",
+      "treatment_description": "10 cm3/L actosol plus 10 g/l yeast extract",
+      "control_description": "0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "season": "2nd",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "10 g/l"
+      },
+      "confidence": "low",
+      "notes": "T7 vs T1 comparison, season 2 - best treatment for inflorescences [single-model fallback: Claude only]",
+      "effect_pct": 374.533367425211,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh herb",
+      "tissue": "shoot",
+      "treatment_mean": 9292.6,
+      "control_mean": 5058.1,
+      "treatment_variance": 366.7,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 3",
+      "treatment_description": "T2: 0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "T1: 0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "year": "2016",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/L"
+      },
+      "confidence": "high",
+      "notes": "Converted from kg/fad to kg/ha using 1 fad = 0.42 ha. Season 1 (2016). [from vision]",
+      "effect_pct": 83.71720606551867,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of dry herb",
+      "tissue": "shoot",
+      "treatment_mean": 1424.5,
+      "control_mean": 944.0,
+      "treatment_variance": 66.4,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 3",
+      "treatment_description": "T2: 0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "T1: 0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "year": "2016",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/L"
+      },
+      "confidence": "high",
+      "notes": "Converted from kg/fad to kg/ha using 1 fad = 0.42 ha. Season 1 (2016). [from vision]",
+      "effect_pct": 50.90042372881356,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh roots",
+      "tissue": "root",
+      "treatment_mean": 620.2,
+      "control_mean": 330.2,
+      "treatment_variance": 49.3,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 3",
+      "treatment_description": "T2: 0 cm3/L actosol plus 5 g/l yeast extract",
+      "control_description": "T1: 0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "year": "2016",
+        "actosol_level": "0 cm3/L",
+        "yeast_level": "5 g/L"
+      },
+      "confidence": "high",
+      "notes": "Converted from kg/fad to kg/ha using 1 fad = 0.42 ha. Season 1 (2016). [from vision]",
+      "effect_pct": 87.82556026650516,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of fresh inflorescences",
+      "tissue": "inflorescence",
+      "treatment_mean": 3895.7,
+      "control_mean": 886.4,
+      "treatment_variance": 370.2,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 3",
+      "treatment_description": "T7: 10 cm3/L actosol plus 10 g/l yeast extract",
+      "control_description": "T1: 0 cm3/L actosol plus 0 g/l yeast extract",
+      "moderators": {
+        "year": "2016",
+        "actosol_level": "10 cm3/L",
+        "yeast_level": "10 g/L"
+      },
+      "confidence": "high",
+      "notes": "Converted from kg/fad to kg/ha using 1 fad = 0.42 ha. Season 1 (2016). [from vision]",
+      "effect_pct": 339.4968411552346,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 22,
+    "final_count": 22
+  },
+  "verification_flags": [
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 3902.9,
+        "control_mean": 2124.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +83.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 83.71775560158163
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 3992.9,
+        "control_mean": 2246.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +77.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 77.77827248441675
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 4265.0,
+        "control_mean": 2124.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +100.8%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +100.8% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 100.76256825456598
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 4396.7,
+        "control_mean": 2246.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +95.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 95.75690115761353
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 4058.4,
+        "control_mean": 2124.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +91.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 91.03746940312558
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 4180.2,
+        "control_mean": 2246.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +86.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 86.11754229741763
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 3402.0,
+        "control_mean": 2124.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +60.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 60.13933345885897
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 3504.1,
+        "control_mean": 2246.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +56.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 56.01513802315227
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 4904.4,
+        "control_mean": 2124.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +130.9%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +130.9% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 130.86047825268307
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 5011.1,
+        "control_mean": 2246.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +123.1%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +123.1% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 123.11219946571686
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 5470.1,
+        "control_mean": 2124.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +157.5%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +157.5% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 157.48917341366976
+      }
+    },
+    {
+      "element": "Yield of fresh herb (kg/fad)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh herb (kg/fad)",
+        "treatment_mean": 5644.3,
+        "control_mean": 2246.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +151.3%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +151.3% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 151.3045414069457
+      }
+    },
+    {
+      "element": "Yield of fresh roots (kg/fad)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh roots (kg/fad)",
+        "treatment_mean": 260.5,
+        "control_mean": 138.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +87.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 87.81542898341746
+      }
+    },
+    {
+      "element": "Yield of fresh roots (kg/fad)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh roots (kg/fad)",
+        "treatment_mean": 255.4,
+        "control_mean": 145.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +75.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 75.05140507196711
+      }
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "treatment_mean": 544.2,
+        "control_mean": 372.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +46.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 46.17244157937148
+      }
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "treatment_mean": 571.7,
+        "control_mean": 391.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +46.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 46.177448222960884
+      }
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "treatment_mean": 1636.2,
+        "control_mean": 372.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +339.5%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +339.5% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 339.4842868654311
+      }
+    },
+    {
+      "element": "Yield of fresh inflorescences (kg/fad)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of fresh inflorescences (kg/fad)",
+        "treatment_mean": 1855.9,
+        "control_mean": 391.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +374.5%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +374.5% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 374.533367425211
+      }
+    },
+    {
+      "element": "Yield of fresh herb",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield of fresh herb",
+        "treatment_mean": 9292.6,
+        "control_mean": 5058.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +83.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.9461507005574328,
+            "note": "CV = 3.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": 83.71720606551867
+      }
+    },
+    {
+      "element": "Yield of dry herb",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield of dry herb",
+        "treatment_mean": 1424.5,
+        "control_mean": 944.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +50.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.661284661284662,
+            "note": "CV = 4.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.6%"
+          }
+        },
+        "effect_pct": 50.90042372881356
+      }
+    },
+    {
+      "element": "Yield of fresh roots",
+      "tissue": "root",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield of fresh roots",
+        "treatment_mean": 620.2,
+        "control_mean": 330.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +87.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.9490486939696865,
+            "note": "CV = 7.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.4%"
+          }
+        },
+        "effect_pct": 87.82556026650516
+      }
+    },
+    {
+      "element": "Yield of fresh inflorescences",
+      "tissue": "inflorescence",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield of fresh inflorescences",
+        "treatment_mean": 3895.7,
+        "control_mean": 886.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +339.5%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +339.5% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.502785122057654,
+            "note": "CV = 9.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.5%"
+          }
+        },
+        "effect_pct": 339.4968411552346
+      }
+    }
+  ]
+}

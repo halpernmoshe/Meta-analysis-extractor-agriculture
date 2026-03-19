@@ -1,0 +1,1175 @@
+{
+  "paper_id": "094_Kowalska_2021_Effect of Different Forms of Silicon on",
+  "recon": {
+    "paper_id": "094_Kowalska_2021_Effect of Different Forms of Silicon on",
+    "warnings": [
+      "Multiple silicon products tested (AdeSil powder vs ZumSil liquid) - each needs separate extraction",
+      "Multiple application methods for each product (soil only, foliar only, combined) create factorial design",
+      "Yield reported in t/ha with multiple application combinations - ensure each is extracted separately vs control",
+      "SPAD and plant height data are NOT primary yield outcomes",
+      "Statistical notation uses letters (a,b,c) for homogeneous groups from Tukey's test",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "none",
+    "variance_source": "No explicit variance measures (SE, SD, LSD) reported in tables - only means with letter notation for statistical groups",
+    "variance_confidence": "high",
+    "control_definition": "Untreated - soil devoid of silicon application",
+    "treatment_definition": "Silicon application in various forms: AdeSil (powder diatomaceous earth at 10kg/ha) or ZumSil (liquid monosilicic acid at 0.3l/ha) applied via soil, foliar, or combined methods",
+    "tables_with_target_data": [
+      "Table 7"
+    ],
+    "potential_tc_confusion": "None - control clearly identified as 'Untreated' throughout",
+    "experimental_design": "factorial",
+    "sample_size_found": 8,
+    "sample_size_source": "eight observation points have been designated across the whole area (100m2), one silicon product was used in one block area",
+    "factorial_structure": "[\"Silicon form (2 levels: AdeSil, ZumSil)\", \"Application method (3 levels: soil, foliar, combined)\", \"Control (untreated)\"]",
+    "extraction_guidance": "Extract yield data only from Table 7. Control = 'Untreated' (3.88 t/ha). Extract 6 treatment combinations: AdeSil soil (4.75), AdeSil combined (5.35), AdeSil foliar (4.25), ZumSil soil (4.49), ZumSil combined (4.97), ZumSil foliar (4.84). No variance measures available - means only with statistical letter groupings.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effect of Different Forms of Silicon on Growth of Spring Wheat Cultivated in Organic Farming System\",\n        \"species\": \"Triticum aestivum (spring wheat)\",\n        \"experimental_system\": \"open-field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"Multiple silicon products tested (AdeSil powder vs ZumSil liquid) - each needs separate extraction\",\n        \"Multiple application methods for each product (soil only, foliar only, combined) create factorial design\",\n        \"Yield reported in t/ha with multiple application combinations - ensure each is extracted separately vs control\",\n        \"SPAD and plant height data are NOT primary yield outcomes\",\n        \"Statistical notation uses letters (a,b,c) for homogeneous groups from Tukey's test\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"none\",\n        \"source\": \"No explicit variance measures (SE, SD, LSD) reported in tables - only means with letter notation for statistical groups\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Untreated - soil devoid of silicon application\",\n        \"treatment_definition\": \"Silicon application in various forms: AdeSil (powder diatomaceous earth at 10kg/ha) or ZumSil (liquid monosilicic acid at 0.3l/ha) applied via soil, foliar, or combined methods\",\n        \"identification_method\": \"Control labeled as 'Untreated' in all tables; treatments specify silicon form and application method\",\n        \"potential_confusion\": \"None - control clearly identified as 'Untreated' throughout\"\n    },\n    \"sample_size\": {\n        \"n\": 8,\n        \"source\": \"eight observation points have been designated across the whole area (100m2), one silicon product was used in one block area\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 8 observation points per treatment combination across experimental blocks\"\n    },\n    \"data_locations\": {\n     ",
+    "tables_without_target_data": [
+      "Table 3",
+      "Table 4",
+      "Table 5",
+      "Table 6"
+    ],
+    "table_descriptions": {
+      "Table 3": "SPAD chlorophyll values at different growth stages - not primary yield outcome",
+      "Table 4": "Plant height measurements - growth parameter, not yield",
+      "Table 5": "Number of spikes per m\u00b2 - yield component but not final yield",
+      "Table 6": "Spike length and weight - yield components but not final yield",
+      "Table 7": "Final grain yield in t/ha plus grain moisture - PRIMARY OUTCOME DATA"
+    },
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 2"
+    ],
+    "outcome_variables_detected": {
+      "Table 7": [
+        "Weight of grain per plot/16 m\u00b2 [kg]",
+        "Yield [t per ha]",
+        "Moisture of grain [%]"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 18,
+  "kimi_obs": 18,
+  "gemini_obs": 0,
+  "matched_obs": 17,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "treatment_mean": 4.75,
+      "control_mean": 3.88,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, soil application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "soil",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 22.422680412371136,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "treatment_mean": 5.35,
+      "control_mean": 3.88,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, soil plus foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "combined",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 37.88659793814432,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "treatment_mean": 4.25,
+      "control_mean": 3.88,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "foliar",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.536082474226808,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "treatment_mean": 4.49,
+      "control_mean": 3.88,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, soil application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "soil",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.72164948453609,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "treatment_mean": 4.97,
+      "control_mean": 3.88,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, soil plus foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "combined",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 28.092783505154635,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "treatment_mean": 4.84,
+      "control_mean": 3.88,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "foliar",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 24.742268041237114,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "treatment_mean": 9.46,
+      "control_mean": 7.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "kg",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, soil application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "soil",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 22.53886010362696,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "treatment_mean": 10.64,
+      "control_mean": 7.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "kg",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, soil plus foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "combined",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 37.823834196891205,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "treatment_mean": 8.44,
+      "control_mean": 7.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "kg",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "foliar",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.326424870466319,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "treatment_mean": 8.92,
+      "control_mean": 7.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "kg",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, soil application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "soil",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.544041450777204,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "treatment_mean": 9.92,
+      "control_mean": 7.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "kg",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, soil plus foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "combined",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 28.497409326424872,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "treatment_mean": 9.64,
+      "control_mean": 7.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "kg",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "foliar",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 24.870466321243534,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "treatment_mean": 13.5,
+      "control_mean": 13.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, soil application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "soil",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "treatment_mean": 13.3,
+      "control_mean": 13.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) 10 kg/ha, foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "AdeSil",
+        "application_method": "foliar",
+        "silicon_product": "AdeSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -1.481481481481476,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "treatment_mean": 13.4,
+      "control_mean": 13.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, soil application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "soil",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.740740740740738,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "treatment_mean": 13.8,
+      "control_mean": 13.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, soil plus foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "combined",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.2222222222222276,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "treatment_mean": 13.6,
+      "control_mean": 13.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) 0.3 l/ha, foliar application",
+      "control_description": "Untreated",
+      "moderators": {
+        "cultivar": "Arabella",
+        "year": "2017-2018",
+        "silicon_form": "ZumSil",
+        "application_method": "foliar",
+        "silicon_product": "ZumSil",
+        "years": "2017-2018"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.740740740740738,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 1,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 18,
+    "final_count": 17
+  },
+  "verification_flags": [
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield [t per ha]",
+        "treatment_mean": 4.75,
+        "control_mean": 3.88,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +22.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 22.422680412371136
+      }
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield [t per ha]",
+        "treatment_mean": 5.35,
+        "control_mean": 3.88,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +37.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 37.88659793814432
+      }
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield [t per ha]",
+        "treatment_mean": 4.25,
+        "control_mean": 3.88,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 9.536082474226808
+      }
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield [t per ha]",
+        "treatment_mean": 4.49,
+        "control_mean": 3.88,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 15.72164948453609
+      }
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield [t per ha]",
+        "treatment_mean": 4.97,
+        "control_mean": 3.88,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +28.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 28.092783505154635
+      }
+    },
+    {
+      "element": "Yield [t per ha]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield [t per ha]",
+        "treatment_mean": 4.84,
+        "control_mean": 3.88,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +24.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 24.742268041237114
+      }
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+        "treatment_mean": 9.46,
+        "control_mean": 7.72,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +22.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 22.53886010362696
+      }
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+        "treatment_mean": 10.64,
+        "control_mean": 7.72,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +37.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 37.823834196891205
+      }
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+        "treatment_mean": 8.44,
+        "control_mean": 7.72,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 9.326424870466319
+      }
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+        "treatment_mean": 8.92,
+        "control_mean": 7.72,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 15.544041450777204
+      }
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+        "treatment_mean": 9.92,
+        "control_mean": 7.72,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +28.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 28.497409326424872
+      }
+    },
+    {
+      "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Weight of grain per plot/16 m\u00b2 [kg]",
+        "treatment_mean": 9.64,
+        "control_mean": 7.72,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +24.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 24.870466321243534
+      }
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Moisture of grain [%]",
+        "treatment_mean": 13.5,
+        "control_mean": 13.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Moisture of grain [%]",
+        "treatment_mean": 13.3,
+        "control_mean": 13.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -1.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": -1.481481481481476
+      }
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Moisture of grain [%]",
+        "treatment_mean": 13.4,
+        "control_mean": 13.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": -0.740740740740738
+      }
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Moisture of grain [%]",
+        "treatment_mean": 13.8,
+        "control_mean": 13.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 2.2222222222222276
+      }
+    },
+    {
+      "element": "Moisture of grain [%]",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Moisture of grain [%]",
+        "treatment_mean": 13.6,
+        "control_mean": 13.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          }
+        },
+        "effect_pct": 0.740740740740738
+      }
+    }
+  ]
+}

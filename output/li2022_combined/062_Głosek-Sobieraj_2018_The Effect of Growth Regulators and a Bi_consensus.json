@@ -1,0 +1,1944 @@
+{
+  "paper_id": "062_G\u0142osek-Sobieraj_2018_The Effect of Growth Regulators and a Bi",
+  "recon": {
+    "paper_id": "062_G\u0142osek-Sobieraj_2018_The Effect of Growth Regulators and a Bi",
+    "warnings": [
+      "Multiple biostimulant products tested - need to extract each vs control separately",
+      "Three-year experiment (2013-2015) - data reported by year",
+      "Five different potato cultivars tested - treatment effects vary by cultivar",
+      "Tables use letter codes for statistical significance - values with same letters do not differ significantly",
+      "Yield data in Table 4 uses dt ha\u207b\u00b9 units (decitonne per hectare = 100 kg/ha)",
+      "Some treatments may not show significant differences from control despite numerical differences",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "Statistical data within years; values followed by the same letters do not differ significantly at P\u22640.05",
+    "variance_confidence": "high",
+    "control_definition": "Plots where growth regulators were not applied were the control",
+    "treatment_definition": "Four biostimulant treatments: (1) 0.1% Asahi SL biostimulator, (2) 1.0% Bio-Algeen S-90 seaweed extract, (3) 0.2% Kelpak SL brown algae extract, (4) Trifender WP fungal preparation",
+    "tables_with_target_data": [
+      "Table 4"
+    ],
+    "potential_tc_confusion": "Trifender WP contains fungal spores (Trichoderma asperellum) - this is microbial and may not qualify as biostimulant for the meta-analysis scope",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "A micro-plot experiment with a randomized sub-block design and three replications was conducted",
+    "factorial_structure": "[\"biostimulant treatment\", \"potato cultivar\", \"year\"]",
+    "extraction_guidance": "Extract yield data from Table 4 for each biostimulant treatment vs Control for each cultivar-year combination. Convert dt ha\u207b\u00b9 to kg ha\u207b\u00b9 by multiplying by 100. Three relevant biostimulant treatments qualify: Asahi SL (biostimulator), Bio-Algeen S-90 (seaweed extract), and Kelpak SL (seaweed extract). Exclude Trifender WP as it is microbial. Use LSD-based statistical significance indicators (letter codes) to assess treatment differences.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"The Effect of Growth Regulators and a Biostimulator on the Health Status, Yield and Yield Components of Potatoes (Solanum tuberosum L.)\",\n        \"species\": \"Solanum tuberosum L. (potato)\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"Multiple biostimulant products tested - need to extract each vs control separately\",\n        \"Three-year experiment (2013-2015) - data reported by year\",\n        \"Five different potato cultivars tested - treatment effects vary by cultivar\",\n        \"Tables use letter codes for statistical significance - values with same letters do not differ significantly\",\n        \"Yield data in Table 4 uses dt ha\u207b\u00b9 units (decitonne per hectare = 100 kg/ha)\",\n        \"Some treatments may not show significant differences from control despite numerical differences\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"Statistical data within years; values followed by the same letters do not differ significantly at P\u22640.05\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Plots where growth regulators were not applied were the control\",\n        \"treatment_definition\": \"Four biostimulant treatments: (1) 0.1% Asahi SL biostimulator, (2) 1.0% Bio-Algeen S-90 seaweed extract, (3) 0.2% Kelpak SL brown algae extract, (4) Trifender WP fungal preparation\",\n        \"identification_method\": \"Control treatment labeled as 'Control' in tables, biostimulant treatments labeled as 'Asahi', 'Bio-Al.', 'Kelp.', and 'Trif.'\",\n        \"potential_confusion\": \"Trifender WP contains fungal spores (Trichoderma asperellum) - this is microbial and may not qualify as biostimulant for the meta-analysis scope\"\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"A micro-plot experiment with a randomized sub-block design and three replications was conducted\",\n ",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3",
+      "Table 5"
+    ],
+    "table_descriptions": {
+      "Table 1": "Weather conditions data - temperature and rainfall by 10-day periods",
+      "Table 2": "Infection rates by Phytophthora infestans (late blight) - percentage infection index",
+      "Table 3": "Infection rates by Alternaria alternata and A. solani (early blight) - percentage infection index",
+      "Table 4": "Potato yield in dt ha\u207b\u00b9 (decitonne per hectare) by treatment, cultivar, and year",
+      "Table 5": "Percentage share of different tuber size fractions in total yield"
+    },
+    "figures_with_data": [
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Table 4": [
+        "potato yield (dt ha\u207b\u00b9)"
+      ],
+      "Figure 3": [
+        "potato yield (dt ha\u207b\u00b9)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 45,
+  "kimi_obs": 45,
+  "gemini_obs": 0,
+  "matched_obs": 45,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 40514,
+      "control_mean": 40041,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2013",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.1812891785919433,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 44486,
+      "control_mean": 40041,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.10112135061562,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 52467,
+      "control_mean": 40041,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 31.03319097924627,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 42737,
+      "control_mean": 38436,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2013",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.190030180039546,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 44115,
+      "control_mean": 38436,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 14.775210739931314,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 42768,
+      "control_mean": 38436,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.270683733999377,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 16849,
+      "control_mean": 19053,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2013",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.56773211567732,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 20165,
+      "control_mean": 19053,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.836351230777305,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 19012,
+      "control_mean": 19053,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.2151892090484438,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 8954,
+      "control_mean": 8561,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2013",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.590585212007943,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 9965,
+      "control_mean": 8561,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.399953276486393,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 10830,
+      "control_mean": 8561,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 26.503913094264686,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 22643,
+      "control_mean": 19099,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2013",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.555945337452222,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 28616,
+      "control_mean": 19099,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 49.8298340227237,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 21613,
+      "control_mean": 19099,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2013",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 13.162992826849573,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 23691,
+      "control_mean": 20210,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2014",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.224146462147452,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 25296,
+      "control_mean": 20210,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 25.165759524987628,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 26333,
+      "control_mean": 20210,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 30.29688273132113,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 21376,
+      "control_mean": 20963,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2014",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.9701378619472403,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 22630,
+      "control_mean": 20963,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.95210609168535,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 23358,
+      "control_mean": 20963,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.424891475456757,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 6111,
+      "control_mean": 6272,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2014",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.5669642857142856,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 7272,
+      "control_mean": 6272,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.943877551020408,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 6679,
+      "control_mean": 6272,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.489158163265306,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 6271,
+      "control_mean": 8260,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2014",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -24.079903147699756,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 6173,
+      "control_mean": 8260,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -25.26634382566586,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 9889,
+      "control_mean": 8260,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 19.72154963680387,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 6667,
+      "control_mean": 5630,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2014",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.41918294849023,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 5000,
+      "control_mean": 5630,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.190053285968029,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 4777,
+      "control_mean": 5630,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2014",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.150976909413854,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 22692,
+      "control_mean": 21506,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2015",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.514740072537896,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 19765,
+      "control_mean": 21506,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.095415232958244,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 21235,
+      "control_mean": 21506,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Irga",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -1.2601134567097554,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 25939,
+      "control_mean": 24617,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2015",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.3702725758622085,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 23457,
+      "control_mean": 24617,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.712190762481212,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 25247,
+      "control_mean": 24617,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Satina",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.55920705203721,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 11913,
+      "control_mean": 12667,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2015",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.952474934870135,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 10358,
+      "control_mean": 12667,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -18.22846767190337,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 12654,
+      "control_mean": 12667,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Valfi",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.10262887818741612,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 11099,
+      "control_mean": 12531,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2015",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.427659404676401,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 9629,
+      "control_mean": 12531,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -23.158566754448966,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 9790,
+      "control_mean": 12531,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Blaue St. Galler",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -21.873753092331018,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 14815,
+      "control_mean": 16111,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.1% Asahi SL biostimulator",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2015",
+        "treatment_type": "biostimulator"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.044193408230402,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 15136,
+      "control_mean": 16111,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "1.0% Bio-Algeen S-90 seaweed extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.051765874247408,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "treatment_mean": 15407,
+      "control_mean": 16111,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 4",
+      "treatment_description": "0.2% Kelpak SL brown algae extract",
+      "control_description": "Control (no growth regulators)",
+      "moderators": {
+        "cultivar": "Highland Burgundy Red",
+        "year": "2015",
+        "treatment_type": "seaweed extract"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.369685308174539,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 45,
+    "final_count": 45
+  },
+  "verification_flags": [
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 16849,
+        "control_mean": 19053,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -11.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 13.08089500860585,
+            "note": "Effect -11.6% violates expected direction; unswapped would be +13.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -11.56773211567732,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -11.6%, corrected would be +13.1%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 19012,
+        "control_mean": 19053,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -0.2151892090484438
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 6111,
+        "control_mean": 6272,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -2.5669642857142856
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 6271,
+        "control_mean": 8260,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -24.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 31.717429437091365,
+            "note": "Effect -24.1% violates expected direction; unswapped would be +31.7%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -24.079903147699756,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -24.1%, corrected would be +31.7%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 6173,
+        "control_mean": 8260,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -25.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 33.80852097845456,
+            "note": "Effect -25.3% violates expected direction; unswapped would be +33.8%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -25.26634382566586,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -25.3%, corrected would be +33.8%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 5000,
+        "control_mean": 5630,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -11.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 12.6,
+            "note": "Effect -11.2% violates expected direction; unswapped would be +12.6%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -11.190053285968029,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -11.2%, corrected would be +12.6%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 4777,
+        "control_mean": 5630,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -15.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 17.856395227129997,
+            "note": "Effect -15.2% violates expected direction; unswapped would be +17.9%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -15.150976909413854,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -15.2%, corrected would be +17.9%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 19765,
+        "control_mean": 21506,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -8.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 8.808499873513787,
+            "note": "Effect -8.1% violates expected direction; unswapped would be +8.8%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -8.095415232958244,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -8.1%, corrected would be +8.8%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 21235,
+        "control_mean": 21506,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -1.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -1.2601134567097554
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 23457,
+        "control_mean": 24617,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -4.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -4.712190762481212
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 11913,
+        "control_mean": 12667,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -6.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 6.3292201796356915,
+            "note": "Effect -6.0% violates expected direction; unswapped would be +6.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -5.952474934870135,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -6.0%, corrected would be +6.3%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 10358,
+        "control_mean": 12667,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -18.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 22.29194825255841,
+            "note": "Effect -18.2% violates expected direction; unswapped would be +22.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -18.22846767190337,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -18.2%, corrected would be +22.3%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 12654,
+        "control_mean": 12667,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -0.10262887818741612
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 11099,
+        "control_mean": 12531,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -11.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 12.902063248941346,
+            "note": "Effect -11.4% violates expected direction; unswapped would be +12.9%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -11.427659404676401,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -11.4%, corrected would be +12.9%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 9629,
+        "control_mean": 12531,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -23.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 30.13812441582719,
+            "note": "Effect -23.2% violates expected direction; unswapped would be +30.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -23.158566754448966,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -23.2%, corrected would be +30.1%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 9790,
+        "control_mean": 12531,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -21.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 27.997957099080693,
+            "note": "Effect -21.9% violates expected direction; unswapped would be +28.0%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -21.873753092331018,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -21.9%, corrected would be +28.0%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 14815,
+        "control_mean": 16111,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -8.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 8.747890651366859,
+            "note": "Effect -8.0% violates expected direction; unswapped would be +8.7%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -8.044193408230402,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -8.0%, corrected would be +8.7%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 15136,
+        "control_mean": 16111,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -6.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 6.4415961945031714,
+            "note": "Effect -6.1% violates expected direction; unswapped would be +6.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -6.051765874247408,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -6.1%, corrected would be +6.4%"
+      }
+    },
+    {
+      "element": "potato yield",
+      "tissue": "tuber",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "potato yield",
+        "treatment_mean": 15407,
+        "control_mean": 16111,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -4.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -4.369685308174539
+      }
+    }
+  ]
+}

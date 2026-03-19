@@ -1,0 +1,344 @@
+{
+  "paper_id": "2014-ascophyllum-extract-application-can-promote-plant-growth-and-root-yield-in-carrot-associated-with-increased-root",
+  "recon": {
+    "paper_id": "2014-ascophyllum-extract-application-can-promote-plant-growth-and-root-yield-in-carrot-associated-with-increased-root",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 0,
+  "gemini_obs": 0,
+  "matched_obs": 4,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Root Fresh Weight",
+      "tissue": "root",
+      "treatment_mean": 2.65,
+      "control_mean": 2.4,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SE",
+      "n": 6,
+      "unit": "kg/plot (1 m length row)",
+      "data_source": "Figure 1a",
+      "treatment_description": "Soluble Ascophyllum extract powder (SAEP) at 0.25 g/L, averaged over application frequencies",
+      "control_description": "Water control (0 g/L SAEP)",
+      "moderators": {
+        "cultivar": "Maverick",
+        "year": "2010-2011 combined",
+        "site": "Sawler Gardens Ltd., Berwick, NS, Canada"
+      },
+      "confidence": "high",
+      "notes": "Values estimated from bar chart. n=6 represents 3 replicates over 2 years. [from vision]",
+      "effect_pct": 10.416666666666668,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total Biomass Yield",
+      "tissue": "whole plant",
+      "treatment_mean": 3.37,
+      "control_mean": 3.1,
+      "treatment_variance": 0.12,
+      "control_variance": 0.12,
+      "variance_type": "SE",
+      "n": 6,
+      "unit": "kg/plot (1 m length row)",
+      "data_source": "Figure 1a",
+      "treatment_description": "Soluble Ascophyllum extract powder (SAEP) at 0.25 g/L",
+      "control_description": "Water control (0 g/L SAEP)",
+      "moderators": {
+        "cultivar": "Maverick",
+        "year": "2010-2011 combined"
+      },
+      "confidence": "high",
+      "notes": "Values estimated from bar chart. [from vision]",
+      "effect_pct": 8.709677419354838,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest Index",
+      "tissue": "whole plant",
+      "treatment_mean": 78.2,
+      "control_mean": 77.5,
+      "treatment_variance": 0.2,
+      "control_variance": 0.2,
+      "variance_type": "SE",
+      "n": 6,
+      "unit": "%",
+      "data_source": "Figure 2",
+      "treatment_description": "Soluble Ascophyllum extract powder (SAEP) at 0.25 g/L",
+      "control_description": "Water control (0 g/L SAEP)",
+      "moderators": {
+        "cultivar": "Maverick",
+        "year": "2010-2011 combined"
+      },
+      "confidence": "high",
+      "notes": "Values estimated from line graph. [from vision]",
+      "effect_pct": 0.9032258064516167,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total microbial colony counts",
+      "tissue": "soil",
+      "treatment_mean": 2.2,
+      "control_mean": 1.45,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "x10^6 CFU g^-1 soil",
+      "data_source": "Figure 4a",
+      "treatment_description": "SAEP at 0.75 g/L applied once per week",
+      "control_description": "Water control (0 g/L SAEP)",
+      "moderators": {
+        "cultivar": "Maverick",
+        "year": "2010",
+        "application_frequency": "1/w"
+      },
+      "confidence": "high",
+      "notes": "Values estimated from bar chart. [from vision]",
+      "effect_pct": 51.7241379310345,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 4,
+    "final_count": 4
+  },
+  "verification_flags": [
+    {
+      "element": "Root Fresh Weight",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Root Fresh Weight",
+        "treatment_mean": 2.65,
+        "control_mean": 2.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.24335751993652,
+            "note": "CV = 9.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=9.7%"
+          }
+        },
+        "effect_pct": 10.416666666666668
+      }
+    },
+    {
+      "element": "Total Biomass Yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Total Biomass Yield",
+        "treatment_mean": 3.37,
+        "control_mean": 3.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.722218668664134,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=9.1%"
+          }
+        },
+        "effect_pct": 8.709677419354838
+      }
+    },
+    {
+      "element": "Harvest Index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Harvest Index",
+        "treatment_mean": 78.2,
+        "control_mean": 77.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.6264679649061836,
+            "note": "CV = 0.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 0.9032258064516167
+      }
+    },
+    {
+      "element": "Total microbial colony counts",
+      "tissue": "soil",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total microbial colony counts",
+        "treatment_mean": 2.2,
+        "control_mean": 1.45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +51.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.872958216222169,
+            "note": "CV = 7.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 51.7241379310345
+      }
+    }
+  ]
+}

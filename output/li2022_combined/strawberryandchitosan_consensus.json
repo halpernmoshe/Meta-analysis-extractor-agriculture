@@ -1,0 +1,311 @@
+{
+  "paper_id": "strawberryandchitosan",
+  "recon": {
+    "paper_id": "strawberryandchitosan",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 8,
+  "gemini_obs": 0,
+  "matched_obs": 0,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 8",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 1 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2007",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (left column). Text indicates positive response but specific numeric values not provided in extracted text. Treatment applied 3 times at 4-week intervals starting 6 weeks after transplanting.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 2 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2007",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (left column). Text states this concentration recorded the highest effect compared to all treatments for yield components.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 3 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2007",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (left column). Effect lower than 2 cm\u00b3/l but still significantly higher than control.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 4 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2007",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (left column). Effect declined from peak at 2 cm\u00b3/l but remained significantly higher than control.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 1 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2008",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (right column). Same trend as 2007 season observed.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 2 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2008",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (right column). Highest response recorded at this concentration in second season.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 3 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2008",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (right column).",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Total fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Figure 2",
+        "treatment_description": "Chitosan 4 cm\u00b3/l foliar spray",
+        "control_description": "Control (0 cm\u00b3/l chitosan)",
+        "moderators": {
+          "cultivar": "Sweet Charlie",
+          "year": "2008",
+          "site": "Qalubiya governorate, Egypt"
+        },
+        "confidence": "low",
+        "notes": "Yield data presented in Figure 2 (right column).",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [],
+  "post_processing": {
+    "duplicates_removed": 7,
+    "null_means_removed": 1,
+    "tc_swaps_corrected": 0,
+    "original_count": 8,
+    "final_count": 0
+  },
+  "verification_flags": []
+}

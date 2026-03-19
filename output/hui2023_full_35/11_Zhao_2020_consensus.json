@@ -1,0 +1,1684 @@
+{
+  "paper_id": "11_Zhao_2020",
+  "recon": {
+    "paper_id": "11_Zhao_2020",
+    "warnings": [
+      "This is a Zn biofortification study, not a CO2 study - mismatched with meta-analysis context",
+      "Control appears to be no Zn fertilizer (control treatment mentioned but data not clearly shown)",
+      "Multiple Zn sources (Zn-Gly, Zn-Ala, ZnSO4) and application methods (soil, foliar, fertigation) create complex factorial design",
+      "Grain Zn concentration data shown in Figure 4 with error bars but no control group visible",
+      "Tables show comparisons between Zn treatments but lack clear zero-Zn control data",
+      "Duncan test results shown with letter groupings but variance type unclear",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "Error bars represent standard error (n = 3). Bars having different letters are significantly different at the 5% level by Duncan test.",
+    "variance_confidence": "high",
+    "control_definition": "No Zn fertilizer application (control group mentioned but data not clearly presented)",
+    "treatment_definition": "Zn fertilizer application via three sources (Zn-Gly, Zn-Ala, ZnSO4) and three methods (soil, foliar, fertigation)",
+    "tables_with_target_data": [
+      "Figure 4"
+    ],
+    "potential_tc_confusion": "High risk - paper compares Zn treatments to each other rather than to zero-Zn control",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "completely randomized design with three replications in a greenhouse research facility",
+    "factorial_structure": "[\"Zn source (3 levels)\", \"application method (3 levels)\"]",
+    "extraction_guidance": "WARNING: This paper does not contain suitable data for the CO2 meta-analysis. It is a Zn biofortification study comparing different Zn fertilizer sources and application methods. While grain Zn concentration is measured, there is no clear zero-Zn control group presented in the results. The study compares ZnSO4 vs Zn-amino acid chelates rather than Zn treatments vs no-Zn control. Figure 4 shows grain Zn concentration data but lacks control group. This paper should be excluded from the CO2 meta-analysis as it does not test CO2 effects.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Fortification of Bread Wheat Using Synthesized Zn-Glycine and Zn-Alanine Chelates in Comparison with ZnSO4 in a Calcareous Soil\",\n        \"species\": \"Triticum aestivum cv. N91-8\",\n        \"experimental_system\": \"greenhouse\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This is a Zn biofortification study, not a CO2 study - mismatched with meta-analysis context\",\n        \"Control appears to be no Zn fertilizer (control treatment mentioned but data not clearly shown)\",\n        \"Multiple Zn sources (Zn-Gly, Zn-Ala, ZnSO4) and application methods (soil, foliar, fertigation) create complex factorial design\",\n        \"Grain Zn concentration data shown in Figure 4 with error bars but no control group visible\",\n        \"Tables show comparisons between Zn treatments but lack clear zero-Zn control data\",\n        \"Duncan test results shown with letter groupings but variance type unclear\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"Error bars represent standard error (n = 3). Bars having different letters are significantly different at the 5% level by Duncan test.\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"No Zn fertilizer application (control group mentioned but data not clearly presented)\",\n        \"treatment_definition\": \"Zn fertilizer application via three sources (Zn-Gly, Zn-Ala, ZnSO4) and three methods (soil, foliar, fertigation)\",\n        \"identification_method\": \"Control data appears missing from main results tables and figures\",\n        \"potential_confusion\": \"High risk - paper compares Zn treatments to each other rather than to zero-Zn control\"\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"completely randomized design with three replications in a greenhouse research facility\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 3 independent e",
+    "tables_without_target_data": [
+      "Table 4",
+      "Table 5",
+      "Table 6",
+      "Table 7"
+    ],
+    "table_descriptions": {
+      "Table 4": "Analysis of variance for wheat growth parameters",
+      "Table 5": "Effect of Zn application methods on morphological parameters",
+      "Table 6": "Analysis of variance of nutritional quality and biochemical indexes",
+      "Table 7": "Pearson correlation coefficients",
+      "Figure 4": "Grain Zn concentration by application method and Zn source"
+    },
+    "figures_with_data": [
+      "Figure 3",
+      "Figure 4"
+    ],
+    "outcome_variables_detected": {
+      "Figure 4": [
+        "grain Zn concentration"
+      ],
+      "Table 5": [
+        "shoot length",
+        "shoot dry weight",
+        "spike length",
+        "spikelet number",
+        "grain yield",
+        "1000-grain weight"
+      ],
+      "Table 6": [
+        "grain Zn concentration",
+        "grain Fe concentration",
+        "grain protein",
+        "grain phytic acid",
+        "grain methionine",
+        "catalase",
+        "ascorbic acid"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 30,
+  "gemini_obs": 14,
+  "matched_obs": 9,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 30",
+  "disagreements": [
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot length",
+        "tissue": "shoot",
+        "treatment_mean": 50.75,
+        "control_mean": 43.68,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (bc vs e), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 16.185897435897438,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot length",
+        "tissue": "shoot",
+        "treatment_mean": 49.08,
+        "control_mean": 44.41,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (d vs e), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 10.515649628462063,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot length",
+        "tissue": "shoot",
+        "treatment_mean": 53.87,
+        "control_mean": 49.31,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (a vs cd), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 9.2476171162036,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot length",
+        "tissue": "shoot",
+        "treatment_mean": 40.62,
+        "control_mean": 43.68,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (f vs e), not numeric values. Control is ZnSO4 rather than no-Zn control. Treatment mean lower than control.",
+        "effect_pct": -7.005494505494511,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot length",
+        "tissue": "shoot",
+        "treatment_mean": 51.5,
+        "control_mean": 44.41,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (b vs e), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 15.96487277640172,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spike length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "spike length",
+        "tissue": "shoot",
+        "treatment_mean": 1.89,
+        "control_mean": 0.98,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (b vs ef), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 92.85714285714285,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spike length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "spike length",
+        "tissue": "shoot",
+        "treatment_mean": 1.27,
+        "control_mean": 0.95,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (cd vs ef), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 33.6842105263158,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spike length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "spike length",
+        "tissue": "shoot",
+        "treatment_mean": 1.11,
+        "control_mean": 0.81,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (de vs f), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 37.03703703703704,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spike length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "spike length",
+        "tissue": "shoot",
+        "treatment_mean": 2.26,
+        "control_mean": 0.98,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (a vs ef), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 130.6122448979592,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spike length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "spike length",
+        "tissue": "shoot",
+        "treatment_mean": 0.8,
+        "control_mean": 0.95,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (f vs ef), not numeric values. Control is ZnSO4 rather than no-Zn control. Treatment mean lower than control.",
+        "effect_pct": -15.789473684210517,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spike length",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "spike length",
+        "tissue": "shoot",
+        "treatment_mean": 1.43,
+        "control_mean": 0.81,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (c vs f), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 76.54320987654319,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spikelet number",
+      "tissue": "reproductive",
+      "kimi": {
+        "element": "spikelet number",
+        "tissue": "reproductive",
+        "treatment_mean": 9.41,
+        "control_mean": 7.87,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "number",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (a vs c), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 19.567979669631512,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spikelet number",
+      "tissue": "reproductive",
+      "kimi": {
+        "element": "spikelet number",
+        "tissue": "reproductive",
+        "treatment_mean": 7.87,
+        "control_mean": 8.29,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "number",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (c vs bc), not numeric values. Control is ZnSO4 rather than no-Zn control. Treatment mean lower than control.",
+        "effect_pct": -5.066344993968626,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spikelet number",
+      "tissue": "reproductive",
+      "kimi": {
+        "element": "spikelet number",
+        "tissue": "reproductive",
+        "treatment_mean": 7.99,
+        "control_mean": 6.91,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "number",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (c vs d), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 15.629522431259046,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spikelet number",
+      "tissue": "reproductive",
+      "kimi": {
+        "element": "spikelet number",
+        "tissue": "reproductive",
+        "treatment_mean": 8.87,
+        "control_mean": 7.87,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "number",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (ab vs c), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 12.706480304955518,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spikelet number",
+      "tissue": "reproductive",
+      "kimi": {
+        "element": "spikelet number",
+        "tissue": "reproductive",
+        "treatment_mean": 6.62,
+        "control_mean": 8.29,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "number",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (d vs bc), not numeric values. Control is ZnSO4 rather than no-Zn control. Treatment mean lower than control.",
+        "effect_pct": -20.14475271411338,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "spikelet number",
+      "tissue": "reproductive",
+      "kimi": {
+        "element": "spikelet number",
+        "tissue": "reproductive",
+        "treatment_mean": 8.12,
+        "control_mean": 6.91,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "number",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (c vs d), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 17.510853835021695,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight",
+        "tissue": "grain",
+        "treatment_mean": 21.5,
+        "control_mean": 12.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (b vs fg), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 70.63492063492063,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight",
+        "tissue": "grain",
+        "treatment_mean": 18.25,
+        "control_mean": 14.74,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (cd vs ef), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 23.812754409769333,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight",
+        "tissue": "grain",
+        "treatment_mean": 16.83,
+        "control_mean": 11.88,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (de vs fg), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 41.66666666666664,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight",
+        "tissue": "grain",
+        "treatment_mean": 26.0,
+        "control_mean": 12.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (a vs fg), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 106.34920634920636,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight",
+        "tissue": "grain",
+        "treatment_mean": 10.5,
+        "control_mean": 14.74,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (g vs ef), not numeric values. Control is ZnSO4 rather than no-Zn control. Treatment mean lower than control.",
+        "effect_pct": -28.76526458616011,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight",
+        "tissue": "grain",
+        "treatment_mean": 20.25,
+        "control_mean": 11.88,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (bc vs fg), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 70.45454545454545,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot dry weight",
+        "tissue": "shoot",
+        "treatment_mean": 37.83,
+        "control_mean": 28.81,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g plant-1",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (a vs bcd), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 31.30857341200972,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot dry weight",
+        "tissue": "shoot",
+        "treatment_mean": 32.41,
+        "control_mean": 27.04,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g plant-1",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (abc vs cd), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 19.859467455621292,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot dry weight",
+        "tissue": "shoot",
+        "treatment_mean": 29.87,
+        "control_mean": 24.45,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g plant-1",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Glycine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Gly"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (bcd vs d), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 22.1676891615542,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot dry weight",
+        "tissue": "shoot",
+        "treatment_mean": 38.75,
+        "control_mean": 28.81,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g plant-1",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, soil application",
+        "control_description": "ZnSO4, soil application",
+        "moderators": {
+          "application_method": "soil",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (a vs bcd), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 34.5019090593544,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot dry weight",
+        "tissue": "shoot",
+        "treatment_mean": 32.86,
+        "control_mean": 27.04,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g plant-1",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, foliar application",
+        "control_description": "ZnSO4, foliar application",
+        "moderators": {
+          "application_method": "foliar",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (abc vs cd), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 21.523668639053255,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "shoot dry weight",
+        "tissue": "shoot",
+        "treatment_mean": 34.79,
+        "control_mean": 24.45,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g plant-1",
+        "data_source": "Table 5",
+        "treatment_description": "Zn-Alanine chelate, fertigation application",
+        "control_description": "ZnSO4, fertigation application",
+        "moderators": {
+          "application_method": "fertigation",
+          "zinc_source": "Zn-Ala"
+        },
+        "confidence": "medium",
+        "notes": "Variance provided as Duncan test letter groupings only (ab vs d), not numeric values. Control is ZnSO4 rather than no-Zn control.",
+        "effect_pct": 42.29038854805726,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "shoot length",
+      "tissue": "shoot",
+      "treatment_mean": 50.45,
+      "control_mean": 49.31,
+      "treatment_variance": 0.316,
+      "control_variance": 0.316,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 5",
+      "treatment_description": "Zn-Glycine chelate, soil application",
+      "control_description": "ZnSO4, soil application",
+      "moderators": {
+        "cultivar": "N91-8",
+        "application_method": "soil",
+        "zn_source": "Zn-Gly",
+        "zinc_source": "Zn-Gly"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 2.3119042790509035,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration",
+      "tissue": "grain",
+      "treatment_mean": 44.0,
+      "control_mean": 12.0,
+      "treatment_variance": 2.82,
+      "control_variance": 2.82,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Zn-Glycine chelate applied to soil",
+      "control_description": "ZnSO4 applied to soil",
+      "moderators": {
+        "application_method": "soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "N91-8",
+        "soil_type": "calcareous"
+      },
+      "confidence": "high",
+      "notes": "Values converted from mg/100g to mg/kg. Means estimated from Figure 4 and text (3.67x increase). SE derived from EMS in Table 6. [from vision]",
+      "effect_pct": 266.66666666666663,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 2.7,
+      "control_mean": 0.6,
+      "treatment_variance": 0.246,
+      "control_variance": 0.246,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "Figure 3",
+      "treatment_description": "Zn-Glycine chelate applied to soil",
+      "control_description": "ZnSO4 applied to soil",
+      "moderators": {
+        "application_method": "soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "N91-8"
+      },
+      "confidence": "high",
+      "notes": "Means estimated from Figure 3 and text (4.5x increase). SE derived from EMS in Table 4. [from vision]",
+      "effect_pct": 350.00000000000006,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 37.83,
+      "control_mean": 28.81,
+      "treatment_variance": 1.296,
+      "control_variance": 1.296,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Zn-Glycine chelate applied to soil",
+      "control_description": "ZnSO4 applied to soil",
+      "moderators": {
+        "application_method": "soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "N91-8"
+      },
+      "confidence": "high",
+      "notes": "SE derived from EMS in Table 4. [from vision]",
+      "effect_pct": 31.30857341200972,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "treatment_mean": 1.89,
+      "control_mean": 0.98,
+      "treatment_variance": 0.048,
+      "control_variance": 0.048,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "Table 5",
+      "treatment_description": "Zn-Glycine chelate applied to soil",
+      "control_description": "ZnSO4 applied to soil",
+      "moderators": {
+        "application_method": "soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "N91-8"
+      },
+      "confidence": "high",
+      "notes": "SE derived from EMS in Table 4. [from vision]",
+      "effect_pct": 92.85714285714285,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "spike length",
+      "tissue": "grain",
+      "treatment_mean": 9.41,
+      "control_mean": 7.87,
+      "treatment_variance": 0.147,
+      "control_variance": 0.147,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 5",
+      "treatment_description": "Zn-Glycine chelate applied to soil",
+      "control_description": "ZnSO4 applied to soil",
+      "moderators": {
+        "application_method": "soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "N91-8"
+      },
+      "confidence": "high",
+      "notes": "SE derived from EMS in Table 4. [from vision]",
+      "effect_pct": 19.567979669631512,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "spikelet number",
+      "tissue": "grain",
+      "treatment_mean": 15.0,
+      "control_mean": 11.03,
+      "treatment_variance": 0.204,
+      "control_variance": 0.204,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "spike-1",
+      "data_source": "Table 5",
+      "treatment_description": "Zn-Glycine chelate applied to soil",
+      "control_description": "ZnSO4 applied to soil",
+      "moderators": {
+        "application_method": "soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "N91-8"
+      },
+      "confidence": "high",
+      "notes": "SE derived from EMS in Table 4. [from vision]",
+      "effect_pct": 35.99274705349049,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein",
+      "tissue": "grain",
+      "treatment_mean": 14.5,
+      "control_mean": 10.5,
+      "treatment_variance": 0.4,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg 100 g-1",
+      "data_source": "Figure 5",
+      "treatment_description": "Zn-Gly application (Soil)",
+      "control_description": "ZnSO4 application (Soil)",
+      "moderators": {
+        "application_method": "Soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "not specified",
+        "site": "greenhouse"
+      },
+      "confidence": "high",
+      "notes": "Values estimated from bar chart. Unit 'mg 100 g-1' in paper is likely a typo for 'g 100 g-1' (%) based on typical wheat protein ranges (10-15%). ZnSO4 used as control as no zero-Zn treatment was presented. [from vision]",
+      "effect_pct": 38.095238095238095,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain phytic acid",
+      "tissue": "grain",
+      "treatment_mean": 0.28,
+      "control_mean": 0.36,
+      "treatment_variance": 0.01,
+      "control_variance": 0.015,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg 100 g-1",
+      "data_source": "Figure 6",
+      "treatment_description": "Zn-Gly application (Soil)",
+      "control_description": "ZnSO4 application (Soil)",
+      "moderators": {
+        "application_method": "Soil",
+        "zn_source": "Zn-Gly",
+        "cultivar": "not specified",
+        "site": "greenhouse"
+      },
+      "confidence": "high",
+      "notes": "Values estimated from bar chart. Unit 'mg 100 g-1' in paper is likely a typo for 'g 100 g-1' (%) based on typical wheat PA ranges (0.2-0.4%). ZnSO4 used as control. [from vision]",
+      "effect_pct": -22.222222222222214,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 9,
+    "final_count": 9
+  },
+  "verification_flags": [
+    {
+      "element": "shoot length",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "shoot length",
+        "treatment_mean": 50.45,
+        "control_mean": 49.31,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.0848920816486922,
+            "note": "CV = 1.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 2.3119042790509035
+      }
+    },
+    {
+      "element": "grain Zn concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration",
+        "treatment_mean": 44.0,
+        "control_mean": 12.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +266.7%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +266.7% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.100871084873258,
+            "note": "CV = 11.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.1%"
+          }
+        },
+        "effect_pct": 266.66666666666663
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 2.7,
+        "control_mean": 0.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +350.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +350.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.780907357849769,
+            "note": "CV = 15.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.9%"
+          }
+        },
+        "effect_pct": 350.00000000000006
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 37.83,
+        "control_mean": 28.81,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +31.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.933750585802974,
+            "note": "CV = 5.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.7%"
+          }
+        },
+        "effect_pct": 31.30857341200972
+      }
+    },
+    {
+      "element": "shoot dry weight",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "shoot dry weight",
+        "treatment_mean": 1.89,
+        "control_mean": 0.98,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +92.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.39885919382572,
+            "note": "CV = 4.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 92.85714285714285
+      }
+    },
+    {
+      "element": "spike length",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "spike length",
+        "treatment_mean": 9.41,
+        "control_mean": 7.87,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.705754183981136,
+            "note": "CV = 2.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 19.567979669631512
+      }
+    },
+    {
+      "element": "spikelet number",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "spikelet number",
+        "treatment_mean": 15.0,
+        "control_mean": 11.03,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +36.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.3555890982936734,
+            "note": "CV = 2.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 35.99274705349049
+      }
+    },
+    {
+      "element": "grain protein",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein",
+        "treatment_mean": 14.5,
+        "control_mean": 10.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +38.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.778071193293455,
+            "note": "CV = 4.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 38.095238095238095
+      }
+    },
+    {
+      "element": "grain phytic acid",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "grain phytic acid",
+        "treatment_mean": 0.28,
+        "control_mean": 0.36,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -22.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 28.57142857142856,
+            "note": "Effect -22.2% violates expected direction; unswapped would be +28.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.1858957413174185,
+            "note": "CV = 6.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": -22.222222222222214,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -22.2%, corrected would be +28.6%"
+      }
+    }
+  ]
+}

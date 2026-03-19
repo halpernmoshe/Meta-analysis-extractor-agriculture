@@ -1,0 +1,78 @@
+{
+  "paper_id": "006_Alabdulla_2019_Effect of foliar application of humic ac",
+  "matched_pairs": [],
+  "unmatched_gt": [
+    {
+      "gt_idx": 0,
+      "gt_pair": "241",
+      "gt_dose": "0.33",
+      "reason": "No yield JSON obs for HFA dose 0.33, season 1 (ctrl=0.3117 ton/ha). JSON extractor captured grain yield only for B2 biofertilizer treatment, not for the HFA foliar dose-response arms."
+    },
+    {
+      "gt_idx": 1,
+      "gt_pair": "242",
+      "gt_dose": "0.67",
+      "reason": "No yield JSON obs for HFA dose 0.67, season 1 (ctrl=0.3117 ton/ha). JSON extractor captured grain yield only for B2 biofertilizer treatment, not for the HFA foliar dose-response arms."
+    },
+    {
+      "gt_idx": 2,
+      "gt_pair": "243",
+      "gt_dose": "1",
+      "reason": "No yield JSON obs for HFA dose 1.0, season 1 (ctrl=0.3117 ton/ha). JSON extractor captured grain yield only for B2 biofertilizer treatment, not for the HFA foliar dose-response arms."
+    },
+    {
+      "gt_idx": 3,
+      "gt_pair": "244",
+      "gt_dose": "0.33",
+      "reason": "No yield JSON obs for HFA dose 0.33, season 2 (ctrl=0.2459 ton/ha). JSON extractor captured grain yield only for B2 biofertilizer treatment, not for the HFA foliar dose-response arms."
+    },
+    {
+      "gt_idx": 4,
+      "gt_pair": "245",
+      "gt_dose": "0.67",
+      "reason": "No yield JSON obs for HFA dose 0.67, season 2 (ctrl=0.2459 ton/ha). JSON extractor captured grain yield only for B2 biofertilizer treatment, not for the HFA foliar dose-response arms."
+    },
+    {
+      "gt_idx": 5,
+      "gt_pair": "246",
+      "gt_dose": "1",
+      "reason": "No yield JSON obs for HFA dose 1.0, season 2 (ctrl=0.2459 ton/ha). JSON extractor captured grain yield only for B2 biofertilizer treatment, not for the HFA foliar dose-response arms."
+    }
+  ],
+  "unmatched_json": [
+    {"json_idx": 0, "element": "FLA (cm2)", "reason": "Non-yield outcome (flag leaf area)"},
+    {"json_idx": 1, "element": "FLA (cm2)", "reason": "Non-yield outcome (flag leaf area)"},
+    {"json_idx": 2, "element": "LAD (day)", "reason": "Non-yield outcome (leaf area duration)"},
+    {"json_idx": 3, "element": "LAD (day)", "reason": "Non-yield outcome (leaf area duration)"},
+    {"json_idx": 4, "element": "LAI", "reason": "Non-yield outcome (leaf area index)"},
+    {"json_idx": 5, "element": "LAI", "reason": "Non-yield outcome (leaf area index)"},
+    {"json_idx": 6, "element": "CGR (gm day-1 m-2)", "reason": "Non-yield outcome (crop growth rate)"},
+    {"json_idx": 7, "element": "CGR (gm day-1 m-2)", "reason": "Non-yield outcome (crop growth rate)"},
+    {"json_idx": 8, "element": "NAR (gm m-2 day-1)", "reason": "Non-yield outcome (net assimilation rate)"},
+    {"json_idx": 9, "element": "NAR (gm m-2 day-1)", "reason": "Non-yield outcome (net assimilation rate)"},
+    {"json_idx": 10, "element": "RGR (mg gm-1 day-1)", "reason": "Non-yield outcome (relative growth rate)"},
+    {"json_idx": 11, "element": "RGR (mg gm-1 day-1)", "reason": "Non-yield outcome (relative growth rate)"},
+    {"json_idx": 12, "element": "Plant High (cm)", "reason": "Non-yield outcome (plant height)"},
+    {"json_idx": 13, "element": "Plant High (cm)", "reason": "Non-yield outcome (plant height)"},
+    {"json_idx": 14, "element": "No of Tillers (m-2)", "reason": "Non-yield outcome (tiller count)"},
+    {"json_idx": 15, "element": "No of Tillers (m-2)", "reason": "Non-yield outcome (tiller count)"},
+    {"json_idx": 16, "element": "Grain Yield (ton h-1)", "reason": "Yield outcome but wrong treatment arm: B2 biofertilizer (ctrl=2.739, treat=7.942, effect=+190.1%), not HFA dose-response. GT GT effect for season 1 is ~64-99% at doses 0.33-1.0 — these do not match."},
+    {"json_idx": 17, "element": "Grain Yield (ton h-1)", "reason": "Yield outcome but wrong treatment arm: B2 biofertilizer (ctrl=3.889, treat=11.562, effect=+197.4%), not HFA dose-response. GT effect for season 2 is ~71-143% at doses 0.33-1.0 — these do not match."},
+    {"json_idx": 18, "element": "FLA (cm2)", "reason": "Non-yield outcome (flag leaf area), B2 arm"},
+    {"json_idx": 19, "element": "FLA (cm2)", "reason": "Non-yield outcome (flag leaf area), B2 arm"},
+    {"json_idx": 20, "element": "LAD (day)", "reason": "Non-yield outcome (leaf area duration), B2 arm"},
+    {"json_idx": 21, "element": "LAI", "reason": "Non-yield outcome (leaf area index), B2 arm"},
+    {"json_idx": 22, "element": "LAI", "reason": "Non-yield outcome (leaf area index), B2 arm"},
+    {"json_idx": 23, "element": "CGR (gm day-1 m-2)", "reason": "Non-yield outcome (crop growth rate), B2 arm"},
+    {"json_idx": 24, "element": "NAR (gm m-2 day-1)", "reason": "Non-yield outcome (net assimilation rate), B2 arm"},
+    {"json_idx": 25, "element": "NAR (gm m-2 day-1)", "reason": "Non-yield outcome (net assimilation rate), B2 arm"},
+    {"json_idx": 26, "element": "RGR (mg gm-1 day-1)", "reason": "Non-yield outcome (relative growth rate), B2 arm"},
+    {"json_idx": 27, "element": "Plant High (cm)", "reason": "Non-yield outcome (plant height), B2 arm"},
+    {"json_idx": 28, "element": "Plant High (cm)", "reason": "Non-yield outcome (plant height), B2 arm"},
+    {"json_idx": 29, "element": "No of Tillers (m-2)", "reason": "Non-yield outcome (tiller count), B2 arm"},
+    {"json_idx": 30, "element": "No of Tillers (m-2)", "reason": "Non-yield outcome (tiller count), B2 arm"},
+    {"json_idx": 31, "element": "Plant High (cm)", "reason": "Non-yield outcome (plant height), duplicate B2 arm"},
+    {"json_idx": 32, "element": "LAI", "reason": "Non-yield outcome (leaf area index), duplicate B2 arm"}
+  ],
+  "notes": "This paper is a factorial design with two factors: humic acid foliar application (HFA) at 3 doses (0.33, 0.67, 1.0 L/ha or similar) and biofertilizer NPK (B0=control, B1=mineral NPK, B2=bio-NPK), conducted over 2 seasons (2016-17 and 2017-18) on oat (Avena sativa) in Iraq. The GT rows (pairs 241-246) represent the HFA dose-response arms for grain yield at two season ctrl baselines (0.3117 and 0.2459 ton/ha). The JSON extractor captured grain yield only for the B2 biofertilizer arm (ctrl=2.739 and 3.889 ton/ha, effect ~190-197%), which is a different treatment arm with much higher absolute values and different effect sizes. The HFA dose-response grain yield was not captured in the JSON obs. All 6 GT rows are unmatched due to coverage failure — the extractor missed the HFA dose-response yield table and focused on growth analysis variables (FLA, LAD, LAI, CGR, NAR, RGR) plus only the B2 biofertilizer yield arm."
+}

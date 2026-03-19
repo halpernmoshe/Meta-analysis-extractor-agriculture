@@ -12,6 +12,8 @@
 !LICENSE
 !CITATION.cff
 !README.md
+!README_GITHUB.md
+!REPRODUCE.md
 !requirements.txt
 
 # ===== Allow: core pipeline code =====
@@ -48,9 +50,16 @@
 !validate_hui2023.py
 !validate_hui2023_full.py
 !validate_li2022.py
+!validate_agent_extraction.py
+!validate_hui2023_agent.py
+!validate_li2022_agent.py
+!validate_replication.py
+!agent_pipeline_agreement.py
+!harmonize_li2022_agent.py
 !formal_statistics.py
 !formal_stats_hui2023.py
 !formal_stats_li2022.py
+!formal_stats_agent.py
 !sensitivity_loo.py
 !tolerance_sensitivity.py
 !ablation_analysis.py
@@ -60,9 +69,11 @@
 !alignment_pass.py
 !integrate_alignment.py
 !deep_validation_analysis.py
+!programmatic_gt_classifier.py
 
 # ===== Allow: figure generation =====
 !paper_figures.py
+!generate_agent_figures.py
 !fig_tost_equivalence.py
 !fig1_pipeline_architecture.py
 
@@ -76,15 +87,15 @@
 # ===== Allow: final submission =====
 !FINAL_SUBMISSION_2026-03-08/
 !FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v3.md
+!FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v12.md
+!FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v13.md
 !FINAL_SUBMISSION_2026-03-08/cover_letter.md
+!FINAL_SUBMISSION_2026-03-08/COVER_LETTER_RSM.md
 !FINAL_SUBMISSION_2026-03-08/SUBMISSION_CHECKLIST.md
 !FINAL_SUBMISSION_2026-03-08/improved_formal_stats.json
 !FINAL_SUBMISSION_2026-03-08/fresh_stats.json
 
-# ===== Allow: programmatic classifier =====
-!programmatic_gt_classifier.py
-
-# ===== Allow: output subdirectories (figures + stats only) =====
+# ===== Allow: output subdirectories (figures, stats, extraction results) =====
 !output/
 !output/paper_figures/
 !output/paper_figures/**
@@ -96,15 +107,39 @@
 !output/hui2023_formal_stats/**
 !output/li2022_formal_stats/
 !output/li2022_formal_stats/**
+!output/agent_formal_stats/
+!output/agent_formal_stats/**
 !output/sensitivity/
 !output/sensitivity/**
 !output/tolerance_sensitivity.csv
 !output/kimi_primary_simulation.json
-!output/li2022_combined/
-!output/li2022_combined/programmatic_classification.json
-!output/li2022_combined/validation_matches_improved.csv
 
-# ===== Still exclude: secrets, binaries, caches =====
+# Pipeline extraction results (needed for validation reproducibility)
+!output/loladze_v3_combined/
+!output/loladze_v3_combined/**
+!output/hui2023_full_35/
+!output/hui2023_full_35/**
+!output/li2022_combined/
+!output/li2022_combined/**
+
+# Agent extraction results
+!output/agent_extraction/
+!output/agent_extraction/**
+!output/hui2023_agent_extraction/
+!output/hui2023_agent_extraction/**
+!output/li2022_agent_extraction/
+!output/li2022_agent_extraction/**
+
+# Agreement and replication results
+!output/agent_pipeline_agreement.json
+!output/replication_agreement.json
+!output/supplementary_table_s1_cr2.md
+!output/supplementary_table_s1_cr2.json
+
+# CR2 TOST analysis
+!supplementary_cr2_tost.py
+
+# ===== Still exclude: secrets, binaries, caches, personal files =====
 .env
 .env.local
 *.key
@@ -115,7 +150,64 @@ venv/
 .venv/
 *.docx
 .claude/
-tmpclaude-*.cwd
+tmpclaude-*
 nul
 Thumbs.db
 .DS_Store
+~$*
+
+# Exclude raw PDFs (copyright)
+input/
+input_*/
+
+# Exclude personal notes, session logs, overnight reports
+MORNING_*.md
+OVERNIGHT_*.md
+NEXT_SESSION_*.md
+COORDINATOR_STATUS.md
+CURRENT_WORK_SUMMARY.md
+KIMI_SESSION_CONTEXT.md
+Backup_for_restart.md
+MORNING_SUMMARY.md
+AGENT_DISCUSSIONS_*.md
+AI_EXTRACTION_INSIGHTS.md
+CONFUSION_HANDLING_GUIDE.md
+EXPERIMENT_*.md
+LOLADZE_COMPARISON_METHODOLOGY.md
+LOLADZE_GT_ALIGNMENT.md
+validator_improvement_conclusions.md
+
+# Exclude paper drafts (except the primary)
+PAPER_FULL_DRAFT_v*.md
+PAPER_GEMINI_*.md
+PAPER_REFINED_*.md
+PAPER_ABSTRACT_DRAFT.md
+PAPER_CONCLUSION_DRAFT.md
+PAPER_DISCUSSION_DRAFT.md
+PAPER_DRAFT.md
+PAPER_INTRO_DRAFT.md
+PAPER_METHODS_DRAFT.md
+PAPER_OUTLINE.md
+PAPER_REQUIREMENTS.md
+PAPER_RESULTS_DRAFT.md
+ABSTRACTS_*.md
+AMIA_*.md
+COCHRANE_*.md
+
+# Exclude test/tmp files
+test_*.py
+tmp_*
+tmp*.txt
+
+# Exclude large binary files
+*.pdf
+*.xlsx
+
+# Exclude backup/staging directories
+loladze_output/
+loladze_output_v*/
+face_wheat_mineral/
+for_reviewer/
+references/
+tasks/
+domains/

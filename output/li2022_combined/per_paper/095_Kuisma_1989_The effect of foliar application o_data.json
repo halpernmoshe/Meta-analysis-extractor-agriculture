@@ -1,0 +1,122 @@
+{
+  "paper_id": "095_Kuisma_1989_The effect of foliar application of seaw",
+  "gt_rows": [
+    {
+      "pair": "683",
+      "crop": "potato",
+      "CropCategory": "Root/tuber crops ",
+      "product": "SM3",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "0.25",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Finland",
+      "ctrl_mean": 3.563,
+      "treat_mean": 3.84,
+      "ctrl_sd": 0.3388413,
+      "treat_sd": 0.365184
+    },
+    {
+      "pair": "684",
+      "crop": "potato",
+      "CropCategory": "Root/tuber crops ",
+      "product": "SM3",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "0.5",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Finland",
+      "ctrl_mean": 3.563,
+      "treat_mean": 3.727,
+      "ctrl_sd": 0.3388413,
+      "treat_sd": 0.3544377
+    },
+    {
+      "pair": "685",
+      "crop": "potato",
+      "CropCategory": "Root/tuber crops ",
+      "product": "SM3",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Finland",
+      "ctrl_mean": 3.563,
+      "treat_mean": 3.832,
+      "ctrl_sd": 0.3388413,
+      "treat_sd": 0.3644232
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "ware yield t/ha",
+      "tissue": "tuber",
+      "unit": "t/ha",
+      "n": 3,
+      "treatment_description": "Seaweed extract SM3 foliar spray, 5 l/ha, applied July 10 (24 days after emergence)",
+      "control_description": "Untreated control (water only)",
+      "moderators": {
+        "cultivar": "Record",
+        "year": 1979,
+        "site": "Viikki Experimental Farm, Helsinki, Finland"
+      },
+      "control_mean": 35.63,
+      "treatment_mean": 39.6,
+      "confidence": "high"
+    },
+    {
+      "element": "tuber size g",
+      "tissue": "tuber",
+      "unit": "g",
+      "n": 3,
+      "treatment_description": "Seaweed extract SM3 foliar spray, 5 l/ha, applied July 10 (24 days after emergence)",
+      "control_description": "Untreated control (water only)",
+      "moderators": {
+        "cultivar": "Record",
+        "year": 1979,
+        "site": "Viikki Experimental Farm, Helsinki, Finland"
+      },
+      "control_mean": 107.2,
+      "treatment_mean": 96.9,
+      "confidence": "high"
+    },
+    {
+      "element": "DM %",
+      "tissue": "tuber",
+      "unit": "%",
+      "n": 3,
+      "treatment_description": "Seaweed extract SM3 foliar spray, 5 l/ha, applied July 10 (24 days after emergence)",
+      "control_description": "Untreated control (water only)",
+      "moderators": {
+        "cultivar": "Record",
+        "year": 1979,
+        "site": "Viikki Experimental Farm, Helsinki, Finland"
+      },
+      "control_mean": 21.0,
+      "treatment_mean": 20.4,
+      "confidence": "high"
+    },
+    {
+      "element": "tuber yield t/ha",
+      "tissue": "tuber",
+      "unit": "t/ha",
+      "n": 3,
+      "treatment_description": "Seaweed extract SM3 foliar spray, 5 l/ha, applied July 10",
+      "control_description": "Untreated control (water only, 0 l/ha bar)",
+      "moderators": {
+        "cultivar": "Record",
+        "year": 1979,
+        "site": "Viikki Experimental Farm, Helsinki, Finland"
+      },
+      "control_mean": 36.5,
+      "treatment_mean": 40.5,
+      "confidence": "medium"
+    }
+  ]
+}

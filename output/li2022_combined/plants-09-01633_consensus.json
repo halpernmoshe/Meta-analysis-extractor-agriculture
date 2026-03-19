@@ -1,0 +1,1487 @@
+{
+  "paper_id": "plants-09-01633",
+  "recon": {
+    "paper_id": "plants-09-01633",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 2,
+  "gemini_obs": 0,
+  "matched_obs": 22,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 2",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "Head fresh weight",
+      "tissue": "head",
+      "kimi": {
+        "element": "Head fresh weight",
+        "tissue": "head",
+        "treatment_mean": 772.4,
+        "control_mean": 713.33,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Animal-derived protein hydrolysate (ASWELL\u00ae), weekly foliar spray, 3 mL/L, 14 applications total, starting one week after transplant",
+        "control_description": "Non-treated control, water spray only",
+        "moderators": {
+          "cultivar": "Malachit F1",
+          "year": "2020",
+          "site": "Marsala, Sicily, Italy (tunnel)"
+        },
+        "confidence": "medium",
+        "notes": "Variance measures (SE/SD) not reported; table provides only Tukey's HSD significance letters (p\u22640.05). Treatment and control share letter 'b' indicating no significant difference. Study conducted in tunnel (protected cultivation).",
+        "effect_pct": 8.280879817195398,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Head fresh weight",
+      "tissue": "head",
+      "kimi": {
+        "element": "Head fresh weight",
+        "tissue": "head",
+        "treatment_mean": 985.93,
+        "control_mean": 713.33,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Plant-derived protein hydrolysate (TYSON\u00ae), weekly foliar spray, 3 mL/L, 14 applications total, starting one week after transplant",
+        "control_description": "Non-treated control, water spray only",
+        "moderators": {
+          "cultivar": "Malachit F1",
+          "year": "2020",
+          "site": "Marsala, Sicily, Italy (tunnel)"
+        },
+        "confidence": "medium",
+        "notes": "Variance measures (SE/SD) not reported; table provides only Tukey's HSD significance letters (p\u22640.05). Treatment has letter 'a', control has 'b' indicating significant difference (p\u22640.01). Study conducted in tunnel (protected cultivation).",
+        "effect_pct": 38.215131846410486,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Head fresh weight",
+      "tissue": "head",
+      "treatment_mean": 772.4,
+      "control_mean": 713.33,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Animal-derived protein hydrolysate (ASWELL\u00ae), weekly foliar spray, 3 mL/L, 14 applications total, starting one week after transplant",
+      "control_description": "Non-treated control, water spray only",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy (tunnel)"
+      },
+      "confidence": "low",
+      "notes": "Variance measures (SE/SD) not reported; table provides only Tukey's HSD significance letters (p\u22640.05). Treatment and control share letter 'b' indicating no significant difference. Study conducted in tunnel (protected cultivation). [single-model fallback: Kimi only]",
+      "effect_pct": 8.280879817195398,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Head fresh weight",
+      "tissue": "head",
+      "treatment_mean": 985.93,
+      "control_mean": 713.33,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Plant-derived protein hydrolysate (TYSON\u00ae), weekly foliar spray, 3 mL/L, 14 applications total, starting one week after transplant",
+      "control_description": "Non-treated control, water spray only",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy (tunnel)"
+      },
+      "confidence": "low",
+      "notes": "Variance measures (SE/SD) not reported; table provides only Tukey's HSD significance letters (p\u22640.05). Treatment has letter 'a', control has 'b' indicating significant difference (p\u22640.01). Study conducted in tunnel (protected cultivation). [single-model fallback: Kimi only]",
+      "effect_pct": 38.215131846410486,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Head Height",
+      "tissue": "head",
+      "treatment_mean": 55.5,
+      "control_mean": 52.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 1",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 5.513307984790872,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Root Collar Diameter",
+      "tissue": "shoot",
+      "treatment_mean": 29.5,
+      "control_mean": 35.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mm",
+      "data_source": "Table 1",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -15.714285714285714,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of Stalks",
+      "tissue": "shoot",
+      "treatment_mean": 15.83,
+      "control_mean": 17.17,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "no.",
+      "data_source": "Table 1",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -7.80430984274899,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Nitrogen (N)",
+      "tissue": "shoot",
+      "treatment_mean": 5.08,
+      "control_mean": 5.29,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg g-1 dw",
+      "data_source": "Table 2",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -3.9697542533081274,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Phosphorus (P)",
+      "tissue": "shoot",
+      "treatment_mean": 1.04,
+      "control_mean": 1.13,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg g-1 dw",
+      "data_source": "Table 2",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -7.964601769911493,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Potassium (K)",
+      "tissue": "shoot",
+      "treatment_mean": 4.24,
+      "control_mean": 3.38,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg g-1 dw",
+      "data_source": "Table 2",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 25.44378698224853,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Calcium (Ca)",
+      "tissue": "shoot",
+      "treatment_mean": 1.24,
+      "control_mean": 1.23,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg g-1 dw",
+      "data_source": "Table 2",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 0.8130081300813016,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Magnesium (Mg)",
+      "tissue": "shoot",
+      "treatment_mean": 0.8,
+      "control_mean": 0.63,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg g-1 dw",
+      "data_source": "Table 2",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 26.984126984126988,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Head Dry Matter",
+      "tissue": "head",
+      "treatment_mean": 7.52,
+      "control_mean": 9.28,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 3",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -18.96551724137931,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Soluble Solid Content (SSC)",
+      "tissue": "shoot",
+      "treatment_mean": 4.77,
+      "control_mean": 4.97,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "Brix\u00b0",
+      "data_source": "Table 3",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -4.024144869215295,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "pH",
+      "tissue": "shoot",
+      "treatment_mean": 6.34,
+      "control_mean": 6.39,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "pH",
+      "data_source": "Table 3",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -0.7824726134585261,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Titratable Acidity (TA)",
+      "tissue": "shoot",
+      "treatment_mean": 0.63,
+      "control_mean": 0.73,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g citric acid 100 mL-1",
+      "data_source": "Table 3",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -13.698630136986298,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ascorbic Acid",
+      "tissue": "leaf",
+      "treatment_mean": 6.08,
+      "control_mean": 5.62,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g 100 mL-1",
+      "data_source": "Table 3",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 8.185053380782916,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total Phenolics",
+      "tissue": "leaf",
+      "treatment_mean": 4.6,
+      "control_mean": 3.36,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg of catechin 100 g-1 dw",
+      "data_source": "Table 3",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 36.9047619047619,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Stalks color coordinate a*",
+      "tissue": "stalk",
+      "treatment_mean": -19.51,
+      "control_mean": -16.02,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "CIELab units",
+      "data_source": "Table 4",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 21.785268414481912,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Stalks color coordinate b*",
+      "tissue": "stalk",
+      "treatment_mean": 29.73,
+      "control_mean": 34.54,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "CIELab units",
+      "data_source": "Table 4",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -13.925883034163286,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Stalks color coordinate L*",
+      "tissue": "stalk",
+      "treatment_mean": 58.44,
+      "control_mean": 52.26,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "CIELab units",
+      "data_source": "Table 4",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 11.825487944890929,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Leaves color coordinate a*",
+      "tissue": "leaf",
+      "treatment_mean": -18.74,
+      "control_mean": -15.66,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "CIELab units",
+      "data_source": "Table 4",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 19.66794380587483,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Leaves color coordinate b*",
+      "tissue": "leaf",
+      "treatment_mean": 31.95,
+      "control_mean": 29.52,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "CIELab units",
+      "data_source": "Table 4",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 8.23170731707317,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Leaves color coordinate L*",
+      "tissue": "leaf",
+      "treatment_mean": 50.55,
+      "control_mean": 44.43,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "CIELab units",
+      "data_source": "Table 4",
+      "treatment_description": "Animal-derived protein hydrolysate (A-PH, ASWELL\u00ae)",
+      "control_description": "Non-treated plants",
+      "moderators": {
+        "cultivar": "Malachit F1",
+        "year": "2020",
+        "site": "Marsala, Sicily, Italy"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 13.774476704929095,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 22,
+    "final_count": 22
+  },
+  "verification_flags": [
+    {
+      "element": "Head fresh weight",
+      "tissue": "head",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Head fresh weight",
+        "treatment_mean": 772.4,
+        "control_mean": 713.33,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 8.280879817195398
+      }
+    },
+    {
+      "element": "Head fresh weight",
+      "tissue": "head",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Head fresh weight",
+        "treatment_mean": 985.93,
+        "control_mean": 713.33,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +38.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 38.215131846410486
+      }
+    },
+    {
+      "element": "Head Height",
+      "tissue": "head",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Head Height",
+        "treatment_mean": 55.5,
+        "control_mean": 52.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 5.513307984790872
+      }
+    },
+    {
+      "element": "Root Collar Diameter",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Root Collar Diameter",
+        "treatment_mean": 29.5,
+        "control_mean": 35.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -15.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 18.64406779661017,
+            "note": "Effect -15.7% violates expected direction; unswapped would be +18.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -15.714285714285714,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -15.7%, corrected would be +18.6%"
+      }
+    },
+    {
+      "element": "Number of Stalks",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Number of Stalks",
+        "treatment_mean": 15.83,
+        "control_mean": 17.17,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -7.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 8.46493998736577,
+            "note": "Effect -7.8% violates expected direction; unswapped would be +8.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -7.80430984274899,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -7.8%, corrected would be +8.5%"
+      }
+    },
+    {
+      "element": "Nitrogen (N)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Nitrogen (N)",
+        "treatment_mean": 5.08,
+        "control_mean": 5.29,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -3.9697542533081274
+      }
+    },
+    {
+      "element": "Phosphorus (P)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Phosphorus (P)",
+        "treatment_mean": 1.04,
+        "control_mean": 1.13,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -8.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 8.65384615384614,
+            "note": "Effect -8.0% violates expected direction; unswapped would be +8.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -7.964601769911493,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -8.0%, corrected would be +8.7%"
+      }
+    },
+    {
+      "element": "Potassium (K)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Potassium (K)",
+        "treatment_mean": 4.24,
+        "control_mean": 3.38,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +25.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 25.44378698224853
+      }
+    },
+    {
+      "element": "Calcium (Ca)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Calcium (Ca)",
+        "treatment_mean": 1.24,
+        "control_mean": 1.23,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 0.8130081300813016
+      }
+    },
+    {
+      "element": "Magnesium (Mg)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Magnesium (Mg)",
+        "treatment_mean": 0.8,
+        "control_mean": 0.63,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 26.984126984126988
+      }
+    },
+    {
+      "element": "Head Dry Matter",
+      "tissue": "head",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Head Dry Matter",
+        "treatment_mean": 7.52,
+        "control_mean": 9.28,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -19.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 23.404255319148938,
+            "note": "Effect -19.0% violates expected direction; unswapped would be +23.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -18.96551724137931,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -19.0%, corrected would be +23.4%"
+      }
+    },
+    {
+      "element": "Soluble Solid Content (SSC)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Soluble Solid Content (SSC)",
+        "treatment_mean": 4.77,
+        "control_mean": 4.97,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -4.024144869215295
+      }
+    },
+    {
+      "element": "pH",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "pH",
+        "treatment_mean": 6.34,
+        "control_mean": 6.39,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -0.7824726134585261
+      }
+    },
+    {
+      "element": "Titratable Acidity (TA)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Titratable Acidity (TA)",
+        "treatment_mean": 0.63,
+        "control_mean": 0.73,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -13.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 15.87301587301587,
+            "note": "Effect -13.7% violates expected direction; unswapped would be +15.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -13.698630136986298,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -13.7%, corrected would be +15.9%"
+      }
+    },
+    {
+      "element": "Ascorbic Acid",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ascorbic Acid",
+        "treatment_mean": 6.08,
+        "control_mean": 5.62,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 8.185053380782916
+      }
+    },
+    {
+      "element": "Total Phenolics",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Total Phenolics",
+        "treatment_mean": 4.6,
+        "control_mean": 3.36,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +36.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 36.9047619047619
+      }
+    },
+    {
+      "element": "Stalks color coordinate a*",
+      "tissue": "stalk",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Stalks color coordinate a*",
+        "treatment_mean": -19.51,
+        "control_mean": -16.02,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 21.785268414481912
+      }
+    },
+    {
+      "element": "Stalks color coordinate b*",
+      "tissue": "stalk",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Stalks color coordinate b*",
+        "treatment_mean": 29.73,
+        "control_mean": 34.54,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -13.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 16.178943827783378,
+            "note": "Effect -13.9% violates expected direction; unswapped would be +16.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -13.925883034163286,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -13.9%, corrected would be +16.2%"
+      }
+    },
+    {
+      "element": "Stalks color coordinate L*",
+      "tissue": "stalk",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Stalks color coordinate L*",
+        "treatment_mean": 58.44,
+        "control_mean": 52.26,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.825487944890929
+      }
+    },
+    {
+      "element": "Leaves color coordinate a*",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Leaves color coordinate a*",
+        "treatment_mean": -18.74,
+        "control_mean": -15.66,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 19.66794380587483
+      }
+    },
+    {
+      "element": "Leaves color coordinate b*",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Leaves color coordinate b*",
+        "treatment_mean": 31.95,
+        "control_mean": 29.52,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 8.23170731707317
+      }
+    },
+    {
+      "element": "Leaves color coordinate L*",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Leaves color coordinate L*",
+        "treatment_mean": 50.55,
+        "control_mean": 44.43,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 13.774476704929095
+      }
+    }
+  ]
+}

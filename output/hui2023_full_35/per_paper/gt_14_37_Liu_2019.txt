@@ -1,0 +1,9 @@
+## Ground Truth Data for 14_37_Liu_2019
+Source: MOESM5_dataset.xlsx
+
+### Sheet: Data 2 Soil  application (study_ids: [14, 37])
+Headers: ['Observation ID', 'Study ID', 'Publication', 'Country', 'Available  Zn (mg kg-1)', 'Available  Zn grouping', 'pH', 'pH grouping', 'CaCO3(%)', 'CaCO3 grouping', 'Organic matter (g kg-1)', 'Organic matter grouping', 'N rate (kg N ha-1) ', 'N rate grouping', 'P rate (kg P ha-1)', 'P rate grouping', 'K rate (kg K ha-1)', 'K rate grouping', 'Zn fertilizer type', 'Zn rate (kg Zn ha-1)']
+
+  No rows found for study_ids [14, 37]
+
+Total GT rows: 0

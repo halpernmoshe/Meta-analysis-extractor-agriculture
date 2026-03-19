@@ -1,0 +1,1762 @@
+{
+  "paper_id": "051_Niu_2013",
+  "recon": {
+    "paper_id": "051_Niu_2013",
+    "warnings": [
+      "Paper reports P concentration data (primary outcome) but in the context of P-deficiency stress, not nutrient-replete conditions - this is a special experimental context",
+      "Factorial design with TWO nitrogen forms (NO3- vs NH4+) creates two separate sub-experiments - must extract each N form separately",
+      "Elevated CO2 INCREASES P concentration under NO3- but DECREASES it under NH4+ - direction of effect depends on N form treatment, critical for correct extraction",
+      "The paper header contains mixed content from two different papers (Posidonia oceanica cadmium paper mixed with this Arabidopsis CO2/P paper) - ignore the Posidonia content entirely",
+      "P-deficient medium (0.5 \u00b5M NaH2PO4) is used - this is deliberately P-limited hydroponic culture, NOT field or soil conditions",
+      "Data are presented primarily in FIGURES (Fig. 1) not tables - numeric values must be read from figures",
+      "Supplementary figures contain additional P and biomass data (S1, S2, S3) for P-adequate conditions",
+      "Mutant lines (nr, atnos1) are also studied - extract only wild-type data for meta-analysis",
+      "CO2 levels are \u00b150 \u00b5l/l (350\u00b150 and 800\u00b150), so treatment is nominally 800 ppm which is higher than typical FACE/OTC studies",
+      "The 'P absorbed per unit weight of roots' metric is not a standard concentration measure - do not confuse with shoot or root P concentration",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "Variance type override: LLM said 'SD', regex scan found 'LSD' (medium): ared using Student's t-test or Fisher's least significant difference test at P=0.05in all cases.\\n\\n\\n# Resu"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "ared using Student's t-test or Fisher's least significant difference test at P=0.05in all cases.\\n\\n\\n# Resu",
+    "variance_confidence": "medium",
+    "control_definition": "Ambient CO2 at 350\u00b150 \u00b5l l-1",
+    "treatment_definition": "Elevated CO2 at 800\u00b150 \u00b5l l-1",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "Effect direction reverses depending on N form: elevated CO2 increases P concentration under NO3- but decreases it under NH4+. Extractor must record N form as a moderating factor and not inadvertently swap T/C when effect is positive.",
+    "experimental_design": "factorial",
+    "sample_size_found": 5,
+    "sample_size_source": "Data are means \u00b1SD (n=5) as stated in Fig. 1 and Fig. 3 legends; n=8 for root morphology (Fig. 2)",
+    "factorial_structure": "[\"CO2 level (ambient vs elevated)\", \"Nitrogen form (NO3- vs NH4+)\", \"Phosphorus level (P-deficient vs P-adequate in supplementary)\"]",
+    "extraction_guidance": "1. This paper has NO tables - all quantitative data are in figures and must be read graphically. 2. The primary target outcome for meta-analysis is P concentration in shoots and roots from Figure 1d and 1e (P-deficient, wild-type plants only). 3. ALWAYS record nitrogen form (NO3- or NH4+) as a subgroup/moderator because CO2 effect on P concentration is POSITIVE under NO3- and NEGATIVE under NH4+. 4. Use only wild-type data; exclude mutant nr and atnos1 data (Fig. 8). 5. For the main P-deficiency experiment: control = 350 ppm CO2, treatment = 800 ppm CO2, n=5, variance = SD. 6. P-adequate supplementary data (Fig. S1) can also be extracted as a separate observation but note it is P-replete. 7. CO2 control level (350 ppm) is within normal ambient range; elevated CO2 (800 ppm) is higher than typical FACE studies - note this as a potential moderating variable. 8. 'P absorbed per unit weight of roots' (Fig. 1g) is a derived metric (total P / root DW), not a tissue concentration - extract separately from tissue concentrations. 9. Do not extract data from SNP/cPTIO pharmacological treatments (Fig. 6) as these are mechanistic not primary CO2 comparisons.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effect of elevated CO2 on phosphorus nutrition of phosphate-deficient Arabidopsis thaliana (L.) Heynh under different nitrogen forms\",\n        \"species\": \"Arabidopsis thaliana\",\n        \"experimental_system\": \"growth chamber\",\n        \"co2_levels\": {\"control\": \"350\", \"elevated\": \"800\"}\n    },\n    \"warnings\": [\n        \"Paper reports P concentration data (primary outcome) but in the context of P-deficiency stress, not nutrient-replete conditions - this is a special experimental context\",\n        \"Factorial design with TWO nitrogen forms (NO3- vs NH4+) creates two separate sub-experiments - must extract each N form separately\",\n        \"Elevated CO2 INCREASES P concentration under NO3- but DECREASES it under NH4+ - direction of effect depends on N form treatment, critical for correct extraction\",\n        \"The paper header contains mixed content from two different papers (Posidonia oceanica cadmium paper mixed with this Arabidopsis CO2/P paper) - ignore the Posidonia content entirely\",\n        \"P-deficient medium (0.5 \u00b5M NaH2PO4) is used - this is deliberately P-limited hydroponic culture, NOT field or soil conditions\",\n        \"Data are presented primarily in FIGURES (Fig. 1) not tables - numeric values must be read from figures\",\n        \"Supplementary figures contain additional P and biomass data (S1, S2, S3) for P-adequate conditions\",\n        \"Mutant lines (nr, atnos1) are also studied - extract only wild-type data for meta-analysis\",\n        \"CO2 levels are \u00b150 \u00b5l/l (350\u00b150 and 800\u00b150), so treatment is nominally 800 ppm which is higher than typical FACE/OTC studies\",\n        \"The 'P absorbed per unit weight of roots' metric is not a standard concentration measure - do not confuse with shoot or root P concentration\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SD\",\n        \"source\": \"Data are means \u00b1SD (n=5). Asterisks indicate that the mean values are significantly different between the ambient and elevate",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 3",
+      "Figure 4",
+      "Figure 5",
+      "Figure 6",
+      "Figure 7",
+      "Figure 8",
+      "Supplementary Figure S1",
+      "Supplementary Figure S2",
+      "Supplementary Figure S3"
+    ],
+    "outcome_variables_detected": {
+      "Figure 1": [
+        "P concentration in shoots (mg/g DW)",
+        "P concentration in roots (mg/g DW)",
+        "total P content per plant",
+        "P absorbed per weight of roots",
+        "shoot fresh biomass",
+        "root fresh biomass"
+      ],
+      "Figure 3": [
+        "acid phosphatase activity in shoots",
+        "acid phosphatase activity in roots"
+      ],
+      "Figure 4": [
+        "relative expression of AtPHR1 in shoots and roots",
+        "relative expression of AtPHT1 in shoots and roots",
+        "relative expression of AtPHO1 in shoots and roots",
+        "relative expression of AtPHO2 in shoots and roots",
+        "relative expression of AtPAP2 in shoots and roots"
+      ],
+      "Figure 5": [
+        "NO fluorescence intensity in root tip",
+        "NO fluorescence intensity in root-hair zone"
+      ],
+      "Figure 6": [
+        "P concentration per plant under SNP/cPTIO treatments",
+        "P absorbed per weight of roots under cPTIO"
+      ],
+      "Figure 7": [
+        "NR activity in shoots",
+        "NR activity in roots",
+        "NOS activity in shoots",
+        "NOS activity in roots"
+      ],
+      "Figure 8": [
+        "P concentration in shoots of nr mutant",
+        "P concentration in roots of nr mutant",
+        "P concentration in shoots of atnos1 mutant",
+        "P concentration in roots of atnos1 mutant"
+      ],
+      "Supplementary Figure S1": [
+        "shoot fresh biomass under P-adequate conditions",
+        "root fresh biomass under P-adequate conditions",
+        "P concentration in whole plants under P-adequate conditions",
+        "P absorbed per weight of roots under P-adequate conditions"
+      ],
+      "Supplementary Figure S2": [
+        "chlorophyll content SPAD readings under P-deficient conditions",
+        "chlorophyll content SPAD readings under P-adequate conditions"
+      ],
+      "Supplementary Figure S3": [
+        "anthocyanin content under P-deficient conditions",
+        "anthocyanin content under P-adequate conditions"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Auto-upgraded: target data in figures ['Figure 1', 'Figure 3', 'Figure 4', 'Figure 5', 'Figure 6', 'Figure 7', 'Figure 8', 'Supplementary Figure S1', 'Supplementary Figure S2', 'Supplementary Figure S3'] but no target tables found",
+    "challenge_hints": [
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: factorial (CO2 \u00d7 N form \u00d7 P level) with mutant studies"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 22,
+  "kimi_obs": 22,
+  "gemini_obs": 24,
+  "matched_obs": 22,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 22/22 matched",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "chlorophyll content SPAD readings under P-deficient conditions",
+      "tissue": "leaf",
+      "treatment_mean": 26,
+      "control_mean": 33,
+      "treatment_variance": 2.0,
+      "control_variance": 2.0,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "SPAD units",
+      "data_source": "Supplementary Figure S2a; SPAD values mentioned in text",
+      "treatment_description": "Elevated CO2 (800\u00b150 \u00b5l/l)",
+      "control_description": "Ambient CO2 (350\u00b150 \u00b5l/l)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "p_status": "P-deficient (0.5 uM)",
+        "genotype": "wild-type",
+        "phosphorus_level": "P-deficient (0.5 \u00b5M NaH2PO4)",
+        "growth_system": "hydroponic"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -21.21212121212121,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "shoot fresh biomass",
+      "tissue": "shoot",
+      "treatment_mean": 0.45,
+      "control_mean": 0.38,
+      "treatment_variance": 0.03,
+      "control_variance": 0.03,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g/plant",
+      "data_source": "Figure 1b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.42105263157895,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "root fresh biomass",
+      "tissue": "root",
+      "treatment_mean": 0.25,
+      "control_mean": 0.22,
+      "treatment_variance": 0.02,
+      "control_variance": 0.02,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g/plant",
+      "data_source": "Figure 1c",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 13.636363636363635,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P concentration in shoots (mg/g DW)",
+      "tissue": "shoot",
+      "treatment_mean": 5.1,
+      "control_mean": 4.2,
+      "treatment_variance": 0.3,
+      "control_variance": 0.4,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Figure 1d",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 21.428571428571416,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P concentration in roots (mg/g DW)",
+      "tissue": "root",
+      "treatment_mean": 9.0,
+      "control_mean": 7.5,
+      "treatment_variance": 0.7,
+      "control_variance": 0.8,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Figure 1e",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "total P content per plant",
+      "tissue": "whole plant",
+      "treatment_mean": 0.35,
+      "control_mean": 0.28,
+      "treatment_variance": 0.03,
+      "control_variance": 0.02,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mg/plant",
+      "data_source": "Figure 1f",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 24.999999999999982,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P absorbed per weight of roots",
+      "tissue": "root",
+      "treatment_mean": 35.0,
+      "control_mean": 28.0,
+      "treatment_variance": 3,
+      "control_variance": 3,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Figure 1g",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 25.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "acid phosphatase activity in shoots",
+      "tissue": "shoot",
+      "treatment_mean": 22.0,
+      "control_mean": 19.0,
+      "treatment_variance": 1.5,
+      "control_variance": 1.5,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mol/g FW/min",
+      "data_source": "Figure 3a",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.789473684210526,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "acid phosphatase activity in roots",
+      "tissue": "root",
+      "treatment_mean": 23.0,
+      "control_mean": 20.0,
+      "treatment_variance": 2,
+      "control_variance": 2,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mol/g FW/min",
+      "data_source": "Figure 3b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "NO fluorescence intensity in root tip",
+      "tissue": "root",
+      "treatment_mean": 135.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 15,
+      "unit": "relative fluorescence",
+      "data_source": "Figure 5b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 35.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "NO fluorescence intensity in root-hair zone",
+      "tissue": "root",
+      "treatment_mean": 120.0,
+      "control_mean": 80.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 15,
+      "unit": "relative fluorescence",
+      "data_source": "Figure 5b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 50.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "NR activity in shoots",
+      "tissue": "shoot",
+      "treatment_mean": 11.5,
+      "control_mean": 7.5,
+      "treatment_variance": 1,
+      "control_variance": 0.8,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "\u00b5mol/h/g FW",
+      "data_source": "Figure 7a",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 53.333333333333336,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "NR activity in roots",
+      "tissue": "root",
+      "treatment_mean": 4.5,
+      "control_mean": 3.0,
+      "treatment_variance": 0.5,
+      "control_variance": 0.4,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "\u00b5mol/h/g FW",
+      "data_source": "Figure 7b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 50.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "NOS activity in shoots",
+      "tissue": "shoot",
+      "treatment_mean": 240.0,
+      "control_mean": 100.0,
+      "treatment_variance": 25,
+      "control_variance": 10,
+      "variance_type": "LSD",
+      "n": 10,
+      "unit": "% control",
+      "data_source": "Figure 7c",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 140.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "NOS activity in roots",
+      "tissue": "root",
+      "treatment_mean": 200.0,
+      "control_mean": 100.0,
+      "treatment_variance": 20,
+      "control_variance": 10,
+      "variance_type": "LSD",
+      "n": 10,
+      "unit": "% control",
+      "data_source": "Figure 7d",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 100.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "shoot fresh biomass under P-adequate conditions",
+      "tissue": "shoot",
+      "treatment_mean": 0.65,
+      "control_mean": 0.55,
+      "treatment_variance": 0.05,
+      "control_variance": 0.05,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g/plant",
+      "data_source": "Supplementary Figure S1a",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "adequate"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.181818181818176,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "root fresh biomass under P-adequate conditions",
+      "tissue": "root",
+      "treatment_mean": 0.28,
+      "control_mean": 0.28,
+      "treatment_variance": 0.03,
+      "control_variance": 0.03,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g/plant",
+      "data_source": "Supplementary Figure S1b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "adequate"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P concentration in whole plants under P-adequate conditions",
+      "tissue": "whole plant",
+      "treatment_mean": 6.0,
+      "control_mean": 8.0,
+      "treatment_variance": 0.5,
+      "control_variance": 0.5,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Supplementary Figure S1c",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "adequate"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -25.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P absorbed per weight of roots under P-adequate conditions",
+      "tissue": "root",
+      "treatment_mean": 45.0,
+      "control_mean": 60.0,
+      "treatment_variance": 4,
+      "control_variance": 5,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Supplementary Figure S1d",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "adequate"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -25.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "chlorophyll content SPAD readings under P-adequate conditions",
+      "tissue": "leaf",
+      "treatment_mean": 42.0,
+      "control_mean": 42.0,
+      "treatment_variance": 3,
+      "control_variance": 3,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "SPAD",
+      "data_source": "Supplementary Figure S2b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "adequate"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "anthocyanin content under P-deficient conditions",
+      "tissue": "leaf",
+      "treatment_mean": 0.2,
+      "control_mean": 0.28,
+      "treatment_variance": 0.02,
+      "control_variance": 0.03,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "\u00b5mol/g FW",
+      "data_source": "Supplementary Figure S3a",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "deficient"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -28.571428571428577,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "anthocyanin content under P-adequate conditions",
+      "tissue": "leaf",
+      "treatment_mean": 0.08,
+      "control_mean": 0.08,
+      "treatment_variance": 0.01,
+      "control_variance": 0.01,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "\u00b5mol/g FW",
+      "data_source": "Supplementary Figure S3b",
+      "treatment_description": "Elevated CO2 (800 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (350 \u00b5l l-1)",
+      "moderators": {
+        "nitrogen_form": "NO3-",
+        "phosphorus_level": "adequate"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 3,
+    "original_count": 22,
+    "final_count": 22
+  },
+  "verification_flags": [
+    {
+      "element": "chlorophyll content SPAD readings under P-deficient conditions",
+      "tissue": "leaf",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "chlorophyll content SPAD readings under P-deficient conditions",
+        "treatment_mean": 26,
+        "control_mean": 33,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -21.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.6923076923076925,
+            "note": "CV = 7.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "null",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.8%"
+          }
+        },
+        "effect_pct": -21.21212121212121
+      }
+    },
+    {
+      "element": "shoot fresh biomass",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "shoot fresh biomass",
+        "treatment_mean": 0.45,
+        "control_mean": 0.38,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +18.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -15.555555555555559,
+            "note": "Effect +18.4% violates expected direction; unswapped would be -15.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.666666666666667,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.2%"
+          }
+        },
+        "effect_pct": 18.42105263157895,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +18.4%, corrected would be -15.6%"
+      }
+    },
+    {
+      "element": "root fresh biomass",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "root fresh biomass",
+        "treatment_mean": 0.25,
+        "control_mean": 0.22,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +13.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -12.000000000000002,
+            "note": "Effect +13.6% violates expected direction; unswapped would be -12.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.0,
+            "note": "CV = 8.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 13.636363636363635,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +13.6%, corrected would be -12.0%"
+      }
+    },
+    {
+      "element": "P concentration in shoots (mg/g DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "P concentration in shoots (mg/g DW)",
+        "treatment_mean": 5.1,
+        "control_mean": 4.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +21.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -17.647058823529402,
+            "note": "Effect +21.4% violates expected direction; unswapped would be -17.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.88235294117647,
+            "note": "CV = 5.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.5%"
+          }
+        },
+        "effect_pct": 21.428571428571416,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +21.4%, corrected would be -17.6%"
+      }
+    },
+    {
+      "element": "P concentration in roots (mg/g DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "P concentration in roots (mg/g DW)",
+        "treatment_mean": 9.0,
+        "control_mean": 7.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +20.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -16.666666666666668,
+            "note": "Effect +20.0% violates expected direction; unswapped would be -16.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.777777777777778,
+            "note": "CV = 7.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 20.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +20.0%, corrected would be -16.7%"
+      }
+    },
+    {
+      "element": "total P content per plant",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "total P content per plant",
+        "treatment_mean": 0.35,
+        "control_mean": 0.28,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +25.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -19.99999999999999,
+            "note": "Effect +25.0% violates expected direction; unswapped would be -20.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.571428571428571,
+            "note": "CV = 8.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.5%"
+          }
+        },
+        "effect_pct": 24.999999999999982,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +25.0%, corrected would be -20.0%"
+      }
+    },
+    {
+      "element": "P absorbed per weight of roots",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "P absorbed per weight of roots",
+        "treatment_mean": 35.0,
+        "control_mean": 28.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +25.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -20.0,
+            "note": "Effect +25.0% violates expected direction; unswapped would be -20.0%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.571428571428571,
+            "note": "CV = 8.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.5%"
+          }
+        },
+        "effect_pct": 25.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +25.0%, corrected would be -20.0%"
+      }
+    },
+    {
+      "element": "acid phosphatase activity in shoots",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "acid phosphatase activity in shoots",
+        "treatment_mean": 22.0,
+        "control_mean": 19.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +15.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -13.636363636363635,
+            "note": "Effect +15.8% violates expected direction; unswapped would be -13.6%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.8181818181818175,
+            "note": "CV = 6.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.3%"
+          }
+        },
+        "effect_pct": 15.789473684210526,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +15.8%, corrected would be -13.6%"
+      }
+    },
+    {
+      "element": "acid phosphatase activity in roots",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "acid phosphatase activity in roots",
+        "treatment_mean": 23.0,
+        "control_mean": 20.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +15.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -13.043478260869565,
+            "note": "Effect +15.0% violates expected direction; unswapped would be -13.0%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.695652173913043,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.3%"
+          }
+        },
+        "effect_pct": 15.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +15.0%, corrected would be -13.0%"
+      }
+    },
+    {
+      "element": "NO fluorescence intensity in root tip",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "NO fluorescence intensity in root tip",
+        "treatment_mean": 135.0,
+        "control_mean": 100.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +35.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -25.925925925925924,
+            "note": "Effect +35.0% violates expected direction; unswapped would be -25.9%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 15,
+            "note": "n=15 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 35.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +35.0%, corrected would be -25.9%"
+      }
+    },
+    {
+      "element": "NO fluorescence intensity in root-hair zone",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "NO fluorescence intensity in root-hair zone",
+        "treatment_mean": 120.0,
+        "control_mean": 80.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 15,
+            "note": "n=15 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 50.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "NR activity in shoots",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "NR activity in shoots",
+        "treatment_mean": 11.5,
+        "control_mean": 7.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +53.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -34.78260869565218,
+            "note": "Effect +53.3% violates expected direction; unswapped would be -34.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.695652173913043,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.5%"
+          }
+        },
+        "effect_pct": 53.333333333333336,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +53.3%, corrected would be -34.8%"
+      }
+    },
+    {
+      "element": "NR activity in roots",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "NR activity in roots",
+        "treatment_mean": 4.5,
+        "control_mean": 3.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.11111111111111,
+            "note": "CV = 11.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.3%"
+          }
+        },
+        "effect_pct": 50.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "NOS activity in shoots",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "magnitude",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "NOS activity in shoots",
+        "treatment_mean": 240.0,
+        "control_mean": 100.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +140.0%, expected negative"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +140.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -58.333333333333336,
+            "note": "Effect +140.0% violates expected direction; unswapped would be -58.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.416666666666668,
+            "note": "CV = 10.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 10,
+            "note": "n=10"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.7%"
+          }
+        },
+        "effect_pct": 140.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +140.0%, corrected would be -58.3%"
+      }
+    },
+    {
+      "element": "NOS activity in roots",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "NOS activity in roots",
+        "treatment_mean": 200.0,
+        "control_mean": 100.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +100.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -50.0,
+            "note": "Effect +100.0% violates expected direction; unswapped would be -50.0%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.0,
+            "note": "CV = 10.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 10,
+            "note": "n=10"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.3%"
+          }
+        },
+        "effect_pct": 100.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +100.0%, corrected would be -50.0%"
+      }
+    },
+    {
+      "element": "shoot fresh biomass under P-adequate conditions",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "shoot fresh biomass under P-adequate conditions",
+        "treatment_mean": 0.65,
+        "control_mean": 0.55,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +18.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -15.384615384615383,
+            "note": "Effect +18.2% violates expected direction; unswapped would be -15.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.6923076923076925,
+            "note": "CV = 7.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.3%"
+          }
+        },
+        "effect_pct": 18.181818181818176,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +18.2%, corrected would be -15.4%"
+      }
+    },
+    {
+      "element": "root fresh biomass under P-adequate conditions",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "root fresh biomass under P-adequate conditions",
+        "treatment_mean": 0.28,
+        "control_mean": 0.28,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.714285714285712,
+            "note": "CV = 10.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.7%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "P concentration in whole plants under P-adequate conditions",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "P concentration in whole plants under P-adequate conditions",
+        "treatment_mean": 6.0,
+        "control_mean": 8.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -25.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.333333333333332,
+            "note": "CV = 8.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.1%"
+          }
+        },
+        "effect_pct": -25.0
+      }
+    },
+    {
+      "element": "P absorbed per weight of roots under P-adequate conditions",
+      "tissue": "root",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "P absorbed per weight of roots under P-adequate conditions",
+        "treatment_mean": 45.0,
+        "control_mean": 60.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -25.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.88888888888889,
+            "note": "CV = 8.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": -25.0
+      }
+    },
+    {
+      "element": "chlorophyll content SPAD readings under P-adequate conditions",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "variance_type"
+      ],
+      "details": {
+        "element": "chlorophyll content SPAD readings under P-adequate conditions",
+        "treatment_mean": 42.0,
+        "control_mean": 42.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.142857142857142,
+            "note": "CV = 7.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.1%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "anthocyanin content under P-deficient conditions",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "anthocyanin content under P-deficient conditions",
+        "treatment_mean": 0.2,
+        "control_mean": 0.28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -28.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.0,
+            "note": "CV = 10.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.3%"
+          }
+        },
+        "effect_pct": -28.571428571428577
+      }
+    },
+    {
+      "element": "anthocyanin content under P-adequate conditions",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "anthocyanin content under P-adequate conditions",
+        "treatment_mean": 0.08,
+        "control_mean": 0.08,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.5,
+            "note": "CV = 12.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=12.5%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

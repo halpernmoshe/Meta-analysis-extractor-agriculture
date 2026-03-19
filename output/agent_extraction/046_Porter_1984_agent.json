@@ -1,0 +1,174 @@
+{
+  "paper_id": "046_Porter_1984",
+  "title": "Acclimation to High CO2 in Bean: Carbonic Anhydrase and Ribulose Bisphosphate Carboxylase",
+  "authors": "Porter MA, Grodzinski B",
+  "year": 1984,
+  "journal": "Plant Physiology",
+  "species": "Phaseolus vulgaris (bean, cv Seafarer)",
+  "experiment_type": "growth_chamber",
+  "co2_ambient": 330,
+  "co2_elevated": 1200,
+  "co2_unit": "ul/l",
+  "consensus_observations": [
+    {
+      "element": "N",
+      "tissue": "leaf",
+      "treatment_mean": 2.96,
+      "control_mean": 3.98,
+      "effect_pct": -25.63,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 7 days",
+      "control_description": "330 ul/l CO2, 7 days",
+      "moderators": {
+        "duration_days": 7,
+        "significance": "p<0.01"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "treatment_mean": 0.27,
+      "control_mean": 0.34,
+      "effect_pct": -20.59,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 7 days",
+      "control_description": "330 ul/l CO2, 7 days",
+      "moderators": {
+        "duration_days": 7,
+        "significance": "p<0.01"
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "leaf",
+      "treatment_mean": 2.31,
+      "control_mean": 2.85,
+      "effect_pct": -18.95,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 7 days",
+      "control_description": "330 ul/l CO2, 7 days",
+      "moderators": {
+        "duration_days": 7,
+        "significance": "p<0.05"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "leaf",
+      "treatment_mean": 2.55,
+      "control_mean": 3.42,
+      "effect_pct": -25.44,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 7 days",
+      "control_description": "330 ul/l CO2, 7 days",
+      "moderators": {
+        "duration_days": 7,
+        "significance": "p<0.05"
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "leaf",
+      "treatment_mean": 0.52,
+      "control_mean": 0.74,
+      "effect_pct": -29.73,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 7 days",
+      "control_description": "330 ul/l CO2, 7 days",
+      "moderators": {
+        "duration_days": 7,
+        "significance": "p<0.05"
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "leaf",
+      "treatment_mean": 2.51,
+      "control_mean": 3.65,
+      "effect_pct": -31.23,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 14 days",
+      "control_description": "330 ul/l CO2, 14 days",
+      "moderators": {
+        "duration_days": 14,
+        "significance": "p<0.01"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "treatment_mean": 0.23,
+      "control_mean": 0.35,
+      "effect_pct": -34.29,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 14 days",
+      "control_description": "330 ul/l CO2, 14 days",
+      "moderators": {
+        "duration_days": 14,
+        "significance": "p<0.01"
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "leaf",
+      "treatment_mean": 2.11,
+      "control_mean": 2.81,
+      "effect_pct": -24.91,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 14 days",
+      "control_description": "330 ul/l CO2, 14 days",
+      "moderators": {
+        "duration_days": 14,
+        "significance": "p<0.05"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "leaf",
+      "treatment_mean": 2.26,
+      "control_mean": 3.62,
+      "effect_pct": -37.57,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 14 days",
+      "control_description": "330 ul/l CO2, 14 days",
+      "moderators": {
+        "duration_days": 14,
+        "significance": "p<0.01"
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "leaf",
+      "treatment_mean": 0.53,
+      "control_mean": 0.88,
+      "effect_pct": -39.77,
+      "n": null,
+      "unit": "%",
+      "data_source": "Table II",
+      "treatment_description": "1200 ul/l CO2, 14 days",
+      "control_description": "330 ul/l CO2, 14 days",
+      "moderators": {
+        "duration_days": 14,
+        "significance": "p<0.01"
+      }
+    }
+  ]
+}

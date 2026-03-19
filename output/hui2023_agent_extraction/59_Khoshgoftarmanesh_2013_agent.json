@@ -1,0 +1,348 @@
+{
+  "paper_id": "59_Khoshgoftarmanesh_2013",
+  "title": "The effectiveness of foliar applications of synthesized zinc-amino acid chelates in comparison with zinc sulfate to increase yield and grain nutritional quality of wheat",
+  "authors": "Ghasemi, S., Khoshgoftarmanesh, A.H., Afyuni, M., Hadadzadeh, H.",
+  "year": 2013,
+  "species": "Triticum aestivum",
+  "experiment_type": "field",
+  "location": "Iran",
+  "notes": "Data from Figure 3 (bar charts). Two cultivars: Back Cross (Zn-efficient) and Kavir (Zn-sensitive). Foliar Zn at 0.2% (w/v) applied at tillering, before spike emergence, and grain filling. n=3 replicates. Unit: mg Zn per 100g grain. Values estimated from bar graphs. Rudasht Research Station, Isfahan, Iran. 2009-2010 and 2010-2011 seasons.",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.30,
+      "control_mean": 0.95,
+      "effect_pct": 36.84,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "ZnSO4",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.70,
+      "control_mean": 0.95,
+      "effect_pct": 78.95,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Arginine [Zn(Arg)2]",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.80,
+      "control_mean": 0.95,
+      "effect_pct": 89.47,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Glycine [Zn(Gly)2]",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 2.10,
+      "control_mean": 0.95,
+      "effect_pct": 121.05,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Histidine [Zn(His)2]",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.30,
+      "control_mean": 0.95,
+      "effect_pct": 36.84,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "ZnSO4",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.40,
+      "control_mean": 0.95,
+      "effect_pct": 47.37,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Arginine [Zn(Arg)2]",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.50,
+      "control_mean": 0.95,
+      "effect_pct": 57.89,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Glycine [Zn(Gly)2]",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.60,
+      "control_mean": 0.95,
+      "effect_pct": 68.42,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] 0.2% (w/v), Year 1",
+      "control_description": "No Zn control, Year 1",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Histidine [Zn(His)2]",
+        "year": "2009-2010"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.40,
+      "control_mean": 1.20,
+      "effect_pct": 16.67,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "ZnSO4",
+        "year": "2010-2011"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.60,
+      "control_mean": 1.20,
+      "effect_pct": 33.33,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Arginine [Zn(Arg)2]",
+        "year": "2010-2011"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.80,
+      "control_mean": 1.20,
+      "effect_pct": 50.0,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Glycine [Zn(Gly)2]",
+        "year": "2010-2011"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.70,
+      "control_mean": 1.20,
+      "effect_pct": 41.67,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Histidine [Zn(His)2]",
+        "year": "2010-2011"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.30,
+      "control_mean": 1.10,
+      "effect_pct": 18.18,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "ZnSO4",
+        "year": "2010-2011"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.50,
+      "control_mean": 1.10,
+      "effect_pct": 36.36,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Arginine [Zn(Arg)2]",
+        "year": "2010-2011"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.60,
+      "control_mean": 1.10,
+      "effect_pct": 45.45,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Glycine [Zn(Gly)2]",
+        "year": "2010-2011"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 1.50,
+      "control_mean": 1.10,
+      "effect_pct": 36.36,
+      "n": 3,
+      "unit": "mg/100g",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] 0.2% (w/v), Year 2",
+      "control_description": "No Zn control, Year 2",
+      "moderators": {
+        "cultivar": "Kavir",
+        "zn_application_method": "foliar",
+        "zn_rate": "0.2% w/v",
+        "zn_source": "Zn-Histidine [Zn(His)2]",
+        "year": "2010-2011"
+      }
+    }
+  ]
+}

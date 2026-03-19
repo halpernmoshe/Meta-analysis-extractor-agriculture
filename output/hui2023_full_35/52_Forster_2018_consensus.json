@@ -1,0 +1,2248 @@
+{
+  "paper_id": "52_Forster_2018",
+  "recon": {
+    "paper_id": "52_Forster_2018",
+    "warnings": [
+      "This paper focuses on cadmium reduction, not Zn biofortification - Zn concentration is secondary outcome",
+      "Multiple Zn application methods (soil ZnSO4, foliar Zn-EDTA) with different rates",
+      "Some treatments combine Zn with other fertilizers (KCl, UAN) - extract only pure Zn treatments",
+      "Paper has two separate trials with different designs and treatments",
+      "Control is 'Untreated control' - clearly defined as no fertilizer application",
+      "Zn rates differ between soil (12 kg Zn ha-1) and foliar (1.1 kg Zn ha-1) applications",
+      "Multiple cultivars tested - each cultivar x treatment combination is separate observation",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": ".05$.Mean comparisons using F-protected least significant differences (LSD)were made where F-tests indicated",
+    "variance_confidence": "medium",
+    "control_definition": "Untreated control - no fertilizer application",
+    "treatment_definition": "Zn fertilizer treatments: ZnSO4 at 12 kg Zn ha-1 broadcast at planting, or Zn-EDTA at 1.1 kg Zn ha-1 foliar application at various growth stages",
+    "tables_with_target_data": [
+      "Table 3",
+      "Table 4"
+    ],
+    "potential_tc_confusion": "Some treatments combine Zn with other fertilizers (KCl, fungicides, UAN) - only extract pure Zn treatments vs untreated control",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "All treatments in both trials were replicated four times",
+    "factorial_structure": "[\"Zn treatment\", \"cultivar\", \"environment/location\"]",
+    "extraction_guidance": "Extract from Table 3: ZnSO4 treatment (27.8 mg/kg Zn) and Zn-EDTA treatment (29.1 mg/kg Zn) vs Untreated control (25.4 mg/kg Zn). From Table 4: Extract various Zn-EDTA timing treatments vs Untreated control (32.3 mg/kg Zn). Each cultivar provides separate observation. Use LSD(0.05) values for variance. Focus only on pure Zn treatments, exclude combination treatments with KCl or other fertilizers.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Type and placement of zinc fertilizer impacts cadmium content of harvested durum wheat grain\",\n        \"species\": \"Triticum turgidum L. (durum wheat)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This paper focuses on cadmium reduction, not Zn biofortification - Zn concentration is secondary outcome\",\n        \"Multiple Zn application methods (soil ZnSO4, foliar Zn-EDTA) with different rates\",\n        \"Some treatments combine Zn with other fertilizers (KCl, UAN) - extract only pure Zn treatments\",\n        \"Paper has two separate trials with different designs and treatments\",\n        \"Control is 'Untreated control' - clearly defined as no fertilizer application\",\n        \"Zn rates differ between soil (12 kg Zn ha-1) and foliar (1.1 kg Zn ha-1) applications\",\n        \"Multiple cultivars tested - each cultivar x treatment combination is separate observation\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"LSD (0.05) values provided in all data tables, and 'F-protected least significant differences (LSD) were made where F-tests indicated significant differences existed (p<.05)'\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Untreated control - no fertilizer application\",\n        \"treatment_definition\": \"Zn fertilizer treatments: ZnSO4 at 12 kg Zn ha-1 broadcast at planting, or Zn-EDTA at 1.1 kg Zn ha-1 foliar application at various growth stages\",\n        \"identification_method\": \"Look for 'Untreated control' or 'Untreated' in treatment columns vs specific Zn treatments\",\n        \"potential_confusion\": \"Some treatments combine Zn with other fertilizers (KCl, fungicides, UAN) - only extract pure Zn treatments vs untreated control\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n        \"source\": \"All treatments in both trials were replicat",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Soil properties before planting - no outcome data",
+      "Table 2": "Treatment descriptions for both trials - no outcome data",
+      "Table 3": "Results from fertilizer type and placement trial including grain Zn concentration",
+      "Table 4": "Results from timing trial including grain Zn concentration"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "TW (test weight)",
+        "Yield",
+        "Protein",
+        "Cd",
+        "Fe",
+        "Zn",
+        "Cd mg ha-1",
+        "Fe mg ha-1",
+        "Zn mg ha-1"
+      ],
+      "Table 4": [
+        "TW (test weight)",
+        "Yield",
+        "Protein",
+        "Cd",
+        "Fe",
+        "Zn",
+        "Cd mg ha-1",
+        "Fe mg ha-1",
+        "Zn mg ha-1"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 54,
+  "kimi_obs": 0,
+  "gemini_obs": 11,
+  "matched_obs": 11,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 54",
+  "disagreements": [
+    {
+      "type": "claude_only_after_vote",
+      "element": "TW (test weight)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TW (test weight)",
+        "tissue": "grain",
+        "treatment_mean": 743,
+        "control_mean": 749,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg m-3",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "soil broadcast"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -0.801068090787717,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "Yield",
+        "tissue": "grain",
+        "treatment_mean": 3823,
+        "control_mean": 3810,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "soil broadcast"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 0.34120734908136485,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd",
+        "tissue": "grain",
+        "treatment_mean": 0.11,
+        "control_mean": 0.12,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "soil broadcast"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -8.33333333333333,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 459,
+        "control_mean": 507,
+        "treatment_variance": 73,
+        "control_variance": 73,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "soil broadcast"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -9.467455621301776,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 119583,
+        "control_mean": 115077,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "soil broadcast"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 3.915639093824135,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "TW (test weight)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TW (test weight)",
+        "tissue": "grain",
+        "treatment_mean": 744,
+        "control_mean": 749,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg m-3",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -0.6675567423230975,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "Yield",
+        "tissue": "grain",
+        "treatment_mean": 3810,
+        "control_mean": 3810,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Protein",
+      "tissue": "grain",
+      "claude": {
+        "element": "Protein",
+        "tissue": "grain",
+        "treatment_mean": 132,
+        "control_mean": 134,
+        "treatment_variance": 8,
+        "control_variance": 8,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "g kg-1",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -1.4925373134328357,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd",
+        "tissue": "grain",
+        "treatment_mean": 0.1,
+        "control_mean": 0.12,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -16.66666666666666,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe",
+        "tissue": "grain",
+        "treatment_mean": 31.5,
+        "control_mean": 30.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 3.278688524590164,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 394,
+        "control_mean": 507,
+        "treatment_variance": 73,
+        "control_variance": 73,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -22.287968441814595,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 120563,
+        "control_mean": 115077,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 4.767242802645185,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 108187,
+        "control_mean": 86688,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "fertilizer type and placement",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 24.80043373938723,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "TW (test weight)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TW (test weight)",
+        "tissue": "grain",
+        "treatment_mean": 737,
+        "control_mean": 728,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg m-3",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 4"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 1.2362637362637363,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Protein",
+      "tissue": "grain",
+      "claude": {
+        "element": "Protein",
+        "tissue": "grain",
+        "treatment_mean": 134,
+        "control_mean": 134,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "g kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 4"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe",
+        "tissue": "grain",
+        "treatment_mean": 31.9,
+        "control_mean": 31.5,
+        "treatment_variance": 2.1,
+        "control_variance": 2.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 4"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 1.2698412698412653,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 261,
+        "control_mean": 281,
+        "treatment_variance": 51,
+        "control_variance": 51,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 4"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -7.11743772241993,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 86058,
+        "control_mean": 83558,
+        "treatment_variance": 6424,
+        "control_variance": 6424,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 4"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 2.991933746619115,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 88381,
+        "control_mean": 84202,
+        "treatment_variance": 9184,
+        "control_variance": 9184,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 4"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 4.963065010332296,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "TW (test weight)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TW (test weight)",
+        "tissue": "grain",
+        "treatment_mean": 728,
+        "control_mean": 728,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg m-3",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "Yield",
+        "tissue": "grain",
+        "treatment_mean": 2620,
+        "control_mean": 2681,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -2.2752704214845205,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Protein",
+      "tissue": "grain",
+      "claude": {
+        "element": "Protein",
+        "tissue": "grain",
+        "treatment_mean": 135,
+        "control_mean": 134,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "g kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 0.7462686567164178,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd",
+        "tissue": "grain",
+        "treatment_mean": 0.08,
+        "control_mean": 0.1,
+        "treatment_variance": 0.02,
+        "control_variance": 0.02,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -20.000000000000004,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe",
+        "tissue": "grain",
+        "treatment_mean": 33.2,
+        "control_mean": 31.5,
+        "treatment_variance": 2.1,
+        "control_variance": 2.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 5.396825396825406,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 218,
+        "control_mean": 281,
+        "treatment_variance": 51,
+        "control_variance": 51,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -22.419928825622776,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 86627,
+        "control_mean": 83558,
+        "treatment_variance": 6424,
+        "control_variance": 6424,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 3.6728978673496253,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 97942,
+        "control_mean": 84202,
+        "treatment_variance": 9184,
+        "control_variance": 9184,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 16.317902187596495,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "TW (test weight)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TW (test weight)",
+        "tissue": "grain",
+        "treatment_mean": 728,
+        "control_mean": 728,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg m-3",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "Yield",
+        "tissue": "grain",
+        "treatment_mean": 2735,
+        "control_mean": 2681,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 2.0141738157403952,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Protein",
+      "tissue": "grain",
+      "claude": {
+        "element": "Protein",
+        "tissue": "grain",
+        "treatment_mean": 136,
+        "control_mean": 134,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "g kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 1.4925373134328357,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd",
+        "tissue": "grain",
+        "treatment_mean": 0.11,
+        "control_mean": 0.1,
+        "treatment_variance": 0.02,
+        "control_variance": 0.02,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 9.999999999999995,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe",
+        "tissue": "grain",
+        "treatment_mean": 34.0,
+        "control_mean": 31.5,
+        "treatment_variance": 2.1,
+        "control_variance": 2.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 7.936507936507936,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 320,
+        "control_mean": 281,
+        "treatment_variance": 51,
+        "control_variance": 51,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 13.87900355871886,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 93076,
+        "control_mean": 83558,
+        "treatment_variance": 6424,
+        "control_variance": 6424,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 11.390890160128295,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 105323,
+        "control_mean": 84202,
+        "treatment_variance": 9184,
+        "control_variance": 9184,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 11.1"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 25.083727227381775,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "TW (test weight)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TW (test weight)",
+        "tissue": "grain",
+        "treatment_mean": 728,
+        "control_mean": 728,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg m-3",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10.54"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "Yield",
+        "tissue": "grain",
+        "treatment_mean": 2815,
+        "control_mean": 2681,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10.54"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 4.998135024244685,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Protein",
+      "tissue": "grain",
+      "claude": {
+        "element": "Protein",
+        "tissue": "grain",
+        "treatment_mean": 136,
+        "control_mean": 134,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "g kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10.54"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 1.4925373134328357,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe",
+        "tissue": "grain",
+        "treatment_mean": 33.8,
+        "control_mean": 31.5,
+        "treatment_variance": 2.1,
+        "control_variance": 2.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg kg-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10.54"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 7.3015873015872925,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Cd mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Cd mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 270,
+        "control_mean": 281,
+        "treatment_variance": 51,
+        "control_variance": 51,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10.54"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": -3.9145907473309607,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Fe mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Fe mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 95495,
+        "control_mean": 83558,
+        "treatment_variance": 6424,
+        "control_variance": 6424,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10.54"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 14.28588525335695,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn mg ha-1",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn mg ha-1",
+        "tissue": "grain",
+        "treatment_mean": 104679,
+        "control_mean": 84202,
+        "treatment_variance": 9184,
+        "control_variance": 9184,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+        "control_description": "Untreated control",
+        "moderators": {
+          "trial": "timing trial",
+          "application_method": "foliar",
+          "growth_stage": "Feekes 10.54"
+        },
+        "confidence": "high",
+        "notes": "Combined analysis across environments",
+        "effect_pct": 24.318899788603595,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Protein",
+      "tissue": "grain",
+      "treatment_mean": 133,
+      "control_mean": 134,
+      "treatment_variance": 8,
+      "control_variance": 8,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "g kg-1",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "soil broadcast",
+        "growth_stage": "Feekes 10",
+        "trial": "fertilizer type and placement"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.8%) [Claude+Gemini agree]",
+      "effect_pct": -0.7462686567164178,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 31.2,
+      "control_mean": 30.5,
+      "treatment_variance": 2.1,
+      "control_variance": 2.1,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "soil broadcast",
+        "growth_stage": "Feekes 10",
+        "trial": "fertilizer type and placement"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=4.8%) [Claude+Gemini agree]",
+      "effect_pct": 2.2950819672131124,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 27.8,
+      "control_mean": 25.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "soil broadcast",
+        "growth_stage": "planting",
+        "site": "Crosby, Hettinger, Minot",
+        "year": "2014, 2015",
+        "trial": "fertilizer type and placement"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 9.448818897637805,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn mg ha-1",
+      "tissue": "grain",
+      "treatment_mean": 103246,
+      "control_mean": 86688,
+      "treatment_variance": 9184,
+      "control_variance": 9184,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4 broadcast at planting (12 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "soil broadcast",
+        "growth_stage": "Feekes 10",
+        "trial": "fertilizer type and placement"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=4.0%) [Claude+Gemini agree]",
+      "effect_pct": 19.100682908822446,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 29.1,
+      "control_mean": 25.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 3",
+      "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "foliar",
+        "growth_stage": "Feekes 10",
+        "site": "Crosby, Hettinger, Minot",
+        "year": "2014, 2015",
+        "trial": "fertilizer type and placement"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 14.566929133858281,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield",
+      "tissue": "grain",
+      "treatment_mean": 2708,
+      "control_mean": 2681,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "foliar",
+        "growth_stage": "Feekes 4",
+        "trial": "timing trial"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.6%) [Claude+Gemini agree]",
+      "effect_pct": 1.0070869078701976,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cd",
+      "tissue": "grain",
+      "treatment_mean": 0.09,
+      "control_mean": 0.1,
+      "treatment_variance": 0.02,
+      "control_variance": 0.02,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 4",
+      "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "foliar",
+        "growth_stage": "Feekes 4",
+        "trial": "timing trial"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.6%) [Claude+Gemini agree]",
+      "effect_pct": -10.000000000000009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 33.0,
+      "control_mean": 32.3,
+      "treatment_variance": 3.0,
+      "control_variance": 3.0,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 4",
+      "treatment_description": "Zn-EDTA foliar at Feekes 4 (1.1 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "foliar",
+        "growth_stage": "Feekes 4",
+        "site": "Crosby, Minot",
+        "year": "2014, 2015",
+        "trial": "timing trial"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 2.1671826625387087,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 37.9,
+      "control_mean": 32.3,
+      "treatment_variance": 3.0,
+      "control_variance": 3.0,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 4",
+      "treatment_description": "Zn-EDTA foliar at Feekes 10 (1.1 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "foliar",
+        "growth_stage": "Feekes 10",
+        "site": "Crosby, Minot",
+        "year": "2014, 2015",
+        "trial": "timing trial"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 17.337461300309602,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 38.5,
+      "control_mean": 32.3,
+      "treatment_variance": 3.0,
+      "control_variance": 3.0,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 4",
+      "treatment_description": "Zn-EDTA foliar at Feekes 11.1 (1.1 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "foliar",
+        "growth_stage": "Feekes 11.1",
+        "site": "Crosby, Minot",
+        "year": "2014, 2015",
+        "trial": "timing trial"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 19.195046439628495,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 37.0,
+      "control_mean": 32.3,
+      "treatment_variance": 3.0,
+      "control_variance": 3.0,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg kg-1",
+      "data_source": "Table 4",
+      "treatment_description": "Zn-EDTA foliar at Feekes 10.54 (1.1 kg Zn ha-1)",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "Carpio, Joppa, AC Strongfield (averaged)",
+        "application_method": "foliar",
+        "growth_stage": "Feekes 10.54",
+        "site": "Crosby, Minot",
+        "year": "2014, 2015",
+        "trial": "timing trial"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 14.55108359133128,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 11,
+    "final_count": 11
+  },
+  "verification_flags": [
+    {
+      "element": "Protein",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Protein",
+        "treatment_mean": 133,
+        "control_mean": 134,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.015037593984962,
+            "note": "CV = 6.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.0%"
+          }
+        },
+        "effect_pct": -0.7462686567164178
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 31.2,
+        "control_mean": 30.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.730769230769232,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.8%"
+          }
+        },
+        "effect_pct": 2.2950819672131124
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 27.8,
+        "control_mean": 25.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 9.448818897637805
+      }
+    },
+    {
+      "element": "Zn mg ha-1",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn mg ha-1",
+        "treatment_mean": 103246,
+        "control_mean": 86688,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.89525986478895,
+            "note": "CV = 8.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.7%"
+          }
+        },
+        "effect_pct": 19.100682908822446
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 29.1,
+        "control_mean": 25.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 14.566929133858281
+      }
+    },
+    {
+      "element": "Cd",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cd",
+        "treatment_mean": 0.09,
+        "control_mean": 0.1,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -10.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 11.111111111111121,
+            "note": "Effect -10.0% violates expected direction; unswapped would be +11.1%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 22.222222222222225,
+            "note": "CV = 22.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=21.1%"
+          }
+        },
+        "effect_pct": -10.000000000000009,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -10.0%, corrected would be +11.1%"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 33.0,
+        "control_mean": 32.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.090909090909092,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.2%"
+          }
+        },
+        "effect_pct": 2.1671826625387087
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 37.9,
+        "control_mean": 32.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.9155672823219,
+            "note": "CV = 7.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 17.337461300309602
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 38.5,
+        "control_mean": 32.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.792207792207792,
+            "note": "CV = 7.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 19.195046439628495
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 37.0,
+        "control_mean": 32.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.108108108108109,
+            "note": "CV = 8.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.7%"
+          }
+        },
+        "effect_pct": 14.55108359133128
+      }
+    }
+  ]
+}

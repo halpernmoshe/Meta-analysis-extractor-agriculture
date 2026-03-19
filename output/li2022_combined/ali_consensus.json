@@ -1,0 +1,1720 @@
+{
+  "paper_id": "ali",
+  "recon": {
+    "paper_id": "ali",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 8,
+  "gemini_obs": 0,
+  "matched_obs": 20,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 8",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 25815,
+        "control_mean": 16779,
+        "treatment_variance": 114,
+        "control_variance": 195,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+        "control_description": "Water spray (untreated control)",
+        "moderators": {
+          "cultivar": "Hybrid-61",
+          "year": "Dry season",
+          "site": "Valencia, Trinidad",
+          "crop": "tomato"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants (plot size 100 m\u00b2). Converted to kg/ha by multiplying by 100. Variance assumed SD based on figure captions, but table does not explicitly specify SD vs SE. n=3 replicates per treatment.",
+        "effect_pct": 53.853030573931704,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 35814,
+        "control_mean": 23298,
+        "treatment_variance": 133,
+        "control_variance": 101,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide (2 AN sprays followed by 1 fungicide spray cycle)",
+        "control_description": "Fungicide only (rotation between Daconex 1.2g/L and Cupraneb 2g/L)",
+        "moderators": {
+          "cultivar": "Hybrid-61",
+          "year": "Dry season",
+          "site": "Valencia, Trinidad",
+          "crop": "tomato"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Variance values extracted from table (assumed SD). n=3 replicates.",
+        "effect_pct": 53.72134947205769,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 23991,
+        "control_mean": 12270,
+        "treatment_variance": 123,
+        "control_variance": 155,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+        "control_description": "Water spray (untreated control)",
+        "moderators": {
+          "cultivar": "Hybrid-61",
+          "year": "Wet season",
+          "site": "Valencia, Trinidad",
+          "crop": "tomato"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season (June-December). n=3 replicates.",
+        "effect_pct": 95.52567237163814,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 28684,
+        "control_mean": 18706,
+        "treatment_variance": 101,
+        "control_variance": 123,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide",
+        "control_description": "Fungicide only",
+        "moderators": {
+          "cultivar": "Hybrid-61",
+          "year": "Wet season",
+          "site": "Valencia, Trinidad",
+          "crop": "tomato"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season. n=3 replicates.",
+        "effect_pct": 53.34117395488078,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 36410,
+        "control_mean": 21204,
+        "treatment_variance": 199,
+        "control_variance": 111,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+        "control_description": "Water spray (untreated control)",
+        "moderators": {
+          "cultivar": "Amrit",
+          "year": "Dry season",
+          "site": "Valencia, Trinidad",
+          "crop": "sweet pepper"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). n=3 replicates.",
+        "effect_pct": 71.71288436144124,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 45493,
+        "control_mean": 25601,
+        "treatment_variance": 101,
+        "control_variance": 156,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide",
+        "control_description": "Fungicide only",
+        "moderators": {
+          "cultivar": "Amrit",
+          "year": "Dry season",
+          "site": "Valencia, Trinidad",
+          "crop": "sweet pepper"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). n=3 replicates.",
+        "effect_pct": 77.70008984024062,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 25466,
+        "control_mean": 12992,
+        "treatment_variance": 107,
+        "control_variance": 122,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+        "control_description": "Water spray (untreated control)",
+        "moderators": {
+          "cultivar": "Amrit",
+          "year": "Wet season",
+          "site": "Valencia, Trinidad",
+          "crop": "sweet pepper"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season. n=3 replicates.",
+        "effect_pct": 96.01293103448276,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "Fresh fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 30227,
+        "control_mean": 20311,
+        "treatment_variance": 175,
+        "control_variance": 101,
+        "variance_type": "SD",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 6",
+        "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide",
+        "control_description": "Fungicide only",
+        "moderators": {
+          "cultivar": "Amrit",
+          "year": "Wet season",
+          "site": "Valencia, Trinidad",
+          "crop": "sweet pepper"
+        },
+        "confidence": "medium",
+        "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season. n=3 replicates.",
+        "effect_pct": 48.82083600019694,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 25815,
+      "control_mean": 16779,
+      "treatment_variance": 114,
+      "control_variance": 195,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+      "control_description": "Water spray (untreated control)",
+      "moderators": {
+        "cultivar": "Hybrid-61",
+        "year": "Dry season",
+        "site": "Valencia, Trinidad",
+        "crop": "tomato"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants (plot size 100 m\u00b2). Converted to kg/ha by multiplying by 100. Variance assumed SD based on figure captions, but table does not explicitly specify SD vs SE. n=3 replicates per treatment. [single-model fallback: Kimi only]",
+      "effect_pct": 53.853030573931704,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 35814,
+      "control_mean": 23298,
+      "treatment_variance": 133,
+      "control_variance": 101,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide (2 AN sprays followed by 1 fungicide spray cycle)",
+      "control_description": "Fungicide only (rotation between Daconex 1.2g/L and Cupraneb 2g/L)",
+      "moderators": {
+        "cultivar": "Hybrid-61",
+        "year": "Dry season",
+        "site": "Valencia, Trinidad",
+        "crop": "tomato"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Variance values extracted from table (assumed SD). n=3 replicates. [single-model fallback: Kimi only]",
+      "effect_pct": 53.72134947205769,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 23991,
+      "control_mean": 12270,
+      "treatment_variance": 123,
+      "control_variance": 155,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+      "control_description": "Water spray (untreated control)",
+      "moderators": {
+        "cultivar": "Hybrid-61",
+        "year": "Wet season",
+        "site": "Valencia, Trinidad",
+        "crop": "tomato"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season (June-December). n=3 replicates. [single-model fallback: Kimi only]",
+      "effect_pct": 95.52567237163814,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 28684,
+      "control_mean": 18706,
+      "treatment_variance": 101,
+      "control_variance": 123,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide",
+      "control_description": "Fungicide only",
+      "moderators": {
+        "cultivar": "Hybrid-61",
+        "year": "Wet season",
+        "site": "Valencia, Trinidad",
+        "crop": "tomato"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season. n=3 replicates. [single-model fallback: Kimi only]",
+      "effect_pct": 53.34117395488078,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 36410,
+      "control_mean": 21204,
+      "treatment_variance": 199,
+      "control_variance": 111,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+      "control_description": "Water spray (untreated control)",
+      "moderators": {
+        "cultivar": "Amrit",
+        "year": "Dry season",
+        "site": "Valencia, Trinidad",
+        "crop": "sweet pepper"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). n=3 replicates. [single-model fallback: Kimi only]",
+      "effect_pct": 71.71288436144124,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 45493,
+      "control_mean": 25601,
+      "treatment_variance": 101,
+      "control_variance": 156,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide",
+      "control_description": "Fungicide only",
+      "moderators": {
+        "cultivar": "Amrit",
+        "year": "Dry season",
+        "site": "Valencia, Trinidad",
+        "crop": "sweet pepper"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). n=3 replicates. [single-model fallback: Kimi only]",
+      "effect_pct": 77.70008984024062,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 25466,
+      "control_mean": 12992,
+      "treatment_variance": 107,
+      "control_variance": 122,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum foliar spray every 10 days",
+      "control_description": "Water spray (untreated control)",
+      "moderators": {
+        "cultivar": "Amrit",
+        "year": "Wet season",
+        "site": "Valencia, Trinidad",
+        "crop": "sweet pepper"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season. n=3 replicates. [single-model fallback: Kimi only]",
+      "effect_pct": 96.01293103448276,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 30227,
+      "control_mean": 20311,
+      "treatment_variance": 175,
+      "control_variance": 101,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 6",
+      "treatment_description": "0.5% Ascophyllum nodosum extract alternating with fungicide",
+      "control_description": "Fungicide only",
+      "moderators": {
+        "cultivar": "Amrit",
+        "year": "Wet season",
+        "site": "Valencia, Trinidad",
+        "crop": "sweet pepper"
+      },
+      "confidence": "low",
+      "notes": "Original data reported as kg per 200 plants. Converted to kg/ha (\u00d7100). Wet season. n=3 replicates. [single-model fallback: Kimi only]",
+      "effect_pct": 48.82083600019694,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 151.68,
+      "control_mean": 102.56,
+      "treatment_variance": 0.02,
+      "control_variance": 0.1,
+      "variance_type": "SD",
+      "n": 60,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "0.5% Ascophyllum nodosum extract (AN) foliar spray",
+      "control_description": "Water control",
+      "moderators": {
+        "cultivar": "Tomato Hybrid-61",
+        "site": "Greenhouse",
+        "treatment_level": "0.5%"
+      },
+      "confidence": "high",
+      "notes": "n=60 represents total plants from two trials (30 plants per trial). [from vision]",
+      "effect_pct": 47.893915756630264,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Leaf number",
+      "tissue": "leaf",
+      "treatment_mean": 71.64,
+      "control_mean": 34.8,
+      "treatment_variance": 0.01,
+      "control_variance": 0.12,
+      "variance_type": "SD",
+      "n": 60,
+      "unit": "count",
+      "data_source": "Table 2",
+      "treatment_description": "0.5% Ascophyllum nodosum extract (AN) foliar spray",
+      "control_description": "Water control",
+      "moderators": {
+        "cultivar": "Tomato Hybrid-61",
+        "site": "Greenhouse"
+      },
+      "confidence": "high",
+      "notes": "n=60 represents total plants from two trials. [from vision]",
+      "effect_pct": 105.86206896551727,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Root length",
+      "tissue": "root",
+      "treatment_mean": 30.07,
+      "control_mean": 14.44,
+      "treatment_variance": 0.02,
+      "control_variance": 0.03,
+      "variance_type": "SD",
+      "n": 60,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "0.5% Ascophyllum nodosum extract (AN) foliar spray",
+      "control_description": "Water control",
+      "moderators": {
+        "cultivar": "Tomato Hybrid-61",
+        "site": "Greenhouse"
+      },
+      "confidence": "high",
+      "notes": "n=60 represents total plants from two trials. [from vision]",
+      "effect_pct": 108.24099722991691,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total plant biomass",
+      "tissue": "whole plant",
+      "treatment_mean": 38.3,
+      "control_mean": 17.24,
+      "treatment_variance": 0.9,
+      "control_variance": 0.1,
+      "variance_type": "SD",
+      "n": 60,
+      "unit": "g",
+      "data_source": "Table 2",
+      "treatment_description": "0.5% Ascophyllum nodosum extract (AN) foliar spray",
+      "control_description": "Water control",
+      "moderators": {
+        "cultivar": "Tomato Hybrid-61",
+        "site": "Greenhouse"
+      },
+      "confidence": "high",
+      "notes": "Dry biomass. n=60 represents total plants from two trials. [from vision]",
+      "effect_pct": 122.15777262180976,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Bacterial leaf spot severity",
+      "tissue": "leaf",
+      "treatment_mean": 23.0,
+      "control_mean": 68.0,
+      "treatment_variance": 2.0,
+      "control_variance": 3.0,
+      "variance_type": "SD",
+      "n": 60,
+      "unit": "%",
+      "data_source": "Figure 1A",
+      "treatment_description": "0.5% Ascophyllum nodosum extract (AN) foliar spray",
+      "control_description": "Water control",
+      "moderators": {
+        "cultivar": "Tomato Hybrid-61",
+        "site": "Greenhouse"
+      },
+      "confidence": "medium",
+      "notes": "Values estimated from bar chart. n=60 plants. [from vision] [potential T/C swap - verify]",
+      "effect_pct": -66.17647058823529,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Early blight severity",
+      "tissue": "leaf",
+      "treatment_mean": 26.0,
+      "control_mean": 58.0,
+      "treatment_variance": 3.0,
+      "control_variance": 3.0,
+      "variance_type": "SD",
+      "n": 60,
+      "unit": "%",
+      "data_source": "Figure 1B",
+      "treatment_description": "0.5% Ascophyllum nodosum extract (AN) foliar spray",
+      "control_description": "Water control",
+      "moderators": {
+        "cultivar": "Tomato Hybrid-61",
+        "site": "Greenhouse"
+      },
+      "confidence": "medium",
+      "notes": "Values estimated from bar chart. n=60 plants. [from vision] [potential T/C swap - verify]",
+      "effect_pct": -55.172413793103445,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Chlorophyll content",
+      "tissue": "leaf",
+      "treatment_mean": 53.0,
+      "control_mean": 39.0,
+      "treatment_variance": 1.0,
+      "control_variance": 1.0,
+      "variance_type": "SD",
+      "n": 60,
+      "unit": "SPAD ratio units",
+      "data_source": "Figure 2",
+      "treatment_description": "0.5% Ascophyllum nodosum extract (AN) foliar spray",
+      "control_description": "Water control",
+      "moderators": {
+        "cultivar": "Tomato Hybrid-61",
+        "site": "Greenhouse"
+      },
+      "confidence": "medium",
+      "notes": "Values estimated from bar chart. n=60 plants. [from vision]",
+      "effect_pct": 35.8974358974359,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 258.15,
+      "control_mean": 167.79,
+      "treatment_variance": 1.14,
+      "control_variance": 1.95,
+      "variance_type": "SD",
+      "n": 12,
+      "unit": "kg",
+      "data_source": "Table 6",
+      "treatment_description": "A. nodosum extract (AN)",
+      "control_description": "Control (C)",
+      "moderators": {
+        "crop": "Tomato",
+        "season": "Dry season",
+        "site": "field"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 53.85303057393169,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of bearing clusters",
+      "tissue": "whole plant",
+      "treatment_mean": 19.0,
+      "control_mean": 11.05,
+      "treatment_variance": 0.01,
+      "control_variance": 0.02,
+      "variance_type": "SD",
+      "n": 12,
+      "unit": "count",
+      "data_source": "Table 7",
+      "treatment_description": "A. nodosum extract (AN)",
+      "control_description": "Control (C)",
+      "moderators": {
+        "crop": "Tomato"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 71.94570135746605,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of flowers per cluster",
+      "tissue": "cluster",
+      "treatment_mean": 17.87,
+      "control_mean": 9.1,
+      "treatment_variance": 0.02,
+      "control_variance": 0.11,
+      "variance_type": "SD",
+      "n": 12,
+      "unit": "count",
+      "data_source": "Table 7",
+      "treatment_description": "A. nodosum extract (AN)",
+      "control_description": "Control (C)",
+      "moderators": {
+        "crop": "Tomato"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 96.3736263736264,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of fruits per cluster",
+      "tissue": "cluster",
+      "treatment_mean": 9.88,
+      "control_mean": 5.21,
+      "treatment_variance": 0.11,
+      "control_variance": 0.01,
+      "variance_type": "SD",
+      "n": 12,
+      "unit": "count",
+      "data_source": "Table 7",
+      "treatment_description": "A. nodosum extract (AN)",
+      "control_description": "Control (C)",
+      "moderators": {
+        "crop": "Tomato"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 89.63531669865644,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Bacterial Spot severity",
+      "tissue": "leaf",
+      "treatment_mean": 30.24,
+      "control_mean": 77.16,
+      "treatment_variance": 1.35,
+      "control_variance": 1.22,
+      "variance_type": "SD",
+      "n": 12,
+      "unit": "% PDI",
+      "data_source": "Table 4",
+      "treatment_description": "A. nodosum extract (AN)",
+      "control_description": "Control",
+      "moderators": {
+        "crop": "Tomato",
+        "season": "Dry season"
+      },
+      "confidence": "high",
+      "notes": "[from vision] [potential T/C swap - verify]",
+      "effect_pct": -60.80870917573873,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 3,
+    "original_count": 20,
+    "final_count": 20
+  },
+  "verification_flags": [
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 25815,
+        "control_mean": 16779,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +53.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.44160371876815807,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 53.853030573931704
+      }
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 35814,
+        "control_mean": 23298,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +53.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.37136315407382586,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 53.72134947205769
+      }
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 23991,
+        "control_mean": 12270,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +95.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.512692259597349,
+            "note": "CV = 0.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 95.52567237163814
+      }
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 28684,
+        "control_mean": 18706,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +53.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.35211267605633806,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 53.34117395488078
+      }
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 36410,
+        "control_mean": 21204,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +71.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.5465531447404559,
+            "note": "CV = 0.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 71.71288436144124
+      }
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 45493,
+        "control_mean": 25601,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +77.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.22201217769766776,
+            "note": "CV = 0.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 77.70008984024062
+      }
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 25466,
+        "control_mean": 12992,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +96.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.42016806722689076,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 96.01293103448276
+      }
+    },
+    {
+      "element": "Fresh fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Fresh fruit yield",
+        "treatment_mean": 30227,
+        "control_mean": 20311,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +48.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.5789525920534621,
+            "note": "CV = 0.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 48.82083600019694
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "cv",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 151.68,
+        "control_mean": 102.56,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +47.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.013185654008438817,
+            "note": "CV = 0.0%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 60,
+            "note": "n=60 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 47.893915756630264
+      }
+    },
+    {
+      "element": "Leaf number",
+      "tissue": "leaf",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "cv",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Leaf number",
+        "treatment_mean": 71.64,
+        "control_mean": 34.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +105.9%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +105.9% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.013958682300390844,
+            "note": "CV = 0.0%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 60,
+            "note": "n=60 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 105.86206896551727
+      }
+    },
+    {
+      "element": "Root length",
+      "tissue": "root",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "cv",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Root length",
+        "treatment_mean": 30.07,
+        "control_mean": 14.44,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +108.2%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +108.2% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.06651147322913202,
+            "note": "CV = 0.1%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 60,
+            "note": "n=60 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 108.24099722991691
+      }
+    },
+    {
+      "element": "Total plant biomass",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "sample_size",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total plant biomass",
+        "treatment_mean": 38.3,
+        "control_mean": 17.24,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +122.2%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +122.2% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.349869451697128,
+            "note": "CV = 2.3%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 60,
+            "note": "n=60 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=25.1%"
+          }
+        },
+        "effect_pct": 122.15777262180976
+      }
+    },
+    {
+      "element": "Bacterial leaf spot severity",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Bacterial leaf spot severity",
+        "treatment_mean": 23.0,
+        "control_mean": 68.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -66.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 195.65217391304347,
+            "note": "Effect -66.2% violates expected direction; unswapped would be +195.7%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.695652173913043,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 60,
+            "note": "n=60 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=34.0%"
+          }
+        },
+        "effect_pct": -66.17647058823529,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -66.2%, corrected would be +195.7%"
+      }
+    },
+    {
+      "element": "Early blight severity",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Early blight severity",
+        "treatment_mean": 26.0,
+        "control_mean": 58.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -55.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 123.07692307692308,
+            "note": "Effect -55.2% violates expected direction; unswapped would be +123.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.538461538461538,
+            "note": "CV = 11.5%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 60,
+            "note": "n=60 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.1%"
+          }
+        },
+        "effect_pct": -55.172413793103445,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -55.2%, corrected would be +123.1%"
+      }
+    },
+    {
+      "element": "Chlorophyll content",
+      "tissue": "leaf",
+      "failed_checks": [
+        "sample_size",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Chlorophyll content",
+        "treatment_mean": 53.0,
+        "control_mean": 39.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +35.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.8867924528301887,
+            "note": "CV = 1.9%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 60,
+            "note": "n=60 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=16.8%"
+          }
+        },
+        "effect_pct": 35.8974358974359
+      }
+    },
+    {
+      "element": "Fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Fruit yield",
+        "treatment_mean": 258.15,
+        "control_mean": 167.79,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +53.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.44160371876815807,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 12,
+            "note": "n=12"
+          }
+        },
+        "effect_pct": 53.85303057393169
+      }
+    },
+    {
+      "element": "Number of bearing clusters",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Number of bearing clusters",
+        "treatment_mean": 19.0,
+        "control_mean": 11.05,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +71.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.05263157894736842,
+            "note": "CV = 0.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 12,
+            "note": "n=12"
+          }
+        },
+        "effect_pct": 71.94570135746605
+      }
+    },
+    {
+      "element": "Number of flowers per cluster",
+      "tissue": "cluster",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Number of flowers per cluster",
+        "treatment_mean": 17.87,
+        "control_mean": 9.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +96.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.11191941801902629,
+            "note": "CV = 0.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 12,
+            "note": "n=12"
+          }
+        },
+        "effect_pct": 96.3736263736264
+      }
+    },
+    {
+      "element": "Number of fruits per cluster",
+      "tissue": "cluster",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of fruits per cluster",
+        "treatment_mean": 9.88,
+        "control_mean": 5.21,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +89.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.1133603238866396,
+            "note": "CV = 1.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 12,
+            "note": "n=12"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": 89.63531669865644
+      }
+    },
+    {
+      "element": "Bacterial Spot severity",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Bacterial Spot severity",
+        "treatment_mean": 30.24,
+        "control_mean": 77.16,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -60.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 155.15873015873018,
+            "note": "Effect -60.8% violates expected direction; unswapped would be +155.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.464285714285715,
+            "note": "CV = 4.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 12,
+            "note": "n=12"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.7%"
+          }
+        },
+        "effect_pct": -60.80870917573873,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -60.8%, corrected would be +155.2%"
+      }
+    }
+  ]
+}

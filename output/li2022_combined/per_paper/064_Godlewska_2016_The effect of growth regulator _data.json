@@ -1,0 +1,728 @@
+{
+  "paper_id": "064_Godlewska_2016_The effect of growth regulator on dry ma",
+  "gt_rows": [
+    {
+      "pair": "514",
+      "crop": "grass mixure",
+      "CropCategory": "Others",
+      "product": "Kelpak",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 1.33,
+      "treat_mean": 1.42,
+      "ctrl_sd": 0.11757200000000001,
+      "treat_sd": 0.125528
+    },
+    {
+      "pair": "515",
+      "crop": "grass mixure",
+      "CropCategory": "Others",
+      "product": "Kelpak",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 1.06,
+      "treat_mean": 1.17,
+      "ctrl_sd": 0.09370400000000001,
+      "treat_sd": 0.103428
+    },
+    {
+      "pair": "516",
+      "crop": "grass mixure",
+      "CropCategory": "Others",
+      "product": "Kelpak",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.83,
+      "treat_mean": 0.89,
+      "ctrl_sd": 0.073372,
+      "treat_sd": 0.07867600000000001
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "cut": "1",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 5.0,
+      "treatment_mean": 5.2,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "cut": "2",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 4.1,
+      "treatment_mean": 4.2,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "cut": "3",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 2.8,
+      "treatment_mean": 3.0,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Tukan",
+        "species": "Dactylis glomerata",
+        "cut": "1",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 5.3,
+      "treatment_mean": 5.7,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Tukan",
+        "species": "Dactylis glomerata",
+        "cut": "2",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 4.0,
+      "treatment_mean": 4.3,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Tukan",
+        "species": "Dactylis glomerata",
+        "cut": "3",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 3.0,
+      "treatment_mean": 3.0,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Felopa",
+        "species": "Festulolium braunii",
+        "cut": "1",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 4.3,
+      "treatment_mean": 4.7,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Felopa",
+        "species": "Festulolium braunii",
+        "cut": "2",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 3.2,
+      "treatment_mean": 3.6,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Felopa",
+        "species": "Festulolium braunii",
+        "cut": "3",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 1.9,
+      "treatment_mean": 2.1,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Agula",
+        "species": "Festulolium braunii",
+        "cut": "1",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 4.7,
+      "treatment_mean": 5.1,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Agula",
+        "species": "Festulolium braunii",
+        "cut": "2",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 2.9,
+      "treatment_mean": 3.4,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract (2 dm³ ha⁻¹)",
+      "control_description": "No biostimulant (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Agula",
+        "species": "Festulolium braunii",
+        "cut": "3",
+        "period": "mean of 2010-2012"
+      },
+      "control_mean": 1.7,
+      "treatment_mean": 1.8,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "year": 2010,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 14.5,
+      "treatment_mean": 14.8,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "year": 2011,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 12.5,
+      "treatment_mean": 13.3,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "year": 2012,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 8.7,
+      "treatment_mean": 9.1,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Tukan",
+        "species": "Dactylis glomerata",
+        "year": 2010,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 13.3,
+      "treatment_mean": 14.6,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Tukan",
+        "species": "Dactylis glomerata",
+        "year": 2011,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 14.1,
+      "treatment_mean": 14.5,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Tukan",
+        "species": "Dactylis glomerata",
+        "year": 2012,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 9.5,
+      "treatment_mean": 10.0,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Felopa",
+        "species": "Festulolium braunii",
+        "year": 2010,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 13.4,
+      "treatment_mean": 14.0,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Felopa",
+        "species": "Festulolium braunii",
+        "year": 2011,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 7.6,
+      "treatment_mean": 9.2,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Felopa",
+        "species": "Festulolium braunii",
+        "year": 2012,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 7.2,
+      "treatment_mean": 8.1,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Agula",
+        "species": "Festulolium braunii",
+        "year": 2010,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 12.1,
+      "treatment_mean": 13.4,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Agula",
+        "species": "Festulolium braunii",
+        "year": 2011,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 8.1,
+      "treatment_mean": 9.6,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha⁻¹)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Agula",
+        "species": "Festulolium braunii",
+        "year": 2012,
+        "period": "sum of three cuts",
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 7.7,
+      "treatment_mean": 8.2,
+      "confidence": "high"
+    },
+    {
+      "element": "total nitrogen content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 1,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 17.1,
+      "treatment_mean": 19.0,
+      "confidence": "high"
+    },
+    {
+      "element": "total nitrogen content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 2,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 20.1,
+      "treatment_mean": 22.5,
+      "confidence": "high"
+    },
+    {
+      "element": "total nitrogen content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 3,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 22.4,
+      "treatment_mean": 24.2,
+      "confidence": "high"
+    },
+    {
+      "element": "total nitrogen content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "year": 2010,
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 19.5,
+      "treatment_mean": 21.8,
+      "confidence": "high"
+    },
+    {
+      "element": "NDF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 1,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 551.0,
+      "treatment_mean": 512.0,
+      "confidence": "high"
+    },
+    {
+      "element": "NDF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 2,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 566.0,
+      "treatment_mean": 535.0,
+      "confidence": "high"
+    },
+    {
+      "element": "NDF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 3,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 534.0,
+      "treatment_mean": 499.0,
+      "confidence": "high"
+    },
+    {
+      "element": "NDF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "year": 2011,
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 549.0,
+      "treatment_mean": 510.0,
+      "confidence": "high"
+    },
+    {
+      "element": "ADF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 1,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 360.0,
+      "treatment_mean": 341.0,
+      "confidence": "high"
+    },
+    {
+      "element": "ADF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 2,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 354.0,
+      "treatment_mean": 333.0,
+      "confidence": "high"
+    },
+    {
+      "element": "ADF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "cut": 3,
+        "year": "mean of 2010-2012"
+      },
+      "control_mean": 338.0,
+      "treatment_mean": 317.0,
+      "confidence": "high"
+    },
+    {
+      "element": "ADF content (g kg⁻¹ DM)",
+      "tissue": "shoot",
+      "unit": "g kg⁻¹ DM",
+      "n": 3,
+      "treatment_description": "Kelpak SL 2 dm³ ha⁻¹",
+      "control_description": "Control (0 dm³ ha⁻¹)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata",
+        "period": "mean of 2010-2012 and cuts 1-3",
+        "year": 2011,
+        "cut": "mean of 3 cuts"
+      },
+      "control_mean": 346.0,
+      "treatment_mean": 326.0,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by cut (1, 2, 3)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract applied at 2 dm³ ha⁻¹",
+      "control_description": "No biostimulant application (0 dm³ ha⁻¹ Kelpak SL)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata L.",
+        "cut": "1",
+        "years": "2010-2012 (mean)"
+      },
+      "control_mean": 5.0,
+      "treatment_mean": 5.2,
+      "confidence": "high"
+    },
+    {
+      "element": "yield by year (2010, 2011, 2012)",
+      "tissue": "shoot",
+      "unit": "t ha⁻¹",
+      "n": 3,
+      "treatment_description": "Kelpak SL seaweed extract applied at 2 dm³ ha⁻¹",
+      "control_description": "No biostimulant application (0 dm³ ha⁻¹ Kelpak SL)",
+      "moderators": {
+        "cultivar": "Amila",
+        "species": "Dactylis glomerata L.",
+        "year": "2010",
+        "cuts": "1-3 (mean)"
+      },
+      "control_mean": 14.5,
+      "treatment_mean": 14.8,
+      "confidence": "high"
+    }
+  ]
+}

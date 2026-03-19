@@ -1,0 +1,232 @@
+{
+  "paper_id": "064_Godlewska_2016_The effect of growth regulator on dry ma",
+  "matched_pairs": [
+    {
+      "gt_idx": 0,
+      "json_idx": 0,
+      "gt_pair": "514",
+      "gt_dose": "1",
+      "gt_crop": "grass mixture",
+      "element": "dry matter yield by cut (cut 1)",
+      "match_reason": "GT pair 514 corresponds to cut 1 dry matter yield. GT ctrl_mean=1.33 t ha-1 is much lower than any single-cultivar JSON obs (Amila cut 1 ctrl=5.0), suggesting Li 2022 extracted a cross-cultivar average or a different sub-table. However, effect direction and magnitude align reasonably: GT +6.77%, json Amila cut 1 +4.0%. Best available match is json_idx 0 (Amila, cut 1, mean of 2010-2012). Absolute means differ by ~3.8x (possible unit or averaging difference in source table).",
+      "gt_ctrl": 1.33,
+      "gt_treat": 1.42,
+      "gt_effect_pct": 6.77,
+      "ext_ctrl": 5.0,
+      "ext_treat": 5.2,
+      "ext_effect_pct": 4.0,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 1,
+      "json_idx": 1,
+      "gt_pair": "515",
+      "gt_dose": "1",
+      "gt_crop": "grass mixture",
+      "element": "dry matter yield by cut (cut 2)",
+      "match_reason": "GT pair 515 corresponds to cut 2 dry matter yield (declining ctrl value 1.06 < 1.33 matches ordering of cuts 1>2>3 in both GT and JSON). GT effect +10.38% vs JSON Amila cut 2 +2.4%; cross-cultivar average effect for cut 2 is ~9.9% which is closer to GT. Absolute means differ substantially (GT 1.06 vs JSON 4.1), suggesting Li 2022 used a different aggregation or sub-table.",
+      "gt_ctrl": 1.06,
+      "gt_treat": 1.17,
+      "gt_effect_pct": 10.38,
+      "ext_ctrl": 4.1,
+      "ext_treat": 4.2,
+      "ext_effect_pct": 2.44,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 2,
+      "json_idx": 2,
+      "gt_pair": "516",
+      "gt_dose": "1",
+      "gt_crop": "grass mixture",
+      "element": "dry matter yield by cut (cut 3)",
+      "match_reason": "GT pair 516 corresponds to cut 3 dry matter yield (smallest ctrl=0.83 consistent with cut 3 being lowest-yielding cut). GT effect +7.23% vs JSON Amila cut 3 +7.1% — closest effect match of all three cuts. Absolute means still differ (~3.4x). Cross-cultivar average effect for cut 3 is ~5.9%, also in range.",
+      "gt_ctrl": 0.83,
+      "gt_treat": 0.89,
+      "gt_effect_pct": 7.23,
+      "ext_ctrl": 2.8,
+      "ext_treat": 3.0,
+      "ext_effect_pct": 7.14,
+      "confidence": "medium"
+    }
+  ],
+  "unmatched_gt": [],
+  "unmatched_json": [
+    {
+      "json_idx": 3,
+      "element": "yield by cut (1, 2, 3) - Tukan, Dactylis glomerata, cut 1",
+      "reason": "Yield outcome but per-cultivar obs; Li 2022 appears to have used cross-cultivar averages — individual cultivar obs are redundant once Amila obs used for cut matching"
+    },
+    {
+      "json_idx": 4,
+      "element": "yield by cut (1, 2, 3) - Tukan, Dactylis glomerata, cut 2",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 5,
+      "element": "yield by cut (1, 2, 3) - Tukan, Dactylis glomerata, cut 3",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 6,
+      "element": "yield by cut (1, 2, 3) - Felopa, Festulolium braunii, cut 1",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 7,
+      "element": "yield by cut (1, 2, 3) - Felopa, Festulolium braunii, cut 2",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 8,
+      "element": "yield by cut (1, 2, 3) - Felopa, Festulolium braunii, cut 3",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 9,
+      "element": "yield by cut (1, 2, 3) - Agula, Festulolium braunii, cut 1",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 10,
+      "element": "yield by cut (1, 2, 3) - Agula, Festulolium braunii, cut 2",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 11,
+      "element": "yield by cut (1, 2, 3) - Agula, Festulolium braunii, cut 3",
+      "reason": "Yield outcome but per-cultivar obs; same reasoning as json_idx 3"
+    },
+    {
+      "json_idx": 12,
+      "element": "dry matter yield (t ha-1) - Amila, Dactylis glomerata, year 2010",
+      "reason": "Yield outcome (annual total, sum of 3 cuts) — different aggregation level from GT which is per-cut; GT has only 3 rows (cuts 1, 2, 3) not per-year rows"
+    },
+    {
+      "json_idx": 13,
+      "element": "dry matter yield (t ha-1) - Amila, Dactylis glomerata, year 2011",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 14,
+      "element": "dry matter yield (t ha-1) - Amila, Dactylis glomerata, year 2012",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 15,
+      "element": "dry matter yield (t ha-1) - Tukan, Dactylis glomerata, year 2010",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 16,
+      "element": "dry matter yield (t ha-1) - Tukan, Dactylis glomerata, year 2011",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 17,
+      "element": "dry matter yield (t ha-1) - Tukan, Dactylis glomerata, year 2012",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 18,
+      "element": "dry matter yield (t ha-1) - Felopa, Festulolium braunii, year 2010",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 19,
+      "element": "dry matter yield (t ha-1) - Felopa, Festulolium braunii, year 2011",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 20,
+      "element": "dry matter yield (t ha-1) - Felopa, Festulolium braunii, year 2012",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 21,
+      "element": "dry matter yield (t ha-1) - Agula, Festulolium braunii, year 2010",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 22,
+      "element": "dry matter yield (t ha-1) - Agula, Festulolium braunii, year 2011",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 23,
+      "element": "dry matter yield (t ha-1) - Agula, Festulolium braunii, year 2012",
+      "reason": "Yield outcome, per-year aggregation — does not correspond to any GT row"
+    },
+    {
+      "json_idx": 24,
+      "element": "total nitrogen content (g kg-1 DM) - Amila, cut 1",
+      "reason": "Non-yield outcome: forage quality (N content)"
+    },
+    {
+      "json_idx": 25,
+      "element": "total nitrogen content (g kg-1 DM) - Amila, cut 2",
+      "reason": "Non-yield outcome: forage quality (N content)"
+    },
+    {
+      "json_idx": 26,
+      "element": "total nitrogen content (g kg-1 DM) - Amila, cut 3",
+      "reason": "Non-yield outcome: forage quality (N content)"
+    },
+    {
+      "json_idx": 27,
+      "element": "total nitrogen content (g kg-1 DM) - Amila, year 2010",
+      "reason": "Non-yield outcome: forage quality (N content)"
+    },
+    {
+      "json_idx": 28,
+      "element": "NDF content (g kg-1 DM) - Amila, cut 1",
+      "reason": "Non-yield outcome: forage quality (neutral detergent fiber)"
+    },
+    {
+      "json_idx": 29,
+      "element": "NDF content (g kg-1 DM) - Amila, cut 2",
+      "reason": "Non-yield outcome: forage quality (neutral detergent fiber)"
+    },
+    {
+      "json_idx": 30,
+      "element": "NDF content (g kg-1 DM) - Amila, cut 3",
+      "reason": "Non-yield outcome: forage quality (neutral detergent fiber)"
+    },
+    {
+      "json_idx": 31,
+      "element": "NDF content (g kg-1 DM) - Amila, year 2011",
+      "reason": "Non-yield outcome: forage quality (neutral detergent fiber)"
+    },
+    {
+      "json_idx": 32,
+      "element": "ADF content (g kg-1 DM) - Amila, cut 1",
+      "reason": "Non-yield outcome: forage quality (acid detergent fiber)"
+    },
+    {
+      "json_idx": 33,
+      "element": "ADF content (g kg-1 DM) - Amila, cut 2",
+      "reason": "Non-yield outcome: forage quality (acid detergent fiber)"
+    },
+    {
+      "json_idx": 34,
+      "element": "ADF content (g kg-1 DM) - Amila, cut 3",
+      "reason": "Non-yield outcome: forage quality (acid detergent fiber)"
+    },
+    {
+      "json_idx": 35,
+      "element": "ADF content (g kg-1 DM) - Amila, year 2011",
+      "reason": "Non-yield outcome: forage quality (acid detergent fiber)"
+    },
+    {
+      "json_idx": 36,
+      "element": "yield by cut (1, 2, 3) - Amila, Dactylis glomerata L., cut 1 (duplicate)",
+      "reason": "Duplicate of json_idx 0 (same cultivar, cut, period); already used for GT match"
+    },
+    {
+      "json_idx": 37,
+      "element": "yield by year (2010, 2011, 2012) - Amila, Dactylis glomerata L., year 2010",
+      "reason": "Yield outcome but per-year aggregation — does not correspond to any GT per-cut row; also apparent duplicate of json_idx 12"
+    }
+  ],
+  "notes": "This paper studies Kelpak SL seaweed extract on a grass mixture (Dactylis glomerata and Festulolium braunii cultivars) in a 3-year experiment (2010-2012) with 3 cuts per year. The GT has only 3 rows corresponding to cuts 1, 2, and 3 with small absolute values (ctrl: 1.33, 1.06, 0.83 t ha-1) that do not match any single JSON obs directly — all JSON per-cut yields are 1.9-5.3 t ha-1. This ~3-4x discrepancy in absolute means suggests Li 2022 either (a) averaged across all 4 cultivars and divided by number of years yielding a different aggregation, or (b) extracted from a different summary table not captured in our JSON obs. Effect sizes are partially consistent: cut 3 effect matches well (GT +7.23% vs JSON Amila cut 3 +7.14%), cuts 1-2 are less well matched. Matches are assigned by cut number ordering (GT pairs 514/515/516 = cuts 1/2/3) with low-to-medium confidence due to the absolute mean discrepancy. The JSON contains many non-yield forage quality observations (N, NDF, ADF content) that are correctly excluded from matching."
+}

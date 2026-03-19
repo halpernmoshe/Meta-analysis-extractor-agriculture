@@ -1,0 +1,1246 @@
+{
+  "paper_id": "44_Cakmak_1997",
+  "recon": {
+    "paper_id": "44_Cakmak_1997",
+    "warnings": [
+      "This is a split-plot design with Zn treatments as main plots and cultivars as subplots - extract carefully by treatment type",
+      "Table 3 contains percentage changes in brackets that are NOT raw data - extract only the actual values before brackets",
+      "Four different Zn treatments: control, soil, foliar, and soil+foliar - each needs separate extraction vs control",
+      "Data spans two growing seasons (2010-2011 and 2012-2013) which may need separate extraction",
+      "LSD values are provided for statistical comparisons but not as variance measures",
+      "Phytate:Zn molar ratio is a derived measure, not primary grain Zn concentration",
+      "Multiple cultivars tested - need to extract by cultivar within each Zn treatment",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "ent had a loamy texture,a pH of 7.4\u00b10.12(mean \u00b1standard error)and a SOM of 8.2\u00b1\\n\\n\\n335\\n\\n\\n$0.12\\\\m",
+    "variance_confidence": "high",
+    "control_definition": "non Zn application (control) - no zinc fertilizer applied",
+    "treatment_definition": "Three Zn treatments: i) soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121), ii) foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages), iii) soil+foliar Zn application (combination of both)",
+    "tables_with_target_data": [
+      "Table 3"
+    ],
+    "potential_tc_confusion": "Need to extract each Zn treatment separately against the same control, not compare treatments against each other",
+    "experimental_design": "split-plot",
+    "sample_size_found": 3,
+    "sample_size_source": "The experiment was arranged as a split plot design with three replications",
+    "factorial_structure": "[\"Zn treatment\", \"cultivar\", \"year\"]",
+    "extraction_guidance": "Extract grain Zn concentration (mg/kg) from Table 3 'Total grain Zn (mg kg-1)' section. For each cultivar and year, extract Control vs Soil, Control vs Foliar, and Control vs Soil+Foliar as separate comparisons. Use standard errors provided with each mean value. Ignore percentage changes in brackets - extract only the actual concentration values.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Zinc (Zn) concentration of bread wheat grown under Mediterranean conditions as affected by genotype and soil/foliar Zn application\",\n        \"species\": \"Triticum aestivum L. (bread wheat)\",\n        \"experimental_system\": \"field experiment\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This is a split-plot design with Zn treatments as main plots and cultivars as subplots - extract carefully by treatment type\",\n        \"Table 3 contains percentage changes in brackets that are NOT raw data - extract only the actual values before brackets\",\n        \"Four different Zn treatments: control, soil, foliar, and soil+foliar - each needs separate extraction vs control\",\n        \"Data spans two growing seasons (2010-2011 and 2012-2013) which may need separate extraction\",\n        \"LSD values are provided for statistical comparisons but not as variance measures\",\n        \"Phytate:Zn molar ratio is a derived measure, not primary grain Zn concentration\",\n        \"Multiple cultivars tested - need to extract by cultivar within each Zn treatment\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"Values are presented as mean \u00b1 standard error throughout the text and tables, e.g., '2138\u00b134kg ha\u22121'\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"non Zn application (control) - no zinc fertilizer applied\",\n        \"treatment_definition\": \"Three Zn treatments: i) soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121), ii) foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages), iii) soil+foliar Zn application (combination of both)\",\n        \"identification_method\": \"In Table 3, Control column vs Soil, Foliar, and S+F columns\",\n        \"potential_confusion\": \"Need to extract each Zn treatment separately against the same control, not compare treatments against each other\"\n    },\n    \"sample_size\": {\n ",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Pedigree details of wheat breeding lines - no outcome data",
+      "Table 2": "ANOVA summary table showing significance levels - no raw data",
+      "Table 3": "Mean values for grain Zn concentration, Zn uptake, grain yield and phytate:Zn ratio by cultivar and treatment"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "Total grain Zn (mg kg-1)",
+        "Total grain Zn (g ha-1)",
+        "Grain yield (kg ha-1)",
+        "Phytate:Zn ratio"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 24,
+  "kimi_obs": 0,
+  "gemini_obs": 14,
+  "matched_obs": 9,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 24",
+  "disagreements": [
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Total grain Zn (mg kg-1)",
+        "tissue": "grain",
+        "treatment_mean": 49,
+        "control_mean": 14,
+        "treatment_variance": 2,
+        "control_variance": 2,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "Soil+foliar Zn application (combined)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": 250.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total grain Zn (g ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Total grain Zn (g ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 130,
+        "control_mean": 106,
+        "treatment_variance": 10,
+        "control_variance": 10,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2010-2011",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": 22.641509433962266,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total grain Zn (g ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Total grain Zn (g ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 160,
+        "control_mean": 106,
+        "treatment_variance": 8,
+        "control_variance": 10,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Soil+foliar Zn application (combined)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2010-2011",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": 50.943396226415096,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total grain Zn (g ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Total grain Zn (g ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 82,
+        "control_mean": 52,
+        "treatment_variance": 9,
+        "control_variance": 7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": 57.692307692307686,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total grain Zn (g ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Total grain Zn (g ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 184,
+        "control_mean": 52,
+        "treatment_variance": 6,
+        "control_variance": 7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": 253.84615384615384,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total grain Zn (g ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Total grain Zn (g ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 169,
+        "control_mean": 52,
+        "treatment_variance": 20,
+        "control_variance": 7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Soil+foliar Zn application (combined)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": 225.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Grain yield (kg ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 2278,
+        "control_mean": 2341,
+        "treatment_variance": 94,
+        "control_variance": 127,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2010-2011",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -2.6911576249466043,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Grain yield (kg ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 2796,
+        "control_mean": 2341,
+        "treatment_variance": 232,
+        "control_variance": 127,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Soil+foliar Zn application (combined)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2010-2011",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": 19.43613840239214,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Grain yield (kg ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 3494,
+        "control_mean": 3702,
+        "treatment_variance": 86,
+        "control_variance": 90,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -5.618584548892491,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Grain yield (kg ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 3658,
+        "control_mean": 3702,
+        "treatment_variance": 57,
+        "control_variance": 90,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -1.1885467314964884,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Grain yield (kg ha-1)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 3480,
+        "control_mean": 3702,
+        "treatment_variance": 254,
+        "control_variance": 90,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Soil+foliar Zn application (combined)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -5.9967585089141,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "Phytate:Zn ratio",
+        "tissue": "grain",
+        "treatment_mean": 15,
+        "control_mean": 17,
+        "treatment_variance": 1,
+        "control_variance": 1,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Soil+foliar Zn application (combined)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2010-2011",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -11.76470588235294,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "Phytate:Zn ratio",
+        "tissue": "grain",
+        "treatment_mean": 28,
+        "control_mean": 49,
+        "treatment_variance": 2,
+        "control_variance": 3,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -42.857142857142854,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "Phytate:Zn ratio",
+        "tissue": "grain",
+        "treatment_mean": 14,
+        "control_mean": 49,
+        "treatment_variance": 1,
+        "control_variance": 3,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -71.42857142857143,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "Phytate:Zn ratio",
+        "tissue": "grain",
+        "treatment_mean": 14,
+        "control_mean": 49,
+        "treatment_variance": 1,
+        "control_variance": 3,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Soil+foliar Zn application (combined)",
+        "control_description": "Non Zn application (control)",
+        "moderators": {
+          "cultivar": "INIAV-1",
+          "year": "2012-2013",
+          "site": "Elvas, Portugal"
+        },
+        "confidence": "high",
+        "notes": "Split-plot design with 3 replications",
+        "effect_pct": -71.42857142857143,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "treatment_mean": 33,
+      "control_mean": 46,
+      "treatment_variance": 2,
+      "control_variance": 4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2010-2011",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": -28.26086956521739,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "treatment_mean": 57,
+      "control_mean": 46,
+      "treatment_variance": 3,
+      "control_variance": 4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2010-2011",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 23.91304347826087,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "treatment_mean": 58,
+      "control_mean": 46,
+      "treatment_variance": 6,
+      "control_variance": 4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Soil+foliar Zn application (combined)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2010-2011",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 26.08695652173913,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "treatment_mean": 24,
+      "control_mean": 14,
+      "treatment_variance": 2,
+      "control_variance": 2,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2012-2013",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 71.42857142857143,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "treatment_mean": 51,
+      "control_mean": 14,
+      "treatment_variance": 1,
+      "control_variance": 2,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2012-2013",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 264.2857142857143,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total grain Zn (g ha-1)",
+      "tissue": "grain",
+      "treatment_mean": 110,
+      "control_mean": 106,
+      "treatment_variance": 8,
+      "control_variance": 10,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2010-2011",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 3.7735849056603774,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (kg ha-1)",
+      "tissue": "grain",
+      "treatment_mean": 3370,
+      "control_mean": 2341,
+      "treatment_variance": 199,
+      "control_variance": 127,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2010-2011",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 43.95557454079454,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "treatment_mean": 23,
+      "control_mean": 17,
+      "treatment_variance": 2,
+      "control_variance": 1,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Soil Zn application (50kg ZnSO4\u00b77H2O ha\u22121)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2010-2011",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 35.294117647058826,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "treatment_mean": 14,
+      "control_mean": 17,
+      "treatment_variance": 1,
+      "control_variance": 1,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application (0.5% ZnSO4\u00b77H2O at anthesis and milk stages)",
+      "control_description": "Non Zn application (control)",
+      "moderators": {
+        "cultivar": "INIAV-1",
+        "year": "2010-2011",
+        "site": "Elvas, Portugal"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": -17.647058823529413,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 9,
+    "final_count": 9
+  },
+  "verification_flags": [
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total grain Zn (mg kg-1)",
+        "treatment_mean": 33,
+        "control_mean": 46,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -28.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 39.393939393939384,
+            "note": "Effect -28.3% violates expected direction; unswapped would be +39.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.497277621629559,
+            "note": "CV = 10.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": -28.26086956521739,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -28.3%, corrected would be +39.4%"
+      }
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total grain Zn (mg kg-1)",
+        "treatment_mean": 57,
+        "control_mean": 46,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.11605688194146,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 23.91304347826087
+      }
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total grain Zn (mg kg-1)",
+        "treatment_mean": 58,
+        "control_mean": 46,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +26.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.917766974850455,
+            "note": "CV = 17.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.5%"
+          }
+        },
+        "effect_pct": 26.08695652173913
+      }
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total grain Zn (mg kg-1)",
+        "treatment_mean": 24,
+        "control_mean": 14,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +71.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.433756729740644,
+            "note": "CV = 14.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.5%"
+          }
+        },
+        "effect_pct": 71.42857142857143
+      }
+    },
+    {
+      "element": "Total grain Zn (mg kg-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude"
+      ],
+      "details": {
+        "element": "Total grain Zn (mg kg-1)",
+        "treatment_mean": 51,
+        "control_mean": 14,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +264.3%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +264.3% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.396178054056622,
+            "note": "CV = 3.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": 264.2857142857143
+      }
+    },
+    {
+      "element": "Total grain Zn (g ha-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total grain Zn (g ha-1)",
+        "treatment_mean": 110,
+        "control_mean": 106,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.596733145955472,
+            "note": "CV = 12.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": 3.7735849056603774
+      }
+    },
+    {
+      "element": "Grain yield (kg ha-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield (kg ha-1)",
+        "treatment_mean": 3370,
+        "control_mean": 2341,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +44.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.227837112943815,
+            "note": "CV = 10.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.0%"
+          }
+        },
+        "effect_pct": 43.95557454079454
+      }
+    },
+    {
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Phytate:Zn ratio",
+        "treatment_mean": 23,
+        "control_mean": 17,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +35.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.061311370164148,
+            "note": "CV = 15.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.0%"
+          }
+        },
+        "effect_pct": 35.294117647058826
+      }
+    },
+    {
+      "element": "Phytate:Zn ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Phytate:Zn ratio",
+        "treatment_mean": 14,
+        "control_mean": 17,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -17.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 21.42857142857143,
+            "note": "Effect -17.6% violates expected direction; unswapped would be +21.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.371791482634837,
+            "note": "CV = 12.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.5%"
+          }
+        },
+        "effect_pct": -17.647058823529413,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -17.6%, corrected would be +21.4%"
+      }
+    }
+  ]
+}

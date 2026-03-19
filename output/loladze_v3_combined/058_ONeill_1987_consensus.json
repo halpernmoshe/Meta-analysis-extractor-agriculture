@@ -1,0 +1,4165 @@
+{
+  "paper_id": "058_ONeill_1987",
+  "recon": {
+    "paper_id": "058_ONeill_1987",
+    "warnings": [
+      "NO VARIANCE DATA REPORTED: Tables present means only, with no SE, SD, or other variance measures - only P-values from ANOVA",
+      "NUTRIENT CONCENTRATION DATA IS IN LOWER HALF OF TABLE 2 - the table is split into two sections: 'Total nutrient content (mg) per plant' and 'Nutrient concentration (mg g-1 dry weight)' - both are in the same table",
+      "Table 2 header states '642 \u00b5l l-1' for elevated CO2 level but text consistently states 692 \u00b5l l-1 - this is likely a typo in the table header; use 692 as the elevated level",
+      "Abscised leaves were NOT included in nutrient analysis - this may slightly underestimate total plant nutrient content in both treatments",
+      "The paper notes seedlings were infested with foliar fungal parasite (powdery mildew) in both treatments, which may have affected results",
+      "Nutrient content at start of experiment was not measured, so 'final net nutrient content' is used as estimate of uptake - authors acknowledge this limitation",
+      "Category grouping in Table 2 (I, II, III) refers to statistical patterns, not element type - extraction should use individual element data regardless of category",
+      "N=6 per CO2 level for plant growth/nutrient data; microbial data also n=6 per CO2 level",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: IMAGE-TABLES - Tables are images, not text",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "none",
+    "variance_source": "Tables present means with P-values only. ANOVA p-values stated: 'P = probability that there was no difference due to CO2 concentration'. No SE, SD, or confidence intervals are reported in any table.",
+    "variance_confidence": "high",
+    "control_definition": "Ambient CO2 at 367 \u00b5l l-1 (mean \u00b1 42.5 \u00b5l l-1 during simulated day period)",
+    "treatment_definition": "Elevated CO2 at 692 \u00b5l l-1 (mean \u00b1 37.2 \u00b5l l-1 during simulated day period; programmed target was 700 \u00b5l l-1)",
+    "tables_with_target_data": [
+      "Table 2"
+    ],
+    "potential_tc_confusion": "Table 2 header shows '642 \u00b5l l-1' instead of '692 \u00b5l l-1' for elevated treatment - this is a typo. Verify correct assignment: lower CO2 (367) = control, higher CO2 (692) = treatment.",
+    "experimental_design": "simple",
+    "sample_size_found": 6,
+    "sample_size_source": "Table 1 footnote: '(n=6)'; Table 3: 'means of six seedlings per CO2 level'; 12 planted boxes randomly assigned to two chambers (6 per CO2 level)",
+    "factorial_structure": "[\"CO2\"]",
+    "extraction_guidance": "1. PRIMARY TARGET: Lower section of Table 2 - 'Nutrient concentration (mg g-1 dry weight)' - these are the mineral concentration values needed for dilution effect meta-analysis. 2. Table 2 is formatted as a combined table with TWO data sections stacked vertically - the top half shows total content (mg/plant) and the bottom half shows concentration (mg/g DW). Extract from the CONCENTRATION section. 3. Control = 367 \u00b5l l-1 column; Elevated = 692 \u00b5l l-1 column (ignore the '642' typo in table header). 4. NO VARIANCE DATA available - cannot extract SE/SD. Can only extract means and P-values. 5. CRITICAL DESIGN FLAW: Only one chamber per CO2 level (n=1 true replication at chamber level), though n=6 seedlings per treatment are reported. For meta-analysis purposes, note that pseudo-replication is a concern. 6. Nutrient concentration values show dilution effect for Category I elements (N, S, B all significantly lower at elevated CO2) but not for Category II and III elements. 7. Tissue analyzed is whole-plant composite of leaf+stem+root ground together, OR check if individual tissue data exists - paper states 'Plant tissues were ground' collectively, suggesting whole-plant analysis. 8. Do not extract data from Table 3 (microbial data) or Table 1 (growth data only) for mineral concentration meta-analysis.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Elevated atmospheric CO2 effects on seedling growth, nutrient uptake, and rhizosphere bacterial populations of Liriodendron tulipifera L.\",\n        \"species\": \"Liriodendron tulipifera L. (yellow-poplar)\",\n        \"experimental_system\": \"growth chamber\",\n        \"co2_levels\": {\"control\": \"367\", \"elevated\": \"692\"}\n    },\n    \"warnings\": [\n        \"NO VARIANCE DATA REPORTED: Tables present means only, with no SE, SD, or other variance measures - only P-values from ANOVA\",\n        \"NUTRIENT CONCENTRATION DATA IS IN LOWER HALF OF TABLE 2 - the table is split into two sections: 'Total nutrient content (mg) per plant' and 'Nutrient concentration (mg g-1 dry weight)' - both are in the same table\",\n        \"Table 2 header states '642 \u00b5l l-1' for elevated CO2 level but text consistently states 692 \u00b5l l-1 - this is likely a typo in the table header; use 692 as the elevated level\",\n        \"Abscised leaves were NOT included in nutrient analysis - this may slightly underestimate total plant nutrient content in both treatments\",\n        \"The paper notes seedlings were infested with foliar fungal parasite (powdery mildew) in both treatments, which may have affected results\",\n        \"Nutrient content at start of experiment was not measured, so 'final net nutrient content' is used as estimate of uptake - authors acknowledge this limitation\",\n        \"Category grouping in Table 2 (I, II, III) refers to statistical patterns, not element type - extraction should use individual element data regardless of category\",\n        \"N=6 per CO2 level for plant growth/nutrient data; microbial data also n=6 per CO2 level\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"none\",\n        \"source\": \"Tables present means with P-values only. ANOVA p-values stated: 'P = probability that there was no difference due to CO2 concentration'. No SE, SD, or confidence intervals are reported in any table.\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 3"
+    ],
+    "table_descriptions": {
+      "Table 1": "Seedling growth parameters (dry weights, leaf area, stem height/diameter, root-to-shoot ratio) - biomass data only, no mineral concentrations",
+      "Table 2": "Nutrient content of yellow-poplar seedlings - contains both total nutrient content (mg per plant) AND nutrient concentration (mg g-1 dry weight) for N, S, B, P, K, Cu, Al, Fe, Ca, Mg, Sr, Ba, Zn, Mn at two CO2 levels with P-values",
+      "Table 3": "Rhizosphere microbial populations (total bacteria, PDB, NH4-oxidizers, NO2-oxidizers) at final harvest - not mineral concentration data"
+    },
+    "figures_with_data": [
+      "Figure 1"
+    ],
+    "outcome_variables_detected": {
+      "Table 2": [
+        "N (total content mg/plant)",
+        "S (total content mg/plant)",
+        "B (total content mg/plant)",
+        "P (total content mg/plant)",
+        "K (total content mg/plant)",
+        "Cu (total content mg/plant)",
+        "Al (total content mg/plant)",
+        "Fe (total content mg/plant)",
+        "Ca (total content mg/plant)",
+        "Mg (total content mg/plant)",
+        "Sr (total content mg/plant)",
+        "Ba (total content mg/plant)",
+        "Zn (total content mg/plant)",
+        "Mn (total content mg/plant)",
+        "N (concentration mg/g DW)",
+        "S (concentration mg/g DW)",
+        "B (concentration mg/g DW)",
+        "P (concentration mg/g DW)",
+        "K (concentration mg/g DW)",
+        "Cu (concentration mg/g DW)",
+        "Al (concentration mg/g DW)",
+        "Fe (concentration mg/g DW)",
+        "Ca (concentration mg/g DW)",
+        "Mg (concentration mg/g DW)",
+        "Sr (concentration mg/g DW)",
+        "Ba (concentration mg/g DW)",
+        "Zn (concentration mg/g DW)",
+        "Mn (concentration mg/g DW)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Use vision API to read table images",
+      "Be careful with alignment of columns/rows",
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'",
+      "NESTED-TABLES - Tables have hierarchical structure",
+      "Parse carefully - headers may span multiple columns",
+      "Watch for subtotals vs individual measurements"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": true,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 82,
+  "kimi_obs": 54,
+  "gemini_obs": 0,
+  "matched_obs": 54,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 54/82 matched",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "N (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "N (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 636.0,
+        "control_mean": 544.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category I nutrient. P>0.2 (not significantly different). Whole-plant composite (leaf+stem+root). Abscised leaves not included. Table 2 header shows '642 \u00b5l l-1' but correct elevated level is 692 \u00b5l l-1 per text. Only one chamber per CO2 level - pseudo-replication concern.",
+        "effect_pct": 16.911764705882355,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "S (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "S (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 102.0,
+        "control_mean": 76.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category I nutrient. P=0.13 (not significantly different). Whole-plant composite. Abscised leaves not included. Pseudo-replication concern (one chamber per treatment).",
+        "effect_pct": 34.21052631578947,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "B (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "B (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.74,
+        "control_mean": 0.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "medium",
+        "notes": "Category I nutrient. P=0.06. OCR reading: control=0.50, elevated=0.74. Values are small and may have OCR errors. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 48.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "P (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "P (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 86.0,
+        "control_mean": 61.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category II nutrient. P=0.05. Uptake proportional to growth. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 40.98360655737705,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "K (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "K (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 790.0,
+        "control_mean": 479.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category II nutrient. P=0.02. Uptake proportional to growth. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 64.92693110647181,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Cu (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Cu (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 1.71,
+        "control_mean": 1.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "medium",
+        "notes": "Category II nutrient. P=0.05. OCR values: control=1.03, elevated=1.71. Whole-plant composite. Pseudo-replication concern. Values seem high for Cu in mg/plant - may be \u00b5g, but paper states mg.",
+        "effect_pct": 66.01941747572815,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Al (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Al (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 40.4,
+        "control_mean": 22.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category II nutrient. P=0.03. Uptake proportional to growth. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 81.1659192825112,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Fe (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Fe (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 401.0,
+        "control_mean": 258.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category II nutrient. P=0.06. Uptake proportional to growth. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 55.42635658914728,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Ca (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Ca (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 129.0,
+        "control_mean": 86.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P=0.07 (not statistically significant but trend toward higher at elevated CO2). Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 50.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Mg (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Mg (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 1.2,
+        "control_mean": 0.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "medium",
+        "notes": "Category III nutrient. P=0.07. OCR values: control=0.80, elevated=1.2. These values seem very low for Mg in mg/plant - may be in different units or OCR error. Text states values are in mg/plant. Flag for manual review. Pseudo-replication concern.",
+        "effect_pct": 49.999999999999986,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sr (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Sr (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 4.5,
+        "control_mean": 3.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P=0.06. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 50.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Ba (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Ba (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 3.8,
+        "control_mean": 2.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P=0.09. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 65.21739130434783,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Zn (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 19.0,
+        "control_mean": 12.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P>0.20. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": 58.333333333333336,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Mn (total content mg/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Mn (total content mg/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/plant",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "low",
+        "notes": "Category III nutrient. Mn total content values not clearly recoverable from the OCR text in Table 2 upper section. The scanned table text is ambiguous for this row. Flag for manual review. Listed in category III alongside Zn but numeric values for total Mn content per plant were not clearly parsed from the OCR output.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "N (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "N (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 10.3,
+        "control_mean": 15.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category I nutrient. P=0.002 (significantly lower at elevated CO2 - dilution effect). Control=15.4, Elevated=10.3. Clear dilution effect. Whole-plant composite. Pseudo-replication concern. Leaf N ambient=1.70%, elevated=1.26% also mentioned in text.",
+        "effect_pct": -33.11688311688311,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "S (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "S (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 1.67,
+        "control_mean": 2.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category I nutrient. P=0.001 (significantly lower at elevated CO2 - dilution effect). Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -21.962616822429915,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "B (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "B (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.012,
+        "control_mean": 0.014,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "medium",
+        "notes": "Category I nutrient. P=0.020. OCR values: control=0.014, elevated=0.012. Dilution effect observed. Small values may have OCR error. Whole-plant composite. Pseudo-replication concern. Flag for manual review.",
+        "effect_pct": -14.285714285714285,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "P (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "P (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 1.42,
+        "control_mean": 1.87,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category II nutrient. P=0.10 (not significantly different in concentration). Classified as Category II (uptake proportional to growth) so concentration not significantly diluted. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -24.064171122994658,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "K (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "K (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 12.9,
+        "control_mean": 13.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category II nutrient. P>0.20 (not significantly different in concentration). Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -7.194244604316546,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Cu (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Cu (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.027,
+        "control_mean": 0.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "medium",
+        "notes": "Category II nutrient. P>0.20. OCR values: control=0.030, elevated=0.027. Small values may have OCR error. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -9.999999999999998,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Al (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Al (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.646,
+        "control_mean": 0.672,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category II nutrient. P>0.20. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -3.869047619047622,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Fe (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Fe (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 6.049,
+        "control_mean": 7.04,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "medium",
+        "notes": "Category II nutrient. P=0.12 (not significantly different). OCR value for elevated shows 6.049 - the decimal placement may be OCR artifact; likely 6.05. Control=7.04. Whole-plant composite. Pseudo-replication concern. Flag for manual review.",
+        "effect_pct": -14.076704545454541,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Ca (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Ca (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 2.11,
+        "control_mean": 2.39,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P=0.08. Slight decrease in concentration but not statistically significant. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -11.715481171548127,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Mg (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Mg (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.019,
+        "control_mean": 0.023,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "medium",
+        "notes": "Category III nutrient. P=0.11. OCR values: control=0.023, elevated=0.019. Values seem very low for Mg concentration in mg/g DW - typical Mg in plants is ~1-3 mg/g. These values may be OCR errors or may be in different units. Flag for manual review. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -17.391304347826086,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sr (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Sr (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.074,
+        "control_mean": 0.09,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P>0.20. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -17.77777777777778,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Ba (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Ba (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.06,
+        "control_mean": 0.068,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P>0.20. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -11.764705882352951,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Zn (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": 0.317,
+        "control_mean": 0.341,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "high",
+        "notes": "Category III nutrient. P>0.20. Whole-plant composite. Pseudo-replication concern.",
+        "effect_pct": -7.038123167155431,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Mn (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Mn (concentration mg/g DW)",
+        "tissue": "whole plant",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 6,
+        "unit": "mg/g DW",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+        "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+        "moderators": {
+          "cultivar": null,
+          "year": null,
+          "site": "Oak Ridge National Laboratory controlled environment chambers"
+        },
+        "confidence": "low",
+        "notes": "Category III nutrient. Mn concentration values not clearly recoverable from OCR of the scanned Table 2 lower section. The last row of the concentration table appears to be Mn but numeric values were not clearly parsed. Flag for manual review of original paper image.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "N (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 636.0,
+      "control_mean": 544.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.911764705882355,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 102.0,
+      "control_mean": 76.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 34.21052631578947,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.74,
+      "control_mean": 0.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 48.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 86.0,
+      "control_mean": 61.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 40.98360655737705,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 790.0,
+      "control_mean": 479.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 64.92693110647181,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.71,
+      "control_mean": 1.03,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 66.01941747572815,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Al (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 40.4,
+      "control_mean": 22.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 81.1659192825112,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 401.0,
+      "control_mean": 258.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 55.42635658914728,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 129.0,
+      "control_mean": 86.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 50.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.2,
+      "control_mean": 0.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 49.999999999999986,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sr (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 4.5,
+      "control_mean": 3.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 50.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ba (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 3.8,
+      "control_mean": 2.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 65.21739130434783,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn (total content mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 19.0,
+      "control_mean": 12.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 58.333333333333336,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 10.3,
+      "control_mean": 15.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -33.11688311688311,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.67,
+      "control_mean": 2.14,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -21.962616822429915,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.012,
+      "control_mean": 0.014,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.285714285714285,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.42,
+      "control_mean": 1.87,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -24.064171122994658,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 12.9,
+      "control_mean": 13.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.194244604316546,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.027,
+      "control_mean": 0.03,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.999999999999998,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Al (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.646,
+      "control_mean": 0.672,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.869047619047622,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 6.049,
+      "control_mean": 7.04,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.076704545454541,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 2.11,
+      "control_mean": 2.39,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.715481171548127,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.019,
+      "control_mean": 0.023,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.391304347826086,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sr (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.074,
+      "control_mean": 0.09,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.77777777777778,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ba (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.06,
+      "control_mean": 0.068,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.764705882352951,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.317,
+      "control_mean": 0.341,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 6,
+      "unit": "mg/g DW",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {
+        "cultivar": null,
+        "year": null,
+        "site": "Oak Ridge National Laboratory controlled environment chambers"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.038123167155431,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 102.0,
+      "control_mean": 76.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 32.639791937581265,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.74,
+      "control_mean": 0.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 48.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.11,
+      "control_mean": 0.07,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 57.14285714285713,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 89.0,
+      "control_mean": 61.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 45.90163934426229,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 790.0,
+      "control_mean": 571.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 38.353765323992995,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Al (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 40.1,
+      "control_mean": 22.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 80.63063063063063,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 18.7,
+      "control_mean": 9.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 90.81632653061223,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 429.0,
+      "control_mean": 256.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 67.578125,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 129.0,
+      "control_mean": 86.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 50.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sr (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.2,
+      "control_mean": 0.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 49.999999999999986,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ba (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 4.5,
+      "control_mean": 3.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 50.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 2.8,
+      "control_mean": 2.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 39.99999999999999,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn (total content)",
+      "tissue": "whole plant",
+      "treatment_mean": 19.0,
+      "control_mean": 12.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg per plant",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 58.333333333333336,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S",
+      "tissue": "whole plant",
+      "treatment_mean": 1.6,
+      "control_mean": 2.14,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -25.233644859813086,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K",
+      "tissue": "whole plant",
+      "treatment_mean": 12.5,
+      "control_mean": 11.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.042016806722685,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "whole plant",
+      "treatment_mean": 0.0027,
+      "control_mean": 0.003,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.999999999999998,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "whole plant",
+      "treatment_mean": 0.507,
+      "control_mean": 0.512,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.9765625000000009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca",
+      "tissue": "whole plant",
+      "treatment_mean": 2.049,
+      "control_mean": 2.39,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.26778242677825,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg",
+      "tissue": "whole plant",
+      "treatment_mean": 1.974,
+      "control_mean": 2.29,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.799126637554588,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ba",
+      "tissue": "whole plant",
+      "treatment_mean": 0.074,
+      "control_mean": 0.09,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.77777777777778,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "whole plant",
+      "treatment_mean": 0.06,
+      "control_mean": 0.06,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "whole plant",
+      "treatment_mean": 0.177,
+      "control_mean": 0.241,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "none",
+      "n": 6,
+      "unit": "mg g-1 dry weight",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (692 \u00b5l l-1)",
+      "control_description": "Ambient CO2 (367 \u00b5l l-1)",
+      "moderators": {},
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -26.556016597510375,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 6,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 11,
+    "original_count": 54,
+    "final_count": 48
+  },
+  "verification_flags": [
+    {
+      "element": "N (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "N (total content mg/plant)",
+        "treatment_mean": 636.0,
+        "control_mean": 544.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +16.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -14.465408805031446,
+            "note": "Effect +16.9% violates expected direction; unswapped would be -14.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 16.911764705882355,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +16.9%, corrected would be -14.5%"
+      }
+    },
+    {
+      "element": "S (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "S (total content mg/plant)",
+        "treatment_mean": 102.0,
+        "control_mean": 76.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +34.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -25.490196078431378,
+            "note": "Effect +34.2% violates expected direction; unswapped would be -25.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 34.21052631578947,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +34.2%, corrected would be -25.5%"
+      }
+    },
+    {
+      "element": "B (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "B (total content mg/plant)",
+        "treatment_mean": 0.74,
+        "control_mean": 0.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +48.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -32.432432432432435,
+            "note": "Effect +48.0% violates expected direction; unswapped would be -32.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 48.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +48.0%, corrected would be -32.4%"
+      }
+    },
+    {
+      "element": "P (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "P (total content mg/plant)",
+        "treatment_mean": 86.0,
+        "control_mean": 61.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +41.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -29.069767441860467,
+            "note": "Effect +41.0% violates expected direction; unswapped would be -29.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 40.98360655737705,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +41.0%, corrected would be -29.1%"
+      }
+    },
+    {
+      "element": "K (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "K (total content mg/plant)",
+        "treatment_mean": 790.0,
+        "control_mean": 479.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +64.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -39.36708860759494,
+            "note": "Effect +64.9% violates expected direction; unswapped would be -39.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 64.92693110647181,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +64.9%, corrected would be -39.4%"
+      }
+    },
+    {
+      "element": "Cu (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Cu (total content mg/plant)",
+        "treatment_mean": 1.71,
+        "control_mean": 1.03,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +66.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -39.76608187134503,
+            "note": "Effect +66.0% violates expected direction; unswapped would be -39.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 66.01941747572815,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +66.0%, corrected would be -39.8%"
+      }
+    },
+    {
+      "element": "Al (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Al (total content mg/plant)",
+        "treatment_mean": 40.4,
+        "control_mean": 22.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +81.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -44.8019801980198,
+            "note": "Effect +81.2% violates expected direction; unswapped would be -44.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 81.1659192825112,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +81.2%, corrected would be -44.8%"
+      }
+    },
+    {
+      "element": "Fe (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Fe (total content mg/plant)",
+        "treatment_mean": 401.0,
+        "control_mean": 258.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +55.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -35.66084788029925,
+            "note": "Effect +55.4% violates expected direction; unswapped would be -35.7%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 55.42635658914728,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +55.4%, corrected would be -35.7%"
+      }
+    },
+    {
+      "element": "Ca (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Ca (total content mg/plant)",
+        "treatment_mean": 129.0,
+        "control_mean": 86.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 50.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "Mg (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (total content mg/plant)",
+        "treatment_mean": 1.2,
+        "control_mean": 0.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 49.999999999999986,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "Sr (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Sr (total content mg/plant)",
+        "treatment_mean": 4.5,
+        "control_mean": 3.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 50.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "Ba (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Ba (total content mg/plant)",
+        "treatment_mean": 3.8,
+        "control_mean": 2.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +65.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -39.473684210526315,
+            "note": "Effect +65.2% violates expected direction; unswapped would be -39.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 65.21739130434783,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +65.2%, corrected would be -39.5%"
+      }
+    },
+    {
+      "element": "Zn (total content mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Zn (total content mg/plant)",
+        "treatment_mean": 19.0,
+        "control_mean": 12.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +58.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -36.84210526315789,
+            "note": "Effect +58.3% violates expected direction; unswapped would be -36.8%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 58.333333333333336,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +58.3%, corrected would be -36.8%"
+      }
+    },
+    {
+      "element": "N (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (concentration mg/g DW)",
+        "treatment_mean": 10.3,
+        "control_mean": 15.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -33.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -33.11688311688311
+      }
+    },
+    {
+      "element": "S (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S (concentration mg/g DW)",
+        "treatment_mean": 1.67,
+        "control_mean": 2.14,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -22.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -21.962616822429915
+      }
+    },
+    {
+      "element": "B (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "B (concentration mg/g DW)",
+        "treatment_mean": 0.012,
+        "control_mean": 0.014,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -14.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -14.285714285714285
+      }
+    },
+    {
+      "element": "P (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (concentration mg/g DW)",
+        "treatment_mean": 1.42,
+        "control_mean": 1.87,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -24.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -24.064171122994658
+      }
+    },
+    {
+      "element": "K (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (concentration mg/g DW)",
+        "treatment_mean": 12.9,
+        "control_mean": 13.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -7.194244604316546
+      }
+    },
+    {
+      "element": "Cu (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu (concentration mg/g DW)",
+        "treatment_mean": 0.027,
+        "control_mean": 0.03,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -9.999999999999998
+      }
+    },
+    {
+      "element": "Al (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Al (concentration mg/g DW)",
+        "treatment_mean": 0.646,
+        "control_mean": 0.672,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -3.869047619047622
+      }
+    },
+    {
+      "element": "Fe (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe (concentration mg/g DW)",
+        "treatment_mean": 6.049,
+        "control_mean": 7.04,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -14.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -14.076704545454541
+      }
+    },
+    {
+      "element": "Ca (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (concentration mg/g DW)",
+        "treatment_mean": 2.11,
+        "control_mean": 2.39,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -11.715481171548127
+      }
+    },
+    {
+      "element": "Mg (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (concentration mg/g DW)",
+        "treatment_mean": 0.019,
+        "control_mean": 0.023,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -17.391304347826086
+      }
+    },
+    {
+      "element": "Sr (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Sr (concentration mg/g DW)",
+        "treatment_mean": 0.074,
+        "control_mean": 0.09,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -17.77777777777778
+      }
+    },
+    {
+      "element": "Ba (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ba (concentration mg/g DW)",
+        "treatment_mean": 0.06,
+        "control_mean": 0.068,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -11.764705882352951
+      }
+    },
+    {
+      "element": "Zn (concentration mg/g DW)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn (concentration mg/g DW)",
+        "treatment_mean": 0.317,
+        "control_mean": 0.341,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -7.038123167155431
+      }
+    },
+    {
+      "element": "N (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "N (total content)",
+        "treatment_mean": 102.0,
+        "control_mean": 76.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +32.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -24.607843137254896,
+            "note": "Effect +32.6% violates expected direction; unswapped would be -24.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 32.639791937581265,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +32.6%, corrected would be -24.6%"
+      }
+    },
+    {
+      "element": "S (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "S (total content)",
+        "treatment_mean": 0.74,
+        "control_mean": 0.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +48.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -32.432432432432435,
+            "note": "Effect +48.0% violates expected direction; unswapped would be -32.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 48.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +48.0%, corrected would be -32.4%"
+      }
+    },
+    {
+      "element": "B (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "B (total content)",
+        "treatment_mean": 0.11,
+        "control_mean": 0.07,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +57.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -36.36363636363636,
+            "note": "Effect +57.1% violates expected direction; unswapped would be -36.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 57.14285714285713,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +57.1%, corrected would be -36.4%"
+      }
+    },
+    {
+      "element": "P (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "P (total content)",
+        "treatment_mean": 89.0,
+        "control_mean": 61.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +45.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -31.460674157303366,
+            "note": "Effect +45.9% violates expected direction; unswapped would be -31.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 45.90163934426229,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +45.9%, corrected would be -31.5%"
+      }
+    },
+    {
+      "element": "K (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "K (total content)",
+        "treatment_mean": 790.0,
+        "control_mean": 571.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +38.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -27.72151898734177,
+            "note": "Effect +38.4% violates expected direction; unswapped would be -27.7%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 38.353765323992995,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +38.4%, corrected would be -27.7%"
+      }
+    },
+    {
+      "element": "Cu (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Cu (total content)",
+        "treatment_mean": 1.71,
+        "control_mean": 1.03,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +66.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -39.76608187134503,
+            "note": "Effect +66.0% violates expected direction; unswapped would be -39.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 66.01941747572815,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +66.0%, corrected would be -39.8%"
+      }
+    },
+    {
+      "element": "Al (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Al (total content)",
+        "treatment_mean": 40.1,
+        "control_mean": 22.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +80.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -44.63840399002494,
+            "note": "Effect +80.6% violates expected direction; unswapped would be -44.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 80.63063063063063,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +80.6%, corrected would be -44.6%"
+      }
+    },
+    {
+      "element": "Fe (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Fe (total content)",
+        "treatment_mean": 18.7,
+        "control_mean": 9.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +90.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -47.59358288770053,
+            "note": "Effect +90.8% violates expected direction; unswapped would be -47.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 90.81632653061223,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +90.8%, corrected would be -47.6%"
+      }
+    },
+    {
+      "element": "Ca (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Ca (total content)",
+        "treatment_mean": 429.0,
+        "control_mean": 256.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +67.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -40.32634032634033,
+            "note": "Effect +67.6% violates expected direction; unswapped would be -40.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 67.578125,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +67.6%, corrected would be -40.3%"
+      }
+    },
+    {
+      "element": "Mg (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Mg (total content)",
+        "treatment_mean": 129.0,
+        "control_mean": 86.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 50.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "Sr (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sr (total content)",
+        "treatment_mean": 1.2,
+        "control_mean": 0.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 49.999999999999986,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "Ba (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Ba (total content)",
+        "treatment_mean": 4.5,
+        "control_mean": 3.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 50.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "Zn (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Zn (total content)",
+        "treatment_mean": 2.8,
+        "control_mean": 2.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +40.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -28.571428571428566,
+            "note": "Effect +40.0% violates expected direction; unswapped would be -28.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 39.99999999999999,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +40.0%, corrected would be -28.6%"
+      }
+    },
+    {
+      "element": "Mn (total content)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Mn (total content)",
+        "treatment_mean": 19.0,
+        "control_mean": 12.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +58.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -36.84210526315789,
+            "note": "Effect +58.3% violates expected direction; unswapped would be -36.8%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 58.333333333333336,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +58.3%, corrected would be -36.8%"
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N",
+        "treatment_mean": 10.3,
+        "control_mean": 15.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -33.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -33.11688311688311
+      }
+    },
+    {
+      "element": "S",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S",
+        "treatment_mean": 1.6,
+        "control_mean": 2.14,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -25.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -25.233644859813086
+      }
+    },
+    {
+      "element": "B",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "B",
+        "treatment_mean": 0.012,
+        "control_mean": 0.014,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -14.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -14.285714285714285
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P",
+        "treatment_mean": 1.42,
+        "control_mean": 1.87,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -24.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -24.064171122994658
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "K",
+        "treatment_mean": 12.5,
+        "control_mean": 11.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +5.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -4.799999999999996,
+            "note": "Effect +5.0% violates expected direction; unswapped would be -4.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 5.042016806722685,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +5.0%, corrected would be -4.8%"
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 0.0027,
+        "control_mean": 0.003,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -9.999999999999998
+      }
+    },
+    {
+      "element": "Al",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Al",
+        "treatment_mean": 0.646,
+        "control_mean": 0.672,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -3.869047619047622
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 0.507,
+        "control_mean": 0.512,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -1.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -0.9765625000000009
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca",
+        "treatment_mean": 2.049,
+        "control_mean": 2.39,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -14.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -14.26778242677825
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg",
+        "treatment_mean": 1.974,
+        "control_mean": 2.29,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -13.799126637554588
+      }
+    },
+    {
+      "element": "Sr",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Sr",
+        "treatment_mean": 0.074,
+        "control_mean": 0.09,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -17.77777777777778
+      }
+    },
+    {
+      "element": "Ba",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ba",
+        "treatment_mean": 0.074,
+        "control_mean": 0.09,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -17.77777777777778
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 0.06,
+        "control_mean": 0.06,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 0.177,
+        "control_mean": 0.241,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -26.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          }
+        },
+        "effect_pct": -26.556016597510375
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

@@ -1,0 +1,624 @@
+{
+  "paper_id": "127_Radkowski_2018_Influence of foliar fertilization with a",
+  "gt_rows": [
+    {
+      "pair": "426",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "0.4",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.0994,
+      "treat_mean": 0.1003,
+      "ctrl_sd": 0.0074,
+      "treat_sd": 0.007
+    },
+    {
+      "pair": "427",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "0.67",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.0994,
+      "treat_mean": 0.1071,
+      "ctrl_sd": 0.0074,
+      "treat_sd": 0.0085
+    },
+    {
+      "pair": "428",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.0994,
+      "treat_mean": 0.11320000000000001,
+      "ctrl_sd": 0.0074,
+      "treat_sd": 0.0062
+    },
+    {
+      "pair": "429",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "0.4",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.082,
+      "treat_mean": 0.0875,
+      "ctrl_sd": 0.0075,
+      "treat_sd": 0.0064
+    },
+    {
+      "pair": "430",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "0.67",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.082,
+      "treat_mean": 0.0942,
+      "ctrl_sd": 0.0075,
+      "treat_sd": 0.0068
+    },
+    {
+      "pair": "431",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.082,
+      "treat_mean": 0.0948,
+      "ctrl_sd": 0.0075,
+      "treat_sd": 0.0052
+    },
+    {
+      "pair": "432",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "0.4",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.0809,
+      "treat_mean": 0.0838,
+      "ctrl_sd": 0.008199999999999999,
+      "treat_sd": 0.0074
+    },
+    {
+      "pair": "433",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "0.67",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.0809,
+      "treat_mean": 0.0888,
+      "ctrl_sd": 0.008199999999999999,
+      "treat_sd": 0.008400000000000001
+    },
+    {
+      "pair": "434",
+      "crop": "timothy",
+      "CropCategory": "Others",
+      "product": "Microfert",
+      "PBsCategory": "PHs",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "4",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.0809,
+      "treat_mean": 0.0915,
+      "ctrl_sd": 0.008199999999999999,
+      "treat_sd": 0.0073
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "seed yield (kg/ha) for 2015",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015",
+        "dose": "1.8 L/ha"
+      },
+      "control_mean": 994.0,
+      "treatment_mean": 1003.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2015",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 3.0 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015",
+        "dose": "3.0 L/ha"
+      },
+      "control_mean": 994.0,
+      "treatment_mean": 1071.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2015",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 4.5 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015",
+        "dose": "4.5 L/ha"
+      },
+      "control_mean": 994.0,
+      "treatment_mean": 1132.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2016",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2016",
+        "dose": "1.8 L/ha"
+      },
+      "control_mean": 820.0,
+      "treatment_mean": 875.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2016",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 3.0 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2016",
+        "dose": "3.0 L/ha"
+      },
+      "control_mean": 820.0,
+      "treatment_mean": 942.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2016",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 4.5 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2016",
+        "dose": "4.5 L/ha"
+      },
+      "control_mean": 820.0,
+      "treatment_mean": 948.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2017",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2017",
+        "dose": "1.8 L/ha"
+      },
+      "control_mean": 809.0,
+      "treatment_mean": 838.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2017",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 3.0 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2017",
+        "dose": "3.0 L/ha"
+      },
+      "control_mean": 809.0,
+      "treatment_mean": 888.0,
+      "confidence": "high"
+    },
+    {
+      "element": "seed yield (kg/ha) for 2017",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 4.5 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2017",
+        "dose": "4.5 L/ha"
+      },
+      "control_mean": 809.0,
+      "treatment_mean": 915.0,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2015",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015",
+        "dose": "1.8 L/ha"
+      },
+      "control_mean": 90.2,
+      "treatment_mean": 92.3,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2015",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 3.0 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015",
+        "dose": "3.0 L/ha"
+      },
+      "control_mean": 90.2,
+      "treatment_mean": 93.4,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2015",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 4.5 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015",
+        "dose": "4.5 L/ha"
+      },
+      "control_mean": 90.2,
+      "treatment_mean": 95.3,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2016",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2016",
+        "dose": "1.8 L/ha"
+      },
+      "control_mean": 89.7,
+      "treatment_mean": 91.7,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2016",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 3.0 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2016",
+        "dose": "3.0 L/ha"
+      },
+      "control_mean": 89.7,
+      "treatment_mean": 92.6,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2016",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 4.5 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2016",
+        "dose": "4.5 L/ha"
+      },
+      "control_mean": 89.7,
+      "treatment_mean": 94.8,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2017",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2017",
+        "dose": "1.8 L/ha"
+      },
+      "control_mean": 88.4,
+      "treatment_mean": 88.7,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2017",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 3.0 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2017",
+        "dose": "3.0 L/ha"
+      },
+      "control_mean": 88.4,
+      "treatment_mean": 89.5,
+      "confidence": "high"
+    },
+    {
+      "element": "germination capacity (%) for 2017",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Microfert amino acid fertilizer at 4.5 L/ha",
+      "control_description": "Control plot with no fertilizer, only with water",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2017",
+        "dose": "4.5 L/ha"
+      },
+      "control_mean": 88.4,
+      "treatment_mean": 93.5,
+      "confidence": "high"
+    },
+    {
+      "element": "mean seed yield (kg/ha)",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 874.0,
+      "treatment_mean": 905.0,
+      "confidence": "high"
+    },
+    {
+      "element": "mean germination capacity (%)",
+      "tissue": "grain",
+      "unit": "%",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 89.4,
+      "treatment_mean": 90.9,
+      "confidence": "high"
+    },
+    {
+      "element": "shoot height (cm)",
+      "tissue": "shoot",
+      "unit": "cm",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 113.9,
+      "treatment_mean": 116.3,
+      "confidence": "high"
+    },
+    {
+      "element": "flag leaf length (cm)",
+      "tissue": "leaf",
+      "unit": "cm",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 5.64,
+      "treatment_mean": 5.84,
+      "confidence": "high"
+    },
+    {
+      "element": "flag leaf width (cm)",
+      "tissue": "leaf",
+      "unit": "cm",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 0.38,
+      "treatment_mean": 0.41,
+      "confidence": "high"
+    },
+    {
+      "element": "inflorescence length (cm)",
+      "tissue": "shoot",
+      "unit": "cm",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 3.82,
+      "treatment_mean": 4.01,
+      "confidence": "high"
+    },
+    {
+      "element": "inflorescence width (cm)",
+      "tissue": "shoot",
+      "unit": "cm",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 0.53,
+      "treatment_mean": 0.56,
+      "confidence": "high"
+    },
+    {
+      "element": "SPAD values at stem elongation",
+      "tissue": "leaf",
+      "unit": "SPAD unit",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 35.6,
+      "treatment_mean": 35.8,
+      "confidence": "high"
+    },
+    {
+      "element": "SPAD values at head emergence",
+      "tissue": "leaf",
+      "unit": "SPAD unit",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 38.7,
+      "treatment_mean": 39.4,
+      "confidence": "high"
+    },
+    {
+      "element": "SPAD values at anthesis",
+      "tissue": "leaf",
+      "unit": "SPAD unit",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 40.7,
+      "treatment_mean": 41.8,
+      "confidence": "high"
+    },
+    {
+      "element": "SPAD values at milky ripeness",
+      "tissue": "leaf",
+      "unit": "SPAD unit",
+      "n": 4,
+      "treatment_description": "Foliar fertilization with Microfert amino acid fertilizer at 1.8 L/ha",
+      "control_description": "Control plot (no fertilizer, only with water)",
+      "moderators": {
+        "cultivar": "Owacja",
+        "year": "2015-2017",
+        "site": "Prusy near Krakow, Poland"
+      },
+      "control_mean": 34.0,
+      "treatment_mean": 34.6,
+      "confidence": "high"
+    }
+  ]
+}

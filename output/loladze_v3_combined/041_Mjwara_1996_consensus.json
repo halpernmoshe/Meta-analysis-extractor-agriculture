@@ -1,0 +1,461 @@
+{
+  "paper_id": "041_Mjwara_1996",
+  "recon": {
+    "paper_id": "041_Mjwara_1996",
+    "warnings": [
+      "All mineral data are presented in FIGURES (Figs 7-9), not tables - extraction requires reading from bar graphs",
+      "Data are expressed as mg g-1 dry weight (macronutrients) and presumably ug g-1 dry weight (micronutrients) - verify units carefully from figure axes",
+      "Time-course data: multiple harvest points (10, 15, 20, 25, 30, 35, 40 DAG) are shown in figures - values change substantially over time, so a single representative value must be chosen or averaged",
+      "Authors note that starch accumulation (>20% of LD in elevated CO2 plants) affects nutrient concentrations - starch-corrected values are discussed in text but not systematically tabulated",
+      "Non-nodulating bean variety used - authors note nodulation affects nutrient concentrations, so results may differ from nodulating varieties",
+      "Leaf discoloration/chlorosis was pronounced in elevated CO2 plants, potentially affecting leaf tissue quality and nutrient readings",
+      "The paper reports significant interaction effects (Treatment x DAG) for several nutrients (N, Fe, Zn, Cu), meaning the CO2 effect changes over time - extracting a single mean may be misleading",
+      "n=3 for nutrient data (Fig 7-9) but n=9 for growth parameters - use appropriate n for each outcome",
+      "Variance bars in figures are described as SE (\u00b1SE) throughout figure legends",
+      "OCR quality is poor in some sections - some numeric values and symbols may be misread in the original scanned document",
+      "WARNING: SCANNED PDF - Text may have OCR errors"
+    ],
+    "variance_type": "SE",
+    "variance_source": "Repeated across all figure legends: 'error bars denote \u00b1SE' and 'error bars denote +SE'",
+    "variance_confidence": "high",
+    "control_definition": "Ambient CO2 at 360 \u00b5mol mol-1 (ppm), grown in Conviron EF-7H chamber",
+    "treatment_definition": "Elevated CO2 at 700 \u00b5mol mol-1 (ppm), grown in Conviron S10H chamber",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "Figure legends use identical bullet symbols (\u2022) for both treatments in the OCR text - must refer to original figure to distinguish 360 vs 700 series. In bar graphs: open bars = 360 (control), hatched bars = 700 (elevated). Do not confuse these.",
+    "experimental_design": "simple",
+    "sample_size_found": 3,
+    "sample_size_source": "Figure 7 legend: 'n=3 for each data point'; Figs 8 and 9: 'n=3'. Growth parameter figures state 'n=9 for each data point'",
+    "factorial_structure": "[\"CO2 (2 levels: 360 vs 700 ppm)\"]",
+    "extraction_guidance": "All mineral element data must be extracted from bar graphs (Figs 8 and 9) and a time-course line graph (Fig 7). Since data are presented at multiple time points (every 5 days from 10 DAG to senescence ~40 DAG), extractor must either: (1) extract values at each time point separately and compute an overall mean, or (2) extract the final or most representative time point. Note that interaction (Treatment x DAG) is significant for N, Fe, Zn, Cu - meaning the effect of CO2 changes over time. For these, extracting an overall mean across time points is most appropriate for meta-analysis. Use n=3 for nutrient data (SE reported). Control = open bars / 360 ppm; Elevated = hatched bars / 700 ppm. Macronutrient order reported: Ca > K > P > Mg; micronutrient order: Fe > Mn > Zn > Cu. Units for macronutrients are mg g-1 DW; verify micronutrient units from figure axes (likely \u00b5g g-1 DW). The paper explicitly notes elevated CO2 reduced Ca, P, Fe, Zn significantly; increased K, Mn significantly; and had non-significant effects on Mg and Cu overall.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Photosynthesis, growth and nutrient changes in non-nodulated Phaseolus vulgaris grown under atmospheric and elevated carbon dioxide conditions\",\n        \"species\": \"Phaseolus vulgaris L. cv. Contender\",\n        \"experimental_system\": \"growth chamber\",\n        \"co2_levels\": {\"control\": \"360\", \"elevated\": \"700\"}\n    },\n    \"warnings\": [\n        \"All mineral data are presented in FIGURES (Figs 7-9), not tables - extraction requires reading from bar graphs\",\n        \"Data are expressed as mg g-1 dry weight (macronutrients) and presumably ug g-1 dry weight (micronutrients) - verify units carefully from figure axes\",\n        \"Time-course data: multiple harvest points (10, 15, 20, 25, 30, 35, 40 DAG) are shown in figures - values change substantially over time, so a single representative value must be chosen or averaged\",\n        \"Authors note that starch accumulation (>20% of LD in elevated CO2 plants) affects nutrient concentrations - starch-corrected values are discussed in text but not systematically tabulated\",\n        \"Non-nodulating bean variety used - authors note nodulation affects nutrient concentrations, so results may differ from nodulating varieties\",\n        \"Leaf discoloration/chlorosis was pronounced in elevated CO2 plants, potentially affecting leaf tissue quality and nutrient readings\",\n        \"The paper reports significant interaction effects (Treatment x DAG) for several nutrients (N, Fe, Zn, Cu), meaning the CO2 effect changes over time - extracting a single mean may be misleading\",\n        \"n=3 for nutrient data (Fig 7-9) but n=9 for growth parameters - use appropriate n for each outcome\",\n        \"Variance bars in figures are described as SE (\u00b1SE) throughout figure legends\",\n        \"OCR quality is poor in some sections - some numeric values and symbols may be misread in the original scanned document\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"Repeated across all fig",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Summary of F statistics from two-way ANOVA for all parameters (TPH, LA, TB, SLA, LD, NAR, RGR, N, Ca, P, K, Mg, Fe, Zn, Mn, Cu) - significance levels only, no means",
+      "Table 2": "Mean relative growth rates (RGR in g g-1 day-1) and total plant biomass (g) at 15, 25, and 35 DAG for 360 and 700 ppm treatments - biomass data only, no mineral elements"
+    },
+    "figures_with_data": [
+      "Figure 7",
+      "Figure 8",
+      "Figure 9"
+    ],
+    "outcome_variables_detected": {
+      "Figure 7": [
+        "N (leaf nitrogen content, expressed as % or mg g-1 dry weight, time course 10-40 DAG)"
+      ],
+      "Figure 8": [
+        "Ca (calcium, mg g-1 DW, bar graph by DAG)",
+        "K (potassium, mg g-1 DW, bar graph by DAG)",
+        "P (phosphorus, mg g-1 DW, bar graph by DAG)",
+        "Mg (magnesium, mg g-1 DW, bar graph by DAG)"
+      ],
+      "Figure 9": [
+        "Fe (iron, micronutrient, bar graph by DAG)",
+        "Mn (manganese, micronutrient, bar graph by DAG)",
+        "Zn (zinc, micronutrient, bar graph by DAG)",
+        "Cu (copper, micronutrient, bar graph by DAG)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 10,
+  "kimi_obs": 1,
+  "gemini_obs": 0,
+  "matched_obs": 1,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 1/10 matched",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "N",
+      "tissue": "leaf",
+      "claude": {
+        "element": "N",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg g-1 DW or %",
+        "data_source": "Figure 7",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "10-40 DAG time course",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data presented in line graph (Fig 7) as time-course from 10-40 DAG. Cannot read precise numeric values from scanned figure. Text states: leaf N in CO2-enriched plants increased initially then declined to levels BELOW ambient plants from 20 DAG. Significant interaction (Treatment x DAG). Overall two-way ANOVA: Treatment effect NS (Tab 1), but DAG and interaction are significant (***). The reduction in N under elevated CO2 occurs mainly after 20 DAG. Values not extractable from scanned figure without vision access; flagged for manual review. General direction: elevated CO2 reduces leaf N concentration after 20 DAG.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Ca",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Ca",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg g-1 DW",
+        "data_source": "Figure 8A",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 8A across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text confirms Ca significantly reduced under elevated CO2 (P<0.0001). Treatment effect: *** (Tab 1). DAG effect: ***. Interaction: NS. Macronutrient order: Ca > K > P > Mg. Ca is the highest concentration macronutrient measured. Hatched bars (700 ppm) consistently lower than open bars (360 ppm). Flagged for manual review - scanned figure prevents reliable numeric extraction.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "K",
+      "tissue": "leaf",
+      "claude": {
+        "element": "K",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg g-1 DW",
+        "data_source": "Figure 8B",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 8B across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text confirms K significantly INCREASED under elevated CO2 (P<0.0001). Treatment effect: *** (Tab 1). DAG effect: *. Interaction: NS. This is the opposite direction to the general dilution effect for most nutrients. After starch correction, K increase becomes more pronounced. Flagged for manual review - scanned figure prevents reliable numeric extraction.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "P",
+      "tissue": "leaf",
+      "claude": {
+        "element": "P",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg g-1 DW",
+        "data_source": "Figure 8C",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 8C across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text confirms P significantly reduced under elevated CO2 (P<0.0010). Treatment effect: *** (Tab 1). DAG effect: ***. Interaction: NS. After starch correction, difference becomes insignificant. Flagged for manual review - scanned figure prevents reliable numeric extraction.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Mg",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Mg",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg g-1 DW",
+        "data_source": "Figure 8D",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 8D across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text states: 'noticeable decline in Mg concentrations in plants grown under elevated CO2 but the overall changes were not significant (P=0.07)'. Treatment effect: NS (Tab 1). DAG effect: **. Interaction: NS. Flagged for manual review - scanned figure prevents reliable numeric extraction.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Fe",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Fe",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "\u00b5g g-1 DW",
+        "data_source": "Figure 9A",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 9A across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text confirms Fe significantly reduced under elevated CO2 (P<0.0001). Treatment effect: *** (Tab 1). DAG effect: **. Interaction: ***. Significant interaction means CO2 effect changes over time - overall mean may be misleading. Micronutrient order: Fe > Mn > Zn > Cu, so Fe is highest concentration micronutrient. Units likely \u00b5g g-1 DW but not confirmed from scanned figure. Flagged for manual review.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Mn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Mn",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "\u00b5g g-1 DW",
+        "data_source": "Figure 9B",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 9B across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text confirms Mn significantly INCREASED under elevated CO2 (P<0.0001). Treatment effect: ** (Tab 1; shown as water water in OCR). DAG effect: unclear from OCR. Interaction: NS. This is opposite to the general dilution effect - Mn increases under elevated CO2. Units likely \u00b5g g-1 DW. Flagged for manual review.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Zn",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "\u00b5g g-1 DW",
+        "data_source": "Figure 9C",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 9C across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text confirms Zn significantly reduced under elevated CO2 (P<0.0001). Treatment effect: *** (Tab 1; shown as water** in OCR). DAG effect: ***. Interaction: **. Significant interaction means CO2 effect changes over time. After starch correction, transient significant increase in Zn occurred up to 25 DAG. Units likely \u00b5g g-1 DW. Flagged for manual review.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Cu",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Cu",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "\u00b5g g-1 DW",
+        "data_source": "Figure 9D",
+        "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+        "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+        "moderators": {
+          "cultivar": "Contender",
+          "growth_period": "multiple DAG time points (bar graph)",
+          "tissue_type": "leaf"
+        },
+        "confidence": "low",
+        "notes": "Data in bar graph Fig 9D across multiple DAG time points. Cannot extract precise numeric values from scanned figure. Text states Cu showed 'strange transient changes': increased significantly at 10-15 DAG in elevated CO2 plants, then declined steadily from 20 DAG. Despite these transient changes, overall ANOVA showed no significant difference (F=0.81, NS). Treatment effect: NS (Tab 1). DAG effect: **. Interaction: *. After starch correction, Cu difference becomes insignificant. Units likely \u00b5g g-1 DW. Flagged for manual review.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "N",
+      "tissue": "leaf",
+      "treatment_mean": 65.0,
+      "control_mean": 65.0,
+      "treatment_variance": 3,
+      "control_variance": 3,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g DW",
+      "data_source": "Figure 7",
+      "treatment_description": "Elevated CO2 (700 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (360 \u00b5mol mol-1)",
+      "moderators": {
+        "cultivar": "Contender",
+        "days_after_germination": 10
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 1,
+    "final_count": 1
+  },
+  "verification_flags": [
+    {
+      "element": "N",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "N",
+        "treatment_mean": 65.0,
+        "control_mean": 65.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.994080650317896,
+            "note": "CV = 8.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.0%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

@@ -1,0 +1,107 @@
+{
+  "paper_id": "153_Soppelsa_2018_Use of Biostimulants for Organic Apple P",
+  "matched_pairs": [
+    {
+      "pair": "1102",
+      "gt_category": "HFA",
+      "json_treatment": "Humic acids (HAL)",
+      "json_element": "Yield (kg tree-1)",
+      "match_basis": "PBsCategory HFA = humic/fulvic acids matches HAL (Humic acids); effect sizes identical",
+      "gt_ctrl_mean": 4.87,
+      "gt_treat_mean": 5.146666666666667,
+      "gt_effect_pct": 5.69,
+      "ext_ctrl_mean": 14.61,
+      "ext_treat_mean": 15.44,
+      "ext_effect_pct": 5.68
+    },
+    {
+      "pair": "1103",
+      "gt_category": "PHs",
+      "json_treatment": "Alfalfa protein hydrolysate (APH)",
+      "json_element": "Yield (kg tree-1)",
+      "match_basis": "PBsCategory PHs = protein hydrolysates; APH (Alfalfa protein hydrolysate) is a PHs product; effect sizes match exactly",
+      "gt_ctrl_mean": 4.87,
+      "gt_treat_mean": 4.596666666666667,
+      "gt_effect_pct": -5.61,
+      "ext_ctrl_mean": 14.61,
+      "ext_treat_mean": 13.79,
+      "ext_effect_pct": -5.61
+    },
+    {
+      "pair": "1104",
+      "gt_category": "SWE",
+      "json_treatment": "Macroseaweed extract (SEA)",
+      "json_element": "Yield (kg tree-1)",
+      "match_basis": "PBsCategory SWE = seaweed extracts; SEA (Macroseaweed extract) is the primary SWE product; effect sizes match exactly",
+      "gt_ctrl_mean": 4.87,
+      "gt_treat_mean": 4.25,
+      "gt_effect_pct": -12.73,
+      "ext_ctrl_mean": 14.61,
+      "ext_treat_mean": 12.75,
+      "ext_effect_pct": -12.73
+    },
+    {
+      "pair": "1105",
+      "gt_category": "SWE",
+      "json_treatment": "Microalga hydrolysate (SPI)",
+      "json_element": "Yield (kg tree-1)",
+      "match_basis": "Second SWE row; SPI (Microalga hydrolysate) is classified under SWE/algae category; effect sizes match exactly (-4.25% vs -4.24%)",
+      "gt_ctrl_mean": 4.87,
+      "gt_treat_mean": 4.663333333333333,
+      "gt_effect_pct": -4.25,
+      "ext_ctrl_mean": 14.61,
+      "ext_treat_mean": 13.99,
+      "ext_effect_pct": -4.24
+    },
+    {
+      "pair": "1106",
+      "gt_category": "PHs",
+      "json_treatment": "Mix of amino acids (MAA)",
+      "json_element": "Yield (kg tree-1)",
+      "match_basis": "Second PHs row; MAA (Mix of amino acids) falls under protein hydrolysate/amino acid category; effect sizes match exactly (-7.60% vs -7.60%)",
+      "gt_ctrl_mean": 4.87,
+      "gt_treat_mean": 4.5,
+      "gt_effect_pct": -7.60,
+      "ext_ctrl_mean": 14.61,
+      "ext_treat_mean": 13.5,
+      "ext_effect_pct": -7.60
+    },
+    {
+      "pair": "1108",
+      "gt_category": "Si",
+      "json_treatment": "Silicon-containing product (SIL)",
+      "json_element": "Yield (kg tree-1)",
+      "match_basis": "PBsCategory Si = silicon; SIL (Silicon-containing product) is the exact match; effect sizes match exactly (+6.22% vs +6.23%)",
+      "gt_ctrl_mean": 4.87,
+      "gt_treat_mean": 5.173333333333333,
+      "gt_effect_pct": 6.22,
+      "ext_ctrl_mean": 14.61,
+      "ext_treat_mean": 15.52,
+      "ext_effect_pct": 6.23
+    }
+  ],
+  "unmatched_gt": [
+    {
+      "pair": "1107",
+      "gt_category": "Chi",
+      "gt_ctrl_mean": 4.87,
+      "gt_treat_mean": 4.596666666666667,
+      "gt_effect_pct": -5.61,
+      "reason": "No 'Yield (kg tree-1)' observation for Chitosan (CHI) exists in JSON obs. The extractor captured CHI for all other outcomes (Leaf area, Number fruits, Fruit weight, Fruit diameter, TA, CI, TAC, AA) but omitted CHI from the Yield table. Likely extraction gap."
+    }
+  ],
+  "unmatched_json": [
+    {"element": "Leaf area (cm2)", "treatments": "all 10 treatments", "reason": "Not a yield/production outcome"},
+    {"element": "Number fruits tree-1 (N.)", "treatments": "all 10 treatments including CHI", "reason": "Fruit count is a production sub-component but GT uses kg/tree yield; not the primary yield metric used by Li 2022"},
+    {"element": "Fruit weight (g)", "treatments": "all 10 treatments", "reason": "Individual fruit weight (g per fruit), not total yield"},
+    {"element": "Fruit diameter (mm)", "treatments": "all 9 treatments (no CHI)", "reason": "Morphological quality trait, not yield"},
+    {"element": "TA (g L-1)", "treatments": "all 10 treatments", "reason": "Titratable acidity — quality trait, not yield"},
+    {"element": "CI", "treatments": "all 10 treatments", "reason": "Color index — quality trait, not yield"},
+    {"element": "TAC (mg CGE 100 g-1 DW)", "treatments": "all 10 treatments", "reason": "Total anthocyanin content — quality/phytochemical trait, not yield"},
+    {"element": "AA (mg 100 g-1 DW)", "treatments": "all 10 treatments", "reason": "Ascorbic acid / antioxidant content — quality trait, not yield"},
+    {"element": "Yield (kg tree-1)", "treatment": "MAA combined with pure phenylalanine (PHE)", "reason": "PHE (+5.61%) does not match any remaining GT row. Pairs 1103 (PHs, -5.61%) matched APH; no GT row for PHE specifically."},
+    {"element": "Yield (kg tree-1)", "treatment": "MAA combined with zinc (ZIN)", "reason": "ZIN (-10.47%) does not match any GT row. ZIN is not a recognized PBsCategory in Li 2022 for this paper, or was aggregated differently."},
+    {"element": "Yield (kg tree-1)", "treatment": "B-group vitamins (VIT)", "reason": "VIT (-12.66%) does not match any GT row. Not one of the 7 PBsCategories selected by Li 2022 for this paper."}
+  ],
+  "notes": "Soppelsa 2018 tests 10 biostimulant products on organic apple in Italy. Li 2022 selected 7 of these as GT rows (pairs 1102-1108) corresponding to HFA, PHs(x2), SWE(x2), Chi, Si categories. The GT ctrl_mean of 4.87 kg/tree differs from the JSON ctrl of 14.61 kg/tree — likely a 3-year average vs single-year value, or different units/data subset. Regardless, effect percentages match almost perfectly (within 0.02%) for all 6 matched pairs, confirming the Yield (kg tree-1) JSON obs are the correct matches. CHI (Chitosan, pair 1107) yield was not extracted by our AI, creating one unmatched GT row. The remaining 79 unmatched JSON obs are non-yield outcomes (leaf area, fruit quality metrics, phytochemicals) and three yield arms not selected by Li 2022 (PHE, ZIN, VIT)."
+}

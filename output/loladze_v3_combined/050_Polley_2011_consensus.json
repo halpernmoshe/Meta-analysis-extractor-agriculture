@@ -1,0 +1,1181 @@
+{
+  "paper_id": "050_Polley_2011",
+  "recon": {
+    "paper_id": "050_Polley_2011",
+    "warnings": [
+      "CRITICAL: This study uses a CONTINUOUS CO2 GRADIENT (250-500 \u00b5mol/mol), NOT discrete elevated vs. ambient treatment groups. There is no single 'control' and 'elevated' value - CO2 is a continuous covariate.",
+      "Data are analyzed via ANCOVA with CO2 as a continuous covariate, not as discrete treatment groups - standard mean/variance extraction for T vs C is not directly applicable.",
+      "Tables 1 and 2 report element concentrations averaged ACROSS ALL CO2 treatments per species and soil type - these are NOT separated by CO2 level.",
+      "The primary finding is that CO2 effects on individual species element concentrations are minimal; the main effect is through SPECIES ABUNDANCE SHIFTS, not direct dilution.",
+      "Table 3 reports calculated/modeled concentrations at specific CO2 levels (280-480 \u00b5mol/mol) for the Austin soil only - these are model-derived, not raw observed means.",
+      "Factorial design: three soil types x three species x continuous CO2 gradient x two years (2008, 2009) - complex design requiring careful factor identification.",
+      "The paper explicitly states CO2 had no significant effect on [N] across all species and soils combined (P=0.47 in 2008; P=0.28 in 2009).",
+      "Iron (Fe) data present in 2009 (Table 2) but not separately listed in Table 1 for 2008 with same prominence - check Fe availability by year.",
+      "Element concentrations in Tables 1 and 2 are means pooled across CO2 gradient levels, making direct elevated vs. ambient extraction impossible from these tables alone.",
+      "Only P showed significant CO2 response in individual species (Bouteloua on Bastrop/Houston soils 2008; Schizachyrium on Houston 2009); Ca showed response only in 2008 for two species.",
+      "The 'improvement' in nutritional quality at elevated CO2 is driven by species composition change (more Sorghastrum, less Bouteloua), not by direct element concentration increase in individual species.",
+      "Sample sizes differ between C/N analysis (individual monolith level) and other elements (composite samples from paired monoliths) - n values differ accordingly.",
+      "n=23-33 for Table 1 and n=22-23 for Table 2 represent observations pooled across CO2 gradient, not per discrete CO2 treatment.",
+      "WARNING: IMAGE-TABLES - Tables are images, not text",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers"
+    ],
+    "variance_type": "SE",
+    "variance_source": "Table headers state 'Mean values (SE) of element concentrations in tillers' - parenthetical values in tables are standard errors.",
+    "variance_confidence": "high",
+    "control_definition": "Subambient CO2 end of gradient: approximately 250-280 \u00b5mol/mol (pre-Industrial analog). In Table 3, the lowest CO2 level used is 280 \u00b5mol/mol.",
+    "treatment_definition": "Elevated CO2 end of gradient: approximately 480-500 \u00b5mol/mol. In Table 3, the highest CO2 level used is 480 \u00b5mol/mol.",
+    "tables_with_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3"
+    ],
+    "potential_tc_confusion": "HIGH RISK: Tables 1 and 2 do NOT separate data by CO2 level - values are averaged across the entire gradient. Extracting from Tables 1/2 as if they represent a single CO2 treatment would be incorrect. Table 3 provides modeled values at specific CO2 levels but only for Austin soil and only for K, Ca, P, Mg, Mn.",
+    "experimental_design": "factorial",
+    "sample_size_found": null,
+    "sample_size_source": "Tables 1 and 2 note 'n=23-33' (Table 1) and 'n=22-23' (Table 2) but these are total observations across the entire CO2 gradient pooled across treatment levels, not per discrete CO2 treatment group. For ANCOVA with continuous CO2 covariate, there are no discrete replicate groups to count in standard meta-analysis terms. The chambers contain 20 compartments (5m each) across 60m total length.",
+    "factorial_structure": "[\"CO2 (continuous gradient 250-500 ppm)\", \"soil type (3 levels: Austin, Bastrop, Houston)\", \"species (3 dominant C4 grasses)\", \"year (2008, 2009)\"]",
+    "extraction_guidance": "WARNING: This paper is POORLY SUITED for standard meta-analysis extraction of elevated vs. ambient CO2 comparisons because CO2 is treated as a continuous covariate, not a discrete treatment. Tables 1 and 2 average data across the entire gradient and cannot be used to extract elevated vs. ambient means. If extraction is attempted: (1) Use Table 3 for Austin soil only, comparing row at 280 \u00b5mol/mol (control) vs. 480 \u00b5mol/mol (elevated) for K, Ca, P, Mg, Mn in 2008 and 2009 - but note these are model-derived values without variance estimates; (2) Use Figures 2 and 3 for P and Ca responses in specific species/soil combinations with regression statistics; (3) The paper's main conclusion is that CO2 did NOT significantly affect most element concentrations in individual species - only P on Bastrop/Houston soils and Ca in two species in 2008 showed significant CO2 responses. The effect on assemblage-level element concentrations was driven by species shifts, not direct dilution. If this paper is included in a meta-analysis of the dilution effect, it should be coded as showing mostly null or weak effects for individual species element concentrations, with the caveat that assemblage-level effects were positive (opposite to dilution hypothesis) due to species composition change.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"CO2 enrichment increases element concentrations in grass mixtures by changing species abundances\",\n        \"species\": \"Bouteloua curtipendula, Schizachyrium scoparium, Sorghastrum nutans (C4 grasses, tallgrass prairie)\",\n        \"experimental_system\": \"field CO2 gradient (elongated tunnel chambers, not FACE)\",\n        \"co2_levels\": {\"control\": \"250-370 ppm (subambient to ambient gradient)\", \"elevated\": \"370-500 ppm (ambient to elevated gradient)\"}\n    },\n    \"warnings\": [\n        \"CRITICAL: This study uses a CONTINUOUS CO2 GRADIENT (250-500 \u00b5mol/mol), NOT discrete elevated vs. ambient treatment groups. There is no single 'control' and 'elevated' value - CO2 is a continuous covariate.\",\n        \"Data are analyzed via ANCOVA with CO2 as a continuous covariate, not as discrete treatment groups - standard mean/variance extraction for T vs C is not directly applicable.\",\n        \"Tables 1 and 2 report element concentrations averaged ACROSS ALL CO2 treatments per species and soil type - these are NOT separated by CO2 level.\",\n        \"The primary finding is that CO2 effects on individual species element concentrations are minimal; the main effect is through SPECIES ABUNDANCE SHIFTS, not direct dilution.\",\n        \"Table 3 reports calculated/modeled concentrations at specific CO2 levels (280-480 \u00b5mol/mol) for the Austin soil only - these are model-derived, not raw observed means.\",\n        \"Factorial design: three soil types x three species x continuous CO2 gradient x two years (2008, 2009) - complex design requiring careful factor identification.\",\n        \"The paper explicitly states CO2 had no significant effect on [N] across all species and soils combined (P=0.47 in 2008; P=0.28 in 2009).\",\n        \"Iron (Fe) data present in 2009 (Table 2) but not separately listed in Table 1 for 2008 with same prominence - check Fe availability by year.\",\n        \"Element concentrations in Tables 1 and 2 are means pooled across CO2 gr",
+    "tables_without_target_data": [],
+    "table_descriptions": {
+      "Table 1": "Mean (SE) element concentrations in tillers from June 2008, averaged across CO2 gradient, broken down by soil type (Austin, Bastrop, Houston) and species (Bouteloua, Schizachyrium, Sorghastrum). Contains C, N, K, Ca, P, Mg, Zn, Mn, Cu.",
+      "Table 2": "Mean (SE) element concentrations in tillers from June 2009, averaged across CO2 gradient, broken down by soil type and species. Contains C, N, K, Ca, P, Mg, Fe, Zn, Mn, Cu.",
+      "Table 3": "Model-derived concentrations of K, Ca, P, Mg, Mn in combined grass biomass at specific CO2 levels (280-480 \u00b5mol/mol) for Austin soil only, in 2008 and 2009. Values are weighted by species cover fractions."
+    },
+    "figures_with_data": [
+      "Figure 2",
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "Carbon (%)",
+        "Nitrogen (\u00b5g/g)",
+        "Potassium (\u00b5g/g)",
+        "Calcium (\u00b5g/g)",
+        "Phosphorus (\u00b5g/g)",
+        "Magnesium (\u00b5g/g)",
+        "Zinc (\u00b5g/g)",
+        "Manganese (\u00b5g/g)",
+        "Copper (\u00b5g/g)"
+      ],
+      "Table 2": [
+        "Carbon (%)",
+        "Nitrogen (\u00b5g/g)",
+        "Potassium (\u00b5g/g)",
+        "Calcium (\u00b5g/g)",
+        "Phosphorus (\u00b5g/g)",
+        "Magnesium (\u00b5g/g)",
+        "Iron (\u00b5g/g)",
+        "Zinc (\u00b5g/g)",
+        "Manganese (\u00b5g/g)",
+        "Copper (\u00b5g/g)"
+      ],
+      "Table 3": [
+        "Potassium (\u00b5g/g)",
+        "Calcium (\u00b5g/g)",
+        "Phosphorus (\u00b5g/g)",
+        "Magnesium (\u00b5g/g)",
+        "Manganese (\u00b5g/g)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Use vision API to read table images",
+      "Be careful with alignment of columns/rows",
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: Mixed-model ANCOVA with continuous CO2 gradient, 3 species \u00d7 3 soils \u00d7 2 years",
+      "NESTED-TABLES - Tables have hierarchical structure",
+      "Parse carefully - headers may span multiple columns",
+      "Watch for subtotals vs individual measurements"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": true,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 20,
+  "kimi_obs": 20,
+  "gemini_obs": 17,
+  "matched_obs": 20,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 20/20 matched",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Potassium (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 10132,
+      "control_mean": 8603,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2008",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.7728699290945,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Calcium (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 5291,
+      "control_mean": 5706,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2008",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.273045916579039,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Phosphorus (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 808,
+      "control_mean": 913,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2008",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.500547645125959,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Magnesium (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 925,
+      "control_mean": 705,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2008",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 31.20567375886525,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Manganese (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 28.7,
+      "control_mean": 26.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2008",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.691449814126398,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Potassium (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 9585,
+      "control_mean": 8009,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2009",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 19.677862404794606,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Calcium (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 5427,
+      "control_mean": 4827,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2009",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 12.430080795525171,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Phosphorus (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 916,
+      "control_mean": 835,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2009",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.70059880239521,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Magnesium (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 948,
+      "control_mean": 705,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2009",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 34.46808510638298,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Manganese (\u00b5g/g)",
+      "tissue": "tillers",
+      "treatment_mean": 18.1,
+      "control_mean": 18.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "SE",
+      "n": 16,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Subambient CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "soil": "Austin",
+        "year": "2009",
+        "species_composition": "Mixed grasses (cover-weighted)",
+        "soil_type": "Austin"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.5494505494505377,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Potassium (\u00b5g/g)",
+      "tissue": "shoot",
+      "treatment_mean": 10600.0,
+      "control_mean": 10200.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Pre-industrial CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species": "Combined biomass of dominant grasses"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.9215686274509802,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Calcium (\u00b5g/g)",
+      "tissue": "shoot",
+      "treatment_mean": 5362.0,
+      "control_mean": 5706.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Pre-industrial CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species": "Combined biomass of dominant grasses"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.028741675429373,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Phosphorus (\u00b5g/g)",
+      "tissue": "shoot",
+      "treatment_mean": 828.0,
+      "control_mean": 913.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Pre-industrial CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species": "Combined biomass of dominant grasses"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.309967141292443,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Magnesium (\u00b5g/g)",
+      "tissue": "shoot",
+      "treatment_mean": 1110.0,
+      "control_mean": 1060.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Pre-industrial CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species": "Combined biomass of dominant grasses"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.716981132075472,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Manganese (\u00b5g/g)",
+      "tissue": "shoot",
+      "treatment_mean": 20.0,
+      "control_mean": 18.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g/g",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol/mol)",
+      "control_description": "Pre-industrial CO2 (280 \u00b5mol/mol)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species": "Combined biomass of dominant grasses"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.289617486338795,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Potassium",
+      "tissue": "shoot",
+      "treatment_mean": 10132.0,
+      "control_mean": 8603.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g g-1",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol mol-1)",
+      "control_description": "Subambient CO2 (280 \u00b5mol mol-1)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species_community": "Bouteloua curtipendula, Schizachyrium scoparium, Sorghastrum nutans"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.7728699290945,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Calcium",
+      "tissue": "shoot",
+      "treatment_mean": 5291.0,
+      "control_mean": 5706.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g g-1",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol mol-1)",
+      "control_description": "Subambient CO2 (280 \u00b5mol mol-1)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species_community": "Bouteloua curtipendula, Schizachyrium scoparium, Sorghastrum nutans"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.273045916579039,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Phosphorus",
+      "tissue": "shoot",
+      "treatment_mean": 808.0,
+      "control_mean": 913.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g g-1",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol mol-1)",
+      "control_description": "Subambient CO2 (280 \u00b5mol mol-1)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species_community": "Bouteloua curtipendula, Schizachyrium scoparium, Sorghastrum nutans"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.500547645125959,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Magnesium",
+      "tissue": "shoot",
+      "treatment_mean": 925.0,
+      "control_mean": 705.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g g-1",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol mol-1)",
+      "control_description": "Subambient CO2 (280 \u00b5mol mol-1)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species_community": "Bouteloua curtipendula, Schizachyrium scoparium, Sorghastrum nutans"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 31.20567375886525,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Manganese",
+      "tissue": "shoot",
+      "treatment_mean": 28.7,
+      "control_mean": 26.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": null,
+      "unit": "\u00b5g g-1",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (480 \u00b5mol mol-1)",
+      "control_description": "Subambient CO2 (280 \u00b5mol mol-1)",
+      "moderators": {
+        "year": "2008",
+        "site": "Austin soil",
+        "species_community": "Bouteloua curtipendula, Schizachyrium scoparium, Sorghastrum nutans"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.691449814126398,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 20,
+    "final_count": 20
+  },
+  "verification_flags": [
+    {
+      "element": "Potassium (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Potassium (\u00b5g/g)",
+        "treatment_mean": 10132,
+        "control_mean": 8603,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +17.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -15.090801421239636,
+            "note": "Effect +17.8% violates expected direction; unswapped would be -15.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 17.7728699290945,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +17.8%, corrected would be -15.1%"
+      }
+    },
+    {
+      "element": "Calcium (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Calcium (\u00b5g/g)",
+        "treatment_mean": 5291,
+        "control_mean": 5706,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": -7.273045916579039
+      }
+    },
+    {
+      "element": "Phosphorus (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Phosphorus (\u00b5g/g)",
+        "treatment_mean": 808,
+        "control_mean": 913,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": -11.500547645125959
+      }
+    },
+    {
+      "element": "Magnesium (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Magnesium (\u00b5g/g)",
+        "treatment_mean": 925,
+        "control_mean": 705,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +31.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -23.783783783783786,
+            "note": "Effect +31.2% violates expected direction; unswapped would be -23.8%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 31.20567375886525,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +31.2%, corrected would be -23.8%"
+      }
+    },
+    {
+      "element": "Manganese (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Manganese (\u00b5g/g)",
+        "treatment_mean": 28.7,
+        "control_mean": 26.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +6.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -6.271777003484324,
+            "note": "Effect +6.7% violates expected direction; unswapped would be -6.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 6.691449814126398,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +6.7%, corrected would be -6.3%"
+      }
+    },
+    {
+      "element": "Potassium (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Potassium (\u00b5g/g)",
+        "treatment_mean": 9585,
+        "control_mean": 8009,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +19.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -16.442357850808552,
+            "note": "Effect +19.7% violates expected direction; unswapped would be -16.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 19.677862404794606,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +19.7%, corrected would be -16.4%"
+      }
+    },
+    {
+      "element": "Calcium (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Calcium (\u00b5g/g)",
+        "treatment_mean": 5427,
+        "control_mean": 4827,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +12.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -11.05583195135434,
+            "note": "Effect +12.4% violates expected direction; unswapped would be -11.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 12.430080795525171,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +12.4%, corrected would be -11.1%"
+      }
+    },
+    {
+      "element": "Phosphorus (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Phosphorus (\u00b5g/g)",
+        "treatment_mean": 916,
+        "control_mean": 835,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +9.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -8.842794759825328,
+            "note": "Effect +9.7% violates expected direction; unswapped would be -8.8%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 9.70059880239521,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +9.7%, corrected would be -8.8%"
+      }
+    },
+    {
+      "element": "Magnesium (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Magnesium (\u00b5g/g)",
+        "treatment_mean": 948,
+        "control_mean": 705,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +34.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -25.632911392405067,
+            "note": "Effect +34.5% violates expected direction; unswapped would be -25.6%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 34.46808510638298,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +34.5%, corrected would be -25.6%"
+      }
+    },
+    {
+      "element": "Manganese (\u00b5g/g)",
+      "tissue": "tillers",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Manganese (\u00b5g/g)",
+        "treatment_mean": 18.1,
+        "control_mean": 18.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -0.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": -0.5494505494505377
+      }
+    },
+    {
+      "element": "Potassium (\u00b5g/g)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Potassium (\u00b5g/g)",
+        "treatment_mean": 10600.0,
+        "control_mean": 10200.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +3.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          }
+        },
+        "effect_pct": 3.9215686274509802
+      }
+    },
+    {
+      "element": "Magnesium (\u00b5g/g)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Magnesium (\u00b5g/g)",
+        "treatment_mean": 1110.0,
+        "control_mean": 1060.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +4.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          }
+        },
+        "effect_pct": 4.716981132075472
+      }
+    },
+    {
+      "element": "Manganese (\u00b5g/g)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Manganese (\u00b5g/g)",
+        "treatment_mean": 20.0,
+        "control_mean": 18.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +9.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -8.499999999999998,
+            "note": "Effect +9.3% violates expected direction; unswapped would be -8.5%"
+          }
+        },
+        "effect_pct": 9.289617486338795,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +9.3%, corrected would be -8.5%"
+      }
+    },
+    {
+      "element": "Potassium",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Potassium",
+        "treatment_mean": 10132.0,
+        "control_mean": 8603.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +17.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -15.090801421239636,
+            "note": "Effect +17.8% violates expected direction; unswapped would be -15.1%"
+          }
+        },
+        "effect_pct": 17.7728699290945,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +17.8%, corrected would be -15.1%"
+      }
+    },
+    {
+      "element": "Magnesium",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Magnesium",
+        "treatment_mean": 925.0,
+        "control_mean": 705.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +31.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -23.783783783783786,
+            "note": "Effect +31.2% violates expected direction; unswapped would be -23.8%"
+          }
+        },
+        "effect_pct": 31.20567375886525,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +31.2%, corrected would be -23.8%"
+      }
+    },
+    {
+      "element": "Manganese",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Manganese",
+        "treatment_mean": 28.7,
+        "control_mean": 26.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +6.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -6.271777003484324,
+            "note": "Effect +6.7% violates expected direction; unswapped would be -6.3%"
+          }
+        },
+        "effect_pct": 6.691449814126398,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +6.7%, corrected would be -6.3%"
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

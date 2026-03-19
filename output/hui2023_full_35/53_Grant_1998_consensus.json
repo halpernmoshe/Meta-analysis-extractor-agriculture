@@ -1,0 +1,4634 @@
+{
+  "paper_id": "53_Grant_1998",
+  "recon": {
+    "paper_id": "53_Grant_1998",
+    "warnings": [
+      "This paper focuses on cadmium concentration, NOT zinc concentration in grain - primary outcome variables are grain yield and Cd concentration",
+      "Zinc is applied as a treatment but grain Zn concentration is NOT measured or reported",
+      "The study examines whether Zn application affects Cd concentration (potential antagonistic effect), not Zn biofortification",
+      "Multiple factorial treatments include N, P, and Zn in various combinations - need to isolate Zn vs no-Zn comparisons",
+      "Two cultivars (Medora and Sceptre) and two soil types analyzed separately - not valid statistical comparison between cultivars",
+      "Three-year study with significant year effects - data combined where treatment-by-year interaction not significant",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "SE values reported in all tables, e.g., 'SE 169.3' in Table 5",
+    "variance_confidence": "high",
+    "control_definition": "Treatment 1: Control (no fertilizer application)",
+    "treatment_definition": "Various treatments including Zn application (Treatment 2: Zinc; Treatment 8: P-N Dual Band + Zn; Treatment 11: P Broad N Band + Zn)",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "Multiple factorial combinations make it complex to isolate Zn effects - must use contrast analysis approach",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "Experimental design was a randomized complete block with four replications",
+    "factorial_structure": "[\"N application\", \"P application\", \"Zn application\", \"cultivar\", \"soil type\", \"year\"]",
+    "extraction_guidance": "This paper does NOT contain the target outcome variable (grain Zn concentration) for the meta-analysis. The study focuses on cadmium concentration and yield effects. Zinc was applied as a treatment to test its effect on cadmium uptake, but grain zinc concentrations were not measured or reported. This paper should be excluded from the zinc biofortification meta-analysis.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Nitrogen, phosphorus and zinc management effects on grain yield and cadmium concentration in two cultivars of durum wheat\",\n        \"species\": \"Triticum turgidum (durum wheat)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This paper focuses on cadmium concentration, NOT zinc concentration in grain - primary outcome variables are grain yield and Cd concentration\",\n        \"Zinc is applied as a treatment but grain Zn concentration is NOT measured or reported\",\n        \"The study examines whether Zn application affects Cd concentration (potential antagonistic effect), not Zn biofortification\",\n        \"Multiple factorial treatments include N, P, and Zn in various combinations - need to isolate Zn vs no-Zn comparisons\",\n        \"Two cultivars (Medora and Sceptre) and two soil types analyzed separately - not valid statistical comparison between cultivars\",\n        \"Three-year study with significant year effects - data combined where treatment-by-year interaction not significant\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"SE values reported in all tables, e.g., 'SE 169.3' in Table 5\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Treatment 1: Control (no fertilizer application)\",\n        \"treatment_definition\": \"Various treatments including Zn application (Treatment 2: Zinc; Treatment 8: P-N Dual Band + Zn; Treatment 11: P Broad N Band + Zn)\",\n        \"identification_method\": \"Compare treatments with Zn (2, 8, 11) vs corresponding treatments without Zn (1, 7, 10) as stated in contrasts\",\n        \"potential_confusion\": \"Multiple factorial combinations make it complex to isolate Zn effects - must use contrast analysis approach\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n        \"source\": \"Experimental design was a randomized complete",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3",
+      "Table 4",
+      "Table 5",
+      "Table 6",
+      "Table 7"
+    ],
+    "table_descriptions": {
+      "Table 1": "Chemical characteristics of experimental soils including Zn and Cd levels",
+      "Table 2": "Meteorological data during growing seasons",
+      "Table 3": "F-values from ANOVA for grain yield, grain Cd concentration, and Cd accumulation",
+      "Table 4": "Grain yield, grain Cd concentration and Cd accumulation averaged over treatments by year",
+      "Table 5": "Grain yield response to N, P, Zn fertilization on clay loam soil",
+      "Table 6": "Grain yield response to N, P, Zn fertilization on silty clay soil",
+      "Table 7": "Cd concentration in grain response to N, P, Zn fertilization"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "grain yield",
+        "grain Cd concentration",
+        "Cd accumulation"
+      ],
+      "Table 4": [
+        "grain yield",
+        "grain Cd concentration",
+        "Cd accumulation"
+      ],
+      "Table 5": [
+        "grain yield"
+      ],
+      "Table 6": [
+        "grain yield"
+      ],
+      "Table 7": [
+        "Cd concentration in grain"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 48,
+  "gemini_obs": 0,
+  "matched_obs": 47,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 48",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 1024,
+        "control_mean": 1074,
+        "treatment_variance": 169.3,
+        "control_variance": 169.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -4.655493482309125,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 2234,
+        "control_mean": 1074,
+        "treatment_variance": 169.3,
+        "control_variance": 169.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 108.0074487895717,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 1843,
+        "control_mean": 1074,
+        "treatment_variance": 169.3,
+        "control_variance": 169.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 71.60148975791434,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 1322,
+        "control_mean": 1678,
+        "treatment_variance": 233.6,
+        "control_variance": 233.6,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -21.215733015494635,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 1872,
+        "control_mean": 1678,
+        "treatment_variance": 233.6,
+        "control_variance": 233.6,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 11.561382598331345,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 1998,
+        "control_mean": 1678,
+        "treatment_variance": 233.6,
+        "control_variance": 233.6,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 19.07032181168057,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 475,
+        "control_mean": 515,
+        "treatment_variance": 129.3,
+        "control_variance": 129.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -7.766990291262135,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 1818,
+        "control_mean": 515,
+        "treatment_variance": 129.3,
+        "control_variance": 129.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 253.0097087378641,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 1830,
+        "control_mean": 515,
+        "treatment_variance": 129.3,
+        "control_variance": 129.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 255.33980582524273,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 2312,
+        "control_mean": 1992,
+        "treatment_variance": 826.7,
+        "control_variance": 826.7,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 16.06425702811245,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3703,
+        "control_mean": 1992,
+        "treatment_variance": 826.7,
+        "control_variance": 826.7,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 85.89357429718876,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3009,
+        "control_mean": 1992,
+        "treatment_variance": 826.7,
+        "control_variance": 826.7,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 51.05421686746988,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3033,
+        "control_mean": 2689,
+        "treatment_variance": 156.2,
+        "control_variance": 156.2,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": 12.792859799181851,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3852,
+        "control_mean": 2689,
+        "treatment_variance": 156.2,
+        "control_variance": 156.2,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 43.25027891409446,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3827,
+        "control_mean": 2689,
+        "treatment_variance": 156.2,
+        "control_variance": 156.2,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 42.320565265898104,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 4502,
+        "control_mean": 4141,
+        "treatment_variance": 195.3,
+        "control_variance": 195.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": 8.717701038396521,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 5082,
+        "control_mean": 4141,
+        "treatment_variance": 195.3,
+        "control_variance": 195.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 22.723979715044678,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 4561,
+        "control_mean": 4141,
+        "treatment_variance": 195.3,
+        "control_variance": 195.3,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 10.142477662400387,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 2951,
+        "control_mean": 3144,
+        "treatment_variance": 124.7,
+        "control_variance": 124.7,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -6.138676844783715,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3274,
+        "control_mean": 3144,
+        "treatment_variance": 124.7,
+        "control_variance": 124.7,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 4.134860050890586,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3373,
+        "control_mean": 3144,
+        "treatment_variance": 124.7,
+        "control_variance": 124.7,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 7.283715012722647,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3514,
+        "control_mean": 3598,
+        "treatment_variance": 211.2,
+        "control_variance": 211.2,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -2.3346303501945527,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 4279,
+        "control_mean": 3598,
+        "treatment_variance": 211.2,
+        "control_variance": 211.2,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 18.927181767648694,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 4271,
+        "control_mean": 3598,
+        "treatment_variance": 211.2,
+        "control_variance": 211.2,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 18.70483602001112,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 4746,
+        "control_mean": 4540,
+        "treatment_variance": 104.9,
+        "control_variance": 104.9,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": 4.537444933920705,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 5907,
+        "control_mean": 4540,
+        "treatment_variance": 104.9,
+        "control_variance": 104.9,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 30.110132158590307,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 5690,
+        "control_mean": 4540,
+        "treatment_variance": 104.9,
+        "control_variance": 104.9,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 25.33039647577093,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3321,
+        "control_mean": 3403,
+        "treatment_variance": 144.8,
+        "control_variance": 144.8,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -2.4096385542168677,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3534,
+        "control_mean": 3403,
+        "treatment_variance": 144.8,
+        "control_variance": 144.8,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 3.849544519541581,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3495,
+        "control_mean": 3403,
+        "treatment_variance": 144.8,
+        "control_variance": 144.8,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "kg ha-1",
+        "data_source": "Table 6",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 2.7034969144872174,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 44,
+        "control_mean": 57,
+        "treatment_variance": 14.6,
+        "control_variance": 14.6,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": -22.807017543859647,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 69,
+        "control_mean": 57,
+        "treatment_variance": 14.6,
+        "control_variance": 14.6,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 21.052631578947366,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 58,
+        "control_mean": 57,
+        "treatment_variance": 14.6,
+        "control_variance": 14.6,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 1.7543859649122806,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 46,
+        "control_mean": 45,
+        "treatment_variance": 12.8,
+        "control_variance": 12.8,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 2.2222222222222223,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 72,
+        "control_mean": 45,
+        "treatment_variance": 12.8,
+        "control_variance": 12.8,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 60.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 64,
+        "control_mean": 45,
+        "treatment_variance": 12.8,
+        "control_variance": 12.8,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Clay loam",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 42.22222222222222,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 60,
+        "control_mean": 55,
+        "treatment_variance": 9.01,
+        "control_variance": 9.01,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": 9.090909090909092,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 74,
+        "control_mean": 55,
+        "treatment_variance": 9.01,
+        "control_variance": 9.01,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 34.54545454545455,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 79,
+        "control_mean": 55,
+        "treatment_variance": 9.01,
+        "control_variance": 9.01,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1991",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 43.63636363636363,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 118,
+        "control_mean": 122,
+        "treatment_variance": 11.07,
+        "control_variance": 11.07,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -3.278688524590164,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 139,
+        "control_mean": 122,
+        "treatment_variance": 11.07,
+        "control_variance": 11.07,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 13.934426229508196,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 142,
+        "control_mean": 122,
+        "treatment_variance": 11.07,
+        "control_variance": 11.07,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1992",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 16.39344262295082,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 59,
+        "control_mean": 73,
+        "treatment_variance": 7.06,
+        "control_variance": 7.06,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1",
+        "effect_pct": -19.17808219178082,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 78,
+        "control_mean": 73,
+        "treatment_variance": 7.06,
+        "control_variance": 7.06,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1",
+        "effect_pct": 6.8493150684931505,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 75,
+        "control_mean": 73,
+        "treatment_variance": 7.06,
+        "control_variance": 7.06,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Medora",
+          "year": "1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1",
+        "effect_pct": 2.73972602739726,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 66,
+        "control_mean": 71,
+        "treatment_variance": 11.32,
+        "control_variance": 11.32,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "Zn only"
+        },
+        "confidence": "high",
+        "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": -7.042253521126761,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 98,
+        "control_mean": 71,
+        "treatment_variance": 11.32,
+        "control_variance": 11.32,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P-N Dual Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P-N Dual Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 38.028169014084504,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Cd concentration",
+        "tissue": "grain",
+        "treatment_mean": 98,
+        "control_mean": 71,
+        "treatment_variance": 11.32,
+        "control_variance": 11.32,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "\u00b5g kg-1",
+        "data_source": "Table 7",
+        "treatment_description": "P Broad N Band + Zn",
+        "control_description": "No fertilizer",
+        "moderators": {
+          "cultivar": "Sceptre",
+          "year": "1991-1993",
+          "site": "Silty clay",
+          "zinc_treatment_detail": "P Broad N Band + Zn"
+        },
+        "confidence": "high",
+        "notes": "Treatment 11 vs Treatment 1. Data merged over 1991-1993.",
+        "effect_pct": 38.028169014084504,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 1024,
+      "control_mean": 1074,
+      "treatment_variance": 169.3,
+      "control_variance": 169.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -4.655493482309125,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 2234,
+      "control_mean": 1074,
+      "treatment_variance": 169.3,
+      "control_variance": 169.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 108.0074487895717,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 1843,
+      "control_mean": 1074,
+      "treatment_variance": 169.3,
+      "control_variance": 169.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 71.60148975791434,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 1322,
+      "control_mean": 1678,
+      "treatment_variance": 233.6,
+      "control_variance": 233.6,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -21.215733015494635,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 1872,
+      "control_mean": 1678,
+      "treatment_variance": 233.6,
+      "control_variance": 233.6,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 11.561382598331345,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 1998,
+      "control_mean": 1678,
+      "treatment_variance": 233.6,
+      "control_variance": 233.6,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 19.07032181168057,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 475,
+      "control_mean": 515,
+      "treatment_variance": 129.3,
+      "control_variance": 129.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -7.766990291262135,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 1818,
+      "control_mean": 515,
+      "treatment_variance": 129.3,
+      "control_variance": 129.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 253.0097087378641,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 1830,
+      "control_mean": 515,
+      "treatment_variance": 129.3,
+      "control_variance": 129.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 255.33980582524273,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 2312,
+      "control_mean": 1992,
+      "treatment_variance": 826.7,
+      "control_variance": 826.7,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 16.06425702811245,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3703,
+      "control_mean": 1992,
+      "treatment_variance": 826.7,
+      "control_variance": 826.7,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 85.89357429718876,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3009,
+      "control_mean": 1992,
+      "treatment_variance": 826.7,
+      "control_variance": 826.7,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 51.05421686746988,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3033,
+      "control_mean": 2689,
+      "treatment_variance": 156.2,
+      "control_variance": 156.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 12.792859799181851,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3852,
+      "control_mean": 2689,
+      "treatment_variance": 156.2,
+      "control_variance": 156.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 43.25027891409446,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3827,
+      "control_mean": 2689,
+      "treatment_variance": 156.2,
+      "control_variance": 156.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 42.320565265898104,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4502,
+      "control_mean": 4141,
+      "treatment_variance": 195.3,
+      "control_variance": 195.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 8.717701038396521,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 5082,
+      "control_mean": 4141,
+      "treatment_variance": 195.3,
+      "control_variance": 195.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 22.723979715044678,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4561,
+      "control_mean": 4141,
+      "treatment_variance": 195.3,
+      "control_variance": 195.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 10.142477662400387,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 2951,
+      "control_mean": 3144,
+      "treatment_variance": 124.7,
+      "control_variance": 124.7,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -6.138676844783715,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3274,
+      "control_mean": 3144,
+      "treatment_variance": 124.7,
+      "control_variance": 124.7,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 4.134860050890586,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3373,
+      "control_mean": 3144,
+      "treatment_variance": 124.7,
+      "control_variance": 124.7,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 7.283715012722647,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3514,
+      "control_mean": 3598,
+      "treatment_variance": 211.2,
+      "control_variance": 211.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -2.3346303501945527,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4279,
+      "control_mean": 3598,
+      "treatment_variance": 211.2,
+      "control_variance": 211.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 18.927181767648694,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4271,
+      "control_mean": 3598,
+      "treatment_variance": 211.2,
+      "control_variance": 211.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 18.70483602001112,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4746,
+      "control_mean": 4540,
+      "treatment_variance": 104.9,
+      "control_variance": 104.9,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 4.537444933920705,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 5907,
+      "control_mean": 4540,
+      "treatment_variance": 104.9,
+      "control_variance": 104.9,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 30.110132158590307,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 5690,
+      "control_mean": 4540,
+      "treatment_variance": 104.9,
+      "control_variance": 104.9,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 25.33039647577093,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3321,
+      "control_mean": 3403,
+      "treatment_variance": 144.8,
+      "control_variance": 144.8,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -2.4096385542168677,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3534,
+      "control_mean": 3403,
+      "treatment_variance": 144.8,
+      "control_variance": 144.8,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 3.849544519541581,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3495,
+      "control_mean": 3403,
+      "treatment_variance": 144.8,
+      "control_variance": 144.8,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 6",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 2.7034969144872174,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 44,
+      "control_mean": 57,
+      "treatment_variance": 14.6,
+      "control_variance": 14.6,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": -22.807017543859647,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 69,
+      "control_mean": 57,
+      "treatment_variance": 14.6,
+      "control_variance": 14.6,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 21.052631578947366,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 58,
+      "control_mean": 57,
+      "treatment_variance": 14.6,
+      "control_variance": 14.6,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 1.7543859649122806,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 46,
+      "control_mean": 45,
+      "treatment_variance": 12.8,
+      "control_variance": 12.8,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 2.2222222222222223,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 72,
+      "control_mean": 45,
+      "treatment_variance": 12.8,
+      "control_variance": 12.8,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 60.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 64,
+      "control_mean": 45,
+      "treatment_variance": 12.8,
+      "control_variance": 12.8,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Clay loam",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 42.22222222222222,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 60,
+      "control_mean": 55,
+      "treatment_variance": 9.01,
+      "control_variance": 9.01,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 9.090909090909092,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 74,
+      "control_mean": 55,
+      "treatment_variance": 9.01,
+      "control_variance": 9.01,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 34.54545454545455,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 79,
+      "control_mean": 55,
+      "treatment_variance": 9.01,
+      "control_variance": 9.01,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1991",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 43.63636363636363,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 118,
+      "control_mean": 122,
+      "treatment_variance": 11.07,
+      "control_variance": 11.07,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -3.278688524590164,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 139,
+      "control_mean": 122,
+      "treatment_variance": 11.07,
+      "control_variance": 11.07,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 13.934426229508196,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 142,
+      "control_mean": 122,
+      "treatment_variance": 11.07,
+      "control_variance": 11.07,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1992",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 16.39344262295082,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 59,
+      "control_mean": 73,
+      "treatment_variance": 7.06,
+      "control_variance": 7.06,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": -19.17808219178082,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 78,
+      "control_mean": 73,
+      "treatment_variance": 7.06,
+      "control_variance": 7.06,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 6.8493150684931505,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 75,
+      "control_mean": 73,
+      "treatment_variance": 7.06,
+      "control_variance": 7.06,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P Broad N Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Medora",
+        "year": "1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P Broad N Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 11 vs Treatment 1 [single-model fallback: Kimi only]",
+      "effect_pct": 2.73972602739726,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 66,
+      "control_mean": 71,
+      "treatment_variance": 11.32,
+      "control_variance": 11.32,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "ZnSO4 application (10 kg Zn ha-1)",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "Zn only"
+      },
+      "confidence": "low",
+      "notes": "Treatment 2 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": -7.042253521126761,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "treatment_mean": 98,
+      "control_mean": 71,
+      "treatment_variance": 11.32,
+      "control_variance": 11.32,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "\u00b5g kg-1",
+      "data_source": "Table 7",
+      "treatment_description": "P-N Dual Band + Zn",
+      "control_description": "No fertilizer",
+      "moderators": {
+        "cultivar": "Sceptre",
+        "year": "1991-1993",
+        "site": "Silty clay",
+        "zinc_treatment_detail": "P-N Dual Band + Zn"
+      },
+      "confidence": "low",
+      "notes": "Treatment 8 vs Treatment 1. Data merged over 1991-1993. [single-model fallback: Kimi only]",
+      "effect_pct": 38.028169014084504,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 1,
+    "null_means_removed": 1,
+    "tc_swaps_corrected": 0,
+    "original_count": 49,
+    "final_count": 47
+  },
+  "verification_flags": [
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 1024,
+        "control_mean": 1074,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -4.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 33.06640625,
+            "note": "CV = 33.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.1%"
+          }
+        },
+        "effect_pct": -4.655493482309125
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 2234,
+        "control_mean": 1074,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +108.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +108.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.156669650850493,
+            "note": "CV = 15.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.2%"
+          }
+        },
+        "effect_pct": 108.0074487895717
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 1843,
+        "control_mean": 1074,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +71.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 18.372219207813348,
+            "note": "CV = 18.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.6%"
+          }
+        },
+        "effect_pct": 71.60148975791434
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 1322,
+        "control_mean": 1678,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -21.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 26.928895612708015,
+            "note": "Effect -21.2% violates expected direction; unswapped would be +26.9%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 35.340393343419066,
+            "note": "CV = 35.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.6%"
+          }
+        },
+        "effect_pct": -21.215733015494635,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -21.2%, corrected would be +26.9%"
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 1872,
+        "control_mean": 1678,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 24.957264957264957,
+            "note": "CV = 25.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.2%"
+          }
+        },
+        "effect_pct": 11.561382598331345
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 1998,
+        "control_mean": 1678,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 23.383383383383382,
+            "note": "CV = 23.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=12.7%"
+          }
+        },
+        "effect_pct": 19.07032181168057
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 475,
+        "control_mean": 515,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -7.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 8.421052631578945,
+            "note": "Effect -7.8% violates expected direction; unswapped would be +8.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 54.442105263157906,
+            "note": "CV = 54.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=26.1%"
+          }
+        },
+        "effect_pct": -7.766990291262135,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -7.8%, corrected would be +8.4%"
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 1818,
+        "control_mean": 515,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +253.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +253.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.224422442244226,
+            "note": "CV = 14.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.1%"
+          }
+        },
+        "effect_pct": 253.0097087378641
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 1830,
+        "control_mean": 515,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +255.3%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +255.3% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.131147540983607,
+            "note": "CV = 14.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.0%"
+          }
+        },
+        "effect_pct": 255.33980582524273
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 2312,
+        "control_mean": 1992,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 71.51384083044982,
+            "note": "CV = 71.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=38.4%"
+          }
+        },
+        "effect_pct": 16.06425702811245
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 3703,
+        "control_mean": 1992,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +85.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 44.650283553875234,
+            "note": "CV = 44.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=29.0%"
+          }
+        },
+        "effect_pct": 85.89357429718876
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 3009,
+        "control_mean": 1992,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +51.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 54.94848786972416,
+            "note": "CV = 54.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=33.1%"
+          }
+        },
+        "effect_pct": 51.05421686746988
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 3033,
+        "control_mean": 2689,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.300032970656115,
+            "note": "CV = 10.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 12.792859799181851
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 2951,
+        "control_mean": 3144,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -6.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 6.540155879362929,
+            "note": "Effect -6.1% violates expected direction; unswapped would be +6.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.451372416130127,
+            "note": "CV = 8.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.2%"
+          }
+        },
+        "effect_pct": -6.138676844783715,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -6.1%, corrected would be +6.5%"
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 3514,
+        "control_mean": 3598,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.020489470688673,
+            "note": "CV = 12.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": -2.3346303501945527
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 4279,
+        "control_mean": 3598,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.87146529562982,
+            "note": "CV = 9.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": 18.927181767648694
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 4271,
+        "control_mean": 3598,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.889955513931163,
+            "note": "CV = 9.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": 18.70483602001112
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 3321,
+        "control_mean": 3403,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.720264980427583,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.6%"
+          }
+        },
+        "effect_pct": -2.4096385542168677
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 44,
+        "control_mean": 57,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -22.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 29.545454545454547,
+            "note": "Effect -22.8% violates expected direction; unswapped would be +29.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 66.36363636363636,
+            "note": "CV = 66.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=28.9%"
+          }
+        },
+        "effect_pct": -22.807017543859647,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -22.8%, corrected would be +29.5%"
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 69,
+        "control_mean": 57,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 42.31884057971014,
+            "note": "CV = 42.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=23.2%"
+          }
+        },
+        "effect_pct": 21.052631578947366
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 58,
+        "control_mean": 57,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 50.3448275862069,
+            "note": "CV = 50.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=25.4%"
+          }
+        },
+        "effect_pct": 1.7543859649122806
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 46,
+        "control_mean": 45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 55.65217391304348,
+            "note": "CV = 55.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=28.1%"
+          }
+        },
+        "effect_pct": 2.2222222222222223
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 72,
+        "control_mean": 45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +60.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 35.55555555555556,
+            "note": "CV = 35.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=21.9%"
+          }
+        },
+        "effect_pct": 60.0
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 64,
+        "control_mean": 45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +42.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 40.0,
+            "note": "CV = 40.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=23.5%"
+          }
+        },
+        "effect_pct": 42.22222222222222
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 60,
+        "control_mean": 55,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 30.033333333333335,
+            "note": "CV = 30.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.7%"
+          }
+        },
+        "effect_pct": 9.090909090909092
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 74,
+        "control_mean": 55,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +34.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 24.35135135135135,
+            "note": "CV = 24.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.0%"
+          }
+        },
+        "effect_pct": 34.54545454545455
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 79,
+        "control_mean": 55,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +43.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 22.810126582278482,
+            "note": "CV = 22.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.4%"
+          }
+        },
+        "effect_pct": 43.63636363636363
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 118,
+        "control_mean": 122,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 18.762711864406782,
+            "note": "CV = 18.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.2%"
+          }
+        },
+        "effect_pct": -3.278688524590164
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 139,
+        "control_mean": 122,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.928057553956835,
+            "note": "CV = 15.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 13.934426229508196
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 142,
+        "control_mean": 122,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.591549295774648,
+            "note": "CV = 15.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.4%"
+          }
+        },
+        "effect_pct": 16.39344262295082
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 59,
+        "control_mean": 73,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -19.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 23.72881355932203,
+            "note": "Effect -19.2% violates expected direction; unswapped would be +23.7%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 23.932203389830505,
+            "note": "CV = 23.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.7%"
+          }
+        },
+        "effect_pct": -19.17808219178082,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -19.2%, corrected would be +23.7%"
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 78,
+        "control_mean": 73,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 18.102564102564102,
+            "note": "CV = 18.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.4%"
+          }
+        },
+        "effect_pct": 6.8493150684931505
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 75,
+        "control_mean": 73,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 18.826666666666668,
+            "note": "CV = 18.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.5%"
+          }
+        },
+        "effect_pct": 2.73972602739726
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 66,
+        "control_mean": 71,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -7.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 7.575757575757576,
+            "note": "Effect -7.0% violates expected direction; unswapped would be +7.6%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 34.303030303030305,
+            "note": "CV = 34.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.5%"
+          }
+        },
+        "effect_pct": -7.042253521126761,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -7.0%, corrected would be +7.6%"
+      }
+    },
+    {
+      "element": "grain Cd concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Cd concentration",
+        "treatment_mean": 98,
+        "control_mean": 71,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +38.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 23.10204081632653,
+            "note": "CV = 23.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.4%"
+          }
+        },
+        "effect_pct": 38.028169014084504
+      }
+    }
+  ]
+}

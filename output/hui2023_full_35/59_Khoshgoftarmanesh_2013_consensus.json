@@ -1,0 +1,3776 @@
+{
+  "paper_id": "59_Khoshgoftarmanesh_2013",
+  "recon": {
+    "paper_id": "59_Khoshgoftarmanesh_2013",
+    "warnings": [
+      "This is a Zn fertilizer study, not CO2 study - the meta-analysis context appears mismatched",
+      "Multiple Zn sources tested: ZnSO4, Zn(Arg)2, Zn(Gly)2, Zn(His)2 - each should be treated as separate treatments vs control",
+      "Split-plot design with cultivars as subplots may create dependency in observations",
+      "Two years of data - need to extract year-specific values to avoid pseudoreplication",
+      "Control is 'no Zn fertilizer' (Ctrl) - clearly defined as zero-Zn treatment",
+      "Figure 3 shows grain Zn concentration data with error bars - this is the primary outcome",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "sulphate,Zn(Arg)2,Zn(Gly)2,and Zn(His)2.Error bar represent standard error (n =3).Bars having different letters ar",
+    "variance_confidence": "high",
+    "control_definition": "Control (Ctrl) - no Zn fertilizer was applied during the whole growth stage",
+    "treatment_definition": "Foliar applications of ZnSO4, Zn(Arg)2, Zn(Gly)2, and Zn(His)2 at 0.2% Zn (w/v)",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "split-plot",
+    "sample_size_found": 3,
+    "sample_size_source": "The experimental design was a split plot in randomized complete block design with three replicates. Error bars represent standard error (n = 3)",
+    "factorial_structure": "[\"Zn fertilizer (5 levels)\", \"cultivar (2 levels)\", \"year (2 levels)\"]",
+    "extraction_guidance": "Extract grain Zn concentration data from Figure 3. Data is presented separately for two cultivars (Back Cross and Kavir) and two years (2009-2010, 2010-2011). Each Zn treatment (ZnSO4, Zn-Arg, Zn-Gly, Zn-His) should be compared against the Ctrl (no Zn) treatment. Extract year-specific and cultivar-specific values to avoid pseudoreplication. Standard errors are shown as error bars with n=3 replicates per treatment combination.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"The effectiveness of foliar applications of synthesized zinc-amino acid chelates in comparison with zinc sulfate to increase yield and grain nutritional quality of wheat\",\n        \"species\": \"Triticum aestivum (wheat)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"This is a Zn fertilizer study, not CO2 study - the meta-analysis context appears mismatched\",\n        \"Multiple Zn sources tested: ZnSO4, Zn(Arg)2, Zn(Gly)2, Zn(His)2 - each should be treated as separate treatments vs control\",\n        \"Split-plot design with cultivars as subplots may create dependency in observations\",\n        \"Two years of data - need to extract year-specific values to avoid pseudoreplication\",\n        \"Control is 'no Zn fertilizer' (Ctrl) - clearly defined as zero-Zn treatment\",\n        \"Figure 3 shows grain Zn concentration data with error bars - this is the primary outcome\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"Error bars represent standard error (n = 3). Bars having different letters are significantly different at the 5% level by LSD\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Control (Ctrl) - no Zn fertilizer was applied during the whole growth stage\",\n        \"treatment_definition\": \"Foliar applications of ZnSO4, Zn(Arg)2, Zn(Gly)2, and Zn(His)2 at 0.2% Zn (w/v)\",\n        \"identification_method\": \"Control labeled as 'Ctrl' in figures, treatments labeled as ZnSO4, Zn-Arg, Zn-Gly, Zn-His\",\n        \"potential_confusion\": null\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"The experimental design was a split plot in randomized complete block design with three replicates. Error bars represent standard error (n = 3)\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 3 represents independent field plot replicates per treatment co",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3"
+    ],
+    "table_descriptions": {
+      "Table 1": "Soil characteristics of experimental locations",
+      "Table 2": "Analytical data for zinc-amino acid complexes synthesis",
+      "Table 3": "ANOVA results for yield and grain nutritional quality"
+    },
+    "figures_with_data": [
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Figure 3": [
+        "grain Zn concentration (mg/kg)"
+      ],
+      "Figure 4": [
+        "grain Fe concentration (mg/kg)"
+      ],
+      "Figure 5": [
+        "grain protein concentration (%)"
+      ],
+      "Figure 6": [
+        "grain phytic acid concentration (g/100g)"
+      ],
+      "Figure 7": [
+        "phytic acid to Zn molar ratio"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 72,
+  "kimi_obs": 0,
+  "gemini_obs": 72,
+  "matched_obs": 39,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 72",
+  "disagreements": [
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 28,
+        "control_mean": 18,
+        "treatment_variance": 1.8,
+        "control_variance": 1.0,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2009-2010"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 55.55555555555556,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 29,
+        "control_mean": 17,
+        "treatment_variance": 1.6,
+        "control_variance": 0.8,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2009-2010"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 70.58823529411765,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 28,
+        "control_mean": 17,
+        "treatment_variance": 1.4,
+        "control_variance": 0.8,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2009-2010"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 64.70588235294117,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 25,
+        "control_mean": 20,
+        "treatment_variance": 1.2,
+        "control_variance": 0.9,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 25.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 32,
+        "control_mean": 20,
+        "treatment_variance": 1.8,
+        "control_variance": 0.9,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 60.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 31,
+        "control_mean": 20,
+        "treatment_variance": 1.5,
+        "control_variance": 0.9,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 55.00000000000001,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 26,
+        "control_mean": 20,
+        "treatment_variance": 1.3,
+        "control_variance": 0.9,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 30.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 24,
+        "control_mean": 19,
+        "treatment_variance": 1.1,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 26.31578947368421,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 26,
+        "control_mean": 19,
+        "treatment_variance": 1.3,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 36.84210526315789,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 29,
+        "control_mean": 19,
+        "treatment_variance": 1.6,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 52.63157894736842,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 28,
+        "control_mean": 19,
+        "treatment_variance": 1.4,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 3",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 3 bar chart",
+        "effect_pct": 47.368421052631575,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain Fe concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 46,
+        "control_mean": 37,
+        "treatment_variance": 2.4,
+        "control_variance": 1.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "mg/kg",
+        "data_source": "Figure 4",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 4 bar chart",
+        "effect_pct": 24.324324324324326,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain protein concentration (%)",
+        "tissue": "grain",
+        "treatment_mean": 14.3,
+        "control_mean": 12.3,
+        "treatment_variance": 0.7,
+        "control_variance": 0.4,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Figure 5",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 5 bar chart",
+        "effect_pct": 16.260162601626014,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain protein concentration (%)",
+        "tissue": "grain",
+        "treatment_mean": 14.2,
+        "control_mean": 12.3,
+        "treatment_variance": 0.7,
+        "control_variance": 0.4,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Figure 5",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 5 bar chart",
+        "effect_pct": 15.447154471544703,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain protein concentration (%)",
+        "tissue": "grain",
+        "treatment_mean": 14.3,
+        "control_mean": 11.8,
+        "treatment_variance": 0.7,
+        "control_variance": 0.4,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Figure 5",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 5 bar chart",
+        "effect_pct": 21.1864406779661,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain protein concentration (%)",
+        "tissue": "grain",
+        "treatment_mean": 14.1,
+        "control_mean": 11.8,
+        "treatment_variance": 0.7,
+        "control_variance": 0.4,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Figure 5",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 5 bar chart",
+        "effect_pct": 19.491525423728802,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.25,
+        "control_mean": 0.29,
+        "treatment_variance": 0.015,
+        "control_variance": 0.018,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2009-2010"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart",
+        "effect_pct": -13.793103448275856,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.26,
+        "control_mean": 0.29,
+        "treatment_variance": 0.016,
+        "control_variance": 0.018,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2009-2010"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart",
+        "effect_pct": -10.344827586206886,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.19,
+        "control_mean": 0.2,
+        "treatment_variance": 0.012,
+        "control_variance": 0.013,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart",
+        "effect_pct": -5.000000000000004,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.17,
+        "control_mean": 0.2,
+        "treatment_variance": 0.011,
+        "control_variance": 0.013,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart",
+        "effect_pct": -15.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.17,
+        "control_mean": 0.2,
+        "treatment_variance": 0.011,
+        "control_variance": 0.013,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Back Cross",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart",
+        "effect_pct": -15.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.12,
+        "control_mean": 0.12,
+        "treatment_variance": 0.008,
+        "control_variance": 0.008,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart - no difference observed",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.12,
+        "control_mean": 0.12,
+        "treatment_variance": 0.008,
+        "control_variance": 0.008,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart - no difference observed",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.12,
+        "control_mean": 0.12,
+        "treatment_variance": 0.008,
+        "control_variance": 0.008,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart - no difference observed",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "tissue": "grain",
+        "treatment_mean": 0.12,
+        "control_mean": 0.12,
+        "treatment_variance": 0.008,
+        "control_variance": 0.008,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "g/100g",
+        "data_source": "Figure 6",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "cultivar": "Kavir",
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 6 bar chart - no difference observed",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "phytic acid to Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 13.8,
+        "control_mean": 21.1,
+        "treatment_variance": 0.8,
+        "control_variance": 1.2,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "molar ratio",
+        "data_source": "Figure 7",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "year": "2009-2010"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 7 bar chart - cultivar effect not significant",
+        "effect_pct": -34.59715639810427,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "phytic acid to Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 8.5,
+        "control_mean": 11.2,
+        "treatment_variance": 0.5,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "molar ratio",
+        "data_source": "Figure 7",
+        "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 7 bar chart - cultivar effect not significant",
+        "effect_pct": -24.10714285714285,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "phytic acid to Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 8.1,
+        "control_mean": 11.2,
+        "treatment_variance": 0.5,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "molar ratio",
+        "data_source": "Figure 7",
+        "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 7 bar chart - cultivar effect not significant",
+        "effect_pct": -27.678571428571423,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "phytic acid to Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 8.3,
+        "control_mean": 11.2,
+        "treatment_variance": 0.5,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "molar ratio",
+        "data_source": "Figure 7",
+        "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 7 bar chart - cultivar effect not significant",
+        "effect_pct": -25.892857142857135,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "claude": {
+        "element": "phytic acid to Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 8.6,
+        "control_mean": 11.2,
+        "treatment_variance": 0.5,
+        "control_variance": 0.7,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "molar ratio",
+        "data_source": "Figure 7",
+        "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+        "control_description": "No Zn fertilizer applied (Ctrl)",
+        "moderators": {
+          "year": "2010-2011"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from Figure 7 bar chart - cultivar effect not significant",
+        "effect_pct": -23.21428571428571,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 23,
+      "control_mean": 18,
+      "treatment_variance": 1.5,
+      "control_variance": 1.0,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=7.6%) [Claude+Gemini agree]",
+      "effect_pct": 27.77777777777778,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 26,
+      "control_mean": 18,
+      "treatment_variance": 1.2,
+      "control_variance": 1.0,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=6.9%) [Claude+Gemini agree]",
+      "effect_pct": 44.44444444444444,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 22,
+      "control_mean": 17,
+      "treatment_variance": 1.4,
+      "control_variance": 0.8,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=4.4%) [Claude+Gemini agree]",
+      "effect_pct": 29.411764705882355,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 24,
+      "control_mean": 17,
+      "treatment_variance": 1.2,
+      "control_variance": 0.8,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 3",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=9.0%) [Claude+Gemini agree]",
+      "effect_pct": 41.17647058823529,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 41,
+      "control_mean": 40,
+      "treatment_variance": 2.1,
+      "control_variance": 1.8,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.5%) [Claude+Gemini agree]",
+      "effect_pct": 2.5,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 44,
+      "control_mean": 40,
+      "treatment_variance": 2.3,
+      "control_variance": 1.8,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.2%) [Claude+Gemini agree]",
+      "effect_pct": 10.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 45,
+      "control_mean": 40,
+      "treatment_variance": 2.5,
+      "control_variance": 1.8,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.7%) [Claude+Gemini agree]",
+      "effect_pct": 12.5,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 42,
+      "control_mean": 40,
+      "treatment_variance": 2.2,
+      "control_variance": 1.8,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.9%) [Claude+Gemini agree]",
+      "effect_pct": 5.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 41,
+      "control_mean": 36,
+      "treatment_variance": 1.9,
+      "control_variance": 1.6,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.5%) [Claude+Gemini agree]",
+      "effect_pct": 13.88888888888889,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 49,
+      "control_mean": 36,
+      "treatment_variance": 2.8,
+      "control_variance": 1.6,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.2%) [Claude+Gemini agree]",
+      "effect_pct": 36.11111111111111,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 52,
+      "control_mean": 36,
+      "treatment_variance": 3.1,
+      "control_variance": 1.6,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.5%) [Claude+Gemini agree]",
+      "effect_pct": 44.44444444444444,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 43,
+      "control_mean": 36,
+      "treatment_variance": 2.4,
+      "control_variance": 1.6,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.6%) [Claude+Gemini agree]",
+      "effect_pct": 19.444444444444446,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 45,
+      "control_mean": 44,
+      "treatment_variance": 2.1,
+      "control_variance": 2.0,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=9.0%) [Claude+Gemini agree]",
+      "effect_pct": 2.272727272727273,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 48,
+      "control_mean": 44,
+      "treatment_variance": 2.4,
+      "control_variance": 2.0,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.6%) [Claude+Gemini agree]",
+      "effect_pct": 9.090909090909092,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 51,
+      "control_mean": 44,
+      "treatment_variance": 2.7,
+      "control_variance": 2.0,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=8.7%) [Claude+Gemini agree]",
+      "effect_pct": 15.909090909090908,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 50,
+      "control_mean": 44,
+      "treatment_variance": 2.6,
+      "control_variance": 2.0,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=8.8%) [Claude+Gemini agree]",
+      "effect_pct": 13.636363636363635,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 38,
+      "control_mean": 37,
+      "treatment_variance": 1.8,
+      "control_variance": 1.7,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.3%) [Claude+Gemini agree]",
+      "effect_pct": 2.7027027027027026,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 42,
+      "control_mean": 37,
+      "treatment_variance": 2.1,
+      "control_variance": 1.7,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.3%) [Claude+Gemini agree]",
+      "effect_pct": 13.513513513513514,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 44,
+      "control_mean": 37,
+      "treatment_variance": 2.3,
+      "control_variance": 1.7,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 4",
+      "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=8.3%) [Claude+Gemini agree]",
+      "effect_pct": 18.91891891891892,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 12.8,
+      "control_mean": 12.5,
+      "treatment_variance": 0.5,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.4%) [Claude+Gemini agree]",
+      "effect_pct": 2.4000000000000057,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 13.1,
+      "control_mean": 12.5,
+      "treatment_variance": 0.6,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.5%) [Claude+Gemini agree]",
+      "effect_pct": 4.799999999999997,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 13.0,
+      "control_mean": 12.5,
+      "treatment_variance": 0.5,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.9%) [Claude+Gemini agree]",
+      "effect_pct": 4.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 12.9,
+      "control_mean": 12.5,
+      "treatment_variance": 0.5,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.9%) [Claude+Gemini agree]",
+      "effect_pct": 3.200000000000003,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 12.2,
+      "control_mean": 11.4,
+      "treatment_variance": 0.4,
+      "control_variance": 0.3,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.4%) [Claude+Gemini agree]",
+      "effect_pct": 7.017543859649113,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 12.8,
+      "control_mean": 11.4,
+      "treatment_variance": 0.5,
+      "control_variance": 0.3,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.8%) [Claude+Gemini agree]",
+      "effect_pct": 12.280701754385968,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 13.3,
+      "control_mean": 11.4,
+      "treatment_variance": 0.6,
+      "control_variance": 0.3,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.7%) [Claude+Gemini agree]",
+      "effect_pct": 16.666666666666668,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 13.1,
+      "control_mean": 11.4,
+      "treatment_variance": 0.6,
+      "control_variance": 0.3,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(His)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.0%) [Claude+Gemini agree]",
+      "effect_pct": 14.91228070175438,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 12.9,
+      "control_mean": 12.3,
+      "treatment_variance": 0.5,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=4.8%) [Claude+Gemini agree]",
+      "effect_pct": 4.878048780487801,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 14.0,
+      "control_mean": 12.3,
+      "treatment_variance": 0.7,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=9.0%) [Claude+Gemini agree]",
+      "effect_pct": 13.821138211382108,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 13.0,
+      "control_mean": 11.8,
+      "treatment_variance": 0.5,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.6%) [Claude+Gemini agree]",
+      "effect_pct": 10.169491525423723,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "treatment_mean": 14.0,
+      "control_mean": 11.8,
+      "treatment_variance": 0.6,
+      "control_variance": 0.4,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Figure 5",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=9.0%) [Claude+Gemini agree]",
+      "effect_pct": 18.644067796610162,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 0.24,
+      "control_mean": 0.29,
+      "treatment_variance": 0.014,
+      "control_variance": 0.018,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Figure 6",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=9.0%) [Claude+Gemini agree]",
+      "effect_pct": -17.241379310344826,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 0.27,
+      "control_mean": 0.36,
+      "treatment_variance": 0.016,
+      "control_variance": 0.022,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Figure 6",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.6%) [Claude+Gemini agree]",
+      "effect_pct": -24.999999999999993,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 0.24,
+      "control_mean": 0.36,
+      "treatment_variance": 0.014,
+      "control_variance": 0.022,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Figure 6",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Kavir",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=8.3%) [Claude+Gemini agree]",
+      "effect_pct": -33.33333333333333,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 0.18,
+      "control_mean": 0.2,
+      "treatment_variance": 0.012,
+      "control_variance": 0.013,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Figure 6",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Back Cross",
+        "year": "2010-2011",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=10.0%) [Claude+Gemini agree]",
+      "effect_pct": -10.000000000000009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 14.2,
+      "control_mean": 21.1,
+      "treatment_variance": 0.8,
+      "control_variance": 1.2,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "molar ratio",
+      "data_source": "Figure 7",
+      "treatment_description": "Foliar application of ZnSO4 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Pooled (Back Cross and Kavir)",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": -32.70142180094788,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 11.5,
+      "control_mean": 21.1,
+      "treatment_variance": 0.7,
+      "control_variance": 1.2,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "molar ratio",
+      "data_source": "Figure 7",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Pooled (Back Cross and Kavir)",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.3%) [Claude+Gemini agree]",
+      "effect_pct": -45.497630331753555,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 10.8,
+      "control_mean": 21.1,
+      "treatment_variance": 0.6,
+      "control_variance": 1.2,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "molar ratio",
+      "data_source": "Figure 7",
+      "treatment_description": "Foliar application of Zn(Gly)2 at 0.2% Zn (w/v)",
+      "control_description": "No Zn fertilizer applied (Ctrl)",
+      "moderators": {
+        "cultivar": "Pooled (Back Cross and Kavir)",
+        "year": "2009-2010",
+        "site": "Rudasht Research Station, Isfahan, Iran"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.9%) [Claude+Gemini agree]",
+      "effect_pct": -48.81516587677725,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield (ton ha-1)",
+      "tissue": "grain",
+      "treatment_mean": 2.95,
+      "control_mean": 2.45,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "ton ha-1",
+      "data_source": "Figure 2",
+      "treatment_description": "Foliar application of Zn(Arg)2 at 0.2% Zn (w/v)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {
+        "year": "2009-2010",
+        "cultivar": "pooled"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 20.40816326530612,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 39,
+    "final_count": 39
+  },
+  "verification_flags": [
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 23,
+        "control_mean": 18,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.295983527623113,
+            "note": "CV = 11.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.3%"
+          }
+        },
+        "effect_pct": 27.77777777777778
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 26,
+        "control_mean": 18,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +44.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.994080650317895,
+            "note": "CV = 8.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 44.44444444444444
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 22,
+        "control_mean": 17,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +29.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.022141502711037,
+            "note": "CV = 11.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.2%"
+          }
+        },
+        "effect_pct": 29.411764705882355
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 24,
+        "control_mean": 17,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +41.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.660254037844386,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 41.17647058823529
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 41,
+        "control_mean": 40,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.871479746084493,
+            "note": "CV = 8.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.2%"
+          }
+        },
+        "effect_pct": 2.5
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 44,
+        "control_mean": 40,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.053901948655495,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 10.0
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 45,
+        "control_mean": 40,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.622504486493762,
+            "note": "CV = 9.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 12.5
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 42,
+        "control_mean": 40,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.072647087265548,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": 5.0
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 49,
+        "control_mean": 36,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +36.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.89743318610787,
+            "note": "CV = 9.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.6%"
+          }
+        },
+        "effect_pct": 36.11111111111111
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 52,
+        "control_mean": 36,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +44.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.325687506660614,
+            "note": "CV = 10.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.0%"
+          }
+        },
+        "effect_pct": 44.44444444444444
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 43,
+        "control_mean": 36,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.667260321314664,
+            "note": "CV = 9.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.1%"
+          }
+        },
+        "effect_pct": 19.444444444444446
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 48,
+        "control_mean": 44,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.660254037844386,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.2%"
+          }
+        },
+        "effect_pct": 9.090909090909092
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 51,
+        "control_mean": 44,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.169680745952881,
+            "note": "CV = 9.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 15.909090909090908
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 50,
+        "control_mean": 44,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.00666419935816,
+            "note": "CV = 9.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 13.636363636363635
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 42,
+        "control_mean": 37,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.660254037844387,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": 13.513513513513514
+      }
+    },
+    {
+      "element": "grain Fe concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Fe concentration (mg/kg)",
+        "treatment_mean": 44,
+        "control_mean": 37,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.053901948655495,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 18.91891891891892
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 12.8,
+        "control_mean": 12.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.7658234670659265,
+            "note": "CV = 6.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.8%"
+          }
+        },
+        "effect_pct": 2.4000000000000057
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 13.1,
+        "control_mean": 12.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.9330571339032545,
+            "note": "CV = 7.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.1%"
+          }
+        },
+        "effect_pct": 4.799999999999997
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 13.0,
+        "control_mean": 12.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.661733875264912,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.8%"
+          }
+        },
+        "effect_pct": 4.0
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 12.9,
+        "control_mean": 12.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.713375223135183,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.8%"
+          }
+        },
+        "effect_pct": 3.200000000000003
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 12.2,
+        "control_mean": 11.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.678855106783205,
+            "note": "CV = 5.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 7.017543859649113
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 12.8,
+        "control_mean": 11.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.7658234670659265,
+            "note": "CV = 6.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.2%"
+          }
+        },
+        "effect_pct": 12.280701754385968
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 13.3,
+        "control_mean": 11.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.813763041664107,
+            "note": "CV = 7.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.4%"
+          }
+        },
+        "effect_pct": 16.666666666666668
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 13.1,
+        "control_mean": 11.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.9330571339032545,
+            "note": "CV = 7.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 14.91228070175438
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 12.9,
+        "control_mean": 12.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.713375223135183,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.9%"
+          }
+        },
+        "effect_pct": 4.878048780487801
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 14.0,
+        "control_mean": 12.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.660254037844386,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": 13.821138211382108
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 13.0,
+        "control_mean": 11.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.661733875264912,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.0%"
+          }
+        },
+        "effect_pct": 10.169491525423723
+      }
+    },
+    {
+      "element": "grain protein concentration (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain protein concentration (%)",
+        "treatment_mean": 14.0,
+        "control_mean": 11.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.423074889580902,
+            "note": "CV = 7.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.1%"
+          }
+        },
+        "effect_pct": 18.644067796610162
+      }
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "treatment_mean": 0.24,
+        "control_mean": 0.29,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -17.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 20.833333333333332,
+            "note": "Effect -17.2% violates expected direction; unswapped would be +20.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.103629710818451,
+            "note": "CV = 10.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": -17.241379310344826,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -17.2%, corrected would be +20.8%"
+      }
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "treatment_mean": 0.27,
+        "control_mean": 0.36,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -25.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 33.333333333333314,
+            "note": "Effect -25.0% violates expected direction; unswapped would be +33.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.264004785593347,
+            "note": "CV = 10.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": -24.999999999999993,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -25.0%, corrected would be +33.3%"
+      }
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "treatment_mean": 0.24,
+        "control_mean": 0.36,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -33.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 49.999999999999986,
+            "note": "Effect -33.3% violates expected direction; unswapped would be +50.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.103629710818451,
+            "note": "CV = 10.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.1%"
+          }
+        },
+        "effect_pct": -33.33333333333333,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -33.3%, corrected would be +50.0%"
+      }
+    },
+    {
+      "element": "grain phytic acid concentration (g/100g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain phytic acid concentration (g/100g)",
+        "treatment_mean": 0.18,
+        "control_mean": 0.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -10.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 11.111111111111121,
+            "note": "Effect -10.0% violates expected direction; unswapped would be +11.1%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.547005383792515,
+            "note": "CV = 11.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.3%"
+          }
+        },
+        "effect_pct": -10.000000000000009,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -10.0%, corrected would be +11.1%"
+      }
+    },
+    {
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid to Zn molar ratio",
+        "treatment_mean": 14.2,
+        "control_mean": 21.1,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -32.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 48.59154929577467,
+            "note": "Effect -32.7% violates expected direction; unswapped would be +48.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.758032718697901,
+            "note": "CV = 9.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.9%"
+          }
+        },
+        "effect_pct": -32.70142180094788,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -32.7%, corrected would be +48.6%"
+      }
+    },
+    {
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid to Zn molar ratio",
+        "treatment_mean": 11.5,
+        "control_mean": 21.1,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -45.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 83.47826086956522,
+            "note": "Effect -45.5% violates expected direction; unswapped would be +83.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.542917959114904,
+            "note": "CV = 10.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": -45.497630331753555,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -45.5%, corrected would be +83.5%"
+      }
+    },
+    {
+      "element": "phytic acid to Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid to Zn molar ratio",
+        "treatment_mean": 10.8,
+        "control_mean": 21.1,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -48.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 95.37037037037037,
+            "note": "Effect -48.8% violates expected direction; unswapped would be +95.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.622504486493762,
+            "note": "CV = 9.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.5%"
+          }
+        },
+        "effect_pct": -48.81516587677725,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -48.8%, corrected would be +95.4%"
+      }
+    },
+    {
+      "element": "grain yield (ton ha-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain yield (ton ha-1)",
+        "treatment_mean": 2.95,
+        "control_mean": 2.45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.871358669725008,
+            "note": "CV = 5.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.4%"
+          }
+        },
+        "effect_pct": 20.40816326530612
+      }
+    }
+  ]
+}

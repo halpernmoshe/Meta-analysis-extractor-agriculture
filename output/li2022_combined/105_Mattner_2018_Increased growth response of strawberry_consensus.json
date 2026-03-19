@@ -1,0 +1,1042 @@
+{
+  "paper_id": "105_Mattner_2018_Increased growth response of strawberry",
+  "recon": {
+    "paper_id": "105_Mattner_2018_Increased growth response of strawberry",
+    "warnings": [
+      "Multiple experiments with different cultivars (Fortuna and Albion) - need to extract separately",
+      "Different yield units: runners m\u207b\u00b9 in nursery vs g plant\u207b\u00b9 in fruit sector",
+      "Factorial design in fruit trial (2\u00d72 = 4 treatments: nursery extract/no extract \u00d7 fruit extract/no extract)",
+      "Different harvest periods and application schedules between cultivars",
+      "Runner yields measured as 'runners m\u207b\u00b9' which is density, not weight-based yield",
+      "Some parameters measured on subsamples (n=10 runners per plot) vs whole plots",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "re made to restore homogeneity.Fisher's least significant difference (LSD)test was used to identify differen",
+    "variance_confidence": "medium",
+    "control_definition": "Untreated control - plants soaked in water and treated with equivalent volumes of water",
+    "treatment_definition": "Seaweed extract (SE) - commercial extract from D. potatorum and A. nodosum (Seasol\u00ae) applied as monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+    "tables_with_target_data": [
+      "Table 1",
+      "Table 6"
+    ],
+    "potential_tc_confusion": "In fruit trial Table 6-7, factorial design creates 4 treatments - must identify which combinations include fruit sector treatment vs control",
+    "experimental_design": "factorial",
+    "sample_size_found": 16,
+    "sample_size_source": "The trials were conducted as randomised complete block designs, with 16 blocks",
+    "factorial_structure": "[\"cultivar\", \"seaweed extract\", \"nursery treatment\", \"fruit treatment\"]",
+    "extraction_guidance": "Extract nursery data from Table 1 separately for Fortuna and Albion (n=16 each). For fruit data from Table 6 (n=3), extract factorial combinations where fruit sector = 'SE' vs 'Untreated' (treatment vs control). Runner yield is in runners m\u207b\u00b9 (count/linear meter), fruit yield is in g plant\u207b\u00b9. Use LSD values as variance measure. Note that revenue and fruit size are secondary outcomes.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Increased growth response of strawberry roots to a commercial extract from Durvillaea potatorum and Ascophyllum nodosum\",\n        \"species\": \"Fragaria \u00d7 ananassa (strawberry)\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"Multiple experiments with different cultivars (Fortuna and Albion) - need to extract separately\",\n        \"Different yield units: runners m\u207b\u00b9 in nursery vs g plant\u207b\u00b9 in fruit sector\",\n        \"Factorial design in fruit trial (2\u00d72 = 4 treatments: nursery extract/no extract \u00d7 fruit extract/no extract)\",\n        \"Different harvest periods and application schedules between cultivars\",\n        \"Runner yields measured as 'runners m\u207b\u00b9' which is density, not weight-based yield\",\n        \"Some parameters measured on subsamples (n=10 runners per plot) vs whole plots\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"Fisher's least significant difference (LSD) test was used to identify differences between treatment means. The level of significance used was p \u22640.05.\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Untreated control - plants soaked in water and treated with equivalent volumes of water\",\n        \"treatment_definition\": \"Seaweed extract (SE) - commercial extract from D. potatorum and A. nodosum (Seasol\u00ae) applied as monthly drench at 1:400 concentration, 10L ha\u207b\u00b9\",\n        \"identification_method\": \"In tables: 'Untreated' = control, 'SE' = seaweed extract treatment\",\n        \"potential_confusion\": \"In fruit trial Table 6-7, factorial design creates 4 treatments - must identify which combinations include fruit sector treatment vs control\"\n    },\n    \"sample_size\": {\n        \"n\": 16,\n        \"source\": \"The trials were conducted as randomised complete block designs, with 16 blocks\",\n        \"applies_to\": \"nursery t",
+    "tables_without_target_data": [
+      "Table 2",
+      "Table 3",
+      "Table 4",
+      "Table 5",
+      "Table 7",
+      "Table 8"
+    ],
+    "table_descriptions": {
+      "Table 1": "Commercial runner yields (runners m\u207b\u00b9) and reject percentages for Fortuna and Albion cultivars in nursery sector",
+      "Table 2": "Plant parameters of harvested Fortuna runners (quality measures, not yield)",
+      "Table 3": "Plant parameters of harvested Albion runners (quality measures, not yield)",
+      "Table 4": "Soil chemistry for Fortuna trial",
+      "Table 5": "Soil chemistry for Albion trial",
+      "Table 6": "Commercial fruit yields (g plant\u207b\u00b9) and revenue for Albion in fruit sector with factorial design",
+      "Table 7": "Root growth parameters (not primary yield outcome)",
+      "Table 8": "Soil chemistry for fruit trial"
+    },
+    "figures_with_data": [
+      "Figure 1"
+    ],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "Runner yield (runners m\u207b\u00b9)",
+        "Rejects (%)"
+      ],
+      "Table 6": [
+        "Total fruit yield (g plant\u207b\u00b9)",
+        "Total revenue (AUS$ plant\u207b\u00b9)",
+        "Commercial-grade berries (%)",
+        "Fruit size (g berry\u207b\u00b9)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 12,
+  "kimi_obs": 12,
+  "gemini_obs": 0,
+  "matched_obs": 12,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Runner yield (runners m\u207b\u00b9)",
+      "tissue": "whole plant",
+      "treatment_mean": 103.4,
+      "control_mean": 86.7,
+      "treatment_variance": 9.1,
+      "control_variance": 9.1,
+      "variance_type": "LSD",
+      "n": 16,
+      "unit": "runners m\u207b\u00b9",
+      "data_source": "Table 1",
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Fortuna",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "6 applications, 60L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 19.26182237600923,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Rejects (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 35.7,
+      "control_mean": 43.7,
+      "treatment_variance": 5.9,
+      "control_variance": 5.9,
+      "variance_type": "LSD",
+      "n": 16,
+      "unit": "%",
+      "data_source": "Table 1",
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Fortuna",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "6 applications, 60L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -18.306636155606405,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Runner yield (runners m\u207b\u00b9)",
+      "tissue": "whole plant",
+      "treatment_mean": 156.7,
+      "control_mean": 144.5,
+      "treatment_variance": 4.8,
+      "control_variance": 4.8,
+      "variance_type": "LSD",
+      "n": 16,
+      "unit": "runners m\u207b\u00b9",
+      "data_source": "Table 1",
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "8 applications, 80L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.442906574394456,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Rejects (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 10.1,
+      "control_mean": 11.4,
+      "treatment_variance": 1.9,
+      "control_variance": 1.9,
+      "variance_type": "LSD",
+      "n": 16,
+      "unit": "%",
+      "data_source": "Table 1",
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "8 applications, 80L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.40350877192983,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total fruit yield (g plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "treatment_mean": 547.6,
+      "control_mean": 502.8,
+      "treatment_variance": 36.3,
+      "control_variance": 36.3,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g plant\u207b\u00b9",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.91010342084328,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total revenue (AUS$ plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "treatment_mean": 4.1,
+      "control_mean": 3.79,
+      "treatment_variance": 0.29,
+      "control_variance": 0.29,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "AUS$ plant\u207b\u00b9",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.179419525065953,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Commercial-grade berries (%)",
+      "tissue": "fruit",
+      "treatment_mean": 40.45,
+      "control_mean": 41.88,
+      "treatment_variance": 6.25,
+      "control_variance": 6.25,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.414517669531995,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fruit size (g berry\u207b\u00b9)",
+      "tissue": "fruit",
+      "treatment_mean": 10.07,
+      "control_mean": 10.3,
+      "treatment_variance": 1.72,
+      "control_variance": 1.72,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g berry\u207b\u00b9",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha\u207b\u00b9",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.233009708737868,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total fruit yield (g plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "treatment_mean": 544.1,
+      "control_mean": 502.8,
+      "treatment_variance": 36.3,
+      "control_variance": 36.3,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g plant\u207b\u00b9",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.9%)",
+      "effect_pct": 8.214001591089898,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total revenue (AUS$ plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "treatment_mean": 4.09,
+      "control_mean": 3.79,
+      "treatment_variance": 0.29,
+      "control_variance": 0.29,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "AUS$ plant\u207b\u00b9",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.6%)",
+      "effect_pct": 7.915567282321895,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Commercial-grade berries (%)",
+      "tissue": "fruit",
+      "treatment_mean": 40.36,
+      "control_mean": 41.88,
+      "treatment_variance": 6.25,
+      "control_variance": 6.25,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.6%)",
+      "effect_pct": -3.629417382999052,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fruit size (g berry\u207b\u00b9)",
+      "tissue": "fruit",
+      "treatment_mean": 10.59,
+      "control_mean": 10.3,
+      "treatment_variance": 1.72,
+      "control_variance": 1.72,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g berry\u207b\u00b9",
+      "data_source": "Table 6",
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.1%)",
+      "effect_pct": 2.815533980582516,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 12,
+    "final_count": 12
+  },
+  "verification_flags": [
+    {
+      "element": "Runner yield (runners m\u207b\u00b9)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Runner yield (runners m\u207b\u00b9)",
+        "treatment_mean": 103.4,
+        "control_mean": 86.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.800773694390715,
+            "note": "CV = 8.8%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.6%"
+          }
+        },
+        "effect_pct": 19.26182237600923
+      }
+    },
+    {
+      "element": "Rejects (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "sample_size",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Rejects (%)",
+        "treatment_mean": 35.7,
+        "control_mean": 43.7,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -18.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 22.40896358543417,
+            "note": "Effect -18.3% violates expected direction; unswapped would be +22.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.5266106442577,
+            "note": "CV = 16.5%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.9%"
+          }
+        },
+        "effect_pct": -18.306636155606405,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -18.3%, corrected would be +22.4%"
+      }
+    },
+    {
+      "element": "Runner yield (runners m\u207b\u00b9)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Runner yield (runners m\u207b\u00b9)",
+        "treatment_mean": 156.7,
+        "control_mean": 144.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.063178047223995,
+            "note": "CV = 3.1%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=12.7%"
+          }
+        },
+        "effect_pct": 8.442906574394456
+      }
+    },
+    {
+      "element": "Rejects (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "sample_size",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Rejects (%)",
+        "treatment_mean": 10.1,
+        "control_mean": 11.4,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -11.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 12.87128712871288,
+            "note": "Effect -11.4% violates expected direction; unswapped would be +12.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 18.81188118811881,
+            "note": "CV = 18.8%"
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 16,
+            "note": "n=16 seems too large for a typical experiment"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=17.7%"
+          }
+        },
+        "effect_pct": -11.40350877192983,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -11.4%, corrected would be +12.9%"
+      }
+    },
+    {
+      "element": "Total fruit yield (g plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total fruit yield (g plant\u207b\u00b9)",
+        "treatment_mean": 547.6,
+        "control_mean": 502.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.628926223520818,
+            "note": "CV = 6.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.9%"
+          }
+        },
+        "effect_pct": 8.91010342084328
+      }
+    },
+    {
+      "element": "Total revenue (AUS$ plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total revenue (AUS$ plant\u207b\u00b9)",
+        "treatment_mean": 4.1,
+        "control_mean": 3.79,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.073170731707318,
+            "note": "CV = 7.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": 8.179419525065953
+      }
+    },
+    {
+      "element": "Commercial-grade berries (%)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Commercial-grade berries (%)",
+        "treatment_mean": 40.45,
+        "control_mean": 41.88,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.45117428924598,
+            "note": "CV = 15.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.2%"
+          }
+        },
+        "effect_pct": -3.414517669531995
+      }
+    },
+    {
+      "element": "Fruit size (g berry\u207b\u00b9)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fruit size (g berry\u207b\u00b9)",
+        "treatment_mean": 10.07,
+        "control_mean": 10.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.08043694141013,
+            "note": "CV = 17.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.9%"
+          }
+        },
+        "effect_pct": -2.233009708737868
+      }
+    },
+    {
+      "element": "Total fruit yield (g plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total fruit yield (g plant\u207b\u00b9)",
+        "treatment_mean": 544.1,
+        "control_mean": 502.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.671567726520859,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.9%"
+          }
+        },
+        "effect_pct": 8.214001591089898
+      }
+    },
+    {
+      "element": "Total revenue (AUS$ plant\u207b\u00b9)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total revenue (AUS$ plant\u207b\u00b9)",
+        "treatment_mean": 4.09,
+        "control_mean": 3.79,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.090464547677261,
+            "note": "CV = 7.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": 7.915567282321895
+      }
+    },
+    {
+      "element": "Commercial-grade berries (%)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Commercial-grade berries (%)",
+        "treatment_mean": 40.36,
+        "control_mean": 41.88,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.485629335976213,
+            "note": "CV = 15.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.2%"
+          }
+        },
+        "effect_pct": -3.629417382999052
+      }
+    },
+    {
+      "element": "Fruit size (g berry\u207b\u00b9)",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fruit size (g berry\u207b\u00b9)",
+        "treatment_mean": 10.59,
+        "control_mean": 10.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.24173748819641,
+            "note": "CV = 16.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.5%"
+          }
+        },
+        "effect_pct": 2.815533980582516
+      }
+    }
+  ]
+}

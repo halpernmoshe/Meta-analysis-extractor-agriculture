@@ -1,0 +1,360 @@
+{
+  "date": "2026-03-15T23:36:36.005387",
+  "total_papers": 47,
+  "matched_papers": 29,
+  "total_matches": 150,
+  "paper_results": [
+    {
+      "paper_id": "002_Abdel-Mawgoud_2010",
+      "gt_study": "Abdel-Mawgoud AMR 2010",
+      "ext_obs": 4,
+      "gt": 8,
+      "matched": 4,
+      "mae_pp": 32.54
+    },
+    {
+      "paper_id": "006_Alabdulla_2019",
+      "gt_study": "Alabdulla, S. A. 2019",
+      "ext_obs": 0,
+      "gt": 6,
+      "matched": 0,
+      "mae_pp": null
+    },
+    {
+      "paper_id": "009_Ali_2019",
+      "ext_obs": 8,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "027_Chen_2021",
+      "gt_study": "Chen,Diwen 2021",
+      "ext_obs": 12,
+      "gt": 24,
+      "matched": 8,
+      "mae_pp": 2.24
+    },
+    {
+      "paper_id": "029_Ciepiela_2019",
+      "gt_study": "Ciepiela G A 2019",
+      "ext_obs": 12,
+      "gt": 2,
+      "matched": 1,
+      "mae_pp": 56.32
+    },
+    {
+      "paper_id": "058_Fichhof_2018",
+      "gt_study": "Fichhof, William H 2018",
+      "ext_obs": 1,
+      "gt": 2,
+      "matched": 1,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "062_Glosek-Sobieraj_2018",
+      "ext_obs": 60,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "064_Godlewska_2016",
+      "gt_study": "Godlewska A 2016",
+      "ext_obs": 8,
+      "gt": 3,
+      "matched": 0,
+      "mae_pp": null
+    },
+    {
+      "paper_id": "065_Godlewska_2018",
+      "ext_obs": 3,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "067_Grabowska_2012",
+      "gt_study": "Grabowska A 2012",
+      "ext_obs": 16,
+      "gt": 6,
+      "matched": 6,
+      "mae_pp": 6.48
+    },
+    {
+      "paper_id": "086_Knapowski_2019",
+      "ext_obs": 14,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "088_Kocira_2019",
+      "gt_study": "Kocira S 2019",
+      "ext_obs": 36,
+      "gt": 24,
+      "matched": 24,
+      "mae_pp": 12.72
+    },
+    {
+      "paper_id": "090_Kocira_2020",
+      "gt_study": "Kocira, S\u0142awomir 2020",
+      "ext_obs": 8,
+      "gt": 48,
+      "matched": 8,
+      "mae_pp": 3.35
+    },
+    {
+      "paper_id": "095_Kuisma_1989",
+      "gt_study": "Kuisma Paavo 1989",
+      "ext_obs": 18,
+      "gt": 3,
+      "matched": 3,
+      "mae_pp": 2.39
+    },
+    {
+      "paper_id": "100_Lola-Luz_2014",
+      "gt_study": "Lola-Luz T 2014",
+      "ext_obs": 12,
+      "gt": 6,
+      "matched": 3,
+      "mae_pp": 71.95
+    },
+    {
+      "paper_id": "105_Mattner_2018",
+      "gt_study": "Mattner S. W. 2018",
+      "ext_obs": 4,
+      "gt": 3,
+      "matched": 3,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "106_Matysiak_2018",
+      "gt_study": "Matysiak K 2018",
+      "ext_obs": 12,
+      "gt": 6,
+      "matched": 6,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "110_Michalak_2016",
+      "gt_study": "Michalak I 2016",
+      "ext_obs": 13,
+      "gt": 5,
+      "matched": 5,
+      "mae_pp": 0.32
+    },
+    {
+      "paper_id": "111_Mondal_2013",
+      "gt_study": "Mondal, MMA 2013",
+      "ext_obs": 14,
+      "gt": 8,
+      "matched": 4,
+      "mae_pp": 6.91
+    },
+    {
+      "paper_id": "116_Nurdiawati_2019",
+      "ext_obs": 10,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "120_Pohl_2019",
+      "gt_study": "Pohl A 2019",
+      "ext_obs": 10,
+      "gt": 12,
+      "matched": 10,
+      "mae_pp": 10.94
+    },
+    {
+      "paper_id": "121_Popescu_2018",
+      "gt_study": "Popescu G C 2018",
+      "ext_obs": 17,
+      "gt": 12,
+      "matched": 0,
+      "mae_pp": null
+    },
+    {
+      "paper_id": "124_Pramanick_2016",
+      "gt_study": "Pramanick, B. 2016",
+      "ext_obs": 13,
+      "gt": 8,
+      "matched": 8,
+      "mae_pp": 11.71
+    },
+    {
+      "paper_id": "125_Prochazka_2015",
+      "ext_obs": 4,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "126_Prokkola_2007",
+      "gt_study": "Prokkola Soile 2007",
+      "ext_obs": 15,
+      "gt": 6,
+      "matched": 6,
+      "mae_pp": 0.59
+    },
+    {
+      "paper_id": "127_Radkowski_2018",
+      "gt_study": "Radkowski A 2018",
+      "ext_obs": 12,
+      "gt": 9,
+      "matched": 9,
+      "mae_pp": 3.59
+    },
+    {
+      "paper_id": "131_Rahman_2018",
+      "gt_study": "Rahman Mosaddiqur 2018",
+      "ext_obs": 10,
+      "gt": 4,
+      "matched": 4,
+      "mae_pp": 2.46
+    },
+    {
+      "paper_id": "153_Soppelsa_2018",
+      "gt_study": "Soppelsa,Sebastian 2018",
+      "ext_obs": 11,
+      "gt": 7,
+      "matched": 0,
+      "mae_pp": null
+    },
+    {
+      "paper_id": "158_Sulakhudin_2019",
+      "gt_study": "Sulakhudin 2019",
+      "ext_obs": 6,
+      "gt": 3,
+      "matched": 3,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "175_Wilczewski_2018",
+      "gt_study": "Wilczewski, E. 2018",
+      "ext_obs": 9,
+      "gt": 1,
+      "matched": 1,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "Alrubaiee_2023",
+      "ext_obs": 12,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "Azarpour",
+      "gt_study": "Azarpour Ebrahim 2012",
+      "ext_obs": 14,
+      "gt": 2,
+      "matched": 2,
+      "mae_pp": 22.89
+    },
+    {
+      "paper_id": "BR-1503",
+      "ext_obs": 15,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "BR-18-165",
+      "gt_study": "Atteya, A. K. G. 2018",
+      "ext_obs": 16,
+      "gt": 6,
+      "matched": 0,
+      "mae_pp": null
+    },
+    {
+      "paper_id": "Effect_Seaweed_Extracts",
+      "ext_obs": 22,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "L3638",
+      "ext_obs": 10,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "S0304423819306703",
+      "gt_study": "Boselli M 2019",
+      "ext_obs": 18,
+      "gt": 6,
+      "matched": 5,
+      "mae_pp": 10.52
+    },
+    {
+      "paper_id": "S0304423820302417",
+      "gt_study": "Bavaresco, Luigi 2020",
+      "ext_obs": 10,
+      "gt": 2,
+      "matched": 2,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "S1878818119307637",
+      "gt_study": "Amer H M 2019",
+      "ext_obs": 36,
+      "gt": 12,
+      "matched": 4,
+      "mae_pp": 7.35
+    },
+    {
+      "paper_id": "S1878818119309879",
+      "gt_study": "Aghaei, K. 2019",
+      "ext_obs": 8,
+      "gt": 4,
+      "matched": 4,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "agriculture-10-00618-v2",
+      "gt_study": "Almadi, Leen 2020",
+      "ext_obs": 10,
+      "gt": 1,
+      "matched": 1,
+      "mae_pp": 0.0
+    },
+    {
+      "paper_id": "al-tawaha_2011",
+      "gt_study": "Al-Tawaha, AM 2006",
+      "ext_obs": 21,
+      "gt": 8,
+      "matched": 3,
+      "mae_pp": 89.55
+    },
+    {
+      "paper_id": "ascophyllum_carrot_2014",
+      "gt_study": "Alam Mohammed Zahidul 2014",
+      "ext_obs": 24,
+      "gt": 8,
+      "matched": 5,
+      "mae_pp": 12.85
+    },
+    {
+      "paper_id": "plants-09-01633",
+      "gt_study": "Consentino, B. B. 2020",
+      "ext_obs": 2,
+      "gt": 2,
+      "matched": 0,
+      "mae_pp": null
+    },
+    {
+      "paper_id": "strawberry_chitosan",
+      "gt_study": "Abdel-Mawgoud AMR 2010",
+      "ext_obs": 8,
+      "gt": 8,
+      "matched": 7,
+      "mae_pp": 29.75
+    },
+    {
+      "paper_id": "sustainability-11-02171",
+      "ext_obs": 12,
+      "gt": 0,
+      "matched": 0
+    },
+    {
+      "paper_id": "validation_report",
+      "ext_obs": 0,
+      "gt": 0,
+      "matched": 0
+    }
+  ]
+}

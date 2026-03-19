@@ -1,0 +1,1287 @@
+{
+  "paper_id": "019_Baxter_1994",
+  "recon": {
+    "paper_id": "019_Baxter_1994",
+    "warnings": [
+      "Nutrient concentrations are expressed per unit STRUCTURAL dry weight (non-structural carbohydrate subtracted) - this is non-standard and differs from most studies that use total dry weight; this will affect comparability with other meta-analysis entries",
+      "Table 1 reports TOTAL NUTRIENT CONTENT (mg per plant), NOT concentration - this is absolute uptake, not concentration per unit mass",
+      "Figures 1 and 2 contain the primary concentration data but values must be read from bar graphs, not tables - high extraction error risk",
+      "Three species have different harvest time points: A. capillaris (43d), P. alpina (105d), F. vivipara (189d) - data are not concurrent",
+      "Multiple harvests exist for P. alpina (56d and 105d) and F. vivipara (65d and 189d) - only final harvest data should typically be used, or each harvest treated separately",
+      "A. capillaris nutrient concentration data are only available for one harvest (43d) due to sample loss",
+      "Data for A. capillaris nutrient concentrations are noted as incomplete: 'Due to loss of samples, data for A. capillaris are presented for one harvest only (43d)'",
+      "F. vivipara showed REDUCED growth at elevated CO2 - opposite direction to typical dilution effect; extraction should note this species-specific response",
+      "The paper distinguishes structural dry weight from extracted dry weight - Table 1 uses 'extracted dry weight basis' while figures use 'structural dry weight basis'; these are described as equivalent but should be verified",
+      "Factorial design with species as a factor but all three species grown in same OTC setup - each species should be extracted separately",
+      "P. alpina and F. vivipara received supplemental nutrient solution after 60d; A. capillaris did not - this creates non-equivalent nutrient regimes across species",
+      "CHO:N ratio data in Figure 6 is not a standard mineral concentration metric but could be confused with nutrient data",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "ol\\\"1CO2(hatche bar).Data represent the mean \u00b1one SE of four replicates.For each species within",
+    "variance_confidence": "high",
+    "control_definition": "Ambient CO2 at 340 \u00b5mol mol-1",
+    "treatment_definition": "Elevated CO2 at 680 \u00b5mol mol-1",
+    "tables_with_target_data": [
+      "Table 1"
+    ],
+    "potential_tc_confusion": "Solid bars = elevated (treatment), hatched bars = ambient (control) - verify this bar coding is consistent across all figures before extraction. Table 1 uses letter suffixes (a/b) to denote significant differences, not T/C identity.",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "Data represent the mean \u00b1one SE of four replicates.",
+    "factorial_structure": "[\"CO2 level (2: ambient 340, elevated 680)\", \"Species (3: A. capillaris, P. alpina, F. vivipara)\", \"Harvest time (2-3 per species)\"]",
+    "extraction_guidance": "PRIMARY CAUTION: Figures 1, 2, and 5 contain mineral CONCENTRATION data (per structural DW) but values must be read from bar graphs. Table 1 contains total mineral CONTENT (mg/plant), not concentration - do not confuse these. For meta-analysis of dilution effect, use Figure 1 and Figure 2 concentration data (structural DW basis) rather than Table 1. Note that structural DW excludes non-structural carbohydrates, which is non-standard. Each species should be treated as a separate observation. Use the final harvest for each species (A. capillaris 43d, P. alpina 105d, F. vivipara 189d) unless intermediate harvests are also needed. In all figures: hatched bars = 340 ppm control, solid bars = 680 ppm elevated. n=4 for all measurements. Separate tissue fractions (leaf blade, leaf sheath, root) should be extracted separately if tissue-level data are needed. Note that F. vivipara showed reduced growth at elevated CO2 - the expected effect direction may be reversed or absent for this species. A. capillaris showed no change in nutrient concentrations despite increased growth (dilution effect absent when expressed on structural DW basis).",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effects of elevated carbon dioxide on three grass species from montane pasture II. Nutrient uptake, allocation and efficiency of use\",\n        \"species\": \"Agrostis capillaris, Festuca vivipara, Poa alpina\",\n        \"experimental_system\": \"OTC\",\n        \"co2_levels\": {\"control\": \"340\", \"elevated\": \"680\"}\n    },\n    \"warnings\": [\n        \"Nutrient concentrations are expressed per unit STRUCTURAL dry weight (non-structural carbohydrate subtracted) - this is non-standard and differs from most studies that use total dry weight; this will affect comparability with other meta-analysis entries\",\n        \"Table 1 reports TOTAL NUTRIENT CONTENT (mg per plant), NOT concentration - this is absolute uptake, not concentration per unit mass\",\n        \"Figures 1 and 2 contain the primary concentration data but values must be read from bar graphs, not tables - high extraction error risk\",\n        \"Three species have different harvest time points: A. capillaris (43d), P. alpina (105d), F. vivipara (189d) - data are not concurrent\",\n        \"Multiple harvests exist for P. alpina (56d and 105d) and F. vivipara (65d and 189d) - only final harvest data should typically be used, or each harvest treated separately\",\n        \"A. capillaris nutrient concentration data are only available for one harvest (43d) due to sample loss\",\n        \"Data for A. capillaris nutrient concentrations are noted as incomplete: 'Due to loss of samples, data for A. capillaris are presented for one harvest only (43d)'\",\n        \"F. vivipara showed REDUCED growth at elevated CO2 - opposite direction to typical dilution effect; extraction should note this species-specific response\",\n        \"The paper distinguishes structural dry weight from extracted dry weight - Table 1 uses 'extracted dry weight basis' while figures use 'structural dry weight basis'; these are described as equivalent but should be verified\",\n        \"Factorial design with species as a factor but",
+    "tables_without_target_data": [
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Total content (mg per plant, extracted dry weight basis) of N, P, K, Mg, and Ca for all three species at final harvests (A. capillaris 43d, P. alpina 105d, F. vivipara 189d) at both CO2 levels - this is TOTAL UPTAKE not concentration",
+      "Table 2": "Photosynthetic nitrogen use efficiency (PNUE) and photosynthetic phosphorus use efficiency (PPUE) - derived efficiency metrics, not raw mineral concentrations"
+    },
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 2",
+      "Figure 5"
+    ],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "N total content (mg/plant)",
+        "P total content (mg/plant)",
+        "K total content (mg/plant)",
+        "Mg total content (mg/plant)",
+        "Ca total content (mg/plant)"
+      ],
+      "Table 2": [
+        "PNUE (g DW g-1 N d-1)",
+        "PPUE (g DW g-1 P d-1)"
+      ],
+      "Figure 1": [
+        "N concentration in leaf blade (structural DW basis)",
+        "N concentration in leaf sheath (structural DW basis)",
+        "N concentration in root (structural DW basis)",
+        "P concentration in leaf blade (structural DW basis)",
+        "P concentration in leaf sheath (structural DW basis)",
+        "P concentration in root (structural DW basis)"
+      ],
+      "Figure 2": [
+        "K concentration in leaf blade",
+        "K concentration in leaf sheath",
+        "K concentration in root",
+        "Mg concentration in leaf blade",
+        "Mg concentration in leaf sheath",
+        "Mg concentration in root",
+        "Ca concentration in leaf blade",
+        "Ca concentration in leaf sheath",
+        "Ca concentration in root"
+      ],
+      "Figure 5": [
+        "N concentration in inflorescence/viviparous plantlets (P. alpina only)",
+        "P concentration in inflorescence (P. alpina only)",
+        "K concentration in inflorescence (P. alpina only)",
+        "Mg concentration in inflorescence (P. alpina only)",
+        "Ca concentration in inflorescence (P. alpina only)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: Factorial with multiple harvest times",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'",
+      "NESTED-TABLES - Tables have hierarchical structure",
+      "Parse carefully - headers may span multiple columns",
+      "Watch for subtotals vs individual measurements"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 15,
+  "kimi_obs": 15,
+  "gemini_obs": 23,
+  "matched_obs": 15,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 15/15 matched",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "N total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 7.01,
+      "control_mean": 3.16,
+      "treatment_variance": 0.2,
+      "control_variance": 0.25,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43d",
+        "harvest_day": "43d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 121.83544303797467,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.85,
+      "control_mean": 0.29,
+      "treatment_variance": 0.21,
+      "control_variance": 0.04,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43d",
+        "harvest_day": "43d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 193.1034482758621,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 5.5,
+      "control_mean": 2.34,
+      "treatment_variance": 0.1,
+      "control_variance": 0.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43d",
+        "harvest_day": "43d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 135.04273504273505,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.31,
+      "control_mean": 0.17,
+      "treatment_variance": 0.02,
+      "control_variance": 0.01,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43d",
+        "harvest_day": "43d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 82.35294117647058,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.22,
+      "control_mean": 0.08,
+      "treatment_variance": 0.03,
+      "control_variance": 0.01,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43d",
+        "harvest_day": "43d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 175.00000000000003,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 80.76,
+      "control_mean": 71.52,
+      "treatment_variance": 6.5,
+      "control_variance": 2.3,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105d",
+        "harvest_day": "105d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 12.919463087248337,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 15.24,
+      "control_mean": 12.44,
+      "treatment_variance": 1.65,
+      "control_variance": 1.7,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105d",
+        "harvest_day": "105d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 22.508038585209007,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 75.7,
+      "control_mean": 66.03,
+      "treatment_variance": 8.43,
+      "control_variance": 3.4,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105d",
+        "harvest_day": "105d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 14.644858397698018,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.73,
+      "control_mean": 1.38,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105d",
+        "harvest_day": "105d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 25.362318840579718,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 2.36,
+      "control_mean": 4.53,
+      "treatment_variance": 0.14,
+      "control_variance": 0.11,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105d",
+        "harvest_day": "105d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -47.9028697571744,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 49.67,
+      "control_mean": 182.82,
+      "treatment_variance": 3.73,
+      "control_variance": 8.34,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189d",
+        "harvest_day": "189d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -72.83120008751777,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 33.99,
+      "control_mean": 65.32,
+      "treatment_variance": 0.64,
+      "control_variance": 3.75,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189d",
+        "harvest_day": "189d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -47.96387017758725,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 93.95,
+      "control_mean": 151.14,
+      "treatment_variance": 6.65,
+      "control_variance": 3.88,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189d",
+        "harvest_day": "189d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -37.83908958581447,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 9.44,
+      "control_mean": 14.99,
+      "treatment_variance": 1.4,
+      "control_variance": 0.69,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189d",
+        "harvest_day": "189d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -37.02468312208139,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca total content (mg/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 13.26,
+      "control_mean": 24.21,
+      "treatment_variance": 1.54,
+      "control_variance": 1.4,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "mg/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (680 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (340 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189d",
+        "harvest_day": "189d",
+        "dry_weight_basis": "extracted dry weight (non-structural carbohydrate subtracted)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -45.22924411400248,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 5,
+    "original_count": 15,
+    "final_count": 15
+  },
+  "verification_flags": [
+    {
+      "element": "N total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "magnitude",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "N total content (mg/plant)",
+        "treatment_mean": 7.01,
+        "control_mean": 3.16,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +121.8%, expected negative"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +121.8% seems extreme"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -54.921540656205416,
+            "note": "Effect +121.8% violates expected direction; unswapped would be -54.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.706134094151213,
+            "note": "CV = 5.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.9%"
+          }
+        },
+        "effect_pct": 121.83544303797467,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +121.8%, corrected would be -54.9%"
+      }
+    },
+    {
+      "element": "P total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "magnitude",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "P total content (mg/plant)",
+        "treatment_mean": 0.85,
+        "control_mean": 0.29,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +193.1%, expected negative"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +193.1% seems extreme"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -65.88235294117646,
+            "note": "Effect +193.1% violates expected direction; unswapped would be -65.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 49.411764705882355,
+            "note": "CV = 49.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=36.8%"
+          }
+        },
+        "effect_pct": 193.1034482758621,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +193.1%, corrected would be -65.9%"
+      }
+    },
+    {
+      "element": "K total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "magnitude",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "K total content (mg/plant)",
+        "treatment_mean": 5.5,
+        "control_mean": 2.34,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +135.0%, expected negative"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +135.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -57.45454545454546,
+            "note": "Effect +135.0% violates expected direction; unswapped would be -57.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.6363636363636367,
+            "note": "CV = 3.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": 135.04273504273505,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +135.0%, corrected would be -57.5%"
+      }
+    },
+    {
+      "element": "Mg total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mg total content (mg/plant)",
+        "treatment_mean": 0.31,
+        "control_mean": 0.17,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +82.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -45.16129032258064,
+            "note": "Effect +82.4% violates expected direction; unswapped would be -45.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.903225806451612,
+            "note": "CV = 12.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.3%"
+          }
+        },
+        "effect_pct": 82.35294117647058,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +82.4%, corrected would be -45.2%"
+      }
+    },
+    {
+      "element": "Ca total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "magnitude",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Ca total content (mg/plant)",
+        "treatment_mean": 0.22,
+        "control_mean": 0.08,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +175.0%, expected negative"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +175.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -63.63636363636365,
+            "note": "Effect +175.0% violates expected direction; unswapped would be -63.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 27.27272727272727,
+            "note": "CV = 27.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=20.0%"
+          }
+        },
+        "effect_pct": 175.00000000000003,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +175.0%, corrected would be -63.6%"
+      }
+    },
+    {
+      "element": "N total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "N total content (mg/plant)",
+        "treatment_mean": 80.76,
+        "control_mean": 71.52,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +12.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -11.441307578008926,
+            "note": "Effect +12.9% violates expected direction; unswapped would be -11.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.097077761267954,
+            "note": "CV = 16.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 12.919463087248337,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +12.9%, corrected would be -11.4%"
+      }
+    },
+    {
+      "element": "P total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "P total content (mg/plant)",
+        "treatment_mean": 15.24,
+        "control_mean": 12.44,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +22.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -18.372703412073495,
+            "note": "Effect +22.5% violates expected direction; unswapped would be -18.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 21.65354330708661,
+            "note": "CV = 21.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.9%"
+          }
+        },
+        "effect_pct": 22.508038585209007,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +22.5%, corrected would be -18.4%"
+      }
+    },
+    {
+      "element": "K total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "K total content (mg/plant)",
+        "treatment_mean": 75.7,
+        "control_mean": 66.03,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +14.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -12.774108322324967,
+            "note": "Effect +14.6% violates expected direction; unswapped would be -12.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 22.272126816380446,
+            "note": "CV = 22.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.9%"
+          }
+        },
+        "effect_pct": 14.644858397698018,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +14.6%, corrected would be -12.8%"
+      }
+    },
+    {
+      "element": "Mg total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mg total content (mg/plant)",
+        "treatment_mean": 1.73,
+        "control_mean": 1.38,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +25.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -20.231213872832377,
+            "note": "Effect +25.4% violates expected direction; unswapped would be -20.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.560693641618498,
+            "note": "CV = 11.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.4%"
+          }
+        },
+        "effect_pct": 25.362318840579718,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +25.4%, corrected would be -20.2%"
+      }
+    },
+    {
+      "element": "Ca total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca total content (mg/plant)",
+        "treatment_mean": 2.36,
+        "control_mean": 4.53,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -47.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.864406779661019,
+            "note": "CV = 11.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.1%"
+          }
+        },
+        "effect_pct": -47.9028697571744
+      }
+    },
+    {
+      "element": "N total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N total content (mg/plant)",
+        "treatment_mean": 49.67,
+        "control_mean": 182.82,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -72.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.019126233138715,
+            "note": "CV = 15.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.4%"
+          }
+        },
+        "effect_pct": -72.83120008751777
+      }
+    },
+    {
+      "element": "P total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P total content (mg/plant)",
+        "treatment_mean": 33.99,
+        "control_mean": 65.32,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -48.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.7658134745513383,
+            "note": "CV = 3.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -47.96387017758725
+      }
+    },
+    {
+      "element": "K total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "K total content (mg/plant)",
+        "treatment_mean": 93.95,
+        "control_mean": 151.14,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -37.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.15646620542842,
+            "note": "CV = 14.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": -37.83908958581447
+      }
+    },
+    {
+      "element": "Mg total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mg total content (mg/plant)",
+        "treatment_mean": 9.44,
+        "control_mean": 14.99,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -37.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 29.66101694915254,
+            "note": "CV = 29.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.5%"
+          }
+        },
+        "effect_pct": -37.02468312208139
+      }
+    },
+    {
+      "element": "Ca total content (mg/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Ca total content (mg/plant)",
+        "treatment_mean": 13.26,
+        "control_mean": 24.21,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -45.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 23.227752639517345,
+            "note": "CV = 23.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.2%"
+          }
+        },
+        "effect_pct": -45.22924411400248
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

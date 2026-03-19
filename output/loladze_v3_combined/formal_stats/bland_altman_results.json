@@ -1,0 +1,23 @@
+{
+  "n": 646,
+  "mean_difference_pp": 0.966,
+  "sd_difference_pp": 11.796,
+  "loa_upper_pp": 24.09,
+  "loa_lower_pp": -22.15,
+  "mean_diff_95ci": [
+    0.057,
+    1.876
+  ],
+  "loa_upper_95ci": [
+    22.51,
+    25.66
+  ],
+  "loa_lower_95ci": [
+    -23.73,
+    -20.58
+  ],
+  "within_loa_pct": 93.3,
+  "proportional_bias_r": -0.185,
+  "proportional_bias_p": 0.0,
+  "interpretation": "Mean difference (bias) = 0.97 pp (95% CI: 0.06 to 1.88). 95% limits of agreement: -22.2 to 24.1 pp. 93% of observations fall within LOAs. Proportional bias detected (r=-0.185, p=0.0000)."
+}

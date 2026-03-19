@@ -1,0 +1,926 @@
+{
+  "paper_id": "049_Singh_2013",
+  "recon": {
+    "paper_id": "049_Singh_2013",
+    "warnings": [
+      "This is primarily an OZONE study with CO2 as a secondary factor - the core design is ozone \u00d7 CO2 factorial, not a simple elevated CO2 vs. ambient CO2 comparison",
+      "There is NO pure 'elevated CO2 vs. ambient CO2' treatment pair without ozone confounding. The NF+CO2 treatment uses nonfiltered air (5-10% less ozone than ambient), not charcoal-filtered air, so it is not a clean CO2-only comparison vs. ambient",
+      "The correct CO2 comparison for meta-analysis purposes is NF+CO2 vs. NF (both at ambient ozone levels), NOT EO+CO2 vs. EO (which includes elevated ozone)",
+      "Abstract states '550\u00b150 ppm CO2' but the Methods section states '500\u00b150 ppm CO2' and Table 1 states '500\u00b150 ppm CO2' - there is an inconsistency in reported CO2 target level",
+      "The charcoal-filtered (CF) treatment removes 80-85% of ambient ozone AND is at ambient CO2 - this is not a CO2 treatment comparison and should not be used as CO2 control",
+      "Two years of data (2009-10 and 2010-11) are reported separately - each year should be treated as a separate observation or averaged carefully",
+      "Ozone concentrations differed between years (AOT40: 12.74 vs. 16.96 ppm hour), meaning background conditions differ between years",
+      "No variance data is reported in Table 4 (macronutrients/micronutrients) for individual treatment means - only SEM and CD are provided at the bottom pooled across treatments",
+      "The 'Ambient control' (AC) treatment is chamber-less ambient air and is very close to NF in all outcomes - NF is the appropriate OTC control",
+      "Risk of T/C confusion: multiple treatment groups exist; only NF+CO2 vs. NF is the relevant elevated CO2 comparison for this meta-analysis"
+    ],
+    "variance_type": "SE",
+    "variance_source": "Standard error of means (SEM) and critical difference (CD) at 5% level of significance were worked out for each parameter.",
+    "variance_confidence": "high",
+    "control_definition": "Nonfiltered air (NF): 5-10% less than ambient O3 and ambient CO2 (~385 ppm). This is the OTC control at ambient CO2.",
+    "treatment_definition": "Nonfiltered air with elevated CO2 (NF+CO2): NF air plus 500\u00b150 ppm CO2. This is the elevated CO2 treatment at ambient ozone levels.",
+    "tables_with_target_data": [
+      "Table 4"
+    ],
+    "potential_tc_confusion": "HIGH RISK: Multiple treatment rows exist in each table. The EO+CO2 treatment also contains elevated CO2 but is confounded with elevated ozone. The CF treatment has sub-ambient ozone which inflates values relative to NF. Extractors must use only NF vs. NF+CO2 comparison for the CO2 effect on mineral concentrations.",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "The experiment was carried out with six treatments arranged in completely randomized design with three replications.",
+    "factorial_structure": "[\"CO2 level (ambient vs. elevated)\", \"ozone level (sub-ambient CF, ambient NF, elevated EO)\", \"year (2009-10, 2010-11)\"]",
+    "extraction_guidance": "For this meta-analysis, extract mineral concentrations from Table 4 only. The relevant comparison is NF+CO2 (treatment) vs. NF (control) for each mineral (Ca, Mg, S, Zn, Fe) and each year separately. The CO2 level is approximately 500\u00b150 ppm elevated vs. ambient (~385 ppm). Use SEM values provided at the bottom of Table 4 as the variance measure (n=3 replicates). Note that the NF+CO2 vs. NF comparison occurs under ambient ozone conditions (not elevated ozone), making it the cleanest CO2 effect estimate. Do NOT extract EO+CO2 vs. EO as a CO2 comparison for this meta-analysis because ozone confounding makes it unsuitable. Do NOT use CF as the CO2 control. Treat 2009-10 and 2010-11 as separate data points or average them. Protein in Table 3 may also be extracted if the meta-analysis includes N/protein, using the same NF+CO2 vs. NF comparison. The SEM values in Table 4 appear to be pooled across all treatments - use these with caution and note they may underestimate within-treatment variance.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Synergistic action of tropospheric ozone and carbon dioxide on yield and nutritional quality of Indian mustard (Brassica juncea)\",\n        \"species\": \"Brassica juncea (Indian mustard)\",\n        \"experimental_system\": \"OTC\",\n        \"co2_levels\": {\"control\": \"ambient (~385 ppm)\", \"elevated\": \"500\u00b150 ppm (nominally 550\u00b150 ppm in abstract)\"}\n    },\n    \"warnings\": [\n        \"This is primarily an OZONE study with CO2 as a secondary factor - the core design is ozone \u00d7 CO2 factorial, not a simple elevated CO2 vs. ambient CO2 comparison\",\n        \"There is NO pure 'elevated CO2 vs. ambient CO2' treatment pair without ozone confounding. The NF+CO2 treatment uses nonfiltered air (5-10% less ozone than ambient), not charcoal-filtered air, so it is not a clean CO2-only comparison vs. ambient\",\n        \"The correct CO2 comparison for meta-analysis purposes is NF+CO2 vs. NF (both at ambient ozone levels), NOT EO+CO2 vs. EO (which includes elevated ozone)\",\n        \"Abstract states '550\u00b150 ppm CO2' but the Methods section states '500\u00b150 ppm CO2' and Table 1 states '500\u00b150 ppm CO2' - there is an inconsistency in reported CO2 target level\",\n        \"The charcoal-filtered (CF) treatment removes 80-85% of ambient ozone AND is at ambient CO2 - this is not a CO2 treatment comparison and should not be used as CO2 control\",\n        \"Two years of data (2009-10 and 2010-11) are reported separately - each year should be treated as a separate observation or averaged carefully\",\n        \"Ozone concentrations differed between years (AOT40: 12.74 vs. 16.96 ppm hour), meaning background conditions differ between years\",\n        \"No variance data is reported in Table 4 (macronutrients/micronutrients) for individual treatment means - only SEM and CD are provided at the bottom pooled across treatments\",\n        \"The 'Ambient control' (AC) treatment is chamber-less ambient air and is very close to NF in all outcomes - NF is the appropriate OTC contr",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3"
+    ],
+    "table_descriptions": {
+      "Table 1": "Treatment descriptions listing ozone concentrations for each of the 6 treatments - no outcome data",
+      "Table 2": "Yield parameters (number of siliqua per plant, 1000-seed weight, seed yield in g/m2) for 2009-10 and 2010-11 - NOT mineral data",
+      "Table 3": "Oil content (%) and protein content (%) of mustard seed for 2009-10 and 2010-11 - protein is nitrogen-derived but not a direct mineral element concentration",
+      "Table 4": "Macronutrient (Ca, Mg, S in mg/g) and micronutrient (Zn, Fe in mg/kg) concentrations in mustard seed for both 2009-10 and 2010-11 - PRIMARY TARGET TABLE for mineral meta-analysis"
+    },
+    "figures_with_data": [
+      "Figure 2"
+    ],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "protein content (%)",
+        "oil content (%)"
+      ],
+      "Table 4": [
+        "calcium (Ca, mg/g)",
+        "magnesium (Mg, mg/g)",
+        "sulfur (S, mg/g)",
+        "zinc (Zn, mg/kg)",
+        "iron (Fe, mg/kg)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: Completely randomized design with factorial (O3 \u00d7 CO2)",
+      "MULTI-CONTROL - Paper has multiple control conditions",
+      "Identify which control is 'ambient CO2' vs other controls",
+      "May need to extract multiple T/C comparisons",
+      "NESTED-TABLES - Tables have hierarchical structure",
+      "Parse carefully - headers may span multiple columns",
+      "Watch for subtotals vs individual measurements"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 10,
+  "kimi_obs": 14,
+  "gemini_obs": 0,
+  "matched_obs": 10,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 10/10 matched",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "protein content (%)",
+      "tissue": "seed",
+      "kimi": {
+        "element": "protein content (%)",
+        "tissue": "seed",
+        "treatment_mean": 21.25,
+        "control_mean": 22.5,
+        "treatment_variance": 0.64,
+        "control_variance": 0.64,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Nonfiltered air with elevated CO2 (500\u00b150 ppm), ambient O3 levels",
+        "control_description": "Nonfiltered air (ambient CO2 ~385 ppm), ambient O3 levels",
+        "moderators": {
+          "year": "2009-10",
+          "ozone_level": "ambient (NF)"
+        },
+        "confidence": "high",
+        "notes": "Protein calculated as N \u00d7 6.25; SEM pooled across treatments",
+        "effect_pct": -5.555555555555555,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "protein content (%)",
+      "tissue": "seed",
+      "kimi": {
+        "element": "protein content (%)",
+        "tissue": "seed",
+        "treatment_mean": 22.18,
+        "control_mean": 23.53,
+        "treatment_variance": 0.79,
+        "control_variance": 0.79,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Nonfiltered air with elevated CO2 (500\u00b150 ppm), ambient O3 levels",
+        "control_description": "Nonfiltered air (ambient CO2 ~385 ppm), ambient O3 levels",
+        "moderators": {
+          "year": "2010-11",
+          "ozone_level": "ambient (NF)"
+        },
+        "confidence": "high",
+        "notes": "Protein calculated as N \u00d7 6.25; SEM pooled across treatments",
+        "effect_pct": -5.737356566085854,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "oil content (%)",
+      "tissue": "seed",
+      "kimi": {
+        "element": "oil content (%)",
+        "tissue": "seed",
+        "treatment_mean": 42.15,
+        "control_mean": 39.45,
+        "treatment_variance": 0.85,
+        "control_variance": 0.85,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Nonfiltered air with elevated CO2 (500\u00b150 ppm), ambient O3 levels",
+        "control_description": "Nonfiltered air (ambient CO2 ~385 ppm), ambient O3 levels",
+        "moderators": {
+          "year": "2009-10",
+          "ozone_level": "ambient (NF)"
+        },
+        "confidence": "high",
+        "notes": "SEM pooled across treatments; variance likely underestimated; positive effect of CO2 on oil content",
+        "effect_pct": 6.844106463878316,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "oil content (%)",
+      "tissue": "seed",
+      "kimi": {
+        "element": "oil content (%)",
+        "tissue": "seed",
+        "treatment_mean": 43.43,
+        "control_mean": 40.82,
+        "treatment_variance": 0.81,
+        "control_variance": 0.81,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Nonfiltered air with elevated CO2 (500\u00b150 ppm), ambient O3 levels",
+        "control_description": "Nonfiltered air (ambient CO2 ~385 ppm), ambient O3 levels",
+        "moderators": {
+          "year": "2010-11",
+          "ozone_level": "ambient (NF)"
+        },
+        "confidence": "high",
+        "notes": "SEM pooled across treatments; variance likely underestimated; positive effect of CO2 on oil content",
+        "effect_pct": 6.393924546790787,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "calcium (Ca, mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 3.6,
+      "control_mean": 4.1,
+      "treatment_variance": 0.11,
+      "control_variance": 0.11,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2009-10",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.195121951219502,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "calcium (Ca, mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 3.9,
+      "control_mean": 4.1,
+      "treatment_variance": 0.09,
+      "control_variance": 0.09,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2010-11",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.8780487804877986,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "magnesium (Mg, mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 3.1,
+      "control_mean": 3.3,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2009-10",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.0606060606060534,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "magnesium (Mg, mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 3.2,
+      "control_mean": 3.5,
+      "treatment_variance": 0.14,
+      "control_variance": 0.14,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2010-11",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.571428571428566,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "sulfur (S, mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 4.1,
+      "control_mean": 4.4,
+      "treatment_variance": 0.13,
+      "control_variance": 0.13,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2009-10",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.818181818181834,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "sulfur (S, mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 4.3,
+      "control_mean": 4.7,
+      "treatment_variance": 0.09,
+      "control_variance": 0.09,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2010-11",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.510638297872347,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "zinc (Zn, mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 42.2,
+      "control_mean": 47.9,
+      "treatment_variance": 1.96,
+      "control_variance": 1.96,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2009-10",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.899791231732767,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "zinc (Zn, mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 45.8,
+      "control_mean": 49.6,
+      "treatment_variance": 1.57,
+      "control_variance": 1.57,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2010-11",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.661290322580654,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "iron (Fe, mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 78.1,
+      "control_mean": 84.6,
+      "treatment_variance": 1.05,
+      "control_variance": 1.05,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2009-10",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.68321513002364,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "iron (Fe, mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 80.5,
+      "control_mean": 86.4,
+      "treatment_variance": 1.06,
+      "control_variance": 1.06,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Nonfiltered air + elevated CO2 (NF+CO2): ambient ozone (5-10% less than ambient) + 500\u00b150 ppm CO2",
+      "control_description": "Nonfiltered air (NF): ambient ozone (5-10% less than ambient) + ambient CO2 (~385 ppm)",
+      "moderators": {
+        "year": "2010-11",
+        "ozone_level": "ambient (NF)",
+        "cultivar": "Pusa Tarak (EJ-13)",
+        "site": "New Delhi, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.82870370370371,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 10,
+    "final_count": 10
+  },
+  "verification_flags": [
+    {
+      "element": "calcium (Ca, mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "calcium (Ca, mg/g)",
+        "treatment_mean": 3.6,
+        "control_mean": 4.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -12.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.292377467571569,
+            "note": "CV = 5.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -12.195121951219502
+      }
+    },
+    {
+      "element": "calcium (Ca, mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "calcium (Ca, mg/g)",
+        "treatment_mean": 3.9,
+        "control_mean": 4.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -4.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.9970403251589475,
+            "note": "CV = 4.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -4.8780487804877986
+      }
+    },
+    {
+      "element": "magnesium (Mg, mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "magnesium (Mg, mg/g)",
+        "treatment_mean": 3.1,
+        "control_mean": 3.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.587260669577023,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": -6.0606060606060534
+      }
+    },
+    {
+      "element": "magnesium (Mg, mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "magnesium (Mg, mg/g)",
+        "treatment_mean": 3.2,
+        "control_mean": 3.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.577722283113837,
+            "note": "CV = 7.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.2%"
+          }
+        },
+        "effect_pct": -8.571428571428566
+      }
+    },
+    {
+      "element": "sulfur (S, mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "sulfur (S, mg/g)",
+        "treatment_mean": 4.1,
+        "control_mean": 4.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.4918684142427825,
+            "note": "CV = 5.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": -6.818181818181834
+      }
+    },
+    {
+      "element": "sulfur (S, mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "sulfur (S, mg/g)",
+        "treatment_mean": 4.3,
+        "control_mean": 4.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.6252226204929987,
+            "note": "CV = 3.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -8.510638297872347
+      }
+    },
+    {
+      "element": "zinc (Zn, mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "zinc (Zn, mg/kg)",
+        "treatment_mean": 42.2,
+        "control_mean": 47.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.044596167855449,
+            "note": "CV = 8.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.5%"
+          }
+        },
+        "effect_pct": -11.899791231732767
+      }
+    },
+    {
+      "element": "zinc (Zn, mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "zinc (Zn, mg/kg)",
+        "treatment_mean": 45.8,
+        "control_mean": 49.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.937379405858378,
+            "note": "CV = 5.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": -7.661290322580654
+      }
+    },
+    {
+      "element": "iron (Fe, mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "iron (Fe, mg/kg)",
+        "treatment_mean": 78.1,
+        "control_mean": 84.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.3286214442347264,
+            "note": "CV = 2.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -7.68321513002364
+      }
+    },
+    {
+      "element": "iron (Fe, mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "iron (Fe, mg/kg)",
+        "treatment_mean": 80.5,
+        "control_mean": 86.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.2807128646248573,
+            "note": "CV = 2.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -6.82870370370371
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

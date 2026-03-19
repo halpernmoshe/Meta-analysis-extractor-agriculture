@@ -1,0 +1,734 @@
+{
+  "paper_id": "038_Newbery_1995",
+  "title": "Nitrogen, phosphorus and potassium uptake and demand in Agrostis capillaris: the influence of elevated CO2 and nutrient supply",
+  "authors": "Newbery RM, Wolfenden J, Mansfield TA, Harrison AF",
+  "year": 1995,
+  "journal": "New Phytologist",
+  "species": "Agrostis capillaris",
+  "experiment_type": "growth chamber (Solardome)",
+  "co2_elevated": "ambient + 250 ppm",
+  "co2_ambient": "ambient air",
+  "duration": "23 weeks",
+  "consensus_observations": [
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 38,
+      "control_mean": 38,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K1",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K1",
+      "moderators": {
+        "nutrient_treatment": "P1N1K1",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 1.0,
+      "control_mean": 1.7,
+      "effect_pct": -41.18,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K1",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K1",
+      "moderators": {
+        "nutrient_treatment": "P1N1K1",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.118,
+      "control_mean": 0.145,
+      "effect_pct": -18.62,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K1",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K1",
+      "moderators": {
+        "nutrient_treatment": "P1N1K1",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.7,
+      "control_mean": 0.71,
+      "effect_pct": -1.41,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K1",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K1",
+      "moderators": {
+        "nutrient_treatment": "P1N1K1",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 45,
+      "control_mean": 44,
+      "effect_pct": 2.27,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K2",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K2",
+      "moderators": {
+        "nutrient_treatment": "P1N1K2",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 0.95,
+      "control_mean": 1.8,
+      "effect_pct": -47.22,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K2",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K2",
+      "moderators": {
+        "nutrient_treatment": "P1N1K2",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.05,
+      "control_mean": 0.078,
+      "effect_pct": -35.9,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K2",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K2",
+      "moderators": {
+        "nutrient_treatment": "P1N1K2",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.68,
+      "control_mean": 0.96,
+      "effect_pct": -29.17,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K2",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K2",
+      "moderators": {
+        "nutrient_treatment": "P1N1K2",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 47,
+      "control_mean": 47,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K3",
+      "moderators": {
+        "nutrient_treatment": "P1N1K3",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 1.48,
+      "control_mean": 1.85,
+      "effect_pct": -20.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K3",
+      "moderators": {
+        "nutrient_treatment": "P1N1K3",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.055,
+      "control_mean": 0.059,
+      "effect_pct": -6.78,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K3",
+      "moderators": {
+        "nutrient_treatment": "P1N1K3",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 1.01,
+      "control_mean": 0.89,
+      "effect_pct": 13.48,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P1N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P1N1K3",
+      "moderators": {
+        "nutrient_treatment": "P1N1K3",
+        "P_supply_mg_per_l": 2,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 44,
+      "control_mean": 44,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K1",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K1",
+      "moderators": {
+        "nutrient_treatment": "P2N2K1",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 0.81,
+      "control_mean": 1.61,
+      "effect_pct": -49.69,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K1",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K1",
+      "moderators": {
+        "nutrient_treatment": "P2N2K1",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.206,
+      "control_mean": 0.183,
+      "effect_pct": 12.57,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K1",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K1",
+      "moderators": {
+        "nutrient_treatment": "P2N2K1",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.83,
+      "control_mean": 0.85,
+      "effect_pct": -2.35,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K1",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K1",
+      "moderators": {
+        "nutrient_treatment": "P2N2K1",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 44,
+      "control_mean": 43,
+      "effect_pct": 2.33,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K2",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K2",
+      "moderators": {
+        "nutrient_treatment": "P2N2K2",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 1.23,
+      "control_mean": 1.75,
+      "effect_pct": -29.71,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K2",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K2",
+      "moderators": {
+        "nutrient_treatment": "P2N2K2",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.21,
+      "control_mean": 0.22,
+      "effect_pct": -4.55,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K2",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K2",
+      "moderators": {
+        "nutrient_treatment": "P2N2K2",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.89,
+      "control_mean": 1.03,
+      "effect_pct": -13.59,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N2K2",
+      "control_description": "Ambient CO2, nutrient treatment P2N2K2",
+      "moderators": {
+        "nutrient_treatment": "P2N2K2",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 20
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 47,
+      "control_mean": 47,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P2N3K3",
+      "moderators": {
+        "nutrient_treatment": "P2N3K3",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 1.1,
+      "control_mean": 1.9,
+      "effect_pct": -42.11,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P2N3K3",
+      "moderators": {
+        "nutrient_treatment": "P2N3K3",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.112,
+      "control_mean": 0.14,
+      "effect_pct": -20.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P2N3K3",
+      "moderators": {
+        "nutrient_treatment": "P2N3K3",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.8,
+      "control_mean": 0.9,
+      "effect_pct": -11.11,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P2N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P2N3K3",
+      "moderators": {
+        "nutrient_treatment": "P2N3K3",
+        "P_supply_mg_per_l": 10,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 39,
+      "control_mean": 37,
+      "effect_pct": 5.41,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N1K3",
+      "moderators": {
+        "nutrient_treatment": "P3N1K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 1.28,
+      "control_mean": 2.05,
+      "effect_pct": -37.56,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N1K3",
+      "moderators": {
+        "nutrient_treatment": "P3N1K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.203,
+      "control_mean": 0.315,
+      "effect_pct": -35.56,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N1K3",
+      "moderators": {
+        "nutrient_treatment": "P3N1K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.65,
+      "control_mean": 0.81,
+      "effect_pct": -19.75,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N1K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N1K3",
+      "moderators": {
+        "nutrient_treatment": "P3N1K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 5,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 44,
+      "control_mean": 42,
+      "effect_pct": 4.76,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N2K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N2K3",
+      "moderators": {
+        "nutrient_treatment": "P3N2K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 1.42,
+      "control_mean": 1.78,
+      "effect_pct": -20.22,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N2K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N2K3",
+      "moderators": {
+        "nutrient_treatment": "P3N2K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.3,
+      "control_mean": 0.275,
+      "effect_pct": 9.09,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N2K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N2K3",
+      "moderators": {
+        "nutrient_treatment": "P3N2K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.8,
+      "control_mean": 0.84,
+      "effect_pct": -4.76,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N2K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N2K3",
+      "moderators": {
+        "nutrient_treatment": "P3N2K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 20,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 47,
+      "control_mean": 47,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K1",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K1",
+      "moderators": {
+        "nutrient_treatment": "P3N3K1",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 0.56,
+      "control_mean": 1.41,
+      "effect_pct": -60.28,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K1",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K1",
+      "moderators": {
+        "nutrient_treatment": "P3N3K1",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.27,
+      "control_mean": 0.315,
+      "effect_pct": -14.29,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K1",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K1",
+      "moderators": {
+        "nutrient_treatment": "P3N3K1",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.91,
+      "control_mean": 0.99,
+      "effect_pct": -8.08,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K1",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K1",
+      "moderators": {
+        "nutrient_treatment": "P3N3K1",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 5
+      }
+    },
+    {
+      "element": "C",
+      "tissue": "shoot",
+      "treatment_mean": 47,
+      "control_mean": 47,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K3",
+      "moderators": {
+        "nutrient_treatment": "P3N3K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "shoot",
+      "treatment_mean": 1.15,
+      "control_mean": 1.63,
+      "effect_pct": -29.45,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K3",
+      "moderators": {
+        "nutrient_treatment": "P3N3K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 0.26,
+      "control_mean": 0.293,
+      "effect_pct": -11.26,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K3",
+      "moderators": {
+        "nutrient_treatment": "P3N3K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "shoot",
+      "treatment_mean": 0.86,
+      "control_mean": 0.95,
+      "effect_pct": -9.47,
+      "n": 3,
+      "unit": "% dry weight",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (ambient + 250 ppm), nutrient treatment P3N3K3",
+      "control_description": "Ambient CO2, nutrient treatment P3N3K3",
+      "moderators": {
+        "nutrient_treatment": "P3N3K3",
+        "P_supply_mg_per_l": 30,
+        "N_supply_mg_per_l": 50,
+        "K_supply_mg_per_l": 50
+      }
+    }
+  ]
+}

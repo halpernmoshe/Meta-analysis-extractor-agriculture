@@ -1,0 +1,327 @@
+{
+  "paper_id": "029_Ciepiela_2019_The effect of biostimulants derived from",
+  "gt_rows": [
+    {
+      "pair": "408",
+      "crop": "ryegrass",
+      "CropCategory": "Others",
+      "product": "Algex",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 1.26,
+      "treat_mean": 1.77,
+      "ctrl_sd": 0.11138400000000001,
+      "treat_sd": 0.15646800000000002
+    },
+    {
+      "pair": "409",
+      "crop": "ryegrass",
+      "CropCategory": "Others",
+      "product": "Algex",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 0.5599999999999999,
+      "treat_mean": 1.08,
+      "ctrl_sd": 0.049504,
+      "treat_sd": 0.09547200000000002
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "control_mean": 12.6,
+      "treatment_mean": 17.7,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "control_mean": 17.4,
+      "treatment_mean": 22.4,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "control_mean": 19.0,
+      "treatment_mean": 23.3,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "control_mean": 5.6,
+      "treatment_mean": 10.8,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "control_mean": 9.9,
+      "treatment_mean": 15.8,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "control_mean": 12.4,
+      "treatment_mean": 18.9,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "control_mean": 12.6,
+      "treatment_mean": 15.8,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "control_mean": 17.4,
+      "treatment_mean": 20.2,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "control_mean": 19.0,
+      "treatment_mean": 22.2,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "control_mean": 5.6,
+      "treatment_mean": 9.7,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "control_mean": 9.9,
+      "treatment_mean": 14.4,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "control_mean": 12.4,
+      "treatment_mean": 15.4,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "control_mean": 12.6,
+      "treatment_mean": 14.5,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "control_mean": 17.4,
+      "treatment_mean": 18.7,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "control_mean": 19.0,
+      "treatment_mean": 20.7,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "control_mean": 5.6,
+      "treatment_mean": 9.1,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "control_mean": 9.9,
+      "treatment_mean": 13.7,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "control_mean": 12.4,
+      "treatment_mean": 14.6,
+      "confidence": "high"
+    },
+    {
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "unit": "t ha-1",
+      "n": 3,
+      "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "cut": "1",
+        "nitrogen_rate": "0 kg ha-1",
+        "year": "mean of 2014-2015"
+      },
+      "control_mean": 2.6,
+      "treatment_mean": 3.2,
+      "confidence": "high"
+    }
+  ]
+}

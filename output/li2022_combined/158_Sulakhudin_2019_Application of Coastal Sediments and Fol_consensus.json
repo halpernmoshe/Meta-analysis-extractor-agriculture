@@ -1,0 +1,441 @@
+{
+  "paper_id": "158_Sulakhudin_2019_Application of Coastal Sediments and Fol",
+  "recon": {
+    "paper_id": "158_Sulakhudin_2019_Application of Coastal Sediments and Fol",
+    "warnings": [
+      "Complex factorial design with 2 factors (coastal sediment x seaweed extract) across 3 varieties - need to extract seaweed extract effect vs control for each variety",
+      "Coastal sediment is NOT a biostimulant - only extract seaweed extract treatments",
+      "Treatment codes are confusing: S0=no seaweed, S1=3% seaweed, C0=no coastal sediment, C1=40t/ha coastal sediment",
+      "Must extract S1C0 vs S0C0 AND S1C1 vs S0C1 for each variety to get seaweed extract effect",
+      "Yield data in Table 4 shows statistical significance letters but no variance measures provided",
+      "Different varieties may respond differently - each variety comparison should be extracted separately",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "none",
+    "variance_source": "Table 4 shows 'The mean value in one column followed by the same letter showed no significant difference at p < 0.05' but no SE, SD, or LSD values provided",
+    "variance_confidence": "high",
+    "control_definition": "S0 = no foliar seaweed extract application (control)",
+    "treatment_definition": "S1 = foliar seaweed extract at 3% concentration applied three times at 15-day intervals starting 30 days after transplanting",
+    "tables_with_target_data": [
+      "Table 4"
+    ],
+    "potential_tc_confusion": "Risk of including coastal sediment as biostimulant - it's an ameliorant, not a biostimulant. Only seaweed extract is the biostimulant intervention",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "Randomized Complete Block Design (RCBD) with 'three factors' and 'divided into 60 experimental plots' suggests 3 replications per treatment combination (2\u00d72\u00d73\u00d73=36 treatment combinations)",
+    "factorial_structure": "[\"foliar seaweed extract (2 levels)\", \"coastal sediment (2 levels)\", \"variety (3 levels)\"]",
+    "extraction_guidance": "Extract yield data from Table 4. For each variety (V1=Bima, V2=Moujung, V3=Sumenep), extract two comparisons: (1) S1C0V vs S0C0V (seaweed effect without coastal sediment) and (2) S1C1V vs S0C1V (seaweed effect with coastal sediment). This gives 6 total comparisons. No variance data available - mark as unavailable. Focus only on seaweed extract as biostimulant intervention, ignore coastal sediment treatments.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Application of Coastal Sediments and Foliar Seaweed Extract and Its Influence to Soil Properties, Growth and Yield of Shallot in Peatland\",\n        \"species\": \"Allium ascalonicum L. (shallot)\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"Complex factorial design with 2 factors (coastal sediment x seaweed extract) across 3 varieties - need to extract seaweed extract effect vs control for each variety\",\n        \"Coastal sediment is NOT a biostimulant - only extract seaweed extract treatments\",\n        \"Treatment codes are confusing: S0=no seaweed, S1=3% seaweed, C0=no coastal sediment, C1=40t/ha coastal sediment\",\n        \"Must extract S1C0 vs S0C0 AND S1C1 vs S0C1 for each variety to get seaweed extract effect\",\n        \"Yield data in Table 4 shows statistical significance letters but no variance measures provided\",\n        \"Different varieties may respond differently - each variety comparison should be extracted separately\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"none\",\n        \"source\": \"Table 4 shows 'The mean value in one column followed by the same letter showed no significant difference at p < 0.05' but no SE, SD, or LSD values provided\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"S0 = no foliar seaweed extract application (control)\",\n        \"treatment_definition\": \"S1 = foliar seaweed extract at 3% concentration applied three times at 15-day intervals starting 30 days after transplanting\",\n        \"identification_method\": \"In treatment codes, S0 = control (no seaweed), S1 = treatment (3% seaweed extract). Compare S1 vs S0 within same coastal sediment level and variety\",\n        \"potential_confusion\": \"Risk of including coastal sediment as biostimulant - it's an ameliorant, not a biostimulant. Only seaweed extract is the biostimulant intervention\"\n   ",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3"
+    ],
+    "table_descriptions": {
+      "Table 1": "Initial soil chemical properties before experiment",
+      "Table 2": "Soil chemical properties after harvest by treatment",
+      "Table 3": "Growth parameters (leaf length, number of leaves, number of tillers)",
+      "Table 4": "Shallot yield (t/ha) by treatment combination"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 4": [
+        "Yield of shallot (t/ha)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 6,
+  "kimi_obs": 6,
+  "gemini_obs": 0,
+  "matched_obs": 6,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "treatment_mean": 0.883,
+      "control_mean": 0.803,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar seaweed extract 3% applied three times at 15-day intervals starting 30 days after transplanting",
+      "control_description": "No foliar seaweed extract application",
+      "moderators": {
+        "cultivar": "Bima",
+        "coastal_sediment": "no coastal sediment"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.962640099626395,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "treatment_mean": 1.06,
+      "control_mean": 0.94,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar seaweed extract 3% applied three times at 15-day intervals starting 30 days after transplanting",
+      "control_description": "No foliar seaweed extract application",
+      "moderators": {
+        "cultivar": "Bima",
+        "coastal_sediment": "40 t/ha coastal sediment"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 12.765957446808523,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "treatment_mean": 1.16,
+      "control_mean": 1.097,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar seaweed extract 3% applied three times at 15-day intervals starting 30 days after transplanting",
+      "control_description": "No foliar seaweed extract application",
+      "moderators": {
+        "cultivar": "Moujung",
+        "coastal_sediment": "no coastal sediment"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.742935278030989,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "treatment_mean": 0.94,
+      "control_mean": 1.18,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar seaweed extract 3% applied three times at 15-day intervals starting 30 days after transplanting",
+      "control_description": "No foliar seaweed extract application",
+      "moderators": {
+        "cultivar": "Moujung",
+        "coastal_sediment": "40 t/ha coastal sediment"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -20.33898305084746,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "treatment_mean": 1.307,
+      "control_mean": 1.283,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar seaweed extract 3% applied three times at 15-day intervals starting 30 days after transplanting",
+      "control_description": "No foliar seaweed extract application",
+      "moderators": {
+        "cultivar": "Sumenep",
+        "coastal_sediment": "no coastal sediment"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.8706157443491835,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "treatment_mean": 1.917,
+      "control_mean": 1.383,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar seaweed extract 3% applied three times at 15-day intervals starting 30 days after transplanting",
+      "control_description": "No foliar seaweed extract application",
+      "moderators": {
+        "cultivar": "Sumenep",
+        "coastal_sediment": "40 t/ha coastal sediment"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 38.611713665943604,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 6,
+    "final_count": 6
+  },
+  "verification_flags": [
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of shallot (t/ha)",
+        "treatment_mean": 0.883,
+        "control_mean": 0.803,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.962640099626395
+      }
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of shallot (t/ha)",
+        "treatment_mean": 1.06,
+        "control_mean": 0.94,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.765957446808523
+      }
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of shallot (t/ha)",
+        "treatment_mean": 1.16,
+        "control_mean": 1.097,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 5.742935278030989
+      }
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of shallot (t/ha)",
+        "treatment_mean": 0.94,
+        "control_mean": 1.18,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -20.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 25.531914893617024,
+            "note": "Effect -20.3% violates expected direction; unswapped would be +25.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -20.33898305084746,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -20.3%, corrected would be +25.5%"
+      }
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of shallot (t/ha)",
+        "treatment_mean": 1.307,
+        "control_mean": 1.283,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 1.8706157443491835
+      }
+    },
+    {
+      "element": "Yield of shallot (t/ha)",
+      "tissue": "bulb",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Yield of shallot (t/ha)",
+        "treatment_mean": 1.917,
+        "control_mean": 1.383,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +38.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 38.611713665943604
+      }
+    }
+  ]
+}

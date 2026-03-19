@@ -1,0 +1,1098 @@
+{
+  "paper_id": "126_Prokkola_2007_Effect of biological sprays on the incid",
+  "recon": {
+    "paper_id": "126_Prokkola_2007_Effect of biological sprays on the incid",
+    "warnings": [
+      "This study tests multiple biostimulant types vs control - extract each separately",
+      "Two separate experiments with different treatments (Exp1: 6 treatments, Exp2: 4 treatments)",
+      "Units vary between experiments: g/plant is consistent but also reports per 'yielding plant' in Exp2",
+      "Split-plot design in Exp1 with two locations as main plots could complicate extraction",
+      "Some treatments are microbial (Trichoderma, Gliocladium) which may not fit biostimulant definition",
+      "Statistical analysis used Tukey's test - differences marked with letters but no numeric variance reported",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "none",
+    "variance_source": "Statistical analysis mentions 'Tukey's studentized range test (P=0.05)' but tables only show significance letters (a, b, c) without numeric variance measures",
+    "variance_confidence": "high",
+    "control_definition": "Non-treated plots served as control",
+    "treatment_definition": "Multiple biostimulant treatments: 1% seaweed extract, 1% garlic extract, 1% compost extract, 0.4% silicon solution, plus microbial treatments",
+    "tables_with_target_data": [
+      "Table 1",
+      "Table 2"
+    ],
+    "potential_tc_confusion": "None - control is clearly defined and consistently labeled",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "Experiment 1: 'split-plot design replicated 4 times', Experiment 2: 'randomized complete block design with 6 replicates'",
+    "factorial_structure": "[\"Treatment\", \"Location\", \"Year\"]",
+    "extraction_guidance": "Extract each biostimulant treatment vs control separately. Focus on 'Total yield' and 'Marketable yield' in g/plant as primary outcomes. Relevant biostimulants are seaweed extract, silicon, and compost extract (garlic extract may be questionable as biostimulant). Trichoderma and Gliocladium are microbial so may not qualify. No numeric variance measures available - only significance letters. Use replication numbers (n=4 for Exp1, n=6 for Exp2) for each treatment comparison.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effect of biological sprays on the incidence of grey mould, fruit yield and fruit quality in organic strawberry production\",\n        \"species\": \"Fragaria \u00d7 ananassa (strawberry, cultivar 'Jonsok')\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This study tests multiple biostimulant types vs control - extract each separately\",\n        \"Two separate experiments with different treatments (Exp1: 6 treatments, Exp2: 4 treatments)\",\n        \"Units vary between experiments: g/plant is consistent but also reports per 'yielding plant' in Exp2\",\n        \"Split-plot design in Exp1 with two locations as main plots could complicate extraction\",\n        \"Some treatments are microbial (Trichoderma, Gliocladium) which may not fit biostimulant definition\",\n        \"Statistical analysis used Tukey's test - differences marked with letters but no numeric variance reported\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"none\",\n        \"source\": \"Statistical analysis mentions 'Tukey's studentized range test (P=0.05)' but tables only show significance letters (a, b, c) without numeric variance measures\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Non-treated plots served as control\",\n        \"treatment_definition\": \"Multiple biostimulant treatments: 1% seaweed extract, 1% garlic extract, 1% compost extract, 0.4% silicon solution, plus microbial treatments\",\n        \"identification_method\": \"Control clearly labeled as 'Control (nontreated)' in tables\",\n        \"potential_confusion\": \"None - control is clearly defined and consistently labeled\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n        \"source\": \"Experiment 1: 'split-plot design replicated 4 times', Experiment 2: 'randomized complete block design with 6 replicates'\",\n        \"applies_to\": \"Exp1 has n=4, Exp2 has n=6\",\n ",
+    "tables_without_target_data": [],
+    "table_descriptions": {
+      "Table 1": "Experiment 1 results showing total yield, marketable yield, and berry quality metrics by location and treatment for 2001-2002",
+      "Table 2": "Experiment 2 results showing total yield, marketable yield, and berry quality metrics by year and treatment"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "Total yield (g/plant)",
+        "Marketable yield (g/plant)",
+        "Small berries (%)",
+        "Grey mould (%)",
+        "Button berries (%)",
+        "Other disorders (%)",
+        "Berry size (g)"
+      ],
+      "Table 2": [
+        "Total yield (g/yielding plant)",
+        "Marketable yield (g/yielding plant)",
+        "Small berries (%)",
+        "Grey mould (%)",
+        "Button berries (%)",
+        "Other disorders (%)",
+        "Berry size (g)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 26,
+  "kimi_obs": 0,
+  "gemini_obs": 23,
+  "matched_obs": 14,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 26",
+  "disagreements": [
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Total yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 319,
+        "control_mean": 332,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Garlic extract spray (1% w/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2001",
+          "experiment": "1"
+        },
+        "confidence": "medium",
+        "notes": "Garlic extract - questionable as biostimulant, may be considered plant extract",
+        "effect_pct": -3.91566265060241,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Marketable yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 263,
+        "control_mean": 281,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Garlic extract spray (1% w/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2001",
+          "experiment": "1"
+        },
+        "confidence": "medium",
+        "notes": "Garlic extract - questionable as biostimulant, may be considered plant extract",
+        "effect_pct": -6.405693950177936,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Total yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 542,
+        "control_mean": 501,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Seaweed extract spray (1% v/v, Ascophyllum nodosum)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2002",
+          "experiment": "1"
+        },
+        "confidence": "high",
+        "notes": "Seaweed extract - qualifies as biostimulant",
+        "effect_pct": 8.183632734530939,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Marketable yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 423,
+        "control_mean": 384,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Seaweed extract spray (1% v/v, Ascophyllum nodosum)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2002",
+          "experiment": "1"
+        },
+        "confidence": "high",
+        "notes": "Seaweed extract - qualifies as biostimulant",
+        "effect_pct": 10.15625,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Total yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 531,
+        "control_mean": 501,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Silicon spray (0.4% v/v, Si 7.7%)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2002",
+          "experiment": "1"
+        },
+        "confidence": "high",
+        "notes": "Silicon - qualifies as biostimulant",
+        "effect_pct": 5.9880239520958085,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Marketable yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 415,
+        "control_mean": 384,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Silicon spray (0.4% v/v, Si 7.7%)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2002",
+          "experiment": "1"
+        },
+        "confidence": "high",
+        "notes": "Silicon - qualifies as biostimulant",
+        "effect_pct": 8.072916666666668,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Total yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 498,
+        "control_mean": 501,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Garlic extract spray (1% w/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2002",
+          "experiment": "1"
+        },
+        "confidence": "medium",
+        "notes": "Garlic extract - questionable as biostimulant, may be considered plant extract",
+        "effect_pct": -0.5988023952095809,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Marketable yield (g/plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 385,
+        "control_mean": 384,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "g/plant",
+        "data_source": "Table 1",
+        "treatment_description": "Garlic extract spray (1% w/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "year": "2002",
+          "experiment": "1"
+        },
+        "confidence": "medium",
+        "notes": "Garlic extract - questionable as biostimulant, may be considered plant extract",
+        "effect_pct": 0.26041666666666663,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Total yield (g/yielding plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 410,
+        "control_mean": 496,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 6,
+        "unit": "g/yielding plant",
+        "data_source": "Table 2",
+        "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "experiment": "2"
+        },
+        "confidence": "high",
+        "notes": "Microbial treatment - may not qualify as biostimulant",
+        "effect_pct": -17.338709677419356,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Marketable yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Marketable yield (g/yielding plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 319,
+        "control_mean": 394,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 6,
+        "unit": "g/yielding plant",
+        "data_source": "Table 2",
+        "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "experiment": "2"
+        },
+        "confidence": "high",
+        "notes": "Microbial treatment - may not qualify as biostimulant",
+        "effect_pct": -19.035532994923855,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Total yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Total yield (g/yielding plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 511,
+        "control_mean": 496,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 6,
+        "unit": "g/yielding plant",
+        "data_source": "Table 2",
+        "treatment_description": "Compost extract spray (1% v/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "experiment": "2"
+        },
+        "confidence": "high",
+        "notes": "Compost extract may qualify as biostimulant",
+        "effect_pct": 3.024193548387097,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Marketable yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "Marketable yield (g/yielding plant)",
+        "tissue": "whole plant",
+        "treatment_mean": 408,
+        "control_mean": 394,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 6,
+        "unit": "g/yielding plant",
+        "data_source": "Table 2",
+        "treatment_description": "Compost extract spray (1% v/v)",
+        "control_description": "Non-treated control",
+        "moderators": {
+          "experiment": "2"
+        },
+        "confidence": "high",
+        "notes": "Compost extract may qualify as biostimulant",
+        "effect_pct": 3.5532994923857872,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 323,
+      "control_mean": 332,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.6%) [Claude+Gemini agree]",
+      "effect_pct": -2.710843373493976,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 264,
+      "control_mean": 281,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.2%) [Claude+Gemini agree]",
+      "effect_pct": -6.049822064056939,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 303,
+      "control_mean": 332,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": -8.734939759036145,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 256,
+      "control_mean": 281,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": -8.896797153024911,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 337,
+      "control_mean": 332,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Seaweed extract spray (1% v/v, Ascophyllum nodosum)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 1.5060240963855422,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 287,
+      "control_mean": 281,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Seaweed extract spray (1% v/v, Ascophyllum nodosum)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 2.135231316725979,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 341,
+      "control_mean": 332,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Silicon spray (0.4% v/v, Si 7.7%)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 2.710843373493976,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 291,
+      "control_mean": 281,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Silicon spray (0.4% v/v, Si 7.7%)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 3.558718861209965,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 491,
+      "control_mean": 501,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=4.1%) [Claude+Gemini agree]",
+      "effect_pct": -1.996007984031936,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 372,
+      "control_mean": 384,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.8%) [Claude+Gemini agree]",
+      "effect_pct": -3.125,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 508,
+      "control_mean": 501,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.3%) [Claude+Gemini agree]",
+      "effect_pct": 1.3972055888223553,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 381,
+      "control_mean": 384,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "g/plant",
+      "data_source": "Table 1",
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.5%) [Claude+Gemini agree]",
+      "effect_pct": -0.78125,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 542,
+      "control_mean": 496,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 6,
+      "unit": "g/yielding plant",
+      "data_source": "Table 2",
+      "treatment_description": "Gliocladium catenulatum spray (1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001-2002 pooled",
+        "site": "Ruukki",
+        "experiment": "2"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.9%) [Claude+Gemini agree]",
+      "effect_pct": 9.274193548387096,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Marketable yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "treatment_mean": 430,
+      "control_mean": 394,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 6,
+      "unit": "g/yielding plant",
+      "data_source": "Table 2",
+      "treatment_description": "Gliocladium catenulatum spray (1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001-2002 pooled",
+        "site": "Ruukki",
+        "experiment": "2"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.6%) [Claude+Gemini agree]",
+      "effect_pct": 9.137055837563452,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 14,
+    "final_count": 14
+  },
+  "verification_flags": [
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Total yield (g/plant)",
+        "treatment_mean": 323,
+        "control_mean": 332,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -2.710843373493976
+      }
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Marketable yield (g/plant)",
+        "treatment_mean": 264,
+        "control_mean": 281,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -6.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 6.4393939393939394,
+            "note": "Effect -6.0% violates expected direction; unswapped would be +6.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -6.049822064056939,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -6.0%, corrected would be +6.4%"
+      }
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Total yield (g/plant)",
+        "treatment_mean": 303,
+        "control_mean": 332,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -8.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 9.570957095709572,
+            "note": "Effect -8.7% violates expected direction; unswapped would be +9.6%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -8.734939759036145,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -8.7%, corrected would be +9.6%"
+      }
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Marketable yield (g/plant)",
+        "treatment_mean": 256,
+        "control_mean": 281,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -8.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 9.765625000000002,
+            "note": "Effect -8.9% violates expected direction; unswapped would be +9.8%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -8.896797153024911,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -8.9%, corrected would be +9.8%"
+      }
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Total yield (g/plant)",
+        "treatment_mean": 491,
+        "control_mean": 501,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -1.996007984031936
+      }
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Marketable yield (g/plant)",
+        "treatment_mean": 372,
+        "control_mean": 384,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -3.125
+      }
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Marketable yield (g/plant)",
+        "treatment_mean": 381,
+        "control_mean": 384,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -0.78125
+      }
+    }
+  ]
+}

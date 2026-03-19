@@ -1,0 +1,661 @@
+{
+  "paper_id": "Zhang_2017",
+  "recon": {
+    "paper_id": "Zhang_2017",
+    "warnings": [
+      "MAJOR WARNING: This paper is about IRRIGATION and NITROGEN effects on wheat, NOT zinc fertilizer effects",
+      "This paper does not study zinc fertilization at all - it focuses on water management and N application",
+      "No grain Zn concentration data reported anywhere in the paper",
+      "Paper measures amino acid composition, protein content, and protein quality indices (EAAI, PDCAAS)",
+      "This paper is completely irrelevant to the zinc biofortification meta-analysis",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "ant,differences were compared using the least significant difference (LSD)test at the 0.05probability level.",
+    "variance_confidence": "medium",
+    "control_definition": "No irrigation (I0) and 0 kg N ha-1 (N0)",
+    "treatment_definition": "Irrigation at jointing (I1), irrigation at jointing plus anthesis (I2), and nitrogen rates of 180, 240, 300 kg N ha-1",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "This is a factorial design with irrigation \u00d7 nitrogen interactions, but completely unrelated to Zn fertilization",
+    "experimental_design": "split-plot factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "Three replicates were performed for each treatment",
+    "factorial_structure": "[\"irrigation\", \"nitrogen\", \"cropping season\"]",
+    "extraction_guidance": "DO NOT EXTRACT DATA FROM THIS PAPER - it is completely unrelated to zinc fertilization and grain Zn concentration. This paper studies irrigation and nitrogen effects on protein quality in wheat. No zinc data exists in this study.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effect of irrigation and nitrogen application on grain amino acid composition and protein quality in winter wheat\",\n        \"species\": \"winter wheat (Triticum aestivum)\",\n        \"experimental_system\": \"field experiment\",\n        \"co2_levels\": {\"control\": \"N/A\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"MAJOR WARNING: This paper is about IRRIGATION and NITROGEN effects on wheat, NOT zinc fertilizer effects\",\n        \"This paper does not study zinc fertilization at all - it focuses on water management and N application\",\n        \"No grain Zn concentration data reported anywhere in the paper\",\n        \"Paper measures amino acid composition, protein content, and protein quality indices (EAAI, PDCAAS)\",\n        \"This paper is completely irrelevant to the zinc biofortification meta-analysis\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"differences were compared using the least significant difference (LSD) test at the 0.05 probability level\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"No irrigation (I0) and 0 kg N ha-1 (N0)\",\n        \"treatment_definition\": \"Irrigation at jointing (I1), irrigation at jointing plus anthesis (I2), and nitrogen rates of 180, 240, 300 kg N ha-1\",\n        \"identification_method\": \"I0/I1/I2 for irrigation, N0/N180/N240/N300 for nitrogen rates\",\n        \"potential_confusion\": \"This is a factorial design with irrigation \u00d7 nitrogen interactions, but completely unrelated to Zn fertilization\"\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"Three replicates were performed for each treatment\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"Split-plot design with 3 replications, but this study is irrelevant to zinc biofortification research\"\n    },\n    \"data_locations\": {\n        \"tables_with_target_data\": [],\n        \"tables_without_target_data\": [\"Table 1\", \"Table 2\", \"Table 3\", \"T",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3",
+      "Table 4",
+      "Table 5"
+    ],
+    "table_descriptions": {
+      "Table 1": "Initial soil chemical characteristics (total N, available N, P, K, organic matter, pH)",
+      "Table 2": "Grain yield and protein content under irrigation and nitrogen treatments",
+      "Table 3": "Total amino acid (TAA), essential amino acid (EAA), non-essential amino acid (NAA) content",
+      "Table 4": "Essential amino acid index (EAAI) and protein digestibility-corrected amino acid score (PDCAAS)",
+      "Table 5": "Correlations among yield, protein content, amino acid composition, EAAI and PDCAAS"
+    },
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 2",
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "total N",
+        "available N",
+        "available P",
+        "available K",
+        "organic matter",
+        "pH"
+      ],
+      "Table 2": [
+        "grain yield",
+        "protein content"
+      ],
+      "Table 3": [
+        "TAA",
+        "EAA",
+        "NAA",
+        "EAA/TAA ratio"
+      ],
+      "Table 4": [
+        "EAAI",
+        "PDCAAS"
+      ],
+      "Table 5": [
+        "correlation coefficients between yield, protein, TAA, EAA, EAAI, PDCAAS"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 0,
+  "gemini_obs": 0,
+  "matched_obs": 8,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 5.37,
+      "control_mean": 4.99,
+      "treatment_variance": 0.232,
+      "control_variance": 0.216,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 2",
+      "treatment_description": "Irrigation at jointing (I1)",
+      "control_description": "No irrigation (I0)",
+      "moderators": {
+        "year": "2012/2013",
+        "nitrogen_level": "averaged across N treatments"
+      },
+      "confidence": "high",
+      "notes": "SD calculated from CV (4.32%) [from vision]",
+      "effect_pct": 7.6152304609218415,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "protein content",
+      "tissue": "grain",
+      "treatment_mean": 14.32,
+      "control_mean": 11.57,
+      "treatment_variance": 1.292,
+      "control_variance": 1.044,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 2",
+      "treatment_description": "Nitrogen application 180 kg N ha-1 (N180)",
+      "control_description": "No nitrogen (N0)",
+      "moderators": {
+        "year": "2012/2013",
+        "irrigation_level": "averaged across irrigation treatments"
+      },
+      "confidence": "high",
+      "notes": "SD calculated from CV (9.02%) [from vision]",
+      "effect_pct": 23.768366464995676,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "TAA",
+      "tissue": "grain",
+      "treatment_mean": 131.43,
+      "control_mean": 107.63,
+      "treatment_variance": 17.283,
+      "control_variance": 14.153,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "mg g-1",
+      "data_source": "Table 3",
+      "treatment_description": "I0xN180 (No irrigation, 180 kg N ha-1)",
+      "control_description": "I0xN0 (No irrigation, 0 kg N ha-1)",
+      "moderators": {
+        "year": "2012/2013"
+      },
+      "confidence": "high",
+      "notes": "SD calculated from CV (13.15%) [from vision]",
+      "effect_pct": 22.112793830716353,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "EAA",
+      "tissue": "grain",
+      "treatment_mean": 40.1,
+      "control_mean": 33.46,
+      "treatment_variance": 1.351,
+      "control_variance": 1.128,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "mg g-1",
+      "data_source": "Table 3",
+      "treatment_description": "I0xN180 (No irrigation, 180 kg N ha-1)",
+      "control_description": "I0xN0 (No irrigation, 0 kg N ha-1)",
+      "moderators": {
+        "year": "2012/2013"
+      },
+      "confidence": "high",
+      "notes": "SD calculated from CV (3.37%) [from vision]",
+      "effect_pct": 19.844590555887628,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "EAAI",
+      "tissue": "grain",
+      "treatment_mean": 58.34,
+      "control_mean": 59.16,
+      "treatment_variance": 4.539,
+      "control_variance": 4.603,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "I0xN180 (No irrigation, 180 kg N ha-1)",
+      "control_description": "I0xN0 (No irrigation, 0 kg N ha-1)",
+      "moderators": {
+        "year": "2012/2013"
+      },
+      "confidence": "high",
+      "notes": "SD calculated from CV (7.78%) [from vision]",
+      "effect_pct": -1.386071670047318,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "PDCAAS",
+      "tissue": "grain",
+      "treatment_mean": 51.57,
+      "control_mean": 53.3,
+      "treatment_variance": 7.766,
+      "control_variance": 8.027,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "I0xN180 (No irrigation, 180 kg N ha-1)",
+      "control_description": "I0xN0 (No irrigation, 0 kg N ha-1)",
+      "moderators": {
+        "year": "2012/2013"
+      },
+      "confidence": "high",
+      "notes": "SD calculated from CV (15.06%) [from vision]",
+      "effect_pct": -3.245778611632264,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "total N",
+      "tissue": "soil",
+      "treatment_mean": 0.95,
+      "control_mean": 0.91,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g kg-1",
+      "data_source": "Table 1",
+      "treatment_description": "Nitrogen application 180 kg N ha-1 (N180)",
+      "control_description": "No nitrogen (N0)",
+      "moderators": {
+        "year": "2012/2013"
+      },
+      "confidence": "high",
+      "notes": "Initial soil chemical characteristics [from vision]",
+      "effect_pct": 4.395604395604387,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "available N",
+      "tissue": "soil",
+      "treatment_mean": 85.23,
+      "control_mean": 73.43,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg-1",
+      "data_source": "Table 1",
+      "treatment_description": "Nitrogen application 180 kg N ha-1 (N180)",
+      "control_description": "No nitrogen (N0)",
+      "moderators": {
+        "year": "2012/2013"
+      },
+      "confidence": "high",
+      "notes": "Initial soil chemical characteristics [from vision]",
+      "effect_pct": 16.069726269916924,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 1,
+    "tc_swaps_corrected": 0,
+    "original_count": 9,
+    "final_count": 8
+  },
+  "verification_flags": [
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 5.37,
+        "control_mean": 4.99,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.320297951582868,
+            "note": "CV = 4.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.8%"
+          }
+        },
+        "effect_pct": 7.6152304609218415
+      }
+    },
+    {
+      "element": "protein content",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "protein content",
+        "treatment_mean": 14.32,
+        "control_mean": 11.57,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.022346368715084,
+            "note": "CV = 9.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.0%"
+          }
+        },
+        "effect_pct": 23.768366464995676
+      }
+    },
+    {
+      "element": "TAA",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "TAA",
+        "treatment_mean": 131.43,
+        "control_mean": 107.63,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +22.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.149965761241726,
+            "note": "CV = 13.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.5%"
+          }
+        },
+        "effect_pct": 22.112793830716353
+      }
+    },
+    {
+      "element": "EAA",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "EAA",
+        "treatment_mean": 40.1,
+        "control_mean": 33.46,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.3690773067331667,
+            "note": "CV = 3.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.4%"
+          }
+        },
+        "effect_pct": 19.844590555887628
+      }
+    },
+    {
+      "element": "EAAI",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "EAAI",
+        "treatment_mean": 58.34,
+        "control_mean": 59.16,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -1.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.780253685293108,
+            "note": "CV = 7.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.7%"
+          }
+        },
+        "effect_pct": -1.386071670047318
+      }
+    },
+    {
+      "element": "PDCAAS",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "PDCAAS",
+        "treatment_mean": 51.57,
+        "control_mean": 53.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.059142912546053,
+            "note": "CV = 15.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.8%"
+          }
+        },
+        "effect_pct": -3.245778611632264
+      }
+    },
+    {
+      "element": "total N",
+      "tissue": "soil",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "total N",
+        "treatment_mean": 0.95,
+        "control_mean": 0.91,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 4.395604395604387
+      }
+    },
+    {
+      "element": "available N",
+      "tissue": "soil",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "available N",
+        "treatment_mean": 85.23,
+        "control_mean": 73.43,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 16.069726269916924
+      }
+    }
+  ]
+}

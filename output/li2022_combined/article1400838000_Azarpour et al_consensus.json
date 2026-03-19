@@ -1,0 +1,2402 @@
+{
+  "paper_id": "article1400838000_Azarpour et al",
+  "recon": {
+    "paper_id": "article1400838000_Azarpour et al",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 25,
+  "gemini_obs": 0,
+  "matched_obs": 26,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 25",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "fruit yield",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "fruit yield",
+        "tissue": "fruit",
+        "treatment_mean": 48.76,
+        "control_mean": 30.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3, Figure 1",
+        "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+        "control_description": "Control without humic acid spraying (H1)",
+        "moderators": {
+          "nitrogen_management": "averaged across all N levels (N1-N6)"
+        },
+        "confidence": "low",
+        "notes": "Main effect of humic acid. Variance reported as Duncan's letters (a,b,c) only. Yield values extracted from text description of Figure 1. H2 (25 mg/L) yield value not reported in text.",
+        "effect_pct": 60.92409240924091,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 22.68,
+        "control_mean": 17.18,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 3",
+        "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+        "control_description": "Control without humic acid spraying (H1)",
+        "moderators": {
+          "nitrogen_management": "averaged across all N levels"
+        },
+        "confidence": "low",
+        "notes": "Main effect. Different letters (a vs c) indicate significant difference at P<0.05.",
+        "effect_pct": 32.0139697322468,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 19.06,
+        "control_mean": 17.18,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 3",
+        "treatment_description": "25 mg/L humic acid foliar spraying (H2)",
+        "control_description": "Control without humic acid spraying (H1)",
+        "moderators": {
+          "nitrogen_management": "averaged across all N levels"
+        },
+        "confidence": "low",
+        "notes": "Main effect. H2 (b) vs H1 (c) significantly different.",
+        "effect_pct": 10.942956926658901,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of branches per plant",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "number of branches per plant",
+        "tissue": "shoot",
+        "treatment_mean": 3.03,
+        "control_mean": 2.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "branches/plant",
+        "data_source": "Table 3",
+        "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+        "control_description": "Control without humic acid spraying (H1)",
+        "moderators": {
+          "nitrogen_management": "averaged across all N levels"
+        },
+        "confidence": "low",
+        "notes": "Main effect. Both H2 and H3 labeled 'a', H1 labeled 'b'.",
+        "effect_pct": 21.199999999999992,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "plant height",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "plant height",
+        "tissue": "whole plant",
+        "treatment_mean": 140.9,
+        "control_mean": 94.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 3",
+        "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+        "control_description": "Control without humic acid spraying (H1)",
+        "moderators": {
+          "nitrogen_management": "averaged across all N levels"
+        },
+        "confidence": "low",
+        "notes": "Main effect. Significant difference (a vs c).",
+        "effect_pct": 49.67070320798811,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "fruit length",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "fruit length",
+        "tissue": "fruit",
+        "treatment_mean": 33.18,
+        "control_mean": 19.55,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 3",
+        "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+        "control_description": "Control without humic acid spraying (H1)",
+        "moderators": {
+          "nitrogen_management": "averaged across all N levels"
+        },
+        "confidence": "low",
+        "notes": "Main effect.",
+        "effect_pct": 69.71867007672633,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "fruit width",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "fruit width",
+        "tissue": "fruit",
+        "treatment_mean": 5.66,
+        "control_mean": 3.75,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 3",
+        "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+        "control_description": "Control without humic acid spraying (H1)",
+        "moderators": {
+          "nitrogen_management": "averaged across all N levels"
+        },
+        "confidence": "low",
+        "notes": "Main effect.",
+        "effect_pct": 50.933333333333344,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 18.93,
+        "control_mean": 15.33,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + no nitrogen (H3N1)",
+        "control_description": "No humic acid + no nitrogen (H1N1)",
+        "moderators": {
+          "nitrogen_level": "N1 (control, no nitrogen)",
+          "nitrogen_type": "none"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Both treatments at same nitrogen level.",
+        "effect_pct": 23.483365949119374,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 23.67,
+        "control_mean": 16.87,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 40 kg/ha N (H3N2)",
+        "control_description": "No humic acid + 40 kg/ha N (H1N2)",
+        "moderators": {
+          "nitrogen_level": "N2 (40 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 40.30823947836396,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 26.2,
+        "control_mean": 20.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+        "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+        "moderators": {
+          "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Highest reported fruit number (26.20).",
+        "effect_pct": 27.184466019417464,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 19.7,
+        "control_mean": 16.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + nitroxin (H3N4)",
+        "control_description": "No humic acid + nitroxin (H1N4)",
+        "moderators": {
+          "nitrogen_level": "N4 (roots inoculation with nitroxin)",
+          "nitrogen_type": "biological"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 22.360248447204953,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 22.93,
+        "control_mean": 16.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 20 kg/ha N + nitroxin (H3N5)",
+        "control_description": "No humic acid + 20 kg/ha N + nitroxin (H1N5)",
+        "moderators": {
+          "nitrogen_level": "N5 (20 kg/ha + nitroxin)",
+          "nitrogen_type": "integrated"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 37.30538922155689,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 24.63,
+        "control_mean": 17.47,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 40 kg/ha N + nitroxin (H3N6)",
+        "control_description": "No humic acid + 40 kg/ha N + nitroxin (H1N6)",
+        "moderators": {
+          "nitrogen_level": "N6 (40 kg/ha + nitroxin)",
+          "nitrogen_type": "integrated"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 40.984544934172874,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 17.07,
+        "control_mean": 15.33,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "25 mg/L humic acid + no nitrogen (H2N1)",
+        "control_description": "No humic acid + no nitrogen (H1N1)",
+        "moderators": {
+          "nitrogen_level": "N1 (control, no nitrogen)",
+          "nitrogen_type": "none"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Low dose humic acid.",
+        "effect_pct": 11.350293542074365,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 19.27,
+        "control_mean": 16.87,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "25 mg/L humic acid + 40 kg/ha N (H2N2)",
+        "control_description": "No humic acid + 40 kg/ha N (H1N2)",
+        "moderators": {
+          "nitrogen_level": "N2 (40 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 14.226437462951976,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 20.97,
+        "control_mean": 20.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "25 mg/L humic acid + 80 kg/ha N (H2N3)",
+        "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+        "moderators": {
+          "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Small difference between treatment and control at high nitrogen level.",
+        "effect_pct": 1.7961165048543564,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 17.77,
+        "control_mean": 16.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "25 mg/L humic acid + nitroxin (H2N4)",
+        "control_description": "No humic acid + nitroxin (H1N4)",
+        "moderators": {
+          "nitrogen_level": "N4 (roots inoculation with nitroxin)",
+          "nitrogen_type": "biological"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 10.372670807453403,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 18.77,
+        "control_mean": 16.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "25 mg/L humic acid + 20 kg/ha N + nitroxin (H2N5)",
+        "control_description": "No humic acid + 20 kg/ha N + nitroxin (H1N5)",
+        "moderators": {
+          "nitrogen_level": "N5 (20 kg/ha + nitroxin)",
+          "nitrogen_type": "integrated"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 12.395209580838326,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "number of fruits per square meter",
+        "tissue": "fruit",
+        "treatment_mean": 20.5,
+        "control_mean": 17.47,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "fruits/m2",
+        "data_source": "Table 4",
+        "treatment_description": "25 mg/L humic acid + 40 kg/ha N + nitroxin (H2N6)",
+        "control_description": "No humic acid + 40 kg/ha N + nitroxin (H1N6)",
+        "moderators": {
+          "nitrogen_level": "N6 (40 kg/ha + nitroxin)",
+          "nitrogen_type": "integrated"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect.",
+        "effect_pct": 17.34401831711506,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "plant height",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "plant height",
+        "tissue": "whole plant",
+        "treatment_mean": 126.2,
+        "control_mean": 56.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + no nitrogen (H3N1)",
+        "control_description": "No humic acid + no nitrogen (H1N1)",
+        "moderators": {
+          "nitrogen_level": "N1 (control, no nitrogen)",
+          "nitrogen_type": "none"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect for plant height. Extreme control value (56.60 cm) appears to be OCR error or specific condition - verify original. Text describes H1N1 as lowest yield combination.",
+        "effect_pct": 122.96819787985865,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "plant height",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "plant height",
+        "tissue": "whole plant",
+        "treatment_mean": 145.4,
+        "control_mean": 111.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 40 kg/ha N (H3N2)",
+        "control_description": "No humic acid + 40 kg/ha N (H1N2)",
+        "moderators": {
+          "nitrogen_level": "N2 (40 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Both treatments showed high values (a group).",
+        "effect_pct": 30.873087308730884,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "fruit length",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "fruit length",
+        "tissue": "fruit",
+        "treatment_mean": 36.97,
+        "control_mean": 26.07,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+        "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+        "moderators": {
+          "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Maximum fruit length reported (36.97 cm).",
+        "effect_pct": 41.81051016494054,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "fruit width",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "fruit width",
+        "tissue": "fruit",
+        "treatment_mean": 6.56,
+        "control_mean": 4.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+        "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+        "moderators": {
+          "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Maximum fruit width reported (6.56 cm).",
+        "effect_pct": 45.777777777777764,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "fruit width",
+      "tissue": "fruit",
+      "kimi": {
+        "element": "fruit width",
+        "tissue": "fruit",
+        "treatment_mean": 6.06,
+        "control_mean": 6.26,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "25 mg/L humic acid + 80 kg/ha N (H2N3)",
+        "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+        "moderators": {
+          "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Note: Control (6.26) > Treatment (6.06) - H2N3 vs H1N3. Both labeled 'a' (not significantly different).",
+        "effect_pct": -3.1948881789137404,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "number of branches per plant",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "number of branches per plant",
+        "tissue": "shoot",
+        "treatment_mean": 3.1,
+        "control_mean": 3.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 3,
+        "unit": "branches/plant",
+        "data_source": "Table 4",
+        "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+        "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+        "moderators": {
+          "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+          "nitrogen_type": "mineral"
+        },
+        "confidence": "low",
+        "notes": "Interaction effect. Non-significant interaction for branches. All values in Table 4 labeled 'a' except H1N1, H1N2, H1N4 (labeled 'a' as well? Table shows 2a, 3a, 2.3a, 2.6a, 2.7a, etc. - all 'a' group).",
+        "effect_pct": 3.333333333333336,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "fruit yield",
+      "tissue": "fruit",
+      "treatment_mean": 48.76,
+      "control_mean": 30.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 3, Figure 1",
+      "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+      "control_description": "Control without humic acid spraying (H1)",
+      "moderators": {
+        "nitrogen_management": "averaged across all N levels (N1-N6)"
+      },
+      "confidence": "low",
+      "notes": "Main effect of humic acid. Variance reported as Duncan's letters (a,b,c) only. Yield values extracted from text description of Figure 1. H2 (25 mg/L) yield value not reported in text. [single-model fallback: Kimi only]",
+      "effect_pct": 60.92409240924091,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 22.68,
+      "control_mean": 17.18,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 3",
+      "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+      "control_description": "Control without humic acid spraying (H1)",
+      "moderators": {
+        "nitrogen_management": "averaged across all N levels"
+      },
+      "confidence": "low",
+      "notes": "Main effect. Different letters (a vs c) indicate significant difference at P<0.05. [single-model fallback: Kimi only]",
+      "effect_pct": 32.0139697322468,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 19.06,
+      "control_mean": 17.18,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 3",
+      "treatment_description": "25 mg/L humic acid foliar spraying (H2)",
+      "control_description": "Control without humic acid spraying (H1)",
+      "moderators": {
+        "nitrogen_management": "averaged across all N levels"
+      },
+      "confidence": "low",
+      "notes": "Main effect. H2 (b) vs H1 (c) significantly different. [single-model fallback: Kimi only]",
+      "effect_pct": 10.942956926658901,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of branches per plant",
+      "tissue": "shoot",
+      "treatment_mean": 3.03,
+      "control_mean": 2.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "branches/plant",
+      "data_source": "Table 3",
+      "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+      "control_description": "Control without humic acid spraying (H1)",
+      "moderators": {
+        "nitrogen_management": "averaged across all N levels"
+      },
+      "confidence": "low",
+      "notes": "Main effect. Both H2 and H3 labeled 'a', H1 labeled 'b'. [single-model fallback: Kimi only]",
+      "effect_pct": 21.199999999999992,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 140.9,
+      "control_mean": 94.14,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 3",
+      "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+      "control_description": "Control without humic acid spraying (H1)",
+      "moderators": {
+        "nitrogen_management": "averaged across all N levels"
+      },
+      "confidence": "low",
+      "notes": "Main effect. Significant difference (a vs c). [single-model fallback: Kimi only]",
+      "effect_pct": 49.67070320798811,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "fruit length",
+      "tissue": "fruit",
+      "treatment_mean": 33.18,
+      "control_mean": 19.55,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 3",
+      "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+      "control_description": "Control without humic acid spraying (H1)",
+      "moderators": {
+        "nitrogen_management": "averaged across all N levels"
+      },
+      "confidence": "low",
+      "notes": "Main effect. [single-model fallback: Kimi only]",
+      "effect_pct": 69.71867007672633,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "fruit width",
+      "tissue": "fruit",
+      "treatment_mean": 5.66,
+      "control_mean": 3.75,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 3",
+      "treatment_description": "50 mg/L humic acid foliar spraying (H3)",
+      "control_description": "Control without humic acid spraying (H1)",
+      "moderators": {
+        "nitrogen_management": "averaged across all N levels"
+      },
+      "confidence": "low",
+      "notes": "Main effect. [single-model fallback: Kimi only]",
+      "effect_pct": 50.933333333333344,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 18.93,
+      "control_mean": 15.33,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + no nitrogen (H3N1)",
+      "control_description": "No humic acid + no nitrogen (H1N1)",
+      "moderators": {
+        "nitrogen_level": "N1 (control, no nitrogen)",
+        "nitrogen_type": "none"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Both treatments at same nitrogen level. [single-model fallback: Kimi only]",
+      "effect_pct": 23.483365949119374,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 23.67,
+      "control_mean": 16.87,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 40 kg/ha N (H3N2)",
+      "control_description": "No humic acid + 40 kg/ha N (H1N2)",
+      "moderators": {
+        "nitrogen_level": "N2 (40 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 40.30823947836396,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 26.2,
+      "control_mean": 20.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+      "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+      "moderators": {
+        "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Highest reported fruit number (26.20). [single-model fallback: Kimi only]",
+      "effect_pct": 27.184466019417464,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 19.7,
+      "control_mean": 16.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + nitroxin (H3N4)",
+      "control_description": "No humic acid + nitroxin (H1N4)",
+      "moderators": {
+        "nitrogen_level": "N4 (roots inoculation with nitroxin)",
+        "nitrogen_type": "biological"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 22.360248447204953,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 22.93,
+      "control_mean": 16.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 20 kg/ha N + nitroxin (H3N5)",
+      "control_description": "No humic acid + 20 kg/ha N + nitroxin (H1N5)",
+      "moderators": {
+        "nitrogen_level": "N5 (20 kg/ha + nitroxin)",
+        "nitrogen_type": "integrated"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 37.30538922155689,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 24.63,
+      "control_mean": 17.47,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 40 kg/ha N + nitroxin (H3N6)",
+      "control_description": "No humic acid + 40 kg/ha N + nitroxin (H1N6)",
+      "moderators": {
+        "nitrogen_level": "N6 (40 kg/ha + nitroxin)",
+        "nitrogen_type": "integrated"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 40.984544934172874,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 17.07,
+      "control_mean": 15.33,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "25 mg/L humic acid + no nitrogen (H2N1)",
+      "control_description": "No humic acid + no nitrogen (H1N1)",
+      "moderators": {
+        "nitrogen_level": "N1 (control, no nitrogen)",
+        "nitrogen_type": "none"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Low dose humic acid. [single-model fallback: Kimi only]",
+      "effect_pct": 11.350293542074365,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 19.27,
+      "control_mean": 16.87,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "25 mg/L humic acid + 40 kg/ha N (H2N2)",
+      "control_description": "No humic acid + 40 kg/ha N (H1N2)",
+      "moderators": {
+        "nitrogen_level": "N2 (40 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 14.226437462951976,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 20.97,
+      "control_mean": 20.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "25 mg/L humic acid + 80 kg/ha N (H2N3)",
+      "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+      "moderators": {
+        "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Small difference between treatment and control at high nitrogen level. [single-model fallback: Kimi only]",
+      "effect_pct": 1.7961165048543564,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 17.77,
+      "control_mean": 16.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "25 mg/L humic acid + nitroxin (H2N4)",
+      "control_description": "No humic acid + nitroxin (H1N4)",
+      "moderators": {
+        "nitrogen_level": "N4 (roots inoculation with nitroxin)",
+        "nitrogen_type": "biological"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 10.372670807453403,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 18.77,
+      "control_mean": 16.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "25 mg/L humic acid + 20 kg/ha N + nitroxin (H2N5)",
+      "control_description": "No humic acid + 20 kg/ha N + nitroxin (H1N5)",
+      "moderators": {
+        "nitrogen_level": "N5 (20 kg/ha + nitroxin)",
+        "nitrogen_type": "integrated"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 12.395209580838326,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "treatment_mean": 20.5,
+      "control_mean": 17.47,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "fruits/m2",
+      "data_source": "Table 4",
+      "treatment_description": "25 mg/L humic acid + 40 kg/ha N + nitroxin (H2N6)",
+      "control_description": "No humic acid + 40 kg/ha N + nitroxin (H1N6)",
+      "moderators": {
+        "nitrogen_level": "N6 (40 kg/ha + nitroxin)",
+        "nitrogen_type": "integrated"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. [single-model fallback: Kimi only]",
+      "effect_pct": 17.34401831711506,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 126.2,
+      "control_mean": 56.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + no nitrogen (H3N1)",
+      "control_description": "No humic acid + no nitrogen (H1N1)",
+      "moderators": {
+        "nitrogen_level": "N1 (control, no nitrogen)",
+        "nitrogen_type": "none"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect for plant height. Extreme control value (56.60 cm) appears to be OCR error or specific condition - verify original. Text describes H1N1 as lowest yield combination. [single-model fallback: Kimi only]",
+      "effect_pct": 122.96819787985865,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 145.4,
+      "control_mean": 111.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 40 kg/ha N (H3N2)",
+      "control_description": "No humic acid + 40 kg/ha N (H1N2)",
+      "moderators": {
+        "nitrogen_level": "N2 (40 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Both treatments showed high values (a group). [single-model fallback: Kimi only]",
+      "effect_pct": 30.873087308730884,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "fruit length",
+      "tissue": "fruit",
+      "treatment_mean": 36.97,
+      "control_mean": 26.07,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+      "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+      "moderators": {
+        "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Maximum fruit length reported (36.97 cm). [single-model fallback: Kimi only]",
+      "effect_pct": 41.81051016494054,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "fruit width",
+      "tissue": "fruit",
+      "treatment_mean": 6.56,
+      "control_mean": 4.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+      "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+      "moderators": {
+        "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Maximum fruit width reported (6.56 cm). [single-model fallback: Kimi only]",
+      "effect_pct": 45.777777777777764,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "fruit width",
+      "tissue": "fruit",
+      "treatment_mean": 6.06,
+      "control_mean": 6.26,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "25 mg/L humic acid + 80 kg/ha N (H2N3)",
+      "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+      "moderators": {
+        "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Note: Control (6.26) > Treatment (6.06) - H2N3 vs H1N3. Both labeled 'a' (not significantly different). [single-model fallback: Kimi only]",
+      "effect_pct": -3.1948881789137404,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of branches per plant",
+      "tissue": "shoot",
+      "treatment_mean": 3.1,
+      "control_mean": 3.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 3,
+      "unit": "branches/plant",
+      "data_source": "Table 4",
+      "treatment_description": "50 mg/L humic acid + 80 kg/ha N (H3N3)",
+      "control_description": "No humic acid + 80 kg/ha N (H1N3)",
+      "moderators": {
+        "nitrogen_level": "N3 (80 kg/ha pure nitrogen)",
+        "nitrogen_type": "mineral"
+      },
+      "confidence": "low",
+      "notes": "Interaction effect. Non-significant interaction for branches. All values in Table 4 labeled 'a' except H1N1, H1N2, H1N4 (labeled 'a' as well? Table shows 2a, 3a, 2.3a, 2.6a, 2.7a, etc. - all 'a' group). [single-model fallback: Kimi only]",
+      "effect_pct": 3.333333333333336,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "number of fruit",
+      "tissue": "fruit",
+      "treatment_mean": 19.06,
+      "control_mean": 17.18,
+      "treatment_variance": 0.6298,
+      "control_variance": 0.6298,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "m^2",
+      "data_source": "Table 3",
+      "treatment_description": "Humic acid (25 mg/L)",
+      "control_description": "Control (H1)",
+      "moderators": {
+        "year": "2011"
+      },
+      "confidence": "high",
+      "notes": "Main effect. Pooled SE from Table 2 MS Error (1.190). [from vision]",
+      "effect_pct": 10.942956926658901,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 26,
+    "final_count": 26
+  },
+  "verification_flags": [
+    {
+      "element": "fruit yield",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "fruit yield",
+        "treatment_mean": 48.76,
+        "control_mean": 30.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +60.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 60.92409240924091
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 22.68,
+        "control_mean": 17.18,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +32.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 32.0139697322468
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 19.06,
+        "control_mean": 17.18,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.942956926658901
+      }
+    },
+    {
+      "element": "number of branches per plant",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of branches per plant",
+        "treatment_mean": 3.03,
+        "control_mean": 2.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 21.199999999999992
+      }
+    },
+    {
+      "element": "plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "plant height",
+        "treatment_mean": 140.9,
+        "control_mean": 94.14,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +49.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 49.67070320798811
+      }
+    },
+    {
+      "element": "fruit length",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "fruit length",
+        "treatment_mean": 33.18,
+        "control_mean": 19.55,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +69.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 69.71867007672633
+      }
+    },
+    {
+      "element": "fruit width",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "fruit width",
+        "treatment_mean": 5.66,
+        "control_mean": 3.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +50.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 50.933333333333344
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 18.93,
+        "control_mean": 15.33,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 23.483365949119374
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 23.67,
+        "control_mean": 16.87,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +40.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 40.30823947836396
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 26.2,
+        "control_mean": 20.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 27.184466019417464
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 19.7,
+        "control_mean": 16.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +22.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 22.360248447204953
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 22.93,
+        "control_mean": 16.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +37.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 37.30538922155689
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 24.63,
+        "control_mean": 17.47,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +41.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 40.984544934172874
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 17.07,
+        "control_mean": 15.33,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.350293542074365
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 19.27,
+        "control_mean": 16.87,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 14.226437462951976
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 20.97,
+        "control_mean": 20.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 1.7961165048543564
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 17.77,
+        "control_mean": 16.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.372670807453403
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 18.77,
+        "control_mean": 16.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.395209580838326
+      }
+    },
+    {
+      "element": "number of fruits per square meter",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruits per square meter",
+        "treatment_mean": 20.5,
+        "control_mean": 17.47,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.34401831711506
+      }
+    },
+    {
+      "element": "plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "plant height",
+        "treatment_mean": 126.2,
+        "control_mean": 56.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +123.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +123.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 122.96819787985865
+      }
+    },
+    {
+      "element": "plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "plant height",
+        "treatment_mean": 145.4,
+        "control_mean": 111.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +30.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 30.873087308730884
+      }
+    },
+    {
+      "element": "fruit length",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "fruit length",
+        "treatment_mean": 36.97,
+        "control_mean": 26.07,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +41.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 41.81051016494054
+      }
+    },
+    {
+      "element": "fruit width",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "fruit width",
+        "treatment_mean": 6.56,
+        "control_mean": 4.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +45.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 45.777777777777764
+      }
+    },
+    {
+      "element": "fruit width",
+      "tissue": "fruit",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "fruit width",
+        "treatment_mean": 6.06,
+        "control_mean": 6.26,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -3.1948881789137404
+      }
+    },
+    {
+      "element": "number of branches per plant",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of branches per plant",
+        "treatment_mean": 3.1,
+        "control_mean": 3.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 3.333333333333336
+      }
+    },
+    {
+      "element": "number of fruit",
+      "tissue": "fruit",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "number of fruit",
+        "treatment_mean": 19.06,
+        "control_mean": 17.18,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.7232193001410225,
+            "note": "CV = 5.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.0%"
+          }
+        },
+        "effect_pct": 10.942956926658901
+      }
+    }
+  ]
+}

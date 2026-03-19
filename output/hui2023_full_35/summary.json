@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-02-16T06:54:13.321315",
+  "papers_processed": 12,
+  "total_cost": 3.1900633000000007,
+  "total_observations": 339,
+  "challenge_stats": {
+    "vision_needed": 9,
+    "manual_review_needed": 0,
+    "hard_difficulty": 8,
+    "vision_papers": [
+      "65_Oliver_1994",
+      "69_Ramzan_2020",
+      "70_Rehman_2018",
+      "84_Yilmaz_1998",
+      "Dong_2018",
+      "Li_2013",
+      "Liu_2014",
+      "Rashid_2019",
+      "Zhang_2017"
+    ],
+    "manual_papers": []
+  },
+  "tiebreaker_stats": {
+    "tiebreaker_used": 2,
+    "tiebreaker_papers": [
+      {
+        "paper_id": "70_Rehman_2018",
+        "reason": "Kimi extracted 0 obs, Claude extracted 56",
+        "gemini_obs": 56,
+        "final_consensus": 56
+      },
+      {
+        "paper_id": "Liu_2014",
+        "reason": "Low consensus: 0/2 (0%) \u2014 Claude=2, Kimi=2",
+        "gemini_obs": 2,
+        "final_consensus": 3
+      }
+    ]
+  },
+  "papers": [
+    {
+      "paper_id": "65_Oliver_1994",
+      "claude_obs": 12,
+      "kimi_obs": 0,
+      "gemini_obs": 0,
+      "matched": 12,
+      "tiebreaker_used": false,
+      "disagreements": 12,
+      "warnings": 7,
+      "extraction_method": "hybrid",
+      "difficulty": "EASY"
+    },
+    {
+      "paper_id": "66_PahlavanRad_2009",
+      "claude_obs": 9,
+      "kimi_obs": 15,
+      "gemini_obs": 0,
+      "matched": 9,
+      "tiebreaker_used": false,
+      "disagreements": 6,
+      "warnings": 7,
+      "extraction_method": "text",
+      "difficulty": "MEDIUM"
+    },
+    {
+      "paper_id": "68_Peck_2008",
+      "claude_obs": 18,
+      "kimi_obs": 18,
+      "gemini_obs": 0,
+      "matched": 12,
+      "tiebreaker_used": false,
+      "disagreements": 12,
+      "warnings": 2,
+      "extraction_method": "text",
+      "difficulty": "EASY"
+    },
+    {
+      "paper_id": "69_Ramzan_2020",
+      "claude_obs": 0,
+      "kimi_obs": 0,
+      "gemini_obs": 0,
+      "matched": 68,
+      "tiebreaker_used": false,
+      "disagreements": 16,
+      "warnings": 8,
+      "extraction_method": "vision",
+      "difficulty": "HARD"
+    },
+    {
+      "paper_id": "70_Rehman_2018",
+      "claude_obs": 56,
+      "kimi_obs": 0,
+      "gemini_obs": 56,
+      "matched": 56,
+      "tiebreaker_used": true,
+      "disagreements": 0,
+      "warnings": 8,
+      "extraction_method": "hybrid",
+      "difficulty": "HARD"
+    },
+    {
+      "paper_id": "82_Torun_2001",
+      "claude_obs": 54,
+      "kimi_obs": 0,
+      "gemini_obs": 0,
+      "matched": 54,
+      "tiebreaker_used": false,
+      "disagreements": 54,
+      "warnings": 6,
+      "extraction_method": "text",
+      "difficulty": "EASY"
+    },
+    {
+      "paper_id": "84_Yilmaz_1998",
+      "claude_obs": 6,
+      "kimi_obs": 18,
+      "gemini_obs": 0,
+      "matched": 7,
+      "tiebreaker_used": false,
+      "disagreements": 12,
+      "warnings": 8,
+      "extraction_method": "hybrid",
+      "difficulty": "HARD"
+    },
+    {
+      "paper_id": "Dong_2018",
+      "claude_obs": 34,
+      "kimi_obs": 0,
+      "gemini_obs": 0,
+      "matched": 34,
+      "tiebreaker_used": false,
+      "disagreements": 34,
+      "warnings": 9,
+      "extraction_method": "hybrid",
+      "difficulty": "HARD"
+    },
+    {
+      "paper_id": "Li_2013",
+      "claude_obs": 52,
+      "kimi_obs": 48,
+      "gemini_obs": 0,
+      "matched": 48,
+      "tiebreaker_used": false,
+      "disagreements": 4,
+      "warnings": 9,
+      "extraction_method": "hybrid",
+      "difficulty": "HARD"
+    },
+    {
+      "paper_id": "Liu_2014",
+      "claude_obs": 2,
+      "kimi_obs": 2,
+      "gemini_obs": 2,
+      "matched": 3,
+      "tiebreaker_used": true,
+      "disagreements": 2,
+      "warnings": 7,
+      "extraction_method": "hybrid",
+      "difficulty": "HARD"
+    },
+    {
+      "paper_id": "Rashid_2019",
+      "claude_obs": 27,
+      "kimi_obs": 27,
+      "gemini_obs": 0,
+      "matched": 28,
+      "tiebreaker_used": false,
+      "disagreements": 0,
+      "warnings": 9,
+      "extraction_method": "hybrid",
+      "difficulty": "HARD"
+    },
+    {
+      "paper_id": "Zhang_2017",
+      "claude_obs": 0,
+      "kimi_obs": 0,
+      "gemini_obs": 0,
+      "matched": 8,
+      "tiebreaker_used": false,
+      "disagreements": 0,
+      "warnings": 8,
+      "extraction_method": "hybrid",
+      "difficulty": "HARD"
+    }
+  ]
+}

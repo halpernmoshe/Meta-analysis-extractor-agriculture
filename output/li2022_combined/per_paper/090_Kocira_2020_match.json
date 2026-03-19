@@ -1,0 +1,578 @@
+{
+  "paper_id": "090_Kocira_2020_Biochemical and economical effect of app",
+  "matched_pairs": [
+    {
+      "gt_idx": 0,
+      "json_idx": 0,
+      "gt_pair": "124",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, single spray (Freq=1), lower dose (0.7%), lowest GT ctrl level (0.2485) assigned to year 2016 (JSON ctrl 4970.7 g/m\u00b2). Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.248493975903614,
+      "gt_treat": 0.322289156626506,
+      "gt_effect_pct": 29.70,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 5484.1,
+      "ext_effect_pct": 10.33,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 1,
+      "json_idx": 3,
+      "gt_pair": "125",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, single spray (Freq=1), higher dose (1.0%), lowest GT ctrl level (0.2485) assigned to year 2016 (JSON ctrl 4970.7). Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.248493975903614,
+      "gt_treat": 0.32379518072289104,
+      "gt_effect_pct": 30.30,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 4176.7,
+      "ext_effect_pct": -15.97,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 2,
+      "json_idx": 6,
+      "gt_pair": "126",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, double spray (Freq=2), lower dose (0.7%), lowest GT ctrl level (0.2485) assigned to year 2016. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.248493975903614,
+      "gt_treat": 0.329819277108433,
+      "gt_effect_pct": 32.73,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 5337.5,
+      "ext_effect_pct": 7.38,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 3,
+      "json_idx": 9,
+      "gt_pair": "127",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, double spray (Freq=2), higher dose (1.0%), lowest GT ctrl level (0.2485) assigned to year 2016. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.248493975903614,
+      "gt_treat": 0.338855421686747,
+      "gt_effect_pct": 36.36,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 5428.5,
+      "ext_effect_pct": 9.21,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 4,
+      "json_idx": 14,
+      "gt_pair": "128",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, single spray (Freq=1), lower dose (0.7% ~ 0.3% for Terra Sorb), middle GT ctrl level for Terra Sorb (0.2786) assigned to year 2018 (JSON ctrl 4968.2). Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.359939759036144,
+      "gt_effect_pct": 29.19,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 5712.3,
+      "ext_effect_pct": 14.98,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 5,
+      "json_idx": 17,
+      "gt_pair": "129",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, single spray (Freq=1), higher dose (1.0% ~ 0.5% for Terra Sorb), middle GT ctrl level for Terra Sorb (0.2786) assigned to year 2018. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.31927710843373397,
+      "gt_effect_pct": 14.59,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 5022.0,
+      "ext_effect_pct": 1.08,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 6,
+      "json_idx": 20,
+      "gt_pair": "130",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, double spray (Freq=2), lower dose, middle GT ctrl level (0.2786) assigned to year 2018. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.332831325301204,
+      "gt_effect_pct": 19.46,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 5460.4,
+      "ext_effect_pct": 9.91,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 7,
+      "json_idx": 23,
+      "gt_pair": "131",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, double spray (Freq=2), higher dose, middle GT ctrl level (0.2786) assigned to year 2018. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.371987951807228,
+      "gt_effect_pct": 33.51,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 4630.8,
+      "ext_effect_pct": -6.79,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 8,
+      "json_idx": 1,
+      "gt_pair": "132",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, single spray (Freq=1), lower dose (0.7%), highest GT ctrl level for Kelpak (0.3178) assigned to year 2017 (JSON ctrl 5181.7). Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.394578313253012,
+      "gt_effect_pct": 24.17,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 4431.1,
+      "ext_effect_pct": -14.49,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 9,
+      "json_idx": 4,
+      "gt_pair": "133",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, single spray (Freq=1), higher dose (1.0%), highest GT ctrl level for Kelpak (0.3178) assigned to year 2017. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.335843373493975,
+      "gt_effect_pct": 5.69,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 5883.9,
+      "ext_effect_pct": 13.55,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 10,
+      "json_idx": 7,
+      "gt_pair": "134",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, double spray (Freq=2), lower dose (0.7%), highest GT ctrl level (0.3178) assigned to year 2017. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.411144578313253,
+      "gt_effect_pct": 29.38,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 4669.4,
+      "ext_effect_pct": -9.89,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 11,
+      "json_idx": 10,
+      "gt_pair": "135",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, double spray (Freq=2), higher dose (1.0%), highest GT ctrl level (0.3178) assigned to year 2017. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.403614457831325,
+      "gt_effect_pct": 27.01,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 4453.3,
+      "ext_effect_pct": -14.06,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 12,
+      "json_idx": 12,
+      "gt_pair": "136",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, single spray (Freq=1), lower dose, lowest GT ctrl level for Terra Sorb (0.25) assigned to year 2016 (JSON ctrl 4970.7). Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.25,
+      "gt_treat": 0.259036144578313,
+      "gt_effect_pct": 3.61,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 5803.6,
+      "ext_effect_pct": 16.76,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 13,
+      "json_idx": 15,
+      "gt_pair": "137",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, single spray (Freq=1), higher dose, lowest GT ctrl level for Terra Sorb (0.25) assigned to year 2016. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.25,
+      "gt_treat": 0.26656626506024,
+      "gt_effect_pct": 6.63,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 4739.5,
+      "ext_effect_pct": -4.65,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 14,
+      "json_idx": 18,
+      "gt_pair": "138",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, double spray (Freq=2), lower dose, lowest GT ctrl level (0.25) assigned to year 2016. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.25,
+      "gt_treat": 0.284638554216867,
+      "gt_effect_pct": 13.86,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 5733.2,
+      "ext_effect_pct": 15.34,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 15,
+      "json_idx": 21,
+      "gt_pair": "139",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, double spray (Freq=2), higher dose, lowest GT ctrl level (0.25) assigned to year 2016. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.25,
+      "gt_treat": 0.26054216867469804,
+      "gt_effect_pct": 4.22,
+      "ext_ctrl": 4970.7,
+      "ext_treat": 4445.5,
+      "ext_effect_pct": -10.57,
+      "confidence": "low"
+    },
+    {
+      "gt_idx": 16,
+      "json_idx": 2,
+      "gt_pair": "140",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, single spray (Freq=1), lower dose (0.7%), middle GT ctrl level (0.2786) assigned to year 2018 (JSON ctrl 4968.2). Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.331325301204819,
+      "gt_effect_pct": 18.92,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 5246.5,
+      "ext_effect_pct": 5.60,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 17,
+      "json_idx": 5,
+      "gt_pair": "141",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, single spray (Freq=1), higher dose (1.0%), middle GT ctrl level (0.2786) assigned to year 2018. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.394578313253012,
+      "gt_effect_pct": 41.62,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 4808.5,
+      "ext_effect_pct": -3.21,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 18,
+      "json_idx": 8,
+      "gt_pair": "142",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, double spray (Freq=2), lower dose (0.7%), middle GT ctrl level (0.2786) assigned to year 2018. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.381024096385542,
+      "gt_effect_pct": 36.76,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 5165.4,
+      "ext_effect_pct": 3.97,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 19,
+      "json_idx": 11,
+      "gt_pair": "143",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Kelpak SL, double spray (Freq=2), higher dose (1.0%), middle GT ctrl level (0.2786) assigned to year 2018. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.278614457831325,
+      "gt_treat": 0.335843373493975,
+      "gt_effect_pct": 20.54,
+      "ext_ctrl": 4968.2,
+      "ext_treat": 5744.1,
+      "ext_effect_pct": 15.62,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 20,
+      "json_idx": 13,
+      "gt_pair": "144",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, single spray (Freq=1), lower dose, highest GT ctrl level for Terra Sorb (0.3178) assigned to year 2017 (JSON ctrl 5181.7). Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.343373493975903,
+      "gt_effect_pct": 8.06,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 5653.6,
+      "ext_effect_pct": 9.11,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 21,
+      "json_idx": 16,
+      "gt_pair": "145",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, single spray (Freq=1), higher dose, highest GT ctrl level for Terra Sorb (0.3178) assigned to year 2017. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.358433734939759,
+      "gt_effect_pct": 12.80,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 5238.8,
+      "ext_effect_pct": 1.10,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 22,
+      "json_idx": 19,
+      "gt_pair": "146",
+      "gt_dose": "0.7",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, double spray (Freq=2), lower dose, highest GT ctrl level (0.3178) assigned to year 2017. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.36144578313253,
+      "gt_effect_pct": 13.74,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 5384.1,
+      "ext_effect_pct": 3.91,
+      "confidence": "medium"
+    },
+    {
+      "gt_idx": 23,
+      "json_idx": 22,
+      "gt_pair": "147",
+      "gt_dose": "1",
+      "gt_crop": "bean",
+      "element": "bean yield (g m\u207b\u00b2)",
+      "match_reason": "Terra Sorb Complex, double spray (Freq=2), higher dose, highest GT ctrl level (0.3178) assigned to year 2017. Dose-response arm: unique assignment.",
+      "gt_ctrl": 0.317771084337349,
+      "gt_treat": 0.343373493975903,
+      "gt_effect_pct": 8.06,
+      "ext_ctrl": 5181.7,
+      "ext_treat": 4685.8,
+      "ext_effect_pct": -9.57,
+      "confidence": "medium"
+    }
+  ],
+  "unmatched_gt": [
+    {
+      "gt_idx": 24,
+      "gt_pair": "964",
+      "gt_dose": "0.7",
+      "reason": "Kelpak (rep=4), dose=0.7, Freq=1. All 24 JSON yield obs already consumed by GT pairs 124-147 (unique dose-response assignment). GT pairs 964-987 appear to be a second data series (possibly different cultivar or separate replication block) not captured by our extractor."
+    },
+    {
+      "gt_idx": 25,
+      "gt_pair": "965",
+      "gt_dose": "1",
+      "reason": "Kelpak (rep=4), dose=1, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 26,
+      "gt_pair": "966",
+      "gt_dose": "0.7",
+      "reason": "Kelpak (rep=4), dose=0.7, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 27,
+      "gt_pair": "967",
+      "gt_dose": "1",
+      "reason": "Kelpak (rep=4), dose=1, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 28,
+      "gt_pair": "968",
+      "gt_dose": "0.7",
+      "reason": "Kelpak (rep=4), dose=0.7, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 29,
+      "gt_pair": "969",
+      "gt_dose": "1",
+      "reason": "Kelpak (rep=4), dose=1, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 30,
+      "gt_pair": "970",
+      "gt_dose": "0.7",
+      "reason": "Kelpak (rep=4), dose=0.7, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 31,
+      "gt_pair": "971",
+      "gt_dose": "1",
+      "reason": "Kelpak (rep=4), dose=1, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 32,
+      "gt_pair": "972",
+      "gt_dose": "0.7",
+      "reason": "Kelpak (rep=4), dose=0.7, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 33,
+      "gt_pair": "973",
+      "gt_dose": "1",
+      "reason": "Kelpak (rep=4), dose=1, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 34,
+      "gt_pair": "974",
+      "gt_dose": "0.7",
+      "reason": "Kelpak (rep=4), dose=0.7, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 35,
+      "gt_pair": "975",
+      "gt_dose": "1",
+      "reason": "Kelpak (rep=4), dose=1, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 36,
+      "gt_pair": "976",
+      "gt_dose": "0.6",
+      "reason": "Terra Sorb Complex (rep=4), dose=0.6, Freq=1. Note: GT dose=0.6 differs from pairs 128-131 (dose=0.7), suggesting different concentration series. No unique JSON yield obs available."
+    },
+    {
+      "gt_idx": 37,
+      "gt_pair": "977",
+      "gt_dose": "1",
+      "reason": "Terra Sorb Complex (rep=4), dose=1, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 38,
+      "gt_pair": "978",
+      "gt_dose": "0.6",
+      "reason": "Terra Sorb Complex (rep=4), dose=0.6, Freq=2. No unique JSON yield obs available."
+    },
+    {
+      "gt_idx": 39,
+      "gt_pair": "979",
+      "gt_dose": "1",
+      "reason": "Terra Sorb Complex (rep=4), dose=1, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 40,
+      "gt_pair": "980",
+      "gt_dose": "0.6",
+      "reason": "Terra Sorb Complex (rep=4), dose=0.6, Freq=1. No unique JSON yield obs available."
+    },
+    {
+      "gt_idx": 41,
+      "gt_pair": "981",
+      "gt_dose": "1",
+      "reason": "Terra Sorb Complex (rep=4), dose=1, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 42,
+      "gt_pair": "982",
+      "gt_dose": "0.6",
+      "reason": "Terra Sorb Complex (rep=4), dose=0.6, Freq=2. No unique JSON yield obs available."
+    },
+    {
+      "gt_idx": 43,
+      "gt_pair": "983",
+      "gt_dose": "1",
+      "reason": "Terra Sorb Complex (rep=4), dose=1, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 44,
+      "gt_pair": "984",
+      "gt_dose": "0.6",
+      "reason": "Terra Sorb Complex (rep=4), dose=0.6, Freq=1. No unique JSON yield obs available."
+    },
+    {
+      "gt_idx": 45,
+      "gt_pair": "985",
+      "gt_dose": "1",
+      "reason": "Terra Sorb Complex (rep=4), dose=1, Freq=1. No unique JSON yield obs available after assigning pairs 124-147."
+    },
+    {
+      "gt_idx": 46,
+      "gt_pair": "986",
+      "gt_dose": "0.6",
+      "reason": "Terra Sorb Complex (rep=4), dose=0.6, Freq=2. No unique JSON yield obs available."
+    },
+    {
+      "gt_idx": 47,
+      "gt_pair": "987",
+      "gt_dose": "1",
+      "reason": "Terra Sorb Complex (rep=4), dose=1, Freq=2. No unique JSON yield obs available after assigning pairs 124-147."
+    }
+  ],
+  "unmatched_json": [
+    {
+      "json_idx": 24,
+      "element": "Protein (mg g\u207b\u00b9 FM)",
+      "reason": "Non-yield outcome (protein content). Not included in Li 2022 meta-analysis."
+    },
+    {
+      "json_idx": 25,
+      "element": "FRAP (\u00b5M trolox/mL)",
+      "reason": "Non-yield outcome (antioxidant activity - ferric reducing antioxidant power). Not included in Li 2022 meta-analysis."
+    },
+    {
+      "json_idx": 26,
+      "element": "ABTS (\u00b5M trolox/mL)",
+      "reason": "Non-yield outcome (antioxidant activity - ABTS radical scavenging). Not included in Li 2022 meta-analysis."
+    },
+    {
+      "json_idx": 27,
+      "element": "Proline (\u00b5M mL\u207b\u00b9)",
+      "reason": "Non-yield outcome (amino acid/stress metabolite). Not included in Li 2022 meta-analysis."
+    },
+    {
+      "json_idx": 28,
+      "element": "Anthocyanins (mg g\u207b\u00b9 DM)",
+      "reason": "Non-yield outcome (pigment/antioxidant compound). Not included in Li 2022 meta-analysis."
+    },
+    {
+      "json_idx": 29,
+      "element": "Total flavonoids (mg g\u207b\u00b9 DM)",
+      "reason": "Non-yield outcome (polyphenol content). Not included in Li 2022 meta-analysis."
+    },
+    {
+      "json_idx": 30,
+      "element": "Reducing power (mg TE g\u207b\u00b9 DM)",
+      "reason": "Non-yield outcome (antioxidant activity). Not included in Li 2022 meta-analysis."
+    },
+    {
+      "json_idx": 31,
+      "element": "Total phenols (mg g\u207b\u00b9 DM)",
+      "reason": "Non-yield outcome (polyphenol/phenolic content). Not included in Li 2022 meta-analysis."
+    }
+  ],
+  "notes": "Complex dose-response paper with 3 experimental years (2016, 2017, 2018) and 2 biostimulant products (Kelpak SL and Terra Sorb Complex) applied at 2 dose levels and 2 spray frequencies to bean. The GT has 48 rows split into two groups: pairs 124-147 (replicates=3) and pairs 964-987 (replicates=4). Both groups cover the same 8 product\u00d7dose\u00d7frequency treatment combinations with 3 distinct ctrl_mean levels corresponding to the 3 experimental years. Only 24 JSON yield obs are available (8 combos \u00d7 3 years), sufficient for one-to-one matching with pairs 124-147 only. Pairs 964-987 (24 GT rows, replicates=4) are unmatched because all JSON yield obs are consumed. This second series likely represents a different cultivar or replicate block not separately captured by our extractor. Year-to-ctrl-level assignment: ctrl\u22480.248/0.25 \u2192 year 2016 (JSON ctrl\u22484971 g/m\u00b2), ctrl\u22480.279 \u2192 year 2018 (JSON ctrl\u22484968 g/m\u00b2), ctrl\u22480.318 \u2192 year 2017 (JSON ctrl\u22485182 g/m\u00b2). Note that Kelpak and Terra Sorb have different ctrl_mean sequences (0.2485/0.2786/0.3178 vs 0.25/0.2786/0.3178), suggesting separate experimental plots with slightly different baseline yields per product. Effect size agreement is weak to moderate: GT effects are all positive (consistently large, 3-42%), while JSON effects span positive and negative values across years, suggesting the GT averaged across years and possibly applied smoothing or aggregation. Unit discrepancy: GT means are in the range 0.25-0.37 (likely t/ha or kg/m\u00b2) while JSON means are ~4970-5800 g/m\u00b2; the ratio (~20,000) is inconsistent across product groups, possibly reflecting plot-size differences or unit confusion in the JSON extraction."
+}

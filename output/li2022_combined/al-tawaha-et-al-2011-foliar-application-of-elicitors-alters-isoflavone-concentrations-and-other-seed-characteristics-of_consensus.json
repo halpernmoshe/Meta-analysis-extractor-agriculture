@@ -1,0 +1,973 @@
+{
+  "paper_id": "al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of",
+  "recon": {
+    "paper_id": "al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 8,
+  "gemini_obs": 13,
+  "matched_obs": 10,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 8",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 4.52,
+        "control_mean": 3.15,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Proteina",
+          "year": "2003",
+          "application_stage": "V4"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant.",
+        "effect_pct": 43.49206349206348,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 3.44,
+        "control_mean": 3.15,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Proteina",
+          "year": "2003",
+          "application_stage": "R3"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant.",
+        "effect_pct": 9.20634920634921,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 9.86,
+        "control_mean": 4.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Orford",
+          "year": "2003",
+          "application_stage": "V4"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant.",
+        "effect_pct": 124.09090909090905,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 4.96,
+        "control_mean": 4.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Orford",
+          "year": "2003",
+          "application_stage": "R3"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant.",
+        "effect_pct": 12.727272727272718,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 8.85,
+        "control_mean": 5.53,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Proteina",
+          "year": "2004",
+          "application_stage": "V4"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant.",
+        "effect_pct": 60.03616636528027,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 13.57,
+        "control_mean": 5.53,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Proteina",
+          "year": "2004",
+          "application_stage": "R3"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant.",
+        "effect_pct": 145.38878842676309,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 10.66,
+        "control_mean": 5.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Orford",
+          "year": "2004",
+          "application_stage": "V4"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant.",
+        "effect_pct": 105.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "seed yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "seed yield",
+        "tissue": "grain",
+        "treatment_mean": 11.89,
+        "control_mean": 5.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "UNKNOWN",
+        "n": 4,
+        "unit": "g DM/plant",
+        "data_source": "Table 4",
+        "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+        "control_description": "Untreated control (no elicitor)",
+        "moderators": {
+          "cultivar": "AC Orford",
+          "year": "2004",
+          "application_stage": "R3"
+        },
+        "confidence": "high",
+        "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant.",
+        "effect_pct": 128.65384615384616,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 4.52,
+      "control_mean": 3.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Proteina",
+        "year": "2003",
+        "application_stage": "V4"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 43.49206349206348,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 3.44,
+      "control_mean": 3.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Proteina",
+        "year": "2003",
+        "application_stage": "R3"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 9.20634920634921,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 9.86,
+      "control_mean": 4.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Orford",
+        "year": "2003",
+        "application_stage": "V4"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 124.09090909090905,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 4.96,
+      "control_mean": 4.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Orford",
+        "year": "2003",
+        "application_stage": "R3"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2003: 0.57 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 12.727272727272718,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 8.85,
+      "control_mean": 5.53,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Proteina",
+        "year": "2004",
+        "application_stage": "V4"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 60.03616636528027,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 13.57,
+      "control_mean": 5.53,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Proteina",
+        "year": "2004",
+        "application_stage": "R3"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 145.38878842676309,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 10.66,
+      "control_mean": 5.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at V4 stage (three trifoliate leaves)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Orford",
+        "year": "2004",
+        "application_stage": "V4"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 105.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "treatment_mean": 11.89,
+      "control_mean": 5.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "UNKNOWN",
+      "n": 4,
+      "unit": "g DM/plant",
+      "data_source": "Table 4",
+      "treatment_description": "Chitosan 1 mg/mL foliar application at R3 stage (early podding)",
+      "control_description": "Untreated control (no elicitor)",
+      "moderators": {
+        "cultivar": "AC Orford",
+        "year": "2004",
+        "application_stage": "R3"
+      },
+      "confidence": "low",
+      "notes": "Dry matter basis. SED for elicitor means within same cultivar in 2004: 1.04 g/plant. [single-model fallback: Kimi only]",
+      "effect_pct": 128.65384615384616,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "DM seed yield",
+      "tissue": "seed",
+      "treatment_mean": 3.17,
+      "control_mean": 3.15,
+      "treatment_variance": 0.4,
+      "control_variance": 0.4,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "g per plant",
+      "data_source": "Table 4",
+      "treatment_description": "Actinomycetes spores (Streptomyces melanosporofaciens strain EF-76) applied at V4 stage",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "AC Proteina",
+        "year": "2003",
+        "site": "Sainte-Anne-de-Bellevue, QC, Canada",
+        "application_stage": "V4"
+      },
+      "confidence": "high",
+      "notes": "Variance reported as SED (Standard Error of Difference) for elicitor means. [from vision]",
+      "effect_pct": 0.6349206349206356,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total isoflavone",
+      "tissue": "seed",
+      "treatment_mean": 1216,
+      "control_mean": 730,
+      "treatment_variance": 78.3,
+      "control_variance": 78.3,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "ug/g DM",
+      "data_source": "Table 3",
+      "treatment_description": "LCO Bj V (Ac, C16, MeFuc) applied at 10^-6 M at V4 stage",
+      "control_description": "Untreated control",
+      "moderators": {
+        "cultivar": "AC Proteina",
+        "year": "2003",
+        "site": "Sainte-Anne-de-Bellevue, QC, Canada",
+        "application_stage": "V4"
+      },
+      "confidence": "high",
+      "notes": "Significant increase (P < 0.05). [from vision]",
+      "effect_pct": 66.57534246575342,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 10,
+    "final_count": 10
+  },
+  "verification_flags": [
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 4.52,
+        "control_mean": 3.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +43.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 43.49206349206348
+      }
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 3.44,
+        "control_mean": 3.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 9.20634920634921
+      }
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 9.86,
+        "control_mean": 4.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +124.1%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +124.1% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 124.09090909090905
+      }
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 4.96,
+        "control_mean": 4.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 12.727272727272718
+      }
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 8.85,
+        "control_mean": 5.53,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +60.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 60.03616636528027
+      }
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 13.57,
+        "control_mean": 5.53,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +145.4%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +145.4% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 145.38878842676309
+      }
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 10.66,
+        "control_mean": 5.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +105.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +105.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 105.0
+      }
+    },
+    {
+      "element": "seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "seed yield",
+        "treatment_mean": 11.89,
+        "control_mean": 5.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +128.7%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +128.7% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 128.65384615384616
+      }
+    },
+    {
+      "element": "DM seed yield",
+      "tissue": "seed",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "DM seed yield",
+        "treatment_mean": 3.17,
+        "control_mean": 3.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.618296529968456,
+            "note": "CV = 12.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=12.7%"
+          }
+        },
+        "effect_pct": 0.6349206349206356
+      }
+    },
+    {
+      "element": "Total isoflavone",
+      "tissue": "seed",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Total isoflavone",
+        "treatment_mean": 1216,
+        "control_mean": 730,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +66.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.439144736842104,
+            "note": "CV = 6.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.0%"
+          }
+        },
+        "effect_pct": 66.57534246575342
+      }
+    }
+  ]
+}

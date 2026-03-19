@@ -1,0 +1,2000 @@
+{
+  "paper_id": "020_Overdieck_1993",
+  "recon": {
+    "paper_id": "020_Overdieck_1993",
+    "warnings": [
+      "THREE SEPARATE EXPERIMENTS with DIFFERENT CO2 levels: Exp I (control ~300, elevated ~620 ppm), Exp II (control ~350, elevated ~600 ppm), Exp III (control ~390, elevated ~520 and ~650 ppm). Do not mix data across experiments.",
+      "Experiment III has THREE CO2 levels (390, 520, 650 ppm) creating two elevated treatments - extract separately for each comparison.",
+      "No variance data (SE, SD, LSD) are reported in the tables - only mean values and percentage changes. Statistical significance is noted as p<0.05 or p<0.01 but no numerical variance is provided.",
+      "Table 2 reports TOTAL AMOUNTS (g per m2) exported over 4 harvests, NOT concentrations - this is not a primary outcome for mineral concentration meta-analysis.",
+      "Table 3 reports ABSOLUTE AMOUNTS (g per m2) of minerals, NOT concentrations - not suitable for direct concentration extraction.",
+      "Table 4 contains concentration data for tree species but uses analysis of variance significance levels rather than numeric variance measures.",
+      "Figure 2 shows RELATIVE changes (% of control = 100%) for herbaceous species - actual numeric concentrations not provided in figure.",
+      "Table 5 is an EXTRAPOLATION/ESTIMATE for adult beech forest, not measured experimental data - should NOT be used for meta-analysis extraction.",
+      "Experiment II used mixed species (clover + grass in 1:1 ratio) and samples were composited across species - species-specific concentrations not separable for above-ground parts.",
+      "Root samples in Experiment II were not separated by species - species-specific root mineral data unavailable.",
+      "Sample sizes are ambiguous: Experiment II used n=1 replication per CO2 level (two mini-greenhouses per level), making statistical replication very limited.",
+      "Experiment I had only one control and one elevated mini-greenhouse (no true replication stated explicitly).",
+      "The paper reports that Ca concentrations 'behaved irregularly' and 'differed more with age' - Ca data may be unreliable.",
+      "Percentage changes in Figure 2 are averages across multiple harvests and potentially across species within mixtures - not single-species single-timepoint values.",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "none",
+    "variance_source": "Significance levels are stated (p<0.05, p<0.01) in Table 4 as 'levels of significance from analysis of variance' but no numerical SE, SD, LSD, or CI values are reported in any table or figure.",
+    "variance_confidence": "high",
+    "control_definition": "Exp I: ~300 \u00b5mol mol-1 CO2; Exp II: ~350 \u00b5mol mol-1 CO2; Exp III: ~390 \u00b5mol mol-1 CO2",
+    "treatment_definition": "Exp I: ~620 \u00b5mol mol-1 CO2; Exp II: ~600 \u00b5mol mol-1 CO2; Exp III: ~520 and ~650 \u00b5mol mol-1 CO2",
+    "tables_with_target_data": [
+      "Table 4"
+    ],
+    "potential_tc_confusion": "Experiment III has three CO2 levels (390, 520, 650) - risk of treating 520 as control when comparing to 650. Always use 390 as the control baseline. Table 4 lists percentage changes (delta%) between consecutive levels which could be misread as absolute values.",
+    "experimental_design": "simple",
+    "sample_size_found": 1,
+    "sample_size_source": "Experiment II: 'one replication each' stated explicitly - 'both under ~350 (control) and ~600 \u00b5mol mol-1 CO2 with one replication each'. Experiment III: '10 trees were combined into one sample' per harvest - effectively n=1 composite sample per CO2 level per harvest.",
+    "factorial_structure": "[\"CO2 level\"]",
+    "extraction_guidance": "PRIMARY EXTRACTABLE DATA: Table 4 is the only table with actual mineral concentrations and should be the focus of extraction. Extract Acer pseudo-platanus and Fagus sylvatica separately. For Acer: use 390 ppm as control vs 520 and 650 ppm as two separate elevated treatments. For Fagus: same structure. Note that N, K, Ca, Mg are in %, Mn and Fe in ppm. No variance values are available - extraction will be means only. Figure 2 provides relative percentage data for herbaceous species (Trifolium repens/Lolium perenne mixture and Trifolium pratense/Festuca pratensis mixture) but actual concentration means are not given in the paper for herbaceous species - only percent change from control and significance. If extracting Figure 2 data, note that values represent mixed-species composites and the control = 100% baseline. DO NOT extract from Table 5 (extrapolated estimates). DO NOT confuse total mineral amounts (Tables 2, 3) with concentrations. Flag all extractions as having n=1 replication for Experiments I and II, limiting meta-analytic weight.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Elevated CO2 and the mineral content of herbaceous and woody plants\",\n        \"species\": \"Trifolium repens, Lolium perenne, Trifolium pratense, Festuca pratensis, Acer pseudo-platanus, Fagus sylvatica\",\n        \"experimental_system\": \"greenhouse (mini-greenhouses/acrylic glasshouses climatized to outside conditions)\",\n        \"co2_levels\": {\n            \"control\": \"300 or 350 or 390 ppm (varies by experiment)\",\n            \"elevated\": \"600, 620, or 650 ppm (varies by experiment)\"\n        }\n    },\n    \"warnings\": [\n        \"THREE SEPARATE EXPERIMENTS with DIFFERENT CO2 levels: Exp I (control ~300, elevated ~620 ppm), Exp II (control ~350, elevated ~600 ppm), Exp III (control ~390, elevated ~520 and ~650 ppm). Do not mix data across experiments.\",\n        \"Experiment III has THREE CO2 levels (390, 520, 650 ppm) creating two elevated treatments - extract separately for each comparison.\",\n        \"No variance data (SE, SD, LSD) are reported in the tables - only mean values and percentage changes. Statistical significance is noted as p<0.05 or p<0.01 but no numerical variance is provided.\",\n        \"Table 2 reports TOTAL AMOUNTS (g per m2) exported over 4 harvests, NOT concentrations - this is not a primary outcome for mineral concentration meta-analysis.\",\n        \"Table 3 reports ABSOLUTE AMOUNTS (g per m2) of minerals, NOT concentrations - not suitable for direct concentration extraction.\",\n        \"Table 4 contains concentration data for tree species but uses analysis of variance significance levels rather than numeric variance measures.\",\n        \"Figure 2 shows RELATIVE changes (% of control = 100%) for herbaceous species - actual numeric concentrations not provided in figure.\",\n        \"Table 5 is an EXTRAPOLATION/ESTIMATE for adult beech forest, not measured experimental data - should NOT be used for meta-analysis extraction.\",\n        \"Experiment II used mixed species (clover + grass in 1:1 ratio) and samples we",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3",
+      "Table 5"
+    ],
+    "table_descriptions": {
+      "Table 1": "Yield response (above-ground dry matter, g/m2) from 4 harvests of Trifolium repens/Lolium perenne mixtures - biomass only, no mineral concentrations",
+      "Table 2": "Total AMOUNTS (g) of elements exported per m2 from 4 cuts of Trifolium repens/Lolium perenne - absolute amounts not concentrations",
+      "Table 3": "Absolute AMOUNTS (g/m2) of elements in above- and below-ground phytomass of Trifolium pratense/Festuca pratensis mixtures at two dates - amounts not concentrations",
+      "Table 4": "Element CONCENTRATIONS (% or ppm dry weight) of total seedlings/saplings of Acer pseudo-platanus and Fagus sylvatica under three CO2 levels (390, 520, 650 \u00b5mol/mol) - PRIMARY concentration data with significance levels",
+      "Table 5": "ESTIMATED/EXTRAPOLATED mineral accumulation (kg/ha) in adult beech forest - not measured experimental data, should not be used"
+    },
+    "figures_with_data": [
+      "Figure 2",
+      "Figure 3",
+      "Figure 4"
+    ],
+    "outcome_variables_detected": {
+      "Table 4": [
+        "N (%)",
+        "P (%)",
+        "K (%)",
+        "Ca (%)",
+        "Mg (%)",
+        "Mn (ppm)",
+        "Fe (ppm)"
+      ],
+      "Figure 2": [
+        "N (relative %)",
+        "P (relative %)",
+        "K (relative %)",
+        "Ca (relative %)",
+        "Mg (relative %)",
+        "Zn (relative %)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'",
+      "MULTI-CONTROL - Paper has multiple control conditions",
+      "Identify which control is 'ambient CO2' vs other controls",
+      "May need to extract multiple T/C comparisons",
+      "NESTED-TABLES - Tables have hierarchical structure",
+      "Parse carefully - headers may span multiple columns",
+      "Watch for subtotals vs individual measurements"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 46,
+  "kimi_obs": 40,
+  "gemini_obs": 0,
+  "matched_obs": 40,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 40/46 matched",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "N (relative %)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "N (relative %)",
+        "tissue": "shoot",
+        "treatment_mean": 89,
+        "control_mean": 100,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": null,
+        "unit": "% of control",
+        "data_source": "Figure 2",
+        "treatment_description": "Elevated CO2 ~600-620 \u00b5mol mol-1",
+        "control_description": "Ambient CO2 ~300-350 \u00b5mol mol-1",
+        "moderators": {
+          "species": "Trifolium pratense / Festuca pratensis mixture (1:1)",
+          "experiment": "Experiment II",
+          "n_harvests": "10 harvests over 4 vegetation periods"
+        },
+        "confidence": "low",
+        "notes": "Figure 2 data for Trifolium pratense/Festuca pratensis. Mean N concentration decrease of 11-12% reported in text (11% for one species, 12% for other). Using ~11% decrease as representative giving ~89% of control. Above-ground parts only. Mixed species composite - species-specific values not separable. n=1 replication per CO2 level. Control ~350 ppm, elevated ~600 ppm. Statistically significant. Actual numeric concentrations not given in paper for herbaceous species.",
+        "effect_pct": -11.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "P (relative %)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "P (relative %)",
+        "tissue": "shoot",
+        "treatment_mean": 100,
+        "control_mean": 100,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": null,
+        "unit": "% of control",
+        "data_source": "Figure 2",
+        "treatment_description": "Elevated CO2 ~600-620 \u00b5mol mol-1",
+        "control_description": "Ambient CO2 ~300-350 \u00b5mol mol-1",
+        "moderators": {
+          "species": "Trifolium pratense / Festuca pratensis mixture (1:1)",
+          "experiment": "Experiment II",
+          "n_harvests": "10 harvests over 4 vegetation periods"
+        },
+        "confidence": "low",
+        "notes": "Figure 2 data. Text states P concentrations were 'nearly constant' for herbaceous species. Approximate value ~100% of control. No significant change. Mixed species composite. Actual numeric concentrations not given.",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "K (relative %)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "K (relative %)",
+        "tissue": "shoot",
+        "treatment_mean": 84,
+        "control_mean": 100,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": null,
+        "unit": "% of control",
+        "data_source": "Figure 2",
+        "treatment_description": "Elevated CO2 ~600-620 \u00b5mol mol-1",
+        "control_description": "Ambient CO2 ~300-350 \u00b5mol mol-1",
+        "moderators": {
+          "species": "Trifolium pratense / Festuca pratensis mixture (1:1)",
+          "experiment": "Experiment II",
+          "n_harvests": "10 harvests over 4 vegetation periods"
+        },
+        "confidence": "low",
+        "notes": "Figure 2 data. Text states K decreased 13% (T. pratense) and 18% (F. pratensis); using midpoint ~16% decrease as representative giving ~84% of control. Statistically significant. Mixed species composite. Actual numeric concentrations not given.",
+        "effect_pct": -16.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Ca (relative %)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Ca (relative %)",
+        "tissue": "shoot",
+        "treatment_mean": 93,
+        "control_mean": 100,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": null,
+        "unit": "% of control",
+        "data_source": "Figure 2",
+        "treatment_description": "Elevated CO2 ~600-620 \u00b5mol mol-1",
+        "control_description": "Ambient CO2 ~300-350 \u00b5mol mol-1",
+        "moderators": {
+          "species": "Trifolium pratense / Festuca pratensis mixture (1:1)",
+          "experiment": "Experiment II",
+          "n_harvests": "10 harvests over 4 vegetation periods"
+        },
+        "confidence": "low",
+        "notes": "Figure 2 data. Text states Ca 'behaved irregularly, mostly decreasing'. Approximate estimate of ~7% decrease (93% of control) based on general trend described. Mixed species composite. Actual numeric concentrations not given. Ca data may be unreliable per paper's own statement.",
+        "effect_pct": -7.000000000000001,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Mg (relative %)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Mg (relative %)",
+        "tissue": "shoot",
+        "treatment_mean": 100,
+        "control_mean": 100,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": null,
+        "unit": "% of control",
+        "data_source": "Figure 2",
+        "treatment_description": "Elevated CO2 ~600-620 \u00b5mol mol-1",
+        "control_description": "Ambient CO2 ~300-350 \u00b5mol mol-1",
+        "moderators": {
+          "species": "Trifolium pratense / Festuca pratensis mixture (1:1)",
+          "experiment": "Experiment II",
+          "n_harvests": "10 harvests over 4 vegetation periods"
+        },
+        "confidence": "low",
+        "notes": "Figure 2 data. Text states Mg concentrations were 'approximately stable' for herbaceous species. Approximate value ~100% of control. Mixed species composite. Actual numeric concentrations not given.",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn (relative %)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Zn (relative %)",
+        "tissue": "shoot",
+        "treatment_mean": 87,
+        "control_mean": 100,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": null,
+        "unit": "% of control",
+        "data_source": "Figure 2",
+        "treatment_description": "Elevated CO2 ~600 \u00b5mol mol-1",
+        "control_description": "Ambient CO2 ~350 \u00b5mol mol-1",
+        "moderators": {
+          "species": "Festuca pratensis",
+          "experiment": "Experiment II",
+          "n_harvests": "10 harvests over 4 vegetation periods"
+        },
+        "confidence": "low",
+        "notes": "Figure 2 data. Text states 'Zn concentration was significantly lower (13%) in meadow fescue only.' 100 - 13 = 87% of control. This is specific to Festuca pratensis (not the clover). Statistically significant. n=1 replication per CO2 level.",
+        "effect_pct": -13.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.15,
+      "control_mean": 1.28,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.156250000000009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.06,
+      "control_mean": 1.28,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.187499999999996,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.14,
+      "control_mean": 0.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.666666666666654,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.17,
+      "control_mean": 1.24,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.645161290322586,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.12,
+      "control_mean": 1.24,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.677419354838701,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.87,
+      "control_mean": 0.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.333333333333336,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.8,
+      "control_mean": 0.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.111111111111107,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.21,
+      "control_mean": 0.22,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.545454545454549,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.2,
+      "control_mean": 0.22,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.090909090909086,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn (ppm)",
+      "tissue": "whole plant",
+      "treatment_mean": 144,
+      "control_mean": 163,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "ppm",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.65644171779141,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn (ppm)",
+      "tissue": "whole plant",
+      "treatment_mean": 130,
+      "control_mean": 163,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "ppm",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -20.245398773006134,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe (ppm)",
+      "tissue": "whole plant",
+      "treatment_mean": 503,
+      "control_mean": 545,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "ppm",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.706422018348624,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe (ppm)",
+      "tissue": "whole plant",
+      "treatment_mean": 509,
+      "control_mean": 545,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "ppm",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Acer pseudo-platanus",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.605504587155964,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.26,
+      "control_mean": 1.28,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -1.5625000000000013,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.16,
+      "control_mean": 1.28,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.375000000000009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.15,
+      "control_mean": 0.14,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.142857142857128,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.66,
+      "control_mean": 0.64,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.1250000000000027,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.91,
+      "control_mean": 0.97,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.185567010309272,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.84,
+      "control_mean": 0.97,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.402061855670103,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.17,
+      "control_mean": 0.19,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.52631578947368,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "treatment_mean": 0.16,
+      "control_mean": 0.19,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.789473684210526,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn (ppm)",
+      "tissue": "whole plant",
+      "treatment_mean": 197,
+      "control_mean": 219,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "ppm",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~520 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "520 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.045662100456621,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn (ppm)",
+      "tissue": "whole plant",
+      "treatment_mean": 196,
+      "control_mean": 219,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 1,
+      "unit": "ppm",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 ~650 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~390 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Fagus sylvatica",
+        "co2_level": "650 ppm"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.50228310502283,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca",
+      "tissue": "whole plant",
+      "treatment_mean": 0.87,
+      "control_mean": 0.89,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (520 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (390 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Acer pseudo-platanus"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.247191011235957,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 88.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~620 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~300 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Trifolium pratense"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 98.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~620 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~300 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Trifolium pratense"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 78.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~620 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~300 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Trifolium pratense"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -22.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 80.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~620 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~300 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Trifolium pratense"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -20.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 95.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~620 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~300 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Trifolium pratense"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 90.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~620 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~300 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Trifolium pratense"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 93,
+      "control_mean": 100,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": null,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 ~600-620 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~300-350 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Trifolium pratense / Festuca pratensis mixture (1:1)",
+        "experiment": "Experiment II",
+        "n_harvests": "10 harvests over 4 vegetation periods"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.000000000000001,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 100.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~620 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~300 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Festuca pratensis"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 100.0,
+      "control_mean": 100.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 1,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 (~600 \u00b5mol mol-1)",
+      "control_description": "Ambient CO2 (~350 \u00b5mol mol-1)",
+      "moderators": {
+        "species": "Trifolium repens"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn (relative %)",
+      "tissue": "shoot",
+      "treatment_mean": 87,
+      "control_mean": 100,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": null,
+      "unit": "% of control",
+      "data_source": "Figure 2",
+      "treatment_description": "Elevated CO2 ~600 \u00b5mol mol-1",
+      "control_description": "Ambient CO2 ~350 \u00b5mol mol-1",
+      "moderators": {
+        "species": "Festuca pratensis",
+        "experiment": "Experiment II",
+        "n_harvests": "10 harvests over 4 vegetation periods"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 6,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 40,
+    "final_count": 34
+  },
+  "verification_flags": [
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (%)",
+        "treatment_mean": 1.15,
+        "control_mean": 1.28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -10.156250000000009
+      }
+    },
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (%)",
+        "treatment_mean": 1.06,
+        "control_mean": 1.28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -17.187499999999996
+      }
+    },
+    {
+      "element": "P (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (%)",
+        "treatment_mean": 0.14,
+        "control_mean": 0.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -6.666666666666654
+      }
+    },
+    {
+      "element": "K (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (%)",
+        "treatment_mean": 1.17,
+        "control_mean": 1.24,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -5.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -5.645161290322586
+      }
+    },
+    {
+      "element": "K (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (%)",
+        "treatment_mean": 1.12,
+        "control_mean": 1.24,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -9.677419354838701
+      }
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (%)",
+        "treatment_mean": 0.87,
+        "control_mean": 0.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -3.333333333333336
+      }
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (%)",
+        "treatment_mean": 0.8,
+        "control_mean": 0.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -11.111111111111107
+      }
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (%)",
+        "treatment_mean": 0.21,
+        "control_mean": 0.22,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -4.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -4.545454545454549
+      }
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (%)",
+        "treatment_mean": 0.2,
+        "control_mean": 0.22,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -9.090909090909086
+      }
+    },
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (%)",
+        "treatment_mean": 1.26,
+        "control_mean": 1.28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -1.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -1.5625000000000013
+      }
+    },
+    {
+      "element": "N (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (%)",
+        "treatment_mean": 1.16,
+        "control_mean": 1.28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -9.375000000000009
+      }
+    },
+    {
+      "element": "P (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "P (%)",
+        "treatment_mean": 0.15,
+        "control_mean": 0.14,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +7.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -6.666666666666655,
+            "note": "Effect +7.1% violates expected direction; unswapped would be -6.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": 7.142857142857128,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +7.1%, corrected would be -6.7%"
+      }
+    },
+    {
+      "element": "K (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "K (%)",
+        "treatment_mean": 0.66,
+        "control_mean": 0.64,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +3.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": 3.1250000000000027
+      }
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (%)",
+        "treatment_mean": 0.91,
+        "control_mean": 0.97,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -6.185567010309272
+      }
+    },
+    {
+      "element": "Ca (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (%)",
+        "treatment_mean": 0.84,
+        "control_mean": 0.97,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -13.402061855670103
+      }
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (%)",
+        "treatment_mean": 0.17,
+        "control_mean": 0.19,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -10.52631578947368
+      }
+    },
+    {
+      "element": "Mg (%)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (%)",
+        "treatment_mean": 0.16,
+        "control_mean": 0.19,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -15.789473684210526
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N",
+        "treatment_mean": 1.15,
+        "control_mean": 1.28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -10.156250000000009
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P",
+        "treatment_mean": 0.14,
+        "control_mean": 0.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -6.666666666666654
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K",
+        "treatment_mean": 1.17,
+        "control_mean": 1.24,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -5.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -5.645161290322586
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca",
+        "treatment_mean": 0.87,
+        "control_mean": 0.89,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -2.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -2.247191011235957
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg",
+        "treatment_mean": 0.21,
+        "control_mean": 0.22,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -4.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": -4.545454545454549
+      }
+    },
+    {
+      "element": "Mg (relative %)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Mg (relative %)",
+        "treatment_mean": 100.0,
+        "control_mean": 100.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "P (relative %)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "P (relative %)",
+        "treatment_mean": 100.0,
+        "control_mean": 100.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 1,
+            "note": "n=1"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

@@ -1,0 +1,1446 @@
+{
+  "paper_id": "68_Peck_2008",
+  "recon": {
+    "paper_id": "68_Peck_2008",
+    "warnings": [
+      "Recon error: 'list' object has no attribute 'get'",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 18,
+  "kimi_obs": 18,
+  "gemini_obs": 0,
+  "matched_obs": 12,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "value_mismatch",
+      "element": "Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 26.0,
+        "control_mean": 11.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "7.5+1 spray (7.5 kg Zn ha\u207b\u00b9 + foliar spray)",
+        "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+        "moderators": {
+          "site": "Lameroo",
+          "year": "1998"
+        },
+        "confidence": "high",
+        "notes": "334g Zn ha\u207b\u00b9 applied as foliar spray; LSD (P=0.05) = 2.8",
+        "effect_pct": 128.0701754385965,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 21.0,
+        "control_mean": 10.9,
+        "treatment_variance": 2.3,
+        "control_variance": 2.3,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "22.5 kg Zn ha-1 soil application OR 7.5 kg Zn ha-1 + 2 foliar sprays",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1999",
+          "site": "Birchip, Victoria"
+        },
+        "confidence": "low",
+        "notes": "Treatment identity ambiguous from table; likely high-rate soil or double foliar. LSD from table.",
+        "effect_pct": 92.66055045871559,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "difference": 0.11808367071524967,
+      "swap_check": "checked_no_swap"
+    },
+    {
+      "type": "value_mismatch",
+      "element": "Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 14.5,
+        "control_mean": 11.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "22.5 kg Zn ha\u207b\u00b9 soil application",
+        "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+        "moderators": {
+          "site": "Lameroo",
+          "year": "1998"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) = 2.8",
+        "effect_pct": 27.192982456140346,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 14.2,
+        "control_mean": 14.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "2.5 kg Zn ha-1 soil application",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1998",
+          "site": "Minnipa, South Australia"
+        },
+        "confidence": "medium",
+        "notes": "LSD listed as NS (not significant) in table. Variance set to null.",
+        "effect_pct": 0.7092198581560258,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "difference": 0.12876588021778584,
+      "swap_check": "checked_no_swap"
+    },
+    {
+      "type": "value_mismatch",
+      "element": "Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 23.4,
+        "control_mean": 12.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "7.5+1 spray (7.5 kg Zn ha\u207b\u00b9 + foliar spray)",
+        "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+        "moderators": {
+          "site": "Tintinara",
+          "year": "1998"
+        },
+        "confidence": "high",
+        "notes": "334g Zn ha\u207b\u00b9 applied as foliar spray; LSD (P=0.05) = 1.5",
+        "effect_pct": 91.80327868852459,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 21.0,
+        "control_mean": 10.9,
+        "treatment_variance": 2.3,
+        "control_variance": 2.3,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "22.5 kg Zn ha-1 soil application OR 7.5 kg Zn ha-1 + 2 foliar sprays",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1999",
+          "site": "Birchip, Victoria"
+        },
+        "confidence": "low",
+        "notes": "Treatment identity ambiguous from table; likely high-rate soil or double foliar. LSD from table.",
+        "effect_pct": 92.66055045871559,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "difference": 0.10456073980664138,
+      "swap_check": "checked_no_swap"
+    },
+    {
+      "type": "value_mismatch",
+      "element": "Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 16.8,
+        "control_mean": 14.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "7.5 kg Zn ha\u207b\u00b9 soil application",
+        "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+        "moderators": {
+          "site": "Minnipa",
+          "year": "1998"
+        },
+        "confidence": "medium",
+        "notes": "NS (not significant), no LSD provided",
+        "effect_pct": 19.148936170212774,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 20.3,
+        "control_mean": 10.9,
+        "treatment_variance": 2.3,
+        "control_variance": 2.3,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "7.5 kg Zn ha-1 soil + foliar spray",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1999",
+          "site": "Birchip, Victoria"
+        },
+        "confidence": "medium",
+        "notes": "Interpreted as foliar treatment based on large increase in Zn concentration (near doubling). Column alignment in source table ambiguous between 7.5 soil-only and 7.5+foliar.",
+        "effect_pct": 86.23853211009175,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "difference": 0.21764184397163117,
+      "swap_check": "checked_no_swap"
+    },
+    {
+      "type": "value_mismatch",
+      "element": "Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 15.5,
+        "control_mean": 14.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "22.5 kg Zn ha\u207b\u00b9 soil application",
+        "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+        "moderators": {
+          "site": "Minnipa",
+          "year": "1998"
+        },
+        "confidence": "medium",
+        "notes": "NS (not significant), no LSD provided",
+        "effect_pct": 9.9290780141844,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 20.3,
+        "control_mean": 10.9,
+        "treatment_variance": 2.3,
+        "control_variance": 2.3,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "7.5 kg Zn ha-1 soil + foliar spray",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1999",
+          "site": "Birchip, Victoria"
+        },
+        "confidence": "medium",
+        "notes": "Interpreted as foliar treatment based on large increase in Zn concentration (near doubling). Column alignment in source table ambiguous between 7.5 soil-only and 7.5+foliar.",
+        "effect_pct": 86.23853211009175,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "difference": 0.2683138869823839,
+      "swap_check": "checked_no_swap"
+    },
+    {
+      "type": "value_mismatch",
+      "element": "Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 12.3,
+        "control_mean": 10.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "2.5 kg Zn ha\u207b\u00b9 soil application",
+        "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+        "moderators": {
+          "site": "Birchip",
+          "year": "1999"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) = 2.3",
+        "effect_pct": 12.84403669724771,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 20.3,
+        "control_mean": 10.9,
+        "treatment_variance": 2.3,
+        "control_variance": 2.3,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "7.5 kg Zn ha-1 soil + foliar spray",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1999",
+          "site": "Birchip, Victoria"
+        },
+        "confidence": "medium",
+        "notes": "Interpreted as foliar treatment based on large increase in Zn concentration (near doubling). Column alignment in source table ambiguous between 7.5 soil-only and 7.5+foliar.",
+        "effect_pct": 86.23853211009175,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "difference": 0.3252032520325203,
+      "swap_check": "checked_no_swap"
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 12.4,
+        "control_mean": 11.4,
+        "treatment_variance": 1.1,
+        "control_variance": 1.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "7.5 kg Zn ha-1 soil application (zinc oxysulphate granules)",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1998",
+          "site": "Lameroo, South Australia"
+        },
+        "confidence": "high",
+        "notes": "LSD value from table. Split-plot design with 4 replicates.",
+        "effect_pct": 8.771929824561402,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 26.0,
+        "control_mean": 11.4,
+        "treatment_variance": 1.1,
+        "control_variance": 1.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "7.5 kg Zn ha-1 soil + foliar spray (ZincsolTM, 334g Zn ha-1)",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1998",
+          "site": "Lameroo, South Australia"
+        },
+        "confidence": "high",
+        "notes": "Foliar spray applied at tillering and/or stem elongation. This treatment represents 7.5 soil + 1 foliar spray based on text description.",
+        "effect_pct": 128.0701754385965,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 14.5,
+        "control_mean": 11.4,
+        "treatment_variance": 1.1,
+        "control_variance": 1.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "22.5 kg Zn ha-1 soil application",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1998",
+          "site": "Lameroo, South Australia"
+        },
+        "confidence": "high",
+        "notes": "LSD value from table.",
+        "effect_pct": 27.192982456140346,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 14.0,
+        "control_mean": 12.2,
+        "treatment_variance": 1.5,
+        "control_variance": 1.5,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "7.5 kg Zn ha-1 soil application",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1998",
+          "site": "Tintinara, South Australia"
+        },
+        "confidence": "high",
+        "notes": "LSD value from table.",
+        "effect_pct": 14.754098360655746,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 23.4,
+        "control_mean": 12.2,
+        "treatment_variance": 1.5,
+        "control_variance": 1.5,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "7.5 kg Zn ha-1 soil + foliar spray (ZincsolTM)",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1998",
+          "site": "Tintinara, South Australia"
+        },
+        "confidence": "high",
+        "notes": "Foliar treatment doubled grain Zn concentration.",
+        "effect_pct": 91.80327868852459,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn",
+        "tissue": "grain",
+        "treatment_mean": 15.7,
+        "control_mean": 12.2,
+        "treatment_variance": 1.5,
+        "control_variance": 1.5,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "22.5 kg Zn ha-1 soil application",
+        "control_description": "0 kg Zn ha-1 (control)",
+        "moderators": {
+          "cultivar": "Frame and Goldmark (averaged)",
+          "year": "1998",
+          "site": "Tintinara, South Australia"
+        },
+        "confidence": "high",
+        "notes": "LSD value from table.",
+        "effect_pct": 28.68852459016394,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 12.4,
+      "control_mean": 11.4,
+      "treatment_variance": 2.3,
+      "control_variance": 2.3,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "2.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1998",
+        "site": "Lameroo"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=2.6%)",
+      "effect_pct": 8.771929824561402,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 14.0,
+      "control_mean": 12.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "2.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1998",
+        "site": "Tintinara"
+      },
+      "confidence": "medium",
+      "notes": "Models agree (diff=8.5%)",
+      "effect_pct": 14.754098360655746,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 15.7,
+      "control_mean": 12.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "22.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1998",
+        "site": "Tintinara"
+      },
+      "confidence": "medium",
+      "notes": "Models agree (diff=8.4%)",
+      "effect_pct": 28.68852459016394,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 14.2,
+      "control_mean": 14.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "2.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1998",
+        "site": "Minnipa"
+      },
+      "confidence": "medium",
+      "notes": "Models agree (diff=9.2%)",
+      "effect_pct": 0.7092198581560258,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 20.3,
+      "control_mean": 10.9,
+      "treatment_variance": 2.3,
+      "control_variance": 2.3,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Birchip"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 86.23853211009175,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 21.0,
+      "control_mean": 10.9,
+      "treatment_variance": 2.3,
+      "control_variance": 2.3,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "22.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Birchip"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 92.66055045871559,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 21.8,
+      "control_mean": 20.5,
+      "treatment_variance": 2.8,
+      "control_variance": 2.8,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "2.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Horsham SD1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.341463414634149,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 26.8,
+      "control_mean": 20.5,
+      "treatment_variance": 2.8,
+      "control_variance": 2.8,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Horsham SD1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 30.731707317073177,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 30.3,
+      "control_mean": 20.5,
+      "treatment_variance": 2.8,
+      "control_variance": 2.8,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "22.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Horsham SD1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 47.804878048780495,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 20.1,
+      "control_mean": 19.9,
+      "treatment_variance": 1.2,
+      "control_variance": 1.2,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "2.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Horsham SD2"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.005025125628155,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 24.5,
+      "control_mean": 19.9,
+      "treatment_variance": 1.2,
+      "control_variance": 1.2,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Horsham SD2"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 23.115577889447245,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 33.3,
+      "control_mean": 19.9,
+      "treatment_variance": 1.2,
+      "control_variance": 1.2,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "22.5 kg Zn ha\u207b\u00b9 soil application",
+      "control_description": "No Zn application (0 kg Zn ha\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Frame and Goldmark (averaged)",
+        "year": "1999",
+        "site": "Horsham SD2"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 67.33668341708542,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 12,
+    "final_count": 12
+  },
+  "verification_flags": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 12.4,
+        "control_mean": 11.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 18.548387096774192,
+            "note": "CV = 18.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=19.3%"
+          }
+        },
+        "effect_pct": 8.771929824561402
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 14.0,
+        "control_mean": 12.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 14.754098360655746
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 15.7,
+        "control_mean": 12.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +28.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 28.68852459016394
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 14.2,
+        "control_mean": 14.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 0.7092198581560258
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 20.3,
+        "control_mean": 10.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +86.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.330049261083742,
+            "note": "CV = 11.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.7%"
+          }
+        },
+        "effect_pct": 86.23853211009175
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 21.0,
+        "control_mean": 10.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +92.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.95238095238095,
+            "note": "CV = 11.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.4%"
+          }
+        },
+        "effect_pct": 92.66055045871559
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 21.8,
+        "control_mean": 20.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.844036697247704,
+            "note": "CV = 12.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.2%"
+          }
+        },
+        "effect_pct": 6.341463414634149
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 26.8,
+        "control_mean": 20.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +30.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.44776119402985,
+            "note": "CV = 10.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.8%"
+          }
+        },
+        "effect_pct": 30.731707317073177
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 30.3,
+        "control_mean": 20.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +47.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.24092409240924,
+            "note": "CV = 9.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.0%"
+          }
+        },
+        "effect_pct": 47.804878048780495
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 20.1,
+        "control_mean": 19.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.970149253731343,
+            "note": "CV = 6.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.0%"
+          }
+        },
+        "effect_pct": 1.005025125628155
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 24.5,
+        "control_mean": 19.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.8979591836734695,
+            "note": "CV = 4.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": 23.115577889447245
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 33.3,
+        "control_mean": 19.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +67.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.6036036036036037,
+            "note": "CV = 3.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=9.0%"
+          }
+        },
+        "effect_pct": 67.33668341708542
+      }
+    }
+  ]
+}

@@ -1,0 +1,4365 @@
+{
+  "paper_id": "064_Godlewska_2016_The effect of growth regulator on dry ma",
+  "recon": {
+    "paper_id": "064_Godlewska_2016_The effect of growth regulator on dry ma",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 48,
+  "gemini_obs": 0,
+  "matched_obs": 47,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 48",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 30.73,
+        "control_mean": 26.77,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "0 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years. Variance not reported; different letters indicate significant difference (p \u2264 0.05) between treatment and control.",
+        "effect_pct": 14.79267837131117,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 27.41,
+        "control_mean": 24.48,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "50 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 11.968954248366012,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 25.87,
+        "control_mean": 23.75,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "100 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 8.926315789473687,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 24.27,
+        "control_mean": 22.15,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "150 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 9.571106094808131,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 27.15,
+        "control_mean": 24.28,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Dactylis glomerata",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 11.820428336079067,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 27.0,
+        "control_mean": 24.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Festulolium braunii",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 11.111111111111107,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 30.56,
+        "control_mean": 27.72,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "1",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 10.245310245310245,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 23.92,
+        "control_mean": 21.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "2",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 11.775700934579454,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 26.73,
+        "control_mean": 23.75,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "3",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 12.547368421052632,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 29.2,
+        "control_mean": 26.44,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2010",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 10.43872919818456,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 21.96,
+        "control_mean": 19.76,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2011",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 11.133603238866392,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Zn content",
+        "tissue": "shoot",
+        "treatment_mean": 30.04,
+        "control_mean": 26.67,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2012",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 12.635920509936247,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 7.92,
+        "control_mean": 7.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "0 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 12.660028449502128,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 7.19,
+        "control_mean": 6.53,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "50 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 10.107197549770293,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 6.68,
+        "control_mean": 6.04,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "100 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 10.596026490066219,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 6.32,
+        "control_mean": 5.95,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "150 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years. Non-significant difference between treatment and control (same letters).",
+        "effect_pct": 6.218487394957985,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 7.04,
+        "control_mean": 6.41,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Dactylis glomerata",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 9.828393135725427,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 7.02,
+        "control_mean": 6.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Festulolium braunii",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 9.687499999999988,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 5.83,
+        "control_mean": 5.27,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "1",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 10.626185958254279,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 7.19,
+        "control_mean": 6.53,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "2",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 10.107197549770293,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 8.07,
+        "control_mean": 7.36,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "3",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 9.646739130434781,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 7.22,
+        "control_mean": 6.62,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2010",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 9.063444108761324,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 6.63,
+        "control_mean": 5.99,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2011",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 10.684474123539227,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Cu content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Cu content",
+        "tissue": "shoot",
+        "treatment_mean": 7.23,
+        "control_mean": 6.56,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 3",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2012",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 10.213414634146355,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 162.3,
+        "control_mean": 139.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "0 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 16.6786484543494,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 143.0,
+        "control_mean": 128.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "50 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 11.284046692607005,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 135.5,
+        "control_mean": 123.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "100 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 9.98376623376623,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 125.6,
+        "control_mean": 116.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "150 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 7.718696397941681,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 139.8,
+        "control_mean": 126.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Dactylis glomerata",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 10.51383399209487,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 143.5,
+        "control_mean": 127.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Festulolium braunii",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 12.725844461901023,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 137.3,
+        "control_mean": 122.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "1",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 12.448812448812463,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 140.5,
+        "control_mean": 127.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "2",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 10.542879622344616,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 147.1,
+        "control_mean": 131.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "3",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 11.948249619482487,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 144.4,
+        "control_mean": 129.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2010",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 11.50579150579151,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 137.6,
+        "control_mean": 123.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2011",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 11.869918699186988,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe content",
+        "tissue": "shoot",
+        "treatment_mean": 143.0,
+        "control_mean": 128.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2012",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 11.631537861046063,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 46.37,
+        "control_mean": 42.78,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "0 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 8.391771856007471,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 48.61,
+        "control_mean": 45.77,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "50 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 6.204937732138947,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 50.99,
+        "control_mean": 48.07,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "100 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 6.074474724360311,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 55.03,
+        "control_mean": 50.35,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "nitrogen_dose": "150 kg ha\u207b\u00b9",
+          "factor_type": "N_dose"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across grass species, cuts, and years.",
+        "effect_pct": 9.294935451837139,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 50.29,
+        "control_mean": 46.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Dactylis glomerata",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 7.457264957264961,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 50.21,
+        "control_mean": 46.69,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "species": "Festulolium braunii",
+          "factor_type": "species"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, cuts, and years.",
+        "effect_pct": 7.539087599057622,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 48.93,
+        "control_mean": 45.66,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "1",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 7.1616294349540155,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 49.45,
+        "control_mean": 45.94,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "2",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 7.64040052242056,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 52.37,
+        "control_mean": 48.64,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "cut": "3",
+          "factor_type": "cut"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and years.",
+        "effect_pct": 7.668585526315782,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 49.34,
+        "control_mean": 45.87,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2010",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 7.564857205144988,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 51.3,
+        "control_mean": 47.61,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2011",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 7.7504725897920554,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mn content",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Mn content",
+        "tissue": "shoot",
+        "treatment_mean": 50.11,
+        "control_mean": 46.75,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg\u207b\u00b9 d.m.",
+        "data_source": "Table 4",
+        "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+        "control_description": "No biostimulant",
+        "moderators": {
+          "year": "2012",
+          "factor_type": "year"
+        },
+        "confidence": "low",
+        "notes": "Marginal mean averaged across N doses, species, and cuts.",
+        "effect_pct": 7.187165775401068,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 30.73,
+      "control_mean": 26.77,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "0 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. Variance not reported; different letters indicate significant difference (p \u2264 0.05) between treatment and control. [single-model fallback: Kimi only]",
+      "effect_pct": 14.79267837131117,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 27.41,
+      "control_mean": 24.48,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "50 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 11.968954248366012,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 25.87,
+      "control_mean": 23.75,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "100 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 8.926315789473687,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 24.27,
+      "control_mean": 22.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "150 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 9.571106094808131,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 27.15,
+      "control_mean": 24.28,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Dactylis glomerata",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 11.820428336079067,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 27.0,
+      "control_mean": 24.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Festulolium braunii",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 11.111111111111107,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 30.56,
+      "control_mean": 27.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "1",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 10.245310245310245,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 23.92,
+      "control_mean": 21.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "2",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 11.775700934579454,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 26.73,
+      "control_mean": 23.75,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "3",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 12.547368421052632,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 29.2,
+      "control_mean": 26.44,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2010",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 10.43872919818456,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 21.96,
+      "control_mean": 19.76,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2011",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 11.133603238866392,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "treatment_mean": 30.04,
+      "control_mean": 26.67,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2012",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 12.635920509936247,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 7.92,
+      "control_mean": 7.03,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "0 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 12.660028449502128,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 7.19,
+      "control_mean": 6.53,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "50 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 10.107197549770293,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 6.68,
+      "control_mean": 6.04,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "100 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 10.596026490066219,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 6.32,
+      "control_mean": 5.95,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "150 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. Non-significant difference between treatment and control (same letters). [single-model fallback: Kimi only]",
+      "effect_pct": 6.218487394957985,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 7.04,
+      "control_mean": 6.41,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Dactylis glomerata",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 9.828393135725427,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 7.02,
+      "control_mean": 6.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Festulolium braunii",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 9.687499999999988,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 5.83,
+      "control_mean": 5.27,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "1",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 10.626185958254279,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 8.07,
+      "control_mean": 7.36,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "3",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 9.646739130434781,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 7.22,
+      "control_mean": 6.62,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2010",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 9.063444108761324,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 6.63,
+      "control_mean": 5.99,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2011",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 10.684474123539227,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "treatment_mean": 7.23,
+      "control_mean": 6.56,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 3",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2012",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 10.213414634146355,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 162.3,
+      "control_mean": 139.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "0 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 16.6786484543494,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 143.0,
+      "control_mean": 128.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "50 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 11.284046692607005,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 135.5,
+      "control_mean": 123.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "100 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 9.98376623376623,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 125.6,
+      "control_mean": 116.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "150 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 7.718696397941681,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 139.8,
+      "control_mean": 126.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Dactylis glomerata",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 10.51383399209487,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 143.5,
+      "control_mean": 127.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Festulolium braunii",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 12.725844461901023,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 137.3,
+      "control_mean": 122.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "1",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 12.448812448812463,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 140.5,
+      "control_mean": 127.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "2",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 10.542879622344616,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 147.1,
+      "control_mean": 131.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "3",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 11.948249619482487,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 144.4,
+      "control_mean": 129.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2010",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 11.50579150579151,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 137.6,
+      "control_mean": 123.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2011",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 11.869918699186988,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 143.0,
+      "control_mean": 128.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2012",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 11.631537861046063,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 46.37,
+      "control_mean": 42.78,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "0 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 8.391771856007471,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 48.61,
+      "control_mean": 45.77,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "50 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 6.204937732138947,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 50.99,
+      "control_mean": 48.07,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "100 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 6.074474724360311,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 55.03,
+      "control_mean": 50.35,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "nitrogen_dose": "150 kg ha\u207b\u00b9",
+        "factor_type": "N_dose"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across grass species, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 9.294935451837139,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 50.29,
+      "control_mean": 46.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Dactylis glomerata",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 7.457264957264961,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 50.21,
+      "control_mean": 46.69,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "species": "Festulolium braunii",
+        "factor_type": "species"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, cuts, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 7.539087599057622,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 48.93,
+      "control_mean": 45.66,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "1",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 7.1616294349540155,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 49.45,
+      "control_mean": 45.94,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "2",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 7.64040052242056,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 52.37,
+      "control_mean": 48.64,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "cut": "3",
+        "factor_type": "cut"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and years. [single-model fallback: Kimi only]",
+      "effect_pct": 7.668585526315782,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 49.34,
+      "control_mean": 45.87,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2010",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 7.564857205144988,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 51.3,
+      "control_mean": 47.61,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2011",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 7.7504725897920554,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "treatment_mean": 50.11,
+      "control_mean": 46.75,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "mg kg\u207b\u00b9 d.m.",
+      "data_source": "Table 4",
+      "treatment_description": "Kelpak SL 2 dm\u00b3 ha\u207b\u00b9",
+      "control_description": "No biostimulant",
+      "moderators": {
+        "year": "2012",
+        "factor_type": "year"
+      },
+      "confidence": "low",
+      "notes": "Marginal mean averaged across N doses, species, and cuts. [single-model fallback: Kimi only]",
+      "effect_pct": 7.187165775401068,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 1,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 48,
+    "final_count": 47
+  },
+  "verification_flags": [
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 30.73,
+        "control_mean": 26.77,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 14.79267837131117
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 27.41,
+        "control_mean": 24.48,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.968954248366012
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 25.87,
+        "control_mean": 23.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 8.926315789473687
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 24.27,
+        "control_mean": 22.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.571106094808131
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 27.15,
+        "control_mean": 24.28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.820428336079067
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 27.0,
+        "control_mean": 24.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.111111111111107
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 30.56,
+        "control_mean": 27.72,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.245310245310245
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 23.92,
+        "control_mean": 21.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.775700934579454
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 26.73,
+        "control_mean": 23.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.547368421052632
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 29.2,
+        "control_mean": 26.44,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.43872919818456
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 21.96,
+        "control_mean": 19.76,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.133603238866392
+      }
+    },
+    {
+      "element": "Zn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn content",
+        "treatment_mean": 30.04,
+        "control_mean": 26.67,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.635920509936247
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 7.92,
+        "control_mean": 7.03,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.660028449502128
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 7.19,
+        "control_mean": 6.53,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.107197549770293
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 6.68,
+        "control_mean": 6.04,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.596026490066219
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 6.32,
+        "control_mean": 5.95,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 6.218487394957985
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 7.04,
+        "control_mean": 6.41,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.828393135725427
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 7.02,
+        "control_mean": 6.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.687499999999988
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 5.83,
+        "control_mean": 5.27,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.626185958254279
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 8.07,
+        "control_mean": 7.36,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.646739130434781
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 7.22,
+        "control_mean": 6.62,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.063444108761324
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 6.63,
+        "control_mean": 5.99,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.684474123539227
+      }
+    },
+    {
+      "element": "Cu content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu content",
+        "treatment_mean": 7.23,
+        "control_mean": 6.56,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.213414634146355
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 162.3,
+        "control_mean": 139.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 16.6786484543494
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 143.0,
+        "control_mean": 128.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.284046692607005
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 135.5,
+        "control_mean": 123.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.98376623376623
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 125.6,
+        "control_mean": 116.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.718696397941681
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 139.8,
+        "control_mean": 126.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.51383399209487
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 143.5,
+        "control_mean": 127.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.725844461901023
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 137.3,
+        "control_mean": 122.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.448812448812463
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 140.5,
+        "control_mean": 127.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.542879622344616
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 147.1,
+        "control_mean": 131.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.948249619482487
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 144.4,
+        "control_mean": 129.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.50579150579151
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 137.6,
+        "control_mean": 123.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.869918699186988
+      }
+    },
+    {
+      "element": "Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe content",
+        "treatment_mean": 143.0,
+        "control_mean": 128.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.631537861046063
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 46.37,
+        "control_mean": 42.78,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 8.391771856007471
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 48.61,
+        "control_mean": 45.77,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 6.204937732138947
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 50.99,
+        "control_mean": 48.07,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 6.074474724360311
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 55.03,
+        "control_mean": 50.35,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.294935451837139
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 50.29,
+        "control_mean": 46.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.457264957264961
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 50.21,
+        "control_mean": 46.69,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.539087599057622
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 48.93,
+        "control_mean": 45.66,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.1616294349540155
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 49.45,
+        "control_mean": 45.94,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.64040052242056
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 52.37,
+        "control_mean": 48.64,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.668585526315782
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 49.34,
+        "control_mean": 45.87,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.564857205144988
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 51.3,
+        "control_mean": 47.61,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.7504725897920554
+      }
+    },
+    {
+      "element": "Mn content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn content",
+        "treatment_mean": 50.11,
+        "control_mean": 46.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.187165775401068
+      }
+    }
+  ]
+}

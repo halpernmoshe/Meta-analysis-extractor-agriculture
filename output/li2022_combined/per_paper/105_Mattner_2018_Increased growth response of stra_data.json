@@ -1,0 +1,298 @@
+{
+  "paper_id": "105_Mattner_2018_Increased growth response of strawberry",
+  "gt_rows": [
+    {
+      "pair": "441",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Seasol",
+      "PBsCategory": "SWE",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Austrilia",
+      "ctrl_mean": 0.867,
+      "treat_mean": 1.034,
+      "ctrl_sd": 0.14305500000000002,
+      "treat_sd": 0.17061
+    },
+    {
+      "pair": "442",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Seasol",
+      "PBsCategory": "SWE",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Austrilia",
+      "ctrl_mean": 1.445,
+      "treat_mean": 1.567,
+      "ctrl_sd": 0.23842500000000003,
+      "treat_sd": 0.258555
+    },
+    {
+      "pair": "443",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Seasol",
+      "PBsCategory": "SWE",
+      "method": "Soil",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Austrilia",
+      "ctrl_mean": 0.5028,
+      "treat_mean": 0.5476,
+      "ctrl_sd": 0.08296200000000001,
+      "treat_sd": 0.090354
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "Runner yield (runners m⁻¹)",
+      "tissue": "whole plant",
+      "unit": "runners m⁻¹",
+      "n": 16,
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Fortuna",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "6 applications, 60L total ha⁻¹"
+      },
+      "control_mean": 86.7,
+      "treatment_mean": 103.4,
+      "confidence": "high"
+    },
+    {
+      "element": "Rejects (%)",
+      "tissue": "whole plant",
+      "unit": "%",
+      "n": 16,
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Fortuna",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "6 applications, 60L total ha⁻¹"
+      },
+      "control_mean": 43.7,
+      "treatment_mean": 35.7,
+      "confidence": "high"
+    },
+    {
+      "element": "Runner yield (runners m⁻¹)",
+      "tissue": "whole plant",
+      "unit": "runners m⁻¹",
+      "n": 16,
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "8 applications, 80L total ha⁻¹"
+      },
+      "control_mean": 144.5,
+      "treatment_mean": 156.7,
+      "confidence": "high"
+    },
+    {
+      "element": "Rejects (%)",
+      "tissue": "whole plant",
+      "unit": "%",
+      "n": 16,
+      "treatment_description": "Seaweed extract (SE) - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated control - water applications",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2014/2015",
+        "site": "Toolangi",
+        "sector": "nursery",
+        "applications": "8 applications, 80L total ha⁻¹"
+      },
+      "control_mean": 11.4,
+      "treatment_mean": 10.1,
+      "confidence": "high"
+    },
+    {
+      "element": "Total fruit yield (g plant⁻¹)",
+      "tissue": "fruit",
+      "unit": "g plant⁻¹",
+      "n": 3,
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha⁻¹"
+      },
+      "control_mean": 502.8,
+      "treatment_mean": 547.6,
+      "confidence": "high"
+    },
+    {
+      "element": "Total revenue (AUS$ plant⁻¹)",
+      "tissue": "fruit",
+      "unit": "AUS$ plant⁻¹",
+      "n": 3,
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha⁻¹"
+      },
+      "control_mean": 3.79,
+      "treatment_mean": 4.1,
+      "confidence": "high"
+    },
+    {
+      "element": "Commercial-grade berries (%)",
+      "tissue": "fruit",
+      "unit": "%",
+      "n": 3,
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha⁻¹"
+      },
+      "control_mean": 41.88,
+      "treatment_mean": 40.45,
+      "confidence": "high"
+    },
+    {
+      "element": "Fruit size (g berry⁻¹)",
+      "tissue": "fruit",
+      "unit": "g berry⁻¹",
+      "n": 3,
+      "treatment_description": "Seaweed extract in fruit sector - monthly drench at 1:400 concentration, 10L ha⁻¹",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "Untreated",
+        "sector": "fruit",
+        "nursery_treatment": "Untreated",
+        "fruit_treatment": "SE",
+        "applications": "7 applications, 70L total ha⁻¹"
+      },
+      "control_mean": 10.3,
+      "treatment_mean": 10.07,
+      "confidence": "high"
+    },
+    {
+      "element": "Total fruit yield (g plant⁻¹)",
+      "tissue": "fruit",
+      "unit": "g plant⁻¹",
+      "n": 3,
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha⁻¹"
+      },
+      "control_mean": 502.8,
+      "treatment_mean": 544.1,
+      "confidence": "high"
+    },
+    {
+      "element": "Total revenue (AUS$ plant⁻¹)",
+      "tissue": "fruit",
+      "unit": "AUS$ plant⁻¹",
+      "n": 3,
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha⁻¹"
+      },
+      "control_mean": 3.79,
+      "treatment_mean": 4.09,
+      "confidence": "high"
+    },
+    {
+      "element": "Commercial-grade berries (%)",
+      "tissue": "fruit",
+      "unit": "%",
+      "n": 3,
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha⁻¹"
+      },
+      "control_mean": 41.88,
+      "treatment_mean": 40.36,
+      "confidence": "high"
+    },
+    {
+      "element": "Fruit size (g berry⁻¹)",
+      "tissue": "fruit",
+      "unit": "g berry⁻¹",
+      "n": 3,
+      "treatment_description": "Seaweed extract in both nursery and fruit sectors",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "cultivar": "Albion",
+        "year": "2015/2016",
+        "site": "Coldstream",
+        "nursery_pretreatment": "SE",
+        "sector": "fruit",
+        "nursery_treatment": "SE",
+        "fruit_treatment": "SE",
+        "applications": "7 applications fruit sector, 70L total ha⁻¹"
+      },
+      "control_mean": 10.3,
+      "treatment_mean": 10.59,
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,2458 @@
+{
+  "paper_id": "45_Chattha_2017",
+  "recon": {
+    "paper_id": "45_Chattha_2017",
+    "warnings": [
+      "This is a Zn biofortification study, not CO2 study - control is T1 (no zinc application)",
+      "Multiple Zn application methods are tested - each should be extracted separately vs T1 control",
+      "LSD values are provided - these should be used as variance measure",
+      "Interactive effects table (Table 3) shows cultivar \u00d7 treatment interactions",
+      "Grain yield and phytic acid are also reported but grain Zn concentration is the target outcome",
+      "Two years of data (2013-2014 and 2014-2015) are reported separately",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "nalytical,Tallahassee,FL,USA),while the least significant difference (LSD)test at 5%probability was used to",
+    "variance_confidence": "medium",
+    "control_definition": "T1 = control (no zinc application)",
+    "treatment_definition": "T2 = seed priming with 0.3% ZnSO4; T3 = soil application of 50 kg ZnSO4 per ha; T4 = foliar application of 0.5% ZnSO4; T5 = soil + foliar application combined",
+    "tables_with_target_data": [
+      "Table 2",
+      "Table 3"
+    ],
+    "potential_tc_confusion": null,
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "The experiment was laid out in a randomized complete block design in a factorial arrangement with three replications",
+    "factorial_structure": "[\"zinc application method (5 levels)\", \"cultivar (3 levels)\", \"year (2 levels)\"]",
+    "extraction_guidance": "Extract grain Zn concentration data from Tables 2 and 3. In Table 2, extract main effects comparing T2, T3, T4, T5 each against T1 control. Use LSD values for variance. Extract data for both years separately (2013-2014 and 2014-2015). Table 3 shows interactive effects - can extract cultivar-specific responses if needed. Target outcome is 'Grain zinc concentration (mg kg\u22121)' - ignore grain yield and phytic acid data.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Biofortification of Wheat Cultivars to Combat Zinc Deficiency\",\n        \"species\": \"Triticum aestivum (wheat)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This is a Zn biofortification study, not CO2 study - control is T1 (no zinc application)\",\n        \"Multiple Zn application methods are tested - each should be extracted separately vs T1 control\",\n        \"LSD values are provided - these should be used as variance measure\",\n        \"Interactive effects table (Table 3) shows cultivar \u00d7 treatment interactions\",\n        \"Grain yield and phytic acid are also reported but grain Zn concentration is the target outcome\",\n        \"Two years of data (2013-2014 and 2014-2015) are reported separately\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"LSD (p \u22640.05) values are provided at bottom of tables, and text states 'least significant difference (LSD) test at 5% probability was used to compare treatment means'\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"T1 = control (no zinc application)\",\n        \"treatment_definition\": \"T2 = seed priming with 0.3% ZnSO4; T3 = soil application of 50 kg ZnSO4 per ha; T4 = foliar application of 0.5% ZnSO4; T5 = soil + foliar application combined\",\n        \"identification_method\": \"Treatments clearly labeled as T1-T5 in tables, with T1 explicitly stated as 'No zinc' control\",\n        \"potential_confusion\": null\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"The experiment was laid out in a randomized complete block design in a factorial arrangement with three replications\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 3 replications (blocks) per treatment combination\"\n    },\n    \"data_locations\": {\n        \"tables_with_target_data\": [\"Table 2\", \"Table 3\"],\n        \"tab",
+    "tables_without_target_data": [
+      "Table 1A",
+      "Table 1B"
+    ],
+    "table_descriptions": {
+      "Table 1A": "Climatic conditions for 2013-2014 growing season",
+      "Table 1B": "Climatic conditions for 2014-2015 growing season",
+      "Table 2": "Main effects of zinc application methods and cultivars on grain yield, grain zinc concentration, and grain phytic acid",
+      "Table 3": "Interactive effects of zinc application methods and wheat cultivars on the same parameters"
+    },
+    "figures_with_data": [
+      "Figure 1"
+    ],
+    "outcome_variables_detected": {
+      "Table 2": [
+        "Grain yield (t ha\u22121)",
+        "Grain zinc concentration (mg kg\u22121)",
+        "Grain phytic acid concentration (mg g\u22121)"
+      ],
+      "Table 3": [
+        "Grain yield (t ha\u22121)",
+        "Grain zinc concentration (mg kg\u22121)",
+        "Grain phytic acid concentration (mg kg\u22121)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 32,
+  "kimi_obs": 0,
+  "gemini_obs": 56,
+  "matched_obs": 32,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 32",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 38.4,
+      "control_mean": 33.1,
+      "treatment_variance": 2.06,
+      "control_variance": 2.06,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2013-2014",
+        "cultivar": "Average across cultivars",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 16.01208459214501,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 44.4,
+      "control_mean": 33.1,
+      "treatment_variance": 2.06,
+      "control_variance": 2.06,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2013-2014",
+        "cultivar": "Average across cultivars",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 34.13897280966766,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 59.6,
+      "control_mean": 33.1,
+      "treatment_variance": 2.06,
+      "control_variance": 2.06,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2013-2014",
+        "cultivar": "Average across cultivars",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 80.06042296072508,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 62.3,
+      "control_mean": 33.1,
+      "treatment_variance": 2.06,
+      "control_variance": 2.06,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2013-2014",
+        "cultivar": "Average across cultivars",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 88.21752265861026,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 40.5,
+      "control_mean": 33.7,
+      "treatment_variance": 2.27,
+      "control_variance": 2.27,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2014-2015",
+        "cultivar": "Average across cultivars",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 20.178041543026694,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 47.6,
+      "control_mean": 33.7,
+      "treatment_variance": 2.27,
+      "control_variance": 2.27,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2014-2015",
+        "cultivar": "Average across cultivars",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 41.24629080118694,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 60.7,
+      "control_mean": 33.7,
+      "treatment_variance": 2.27,
+      "control_variance": 2.27,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2014-2015",
+        "cultivar": "Average across cultivars",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 80.11869436201779,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 63.1,
+      "control_mean": 33.7,
+      "treatment_variance": 2.27,
+      "control_variance": 2.27,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "year": "2014-2015",
+        "cultivar": "Average across cultivars",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 87.24035608308604,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 34.3,
+      "control_mean": 30.0,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2013-2014",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 14.333333333333323,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 38.8,
+      "control_mean": 30.0,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2013-2014",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 29.33333333333332,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 51.8,
+      "control_mean": 30.0,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2013-2014",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 72.66666666666666,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 53.9,
+      "control_mean": 30.0,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2013-2014",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 79.66666666666666,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 42.8,
+      "control_mean": 36.9,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2013-2014",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 15.989159891598911,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 52.2,
+      "control_mean": 36.9,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2013-2014",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 41.46341463414635,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 68.4,
+      "control_mean": 36.9,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2013-2014",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 85.36585365853661,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 71.8,
+      "control_mean": 36.9,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2013-2014",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 94.579945799458,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 38.2,
+      "control_mean": 32.5,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2013-2014",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 17.538461538461547,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 42.3,
+      "control_mean": 32.5,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2013-2014",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 30.153846153846146,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 58.6,
+      "control_mean": 32.5,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2013-2014",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 80.3076923076923,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 61.2,
+      "control_mean": 32.5,
+      "treatment_variance": 3.57,
+      "control_variance": 3.57,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2013-2014",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 88.30769230769232,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 35.3,
+      "control_mean": 31.3,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2014-2015",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 12.77955271565494,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 41.7,
+      "control_mean": 31.3,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2014-2015",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 33.22683706070288,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 52.5,
+      "control_mean": 31.3,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2014-2015",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 67.73162939297124,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 55.0,
+      "control_mean": 31.3,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Faisalabad-2008",
+        "year": "2014-2015",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 75.71884984025559,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 46.2,
+      "control_mean": 36.0,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2014-2015",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 28.333333333333343,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 56.2,
+      "control_mean": 36.0,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2014-2015",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 56.11111111111112,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 69.1,
+      "control_mean": 36.0,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2014-2015",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 91.94444444444443,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 70.6,
+      "control_mean": 36.0,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Punjab-2011",
+        "year": "2014-2015",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 96.11111111111109,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 39.9,
+      "control_mean": 33.9,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T2 - seed priming with 0.3% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2014-2015",
+        "application_method": "seed priming"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 17.699115044247787,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 45.0,
+      "control_mean": 33.9,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T3 - soil application of 50 kg ZnSO4 per ha",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2014-2015",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 32.74336283185841,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 60.3,
+      "control_mean": 33.9,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T4 - foliar application of 0.5% ZnSO4",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2014-2015",
+        "application_method": "foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 77.87610619469027,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 63.7,
+      "control_mean": 33.9,
+      "treatment_variance": 3.93,
+      "control_variance": 3.93,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "T5 - soil + foliar application combined",
+      "control_description": "T1 - control (no zinc application)",
+      "moderators": {
+        "cultivar": "Millet-2011",
+        "year": "2014-2015",
+        "application_method": "soil+foliar"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 87.90560471976403,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 32,
+    "final_count": 32
+  },
+  "verification_flags": [
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 38.4,
+        "control_mean": 33.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.364583333333334,
+            "note": "CV = 5.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 16.01208459214501
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 44.4,
+        "control_mean": 33.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +34.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.63963963963964,
+            "note": "CV = 4.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": 34.13897280966766
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 59.6,
+        "control_mean": 33.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +80.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.4563758389261747,
+            "note": "CV = 3.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.7%"
+          }
+        },
+        "effect_pct": 80.06042296072508
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 62.3,
+        "control_mean": 33.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +88.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.3065810593900484,
+            "note": "CV = 3.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.5%"
+          }
+        },
+        "effect_pct": 88.21752265861026
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 40.5,
+        "control_mean": 33.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.604938271604938,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.1%"
+          }
+        },
+        "effect_pct": 20.178041543026694
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 47.6,
+        "control_mean": 33.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +41.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.76890756302521,
+            "note": "CV = 4.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.6%"
+          }
+        },
+        "effect_pct": 41.24629080118694
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 60.7,
+        "control_mean": 33.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +80.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.739703459637562,
+            "note": "CV = 3.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.3%"
+          }
+        },
+        "effect_pct": 80.11869436201779
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 63.1,
+        "control_mean": 33.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +87.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.597464342313787,
+            "note": "CV = 3.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.1%"
+          }
+        },
+        "effect_pct": 87.24035608308604
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 34.3,
+        "control_mean": 30.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.408163265306122,
+            "note": "CV = 10.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.1%"
+          }
+        },
+        "effect_pct": 14.333333333333323
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 38.8,
+        "control_mean": 30.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +29.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.201030927835053,
+            "note": "CV = 9.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.4%"
+          }
+        },
+        "effect_pct": 29.33333333333332
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 51.8,
+        "control_mean": 30.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +72.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.891891891891892,
+            "note": "CV = 6.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.7%"
+          }
+        },
+        "effect_pct": 72.66666666666666
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 53.9,
+        "control_mean": 30.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +79.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.623376623376623,
+            "note": "CV = 6.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 79.66666666666666
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 42.8,
+        "control_mean": 36.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.341121495327103,
+            "note": "CV = 8.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.0%"
+          }
+        },
+        "effect_pct": 15.989159891598911
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 52.2,
+        "control_mean": 36.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +41.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.839080459770114,
+            "note": "CV = 6.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.0%"
+          }
+        },
+        "effect_pct": 41.46341463414635
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 68.4,
+        "control_mean": 36.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +85.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.219298245614034,
+            "note": "CV = 5.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.8%"
+          }
+        },
+        "effect_pct": 85.36585365853661
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 71.8,
+        "control_mean": 36.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +94.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.972144846796658,
+            "note": "CV = 5.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.6%"
+          }
+        },
+        "effect_pct": 94.579945799458
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 38.2,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.345549738219894,
+            "note": "CV = 9.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.1%"
+          }
+        },
+        "effect_pct": 17.538461538461547
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 42.3,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +30.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.439716312056737,
+            "note": "CV = 8.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.5%"
+          }
+        },
+        "effect_pct": 30.153846153846146
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 58.6,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +80.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.0921501706484635,
+            "note": "CV = 6.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.8%"
+          }
+        },
+        "effect_pct": 80.3076923076923
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 61.2,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +88.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.833333333333333,
+            "note": "CV = 5.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": 88.30769230769232
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 35.3,
+        "control_mean": 31.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.13314447592068,
+            "note": "CV = 11.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.8%"
+          }
+        },
+        "effect_pct": 12.77955271565494
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 41.7,
+        "control_mean": 31.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +33.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.424460431654676,
+            "note": "CV = 9.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.8%"
+          }
+        },
+        "effect_pct": 33.22683706070288
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 52.5,
+        "control_mean": 31.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +67.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.485714285714286,
+            "note": "CV = 7.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.4%"
+          }
+        },
+        "effect_pct": 67.73162939297124
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 55.0,
+        "control_mean": 31.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +75.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.1454545454545455,
+            "note": "CV = 7.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.1%"
+          }
+        },
+        "effect_pct": 75.71884984025559
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 46.2,
+        "control_mean": 36.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +28.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.506493506493506,
+            "note": "CV = 8.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.6%"
+          }
+        },
+        "effect_pct": 28.333333333333343
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 56.2,
+        "control_mean": 36.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +56.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.992882562277581,
+            "note": "CV = 7.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 56.11111111111112
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 69.1,
+        "control_mean": 36.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +91.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.687409551374819,
+            "note": "CV = 5.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.5%"
+          }
+        },
+        "effect_pct": 91.94444444444443
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 70.6,
+        "control_mean": 36.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +96.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.56657223796034,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": 96.11111111111109
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 39.9,
+        "control_mean": 33.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.849624060150376,
+            "note": "CV = 9.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.7%"
+          }
+        },
+        "effect_pct": 17.699115044247787
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 45.0,
+        "control_mean": 33.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +32.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.733333333333333,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.0%"
+          }
+        },
+        "effect_pct": 32.74336283185841
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 60.3,
+        "control_mean": 33.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +77.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.517412935323384,
+            "note": "CV = 6.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.3%"
+          }
+        },
+        "effect_pct": 77.87610619469027
+      }
+    },
+    {
+      "element": "Grain zinc concentration (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain zinc concentration (mg kg\u22121)",
+        "treatment_mean": 63.7,
+        "control_mean": 33.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +87.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.169544740973312,
+            "note": "CV = 6.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.1%"
+          }
+        },
+        "effect_pct": 87.90560471976403
+      }
+    }
+  ]
+}

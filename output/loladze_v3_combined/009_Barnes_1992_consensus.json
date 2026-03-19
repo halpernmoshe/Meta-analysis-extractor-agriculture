@@ -1,0 +1,2258 @@
+{
+  "paper_id": "009_Barnes_1992",
+  "recon": {
+    "paper_id": "009_Barnes_1992",
+    "warnings": [
+      "FACTORIAL DESIGN: 2x2 factorial with CO2 (ambient/elevated) x O3 (20/80 nmol mol-1). Must extract CO2 effects separately at each O3 level.",
+      "ONLY 2 CHAMBERS PER TREATMENT (duplicate chambers, not replicate pots). True n for statistical purposes is very small (n=2 chambers per CO2 level).",
+      "Ambient CO2 is slightly elevated above background (~379-394 ppm) due to researcher presence - noted explicitly in paper.",
+      "O3 confound: The paper has 4 treatment groups (350CO/20O3, 350CO/80O3, 750CO/20O3, 750CO/80O3). For clean CO2 effect, use 20 nmol O3 groups as primary comparison.",
+      "Nutrient data in Tables 4 and 5 are expressed as % dry weight (concentration), NOT total content. This is appropriate for dilution effect meta-analysis.",
+      "No explicit SE or SD reported for nutrient data in Tables 4 and 5 - only significance letters and ANOVA significance levels (*, **, ***, ****). No numeric variance available.",
+      "LSD used for gas exchange figures (Figures 1-3), but nutrient tables show only significance letters.",
+      "The paper uses letter-based significance notation (a, b, c) for nutrient tables - variance values are not extractable numerically.",
+      "Root data includes hypocotyl combined with root (root + hypocotyl), not root alone.",
+      "Some letter assignments in Table 5 appear to have typographic overlap (e.g., '0.34a 0.26c' in one cell), suggesting OCR/scanning artifacts.",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated",
+      "Variance type override: LLM said 'LSD', regex scan found 'SD' (high): e\\u003c/tr\\u003e\\u003c/table\\u003e\\n\\n\\nValues are presented \u00b1SD over the experimental period.28\\n\\n\\nAN"
+    ],
+    "variance_type": "SD",
+    "variance_source": "e\\u003c/tr\\u003e\\u003c/table\\u003e\\n\\n\\nValues are presented \u00b1SD over the experimental period.28\\n\\n\\nAN",
+    "variance_confidence": "high",
+    "control_definition": "Ambient CO2 at ~385 ppm (daily means 379-394 \u00b5mol mol-1) with non-polluted O3 at 20 nmol mol-1 (350CO/20O3 treatment)",
+    "treatment_definition": "Elevated CO2 at ~765 ppm (daily means 751-773 \u00b5mol mol-1) with non-polluted O3 at 20 nmol mol-1 (750CO/20O3 treatment)",
+    "tables_with_target_data": [
+      "Table 4",
+      "Table 5"
+    ],
+    "potential_tc_confusion": "The paper explicitly states ambient CO2 was slightly above background (379-394 vs typical 354 ppm) due to human presence. The 4-group factorial design means there are two possible CO2 comparisons: at low O3 and at high O3. Do not confuse O3 treatment rows with CO2 treatment rows.",
+    "experimental_design": "factorial",
+    "sample_size_found": 2,
+    "sample_size_source": "Duplicate chambers were maintained at ambient (chambers I, IV) and elevated CO2 (chambers II, III)... 24 plants were placed in each chamber.",
+    "factorial_structure": "[\"CO2 (2 levels: ~385, ~765 ppm)\", \"O3 (2 levels: 20, 80 nmol mol-1)\"]",
+    "extraction_guidance": "1. PRIMARY DATA: Tables 4 (shoot) and 5 (root+hypocotyl) contain mineral concentration data as % dry weight. Extract mean values for each of the 4 treatment combinations. 2. NO NUMERIC VARIANCE available in nutrient tables - only significance letters. Cannot extract SE/SD/CI for these tables. 3. For clean CO2 effect (meta-analysis focus): compare row '350/20' (control) vs row '750/20' (elevated CO2) within each table. 4. For CO2 effect under O3 stress: compare '350/80' vs '750/80'. 5. N per treatment group = 2 chambers (true replication), with 4 plants pooled per chamber for analysis. 6. Gas exchange data (Figs 1-3) show LSD bars but no mineral concentrations. 7. Be aware of OCR artifacts in Table 5 where some cells appear to have two values merged. 8. The C/N ratio is a derived variable, not a direct mineral measurement. 9. Tissue K data show no significant CO2 effect in shoots (Table 4, CO2 row = n.s. for K), supporting that K uptake matched growth. 10. Report shoot and root data as separate observations in meta-analysis.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"The influence of CO2 and O3, singly and in combination, on gas exchange, growth and nutrient status of radish (Raphanus sativus)\",\n        \"species\": \"Raphanus sativus L. cv. Cherry Belle (radish)\",\n        \"experimental_system\": \"growth chamber (phytotron - controlled climate chambers)\",\n        \"co2_levels\": {\"control\": \"~385 ppm (daily mean ~379-394)\", \"elevated\": \"~765 ppm (daily mean ~751-773)\"}\n    },\n    \"warnings\": [\n        \"FACTORIAL DESIGN: 2x2 factorial with CO2 (ambient/elevated) x O3 (20/80 nmol mol-1). Must extract CO2 effects separately at each O3 level.\",\n        \"ONLY 2 CHAMBERS PER TREATMENT (duplicate chambers, not replicate pots). True n for statistical purposes is very small (n=2 chambers per CO2 level).\",\n        \"Ambient CO2 is slightly elevated above background (~379-394 ppm) due to researcher presence - noted explicitly in paper.\",\n        \"O3 confound: The paper has 4 treatment groups (350CO/20O3, 350CO/80O3, 750CO/20O3, 750CO/80O3). For clean CO2 effect, use 20 nmol O3 groups as primary comparison.\",\n        \"Nutrient data in Tables 4 and 5 are expressed as % dry weight (concentration), NOT total content. This is appropriate for dilution effect meta-analysis.\",\n        \"No explicit SE or SD reported for nutrient data in Tables 4 and 5 - only significance letters and ANOVA significance levels (*, **, ***, ****). No numeric variance available.\",\n        \"LSD used for gas exchange figures (Figures 1-3), but nutrient tables show only significance letters.\",\n        \"The paper uses letter-based significance notation (a, b, c) for nutrient tables - variance values are not extractable numerically.\",\n        \"Root data includes hypocotyl combined with root (root + hypocotyl), not root alone.\",\n        \"Some letter assignments in Table 5 appear to have typographic overlap (e.g., '0.34a 0.26c' in one cell), suggesting OCR/scanning artifacts.\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\"",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3"
+    ],
+    "table_descriptions": {
+      "Table 1": "Summary of climatic data (temperature, PPFD, photoperiod by exposure day) - no mineral data",
+      "Table 2": "Summary of ozone and CO2 concentrations in each chamber over the experimental period - treatment conditions only",
+      "Table 3": "Growth and dry matter allocation data: Gs, GR, G (growth rates), R:S ratio, leaf area, SLA, LAR - no mineral data",
+      "Table 4": "Macronutrient composition of SHOOTS expressed as % shoot dry weight: N, S, P, K, Mg, Ca, C/N ratio",
+      "Table 5": "Macronutrient composition of ROOTS (+hypocotyl) expressed as % root dry weight: N, S, P, K, Mg, Ca, C/N ratio"
+    },
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 2",
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Table 4": [
+        "N (% shoot DW)",
+        "S (% shoot DW)",
+        "P (% shoot DW)",
+        "K (% shoot DW)",
+        "Mg (% shoot DW)",
+        "Ca (% shoot DW)",
+        "C/N ratio (shoot)"
+      ],
+      "Table 5": [
+        "N (% root+hypocotyl DW)",
+        "S (% root+hypocotyl DW)",
+        "P (% root+hypocotyl DW)",
+        "K (% root+hypocotyl DW)",
+        "Mg (% root+hypocotyl DW)",
+        "Ca (% root+hypocotyl DW)",
+        "C/N ratio (root+hypocotyl)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: Factorial (2x2) with repeated measures",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'",
+      "MULTI-CONTROL - Paper has multiple control conditions",
+      "Identify which control is 'ambient CO2' vs other controls",
+      "May need to extract multiple T/C comparisons"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 35,
+  "kimi_obs": 35,
+  "gemini_obs": 0,
+  "matched_obs": 34,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 34/35 matched",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "C/N ratio (root+hypocotyl)",
+      "tissue": "root",
+      "claude": {
+        "element": "C/N ratio (root+hypocotyl)",
+        "tissue": "root",
+        "treatment_mean": 32.69,
+        "control_mean": 26.85,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 2,
+        "unit": "ratio",
+        "data_source": "Table 5",
+        "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+        "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+        "moderators": {
+          "O3_level": "20 nmol mol-1",
+          "cultivar": "Cherry Belle"
+        },
+        "confidence": "medium",
+        "notes": "C/N ratio in root+hypocotyl: CO2 effect * (P<0.05) per Table 5. Letters: 350/20 = 'a', 750/20 = 'b'. Values: 26.85 and 32.69. OCR artifact: cell appears to show '24.79a 32.69b' for row 350/80, suggesting the 'b' letter value 32.69 belongs to 750/20 row. Assignment: 350/20 = 26.85a, 350/80 = 24.79a, 750/20 = 32.69b, 750/80 = 26.72a. This assignment is supported by text stating ~22% increase in C:N in root for elevated CO2.",
+        "effect_pct": 21.750465549348217,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "C/N ratio (root+hypocotyl)",
+      "tissue": "root+hypocotyl",
+      "kimi": {
+        "element": "C/N ratio (root+hypocotyl)",
+        "tissue": "root+hypocotyl",
+        "treatment_mean": 26.72,
+        "control_mean": 24.79,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 2,
+        "unit": "ratio",
+        "data_source": "Table 5",
+        "treatment_description": "Elevated CO2 (~765 \u00b5mol mol-1) with O3 at 80 nmol mol-1",
+        "control_description": "Ambient CO2 (~385 \u00b5mol mol-1) with O3 at 80 nmol mol-1",
+        "moderators": {
+          "o3_level": "80 nmol mol-1",
+          "cultivar": "Cherry Belle"
+        },
+        "confidence": "medium",
+        "notes": "Control value may have OCR artifact (24.79a 32.69b in original), using 24.79; C/N for 750CO/20O3 combination missing from table",
+        "effect_pct": 7.785397337636142,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "N (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 3.61,
+      "control_mean": 4.27,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.45667447306791,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 0.99,
+      "control_mean": 1.35,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -26.66666666666667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 0.259,
+      "control_mean": 0.329,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -21.27659574468085,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 3.24,
+      "control_mean": 3.19,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.5673981191222657,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 0.805,
+      "control_mean": 0.92,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.499999999999998,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 2.22,
+      "control_mean": 2.16,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.77777777777778,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "C/N ratio (shoot)",
+      "tissue": "shoot",
+      "treatment_mean": 11.28,
+      "control_mean": 9.41,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "ratio",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 19.87247608926673,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 4.12,
+      "control_mean": 4.13,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.24213075060532172,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 1.16,
+      "control_mean": 1.35,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.074074074074087,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 0.355,
+      "control_mean": 0.375,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.3333333333333375,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 3.56,
+      "control_mean": 3.84,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.291666666666662,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 0.819,
+      "control_mean": 0.871,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.970149253731349,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (% shoot DW)",
+      "tissue": "shoot",
+      "treatment_mean": 2.02,
+      "control_mean": 2.13,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.164319248826286,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "C/N ratio (shoot)",
+      "tissue": "shoot",
+      "treatment_mean": 9.9,
+      "control_mean": 10.09,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "ratio",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -1.8830525272547027,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 1.27,
+      "control_mean": 1.46,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.013698630136982,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.31,
+      "control_mean": 0.46,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -32.60869565217392,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.28,
+      "control_mean": 0.33,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.151515151515147,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 2.61,
+      "control_mean": 2.82,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.446808510638298,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.17,
+      "control_mean": 0.22,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -22.72727272727272,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.26,
+      "control_mean": 0.31,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + non-polluted O3 (20 nmol mol-1)",
+      "moderators": {
+        "o3_level": "20 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -16.129032258064512,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 1.54,
+      "control_mean": 1.74,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.494252873563216,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.37,
+      "control_mean": 0.42,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.904761904761903,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.32,
+      "control_mean": 0.37,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.513513513513512,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 3.28,
+      "control_mean": 3.56,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.8651685393258495,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.18,
+      "control_mean": 0.23,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -21.739130434782613,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (% root+hypocotyl DW)",
+      "tissue": "root",
+      "treatment_mean": 0.27,
+      "control_mean": 0.34,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -20.58823529411765,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "C/N ratio (root+hypocotyl)",
+      "tissue": "root",
+      "treatment_mean": 26.72,
+      "control_mean": 24.79,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "ratio",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (~765 ppm) + polluted O3 (80 nmol mol-1)",
+      "control_description": "Ambient CO2 (~385 ppm) + polluted O3 (80 nmol mol-1)",
+      "moderators": {
+        "o3_level": "80 nmol mol-1",
+        "cultivar": "Cherry Belle",
+        "O3_level": "80 nmol mol-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.785397337636142,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "treatment_mean": 1.27,
+      "control_mean": 1.46,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (750 \u00b5mol mol\u207b\u00b9)",
+      "control_description": "Ambient CO2 (350 \u00b5mol mol\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.013698630136982,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "treatment_mean": 0.37,
+      "control_mean": 0.46,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (750 \u00b5mol mol\u207b\u00b9)",
+      "control_description": "Ambient CO2 (350 \u00b5mol mol\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -19.56521739130435,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "treatment_mean": 0.32,
+      "control_mean": 0.33,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (750 \u00b5mol mol\u207b\u00b9)",
+      "control_description": "Ambient CO2 (350 \u00b5mol mol\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.030303030303033,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "treatment_mean": 2.61,
+      "control_mean": 2.82,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (750 \u00b5mol mol\u207b\u00b9)",
+      "control_description": "Ambient CO2 (350 \u00b5mol mol\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.446808510638298,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "treatment_mean": 0.18,
+      "control_mean": 0.22,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (750 \u00b5mol mol\u207b\u00b9)",
+      "control_description": "Ambient CO2 (350 \u00b5mol mol\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -18.181818181818183,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "treatment_mean": 0.26,
+      "control_mean": 0.31,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (750 \u00b5mol mol\u207b\u00b9)",
+      "control_description": "Ambient CO2 (350 \u00b5mol mol\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -16.129032258064512,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "C/N ratio (root+hypocotyl)",
+      "tissue": "root + hypocotyl",
+      "treatment_mean": 32.69,
+      "control_mean": 26.85,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 2,
+      "unit": "ratio",
+      "data_source": "Table 5",
+      "treatment_description": "Elevated CO2 (750 \u00b5mol mol\u207b\u00b9)",
+      "control_description": "Ambient CO2 (350 \u00b5mol mol\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Cherry Belle",
+        "O3_level": "20 nmol mol\u207b\u00b9"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 21.750465549348217,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 34,
+    "final_count": 34
+  },
+  "verification_flags": [
+    {
+      "element": "N (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (% shoot DW)",
+        "treatment_mean": 3.61,
+        "control_mean": 4.27,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -15.45667447306791
+      }
+    },
+    {
+      "element": "S (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S (% shoot DW)",
+        "treatment_mean": 0.99,
+        "control_mean": 1.35,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -26.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -26.66666666666667
+      }
+    },
+    {
+      "element": "P (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (% shoot DW)",
+        "treatment_mean": 0.259,
+        "control_mean": 0.329,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -21.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -21.27659574468085
+      }
+    },
+    {
+      "element": "K (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "K (% shoot DW)",
+        "treatment_mean": 3.24,
+        "control_mean": 3.19,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +1.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 1.5673981191222657
+      }
+    },
+    {
+      "element": "Mg (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (% shoot DW)",
+        "treatment_mean": 0.805,
+        "control_mean": 0.92,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -12.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -12.499999999999998
+      }
+    },
+    {
+      "element": "Ca (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (% shoot DW)",
+        "treatment_mean": 2.22,
+        "control_mean": 2.16,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +2.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 2.77777777777778
+      }
+    },
+    {
+      "element": "C/N ratio (shoot)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "C/N ratio (shoot)",
+        "treatment_mean": 11.28,
+        "control_mean": 9.41,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +19.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -16.57801418439716,
+            "note": "Effect +19.9% violates expected direction; unswapped would be -16.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 19.87247608926673,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +19.9%, corrected would be -16.6%"
+      }
+    },
+    {
+      "element": "N (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (% shoot DW)",
+        "treatment_mean": 4.12,
+        "control_mean": 4.13,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -0.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -0.24213075060532172
+      }
+    },
+    {
+      "element": "S (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S (% shoot DW)",
+        "treatment_mean": 1.16,
+        "control_mean": 1.35,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -14.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -14.074074074074087
+      }
+    },
+    {
+      "element": "P (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (% shoot DW)",
+        "treatment_mean": 0.355,
+        "control_mean": 0.375,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -5.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -5.3333333333333375
+      }
+    },
+    {
+      "element": "K (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (% shoot DW)",
+        "treatment_mean": 3.56,
+        "control_mean": 3.84,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -7.291666666666662
+      }
+    },
+    {
+      "element": "Mg (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (% shoot DW)",
+        "treatment_mean": 0.819,
+        "control_mean": 0.871,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -5.970149253731349
+      }
+    },
+    {
+      "element": "Ca (% shoot DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (% shoot DW)",
+        "treatment_mean": 2.02,
+        "control_mean": 2.13,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -5.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -5.164319248826286
+      }
+    },
+    {
+      "element": "C/N ratio (shoot)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "C/N ratio (shoot)",
+        "treatment_mean": 9.9,
+        "control_mean": 10.09,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -1.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -1.8830525272547027
+      }
+    },
+    {
+      "element": "N (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (% root+hypocotyl DW)",
+        "treatment_mean": 1.27,
+        "control_mean": 1.46,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -13.013698630136982
+      }
+    },
+    {
+      "element": "S (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S (% root+hypocotyl DW)",
+        "treatment_mean": 0.31,
+        "control_mean": 0.46,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -32.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -32.60869565217392
+      }
+    },
+    {
+      "element": "P (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (% root+hypocotyl DW)",
+        "treatment_mean": 0.28,
+        "control_mean": 0.33,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -15.151515151515147
+      }
+    },
+    {
+      "element": "K (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (% root+hypocotyl DW)",
+        "treatment_mean": 2.61,
+        "control_mean": 2.82,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -7.446808510638298
+      }
+    },
+    {
+      "element": "Mg (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (% root+hypocotyl DW)",
+        "treatment_mean": 0.17,
+        "control_mean": 0.22,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -22.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -22.72727272727272
+      }
+    },
+    {
+      "element": "Ca (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (% root+hypocotyl DW)",
+        "treatment_mean": 0.26,
+        "control_mean": 0.31,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -16.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -16.129032258064512
+      }
+    },
+    {
+      "element": "N (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (% root+hypocotyl DW)",
+        "treatment_mean": 1.54,
+        "control_mean": 1.74,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -11.494252873563216
+      }
+    },
+    {
+      "element": "S (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S (% root+hypocotyl DW)",
+        "treatment_mean": 0.37,
+        "control_mean": 0.42,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -11.904761904761903
+      }
+    },
+    {
+      "element": "P (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (% root+hypocotyl DW)",
+        "treatment_mean": 0.32,
+        "control_mean": 0.37,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -13.513513513513512
+      }
+    },
+    {
+      "element": "K (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (% root+hypocotyl DW)",
+        "treatment_mean": 3.28,
+        "control_mean": 3.56,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -7.8651685393258495
+      }
+    },
+    {
+      "element": "Mg (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (% root+hypocotyl DW)",
+        "treatment_mean": 0.18,
+        "control_mean": 0.23,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -21.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -21.739130434782613
+      }
+    },
+    {
+      "element": "Ca (% root+hypocotyl DW)",
+      "tissue": "root",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (% root+hypocotyl DW)",
+        "treatment_mean": 0.27,
+        "control_mean": 0.34,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -20.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -20.58823529411765
+      }
+    },
+    {
+      "element": "C/N ratio (root+hypocotyl)",
+      "tissue": "root",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "C/N ratio (root+hypocotyl)",
+        "treatment_mean": 26.72,
+        "control_mean": 24.79,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +7.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -7.2230538922155665,
+            "note": "Effect +7.8% violates expected direction; unswapped would be -7.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 7.785397337636142,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +7.8%, corrected would be -7.2%"
+      }
+    },
+    {
+      "element": "N (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (% root+hypocotyl DW)",
+        "treatment_mean": 1.27,
+        "control_mean": 1.46,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -13.013698630136982
+      }
+    },
+    {
+      "element": "S (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S (% root+hypocotyl DW)",
+        "treatment_mean": 0.37,
+        "control_mean": 0.46,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -19.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -19.56521739130435
+      }
+    },
+    {
+      "element": "P (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (% root+hypocotyl DW)",
+        "treatment_mean": 0.32,
+        "control_mean": 0.33,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -3.030303030303033
+      }
+    },
+    {
+      "element": "K (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (% root+hypocotyl DW)",
+        "treatment_mean": 2.61,
+        "control_mean": 2.82,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -7.446808510638298
+      }
+    },
+    {
+      "element": "Mg (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (% root+hypocotyl DW)",
+        "treatment_mean": 0.18,
+        "control_mean": 0.22,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -18.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -18.181818181818183
+      }
+    },
+    {
+      "element": "Ca (% root+hypocotyl DW)",
+      "tissue": "root + hypocotyl",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (% root+hypocotyl DW)",
+        "treatment_mean": 0.26,
+        "control_mean": 0.31,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -16.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -16.129032258064512
+      }
+    },
+    {
+      "element": "C/N ratio (root+hypocotyl)",
+      "tissue": "root + hypocotyl",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "C/N ratio (root+hypocotyl)",
+        "treatment_mean": 32.69,
+        "control_mean": 26.85,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +21.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -17.86479045579687,
+            "note": "Effect +21.8% violates expected direction; unswapped would be -17.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 21.750465549348217,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +21.8%, corrected would be -17.9%"
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

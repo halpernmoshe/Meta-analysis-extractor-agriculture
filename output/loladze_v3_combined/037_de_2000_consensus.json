@@ -1,0 +1,776 @@
+{
+  "paper_id": "037_de_2000",
+  "recon": {
+    "paper_id": "037_de_2000",
+    "warnings": [
+      "Paper uses 400 ppm as 'ambient' (control) and 800 ppm as 'elevated' - clearly defined, no T/C confusion risk",
+      "Factorial design: 2 CO2 levels x 2 Fe levels (+Fe and -Fe) in both hydroponic and soil experiments - extract each Fe level separately",
+      "Fe concentration data for soil-grown plants is presented in Figure 3b (not a table) - requires figure reading",
+      "Fe content (total, in \u03bcmol shoot-1) is in Figure 3a - this is NOT a concentration, distinguish carefully from Fe concentration",
+      "The only mineral element reported is Fe; no N, P, K, Zn, Mn, Cu, or other minerals are quantified",
+      "Hydroponic experiment: Fe concentration in shoot tissue is NOT directly reported for hydroponic plants - only soil-grown plants have Fe data",
+      "Table 1 contains ANOVA F-values only (not raw means/SE data) - raw data for Fe is in Figure 3",
+      "Table 2 contains enzyme activities (not plant mineral concentrations) - not relevant to meta-analysis",
+      "Elevated CO2 increased Fe CONTENT (+47-52%) but Fe CONCENTRATION was not significantly different between CO2 treatments in soil culture - critical distinction for dilution effect hypothesis",
+      "Internal Fe use efficiency values are reported as calculated metrics, not direct tissue concentrations",
+      "Phytosiderophore data is a root exudate/tissue metric, not a plant mineral concentration for meta-analysis purposes",
+      "No chlorophyll content in units usable for meta-analysis; SPAD values are relative units",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "Bars represent means and standard errors (repeated in Figure 2, 3, 4, 5 captions)",
+    "variance_confidence": "high",
+    "control_definition": "Ambient CO2 at approximately 400 \u03bcmol mol-1",
+    "treatment_definition": "Elevated CO2 at 800 \u03bcmol mol-1 (\u00b15%)",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "None - labeling is consistent and unambiguous throughout the paper",
+    "experimental_design": "factorial",
+    "sample_size_found": 5,
+    "sample_size_source": "In both the nutrient solution and in the rhizobox experiment each treatment was comprised of five replicates",
+    "factorial_structure": "[\"CO2 (ambient 400 ppm vs elevated 800 ppm)\", \"Fe supply (+Fe vs -Fe)\", \"culture system (hydroponics vs rhizobox soil)\"]",
+    "extraction_guidance": "The only plant mineral concentration data relevant to this meta-analysis is shoot Fe concentration (mmol kg-1 DW) for soil-grown barley plants, presented in Figure 3b. The key finding is that shoot Fe CONCENTRATION was NOT significantly different between CO2 treatments (see Table 1: F1,16=0.7 NS for shoot Fe concentration in rhizobox experiment), despite Fe CONTENT being increased (+47-52%) due to larger biomass under elevated CO2. This is consistent with the dilution effect hypothesis. Extract Fe concentration means and SE from Figure 3b for each of the 4 treatment combinations (2 CO2 x 2 Fe supply levels) in the soil/rhizobox experiment only. Do NOT extract Fe data from the hydroponic experiment as shoot Fe concentrations are not reported there. Do NOT confuse Fe content (\u03bcmol shoot-1, Figure 3a) with Fe concentration (mmol kg-1 DW, Figure 3b). Note n=5 per treatment group. The elevated CO2 level (800 ppm) is higher than typical FACE studies (550-700 ppm) which should be flagged in meta-analysis.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Responses to Iron Limitation in Hordeum vulgare L. as Affected by the Atmospheric Concentration\",\n        \"species\": \"Hordeum vulgare L. (barley, cv. Europa)\",\n        \"experimental_system\": \"growth chamber (hydroponics and rhizobox soil culture)\",\n        \"co2_levels\": {\"control\": \"400\", \"elevated\": \"800\"}\n    },\n    \"warnings\": [\n        \"Paper uses 400 ppm as 'ambient' (control) and 800 ppm as 'elevated' - clearly defined, no T/C confusion risk\",\n        \"Factorial design: 2 CO2 levels x 2 Fe levels (+Fe and -Fe) in both hydroponic and soil experiments - extract each Fe level separately\",\n        \"Fe concentration data for soil-grown plants is presented in Figure 3b (not a table) - requires figure reading\",\n        \"Fe content (total, in \u03bcmol shoot-1) is in Figure 3a - this is NOT a concentration, distinguish carefully from Fe concentration\",\n        \"The only mineral element reported is Fe; no N, P, K, Zn, Mn, Cu, or other minerals are quantified\",\n        \"Hydroponic experiment: Fe concentration in shoot tissue is NOT directly reported for hydroponic plants - only soil-grown plants have Fe data\",\n        \"Table 1 contains ANOVA F-values only (not raw means/SE data) - raw data for Fe is in Figure 3\",\n        \"Table 2 contains enzyme activities (not plant mineral concentrations) - not relevant to meta-analysis\",\n        \"Elevated CO2 increased Fe CONTENT (+47-52%) but Fe CONCENTRATION was not significantly different between CO2 treatments in soil culture - critical distinction for dilution effect hypothesis\",\n        \"Internal Fe use efficiency values are reported as calculated metrics, not direct tissue concentrations\",\n        \"Phytosiderophore data is a root exudate/tissue metric, not a plant mineral concentration for meta-analysis purposes\",\n        \"No chlorophyll content in units usable for meta-analysis; SPAD values are relative units\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"sourc",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Two-factorial ANOVA F-values for effects of CO2 and Fe supply on biomass, root/shoot ratio, PS exudation, PS in root tissue, Fe content, Fe concentration, and SPAD values - contains no raw means or SE values",
+      "Table 2": "Enzyme activities (\u03b2-glucosidase, xylosidase, cellobiosidase, N-acetyl-\u03b2-glucosaminidase, tyrosine-aminopeptidase, leucine-aminopeptidase, phosphatase) in rhizosphere soil - not plant mineral concentrations"
+    },
+    "figures_with_data": [
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Figure 3": [
+        "shoot Fe content (\u03bcmol shoot-1)",
+        "shoot Fe concentration (mmol kg-1 shoot DW)",
+        "leaf chlorophyll (SPAD values)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 11,
+  "kimi_obs": 9,
+  "gemini_obs": 8,
+  "matched_obs": 3,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 3/11 matched",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "shoot Fe concentration (mmol kg-1 shoot DW)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "shoot Fe concentration (mmol kg-1 shoot DW)",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mmol kg-1 DW",
+        "data_source": "Figure 3b",
+        "treatment_description": "Elevated CO2 (800 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA)",
+        "control_description": "Ambient CO2 (~400 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA)",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "+Fe",
+          "harvest_time": "28 DAS",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3b only (image-based figure, cannot read exact values from text). Text states Fe concentration in shoot tissue was NOT significantly affected by CO2 treatments (Table 1: F1,16=0.7 NS for shoot Fe concentration). Text states lowest Fe concentrations of ~2 mmol kg-1 DM were recorded in plants without Fe supply. Values for +Fe treatments appear higher based on figure description but exact means/SE cannot be extracted without figure image reading. REQUIRES MANUAL EXTRACTION FROM FIGURE 3b. CO2 level (800 ppm) is higher than typical FACE studies (550-700 ppm).",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "shoot Fe concentration (mmol kg-1 shoot DW)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "shoot Fe concentration (mmol kg-1 shoot DW)",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mmol kg-1 DW",
+        "data_source": "Figure 3b",
+        "treatment_description": "Elevated CO2 (800 ppm), without Fe supply (-Fe)",
+        "control_description": "Ambient CO2 (~400 ppm), without Fe supply (-Fe)",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "-Fe",
+          "harvest_time": "28 DAS",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3b only (image-based figure). Text states 'lowest Fe concentrations of ~2 mmol kg-1 DM were recorded in the shoot tissue of soil-grown barley plants without Fe supply' and Fe concentration was not significantly different between CO2 treatments (Table 1: F1,16=0.7 NS). This is consistent with a dilution effect: elevated CO2 increased Fe CONTENT (+52% without Fe supply, Figure 3a) but Fe CONCENTRATION was unchanged because biomass also increased proportionally. Exact means and SE per CO2 level require manual figure reading. REQUIRES MANUAL EXTRACTION FROM FIGURE 3b. CO2 level (800 ppm) is higher than typical FACE studies.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "shoot Fe content (\u03bcmol shoot-1)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "shoot Fe content (\u03bcmol shoot-1)",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "\u03bcmol shoot-1",
+        "data_source": "Figure 3a",
+        "treatment_description": "Elevated CO2 (800 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA)",
+        "control_description": "Ambient CO2 (~400 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA)",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "+Fe",
+          "harvest_time": "28 DAS",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3a (image-based figure). Text states elevated CO2 increased total Fe content by 47% in shoots of barley plants WITH additional Fe supply (Table 1: F1,16=11.0 ** for shoot Fe content; F1,16=5.1 * for Fe supply effect). Exact means and SE require manual figure reading. NOTE: Fe content (\u03bcmol shoot-1) is NOT a concentration - it reflects both concentration and biomass changes. Total shoot Fe content at final harvest was reported as 0.5-2.0 \u03bcmol plant-1 in text. This variable is less directly relevant to dilution effect hypothesis than Fe concentration. REQUIRES MANUAL EXTRACTION FROM FIGURE 3a. CO2 level (800 ppm) is higher than typical FACE studies.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "shoot Fe content (\u03bcmol shoot-1)",
+      "tissue": "shoot",
+      "claude": {
+        "element": "shoot Fe content (\u03bcmol shoot-1)",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "\u03bcmol shoot-1",
+        "data_source": "Figure 3a",
+        "treatment_description": "Elevated CO2 (800 ppm), without Fe supply (-Fe)",
+        "control_description": "Ambient CO2 (~400 ppm), without Fe supply (-Fe)",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "-Fe",
+          "harvest_time": "28 DAS",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3a (image-based figure). Text states elevated CO2 increased total Fe content by 52% in shoots of barley plants WITHOUT additional Fe supply. This increased Fe content under elevated CO2 without Fe supply suggests improved Fe acquisition efficiency. Exact means and SE require manual figure reading. Total shoot Fe content range was 0.5-2.0 \u03bcmol plant-1 across all soil treatments. REQUIRES MANUAL EXTRACTION FROM FIGURE 3a. CO2 level (800 ppm) is higher than typical FACE studies.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "leaf chlorophyll (SPAD values)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "SPAD units (relative)",
+        "data_source": "Figure 3c",
+        "treatment_description": "Elevated CO2 (800 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA), youngest leaf",
+        "control_description": "Ambient CO2 (~400 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA), youngest leaf",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "+Fe",
+          "harvest_time": "28 DAS",
+          "leaf_position": "youngest leaf",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3c (image-based figure). Text states 'no significant differences between Fe and CO2 treatments' for chlorophyll SPAD readings (Table 1: SPAD youngest leaf F1,16=4.1 NS for CO2; SPAD next older leaf F1,16=1.7 NS). SPAD values are relative units, not absolute chlorophyll concentrations, limiting their utility for meta-analysis. Text confirms no Fe deficiency chlorosis observed in soil-grown plants. REQUIRES MANUAL EXTRACTION FROM FIGURE 3c. CO2 level (800 ppm) higher than typical FACE studies.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "leaf chlorophyll (SPAD values)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "SPAD units (relative)",
+        "data_source": "Figure 3c",
+        "treatment_description": "Elevated CO2 (800 ppm), without Fe supply (-Fe), youngest leaf",
+        "control_description": "Ambient CO2 (~400 ppm), without Fe supply (-Fe), youngest leaf",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "-Fe",
+          "harvest_time": "28 DAS",
+          "leaf_position": "youngest leaf",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3c (image-based figure). No significant CO2 or Fe effect on SPAD values (Table 1: F1,16=4.1 NS for CO2, F1,16<0.1 NS for Fe on youngest leaf). SPAD values are relative units. REQUIRES MANUAL EXTRACTION FROM FIGURE 3c.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "leaf chlorophyll (SPAD values)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "SPAD units (relative)",
+        "data_source": "Figure 3c",
+        "treatment_description": "Elevated CO2 (800 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA), next older leaf",
+        "control_description": "Ambient CO2 (~400 ppm), with Fe supply (+Fe, 20 \u03bcmol Fe kg-1 soil as Fe-EDTA), next older leaf",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "+Fe",
+          "harvest_time": "28 DAS",
+          "leaf_position": "next older leaf",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3c (image-based figure). No significant CO2 or Fe effect on SPAD values for next older leaf (Table 1: F1,16=1.7 NS for CO2, F1,16=1.1 NS for Fe). REQUIRES MANUAL EXTRACTION FROM FIGURE 3c.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "leaf chlorophyll (SPAD values)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "SPAD units (relative)",
+        "data_source": "Figure 3c",
+        "treatment_description": "Elevated CO2 (800 ppm), without Fe supply (-Fe), next older leaf",
+        "control_description": "Ambient CO2 (~400 ppm), without Fe supply (-Fe), next older leaf",
+        "moderators": {
+          "culture_system": "rhizobox soil (calcareous loess subsoil)",
+          "Fe_treatment": "-Fe",
+          "harvest_time": "28 DAS",
+          "leaf_position": "next older leaf",
+          "cultivar": "Europa"
+        },
+        "confidence": "low",
+        "notes": "Data from Figure 3c (image-based figure). No significant CO2 or Fe effect on SPAD values for next older leaf. REQUIRES MANUAL EXTRACTION FROM FIGURE 3c.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mmol kg-1 DW",
+        "data_source": "Figure 3b",
+        "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1) with Fe supply",
+        "control_description": "Ambient CO2 (400 \u03bcmol mol-1) with Fe supply",
+        "moderators": {
+          "fe_supply": "+Fe",
+          "culture_system": "soil (rhizobox)",
+          "co2_treatment_level": "800 ppm"
+        },
+        "confidence": "low",
+        "notes": "Fe concentration data not significantly affected by CO2 treatment (F1,16=0.7 NS). Values require manual extraction from Figure 3b. Elevated CO2 is 800 ppm, which is higher than typical FACE studies (550-700 ppm).",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mmol kg-1 DW",
+        "data_source": "Figure 3b",
+        "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1) without Fe supply",
+        "control_description": "Ambient CO2 (400 \u03bcmol mol-1) without Fe supply",
+        "moderators": {
+          "fe_supply": "-Fe",
+          "culture_system": "soil (rhizobox)",
+          "co2_treatment_level": "800 ppm"
+        },
+        "confidence": "low",
+        "notes": "Lowest Fe concentrations (~2 mmol kg-1 DM) observed in -Fe treatments. No significant CO2 effect on Fe concentration. Values require manual extraction from Figure 3b.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "\u03bcmol shoot-1",
+        "data_source": "Figure 3a",
+        "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1) with Fe supply",
+        "control_description": "Ambient CO2 (400 \u03bcmol mol-1) with Fe supply",
+        "moderators": {
+          "fe_supply": "+Fe",
+          "culture_system": "soil (rhizobox)",
+          "co2_treatment_level": "800 ppm"
+        },
+        "confidence": "low",
+        "notes": "Fe content increased by 47% under elevated CO2 with Fe supply (total content, not concentration). Values require manual extraction from Figure 3a.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Fe",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Fe",
+        "tissue": "shoot",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "\u03bcmol shoot-1",
+        "data_source": "Figure 3a",
+        "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1) without Fe supply",
+        "control_description": "Ambient CO2 (400 \u03bcmol mol-1) without Fe supply",
+        "moderators": {
+          "fe_supply": "-Fe",
+          "culture_system": "soil (rhizobox)",
+          "co2_treatment_level": "800 ppm"
+        },
+        "confidence": "low",
+        "notes": "Fe content increased by 52% under elevated CO2 without Fe supply. Values require manual extraction from Figure 3a.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "kimi": {
+        "element": "leaf chlorophyll (SPAD values)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "SPAD units",
+        "data_source": "Figure 3c",
+        "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1) with Fe supply",
+        "control_description": "Ambient CO2 (400 \u03bcmol mol-1) with Fe supply",
+        "moderators": {
+          "fe_supply": "+Fe",
+          "culture_system": "soil (rhizobox)",
+          "co2_treatment_level": "800 ppm"
+        },
+        "confidence": "low",
+        "notes": "No significant differences in SPAD readings between CO2 or Fe treatments. Values require manual extraction from Figure 3c.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "kimi": {
+        "element": "leaf chlorophyll (SPAD values)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "SPAD units",
+        "data_source": "Figure 3c",
+        "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1) without Fe supply",
+        "control_description": "Ambient CO2 (400 \u03bcmol mol-1) without Fe supply",
+        "moderators": {
+          "fe_supply": "-Fe",
+          "culture_system": "soil (rhizobox)",
+          "co2_treatment_level": "800 ppm"
+        },
+        "confidence": "low",
+        "notes": "No significant differences in SPAD readings between CO2 or Fe treatments. Values require manual extraction from Figure 3c.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "shoot Fe content",
+      "tissue": "shoot",
+      "treatment_mean": 0.6,
+      "control_mean": 0.4,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SE",
+      "n": 5,
+      "unit": "\u03bcmol shoot-1",
+      "data_source": "Figure 3a",
+      "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1)",
+      "control_description": "Ambient CO2 (400 \u03bcmol mol-1)",
+      "moderators": {
+        "Fe_supply": "-Fe",
+        "growth_system": "soil culture",
+        "days_after_sowing": 28
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 49.999999999999986,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "shoot Fe concentration",
+      "tissue": "shoot",
+      "treatment_mean": 0.8,
+      "control_mean": 1.0,
+      "treatment_variance": 0.1,
+      "control_variance": 0.2,
+      "variance_type": "SE",
+      "n": 5,
+      "unit": "mmol kg-1 shoot DW",
+      "data_source": "Figure 3b",
+      "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1)",
+      "control_description": "Ambient CO2 (400 \u03bcmol mol-1)",
+      "moderators": {
+        "Fe_supply": "-Fe",
+        "growth_system": "soil culture",
+        "days_after_sowing": 28
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -19.999999999999996,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "treatment_mean": 25.0,
+      "control_mean": 28.0,
+      "treatment_variance": 2,
+      "control_variance": 3,
+      "variance_type": "SE",
+      "n": 5,
+      "unit": "SPAD values",
+      "data_source": "Figure 3c",
+      "treatment_description": "Elevated CO2 (800 \u03bcmol mol-1)",
+      "control_description": "Ambient CO2 (400 \u03bcmol mol-1)",
+      "moderators": {
+        "Fe_supply": "-Fe",
+        "growth_system": "soil culture",
+        "days_after_sowing": 28
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.714285714285714,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 3,
+    "final_count": 3
+  },
+  "verification_flags": [
+    {
+      "element": "shoot Fe content",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "shoot Fe content",
+        "treatment_mean": 0.6,
+        "control_mean": 0.4,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +50.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.33333333333333,
+            "note": "Effect +50.0% violates expected direction; unswapped would be -33.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 37.2677996249965,
+            "note": "CV = 37.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=20.0%"
+          }
+        },
+        "effect_pct": 49.999999999999986,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +50.0%, corrected would be -33.3%"
+      }
+    },
+    {
+      "element": "shoot Fe concentration",
+      "tissue": "shoot",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "shoot Fe concentration",
+        "treatment_mean": 0.8,
+        "control_mean": 1.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -20.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 27.95084971874737,
+            "note": "CV = 28.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.1%"
+          }
+        },
+        "effect_pct": -19.999999999999996
+      }
+    },
+    {
+      "element": "leaf chlorophyll (SPAD values)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "leaf chlorophyll (SPAD values)",
+        "treatment_mean": 25.0,
+        "control_mean": 28.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.88854381999832,
+            "note": "CV = 17.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.5%"
+          }
+        },
+        "effect_pct": -10.714285714285714
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

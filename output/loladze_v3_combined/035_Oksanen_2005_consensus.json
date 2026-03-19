@@ -1,0 +1,4440 @@
+{
+  "paper_id": "035_Oksanen_2005",
+  "recon": {
+    "paper_id": "035_Oksanen_2005",
+    "warnings": [
+      "FACTORIAL DESIGN: CO2 x Ozone x Clone factorial - must extract CO2 effect within ozone-absent treatments only (CC vs EC) to isolate CO2 effect, unless specifically extracting combined treatment",
+      "OZONE CONFOUND: Paper studies both CO2 and ozone effects simultaneously; ensure only EC vs CC comparisons are used for CO2 dilution meta-analysis, not EO or EC+EO",
+      "CLONE VARIATION: Two clones (4 and 80) respond differently - clone 80 is more physiologically active; data may need to be extracted per clone or pooled",
+      "CHAMBER EFFECT: Significant chamber effect detected (OC vs CC differs on K, Fe, Zn, uronic acids, etc.) - chamber control (CC) is the appropriate control, not outside control (OC)",
+      "YEAR EFFECT: Three growing seasons with significant year effects for some nutrients; data pooled across years in Table 8 but seasonal variation exists",
+      "STARCH DILUTION: Authors note that N dilution is partly due to starch accumulation; they correct for this - elevated CO2 increased starch, inflating dilution estimates",
+      "NUTRIENT DATA IN TABLE 8 is pooled for July 2000 and 2001 only (not all sampling dates), which may not represent full growing season",
+      "SD reported as values after \u00b1 in Table 8, but confirm this is SD not SE",
+      "Multiple significant interactions (CO2 x O3 for N and B:N ratio) mean that combined treatment EC+EO values should not be used to represent pure CO2 effect",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SD",
+    "variance_source": "Table 5 header: 'Mean values \u00b1 SD for leaf structural and anatomical parameters'; Table 8 caption: 'The values are averages of the data collected at the end of July 2000 and 2001 \u00b1 SD'",
+    "variance_confidence": "high",
+    "control_definition": "Chamber control (CC) = ambient air inside open-top chambers, CO2 ~365-373 ppm averaged across years",
+    "treatment_definition": "Elevated CO2 (EC) = 2x ambient CO2, achieved ~651-729 ppm across years, 24h/day fumigation",
+    "tables_with_target_data": [
+      "Table 8"
+    ],
+    "potential_tc_confusion": "Outside control (OC) vs chamber control (CC) distinction is critical - OC is not the appropriate control for CO2 treatments; must use CC as control. Also risk of including EO or EC+EO data instead of EC-only data for CO2 effect.",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "Experimental design: 'randomized incomplete block design with five treatments in four replicate trees. The exposure tree was the experimental unit for all statistical testing (n=4)'",
+    "factorial_structure": "[\"CO2 (ambient vs elevated)\", \"Ozone (ambient vs elevated)\", \"Clone (4 vs 80)\", \"Year (1999, 2000, 2001)\", \"Sampling date (multiple per year)\"]",
+    "extraction_guidance": "For CO2 dilution meta-analysis: (1) Use Table 8 as primary data source for mineral concentrations. (2) Compare EC (elevated CO2) vs CC (chamber control) columns ONLY - do not use OC as control. (3) Data in Table 8 are pooled for clones 4 and 80 (n=4 per clone, so effectively n=8 pooled, but treat as n=4 if per-clone data needed). (4) Values represent averages of July 2000 and 2001 data only. (5) Variance is SD. (6) Key significant CO2 effects: N decreased, K decreased, Cu decreased, Fe decreased, S decreased, P:N increased. (7) Do NOT use EO or EC+EO columns for CO2-only effect. (8) Note that a significant CO2 x O3 interaction exists for N - the CO2-only effect on N (CC=20.7, EC=17.6 mg/g) may differ from combined treatment. (9) Cell wall chemistry data (hemicellulose, cellulose, etc.) are in Figure 3 only as graphical data for 2001 - exact values not in tables.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Structural characteristics and chemical composition of birch (Betula pendula) leaves are modified by increasing CO2 and ozone\",\n        \"species\": \"Betula pendula (European silver birch), clones 4 and 80\",\n        \"experimental_system\": \"OTC (open-top chambers)\",\n        \"co2_levels\": {\"control\": \"365-373 ppm\", \"elevated\": \"651-729 ppm\"}\n    },\n    \"warnings\": [\n        \"FACTORIAL DESIGN: CO2 x Ozone x Clone factorial - must extract CO2 effect within ozone-absent treatments only (CC vs EC) to isolate CO2 effect, unless specifically extracting combined treatment\",\n        \"OZONE CONFOUND: Paper studies both CO2 and ozone effects simultaneously; ensure only EC vs CC comparisons are used for CO2 dilution meta-analysis, not EO or EC+EO\",\n        \"CLONE VARIATION: Two clones (4 and 80) respond differently - clone 80 is more physiologically active; data may need to be extracted per clone or pooled\",\n        \"CHAMBER EFFECT: Significant chamber effect detected (OC vs CC differs on K, Fe, Zn, uronic acids, etc.) - chamber control (CC) is the appropriate control, not outside control (OC)\",\n        \"YEAR EFFECT: Three growing seasons with significant year effects for some nutrients; data pooled across years in Table 8 but seasonal variation exists\",\n        \"STARCH DILUTION: Authors note that N dilution is partly due to starch accumulation; they correct for this - elevated CO2 increased starch, inflating dilution estimates\",\n        \"NUTRIENT DATA IN TABLE 8 is pooled for July 2000 and 2001 only (not all sampling dates), which may not represent full growing season\",\n        \"SD reported as values after \u00b1 in Table 8, but confirm this is SD not SE\",\n        \"Multiple significant interactions (CO2 x O3 for N and B:N ratio) mean that combined treatment EC+EO values should not be used to represent pure CO2 effect\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SD\",\n        \"source\": \"Table 5 header: 'Mean values \u00b1 SD for leaf",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 5",
+      "Table 6",
+      "Table 7"
+    ],
+    "table_descriptions": {
+      "Table 1": "Ozone, CO2 and temperature exposure data by year - NOT mineral concentrations",
+      "Table 2": "P-values (ANOVA) for anatomical and ultrastructural parameters - statistical results only, no raw mineral data",
+      "Table 3": "P-values (ANOVA) for stomatal density, SLA, foliar nutrients and nitrogen ratios - statistical results only with direction arrows, no raw values",
+      "Table 4": "P-values (ANOVA) for cell wall chemistry - statistical results only",
+      "Table 5": "Mean \u00b1 SD for leaf structural and anatomical parameters pooled over 3 years (thickness, organelle volumes, cell counts) - NO mineral data",
+      "Table 6": "Mean \u00b1 SD for leaf structural and anatomical parameters in 2001 only - NO mineral data",
+      "Table 7": "H2O2 accumulation data by tree and treatment - NO mineral data",
+      "Table 8": "PRIMARY TARGET: Foliar nutrient concentrations (N, P, K, Ca, Mg, Mn, Fe, Zn, Cu, B, S) and nutrient ratios (P:N, Mn:N, Zn:N, B:N) for CC, EC, EO, EC+EO, OC - means \u00b1 SD pooled for clones 4 and 80"
+    },
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Table 8": [
+        "N (mg/g dw)",
+        "P (mg/g dw)",
+        "K (mg/g dw)",
+        "Ca (mg/g dw)",
+        "Mg (mg/g dw)",
+        "Mn (mg/g dw)",
+        "Fe (mg/g dw)",
+        "Zn (mg/g dw)",
+        "Cu (mg/g dw)",
+        "B (mg/g dw)",
+        "S (mg/g dw)",
+        "P:N ratio (%)",
+        "Mn:N ratio (%)",
+        "Zn:N ratio (%)",
+        "B:N ratio (%)"
+      ],
+      "Figure 3": [
+        "a-cellulose (% dry mass)",
+        "hemicellulose (% dry mass)",
+        "uronic acids (% dry mass)",
+        "total lignin + polyphenolics (% dry mass)",
+        "acid-soluble lignin (% dry mass)",
+        "acetone-soluble extractives (% dry mass)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Hard paper - recommend vision verification",
+    "challenge_hints": [
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: Randomized incomplete block with repeated measures, factorial (CO2 \u00d7 O3 \u00d7 clone \u00d7 year)",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'",
+      "MULTI-CONTROL - Paper has multiple control conditions",
+      "Identify which control is 'ambient CO2' vs other controls",
+      "May need to extract multiple T/C comparisons",
+      "NESTED-TABLES - Tables have hierarchical structure",
+      "Parse carefully - headers may span multiple columns",
+      "Watch for subtotals vs individual measurements"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 63,
+  "kimi_obs": 57,
+  "gemini_obs": 0,
+  "matched_obs": 57,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 57/63 matched",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "a-cellulose (% dry mass)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "a-cellulose (% dry mass)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "% dry mass",
+        "data_source": "Figure 3a",
+        "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+        "control_description": "Chamber control (CC), ~365-373 ppm",
+        "moderators": {
+          "clone": "pooled (clones 4 and 80)",
+          "ozone": "ambient",
+          "year": "2001 (third treatment year)",
+          "tissue_type": "short shoot leaves",
+          "sampling_dates": "days 161, 186, 220, 248"
+        },
+        "confidence": "low",
+        "notes": "Data are in Figure 3a as graphical representation only - exact numeric values cannot be extracted from text. Figure shows overall responses across four sampling dates in 2001. Significant CO2 effect (p=0.000, decreasing) per Table 4. Significant CO2 x sampling date interaction (p=0.002) and CO2 x O3 x date interaction (p=0.022). Antagonistic CO2 x O3 interaction (p=0.036). Values cannot be read from figure in text form - requires image analysis.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "hemicellulose (% dry mass)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "hemicellulose (% dry mass)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "% dry mass",
+        "data_source": "Figure 3b",
+        "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+        "control_description": "Chamber control (CC), ~365-373 ppm",
+        "moderators": {
+          "clone": "pooled (clones 4 and 80)",
+          "ozone": "ambient",
+          "year": "2001 (third treatment year)",
+          "tissue_type": "short shoot leaves",
+          "sampling_dates": "days 161, 186, 220, 248"
+        },
+        "confidence": "low",
+        "notes": "Data are in Figure 3b as graphical representation only - exact numeric values cannot be extracted from text. Significant CO2 effect (p=0.005, increasing) per Table 4. No significant CO2 x sampling date interaction (p=0.281). Values cannot be read from figure in text form - requires image analysis.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "uronic acids (% dry mass)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "uronic acids (% dry mass)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "% dry mass",
+        "data_source": "Figure 3c",
+        "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+        "control_description": "Chamber control (CC), ~365-373 ppm",
+        "moderators": {
+          "clone": "pooled (clones 4 and 80)",
+          "ozone": "ambient",
+          "year": "2001 (third treatment year)",
+          "tissue_type": "short shoot leaves",
+          "sampling_dates": "days 161, 186, 220, 248"
+        },
+        "confidence": "low",
+        "notes": "Data are in Figure 3c as graphical representation only - exact numeric values cannot be extracted from text. Significant CO2 effect (p=0.005, decreasing) per Table 4. Significant ozone x sampling date interaction (p=0.000) present. Values cannot be read from figure in text form - requires image analysis.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "total lignin + polyphenolics (% dry mass)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "total lignin + polyphenolics (% dry mass)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "% dry mass",
+        "data_source": "Figure 3d",
+        "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+        "control_description": "Chamber control (CC), ~365-373 ppm",
+        "moderators": {
+          "clone": "pooled (clones 4 and 80)",
+          "ozone": "ambient",
+          "year": "2001 (third treatment year)",
+          "tissue_type": "short shoot leaves",
+          "sampling_dates": "days 161, 186, 220, 248"
+        },
+        "confidence": "low",
+        "notes": "Data are in Figure 3d as graphical representation only - exact numeric values cannot be extracted from text. CO2 effect not statistically significant (p=0.168) per Table 4. Significant CO2 x sampling date interaction (p=0.029). Values cannot be read from figure in text form - requires image analysis.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "acid-soluble lignin (% dry mass)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "acid-soluble lignin (% dry mass)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "% dry mass",
+        "data_source": "Figure 3e",
+        "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+        "control_description": "Chamber control (CC), ~365-373 ppm",
+        "moderators": {
+          "clone": "pooled (clones 4 and 80)",
+          "ozone": "ambient",
+          "year": "2001 (third treatment year)",
+          "tissue_type": "short shoot leaves",
+          "sampling_dates": "days 161, 186, 220, 248"
+        },
+        "confidence": "low",
+        "notes": "Data are in Figure 3e as graphical representation only - exact numeric values cannot be extracted from text. Significant CO2 effect (p=0.000, decreasing) per Table 4. Significant CO2 x sampling date interaction (p=0.008). Authors note CO2 significantly decreased acid-soluble lignin on days 161, 186, 220 (p=0.000, 0.004, 0.005) but not day 248 (p=0.166). Values cannot be read from figure in text form - requires image analysis.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "acetone-soluble extractives (% dry mass)",
+      "tissue": "leaf",
+      "claude": {
+        "element": "acetone-soluble extractives (% dry mass)",
+        "tissue": "leaf",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "% dry mass",
+        "data_source": "Figure 3f",
+        "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+        "control_description": "Chamber control (CC), ~365-373 ppm",
+        "moderators": {
+          "clone": "pooled (clones 4 and 80)",
+          "ozone": "ambient",
+          "year": "2001 (third treatment year)",
+          "tissue_type": "short shoot leaves",
+          "sampling_dates": "days 161, 186, 220, 248"
+        },
+        "confidence": "low",
+        "notes": "Data are in Figure 3f as graphical representation only - exact numeric values cannot be extracted from text. Significant CO2 effect (p=0.000, decreasing) per Table 4. Significant CO2 x sampling date interaction (p=0.006). Authors note CO2 significantly decreased acetone-soluble extractives on all four sampling dates (p=0.000, 0.023, 0.000, 0.001 for days 161, 186, 220, 248). Values cannot be read from figure in text form - requires image analysis.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "N (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 17.6,
+      "control_mean": 20.7,
+      "treatment_variance": 1.8,
+      "control_variance": 2.0,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.975845410628011,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 3.38,
+      "control_mean": 3.51,
+      "treatment_variance": 0.4,
+      "control_variance": 0.53,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.7037037037037006,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 7.15,
+      "control_mean": 8.27,
+      "treatment_variance": 1.08,
+      "control_variance": 1.03,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.54292623941958,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 7.0,
+      "control_mean": 7.97,
+      "treatment_variance": 1.97,
+      "control_variance": 2.05,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.170639899623586,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 3.0,
+      "control_mean": 3.29,
+      "treatment_variance": 0.77,
+      "control_variance": 0.71,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.814589665653497,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 1.25,
+      "control_mean": 1.22,
+      "treatment_variance": 0.29,
+      "control_variance": 0.4,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.4590163934426252,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 47.6,
+      "control_mean": 56.5,
+      "treatment_variance": 10.1,
+      "control_variance": 11.2,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "ug/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.75221238938053,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 350.4,
+      "control_mean": 364.8,
+      "treatment_variance": 97.1,
+      "control_variance": 101.8,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "ug/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.947368421052641,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 4.54,
+      "control_mean": 5.53,
+      "treatment_variance": 1.42,
+      "control_variance": 1.1,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "ug/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.902350813743222,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 49.3,
+      "control_mean": 49.9,
+      "treatment_variance": 14.7,
+      "control_variance": 19.1,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "ug/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -1.2024048096192415,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S (mg/g dw)",
+      "tissue": "leaf",
+      "treatment_mean": 1.17,
+      "control_mean": 1.42,
+      "treatment_variance": 0.09,
+      "control_variance": 0.11,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.605633802816904,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P:N ratio (%)",
+      "tissue": "leaf",
+      "treatment_mean": 19.1,
+      "control_mean": 17.2,
+      "treatment_variance": 2.1,
+      "control_variance": 2.8,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.04651162790699,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn:N ratio (%)",
+      "tissue": "leaf",
+      "treatment_mean": 6.94,
+      "control_mean": 5.95,
+      "treatment_variance": 1.42,
+      "control_variance": 2.0,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.638655462184875,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn:N ratio (%)",
+      "tissue": "leaf",
+      "treatment_mean": 1.92,
+      "control_mean": 1.76,
+      "treatment_variance": 0.52,
+      "control_variance": 0.43,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.090909090909086,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B:N ratio (%)",
+      "tissue": "leaf",
+      "treatment_mean": 0.29,
+      "control_mean": 0.24,
+      "treatment_variance": 0.1,
+      "control_variance": 0.09,
+      "variance_type": "SD",
+      "n": 8,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (EC), ~651-729 ppm, 24h/day",
+      "control_description": "Chamber control (CC), ~365-373 ppm",
+      "moderators": {
+        "cultivar": "Clones 4 and 80 pooled",
+        "year": "pooled July 2000 and 2001",
+        "ozone_level": "Ambient",
+        "clone": "pooled (clones 4 and 80)",
+        "ozone": "ambient",
+        "tissue_type": "short shoot leaves"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.83333333333333,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 17.6,
+      "control_mean": 20.7,
+      "treatment_variance": 1.8,
+      "control_variance": 2,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.975845410628011,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 1.8,
+      "control_mean": 1.99,
+      "treatment_variance": 0.15,
+      "control_variance": 0.2,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.547738693467334,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 7.18,
+      "control_mean": 8.27,
+      "treatment_variance": 0.4,
+      "control_variance": 1.03,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.180169286577993,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 7.0,
+      "control_mean": 7.97,
+      "treatment_variance": 1.97,
+      "control_variance": 2.05,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.170639899623586,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 3.11,
+      "control_mean": 3.22,
+      "treatment_variance": 0.71,
+      "control_variance": 0.4,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.416149068322991,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 1.25,
+      "control_mean": 1.25,
+      "treatment_variance": 0.07,
+      "control_variance": 0.07,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 47.6,
+      "control_mean": 36.8,
+      "treatment_variance": 10.1,
+      "control_variance": 11.2,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "\u00b5g/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 29.347826086956534,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 45.4,
+      "control_mean": 49.9,
+      "treatment_variance": 5.1,
+      "control_variance": 11,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "\u00b5g/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.01803607214429,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 4.54,
+      "control_mean": 4.93,
+      "treatment_variance": 1.2,
+      "control_variance": 1.1,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "\u00b5g/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.910750507099386,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 49.4,
+      "control_mean": 49.1,
+      "treatment_variance": 18.8,
+      "control_variance": 19.1,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "\u00b5g/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.6109979633401164,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 1.17,
+      "control_mean": 1.42,
+      "treatment_variance": 0.09,
+      "control_variance": 0.11,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.605633802816904,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P:N ratio",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 10.1,
+      "control_mean": 9.76,
+      "treatment_variance": 1.3,
+      "control_variance": 2.8,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.4836065573770476,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn:N ratio",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 4.94,
+      "control_mean": 4.95,
+      "treatment_variance": 1.42,
+      "control_variance": 2,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.20202020202019771,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn:N ratio",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 0.29,
+      "control_mean": 0.24,
+      "treatment_variance": 0.1,
+      "control_variance": 0.09,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.83333333333333,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B:N ratio",
+      "tissue": "short shoot leaves",
+      "treatment_mean": 0.29,
+      "control_mean": 0.24,
+      "treatment_variance": 0.1,
+      "control_variance": 0.09,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2 (651-729 ppm)",
+      "control_description": "Chamber control (ambient CO2, 365-373 ppm)",
+      "moderators": {
+        "clone": "4 and 80 (pooled)",
+        "year": "2000 and 2001 (pooled)",
+        "sampling_date": "End of July"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.83333333333333,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "a-cellulose",
+      "tissue": "leaves",
+      "treatment_mean": 19.5,
+      "control_mean": 18.5,
+      "treatment_variance": 1.5,
+      "control_variance": 1.5,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "% dry mass",
+      "data_source": "Figure 3a",
+      "treatment_description": "Elevated CO2 (~729 ppm)",
+      "control_description": "Chamber control (ambient CO2, ~373 ppm)",
+      "moderators": {
+        "clone": "4",
+        "year": "2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.405405405405405,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "hemicellulose",
+      "tissue": "leaves",
+      "treatment_mean": 11.0,
+      "control_mean": 12.5,
+      "treatment_variance": 0.5,
+      "control_variance": 0.5,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "% dry mass",
+      "data_source": "Figure 3b",
+      "treatment_description": "Elevated CO2 (~729 ppm)",
+      "control_description": "Chamber control (ambient CO2, ~373 ppm)",
+      "moderators": {
+        "clone": "4",
+        "year": "2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "uronic acids",
+      "tissue": "leaves",
+      "treatment_mean": 4.2,
+      "control_mean": 4.8,
+      "treatment_variance": 0.2,
+      "control_variance": 0.2,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "% dry mass",
+      "data_source": "Figure 3c",
+      "treatment_description": "Elevated CO2 (~729 ppm)",
+      "control_description": "Chamber control (ambient CO2, ~373 ppm)",
+      "moderators": {
+        "clone": "4",
+        "year": "2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.499999999999993,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "total lignin + polyphenolics",
+      "tissue": "leaves",
+      "treatment_mean": 16.0,
+      "control_mean": 16.5,
+      "treatment_variance": 1,
+      "control_variance": 1,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "% dry mass",
+      "data_source": "Figure 3d",
+      "treatment_description": "Elevated CO2 (~729 ppm)",
+      "control_description": "Chamber control (ambient CO2, ~373 ppm)",
+      "moderators": {
+        "clone": "4",
+        "year": "2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.0303030303030303,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "acid-soluble lignin",
+      "tissue": "leaves",
+      "treatment_mean": 2.6,
+      "control_mean": 2.8,
+      "treatment_variance": 0.2,
+      "control_variance": 0.2,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "% dry mass",
+      "data_source": "Figure 3e",
+      "treatment_description": "Elevated CO2 (~729 ppm)",
+      "control_description": "Chamber control (ambient CO2, ~373 ppm)",
+      "moderators": {
+        "clone": "4",
+        "year": "2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.142857142857134,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "acetone-soluble extractives",
+      "tissue": "leaves",
+      "treatment_mean": 13.5,
+      "control_mean": 15.0,
+      "treatment_variance": 1,
+      "control_variance": 1,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "% dry mass",
+      "data_source": "Figure 3f",
+      "treatment_description": "Elevated CO2 (~729 ppm)",
+      "control_description": "Chamber control (ambient CO2, ~373 ppm)",
+      "moderators": {
+        "clone": "4",
+        "year": "2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "treatment_mean": 1.5,
+      "control_mean": 1.6,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.250000000000005,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K",
+      "tissue": "leaf",
+      "treatment_mean": 7.2,
+      "control_mean": 8.5,
+      "treatment_variance": 0.6,
+      "control_variance": 0.8,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.294117647058822,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca",
+      "tissue": "leaf",
+      "treatment_mean": 6.7,
+      "control_mean": 6.9,
+      "treatment_variance": 0.6,
+      "control_variance": 0.7,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.898550724637684,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mg",
+      "tissue": "leaf",
+      "treatment_mean": 2.0,
+      "control_mean": 2.1,
+      "treatment_variance": 0.1,
+      "control_variance": 0.2,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.761904761904765,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "leaf",
+      "treatment_mean": 0.56,
+      "control_mean": 0.61,
+      "treatment_variance": 0.09,
+      "control_variance": 0.11,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.1967213114754,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "leaf",
+      "treatment_mean": 0.05,
+      "control_mean": 0.06,
+      "treatment_variance": 0.01,
+      "control_variance": 0.01,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -16.66666666666666,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "leaf",
+      "treatment_mean": 0.05,
+      "control_mean": 0.05,
+      "treatment_variance": 0.01,
+      "control_variance": 0.01,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "leaf",
+      "treatment_mean": 0.004,
+      "control_mean": 0.005,
+      "treatment_variance": 0.001,
+      "control_variance": 0.001,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -20.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B",
+      "tissue": "leaf",
+      "treatment_mean": 0.03,
+      "control_mean": 0.03,
+      "treatment_variance": 0.01,
+      "control_variance": 0.01,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "S",
+      "tissue": "leaf",
+      "treatment_mean": 1.1,
+      "control_mean": 1.3,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "mg/g dw",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.38461538461538,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P:N ratio",
+      "tissue": "leaf",
+      "treatment_mean": 8.7,
+      "control_mean": 7.8,
+      "treatment_variance": 0.6,
+      "control_variance": 0.5,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.538461538461533,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn:N ratio",
+      "tissue": "leaf",
+      "treatment_mean": 3.2,
+      "control_mean": 2.9,
+      "treatment_variance": 0.5,
+      "control_variance": 0.5,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.344827586206906,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn:N ratio",
+      "tissue": "leaf",
+      "treatment_mean": 0.28,
+      "control_mean": 0.24,
+      "treatment_variance": 0.06,
+      "control_variance": 0.05,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.666666666666682,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "B:N ratio",
+      "tissue": "leaf",
+      "treatment_mean": 0.17,
+      "control_mean": 0.14,
+      "treatment_variance": 0.06,
+      "control_variance": 0.05,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 8",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "clone": "pooled clones 4 and 80",
+        "year": "pooled 2000 and 2001"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 21.428571428571423,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "a-cellulose",
+      "tissue": "leaf",
+      "treatment_mean": 8.0,
+      "control_mean": 7.5,
+      "treatment_variance": 0.5,
+      "control_variance": 0.5,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "% DM",
+      "data_source": "Figure 3a",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "year": "2001",
+        "sampling_date": "June"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.666666666666667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "hemicellulose",
+      "tissue": "leaf",
+      "treatment_mean": 16.5,
+      "control_mean": 15.5,
+      "treatment_variance": 1,
+      "control_variance": 1,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "% DM",
+      "data_source": "Figure 3b",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "year": "2001",
+        "sampling_date": "June"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.451612903225806,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "uronic acids",
+      "tissue": "leaf",
+      "treatment_mean": 6.5,
+      "control_mean": 6.5,
+      "treatment_variance": 0.2,
+      "control_variance": 0.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "% DM",
+      "data_source": "Figure 3c",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "year": "2001",
+        "sampling_date": "June"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "total lignin + polyphenolics",
+      "tissue": "leaf",
+      "treatment_mean": 33.5,
+      "control_mean": 33.0,
+      "treatment_variance": 1,
+      "control_variance": 1,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "% DM",
+      "data_source": "Figure 3d",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "year": "2001",
+        "sampling_date": "June"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.5151515151515151,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "acid-soluble lignin",
+      "tissue": "leaf",
+      "treatment_mean": 3.2,
+      "control_mean": 3.5,
+      "treatment_variance": 0.2,
+      "control_variance": 0.2,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "% DM",
+      "data_source": "Figure 3e",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "year": "2001",
+        "sampling_date": "June"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.571428571428566,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "acetone-soluble extractives",
+      "tissue": "leaf",
+      "treatment_mean": 14.0,
+      "control_mean": 15.0,
+      "treatment_variance": 1,
+      "control_variance": 1,
+      "variance_type": "SE",
+      "n": 4,
+      "unit": "% DM",
+      "data_source": "Figure 3f",
+      "treatment_description": "Elevated CO2",
+      "control_description": "Chamber control (ambient CO2)",
+      "moderators": {
+        "year": "2001",
+        "sampling_date": "June"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.666666666666667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 1,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 57,
+    "final_count": 56
+  },
+  "verification_flags": [
+    {
+      "element": "N (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N (mg/g dw)",
+        "treatment_mean": 17.6,
+        "control_mean": 20.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.227272727272727,
+            "note": "CV = 10.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.4%"
+          }
+        },
+        "effect_pct": -14.975845410628011
+      }
+    },
+    {
+      "element": "P (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P (mg/g dw)",
+        "treatment_mean": 3.38,
+        "control_mean": 3.51,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.834319526627219,
+            "note": "CV = 11.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.6%"
+          }
+        },
+        "effect_pct": -3.7037037037037006
+      }
+    },
+    {
+      "element": "K (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K (mg/g dw)",
+        "treatment_mean": 7.15,
+        "control_mean": 8.27,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.104895104895105,
+            "note": "CV = 15.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.0%"
+          }
+        },
+        "effect_pct": -13.54292623941958
+      }
+    },
+    {
+      "element": "Ca (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca (mg/g dw)",
+        "treatment_mean": 7.0,
+        "control_mean": 7.97,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -12.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 28.142857142857142,
+            "note": "CV = 28.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=26.3%"
+          }
+        },
+        "effect_pct": -12.170639899623586
+      }
+    },
+    {
+      "element": "Mg (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg (mg/g dw)",
+        "treatment_mean": 3.0,
+        "control_mean": 3.29,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 25.666666666666664,
+            "note": "CV = 25.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=24.5%"
+          }
+        },
+        "effect_pct": -8.814589665653497
+      }
+    },
+    {
+      "element": "Mn (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Mn (mg/g dw)",
+        "treatment_mean": 1.25,
+        "control_mean": 1.22,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +2.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 23.2,
+            "note": "CV = 23.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=23.5%"
+          }
+        },
+        "effect_pct": 2.4590163934426252
+      }
+    },
+    {
+      "element": "Fe (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe (mg/g dw)",
+        "treatment_mean": 47.6,
+        "control_mean": 56.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 21.218487394957982,
+            "note": "CV = 21.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=19.4%"
+          }
+        },
+        "effect_pct": -15.75221238938053
+      }
+    },
+    {
+      "element": "Zn (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn (mg/g dw)",
+        "treatment_mean": 350.4,
+        "control_mean": 364.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 27.711187214611872,
+            "note": "CV = 27.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=27.2%"
+          }
+        },
+        "effect_pct": -3.947368421052641
+      }
+    },
+    {
+      "element": "Cu (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu (mg/g dw)",
+        "treatment_mean": 4.54,
+        "control_mean": 5.53,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 31.277533039647576,
+            "note": "CV = 31.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=28.2%"
+          }
+        },
+        "effect_pct": -17.902350813743222
+      }
+    },
+    {
+      "element": "B (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "B (mg/g dw)",
+        "treatment_mean": 49.3,
+        "control_mean": 49.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -1.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 29.817444219066935,
+            "note": "CV = 29.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=29.6%"
+          }
+        },
+        "effect_pct": -1.2024048096192415
+      }
+    },
+    {
+      "element": "S (mg/g dw)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S (mg/g dw)",
+        "treatment_mean": 1.17,
+        "control_mean": 1.42,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.6923076923076925,
+            "note": "CV = 7.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.9%"
+          }
+        },
+        "effect_pct": -17.605633802816904
+      }
+    },
+    {
+      "element": "P:N ratio (%)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "P:N ratio (%)",
+        "treatment_mean": 19.1,
+        "control_mean": 17.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +11.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.9476439790576,
+            "note": "Effect +11.0% violates expected direction; unswapped would be -9.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.994764397905758,
+            "note": "CV = 11.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.6%"
+          }
+        },
+        "effect_pct": 11.04651162790699,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +11.0%, corrected would be -9.9%"
+      }
+    },
+    {
+      "element": "Mn:N ratio (%)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Mn:N ratio (%)",
+        "treatment_mean": 6.94,
+        "control_mean": 5.95,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +16.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -14.265129682997118,
+            "note": "Effect +16.6% violates expected direction; unswapped would be -14.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 20.46109510086455,
+            "note": "CV = 20.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=22.0%"
+          }
+        },
+        "effect_pct": 16.638655462184875,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +16.6%, corrected would be -14.3%"
+      }
+    },
+    {
+      "element": "Zn:N ratio (%)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Zn:N ratio (%)",
+        "treatment_mean": 1.92,
+        "control_mean": 1.76,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +9.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -8.33333333333333,
+            "note": "Effect +9.1% violates expected direction; unswapped would be -8.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 27.083333333333336,
+            "note": "CV = 27.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=28.3%"
+          }
+        },
+        "effect_pct": 9.090909090909086,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +9.1%, corrected would be -8.3%"
+      }
+    },
+    {
+      "element": "B:N ratio (%)",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "B:N ratio (%)",
+        "treatment_mean": 0.29,
+        "control_mean": 0.24,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +20.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -17.241379310344826,
+            "note": "Effect +20.8% violates expected direction; unswapped would be -17.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 34.48275862068966,
+            "note": "CV = 34.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 8,
+            "note": "n=8"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.6,
+            "reason": "CV heuristic: as SE gives CV=106.7% (too high)"
+          }
+        },
+        "effect_pct": 20.83333333333333,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +20.8%, corrected would be -17.2%"
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N",
+        "treatment_mean": 17.6,
+        "control_mean": 20.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.227272727272727,
+            "note": "CV = 10.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.4%"
+          }
+        },
+        "effect_pct": -14.975845410628011
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P",
+        "treatment_mean": 1.8,
+        "control_mean": 1.99,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.333333333333332,
+            "note": "CV = 8.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.9%"
+          }
+        },
+        "effect_pct": -9.547738693467334
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K",
+        "treatment_mean": 7.18,
+        "control_mean": 8.27,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.571030640668524,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.2%"
+          }
+        },
+        "effect_pct": -13.180169286577993
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca",
+        "treatment_mean": 7.0,
+        "control_mean": 7.97,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -12.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 28.142857142857142,
+            "note": "CV = 28.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=26.3%"
+          }
+        },
+        "effect_pct": -12.170639899623586
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mg",
+        "treatment_mean": 3.11,
+        "control_mean": 3.22,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 22.829581993569132,
+            "note": "CV = 22.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=22.4%"
+          }
+        },
+        "effect_pct": -3.416149068322991
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 1.25,
+        "control_mean": 1.25,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.6000000000000005,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.6%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 47.6,
+        "control_mean": 36.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +29.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -22.68907563025211,
+            "note": "Effect +29.3% violates expected direction; unswapped would be -22.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 21.218487394957982,
+            "note": "CV = 21.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=23.9%"
+          }
+        },
+        "effect_pct": 29.347826086956534,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +29.3%, corrected would be -22.7%"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 45.4,
+        "control_mean": 49.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.233480176211454,
+            "note": "CV = 11.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.7%"
+          }
+        },
+        "effect_pct": -9.01803607214429
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 4.54,
+        "control_mean": 4.93,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 26.431718061674008,
+            "note": "CV = 26.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=25.3%"
+          }
+        },
+        "effect_pct": -7.910750507099386
+      }
+    },
+    {
+      "element": "B",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "B",
+        "treatment_mean": 49.4,
+        "control_mean": 49.1,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 38.056680161943326,
+            "note": "CV = 38.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=38.2%"
+          }
+        },
+        "effect_pct": 0.6109979633401164
+      }
+    },
+    {
+      "element": "S",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S",
+        "treatment_mean": 1.17,
+        "control_mean": 1.42,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.6923076923076925,
+            "note": "CV = 7.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.9%"
+          }
+        },
+        "effect_pct": -17.605633802816904
+      }
+    },
+    {
+      "element": "P:N ratio",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "P:N ratio",
+        "treatment_mean": 10.1,
+        "control_mean": 9.76,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +3.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.871287128712872,
+            "note": "CV = 12.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.1%"
+          }
+        },
+        "effect_pct": 3.4836065573770476
+      }
+    },
+    {
+      "element": "Mn:N ratio",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn:N ratio",
+        "treatment_mean": 4.94,
+        "control_mean": 4.95,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -0.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 28.744939271255056,
+            "note": "CV = 28.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=28.7%"
+          }
+        },
+        "effect_pct": -0.20202020202019771
+      }
+    },
+    {
+      "element": "Zn:N ratio",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Zn:N ratio",
+        "treatment_mean": 0.29,
+        "control_mean": 0.24,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +20.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -17.241379310344826,
+            "note": "Effect +20.8% violates expected direction; unswapped would be -17.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 34.48275862068966,
+            "note": "CV = 34.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=37.7%"
+          }
+        },
+        "effect_pct": 20.83333333333333,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +20.8%, corrected would be -17.2%"
+      }
+    },
+    {
+      "element": "B:N ratio",
+      "tissue": "short shoot leaves",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "B:N ratio",
+        "treatment_mean": 0.29,
+        "control_mean": 0.24,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +20.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -17.241379310344826,
+            "note": "Effect +20.8% violates expected direction; unswapped would be -17.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 34.48275862068966,
+            "note": "CV = 34.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=37.7%"
+          }
+        },
+        "effect_pct": 20.83333333333333,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +20.8%, corrected would be -17.2%"
+      }
+    },
+    {
+      "element": "a-cellulose",
+      "tissue": "leaves",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "a-cellulose",
+        "treatment_mean": 19.5,
+        "control_mean": 18.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +5.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -5.128205128205128,
+            "note": "Effect +5.4% violates expected direction; unswapped would be -5.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.6923076923076925,
+            "note": "CV = 7.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.9%"
+          }
+        },
+        "effect_pct": 5.405405405405405,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +5.4%, corrected would be -5.1%"
+      }
+    },
+    {
+      "element": "hemicellulose",
+      "tissue": "leaves",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "hemicellulose",
+        "treatment_mean": 11.0,
+        "control_mean": 12.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -12.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.545454545454546,
+            "note": "CV = 4.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": -12.0
+      }
+    },
+    {
+      "element": "uronic acids",
+      "tissue": "leaves",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "uronic acids",
+        "treatment_mean": 4.2,
+        "control_mean": 4.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -12.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.761904761904762,
+            "note": "CV = 4.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.9%"
+          }
+        },
+        "effect_pct": -12.499999999999993
+      }
+    },
+    {
+      "element": "acid-soluble lignin",
+      "tissue": "leaves",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "acid-soluble lignin",
+        "treatment_mean": 2.6,
+        "control_mean": 2.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.6923076923076925,
+            "note": "CV = 7.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": -7.142857142857134
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "N",
+        "treatment_mean": 17.6,
+        "control_mean": 20.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.681818181818182,
+            "note": "CV = 5.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.2%"
+          }
+        },
+        "effect_pct": -14.975845410628011
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "P",
+        "treatment_mean": 1.5,
+        "control_mean": 1.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.666666666666667,
+            "note": "CV = 6.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.5%"
+          }
+        },
+        "effect_pct": -6.250000000000005
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "K",
+        "treatment_mean": 7.2,
+        "control_mean": 8.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.333333333333332,
+            "note": "CV = 8.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": -15.294117647058822
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ca",
+        "treatment_mean": 6.7,
+        "control_mean": 6.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -2.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.955223880597014,
+            "note": "CV = 9.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.8%"
+          }
+        },
+        "effect_pct": -2.898550724637684
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mg",
+        "treatment_mean": 2.0,
+        "control_mean": 2.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -4.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.0,
+            "note": "CV = 5.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=9.8%"
+          }
+        },
+        "effect_pct": -4.761904761904765
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 0.56,
+        "control_mean": 0.61,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.07142857142857,
+            "note": "CV = 16.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.4%"
+          }
+        },
+        "effect_pct": -8.1967213114754
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 0.05,
+        "control_mean": 0.06,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -16.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 20.0,
+            "note": "CV = 20.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=18.2%"
+          }
+        },
+        "effect_pct": -16.66666666666666
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 0.05,
+        "control_mean": 0.05,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 20.0,
+            "note": "CV = 20.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=20.0%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 0.004,
+        "control_mean": 0.005,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -20.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 25.0,
+            "note": "CV = 25.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=22.2%"
+          }
+        },
+        "effect_pct": -20.0
+      }
+    },
+    {
+      "element": "B",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "B",
+        "treatment_mean": 0.03,
+        "control_mean": 0.03,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 33.333333333333336,
+            "note": "CV = 33.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=33.3%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "S",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "S",
+        "treatment_mean": 1.1,
+        "control_mean": 1.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.090909090909092,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.3%"
+          }
+        },
+        "effect_pct": -15.38461538461538
+      }
+    },
+    {
+      "element": "P:N ratio",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "P:N ratio",
+        "treatment_mean": 8.7,
+        "control_mean": 7.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +11.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -10.344827586206891,
+            "note": "Effect +11.5% violates expected direction; unswapped would be -10.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.896551724137931,
+            "note": "CV = 6.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.3%"
+          }
+        },
+        "effect_pct": 11.538461538461533,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +11.5%, corrected would be -10.3%"
+      }
+    },
+    {
+      "element": "Mn:N ratio",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Mn:N ratio",
+        "treatment_mean": 3.2,
+        "control_mean": 2.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +10.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.375000000000009,
+            "note": "Effect +10.3% violates expected direction; unswapped would be -9.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.625,
+            "note": "CV = 15.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.4%"
+          }
+        },
+        "effect_pct": 10.344827586206906,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +10.3%, corrected would be -9.4%"
+      }
+    },
+    {
+      "element": "Zn:N ratio",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Zn:N ratio",
+        "treatment_mean": 0.28,
+        "control_mean": 0.24,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +16.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -14.285714285714299,
+            "note": "Effect +16.7% violates expected direction; unswapped would be -14.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 21.428571428571423,
+            "note": "CV = 21.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=23.1%"
+          }
+        },
+        "effect_pct": 16.666666666666682,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +16.7%, corrected would be -14.3%"
+      }
+    },
+    {
+      "element": "B:N ratio",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "B:N ratio",
+        "treatment_mean": 0.17,
+        "control_mean": 0.14,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +21.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -17.64705882352941,
+            "note": "Effect +21.4% violates expected direction; unswapped would be -17.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 35.29411764705882,
+            "note": "CV = 35.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=38.7%"
+          }
+        },
+        "effect_pct": 21.428571428571423,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +21.4%, corrected would be -17.6%"
+      }
+    },
+    {
+      "element": "a-cellulose",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "a-cellulose",
+        "treatment_mean": 8.0,
+        "control_mean": 7.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +6.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -6.25,
+            "note": "Effect +6.7% violates expected direction; unswapped would be -6.2%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.5,
+            "note": "CV = 12.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.5%"
+          }
+        },
+        "effect_pct": 6.666666666666667,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +6.7%, corrected would be -6.2%"
+      }
+    },
+    {
+      "element": "hemicellulose",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "variance_type"
+      ],
+      "details": {
+        "element": "hemicellulose",
+        "treatment_mean": 16.5,
+        "control_mean": 15.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +6.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -6.0606060606060606,
+            "note": "Effect +6.5% violates expected direction; unswapped would be -6.1%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.121212121212121,
+            "note": "CV = 12.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.2%"
+          }
+        },
+        "effect_pct": 6.451612903225806,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +6.5%, corrected would be -6.1%"
+      }
+    },
+    {
+      "element": "uronic acids",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "uronic acids",
+        "treatment_mean": 6.5,
+        "control_mean": 6.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.153846153846154,
+            "note": "CV = 6.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.2%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "total lignin + polyphenolics",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "total lignin + polyphenolics",
+        "treatment_mean": 33.5,
+        "control_mean": 33.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +1.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.970149253731343,
+            "note": "CV = 6.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.0%"
+          }
+        },
+        "effect_pct": 1.5151515151515151
+      }
+    },
+    {
+      "element": "acid-soluble lignin",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "acid-soluble lignin",
+        "treatment_mean": 3.2,
+        "control_mean": 3.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.5,
+            "note": "CV = 12.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.0%"
+          }
+        },
+        "effect_pct": -8.571428571428566
+      }
+    },
+    {
+      "element": "acetone-soluble extractives",
+      "tissue": "leaf",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "acetone-soluble extractives",
+        "treatment_mean": 14.0,
+        "control_mean": 15.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.285714285714285,
+            "note": "CV = 14.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.9%"
+          }
+        },
+        "effect_pct": -6.666666666666667
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

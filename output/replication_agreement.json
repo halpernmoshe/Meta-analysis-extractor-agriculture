@@ -1,0 +1,51 @@
+{
+  "date": "2026-03-16T01:17:44.691093",
+  "method": "Run1 vs Run2 agent extraction comparison \u2014 reproducibility test",
+  "results": {
+    "loladze": {
+      "name": "Loladze 2014 (CO2/minerals)",
+      "papers_matched": 41,
+      "overall": {
+        "n_obs": 665,
+        "pearson_r": 0.816,
+        "mae_pp": 8.4,
+        "within_5pp": "417/665 (63%)",
+        "within_10pp": "476/665 (72%)",
+        "direction": "560/647 (87%)",
+        "mean_run1_effect": -4.63,
+        "mean_run2_effect": -4.54,
+        "effect_diff": 0.09
+      }
+    },
+    "hui2023": {
+      "name": "Hui 2023 (Zn/wheat)",
+      "papers_matched": 24,
+      "overall": {
+        "n_obs": 362,
+        "pearson_r": 0.946,
+        "mae_pp": 12.34,
+        "within_5pp": "204/362 (56%)",
+        "within_10pp": "227/362 (63%)",
+        "direction": "344/358 (96%)",
+        "mean_run1_effect": 59.73,
+        "mean_run2_effect": 66.04,
+        "effect_diff": 6.31
+      }
+    },
+    "li2022": {
+      "name": "Li 2022 (biostimulants)",
+      "papers_matched": 30,
+      "overall": {
+        "n_obs": 204,
+        "pearson_r": 0.849,
+        "mae_pp": 5.6,
+        "within_5pp": "147/204 (72%)",
+        "within_10pp": "164/204 (80%)",
+        "direction": "187/200 (94%)",
+        "mean_run1_effect": 17.14,
+        "mean_run2_effect": 17.36,
+        "effect_diff": 0.23
+      }
+    }
+  }
+}

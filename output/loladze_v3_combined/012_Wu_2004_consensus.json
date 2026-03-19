@@ -1,0 +1,282 @@
+{
+  "paper_id": "012_Wu_2004",
+  "recon": {
+    "paper_id": "012_Wu_2004",
+    "warnings": [
+      "FACTORIAL DESIGN: 2x2 factorial with CO2 (350 vs 700 ppm) AND soil moisture (80% FWC vs 40% FWC). Mineral concentration data in Table 1 is reported ONLY for the high soil moisture (80% FWC) conditions (HC vs HD). Extractors must not confuse soil moisture treatment with CO2 treatment.",
+      "Table 1 reports mineral concentrations under FAVORABLE soil water conditions only (HC = high moisture + ambient CO2; HD = high moisture + elevated CO2). Low moisture data for grain quality is NOT presented in tabular form.",
+      "Table 2 reports nutritive values per hectare (kg/ha or g/ha), NOT concentrations per unit grain weight. These are derived values (concentration x yield) and should NOT be used as mineral concentration outcomes for the dilution effect analysis.",
+      "The paper uses treatment codes: HC (high moisture + current CO2 = CONTROL), HD (high moisture + doubled CO2 = TREATMENT), LC (low moisture + ambient CO2), LD (low moisture + elevated CO2). Extractors must correctly identify HC as control and HD as treatment for grain mineral data.",
+      "Crude protein is calculated from N x 5.7, so N and crude protein are redundant - do not double-count.",
+      "Lysine is reported as g/100g grain - note the t-test result is NS (P=0.06, borderline), treat carefully.",
+      "Only 3 pots (not 6) were used for grain quality analysis: 'Three pots were chosen to analyze nutrition concentration of grains, so values are mean of three'. Sample size for mineral concentration data is n=3, not n=6.",
+      "Growth chamber study with only ONE chamber per CO2 level (no chamber replication). This is a pseudoreplication concern - pot replication within chamber is used as the statistical unit.",
+      "Zn is reported in mg/kg (not g/100g like other minerals) - unit conversion needed for consistent analysis.",
+      "The paper reports PERCENTAGE CHANGES (e.g., P decreased by 36.6%, K by 23.2%, Zn by 32.6%) which are strongly negative, consistent with dilution effect hypothesis. No sign of T/C confusion.",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SD",
+    "variance_source": "Within columns, values are followed by standard deviation. Three pots were chosen to analyze nutrition concentration of grains, so values are mean of three",
+    "variance_confidence": "high",
+    "control_definition": "HC: High soil moisture (80% FWC) + ambient CO2 (350 \u00b5l/l)",
+    "treatment_definition": "HD: High soil moisture (80% FWC) + doubled CO2 (700 \u00b5l/l)",
+    "tables_with_target_data": [
+      "Table 1"
+    ],
+    "potential_tc_confusion": "Low risk for Table 1 as column headers are explicit. Main risk is accidentally extracting from Table 2 (per hectare values) instead of Table 1 (concentrations). Also risk of treating LC/LD data as equivalent to HC/HD - grain quality data is only available for high moisture conditions.",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "Three pots were chosen to analyze nutrition concentration of grains, so values are mean of three",
+    "factorial_structure": "[\"CO2 (350 vs 700 ppm)\", \"Soil moisture (80% FWC vs 40% FWC)\"]",
+    "extraction_guidance": "For mineral concentration meta-analysis: (1) Use TABLE 1 ONLY - not Table 2 which reports per-hectare totals. (2) Control = HC column, Treatment = HD column. (3) n=3 for both control and treatment groups for grain quality data. (4) Variance is SD. (5) Key minerals available: N (as both 'Nitrogen' and derivable from 'Crude protein'/5.7 - use Nitrogen directly), P, K, Zn. (6) Zn units are mg/kg - note this for unit harmonization. (7) Lysine and crude starch are NOT mineral elements - exclude from mineral concentration analysis. (8) Grain quality data is only available for HIGH soil moisture conditions (80% FWC). There is no separate grain mineral table for low moisture conditions. (9) Do NOT extract from Table 2 for dilution effect - those are yield-scaled totals showing positive effects due to yield increase, opposite of concentration dilution. (10) The percentage changes stated in text match the table: P=-36.6%, K=-23.2%, Zn=-32.6%, N=-15.2%, crude protein=-15.2% - all strongly negative, confirming dilution effect direction.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effects of elevated CO2 concentration on growth, water use, yield and grain quality of wheat under two soil water levels\",\n        \"species\": \"Triticum aestivum L. (cv. Ganmai 8139, spring wheat)\",\n        \"experimental_system\": \"growth chamber\",\n        \"co2_levels\": {\"control\": \"350\", \"elevated\": \"700\"}\n    },\n    \"warnings\": [\n        \"FACTORIAL DESIGN: 2x2 factorial with CO2 (350 vs 700 ppm) AND soil moisture (80% FWC vs 40% FWC). Mineral concentration data in Table 1 is reported ONLY for the high soil moisture (80% FWC) conditions (HC vs HD). Extractors must not confuse soil moisture treatment with CO2 treatment.\",\n        \"Table 1 reports mineral concentrations under FAVORABLE soil water conditions only (HC = high moisture + ambient CO2; HD = high moisture + elevated CO2). Low moisture data for grain quality is NOT presented in tabular form.\",\n        \"Table 2 reports nutritive values per hectare (kg/ha or g/ha), NOT concentrations per unit grain weight. These are derived values (concentration x yield) and should NOT be used as mineral concentration outcomes for the dilution effect analysis.\",\n        \"The paper uses treatment codes: HC (high moisture + current CO2 = CONTROL), HD (high moisture + doubled CO2 = TREATMENT), LC (low moisture + ambient CO2), LD (low moisture + elevated CO2). Extractors must correctly identify HC as control and HD as treatment for grain mineral data.\",\n        \"Crude protein is calculated from N x 5.7, so N and crude protein are redundant - do not double-count.\",\n        \"Lysine is reported as g/100g grain - note the t-test result is NS (P=0.06, borderline), treat carefully.\",\n        \"Only 3 pots (not 6) were used for grain quality analysis: 'Three pots were chosen to analyze nutrition concentration of grains, so values are mean of three'. Sample size for mineral concentration data is n=3, not n=6.\",\n        \"Growth chamber study with only ONE chamber per CO2 level (no chamber rep",
+    "tables_without_target_data": [
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Grain mineral/nutrient CONCENTRATIONS per 100g grain (or mg/kg for Zn) under favorable soil water conditions comparing ambient vs elevated CO2: crude protein, lysine, crude starch, N, P, K, Zn",
+      "Table 2": "Nutritive values of wheat grain on a PER HECTARE BASIS (kg/ha or g/ha) - derived values calculated from concentration x grain yield per hectare. NOT primary concentration data."
+    },
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 2",
+      "Figure 3",
+      "Figure 4",
+      "Figure 5"
+    ],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "Crude protein (g/100g)",
+        "Lysine (g/100g)",
+        "Crude starch (g/100g)",
+        "Nitrogen (g/100g)",
+        "P (g/100g)",
+        "K (g/100g)",
+        "Zn (mg/kg)"
+      ],
+      "Table 2": [
+        "Crude protein (kg/ha)",
+        "Lysine (kg/ha)",
+        "Crude starch (kg/ha)",
+        "Nitrogen (kg/ha)",
+        "P (kg/ha)",
+        "K (kg/ha)",
+        "Zn (g/ha)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: 2x2 factorial with repeated measures",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 7,
+  "kimi_obs": 7,
+  "gemini_obs": 0,
+  "matched_obs": 7,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 7/7 matched",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Nitrogen (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 2.83,
+      "control_mean": 3.34,
+      "treatment_variance": 0.014,
+      "control_variance": 0.018,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 \u00b5l/l) + high soil moisture (80% FWC) [HD]",
+      "control_description": "Ambient CO2 (350 \u00b5l/l) + high soil moisture (80% FWC) [HC]",
+      "moderators": {
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)",
+        "CO2_level_ppm": "700 vs 350"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.269461077844307,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Crude protein (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 16.14,
+      "control_mean": 19.02,
+      "treatment_variance": 0.081,
+      "control_variance": 0.102,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 \u00b5l/l) + high soil moisture (80% FWC) [HD]",
+      "control_description": "Ambient CO2 (350 \u00b5l/l) + high soil moisture (80% FWC) [HC]",
+      "moderators": {
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)",
+        "CO2_level_ppm": "700 vs 350"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.14195583596214,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 0.417,
+      "control_mean": 0.658,
+      "treatment_variance": 0.004,
+      "control_variance": 0.04,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 \u00b5l/l) + high soil moisture (80% FWC) [HD]",
+      "control_description": "Ambient CO2 (350 \u00b5l/l) + high soil moisture (80% FWC) [HC]",
+      "moderators": {
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)",
+        "CO2_level_ppm": "700 vs 350"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -36.62613981762918,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "K (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 0.48,
+      "control_mean": 0.625,
+      "treatment_variance": 0.042,
+      "control_variance": 0.021,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 \u00b5l/l) + high soil moisture (80% FWC) [HD]",
+      "control_description": "Ambient CO2 (350 \u00b5l/l) + high soil moisture (80% FWC) [HC]",
+      "moderators": {
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)",
+        "CO2_level_ppm": "700 vs 350"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -23.200000000000003,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 37.75,
+      "control_mean": 56.03,
+      "treatment_variance": 0.63,
+      "control_variance": 1.26,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 \u00b5l/l) + high soil moisture (80% FWC) [HD]",
+      "control_description": "Ambient CO2 (350 \u00b5l/l) + high soil moisture (80% FWC) [HC]",
+      "moderators": {
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)",
+        "CO2_level_ppm": "700 vs 350"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -32.62537926111012,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Lysine (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 0.565,
+      "control_mean": 0.6,
+      "treatment_variance": 0.024,
+      "control_variance": 0.008,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 \u00b5l/l) + high soil moisture (80% FWC) [HD]",
+      "control_description": "Ambient CO2 (350 \u00b5l/l) + high soil moisture (80% FWC) [HC]",
+      "moderators": {
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)",
+        "CO2_level_ppm": "700 vs 350"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.833333333333339,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Crude starch (g/100g)",
+      "tissue": "grain",
+      "treatment_mean": 56.2,
+      "control_mean": 51.23,
+      "treatment_variance": 0.5,
+      "control_variance": 0.3,
+      "variance_type": "SD",
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 \u00b5l/l) + high soil moisture (80% FWC) [HD]",
+      "control_description": "Ambient CO2 (350 \u00b5l/l) + high soil moisture (80% FWC) [HC]",
+      "moderators": {
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)",
+        "CO2_level_ppm": "700 vs 350"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.70134686707009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 7,
+    "final_count": 7
+  },
+  "verification_flags": [],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

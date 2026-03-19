@@ -1,0 +1,186 @@
+{
+  "paper_id": "050_Polley_2011",
+  "title": "CO2 enrichment increases element concentrations in grass mixtures by changing species abundances",
+  "authors": "H. Wayne Polley, Philip A. Fay, Virginia L. Jin, Gerald F. Combs Jr.",
+  "year": 2011,
+  "journal": "Plant Ecology",
+  "species": "Bouteloua curtipendula, Schizachyrium scoparium, Sorghastrum nutans (C4 grasses, tallgrass prairie)",
+  "experiment_type": "field CO2 gradient (250-500 umol/mol), continuous gradient in elongated chambers",
+  "co2_levels": {
+    "control": "280 umol/mol (subambient/pre-Industrial)",
+    "elevated": "480 umol/mol (elevated)"
+  },
+  "notes": "Data from Table 3 - combined biomass of 3 grass species weighted by cover on Austin soil. CO2 gradient is continuous; 280 and 480 represent lowest and highest levels. Tables 1-2 show species means averaged across entire CO2 gradient (not treatment vs control), so Table 3 is primary source for effect sizes.",
+  "consensus_observations": [
+    {
+      "element": "K",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 10132,
+      "control_mean": 8603,
+      "effect_pct": 17.77,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2008",
+      "control_description": "280 umol/mol CO2, Austin soil, 2008",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2008
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 5291,
+      "control_mean": 5706,
+      "effect_pct": -7.27,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2008",
+      "control_description": "280 umol/mol CO2, Austin soil, 2008",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2008
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 808,
+      "control_mean": 913,
+      "effect_pct": -11.50,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2008",
+      "control_description": "280 umol/mol CO2, Austin soil, 2008",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2008
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 925,
+      "control_mean": 705,
+      "effect_pct": 31.21,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2008",
+      "control_description": "280 umol/mol CO2, Austin soil, 2008",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2008
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 28.7,
+      "control_mean": 26.9,
+      "effect_pct": 6.69,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2008",
+      "control_description": "280 umol/mol CO2, Austin soil, 2008",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2008
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 9585,
+      "control_mean": 8009,
+      "effect_pct": 19.68,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2009",
+      "control_description": "280 umol/mol CO2, Austin soil, 2009",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2009
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 5427,
+      "control_mean": 4827,
+      "effect_pct": 12.43,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2009",
+      "control_description": "280 umol/mol CO2, Austin soil, 2009",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2009
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 916,
+      "control_mean": 835,
+      "effect_pct": 9.70,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2009",
+      "control_description": "280 umol/mol CO2, Austin soil, 2009",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2009
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 948,
+      "control_mean": 705,
+      "effect_pct": 34.47,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2009",
+      "control_description": "280 umol/mol CO2, Austin soil, 2009",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2009
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "aboveground tiller",
+      "treatment_mean": 18.1,
+      "control_mean": 18.2,
+      "effect_pct": -0.55,
+      "n": null,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "480 umol/mol CO2, Austin soil, 2009",
+      "control_description": "280 umol/mol CO2, Austin soil, 2009",
+      "moderators": {
+        "species": "combined biomass (Bouteloua+Schizachyrium+Sorghastrum)",
+        "soil": "Austin",
+        "year": 2009
+      }
+    }
+  ]
+}

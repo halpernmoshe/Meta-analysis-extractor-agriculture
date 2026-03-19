@@ -1,0 +1,347 @@
+{
+  "paper_id": "126_Prokkola_2007_Effect of biological sprays on the incid",
+  "gt_rows": [
+    {
+      "pair": "686",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Biolan",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "6",
+      "ifdoseresponse": "0",
+      "Frequency": "5",
+      "country": "Finland",
+      "ctrl_mean": 0.281,
+      "treat_mean": 0.287,
+      "ctrl_sd": 0.046365,
+      "treat_sd": 0.047355
+    },
+    {
+      "pair": "687",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Kekkila Oy",
+      "PBsCategory": "Si",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "6",
+      "ifdoseresponse": "0",
+      "Frequency": "5",
+      "country": "Finland",
+      "ctrl_mean": 0.281,
+      "treat_mean": 0.291,
+      "ctrl_sd": 0.046365,
+      "treat_sd": 0.048015
+    },
+    {
+      "pair": "688",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Garlic extract",
+      "PBsCategory": "PE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "6",
+      "ifdoseresponse": "0",
+      "Frequency": "5",
+      "country": "Finland",
+      "ctrl_mean": 0.281,
+      "treat_mean": 0.263,
+      "ctrl_sd": 0.046365,
+      "treat_sd": 0.043395
+    },
+    {
+      "pair": "689",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Biolan",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "6",
+      "ifdoseresponse": "0",
+      "Frequency": "5",
+      "country": "Finland",
+      "ctrl_mean": 0.384,
+      "treat_mean": 0.423,
+      "ctrl_sd": 0.06336,
+      "treat_sd": 0.069795
+    },
+    {
+      "pair": "690",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Kekkila Oy",
+      "PBsCategory": "Si",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "6",
+      "ifdoseresponse": "0",
+      "Frequency": "5",
+      "country": "Finland",
+      "ctrl_mean": 0.384,
+      "treat_mean": 0.415,
+      "ctrl_sd": 0.06336,
+      "treat_sd": 0.068475
+    },
+    {
+      "pair": "691",
+      "crop": "strawberry",
+      "CropCategory": "Fruits",
+      "product": "Garlic extract",
+      "PBsCategory": "PE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "6",
+      "ifdoseresponse": "0",
+      "Frequency": "5",
+      "country": "Finland",
+      "ctrl_mean": 0.384,
+      "treat_mean": 0.385,
+      "ctrl_sd": 0.06336,
+      "treat_sd": 0.063525
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 332.0,
+      "treatment_mean": 323.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 281.0,
+      "treatment_mean": 264.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 332.0,
+      "treatment_mean": 303.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 281.0,
+      "treatment_mean": 256.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Seaweed extract spray (1% v/v, Ascophyllum nodosum)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 332.0,
+      "treatment_mean": 337.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Seaweed extract spray (1% v/v, Ascophyllum nodosum)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 281.0,
+      "treatment_mean": 287.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Silicon spray (0.4% v/v, Si 7.7%)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 332.0,
+      "treatment_mean": 341.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Silicon spray (0.4% v/v, Si 7.7%)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 281.0,
+      "treatment_mean": 291.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 501.0,
+      "treatment_mean": 491.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Trichoderma spp. spray (0.1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 384.0,
+      "treatment_mean": 372.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Total yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 501.0,
+      "treatment_mean": 508.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Marketable yield (g/plant)",
+      "tissue": "whole plant",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Compost extract spray (1% v/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2002",
+        "site": "Ruukki and Mikkeli pooled",
+        "experiment": "1"
+      },
+      "control_mean": 384.0,
+      "treatment_mean": 381.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Total yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "unit": "g/yielding plant",
+      "n": 6,
+      "treatment_description": "Gliocladium catenulatum spray (1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001-2002 pooled",
+        "site": "Ruukki",
+        "experiment": "2"
+      },
+      "control_mean": 496.0,
+      "treatment_mean": 542.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Marketable yield (g/yielding plant)",
+      "tissue": "whole plant",
+      "unit": "g/yielding plant",
+      "n": 6,
+      "treatment_description": "Gliocladium catenulatum spray (1% w/v)",
+      "control_description": "Non-treated control",
+      "moderators": {
+        "cultivar": "Jonsok",
+        "year": "2001-2002 pooled",
+        "site": "Ruukki",
+        "experiment": "2"
+      },
+      "control_mean": 394.0,
+      "treatment_mean": 430.0,
+      "confidence": "high"
+    }
+  ]
+}

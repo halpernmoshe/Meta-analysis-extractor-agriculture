@@ -1,0 +1,1827 @@
+{
+  "paper_id": "006_Alabdulla_2019_Effect of foliar application of humic ac",
+  "recon": {
+    "paper_id": "006_Alabdulla_2019_Effect of foliar application of humic ac",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 36,
+  "gemini_obs": 14,
+  "matched_obs": 12,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 36",
+  "disagreements": [
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Green fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 47.835,
+        "control_mean": 23.947,
+        "treatment_variance": 2.86,
+        "control_variance": 2.86,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 9 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "50% flowering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 99.75362258320459,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 17.045,
+        "control_mean": 7.679,
+        "treatment_variance": 0.446,
+        "control_variance": 0.446,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 3 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "Tillering",
+          "concentration": "3 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 121.96900638103921,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 18.486,
+        "control_mean": 7.679,
+        "treatment_variance": 0.446,
+        "control_variance": 0.446,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 6 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "Tillering",
+          "concentration": "6 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 140.73447063419715,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 17.344,
+        "control_mean": 7.679,
+        "treatment_variance": 0.446,
+        "control_variance": 0.446,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 9 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "Tillering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 125.86274254460217,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 14.612,
+        "control_mean": 7.647,
+        "treatment_variance": 0.446,
+        "control_variance": 0.446,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 3 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "50% flowering",
+          "concentration": "3 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 91.08146985746043,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 15.411,
+        "control_mean": 7.647,
+        "treatment_variance": 0.446,
+        "control_variance": 0.446,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 6 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "50% flowering",
+          "concentration": "6 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 101.53001176932128,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 15.273,
+        "control_mean": 7.647,
+        "treatment_variance": 0.446,
+        "control_variance": 0.446,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 9 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "50% flowering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 99.72538250294232,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield",
+        "tissue": "grain",
+        "treatment_mean": 5.618,
+        "control_mean": 3.02,
+        "treatment_variance": 0.322,
+        "control_variance": 0.322,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 6 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "50% flowering",
+          "concentration": "6 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 86.02649006622518,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield",
+        "tissue": "grain",
+        "treatment_mean": 5.373,
+        "control_mean": 3.02,
+        "treatment_variance": 0.322,
+        "control_variance": 0.322,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar humic acid 9 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2017-18",
+          "stage": "50% flowering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 77.91390728476821,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Green fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 46.297,
+        "control_mean": 24.71,
+        "treatment_variance": 1.608,
+        "control_variance": 1.608,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 3 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "Tillering",
+          "concentration": "3 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 87.36139214892754,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Green fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 55.974,
+        "control_mean": 24.71,
+        "treatment_variance": 1.608,
+        "control_variance": 1.608,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 9 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "Tillering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 126.5236746256576,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Green fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 41.222,
+        "control_mean": 24.488,
+        "treatment_variance": 1.608,
+        "control_variance": 1.608,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 3 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "3 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 68.33551127082653,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Green fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 50.273,
+        "control_mean": 24.488,
+        "treatment_variance": 1.608,
+        "control_variance": 1.608,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 6 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "6 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 105.29647174126104,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Green fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 51.001,
+        "control_mean": 24.488,
+        "treatment_variance": 1.608,
+        "control_variance": 1.608,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 9 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 108.26935641947075,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 15.768,
+        "control_mean": 7.783,
+        "treatment_variance": 0.909,
+        "control_variance": 0.909,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 3 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "Tillering",
+          "concentration": "3 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 102.59540023127329,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 21.109,
+        "control_mean": 7.783,
+        "treatment_variance": 0.909,
+        "control_variance": 0.909,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 6 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "Tillering",
+          "concentration": "6 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 171.2193241680586,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 19.934,
+        "control_mean": 7.783,
+        "treatment_variance": 0.909,
+        "control_variance": 0.909,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 9 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "Tillering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 156.12231787228575,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 12.442,
+        "control_mean": 7.702,
+        "treatment_variance": 0.909,
+        "control_variance": 0.909,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 3 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "3 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 61.54245650480396,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 16.109,
+        "control_mean": 7.702,
+        "treatment_variance": 0.909,
+        "control_variance": 0.909,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 6 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "6 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 109.15346663204363,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Dry fodder yield",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Dry fodder yield",
+        "tissue": "shoot",
+        "treatment_mean": 15.61,
+        "control_mean": 7.702,
+        "treatment_variance": 0.909,
+        "control_variance": 0.909,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 9 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 102.67462996624252,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield",
+        "tissue": "grain",
+        "treatment_mean": 6.28,
+        "control_mean": 2.518,
+        "treatment_variance": 0.323,
+        "control_variance": 0.323,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 9 g/l at tillering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "Tillering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 149.40428911834795,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield",
+        "tissue": "grain",
+        "treatment_mean": 3.796,
+        "control_mean": 2.4,
+        "treatment_variance": 0.323,
+        "control_variance": 0.323,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 3 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "3 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 58.166666666666664,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield",
+        "tissue": "grain",
+        "treatment_mean": 5.469,
+        "control_mean": 2.4,
+        "treatment_variance": 0.323,
+        "control_variance": 0.323,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 6 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "6 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 127.87500000000003,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain yield",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield",
+        "tissue": "grain",
+        "treatment_mean": 5.464,
+        "control_mean": 2.4,
+        "treatment_variance": 0.323,
+        "control_variance": 0.323,
+        "variance_type": "LSD",
+        "n": 3,
+        "unit": "t/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar humic acid 9 g/l at 50% flowering stage",
+        "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+        "moderators": {
+          "year": "2018-19",
+          "stage": "50% flowering",
+          "concentration": "9 g/l",
+          "cultivar": "Shaffaa"
+        },
+        "confidence": "high",
+        "notes": "LSD (P=0.05) for interaction",
+        "effect_pct": 127.66666666666669,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "treatment_mean": 48.919,
+      "control_mean": 24.049,
+      "treatment_variance": 2.86,
+      "control_variance": 2.86,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 3 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "3 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 103.41386336230197,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "treatment_mean": 53.243,
+      "control_mean": 24.049,
+      "treatment_variance": 2.86,
+      "control_variance": 2.86,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 6 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "6 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 121.393820948896,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "treatment_mean": 51.253,
+      "control_mean": 24.049,
+      "treatment_variance": 2.86,
+      "control_variance": 2.86,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 9 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "9 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 113.11904860908979,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "treatment_mean": 41.483,
+      "control_mean": 23.947,
+      "treatment_variance": 2.86,
+      "control_variance": 2.86,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 3 g/l at 50% flowering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "50% flowering",
+        "stage": "50% flowering",
+        "concentration": "3 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 73.22837933770408,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "treatment_mean": 47.972,
+      "control_mean": 23.947,
+      "treatment_variance": 2.86,
+      "control_variance": 2.86,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 6 g/l at 50% flowering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "Tillering",
+        "stage": "50% flowering",
+        "concentration": "6 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.3%) [Kimi+Gemini agree]",
+      "effect_pct": 100.3257192967804,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 5.601,
+      "control_mean": 3.213,
+      "treatment_variance": 0.322,
+      "control_variance": 0.322,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 3 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "3 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 74.32306255835667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 6.769,
+      "control_mean": 3.213,
+      "treatment_variance": 0.322,
+      "control_variance": 0.322,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 6 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "6 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 110.67538126361656,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 6.532,
+      "control_mean": 3.213,
+      "treatment_variance": 0.322,
+      "control_variance": 0.322,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 9 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "9 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 103.29909741674447,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4.628,
+      "control_mean": 3.02,
+      "treatment_variance": 0.322,
+      "control_variance": 0.322,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar humic acid 3 g/l at 50% flowering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at 50% flowering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2017-18",
+        "spraying_stage": "50% flowering",
+        "stage": "50% flowering",
+        "concentration": "3 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 53.24503311258278,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "treatment_mean": 58.467,
+      "control_mean": 24.71,
+      "treatment_variance": 1.608,
+      "control_variance": 1.608,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar humic acid 6 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2018-19",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "6 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 136.6127074059085,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4.602,
+      "control_mean": 2.518,
+      "treatment_variance": 0.323,
+      "control_variance": 0.323,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar humic acid 3 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2018-19",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "3 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 82.76409849086579,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 6.465,
+      "control_mean": 2.518,
+      "treatment_variance": 0.323,
+      "control_variance": 0.323,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar humic acid 6 g/l at tillering stage",
+      "control_description": "Foliar water spray (0 g/l humic acid) at tillering stage",
+      "moderators": {
+        "cultivar": "Shaffaa",
+        "year": "2018-19",
+        "spraying_stage": "Tillering",
+        "stage": "Tillering",
+        "concentration": "6 g/l"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 156.7513899920572,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 12,
+    "final_count": 12
+  },
+  "verification_flags": [
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Green fodder yield",
+        "treatment_mean": 48.919,
+        "control_mean": 24.049,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +103.4%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +103.4% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.846399149614669,
+            "note": "CV = 5.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.8%"
+          }
+        },
+        "effect_pct": 103.41386336230197
+      }
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Green fodder yield",
+        "treatment_mean": 53.243,
+        "control_mean": 24.049,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +121.4%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +121.4% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.371598144357004,
+            "note": "CV = 5.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": 121.393820948896
+      }
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Green fodder yield",
+        "treatment_mean": 51.253,
+        "control_mean": 24.049,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +113.1%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +113.1% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.580161161297875,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": 113.11904860908979
+      }
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Green fodder yield",
+        "treatment_mean": 41.483,
+        "control_mean": 23.947,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +73.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.894390473205892,
+            "note": "CV = 6.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.7%"
+          }
+        },
+        "effect_pct": 73.22837933770408
+      }
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Green fodder yield",
+        "treatment_mean": 47.972,
+        "control_mean": 23.947,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +100.3%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +100.3% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.961811056449595,
+            "note": "CV = 6.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.0%"
+          }
+        },
+        "effect_pct": 100.3257192967804
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 5.601,
+        "control_mean": 3.213,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +74.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.74897339760757,
+            "note": "CV = 5.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.3%"
+          }
+        },
+        "effect_pct": 74.32306255835667
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 6.769,
+        "control_mean": 3.213,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +110.7%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +110.7% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.756980351602896,
+            "note": "CV = 4.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.5%"
+          }
+        },
+        "effect_pct": 110.67538126361656
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 6.532,
+        "control_mean": 3.213,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +103.3%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +103.3% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.929577464788733,
+            "note": "CV = 4.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.6%"
+          }
+        },
+        "effect_pct": 103.29909741674447
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 4.628,
+        "control_mean": 3.02,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +53.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.957649092480553,
+            "note": "CV = 7.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.4%"
+          }
+        },
+        "effect_pct": 53.24503311258278
+      }
+    },
+    {
+      "element": "Green fodder yield",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Green fodder yield",
+        "treatment_mean": 58.467,
+        "control_mean": 24.71,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +136.6%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +136.6% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.750269382728719,
+            "note": "CV = 2.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.7%"
+          }
+        },
+        "effect_pct": 136.6127074059085
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 4.602,
+        "control_mean": 2.518,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +82.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.018687527162102,
+            "note": "CV = 7.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.1%"
+          }
+        },
+        "effect_pct": 82.76409849086579
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 6.465,
+        "control_mean": 2.518,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +156.8%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +156.8% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.9961330239752515,
+            "note": "CV = 5.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.2%"
+          }
+        },
+        "effect_pct": 156.7513899920572
+      }
+    }
+  ]
+}

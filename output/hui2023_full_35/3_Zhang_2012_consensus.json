@@ -1,0 +1,360 @@
+{
+  "paper_id": "3_Zhang_2012",
+  "recon": {
+    "paper_id": "3_Zhang_2012",
+    "warnings": [
+      "THIS IS NOT A ZINC FERTILIZER STUDY - this paper studies nitrogen fertilizer effects on Zn accumulation",
+      "The study uses ZnSO4\u00b77H2O but applies it to ALL treatments equally (30 kg/ha) - there is no Zn fertilizer treatment vs control comparison",
+      "All treatments receive the same zinc fertilization due to low soil DTPA-extractable Zn",
+      "The treatments are different N rates (N0, N1, N2, N3), not Zn application rates",
+      "This paper does not fit the meta-analysis inclusion criteria as it does not test Zn fertilizer application effects",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated",
+      "Variance type override: LLM said 'SE', regex scan found 'LSD' (medium): nt,treatment means were compared by the least significant difference (LSD)test at P\\u003c0.05.\\n\\n\\n# Result"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "nt,treatment means were compared by the least significant difference (LSD)test at P\\u003c0.05.\\n\\n\\n# Result",
+    "variance_confidence": "medium",
+    "control_definition": "N0: no N application (0 kg N/ha)",
+    "treatment_definition": "N1: 99/82.5 kg N/ha, N2: 198/195 kg N/ha (optimal), N3: 297/292.5 kg N/ha",
+    "tables_with_target_data": [
+      "Table 2"
+    ],
+    "potential_tc_confusion": "Major confusion risk - this studies N effects, not Zn fertilizer effects",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "randomized complete block experimental design was used with four replicate plots (300m\u00b2 plot\u207b\u00b9)",
+    "factorial_structure": "[\"N rate\", \"year\"]",
+    "extraction_guidance": "DO NOT EXTRACT - This paper does not meet meta-analysis inclusion criteria. It studies nitrogen fertilizer effects on Zn accumulation, not zinc fertilizer application effects. All treatments receive identical zinc fertilization (30 kg/ha ZnSO4\u00b77H2O). The experimental design compares different nitrogen rates, not zinc application vs control.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Grain and shoot zinc accumulation in winter wheat affected by nitrogen management\",\n        \"species\": \"Triticum aestivum L. (winter wheat)\",\n        \"experimental_system\": \"field experiment\",\n        \"co2_levels\": {\"control\": \"N/A\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"THIS IS NOT A ZINC FERTILIZER STUDY - this paper studies nitrogen fertilizer effects on Zn accumulation\",\n        \"The study uses ZnSO4\u00b77H2O but applies it to ALL treatments equally (30 kg/ha) - there is no Zn fertilizer treatment vs control comparison\",\n        \"All treatments receive the same zinc fertilization due to low soil DTPA-extractable Zn\",\n        \"The treatments are different N rates (N0, N1, N2, N3), not Zn application rates\",\n        \"This paper does not fit the meta-analysis inclusion criteria as it does not test Zn fertilizer application effects\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"The bars represent the standard error of the mean (n=4)\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"N0: no N application (0 kg N/ha)\",\n        \"treatment_definition\": \"N1: 99/82.5 kg N/ha, N2: 198/195 kg N/ha (optimal), N3: 297/292.5 kg N/ha\",\n        \"identification_method\": \"Treatments labeled as N0, N1, N2, N3 in tables with N rates specified\",\n        \"potential_confusion\": \"Major confusion risk - this studies N effects, not Zn fertilizer effects\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n        \"source\": \"randomized complete block experimental design was used with four replicate plots (300m\u00b2 plot\u207b\u00b9)\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 4 replicate plots per treatment, which are independent experimental units\"\n    },\n    \"data_locations\": {\n        \"tables_with_target_data\": [\"Table 2\"],\n        \"tables_without_target_data\": [\"Table 1\", \"Table 4\", \"Table 5\"],\n        \"figures_with_data\": [],\n        \"table_descriptio",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 4",
+      "Table 5"
+    ],
+    "table_descriptions": {
+      "Table 1": "N fertilizer split application schedule across growth stages",
+      "Table 2": "Grain and straw yield, Zn and N concentrations in grain and straw, harvest indices",
+      "Table 4": "Post-anthesis Zn uptake and remobilization parameters",
+      "Table 5": "Soil DTPA-extractable Zn concentration"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 2": [
+        "Grain yield",
+        "Straw yield",
+        "Grain Zn concentration",
+        "Grain N concentration",
+        "Straw Zn concentration",
+        "Straw N concentration",
+        "Grain Zn content",
+        "Grain N content",
+        "Straw Zn content",
+        "Straw N content",
+        "ZnHI",
+        "NHI"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 0,
+  "gemini_obs": 0,
+  "matched_obs": 5,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Grain Zn concentration",
+      "tissue": "grain",
+      "treatment_mean": 25.1,
+      "control_mean": 21.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Nitrogen application rate N1 (99 kg N/ha)",
+      "control_description": "Nitrogen application rate N0 (0 kg N/ha)",
+      "moderators": {
+        "cultivar": "Kenong 9204",
+        "year": "2007-2008",
+        "N_rate": "99 kg N/ha"
+      },
+      "confidence": "high",
+      "notes": "All treatments received 30 kg/ha ZnSO4\u00b77H2O as basal fertilizer. Variance type identified as LSD from text, but numeric values not provided in table. [from vision]",
+      "effect_pct": 16.744186046511633,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 5.2,
+      "control_mean": 4.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "Mg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Nitrogen application rate N1 (99 kg N/ha)",
+      "control_description": "Nitrogen application rate N0 (0 kg N/ha)",
+      "moderators": {
+        "cultivar": "Kenong 9204",
+        "year": "2007-2008",
+        "N_rate": "99 kg N/ha"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 23.809523809523807,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Straw yield",
+      "tissue": "shoot",
+      "treatment_mean": 5.2,
+      "control_mean": 4.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "Mg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Nitrogen application rate N1 (99 kg N/ha)",
+      "control_description": "Nitrogen application rate N0 (0 kg N/ha)",
+      "moderators": {
+        "cultivar": "Kenong 9204",
+        "year": "2007-2008",
+        "N_rate": "99 kg N/ha"
+      },
+      "confidence": "high",
+      "notes": "Tissue recorded as shoot as 'straw' is not in the allowed list. [from vision]",
+      "effect_pct": 18.181818181818176,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain Zn content",
+      "tissue": "grain",
+      "treatment_mean": 130.5,
+      "control_mean": 88.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "g/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Nitrogen application rate N1 (99 kg N/ha)",
+      "control_description": "Nitrogen application rate N0 (0 kg N/ha)",
+      "moderators": {
+        "cultivar": "Kenong 9204",
+        "year": "2007-2008",
+        "N_rate": "99 kg N/ha"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 47.29119638826186,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "ZnHI",
+      "tissue": "whole plant",
+      "treatment_mean": 86.0,
+      "control_mean": 80.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "%",
+      "data_source": "Table 2",
+      "treatment_description": "Nitrogen application rate N1 (99 kg N/ha)",
+      "control_description": "Nitrogen application rate N0 (0 kg N/ha)",
+      "moderators": {
+        "cultivar": "Kenong 9204",
+        "year": "2007-2008",
+        "N_rate": "99 kg N/ha"
+      },
+      "confidence": "high",
+      "notes": "Zinc harvest index. [from vision]",
+      "effect_pct": 7.5,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 5,
+    "final_count": 5
+  },
+  "verification_flags": [
+    {
+      "element": "Grain Zn concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain Zn concentration",
+        "treatment_mean": 25.1,
+        "control_mean": 21.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 16.744186046511633
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 5.2,
+        "control_mean": 4.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 23.809523809523807
+      }
+    },
+    {
+      "element": "Straw yield",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Straw yield",
+        "treatment_mean": 5.2,
+        "control_mean": 4.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 18.181818181818176
+      }
+    },
+    {
+      "element": "Grain Zn content",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain Zn content",
+        "treatment_mean": 130.5,
+        "control_mean": 88.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +47.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 47.29119638826186
+      }
+    }
+  ]
+}

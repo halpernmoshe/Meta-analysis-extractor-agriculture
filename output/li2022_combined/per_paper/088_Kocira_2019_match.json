@@ -1,0 +1,374 @@
+{
+  "paper_id": "088_Kocira_2019_Effect of amino acid biostimulant on the",
+  "matched_pairs": [
+    {
+      "gt_idx": 12,
+      "json_idx": 0,
+      "gt_pair": "63",
+      "gt_dose": "0.6",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 63 (Kelpak, dose=0.6, freq=1, 2014, ctrl=0.3267) matches JSON T1 (0.3% single, 2014, ctrl=3.267) — effect +4.53% in both; GT ctrl_mean is 10x smaller than JSON (unit scaling); product mislabeled as Kelpak in Li 2022 but is Terra Sorb Complex amino acid biostimulant",
+      "gt_ctrl": 0.3267,
+      "gt_treat": 0.3415,
+      "gt_effect_pct": 4.531,
+      "ext_ctrl": 3.267,
+      "ext_treat": 3.415,
+      "ext_effect_pct": 4.531,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 13,
+      "json_idx": 1,
+      "gt_pair": "64",
+      "gt_dose": "0.6",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 64 (Kelpak, dose=0.6, freq=2, 2014, ctrl=0.3267, treat=0.3523) matches JSON T2 (0.5% single, 2014, ctrl=3.267, treat=3.523) — effect +7.83% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.3267,
+      "gt_treat": 0.3523,
+      "gt_effect_pct": 7.832,
+      "ext_ctrl": 3.267,
+      "ext_treat": 3.523,
+      "ext_effect_pct": 7.832,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 15,
+      "json_idx": 3,
+      "gt_pair": "66",
+      "gt_dose": "1",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 66 (Kelpak, dose=1.0, freq=2, 2014, ctrl=0.3267, treat=0.3923) matches JSON T4 (0.5% double, 2014, ctrl=3.267, treat=3.923) — effect +20.07% in both; exact 10x unit scaling; GT pair 65 skipped due to data error (see notes)",
+      "gt_ctrl": 0.3267,
+      "gt_treat": 0.3923,
+      "gt_effect_pct": 20.080,
+      "ext_ctrl": 3.267,
+      "ext_treat": 3.923,
+      "ext_effect_pct": 20.080,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 16,
+      "json_idx": 4,
+      "gt_pair": "67",
+      "gt_dose": "0.6",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 67 (Kelpak, dose=0.6, freq=1, 2015, ctrl=0.2664, treat=0.3705) matches JSON T1 (0.3% single, 2015, ctrl=2.664, treat=3.705) — effect +39.08% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.2664,
+      "gt_treat": 0.3705,
+      "gt_effect_pct": 39.083,
+      "ext_ctrl": 2.664,
+      "ext_treat": 3.705,
+      "ext_effect_pct": 39.083,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 17,
+      "json_idx": 5,
+      "gt_pair": "68",
+      "gt_dose": "0.6",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 68 (Kelpak, dose=0.6, freq=2, 2015, ctrl=0.2664, treat=0.3703) matches JSON T2 (0.5% single, 2015, ctrl=2.664, treat=3.703) — effect +39.00% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.2664,
+      "gt_treat": 0.3703,
+      "gt_effect_pct": 39.008,
+      "ext_ctrl": 2.664,
+      "ext_treat": 3.703,
+      "ext_effect_pct": 39.008,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 18,
+      "json_idx": 6,
+      "gt_pair": "69",
+      "gt_dose": "1",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 69 (Kelpak, dose=1.0, freq=1, 2015, ctrl=0.2664, treat=0.3650) matches JSON T3 (0.3% double, 2015, ctrl=2.664, treat=3.650) — effect +37.01% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.2664,
+      "gt_treat": 0.3650,
+      "gt_effect_pct": 37.013,
+      "ext_ctrl": 2.664,
+      "ext_treat": 3.650,
+      "ext_effect_pct": 37.013,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 19,
+      "json_idx": 7,
+      "gt_pair": "70",
+      "gt_dose": "1",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 70 (Kelpak, dose=1.0, freq=2, 2015, ctrl=0.2664, treat=0.3929) matches JSON T4 (0.5% double, 2015, ctrl=2.664, treat=3.929) — effect +47.48% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.2664,
+      "gt_treat": 0.3929,
+      "gt_effect_pct": 47.484,
+      "ext_ctrl": 2.664,
+      "ext_treat": 3.929,
+      "ext_effect_pct": 47.484,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 20,
+      "json_idx": 8,
+      "gt_pair": "71",
+      "gt_dose": "0.6",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 71 (Kelpak, dose=0.6, freq=1, 2016, ctrl=0.3262, treat=0.3865) matches JSON T1 (0.3% single, 2016, ctrl=3.262, treat=3.865) — effect +18.48% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.3262,
+      "gt_treat": 0.3865,
+      "gt_effect_pct": 18.484,
+      "ext_ctrl": 3.262,
+      "ext_treat": 3.865,
+      "ext_effect_pct": 18.484,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 21,
+      "json_idx": 9,
+      "gt_pair": "72",
+      "gt_dose": "0.6",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 72 (Kelpak, dose=0.6, freq=2, 2016, ctrl=0.3262, treat=0.3919) matches JSON T2 (0.5% single, 2016, ctrl=3.262, treat=3.919) — effect +20.14% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.3262,
+      "gt_treat": 0.3919,
+      "gt_effect_pct": 20.141,
+      "ext_ctrl": 3.262,
+      "ext_treat": 3.919,
+      "ext_effect_pct": 20.141,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 22,
+      "json_idx": 10,
+      "gt_pair": "73",
+      "gt_dose": "1",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 73 (Kelpak, dose=1.0, freq=1, 2016, ctrl=0.3262, treat=0.3987) matches JSON T3 (0.3% double, 2016, ctrl=3.262, treat=3.987) — effect +22.23% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.3262,
+      "gt_treat": 0.3987,
+      "gt_effect_pct": 22.226,
+      "ext_ctrl": 3.262,
+      "ext_treat": 3.987,
+      "ext_effect_pct": 22.226,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 23,
+      "json_idx": 11,
+      "gt_pair": "74",
+      "gt_dose": "1",
+      "gt_crop": "soybean",
+      "element": "Seed yield, t ha-1",
+      "match_reason": "GT pair 74 (Kelpak, dose=1.0, freq=2, 2016, ctrl=0.3262, treat=0.4084) matches JSON T4 (0.5% double, 2016, ctrl=3.262, treat=4.084) — effect +25.22% in both; exact 10x unit scaling",
+      "gt_ctrl": 0.3262,
+      "gt_treat": 0.4084,
+      "gt_effect_pct": 25.199,
+      "ext_ctrl": 3.262,
+      "ext_treat": 4.084,
+      "ext_effect_pct": 25.199,
+      "confidence": "high"
+    }
+  ],
+  "unmatched_gt": [
+    {
+      "gt_idx": 0,
+      "gt_pair": "51",
+      "gt_dose": "0.7",
+      "reason": "Coverage failure — GT pair 51 ('Kelpak ' with trailing space, dose=0.7 L/ha, freq=1, 2014) represents the actual Kelpak seaweed extract arm. Our extractor only captured Terra Sorb Complex (amino acid biostimulant) data; Kelpak seaweed data was not extracted."
+    },
+    {
+      "gt_idx": 1,
+      "gt_pair": "52",
+      "gt_dose": "0.7",
+      "reason": "Coverage failure — GT pair 52 ('Kelpak ', dose=0.7, freq=2, 2014) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 2,
+      "gt_pair": "53",
+      "gt_dose": "1",
+      "reason": "Coverage failure — GT pair 53 ('Kelpak ', dose=1.0, freq=1, 2014) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 3,
+      "gt_pair": "54",
+      "gt_dose": "1",
+      "reason": "Coverage failure — GT pair 54 ('Kelpak ', dose=1.0, freq=2, 2014) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 4,
+      "gt_pair": "55",
+      "gt_dose": "0.7",
+      "reason": "Coverage failure — GT pair 55 ('Kelpak ', dose=0.7, freq=1, 2015) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 5,
+      "gt_pair": "56",
+      "gt_dose": "0.7",
+      "reason": "Coverage failure — GT pair 56 ('Kelpak ', dose=0.7, freq=2, 2015) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 6,
+      "gt_pair": "57",
+      "gt_dose": "1",
+      "reason": "Coverage failure — GT pair 57 ('Kelpak ', dose=1.0, freq=1, 2015) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 7,
+      "gt_pair": "58",
+      "gt_dose": "1",
+      "reason": "Coverage failure — GT pair 58 ('Kelpak ', dose=1.0, freq=2, 2015) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 8,
+      "gt_pair": "59",
+      "gt_dose": "0.7",
+      "reason": "Coverage failure — GT pair 59 ('Kelpak ', dose=0.7, freq=1, 2016) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 9,
+      "gt_pair": "60",
+      "gt_dose": "0.7",
+      "reason": "Coverage failure — GT pair 60 ('Kelpak ', dose=0.7, freq=2, 2016) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 10,
+      "gt_pair": "61",
+      "gt_dose": "1",
+      "reason": "Coverage failure — GT pair 61 ('Kelpak ', dose=1.0, freq=1, 2016) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 11,
+      "gt_pair": "62",
+      "gt_dose": "1",
+      "reason": "Coverage failure — GT pair 62 ('Kelpak ', dose=1.0, freq=2, 2016) is the Kelpak seaweed extract arm not captured by our extractor."
+    },
+    {
+      "gt_idx": 14,
+      "gt_pair": "65",
+      "gt_dose": "1",
+      "reason": "Data anomaly in Li 2022 — GT pair 65 ('Kelpak', dose=1.0, freq=1, 2014, ctrl=0.3267, treat=0.3178) shows a negative effect of -2.72%. The positional match would be JSON idx 2 (T3, 0.3% double, 2014) with effect +15.7%, which is irreconcilable. All other 'Kelpak' (no space) pairs in 2014, 2015, 2016 match Terra Sorb data with perfect effect agreement. This pair appears to be a data entry error in the Li 2022 dataset — treat=0.3178 is lower than the control and inconsistent with the surrounding treatment pattern."
+    }
+  ],
+  "unmatched_json": [
+    {
+      "json_idx": 2,
+      "element": "Seed yield, t ha-1",
+      "reason": "Yield outcome (Terra Sorb T3, 0.3% double, 2014, effect +15.7%) — positional GT match would be pair 65 but its effect (-2.72%) is irreconcilable; cannot be matched without introducing a data error"
+    },
+    {
+      "json_idx": 12,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome; Li 2022 uses total yield (t/ha) only"
+    },
+    {
+      "json_idx": 13,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 14,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 15,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 16,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 17,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 18,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 19,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 20,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 21,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 22,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 23,
+      "element": "1000 seed weight, g",
+      "reason": "Yield component (seed mass) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 24,
+      "element": "Number of pods, Nr plant-1",
+      "reason": "Yield component (pod count) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 25,
+      "element": "Number of seeds, Nr m-2",
+      "reason": "Yield component (seed count) — not included in Li 2022 yield outcome"
+    },
+    {
+      "json_idx": 26,
+      "element": "Plant height, cm",
+      "reason": "Morphological/growth trait — not a yield outcome"
+    },
+    {
+      "json_idx": 27,
+      "element": "Total protein, % DM",
+      "reason": "Quality trait (seed composition) — not a yield outcome"
+    },
+    {
+      "json_idx": 28,
+      "element": "Total fat, % DM",
+      "reason": "Quality trait (seed composition) — not a yield outcome"
+    },
+    {
+      "json_idx": 29,
+      "element": "TPC, mg g-1 DM",
+      "reason": "Non-yield outcome — total phenolic content (secondary metabolites)"
+    },
+    {
+      "json_idx": 30,
+      "element": "TFC, mg g-1 DM",
+      "reason": "Non-yield outcome — total flavonoid content (secondary metabolites)"
+    },
+    {
+      "json_idx": 31,
+      "element": "TAC, mg g-1 DM",
+      "reason": "Non-yield outcome — total anthocyanin content (secondary metabolites)"
+    },
+    {
+      "json_idx": 32,
+      "element": "RP, mg g-1 DM",
+      "reason": "Non-yield outcome — radical scavenging / antioxidant capacity"
+    }
+  ],
+  "notes": "CRITICAL PAPER STRUCTURE NOTE: Kocira 2019 is titled 'Effect of amino acid biostimulant' but contains TWO distinct treatment arms: (1) Terra Sorb Complex (amino acid biostimulant, concentrations 0.3% and 0.5%, single and double spray) and (2) Kelpak (seaweed extract SWE, doses 0.7 and 1.0 L/ha, single and double spray), across 3 years (2014, 2015, 2016). Li 2022 classified BOTH arms as 'Kelpak/SWE' in their database. Our extractor only captured the Terra Sorb Complex arm (12 seed yield observations). The Kelpak seaweed arm (12 GT rows, pairs 51-62, labeled 'Kelpak ' with trailing space) was missed entirely — this is the main coverage failure for this paper. Unit scaling: Li 2022 GT ctrl_means are 10x smaller than our JSON values (e.g., GT 0.3267 vs JSON 3.267 t/ha) — effect percentages are identical, confirming matches. GT pair 65 appears to be a data entry error in Li 2022 (treat < ctrl inconsistently, all other arms show positive effects)."
+}

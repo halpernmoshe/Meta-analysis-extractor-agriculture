@@ -1,0 +1,2687 @@
+{
+  "paper_id": "1-s2.0-S0304423819306703-main",
+  "recon": {
+    "paper_id": "1-s2.0-S0304423819306703-main",
+    "warnings": [
+      "This is a 5-year study (2012-2016) with year-to-year variation reported - need to extract overall means across years",
+      "Multiple protein hydrolysate types (Soy, Lup, Cas) at two concentrations each - extract each treatment vs control separately",
+      "Yield is reported in kg/vine, not standard kg/ha or t/ha units - may need conversion based on planting density (3300 vines/ha mentioned)",
+      "Tables show statistical letters (a,b,c,d) indicating Duncan's multiple range test results",
+      "Some data appears to have transcription errors (e.g., 'ea' in Table 2 control TSS value)",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "A bivariate analysis of variance (ANOVA) was performed with mean separation by Duncan's multiple range test",
+    "variance_confidence": "high",
+    "control_definition": "Water-treated vines served as a control",
+    "treatment_definition": "PHs (Soy, Lup, and Cas) were sprayed three times... at 1.6 and 6.4 g L\u22121 equivalents to 0.5 and 2.0 kg/ha, respectively",
+    "tables_with_target_data": [
+      "Table 1"
+    ],
+    "potential_tc_confusion": null,
+    "experimental_design": "factorial",
+    "sample_size_found": 20,
+    "sample_size_source": "For each treatment 20 vines along the two rows were randomly selected, marked, and used in the assays",
+    "factorial_structure": "[\"biostimulant_type\", \"concentration\", \"year\"]",
+    "extraction_guidance": "Extract yield data from Table 1 only. Primary outcome is 'Yield (kg/vine)'. Extract each of the 6 treatments (Soy 1.6, Soy 6.4, Lup 1.6, Lup 6.4, Cas 1.6, Cas 6.4) separately against the Control. Data represents means across 5 years. Use Duncan's multiple range test letters as variance indicator. Note that n=20 vines per treatment. Planting density is 3300 vines/ha if unit conversion needed.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Protein hydrolysates effects on grapevine (Vitis vinifera L.,cv.Corvina)performance and water stress tolerance\",\n        \"species\": \"Vitis vinifera L. cv. Corvina (grapevine)\",\n        \"experimental_system\": \"open-field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This is a 5-year study (2012-2016) with year-to-year variation reported - need to extract overall means across years\",\n        \"Multiple protein hydrolysate types (Soy, Lup, Cas) at two concentrations each - extract each treatment vs control separately\",\n        \"Yield is reported in kg/vine, not standard kg/ha or t/ha units - may need conversion based on planting density (3300 vines/ha mentioned)\",\n        \"Tables show statistical letters (a,b,c,d) indicating Duncan's multiple range test results\",\n        \"Some data appears to have transcription errors (e.g., 'ea' in Table 2 control TSS value)\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"A bivariate analysis of variance (ANOVA) was performed with mean separation by Duncan's multiple range test\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Water-treated vines served as a control\",\n        \"treatment_definition\": \"PHs (Soy, Lup, and Cas) were sprayed three times... at 1.6 and 6.4 g L\u22121 equivalents to 0.5 and 2.0 kg/ha, respectively\",\n        \"identification_method\": \"Control is labeled as 'Control' in tables, treatments are labeled as 'Soy 1.6', 'Soy 6.4', 'Lup 1.6', 'Lup 6.4', 'Cas 1.6', 'Cas 6.4'\",\n        \"potential_confusion\": null\n    },\n    \"sample_size\": {\n        \"n\": 20,\n        \"source\": \"For each treatment 20 vines along the two rows were randomly selected, marked, and used in the assays\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 20 vines per treatment group, which represents independent experimental replicates\"\n    },\n  ",
+    "tables_without_target_data": [
+      "Table 2",
+      "Table 3",
+      "Table 4",
+      "Table 5",
+      "Table 6"
+    ],
+    "table_descriptions": {
+      "Table 1": "Yield and yield components including yield per vine (kg/vine), cluster weight, and cluster number",
+      "Table 2": "Fruit composition including total soluble solids, titratable acidity, pH, malic acid, and total anthocyanins",
+      "Table 3": "Canopy temperature measurements during 2015 season",
+      "Table 4": "Canopy temperature measurements during 2016 season",
+      "Table 5": "Conductance index (IG) measurements during 2015 season",
+      "Table 6": "Conductance index (IG) measurements during 2016 season"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "Cluster/vine (n.)",
+        "Yield (kg/vine)",
+        "Cluster weight (g)",
+        "Cluster/shoot (n)"
+      ],
+      "Table 2": [
+        "Total Soluble Solids (\u00b0Brix)",
+        "Titratable Acidity (g/L)",
+        "pH",
+        "Malic acid (g/L)",
+        "TAnt (mg/L)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 24,
+  "kimi_obs": 54,
+  "gemini_obs": 0,
+  "matched_obs": 24,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "Total Soluble Solids (\u00b0Brix)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Total Soluble Solids (\u00b0Brix)",
+        "tissue": "berry",
+        "treatment_mean": 20.53,
+        "control_mean": 19.05,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "\u00b0Brix",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'd', p\u22640.05. Control has letter 'e'.",
+        "effect_pct": 7.769028871391077,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total Soluble Solids (\u00b0Brix)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Total Soluble Solids (\u00b0Brix)",
+        "tissue": "berry",
+        "treatment_mean": 21.2,
+        "control_mean": 19.05,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "\u00b0Brix",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'c', p\u22640.05.",
+        "effect_pct": 11.286089238845136,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total Soluble Solids (\u00b0Brix)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Total Soluble Solids (\u00b0Brix)",
+        "tissue": "berry",
+        "treatment_mean": 22.8,
+        "control_mean": 19.05,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "\u00b0Brix",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'a', p\u22640.05. 17% increase over control.",
+        "effect_pct": 19.685039370078737,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total Soluble Solids (\u00b0Brix)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Total Soluble Solids (\u00b0Brix)",
+        "tissue": "berry",
+        "treatment_mean": 21.32,
+        "control_mean": 19.05,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "\u00b0Brix",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'c', p\u22640.05.",
+        "effect_pct": 11.916010498687662,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total Soluble Solids (\u00b0Brix)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Total Soluble Solids (\u00b0Brix)",
+        "tissue": "berry",
+        "treatment_mean": 22.18,
+        "control_mean": 19.05,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "\u00b0Brix",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'b', p\u22640.05. 14% increase over control.",
+        "effect_pct": 16.430446194225716,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Total Soluble Solids (\u00b0Brix)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Total Soluble Solids (\u00b0Brix)",
+        "tissue": "berry",
+        "treatment_mean": 21.94,
+        "control_mean": 19.05,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "\u00b0Brix",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'b', p\u22640.05.",
+        "effect_pct": 15.170603674540683,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Titratable Acidity (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Titratable Acidity (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 7.12,
+        "control_mean": 8.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'b', p\u22640.05. Control has letter 'a'.",
+        "effect_pct": -11.332503113325023,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Titratable Acidity (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Titratable Acidity (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 6.65,
+        "control_mean": 8.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'c', p\u22640.05.",
+        "effect_pct": -17.18555417185553,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Titratable Acidity (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Titratable Acidity (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 6.24,
+        "control_mean": 8.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letters 'c,d', p\u22640.05.",
+        "effect_pct": -22.291407222914064,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Titratable Acidity (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Titratable Acidity (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 6.54,
+        "control_mean": 8.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'c', p\u22640.05.",
+        "effect_pct": -18.555417185554166,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Titratable Acidity (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Titratable Acidity (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 5.8,
+        "control_mean": 8.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'd', p\u22640.05.",
+        "effect_pct": -27.77085927770859,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Titratable Acidity (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Titratable Acidity (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 5.25,
+        "control_mean": 8.03,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'e', p\u22640.05. Lowest acidity.",
+        "effect_pct": -34.620174346201736,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "pH",
+      "tissue": "berry",
+      "kimi": {
+        "element": "pH",
+        "tissue": "berry",
+        "treatment_mean": 3.34,
+        "control_mean": 3.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "pH units",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'a' (shared with other treatments), p\u22640.05. Control has letter 'b'.",
+        "effect_pct": 6.369426751592348,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "pH",
+      "tissue": "berry",
+      "kimi": {
+        "element": "pH",
+        "tissue": "berry",
+        "treatment_mean": 3.29,
+        "control_mean": 3.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "pH units",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'a', p\u22640.05.",
+        "effect_pct": 4.777070063694264,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "pH",
+      "tissue": "berry",
+      "kimi": {
+        "element": "pH",
+        "tissue": "berry",
+        "treatment_mean": 3.44,
+        "control_mean": 3.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "pH units",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'a', p\u22640.05. Highest pH.",
+        "effect_pct": 9.554140127388528,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "pH",
+      "tissue": "berry",
+      "kimi": {
+        "element": "pH",
+        "tissue": "berry",
+        "treatment_mean": 3.32,
+        "control_mean": 3.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "pH units",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'b' (not significantly different from control), p\u22640.05.",
+        "effect_pct": 5.732484076433112,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "pH",
+      "tissue": "berry",
+      "kimi": {
+        "element": "pH",
+        "tissue": "berry",
+        "treatment_mean": 3.39,
+        "control_mean": 3.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "pH units",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'a', p\u22640.05.",
+        "effect_pct": 7.961783439490445,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "pH",
+      "tissue": "berry",
+      "kimi": {
+        "element": "pH",
+        "tissue": "berry",
+        "treatment_mean": 3.3,
+        "control_mean": 3.14,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "pH units",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'a', p\u22640.05.",
+        "effect_pct": 5.095541401273875,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Malic acid (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Malic acid (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 1.76,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'b', p\u22640.05. Control has letter 'a'.",
+        "effect_pct": -32.30769230769231,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Malic acid (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Malic acid (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 1.67,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letters 'b,c', p\u22640.05.",
+        "effect_pct": -35.769230769230774,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Malic acid (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Malic acid (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 1.03,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'e', p\u22640.05. Lowest malic acid content.",
+        "effect_pct": -60.38461538461538,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Malic acid (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Malic acid (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 1.62,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letters 'b,c', p\u22640.05.",
+        "effect_pct": -37.69230769230769,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Malic acid (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Malic acid (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 1.24,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letters 'd,e', p\u22640.05.",
+        "effect_pct": -52.307692307692314,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Malic acid (g/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "Malic acid (g/L)",
+        "tissue": "berry",
+        "treatment_mean": 1.45,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "g/L",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letters 'c,d', p\u22640.05.",
+        "effect_pct": -44.23076923076923,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "TAnt (mg/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "TAnt (mg/L)",
+        "tissue": "berry",
+        "treatment_mean": 336,
+        "control_mean": 132,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "mg/L",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Total anthocyanins. Mean followed by letters 'b,c', p\u22640.05. Control has letter 'e'.",
+        "effect_pct": 154.54545454545453,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "TAnt (mg/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "TAnt (mg/L)",
+        "tissue": "berry",
+        "treatment_mean": 271,
+        "control_mean": 132,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "mg/L",
+        "data_source": "Table 2",
+        "treatment_description": "Soybean protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Soy",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'd', p\u22640.05. Higher dose less effective than lower dose for this parameter.",
+        "effect_pct": 105.3030303030303,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "TAnt (mg/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "TAnt (mg/L)",
+        "tissue": "berry",
+        "treatment_mean": 342,
+        "control_mean": 132,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "mg/L",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'b', p\u22640.05.",
+        "effect_pct": 159.0909090909091,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "TAnt (mg/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "TAnt (mg/L)",
+        "tissue": "berry",
+        "treatment_mean": 327,
+        "control_mean": 132,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "mg/L",
+        "data_source": "Table 2",
+        "treatment_description": "Lupin protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Lup",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letters 'b,c', p\u22640.05.",
+        "effect_pct": 147.72727272727272,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "TAnt (mg/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "TAnt (mg/L)",
+        "tissue": "berry",
+        "treatment_mean": 373,
+        "control_mean": 132,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "mg/L",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 1.6 g/L (0.5 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 1.6,
+          "concentration_kg_ha": 0.5,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'a', p\u22640.05. Best effect on anthocyanin content (373 mg/L vs 132 mg/L control).",
+        "effect_pct": 182.57575757575756,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "TAnt (mg/L)",
+      "tissue": "berry",
+      "kimi": {
+        "element": "TAnt (mg/L)",
+        "tissue": "berry",
+        "treatment_mean": 316,
+        "control_mean": 132,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 20,
+        "unit": "mg/L",
+        "data_source": "Table 2",
+        "treatment_description": "Casein protein hydrolysate, 6.4 g/L (2.0 kg/ha)",
+        "control_description": "Water-treated control",
+        "moderators": {
+          "cultivar": "Corvina",
+          "biostimulant_type": "Cas",
+          "concentration_g_L": 6.4,
+          "concentration_kg_ha": 2.0,
+          "year": "2012-2016 (5-year average)"
+        },
+        "confidence": "high",
+        "notes": "Main effect across 5 years. Mean followed by letter 'c', p\u22640.05. Lower dose (1.6 g/L) had better effect than this higher dose.",
+        "effect_pct": 139.3939393939394,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "treatment_mean": 17.3,
+      "control_mean": 17.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.5813953488372177,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "treatment_mean": 4.46,
+      "control_mean": 4.25,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "kg/vine",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.941176470588235,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "treatment_mean": 257,
+      "control_mean": 247,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "g",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.048582995951417,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.17,
+      "control_mean": 1.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.7391304347826104,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "treatment_mean": 17.75,
+      "control_mean": 17.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.1976744186046555,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "treatment_mean": 5.57,
+      "control_mean": 4.25,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "kg/vine",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 31.05882352941177,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "treatment_mean": 314,
+      "control_mean": 247,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "g",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 27.125506072874494,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.2,
+      "control_mean": 1.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Soybean protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Soy",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.347826086956526,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "treatment_mean": 17.64,
+      "control_mean": 17.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.5581395348837286,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "treatment_mean": 4.65,
+      "control_mean": 4.25,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "kg/vine",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.41176470588236,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "treatment_mean": 264,
+      "control_mean": 247,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "g",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.882591093117409,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.23,
+      "control_mean": 1.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.956521739130442,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "treatment_mean": 17.2,
+      "control_mean": 17.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "treatment_mean": 5.13,
+      "control_mean": 4.25,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "kg/vine",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.705882352941174,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "treatment_mean": 298,
+      "control_mean": 247,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "g",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.647773279352226,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.22,
+      "control_mean": 1.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Lupin protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Lup",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.086956521739136,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "treatment_mean": 17.95,
+      "control_mean": 17.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.3604651162790695,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "treatment_mean": 4.83,
+      "control_mean": 4.25,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "kg/vine",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 13.647058823529413,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "treatment_mean": 269,
+      "control_mean": 247,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "g",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.906882591093117,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.14,
+      "control_mean": 1.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 1.6 g L-1 (0.5 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 1.6,
+        "concentration_kg_ha": 0.5,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "1.6 g L-1",
+        "application_rate": "0.5 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.8695652173913052,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "treatment_mean": 17.6,
+      "control_mean": 17.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.32558139534885,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "treatment_mean": 5.39,
+      "control_mean": 4.25,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "kg/vine",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 26.823529411764696,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "treatment_mean": 306,
+      "control_mean": 247,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "g",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 23.88663967611336,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "treatment_mean": 1.26,
+      "control_mean": 1.15,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 20,
+      "unit": "number",
+      "data_source": "Table 1",
+      "treatment_description": "Casein protein hydrolysate 6.4 g L-1 (2.0 kg/ha)",
+      "control_description": "Water treatment",
+      "moderators": {
+        "cultivar": "Corvina",
+        "biostimulant_type": "Cas",
+        "concentration_g_L": 6.4,
+        "concentration_kg_ha": 2.0,
+        "year": "2012-2016 (5-year average)",
+        "concentration": "6.4 g L-1",
+        "application_rate": "2.0 kg/ha"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.565217391304357,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 24,
+    "final_count": 24
+  },
+  "verification_flags": [
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/vine (n.)",
+        "treatment_mean": 17.3,
+        "control_mean": 17.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 0.5813953488372177
+      }
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Yield (kg/vine)",
+        "treatment_mean": 4.46,
+        "control_mean": 4.25,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 4.941176470588235
+      }
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster weight (g)",
+        "treatment_mean": 257,
+        "control_mean": 247,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 4.048582995951417
+      }
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/shoot (n)",
+        "treatment_mean": 1.17,
+        "control_mean": 1.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 1.7391304347826104
+      }
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/vine (n.)",
+        "treatment_mean": 17.75,
+        "control_mean": 17.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 3.1976744186046555
+      }
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Yield (kg/vine)",
+        "treatment_mean": 5.57,
+        "control_mean": 4.25,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +31.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 31.05882352941177
+      }
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster weight (g)",
+        "treatment_mean": 314,
+        "control_mean": 247,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 27.125506072874494
+      }
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/shoot (n)",
+        "treatment_mean": 1.2,
+        "control_mean": 1.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 4.347826086956526
+      }
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/vine (n.)",
+        "treatment_mean": 17.64,
+        "control_mean": 17.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 2.5581395348837286
+      }
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Yield (kg/vine)",
+        "treatment_mean": 4.65,
+        "control_mean": 4.25,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 9.41176470588236
+      }
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster weight (g)",
+        "treatment_mean": 264,
+        "control_mean": 247,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 6.882591093117409
+      }
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/shoot (n)",
+        "treatment_mean": 1.23,
+        "control_mean": 1.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 6.956521739130442
+      }
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/vine (n.)",
+        "treatment_mean": 17.2,
+        "control_mean": 17.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Yield (kg/vine)",
+        "treatment_mean": 5.13,
+        "control_mean": 4.25,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 20.705882352941174
+      }
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster weight (g)",
+        "treatment_mean": 298,
+        "control_mean": 247,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 20.647773279352226
+      }
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/shoot (n)",
+        "treatment_mean": 1.22,
+        "control_mean": 1.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 6.086956521739136
+      }
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/vine (n.)",
+        "treatment_mean": 17.95,
+        "control_mean": 17.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 4.3604651162790695
+      }
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Yield (kg/vine)",
+        "treatment_mean": 4.83,
+        "control_mean": 4.25,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 13.647058823529413
+      }
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster weight (g)",
+        "treatment_mean": 269,
+        "control_mean": 247,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 8.906882591093117
+      }
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/shoot (n)",
+        "treatment_mean": 1.14,
+        "control_mean": 1.15,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": -0.8695652173913052
+      }
+    },
+    {
+      "element": "Cluster/vine (n.)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/vine (n.)",
+        "treatment_mean": 17.6,
+        "control_mean": 17.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 2.32558139534885
+      }
+    },
+    {
+      "element": "Yield (kg/vine)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Yield (kg/vine)",
+        "treatment_mean": 5.39,
+        "control_mean": 4.25,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +26.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 26.823529411764696
+      }
+    },
+    {
+      "element": "Cluster weight (g)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster weight (g)",
+        "treatment_mean": 306,
+        "control_mean": 247,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 23.88663967611336
+      }
+    },
+    {
+      "element": "Cluster/shoot (n)",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "sample_size"
+      ],
+      "details": {
+        "element": "Cluster/shoot (n)",
+        "treatment_mean": 1.26,
+        "control_mean": 1.15,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": false,
+            "n": 20,
+            "note": "n=20 seems too large for a typical experiment"
+          }
+        },
+        "effect_pct": 9.565217391304357
+      }
+    }
+  ]
+}

@@ -1,0 +1,2958 @@
+{
+  "paper_id": "029_Ciepiela_2019_The effect of biostimulants derived from",
+  "recon": {
+    "paper_id": "029_Ciepiela_2019_The effect of biostimulants derived from",
+    "warnings": [
+      "This is a factorial design with 4 biostimulant treatments \u00d7 3 nitrogen rates = 12 total combinations",
+      "Control is 'no biostimulant addition' - NOT the 0 nitrogen treatment",
+      "Three different biostimulant products tested: Algex, Tytanit, Asahi SL - each should be extracted separately vs control",
+      "Data presented across multiple cuts (harvests) and years - need to identify which represents total yield",
+      "Tables show sum of three cuts which appears to be the primary outcome measure",
+      "Nitrogen fertilization is a secondary factor, not the primary treatment of interest",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "none",
+    "variance_source": "Statistical analysis mentions 'Significance of differences between means was checked using the Tukey test at the significance level of \u03b1 \u2264' but no variance measures (SE, SD, LSD) are reported in the tables",
+    "variance_confidence": "high",
+    "control_definition": "Without biostimulant (control) - no biostimulant addition",
+    "treatment_definition": "Three biostimulant treatments: Algex (seaweed extract from Ascophyllum nodosum), Tytanit (titanium compound), Asahi SL (phenolic compounds)",
+    "tables_with_target_data": [
+      "Table 3",
+      "Table 4"
+    ],
+    "potential_tc_confusion": "Risk of confusing nitrogen rates (0, 120, 180 kg ha-1) with biostimulant treatments - nitrogen is secondary factor, biostimulant presence/absence is primary treatment",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "A field experiment was arranged as a randomized subblock design (split-plot) with three replicates",
+    "factorial_structure": "[\"biostimulant type (4 levels)\", \"nitrogen rate (3 levels)\", \"year (2 levels)\"]",
+    "extraction_guidance": "Extract from Table 3 for total seasonal yield. Compare each biostimulant (Algex, Tytanit, Asahi SL) against 'Without biostimulant (control)' across all nitrogen rates and years. The 'Mean' values by biostimulant type at bottom of table provide overall treatment effects. Note that yield units are t ha-1 (metric tons per hectare). Table 4 provides individual cut data if needed but Table 3 sum of cuts is the primary outcome.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"The effect of biostimulants derived from various materials on the yield and selected organic components of Italian rye grass (Lolium multiflorum Lam.) against the background of nitrogen regime\",\n        \"species\": \"Lolium multiflorum Lam. (Italian rye grass)\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This is a factorial design with 4 biostimulant treatments \u00d7 3 nitrogen rates = 12 total combinations\",\n        \"Control is 'no biostimulant addition' - NOT the 0 nitrogen treatment\",\n        \"Three different biostimulant products tested: Algex, Tytanit, Asahi SL - each should be extracted separately vs control\",\n        \"Data presented across multiple cuts (harvests) and years - need to identify which represents total yield\",\n        \"Tables show sum of three cuts which appears to be the primary outcome measure\",\n        \"Nitrogen fertilization is a secondary factor, not the primary treatment of interest\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"none\",\n        \"source\": \"Statistical analysis mentions 'Significance of differences between means was checked using the Tukey test at the significance level of \u03b1 \u2264' but no variance measures (SE, SD, LSD) are reported in the tables\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Without biostimulant (control) - no biostimulant addition\",\n        \"treatment_definition\": \"Three biostimulant treatments: Algex (seaweed extract from Ascophyllum nodosum), Tytanit (titanium compound), Asahi SL (phenolic compounds)\",\n        \"identification_method\": \"In tables, control is labeled as 'Without biostimulant (control)' in first column, treatments are 'Algex', 'Tytanit', 'Asahi SL'\",\n        \"potential_confusion\": \"Risk of confusing nitrogen rates (0, 120, 180 kg ha-1) with biostimulant treatments - nitrogen is seco",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 5",
+      "Table 6",
+      "Table 7"
+    ],
+    "table_descriptions": {
+      "Table 1": "Chemical composition of soil - not yield data",
+      "Table 2": "Meteorological conditions - not yield data",
+      "Table 3": "Dry matter yield of Italian rye grass (t ha-1) - sum of three cuts - PRIMARY OUTCOME",
+      "Table 4": "Dry matter yield by individual cut and nitrogen fertilization - detailed breakdown",
+      "Table 5": "Chlorophyll content in leaves - not primary yield outcome",
+      "Table 6": "Protein compounds content - not primary yield outcome",
+      "Table 7": "Soluble carbohydrates content - not primary yield outcome"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "dry matter yield (t ha-1) - sum of three cuts"
+      ],
+      "Table 4": [
+        "dry matter yield (t ha-1) by individual cut (1, 2, 3)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 45,
+  "kimi_obs": 45,
+  "gemini_obs": 0,
+  "matched_obs": 19,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 3.2,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 23.076923076923077,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.4,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 28.571428571428577,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 6.7,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 55.81395348837211,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 6.6,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 53.48837209302325,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 8.6,
+        "control_mean": 6.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 36.507936507936506,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 8.9,
+        "control_mean": 7.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 25.35211267605635,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 4.4,
+        "control_mean": 2.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 91.30434782608698,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.0,
+        "control_mean": 3.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 56.249999999999986,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.6,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex biostimulant (seaweed extract)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 30.23255813953488,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 3.0,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 15.38461538461538,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.3,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 26.19047619047618,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.7,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 32.55813953488373,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.9,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 37.20930232558141,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 7.7,
+        "control_mean": 6.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 22.22222222222223,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 8.3,
+        "control_mean": 7.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 16.901408450704242,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 3.9,
+        "control_mean": 2.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 69.56521739130436,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 4.4,
+        "control_mean": 3.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 37.50000000000001,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 4.9,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit biostimulant (titanium compound)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 13.953488372093037,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 2.9,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 11.538461538461531,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 4.6,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 9.523809523809511,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.3,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "First cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 23.25581395348837,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 5.4,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 25.581395348837223,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 7.4,
+        "control_mean": 6.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 17.46031746031747,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 8.0,
+        "control_mean": 7.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Second cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 12.676056338028175,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 3.5,
+        "control_mean": 2.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "0 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, no nitrogen fertilization, mean of two years",
+        "effect_pct": 52.17391304347827,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 4.2,
+        "control_mean": 3.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "120 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, medium nitrogen fertilization, mean of two years",
+        "effect_pct": 31.25,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "claude": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "tissue": "whole plant",
+        "treatment_mean": 4.4,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+        "control_description": "Without biostimulant (control)",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "180 kg ha-1"
+        },
+        "confidence": "high",
+        "notes": "Third cut, high nitrogen fertilization, mean of two years",
+        "effect_pct": 2.32558139534885,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 3.2,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 23.076923076923077,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.4,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 28.571428571428577,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 6.7,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 55.81395348837211,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 6.6,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 53.48837209302325,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 8.6,
+        "control_mean": 6.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 36.507936507936506,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 8.9,
+        "control_mean": 7.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 25.35211267605635,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 4.4,
+        "control_mean": 2.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 91.30434782608698,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.0,
+        "control_mean": 3.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 56.249999999999986,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.6,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum), 6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 30.23255813953488,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 3.0,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 15.38461538461538,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.3,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 26.19047619047618,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.7,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 32.55813953488373,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.9,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 37.20930232558141,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 7.7,
+        "control_mean": 6.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 22.22222222222223,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 8.3,
+        "control_mean": 7.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 16.901408450704242,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 3.9,
+        "control_mean": 2.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 69.56521739130436,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 4.4,
+        "control_mean": 3.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 37.50000000000001,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 4.9,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Tytanit (Ti-ascorbate), 0.4 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 13.953488372093037,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 2.9,
+        "control_mean": 2.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 11.538461538461531,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 4.6,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 9.523809523809511,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.3,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "1",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 23.25581395348837,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 5.4,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 25.581395348837223,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 7.4,
+        "control_mean": 6.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 17.46031746031747,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 8.0,
+        "control_mean": 7.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "2",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 12.676056338028175,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 3.5,
+        "control_mean": 2.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "0 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 52.17391304347827,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 4.2,
+        "control_mean": 3.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "120 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 31.25,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "dry matter yield (t ha-1) by individual cut (1, 2, 3)",
+        "tissue": "whole plant",
+        "treatment_mean": 4.4,
+        "control_mean": 4.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha-1",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (phenolic compounds: sodium p-nitrophenolate, o-nitrophenolate, 5-nitroguaiacolate), 0.6 dm3 ha-1",
+        "control_description": "Without biostimulant addition",
+        "moderators": {
+          "cut": "3",
+          "nitrogen_rate": "180 kg ha-1",
+          "year": "2014-2015 mean"
+        },
+        "confidence": "high",
+        "notes": "",
+        "effect_pct": 2.32558139534885,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 17.7,
+      "control_mean": 12.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 40.476190476190474,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 22.4,
+      "control_mean": 17.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 28.73563218390805,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 23.3,
+      "control_mean": 19.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 22.631578947368425,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 10.8,
+      "control_mean": 5.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 92.85714285714289,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 15.8,
+      "control_mean": 9.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 59.5959595959596,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 18.9,
+      "control_mean": 12.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Algex biostimulant (seaweed extract)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 52.419354838709666,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 15.8,
+      "control_mean": 12.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 25.396825396825406,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 20.2,
+      "control_mean": 17.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.09195402298851,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 22.2,
+      "control_mean": 19.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.84210526315789,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 9.7,
+      "control_mean": 5.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 73.21428571428571,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 14.4,
+      "control_mean": 9.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 45.45454545454545,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 15.4,
+      "control_mean": 12.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Tytanit biostimulant (titanium compound)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 24.193548387096772,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 14.5,
+      "control_mean": 12.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.07936507936508,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 18.7,
+      "control_mean": 17.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.471264367816096,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 20.7,
+      "control_mean": 19.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2014",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.947368421052628,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 9.1,
+      "control_mean": 5.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "0 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 62.5,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 13.7,
+      "control_mean": 9.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "120 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 38.38383838383837,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "treatment_mean": 14.6,
+      "control_mean": 12.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 3",
+      "treatment_description": "Asahi SL biostimulant (phenolic compounds)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "year": "2015",
+        "nitrogen_rate": "180 kg ha-1"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.74193548387096,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "treatment_mean": 3.2,
+      "control_mean": 2.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Algex (seaweed extract from Ascophyllum nodosum)",
+      "control_description": "Without biostimulant (control)",
+      "moderators": {
+        "cut": "1",
+        "nitrogen_rate": "0 kg ha-1",
+        "year": "mean of 2014-2015"
+      },
+      "confidence": "high",
+      "notes": "n=3 based on experimental design description (three replicates). [from vision]",
+      "effect_pct": 23.076923076923077,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 19,
+    "final_count": 19
+  },
+  "verification_flags": [
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 17.7,
+        "control_mean": 12.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +40.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 40.476190476190474
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 22.4,
+        "control_mean": 17.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +28.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 28.73563218390805
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 23.3,
+        "control_mean": 19.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +22.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 22.631578947368425
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 10.8,
+        "control_mean": 5.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +92.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 92.85714285714289
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 15.8,
+        "control_mean": 9.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +59.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 59.5959595959596
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 18.9,
+        "control_mean": 12.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +52.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 52.419354838709666
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 15.8,
+        "control_mean": 12.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +25.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 25.396825396825406
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 20.2,
+        "control_mean": 17.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 16.09195402298851
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 22.2,
+        "control_mean": 19.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 16.84210526315789
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 9.7,
+        "control_mean": 5.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +73.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 73.21428571428571
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 14.4,
+        "control_mean": 9.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +45.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 45.45454545454545
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 15.4,
+        "control_mean": 12.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +24.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 24.193548387096772
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 14.5,
+        "control_mean": 12.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 15.07936507936508
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 18.7,
+        "control_mean": 17.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.471264367816096
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 20.7,
+        "control_mean": 19.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 8.947368421052628
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 9.1,
+        "control_mean": 5.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +62.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 62.5
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 13.7,
+        "control_mean": 9.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +38.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 38.38383838383837
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) - sum of three cuts",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) - sum of three cuts",
+        "treatment_mean": 14.6,
+        "control_mean": 12.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.74193548387096
+      }
+    },
+    {
+      "element": "dry matter yield (t ha-1) by individual cut",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "dry matter yield (t ha-1) by individual cut",
+        "treatment_mean": 3.2,
+        "control_mean": 2.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 23.076923076923077
+      }
+    }
+  ]
+}

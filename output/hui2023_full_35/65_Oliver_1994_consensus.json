@@ -1,0 +1,1354 @@
+{
+  "paper_id": "65_Oliver_1994",
+  "recon": {
+    "paper_id": "65_Oliver_1994",
+    "warnings": [
+      "This paper studies cadmium (Cd) concentration, NOT zinc (Zn) concentration - it may not be relevant for the meta-analysis",
+      "The research focus is on reducing cadmium contamination through zinc fertilization, not biofortification",
+      "Multiple Zn application rates (0-25 kg Zn ha\u207b\u00b9) across 12 experiments - each rate should be treated separately",
+      "No direct grain Zn concentration data is reported in this paper",
+      "Tables focus on soil characteristics and Cd concentrations only",
+      "Results show Zn fertilization decreases Cd concentration but no Zn biofortification data provided",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SED",
+    "variance_source": "Standard error of difference between treatments shown in Table 4 as 'SED'",
+    "variance_confidence": "high",
+    "control_definition": "0 kg Zn ha\u207b\u00b9 (no zinc fertilizer application)",
+    "treatment_definition": "Zinc sulfate applications at rates of 5, 10, 15, 20, or 25 kg Zn ha\u207b\u00b9",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "Fresh vs residual Zn applications are different experimental conditions, not replicates",
+    "experimental_design": "simple",
+    "sample_size_found": "4-6",
+    "sample_size_source": "Zn treatments were replicated four to six times (Table 1)",
+    "factorial_structure": "[\"Zn fertilizer rate\"]",
+    "extraction_guidance": "This paper is NOT suitable for the Zn biofortification meta-analysis as it only reports cadmium concentrations in grain, not zinc concentrations. The study focuses on using Zn fertilization to reduce Cd contamination rather than increase grain Zn content. No grain Zn concentration data is provided in any tables or figures.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"The Effects of Zinc Fertilization on Cadmium Concentration in Wheat Grain\",\n        \"species\": \"Triticum aestivum L. (wheat)\",\n        \"experimental_system\": \"field experiments\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This paper studies cadmium (Cd) concentration, NOT zinc (Zn) concentration - it may not be relevant for the meta-analysis\",\n        \"The research focus is on reducing cadmium contamination through zinc fertilization, not biofortification\",\n        \"Multiple Zn application rates (0-25 kg Zn ha\u207b\u00b9) across 12 experiments - each rate should be treated separately\",\n        \"No direct grain Zn concentration data is reported in this paper\",\n        \"Tables focus on soil characteristics and Cd concentrations only\",\n        \"Results show Zn fertilization decreases Cd concentration but no Zn biofortification data provided\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SED\",\n        \"source\": \"Standard error of difference between treatments shown in Table 4 as 'SED'\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"0 kg Zn ha\u207b\u00b9 (no zinc fertilizer application)\",\n        \"treatment_definition\": \"Zinc sulfate applications at rates of 5, 10, 15, 20, or 25 kg Zn ha\u207b\u00b9\",\n        \"identification_method\": \"Zinc rate column with 0 as control and higher rates as treatments\",\n        \"potential_confusion\": \"Fresh vs residual Zn applications are different experimental conditions, not replicates\"\n    },\n    \"sample_size\": {\n        \"n\": \"4-6\",\n        \"source\": \"Zn treatments were replicated four to six times (Table 1)\",\n        \"applies_to\": \"all experiments\",\n        \"note\": \"Sample size varies by experiment: 4 replicates for most experiments, 6 replicates for experiments 2, 10, 11, 12\"\n    },\n    \"data_locations\": {\n        \"tables_with_target_data\": [],\n        \"tables_without_target_data\": [\"Tab",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3",
+      "Table 4"
+    ],
+    "table_descriptions": {
+      "Table 1": "Experimental locations, years, wheat varieties, and replication details",
+      "Table 2": "Soil characteristics including pH, texture, EDTA-extractable Zn and Cd",
+      "Table 3": "Exponential equations for grain Cd concentration vs Zn rate relationships",
+      "Table 4": "Mean grain yields for each Zn treatment rate"
+    },
+    "figures_with_data": [
+      "Figure 2",
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "location",
+        "year of Zn application",
+        "harvest analyzed",
+        "wheat variety"
+      ],
+      "Table 2": [
+        "soil classification",
+        "particle size",
+        "pH values",
+        "EDTA-extractable Zn",
+        "EDTA-extractable Cd"
+      ],
+      "Table 3": [
+        "exponential equation parameters",
+        "adjusted R\u00b2",
+        "significance"
+      ],
+      "Table 4": [
+        "grain yield at different Zn rates",
+        "standard error of difference",
+        "significance"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Auto-upgraded: target data in figures ['Figure 2', 'Figure 3'] but no target tables found",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 12,
+  "kimi_obs": 0,
+  "gemini_obs": 0,
+  "matched_obs": 12,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 12",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 1.17,
+        "control_mean": 1.1,
+        "treatment_variance": 0.43,
+        "control_variance": 0.43,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "1",
+          "location": "Tuckey, EP"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, NS significance",
+        "effect_pct": 6.363636363636349,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 2.18,
+        "control_mean": 1.82,
+        "treatment_variance": 0.36,
+        "control_variance": 0.36,
+        "variance_type": "SED",
+        "n": 6,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "2",
+          "location": "Cummins, EP"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, ** significance",
+        "effect_pct": 19.780219780219785,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 2.12,
+        "control_mean": 1.76,
+        "treatment_variance": 0.28,
+        "control_variance": 0.28,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "3",
+          "location": "Wunkar, MM"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, ** significance",
+        "effect_pct": 20.45454545454546,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 3.93,
+        "control_mean": 3.52,
+        "treatment_variance": 0.23,
+        "control_variance": 0.23,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "4",
+          "location": "Parilla, MM"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, NS significance",
+        "effect_pct": 11.647727272727277,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 2.19,
+        "control_mean": 1.51,
+        "treatment_variance": 0.25,
+        "control_variance": 0.25,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "5",
+          "location": "Lameroo, site1 MM"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, *** significance",
+        "effect_pct": 45.033112582781456,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 2.38,
+        "control_mean": 1.2,
+        "treatment_variance": 0.21,
+        "control_variance": 0.21,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "6",
+          "location": "Lameroo, site2 MM"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, *** significance",
+        "effect_pct": 98.33333333333333,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 2.37,
+        "control_mean": 2.1,
+        "treatment_variance": 0.31,
+        "control_variance": 0.31,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "7",
+          "location": "Ungarra, EP"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, NS significance",
+        "effect_pct": 12.85714285714286,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 4.88,
+        "control_mean": 5.21,
+        "treatment_variance": 3.04,
+        "control_variance": 3.04,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "9",
+          "location": "Ungarra, EP"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, NS significance",
+        "effect_pct": -6.333973128598849,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 2.64,
+        "control_mean": 2.38,
+        "treatment_variance": 0.12,
+        "control_variance": 0.12,
+        "variance_type": "SED",
+        "n": 6,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "10",
+          "location": "Yeelanna, EP"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, * significance",
+        "effect_pct": 10.924369747899169,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 4.48,
+        "control_mean": 3.6,
+        "treatment_variance": 0.48,
+        "control_variance": 0.48,
+        "variance_type": "SED",
+        "n": 6,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "12",
+          "location": "Yeelanna, EP"
+        },
+        "confidence": "high",
+        "notes": "Fresh Zn experiment, NS significance",
+        "effect_pct": 24.444444444444454,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 5.3,
+        "control_mean": 5.21,
+        "treatment_variance": 2.37,
+        "control_variance": 2.37,
+        "variance_type": "SED",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "8",
+          "location": "Ungarra, EP"
+        },
+        "confidence": "high",
+        "notes": "Residual Zn experiment, NS significance",
+        "effect_pct": 1.7274472168905923,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "claude": {
+        "element": "grain yield at different Zn rates",
+        "tissue": "grain",
+        "treatment_mean": 3.96,
+        "control_mean": 3.59,
+        "treatment_variance": 0.29,
+        "control_variance": 0.29,
+        "variance_type": "SED",
+        "n": 6,
+        "unit": "t/ha",
+        "data_source": "Table 4",
+        "treatment_description": "5 kg Zn ha-1",
+        "control_description": "0 kg Zn ha-1",
+        "moderators": {
+          "experiment_no": "11",
+          "location": "Yeelanna, EP"
+        },
+        "confidence": "high",
+        "notes": "Residual Zn experiment, * significance",
+        "effect_pct": 10.306406685236773,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 1.17,
+      "control_mean": 1.1,
+      "treatment_variance": 0.43,
+      "control_variance": 0.43,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "1",
+        "location": "Tuckey, EP"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, NS significance [single-model fallback: Claude only]",
+      "effect_pct": 6.363636363636349,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 2.18,
+      "control_mean": 1.82,
+      "treatment_variance": 0.36,
+      "control_variance": 0.36,
+      "variance_type": "SED",
+      "n": 6,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "2",
+        "location": "Cummins, EP"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, ** significance [single-model fallback: Claude only]",
+      "effect_pct": 19.780219780219785,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 2.12,
+      "control_mean": 1.76,
+      "treatment_variance": 0.28,
+      "control_variance": 0.28,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "3",
+        "location": "Wunkar, MM"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, ** significance [single-model fallback: Claude only]",
+      "effect_pct": 20.45454545454546,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 3.93,
+      "control_mean": 3.52,
+      "treatment_variance": 0.23,
+      "control_variance": 0.23,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "4",
+        "location": "Parilla, MM"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, NS significance [single-model fallback: Claude only]",
+      "effect_pct": 11.647727272727277,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 2.19,
+      "control_mean": 1.51,
+      "treatment_variance": 0.25,
+      "control_variance": 0.25,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "5",
+        "location": "Lameroo, site1 MM"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, *** significance [single-model fallback: Claude only]",
+      "effect_pct": 45.033112582781456,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 2.38,
+      "control_mean": 1.2,
+      "treatment_variance": 0.21,
+      "control_variance": 0.21,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "6",
+        "location": "Lameroo, site2 MM"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, *** significance [single-model fallback: Claude only]",
+      "effect_pct": 98.33333333333333,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 2.37,
+      "control_mean": 2.1,
+      "treatment_variance": 0.31,
+      "control_variance": 0.31,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "7",
+        "location": "Ungarra, EP"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, NS significance [single-model fallback: Claude only]",
+      "effect_pct": 12.85714285714286,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 4.88,
+      "control_mean": 5.21,
+      "treatment_variance": 3.04,
+      "control_variance": 3.04,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "9",
+        "location": "Ungarra, EP"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, NS significance [single-model fallback: Claude only]",
+      "effect_pct": -6.333973128598849,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 2.64,
+      "control_mean": 2.38,
+      "treatment_variance": 0.12,
+      "control_variance": 0.12,
+      "variance_type": "SED",
+      "n": 6,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "10",
+        "location": "Yeelanna, EP"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, * significance [single-model fallback: Claude only]",
+      "effect_pct": 10.924369747899169,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 4.48,
+      "control_mean": 3.6,
+      "treatment_variance": 0.48,
+      "control_variance": 0.48,
+      "variance_type": "SED",
+      "n": 6,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "12",
+        "location": "Yeelanna, EP"
+      },
+      "confidence": "low",
+      "notes": "Fresh Zn experiment, NS significance [single-model fallback: Claude only]",
+      "effect_pct": 24.444444444444454,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 5.3,
+      "control_mean": 5.21,
+      "treatment_variance": 2.37,
+      "control_variance": 2.37,
+      "variance_type": "SED",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "8",
+        "location": "Ungarra, EP"
+      },
+      "confidence": "low",
+      "notes": "Residual Zn experiment, NS significance [single-model fallback: Claude only]",
+      "effect_pct": 1.7274472168905923,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "treatment_mean": 3.96,
+      "control_mean": 3.59,
+      "treatment_variance": 0.29,
+      "control_variance": 0.29,
+      "variance_type": "SED",
+      "n": 6,
+      "unit": "t/ha",
+      "data_source": "Table 4",
+      "treatment_description": "5 kg Zn ha-1",
+      "control_description": "0 kg Zn ha-1",
+      "moderators": {
+        "experiment_no": "11",
+        "location": "Yeelanna, EP"
+      },
+      "confidence": "low",
+      "notes": "Residual Zn experiment, * significance [single-model fallback: Claude only]",
+      "effect_pct": 10.306406685236773,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 3,
+    "tc_swaps_corrected": 0,
+    "original_count": 15,
+    "final_count": 12
+  },
+  "verification_flags": [
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 1.17,
+        "control_mean": 1.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 36.75213675213676,
+            "note": "CV = 36.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=37.9%"
+          }
+        },
+        "effect_pct": 6.363636363636349
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 2.18,
+        "control_mean": 1.82,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.513761467889907,
+            "note": "CV = 16.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=18.0%"
+          }
+        },
+        "effect_pct": 19.780219780219785
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 2.12,
+        "control_mean": 1.76,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.20754716981132,
+            "note": "CV = 13.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.4%"
+          }
+        },
+        "effect_pct": 20.45454545454546
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 3.93,
+        "control_mean": 3.52,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.852417302798982,
+            "note": "CV = 5.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.2%"
+          }
+        },
+        "effect_pct": 11.647727272727277
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 2.19,
+        "control_mean": 1.51,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +45.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.415525114155251,
+            "note": "CV = 11.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.5%"
+          }
+        },
+        "effect_pct": 45.033112582781456
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 2.38,
+        "control_mean": 1.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +98.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.823529411764707,
+            "note": "CV = 8.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.7%"
+          }
+        },
+        "effect_pct": 98.33333333333333
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 2.37,
+        "control_mean": 2.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.080168776371307,
+            "note": "CV = 13.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.9%"
+          }
+        },
+        "effect_pct": 12.85714285714286
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 4.88,
+        "control_mean": 5.21,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -6.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 6.762295081967213,
+            "note": "Effect -6.3% violates expected direction; unswapped would be +6.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 62.295081967213115,
+            "note": "CV = 62.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -6.333973128598849,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -6.3%, corrected would be +6.8%"
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 2.64,
+        "control_mean": 2.38,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.545454545454545,
+            "note": "CV = 4.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=11.7%"
+          }
+        },
+        "effect_pct": 10.924369747899169
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 4.48,
+        "control_mean": 3.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +24.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.714285714285712,
+            "note": "CV = 10.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.9%"
+          }
+        },
+        "effect_pct": 24.444444444444454
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 5.3,
+        "control_mean": 5.21,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 44.716981132075475,
+            "note": "CV = 44.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=45.1%"
+          }
+        },
+        "effect_pct": 1.7274472168905923
+      }
+    },
+    {
+      "element": "grain yield at different Zn rates",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield at different Zn rates",
+        "treatment_mean": 3.96,
+        "control_mean": 3.59,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.3232323232323235,
+            "note": "CV = 7.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SED",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.7%"
+          }
+        },
+        "effect_pct": 10.306406685236773
+      }
+    }
+  ]
+}

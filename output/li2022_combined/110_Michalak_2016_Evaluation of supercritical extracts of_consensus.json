@@ -1,0 +1,2732 @@
+{
+  "paper_id": "110_Michalak_2016_Evaluation of supercritical extracts of",
+  "recon": {
+    "paper_id": "110_Michalak_2016_Evaluation of supercritical extracts of",
+    "warnings": [
+      "Multiple biostimulant products tested - each must be extracted vs control separately",
+      "Spirulina extract tested at 3 different rates (1.0, 1.5, 1.8 L/ha) - treat as separate treatments",
+      "Statistical notation uses letters (a,b,c...) to indicate significant differences",
+      "Some yield data reported as grain yield at 15% moisture, others as mass of 1000 grains",
+      "Standard fertilization was applied to all plots including control",
+      "Two commercial reference products (Forthial, Asahi SL) also tested but are not controls",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SD",
+    "variance_source": "Results tables show 'SD' columns and text states 'Results were elaborated statistically by Statistica ver.10' with 'one-way analysis of variance (ANOVA)'",
+    "variance_confidence": "high",
+    "control_definition": "Control - Untreated (no biostimulant application, but with standard fertilization)",
+    "treatment_definition": "Five biostimulant treatments: Baltic Sea algal extract (1.0 L/ha), Ascophyllum nodosum extract (1.0 L/ha), Spirulina platensis extract at three rates (1.0, 1.5, 1.8 L/ha). Two reference products: Forthial (1.0 L/ha), Asahi SL (0.6 L/ha)",
+    "tables_with_target_data": [
+      "Table 4",
+      "Table 5"
+    ],
+    "potential_tc_confusion": "Reference products Forthial and Asahi SL are commercial biostimulants, not controls - do not use as control group",
+    "experimental_design": "simple",
+    "sample_size_found": 4,
+    "sample_size_source": "The experiments were performed in randomized complete blocks in four replications (N=4) for each tested product",
+    "factorial_structure": "[\"Biostimulant type and rate\"]",
+    "extraction_guidance": "Extract grain yield (t/ha) from Table 5 for each of the 5 biostimulant treatments vs control. Spirulina has 3 rates so extract as 3 separate comparisons. Do not use Forthial or Asahi SL as controls - they are reference biostimulants. Use SD values from tables. Each comparison should have n=4 per group.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Evaluation of Supercritical Extracts of Algae as Biostimulants of Plant Growth in Field Trials\",\n        \"species\": \"Winter wheat (variety Akteur)\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"Multiple biostimulant products tested - each must be extracted vs control separately\",\n        \"Spirulina extract tested at 3 different rates (1.0, 1.5, 1.8 L/ha) - treat as separate treatments\",\n        \"Statistical notation uses letters (a,b,c...) to indicate significant differences\",\n        \"Some yield data reported as grain yield at 15% moisture, others as mass of 1000 grains\",\n        \"Standard fertilization was applied to all plots including control\",\n        \"Two commercial reference products (Forthial, Asahi SL) also tested but are not controls\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SD\",\n        \"source\": \"Results tables show 'SD' columns and text states 'Results were elaborated statistically by Statistica ver.10' with 'one-way analysis of variance (ANOVA)'\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Control - Untreated (no biostimulant application, but with standard fertilization)\",\n        \"treatment_definition\": \"Five biostimulant treatments: Baltic Sea algal extract (1.0 L/ha), Ascophyllum nodosum extract (1.0 L/ha), Spirulina platensis extract at three rates (1.0, 1.5, 1.8 L/ha). Two reference products: Forthial (1.0 L/ha), Asahi SL (0.6 L/ha)\",\n        \"identification_method\": \"In tables, control is labeled 'Control' with 'Untreated' specification\",\n        \"potential_confusion\": \"Reference products Forthial and Asahi SL are commercial biostimulants, not controls - do not use as control group\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n        \"source\": \"The experiments were performed in randomized complete blocks in four replicati",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3"
+    ],
+    "table_descriptions": {
+      "Table 1": "Products tested in field experiments - treatment descriptions only",
+      "Table 2": "Composition of formulations - formulation details only",
+      "Table 3": "Crop height at different growth stages - not primary outcome",
+      "Table 4": "Effect of biostimulants on ear number per m\u00b2, grains in ear, ear length, shank length",
+      "Table 5": "Grain yield (t/ha) and mass of 1000 grains - PRIMARY YIELD DATA"
+    },
+    "figures_with_data": [
+      "Figure 3"
+    ],
+    "outcome_variables_detected": {
+      "Table 4": [
+        "Ear number per m\u00b2",
+        "Number of grains in ear",
+        "Length of ear (cm)",
+        "Shank length (cm)"
+      ],
+      "Table 5": [
+        "Grain yield, t/ha",
+        "Mass of 1000 grains, g"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 30,
+  "kimi_obs": 42,
+  "gemini_obs": 0,
+  "matched_obs": 32,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "Ear number per m\u00b2",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Ear number per m\u00b2",
+        "tissue": "shoot",
+        "treatment_mean": 631.5,
+        "control_mean": 598.75,
+        "treatment_variance": 20.6,
+        "control_variance": 20.32,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "number/m\u00b2",
+        "data_source": "Table 4",
+        "treatment_description": "Forthial (1.0 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product containing A. nodosum filtrate",
+        "effect_pct": 5.469728601252609,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Ear number per m\u00b2",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Ear number per m\u00b2",
+        "tissue": "shoot",
+        "treatment_mean": 638.0,
+        "control_mean": 598.75,
+        "treatment_variance": 14.07,
+        "control_variance": 20.32,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "number/m\u00b2",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (0.6 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product containing nitrophenolates",
+        "effect_pct": 6.555323590814196,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Number of grains in ear",
+        "tissue": "grain",
+        "treatment_mean": 36.28,
+        "control_mean": 38.38,
+        "treatment_variance": 0.46,
+        "control_variance": 0.51,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "number",
+        "data_source": "Table 4",
+        "treatment_description": "Forthial (1.0 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": -5.4715997915581065,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Number of grains in ear",
+        "tissue": "grain",
+        "treatment_mean": 37.5,
+        "control_mean": 38.38,
+        "treatment_variance": 0.45,
+        "control_variance": 0.51,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "number",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (0.6 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": -2.2928608650338784,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Length of ear (cm)",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Length of ear (cm)",
+        "tissue": "shoot",
+        "treatment_mean": 8.3,
+        "control_mean": 8.68,
+        "treatment_variance": 0.36,
+        "control_variance": 0.24,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "Forthial (1.0 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": -4.377880184331786,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Length of ear (cm)",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Length of ear (cm)",
+        "tissue": "shoot",
+        "treatment_mean": 8.58,
+        "control_mean": 8.68,
+        "treatment_variance": 0.38,
+        "control_variance": 0.24,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (0.6 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": -1.15207373271889,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Shank length (cm)",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Shank length (cm)",
+        "tissue": "shoot",
+        "treatment_mean": 12.05,
+        "control_mean": 11.98,
+        "treatment_variance": 0.42,
+        "control_variance": 0.33,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "Forthial (1.0 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": 0.5843071786310541,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Shank length (cm)",
+      "tissue": "shoot",
+      "kimi": {
+        "element": "Shank length (cm)",
+        "tissue": "shoot",
+        "treatment_mean": 12.2,
+        "control_mean": 11.98,
+        "treatment_variance": 0.36,
+        "control_variance": 0.33,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "Asahi SL (0.6 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": 1.8363939899832962,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield, t/ha",
+        "tissue": "grain",
+        "treatment_mean": 9.7,
+        "control_mean": 9.45,
+        "treatment_variance": 0.34,
+        "control_variance": 0.34,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 5",
+        "treatment_description": "Forthial (1.0 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product; highest yield among all treatments",
+        "effect_pct": 2.6455026455026456,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield, t/ha",
+        "tissue": "grain",
+        "treatment_mean": 9.63,
+        "control_mean": 9.45,
+        "treatment_variance": 0.38,
+        "control_variance": 0.34,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "t/ha",
+        "data_source": "Table 5",
+        "treatment_description": "Asahi SL (0.6 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": 1.9047619047619206,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Mass of 1000 grains, g",
+        "tissue": "grain",
+        "treatment_mean": 46.88,
+        "control_mean": 41.13,
+        "treatment_variance": 0.13,
+        "control_variance": 0.34,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Forthial (1.0 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": 13.980063214198882,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Mass of 1000 grains, g",
+        "tissue": "grain",
+        "treatment_mean": 47.1,
+        "control_mean": 41.13,
+        "treatment_variance": 0.18,
+        "control_variance": 0.34,
+        "variance_type": "SD",
+        "n": 4,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Asahi SL (0.6 L/ha)",
+        "control_description": "Untreated (standard fertilization only)",
+        "moderators": {
+          "cultivar": "Akteur",
+          "year": "2014/2015",
+          "site": "Miechowice O\u0142awskie, Poland"
+        },
+        "confidence": "high",
+        "notes": "Reference commercial product",
+        "effect_pct": 14.514952589350836,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "treatment_mean": 640.0,
+      "control_mean": 598.75,
+      "treatment_variance": 18.09,
+      "control_variance": 20.32,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "ears/m\u00b2",
+      "data_source": "Table 4",
+      "treatment_description": "Baltic macroalgae extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.8893528183716075,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "treatment_mean": 38.15,
+      "control_mean": 38.38,
+      "treatment_variance": 0.31,
+      "control_variance": 0.51,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "grains/ear",
+      "data_source": "Table 4",
+      "treatment_description": "Baltic macroalgae extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.5992704533611359,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "treatment_mean": 8.6,
+      "control_mean": 8.68,
+      "treatment_variance": 0.26,
+      "control_variance": 0.24,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Baltic macroalgae extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.9216589861751161,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "treatment_mean": 11.93,
+      "control_mean": 11.98,
+      "treatment_variance": 0.17,
+      "control_variance": 0.33,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Baltic macroalgae extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.41736227045075713,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "treatment_mean": 9.48,
+      "control_mean": 9.45,
+      "treatment_variance": 0.4,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "Baltic macroalgae extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.31746031746032954,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "treatment_mean": 48.75,
+      "control_mean": 41.13,
+      "treatment_variance": 0.13,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Baltic macroalgae extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.52662290299051,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "treatment_mean": 603.75,
+      "control_mean": 598.75,
+      "treatment_variance": 22.79,
+      "control_variance": 20.32,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "ears/m\u00b2",
+      "data_source": "Table 4",
+      "treatment_description": "Ascophyllum nodosum extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.8350730688935281,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "treatment_mean": 37.45,
+      "control_mean": 38.38,
+      "treatment_variance": 0.42,
+      "control_variance": 0.51,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "grains/ear",
+      "data_source": "Table 4",
+      "treatment_description": "Ascophyllum nodosum extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.423137050547159,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "treatment_mean": 8.73,
+      "control_mean": 8.68,
+      "treatment_variance": 0.39,
+      "control_variance": 0.24,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Ascophyllum nodosum extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.5760368663594552,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "treatment_mean": 9.43,
+      "control_mean": 9.45,
+      "treatment_variance": 0.25,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "Ascophyllum nodosum extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.21164021164020713,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "treatment_mean": 47.58,
+      "control_mean": 41.13,
+      "treatment_variance": 0.17,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Ascophyllum nodosum extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.681983953318735,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "treatment_mean": 562.5,
+      "control_mean": 598.75,
+      "treatment_variance": 13.48,
+      "control_variance": 20.32,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "ears/m\u00b2",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.05427974947808,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "treatment_mean": 37.1,
+      "control_mean": 38.38,
+      "treatment_variance": 0.45,
+      "control_variance": 0.51,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "grains/ear",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.33507034914018,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "treatment_mean": 8.55,
+      "control_mean": 8.68,
+      "treatment_variance": 0.29,
+      "control_variance": 0.24,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -1.497695852534551,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "treatment_mean": 12.28,
+      "control_mean": 11.98,
+      "treatment_variance": 0.43,
+      "control_variance": 0.33,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.5041736227044984,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "treatment_mean": 9.4,
+      "control_mean": 9.45,
+      "treatment_variance": 0.24,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "Spirulina platensis extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.5291005291005179,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "treatment_mean": 47.6,
+      "control_mean": 41.13,
+      "treatment_variance": 0.24,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Spirulina platensis extract 1.0 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.730610260150737,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "treatment_mean": 624.25,
+      "control_mean": 598.75,
+      "treatment_variance": 26.7,
+      "control_variance": 20.32,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "ears/m\u00b2",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.5 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.258872651356993,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "treatment_mean": 40.7,
+      "control_mean": 38.38,
+      "treatment_variance": 0.39,
+      "control_variance": 0.51,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "grains/ear",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.5 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.044815007816571,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "treatment_mean": 8.68,
+      "control_mean": 8.68,
+      "treatment_variance": 0.41,
+      "control_variance": 0.24,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.5 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "treatment_mean": 12.55,
+      "control_mean": 11.98,
+      "treatment_variance": 0.13,
+      "control_variance": 0.33,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.5 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.757929883138567,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "treatment_mean": 9.6,
+      "control_mean": 9.45,
+      "treatment_variance": 0.36,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "Spirulina platensis extract 1.5 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.587301587301591,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "treatment_mean": 46.35,
+      "control_mean": 41.13,
+      "treatment_variance": 0.19,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Spirulina platensis extract 1.5 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 12.691466083150981,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "treatment_mean": 610.5,
+      "control_mean": 598.75,
+      "treatment_variance": 17.48,
+      "control_variance": 20.32,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "ears/m\u00b2",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.8 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.962421711899791,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "treatment_mean": 37.48,
+      "control_mean": 38.38,
+      "treatment_variance": 0.46,
+      "control_variance": 0.51,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "grains/ear",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.8 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.3449713392392018,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "treatment_mean": 12.15,
+      "control_mean": 11.98,
+      "treatment_variance": 0.25,
+      "control_variance": 0.33,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Spirulina platensis extract 1.8 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.4190317195325537,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "treatment_mean": 9.5,
+      "control_mean": 9.45,
+      "treatment_variance": 0.22,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "Spirulina platensis extract 1.8 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.5291005291005366,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "treatment_mean": 47.63,
+      "control_mean": 41.13,
+      "treatment_variance": 0.43,
+      "control_variance": 0.34,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Spirulina platensis extract 1.8 L/ha",
+      "control_description": "Untreated control with standard fertilization",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.803549720398735,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "shoot",
+      "treatment_mean": 640.0,
+      "control_mean": 598.75,
+      "treatment_variance": 18.09,
+      "control_variance": 20.32,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "number/m2",
+      "data_source": "Table 4",
+      "treatment_description": "Baltic Sea algal extract (1.0 L/ha)",
+      "control_description": "Control - Untreated (with standard fertilization)",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 6.8893528183716075,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "shoot",
+      "treatment_mean": 8.6,
+      "control_mean": 8.68,
+      "treatment_variance": 0.26,
+      "control_variance": 0.24,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Baltic Sea algal extract (1.0 L/ha)",
+      "control_description": "Control - Untreated (with standard fertilization)",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -0.9216589861751161,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "shoot",
+      "treatment_mean": 11.93,
+      "control_mean": 11.98,
+      "treatment_variance": 0.17,
+      "control_variance": 0.33,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Baltic Sea algal extract (1.0 L/ha)",
+      "control_description": "Control - Untreated (with standard fertilization)",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": -0.41736227045075713,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "shoot",
+      "treatment_mean": 8.3,
+      "control_mean": 8.68,
+      "treatment_variance": 0.36,
+      "control_variance": 0.24,
+      "variance_type": "SD",
+      "n": 4,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Forthial (1.0 L/ha)",
+      "control_description": "Untreated (standard fertilization only)",
+      "moderators": {
+        "cultivar": "Akteur",
+        "year": "2014/2015",
+        "site": "Miechowice O\u0142awskie, Poland"
+      },
+      "confidence": "low",
+      "notes": "[text preferred over zero-effect vision]",
+      "effect_pct": null,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 2,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 34,
+    "final_count": 32
+  },
+  "verification_flags": [
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Ear number per m\u00b2",
+        "treatment_mean": 640.0,
+        "control_mean": 598.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.8265625,
+            "note": "CV = 2.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 6.8893528183716075
+      }
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Number of grains in ear",
+        "treatment_mean": 38.15,
+        "control_mean": 38.38,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.8125819134993446,
+            "note": "CV = 0.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -0.5992704533611359
+      }
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Length of ear (cm)",
+        "treatment_mean": 8.6,
+        "control_mean": 8.68,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.023255813953489,
+            "note": "CV = 3.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.0%"
+          }
+        },
+        "effect_pct": -0.9216589861751161
+      }
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Shank length (cm)",
+        "treatment_mean": 11.93,
+        "control_mean": 11.98,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.4249790444258175,
+            "note": "CV = 1.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -0.41736227045075713
+      }
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield, t/ha",
+        "treatment_mean": 9.48,
+        "control_mean": 9.45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.219409282700422,
+            "note": "CV = 4.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 0.31746031746032954
+      }
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Mass of 1000 grains, g",
+        "treatment_mean": 48.75,
+        "control_mean": 41.13,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.26666666666666666,
+            "note": "CV = 0.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 18.52662290299051
+      }
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Ear number per m\u00b2",
+        "treatment_mean": 603.75,
+        "control_mean": 598.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.774741200828157,
+            "note": "CV = 3.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": 0.8350730688935281
+      }
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Number of grains in ear",
+        "treatment_mean": 37.45,
+        "control_mean": 38.38,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.1214953271028036,
+            "note": "CV = 1.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -2.423137050547159
+      }
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Length of ear (cm)",
+        "treatment_mean": 8.73,
+        "control_mean": 8.68,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.4673539518900345,
+            "note": "CV = 4.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=9.0%"
+          }
+        },
+        "effect_pct": 0.5760368663594552
+      }
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield, t/ha",
+        "treatment_mean": 9.43,
+        "control_mean": 9.45,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.651113467656416,
+            "note": "CV = 2.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": -0.21164021164020713
+      }
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Mass of 1000 grains, g",
+        "treatment_mean": 47.58,
+        "control_mean": 41.13,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.35729298024379996,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 15.681983953318735
+      }
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Ear number per m\u00b2",
+        "treatment_mean": 562.5,
+        "control_mean": 598.75,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -6.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 6.444444444444445,
+            "note": "Effect -6.1% violates expected direction; unswapped would be +6.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.3964444444444446,
+            "note": "CV = 2.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -6.05427974947808,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -6.1%, corrected would be +6.4%"
+      }
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Number of grains in ear",
+        "treatment_mean": 37.1,
+        "control_mean": 38.38,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.2129380053908356,
+            "note": "CV = 1.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -3.33507034914018
+      }
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Length of ear (cm)",
+        "treatment_mean": 8.55,
+        "control_mean": 8.68,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -1.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.3918128654970756,
+            "note": "CV = 3.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.7%"
+          }
+        },
+        "effect_pct": -1.497695852534551
+      }
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Shank length (cm)",
+        "treatment_mean": 12.28,
+        "control_mean": 11.98,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.5016286644951142,
+            "note": "CV = 3.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.1%"
+          }
+        },
+        "effect_pct": 2.5041736227044984
+      }
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield, t/ha",
+        "treatment_mean": 9.4,
+        "control_mean": 9.45,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.553191489361702,
+            "note": "CV = 2.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": -0.5291005291005179
+      }
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Mass of 1000 grains, g",
+        "treatment_mean": 47.6,
+        "control_mean": 41.13,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.5042016806722689,
+            "note": "CV = 0.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 15.730610260150737
+      }
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Ear number per m\u00b2",
+        "treatment_mean": 624.25,
+        "control_mean": 598.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.277132559070885,
+            "note": "CV = 4.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.7%"
+          }
+        },
+        "effect_pct": 4.258872651356993
+      }
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Number of grains in ear",
+        "treatment_mean": 40.7,
+        "control_mean": 38.38,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.9582309582309582,
+            "note": "CV = 1.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 6.044815007816571
+      }
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Length of ear (cm)",
+        "treatment_mean": 8.68,
+        "control_mean": 8.68,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.723502304147465,
+            "note": "CV = 4.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=9.4%"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Shank length (cm)",
+        "treatment_mean": 12.55,
+        "control_mean": 11.98,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.0358565737051793,
+            "note": "CV = 1.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 4.757929883138567
+      }
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield, t/ha",
+        "treatment_mean": 9.6,
+        "control_mean": 9.45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.75,
+            "note": "CV = 3.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": 1.587301587301591
+      }
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Mass of 1000 grains, g",
+        "treatment_mean": 46.35,
+        "control_mean": 41.13,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.40992448759439054,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 12.691466083150981
+      }
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Ear number per m\u00b2",
+        "treatment_mean": 610.5,
+        "control_mean": 598.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.8632268632268634,
+            "note": "CV = 2.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 1.962421711899791
+      }
+    },
+    {
+      "element": "Number of grains in ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Number of grains in ear",
+        "treatment_mean": 37.48,
+        "control_mean": 38.38,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.2273212379935967,
+            "note": "CV = 1.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -2.3449713392392018
+      }
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Shank length (cm)",
+        "treatment_mean": 12.15,
+        "control_mean": 11.98,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.05761316872428,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 1.4190317195325537
+      }
+    },
+    {
+      "element": "Grain yield, t/ha",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield, t/ha",
+        "treatment_mean": 9.5,
+        "control_mean": 9.45,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.3157894736842106,
+            "note": "CV = 2.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 0.5291005291005366
+      }
+    },
+    {
+      "element": "Mass of 1000 grains, g",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Mass of 1000 grains, g",
+        "treatment_mean": 47.63,
+        "control_mean": 41.13,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.9027923577577156,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 15.803549720398735
+      }
+    },
+    {
+      "element": "Ear number per m\u00b2",
+      "tissue": "shoot",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Ear number per m\u00b2",
+        "treatment_mean": 640.0,
+        "control_mean": 598.75,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.8265625,
+            "note": "CV = 2.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 6.8893528183716075
+      }
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Length of ear (cm)",
+        "treatment_mean": 8.6,
+        "control_mean": 8.68,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.023255813953489,
+            "note": "CV = 3.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.0%"
+          }
+        },
+        "effect_pct": -0.9216589861751161
+      }
+    },
+    {
+      "element": "Shank length (cm)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Shank length (cm)",
+        "treatment_mean": 11.93,
+        "control_mean": 11.98,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.4249790444258175,
+            "note": "CV = 1.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": -0.41736227045075713
+      }
+    },
+    {
+      "element": "Length of ear (cm)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Length of ear (cm)",
+        "treatment_mean": 8.3,
+        "control_mean": 8.68,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -4.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.33734939759036,
+            "note": "CV = 4.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": -4.377880184331786
+      }
+    }
+  ]
+}

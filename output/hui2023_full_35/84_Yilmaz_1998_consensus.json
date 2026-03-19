@@ -1,0 +1,1028 @@
+{
+  "paper_id": "84_Yilmaz_1998",
+  "recon": {
+    "paper_id": "84_Yilmaz_1998",
+    "warnings": [
+      "This paper studies SEED zinc content effects, NOT zinc fertilizer application - may not be relevant for the meta-analysis",
+      "The main treatment is different seed Zn contents (355, 800, 1465 ng Zn seed-1), not fertilizer application",
+      "Soil Zn application is a secondary factor (23 kg Zn ha-1 vs 0 kg Zn ha-1)",
+      "Table 2 only shows Zn concentrations for rainfed conditions, irrigated data not presented",
+      "Grain Zn concentration data is very limited - only in Table 2 with no variance measures provided",
+      "The paper focuses more on yield effects than Zn biofortification",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "LSD(5%) values are provided in Table 1 for yield data, described as 'LSD(5%) =' with significance indicators",
+    "variance_confidence": "high",
+    "control_definition": "Seeds with 355 ng Zn seed-1 content grown without soil Zn application (0 kg Zn ha-1)",
+    "treatment_definition": "Seeds with higher Zn content (800 or 1465 ng Zn seed-1) and/or soil Zn application (23 kg Zn ha-1)",
+    "tables_with_target_data": [
+      "Table 2"
+    ],
+    "potential_tc_confusion": "This paper studies seed Zn content as primary factor, not fertilizer application - may not fit meta-analysis scope",
+    "experimental_design": "split-plot factorial",
+    "sample_size_found": 6,
+    "sample_size_source": "Experimental design was a two-factor randomized complete block design in split plots with six replications",
+    "factorial_structure": "[\"seed Zn content (3 levels)\", \"soil Zn application (2 levels)\", \"irrigation (2 levels)\", \"year (2 levels)\"]",
+    "extraction_guidance": "WARNING: This paper may not be suitable for the meta-analysis as it primarily studies seed Zn content effects rather than fertilizer application. If extracting, use Table 2 for grain Zn concentrations, compare soil Zn application effects (0 vs 23 kg Zn ha-1) within each seed Zn content level. No variance measures provided for Zn concentration data. Data only available for rainfed conditions.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effect of Seed Zinc Content on Grain Yield and Zinc Concentration of Wheat Grown in Zinc-Deficient Calcareous Soils\",\n        \"species\": \"Triticum aestivum (bread wheat, cultivar Atay 85)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This paper studies SEED zinc content effects, NOT zinc fertilizer application - may not be relevant for the meta-analysis\",\n        \"The main treatment is different seed Zn contents (355, 800, 1465 ng Zn seed-1), not fertilizer application\",\n        \"Soil Zn application is a secondary factor (23 kg Zn ha-1 vs 0 kg Zn ha-1)\",\n        \"Table 2 only shows Zn concentrations for rainfed conditions, irrigated data not presented\",\n        \"Grain Zn concentration data is very limited - only in Table 2 with no variance measures provided\",\n        \"The paper focuses more on yield effects than Zn biofortification\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"LSD(5%) values are provided in Table 1 for yield data, described as 'LSD(5%) =' with significance indicators\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Seeds with 355 ng Zn seed-1 content grown without soil Zn application (0 kg Zn ha-1)\",\n        \"treatment_definition\": \"Seeds with higher Zn content (800 or 1465 ng Zn seed-1) and/or soil Zn application (23 kg Zn ha-1)\",\n        \"identification_method\": \"In tables: '-Zn' = no soil Zn application, '+Zn' = 23 kg Zn ha-1 soil application; seed Zn content shown as 355, 800, 1465 ng Zn seed-1\",\n        \"potential_confusion\": \"This paper studies seed Zn content as primary factor, not fertilizer application - may not fit meta-analysis scope\"\n    },\n    \"sample_size\": {\n        \"n\": 6,\n        \"source\": \"Experimental design was a two-factor randomized complete block design in split plots with six replications",
+    "tables_without_target_data": [
+      "Table 1"
+    ],
+    "table_descriptions": {
+      "Table 1": "Effects of seed Zn content on grain yield under different conditions - no Zn concentration data",
+      "Table 2": "Effect of seed Zn content on Zn concentrations of shoots and grains - contains grain Zn concentration data"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "grain yield (kg ha-1)"
+      ],
+      "Table 2": [
+        "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+        "grain Zn concentration at harvest (mg Zn kg-1 DW)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 6,
+  "kimi_obs": 18,
+  "gemini_obs": 0,
+  "matched_obs": 7,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 2720,
+        "control_mean": 480,
+        "treatment_variance": 220,
+        "control_variance": 220,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "355 ng seed-1",
+          "irrigation": "rainfed",
+          "year": "1994-1995",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=220 (**) for this group. Table layout indicates significant yield increase with soil Zn application.",
+        "effect_pct": 466.6666666666667,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 3170,
+        "control_mean": 920,
+        "treatment_variance": 220,
+        "control_variance": 220,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "800 ng seed-1",
+          "irrigation": "rainfed",
+          "year": "1994-1995",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=220 (**) for this group.",
+        "effect_pct": 244.56521739130434,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 2840,
+        "control_mean": 1040,
+        "treatment_variance": 220,
+        "control_variance": 220,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "1465 ng seed-1",
+          "irrigation": "rainfed",
+          "year": "1994-1995",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=220 (**) for this group.",
+        "effect_pct": 173.0769230769231,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 7170,
+        "control_mean": 5700,
+        "treatment_variance": 710,
+        "control_variance": 710,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "355 ng seed-1",
+          "irrigation": "irrigated",
+          "year": "1994-1995",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=710 (ns) for this group. Irrigation reduces Zn deficiency effects.",
+        "effect_pct": 25.789473684210527,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 7800,
+        "control_mean": 5930,
+        "treatment_variance": 710,
+        "control_variance": 710,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "800 ng seed-1",
+          "irrigation": "irrigated",
+          "year": "1994-1995",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=710 (ns) for this group.",
+        "effect_pct": 31.534569983136596,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 7450,
+        "control_mean": 6190,
+        "treatment_variance": 710,
+        "control_variance": 710,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "1465 ng seed-1",
+          "irrigation": "irrigated",
+          "year": "1994-1995",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=710 (ns) for this group.",
+        "effect_pct": 20.35541195476575,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 3180,
+        "control_mean": 2490,
+        "treatment_variance": 420,
+        "control_variance": 420,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "355 ng seed-1",
+          "irrigation": "rainfed",
+          "year": "1995-1996",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=420 (*) for this group. Second year showed less severe Zn deficiency response.",
+        "effect_pct": 27.710843373493976,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 3180,
+        "control_mean": 2930,
+        "treatment_variance": 420,
+        "control_variance": 420,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "800 ng seed-1",
+          "irrigation": "rainfed",
+          "year": "1995-1996",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=420 (*) for this group.",
+        "effect_pct": 8.532423208191126,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 3220,
+        "control_mean": 2950,
+        "treatment_variance": 420,
+        "control_variance": 420,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "1465 ng seed-1",
+          "irrigation": "rainfed",
+          "year": "1995-1996",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "medium",
+        "notes": "LSD(5%)=420 (*) for this group.",
+        "effect_pct": 9.152542372881356,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 5670,
+        "control_mean": 5000,
+        "treatment_variance": 320,
+        "control_variance": 320,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 355 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "355 ng seed-1",
+          "irrigation": "irrigated",
+          "year": "1995-1996",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "low",
+        "notes": "LSD value unclear from table layout; possible value 320 (ns) or 630 (*). Assigned 320 based on column position but may represent 630. Irrigation present.",
+        "effect_pct": 13.4,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 6100,
+        "control_mean": 5780,
+        "treatment_variance": 320,
+        "control_variance": 320,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 800 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "800 ng seed-1",
+          "irrigation": "irrigated",
+          "year": "1995-1996",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "low",
+        "notes": "LSD assignment uncertain due to table formatting. Check original for exact LSD(5%) value.",
+        "effect_pct": 5.536332179930796,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain yield (kg ha-1)",
+        "tissue": "grain",
+        "treatment_mean": 5820,
+        "control_mean": 5670,
+        "treatment_variance": 320,
+        "control_variance": 320,
+        "variance_type": "LSD",
+        "n": 6,
+        "unit": "kg ha-1",
+        "data_source": "Table 1",
+        "treatment_description": "23 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "control_description": "0 kg Zn ha-1 soil application, seed Zn content 1465 ng seed-1",
+        "moderators": {
+          "seed_zn_content": "1465 ng seed-1",
+          "irrigation": "irrigated",
+          "year": "1995-1996",
+          "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1"
+        },
+        "confidence": "low",
+        "notes": "LSD assignment uncertain. Yield response to soil Zn smaller in second year under irrigation.",
+        "effect_pct": 2.6455026455026456,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+      "tissue": "grain",
+      "treatment_mean": 13.2,
+      "control_mean": 9.8,
+      "treatment_variance": 1.3,
+      "control_variance": 1.3,
+      "variance_type": "LSD",
+      "n": 6,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil Zn application (23 kg Zn ha-1) with seeds containing 355 ng Zn seed-1",
+      "control_description": "No soil Zn application (0 kg Zn ha-1) with seeds containing 355 ng Zn seed-1",
+      "moderators": {
+        "seed_zn_content": "355 ng seed-1",
+        "irrigation": "rainfed",
+        "year": "not specified",
+        "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1",
+        "seed_Zn_content": "355 ng Zn seed-1",
+        "cultivar": "Atay 85"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 34.69387755102039,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+      "tissue": "grain",
+      "treatment_mean": 13.0,
+      "control_mean": 10.1,
+      "treatment_variance": 1.3,
+      "control_variance": 1.3,
+      "variance_type": "LSD",
+      "n": 6,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil Zn application (23 kg Zn ha-1) with seeds containing 800 ng Zn seed-1",
+      "control_description": "No soil Zn application (0 kg Zn ha-1) with seeds containing 800 ng Zn seed-1",
+      "moderators": {
+        "seed_zn_content": "800 ng seed-1",
+        "irrigation": "rainfed",
+        "year": "not specified",
+        "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1",
+        "seed_Zn_content": "800 ng Zn seed-1",
+        "cultivar": "Atay 85"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 28.712871287128717,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+      "tissue": "grain",
+      "treatment_mean": 13.3,
+      "control_mean": 9.5,
+      "treatment_variance": 1.3,
+      "control_variance": 1.3,
+      "variance_type": "LSD",
+      "n": 6,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil Zn application (23 kg Zn ha-1) with seeds containing 1465 ng Zn seed-1",
+      "control_description": "No soil Zn application (0 kg Zn ha-1) with seeds containing 1465 ng Zn seed-1",
+      "moderators": {
+        "seed_zn_content": "1465 ng seed-1",
+        "irrigation": "rainfed",
+        "year": "not specified",
+        "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1",
+        "seed_Zn_content": "1465 ng Zn seed-1",
+        "cultivar": "Atay 85"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 40.00000000000001,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+      "tissue": "shoot",
+      "treatment_mean": 16.2,
+      "control_mean": 7.6,
+      "treatment_variance": 1.4,
+      "control_variance": 1.4,
+      "variance_type": "LSD",
+      "n": 6,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil Zn application (23 kg Zn ha-1) with seeds containing 355 ng Zn seed-1",
+      "control_description": "No soil Zn application (0 kg Zn ha-1) with seeds containing 355 ng Zn seed-1",
+      "moderators": {
+        "seed_zn_content": "355 ng seed-1",
+        "irrigation": "rainfed",
+        "year": "not specified",
+        "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1",
+        "seed_Zn_content": "355 ng Zn seed-1",
+        "cultivar": "Atay 85"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 113.1578947368421,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+      "tissue": "shoot",
+      "treatment_mean": 16.1,
+      "control_mean": 7.8,
+      "treatment_variance": 1.4,
+      "control_variance": 1.4,
+      "variance_type": "LSD",
+      "n": 6,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil Zn application (23 kg Zn ha-1) with seeds containing 800 ng Zn seed-1",
+      "control_description": "No soil Zn application (0 kg Zn ha-1) with seeds containing 800 ng Zn seed-1",
+      "moderators": {
+        "seed_zn_content": "800 ng seed-1",
+        "irrigation": "rainfed",
+        "year": "not specified",
+        "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1",
+        "seed_Zn_content": "800 ng Zn seed-1",
+        "cultivar": "Atay 85"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 106.41025641025644,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+      "tissue": "shoot",
+      "treatment_mean": 16.2,
+      "control_mean": 7.2,
+      "treatment_variance": 1.4,
+      "control_variance": 1.4,
+      "variance_type": "LSD",
+      "n": 6,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil Zn application (23 kg Zn ha-1) with seeds containing 1465 ng Zn seed-1",
+      "control_description": "No soil Zn application (0 kg Zn ha-1) with seeds containing 1465 ng Zn seed-1",
+      "moderators": {
+        "seed_zn_content": "1465 ng seed-1",
+        "irrigation": "rainfed",
+        "year": "not specified",
+        "soil_zn_application": "23 kg ha-1 vs 0 kg ha-1",
+        "seed_Zn_content": "1465 ng Zn seed-1",
+        "cultivar": "Atay 85"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 125.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "treatment_mean": 920,
+      "control_mean": 480,
+      "treatment_variance": 220,
+      "control_variance": 220,
+      "variance_type": "LSD",
+      "n": 6,
+      "unit": "kg ha-1",
+      "data_source": "Table 1",
+      "treatment_description": "Seeds with 800 ng Zn content, no soil Zn application",
+      "control_description": "Seeds with 355 ng Zn content, no soil Zn application",
+      "moderators": {
+        "cultivar": "Atay 85",
+        "year": "1994-1995",
+        "irrigation": "Rainfed",
+        "soil_zn_application": "0 kg ha-1",
+        "seed_zn_content": "800 ng Zn seed-1"
+      },
+      "confidence": "high",
+      "notes": "Effect of seed Zn content under rainfed conditions without soil Zn application. [from vision]",
+      "effect_pct": 91.66666666666666,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 7,
+    "final_count": 7
+  },
+  "verification_flags": [
+    {
+      "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+        "treatment_mean": 13.2,
+        "control_mean": 9.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +34.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.84848484848485,
+            "note": "CV = 9.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.3%"
+          }
+        },
+        "effect_pct": 34.69387755102039
+      }
+    },
+    {
+      "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+        "treatment_mean": 13.0,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +28.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 10.0,
+            "note": "CV = 10.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.3%"
+          }
+        },
+        "effect_pct": 28.712871287128717
+      }
+    },
+    {
+      "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain Zn concentration at harvest (mg Zn kg-1 DW)",
+        "treatment_mean": 13.3,
+        "control_mean": 9.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +40.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.774436090225564,
+            "note": "CV = 9.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.4%"
+          }
+        },
+        "effect_pct": 40.00000000000001
+      }
+    },
+    {
+      "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+        "treatment_mean": 16.2,
+        "control_mean": 7.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +113.2%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +113.2% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.641975308641975,
+            "note": "CV = 8.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.8%"
+          }
+        },
+        "effect_pct": 113.1578947368421
+      }
+    },
+    {
+      "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+        "treatment_mean": 16.1,
+        "control_mean": 7.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +106.4%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +106.4% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.695652173913041,
+            "note": "CV = 8.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.7%"
+          }
+        },
+        "effect_pct": 106.41025641025644
+      }
+    },
+    {
+      "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+      "tissue": "shoot",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "shoot Zn concentration at shooting stage (mg Zn kg-1 DW)",
+        "treatment_mean": 16.2,
+        "control_mean": 7.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +125.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +125.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.641975308641975,
+            "note": "CV = 8.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=12.0%"
+          }
+        },
+        "effect_pct": 125.0
+      }
+    },
+    {
+      "element": "grain yield (kg ha-1)",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield (kg ha-1)",
+        "treatment_mean": 920,
+        "control_mean": 480,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +91.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 23.91304347826087,
+            "note": "CV = 23.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 6,
+            "note": "n=6"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=31.4%"
+          }
+        },
+        "effect_pct": 91.66666666666666
+      }
+    }
+  ]
+}

@@ -1,0 +1,2221 @@
+{
+  "paper_id": "5_Yang_2011",
+  "recon": {
+    "paper_id": "5_Yang_2011",
+    "warnings": [
+      "Multiple experiments (1, 2, 3) with different designs - extract each separately",
+      "Mixed effects of soil Zn - some cultivars increased, others decreased grain Zn",
+      "Multiple N rates interact with Zn treatments - ensure proper treatment isolation",
+      "Different Zn application rates across experiments (6.8, 2.5, 1.5 kg/ha)",
+      "Timing effects in Experiment 2 - different foliar application times are separate treatments",
+      "Residual effects mentioned - second year data may not have direct Zn treatment",
+      "Combined treatments (foliar + soil Zn) are separate from individual treatments",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "cation on wheat grain Zn concentrations.Error bars indicate standard error of the mean (n =3);1,2,3,4,5,6,7,8,9,10",
+    "variance_confidence": "high",
+    "control_definition": "No Zn fertilizer application (Zn0 treatments)",
+    "treatment_definition": "Zn fertilizer application via soil (ZnSO4), foliar (0.3% ZnSO4\u00b77H2O), or combined",
+    "tables_with_target_data": [
+      "Table 2",
+      "Table 3"
+    ],
+    "potential_tc_confusion": "Experiment 1 second year (2006/2007) had no Zn applied but may show residual effects",
+    "experimental_design": "split-plot and factorial",
+    "sample_size_found": "3-5",
+    "sample_size_source": "The experiment was replicated three times (Exp 1), five replications (Exp 2), three replications (Exp 3)",
+    "factorial_structure": "[\"Zn application method\", \"Zn rate\", \"N rate\", \"cultivar\", \"application timing\", \"year\"]",
+    "extraction_guidance": "Extract each experiment separately. For primary outcome (grain Zn concentration), focus on Zn0 vs Zn1 comparisons. Ignore N rate interactions unless specifically comparing Zn effects. Use SE values from figure captions. For Experiment 2, extract timing effects as separate treatment comparisons. For Experiment 3, extract foliar alone, soil alone, and combined treatments as separate comparisons against control. Ensure cultivar-specific data is extracted where available.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effect of Soil and Foliar Zinc Application on Zinc Concentration and Bioavailability in Wheat Grain Grown on Potentially Zinc-deficient Soil\",\n        \"species\": \"wheat (Triticum aestivum)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"N/A\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"Multiple experiments (1, 2, 3) with different designs - extract each separately\",\n        \"Mixed effects of soil Zn - some cultivars increased, others decreased grain Zn\",\n        \"Multiple N rates interact with Zn treatments - ensure proper treatment isolation\",\n        \"Different Zn application rates across experiments (6.8, 2.5, 1.5 kg/ha)\",\n        \"Timing effects in Experiment 2 - different foliar application times are separate treatments\",\n        \"Residual effects mentioned - second year data may not have direct Zn treatment\",\n        \"Combined treatments (foliar + soil Zn) are separate from individual treatments\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"Error bars indicate standard error of the mean (n =3) and (n =5)\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"No Zn fertilizer application (Zn0 treatments)\",\n        \"treatment_definition\": \"Zn fertilizer application via soil (ZnSO4), foliar (0.3% ZnSO4\u00b77H2O), or combined\",\n        \"identification_method\": \"Zn0 = control, Zn1 = treatment; specific rates given for each experiment\",\n        \"potential_confusion\": \"Experiment 1 second year (2006/2007) had no Zn applied but may show residual effects\"\n    },\n    \"sample_size\": {\n        \"n\": \"3-5\",\n        \"source\": \"The experiment was replicated three times (Exp 1), five replications (Exp 2), three replications (Exp 3)\",\n        \"applies_to\": \"specific to each experiment\",\n        \"note\": \"n = number of INDEPENDENT EXPERIMENTAL REPLICATES per treatment group\"\n    },\n    \"data_locations\": {\n        \"tables_with",
+    "tables_without_target_data": [
+      "Table 1"
+    ],
+    "table_descriptions": {
+      "Table 1": "Soil properties at start of experiment - no treatment data",
+      "Table 2": "Mean effects of foliar Zn and soil N on grain Zn concentrations and phytic acid concentrations",
+      "Table 3": "Mean effects of foliar Zn and soil N on phytic acid:Zn molar ratios"
+    },
+    "figures_with_data": [
+      "Figure 1",
+      "Figure 2",
+      "Figure 5"
+    ],
+    "outcome_variables_detected": {
+      "Table 2": [
+        "grain Zn concentration (mg/kg)",
+        "phytic acid concentration (g/kg)"
+      ],
+      "Table 3": [
+        "phytic acid:Zn molar ratio"
+      ],
+      "Figure 1": [
+        "grain Zn concentrations (mg/kg)"
+      ],
+      "Figure 2": [
+        "grain Zn concentrations (mg/kg)"
+      ],
+      "Figure 5": [
+        "grain Zn concentrations (mg/kg)"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "MEDIUM"
+  },
+  "claude_obs": 24,
+  "kimi_obs": 42,
+  "gemini_obs": 0,
+  "matched_obs": 24,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 54.2,
+        "control_mean": 33.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "0 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": 61.30952380952381,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 52.6,
+        "control_mean": 35.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "120 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": 49.857549857549856,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 56.6,
+        "control_mean": 39.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "240 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": 45.12820512820513,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 46.6,
+        "control_mean": 26.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "0 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": 77.18631178707224,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 46.0,
+        "control_mean": 26.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "120 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": 71.00371747211896,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "grain Zn concentration (mg/kg)",
+        "tissue": "grain",
+        "treatment_mean": 51.3,
+        "control_mean": 29.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "240 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": 72.1476510067114,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid concentration (g/kg)",
+        "tissue": "grain",
+        "treatment_mean": 8.82,
+        "control_mean": 10.13,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "g/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "0 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -12.931885488647584,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid concentration (g/kg)",
+        "tissue": "grain",
+        "treatment_mean": 7.16,
+        "control_mean": 7.81,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "g/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "120 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -8.32266325224071,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid concentration (g/kg)",
+        "tissue": "grain",
+        "treatment_mean": 6.47,
+        "control_mean": 7.29,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "g/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "240 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -11.2482853223594,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid concentration (g/kg)",
+        "tissue": "grain",
+        "treatment_mean": 7.25,
+        "control_mean": 8.93,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "g/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "0 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -18.812989921612537,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid concentration (g/kg)",
+        "tissue": "grain",
+        "treatment_mean": 6.56,
+        "control_mean": 7.73,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "g/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "120 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -15.135834411384227,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid concentration (g/kg)",
+        "tissue": "grain",
+        "treatment_mean": 5.8,
+        "control_mean": 6.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "g/kg",
+        "data_source": "Table 2",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "240 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -15.942028985507253,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid:Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 16.3,
+        "control_mean": 30.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "molar ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "0 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -47.24919093851132,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid:Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 13.8,
+        "control_mean": 22.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "molar ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "120 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -38.666666666666664,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid:Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 11.4,
+        "control_mean": 18.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "molar ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2007/2008",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "240 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -39.03743315508021,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid:Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 15.5,
+        "control_mean": 34.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "molar ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "0 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -54.81049562682215,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid:Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 14.5,
+        "control_mean": 28.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "molar ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "120 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -49.47735191637631,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "kimi": {
+        "element": "phytic acid:Zn molar ratio",
+        "tissue": "grain",
+        "treatment_mean": 11.1,
+        "control_mean": 23.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "SE",
+        "n": 5,
+        "unit": "molar ratio",
+        "data_source": "Table 3",
+        "treatment_description": "Foliar application of 0.3% ZnSO4\u00b77H2O (averaged across application timings)",
+        "control_description": "Foliar application of distilled water (averaged across application timings)",
+        "moderators": {
+          "experiment": "2",
+          "year": "2008/2009",
+          "foliar_timing": "averaged across timings",
+          "soil_N_rate": "240 kg N/ha"
+        },
+        "confidence": "high",
+        "notes": "Values are means averaged across four foliar application timings.",
+        "effect_pct": -52.56410256410257,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 46.9,
+      "control_mean": 33.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at jointing (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "jointing",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "jointing"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 40.84084084084085,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 55.3,
+      "control_mean": 38.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at flowering (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "flowering",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "flowering"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 42.159383033419026,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 59.7,
+      "control_mean": 35.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at early grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "early grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "early grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 67.22689075630251,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 55.8,
+      "control_mean": 35.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at late grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "late grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "late grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 56.30252100840334,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 43.6,
+      "control_mean": 26.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at jointing (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "jointing",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "jointing"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 64.52830188679246,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 45.5,
+      "control_mean": 28.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at flowering (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "flowering",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "flowering"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 61.347517730496456,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 54.6,
+      "control_mean": 26.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at early grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "early grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "early grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 107.60456273764258,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "treatment_mean": 48.2,
+      "control_mean": 29.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at late grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "late grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "late grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 62.83783783783784,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 7.43,
+      "control_mean": 8.33,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at jointing (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "jointing",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "jointing"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.80432172869148,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 7.63,
+      "control_mean": 8.43,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at flowering (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "flowering",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "flowering"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.48991696322657,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 7.0,
+      "control_mean": 8.28,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at early grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "early grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "early grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.458937198067627,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 7.86,
+      "control_mean": 8.61,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at late grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "late grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "late grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.710801393728214,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 5.95,
+      "control_mean": 7.23,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at jointing (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "jointing",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "jointing"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.70401106500692,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 7.19,
+      "control_mean": 8.75,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at flowering (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "flowering",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "flowering"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.828571428571426,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 6.58,
+      "control_mean": 7.41,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at early grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "early grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "early grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.201079622132253,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "treatment_mean": 6.42,
+      "control_mean": 8.02,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar Zn application at late grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "late grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "late grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -19.950124688279296,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 15.8,
+      "control_mean": 25.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at jointing (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "jointing",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "jointing"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -38.03921568627451,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 13.8,
+      "control_mean": 23.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at flowering (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "flowering",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "flowering"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -42.016806722689076,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 11.7,
+      "control_mean": 22.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at early grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "early grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "early grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -47.53363228699552,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 14.1,
+      "control_mean": 24.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at late grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2007/2008",
+        "foliar_timing": "late grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "late grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -42.6829268292683,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 14.2,
+      "control_mean": 27.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at jointing (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "jointing",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "jointing"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -47.794117647058826,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 15.7,
+      "control_mean": 31.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at flowering (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "flowering",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "flowering"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": -50.78369905956113,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 11.3,
+      "control_mean": 28.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at early grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "early grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "early grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": -60.62717770034843,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "treatment_mean": 13.3,
+      "control_mean": 27.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "molar ratio",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application at late grain filling (0.3% ZnSO4\u00b77H2O solution)",
+      "control_description": "No foliar Zn application (distilled water)",
+      "moderators": {
+        "experiment": "2",
+        "year": "2008/2009",
+        "foliar_timing": "late grain filling",
+        "soil_N_rate": "averaged across N rates",
+        "application_timing": "late grain filling"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": -51.81159420289855,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 3,
+    "original_count": 24,
+    "final_count": 24
+  },
+  "verification_flags": [
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 46.9,
+        "control_mean": 33.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +40.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 40.84084084084085
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 55.3,
+        "control_mean": 38.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +42.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 42.159383033419026
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 59.7,
+        "control_mean": 35.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +67.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 67.22689075630251
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 55.8,
+        "control_mean": 35.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +56.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 56.30252100840334
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 43.6,
+        "control_mean": 26.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +64.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 64.52830188679246
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 45.5,
+        "control_mean": 28.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +61.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 61.347517730496456
+      }
+    },
+    {
+      "element": "grain Zn concentration (mg/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "grain Zn concentration (mg/kg)",
+        "treatment_mean": 54.6,
+        "control_mean": 26.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +107.6%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +107.6% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 107.60456273764258
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 7.43,
+        "control_mean": 8.33,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -10.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 12.113055181695833,
+            "note": "Effect -10.8% violates expected direction; unswapped would be +12.1%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -10.80432172869148,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -10.8%, corrected would be +12.1%"
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 7.63,
+        "control_mean": 8.43,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -9.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 10.484927916120574,
+            "note": "Effect -9.5% violates expected direction; unswapped would be +10.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -9.48991696322657,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -9.5%, corrected would be +10.5%"
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 7.0,
+        "control_mean": 8.28,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -15.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 18.285714285714278,
+            "note": "Effect -15.5% violates expected direction; unswapped would be +18.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -15.458937198067627,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -15.5%, corrected would be +18.3%"
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 7.86,
+        "control_mean": 8.61,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -8.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 9.541984732824417,
+            "note": "Effect -8.7% violates expected direction; unswapped would be +9.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -8.710801393728214,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -8.7%, corrected would be +9.5%"
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 5.95,
+        "control_mean": 7.23,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -17.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 21.512605042016812,
+            "note": "Effect -17.7% violates expected direction; unswapped would be +21.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -17.70401106500692,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -17.7%, corrected would be +21.5%"
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 7.19,
+        "control_mean": 8.75,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -17.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 21.696801112656463,
+            "note": "Effect -17.8% violates expected direction; unswapped would be +21.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -17.828571428571426,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -17.8%, corrected would be +21.7%"
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 6.58,
+        "control_mean": 7.41,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -11.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 12.613981762917934,
+            "note": "Effect -11.2% violates expected direction; unswapped would be +12.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -11.201079622132253,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -11.2%, corrected would be +12.6%"
+      }
+    },
+    {
+      "element": "phytic acid concentration (g/kg)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid concentration (g/kg)",
+        "treatment_mean": 6.42,
+        "control_mean": 8.02,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -20.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 24.922118380062294,
+            "note": "Effect -20.0% violates expected direction; unswapped would be +24.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -19.950124688279296,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -20.0%, corrected would be +24.9%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 15.8,
+        "control_mean": 25.5,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -38.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 61.392405063291136,
+            "note": "Effect -38.0% violates expected direction; unswapped would be +61.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -38.03921568627451,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -38.0%, corrected would be +61.4%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 13.8,
+        "control_mean": 23.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -42.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 72.46376811594205,
+            "note": "Effect -42.0% violates expected direction; unswapped would be +72.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -42.016806722689076,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -42.0%, corrected would be +72.5%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 11.7,
+        "control_mean": 22.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -47.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 90.5982905982906,
+            "note": "Effect -47.5% violates expected direction; unswapped would be +90.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -47.53363228699552,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -47.5%, corrected would be +90.6%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 14.1,
+        "control_mean": 24.6,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -42.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 74.468085106383,
+            "note": "Effect -42.7% violates expected direction; unswapped would be +74.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -42.6829268292683,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -42.7%, corrected would be +74.5%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 14.2,
+        "control_mean": 27.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -47.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 91.54929577464792,
+            "note": "Effect -47.8% violates expected direction; unswapped would be +91.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -47.794117647058826,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -47.8%, corrected would be +91.5%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 15.7,
+        "control_mean": 31.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -50.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 103.18471337579618,
+            "note": "Effect -50.8% violates expected direction; unswapped would be +103.2%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -50.78369905956113,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -50.8%, corrected would be +103.2%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 11.3,
+        "control_mean": 28.7,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -60.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 153.98230088495578,
+            "note": "Effect -60.6% violates expected direction; unswapped would be +154.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -60.62717770034843,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -60.6%, corrected would be +154.0%"
+      }
+    },
+    {
+      "element": "phytic acid:Zn molar ratio",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "phytic acid:Zn molar ratio",
+        "treatment_mean": 13.3,
+        "control_mean": 27.6,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -51.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 107.51879699248119,
+            "note": "Effect -51.8% violates expected direction; unswapped would be +107.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -51.81159420289855,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -51.8%, corrected would be +107.5%"
+      }
+    }
+  ]
+}

@@ -1,0 +1,608 @@
+{
+  "paper_id": "175_Wilczewski_2018_Response of sugar beet to humic substanc",
+  "recon": {
+    "paper_id": "175_Wilczewski_2018_Response of sugar beet to humic substanc",
+    "warnings": [
+      "This is a biostimulant study, not CO2. Treatment includes both Humistar (humic/fulvic acid) and Drakar (potassium fertilizer)",
+      "Factorial design with 4 treatments: Humistar alone, Drakar alone, Humistar+Drakar, and Control",
+      "Only Humistar treatments are relevant for biostimulant meta-analysis - Drakar is a conventional fertilizer",
+      "Variance reported as \u00b1 values in tables but type is not clearly specified",
+      "Economic analysis included but not relevant for yield extraction",
+      "Multiple outcome variables - must distinguish storage root yield from leaf yield",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "Tables show \u00b1 values and footnote states 'a,b \u2013values followed by the same letter within particular columns are not significantly different at P<0.05' suggesting standard error with statistical testing",
+    "variance_confidence": "medium",
+    "control_definition": "Control, not treated with any of these specimens (Humistar or Drakar)",
+    "treatment_definition": "Humistar: humic substance containing 12% humic acids and 3% fulvic acids applied to soil at 40dm\u00b3/ha before sowing. Drakar: foliar potassium fertilizer (31% K2O, 3% N) applied twice at 3dm\u00b3/ha",
+    "tables_with_target_data": [
+      "Table 3",
+      "Table 7"
+    ],
+    "potential_tc_confusion": "Must separate biostimulant effects (Humistar) from fertilizer effects (Drakar) - only extract Humistar vs Control and Humistar+Drakar vs Control for meta-analysis",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "Plots with an area of 29.7m\u00b2 were scheduled according to the randomized block design with 4 replications",
+    "factorial_structure": "[\"Humistar\", \"Drakar\", \"Year\"]",
+    "extraction_guidance": "Extract storage root yield data from Table 3. For biostimulant meta-analysis, compare: (1) Humistar vs Control, and (2) Humistar+Drakar vs Control. Ignore Drakar-only treatment as it's conventional fertilizer, not biostimulant. Use Mg/ha units. Variance appears to be SE based on context. Data averaged across 2006-2008 with n=4 replications per treatment.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Response of sugar beet to humic substances and foliar fertilization with potassium\",\n        \"species\": \"Beta vulgaris L. (sugar beet)\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This is a biostimulant study, not CO2. Treatment includes both Humistar (humic/fulvic acid) and Drakar (potassium fertilizer)\",\n        \"Factorial design with 4 treatments: Humistar alone, Drakar alone, Humistar+Drakar, and Control\",\n        \"Only Humistar treatments are relevant for biostimulant meta-analysis - Drakar is a conventional fertilizer\",\n        \"Variance reported as \u00b1 values in tables but type is not clearly specified\",\n        \"Economic analysis included but not relevant for yield extraction\",\n        \"Multiple outcome variables - must distinguish storage root yield from leaf yield\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"Tables show \u00b1 values and footnote states 'a,b \u2013values followed by the same letter within particular columns are not significantly different at P<0.05' suggesting standard error with statistical testing\",\n        \"confidence\": \"medium\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Control, not treated with any of these specimens (Humistar or Drakar)\",\n        \"treatment_definition\": \"Humistar: humic substance containing 12% humic acids and 3% fulvic acids applied to soil at 40dm\u00b3/ha before sowing. Drakar: foliar potassium fertilizer (31% K2O, 3% N) applied twice at 3dm\u00b3/ha\",\n        \"identification_method\": \"In tables, treatments are labeled as 'Control', 'Humistar', 'Drakar', and 'Humistar + Drakar'\",\n        \"potential_confusion\": \"Must separate biostimulant effects (Humistar) from fertilizer effects (Drakar) - only extract Humistar vs Control and Humistar+Drakar vs Control for meta-analysis\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n ",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 4",
+      "Table 5",
+      "Table 6",
+      "Table 8"
+    ],
+    "table_descriptions": {
+      "Table 1": "Laboratory germination parameters of sugar beet seedlings",
+      "Table 2": "Weather data during growing seasons",
+      "Table 3": "Field yield of storage roots and leaves (Mg/ha)",
+      "Table 4": "Economic analysis of treatments",
+      "Table 5": "Number of storage roots by size categories",
+      "Table 6": "SPAD leaf greenness index measurements",
+      "Table 7": "Sugar content and biological yield of sugar",
+      "Table 8": "Multiple regression equations for biological yield"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "Yield of storage roots [Mg\u00b7ha-1]",
+        "Yield of leaves [Mg\u00b7ha-1]"
+      ],
+      "Table 7": [
+        "Content of sugar in fresh roots [%]",
+        "Biological yield of sugar [Mg\u00b7ha-1]"
+      ]
+    },
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 8,
+  "kimi_obs": 8,
+  "gemini_obs": 0,
+  "matched_obs": 0,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Low consensus: 0/8 (0%) \u2014 Claude=8, Kimi=8",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "Yield of storage roots [Mg\u00b7ha-1]",
+      "tissue": "root",
+      "claude": {
+        "element": "Yield of storage roots [Mg\u00b7ha-1]",
+        "tissue": "root",
+        "treatment_mean": 77.7,
+        "control_mean": 75.3,
+        "treatment_variance": 1.35,
+        "control_variance": 1.02,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar (12% humic acids, 3% fulvic acids) applied to soil at 40dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, biostimulant (humic substance) treatment vs control",
+        "effect_pct": 3.1872509960159436,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of leaves [Mg\u00b7ha-1]",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Yield of leaves [Mg\u00b7ha-1]",
+        "tissue": "leaf",
+        "treatment_mean": 40.4,
+        "control_mean": 39.4,
+        "treatment_variance": 1.65,
+        "control_variance": 1.62,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar (12% humic acids, 3% fulvic acids) applied to soil at 40dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, biostimulant (humic substance) treatment vs control",
+        "effect_pct": 2.5380710659898478,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of storage roots [Mg\u00b7ha-1]",
+      "tissue": "root",
+      "claude": {
+        "element": "Yield of storage roots [Mg\u00b7ha-1]",
+        "tissue": "root",
+        "treatment_mean": 78.2,
+        "control_mean": 75.3,
+        "treatment_variance": 1.42,
+        "control_variance": 1.02,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar + Drakar (humic substances + foliar potassium fertilizer)",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, combined biostimulant + fertilizer treatment vs control",
+        "effect_pct": 3.8512616201859307,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Yield of leaves [Mg\u00b7ha-1]",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Yield of leaves [Mg\u00b7ha-1]",
+        "tissue": "leaf",
+        "treatment_mean": 41.3,
+        "control_mean": 39.4,
+        "treatment_variance": 1.58,
+        "control_variance": 1.62,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg/ha",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar + Drakar (humic substances + foliar potassium fertilizer)",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, combined biostimulant + fertilizer treatment vs control",
+        "effect_pct": 4.822335025380707,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Content of sugar in fresh roots [%]",
+      "tissue": "root",
+      "claude": {
+        "element": "Content of sugar in fresh roots [%]",
+        "tissue": "root",
+        "treatment_mean": 17.2,
+        "control_mean": 17.1,
+        "treatment_variance": 0.48,
+        "control_variance": 0.46,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "%",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar (12% humic acids, 3% fulvic acids) applied to soil at 40dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, biostimulant (humic substance) treatment vs control",
+        "effect_pct": 0.5847953216374144,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Biological yield of sugar [Mg\u00b7ha-1]",
+      "tissue": "root",
+      "claude": {
+        "element": "Biological yield of sugar [Mg\u00b7ha-1]",
+        "tissue": "root",
+        "treatment_mean": 13.4,
+        "control_mean": 12.8,
+        "treatment_variance": 0.36,
+        "control_variance": 0.27,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg/ha",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar (12% humic acids, 3% fulvic acids) applied to soil at 40dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, biostimulant (humic substance) treatment vs control",
+        "effect_pct": 4.687499999999997,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Content of sugar in fresh roots [%]",
+      "tissue": "root",
+      "claude": {
+        "element": "Content of sugar in fresh roots [%]",
+        "tissue": "root",
+        "treatment_mean": 17.1,
+        "control_mean": 17.1,
+        "treatment_variance": 0.39,
+        "control_variance": 0.46,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "%",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar + Drakar (humic substances + foliar potassium fertilizer)",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, combined biostimulant + fertilizer treatment vs control",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Biological yield of sugar [Mg\u00b7ha-1]",
+      "tissue": "root",
+      "claude": {
+        "element": "Biological yield of sugar [Mg\u00b7ha-1]",
+        "tissue": "root",
+        "treatment_mean": 13.3,
+        "control_mean": 12.8,
+        "treatment_variance": 0.36,
+        "control_variance": 0.27,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg/ha",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar + Drakar (humic substances + foliar potassium fertilizer)",
+        "control_description": "Control, not treated with any specimens",
+        "moderators": {
+          "years": "2006-2008",
+          "site": "Chrz\u0105stowo",
+          "soil_type": "Mesic Typic Hapludalfs"
+        },
+        "confidence": "high",
+        "notes": "Data averaged across 2006-2008, combined biostimulant + fertilizer treatment vs control",
+        "effect_pct": 3.90625,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Yield of storage roots",
+      "tissue": "root",
+      "kimi": {
+        "element": "Yield of storage roots",
+        "tissue": "root",
+        "treatment_mean": 77.7,
+        "control_mean": 75.3,
+        "treatment_variance": 1.35,
+        "control_variance": 1.02,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg\u00b7ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar (leonardite extract, 12% humic acids, 3% fulvic acids) applied to soil at 40 dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Data represents mean of three years (2006-2008) with 4 replications per year. Variance identified as SE based on table footnotes and statistical testing notation.",
+        "effect_pct": 3.1872509960159436,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Yield of storage roots",
+      "tissue": "root",
+      "kimi": {
+        "element": "Yield of storage roots",
+        "tissue": "root",
+        "treatment_mean": 78.2,
+        "control_mean": 75.3,
+        "treatment_variance": 1.42,
+        "control_variance": 1.02,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg\u00b7ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar (40 dm\u00b3/ha soil application) + Drakar (foliar potassium fertilizer, 31% K2O, 3% N, 3 dm\u00b3/ha applied twice at 6-12 leaf stage and 10 days later)",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Combined treatment. Drakar is conventional fertilizer, not biostimulant, but included as combined treatment with biostimulant. Data represents 3-year mean.",
+        "effect_pct": 3.8512616201859307,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Yield of leaves",
+      "tissue": "leaf",
+      "kimi": {
+        "element": "Yield of leaves",
+        "tissue": "leaf",
+        "treatment_mean": 40.4,
+        "control_mean": 39.4,
+        "treatment_variance": 1.65,
+        "control_variance": 1.62,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg\u00b7ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar (leonardite extract, 12% humic acids, 3% fulvic acids) applied to soil at 40 dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Leaf yield data from aboveground biomass. Data represents 3-year mean.",
+        "effect_pct": 2.5380710659898478,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Yield of leaves",
+      "tissue": "leaf",
+      "kimi": {
+        "element": "Yield of leaves",
+        "tissue": "leaf",
+        "treatment_mean": 41.3,
+        "control_mean": 39.4,
+        "treatment_variance": 1.58,
+        "control_variance": 1.62,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg\u00b7ha-1",
+        "data_source": "Table 3",
+        "treatment_description": "Humistar (40 dm\u00b3/ha soil application) + Drakar (foliar potassium fertilizer, 31% K2O, 3% N, 3 dm\u00b3/ha applied twice)",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Combined treatment. Data represents 3-year mean.",
+        "effect_pct": 4.822335025380707,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Content of sugar in fresh roots",
+      "tissue": "root",
+      "kimi": {
+        "element": "Content of sugar in fresh roots",
+        "tissue": "root",
+        "treatment_mean": 17.2,
+        "control_mean": 17.1,
+        "treatment_variance": 0.48,
+        "control_variance": 0.46,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "%",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar (leonardite extract, 12% humic acids, 3% fulvic acids) applied to soil at 40 dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Sugar content determined by polarimetric method. No significant difference between treatments and control. Data represents 3-year mean.",
+        "effect_pct": 0.5847953216374144,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Content of sugar in fresh roots",
+      "tissue": "root",
+      "kimi": {
+        "element": "Content of sugar in fresh roots",
+        "tissue": "root",
+        "treatment_mean": 17.1,
+        "control_mean": 17.1,
+        "treatment_variance": 0.39,
+        "control_variance": 0.46,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "%",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar (40 dm\u00b3/ha soil application) + Drakar (foliar potassium fertilizer, 31% K2O, 3% N, 3 dm\u00b3/ha applied twice)",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Combined treatment. Values identical to control. Data represents 3-year mean.",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Biological yield of sugar",
+      "tissue": "root",
+      "kimi": {
+        "element": "Biological yield of sugar",
+        "tissue": "root",
+        "treatment_mean": 13.4,
+        "control_mean": 12.8,
+        "treatment_variance": 0.36,
+        "control_variance": 0.27,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg\u00b7ha-1",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar (leonardite extract, 12% humic acids, 3% fulvic acids) applied to soil at 40 dm\u00b3/ha before sowing",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Calculated as: Storage root yield [Mg\u00b7ha-1] \u00d7 Sugar content [%]. Data represents 3-year mean.",
+        "effect_pct": 4.687499999999997,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Biological yield of sugar",
+      "tissue": "root",
+      "kimi": {
+        "element": "Biological yield of sugar",
+        "tissue": "root",
+        "treatment_mean": 13.3,
+        "control_mean": 12.8,
+        "treatment_variance": 0.36,
+        "control_variance": 0.27,
+        "variance_type": "SE",
+        "n": 4,
+        "unit": "Mg\u00b7ha-1",
+        "data_source": "Table 7",
+        "treatment_description": "Humistar (40 dm\u00b3/ha soil application) + Drakar (foliar potassium fertilizer, 31% K2O, 3% N, 3 dm\u00b3/ha applied twice)",
+        "control_description": "Control, not treated with Humistar or Drakar",
+        "moderators": {
+          "year": "2006-2008 (mean)",
+          "location": "Chrza\u0328stowo, Poland",
+          "cultivar": "Lubelska"
+        },
+        "confidence": "medium",
+        "notes": "Combined treatment. Calculated yield. Data represents 3-year mean.",
+        "effect_pct": 3.90625,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 0,
+    "final_count": 0
+  },
+  "verification_flags": []
+}

@@ -115,7 +115,31 @@ def normalize_element(el):
            "ALUMINIUM": "AL", "ALUMINUM": "AL", "BARIUM": "BA",
            "STRONTIUM": "SR", "BROMINE": "BR", "VANADIUM": "V",
            "CHLORINE": "CL"}
-    return MAP.get(el, el)
+    result = MAP.get(el, None)
+    if result:
+        return result
+    # Handle verbose element names like "Ca concentration AGB", "green leaf N concentration"
+    # Try to extract a known element symbol or name from the string
+    SYMBOLS = {"N", "P", "K", "CA", "MG", "FE", "ZN", "MN", "CU", "S", "B", "C",
+               "NA", "MO", "SI", "SE", "CO", "CR", "CD", "NI", "PB", "AL", "BA",
+               "SR", "BR", "V", "CL"}
+    # First try: split on spaces and look for a known symbol (check longest first to avoid "N" matching "NA")
+    tokens = el.split()
+    for tok in tokens:
+        tok_clean = tok.strip(",;:")
+        if tok_clean in SYMBOLS:
+            return tok_clean
+    # Second try: check full-name mapping on each token
+    for tok in tokens:
+        tok_clean = tok.strip(",;:")
+        if tok_clean in MAP:
+            return MAP[tok_clean]
+    # Third try: look for element symbols as word boundaries in the original string
+    import re
+    for sym in sorted(SYMBOLS, key=len, reverse=True):
+        if re.search(r'\b' + sym + r'\b', el):
+            return sym
+    return el
 
 
 def load_gt():

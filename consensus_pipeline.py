@@ -961,7 +961,7 @@ Return ONLY the JSON object."""
 class ReconPass:
     """Stage 1: Claude reconnaissance pass with challenge-aware detection."""
 
-    def __init__(self, api_key: str, model: str = "claude-sonnet-4-20250514", taxonomy_path: str = None):
+    def __init__(self, api_key: str, model: str = "claude-sonnet-4-6", taxonomy_path: str = None):
         self.client = openai.OpenAI(
             api_key=api_key,
             base_url="https://api.anthropic.com/v1/"
@@ -1466,7 +1466,7 @@ class UnifiedExtractor:
                 # Use streaming to handle long requests (Anthropic requirement)
                 content_parts = []
                 with self.claude_client.messages.stream(
-                    model="claude-sonnet-4-20250514",
+                    model="claude-sonnet-4-6",
                     max_tokens=32768,
                     messages=[
                         {"role": "user", "content": f"PAPER TEXT:\n\n{pdf_text[:150000]}\n\n{prompt}"}
@@ -1482,7 +1482,7 @@ class UnifiedExtractor:
             else:
                 # Fallback to OpenAI format
                 response = self.claude_client.chat.completions.create(
-                    model="claude-sonnet-4-20250514",
+                    model="claude-sonnet-4-6",
                     max_tokens=32768,
                     messages=[
                         {"role": "user", "content": f"PAPER TEXT:\n\n{pdf_text[:150000]}\n\n{prompt}"}
@@ -1825,7 +1825,7 @@ class UnifiedExtractor:
                     observations=[], paper_info={},
                     extraction_notes="google-genai package not installed"
                 )
-            vision_model = "gemini-3-flash-preview"
+            vision_model = "gemini-2.5-pro"
         elif provider == "kimi":
             if not self.kimi_client:
                 return ExtractionResult(
@@ -1980,14 +1980,22 @@ Read values carefully from:
                     image_content.append({"type": "text", "text": prompt})
 
                     if isinstance(self.claude_client, anthropic.Anthropic):
-                        response = self.claude_client.messages.create(
-                            model="claude-sonnet-4-20250514",
+                        # Use streaming to avoid 10-minute timeout on large vision requests
+                        collected_text = []
+                        tokens_in = 0
+                        tokens_out = 0
+                        with self.claude_client.messages.stream(
+                            model="claude-sonnet-4-6",
                             max_tokens=32768,
                             messages=[{"role": "user", "content": image_content}]
-                        )
-                        content = response.content[0].text
-                        tokens_in = response.usage.input_tokens
-                        tokens_out = response.usage.output_tokens
+                        ) as stream:
+                            for text in stream.text_stream:
+                                collected_text.append(text)
+                            # Get final message for usage stats
+                            final_msg = stream.get_final_message()
+                            tokens_in = final_msg.usage.input_tokens
+                            tokens_out = final_msg.usage.output_tokens
+                        content = "".join(collected_text)
                         batch_cost = (tokens_in * self.CLAUDE_PRICE_IN + tokens_out * self.CLAUDE_PRICE_OUT) / 1_000_000
                         total_cost += batch_cost
                         total_tokens += tokens_in + tokens_out
@@ -2111,6 +2119,58 @@ def moderator_key(mods: dict) -> str:
     return "_".join(f"{k}:{v}" for k, v in sorted(std.items()))
 
 
+def normalize_element(element: str) -> str:
+    """
+    Normalize element names to canonical symbols for consensus matching.
+    Handles Claude Sonnet 4.6's verbose naming like 'N (%)' or 'grain Zn concentration (mg/kg dry weight)'.
+    Maps full names to symbols: 'Nitrogen' -> 'n', 'Zinc' -> 'zn', etc.
+    """
+    if not element:
+        return 'unknown'
+    e = element.strip()
+
+    # Strip parenthetical suffixes: 'N (%)' -> 'N', 'Zn (mg/kg dry weight)' -> 'Zn'
+    e = re.sub(r'\s*\(.*?\)\s*', ' ', e).strip()
+
+    # Strip units after element: 'N mmol g^-1' -> 'N', 'Fe µg/g' -> 'Fe'
+    e = re.sub(r'\s+(mg|µg|ug|μg|ng|g|kg|mmol|µmol|umol|mol|ppm|ppb|%|percent|per\s*cent|dry\s*weight|DW|FW|concentration).*$', '', e, flags=re.IGNORECASE).strip()
+
+    # Strip leading tissue qualifiers: 'grain Zn' -> 'Zn', 'leaf N' -> 'N', 'shoot P' -> 'P'
+    tissue_prefixes = ['grain', 'leaf', 'leaves', 'shoot', 'root', 'stem', 'seed', 'fruit',
+                       'needle', 'needles', 'foliar', 'tuber', 'straw', 'husk', 'hull',
+                       'whole plant', 'aboveground', 'below-ground', 'belowground']
+    e_lower = e.lower()
+    for tp in tissue_prefixes:
+        if e_lower.startswith(tp + ' '):
+            e = e[len(tp):].strip()
+            e_lower = e.lower()
+
+    # Strip trailing 'concentration', 'content', 'level', 'uptake'
+    e = re.sub(r'\s+(concentration|content|level|levels|uptake|accumulation|density).*$', '', e, flags=re.IGNORECASE).strip()
+
+    # Map full element names to symbols
+    name_to_symbol = {
+        'nitrogen': 'n', 'phosphorus': 'p', 'potassium': 'k', 'calcium': 'ca',
+        'magnesium': 'mg', 'sulfur': 's', 'sulphur': 's', 'iron': 'fe',
+        'zinc': 'zn', 'manganese': 'mn', 'copper': 'cu', 'boron': 'b',
+        'molybdenum': 'mo', 'chlorine': 'cl', 'sodium': 'na', 'silicon': 'si',
+        'selenium': 'se', 'cobalt': 'co', 'nickel': 'ni', 'aluminum': 'al',
+        'aluminium': 'al', 'cadmium': 'cd', 'chromium': 'cr', 'lead': 'pb',
+        'arsenic': 'as', 'mercury': 'hg', 'tin': 'sn', 'strontium': 'sr',
+        'barium': 'ba', 'vanadium': 'v', 'titanium': 'ti', 'lithium': 'li',
+        'carbon': 'c', 'oxygen': 'o', 'hydrogen': 'h',
+        'protein': 'protein', 'starch': 'starch', 'sugar': 'sugar',
+        'phytic acid': 'phytic acid', 'phytate': 'phytate',
+    }
+
+    e_lower = e.lower()
+    if e_lower in name_to_symbol:
+        return name_to_symbol[e_lower]
+
+    # Already a symbol or short form - just lowercase
+    return e_lower
+
+
 def normalize_tissue(tissue: str) -> str:
     """
     Normalize tissue names for fuzzy matching.
@@ -2153,9 +2213,10 @@ def compare_observations(
     kimi_index_elem = {}    # element_only
 
     for obs in kimi_obs:
-        element_tissue = f"{(obs.element or 'unknown').lower()}_{(obs.tissue or 'grain').lower()}"
-        element_norm = f"{(obs.element or 'unknown').lower()}_{normalize_tissue(obs.tissue or 'grain')}"
-        element_only = (obs.element or 'unknown').lower()
+        elem_normalized = normalize_element(obs.element or 'unknown')
+        element_tissue = f"{elem_normalized}_{(obs.tissue or 'grain').lower()}"
+        element_norm = f"{elem_normalized}_{normalize_tissue(obs.tissue or 'grain')}"
+        element_only = elem_normalized
         source = normalize_data_source(obs.data_source)
         mods = moderator_key(obs.moderators)
 
@@ -2189,9 +2250,10 @@ def compare_observations(
     used_kimi = set()
 
     for c_obs in claude_obs:
-        element_tissue = f"{(c_obs.element or 'unknown').lower()}_{(c_obs.tissue or 'grain').lower()}"
-        element_norm = f"{(c_obs.element or 'unknown').lower()}_{normalize_tissue(c_obs.tissue or 'grain')}"
-        element_only = (c_obs.element or 'unknown').lower()
+        elem_normalized = normalize_element(c_obs.element or 'unknown')
+        element_tissue = f"{elem_normalized}_{(c_obs.tissue or 'grain').lower()}"
+        element_norm = f"{elem_normalized}_{normalize_tissue(c_obs.tissue or 'grain')}"
+        element_only = elem_normalized
         source = normalize_data_source(c_obs.data_source)
         mods = moderator_key(c_obs.moderators)
 
@@ -2333,7 +2395,7 @@ def post_process_observations(
     deduped = []
     for obs in observations:
         key = (
-            (obs.element or "").lower(),
+            normalize_element(obs.element or ""),
             (obs.tissue or "").lower(),
             round(obs.control_mean, 4) if obs.control_mean is not None else None,
             round(obs.treatment_mean, 4) if obs.treatment_mean is not None else None,
@@ -2459,7 +2521,7 @@ def two_of_three_vote(
     # Deduplicate across pairwise matches using observation key
     def obs_key(obs: Observation) -> tuple:
         return (
-            (obs.element or 'unknown').lower(),
+            normalize_element(obs.element or 'unknown'),
             (obs.tissue or 'grain').lower(),
             round(obs.control_mean, 2) if obs.control_mean else 0,
             round(obs.treatment_mean, 2) if obs.treatment_mean else 0
@@ -2728,21 +2790,21 @@ class ConsensusPipeline:
                 print(f"    Cost: ${vision_result.cost_estimate:.4f}")
             self.total_cost += vision_result.cost_estimate
 
-            # For pure VISION papers, also run Kimi vision for consensus
-            if recon_result.extraction_method == "vision" and run_kimi and self.extractor.kimi_client:
+            # For VISION and HYBRID papers, also run Claude Sonnet 4.6 vision for consensus
+            if recon_result.extraction_method in ("vision", "hybrid") and self.extractor.claude_client:
                 if verbose:
-                    print(f"  [2.6/4] Running Kimi VISION extraction (consensus)...")
+                    print(f"  [2.6/4] Running Claude Sonnet 4.6 VISION extraction (consensus)...")
                 try:
                     kimi_vision_result = self.extractor.extract_vision(
-                        pdf_path, self.config, recon_result, paper_id, provider="kimi"
+                        pdf_path, self.config, recon_result, paper_id, provider="anthropic"
                     )
                     if verbose:
-                        print(f"    Kimi vision observations: {len(kimi_vision_result.observations)}")
+                        print(f"    Claude vision observations: {len(kimi_vision_result.observations)}")
                         print(f"    Cost: ${kimi_vision_result.cost_estimate:.4f}")
                     self.total_cost += kimi_vision_result.cost_estimate
                 except Exception as e:
                     if verbose:
-                        print(f"    Kimi vision failed: {e}")
+                        print(f"    Claude vision failed: {e}")
 
         if use_text and run_claude:
             if verbose:
@@ -2878,17 +2940,17 @@ class ConsensusPipeline:
             consensus_obs = list(text_consensus)
             if vision_result and vision_result.observations:
                 existing_sources = {
-                    (o.element.lower(), o.tissue.lower(), round(o.treatment_mean, 1) if o.treatment_mean else 0)
+                    (normalize_element(o.element), o.tissue.lower(), round(o.treatment_mean, 1) if o.treatment_mean else 0)
                     for o in consensus_obs
                 }
                 # Also index existing by element+tissue only (for zero-effect check)
                 existing_elements = {
-                    (o.element.lower(), o.tissue.lower()) for o in consensus_obs
+                    (normalize_element(o.element), o.tissue.lower()) for o in consensus_obs
                 }
                 # Build index of text disagreements by element+tissue for fallback
                 text_disagree_by_el = {}
                 for d in disagreements:
-                    el = d.get('element', '').lower()
+                    el = normalize_element(d.get('element', ''))
                     tis = d.get('tissue', '').lower()
                     dtype = d.get('type', '')
                     # Get the text observation (prefer kimi_only since Claude misses elements)
@@ -2906,9 +2968,17 @@ class ConsensusPipeline:
                 added_from_vision = 0
                 replaced_zero_vision = 0
                 for vobs in vision_result.observations:
-                    key = ((vobs.element or 'unknown').lower(), (vobs.tissue or 'grain').lower(),
-                           round(vobs.treatment_mean, 1) if vobs.treatment_mean else 0)
-                    el_tis_key = ((vobs.element or 'unknown').lower(), (vobs.tissue or 'grain').lower())
+                    # Ensure numeric types (vision models may return strings)
+                    try:
+                        _tm = float(vobs.treatment_mean) if vobs.treatment_mean is not None else None
+                        _cm = float(vobs.control_mean) if vobs.control_mean is not None else None
+                    except (ValueError, TypeError):
+                        _tm, _cm = None, None
+                    vobs.treatment_mean = _tm
+                    vobs.control_mean = _cm
+                    key = (normalize_element(vobs.element or 'unknown'), (vobs.tissue or 'grain').lower(),
+                           round(_tm, 1) if _tm else 0)
+                    el_tis_key = (normalize_element(vobs.element or 'unknown'), (vobs.tissue or 'grain').lower())
 
                     if key in existing_sources:
                         continue  # Already in text consensus

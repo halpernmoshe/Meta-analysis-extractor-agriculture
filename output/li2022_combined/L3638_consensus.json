@@ -1,0 +1,795 @@
+{
+  "paper_id": "L3638",
+  "recon": {
+    "paper_id": "L3638",
+    "warnings": [
+      "Recon error: Error code: 400 - {'error': {'code': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.', 'type': 'invalid_request_error', 'param': None}}",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 8,
+  "gemini_obs": 24,
+  "matched_obs": 10,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 8",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 729,
+      "control_mean": 708,
+      "treatment_variance": 40.31,
+      "control_variance": 40.31,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "0.1% humic acid",
+      "control_description": "Control (2% DAP + 40ppm NAA basal)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Tamil Nadu Agricultural University, Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 2.9661016949152543,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 771,
+      "control_mean": 708,
+      "treatment_variance": 40.31,
+      "control_variance": 40.31,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "0.1% humic acid + 10ppm Benzyl Adenine",
+      "control_description": "Control (2% DAP + 40ppm NAA basal)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Tamil Nadu Agricultural University, Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 8.898305084745763,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 760,
+      "control_mean": 708,
+      "treatment_variance": 40.31,
+      "control_variance": 40.31,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "0.1% humic acid + 100ppm Salicylic acid",
+      "control_description": "Control (2% DAP + 40ppm NAA basal)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Tamil Nadu Agricultural University, Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 7.344632768361582,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 873,
+      "control_mean": 708,
+      "treatment_variance": 40.31,
+      "control_variance": 40.31,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "0.1% humic acid + 0.1ppm Brassinosteroid",
+      "control_description": "Control (2% DAP + 40ppm NAA basal)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Tamil Nadu Agricultural University, Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 23.30508474576271,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 743,
+      "control_mean": 708,
+      "treatment_variance": 40.31,
+      "control_variance": 40.31,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "0.1% humic acid + micronutrient mixture",
+      "control_description": "Control (2% DAP + 40ppm NAA basal)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Tamil Nadu Agricultural University, Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 4.943502824858757,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 756,
+      "control_mean": 708,
+      "treatment_variance": 40.31,
+      "control_variance": 40.31,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "0.1% humic acid + micronutrient mixture + 10ppm Benzyl Adenine",
+      "control_description": "Control (2% DAP + 40ppm NAA basal)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Tamil Nadu Agricultural University, Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 6.779661016949152,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 751,
+      "control_mean": 708,
+      "treatment_variance": 40.31,
+      "control_variance": 40.31,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "Table 2",
+      "treatment_description": "0.1% humic acid + micronutrient mixture + 100ppm Salicylic acid",
+      "control_description": "Control (2% DAP + 40ppm NAA basal)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Tamil Nadu Agricultural University, Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 6.073446327683616,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed weight plant-1",
+      "tissue": "grain",
+      "treatment_mean": 10.58,
+      "control_mean": 9.68,
+      "treatment_variance": 0.48,
+      "control_variance": 0.48,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 2",
+      "treatment_description": "HA 0.1 % alone",
+      "control_description": "Control (2% DAP + 40 ppm NAA)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Variance reported as SEd. [from vision]",
+      "effect_pct": 9.297520661157028,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest Index",
+      "tissue": "whole plant",
+      "treatment_mean": 31.64,
+      "control_mean": 26.24,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 2",
+      "treatment_description": "HA 0.1 % + 0.1 ppm Brassinosteroid (BR)",
+      "control_description": "Control (2% DAP + 40 ppm NAA)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Coimbatore, India"
+      },
+      "confidence": "high",
+      "notes": "Variance reported as SEd. Best performing treatment for HI. [from vision]",
+      "effect_pct": 20.579268292682936,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Total chlorophyll content",
+      "tissue": "leaf",
+      "treatment_mean": 3.71,
+      "control_mean": 1.8,
+      "treatment_variance": 0.09,
+      "control_variance": 0.09,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "mg/g",
+      "data_source": "Table 1",
+      "treatment_description": "HA 0.1 % + 0.1 ppm Brassinosteroid (BR)",
+      "control_description": "Control (2% DAP + 40 ppm NAA)",
+      "moderators": {
+        "cultivar": "CO6",
+        "year": "2006",
+        "site": "Coimbatore, India",
+        "sampling_time": "60 DAS"
+      },
+      "confidence": "high",
+      "notes": "Variance reported as SEd. Peak chlorophyll content observed at 60 DAS. [from vision]",
+      "effect_pct": 106.11111111111111,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 10,
+    "final_count": 10
+  },
+  "verification_flags": [
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 729,
+        "control_mean": 708,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.577361872853421,
+            "note": "CV = 9.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.6%"
+          }
+        },
+        "effect_pct": 2.9661016949152543
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 771,
+        "control_mean": 708,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.055637879779695,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 8.898305084745763
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 760,
+        "control_mean": 708,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.186706322776505,
+            "note": "CV = 9.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 7.344632768361582
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 873,
+        "control_mean": 708,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.997590842279662,
+            "note": "CV = 8.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": 23.30508474576271
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 743,
+        "control_mean": 708,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.396900141736399,
+            "note": "CV = 9.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.6%"
+          }
+        },
+        "effect_pct": 4.943502824858757
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 756,
+        "control_mean": 708,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.235313234537228,
+            "note": "CV = 9.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 6.779661016949152
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 751,
+        "control_mean": 708,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.296800007070765,
+            "note": "CV = 9.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 6.073446327683616
+      }
+    },
+    {
+      "element": "Seed weight plant-1",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed weight plant-1",
+        "treatment_mean": 10.58,
+        "control_mean": 9.68,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.858075497476948,
+            "note": "CV = 7.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.2%"
+          }
+        },
+        "effect_pct": 9.297520661157028
+      }
+    },
+    {
+      "element": "Harvest Index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Harvest Index",
+        "treatment_mean": 31.64,
+        "control_mean": 26.24,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.419501578676322,
+            "note": "CV = 5.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 20.579268292682936
+      }
+    },
+    {
+      "element": "Total chlorophyll content",
+      "tissue": "leaf",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Total chlorophyll content",
+        "treatment_mean": 3.71,
+        "control_mean": 1.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +106.1%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +106.1% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.201740503536359,
+            "note": "CV = 4.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 106.11111111111111
+      }
+    }
+  ]
+}

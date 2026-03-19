@@ -1,0 +1,541 @@
+{
+  "paper_id": "120_Pohl_2019_The Eggplant Yield and Fruit Composition",
+  "gt_rows": [
+    {
+      "pair": "17",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-86",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 4.59,
+      "treat_mean": 4.18,
+      "ctrl_sd": 0.3899999999999997,
+      "treat_sd": 0.2599999999999998
+    },
+    {
+      "pair": "18",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-87",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 3.61,
+      "treat_mean": 3.93,
+      "ctrl_sd": 0.33000000000000007,
+      "treat_sd": 0.36999999999999966
+    },
+    {
+      "pair": "19",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-88",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 2.54,
+      "treat_mean": 3.26,
+      "ctrl_sd": 0.4500000000000002,
+      "treat_sd": 0.31000000000000005
+    },
+    {
+      "pair": "20",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-89",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 2.54,
+      "treat_mean": 3.38,
+      "ctrl_sd": 0.3600000000000003,
+      "treat_sd": 0.36999999999999966
+    },
+    {
+      "pair": "21",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-90",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 3.67,
+      "treat_mean": 4.04,
+      "ctrl_sd": 0.5100000000000002,
+      "treat_sd": 0.24999999999999956
+    },
+    {
+      "pair": "22",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-91",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 3.11,
+      "treat_mean": 3.81,
+      "ctrl_sd": 0.5099999999999998,
+      "treat_sd": 0.46999999999999975
+    },
+    {
+      "pair": "23",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-92",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 3.14,
+      "treat_mean": 3.2,
+      "ctrl_sd": 0.28000000000000025,
+      "treat_sd": 0.20999999999999996
+    },
+    {
+      "pair": "24",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-93",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 2.68,
+      "treat_mean": 3.72,
+      "ctrl_sd": 0.26000000000000023,
+      "treat_sd": 0.33000000000000007
+    },
+    {
+      "pair": "25",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-94",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 1.6,
+      "treat_mean": 2.51,
+      "ctrl_sd": 0.24,
+      "treat_sd": 0.10999999999999989
+    },
+    {
+      "pair": "26",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-95",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 1.84,
+      "treat_mean": 2.29,
+      "ctrl_sd": 0.10999999999999989,
+      "treat_sd": 0.31999999999999984
+    },
+    {
+      "pair": "27",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-96",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 2.49,
+      "treat_mean": 2.57,
+      "ctrl_sd": 0.16999999999999993,
+      "treat_sd": 0.3600000000000003
+    },
+    {
+      "pair": "28",
+      "crop": "eggplant",
+      "CropCategory": "Vegetables ",
+      "product": "Göemar BM-97",
+      "PBsCategory": "SWE",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "3",
+      "country": "Poland",
+      "ctrl_mean": 2.27,
+      "treat_mean": 2.98,
+      "ctrl_sd": 0.2799999999999998,
+      "treat_sd": 0.3900000000000001
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Cristal F1",
+        "year": "2013"
+      },
+      "control_mean": 1.0,
+      "treatment_mean": 1.2,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Cristal F1",
+        "year": "2013"
+      },
+      "control_mean": 3.2,
+      "treatment_mean": 3.8,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Epic F1",
+        "year": "2013"
+      },
+      "control_mean": 1.3,
+      "treatment_mean": 1.8,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Epic F1",
+        "year": "2013"
+      },
+      "control_mean": 4.8,
+      "treatment_mean": 5.2,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Flavine F1",
+        "year": "2013"
+      },
+      "control_mean": 1.1,
+      "treatment_mean": 1.5,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Flavine F1",
+        "year": "2013"
+      },
+      "control_mean": 3.6,
+      "treatment_mean": 4.2,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Gascona F1",
+        "year": "2013"
+      },
+      "control_mean": 1.0,
+      "treatment_mean": 1.4,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Gascona F1",
+        "year": "2013"
+      },
+      "control_mean": 3.2,
+      "treatment_mean": 3.9,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Onyx F1",
+        "year": "2013"
+      },
+      "control_mean": 1.1,
+      "treatment_mean": 1.3,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Onyx F1",
+        "year": "2013"
+      },
+      "control_mean": 4.5,
+      "treatment_mean": 4.8,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "WA 6020 F1",
+        "year": "2013"
+      },
+      "control_mean": 1.2,
+      "treatment_mean": 1.6,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "WA 6020 F1",
+        "year": "2013"
+      },
+      "control_mean": 5.2,
+      "treatment_mean": 5.8,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Cristal F1",
+        "year": "2014"
+      },
+      "control_mean": 0.5,
+      "treatment_mean": 0.8,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Cristal F1",
+        "year": "2014"
+      },
+      "control_mean": 2.5,
+      "treatment_mean": 2.8,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Epic F1",
+        "year": "2014"
+      },
+      "control_mean": 0.6,
+      "treatment_mean": 1.2,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Epic F1",
+        "year": "2014"
+      },
+      "control_mean": 3.8,
+      "treatment_mean": 4.5,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Flavine F1",
+        "year": "2014"
+      },
+      "control_mean": 0.7,
+      "treatment_mean": 1.0,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Flavine F1",
+        "year": "2014"
+      },
+      "control_mean": 2.8,
+      "treatment_mean": 3.2,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Gascona F1",
+        "year": "2014"
+      },
+      "control_mean": 0.7,
+      "treatment_mean": 0.9,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Gascona F1",
+        "year": "2014"
+      },
+      "control_mean": 2.4,
+      "treatment_mean": 2.6,
+      "confidence": "low"
+    },
+    {
+      "element": "early yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Onyx F1",
+        "year": "2014"
+      },
+      "control_mean": 0.6,
+      "treatment_mean": 0.8,
+      "confidence": "low"
+    },
+    {
+      "element": "marketable yield (kg m-2)",
+      "tissue": "fruit",
+      "unit": "kg/m2",
+      "n": 3,
+      "treatment_description": "Göemar BM-86 biostimulant (Ascophyllum nodosum extract) foliar spray",
+      "control_description": "Distilled water spray",
+      "moderators": {
+        "cultivar": "Onyx F1",
+        "year": "2014"
+      },
+      "control_mean": 3.5,
+      "treatment_mean": 3.8,
+      "confidence": "low"
+    }
+  ]
+}

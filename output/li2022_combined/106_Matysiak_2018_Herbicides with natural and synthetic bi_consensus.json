@@ -1,0 +1,2682 @@
+{
+  "paper_id": "106_Matysiak_2018_Herbicides with natural and synthetic bi",
+  "recon": {
+    "paper_id": "106_Matysiak_2018_Herbicides with natural and synthetic bi",
+    "warnings": [
+      "This is NOT a CO2 experiment - it's a herbicide + biostimulant experiment in wheat",
+      "Multiple herbicides tested with each biostimulant - need to extract each herbicide x biostimulant combination separately",
+      "Two application methods: tank mixture (+) vs sequential application (/)",
+      "Two biostimulant types: Kelpak (seaweed extract) and Asahi (synthetic nitrophenols)",
+      "Control is 'Untreated' - no herbicide AND no biostimulant",
+      "Treatment vs control assignment may be confusing - herbicide-only treatments are NOT proper controls for biostimulant effect",
+      "Data presented for two different years (2014, 2015) - may need separate extraction",
+      "Multiple outcome variables in same tables - only extract yield data for meta-analysis",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "LSD0.05 values provided in all tables, and 'Upon discovering significant differences, a detailed comparison of the means using the Student's t-distribution test was performed in order to determine the lowest significant difference at a 5% significance level'",
+    "variance_confidence": "high",
+    "control_definition": "Untreated (no herbicide, no biostimulant)",
+    "treatment_definition": "Various combinations of herbicides with biostimulants (Kelpak seaweed extract or Asahi nitrophenols), applied as tank mixture or sequentially",
+    "tables_with_target_data": [
+      "Table 4"
+    ],
+    "potential_tc_confusion": "High risk - herbicide-only treatments are present but should NOT be used as controls for biostimulant effect analysis",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "The experiment was established in randomized block design in 4 replications on spring wheat cv. Torridon",
+    "factorial_structure": "[\"herbicide type\", \"biostimulant type\", \"application method\", \"year\"]",
+    "extraction_guidance": "Only extract yield data (t\u00b7ha-1) from Table 4. Compare biostimulant treatments against 'Untreated' control only. Do NOT use herbicide-only treatments as controls. Extract separately for each year (2014, 2015) and each biostimulant combination. Use LSD0.05 values as variance measure. Focus on treatments containing 'Kelpak' or 'Asahi' vs 'Untreated'.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Herbicides with natural and synthetic biostimulants in spring wheat\",\n        \"species\": \"Triticum aestivum (spring wheat cv. Torridon)\",\n        \"experimental_system\": \"open field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"This is NOT a CO2 experiment - it's a herbicide + biostimulant experiment in wheat\",\n        \"Multiple herbicides tested with each biostimulant - need to extract each herbicide x biostimulant combination separately\",\n        \"Two application methods: tank mixture (+) vs sequential application (/)\",\n        \"Two biostimulant types: Kelpak (seaweed extract) and Asahi (synthetic nitrophenols)\",\n        \"Control is 'Untreated' - no herbicide AND no biostimulant\",\n        \"Treatment vs control assignment may be confusing - herbicide-only treatments are NOT proper controls for biostimulant effect\",\n        \"Data presented for two different years (2014, 2015) - may need separate extraction\",\n        \"Multiple outcome variables in same tables - only extract yield data for meta-analysis\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"LSD0.05 values provided in all tables, and 'Upon discovering significant differences, a detailed comparison of the means using the Student's t-distribution test was performed in order to determine the lowest significant difference at a 5% significance level'\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Untreated (no herbicide, no biostimulant)\",\n        \"treatment_definition\": \"Various combinations of herbicides with biostimulants (Kelpak seaweed extract or Asahi nitrophenols), applied as tank mixture or sequentially\",\n        \"identification_method\": \"First row in tables is 'Untreated' = control; treatments include biostimulant names (Kelpak or Asahi)\",\n        \"potential_confusion\": \"High risk - herbicide-only treatments are present but s",
+    "tables_without_target_data": [
+      "Table 2",
+      "Table 3",
+      "Table 6",
+      "Table 7"
+    ],
+    "table_descriptions": {
+      "Table 2": "Weed control efficacy percentages",
+      "Table 3": "Weight of thousand grains and number of grains per ear",
+      "Table 4": "Number of spikes per m2 and grain yield (t\u00b7ha-1)",
+      "Table 6": "Protein and starch content in grains",
+      "Table 7": "Gluten content and Zeleny value in grains"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 4": [
+        "Number of spikes/m2 2014",
+        "Number of spikes/m2 2015",
+        "Yield (t\u00b7ha-1) 2014",
+        "Yield (t\u00b7ha-1) 2015"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 24,
+  "kimi_obs": 48,
+  "gemini_obs": 0,
+  "matched_obs": 23,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 652.0,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Kelpak SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Kelpak",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 15.602836879432624,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 338.7,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Kelpak SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Kelpak",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 3.0422878004259206,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 564.0,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Kelpak SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Kelpak",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 337.3,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Kelpak SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Kelpak",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 2.6163675083662983,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 580.0,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Asahi SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Asahi",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 2.8368794326241136,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 304.7,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Asahi SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Asahi",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": -7.301490721022209,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 646.7,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Asahi SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Asahi",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 14.663120567375895,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 328.0,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "MCPA + dicamba with Asahi SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "MCPA+dicamba",
+          "biostimulant": "Asahi",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": -0.21296014602981095,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 617.3,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Kelpak SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Kelpak",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 9.45035460992907,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 335.3,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Kelpak SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Kelpak",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 2.0079099482811147,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 589.3,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Kelpak SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Kelpak",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 4.485815602836872,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 345.3,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Kelpak SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Kelpak",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 5.050197748707035,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 564.0,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Asahi SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Asahi",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 318.7,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Asahi SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Asahi",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": -3.0422878004259206,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 673.3,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Asahi SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Asahi",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 19.37943262411347,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 340.0,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Dicamba + triasulfuron with Asahi SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Dicamba+triasulfuron",
+          "biostimulant": "Asahi",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 3.4377852144812935,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 649.3,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Kelpak SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Kelpak",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 15.124113475177298,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 319.3,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Kelpak SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Kelpak",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": -2.8597505324003585,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 556.0,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Kelpak SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Kelpak",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": -1.4184397163120568,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 364.0,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Kelpak SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Kelpak",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 10.739275935503501,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 612.0,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Asahi SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Asahi",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 8.51063829787234,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 351.3,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Asahi SL (tank mixture at BBCH 30)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Asahi",
+          "application_method": "tank mixture",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 6.875570428962587,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2014",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2014",
+        "tissue": "whole plant",
+        "treatment_mean": 646.7,
+        "control_mean": 564.0,
+        "treatment_variance": 106.6,
+        "control_variance": 106.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Asahi SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2014",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Asahi",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 106.6",
+        "effect_pct": 14.663120567375895,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Number of spikes/m2 2015",
+      "tissue": "whole plant",
+      "kimi": {
+        "element": "Number of spikes/m2 2015",
+        "tissue": "whole plant",
+        "treatment_mean": 342.7,
+        "control_mean": 328.7,
+        "treatment_variance": 51.1,
+        "control_variance": 51.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "spikes/m2",
+        "data_source": "Table 4",
+        "treatment_description": "Florasulam + 2,4-D with Asahi SL (sequential application, 3 days after herbicide)",
+        "control_description": "Untreated (no herbicide, no biostimulant)",
+        "moderators": {
+          "year": "2015",
+          "herbicide": "Florasulam+2,4-D",
+          "biostimulant": "Asahi",
+          "application_method": "sequential",
+          "cultivar": "Torridon"
+        },
+        "confidence": "high",
+        "notes": "LSD0.05 = 51.1",
+        "effect_pct": 4.259202920596288,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 6.54,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)+Kelpak tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Kelpak",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.168831168831167,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 6.15,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)/Kelpak sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Kelpak",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.16233766233765887,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 5.95,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)+Asahi tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Asahi",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.4090909090909083,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 6.69,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)/Asahi sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Asahi",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.603896103896108,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 7.54,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)+Kelpak tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Kelpak",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 22.4025974025974,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 7.23,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)/Kelpak sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Kelpak",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.370129870129876,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 6.17,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)+Asahi tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Asahi",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.16233766233765887,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 7.13,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)/Asahi sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Asahi",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.746753246753242,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 7.17,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Florasulam+2,4-D)+Kelpak tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "florasulam+2,4-D",
+        "biostimulant": "Kelpak",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.39610389610389,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 6.34,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Florasulam+2,4-D)/Kelpak sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "florasulam+2,4-D",
+        "biostimulant": "Kelpak",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.9220779220779174,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "treatment_mean": 6.49,
+      "control_mean": 6.16,
+      "treatment_variance": 0.99,
+      "control_variance": 0.99,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Florasulam+2,4-D)+Asahi tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2014",
+        "herbicide": "florasulam+2,4-D",
+        "biostimulant": "Asahi",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.3571428571428585,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 5.03,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)+Kelpak tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Kelpak",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 12.026726057906458,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.95,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)/Kelpak sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Kelpak",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.244988864142538,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.37,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)+Asahi tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Asahi",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.672605790645882,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.89,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(MCPA+dicamba)/Asahi sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "MCPA+dicamba",
+        "biostimulant": "Asahi",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.908685968819587,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.53,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)+Kelpak tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Kelpak",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.8908685968819607,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.74,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)/Kelpak sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Kelpak",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.567928730512249,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.23,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)+Asahi tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Asahi",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.790645879732734,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.48,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Dicamba+triasulfuron)/Asahi sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "dicamba+triasulfuron",
+        "biostimulant": "Asahi",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.22271714922048524,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.27,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Florasulam+2,4-D)+Kelpak tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "florasulam+2,4-D",
+        "biostimulant": "Kelpak",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.899777282850794,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.83,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Florasulam+2,4-D)/Kelpak sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "florasulam+2,4-D",
+        "biostimulant": "Kelpak",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.572383073496655,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.62,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Florasulam+2,4-D)+Asahi tank mixture",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "florasulam+2,4-D",
+        "biostimulant": "Asahi",
+        "application_method": "tank mixture",
+        "cultivar": "Torridon",
+        "application": "tank mixture"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.895322939866367,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "treatment_mean": 4.73,
+      "control_mean": 4.49,
+      "treatment_variance": 0.65,
+      "control_variance": 0.65,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "t\u00b7ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "(Florasulam+2,4-D)/Asahi sequential application",
+      "control_description": "Untreated",
+      "moderators": {
+        "year": "2015",
+        "herbicide": "florasulam+2,4-D",
+        "biostimulant": "Asahi",
+        "application_method": "sequential",
+        "cultivar": "Torridon",
+        "application": "sequential"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.345211581291764,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 1,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 24,
+    "final_count": 23
+  },
+  "verification_flags": [
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 6.54,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.137614678899084,
+            "note": "CV = 15.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.6%"
+          }
+        },
+        "effect_pct": 6.168831168831167
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 6.15,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.097560975609753,
+            "note": "CV = 16.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.1%"
+          }
+        },
+        "effect_pct": -0.16233766233765887
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 5.95,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.63865546218487,
+            "note": "CV = 16.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.4%"
+          }
+        },
+        "effect_pct": -3.4090909090909083
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 6.69,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.798206278026903,
+            "note": "CV = 14.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.4%"
+          }
+        },
+        "effect_pct": 8.603896103896108
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 7.54,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +22.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.12997347480106,
+            "note": "CV = 13.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.5%"
+          }
+        },
+        "effect_pct": 22.4025974025974
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 7.23,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.692946058091286,
+            "note": "CV = 13.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.8%"
+          }
+        },
+        "effect_pct": 17.370129870129876
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 6.17,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.045380875202593,
+            "note": "CV = 16.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.1%"
+          }
+        },
+        "effect_pct": 0.16233766233765887
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 7.13,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.884992987377279,
+            "note": "CV = 13.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.9%"
+          }
+        },
+        "effect_pct": 15.746753246753242
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 7.17,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.807531380753138,
+            "note": "CV = 13.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.9%"
+          }
+        },
+        "effect_pct": 16.39610389610389
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 6.34,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.615141955835963,
+            "note": "CV = 15.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.8%"
+          }
+        },
+        "effect_pct": 2.9220779220779174
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2014",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2014",
+        "treatment_mean": 6.49,
+        "control_mean": 6.16,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.254237288135592,
+            "note": "CV = 15.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=15.7%"
+          }
+        },
+        "effect_pct": 5.3571428571428585
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 5.03,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 12.922465208747514,
+            "note": "CV = 12.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.7%"
+          }
+        },
+        "effect_pct": 12.026726057906458
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.95,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.131313131313133,
+            "note": "CV = 13.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.8%"
+          }
+        },
+        "effect_pct": 10.244988864142538
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.37,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -2.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.874141876430205,
+            "note": "CV = 14.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.7%"
+          }
+        },
+        "effect_pct": -2.672605790645882
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.89,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.292433537832313,
+            "note": "CV = 13.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.9%"
+          }
+        },
+        "effect_pct": 8.908685968819587
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.53,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.348785871964678,
+            "note": "CV = 14.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.4%"
+          }
+        },
+        "effect_pct": 0.8908685968819607
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.74,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.71308016877637,
+            "note": "CV = 13.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.1%"
+          }
+        },
+        "effect_pct": 5.567928730512249
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.23,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -5.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 6.146572104018907,
+            "note": "Effect -5.8% violates expected direction; unswapped would be +6.1%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.36643026004728,
+            "note": "CV = 15.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.9%"
+          }
+        },
+        "effect_pct": -5.790645879732734,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -5.8%, corrected would be +6.1%"
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.48,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -0.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.50892857142857,
+            "note": "CV = 14.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.5%"
+          }
+        },
+        "effect_pct": -0.22271714922048524
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.27,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -4.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.222482435597193,
+            "note": "CV = 15.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.8%"
+          }
+        },
+        "effect_pct": -4.899777282850794
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.83,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.457556935817806,
+            "note": "CV = 13.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.9%"
+          }
+        },
+        "effect_pct": 7.572383073496655
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.62,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.06926406926407,
+            "note": "CV = 14.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.3%"
+          }
+        },
+        "effect_pct": 2.895322939866367
+      }
+    },
+    {
+      "element": "Yield (t\u00b7ha-1) 2015",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Yield (t\u00b7ha-1) 2015",
+        "treatment_mean": 4.73,
+        "control_mean": 4.49,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.742071881606766,
+            "note": "CV = 13.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.1%"
+          }
+        },
+        "effect_pct": 5.345211581291764
+      }
+    }
+  ]
+}

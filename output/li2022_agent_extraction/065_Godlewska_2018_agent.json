@@ -1,0 +1,264 @@
+{
+  "paper_id": "065_Godlewska_2018",
+  "title": "Assessment of the effect of various biostimulants on Medicago x varia T. Martyn yielding and content of selected organic components",
+  "authors": "Godlewska, A., Ciepiela, G.A.",
+  "year": 2018,
+  "species": "Medicago x varia T. Martyn",
+  "crop": "sand lucerne",
+  "experiment_type": "field",
+  "location": "Poland",
+  "consensus_observations": [
+    {
+      "outcome": "dry matter yield",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 19.7,
+      "control_mean": 16.8,
+      "effect_pct": 17.26,
+      "n": 3,
+      "unit": "t/ha (sum of 3 cuts)",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 2",
+      "treatment_description": "Algex 6 dm3/ha foliar (Ascophyllum nodosum extract), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Algex (Ascophyllum nodosum)",
+        "application_method": "foliar",
+        "application_rate": "6 dm3/ha"
+      }
+    },
+    {
+      "outcome": "dry matter yield",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 19.3,
+      "control_mean": 16.8,
+      "effect_pct": 14.88,
+      "n": 3,
+      "unit": "t/ha (sum of 3 cuts)",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 2",
+      "treatment_description": "Tytanit 0.4 dm3/ha foliar (Ti-ascorbate), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Tytanit (Ti-ascorbate)",
+        "application_method": "foliar",
+        "application_rate": "0.4 dm3/ha"
+      }
+    },
+    {
+      "outcome": "dry matter yield",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 19.3,
+      "control_mean": 16.8,
+      "effect_pct": 14.88,
+      "n": 3,
+      "unit": "t/ha (sum of 3 cuts)",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 2",
+      "treatment_description": "Asahi SL 0.6 dm3/ha foliar (nitrophenols), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Asahi SL (nitrophenols)",
+        "application_method": "foliar",
+        "application_rate": "0.6 dm3/ha"
+      }
+    },
+    {
+      "outcome": "chlorophyll content",
+      "tissue": "leaf",
+      "treatment_mean": 57.4,
+      "control_mean": 54.2,
+      "effect_pct": 5.90,
+      "n": 3,
+      "unit": "SPAD",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Algex 6 dm3/ha foliar (Ascophyllum nodosum extract), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Algex (Ascophyllum nodosum)",
+        "application_method": "foliar",
+        "application_rate": "6 dm3/ha"
+      }
+    },
+    {
+      "outcome": "chlorophyll content",
+      "tissue": "leaf",
+      "treatment_mean": 57.6,
+      "control_mean": 54.2,
+      "effect_pct": 6.27,
+      "n": 3,
+      "unit": "SPAD",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Tytanit 0.4 dm3/ha foliar (Ti-ascorbate), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Tytanit (Ti-ascorbate)",
+        "application_method": "foliar",
+        "application_rate": "0.4 dm3/ha"
+      }
+    },
+    {
+      "outcome": "chlorophyll content",
+      "tissue": "leaf",
+      "treatment_mean": 58.5,
+      "control_mean": 54.2,
+      "effect_pct": 7.93,
+      "n": 3,
+      "unit": "SPAD",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Asahi SL 0.6 dm3/ha foliar (nitrophenols), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Asahi SL (nitrophenols)",
+        "application_method": "foliar",
+        "application_rate": "0.6 dm3/ha"
+      }
+    },
+    {
+      "outcome": "protein compounds",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 182.1,
+      "control_mean": 175.5,
+      "effect_pct": 3.76,
+      "n": 3,
+      "unit": "g/kg DM",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Algex 6 dm3/ha foliar (Ascophyllum nodosum extract), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Algex (Ascophyllum nodosum)",
+        "application_method": "foliar",
+        "application_rate": "6 dm3/ha"
+      }
+    },
+    {
+      "outcome": "protein compounds",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 187.0,
+      "control_mean": 175.5,
+      "effect_pct": 6.55,
+      "n": 3,
+      "unit": "g/kg DM",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Tytanit 0.4 dm3/ha foliar (Ti-ascorbate), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Tytanit (Ti-ascorbate)",
+        "application_method": "foliar",
+        "application_rate": "0.4 dm3/ha"
+      }
+    },
+    {
+      "outcome": "protein compounds",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 168.3,
+      "control_mean": 175.5,
+      "effect_pct": -4.10,
+      "n": 3,
+      "unit": "g/kg DM",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Asahi SL 0.6 dm3/ha foliar (nitrophenols), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Asahi SL (nitrophenols)",
+        "application_method": "foliar",
+        "application_rate": "0.6 dm3/ha"
+      }
+    },
+    {
+      "outcome": "monosaccharide content",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 52.1,
+      "control_mean": 45.4,
+      "effect_pct": 14.76,
+      "n": 3,
+      "unit": "g/kg DM",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Algex 6 dm3/ha foliar (Ascophyllum nodosum extract), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Algex (Ascophyllum nodosum)",
+        "application_method": "foliar",
+        "application_rate": "6 dm3/ha"
+      }
+    },
+    {
+      "outcome": "monosaccharide content",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 56.0,
+      "control_mean": 45.4,
+      "effect_pct": 23.35,
+      "n": 3,
+      "unit": "g/kg DM",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Tytanit 0.4 dm3/ha foliar (Ti-ascorbate), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Tytanit (Ti-ascorbate)",
+        "application_method": "foliar",
+        "application_rate": "0.4 dm3/ha"
+      }
+    },
+    {
+      "outcome": "monosaccharide content",
+      "tissue": "aboveground biomass",
+      "treatment_mean": 49.3,
+      "control_mean": 45.4,
+      "effect_pct": 8.59,
+      "n": 3,
+      "unit": "g/kg DM",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Asahi SL 0.6 dm3/ha foliar (nitrophenols), 3 applications per year",
+      "control_description": "No biostimulant (control)",
+      "moderators": {
+        "crop": "sand lucerne",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Asahi SL (nitrophenols)",
+        "application_method": "foliar",
+        "application_rate": "0.6 dm3/ha"
+      }
+    }
+  ]
+}

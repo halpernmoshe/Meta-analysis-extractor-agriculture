@@ -1,0 +1,6144 @@
+{
+  "paper_id": "026_Seneweera_1997",
+  "recon": {
+    "paper_id": "026_Seneweera_1997",
+    "warnings": [
+      "FACTORIAL DESIGN: CO2 x Phosphorus (6 P levels x 2 CO2 levels = 12 combinations). Each P level must be treated as a separate sub-experiment or data must be pooled carefully.",
+      "P levels vary widely (0, 30, 60, 120, 240, 480 mg P kg-1 soil) - mineral concentration responses differ substantially across P levels, especially for Fe and Zn.",
+      "Table 1 reports shoot tissue mineral data (blades and sheaths separately) at 56 DAP (vegetative stage), NOT grain data - do not confuse with grain mineral concentrations.",
+      "Grain mineral data (Zn, Fe) are reported in Figure 4 only - no tabular data available for grain Zn and Fe, only graphical.",
+      "Grain N and P concentrations are in Table 2 - these are grain quality data, not shoot data.",
+      "Grain Ca and amylose are in Figure 3 only - graphical, no tabular data.",
+      "Shoot Ca in Table 1 shows INCREASE at elevated CO2 (opposite direction from dilution hypothesis) - verify extraction direction carefully.",
+      "Shoot N in Table 1 shows DECREASE at elevated CO2 (consistent with dilution hypothesis).",
+      "Grain N in Table 2 also shows DECREASE at elevated CO2 (consistent with dilution hypothesis).",
+      "No variance data (SE, SD) are reported in tables - only means. LSD values are reported in Table 2 only (LSD p=0.05: N=1.0, P=0.3).",
+      "Harvest timing differs between CO2 treatments: 139 DAP for 700 ppm, 146 DAP for 350 ppm - different developmental timing could affect concentrations.",
+      "Table 1 values are described as 'pooled means of five replicates' with no variance reported per cell.",
+      "Zn in Table 1 is in mg kg-1 dwt (micronutrient), while P, Ca, N are in g kg-1 dwt - units differ within the same table.",
+      "Starch data in Table 1 is NOT a mineral element - do not extract for mineral meta-analysis.",
+      "The paper states critical P concentration was 1.8 g kg-1 for both CO2 levels - CO2 had no effect on foliar P concentration, which contradicts dilution for P specifically.",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: IMAGE-TABLES - Tables are images, not text",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "s were assessed by analysis of variance.Least significant differences and standard errors were calculated wh",
+    "variance_confidence": "medium",
+    "control_definition": "Ambient CO2 at 350 \u00b5L CO2 L-1 (ppm) in growth chambers",
+    "treatment_definition": "Elevated CO2 at 700 \u00b5L CO2 L-1 (ppm) in growth chambers",
+    "tables_with_target_data": [
+      "Table 1",
+      "Table 2"
+    ],
+    "potential_tc_confusion": "Ca concentration INCREASES at elevated CO2 (opposite to dilution effect) - this is real and should not be treated as a T/C swap error. Confirm Ca direction carefully. Also note that shoot P concentration was UNAFFECTED by CO2, which is unusual.",
+    "experimental_design": "factorial",
+    "sample_size_found": 5,
+    "sample_size_source": "Table 1 footnote: 'Values are the pooled means of five replicates'; Figure captions: 'Each point is the mean of five [replicates]'; Methods: 'Five pots at each P level were then placed in one growth chamber'",
+    "factorial_structure": "[\"CO2 (2 levels: 350, 700 ppm)\", \"Phosphorus addition (6 levels: 0, 30, 60, 120, 240, 480 mg P kg-1 soil)\"]",
+    "extraction_guidance": "1. TISSUE TYPE: Separate extractions needed for shoot tissue (Table 1, blades vs sheaths) and grain tissue (Table 2, Figs 3b, 4). These represent different organs and developmental stages. 2. P LEVELS: Each of the 6 P levels should be treated as a separate data point or averaged across P levels if pooling - be explicit about which P level is used. The paper recommends moderate P as the most responsive. 3. VARIANCE: No SE/SD available for Table 1 or figures. Table 2 provides only a single LSD value applicable across all P levels. If variance is required, this paper can only contribute mean data. 4. Ca DIRECTION: Ca increases at elevated CO2 in both shoot and grain - extract as positive effect, not negative. 5. N and Zn DIRECTION: Both decrease at elevated CO2 in shoot and grain - extract as negative effects. 6. P in SHOOT: CO2 had no significant effect on foliar P concentration - extract as near-zero effect. 7. GRAIN vs SHOOT: For meta-analysis of grain mineral dilution, prioritize Table 2 (grain N, P) and Fig 4 (grain Zn, Fe) over shoot tissue data in Table 1. 8. PSEUDOREPLICATION WARNING: Only 1 chamber per CO2 level - statistical comparisons between CO2 treatments using pot-level variance are pseudoreplicated. Flag this limitation in extraction. 9. For Figure 4 (Zn, Fe in grain): values must be read from graph at each P level - consider averaging across P levels or selecting specific P levels for extraction. 10. Harvest dates differ between treatments (139 vs 146 DAP) - note this as a potential confound.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Growth, grain yield and quality of rice (Oryza sativa L.) in response to elevated CO2 and phosphorus nutrition\",\n        \"species\": \"Oryza sativa L. cv. Jarrah\",\n        \"experimental_system\": \"growth chamber\",\n        \"co2_levels\": {\"control\": \"350\", \"elevated\": \"700\"}\n    },\n    \"warnings\": [\n        \"FACTORIAL DESIGN: CO2 x Phosphorus (6 P levels x 2 CO2 levels = 12 combinations). Each P level must be treated as a separate sub-experiment or data must be pooled carefully.\",\n        \"P levels vary widely (0, 30, 60, 120, 240, 480 mg P kg-1 soil) - mineral concentration responses differ substantially across P levels, especially for Fe and Zn.\",\n        \"Table 1 reports shoot tissue mineral data (blades and sheaths separately) at 56 DAP (vegetative stage), NOT grain data - do not confuse with grain mineral concentrations.\",\n        \"Grain mineral data (Zn, Fe) are reported in Figure 4 only - no tabular data available for grain Zn and Fe, only graphical.\",\n        \"Grain N and P concentrations are in Table 2 - these are grain quality data, not shoot data.\",\n        \"Grain Ca and amylose are in Figure 3 only - graphical, no tabular data.\",\n        \"Shoot Ca in Table 1 shows INCREASE at elevated CO2 (opposite direction from dilution hypothesis) - verify extraction direction carefully.\",\n        \"Shoot N in Table 1 shows DECREASE at elevated CO2 (consistent with dilution hypothesis).\",\n        \"Grain N in Table 2 also shows DECREASE at elevated CO2 (consistent with dilution hypothesis).\",\n        \"No variance data (SE, SD) are reported in tables - only means. LSD values are reported in Table 2 only (LSD p=0.05: N=1.0, P=0.3).\",\n        \"Harvest timing differs between CO2 treatments: 139 DAP for 700 ppm, 146 DAP for 350 ppm - different developmental timing could affect concentrations.\",\n        \"Table 1 values are described as 'pooled means of five replicates' with no variance reported per cell.\",\n        \"Zn in Table 1 i",
+    "tables_without_target_data": [],
+    "table_descriptions": {
+      "Table 1": "Chemical composition of leaf sheaths and blades at 56 DAP (maximum tillering stage) across 6 P levels x 2 CO2 levels. Contains: P, Ca, N, Starch, Zn for both sheaths and blades. Units: P/Ca/N/Starch in g kg-1 dwt; Zn in mg kg-1 dwt.",
+      "Table 2": "Grain N and P concentrations across 6 P levels x 2 CO2 levels. Units: g kg-1 dwt. LSD provided."
+    },
+    "figures_with_data": [
+      "Figure 3b",
+      "Figure 4"
+    ],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "Sheath P (g kg-1 dwt)",
+        "Sheath Ca (g kg-1 dwt)",
+        "Sheath N (g kg-1 dwt)",
+        "Sheath Starch (g kg-1 dwt)",
+        "Sheath Zn (mg kg-1 dwt)",
+        "Blade P (g kg-1 dwt)",
+        "Blade Ca (g kg-1 dwt)",
+        "Blade N (g kg-1 dwt)",
+        "Blade Starch (g kg-1 dwt)",
+        "Blade Zn (mg kg-1 dwt)"
+      ],
+      "Table 2": [
+        "Grain N (g kg-1 dwt)",
+        "Grain P (g kg-1 dwt)"
+      ],
+      "Figure 3b": [
+        "Grain Ca concentration (g kg-1 dwt) - graphical only, by P level"
+      ],
+      "Figure 4": [
+        "Grain Zn concentration (mg kg-1 dwt) - graphical only, by P level",
+        "Grain Fe concentration (mg kg-1 dwt) - graphical only, by P level"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Use vision API to read table images",
+      "Be careful with alignment of columns/rows",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Factors identified: Factorial (CO2 \u00d7 P levels) with multiple harvest times",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": true,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 136,
+  "kimi_obs": 73,
+  "gemini_obs": 0,
+  "matched_obs": 73,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Rebuilt consensus: 73/136 matched",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "Blade P",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade P",
+        "tissue": "leaf",
+        "treatment_mean": 1.0,
+        "control_mean": 0.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade P, P addition = 0 mg kg-1 soil. No variance reported. Pooled means of 5 replicates. Only 1 chamber per CO2 level - pseudoreplication concern. OCR verified.",
+        "effect_pct": 11.111111111111107,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Ca",
+        "tissue": "leaf",
+        "treatment_mean": 5.82,
+        "control_mean": 5.74,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Ca, P addition = 0 mg kg-1 soil. Ca increases at elevated CO2 - opposite to dilution hypothesis. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 1.3937282229965169,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade N",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade N",
+        "tissue": "leaf",
+        "treatment_mean": 40.6,
+        "control_mean": 43.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade N, P addition = 0 mg kg-1 soil. N decreases at elevated CO2 - consistent with dilution hypothesis. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -6.8807339449541285,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Zn",
+        "tissue": "leaf",
+        "treatment_mean": 71,
+        "control_mean": 81,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Zn, P addition = 0 mg kg-1 soil. Zn decreases at elevated CO2 - consistent with dilution hypothesis. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -12.345679012345679,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath P",
+        "tissue": "shoot",
+        "treatment_mean": 1.0,
+        "control_mean": 0.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath P, P addition = 0 mg kg-1 soil. Sheath P appears to increase here but paper text says CO2 had no effect on shoot P overall. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 66.66666666666667,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Ca",
+        "tissue": "shoot",
+        "treatment_mean": 2.91,
+        "control_mean": 2.87,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Ca, P addition = 0 mg kg-1 soil. Ca increases at elevated CO2 - opposite to dilution hypothesis. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 1.3937282229965169,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath N",
+        "tissue": "shoot",
+        "treatment_mean": 33.6,
+        "control_mean": 26.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath N, P addition = 0 mg kg-1 soil. At P=0, sheath N appears higher at elevated CO2, which is anomalous relative to the overall trend (5% reduction described in text). This value should be flagged for manual review - OCR errors possible. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 28.244274809160313,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Zn",
+        "tissue": "shoot",
+        "treatment_mean": 62,
+        "control_mean": 41,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Zn, P addition = 0 mg kg-1 soil. At P=0, sheath Zn appears higher at elevated CO2 - anomalous relative to blade Zn and overall trend. Flag for manual review. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 51.21951219512195,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade P",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade P",
+        "tissue": "leaf",
+        "treatment_mean": 1.3,
+        "control_mean": 1.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade P, P addition = 30 mg kg-1 soil. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 18.181818181818176,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Ca",
+        "tissue": "leaf",
+        "treatment_mean": 5.82,
+        "control_mean": 5.56,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Ca, P addition = 30 mg kg-1 soil. Ca increases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 4.676258992805768,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade N",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade N",
+        "tissue": "leaf",
+        "treatment_mean": 39.0,
+        "control_mean": 45.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade N, P addition = 30 mg kg-1 soil. N decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -14.473684210526319,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Zn",
+        "tissue": "leaf",
+        "treatment_mean": 61,
+        "control_mean": 70,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Zn, P addition = 30 mg kg-1 soil. Zn decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -12.857142857142856,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath P",
+        "tissue": "shoot",
+        "treatment_mean": 1.1,
+        "control_mean": 0.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath P, P addition = 30 mg kg-1 soil. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 37.50000000000001,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Ca",
+        "tissue": "shoot",
+        "treatment_mean": 2.91,
+        "control_mean": 2.78,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Ca, P addition = 30 mg kg-1 soil. Ca increases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 4.676258992805768,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath N",
+        "tissue": "shoot",
+        "treatment_mean": 23.7,
+        "control_mean": 35.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath N, P addition = 30 mg kg-1 soil. N decreases at elevated CO2 - consistent with dilution. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -32.861189801699716,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Zn",
+        "tissue": "shoot",
+        "treatment_mean": 67,
+        "control_mean": 53,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Zn, P addition = 30 mg kg-1 soil. At this P level sheath Zn is higher at elevated CO2 - anomalous. Flag for manual review. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 26.41509433962264,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade P",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade P",
+        "tissue": "leaf",
+        "treatment_mean": 1.3,
+        "control_mean": 1.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade P, P addition = 60 mg kg-1 soil. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -7.142857142857134,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Ca",
+        "tissue": "leaf",
+        "treatment_mean": 5.86,
+        "control_mean": 4.94,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Ca, P addition = 60 mg kg-1 soil. Ca increases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 18.623481781376515,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade N",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade N",
+        "tissue": "leaf",
+        "treatment_mean": 41.3,
+        "control_mean": 42.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade N, P addition = 60 mg kg-1 soil. N slightly decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -3.729603729603733,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Zn",
+        "tissue": "leaf",
+        "treatment_mean": 67,
+        "control_mean": 50,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Zn, P addition = 60 mg kg-1 soil. At this P level blade Zn is HIGHER at elevated CO2 - anomalous relative to other P levels. Flag for manual review. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 34.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath P",
+        "tissue": "shoot",
+        "treatment_mean": 1.2,
+        "control_mean": 1.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath P, P addition = 60 mg kg-1 soil. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 9.09090909090908,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Ca",
+        "tissue": "shoot",
+        "treatment_mean": 2.68,
+        "control_mean": 2.47,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Ca, P addition = 60 mg kg-1 soil. Ca increases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 8.502024291497975,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath N",
+        "tissue": "shoot",
+        "treatment_mean": 25.7,
+        "control_mean": 20.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "low",
+        "notes": "Table 1, sheath N, P addition = 60 mg kg-1 soil. At this P level sheath N is HIGHER at elevated CO2, contrary to overall trend. Anomalous - flag for manual review. Could be OCR error. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 24.757281553398048,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Zn",
+        "tissue": "shoot",
+        "treatment_mean": 64,
+        "control_mean": 70,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Zn, P addition = 60 mg kg-1 soil. Zn decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -8.571428571428571,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade P",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade P",
+        "tissue": "leaf",
+        "treatment_mean": 1.6,
+        "control_mean": 1.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade P, P addition = 120 mg kg-1 soil. No difference between CO2 treatments at this P level, consistent with paper text statement that CO2 had no effect on foliar P. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Ca",
+        "tissue": "leaf",
+        "treatment_mean": 5.86,
+        "control_mean": 5.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Ca, P addition = 120 mg kg-1 soil. Ca increases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 10.566037735849067,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade N",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade N",
+        "tissue": "leaf",
+        "treatment_mean": 36.3,
+        "control_mean": 39.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade N, P addition = 120 mg kg-1 soil. N decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -6.9230769230769305,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Zn",
+        "tissue": "leaf",
+        "treatment_mean": 45,
+        "control_mean": 48,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Zn, P addition = 120 mg kg-1 soil. Zn decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -6.25,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath P",
+        "tissue": "shoot",
+        "treatment_mean": 1.7,
+        "control_mean": 1.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath P, P addition = 120 mg kg-1 soil. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 41.66666666666667,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Ca",
+        "tissue": "shoot",
+        "treatment_mean": 2.93,
+        "control_mean": 2.65,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Ca, P addition = 120 mg kg-1 soil. Ca increases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 10.566037735849067,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath N",
+        "tissue": "shoot",
+        "treatment_mean": 23.5,
+        "control_mean": 20.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "low",
+        "notes": "Table 1, sheath N, P addition = 120 mg kg-1 soil. Sheath N appears slightly HIGHER at elevated CO2 at this P level, contrary to overall trend. Anomalous - flag for manual review. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 15.763546798029552,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Zn",
+        "tissue": "shoot",
+        "treatment_mean": 77,
+        "control_mean": 72,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Zn, P addition = 120 mg kg-1 soil. Sheath Zn slightly higher at elevated CO2 at this P level - direction uncertain. Flag for manual review. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 6.944444444444445,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade P",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade P",
+        "tissue": "leaf",
+        "treatment_mean": 1.9,
+        "control_mean": 1.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade P, P addition = 240 mg kg-1 soil. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 11.764705882352938,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Ca",
+        "tissue": "leaf",
+        "treatment_mean": 6.56,
+        "control_mean": 5.62,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Ca, P addition = 240 mg kg-1 soil. Ca increases at elevated CO2, particularly marked at higher P levels. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 16.725978647686823,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade N",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade N",
+        "tissue": "leaf",
+        "treatment_mean": 29.5,
+        "control_mean": 35.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade N, P addition = 240 mg kg-1 soil. N decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -16.666666666666664,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Zn",
+        "tissue": "leaf",
+        "treatment_mean": 43,
+        "control_mean": 39,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Zn, P addition = 240 mg kg-1 soil. At this P level blade Zn is slightly HIGHER at elevated CO2 - anomalous. Flag for manual review. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 10.256410256410255,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath P",
+        "tissue": "shoot",
+        "treatment_mean": 1.6,
+        "control_mean": 1.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath P, P addition = 240 mg kg-1 soil. Very similar values; no CO2 effect at this P level. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -5.882352941176463,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Ca",
+        "tissue": "shoot",
+        "treatment_mean": 3.28,
+        "control_mean": 2.81,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Ca, P addition = 240 mg kg-1 soil. Ca increases at elevated CO2. Effect is larger at higher P levels. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 16.725978647686823,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath N",
+        "tissue": "shoot",
+        "treatment_mean": 15.3,
+        "control_mean": 22.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath N, P addition = 240 mg kg-1 soil. N decreases at elevated CO2 - consistent with dilution hypothesis. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -32.59911894273127,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Zn",
+        "tissue": "shoot",
+        "treatment_mean": 95,
+        "control_mean": 93,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Zn, P addition = 240 mg kg-1 soil. No meaningful difference between CO2 treatments. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 2.1505376344086025,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade P",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade P",
+        "tissue": "leaf",
+        "treatment_mean": 2.4,
+        "control_mean": 2.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade P, P addition = 480 mg kg-1 soil. Very similar values; no CO2 effect at this P level, consistent with paper text. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -4.0000000000000036,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Ca",
+        "tissue": "leaf",
+        "treatment_mean": 7.38,
+        "control_mean": 5.42,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Ca, P addition = 480 mg kg-1 soil. Largest Ca increase at elevated CO2 occurs at highest P level. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 36.162361623616235,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade N",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade N",
+        "tissue": "leaf",
+        "treatment_mean": 33.5,
+        "control_mean": 36.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade N, P addition = 480 mg kg-1 soil. N decreases at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -8.967391304347819,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "claude": {
+        "element": "Blade Zn",
+        "tissue": "leaf",
+        "treatment_mean": 30,
+        "control_mean": 37,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "blade",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, blade Zn, P addition = 480 mg kg-1 soil. Zn decreases at elevated CO2 - consistent with dilution hypothesis. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -18.91891891891892,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath P",
+        "tissue": "shoot",
+        "treatment_mean": 2.0,
+        "control_mean": 2.4,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath P, P addition = 480 mg kg-1 soil. At highest P level sheath P is slightly lower at elevated CO2. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -16.666666666666664,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Ca",
+        "tissue": "shoot",
+        "treatment_mean": 3.69,
+        "control_mean": 2.71,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Ca, P addition = 480 mg kg-1 soil. Largest Ca increase in sheaths at highest P level. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 36.162361623616235,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath N",
+        "tissue": "shoot",
+        "treatment_mean": 13.2,
+        "control_mean": 18.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath N, P addition = 480 mg kg-1 soil. N decreases at elevated CO2 - consistent with dilution hypothesis. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -27.0718232044199,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "claude": {
+        "element": "Sheath Zn",
+        "tissue": "shoot",
+        "treatment_mean": 73,
+        "control_mean": 83,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Table 1",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "sheath",
+          "growth_stage": "56 DAP (maximum tillering)"
+        },
+        "confidence": "medium",
+        "notes": "Table 1, sheath Zn, P addition = 480 mg kg-1 soil. Sheath Zn decreases at elevated CO2 at this P level - consistent with dilution. No variance. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -12.048192771084338,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain N",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain N",
+        "tissue": "grain",
+        "treatment_mean": 21.0,
+        "control_mean": 27.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain N, P addition = 0 mg kg-1 soil. LSD (p=0.05) = 1.0 g kg-1 for N across all P levels. No per-cell variance; LSD is a single value for the whole table. N decreases at elevated CO2 - consistent with dilution. Grain fully matured at different calendar times (139 vs 146 DAP). Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -22.22222222222222,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain P",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain P",
+        "tissue": "grain",
+        "treatment_mean": 2.14,
+        "control_mean": 2.05,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 0,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain P, P addition = 0 mg kg-1 soil. LSD (p=0.05) = 0.3 g kg-1 for P across all P levels. No per-cell variance. No meaningful difference at this P level. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 4.390243902439039,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain N",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain N",
+        "tissue": "grain",
+        "treatment_mean": 19.0,
+        "control_mean": 21.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain N, P addition = 30 mg kg-1 soil. LSD (p=0.05) = 1.0. N decreases at elevated CO2. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -11.627906976744185,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain P",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain P",
+        "tissue": "grain",
+        "treatment_mean": 2.2,
+        "control_mean": 2.22,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 30,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain P, P addition = 30 mg kg-1 soil. LSD (p=0.05) = 0.3. No meaningful difference. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -0.9009009009009016,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain N",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain N",
+        "tissue": "grain",
+        "treatment_mean": 16.0,
+        "control_mean": 19.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain N, P addition = 60 mg kg-1 soil. LSD (p=0.05) = 1.0. N decreases at elevated CO2. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -15.789473684210526,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain P",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain P",
+        "tissue": "grain",
+        "treatment_mean": 2.23,
+        "control_mean": 2.47,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 60,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain P, P addition = 60 mg kg-1 soil. LSD (p=0.05) = 0.3. P decreases at elevated CO2 at this level. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -9.716599190283409,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain N",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain N",
+        "tissue": "grain",
+        "treatment_mean": 15.0,
+        "control_mean": 17.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain N, P addition = 120 mg kg-1 soil. LSD (p=0.05) = 1.0. N decreases at elevated CO2. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -11.76470588235294,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain P",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain P",
+        "tissue": "grain",
+        "treatment_mean": 2.57,
+        "control_mean": 3.23,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 120,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain P, P addition = 120 mg kg-1 soil. LSD (p=0.05) = 0.3. P decreases substantially at elevated CO2 at this medium P level - consistent with dilution. Paper text specifically mentions this finding. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -20.433436532507745,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain N",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain N",
+        "tissue": "grain",
+        "treatment_mean": 14.0,
+        "control_mean": 18.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain N, P addition = 240 mg kg-1 soil. LSD (p=0.05) = 1.0. N decreases at elevated CO2 - consistent with dilution. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -22.22222222222222,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain P",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain P",
+        "tissue": "grain",
+        "treatment_mean": 3.23,
+        "control_mean": 3.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 240,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain P, P addition = 240 mg kg-1 soil. LSD (p=0.05) = 0.3. P decreases at elevated CO2 at this level - consistent with paper text noting medium P level effect. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": -7.714285714285715,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain N",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain N",
+        "tissue": "grain",
+        "treatment_mean": 16.0,
+        "control_mean": 16.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain N, P addition = 480 mg kg-1 soil. LSD (p=0.05) = 1.0. No difference at highest P level - consistent with paper text stating no CO2 effect at highest P. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain P",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain P",
+        "tissue": "grain",
+        "treatment_mean": 3.84,
+        "control_mean": 3.72,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "LSD",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Table 2",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": 480,
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "high",
+        "notes": "Table 2, grain P, P addition = 480 mg kg-1 soil. LSD (p=0.05) = 0.3. No meaningful CO2 effect on grain P at highest P level - consistent with paper text. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": 3.225806451612894,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain Ca",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain Ca",
+        "tissue": "grain",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "g kg-1 dwt",
+        "data_source": "Figure 3b",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": "0, 30, 60, 120, 240, 480 (all levels shown in figure)",
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "low",
+        "notes": "Figure 3b shows grain Ca concentration by P level for both CO2 treatments. Data are graphical only - exact values cannot be reliably extracted from text extraction alone. Vision/image analysis required to read specific values. Paper text states Ca concentration in grain was higher at elevated CO2 at higher P levels (positive CO2 effect, opposite to dilution). No variance shown in figure caption. Manual extraction from figure required.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain Zn",
+        "tissue": "grain",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Figure 4",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": "0, 30, 60, 120, 240, 480 (all levels shown in figure)",
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "low",
+        "notes": "Figure 4 shows grain Zn concentration by P level for both CO2 treatments. Data are graphical only - exact values cannot be reliably extracted from text extraction alone. Vision/image analysis required. Paper text states Zn concentrations were reduced at elevated CO2 - consistent with dilution hypothesis. Effects more pronounced at low to medium P addition. No variance reported. Manual extraction from figure required. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Grain Fe",
+      "tissue": "grain",
+      "claude": {
+        "element": "Grain Fe",
+        "tissue": "grain",
+        "treatment_mean": null,
+        "control_mean": null,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": "null",
+        "n": 5,
+        "unit": "mg kg-1 dwt",
+        "data_source": "Figure 4",
+        "treatment_description": "Elevated CO2 (700 ppm)",
+        "control_description": "Ambient CO2 (350 ppm)",
+        "moderators": {
+          "P_level_mg_kg_soil": "0, 30, 60, 120, 240, 480 (all levels shown in figure)",
+          "tissue_fraction": "grain (brown rice)",
+          "growth_stage": "Maturity (139 vs 146 DAP)"
+        },
+        "confidence": "low",
+        "notes": "Figure 4 shows grain Fe concentration by P level for both CO2 treatments. Data are graphical only - exact values cannot be reliably extracted from text extraction alone. Vision/image analysis required. Paper text states Fe concentrations were reduced at elevated CO2 - consistent with dilution hypothesis. Effects more pronounced at higher P addition for Fe. No variance reported. Manual extraction from figure required. Only 1 chamber per CO2 level - pseudoreplication concern.",
+        "effect_pct": null,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "treatment_mean": 1.0,
+      "control_mean": 0.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.111111111111107,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "treatment_mean": 5.82,
+      "control_mean": 5.74,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.3937282229965169,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "treatment_mean": 40.6,
+      "control_mean": 43.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.8807339449541285,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "treatment_mean": 71,
+      "control_mean": 81,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.345679012345679,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "treatment_mean": 1.0,
+      "control_mean": 0.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 66.66666666666667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "treatment_mean": 2.91,
+      "control_mean": 2.87,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.3937282229965169,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "treatment_mean": 33.6,
+      "control_mean": 26.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 28.244274809160313,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "treatment_mean": 62,
+      "control_mean": 41,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 51.21951219512195,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "treatment_mean": 1.3,
+      "control_mean": 1.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.181818181818176,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "treatment_mean": 5.82,
+      "control_mean": 5.56,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.676258992805768,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "treatment_mean": 39.0,
+      "control_mean": 45.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.473684210526319,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "treatment_mean": 61,
+      "control_mean": 70,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.857142857142856,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "treatment_mean": 1.1,
+      "control_mean": 0.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 37.50000000000001,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "treatment_mean": 2.91,
+      "control_mean": 2.78,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.676258992805768,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "treatment_mean": 23.7,
+      "control_mean": 35.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -32.861189801699716,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "treatment_mean": 67,
+      "control_mean": 53,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 26.41509433962264,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "treatment_mean": 1.3,
+      "control_mean": 1.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.142857142857134,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "treatment_mean": 5.86,
+      "control_mean": 4.94,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.623481781376515,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "treatment_mean": 41.3,
+      "control_mean": 42.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.729603729603733,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "treatment_mean": 67,
+      "control_mean": 50,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 34.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "treatment_mean": 1.2,
+      "control_mean": 1.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.09090909090908,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "treatment_mean": 2.68,
+      "control_mean": 2.47,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.502024291497975,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "treatment_mean": 25.7,
+      "control_mean": 20.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 24.757281553398048,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "treatment_mean": 64,
+      "control_mean": 70,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.571428571428571,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "treatment_mean": 1.6,
+      "control_mean": 1.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "treatment_mean": 5.86,
+      "control_mean": 5.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.566037735849067,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "treatment_mean": 36.3,
+      "control_mean": 39.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.9230769230769305,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "treatment_mean": 45,
+      "control_mean": 48,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.25,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "treatment_mean": 1.7,
+      "control_mean": 1.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 41.66666666666667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "treatment_mean": 2.93,
+      "control_mean": 2.65,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.566037735849067,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "treatment_mean": 23.5,
+      "control_mean": 20.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.763546798029552,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "treatment_mean": 77,
+      "control_mean": 72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.944444444444445,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "treatment_mean": 1.9,
+      "control_mean": 1.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.764705882352938,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "treatment_mean": 6.56,
+      "control_mean": 5.62,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.725978647686823,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "treatment_mean": 29.5,
+      "control_mean": 35.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -16.666666666666664,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "treatment_mean": 43,
+      "control_mean": 39,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.256410256410255,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "treatment_mean": 1.6,
+      "control_mean": 1.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -5.882352941176463,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "treatment_mean": 3.28,
+      "control_mean": 2.81,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.725978647686823,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "treatment_mean": 15.3,
+      "control_mean": 22.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -32.59911894273127,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "treatment_mean": 95,
+      "control_mean": 93,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.1505376344086025,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "treatment_mean": 2.4,
+      "control_mean": 2.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.0000000000000036,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "treatment_mean": 7.38,
+      "control_mean": 5.42,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 36.162361623616235,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "treatment_mean": 33.5,
+      "control_mean": 36.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.967391304347819,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "treatment_mean": 30,
+      "control_mean": 37,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "blade",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -18.91891891891892,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "treatment_mean": 2.0,
+      "control_mean": 2.4,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -16.666666666666664,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "treatment_mean": 3.69,
+      "control_mean": 2.71,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 36.162361623616235,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "treatment_mean": 13.2,
+      "control_mean": 18.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -27.0718232044199,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "treatment_mean": 73,
+      "control_mean": 83,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "null",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "sheath",
+        "growth_stage": "56 DAP (maximum tillering)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.048192771084338,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "treatment_mean": 21.0,
+      "control_mean": 27.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -22.22222222222222,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "treatment_mean": 2.14,
+      "control_mean": 2.05,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 0,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.390243902439039,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "treatment_mean": 19.0,
+      "control_mean": 21.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.627906976744185,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "treatment_mean": 2.2,
+      "control_mean": 2.22,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 30,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.9009009009009016,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "treatment_mean": 16.0,
+      "control_mean": 19.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.789473684210526,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "treatment_mean": 2.23,
+      "control_mean": 2.47,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 60,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.716599190283409,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "treatment_mean": 15.0,
+      "control_mean": 17.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.76470588235294,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "treatment_mean": 2.57,
+      "control_mean": 3.23,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 120,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -20.433436532507745,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "treatment_mean": 14.0,
+      "control_mean": 18.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -22.22222222222222,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "treatment_mean": 3.23,
+      "control_mean": 3.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 240,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.714285714285715,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "treatment_mean": 16.0,
+      "control_mean": 16.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "treatment_mean": 3.84,
+      "control_mean": 3.72,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 ppm)",
+      "control_description": "Ambient CO2 (350 ppm)",
+      "moderators": {
+        "P_level_mg_kg_soil": 480,
+        "tissue_fraction": "grain (brown rice)",
+        "growth_stage": "Maturity (139 vs 146 DAP)"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.225806451612894,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P",
+      "tissue": "sheath",
+      "treatment_mean": 1.0,
+      "control_mean": 0.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.111111111111107,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca",
+      "tissue": "sheath",
+      "treatment_mean": 2.91,
+      "control_mean": 2.87,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.3937282229965169,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N",
+      "tissue": "sheath",
+      "treatment_mean": 26.0,
+      "control_mean": 33.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -22.61904761904762,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "sheath",
+      "treatment_mean": 53.0,
+      "control_mean": 62.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.516129032258066,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P",
+      "tissue": "blade",
+      "treatment_mean": 1.0,
+      "control_mean": 0.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.111111111111107,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca",
+      "tissue": "blade",
+      "treatment_mean": 5.88,
+      "control_mean": 5.74,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.4390243902438966,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "N",
+      "tissue": "blade",
+      "treatment_mean": 40.0,
+      "control_mean": 43.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.256880733944957,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "blade",
+      "treatment_mean": 71.0,
+      "control_mean": 81.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -12.345679012345679,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "P",
+      "tissue": "grain",
+      "treatment_mean": 2.05,
+      "control_mean": 2.14,
+      "treatment_variance": 0.3,
+      "control_variance": 0.3,
+      "variance_type": "LSD",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -4.205607476635528,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ca",
+      "tissue": "grain",
+      "treatment_mean": 0.91,
+      "control_mean": 0.88,
+      "treatment_variance": 0.02,
+      "control_variance": 0.02,
+      "variance_type": "SE",
+      "n": 5,
+      "unit": "g kg-1 dwt",
+      "data_source": "Figure 3b",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.4090909090909123,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 38.0,
+      "control_mean": 41.0,
+      "treatment_variance": 2.0,
+      "control_variance": 2.0,
+      "variance_type": "SE",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Figure 4a",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.317073170731707,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 39.0,
+      "control_mean": 42.0,
+      "treatment_variance": 3.0,
+      "control_variance": 3.0,
+      "variance_type": "SE",
+      "n": 5,
+      "unit": "mg kg-1 dwt",
+      "data_source": "Figure 4b",
+      "treatment_description": "Elevated CO2 (700 uL L-1)",
+      "control_description": "Ambient CO2 (350 uL L-1)",
+      "moderators": {
+        "cultivar": "Jarrah",
+        "P_level_mg_kg_soil": 0
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.142857142857142,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 1,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 2,
+    "original_count": 73,
+    "final_count": 72
+  },
+  "verification_flags": [
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade P",
+        "treatment_mean": 1.0,
+        "control_mean": 0.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +11.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.999999999999996,
+            "note": "Effect +11.1% violates expected direction; unswapped would be -10.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 11.111111111111107,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +11.1%, corrected would be -10.0%"
+      }
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade Ca",
+        "treatment_mean": 5.82,
+        "control_mean": 5.74,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +1.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 1.3937282229965169
+      }
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Sheath P",
+        "treatment_mean": 1.0,
+        "control_mean": 0.6,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +66.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -40.0,
+            "note": "Effect +66.7% violates expected direction; unswapped would be -40.0%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 66.66666666666667,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +66.7%, corrected would be -40.0%"
+      }
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath Ca",
+        "treatment_mean": 2.91,
+        "control_mean": 2.87,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +1.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 1.3937282229965169
+      }
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Sheath N",
+        "treatment_mean": 33.6,
+        "control_mean": 26.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +28.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -22.02380952380953,
+            "note": "Effect +28.2% violates expected direction; unswapped would be -22.0%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 28.244274809160313,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +28.2%, corrected would be -22.0%"
+      }
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Sheath Zn",
+        "treatment_mean": 62,
+        "control_mean": 41,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +51.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -33.87096774193549,
+            "note": "Effect +51.2% violates expected direction; unswapped would be -33.9%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 51.21951219512195,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +51.2%, corrected would be -33.9%"
+      }
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade P",
+        "treatment_mean": 1.3,
+        "control_mean": 1.1,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +18.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -15.384615384615383,
+            "note": "Effect +18.2% violates expected direction; unswapped would be -15.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 18.181818181818176,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +18.2%, corrected would be -15.4%"
+      }
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade Ca",
+        "treatment_mean": 5.82,
+        "control_mean": 5.56,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +4.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 4.676258992805768
+      }
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath P",
+        "treatment_mean": 1.1,
+        "control_mean": 0.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +37.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -27.272727272727277,
+            "note": "Effect +37.5% violates expected direction; unswapped would be -27.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 37.50000000000001,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +37.5%, corrected would be -27.3%"
+      }
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath Ca",
+        "treatment_mean": 2.91,
+        "control_mean": 2.78,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +4.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 4.676258992805768
+      }
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath N",
+        "treatment_mean": 23.7,
+        "control_mean": 35.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -32.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -32.861189801699716
+      }
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Sheath Zn",
+        "treatment_mean": 67,
+        "control_mean": 53,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +26.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -20.895522388059703,
+            "note": "Effect +26.4% violates expected direction; unswapped would be -20.9%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 26.41509433962264,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +26.4%, corrected would be -20.9%"
+      }
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Blade P",
+        "treatment_mean": 1.3,
+        "control_mean": 1.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -7.142857142857134
+      }
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade Ca",
+        "treatment_mean": 5.86,
+        "control_mean": 4.94,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +18.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -15.69965870307167,
+            "note": "Effect +18.6% violates expected direction; unswapped would be -15.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 18.623481781376515,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +18.6%, corrected would be -15.7%"
+      }
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Blade N",
+        "treatment_mean": 41.3,
+        "control_mean": 42.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -3.729603729603733
+      }
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Blade Zn",
+        "treatment_mean": 67,
+        "control_mean": 50,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +34.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -25.37313432835821,
+            "note": "Effect +34.0% violates expected direction; unswapped would be -25.4%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 34.0,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +34.0%, corrected would be -25.4%"
+      }
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath P",
+        "treatment_mean": 1.2,
+        "control_mean": 1.1,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +9.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -8.333333333333323,
+            "note": "Effect +9.1% violates expected direction; unswapped would be -8.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 9.09090909090908,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +9.1%, corrected would be -8.3%"
+      }
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath Ca",
+        "treatment_mean": 2.68,
+        "control_mean": 2.47,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +8.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -7.835820895522386,
+            "note": "Effect +8.5% violates expected direction; unswapped would be -7.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 8.502024291497975,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +8.5%, corrected would be -7.8%"
+      }
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath N",
+        "treatment_mean": 25.7,
+        "control_mean": 20.6,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +24.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -19.84435797665369,
+            "note": "Effect +24.8% violates expected direction; unswapped would be -19.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 24.757281553398048,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +24.8%, corrected would be -19.8%"
+      }
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Blade P",
+        "treatment_mean": 1.6,
+        "control_mean": 1.6,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade Ca",
+        "treatment_mean": 5.86,
+        "control_mean": 5.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +10.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.556313993174069,
+            "note": "Effect +10.6% violates expected direction; unswapped would be -9.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 10.566037735849067,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +10.6%, corrected would be -9.6%"
+      }
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Blade N",
+        "treatment_mean": 36.3,
+        "control_mean": 39.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -6.9230769230769305
+      }
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath P",
+        "treatment_mean": 1.7,
+        "control_mean": 1.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +41.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -29.411764705882355,
+            "note": "Effect +41.7% violates expected direction; unswapped would be -29.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 41.66666666666667,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +41.7%, corrected would be -29.4%"
+      }
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath Ca",
+        "treatment_mean": 2.93,
+        "control_mean": 2.65,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +10.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.556313993174069,
+            "note": "Effect +10.6% violates expected direction; unswapped would be -9.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 10.566037735849067,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +10.6%, corrected would be -9.6%"
+      }
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath N",
+        "treatment_mean": 23.5,
+        "control_mean": 20.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +15.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -13.61702127659574,
+            "note": "Effect +15.8% violates expected direction; unswapped would be -13.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 15.763546798029552,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +15.8%, corrected would be -13.6%"
+      }
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Sheath Zn",
+        "treatment_mean": 77,
+        "control_mean": 72,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +6.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -6.493506493506494,
+            "note": "Effect +6.9% violates expected direction; unswapped would be -6.5%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 6.944444444444445,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +6.9%, corrected would be -6.5%"
+      }
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade P",
+        "treatment_mean": 1.9,
+        "control_mean": 1.7,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +11.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -10.526315789473681,
+            "note": "Effect +11.8% violates expected direction; unswapped would be -10.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 11.764705882352938,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +11.8%, corrected would be -10.5%"
+      }
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade Ca",
+        "treatment_mean": 6.56,
+        "control_mean": 5.62,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +16.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -14.32926829268292,
+            "note": "Effect +16.7% violates expected direction; unswapped would be -14.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 16.725978647686823,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +16.7%, corrected would be -14.3%"
+      }
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Blade N",
+        "treatment_mean": 29.5,
+        "control_mean": 35.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -16.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -16.666666666666664
+      }
+    },
+    {
+      "element": "Blade Zn",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap"
+      ],
+      "details": {
+        "element": "Blade Zn",
+        "treatment_mean": 43,
+        "control_mean": 39,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +10.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.302325581395348,
+            "note": "Effect +10.3% violates expected direction; unswapped would be -9.3%"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 10.256410256410255,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +10.3%, corrected would be -9.3%"
+      }
+    },
+    {
+      "element": "Sheath P",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath P",
+        "treatment_mean": 1.6,
+        "control_mean": 1.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -5.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -5.882352941176463
+      }
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath Ca",
+        "treatment_mean": 3.28,
+        "control_mean": 2.81,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +16.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -14.32926829268292,
+            "note": "Effect +16.7% violates expected direction; unswapped would be -14.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 16.725978647686823,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +16.7%, corrected would be -14.3%"
+      }
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath N",
+        "treatment_mean": 15.3,
+        "control_mean": 22.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -32.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -32.59911894273127
+      }
+    },
+    {
+      "element": "Sheath Zn",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Sheath Zn",
+        "treatment_mean": 95,
+        "control_mean": 93,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +2.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 2.1505376344086025
+      }
+    },
+    {
+      "element": "Blade P",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Blade P",
+        "treatment_mean": 2.4,
+        "control_mean": 2.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -4.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -4.0000000000000036
+      }
+    },
+    {
+      "element": "Blade Ca",
+      "tissue": "leaf",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Blade Ca",
+        "treatment_mean": 7.38,
+        "control_mean": 5.42,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +36.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -26.558265582655828,
+            "note": "Effect +36.2% violates expected direction; unswapped would be -26.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 36.162361623616235,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +36.2%, corrected would be -26.6%"
+      }
+    },
+    {
+      "element": "Blade N",
+      "tissue": "leaf",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Blade N",
+        "treatment_mean": 33.5,
+        "control_mean": 36.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -8.967391304347819
+      }
+    },
+    {
+      "element": "Sheath Ca",
+      "tissue": "shoot",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath Ca",
+        "treatment_mean": 3.69,
+        "control_mean": 2.71,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +36.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -26.558265582655828,
+            "note": "Effect +36.2% violates expected direction; unswapped would be -26.6%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 36.162361623616235,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +36.2%, corrected would be -26.6%"
+      }
+    },
+    {
+      "element": "Sheath N",
+      "tissue": "shoot",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Sheath N",
+        "treatment_mean": 13.2,
+        "control_mean": 18.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -27.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -27.0718232044199
+      }
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Grain P",
+        "treatment_mean": 2.14,
+        "control_mean": 2.05,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +4.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 4.390243902439039
+      }
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain N",
+        "treatment_mean": 19.0,
+        "control_mean": 21.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -11.627906976744185
+      }
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain P",
+        "treatment_mean": 2.2,
+        "control_mean": 2.22,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -0.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -0.9009009009009016
+      }
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain P",
+        "treatment_mean": 2.23,
+        "control_mean": 2.47,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -9.716599190283409
+      }
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain P",
+        "treatment_mean": 2.57,
+        "control_mean": 3.23,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -20.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -20.433436532507745
+      }
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain P",
+        "treatment_mean": 3.23,
+        "control_mean": 3.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": -7.714285714285715
+      }
+    },
+    {
+      "element": "Grain N",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "Grain N",
+        "treatment_mean": 16.0,
+        "control_mean": 16.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Grain P",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Grain P",
+        "treatment_mean": 3.84,
+        "control_mean": 3.72,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +3.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 3.225806451612894
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "sheath",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "P",
+        "treatment_mean": 1.0,
+        "control_mean": 0.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +11.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.999999999999996,
+            "note": "Effect +11.1% violates expected direction; unswapped would be -10.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 11.111111111111107,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +11.1%, corrected would be -10.0%"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "sheath",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Ca",
+        "treatment_mean": 2.91,
+        "control_mean": 2.87,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +1.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 1.3937282229965169
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "blade",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "P",
+        "treatment_mean": 1.0,
+        "control_mean": 0.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +11.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.999999999999996,
+            "note": "Effect +11.1% violates expected direction; unswapped would be -10.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 11.111111111111107,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +11.1%, corrected would be -10.0%"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "blade",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Ca",
+        "treatment_mean": 5.88,
+        "control_mean": 5.74,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +2.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 2.4390243902438966
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "N",
+        "treatment_mean": 21.0,
+        "control_mean": 27.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -22.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.761904761904762,
+            "note": "CV = 4.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=9.3%"
+          }
+        },
+        "effect_pct": -22.22222222222222
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "P",
+        "treatment_mean": 2.05,
+        "control_mean": 2.14,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -4.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 14.634146341463417,
+            "note": "CV = 14.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.3%"
+          }
+        },
+        "effect_pct": -4.205607476635528
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Ca",
+        "treatment_mean": 0.91,
+        "control_mean": 0.88,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +3.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.914435115384153,
+            "note": "CV = 4.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          }
+        },
+        "effect_pct": 3.4090909090909123
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 38.0,
+        "control_mean": 41.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.768778828946262,
+            "note": "CV = 11.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.1%"
+          }
+        },
+        "effect_pct": -7.317073170731707
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 39.0,
+        "control_mean": 42.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.200522903844536,
+            "note": "CV = 17.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 5,
+            "note": "n=5"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": -7.142857142857142
+      }
+    }
+  ],
+  "rebuild_note": "Rebuilt with normalize_element fix"
+}

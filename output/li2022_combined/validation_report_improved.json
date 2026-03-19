@@ -1,0 +1,486 @@
+{
+  "timestamp": "2026-02-19T07:54:55.166393",
+  "method": "effect-pct matching (scale-invariant)",
+  "effect_dist_threshold_pp": 15.0,
+  "wrong_pdf_papers": [
+    "002_Abdel-Mawgoud_2010",
+    "006_Alabdulla_2019",
+    "064_Godlewska_2016"
+  ],
+  "gt_attribution_error_papers": [
+    "062_Glosek-Sobieraj_2018",
+    "111_Mondal_2013",
+    "120_Pohl_2019"
+  ],
+  "aggregation_mismatch_papers": [
+    "090_Kocira_2020",
+    "091_Kocira_2018",
+    "125_Procházka_2015"
+  ],
+  "product_mismatch_papers": [
+    "088_Kocira_2019"
+  ],
+  "gt_source_mismatch_papers": [
+    "095_Kuisma_1989",
+    "124_Pramanick_2016"
+  ],
+  "stats_correct_papers": {
+    "n": 100,
+    "r": 0.9960736658066499,
+    "mae": 0.4421999999999999,
+    "direction": 0.99
+  },
+  "stats_wrong_pdf_papers": {
+    "n": 6,
+    "r": 0.12616137576351052,
+    "mae": 4.593333333333333,
+    "direction": 1.0
+  },
+  "stats_gt_error_papers": {
+    "n": 24,
+    "r": 0.9908255871679559,
+    "mae": 1.3087499999999996,
+    "direction": 1.0
+  },
+  "stats_structural_mismatch": {
+    "n": 70,
+    "r": 0.8628946906563233,
+    "mae": 5.088428571428572,
+    "direction": 0.8571428571428571
+  },
+  "stats_all_papers": {
+    "n": 200,
+    "r": 0.9508059818580543,
+    "mae": 2.2968999999999995,
+    "direction": 0.945
+  },
+  "paper_stats": [
+    {
+      "paper_id": "002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry",
+      "classification": "wrong_pdf",
+      "n_gt": 8,
+      "n_extracted": 4,
+      "n_matched": 3,
+      "capture_rate": 37.5,
+      "mae_pp": 9.01,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "006_Alabdulla_2019_Effect of foliar application of humic ac",
+      "classification": "wrong_pdf",
+      "n_gt": 6,
+      "n_extracted": 2,
+      "n_matched": 0,
+      "capture_rate": 0.0,
+      "mae_pp": null,
+      "direction_accuracy": null
+    },
+    {
+      "paper_id": "009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e",
+      "classification": "no_gt_match",
+      "n_extracted": 4,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "027_Chen_2021_Effects of Seaweed Extracts on the Growt",
+      "classification": "correct",
+      "n_gt": 24,
+      "n_extracted": 28,
+      "n_matched": 24,
+      "capture_rate": 100.0,
+      "mae_pp": 0.17,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "029_Ciepiela_2019_The effect of biostimulants derived from",
+      "classification": "correct",
+      "n_gt": 2,
+      "n_extracted": 46,
+      "n_matched": 2,
+      "capture_rate": 100.0,
+      "mae_pp": 0.0,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "058_Fichhof_2018_Management of Biostimulant and Silicon i",
+      "classification": "correct",
+      "n_gt": 2,
+      "n_extracted": 7,
+      "n_matched": 2,
+      "capture_rate": 100.0,
+      "mae_pp": 1.06,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi",
+      "classification": "gt_error",
+      "n_gt": 6,
+      "n_extracted": 45,
+      "n_matched": 6,
+      "capture_rate": 100.0,
+      "mae_pp": 0.46,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "064_Godlewska_2016_The effect of growth regulator on dry ma",
+      "classification": "wrong_pdf",
+      "n_gt": 3,
+      "n_extracted": 30,
+      "n_matched": 3,
+      "capture_rate": 100.0,
+      "mae_pp": 0.17,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "065_Godlewska_2018_Assessment of the effect of various bios",
+      "classification": "no_gt_match",
+      "n_extracted": 18,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "067_Grabowska_2012_The Effect of Cultivar and Biostimulant",
+      "classification": "correct",
+      "n_gt": 6,
+      "n_extracted": 13,
+      "n_matched": 6,
+      "capture_rate": 100.0,
+      "mae_pp": 0.28,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "086_Knapowski_2019_Crop stimulants as a factor determining",
+      "classification": "no_gt_match",
+      "n_extracted": 14,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "088_Kocira_2019_Effect of amino acid biostimulant on the",
+      "classification": "product_mismatch",
+      "n_gt": 24,
+      "n_extracted": 27,
+      "n_matched": 15,
+      "capture_rate": 62.5,
+      "mae_pp": 3.24,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "090_Kocira_2020_Biochemical and economical effect of app",
+      "classification": "aggregation_mismatch",
+      "n_gt": 48,
+      "n_extracted": 25,
+      "n_matched": 20,
+      "capture_rate": 41.7,
+      "mae_pp": 8.26,
+      "direction_accuracy": 0.8
+    },
+    {
+      "paper_id": "091_Kocira_2018_Modeling biometric traits, yield and nut",
+      "classification": "aggregation_mismatch",
+      "n_gt": 36,
+      "n_extracted": 36,
+      "n_matched": 21,
+      "capture_rate": 58.3,
+      "mae_pp": 4.5,
+      "direction_accuracy": 0.762
+    },
+    {
+      "paper_id": "094_Kowalska_2021_Effect of Different Forms of Silicon on",
+      "classification": "correct",
+      "n_gt": 4,
+      "n_extracted": 17,
+      "n_matched": 4,
+      "capture_rate": 100.0,
+      "mae_pp": 0.0,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "095_Kuisma_1989_The effect of foliar application of seaw",
+      "classification": "gt_source_mismatch",
+      "n_gt": 3,
+      "n_extracted": 3,
+      "n_matched": 2,
+      "capture_rate": 66.7,
+      "mae_pp": 4.86,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "1-s2.0-S0304423819306703-main",
+      "classification": "no_gt_match",
+      "n_extracted": 12,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "1-s2.0-S0304423820302417-main",
+      "classification": "no_gt_match",
+      "n_extracted": 9,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "1-s2.0-S1878818119307637-main",
+      "classification": "no_gt_match",
+      "n_extracted": 54,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "1-s2.0-S1878818119309879-main",
+      "classification": "no_gt_match",
+      "n_extracted": 8,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "100_Lola-Luz_2014_Effect on yield, total phenolic, total f",
+      "classification": "correct",
+      "n_gt": 6,
+      "n_extracted": 6,
+      "n_matched": 6,
+      "capture_rate": 100.0,
+      "mae_pp": 1.15,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "105_Mattner_2018_Increased growth response of strawberry",
+      "classification": "correct",
+      "n_gt": 3,
+      "n_extracted": 8,
+      "n_matched": 3,
+      "capture_rate": 100.0,
+      "mae_pp": 0.0,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "106_Matysiak_2018_Herbicides with natural and synthetic bi",
+      "classification": "correct",
+      "n_gt": 6,
+      "n_extracted": 23,
+      "n_matched": 6,
+      "capture_rate": 100.0,
+      "mae_pp": 3.1,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "110_Michalak_2016_Evaluation of supercritical extracts of",
+      "classification": "correct",
+      "n_gt": 5,
+      "n_extracted": 15,
+      "n_matched": 5,
+      "capture_rate": 100.0,
+      "mae_pp": 0.32,
+      "direction_accuracy": 0.8
+    },
+    {
+      "paper_id": "111_Mondal_2013_Foliar application of chitosan improves",
+      "classification": "gt_error",
+      "n_gt": 8,
+      "n_extracted": 10,
+      "n_matched": 7,
+      "capture_rate": 87.5,
+      "mae_pp": 0.84,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "116_Nurdiawati_2019_Liquid feather protein hydrolysate as a",
+      "classification": "no_gt_match",
+      "n_extracted": 20,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "120_Pohl_2019_The Eggplant Yield and Fruit Composition",
+      "classification": "gt_error",
+      "n_gt": 12,
+      "n_extracted": 22,
+      "n_matched": 11,
+      "capture_rate": 91.7,
+      "mae_pp": 2.07,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "121_Popescu_2018_Yield, berry quality and physiological r",
+      "classification": "correct",
+      "n_gt": 12,
+      "n_extracted": 12,
+      "n_matched": 12,
+      "capture_rate": 100.0,
+      "mae_pp": 0.0,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "124_Pramanick_2016_Effect of seaweed saps derived from two",
+      "classification": "gt_source_mismatch",
+      "n_gt": 8,
+      "n_extracted": 10,
+      "n_matched": 6,
+      "capture_rate": 75.0,
+      "mae_pp": 3.41,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "125_Procházka_2015_The possibilities of increasing the prod",
+      "classification": "aggregation_mismatch",
+      "n_gt": 6,
+      "n_extracted": 8,
+      "n_matched": 6,
+      "capture_rate": 100.0,
+      "mae_pp": 2.95,
+      "direction_accuracy": 0.833
+    },
+    {
+      "paper_id": "126_Prokkola_2007_Effect of biological sprays on the incid",
+      "classification": "correct",
+      "n_gt": 6,
+      "n_extracted": 14,
+      "n_matched": 6,
+      "capture_rate": 100.0,
+      "mae_pp": 0.56,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "127_Radkowski_2018_Influence of foliar fertilization with a",
+      "classification": "correct",
+      "n_gt": 9,
+      "n_extracted": 10,
+      "n_matched": 9,
+      "capture_rate": 100.0,
+      "mae_pp": 0.0,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "131_Rahman_2018_Chitosan biopolymer promotes yield and s",
+      "classification": "correct",
+      "n_gt": 4,
+      "n_extracted": 22,
+      "n_matched": 4,
+      "capture_rate": 100.0,
+      "mae_pp": 1.23,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "153_Soppelsa_2018_Use of Biostimulants for Organic Apple P",
+      "classification": "correct",
+      "n_gt": 7,
+      "n_extracted": 49,
+      "n_matched": 7,
+      "capture_rate": 100.0,
+      "mae_pp": 0.14,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "1542-1558-15(3)2018 BR-18-165",
+      "classification": "no_gt_match",
+      "n_extracted": 22,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "158_Sulakhudin_2019_Application of Coastal Sediments and Fol",
+      "classification": "correct",
+      "n_gt": 3,
+      "n_extracted": 6,
+      "n_matched": 3,
+      "capture_rate": 100.0,
+      "mae_pp": 0.0,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "175_Wilczewski_2018_Response of sugar beet to humic substanc",
+      "classification": "correct",
+      "n_gt": 1,
+      "n_extracted": 8,
+      "n_matched": 1,
+      "capture_rate": 100.0,
+      "mae_pp": 0.0,
+      "direction_accuracy": 1.0
+    },
+    {
+      "paper_id": "2014-ascophyllum-extract-application-can-promote-plant-growth-and-root-yield-in-carrot-associated-with-increased-root",
+      "classification": "no_gt_match",
+      "n_extracted": 4,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "604-615-14(3)2017BR-1503",
+      "classification": "no_gt_match",
+      "n_extracted": 16,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "agriculture-10-00618-v2",
+      "classification": "no_gt_match",
+      "n_extracted": 13,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of",
+      "classification": "no_gt_match",
+      "n_extracted": 10,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "ali",
+      "classification": "no_gt_match",
+      "n_extracted": 11,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "AlrubaieeAlsulaiman2023FullManuscript",
+      "classification": "no_gt_match",
+      "n_extracted": 12,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "article1400838000_Azarpour et al",
+      "classification": "no_gt_match",
+      "n_extracted": 21,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "Effect_of_Different_Seaweed_Extracts_and",
+      "classification": "no_gt_match",
+      "n_extracted": 32,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "L3638",
+      "classification": "no_gt_match",
+      "n_extracted": 9,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "plants-09-01633",
+      "classification": "no_gt_match",
+      "n_extracted": 3,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "strawberryandchitosan",
+      "classification": "no_gt_match",
+      "n_extracted": 0,
+      "n_gt": 0,
+      "n_matched": 0
+    },
+    {
+      "paper_id": "sustainability-11-02171",
+      "classification": "no_gt_match",
+      "n_extracted": 17,
+      "n_gt": 0,
+      "n_matched": 0
+    }
+  ]
+}

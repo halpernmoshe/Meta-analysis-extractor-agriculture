@@ -1,0 +1,1374 @@
+{
+  "date": "2026-03-16T06:50:07.705678",
+  "method": "Programmatic classification \u2014 same criteria as pipeline",
+  "criteria": {
+    "verified_correct": "Zero-error fraction >= 30%",
+    "likely_correct": "MAE < 2pp AND direction >= 95%",
+    "moderate_discrepancy": "MAE 2-5pp AND direction >= 90%",
+    "aggregation_discordance": "Direction < 85%",
+    "scale_anomaly": "Clean scale < 20% AND scale CV > 50%",
+    "high_discrepancy": "All other"
+  },
+  "paper_classifications": {
+    "002_Abdel-Mawgoud_2010": {
+      "classification": "high_discrepancy",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 4,
+        "mae_pp": 32.54,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.25,
+        "scale_cv_pct": 103.9,
+        "within_5pp": 0.0,
+        "within_10pp": 0.0
+      },
+      "n_matches": 4
+    },
+    "027_Chen_2021": {
+      "classification": "moderate_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 8,
+        "mae_pp": 2.24,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 2.8,
+        "within_5pp": 0.875,
+        "within_10pp": 1.0
+      },
+      "n_matches": 8
+    },
+    "029_Ciepiela_2019": {
+      "classification": "high_discrepancy",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 1,
+        "mae_pp": 56.32,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0,
+        "within_5pp": 0.0,
+        "within_10pp": 0.0
+      },
+      "n_matches": 1
+    },
+    "058_Fichhof_2018": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 1,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 1
+    },
+    "067_Grabowska_2012": {
+      "classification": "moderate_discrepancy",
+      "tier": "medium",
+      "evidence": {
+        "n_obs": 6,
+        "mae_pp": 6.48,
+        "zero_error_frac": 0.333,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.667,
+        "scale_cv_pct": 12.8,
+        "within_5pp": 0.667,
+        "within_10pp": 0.667
+      },
+      "n_matches": 6
+    },
+    "088_Kocira_2019": {
+      "classification": "partial_match",
+      "tier": "medium",
+      "evidence": {
+        "n_obs": 24,
+        "mae_pp": 12.72,
+        "zero_error_frac": 0.458,
+        "direction_agreement": 0.875,
+        "clean_scale_frac": 0.5,
+        "scale_cv_pct": 89.7,
+        "within_5pp": 0.542,
+        "within_10pp": 0.542
+      },
+      "n_matches": 24
+    },
+    "090_Kocira_2020": {
+      "classification": "moderate_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 8,
+        "mae_pp": 3.35,
+        "zero_error_frac": 0.125,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.3,
+        "within_5pp": 0.75,
+        "within_10pp": 0.875
+      },
+      "n_matches": 8
+    },
+    "091_Kocira_2018": {
+      "classification": "moderate_discrepancy",
+      "tier": "medium",
+      "evidence": {
+        "n_obs": 12,
+        "mae_pp": 9.05,
+        "zero_error_frac": 0.25,
+        "direction_agreement": 0.917,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.7,
+        "within_5pp": 0.833,
+        "within_10pp": 0.917
+      },
+      "n_matches": 12
+    },
+    "094_Kowalska_2021": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 4,
+        "mae_pp": 3.29,
+        "zero_error_frac": 0.75,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 0.75,
+        "within_10pp": 0.75
+      },
+      "n_matches": 4
+    },
+    "095_Kuisma_1989": {
+      "classification": "moderate_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 3,
+        "mae_pp": 2.39,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 3
+    },
+    "100_Lola-Luz_2014": {
+      "classification": "aggregation_discordance",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 3,
+        "mae_pp": 71.95,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 0.667,
+        "clean_scale_frac": 0.0,
+        "scale_cv_pct": 37.7,
+        "within_5pp": 0.0,
+        "within_10pp": 0.0
+      },
+      "n_matches": 3
+    },
+    "105_Mattner_2018": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 3,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 129.9,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 3
+    },
+    "106_Matysiak_2018": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 6,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 6
+    },
+    "110_Michalak_2016": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 5,
+        "mae_pp": 0.32,
+        "zero_error_frac": 0.6,
+        "direction_agreement": 0.8,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 5
+    },
+    "111_Mondal_2013": {
+      "classification": "moderate_discrepancy",
+      "tier": "medium",
+      "evidence": {
+        "n_obs": 4,
+        "mae_pp": 6.91,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 0.25,
+        "within_10pp": 1.0
+      },
+      "n_matches": 4
+    },
+    "120_Pohl_2019": {
+      "classification": "aggregation_discordance",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 10,
+        "mae_pp": 10.94,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 0.8,
+        "clean_scale_frac": 0.6,
+        "scale_cv_pct": 7.7,
+        "within_5pp": 0.3,
+        "within_10pp": 0.5
+      },
+      "n_matches": 10
+    },
+    "124_Pramanick_2016": {
+      "classification": "high_discrepancy",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 8,
+        "mae_pp": 11.71,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 0.5,
+        "within_10pp": 0.5
+      },
+      "n_matches": 8
+    },
+    "126_Prokkola_2007": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 6,
+        "mae_pp": 0.59,
+        "zero_error_frac": 0.667,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 6
+    },
+    "127_Radkowski_2018": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 9,
+        "mae_pp": 3.59,
+        "zero_error_frac": 0.444,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.889,
+        "scale_cv_pct": 3.3,
+        "within_5pp": 0.667,
+        "within_10pp": 0.889
+      },
+      "n_matches": 9
+    },
+    "131_Rahman_2018": {
+      "classification": "moderate_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 4,
+        "mae_pp": 2.46,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 0.75,
+        "within_10pp": 1.0
+      },
+      "n_matches": 4
+    },
+    "158_Sulakhudin_2019": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 3,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 3
+    },
+    "175_Wilczewski_2018": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 1,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 1
+    },
+    "Azarpour": {
+      "classification": "partial_match",
+      "tier": "medium",
+      "evidence": {
+        "n_obs": 2,
+        "mae_pp": 22.89,
+        "zero_error_frac": 0.5,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 0.5,
+        "within_10pp": 0.5
+      },
+      "n_matches": 2
+    },
+    "S0304423819306703": {
+      "classification": "high_discrepancy",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 5,
+        "mae_pp": 10.52,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 0.4,
+        "within_10pp": 0.4
+      },
+      "n_matches": 5
+    },
+    "S0304423820302417": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 2,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 2
+    },
+    "S1878818119307637": {
+      "classification": "moderate_discrepancy",
+      "tier": "medium",
+      "evidence": {
+        "n_obs": 4,
+        "mae_pp": 7.35,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 0.25,
+        "within_10pp": 1.0
+      },
+      "n_matches": 4
+    },
+    "S1878818119309879": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 4,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 1.0,
+        "scale_cv_pct": 0.0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 4
+    },
+    "agriculture-10-00618-v2": {
+      "classification": "verified_correct",
+      "tier": "high",
+      "evidence": {
+        "n_obs": 1,
+        "mae_pp": 0.0,
+        "zero_error_frac": 1.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.0,
+        "scale_cv_pct": 0,
+        "within_5pp": 1.0,
+        "within_10pp": 1.0
+      },
+      "n_matches": 1
+    },
+    "al-tawaha_2011": {
+      "classification": "high_discrepancy",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 3,
+        "mae_pp": 89.55,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.0,
+        "scale_cv_pct": 18.5,
+        "within_5pp": 0.0,
+        "within_10pp": 0.0
+      },
+      "n_matches": 3
+    },
+    "ascophyllum_carrot_2014": {
+      "classification": "high_discrepancy",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 5,
+        "mae_pp": 12.85,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.0,
+        "scale_cv_pct": 7.6,
+        "within_5pp": 0.2,
+        "within_10pp": 0.4
+      },
+      "n_matches": 5
+    },
+    "strawberry_chitosan": {
+      "classification": "high_discrepancy",
+      "tier": "low",
+      "evidence": {
+        "n_obs": 7,
+        "mae_pp": 29.75,
+        "zero_error_frac": 0.0,
+        "direction_agreement": 1.0,
+        "clean_scale_frac": 0.571,
+        "scale_cv_pct": 21.0,
+        "within_5pp": 0.143,
+        "within_10pp": 0.286
+      },
+      "n_matches": 7
+    }
+  },
+  "tier_stats": {
+    "high": {
+      "n_obs": 68,
+      "pearson_r": 0.968,
+      "mae_pp": 1.65,
+      "within_5pp": "60/68 (88%)",
+      "within_10pp": "65/68 (96%)",
+      "direction": "64/65 (98%)",
+      "mean_ext_effect": 11.87,
+      "mean_gt_effect": 11.65,
+      "effect_diff": 0.22
+    },
+    "medium": {
+      "n_obs": 52,
+      "pearson_r": 0.476,
+      "mae_pp": 10.68,
+      "within_5pp": "30/52 (58%)",
+      "within_10pp": "37/52 (71%)",
+      "direction": "48/52 (92%)",
+      "mean_ext_effect": 17.24,
+      "mean_gt_effect": 21.54,
+      "effect_diff": 4.3
+    },
+    "low": {
+      "n_obs": 46,
+      "pearson_r": 0.17,
+      "mae_pp": 26.07,
+      "within_5pp": "11/46 (24%)",
+      "within_10pp": "15/46 (33%)",
+      "direction": "42/45 (93%)",
+      "mean_ext_effect": 28.86,
+      "mean_gt_effect": 34.63,
+      "effect_diff": 5.77
+    }
+  },
+  "combined_high_medium": {
+    "n_obs": 120,
+    "pearson_r": 0.663,
+    "mae_pp": 5.56,
+    "within_5pp": "90/120 (75%)",
+    "within_10pp": "102/120 (85%)",
+    "direction": "112/117 (96%)",
+    "mean_ext_effect": 14.19,
+    "mean_gt_effect": 15.93,
+    "effect_diff": 1.74
+  },
+  "all_tiers": {
+    "n_obs": 166,
+    "pearson_r": 0.446,
+    "mae_pp": 11.25,
+    "within_5pp": "101/166 (61%)",
+    "within_10pp": "117/166 (70%)",
+    "direction": "154/162 (95%)",
+    "mean_ext_effect": 18.26,
+    "mean_gt_effect": 21.11,
+    "effect_diff": 2.86
+  },
+  "match_pairs_by_tier": {
+    "high": [
+      {
+        "ext_effect": 2.6734755181736274,
+        "gt_effect": 2.186444046909152,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": 9.171923500550712,
+        "gt_effect": 6.201550387596893,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": 8.961650145188733,
+        "gt_effect": 11.250248459550779,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": 0.8410934214478715,
+        "gt_effect": 3.629707112970711,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": 4.035349233390111,
+        "gt_effect": 3.389121338912143,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": 8.826660988074948,
+        "gt_effect": 9.257322175732227,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": 9.529386712095404,
+        "gt_effect": 10.13598326359834,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": 2.363713798977852,
+        "gt_effect": 10.08497316636851,
+        "paper": "027_Chen_2021"
+      },
+      {
+        "ext_effect": -0.6605443032666601,
+        "gt_effect": -0.6605443032666578,
+        "paper": "058_Fichhof_2018"
+      },
+      {
+        "ext_effect": 47.55438048311502,
+        "gt_effect": 36.363636363636616,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 26.17073268437286,
+        "gt_effect": 29.20532472771277,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 19.45679605816608,
+        "gt_effect": 13.855421686746805,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 25.986459960741893,
+        "gt_effect": 29.696969696969923,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 31.27028001442133,
+        "gt_effect": 32.727272727272684,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 33.11701317950565,
+        "gt_effect": 33.198870512303344,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 15.326683491567522,
+        "gt_effect": 14.602662363856398,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 35.62472459239675,
+        "gt_effect": 36.58733360225897,
+        "paper": "090_Kocira_2020"
+      },
+      {
+        "ext_effect": 22.422680412371136,
+        "gt_effect": 22.422680412371125,
+        "paper": "094_Kowalska_2021"
+      },
+      {
+        "ext_effect": 37.88659793814432,
+        "gt_effect": 24.742268041237107,
+        "paper": "094_Kowalska_2021"
+      },
+      {
+        "ext_effect": 9.536082474226808,
+        "gt_effect": 9.536082474226799,
+        "paper": "094_Kowalska_2021"
+      },
+      {
+        "ext_effect": 15.72164948453609,
+        "gt_effect": 15.721649484536082,
+        "paper": "094_Kowalska_2021"
+      },
+      {
+        "ext_effect": 11.142295818130785,
+        "gt_effect": 7.774347460005604,
+        "paper": "095_Kuisma_1989"
+      },
+      {
+        "ext_effect": 2.7224249228178468,
+        "gt_effect": 4.602862756104398,
+        "paper": "095_Kuisma_1989"
+      },
+      {
+        "ext_effect": 9.458321639068194,
+        "gt_effect": 7.549817569463927,
+        "paper": "095_Kuisma_1989"
+      },
+      {
+        "ext_effect": 19.26182237600923,
+        "gt_effect": 19.26182237600923,
+        "paper": "105_Mattner_2018"
+      },
+      {
+        "ext_effect": 8.442906574394456,
+        "gt_effect": 8.442906574394456,
+        "paper": "105_Mattner_2018"
+      },
+      {
+        "ext_effect": 8.91010342084328,
+        "gt_effect": 8.910103420843267,
+        "paper": "105_Mattner_2018"
+      },
+      {
+        "ext_effect": -10.04126547455295,
+        "gt_effect": -10.04126547455295,
+        "paper": "106_Matysiak_2018"
+      },
+      {
+        "ext_effect": -15.405777166437403,
+        "gt_effect": -15.405777166437412,
+        "paper": "106_Matysiak_2018"
+      },
+      {
+        "ext_effect": 8.022922636103145,
+        "gt_effect": 8.022922636103159,
+        "paper": "106_Matysiak_2018"
+      },
+      {
+        "ext_effect": 3.5816618911174785,
+        "gt_effect": 3.5816618911174816,
+        "paper": "106_Matysiak_2018"
+      },
+      {
+        "ext_effect": 6.379821958456969,
+        "gt_effect": 6.3798219584569615,
+        "paper": "106_Matysiak_2018"
+      },
+      {
+        "ext_effect": -5.934718100890213,
+        "gt_effect": -5.934718100890213,
+        "paper": "106_Matysiak_2018"
+      },
+      {
+        "ext_effect": 0.31746031746032954,
+        "gt_effect": 0.3174603174603178,
+        "paper": "110_Michalak_2016"
+      },
+      {
+        "ext_effect": -0.21164021164020713,
+        "gt_effect": -0.21164021164021182,
+        "paper": "110_Michalak_2016"
+      },
+      {
+        "ext_effect": -0.5291005291005179,
+        "gt_effect": 0.5185185185185202,
+        "paper": "110_Michalak_2016"
+      },
+      {
+        "ext_effect": 1.587301587301591,
+        "gt_effect": 1.587301587301589,
+        "paper": "110_Michalak_2016"
+      },
+      {
+        "ext_effect": 0.5291005291005366,
+        "gt_effect": 1.0582010582010593,
+        "paper": "110_Michalak_2016"
+      },
+      {
+        "ext_effect": 2.135231316725979,
+        "gt_effect": 2.1352313167259607,
+        "paper": "126_Prokkola_2007"
+      },
+      {
+        "ext_effect": 10.15625,
+        "gt_effect": 10.156249999999995,
+        "paper": "126_Prokkola_2007"
+      },
+      {
+        "ext_effect": 3.558718861209965,
+        "gt_effect": 3.5587188612099476,
+        "paper": "126_Prokkola_2007"
+      },
+      {
+        "ext_effect": 8.072916666666668,
+        "gt_effect": 8.072916666666659,
+        "paper": "126_Prokkola_2007"
+      },
+      {
+        "ext_effect": -8.896797153024911,
+        "gt_effect": -6.405693950177942,
+        "paper": "126_Prokkola_2007"
+      },
+      {
+        "ext_effect": -0.78125,
+        "gt_effect": 0.2604166666666669,
+        "paper": "126_Prokkola_2007"
+      },
+      {
+        "ext_effect": 3.5469107551487413,
+        "gt_effect": 13.102595797280593,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 10.640732265446225,
+        "gt_effect": 15.609756097560965,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 14.187643020594965,
+        "gt_effect": 14.878048780487807,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 0.9054325955734407,
+        "gt_effect": 0.9054325955734386,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 7.746478873239436,
+        "gt_effect": 7.746478873239434,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 13.883299798792756,
+        "gt_effect": 13.883299798792764,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 6.707317073170732,
+        "gt_effect": 6.707317073170721,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 14.878048780487804,
+        "gt_effect": 9.765142150803467,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 15.609756097560975,
+        "gt_effect": 3.584672435105068,
+        "paper": "127_Radkowski_2018"
+      },
+      {
+        "ext_effect": 28.953771289537716,
+        "gt_effect": 28.125126944622163,
+        "paper": "131_Rahman_2018"
+      },
+      {
+        "ext_effect": 31.792376317923765,
+        "gt_effect": 32.03331300123747,
+        "paper": "131_Rahman_2018"
+      },
+      {
+        "ext_effect": 42.43714517437145,
+        "gt_effect": 36.72151123444119,
+        "paper": "131_Rahman_2018"
+      },
+      {
+        "ext_effect": 39.90267639902677,
+        "gt_effect": 42.96973389638543,
+        "paper": "131_Rahman_2018"
+      },
+      {
+        "ext_effect": 9.962640099626395,
+        "gt_effect": 9.96264009962641,
+        "paper": "158_Sulakhudin_2019"
+      },
+      {
+        "ext_effect": 5.742935278030989,
+        "gt_effect": 5.742935278030993,
+        "paper": "158_Sulakhudin_2019"
+      },
+      {
+        "ext_effect": 1.8706157443491835,
+        "gt_effect": 1.8706157443491922,
+        "paper": "158_Sulakhudin_2019"
+      },
+      {
+        "ext_effect": 3.1872509960159436,
+        "gt_effect": 3.187250996015927,
+        "paper": "175_Wilczewski_2018"
+      },
+      {
+        "ext_effect": 14.970059880239523,
+        "gt_effect": 14.970059880239523,
+        "paper": "S0304423820302417"
+      },
+      {
+        "ext_effect": 3.5928143712574885,
+        "gt_effect": 3.5928143712574885,
+        "paper": "S0304423820302417"
+      },
+      {
+        "ext_effect": 34.93975903614459,
+        "gt_effect": 34.93975903614455,
+        "paper": "S1878818119309879"
+      },
+      {
+        "ext_effect": 37.34939759036144,
+        "gt_effect": 37.34939759036145,
+        "paper": "S1878818119309879"
+      },
+      {
+        "ext_effect": -4.907975460122691,
+        "gt_effect": -4.907975460122704,
+        "paper": "S1878818119309879"
+      },
+      {
+        "ext_effect": 17.17791411042945,
+        "gt_effect": 17.177914110429448,
+        "paper": "S1878818119309879"
+      },
+      {
+        "ext_effect": 23.73540856031128,
+        "gt_effect": 23.73540856031128,
+        "paper": "agriculture-10-00618-v2"
+      }
+    ],
+    "medium": [
+      {
+        "ext_effect": 9.547738693467348,
+        "gt_effect": 10.967741935483865,
+        "paper": "067_Grabowska_2012"
+      },
+      {
+        "ext_effect": -1.507537688442197,
+        "gt_effect": -1.2903225806451624,
+        "paper": "067_Grabowska_2012"
+      },
+      {
+        "ext_effect": 1.160092807424594,
+        "gt_effect": 18.957345971563978,
+        "paper": "067_Grabowska_2012"
+      },
+      {
+        "ext_effect": 0.6960556844547497,
+        "gt_effect": 20.142180094786745,
+        "paper": "067_Grabowska_2012"
+      },
+      {
+        "ext_effect": -2.6229508196721336,
+        "gt_effect": -2.622950819672119,
+        "paper": "067_Grabowska_2012"
+      },
+      {
+        "ext_effect": 2.6229508196721336,
+        "gt_effect": 2.6229508196721336,
+        "paper": "067_Grabowska_2012"
+      },
+      {
+        "ext_effect": 4.530149984695443,
+        "gt_effect": 4.53014998469545,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 39.07657657657657,
+        "gt_effect": 39.076576576576564,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 18.485591661557333,
+        "gt_effect": 18.485591661557333,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 7.8359351086623885,
+        "gt_effect": 7.835935108662386,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 39.00150150150149,
+        "gt_effect": 39.001501501501494,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 20.14101778050276,
+        "gt_effect": 20.14101778050277,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 15.702479338842974,
+        "gt_effect": 15.481299816063762,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 37.012012012012,
+        "gt_effect": 37.01201201201199,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 22.225628448804414,
+        "gt_effect": 22.225628448804418,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 20.079583715947358,
+        "gt_effect": 20.07958371594735,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 47.48498498498497,
+        "gt_effect": 47.484984984984976,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 25.199264255058235,
+        "gt_effect": 25.199264255058246,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 5.706521739130439,
+        "gt_effect": 19.773145309626,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 6.02150537634408,
+        "gt_effect": 28.694052728387497,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 0.2785515320334302,
+        "gt_effect": 12.549739822467107,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": -4.347826086956506,
+        "gt_effect": 15.029078665442311,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 2.7956989247311768,
+        "gt_effect": 26.62993572084482,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": -3.621169916434533,
+        "gt_effect": -2.724211815120895,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 2.445652173913059,
+        "gt_effect": 16.46770737679829,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": -0.6451612903225745,
+        "gt_effect": 18.087063151440834,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 1.9498607242339914,
+        "gt_effect": 36.48648648648646,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": -1.6304347826086802,
+        "gt_effect": 45.42042042042041,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 1.5053763440860277,
+        "gt_effect": 56.569069069069066,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 3.064066852367692,
+        "gt_effect": 45.49549549549548,
+        "paper": "088_Kocira_2019"
+      },
+      {
+        "ext_effect": 20.734265734265733,
+        "gt_effect": 20.531654424624005,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 10.24475524475525,
+        "gt_effect": 10.248338579923049,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 14.58041958041959,
+        "gt_effect": 13.1164742917104,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 10.349650349650359,
+        "gt_effect": 12.055476529160734,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 6.874999999999999,
+        "gt_effect": 6.875000000000001,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": -3.892045454545455,
+        "gt_effect": 1.7897727272727353,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 5.170454545454544,
+        "gt_effect": 6.875000000000001,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 17.52840909090908,
+        "gt_effect": 17.5284090909091,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 13.401759530791784,
+        "gt_effect": 12.150349650349654,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 19.618768328445736,
+        "gt_effect": 19.289044289044284,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 126.39296187683283,
+        "gt_effect": 30.764757196859556,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 19.149560117302038,
+        "gt_effect": 19.78438228438229,
+        "paper": "091_Kocira_2018"
+      },
+      {
+        "ext_effect": 19.505494505494493,
+        "gt_effect": 26.115702479338847,
+        "paper": "111_Mondal_2013"
+      },
+      {
+        "ext_effect": 27.884615384615387,
+        "gt_effect": 19.669421487603305,
+        "paper": "111_Mondal_2013"
+      },
+      {
+        "ext_effect": 19.505494505494493,
+        "gt_effect": 11.570247933884307,
+        "paper": "111_Mondal_2013"
+      },
+      {
+        "ext_effect": 13.461538461538455,
+        "gt_effect": 8.595041322314058,
+        "paper": "111_Mondal_2013"
+      },
+      {
+        "ext_effect": 30.671103716028824,
+        "gt_effect": 30.663856691253947,
+        "paper": "Azarpour"
+      },
+      {
+        "ext_effect": 99.88907376594562,
+        "gt_effect": 54.123454051356,
+        "paper": "Azarpour"
+      },
+      {
+        "ext_effect": 34.09961685823754,
+        "gt_effect": 43.54723609815007,
+        "paper": "S1878818119307637"
+      },
+      {
+        "ext_effect": 29.50191570881224,
+        "gt_effect": 33.11741779656365,
+        "paper": "S1878818119307637"
+      },
+      {
+        "ext_effect": 23.371647509578548,
+        "gt_effect": 30.553878245594777,
+        "paper": "S1878818119307637"
+      },
+      {
+        "ext_effect": 18.00766283524904,
+        "gt_effect": 27.17242136465936,
+        "paper": "S1878818119307637"
+      }
+    ],
+    "low": [
+      {
+        "ext_effect": 3.7735849056603805,
+        "gt_effect": 15.266184381376377,
+        "paper": "002_Abdel-Mawgoud_2010"
+      },
+      {
+        "ext_effect": 7.547169811320761,
+        "gt_effect": 22.135658195758378,
+        "paper": "002_Abdel-Mawgoud_2010"
+      },
+      {
+        "ext_effect": 6.521739130434782,
+        "gt_effect": 81.01438873509005,
+        "paper": "002_Abdel-Mawgoud_2010"
+      },
+      {
+        "ext_effect": 10.869565217391305,
+        "gt_effect": 40.45631608235949,
+        "paper": "002_Abdel-Mawgoud_2010"
+      },
+      {
+        "ext_effect": 36.538461538461526,
+        "gt_effect": 92.85714285714289,
+        "paper": "029_Ciepiela_2019"
+      },
+      {
+        "ext_effect": -17.857142857142858,
+        "gt_effect": 31.137724550898206,
+        "paper": "100_Lola-Luz_2014"
+      },
+      {
+        "ext_effect": 83.99999999999999,
+        "gt_effect": 6.923639020825713,
+        "paper": "100_Lola-Luz_2014"
+      },
+      {
+        "ext_effect": 90.0,
+        "gt_effect": 0.21921812203141333,
+        "paper": "100_Lola-Luz_2014"
+      },
+      {
+        "ext_effect": 13.157894736842104,
+        "gt_effect": 10.081743869209813,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 12.5,
+        "gt_effect": -8.932461873638347,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 40.0,
+        "gt_effect": 33.070866141732274,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 25.000000000000007,
+        "gt_effect": 38.80597014925373,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 3.030303030303033,
+        "gt_effect": 1.9108280254777086,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 24.999999999999996,
+        "gt_effect": 8.864265927977847,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 0.0,
+        "gt_effect": 22.508038585209007,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 25.000000000000007,
+        "gt_effect": 28.346456692913375,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 66.66666666666666,
+        "gt_effect": 56.87499999999998,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 20.0,
+        "gt_effect": 31.277533039647576,
+        "paper": "120_Pohl_2019"
+      },
+      {
+        "ext_effect": 19.257387674393055,
+        "gt_effect": 22.56983240223465,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 19.77370097769966,
+        "gt_effect": 24.581005586592187,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 27.27672195979347,
+        "gt_effect": 26.480446927374317,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 38.96517631550039,
+        "gt_effect": 43.687150837988824,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 9.337581017247063,
+        "gt_effect": 24.692737430167593,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 13.863561463253879,
+        "gt_effect": 35.08379888268158,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 21.168845435570695,
+        "gt_effect": 47.15083798882681,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 33.59332088322531,
+        "gt_effect": 51.06145251396648,
+        "paper": "124_Pramanick_2016"
+      },
+      {
+        "ext_effect": 7.769028871391077,
+        "gt_effect": 31.05882352941176,
+        "paper": "S0304423819306703"
+      },
+      {
+        "ext_effect": 11.286089238845136,
+        "gt_effect": 26.823529411764696,
+        "paper": "S0304423819306703"
+      },
+      {
+        "ext_effect": 19.685039370078737,
+        "gt_effect": 20.705882352941174,
+        "paper": "S0304423819306703"
+      },
+      {
+        "ext_effect": 11.916010498687662,
+        "gt_effect": 9.411764705882344,
+        "paper": "S0304423819306703"
+      },
+      {
+        "ext_effect": 15.170603674540683,
+        "gt_effect": 4.941176470588229,
+        "paper": "S0304423819306703"
+      },
+      {
+        "ext_effect": 43.49206349206348,
+        "gt_effect": 128.65384617858726,
+        "paper": "al-tawaha_2011"
+      },
+      {
+        "ext_effect": 9.20634920634921,
+        "gt_effect": 60.03616639421989,
+        "paper": "al-tawaha_2011"
+      },
+      {
+        "ext_effect": 12.727272727272718,
+        "gt_effect": 145.38878845305402,
+        "paper": "al-tawaha_2011"
+      },
+      {
+        "ext_effect": 15.38461538461538,
+        "gt_effect": 21.397379912663762,
+        "paper": "ascophyllum_carrot_2014"
+      },
+      {
+        "ext_effect": 18.181818181818176,
+        "gt_effect": 21.397379912663762,
+        "paper": "ascophyllum_carrot_2014"
+      },
+      {
+        "ext_effect": 31.818181818181802,
+        "gt_effect": 21.397379912663762,
+        "paper": "ascophyllum_carrot_2014"
+      },
+      {
+        "ext_effect": 45.45454545454545,
+        "gt_effect": 12.227074235807862,
+        "paper": "ascophyllum_carrot_2014"
+      },
+      {
+        "ext_effect": 36.36363636363635,
+        "gt_effect": 24.999999999999996,
+        "paper": "ascophyllum_carrot_2014"
+      },
+      {
+        "ext_effect": 75.0,
+        "gt_effect": 21.52158310263509,
+        "paper": "strawberry_chitosan"
+      },
+      {
+        "ext_effect": 150.0,
+        "gt_effect": 81.01438873509005,
+        "paper": "strawberry_chitosan"
+      },
+      {
+        "ext_effect": 55.00000000000001,
+        "gt_effect": 15.191906763730822,
+        "paper": "strawberry_chitosan"
+      },
+      {
+        "ext_effect": 24.0,
+        "gt_effect": 22.135658195758378,
+        "paper": "strawberry_chitosan"
+      },
+      {
+        "ext_effect": 70.0,
+        "gt_effect": 80.91469321296812,
+        "paper": "strawberry_chitosan"
+      },
+      {
+        "ext_effect": 24.0,
+        "gt_effect": 15.266184381376377,
+        "paper": "strawberry_chitosan"
+      },
+      {
+        "ext_effect": 16.0,
+        "gt_effect": 40.45631608235949,
+        "paper": "strawberry_chitosan"
+      }
+    ]
+  }
+}

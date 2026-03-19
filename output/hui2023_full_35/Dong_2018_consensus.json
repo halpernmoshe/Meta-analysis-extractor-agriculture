@@ -1,0 +1,3392 @@
+{
+  "paper_id": "Dong_2018",
+  "recon": {
+    "paper_id": "Dong_2018",
+    "warnings": [
+      "This is a Zn fertilization study, not a CO2 study - the meta-analysis context appears mismatched",
+      "Complex factorial design with N rates \u00d7 cultivars \u00d7 foliar treatments - need to carefully identify the Zn control",
+      "The paper includes soil Zn application (30kg ZnSO4\u00b77H2O ha\u22121) in ALL plots, so there is no true zero-Zn control for soil application",
+      "Foliar treatments have a clear control (deionized water) vs Zn treatments",
+      "Multiple Zn-related outcomes reported - need to extract grain Zn concentration specifically",
+      "LSD values provided - these are variance measures",
+      "Split-split-plot design with interactions - some data may be presented as interaction effects",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "ans were compared by Fisher's protected least significant difference (LSD)at P \u22640.05,0.01,or 0.001.SPSS soft",
+    "variance_confidence": "medium",
+    "control_definition": "For foliar treatments: 'foliar spray of deionized water as a control'. Note: ALL plots received 30kg ZnSO4\u00b77H2O ha\u22121 to soil",
+    "treatment_definition": "Foliar treatments: (2) ZnSO4\u00b77H2O (0.4%, w/v) and (3) ZnSO4\u00b77H2O (0.4%, w/v) + sucrose (3.0%, w/v)",
+    "tables_with_target_data": [
+      "Table 2",
+      "Table 3"
+    ],
+    "potential_tc_confusion": "High risk - all plots received soil Zn, so this is comparing foliar Zn addition vs no foliar Zn, not true zero-Zn control",
+    "experimental_design": "split-split-plot factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "split-split-plot design with three factors...in four replicates",
+    "factorial_structure": "[\"N application rate (3 levels)\", \"cultivar (4 levels)\", \"foliar spray treatment (3 levels)\"]",
+    "extraction_guidance": "Extract grain Zn concentrations from Tables 2 and 3. Control = 'Deionized water' foliar treatment, Treatments = 'ZnSO4\u00b77H2O' and 'ZnSO4\u00b77H2O + Sucrose' foliar treatments. Use LSD0.05 values as variance measure. Note this compares foliar Zn addition vs no foliar Zn (all plots had soil Zn). Extract each N rate and cultivar separately if needed for completeness.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Rational Application of Fertilizer Nitrogen to Soil in Combination With Foliar Zn Spraying Improved Zn Nutritional Quality of Wheat Grains\",\n        \"species\": \"Triticum aestivum L. (wheat)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A - this is not a CO2 study\"}\n    },\n    \"warnings\": [\n        \"This is a Zn fertilization study, not a CO2 study - the meta-analysis context appears mismatched\",\n        \"Complex factorial design with N rates \u00d7 cultivars \u00d7 foliar treatments - need to carefully identify the Zn control\",\n        \"The paper includes soil Zn application (30kg ZnSO4\u00b77H2O ha\u22121) in ALL plots, so there is no true zero-Zn control for soil application\",\n        \"Foliar treatments have a clear control (deionized water) vs Zn treatments\",\n        \"Multiple Zn-related outcomes reported - need to extract grain Zn concentration specifically\",\n        \"LSD values provided - these are variance measures\",\n        \"Split-split-plot design with interactions - some data may be presented as interaction effects\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"LSD0.05 values provided in tables, e.g., 'LSD0.05' in Table 2 for Zn concentrations\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"For foliar treatments: 'foliar spray of deionized water as a control'. Note: ALL plots received 30kg ZnSO4\u00b77H2O ha\u22121 to soil\",\n        \"treatment_definition\": \"Foliar treatments: (2) ZnSO4\u00b77H2O (0.4%, w/v) and (3) ZnSO4\u00b77H2O (0.4%, w/v) + sucrose (3.0%, w/v)\",\n        \"identification_method\": \"In tables, look for 'Deionized water' as control vs 'ZnSO4\u00b77H2O' treatments\",\n        \"potential_confusion\": \"High risk - all plots received soil Zn, so this is comparing foliar Zn addition vs no foliar Zn, not true zero-Zn control\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n        \"source\": \"split-split-plot design ",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 4"
+    ],
+    "table_descriptions": {
+      "Table 1": "Grain yields and yield components - no Zn concentration data",
+      "Table 2": "Main effects on Zn concentrations, Zn yields, TAZ, and bioavailability ratios",
+      "Table 3": "Detailed interaction effects showing Zn concentrations by N rate \u00d7 cultivar \u00d7 foliar treatment",
+      "Table 4": "Protein, carbon, phosphorus, calcium concentrations - no grain Zn concentration"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 2": [
+        "Zn concentrations (mg kg\u22121)",
+        "Zn yields (g ha\u22121)",
+        "TAZ (mg d\u22121)",
+        "PA/Zn",
+        "PA \u00d7 Ca/Zn"
+      ],
+      "Table 3": [
+        "Zn concentrations (mg kg\u22121)",
+        "Zn yields (g ha\u22121)",
+        "TAZ (mg d\u22121)",
+        "PA/Zn",
+        "PA \u00d7 Ca/Zn"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 34,
+  "kimi_obs": 0,
+  "gemini_obs": 0,
+  "matched_obs": 34,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 34",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 52.0,
+        "control_mean": 40.9,
+        "treatment_variance": 1.6,
+        "control_variance": 1.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Main effect across all N rates and cultivars",
+        "effect_pct": 27.139364303178485,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 56.5,
+        "control_mean": 40.9,
+        "treatment_variance": 1.6,
+        "control_variance": 1.6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Main effect across all N rates and cultivars",
+        "effect_pct": 38.141809290953546,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn yields (g ha\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn yields (g ha\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 382.0,
+        "control_mean": 303.7,
+        "treatment_variance": 19.0,
+        "control_variance": 19.0,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "g/ha",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Main effect across all N rates and cultivars",
+        "effect_pct": 25.782021731972343,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn yields (g ha\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn yields (g ha\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 423.7,
+        "control_mean": 303.7,
+        "treatment_variance": 19.0,
+        "control_variance": 19.0,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "g/ha",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Main effect across all N rates and cultivars",
+        "effect_pct": 39.51267698386566,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "TAZ (mg d\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TAZ (mg d\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 1.8,
+        "control_mean": 1.4,
+        "treatment_variance": 0.1,
+        "control_variance": 0.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/d",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Total daily absorbed Zn - main effect across all N rates and cultivars",
+        "effect_pct": 28.57142857142858,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "TAZ (mg d\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "TAZ (mg d\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 2.0,
+        "control_mean": 1.4,
+        "treatment_variance": 0.1,
+        "control_variance": 0.1,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/d",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Total daily absorbed Zn - main effect across all N rates and cultivars",
+        "effect_pct": 42.85714285714287,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "PA/Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "PA/Zn",
+        "tissue": "grain",
+        "treatment_mean": 16.0,
+        "control_mean": 20.8,
+        "treatment_variance": 0.8,
+        "control_variance": 0.8,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "molar ratio",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Phytic acid to Zn molar ratio - lower is better for bioavailability",
+        "effect_pct": -23.076923076923077,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "PA/Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "PA/Zn",
+        "tissue": "grain",
+        "treatment_mean": 15.1,
+        "control_mean": 20.8,
+        "treatment_variance": 0.8,
+        "control_variance": 0.8,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "molar ratio",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Phytic acid to Zn molar ratio - lower is better for bioavailability",
+        "effect_pct": -27.403846153846157,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "PA \u00d7 Ca/Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "PA \u00d7 Ca/Zn",
+        "tissue": "grain",
+        "treatment_mean": 178.1,
+        "control_mean": 234.2,
+        "treatment_variance": 11.4,
+        "control_variance": 11.4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "molar ratio",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Phytic acid \u00d7 Calcium to Zn molar ratio - lower is better for bioavailability",
+        "effect_pct": -23.95388556789069,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "PA \u00d7 Ca/Zn",
+      "tissue": "grain",
+      "claude": {
+        "element": "PA \u00d7 Ca/Zn",
+        "tissue": "grain",
+        "treatment_mean": 168.6,
+        "control_mean": 234.2,
+        "treatment_variance": 11.4,
+        "control_variance": 11.4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "molar ratio",
+        "data_source": "Table 2",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Phytic acid \u00d7 Calcium to Zn molar ratio - lower is better for bioavailability",
+        "effect_pct": -28.010247651579846,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 49.2,
+        "control_mean": 39.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jinan 17",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 25.190839694656503,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 56.7,
+        "control_mean": 39.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jinan 17",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 44.27480916030536,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 54.6,
+        "control_mean": 45.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Luyuan 502",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 19.21397379912665,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 58.4,
+        "control_mean": 45.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Luyuan 502",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 27.51091703056769,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 48.5,
+        "control_mean": 34.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 20",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 38.968481375358174,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 50.5,
+        "control_mean": 34.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 20",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 44.69914040114614,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 51.7,
+        "control_mean": 42.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 22",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 20.51282051282052,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 56.3,
+        "control_mean": 42.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 22",
+          "N_rate": "75 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 31.235431235431232,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 54.6,
+        "control_mean": 43.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jinan 17",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 26.096997690531186,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 59.4,
+        "control_mean": 43.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jinan 17",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination - achieved biofortification target",
+        "effect_pct": 37.182448036951506,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 60.0,
+        "control_mean": 47.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Luyuan 502",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 25.786163522012572,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 60.9,
+        "control_mean": 47.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Luyuan 502",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination - achieved biofortification target",
+        "effect_pct": 27.672955974842754,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 49.5,
+        "control_mean": 38.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 20",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 27.906976744186036,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 52.4,
+        "control_mean": 38.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 20",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 35.40051679586562,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 48.3,
+        "control_mean": 35.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 22",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 35.294117647058805,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 52.2,
+        "control_mean": 35.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 22",
+          "N_rate": "200 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 46.21848739495798,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 51.8,
+        "control_mean": 40.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jinan 17",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 29.499999999999993,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 59.7,
+        "control_mean": 40.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jinan 17",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 49.25000000000001,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 51.2,
+        "control_mean": 38.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Luyuan 502",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 32.64248704663213,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 58.7,
+        "control_mean": 38.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Luyuan 502",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 52.07253886010362,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 50.8,
+        "control_mean": 40.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 20",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 26.054590570719604,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 56.9,
+        "control_mean": 40.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 20",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 41.19106699751862,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 53.3,
+        "control_mean": 43.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 22",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 only"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 21.68949771689498,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "tissue": "grain",
+        "treatment_mean": 55.8,
+        "control_mean": 43.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 3",
+        "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+        "control_description": "Deionized water foliar spray",
+        "moderators": {
+          "cultivar": "Jimai 22",
+          "N_rate": "275 kg/ha",
+          "foliar_treatment": "ZnSO4 + Sucrose"
+        },
+        "confidence": "high",
+        "notes": "Specific cultivar and N rate combination",
+        "effect_pct": 27.397260273972606,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 52.0,
+      "control_mean": 40.9,
+      "treatment_variance": 1.6,
+      "control_variance": 1.6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Main effect across all N rates and cultivars [single-model fallback: Claude only]",
+      "effect_pct": 27.139364303178485,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 56.5,
+      "control_mean": 40.9,
+      "treatment_variance": 1.6,
+      "control_variance": 1.6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Main effect across all N rates and cultivars [single-model fallback: Claude only]",
+      "effect_pct": 38.141809290953546,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn yields (g ha\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 382.0,
+      "control_mean": 303.7,
+      "treatment_variance": 19.0,
+      "control_variance": 19.0,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "g/ha",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Main effect across all N rates and cultivars [single-model fallback: Claude only]",
+      "effect_pct": 25.782021731972343,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn yields (g ha\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 423.7,
+      "control_mean": 303.7,
+      "treatment_variance": 19.0,
+      "control_variance": 19.0,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "g/ha",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Main effect across all N rates and cultivars [single-model fallback: Claude only]",
+      "effect_pct": 39.51267698386566,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "TAZ (mg d\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 1.8,
+      "control_mean": 1.4,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/d",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Total daily absorbed Zn - main effect across all N rates and cultivars [single-model fallback: Claude only]",
+      "effect_pct": 28.57142857142858,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "TAZ (mg d\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 2.0,
+      "control_mean": 1.4,
+      "treatment_variance": 0.1,
+      "control_variance": 0.1,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/d",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Total daily absorbed Zn - main effect across all N rates and cultivars [single-model fallback: Claude only]",
+      "effect_pct": 42.85714285714287,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "PA/Zn",
+      "tissue": "grain",
+      "treatment_mean": 16.0,
+      "control_mean": 20.8,
+      "treatment_variance": 0.8,
+      "control_variance": 0.8,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "molar ratio",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Phytic acid to Zn molar ratio - lower is better for bioavailability [single-model fallback: Claude only]",
+      "effect_pct": -23.076923076923077,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "PA/Zn",
+      "tissue": "grain",
+      "treatment_mean": 15.1,
+      "control_mean": 20.8,
+      "treatment_variance": 0.8,
+      "control_variance": 0.8,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "molar ratio",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Phytic acid to Zn molar ratio - lower is better for bioavailability [single-model fallback: Claude only]",
+      "effect_pct": -27.403846153846157,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "PA \u00d7 Ca/Zn",
+      "tissue": "grain",
+      "treatment_mean": 178.1,
+      "control_mean": 234.2,
+      "treatment_variance": 11.4,
+      "control_variance": 11.4,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "molar ratio",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Phytic acid \u00d7 Calcium to Zn molar ratio - lower is better for bioavailability [single-model fallback: Claude only]",
+      "effect_pct": -23.95388556789069,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "PA \u00d7 Ca/Zn",
+      "tissue": "grain",
+      "treatment_mean": 168.6,
+      "control_mean": 234.2,
+      "treatment_variance": 11.4,
+      "control_variance": 11.4,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "molar ratio",
+      "data_source": "Table 2",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Phytic acid \u00d7 Calcium to Zn molar ratio - lower is better for bioavailability [single-model fallback: Claude only]",
+      "effect_pct": -28.010247651579846,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 49.2,
+      "control_mean": 39.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jinan 17",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 25.190839694656503,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 56.7,
+      "control_mean": 39.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jinan 17",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 44.27480916030536,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 54.6,
+      "control_mean": 45.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Luyuan 502",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 19.21397379912665,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 58.4,
+      "control_mean": 45.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Luyuan 502",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 27.51091703056769,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 48.5,
+      "control_mean": 34.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 20",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 38.968481375358174,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 50.5,
+      "control_mean": 34.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 20",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 44.69914040114614,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 51.7,
+      "control_mean": 42.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 22",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 20.51282051282052,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 56.3,
+      "control_mean": 42.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 22",
+        "N_rate": "75 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 31.235431235431232,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 54.6,
+      "control_mean": 43.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jinan 17",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 26.096997690531186,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 59.4,
+      "control_mean": 43.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jinan 17",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination - achieved biofortification target [single-model fallback: Claude only]",
+      "effect_pct": 37.182448036951506,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 60.0,
+      "control_mean": 47.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Luyuan 502",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 25.786163522012572,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 60.9,
+      "control_mean": 47.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Luyuan 502",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination - achieved biofortification target [single-model fallback: Claude only]",
+      "effect_pct": 27.672955974842754,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 49.5,
+      "control_mean": 38.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 20",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 27.906976744186036,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 52.4,
+      "control_mean": 38.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 20",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 35.40051679586562,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 48.3,
+      "control_mean": 35.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 22",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 35.294117647058805,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 52.2,
+      "control_mean": 35.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 22",
+        "N_rate": "200 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 46.21848739495798,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 51.8,
+      "control_mean": 40.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jinan 17",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 29.499999999999993,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 59.7,
+      "control_mean": 40.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jinan 17",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 49.25000000000001,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 51.2,
+      "control_mean": 38.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Luyuan 502",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 32.64248704663213,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 58.7,
+      "control_mean": 38.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Luyuan 502",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 52.07253886010362,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 50.8,
+      "control_mean": 40.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 20",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 26.054590570719604,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 56.9,
+      "control_mean": 40.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 20",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 41.19106699751862,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 53.3,
+      "control_mean": 43.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O foliar spray (0.4% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 22",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 only"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 21.68949771689498,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "treatment_mean": 55.8,
+      "control_mean": 43.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "ZnSO4\u00b77H2O + Sucrose foliar spray (0.4% + 3.0% w/v)",
+      "control_description": "Deionized water foliar spray",
+      "moderators": {
+        "cultivar": "Jimai 22",
+        "N_rate": "275 kg/ha",
+        "foliar_treatment": "ZnSO4 + Sucrose"
+      },
+      "confidence": "low",
+      "notes": "Specific cultivar and N rate combination [single-model fallback: Claude only]",
+      "effect_pct": 27.397260273972606,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 34,
+    "final_count": 34
+  },
+  "verification_flags": [
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 52.0,
+        "control_mean": 40.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.076923076923077,
+            "note": "CV = 3.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.9%"
+          }
+        },
+        "effect_pct": 27.139364303178485
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 56.5,
+        "control_mean": 40.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +38.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.8318584070796464,
+            "note": "CV = 2.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=6.6%"
+          }
+        },
+        "effect_pct": 38.141809290953546
+      }
+    },
+    {
+      "element": "Zn yields (g ha\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn yields (g ha\u22121)",
+        "treatment_mean": 382.0,
+        "control_mean": 303.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +25.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.973821989528796,
+            "note": "CV = 5.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 25.782021731972343
+      }
+    },
+    {
+      "element": "Zn yields (g ha\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn yields (g ha\u22121)",
+        "treatment_mean": 423.7,
+        "control_mean": 303.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +39.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.4843049327354265,
+            "note": "CV = 4.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.2%"
+          }
+        },
+        "effect_pct": 39.51267698386566
+      }
+    },
+    {
+      "element": "TAZ (mg d\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "TAZ (mg d\u22121)",
+        "treatment_mean": 1.8,
+        "control_mean": 1.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +28.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.555555555555556,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.2%"
+          }
+        },
+        "effect_pct": 28.57142857142858
+      }
+    },
+    {
+      "element": "TAZ (mg d\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "TAZ (mg d\u22121)",
+        "treatment_mean": 2.0,
+        "control_mean": 1.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +42.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.0,
+            "note": "CV = 5.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 42.85714285714287
+      }
+    },
+    {
+      "element": "PA/Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "PA/Zn",
+        "treatment_mean": 16.0,
+        "control_mean": 20.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -23.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 30.0,
+            "note": "Effect -23.1% violates expected direction; unswapped would be +30.0%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.0,
+            "note": "CV = 5.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.7%"
+          }
+        },
+        "effect_pct": -23.076923076923077,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -23.1%, corrected would be +30.0%"
+      }
+    },
+    {
+      "element": "PA/Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "PA/Zn",
+        "treatment_mean": 15.1,
+        "control_mean": 20.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -27.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 37.748344370860934,
+            "note": "Effect -27.4% violates expected direction; unswapped would be +37.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.298013245033113,
+            "note": "CV = 5.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.9%"
+          }
+        },
+        "effect_pct": -27.403846153846157,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -27.4%, corrected would be +37.7%"
+      }
+    },
+    {
+      "element": "PA \u00d7 Ca/Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "PA \u00d7 Ca/Zn",
+        "treatment_mean": 178.1,
+        "control_mean": 234.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -24.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 31.499157776530033,
+            "note": "Effect -24.0% violates expected direction; unswapped would be +31.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.400898371701292,
+            "note": "CV = 6.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": -23.95388556789069,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -24.0%, corrected would be +31.5%"
+      }
+    },
+    {
+      "element": "PA \u00d7 Ca/Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "PA \u00d7 Ca/Zn",
+        "treatment_mean": 168.6,
+        "control_mean": 234.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -28.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 38.90865954922894,
+            "note": "Effect -28.0% violates expected direction; unswapped would be +38.9%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.761565836298933,
+            "note": "CV = 6.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": -28.010247651579846,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -28.0%, corrected would be +38.9%"
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 49.2,
+        "control_mean": 39.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +25.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 25.190839694656503
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 56.7,
+        "control_mean": 39.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +44.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 44.27480916030536
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 54.6,
+        "control_mean": 45.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 19.21397379912665
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 58.4,
+        "control_mean": 45.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 27.51091703056769
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 48.5,
+        "control_mean": 34.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +39.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 38.968481375358174
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 50.5,
+        "control_mean": 34.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +44.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 44.69914040114614
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 51.7,
+        "control_mean": 42.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 20.51282051282052
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 56.3,
+        "control_mean": 42.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +31.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 31.235431235431232
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 54.6,
+        "control_mean": 43.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +26.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 26.096997690531186
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 59.4,
+        "control_mean": 43.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +37.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 37.182448036951506
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 60.0,
+        "control_mean": 47.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +25.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 25.786163522012572
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 60.9,
+        "control_mean": 47.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 27.672955974842754
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 49.5,
+        "control_mean": 38.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 27.906976744186036
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 52.4,
+        "control_mean": 38.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +35.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 35.40051679586562
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 48.3,
+        "control_mean": 35.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +35.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 35.294117647058805
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 52.2,
+        "control_mean": 35.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +46.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 46.21848739495798
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 51.8,
+        "control_mean": 40.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +29.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 29.499999999999993
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 59.7,
+        "control_mean": 40.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +49.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 49.25000000000001
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 51.2,
+        "control_mean": 38.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +32.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 32.64248704663213
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 58.7,
+        "control_mean": 38.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +52.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 52.07253886010362
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 50.8,
+        "control_mean": 40.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +26.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 26.054590570719604
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 56.9,
+        "control_mean": 40.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +41.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 41.19106699751862
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 53.3,
+        "control_mean": 43.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 21.68949771689498
+      }
+    },
+    {
+      "element": "Zn concentrations (mg kg\u22121)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn concentrations (mg kg\u22121)",
+        "treatment_mean": 55.8,
+        "control_mean": 43.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 27.397260273972606
+      }
+    }
+  ]
+}

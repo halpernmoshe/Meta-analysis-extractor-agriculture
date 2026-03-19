@@ -1,0 +1,111 @@
+{
+  "paper_id": "008_Campbell_2002",
+  "title": "Interactions between atmospheric CO2 concentration and phosphorus nutrition on the formation of proteoid roots in white lupin (Lupinus albus L.)",
+  "species": "Lupinus albus",
+  "experiment_type": "hydroponic, controlled environment chamber",
+  "notes": "Three CO2 levels: 200 (sub-ambient/Pleistocene), 410 (ambient), 750 (elevated) umol/mol. Two P treatments: low (0.69 uM) and high (250 uM). P concentration data from Figure 4. For elevated vs ambient comparison, treatment=750, control=410. Also extracting sub-ambient (200) vs ambient (410) comparisons. n=3 experiments.",
+  "consensus_observations": [
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "treatment_mean": 0.04,
+      "control_mean": 0.04,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% DW",
+      "data_source": "Figure 4a",
+      "treatment_description": "Elevated CO2 750 ppm",
+      "control_description": "Ambient CO2 410 ppm",
+      "moderators": {
+        "species": "Lupinus albus",
+        "tissue": "leaf",
+        "p_treatment": "low P (0.69 uM)"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "root",
+      "treatment_mean": 0.20,
+      "control_mean": 0.18,
+      "effect_pct": 11.11,
+      "n": 3,
+      "unit": "% DW",
+      "data_source": "Figure 4a",
+      "treatment_description": "Elevated CO2 750 ppm",
+      "control_description": "Ambient CO2 410 ppm",
+      "moderators": {
+        "species": "Lupinus albus",
+        "tissue": "normal root",
+        "p_treatment": "low P (0.69 uM)"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "proteoid root",
+      "treatment_mean": 0.22,
+      "control_mean": 0.25,
+      "effect_pct": -12.0,
+      "n": 3,
+      "unit": "% DW",
+      "data_source": "Figure 4a",
+      "treatment_description": "Elevated CO2 750 ppm",
+      "control_description": "Ambient CO2 410 ppm",
+      "moderators": {
+        "species": "Lupinus albus",
+        "tissue": "proteoid root",
+        "p_treatment": "low P (0.69 uM)"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "treatment_mean": 0.85,
+      "control_mean": 0.85,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% DW",
+      "data_source": "Figure 4b",
+      "treatment_description": "Elevated CO2 750 ppm",
+      "control_description": "Ambient CO2 410 ppm",
+      "moderators": {
+        "species": "Lupinus albus",
+        "tissue": "leaf",
+        "p_treatment": "high P (250 uM)"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "root",
+      "treatment_mean": 2.8,
+      "control_mean": 2.8,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "% DW",
+      "data_source": "Figure 4b",
+      "treatment_description": "Elevated CO2 750 ppm",
+      "control_description": "Ambient CO2 410 ppm",
+      "moderators": {
+        "species": "Lupinus albus",
+        "tissue": "normal root",
+        "p_treatment": "high P (250 uM)"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "proteoid root",
+      "treatment_mean": 2.3,
+      "control_mean": 2.5,
+      "effect_pct": -8.0,
+      "n": 3,
+      "unit": "% DW",
+      "data_source": "Figure 4b",
+      "treatment_description": "Elevated CO2 750 ppm",
+      "control_description": "Ambient CO2 410 ppm",
+      "moderators": {
+        "species": "Lupinus albus",
+        "tissue": "proteoid root",
+        "p_treatment": "high P (250 uM)"
+      }
+    }
+  ]
+}

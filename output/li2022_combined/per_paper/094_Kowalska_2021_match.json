@@ -1,0 +1,138 @@
+{
+  "paper_id": "094_Kowalska_2021_Effect of Different Forms of Silicon on",
+  "matched_pairs": [
+    {
+      "gt_idx": 0,
+      "json_idx": 0,
+      "gt_pair": "1090",
+      "gt_dose": "1",
+      "gt_crop": "wheat",
+      "element": "Yield [t per ha]",
+      "match_reason": "Adesil product, soil application method; effect percentages match exactly (+22.4%)",
+      "gt_ctrl": 0.388,
+      "gt_treat": 0.475,
+      "gt_effect_pct": 22.42,
+      "ext_ctrl": 3.88,
+      "ext_treat": 4.75,
+      "ext_effect_pct": 22.42,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 1,
+      "json_idx": 2,
+      "gt_pair": "1091",
+      "gt_dose": "1",
+      "gt_crop": "wheat",
+      "element": "Yield [t per ha]",
+      "match_reason": "Adesil product, foliar application method; effect percentages match exactly (+9.54%)",
+      "gt_ctrl": 0.388,
+      "gt_treat": 0.425,
+      "gt_effect_pct": 9.54,
+      "ext_ctrl": 3.88,
+      "ext_treat": 4.25,
+      "ext_effect_pct": 9.54,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 2,
+      "json_idx": 3,
+      "gt_pair": "1092",
+      "gt_dose": "1",
+      "gt_crop": "wheat",
+      "element": "Yield [t per ha]",
+      "match_reason": "ZumSil product, soil application method; effect percentages match exactly (+15.72%)",
+      "gt_ctrl": 0.388,
+      "gt_treat": 0.449,
+      "gt_effect_pct": 15.72,
+      "ext_ctrl": 3.88,
+      "ext_treat": 4.49,
+      "ext_effect_pct": 15.72,
+      "confidence": "high"
+    },
+    {
+      "gt_idx": 3,
+      "json_idx": 5,
+      "gt_pair": "1093",
+      "gt_dose": "1",
+      "gt_crop": "wheat",
+      "element": "Yield [t per ha]",
+      "match_reason": "ZumSil product, foliar application method; effect percentages match exactly (+24.74%)",
+      "gt_ctrl": 0.388,
+      "gt_treat": 0.484,
+      "gt_effect_pct": 24.74,
+      "ext_ctrl": 3.88,
+      "ext_treat": 4.84,
+      "ext_effect_pct": 24.74,
+      "confidence": "high"
+    }
+  ],
+  "unmatched_gt": [],
+  "unmatched_json": [
+    {
+      "json_idx": 1,
+      "element": "Yield [t per ha]",
+      "reason": "Adesil combined (soil+foliar) arm — Li 2022 GT did not include the combined application arm, only soil and foliar separately"
+    },
+    {
+      "json_idx": 4,
+      "element": "Yield [t per ha]",
+      "reason": "ZumSil combined (soil+foliar) arm — Li 2022 GT did not include the combined application arm, only soil and foliar separately"
+    },
+    {
+      "json_idx": 6,
+      "element": "Weight of grain per plot/16 m² [kg]",
+      "reason": "Duplicate yield metric (per-plot weight) — GT used t/ha yield; same treatment arm already matched via json_idx 0"
+    },
+    {
+      "json_idx": 7,
+      "element": "Weight of grain per plot/16 m² [kg]",
+      "reason": "Duplicate yield metric (per-plot weight) — combined arm not in GT; same as json_idx 1 rationale"
+    },
+    {
+      "json_idx": 8,
+      "element": "Weight of grain per plot/16 m² [kg]",
+      "reason": "Duplicate yield metric (per-plot weight) — GT used t/ha yield; same treatment arm already matched via json_idx 2"
+    },
+    {
+      "json_idx": 9,
+      "element": "Weight of grain per plot/16 m² [kg]",
+      "reason": "Duplicate yield metric (per-plot weight) — GT used t/ha yield; same treatment arm already matched via json_idx 3"
+    },
+    {
+      "json_idx": 10,
+      "element": "Weight of grain per plot/16 m² [kg]",
+      "reason": "Duplicate yield metric (per-plot weight) — combined arm not in GT; same as json_idx 4 rationale"
+    },
+    {
+      "json_idx": 11,
+      "element": "Weight of grain per plot/16 m² [kg]",
+      "reason": "Duplicate yield metric (per-plot weight) — GT used t/ha yield; same treatment arm already matched via json_idx 5"
+    },
+    {
+      "json_idx": 12,
+      "element": "Moisture of grain [%]",
+      "reason": "Non-yield outcome — grain moisture content is a quality parameter, not a yield/production metric"
+    },
+    {
+      "json_idx": 13,
+      "element": "Moisture of grain [%]",
+      "reason": "Non-yield outcome — grain moisture content is a quality parameter, not a yield/production metric"
+    },
+    {
+      "json_idx": 14,
+      "element": "Moisture of grain [%]",
+      "reason": "Non-yield outcome — grain moisture content is a quality parameter, not a yield/production metric"
+    },
+    {
+      "json_idx": 15,
+      "element": "Moisture of grain [%]",
+      "reason": "Non-yield outcome — grain moisture content is a quality parameter, not a yield/production metric"
+    },
+    {
+      "json_idx": 16,
+      "element": "Moisture of grain [%]",
+      "reason": "Non-yield outcome — grain moisture content is a quality parameter, not a yield/production metric"
+    }
+  ],
+  "notes": "GT means are in units ~10x smaller than JSON (0.388 vs 3.88 t/ha) — likely a unit scaling difference (e.g., GT in 100 kg/ha vs JSON in t/ha), but effect percentages are identical confirming correct matches. GT includes only 4 arms (2 products x 2 single-method applications); our extractor also captured a 'combined soil+foliar' arm for each product that Li 2022 chose not to include. All 4 GT rows matched with high confidence."
+}

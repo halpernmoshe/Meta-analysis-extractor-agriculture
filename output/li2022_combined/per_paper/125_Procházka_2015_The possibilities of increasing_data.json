@@ -1,0 +1,429 @@
+{
+  "paper_id": "125_Procházka_2015_The possibilities of increasing the prod",
+  "gt_rows": [
+    {
+      "pair": "527",
+      "crop": "soybean",
+      "CropCategory": "Legumes",
+      "product": "Lexin ",
+      "PBsCategory": "HFA",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Czech Republic",
+      "ctrl_mean": 0.251,
+      "treat_mean": 0.271,
+      "ctrl_sd": 0.033634000000000004,
+      "treat_sd": 0.036314000000000006
+    },
+    {
+      "pair": "528",
+      "crop": "soybean",
+      "CropCategory": "Legumes",
+      "product": "Lignohumate B",
+      "PBsCategory": "HFA",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Czech Republic",
+      "ctrl_mean": 0.251,
+      "treat_mean": 0.29,
+      "ctrl_sd": 0.033634000000000004,
+      "treat_sd": 0.03886
+    },
+    {
+      "pair": "529",
+      "crop": "soybean",
+      "CropCategory": "Legumes",
+      "product": "Lexin ",
+      "PBsCategory": "HFA",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Czech Republic",
+      "ctrl_mean": 0.33399999999999996,
+      "treat_mean": 0.33199999999999996,
+      "ctrl_sd": 0.044756,
+      "treat_sd": 0.044488
+    },
+    {
+      "pair": "530",
+      "crop": "soybean",
+      "CropCategory": "Legumes",
+      "product": "Lignohumate B",
+      "PBsCategory": "HFA",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Czech Republic",
+      "ctrl_mean": 0.33399999999999996,
+      "treat_mean": 0.375,
+      "ctrl_sd": 0.044756,
+      "treat_sd": 0.05025
+    },
+    {
+      "pair": "531",
+      "crop": "soybean",
+      "CropCategory": "Legumes",
+      "product": "Lexin ",
+      "PBsCategory": "HFA",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Czech Republic",
+      "ctrl_mean": 0.271,
+      "treat_mean": 0.267,
+      "ctrl_sd": 0.036314000000000006,
+      "treat_sd": 0.035778000000000004
+    },
+    {
+      "pair": "532",
+      "crop": "soybean",
+      "CropCategory": "Legumes",
+      "product": "Lignohumate B",
+      "PBsCategory": "HFA",
+      "method": "Seed",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "0",
+      "Frequency": "1",
+      "country": "Czech Republic",
+      "ctrl_mean": 0.271,
+      "treat_mean": 0.29,
+      "ctrl_sd": 0.036314000000000006,
+      "treat_sd": 0.03886
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "Field emergence",
+      "tissue": "whole plant",
+      "unit": "%",
+      "n": 9,
+      "treatment_description": "Lignohumate B (mixture of humic and fulvic acids)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 71.1,
+      "treatment_mean": 75.7,
+      "confidence": "high"
+    },
+    {
+      "element": "Field emergence",
+      "tissue": "whole plant",
+      "unit": "%",
+      "n": 9,
+      "treatment_description": "Lexin (concentrate of humic acid, fulvic acids and auxins)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 71.1,
+      "treatment_mean": 86.2,
+      "confidence": "high"
+    },
+    {
+      "element": "Field emergence",
+      "tissue": "whole plant",
+      "unit": "%",
+      "n": 9,
+      "treatment_description": "Brassinosteroid (synthetic analogue of 24epibrassinolide)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 71.1,
+      "treatment_mean": 83.4,
+      "confidence": "high"
+    },
+    {
+      "element": "Field emergence",
+      "tissue": "whole plant",
+      "unit": "%",
+      "n": 9,
+      "treatment_description": "Complete seed treatment (mixture of saturated sucrose solution, Lexin, fungicide Maxim XL 035FS and adjuvant Agrovital)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 71.1,
+      "treatment_mean": 87.3,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand density before harvest",
+      "tissue": "whole plant",
+      "unit": "plants/m2",
+      "n": 9,
+      "treatment_description": "Lignohumate B (mixture of humic and fulvic acids)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 38.1,
+      "treatment_mean": 41.5,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand density before harvest",
+      "tissue": "whole plant",
+      "unit": "plants/m2",
+      "n": 9,
+      "treatment_description": "Lexin (concentrate of humic acid, fulvic acids and auxins)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 38.1,
+      "treatment_mean": 46.9,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand density before harvest",
+      "tissue": "whole plant",
+      "unit": "plants/m2",
+      "n": 9,
+      "treatment_description": "Brassinosteroid (synthetic analogue of 24epibrassinolide)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 38.1,
+      "treatment_mean": 42.7,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand density before harvest",
+      "tissue": "whole plant",
+      "unit": "plants/m2",
+      "n": 9,
+      "treatment_description": "Complete seed treatment (mixture of saturated sucrose solution, Lexin, fungicide Maxim XL 035FS and adjuvant Agrovital)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 38.1,
+      "treatment_mean": 51.6,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand height before harvest",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Lignohumate B (mixture of humic and fulvic acids)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 78.37,
+      "treatment_mean": 78.33,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand height before harvest",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Lexin (concentrate of humic acid, fulvic acids and auxins)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 78.37,
+      "treatment_mean": 82.14,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand height before harvest",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Brassinosteroid (synthetic analogue of 24epibrassinolide)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 78.37,
+      "treatment_mean": 79.11,
+      "confidence": "high"
+    },
+    {
+      "element": "Stand height before harvest",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Complete seed treatment (mixture of saturated sucrose solution, Lexin, fungicide Maxim XL 035FS and adjuvant Agrovital)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 78.37,
+      "treatment_mean": 81.01,
+      "confidence": "high"
+    },
+    {
+      "element": "Height of apical end of the lowest pod",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Lignohumate B (mixture of humic and fulvic acids)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 4.68,
+      "treatment_mean": 4.79,
+      "confidence": "high"
+    },
+    {
+      "element": "Height of apical end of the lowest pod",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Lexin (concentrate of humic acid, fulvic acids and auxins)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 4.68,
+      "treatment_mean": 6.54,
+      "confidence": "high"
+    },
+    {
+      "element": "Height of apical end of the lowest pod",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Brassinosteroid (synthetic analogue of 24epibrassinolide)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 4.68,
+      "treatment_mean": 6.4,
+      "confidence": "high"
+    },
+    {
+      "element": "Height of apical end of the lowest pod",
+      "tissue": "whole plant",
+      "unit": "cm",
+      "n": 9,
+      "treatment_description": "Complete seed treatment (mixture of saturated sucrose solution, Lexin, fungicide Maxim XL 035FS and adjuvant Agrovital)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 4.68,
+      "treatment_mean": 7.77,
+      "confidence": "high"
+    },
+    {
+      "element": "Yield",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 9,
+      "treatment_description": "Lignohumate B (mixture of humic and fulvic acids)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 2850.0,
+      "treatment_mean": 2900.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Yield",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 9,
+      "treatment_description": "Lexin (concentrate of humic acid, fulvic acids and auxins)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 2850.0,
+      "treatment_mean": 3180.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Yield",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 9,
+      "treatment_description": "Brassinosteroid (synthetic analogue of 24epibrassinolide)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 2850.0,
+      "treatment_mean": 3080.0,
+      "confidence": "high"
+    },
+    {
+      "element": "Yield",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 9,
+      "treatment_description": "Complete seed treatment (mixture of saturated sucrose solution, Lexin, fungicide Maxim XL 035FS and adjuvant Agrovital)",
+      "control_description": "Untreated control (inoculated with nitrazon+)",
+      "moderators": {
+        "cultivar": "Merlin",
+        "year": "2012-2014",
+        "site": "Studeněves, Czech Republic"
+      },
+      "control_mean": 2850.0,
+      "treatment_mean": 3290.0,
+      "confidence": "high"
+    }
+  ]
+}

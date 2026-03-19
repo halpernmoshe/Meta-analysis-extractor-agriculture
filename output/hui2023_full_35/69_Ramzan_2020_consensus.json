@@ -1,0 +1,5235 @@
+{
+  "paper_id": "69_Ramzan_2020",
+  "recon": {
+    "paper_id": "69_Ramzan_2020",
+    "warnings": [
+      "This is a Zn+Fe biofortification study, not CO2 research - treatment/control definitions will be completely different",
+      "Multiple Zn application methods (soil vs foliar) and combinations with Fe - each needs separate extraction",
+      "Seven total treatments including control - extract each Zn treatment vs control separately",
+      "Two-year study with separate data by year - extract both years separately",
+      "Zn concentration data appears to be in Figure 3b, not tables - may require figure data extraction",
+      "Some treatments combine Zn with Fe - need to identify pure Zn treatments vs Zn+Fe combinations",
+      "WARNING: FIG-ONLY - Data is in figures, not tables",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "LSD (0.05) values provided at bottom of Tables 2, 3, 4 and statistical analysis mentions 'F-test protected LSD'",
+    "variance_confidence": "high",
+    "control_definition": "Control - no Zn or Fe application",
+    "treatment_definition": "Various Zn treatments: 1) Foliar 0.5% ZnSO4, 2) Soil 10 kg Zn ha-1, 3) Combined foliar 0.5% ZnSO4 + 1% FeSO4, 4) Combined soil 10 kg Zn ha-1 + 12 kg Fe ha-1",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "Fe-only treatments (foliar 1% FeSO4, soil 12 kg Fe ha-1) should NOT be extracted as these contain no Zn",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "Randomized complete block design (RCBD) under factorial was used with three replications",
+    "factorial_structure": "[\"Zn/Fe treatment\", \"year\"]",
+    "extraction_guidance": "PRIMARY OUTCOME (grain Zn concentration) is in Figure 3b only, not in tables. Extract Zn treatments vs control: 1) Foliar 0.5% ZnSO4 vs Control, 2) Soil 10 kg Zn ha-1 vs Control, 3) Combined foliar Zn+Fe vs Control, 4) Combined soil Zn+Fe vs Control. Extract both years separately (2016-17 and 2017-18). Do NOT extract Fe-only treatments. Figure shows individual year data points, not means across years. Use LSD values from tables as variance measure if available for figure data.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Biofortification with Zinc and Iron Improves the Grain Quality and Yield of Wheat Crop\",\n        \"species\": \"wheat (Triticum aestivum)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"This is a Zn+Fe biofortification study, not CO2 research - treatment/control definitions will be completely different\",\n        \"Multiple Zn application methods (soil vs foliar) and combinations with Fe - each needs separate extraction\",\n        \"Seven total treatments including control - extract each Zn treatment vs control separately\",\n        \"Two-year study with separate data by year - extract both years separately\",\n        \"Zn concentration data appears to be in Figure 3b, not tables - may require figure data extraction\",\n        \"Some treatments combine Zn with Fe - need to identify pure Zn treatments vs Zn+Fe combinations\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"LSD (0.05) values provided at bottom of Tables 2, 3, 4 and statistical analysis mentions 'F-test protected LSD'\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Control - no Zn or Fe application\",\n        \"treatment_definition\": \"Various Zn treatments: 1) Foliar 0.5% ZnSO4, 2) Soil 10 kg Zn ha-1, 3) Combined foliar 0.5% ZnSO4 + 1% FeSO4, 4) Combined soil 10 kg Zn ha-1 + 12 kg Fe ha-1\",\n        \"identification_method\": \"Control is clearly labeled as 'Control' in all tables, treatments specify Zn application method and rate\",\n        \"potential_confusion\": \"Fe-only treatments (foliar 1% FeSO4, soil 12 kg Fe ha-1) should NOT be extracted as these contain no Zn\"\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"Randomized complete block design (RCBD) under factorial was used with three replications\",\n        \"applies_to\": \"all observations\",\n        \"note\": \"n = 3 independent field plot re",
+    "tables_without_target_data": [
+      "Table 2",
+      "Table 3",
+      "Table 4"
+    ],
+    "table_descriptions": {
+      "Table 2": "Number of tillers, plant height, spike length",
+      "Table 3": "Number of spikelets per spike, grains per spike, 1000-grain weight",
+      "Table 4": "Biological yield, grain yield, harvest index"
+    },
+    "figures_with_data": [
+      "Figure 3b"
+    ],
+    "outcome_variables_detected": {
+      "Figure 3b": [
+        "Zn content (mg kg-1) in wheat grain"
+      ],
+      "Table 2": [
+        "Number of tillers",
+        "Plant height",
+        "Spike length"
+      ],
+      "Table 3": [
+        "Number of spikelets per spike",
+        "Number of grains per spike",
+        "1000-grain weight"
+      ],
+      "Table 4": [
+        "Biological yield",
+        "Grain yield",
+        "Harvest index"
+      ]
+    },
+    "extraction_method": "vision",
+    "extraction_method_reason": "Data primarily in figures - requires chart reading",
+    "challenge_hints": [
+      "Use vision API to read bar charts/line graphs",
+      "Look for figure captions that describe what data is shown",
+      "Check if supplementary materials have tabular data",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": true,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 0,
+  "gemini_obs": 0,
+  "matched_obs": 68,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 60.2,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar spray of 0.5% ZnSO4",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2016-2017",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Control mean from text. Treatment mean estimated from bar chart.",
+        "effect_pct": 46.5433300876339,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 61.33,
+        "control_mean": 43.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar spray of 0.5% ZnSO4",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2017-2018",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Treatment mean from text. Control mean estimated from bar chart.",
+        "effect_pct": 40.98850574712643,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 58.5,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2016-2017",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Means estimated from bar chart.",
+        "effect_pct": 42.40506329113924,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 60.1,
+        "control_mean": 43.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2017-2018",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Means estimated from bar chart.",
+        "effect_pct": 38.160919540229884,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 52.3,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2016-2017",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Means estimated from bar chart.",
+        "effect_pct": 27.312560856864653,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 54.2,
+        "control_mean": 43.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2017-2018",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Means estimated from bar chart.",
+        "effect_pct": 24.597701149425294,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 48.1,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2016-2017",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Means estimated from bar chart.",
+        "effect_pct": 17.088607594936718,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "claude_only",
+      "element": "Zn content",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn content",
+        "tissue": "grain",
+        "treatment_mean": 50.3,
+        "control_mean": 43.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+        "control_description": "Control",
+        "moderators": {
+          "year": "2017-2018",
+          "site": "Faisalabad, Pakistan"
+        },
+        "confidence": "medium",
+        "notes": "Means estimated from bar chart.",
+        "effect_pct": 15.63218390804597,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "difference": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 60.0,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar application of 0.5% ZnSO4",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2016-17"
+        },
+        "confidence": "medium",
+        "notes": "Value estimated from bar chart; Control value confirmed by text (41.08 mg kg-1)",
+        "effect_pct": 46.056475170399224,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 61.33,
+        "control_mean": 45.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar application of 0.5% ZnSO4",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2017-18"
+        },
+        "confidence": "high",
+        "notes": "Treatment value confirmed by text (61.33 mg kg-1); Control value estimated from chart",
+        "effect_pct": 36.288888888888884,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 50.0,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar application of 0.5% ZnSO4 and 1% FeSO4",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2016-17"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from bar chart",
+        "effect_pct": 21.71372930866602,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 52.0,
+        "control_mean": 45.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Foliar application of 0.5% ZnSO4 and 1% FeSO4",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2017-18"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from bar chart",
+        "effect_pct": 15.555555555555555,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 50.0,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil application of 10 kg Zn ha-1",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2016-17"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from bar chart",
+        "effect_pct": 21.71372930866602,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 52.0,
+        "control_mean": 45.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil application of 10 kg Zn ha-1",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2017-18"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from bar chart",
+        "effect_pct": 15.555555555555555,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 55.0,
+        "control_mean": 41.08,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil application of 10 kg Zn ha-1 and 12 kg Fe ha-1",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2016-17"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from bar chart",
+        "effect_pct": 33.88510223953263,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Zn content (mg kg-1) in wheat grain",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Zn content (mg kg-1) in wheat grain",
+        "tissue": "grain",
+        "treatment_mean": 57.0,
+        "control_mean": 45.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "mg kg-1",
+        "data_source": "Figure 3b",
+        "treatment_description": "Soil application of 10 kg Zn ha-1 and 12 kg Fe ha-1",
+        "control_description": "Control (no Zn or Fe application)",
+        "moderators": {
+          "year": "2017-18"
+        },
+        "confidence": "medium",
+        "notes": "Values estimated from bar chart",
+        "effect_pct": 26.666666666666668,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 359,
+      "control_mean": 334,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.48502994011976,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 344,
+      "control_mean": 322,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.832298136645963,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 377,
+      "control_mean": 334,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 12.874251497005988,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 364,
+      "control_mean": 322,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 13.043478260869565,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 371,
+      "control_mean": 334,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.077844311377245,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 358,
+      "control_mean": 322,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.180124223602485,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 378,
+      "control_mean": 334,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 13.17365269461078,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "treatment_mean": 365,
+      "control_mean": 322,
+      "treatment_variance": 3.3035,
+      "control_variance": 3.3035,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "m-2",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 13.354037267080745,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 100.9,
+      "control_mean": 98.8,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.1255060728745026,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 100.2,
+      "control_mean": 99.7,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.5015045135406219,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 101.0,
+      "control_mean": 98.8,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.2267206477732824,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 103.6,
+      "control_mean": 99.7,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.911735205616842,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 101.3,
+      "control_mean": 98.8,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.5303643724696356,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 101.5,
+      "control_mean": 99.7,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.8054162487462357,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 101.6,
+      "control_mean": 98.8,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.8340080971659893,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "treatment_mean": 104.3,
+      "control_mean": 99.7,
+      "treatment_variance": 2.16,
+      "control_variance": 2.16,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.613841524573716,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "treatment_mean": 10.5,
+      "control_mean": 10.1,
+      "treatment_variance": 0.502,
+      "control_variance": 0.502,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.960396039603964,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "treatment_mean": 10.4,
+      "control_mean": 10.0,
+      "treatment_variance": 0.502,
+      "control_variance": 0.502,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.0000000000000036,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "treatment_mean": 11.1,
+      "control_mean": 10.1,
+      "treatment_variance": 0.502,
+      "control_variance": 0.502,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.900990099009901,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "treatment_mean": 10.8,
+      "control_mean": 10.0,
+      "treatment_variance": 0.502,
+      "control_variance": 0.502,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.000000000000007,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "treatment_mean": 10.6,
+      "control_mean": 10.1,
+      "treatment_variance": 0.502,
+      "control_variance": 0.502,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.9504950495049505,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "treatment_mean": 10.2,
+      "control_mean": 10.0,
+      "treatment_variance": 0.502,
+      "control_variance": 0.502,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.9999999999999927,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "treatment_mean": 10.8,
+      "control_mean": 10.1,
+      "treatment_variance": 0.502,
+      "control_variance": 0.502,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 2",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.930693069306941,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "treatment_mean": 10.5,
+      "control_mean": 10.1,
+      "treatment_variance": 0.5622,
+      "control_variance": 0.5622,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 3.960396039603964,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "treatment_mean": 10.4,
+      "control_mean": 10.0,
+      "treatment_variance": 0.5622,
+      "control_variance": 0.5622,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.0000000000000036,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "treatment_mean": 11.1,
+      "control_mean": 10.1,
+      "treatment_variance": 0.5622,
+      "control_variance": 0.5622,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.900990099009901,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "treatment_mean": 10.8,
+      "control_mean": 10.0,
+      "treatment_variance": 0.5622,
+      "control_variance": 0.5622,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.000000000000007,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "treatment_mean": 10.6,
+      "control_mean": 10.1,
+      "treatment_variance": 0.5622,
+      "control_variance": 0.5622,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.9504950495049505,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "treatment_mean": 10.2,
+      "control_mean": 10.0,
+      "treatment_variance": 0.5622,
+      "control_variance": 0.5622,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 1.9999999999999927,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "treatment_mean": 10.8,
+      "control_mean": 10.1,
+      "treatment_variance": 0.5622,
+      "control_variance": 0.5622,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.930693069306941,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "treatment_mean": 47.0,
+      "control_mean": 43.0,
+      "treatment_variance": 1.0359,
+      "control_variance": 1.0359,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.30232558139535,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "treatment_mean": 47.3,
+      "control_mean": 42.3,
+      "treatment_variance": 1.0359,
+      "control_variance": 1.0359,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.82033096926714,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "treatment_mean": 49.3,
+      "control_mean": 43.0,
+      "treatment_variance": 1.0359,
+      "control_variance": 1.0359,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 14.651162790697667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "treatment_mean": 48.0,
+      "control_mean": 42.3,
+      "treatment_variance": 1.0359,
+      "control_variance": 1.0359,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 13.475177304964546,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "treatment_mean": 46.7,
+      "control_mean": 43.0,
+      "treatment_variance": 1.0359,
+      "control_variance": 1.0359,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 8.604651162790704,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "treatment_mean": 48.0,
+      "control_mean": 43.0,
+      "treatment_variance": 1.0359,
+      "control_variance": 1.0359,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.627906976744185,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 38.4,
+      "control_mean": 32.8,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.073170731707325,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 37.7,
+      "control_mean": 32.5,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 16.000000000000007,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 40.8,
+      "control_mean": 32.8,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 24.39024390243903,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 41.3,
+      "control_mean": 32.5,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 27.07692307692307,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 39.5,
+      "control_mean": 32.8,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.426829268292693,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 38.1,
+      "control_mean": 32.5,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.230769230769237,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 41.8,
+      "control_mean": 32.8,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 27.439024390243905,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "treatment_mean": 41.1,
+      "control_mean": 32.5,
+      "treatment_variance": 0.8602,
+      "control_variance": 0.8602,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 26.461538461538463,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 11.5,
+      "control_mean": 10.9,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.5045871559633,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 11.4,
+      "control_mean": 10.8,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.555555555555552,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 11.7,
+      "control_mean": 10.9,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.339449541284393,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 11.8,
+      "control_mean": 10.8,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.25925925925926,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 11.9,
+      "control_mean": 10.9,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.174311926605503,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 11.6,
+      "control_mean": 10.8,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 7.407407407407398,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 12.1,
+      "control_mean": 10.9,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.0091743119266,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "treatment_mean": 12.0,
+      "control_mean": 10.8,
+      "treatment_variance": 0.3761,
+      "control_variance": 0.3761,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.111111111111104,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3.77,
+      "control_mean": 3.2,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 17.812499999999996,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3.67,
+      "control_mean": 3.31,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.87613293051359,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 4.15,
+      "control_mean": 3.2,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 29.687500000000007,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3.99,
+      "control_mean": 3.31,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.543806646525685,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3.88,
+      "control_mean": 3.2,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 21.249999999999993,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3.82,
+      "control_mean": 3.31,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 15.407854984894254,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3.98,
+      "control_mean": 3.2,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 24.374999999999993,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "treatment_mean": 3.92,
+      "control_mean": 3.31,
+      "treatment_variance": 0.2724,
+      "control_variance": 0.2724,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "t ha-1",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 18.429003021148034,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 32.9,
+      "control_mean": 29.4,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 11.904761904761905,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 31.7,
+      "control_mean": 30.8,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.9220779220779174,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 35.5,
+      "control_mean": 29.4,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 20.7482993197279,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 33.7,
+      "control_mean": 30.8,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 9.415584415584423,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 32.6,
+      "control_mean": 29.4,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.884353741496609,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 32.9,
+      "control_mean": 30.8,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.81818181818181,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 33.0,
+      "control_mean": 29.4,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2016-2017",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 12.244897959183678,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "treatment_mean": 32.7,
+      "control_mean": 30.8,
+      "treatment_variance": 1.8247,
+      "control_variance": 1.8247,
+      "variance_type": "LSD",
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 4",
+      "treatment_description": "Soil supplementation of 10 kg of Zn ha-1 and 12 kg of Fe ha-1",
+      "control_description": "Control",
+      "moderators": {
+        "year": "2017-2018",
+        "site": "Faisalabad, Pakistan"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 6.168831168831176,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 4,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 72,
+    "final_count": 68
+  },
+  "verification_flags": [
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 359,
+        "control_mean": 334,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.9201949860724234,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.48502994011976
+      }
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 344,
+        "control_mean": 322,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.9603197674418605,
+            "note": "CV = 1.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 6.832298136645963
+      }
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 377,
+        "control_mean": 334,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.8762599469496022,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.874251497005988
+      }
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 364,
+        "control_mean": 322,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.907554945054945,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 13.043478260869565
+      }
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 371,
+        "control_mean": 334,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.8904312668463612,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.077844311377245
+      }
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 358,
+        "control_mean": 322,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.9227653631284918,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.180124223602485
+      }
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 378,
+        "control_mean": 334,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.8739417989417989,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 13.17365269461078
+      }
+    },
+    {
+      "element": "Number of tillers",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "cv"
+      ],
+      "details": {
+        "element": "Number of tillers",
+        "treatment_mean": 365,
+        "control_mean": 322,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.9050684931506849,
+            "note": "CV = 0.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 13.354037267080745
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 100.9,
+        "control_mean": 98.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.140733399405352,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 2.1255060728745026
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 100.2,
+        "control_mean": 99.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +0.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.155688622754491,
+            "note": "CV = 2.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 0.5015045135406219
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 101.0,
+        "control_mean": 98.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.1386138613861387,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 2.2267206477732824
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 103.6,
+        "control_mean": 99.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.084942084942085,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 3.911735205616842
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 101.3,
+        "control_mean": 98.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.1322803553800593,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 2.5303643724696356
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 101.5,
+        "control_mean": 99.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +1.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.12807881773399,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 1.8054162487462357
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 101.6,
+        "control_mean": 98.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.125984251968504,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 2.8340080971659893
+      }
+    },
+    {
+      "element": "Plant height",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Plant height",
+        "treatment_mean": 104.3,
+        "control_mean": 99.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.070949185043145,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 4.613841524573716
+      }
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Spike length",
+        "treatment_mean": 10.5,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.780952380952381,
+            "note": "CV = 4.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.4%"
+          }
+        },
+        "effect_pct": 3.960396039603964
+      }
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Spike length",
+        "treatment_mean": 10.4,
+        "control_mean": 10.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.826923076923077,
+            "note": "CV = 4.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.5%"
+          }
+        },
+        "effect_pct": 4.0000000000000036
+      }
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Spike length",
+        "treatment_mean": 11.1,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.5225225225225225,
+            "note": "CV = 4.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.2%"
+          }
+        },
+        "effect_pct": 9.900990099009901
+      }
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Spike length",
+        "treatment_mean": 10.8,
+        "control_mean": 10.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.648148148148148,
+            "note": "CV = 4.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.4%"
+          }
+        },
+        "effect_pct": 8.000000000000007
+      }
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Spike length",
+        "treatment_mean": 10.6,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.735849056603774,
+            "note": "CV = 4.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.4%"
+          }
+        },
+        "effect_pct": 4.9504950495049505
+      }
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Spike length",
+        "treatment_mean": 10.2,
+        "control_mean": 10.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.921568627450981,
+            "note": "CV = 4.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.6%"
+          }
+        },
+        "effect_pct": 1.9999999999999927
+      }
+    },
+    {
+      "element": "Spike length",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Spike length",
+        "treatment_mean": 10.8,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.648148148148148,
+            "note": "CV = 4.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=8.3%"
+          }
+        },
+        "effect_pct": 6.930693069306941
+      }
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of spikelets per spike",
+        "treatment_mean": 10.5,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.354285714285715,
+            "note": "CV = 5.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 3.960396039603964
+      }
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of spikelets per spike",
+        "treatment_mean": 10.4,
+        "control_mean": 10.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +4.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.405769230769231,
+            "note": "CV = 5.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.5%"
+          }
+        },
+        "effect_pct": 4.0000000000000036
+      }
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of spikelets per spike",
+        "treatment_mean": 11.1,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.064864864864865,
+            "note": "CV = 5.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": 9.900990099009901
+      }
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of spikelets per spike",
+        "treatment_mean": 10.8,
+        "control_mean": 10.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.205555555555556,
+            "note": "CV = 5.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": 8.000000000000007
+      }
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of spikelets per spike",
+        "treatment_mean": 10.6,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.30377358490566,
+            "note": "CV = 5.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": 4.9504950495049505
+      }
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of spikelets per spike",
+        "treatment_mean": 10.2,
+        "control_mean": 10.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.511764705882354,
+            "note": "CV = 5.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.6%"
+          }
+        },
+        "effect_pct": 1.9999999999999927
+      }
+    },
+    {
+      "element": "Number of spikelets per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Number of spikelets per spike",
+        "treatment_mean": 10.8,
+        "control_mean": 10.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.205555555555556,
+            "note": "CV = 5.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.4%"
+          }
+        },
+        "effect_pct": 6.930693069306941
+      }
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Number of grains per spike",
+        "treatment_mean": 47.3,
+        "control_mean": 42.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.190063424947146,
+            "note": "CV = 2.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 11.82033096926714
+      }
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Number of grains per spike",
+        "treatment_mean": 49.3,
+        "control_mean": 43.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.101217038539554,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 14.651162790697667
+      }
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Number of grains per spike",
+        "treatment_mean": 48.0,
+        "control_mean": 42.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.158125,
+            "note": "CV = 2.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 13.475177304964546
+      }
+    },
+    {
+      "element": "Number of grains per spike",
+      "tissue": "spike",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Number of grains per spike",
+        "treatment_mean": 46.7,
+        "control_mean": 43.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +8.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.2182012847965735,
+            "note": "CV = 2.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 8.604651162790704
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 38.4,
+        "control_mean": 32.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.240104166666667,
+            "note": "CV = 2.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.073170731707325
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 37.7,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +16.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.281697612732095,
+            "note": "CV = 2.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 16.000000000000007
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 40.8,
+        "control_mean": 32.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +24.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.1083333333333334,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 24.39024390243903
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 41.3,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.0828087167070217,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 27.07692307692307
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 39.5,
+        "control_mean": 32.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.177721518987342,
+            "note": "CV = 2.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 20.426829268292693
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 38.1,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.257742782152231,
+            "note": "CV = 2.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.230769230769237
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 41.8,
+        "control_mean": 32.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.057894736842105,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 27.439024390243905
+      }
+    },
+    {
+      "element": "1000-grain weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight",
+        "treatment_mean": 41.1,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +26.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 2.0929440389294403,
+            "note": "CV = 2.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 26.461538461538463
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 11.5,
+        "control_mean": 10.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.270434782608696,
+            "note": "CV = 3.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 5.5045871559633
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 11.4,
+        "control_mean": 10.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.299122807017544,
+            "note": "CV = 3.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 5.555555555555552
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 11.7,
+        "control_mean": 10.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.214529914529914,
+            "note": "CV = 3.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 7.339449541284393
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 11.8,
+        "control_mean": 10.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.18728813559322,
+            "note": "CV = 3.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 9.25925925925926
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 11.9,
+        "control_mean": 10.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.160504201680672,
+            "note": "CV = 3.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 9.174311926605503
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 11.6,
+        "control_mean": 10.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.242241379310345,
+            "note": "CV = 3.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 7.407407407407398
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 12.1,
+        "control_mean": 10.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.108264462809917,
+            "note": "CV = 3.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 11.0091743119266
+      }
+    },
+    {
+      "element": "Biological yield",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Biological yield",
+        "treatment_mean": 12.0,
+        "control_mean": 10.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.1341666666666663,
+            "note": "CV = 3.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 11.111111111111104
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 3.77,
+        "control_mean": 3.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.225464190981431,
+            "note": "CV = 7.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.8%"
+          }
+        },
+        "effect_pct": 17.812499999999996
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 3.67,
+        "control_mean": 3.31,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.422343324250681,
+            "note": "CV = 7.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.8%"
+          }
+        },
+        "effect_pct": 10.87613293051359
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 4.15,
+        "control_mean": 3.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +29.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.563855421686745,
+            "note": "CV = 6.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.4%"
+          }
+        },
+        "effect_pct": 29.687500000000007
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 3.99,
+        "control_mean": 3.31,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.827067669172932,
+            "note": "CV = 6.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.5%"
+          }
+        },
+        "effect_pct": 20.543806646525685
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 3.88,
+        "control_mean": 3.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.020618556701031,
+            "note": "CV = 7.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.7%"
+          }
+        },
+        "effect_pct": 21.249999999999993
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 3.82,
+        "control_mean": 3.31,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.130890052356021,
+            "note": "CV = 7.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": 15.407854984894254
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 3.98,
+        "control_mean": 3.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +24.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.844221105527637,
+            "note": "CV = 6.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.6%"
+          }
+        },
+        "effect_pct": 24.374999999999993
+      }
+    },
+    {
+      "element": "Grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain yield",
+        "treatment_mean": 3.92,
+        "control_mean": 3.31,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.948979591836735,
+            "note": "CV = 6.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=7.5%"
+          }
+        },
+        "effect_pct": 18.429003021148034
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 32.9,
+        "control_mean": 29.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +11.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.546200607902736,
+            "note": "CV = 5.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 11.904761904761905
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 31.7,
+        "control_mean": 30.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +2.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.75615141955836,
+            "note": "CV = 5.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 2.9220779220779174
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 35.5,
+        "control_mean": 29.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.140000000000001,
+            "note": "CV = 5.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.6%"
+          }
+        },
+        "effect_pct": 20.7482993197279
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 33.7,
+        "control_mean": 30.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.41454005934718,
+            "note": "CV = 5.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 9.415584415584423
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 32.6,
+        "control_mean": 29.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.59723926380368,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 10.884353741496609
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 32.9,
+        "control_mean": 30.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.546200607902736,
+            "note": "CV = 5.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 6.81818181818181
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 33.0,
+        "control_mean": 29.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.529393939393939,
+            "note": "CV = 5.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.8%"
+          }
+        },
+        "effect_pct": 12.244897959183678
+      }
+    },
+    {
+      "element": "Harvest index",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Harvest index",
+        "treatment_mean": 32.7,
+        "control_mean": 30.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.580122324159021,
+            "note": "CV = 5.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.7%"
+          }
+        },
+        "effect_pct": 6.168831168831176
+      }
+    }
+  ]
+}

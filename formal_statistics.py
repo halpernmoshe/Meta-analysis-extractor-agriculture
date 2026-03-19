@@ -30,8 +30,14 @@ import numpy as np
 from scipy import stats
 
 BASE_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor")
-RESULTS_DIR = BASE_DIR / "output" / "loladze_combined_51"
-OUT_DIR = BASE_DIR / "output" / "formal_stats"
+
+# Allow --results-dir argument
+import argparse as _argparse
+_parser = _argparse.ArgumentParser(add_help=False)
+_parser.add_argument('--results-dir', default=None)
+_args, _ = _parser.parse_known_args()
+RESULTS_DIR = Path(_args.results_dir) if _args.results_dir else BASE_DIR / "output" / "loladze_combined_51"
+OUT_DIR = RESULTS_DIR / "formal_stats"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Import the validation logic

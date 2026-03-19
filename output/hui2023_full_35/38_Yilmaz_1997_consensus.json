@@ -1,0 +1,1632 @@
+{
+  "paper_id": "38_Yilmaz_1997",
+  "recon": {
+    "paper_id": "38_Yilmaz_1997",
+    "warnings": [
+      "This is a Zn fertilizer study with multiple application methods (soil, seed, leaf, combinations) - each method is a separate treatment",
+      "Control is 'no Zn application', not untreated plants",
+      "Multiple cultivars tested - each cultivar \u00d7 treatment combination is separate observation",
+      "Seed application method had minimal effect on Zn concentration but high yield response - careful extraction needed",
+      "Table 4 has formatting issues that could cause extraction errors - data appears compressed/malformed",
+      "LSD values provided - use as variance measure",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "LSD",
+    "variance_source": "ans and treatments were compared by the least significant differences (LSD)at\\n\\n\\n#",
+    "variance_confidence": "medium",
+    "control_definition": "Control (no Zn application)",
+    "treatment_definition": "Six different Zn application methods: soil (23 kg Zn ha-1), seed (ZnSO4 solution spray on seeds), leaf (0.4% ZnSO4 foliar spray), soil+leaf (combination), seed+leaf (combination)",
+    "tables_with_target_data": [
+      "Table 4"
+    ],
+    "potential_tc_confusion": "Seed treatment showed minimal effect on Zn concentration despite yield increases - ensure this is captured accurately",
+    "experimental_design": "factorial",
+    "sample_size_found": 4,
+    "sample_size_source": "Experimental design was a factorial randomized complete-block design with four replications",
+    "factorial_structure": "[\"Zn application method\", \"cultivar\"]",
+    "extraction_guidance": "Extract grain Zn concentration data from Table 4 only. Control is 'no Zn application' row. Each Zn application method (soil, seed, leaf, soil+leaf, seed+leaf) vs control for each cultivar is a separate comparison. Use LSD values as variance measure. Table 4 formatting appears corrupted - carefully parse the actual data values for each cultivar and treatment combination. Focus on grain Zn concentration columns, not shoot concentration.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effect of Different Zinc Application Methods on Grain Yield and Zinc Concentration in Wheat Cultivars Grown on Zinc-Deficient Calcareous Soils\",\n        \"species\": \"Triticum aestivum (bread wheat) and Triticum durum (durum wheat)\",\n        \"experimental_system\": \"field\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"N/A\"}\n    },\n    \"warnings\": [\n        \"This is a Zn fertilizer study with multiple application methods (soil, seed, leaf, combinations) - each method is a separate treatment\",\n        \"Control is 'no Zn application', not untreated plants\",\n        \"Multiple cultivars tested - each cultivar \u00d7 treatment combination is separate observation\",\n        \"Seed application method had minimal effect on Zn concentration but high yield response - careful extraction needed\",\n        \"Table 4 has formatting issues that could cause extraction errors - data appears compressed/malformed\",\n        \"LSD values provided - use as variance measure\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"LSD\",\n        \"source\": \"LSD (5%) values provided in all tables, e.g., 'LSD (5%) 15 14 15 16 6 9 4 6' in Table 4\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Control (no Zn application)\",\n        \"treatment_definition\": \"Six different Zn application methods: soil (23 kg Zn ha-1), seed (ZnSO4 solution spray on seeds), leaf (0.4% ZnSO4 foliar spray), soil+leaf (combination), seed+leaf (combination)\",\n        \"identification_method\": \"Control is labeled as 'Control' in tables; treatments labeled as 'Soil', 'Seed', 'Leaf', 'Soil+Leaf', 'Seed+Leaf'\",\n        \"potential_confusion\": \"Seed treatment showed minimal effect on Zn concentration despite yield increases - ensure this is captured accurately\"\n    },\n    \"sample_size\": {\n        \"n\": 4,\n        \"source\": \"Experimental design was a factorial randomized complete-block design with four replications\",\n        \"applies_to\"",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2",
+      "Table 3"
+    ],
+    "table_descriptions": {
+      "Table 1": "Grain yield (kg ha-1) by Zn application method and cultivar",
+      "Table 2": "Biomass (total dry weight of above-ground parts) by Zn application method and cultivar",
+      "Table 3": "Yield components (spike number, grain number per spike, thousand kernel weight) averaged across cultivars",
+      "Table 4": "Zn concentrations in whole shoots and mature grains by Zn application method and cultivar"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "grain yield"
+      ],
+      "Table 2": [
+        "biomass",
+        "total dry weight"
+      ],
+      "Table 3": [
+        "spike number per m2",
+        "grain number per spike",
+        "thousand kernel weight"
+      ],
+      "Table 4": [
+        "Zn concentration in whole shoots",
+        "Zn concentration in grain"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 20,
+  "kimi_obs": 0,
+  "gemini_obs": 23,
+  "matched_obs": 20,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Kimi extracted 0 obs, Claude extracted 20",
+  "disagreements": [
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentration in grain",
+        "tissue": "grain",
+        "treatment_mean": 17,
+        "control_mean": 8,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "Soil application (23 kg Zn ha-1 as ZnSO4-7H2O)",
+        "control_description": "Control (no Zn application)",
+        "moderators": {
+          "cultivar": "Bezostaja-1",
+          "application_method": "soil"
+        },
+        "confidence": "medium",
+        "notes": "Table 4 formatting appears corrupted but data extracted carefully",
+        "effect_pct": 112.5,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentration in grain",
+        "tissue": "grain",
+        "treatment_mean": 1,
+        "control_mean": 9,
+        "treatment_variance": 6,
+        "control_variance": 6,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "Seed application (1.0L of 30% ZnSO4-7H2O solution sprayed on 10kg seed)",
+        "control_description": "Control (no Zn application)",
+        "moderators": {
+          "cultivar": "Gerek-79",
+          "application_method": "seed"
+        },
+        "confidence": "low",
+        "notes": "Value appears corrupted in OCR, expected minimal effect on Zn concentration from seed treatment as mentioned in text",
+        "effect_pct": -88.88888888888889,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentration in grain",
+        "tissue": "grain",
+        "treatment_mean": 31,
+        "control_mean": 8,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "Leaf application (0.4% ZnSO4-7H2O solution, 440g Zn ha-1)",
+        "control_description": "Control (no Zn application)",
+        "moderators": {
+          "cultivar": "Bezostaja-1",
+          "application_method": "leaf"
+        },
+        "confidence": "medium",
+        "notes": "High increase consistent with text mentioning leaf application effectiveness",
+        "effect_pct": 287.5,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentration in grain",
+        "tissue": "grain",
+        "treatment_mean": 34,
+        "control_mean": 8,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "Soil+Leaf application (combination of soil and foliar treatments)",
+        "control_description": "Control (no Zn application)",
+        "moderators": {
+          "cultivar": "Bezostaja-1",
+          "application_method": "soil+leaf"
+        },
+        "confidence": "medium",
+        "notes": "Highest effect treatment as mentioned in text",
+        "effect_pct": 325.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "claude": {
+        "element": "Zn concentration in grain",
+        "tissue": "grain",
+        "treatment_mean": 31,
+        "control_mean": 8,
+        "treatment_variance": 4,
+        "control_variance": 4,
+        "variance_type": "LSD",
+        "n": 4,
+        "unit": "mg/kg",
+        "data_source": "Table 4",
+        "treatment_description": "Seed+Leaf application (combination of seed and foliar treatments)",
+        "control_description": "Control (no Zn application)",
+        "moderators": {
+          "cultivar": "Bezostaja-1",
+          "application_method": "seed+leaf"
+        },
+        "confidence": "medium",
+        "notes": "Combination treatment with high effectiveness",
+        "effect_pct": 287.5,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 17,
+      "control_mean": 9,
+      "treatment_variance": 6,
+      "control_variance": 6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Soil application (23 kg Zn ha-1 as ZnSO4-7H2O)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Gerek-79",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 88.88888888888889,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 17,
+      "control_mean": 10,
+      "treatment_variance": 9,
+      "control_variance": 9,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Soil application (23 kg Zn ha-1 as ZnSO4-7H2O)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Dagdas-94",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 70.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 18,
+      "control_mean": 10,
+      "treatment_variance": 6,
+      "control_variance": 6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Soil application (23 kg Zn ha-1 as ZnSO4-7H2O)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Kunduru-1149",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "soil"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 80.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 11,
+      "control_mean": 10,
+      "treatment_variance": 9,
+      "control_variance": 9,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Seed application (1.0L of 30% ZnSO4-7H2O solution sprayed on 10kg seed)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Dagdas-94",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "seed"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 10.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 10,
+      "control_mean": 8,
+      "treatment_variance": 4,
+      "control_variance": 4,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Seed application (1.0L of 30% ZnSO4-7H2O solution sprayed on 10kg seed)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Bezostaja-1",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "seed"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=6.2%) [Claude+Gemini agree]",
+      "effect_pct": 25.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 30,
+      "control_mean": 9,
+      "treatment_variance": 6,
+      "control_variance": 6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Leaf application (0.4% ZnSO4-7H2O solution, 440g Zn ha-1)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Gerek-79",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.3%) [Claude+Gemini agree]",
+      "effect_pct": 233.33333333333334,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 28,
+      "control_mean": 10,
+      "treatment_variance": 9,
+      "control_variance": 9,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Leaf application (0.4% ZnSO4-7H2O solution, 440g Zn ha-1)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Dagdas-94",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.8%) [Claude+Gemini agree]",
+      "effect_pct": 180.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 27,
+      "control_mean": 10,
+      "treatment_variance": 6,
+      "control_variance": 6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Leaf application (0.4% ZnSO4-7H2O solution, 440g Zn ha-1)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Kunduru-1149",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.6%) [Claude+Gemini agree]",
+      "effect_pct": 170.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 34,
+      "control_mean": 9,
+      "treatment_variance": 6,
+      "control_variance": 6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Soil+Leaf application (combination of soil and foliar treatments)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Gerek-79",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "soil+leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.6%) [Claude+Gemini agree]",
+      "effect_pct": 277.77777777777777,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 38,
+      "control_mean": 10,
+      "treatment_variance": 9,
+      "control_variance": 9,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Soil+Leaf application (combination of soil and foliar treatments)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Dagdas-94",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "soil+leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.9%) [Claude+Gemini agree]",
+      "effect_pct": 280.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 35,
+      "control_mean": 10,
+      "treatment_variance": 6,
+      "control_variance": 6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Soil+Leaf application (combination of soil and foliar treatments)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Kunduru-1149",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "soil+leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=1.4%) [Claude+Gemini agree]",
+      "effect_pct": 250.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 25,
+      "control_mean": 10,
+      "treatment_variance": 9,
+      "control_variance": 9,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Seed+Leaf application (combination of seed and foliar treatments)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Dagdas-94",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "seed+leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=5.0%) [Claude+Gemini agree]",
+      "effect_pct": 150.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "treatment_mean": 29,
+      "control_mean": 10,
+      "treatment_variance": 6,
+      "control_variance": 6,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Seed+Leaf application (combination of seed and foliar treatments)",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Kunduru-1149",
+        "site": "Konya, Turkey",
+        "year": "1994-1995",
+        "application_method": "seed+leaf"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=3.4%) [Claude+Gemini agree]",
+      "effect_pct": 190.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn concentration in whole shoots",
+      "tissue": "shoot",
+      "treatment_mean": 21,
+      "control_mean": 11,
+      "treatment_variance": 15,
+      "control_variance": 15,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "soil application",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Gerek-79",
+        "year": "1994-1995",
+        "site": "Konya, Turkey"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 90.9090909090909,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "treatment_mean": 2700,
+      "control_mean": 738,
+      "treatment_variance": 454,
+      "control_variance": 454,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 1",
+      "treatment_description": "soil application",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Gerek-79",
+        "year": "1994-1995",
+        "site": "Konya, Turkey"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 265.8536585365854,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "biomass",
+      "tissue": "whole plant",
+      "treatment_mean": 8037,
+      "control_mean": 3762,
+      "treatment_variance": 1290,
+      "control_variance": 1290,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 2",
+      "treatment_description": "soil application",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Gerek-79",
+        "year": "1994-1995",
+        "site": "Konya, Turkey"
+      },
+      "confidence": "high",
+      "notes": "Biomass defined as total dry weight of above-ground parts. [from vision]",
+      "effect_pct": 113.63636363636364,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "spike number per m2",
+      "tissue": "whole plant",
+      "treatment_mean": 364,
+      "control_mean": 201,
+      "treatment_variance": 67,
+      "control_variance": 67,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "per m2",
+      "data_source": "Table 3",
+      "treatment_description": "soil application",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Mean of 4 cultivars",
+        "year": "1994-1995",
+        "site": "Konya, Turkey"
+      },
+      "confidence": "high",
+      "notes": "Values in Table 3 are averages across four wheat genotypes. [from vision]",
+      "effect_pct": 81.09452736318407,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "grain number per spike",
+      "tissue": "grain",
+      "treatment_mean": 27,
+      "control_mean": 17,
+      "treatment_variance": 3,
+      "control_variance": 3,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "per spike",
+      "data_source": "Table 3",
+      "treatment_description": "soil application",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Mean of 4 cultivars",
+        "year": "1994-1995",
+        "site": "Konya, Turkey"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 58.82352941176471,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "thousand kernel weight",
+      "tissue": "grain",
+      "treatment_mean": 33,
+      "control_mean": 28,
+      "treatment_variance": 2,
+      "control_variance": 2,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "soil application",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Mean of 4 cultivars",
+        "year": "1994-1995",
+        "site": "Konya, Turkey"
+      },
+      "confidence": "high",
+      "notes": "[from vision]",
+      "effect_pct": 17.857142857142858,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "total dry weight",
+      "tissue": "whole plant",
+      "treatment_mean": 8037,
+      "control_mean": 3762,
+      "treatment_variance": 1290,
+      "control_variance": 1290,
+      "variance_type": "LSD",
+      "n": 4,
+      "unit": "kg ha-1",
+      "data_source": "Table 2",
+      "treatment_description": "soil application",
+      "control_description": "Control (no Zn application)",
+      "moderators": {
+        "cultivar": "Gerek-79",
+        "year": "1994-1995",
+        "site": "Konya, Turkey"
+      },
+      "confidence": "high",
+      "notes": "Synonymous with biomass in this paper. [from vision]",
+      "effect_pct": 113.63636363636364,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 20,
+    "final_count": 20
+  },
+  "verification_flags": [
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 17,
+        "control_mean": 9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +88.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 35.294117647058826,
+            "note": "CV = 35.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=46.2%"
+          }
+        },
+        "effect_pct": 88.88888888888889
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 18,
+        "control_mean": 10,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +80.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 33.33333333333333,
+            "note": "CV = 33.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=42.9%"
+          }
+        },
+        "effect_pct": 80.0
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 10,
+        "control_mean": 8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +25.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 40.0,
+            "note": "CV = 40.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=44.4%"
+          }
+        },
+        "effect_pct": 25.0
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 30,
+        "control_mean": 9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +233.3%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +233.3% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 20.0,
+            "note": "CV = 20.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=30.8%"
+          }
+        },
+        "effect_pct": 233.33333333333334
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 28,
+        "control_mean": 10,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +180.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +180.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 32.142857142857146,
+            "note": "CV = 32.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=47.4%"
+          }
+        },
+        "effect_pct": 180.0
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 27,
+        "control_mean": 10,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +170.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +170.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 22.22222222222222,
+            "note": "CV = 22.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=32.4%"
+          }
+        },
+        "effect_pct": 170.0
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 34,
+        "control_mean": 9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +277.8%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +277.8% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.647058823529413,
+            "note": "CV = 17.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=27.9%"
+          }
+        },
+        "effect_pct": 277.77777777777777
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 38,
+        "control_mean": 10,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +280.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +280.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 23.684210526315788,
+            "note": "CV = 23.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=37.5%"
+          }
+        },
+        "effect_pct": 280.0
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 35,
+        "control_mean": 10,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +250.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +250.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.142857142857142,
+            "note": "CV = 17.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=26.7%"
+          }
+        },
+        "effect_pct": 250.0
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 25,
+        "control_mean": 10,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +150.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +150.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 36.0,
+            "note": "CV = 36.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          }
+        },
+        "effect_pct": 150.0
+      }
+    },
+    {
+      "element": "Zn concentration in grain",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn concentration in grain",
+        "treatment_mean": 29,
+        "control_mean": 10,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +190.0%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +190.0% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 20.689655172413794,
+            "note": "CV = 20.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=30.8%"
+          }
+        },
+        "effect_pct": 190.0
+      }
+    },
+    {
+      "element": "grain yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain yield",
+        "treatment_mean": 2700,
+        "control_mean": 738,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +265.9%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +265.9% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.814814814814817,
+            "note": "CV = 16.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=26.4%"
+          }
+        },
+        "effect_pct": 265.8536585365854
+      }
+    },
+    {
+      "element": "biomass",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "biomass",
+        "treatment_mean": 8037,
+        "control_mean": 3762,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +113.6%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +113.6% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.05076521089959,
+            "note": "CV = 16.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=21.9%"
+          }
+        },
+        "effect_pct": 113.63636363636364
+      }
+    },
+    {
+      "element": "spike number per m2",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "spike number per m2",
+        "treatment_mean": 364,
+        "control_mean": 201,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +81.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 18.40659340659341,
+            "note": "CV = 18.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=23.7%"
+          }
+        },
+        "effect_pct": 81.09452736318407
+      }
+    },
+    {
+      "element": "grain number per spike",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "grain number per spike",
+        "treatment_mean": 27,
+        "control_mean": 17,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +58.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 11.11111111111111,
+            "note": "CV = 11.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.6%"
+          }
+        },
+        "effect_pct": 58.82352941176471
+      }
+    },
+    {
+      "element": "thousand kernel weight",
+      "tissue": "grain",
+      "failed_checks": [
+        "variance_type"
+      ],
+      "details": {
+        "element": "thousand kernel weight",
+        "treatment_mean": 33,
+        "control_mean": 28,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 6.0606060606060606,
+            "note": "CV = 6.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.6%"
+          }
+        },
+        "effect_pct": 17.857142857142858
+      }
+    },
+    {
+      "element": "total dry weight",
+      "tissue": "whole plant",
+      "failed_checks": [
+        "magnitude",
+        "variance_type"
+      ],
+      "details": {
+        "element": "total dry weight",
+        "treatment_mean": 8037,
+        "control_mean": 3762,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +113.6%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +113.6% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.05076521089959,
+            "note": "CV = 16.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 4,
+            "note": "n=4"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "LSD",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=21.9%"
+          }
+        },
+        "effect_pct": 113.63636363636364
+      }
+    }
+  ]
+}

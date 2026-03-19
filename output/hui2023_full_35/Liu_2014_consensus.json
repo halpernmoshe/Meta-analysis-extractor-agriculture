@@ -1,0 +1,351 @@
+{
+  "paper_id": "Liu_2014",
+  "recon": {
+    "paper_id": "Liu_2014",
+    "warnings": [
+      "This paper uses barley instead of wheat - verify if barley studies are included in the wheat meta-analysis",
+      "Control is clearly defined as 'low Zn treatment' with basic nutrients only",
+      "Multiple Zn rates are used (medium and high) - extract both vs control separately",
+      "Combined soil + foliar application method - matches meta-analysis criteria",
+      "Standard error is reported for grain Zn concentrations",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "Table 1 shows 'St. Error' values for each treatment group: Low Zn (4.4), Medium Zn (12.4), High Zn (44.9)",
+    "variance_confidence": "high",
+    "control_definition": "Low Zn treatment: basic nutrient solution without additional ZnSO4.7H2O, foliar spray with water only",
+    "treatment_definition": "Medium Zn: basic nutrients + 0.25mM ZnSO4.7H2O in soil + 1mM ZnSO4.7H2O foliar; High Zn: basic nutrients + 1mM ZnSO4.7H2O in soil + 10mM ZnSO4.7H2O foliar",
+    "tables_with_target_data": [
+      "Table 1"
+    ],
+    "potential_tc_confusion": null,
+    "experimental_design": "simple",
+    "sample_size_found": "varies by treatment",
+    "sample_size_source": "Table 1 shows individual plant IDs: Low Zn (n=6), Medium Zn (n=9), High Zn (n=10)",
+    "factorial_structure": "[\"Zn fertilization level\"]",
+    "extraction_guidance": "Extract grain Zn concentration data from Table 1. Control = Low Zn treatment (65.0 \u00b1 4.4 mg/g, n=6). Extract both Medium Zn (151.1 \u00b1 12.4 mg/g, n=9) and High Zn (466.4 \u00b1 44.9 mg/g, n=10) as separate treatment comparisons against the Low Zn control. Note: values are in mg/g which equals mg/kg. This is a soil+foliar combined application method.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"Effects of Zn Fertilization on Hordein Transcripts at Early Developmental Stage of Barley Grain and Correlation with Increased Zn Concentration in the Mature Grain\",\n        \"species\": \"Hordeum vulgare (barley)\",\n        \"experimental_system\": \"greenhouse\",\n        \"co2_levels\": {\"control\": \"ambient\", \"elevated\": \"n/a\"}\n    },\n    \"warnings\": [\n        \"This paper uses barley instead of wheat - verify if barley studies are included in the wheat meta-analysis\",\n        \"Control is clearly defined as 'low Zn treatment' with basic nutrients only\",\n        \"Multiple Zn rates are used (medium and high) - extract both vs control separately\",\n        \"Combined soil + foliar application method - matches meta-analysis criteria\",\n        \"Standard error is reported for grain Zn concentrations\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"Table 1 shows 'St. Error' values for each treatment group: Low Zn (4.4), Medium Zn (12.4), High Zn (44.9)\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Low Zn treatment: basic nutrient solution without additional ZnSO4.7H2O, foliar spray with water only\",\n        \"treatment_definition\": \"Medium Zn: basic nutrients + 0.25mM ZnSO4.7H2O in soil + 1mM ZnSO4.7H2O foliar; High Zn: basic nutrients + 1mM ZnSO4.7H2O in soil + 10mM ZnSO4.7H2O foliar\",\n        \"identification_method\": \"Table 1 clearly labels treatments as 'Low Zn treated plants', 'Medium Zn treated plants', 'High Zn treated plants'\",\n        \"potential_confusion\": null\n    },\n    \"sample_size\": {\n        \"n\": \"varies by treatment\",\n        \"source\": \"Table 1 shows individual plant IDs: Low Zn (n=6), Medium Zn (n=9), High Zn (n=10)\",\n        \"applies_to\": \"grain Zn concentration measurements\",\n        \"note\": \"Each plant represents one biological replicate grown in individual pots\"\n    },\n    \"data_locations\": {\n        \"tables_with_target_data\": [\"Table 1\"]",
+    "tables_without_target_data": [
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Grain Zn concentration (mg/g) from matured barley grain measured by ICP-OES, with individual biological replicates and averages/standard errors for each Zn treatment",
+      "Table 2": "Linear correlation coefficients between hordein transcripts/proteins and grain Zn concentration - not primary outcome data"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 1": [
+        "Grain Zn concentration (mg/g)"
+      ],
+      "Table 2": [
+        "Correlation coefficient (r)",
+        "Degrees of freedom (df)",
+        "Two tailed P-value"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 2,
+  "kimi_obs": 2,
+  "gemini_obs": 2,
+  "matched_obs": 3,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Low consensus: 0/2 (0%) \u2014 Claude=2, Kimi=2",
+  "disagreements": [
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain Zn concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain Zn concentration",
+        "tissue": "grain",
+        "treatment_mean": 151.1,
+        "control_mean": 65.0,
+        "treatment_variance": 12.4,
+        "control_variance": 4.4,
+        "variance_type": "SE",
+        "n": 9,
+        "unit": "mg/kg",
+        "data_source": "Table 1",
+        "treatment_description": "Medium Zn fertilization: soil application of 0.25mM ZnSO4.7H2O plus foliar spray of 1mM ZnSO4.7H2O",
+        "control_description": "Low Zn treatment: basic nutrient solution without additional Zn, foliar spray with water only",
+        "moderators": {
+          "cultivar": "Golden Promise",
+          "Zn_rate": "medium",
+          "application_method": "soil + foliar",
+          "control_n": 6
+        },
+        "confidence": "high",
+        "notes": "Unit in paper reported as mg/g (likely typo for \u00b5g/g or mg/kg). Values extracted as mg/kg for meta-analysis consistency. Control group (Low Zn) has n=6.",
+        "effect_pct": 132.46153846153845,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Grain Zn concentration",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain Zn concentration",
+        "tissue": "grain",
+        "treatment_mean": 466.4,
+        "control_mean": 65.0,
+        "treatment_variance": 44.9,
+        "control_variance": 4.4,
+        "variance_type": "SE",
+        "n": 10,
+        "unit": "mg/kg",
+        "data_source": "Table 1",
+        "treatment_description": "High Zn fertilization: soil application of 1mM ZnSO4.7H2O plus foliar spray of 10mM ZnSO4.7H2O",
+        "control_description": "Low Zn treatment: basic nutrient solution without additional Zn, foliar spray with water only",
+        "moderators": {
+          "cultivar": "Golden Promise",
+          "Zn_rate": "high",
+          "application_method": "soil + foliar",
+          "control_n": 6
+        },
+        "confidence": "high",
+        "notes": "Unit in paper reported as mg/g (likely typo for \u00b5g/g or mg/kg). Values extracted as mg/kg for meta-analysis consistency. Control group (Low Zn) has n=6.",
+        "effect_pct": 617.5384615384615,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Grain Zn concentration (mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 151.1,
+      "control_mean": 65.0,
+      "treatment_variance": 12.4,
+      "control_variance": 4.4,
+      "variance_type": "SE",
+      "n": "9 treatment, 6 control",
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Medium Zn: basic nutrients + 0.25mM ZnSO4.7H2O in soil + 1mM ZnSO4.7H2O foliar",
+      "control_description": "Low Zn: basic nutrient solution without additional ZnSO4.7H2O, foliar spray with water only",
+      "moderators": {
+        "cultivar": "Golden Promise",
+        "year": 2014,
+        "site": "Slagelse, Denmark (Greenhouse)",
+        "application_method": "soil+foliar",
+        "zn_rate": "medium"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 132.46153846153845,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain Zn concentration (mg/g)",
+      "tissue": "grain",
+      "treatment_mean": 466.4,
+      "control_mean": 65.0,
+      "treatment_variance": 44.9,
+      "control_variance": 4.4,
+      "variance_type": "SE",
+      "n": "10 treatment, 6 control",
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "High Zn: basic nutrients + 1mM ZnSO4.7H2O in soil + 10mM ZnSO4.7H2O foliar",
+      "control_description": "Low Zn: basic nutrient solution without additional ZnSO4.7H2O, foliar spray with water only",
+      "moderators": {
+        "cultivar": "Golden Promise",
+        "year": 2014,
+        "site": "Slagelse, Denmark (Greenhouse)",
+        "application_method": "soil+foliar",
+        "zn_rate": "high"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Claude+Gemini agree]",
+      "effect_pct": 617.5384615384615,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain Zn concentration",
+      "tissue": "grain",
+      "treatment_mean": 151.1,
+      "control_mean": 65.0,
+      "treatment_variance": 12.4,
+      "control_variance": 4.4,
+      "variance_type": "SE",
+      "n": 9,
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Medium Zn: basic nutrients + 0.25mM ZnSO4.7H2O in soil + 1mM ZnSO4.7H2O foliar",
+      "control_description": "Low Zn treatment: basic nutrient solution without additional ZnSO4.7H2O, foliar spray with water only",
+      "moderators": {
+        "cultivar": "Golden Promise",
+        "year": "2014",
+        "site": "Greenhouse/Controlled environment"
+      },
+      "confidence": "high",
+      "notes": "Data extracted from prompt's guidance as Table 1 is not visible in the provided images (pages 11-12). Unit 'mg/g' in prompt assumed to mean 'mg/kg' (or \u03bcg/g) based on biological plausibility and prompt's note 'mg/g which equals mg/kg'. Control n=6. [from vision]",
+      "effect_pct": 132.46153846153845,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 1,
+    "tc_swaps_corrected": 0,
+    "original_count": 4,
+    "final_count": 3
+  },
+  "verification_flags": [
+    {
+      "element": "Grain Zn concentration (mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude"
+      ],
+      "details": {
+        "element": "Grain Zn concentration (mg/g)",
+        "treatment_mean": 151.1,
+        "control_mean": 65.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +132.5%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +132.5% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.206485771012575,
+            "note": "CV = 8.2%"
+          }
+        },
+        "effect_pct": 132.46153846153845
+      }
+    },
+    {
+      "element": "Grain Zn concentration (mg/g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude"
+      ],
+      "details": {
+        "element": "Grain Zn concentration (mg/g)",
+        "treatment_mean": 466.4,
+        "control_mean": 65.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +617.5%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +617.5% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.626929674099486,
+            "note": "CV = 9.6%"
+          }
+        },
+        "effect_pct": 617.5384615384615
+      }
+    },
+    {
+      "element": "Grain Zn concentration",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Grain Zn concentration",
+        "treatment_mean": 151.1,
+        "control_mean": 65.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +132.5%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +132.5% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 24.619457313037728,
+            "note": "CV = 24.6%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 9,
+            "note": "n=9"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.5%"
+          }
+        },
+        "effect_pct": 132.46153846153845
+      }
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+paper_id,crop,product,category,method,gt_n,ext_n,gt_ctrl,gt_treat,ext_ctrl,ext_treat,scale,gt_effect_pct,ext_effect_pct,effect_diff_pp,direction_match,match_score,match_type,element,num_err
+002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry,strawberry,Chito-care,Chi,Foliar,3,3,2.9259,3.3704,24.0,26.5,10,15.19,10.42,4.78,True,4,metadata_strong,Number of grains per spike,0.2455
+002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry,strawberry,Chito-care,Chi,Foliar,3,3,2.9259,5.2963,46.0,51.0,10,81.01,10.87,70.14,True,4,metadata_strong,1000 grain weight (g),0.2012
+002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry,strawberry,Chito-care,Chi,Foliar,3,3,2.9259,4.0741000000000005,46.0,49.0,10,39.24,6.52,32.72,True,4,metadata_strong,1000 grain weight (g),0.2662
+002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry,strawberry,Chito-care,Chi,Foliar,3,3,2.9259,3.5556,24.0,25.5,10,21.52,6.25,15.27,True,4,metadata_strong,Number of grains per spike,0.3067
+002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry,strawberry,Chito-care,Chi,Foliar,3,3,4.8519,5.5926,5.3,5.5,1,15.27,3.77,11.49,True,4,metadata_strong,Grain yield per plant (g),0.0507
+002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry,strawberry,Chito-care,Chi,Foliar,3,3,4.8519,8.7778,87.5,87.5,10,80.91,0.0,80.91,False,4,metadata_strong,Days to heading,0.2243
+002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry,strawberry,Chito-care,Chi,Foliar,3,3,4.8519,6.8148,5.3,5.7,1,40.46,7.55,32.91,True,4,metadata_strong,Grain yield per plant (g),0.1401
+006_Alabdulla_2019_Effect of foliar application of humic ac,oat,,HFA,Foliar,3,3,0.3117,0.5115000000000001,2.739,7.942,10,64.1,189.96,125.86,True,2,metadata_partial,Grain Yield (ton h-1),0.247
+006_Alabdulla_2019_Effect of foliar application of humic ac,oat,,HFA,Foliar,3,3,0.3117,0.6194,3.889,11.562,10,98.72,197.3,98.58,True,2,metadata_partial,Grain Yield (ton h-1),0.3314
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,106.3,107.69,106.3,107.69,1,1.31,1.31,0.0,True,3,metadata_strong,2017 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,106.3,115.19,106.3,115.19,1,8.36,8.36,0.0,True,3,metadata_strong,2017 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,106.3,115.7,106.3,115.7,1,8.84,8.84,0.0,True,3,metadata_strong,2017 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,106.3,107.21,106.3,107.21,1,0.86,0.86,0.0,True,3,metadata_strong,2017 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,103.88,107.97,103.88,107.97,1,3.94,3.94,0.0,True,3,metadata_strong,2018 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,103.88,113.45,103.88,113.45,1,9.21,9.21,0.0,True,3,metadata_strong,2018 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,103.88,111.19,103.88,111.9,1,7.04,7.72,0.68,True,3,metadata_strong,2018 (t.hm-2),0.0032
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,103.88,104.73,103.88,104.73,1,0.82,0.82,0.0,True,3,metadata_strong,2018 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,89.44,91.96,89.44,91.96,1,2.82,2.82,0.0,True,3,metadata_strong,2019 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,89.44,98.46,89.44,98.46,1,10.08,10.08,0.0,True,3,metadata_strong,2019 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,89.44,98.84,89.44,98.84,1,10.51,10.51,0.0,True,3,metadata_strong,2019 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,89.44,90.19,89.44,90.19,1,0.84,0.84,0.0,True,3,metadata_strong,2019 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,95.6,98.84,95.6,98.84,1,3.39,3.39,0.0,True,3,metadata_strong,2017 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,95.6,104.45,95.6,105.29,1,9.26,10.14,0.88,True,3,metadata_strong,2017 (t.hm-2),0.004
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,95.6,105.29,95.6,103.29,1,10.14,8.04,2.09,True,3,metadata_strong,2017 (t.hm-2),0.0097
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,95.6,99.07,93.92,97.71,1,3.63,4.04,0.41,True,3,metadata_strong,Average (t.hm-2),0.0159
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,100.62,106.86,100.62,106.86,1,6.2,6.2,0.0,True,3,metadata_strong,2018 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,100.62,111.94,100.62,112.36,1,11.25,11.67,0.42,True,3,metadata_strong,2018 (t.hm-2),0.0019
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,100.62,112.36,100.62,111.12,1,11.67,10.44,1.23,True,3,metadata_strong,2018 (t.hm-2),0.0056
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,100.62,102.82,99.87,102.54,1,2.19,2.67,0.49,True,3,metadata_strong,Average (t.hm-2),0.0051
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,85.54,87.44,85.54,87.44,1,2.22,2.22,0.0,True,3,metadata_strong,2019 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,85.54,90.24,85.54,89.81,1,5.49,4.99,0.5,True,3,metadata_strong,2019 (t.hm-2),0.0024
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,85.54,90.97,85.54,90.97,1,6.35,6.35,0.0,True,3,metadata_strong,2019 (t.hm-2),0.0
+027_Chen_2021_Effects of Seaweed Extracts on the Growt,sugarcane,,SWE,Foliar,4,4,85.54,86.54,93.92,101.41,1,1.17,7.97,6.81,True,3,metadata_strong,Average (t.hm-2),0.1179
+029_Ciepiela_2019_The effect of biostimulants derived from,ryegrass,Algex,SWE,Foliar,3,3,1.26,1.77,12.6,17.7,10,40.48,40.48,0.0,True,3,metadata_strong,dry matter yield (t ha-1) - sum of three cuts,0.0
+029_Ciepiela_2019_The effect of biostimulants derived from,ryegrass,Algex,SWE,Foliar,3,3,0.5599999999999999,1.08,5.6,10.8,10,92.86,92.86,0.0,True,3,metadata_strong,dry matter yield (t ha-1) - sum of three cuts,0.0
+058_Fichhof_2018_Management of Biostimulant and Silicon i,cotton,,Si,Foliar,3,4,0.596175,0.59885,5961.75,5988.5,10000,0.45,0.45,0.0,True,3,metadata_strong,Productivity (PROD),0.0
+058_Fichhof_2018_Management of Biostimulant and Silicon i,cotton,,Si,Foliar,3,4,0.596175,0.592237,85.0,75.12,100,-0.66,-11.62,10.96,True,3,metadata_strong,Relative water content (RWC),0.2551
+062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,potato,Bio-Algeen S-90,SWE,Foliar,3,3,2.5379,2.7651999999999997,24617.0,25247.0,10000,8.96,2.56,6.4,True,3,metadata_strong,potato yield,0.0631
+062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,potato,Kelpak,SWE,Foliar,3,3,2.5379,2.9924,24617.0,23457.0,10000,17.91,-4.71,22.62,False,3,metadata_strong,potato yield,0.1533
+062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,potato,Bio-Algeen S-90,SWE,Foliar,3,3,1.25,1.3258,12667.0,12654.0,10000,6.06,-0.1,6.17,False,3,metadata_strong,potato yield,0.0305
+062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,potato,Kelpak,SWE,Foliar,3,3,1.25,1.4772999999999998,16111.0,15136.0,10000,18.18,-6.05,24.24,False,3,metadata_strong,potato yield,0.1241
+062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,potato,Bio-Algeen S-90,SWE,Foliar,3,3,1.7803,1.5909,16111.0,15407.0,10000,-10.64,-4.37,6.27,True,3,metadata_strong,potato yield,0.0688
+062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,potato,Kelpak,SWE,Foliar,3,3,1.7803,1.7045,19053.0,19012.0,10000,-4.26,-0.22,4.04,True,3,metadata_strong,potato yield,0.0845
+064_Godlewska_2016_The effect of growth regulator on dry ma,grass mixure,Kelpak,SWE,Foliar,3,3,1.33,1.42,13.4,14.0,10,6.77,4.48,2.29,True,3,metadata_strong,dry matter yield (t ha⁻¹),0.0109
+064_Godlewska_2016_The effect of growth regulator on dry ma,grass mixure,Kelpak,SWE,Foliar,3,3,1.06,1.17,12.1,13.4,10,10.38,10.74,0.37,True,3,metadata_strong,dry matter yield (t ha⁻¹),0.1254
+064_Godlewska_2016_The effect of growth regulator on dry ma,grass mixure,Kelpak,SWE,Foliar,3,3,0.83,0.89,8.7,9.1,10,7.23,4.6,2.63,True,3,metadata_strong,dry matter yield (t ha⁻¹),0.034
+067_Grabowska_2012_The Effect of Cultivar and Biostimulant,carrot,Aminoplant,PHs,Foliar,3,3,1.55,1.72,30.5,29.7,10,10.97,-2.62,13.59,False,4,metadata_strong,Marketable yield (t∙ha⁻¹),0.4563
+067_Grabowska_2012_The Effect of Cultivar and Biostimulant,carrot,Aminoplant,PHs,Foliar,3,3,1.55,1.53,10.66,10.72,10,-1.29,0.56,1.85,False,4,metadata_strong,Dry matter (g∙100 g⁻¹ f.m.),0.4406
+067_Grabowska_2012_The Effect of Cultivar and Biostimulant,carrot,Aminoplant,PHs,Foliar,3,3,3.05,2.97,30.5,31.3,10,-2.62,2.62,5.25,False,4,metadata_strong,Marketable yield (t∙ha⁻¹),0.0256
+067_Grabowska_2012_The Effect of Cultivar and Biostimulant,carrot,Aminoplant,PHs,Foliar,3,3,3.05,3.13,43.1,43.4,10,2.62,0.7,1.93,True,4,metadata_strong,Total yield (t∙ha⁻¹),0.2856
+067_Grabowska_2012_The Effect of Cultivar and Biostimulant,carrot,Aminoplant,PHs,Foliar,3,3,4.22,5.02,42.2,50.2,10,18.96,18.96,0.0,True,4,metadata_strong,Marketable yield (t∙ha⁻¹),0.0
+067_Grabowska_2012_The Effect of Cultivar and Biostimulant,carrot,Aminoplant,PHs,Foliar,3,3,4.22,5.07,42.2,50.7,10,20.14,20.14,0.0,True,4,metadata_strong,Marketable yield (t∙ha⁻¹),0.0
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3267,0.3677,3.267,3.78,10,12.55,15.7,3.15,True,3,metadata_strong,"Seed yield, t ha-1",0.0136
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3267,0.3805,3.262,3.865,10,16.47,18.49,2.02,True,3,metadata_strong,"Seed yield, t ha-1",0.0085
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3267,0.3758,3.267,3.923,10,15.03,20.08,5.05,True,3,metadata_strong,"Seed yield, t ha-1",0.021
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3267,0.4137,3.262,4.084,10,26.63,25.2,1.43,True,3,metadata_strong,"Seed yield, t ha-1",0.0073
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.2664,0.3636,2.664,3.65,10,36.49,37.01,0.53,True,3,metadata_strong,"Seed yield, t ha-1",0.0019
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.2664,0.3876,2.664,3.929,10,45.5,47.48,1.99,True,3,metadata_strong,"Seed yield, t ha-1",0.0067
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.2664,0.3874,2.664,3.705,10,45.42,39.08,6.34,True,3,metadata_strong,"Seed yield, t ha-1",0.0228
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.2664,0.4171,2.664,3.703,10,56.57,39.0,17.57,True,3,metadata_strong,"Seed yield, t ha-1",0.0632
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3262,0.3767,3.262,3.919,10,15.48,20.14,4.66,True,3,metadata_strong,"Seed yield, t ha-1",0.0194
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3262,0.3852,3.262,3.987,10,18.09,22.23,4.14,True,3,metadata_strong,"Seed yield, t ha-1",0.0169
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3262,0.3907,3.267,3.523,10,19.77,7.84,11.94,True,3,metadata_strong,"Seed yield, t ha-1",0.0553
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak ,SWE,Foliar,4,4,0.3262,0.4198,36.8,38.9,100,28.69,5.71,22.99,True,3,metadata_strong,"Total protein, % DM",0.0964
+088_Kocira_2019_Effect of amino acid biostimulant on the,soybean,Kelpak,SWE,Foliar,4,4,0.3267,0.3415,3.267,3.415,10,4.53,4.53,0.0,True,3,metadata_strong,"Seed yield, t ha-1",0.0
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.248493975903614,0.322289156626506,4970.7,4176.7,10000,29.7,-15.97,45.67,False,3,metadata_strong,bean yield (g m⁻²),0.3642
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.248493975903614,0.32379518072289104,5181.7,4431.1,10000,30.3,-14.49,44.79,False,3,metadata_strong,bean yield (g m⁻²),0.3949
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.248493975903614,0.329819277108433,5181.7,4453.3,10000,32.73,-14.06,46.78,False,3,metadata_strong,bean yield (g m⁻²),0.3899
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.248493975903614,0.338855421686747,5181.7,4669.4,10000,36.36,-9.89,46.25,False,3,metadata_strong,bean yield (g m⁻²),0.3974
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.278614457831325,0.359939759036144,4970.7,4445.5,10000,29.19,-10.57,39.76,False,2,metadata_partial,bean yield (g m⁻²),0.3149
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.278614457831325,0.31927710843373397,4968.2,4630.8,10000,14.59,-6.79,21.39,False,2,metadata_partial,bean yield (g m⁻²),0.3749
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.278614457831325,0.332831325301204,4970.7,4739.5,10000,19.46,-4.65,24.11,False,2,metadata_partial,bean yield (g m⁻²),0.3686
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.278614457831325,0.371987951807228,4968.2,4808.5,10000,33.51,-3.21,36.73,False,2,metadata_partial,bean yield (g m⁻²),0.3328
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.317771084337349,0.394578313253012,4968.2,5165.4,10000,24.17,3.97,20.2,True,3,metadata_strong,bean yield (g m⁻²),0.2983
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.317771084337349,0.335843373493975,4968.2,5246.5,10000,5.69,5.6,0.09,True,3,metadata_strong,bean yield (g m⁻²),0.3601
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.317771084337349,0.411144578313253,4970.7,5337.5,10000,29.38,7.38,22.0,True,3,metadata_strong,bean yield (g m⁻²),0.2952
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.317771084337349,0.403614457831325,4970.7,5428.5,10000,27.01,9.21,17.8,True,3,metadata_strong,bean yield (g m⁻²),0.3086
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.25,0.259036144578313,5181.7,4685.8,10000,3.61,-9.57,13.18,False,2,metadata_partial,bean yield (g m⁻²),0.4824
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.25,0.26656626506024,4968.2,5022.0,10000,6.63,1.08,5.54,True,2,metadata_partial,bean yield (g m⁻²),0.483
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.25,0.284638554216867,5181.7,5238.8,10000,13.86,1.1,12.75,True,2,metadata_partial,bean yield (g m⁻²),0.4871
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.278614457831325,0.331325301204819,4970.7,5484.1,10000,18.92,10.33,8.59,True,3,metadata_strong,bean yield (g m⁻²),0.4177
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.278614457831325,0.394578313253012,4968.2,5744.1,10000,41.62,15.62,26.0,True,3,metadata_strong,bean yield (g m⁻²),0.3761
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.278614457831325,0.381024096385542,5181.7,5883.9,10000,36.76,13.55,23.21,True,3,metadata_strong,bean yield (g m⁻²),0.4074
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak SL,SWE,Foliar,3,4,0.278614457831325,0.335843373493975,4968.2,5460.4,10000,20.54,9.91,10.63,True,2,metadata_partial,bean yield (g m⁻²),0.4121
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.317771084337349,0.343373493975903,5181.7,5384.1,10000,8.06,3.91,4.15,True,2,metadata_partial,bean yield (g m⁻²),0.3745
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.317771084337349,0.358433734939759,4968.2,5712.3,10000,12.8,14.98,2.18,True,2,metadata_partial,bean yield (g m⁻²),0.3665
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.317771084337349,0.36144578313253,4970.7,5733.2,10000,13.74,15.34,1.6,True,2,metadata_partial,bean yield (g m⁻²),0.3651
+090_Kocira_2020_Biochemical and economical effect of app,bean,Terra Sorb Complex,PHs,Foliar,3,4,0.317771084337349,0.343373493975903,4970.7,5803.6,10000,8.06,16.76,8.7,True,2,metadata_partial,bean yield (g m⁻²),0.3845
+090_Kocira_2020_Biochemical and economical effect of app,bean,Kelpak,SWE,Foliar,4,4,0.2479,0.3203,5181.7,5653.6,10000,29.21,9.11,20.1,True,3,metadata_strong,bean yield (g m⁻²),0.4775
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2812,0.3073,2.88,3.153,10,9.28,9.48,0.2,True,3,metadata_strong,Seed yield (t ha⁻¹),0.0245
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2812,0.3078,2.88,3.196,10,9.46,10.97,1.51,True,3,metadata_strong,Seed yield (t ha⁻¹),0.0303
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2812,0.3151,2.88,3.407,10,12.06,18.3,6.24,True,3,metadata_strong,Seed yield (t ha⁻¹),0.0494
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2812,0.3368,2.88,3.453,10,19.77,19.9,0.12,True,3,metadata_strong,Seed yield (t ha⁻¹),0.0241
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2859,0.3324,3.391,3.73,10,16.26,10.0,6.27,True,3,metadata_strong,Seed yield (t ha⁻¹),0.1329
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2859,0.3234,3.391,3.798,10,13.12,12.0,1.11,True,3,metadata_strong,Seed yield (t ha⁻¹),0.1527
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2859,0.3152,2193.0,3153.0,10000,10.25,43.78,33.53,True,3,metadata_strong,Number of seeds (per m⁻²),0.152
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2859,0.3446,3.41,3.867,10,20.53,13.4,7.13,True,3,metadata_strong,Seed yield (t ha⁻¹),0.1352
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2969,0.3963,3.391,3.925,10,33.48,15.75,17.73,True,3,metadata_strong,Seed yield (t ha⁻¹),0.0671
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2969,0.3277,3.41,4.065,10,10.37,19.21,8.83,True,3,metadata_strong,Seed yield (t ha⁻¹),0.1616
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2969,0.3156,3.41,4.079,10,6.3,19.62,13.32,True,3,metadata_strong,Seed yield (t ha⁻¹),0.1778
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.2969,0.3406,3.391,4.185,10,14.72,23.41,8.7,True,3,metadata_strong,Seed yield (t ha⁻¹),0.1553
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3439,0.4326,3.41,4.221,10,25.79,23.78,2.01,True,3,metadata_strong,Seed yield (t ha⁻¹),0.0167
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3439,0.4355,2173.0,4185.0,10000,26.64,92.59,65.96,True,3,metadata_strong,Number of seeds (per m⁻²),0.3116
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3439,0.4299,2173.0,3925.0,10000,25.01,80.63,55.62,True,3,metadata_strong,Number of seeds (per m⁻²),0.3389
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3439,0.4497,2173.0,3798.0,10000,30.76,74.78,44.02,True,3,metadata_strong,Number of seeds (per m⁻²),0.3833
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3215,0.3307,2193.0,3407.0,10000,2.86,55.36,52.5,True,3,metadata_strong,Number of seeds (per m⁻²),0.2477
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3215,0.3252,2193.0,3196.0,10000,1.15,45.74,44.59,True,3,metadata_strong,Number of seeds (per m⁻²),0.2418
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3215,0.3812,2173.0,3730.0,10000,18.57,71.65,53.08,True,3,metadata_strong,Number of seeds (per m⁻²),0.2508
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.3215,0.392,2193.0,3453.0,10000,21.93,57.46,35.53,True,3,metadata_strong,Number of seeds (per m⁻²),0.3006
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.352,0.3762,1960.0,3867.0,10000,6.88,97.3,90.42,True,3,metadata_strong,Number of seeds (per m⁻²),0.4115
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.352,0.3583,1960.0,4065.0,10000,1.79,107.4,105.61,True,3,metadata_strong,Number of seeds (per m⁻²),0.4572
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.352,0.3762,1960.0,4079.0,10000,6.88,108.11,101.24,True,3,metadata_strong,Number of seeds (per m⁻²),0.4368
+"091_Kocira_2018_Modeling biometric traits, yield and nut",soybean,Fylloton,SWE,Foliar,4,4,0.352,0.4137,1960.0,4221.0,10000,17.53,115.36,97.83,True,3,metadata_strong,Number of seeds (per m⁻²),0.4079
+094_Kowalska_2021_Effect of Different Forms of Silicon on,wheat,Adesil,Si,Soil,3,8,0.388,0.475,3.88,4.97,10,22.42,28.09,5.67,True,0,numeric_only,Yield [t per ha],0.0221
+094_Kowalska_2021_Effect of Different Forms of Silicon on,wheat,Adesil,Si,Foliar,3,8,0.388,0.425,3.88,4.84,10,9.54,24.74,15.21,True,0,numeric_only,Yield [t per ha],0.061
+094_Kowalska_2021_Effect of Different Forms of Silicon on,wheat,ZumSil,Si,Soil,3,8,0.388,0.449,3.88,4.49,10,15.72,15.72,0.0,True,0,numeric_only,Yield [t per ha],0.0
+094_Kowalska_2021_Effect of Different Forms of Silicon on,wheat,ZumSil,Si,Foliar,3,8,0.388,0.484,7.72,9.64,10,24.74,24.87,0.13,True,0,numeric_only,Weight of grain per plot/16 m² [kg],0.4977
+095_Kuisma_1989_The effect of foliar application of seaw,potato,SM3,SWE,Foliar,3,3,3.563,3.84,35.63,39.6,10,7.77,11.14,3.37,True,4,metadata_strong,ware yield t/ha,0.0152
+095_Kuisma_1989_The effect of foliar application of seaw,potato,SM3,SWE,Foliar,3,3,3.563,3.727,36.5,40.5,10,4.6,10.96,6.36,True,4,metadata_strong,tuber yield t/ha,0.0518
+"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",broccoli,AlgaeGreen ,SWE,Foliar,6,6,5.474,5.486,9.1,8.9,1,0.22,-2.2,2.42,True,3,metadata_strong,Mean,0.391
+"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",broccoli,AlgaeGreen ,SWE,Foliar,6,6,5.474,5.349,9.1,9.2,1,-2.28,1.1,3.38,False,3,metadata_strong,Mean,0.4085
+"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",broccoli,AlgaeGreen ,SWE,Foliar,6,6,5.474,5.853,9.1,9.7,1,6.92,6.59,0.33,True,3,metadata_strong,Mean,0.3975
+"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",broccoli,AlgaeGreen ,SWE,Foliar,6,6,1.67,1.3599999999999999,2.8,2.3,1,-18.56,-17.86,0.71,True,3,metadata_strong,Mean,0.4061
+"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",broccoli,AlgaeGreen ,SWE,Foliar,6,6,1.67,1.47,2.8,2.4,1,-11.98,-14.29,2.31,True,3,metadata_strong,Mean,0.3955
+"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",broccoli,AlgaeGreen ,SWE,Foliar,6,6,1.67,2.19,2.8,3.6,1,31.14,28.57,2.57,True,3,metadata_strong,Mean,0.3976
+105_Mattner_2018_Increased growth response of strawberry,strawberry,Seasol,SWE,Seed,3,3,0.867,1.034,10.3,10.59,10,19.26,2.82,16.45,True,3,metadata_strong,Fruit size (g berry⁻¹),0.0909
+105_Mattner_2018_Increased growth response of strawberry,strawberry,Seasol,SWE,Seed,3,3,1.445,1.567,10.3,10.07,10,8.44,-2.23,10.68,False,3,metadata_strong,Fruit size (g berry⁻¹),0.4795
+105_Mattner_2018_Increased growth response of strawberry,strawberry,Seasol,SWE,Soil,3,3,0.5028,0.5476,502.8,547.6,1000,8.91,8.91,0.0,True,4,metadata_strong,Total fruit yield (g plant⁻¹),0.0
+106_Matysiak_2018_Herbicides with natural and synthetic bi,wheat,Kelpak,SWE,Foliar,4,4,0.727,0.654,6.16,6.54,10,-10.04,6.17,16.21,False,3,metadata_strong,Yield (t·ha-1) 2014,0.0901
+106_Matysiak_2018_Herbicides with natural and synthetic bi,wheat,Kelpak,SWE,Foliar,4,4,0.727,0.615,6.16,6.15,10,-15.41,-0.16,15.24,True,3,metadata_strong,Yield (t·ha-1) 2014,0.0901
+106_Matysiak_2018_Herbicides with natural and synthetic bi,wheat,Kelpak,SWE,Foliar,4,4,0.698,0.754,6.16,7.54,10,8.02,22.4,14.38,True,3,metadata_strong,Yield (t·ha-1) 2014,0.0666
+106_Matysiak_2018_Herbicides with natural and synthetic bi,wheat,Kelpak,SWE,Foliar,4,4,0.698,0.723,6.16,7.23,10,3.58,17.37,13.79,True,3,metadata_strong,Yield (t·ha-1) 2014,0.0666
+106_Matysiak_2018_Herbicides with natural and synthetic bi,wheat,Kelpak,SWE,Foliar,4,4,0.674,0.717,6.16,7.17,10,6.38,16.4,10.02,True,3,metadata_strong,Yield (t·ha-1) 2014,0.0471
+106_Matysiak_2018_Herbicides with natural and synthetic bi,wheat,Kelpak,SWE,Foliar,4,4,0.674,0.634,6.16,6.34,10,-5.93,2.92,8.86,False,3,metadata_strong,Yield (t·ha-1) 2014,0.0471
+110_Michalak_2016_Evaluation of supercritical extracts of,wheat,,SWE,Foliar,4,4,0.945,0.948,9.45,9.48,10,0.32,0.32,0.0,True,3,metadata_strong,"Grain yield, t/ha",0.0
+110_Michalak_2016_Evaluation of supercritical extracts of,wheat,,SWE,Foliar,4,4,0.945,0.943,9.45,9.43,10,-0.21,-0.21,0.0,True,3,metadata_strong,"Grain yield, t/ha",0.0
+110_Michalak_2016_Evaluation of supercritical extracts of,wheat,,SWE,Foliar,4,4,0.945,0.9499,9.45,9.5,10,0.52,0.53,0.01,True,2,metadata_partial,"Grain yield, t/ha",0.0001
+110_Michalak_2016_Evaluation of supercritical extracts of,wheat,,SWE,Foliar,4,4,0.945,0.96,9.45,9.6,10,1.59,1.59,0.0,True,2,metadata_partial,"Grain yield, t/ha",0.0
+110_Michalak_2016_Evaluation of supercritical extracts of,wheat,,SWE,Foliar,4,4,0.945,0.955,9.45,9.4,10,1.06,-0.53,1.59,False,2,metadata_partial,"Grain yield, t/ha",0.008
+111_Mondal_2013_Foliar application of chitosan improves,maize,,Chi,Foliar,3,3,0.51,0.464,7.28,8.7,10,-9.02,19.51,28.53,False,4,metadata_strong,seed weight/plant (g) - field,0.3831
+111_Mondal_2013_Foliar application of chitosan improves,maize,,Chi,Foliar,3,3,0.51,0.559,7.28,9.31,10,9.61,27.88,18.28,True,4,metadata_strong,seed weight/plant (g) - field,0.3495
+111_Mondal_2013_Foliar application of chitosan improves,maize,,Chi,Foliar,3,4,0.51,0.632,6.55,7.08,10,23.92,8.09,15.83,True,3,metadata_strong,seed weight/plant (g) - pot,0.1644
+111_Mondal_2013_Foliar application of chitosan improves,maize,,Chi,Foliar,3,4,0.51,0.595,6.55,7.09,10,16.67,8.24,8.42,True,3,metadata_strong,seed weight/plant (g) - pot,0.1911
+111_Mondal_2013_Foliar application of chitosan improves,maize,,Chi,Foliar,3,4,0.605,0.657,6.55,7.66,10,8.6,16.95,8.35,True,3,metadata_strong,seed weight/plant (g) - pot,0.1093
+111_Mondal_2013_Foliar application of chitosan improves,maize,,Chi,Foliar,3,4,0.605,0.675,6.55,8.16,10,11.57,24.58,13.01,True,3,metadata_strong,seed weight/plant (g) - pot,0.1246
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-86,SWE,Foliar,3,3,4.59,4.18,4.5,4.8,1,-8.93,6.67,15.6,False,4,metadata_strong,marketable yield (kg m-2),0.0746
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-87,SWE,Foliar,3,3,3.61,3.93,3.5,3.8,1,8.86,8.57,0.29,True,4,metadata_strong,marketable yield (kg m-2),0.0328
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-88,SWE,Foliar,3,3,2.54,3.26,2.8,3.2,1,28.35,14.29,14.06,True,4,metadata_strong,marketable yield (kg m-2),0.0558
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-89,SWE,Foliar,3,3,2.54,3.38,2.5,2.8,1,33.07,12.0,21.07,True,4,metadata_strong,marketable yield (kg m-2),0.1116
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-90,SWE,Foliar,3,3,3.67,4.04,3.6,4.2,1,10.08,16.67,6.58,True,4,metadata_strong,marketable yield (kg m-2),0.0288
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-91,SWE,Foliar,3,3,3.11,3.81,3.2,3.8,1,22.51,18.75,3.76,True,4,metadata_strong,marketable yield (kg m-2),0.0154
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-92,SWE,Foliar,3,3,3.14,3.2,3.2,3.9,1,1.91,21.87,19.96,True,4,metadata_strong,marketable yield (kg m-2),0.0991
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-93,SWE,Foliar,3,3,2.68,3.72,3.8,4.5,1,38.81,18.42,20.38,True,4,metadata_strong,marketable yield (kg m-2),0.234
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-94,SWE,Foliar,3,3,1.6,2.51,2.4,2.6,1,56.87,8.33,48.54,True,4,metadata_strong,marketable yield (kg m-2),0.184
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-95,SWE,Foliar,3,3,1.84,2.29,1.3,1.8,1,24.46,38.46,14.01,True,4,metadata_strong,early yield (kg m-2),0.3438
+120_Pohl_2019_The Eggplant Yield and Fruit Composition,eggplant,Göemar BM-96,SWE,Foliar,3,3,2.49,2.57,4.8,5.2,1,3.21,8.33,5.12,True,4,metadata_strong,marketable yield (kg m-2),0.4935
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.11159999999999999,910.3,1103.0,10000,24.69,21.17,3.52,True,3,metadata_strong,Seed yield,0.0143
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.11320000000000001,910.3,1158.6,10000,26.48,27.28,0.8,True,3,metadata_strong,Seed yield,0.0199
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.1286,910.3,1265.0,10000,43.69,38.97,4.72,True,3,metadata_strong,Seed yield,0.0167
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.1352,910.3,1216.1,10000,51.06,33.59,17.47,True,3,metadata_strong,Seed yield,0.0643
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.1097,910.3,1101.7,10000,22.57,21.03,1.54,True,3,metadata_strong,Seed yield,0.0105
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.1115,910.3,1090.3,10000,24.58,19.77,4.81,True,3,metadata_strong,Seed yield,0.0197
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.12090000000000001,910.3,1085.6,10000,35.08,19.26,15.83,True,3,metadata_strong,Seed yield,0.0652
+124_Pramanick_2016_Effect of seaweed saps derived from two,blackgram,,SWE,Foliar,3,3,0.0895,0.13169999999999998,910.3,1036.5,10000,47.15,13.86,33.29,True,3,metadata_strong,Seed yield,0.1437
+125_Procházka_2015_The possibilities of increasing the prod,soybean,Lexin ,HFA,Seed,3,9,0.251,0.271,2850.0,2900.0,10000,7.97,1.75,6.21,True,-1,numeric_only,Yield,0.0924
+125_Procházka_2015_The possibilities of increasing the prod,soybean,Lignohumate B,HFA,Seed,3,9,0.251,0.29,2850.0,3180.0,10000,15.54,11.58,3.96,True,-1,numeric_only,Yield,0.1037
+125_Procházka_2015_The possibilities of increasing the prod,soybean,Lexin ,HFA,Seed,3,9,0.33399999999999996,0.33199999999999996,2850.0,3290.0,10000,-0.6,15.44,16.04,True,-1,numeric_only,Yield,0.0905
+125_Procházka_2015_The possibilities of increasing the prod,soybean,Lignohumate B,HFA,Seed,3,9,0.33399999999999996,0.375,38.1,41.5,100,12.28,8.92,3.35,True,-1,numeric_only,Stand density before harvest,0.1099
+125_Procházka_2015_The possibilities of increasing the prod,soybean,Lexin ,HFA,Seed,3,9,0.271,0.267,38.1,46.9,100,-1.48,23.1,24.57,False,-1,numeric_only,Stand density before harvest,0.3597
+125_Procházka_2015_The possibilities of increasing the prod,soybean,Lignohumate B,HFA,Seed,3,9,0.271,0.29,38.1,51.6,100,7.01,35.43,28.42,True,-1,numeric_only,Stand density before harvest,0.3633
+126_Prokkola_2007_Effect of biological sprays on the incid,strawberry,Biolan,SWE,Foliar,6,6,0.281,0.287,394.0,430.0,1000,2.14,9.14,7.0,True,3,metadata_strong,Marketable yield (g/yielding plant),0.3097
+126_Prokkola_2007_Effect of biological sprays on the incid,strawberry,Kekkila Oy,Si,Foliar,6,6,0.281,0.291,496.0,542.0,1000,3.56,9.27,5.72,True,3,metadata_strong,Total yield (g/yielding plant),0.4483
+126_Prokkola_2007_Effect of biological sprays on the incid,strawberry,Garlic extract,PE,Foliar,6,4,0.281,0.263,281.0,256.0,1000,-6.41,-8.9,2.49,True,0,numeric_only,Marketable yield (g/plant),0.0137
+126_Prokkola_2007_Effect of biological sprays on the incid,strawberry,Biolan,SWE,Foliar,6,4,0.384,0.423,332.0,337.0,1000,10.16,1.51,8.65,True,0,numeric_only,Total yield (g/plant),0.2059
+126_Prokkola_2007_Effect of biological sprays on the incid,strawberry,Kekkila Oy,Si,Foliar,6,4,0.384,0.415,332.0,341.0,1000,8.07,2.71,5.36,True,0,numeric_only,Total yield (g/plant),0.1868
+126_Prokkola_2007_Effect of biological sprays on the incid,strawberry,Garlic extract,PE,Foliar,6,4,0.384,0.385,384.0,381.0,1000,0.26,-0.78,1.04,True,0,numeric_only,Marketable yield (g/plant),0.0052
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.0994,0.1003,874.0,905.0,10000,0.91,3.55,2.64,True,4,metadata_strong,mean seed yield (kg/ha),0.1228
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.0994,0.1071,994.0,1071.0,10000,7.75,7.75,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2015,0.0
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.0994,0.11320000000000001,994.0,1132.0,10000,13.88,13.88,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2015,0.0
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.082,0.0875,820.0,875.0,10000,6.71,6.71,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2016,0.0
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.082,0.0942,820.0,942.0,10000,14.88,14.88,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2016,0.0
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.082,0.0948,820.0,948.0,10000,15.61,15.61,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2016,0.0
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.0809,0.0838,809.0,838.0,10000,3.58,3.58,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2017,0.0
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.0809,0.0888,809.0,888.0,10000,9.77,9.77,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2017,0.0
+127_Radkowski_2018_Influence of foliar fertilization with a,timothy,Microfert,PHs,Foliar,4,4,0.0809,0.0915,809.0,915.0,10000,13.1,13.1,0.0,True,3,metadata_strong,seed yield (kg/ha) for 2017,0.0
+131_Rahman_2018_Chitosan biopolymer promotes yield and s,strawberry,chitosan biopolymer,Chi,Foliar,3,3,2.646774194,3.391182796,246.6,318.0,100,28.13,28.95,0.83,True,4,metadata_strong,total fruit weight per plant (g/plant),0.0699
+131_Rahman_2018_Chitosan biopolymer promotes yield and s,strawberry,chitosan biopolymer,Chi,Foliar,3,3,2.646774194,3.494623656,246.6,300.0,100,32.03,21.65,10.38,True,4,metadata_strong,total fruit weight per plant (g/plant),0.1191
+131_Rahman_2018_Chitosan biopolymer promotes yield and s,strawberry,chitosan biopolymer,Chi,Foliar,3,3,2.646774194,3.784086022,30.7,43.23,10,42.97,40.81,2.16,True,4,metadata_strong,shoot dry weight (g),0.1313
+131_Rahman_2018_Chitosan biopolymer promotes yield and s,strawberry,chitosan biopolymer,Chi,Foliar,3,3,2.646774194,3.618709677,30.7,47.33,10,36.72,54.17,17.45,True,4,metadata_strong,shoot dry weight (g),0.1866
+153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,apple,,HFA,Foliar,4,4,4.87,5.146666666666667,58.07,75.05,10,5.68,29.24,23.56,True,3,metadata_strong,TAC (mg CGE 100 g-1 DW),0.2378
+153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,apple,,PHs,Foliar,4,4,4.87,4.596666666666667,58.07,74.73,10,-5.61,28.69,34.3,False,3,metadata_strong,TAC (mg CGE 100 g-1 DW),0.2731
+153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,apple,,SWE,Foliar,4,4,4.87,4.25,72.51,73.73,10,-12.73,1.68,14.41,False,3,metadata_strong,Fruit diameter (mm),0.376
+153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,apple,,SWE,Foliar,4,4,4.87,4.663333333333333,96.67,78.21,10,-4.24,-19.1,14.85,True,3,metadata_strong,Number fruits tree-1 (N.),0.45
+153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,apple,,PHs,Foliar,4,4,4.87,4.5,72.51,72.81,10,-7.6,0.41,8.01,False,3,metadata_strong,Fruit diameter (mm),0.3552
+153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,apple,,Chi,Foliar,4,4,4.87,4.596666666666667,72.51,73.01,10,-5.61,0.69,6.3,False,3,metadata_strong,Fruit diameter (mm),0.3494
+153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,apple,,Si,Foliar,4,4,4.87,5.173333333333333,58.07,78.59,10,6.23,35.34,29.11,True,3,metadata_strong,TAC (mg CGE 100 g-1 DW),0.2515
+158_Sulakhudin_2019_Application of Coastal Sediments and Fol,onion,,SWE,Foliar,3,3,0.0803,0.0883,0.803,0.883,10,9.96,9.96,0.0,True,4,metadata_strong,Yield of shallot (t/ha),0.0
+158_Sulakhudin_2019_Application of Coastal Sediments and Fol,onion,,SWE,Foliar,3,3,0.1097,0.116,1.097,1.16,10,5.74,5.74,0.0,True,4,metadata_strong,Yield of shallot (t/ha),0.0
+158_Sulakhudin_2019_Application of Coastal Sediments and Fol,onion,,SWE,Foliar,3,3,0.1283,0.1307,1.283,1.307,10,1.87,1.87,0.0,True,4,metadata_strong,Yield of shallot (t/ha),0.0

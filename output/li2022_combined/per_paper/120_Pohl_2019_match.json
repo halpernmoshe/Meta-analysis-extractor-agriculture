@@ -1,0 +1,197 @@
+{
+  "paper_id": "120_Pohl_2019_The Eggplant Yield and Fruit Composition",
+  "matched_pairs": [
+    {
+      "gt_idx": 0,
+      "json_idx": 1,
+      "gt_pair": "17",
+      "gt_dose": "1",
+      "gt_crop": "eggplant",
+      "element": "marketable yield (kg m-2)",
+      "match_reason": "Both are Göemar BM-86 foliar SWE treatment on eggplant yield. GT pair 17 corresponds to BM-86; JSON idx 1 is marketable yield for BM-86 (Cristal F1, 2013) — best available representative obs. Note: GT effect is negative (-8.93%) while all JSON BM-86 marketable yield obs show positive effects (+6 to +22%), suggesting GT aggregates across cultivars/years differently than our per-cultivar extraction. Using JSON idx 1 as closest metadata match (BM-86, marketable yield).",
+      "gt_ctrl": 4.59,
+      "gt_treat": 4.18,
+      "gt_effect_pct": -8.93,
+      "ext_ctrl": 3.2,
+      "ext_treat": 3.8,
+      "ext_effect_pct": 18.75,
+      "confidence": "low"
+    }
+  ],
+  "unmatched_gt": [
+    {
+      "gt_idx": 1,
+      "gt_pair": "18",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 18 is Göemar BM-87, not extracted"
+    },
+    {
+      "gt_idx": 2,
+      "gt_pair": "19",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 19 is Göemar BM-88, not extracted"
+    },
+    {
+      "gt_idx": 3,
+      "gt_pair": "20",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 20 is Göemar BM-89, not extracted"
+    },
+    {
+      "gt_idx": 4,
+      "gt_pair": "21",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 21 is Göemar BM-90, not extracted"
+    },
+    {
+      "gt_idx": 5,
+      "gt_pair": "22",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 22 is Göemar BM-91, not extracted"
+    },
+    {
+      "gt_idx": 6,
+      "gt_pair": "23",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 23 is Göemar BM-92, not extracted"
+    },
+    {
+      "gt_idx": 7,
+      "gt_pair": "24",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 24 is Göemar BM-93, not extracted"
+    },
+    {
+      "gt_idx": 8,
+      "gt_pair": "25",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 25 is Göemar BM-94, not extracted"
+    },
+    {
+      "gt_idx": 9,
+      "gt_pair": "26",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 26 is Göemar BM-95, not extracted"
+    },
+    {
+      "gt_idx": 10,
+      "gt_pair": "27",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 27 is Göemar BM-96, not extracted"
+    },
+    {
+      "gt_idx": 11,
+      "gt_pair": "28",
+      "gt_dose": "1",
+      "reason": "Coverage failure — extractor only captured Göemar BM-86 data; GT pair 28 is Göemar BM-97, not extracted"
+    }
+  ],
+  "unmatched_json": [
+    {
+      "json_idx": 0,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season) rather than total marketable yield; GT uses total/marketable yield metric; cultivar-level data not aggregated to paper level (Cristal F1, 2013)"
+    },
+    {
+      "json_idx": 2,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used for matching (Epic F1, 2013)"
+    },
+    {
+      "json_idx": 3,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Epic F1, 2013); only one BM-86 obs used for GT pair 17 match"
+    },
+    {
+      "json_idx": 4,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Flavine F1, 2013)"
+    },
+    {
+      "json_idx": 5,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Flavine F1, 2013)"
+    },
+    {
+      "json_idx": 6,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Gascona F1, 2013)"
+    },
+    {
+      "json_idx": 7,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Gascona F1, 2013)"
+    },
+    {
+      "json_idx": 8,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Onyx F1, 2013)"
+    },
+    {
+      "json_idx": 9,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Onyx F1, 2013)"
+    },
+    {
+      "json_idx": 10,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (WA 6020 F1, 2013)"
+    },
+    {
+      "json_idx": 11,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (WA 6020 F1, 2013)"
+    },
+    {
+      "json_idx": 12,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Cristal F1, 2014)"
+    },
+    {
+      "json_idx": 13,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Cristal F1, 2014)"
+    },
+    {
+      "json_idx": 14,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Epic F1, 2014)"
+    },
+    {
+      "json_idx": 15,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Epic F1, 2014)"
+    },
+    {
+      "json_idx": 16,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Flavine F1, 2014)"
+    },
+    {
+      "json_idx": 17,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Flavine F1, 2014)"
+    },
+    {
+      "json_idx": 18,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Gascona F1, 2014)"
+    },
+    {
+      "json_idx": 19,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Gascona F1, 2014)"
+    },
+    {
+      "json_idx": 20,
+      "element": "early yield (kg m-2)",
+      "reason": "Early yield (partial season); per-cultivar obs not used (Onyx F1, 2014)"
+    },
+    {
+      "json_idx": 21,
+      "element": "marketable yield (kg m-2)",
+      "reason": "BM-86 marketable yield — additional cultivar-level breakdown (Onyx F1, 2014)"
+    }
+  ],
+  "notes": "This paper (Pohl 2019) tested 12 different Göemar BM seaweed extract products (BM-86 through BM-97) on eggplant yield across 6 cultivars (Cristal F1, Epic F1, Flavine F1, Gascona F1, Onyx F1, WA 6020 F1) and 2 years (2013, 2014). The GT contains 12 pairs (17-28), one per product, presumably aggregated across cultivars and years. Our extractor only captured BM-86 data (22 per-cultivar per-year obs), missing the other 11 products (BM-87 to BM-97). Severe coverage failure: 11/12 GT pairs have no JSON counterpart. For the one matchable pair (GT 17 = BM-86), there is a direction conflict: GT shows -8.93% effect while all JSON BM-86 marketable yield obs show positive effects (+6 to +22%). This discrepancy may reflect: (1) the GT aggregating across cultivars/years differently than our extraction; (2) the GT possibly using a different yield metric (total rather than marketable); or (3) the GT incorporating data from all 6 cultivars and 2 years in a pooled analysis where some cultivars showed negative responses. The match is flagged as low confidence."
+}

@@ -1,0 +1,157 @@
+{
+  "paper_id": "002_Abdel-Mawgoud_2010_Growth and yield responses of strawberry",
+  "matched_pairs": [],
+  "unmatched_gt": [
+    {
+      "gt_idx": 0,
+      "gt_pair": "655",
+      "gt_dose": "0.25",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables (grain yield, spikes per plant, 1000-grain weight, etc.); no strawberry fruit yield obs available. Extractor appears to have processed a wheat paper instead of the strawberry paper."
+    },
+    {
+      "gt_idx": 1,
+      "gt_pair": "656",
+      "gt_dose": "0.5",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables; no strawberry fruit yield obs at this dose arm."
+    },
+    {
+      "gt_idx": 2,
+      "gt_pair": "657",
+      "gt_dose": "0.75",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables; no strawberry fruit yield obs at this dose arm."
+    },
+    {
+      "gt_idx": 3,
+      "gt_pair": "658",
+      "gt_dose": "1",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables; no strawberry fruit yield obs at dose=1 (dose-response arm)."
+    },
+    {
+      "gt_idx": 4,
+      "gt_pair": "659",
+      "gt_dose": "1",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables; no strawberry fruit yield obs for this non-dose-response observation (ctrl_mean ~4.852, different season/condition)."
+    },
+    {
+      "gt_idx": 5,
+      "gt_pair": "660",
+      "gt_dose": "1",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables; no strawberry fruit yield obs for this non-dose-response observation."
+    },
+    {
+      "gt_idx": 6,
+      "gt_pair": "661",
+      "gt_dose": "1",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables; no strawberry fruit yield obs for this non-dose-response observation."
+    },
+    {
+      "gt_idx": 7,
+      "gt_pair": "662",
+      "gt_dose": "1",
+      "reason": "Coverage failure — all JSON obs are wheat-specific variables; no strawberry fruit yield obs for this non-dose-response observation."
+    }
+  ],
+  "unmatched_json": [
+    {
+      "json_idx": 0,
+      "element": "Grain yield per plant (g)",
+      "reason": "Wheat outcome (grain yield) — wrong crop entirely; this paper is strawberry. Extractor appears to have processed a wheat chitosan paper rather than Abdel-Mawgoud 2010 strawberry paper."
+    },
+    {
+      "json_idx": 1,
+      "element": "Grain yield per plant (g)",
+      "reason": "Wheat outcome (grain yield) — wrong crop entirely."
+    },
+    {
+      "json_idx": 2,
+      "element": "Number of spikes per plant",
+      "reason": "Wheat morphology outcome — wrong crop entirely."
+    },
+    {
+      "json_idx": 3,
+      "element": "Number of spikes per plant",
+      "reason": "Wheat morphology outcome — wrong crop entirely."
+    },
+    {
+      "json_idx": 4,
+      "element": "Number of grains per spike",
+      "reason": "Wheat yield component — wrong crop entirely."
+    },
+    {
+      "json_idx": 5,
+      "element": "Number of grains per spike",
+      "reason": "Wheat yield component — wrong crop entirely."
+    },
+    {
+      "json_idx": 6,
+      "element": "1000 grain weight (g)",
+      "reason": "Wheat yield component — wrong crop entirely."
+    },
+    {
+      "json_idx": 7,
+      "element": "1000 grain weight (g)",
+      "reason": "Wheat yield component — wrong crop entirely."
+    },
+    {
+      "json_idx": 8,
+      "element": "Spike length (cm)",
+      "reason": "Wheat morphology — wrong crop entirely."
+    },
+    {
+      "json_idx": 9,
+      "element": "Plant height (cm)",
+      "reason": "Non-yield growth outcome; also wrong crop (wheat, not strawberry)."
+    },
+    {
+      "json_idx": 10,
+      "element": "Plant height (cm)",
+      "reason": "Non-yield growth outcome; also wrong crop (wheat, not strawberry)."
+    },
+    {
+      "json_idx": 11,
+      "element": "Days to heading",
+      "reason": "Wheat phenology outcome — wrong crop entirely; non-yield."
+    },
+    {
+      "json_idx": 12,
+      "element": "Protein content (%)",
+      "reason": "Non-yield quality outcome (protein); also wrong crop (wheat)."
+    },
+    {
+      "json_idx": 13,
+      "element": "Protein content (%)",
+      "reason": "Non-yield quality outcome (protein); also wrong crop (wheat)."
+    },
+    {
+      "json_idx": 14,
+      "element": "Protein content (%)",
+      "reason": "Non-yield quality outcome (protein); also wrong crop (wheat)."
+    },
+    {
+      "json_idx": 15,
+      "element": "Protein content (%)",
+      "reason": "Non-yield quality outcome (protein); also wrong crop (wheat)."
+    },
+    {
+      "json_idx": 16,
+      "element": "Starch content (%)",
+      "reason": "Non-yield quality outcome (starch); also wrong crop (wheat)."
+    },
+    {
+      "json_idx": 17,
+      "element": "Starch content (%)",
+      "reason": "Non-yield quality outcome (starch); also wrong crop (wheat)."
+    },
+    {
+      "json_idx": 18,
+      "element": "Starch content (%)",
+      "reason": "Non-yield quality outcome (starch); also wrong crop (wheat)."
+    },
+    {
+      "json_idx": 19,
+      "element": "Starch content (%)",
+      "reason": "Non-yield quality outcome (starch); also wrong crop (wheat)."
+    }
+  ],
+  "notes": "Critical mismatch: The GT rows describe a strawberry chitosan dose-response experiment (Abdel-Mawgoud 2010) with ctrl_mean ~2.926 kg/plant fruit yield (dose-response arms, pairs 655-658) and ctrl_mean ~4.852 (non-dose-response arms, pairs 659-662, likely different season or cultivar). However, all 20 JSON observations are from what appears to be a wheat chitosan experiment (grain yield ~5.3 g/plant, spikes per plant, 1000-grain weight ~46 g, protein content, starch content, plant height, days to heading). The extractor processed an entirely different paper (a wheat chitosan study) rather than the Abdel-Mawgoud 2010 strawberry paper. No valid matches are possible. All 8 GT rows are unmatched due to complete absence of strawberry fruit yield observations. All 20 JSON obs are discarded as wrong-crop or non-yield outcomes."
+}

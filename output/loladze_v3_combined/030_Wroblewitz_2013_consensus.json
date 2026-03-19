@@ -1,0 +1,2928 @@
+{
+  "paper_id": "030_Wroblewitz_2013",
+  "recon": {
+    "paper_id": "030_Wroblewitz_2013",
+    "warnings": [
+      "This is a factorial design with both CO2 and N fertilization treatments - extract CO2 effects at both N levels separately",
+      "Data is pooled across years - original had 4 samples per treatment but these were pooled to 2 samples",
+      "Tables contain both target mineral data (Tables 3, 4) and non-target nutritional data (Tables 1, 2)",
+      "Small sample size due to pooling may affect statistical power",
+      "AMBI clearly defined as ambient control, FACE as elevated treatment",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "SE",
+    "variance_source": "PSEM values shown in all tables, defined in statistical analysis section as pooled standard error of mean",
+    "variance_confidence": "high",
+    "control_definition": "Ambient CO2 (AMBI): 380 ppm atmospheric CO2",
+    "treatment_definition": "Free air carbon dioxide enrichment (FACE): 550 ppm atmospheric CO2",
+    "tables_with_target_data": [
+      "Table 3",
+      "Table 4"
+    ],
+    "potential_tc_confusion": null,
+    "experimental_design": "factorial",
+    "sample_size_found": 2,
+    "sample_size_source": "Because of small sample amounts for additional analysis, the four individual samples had to be pooled for two samples per CO2 and N treatment combination",
+    "factorial_structure": "[\"CO2\", \"nitrogen fertilization\", \"year\", \"species\"]",
+    "extraction_guidance": "Extract mineral data from Tables 3 and 4 only. For each mineral, extract data for both N50 and N100 fertilization levels separately, comparing AMBI vs FACE within each N level. Use PSEM values as standard errors. Ignore Tables 1 and 2 as they contain nutritional composition data, not target mineral concentrations. Be careful to extract the correct species (wheat from Table 3, barley from Table 4).",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"The effect of free air carbon dioxide enrichment and nitrogen fertilisation on the chemical composition and nutritional value of wheat and barley grain\",\n        \"species\": \"winter wheat cv. Batis, winter barley cv. Theresa\",\n        \"experimental_system\": \"FACE\",\n        \"co2_levels\": {\"control\": \"380 ppm\", \"elevated\": \"550 ppm\"}\n    },\n    \"warnings\": [\n        \"This is a factorial design with both CO2 and N fertilization treatments - extract CO2 effects at both N levels separately\",\n        \"Data is pooled across years - original had 4 samples per treatment but these were pooled to 2 samples\",\n        \"Tables contain both target mineral data (Tables 3, 4) and non-target nutritional data (Tables 1, 2)\",\n        \"Small sample size due to pooling may affect statistical power\",\n        \"AMBI clearly defined as ambient control, FACE as elevated treatment\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"SE\",\n        \"source\": \"PSEM values shown in all tables, defined in statistical analysis section as pooled standard error of mean\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Ambient CO2 (AMBI): 380 ppm atmospheric CO2\",\n        \"treatment_definition\": \"Free air carbon dioxide enrichment (FACE): 550 ppm atmospheric CO2\",\n        \"identification_method\": \"Tables clearly label treatments as 'AMBI' for control and 'FACE' for elevated CO2\",\n        \"potential_confusion\": null\n    },\n    \"sample_size\": {\n        \"n\": 2,\n        \"source\": \"Because of small sample amounts for additional analysis, the four individual samples had to be pooled for two samples per CO2 and N treatment combination\",\n        \"applies_to\": \"all tables\",\n        \"note\": \"Originally 4 samples per treatment but pooled to n=2 due to limited sample material. This represents 2 independent replicates per treatment combination.\"\n    },\n    \"data_locations\": {\n        \"tables_with_target_data\": [\"Table 3\",",
+    "tables_without_target_data": [
+      "Table 1",
+      "Table 2"
+    ],
+    "table_descriptions": {
+      "Table 1": "Chemical composition of winter wheat grain - contains crude protein, fiber, starch, sugars, viscosity",
+      "Table 2": "Chemical composition of winter barley grain - contains crude protein, fiber, starch, sugars, viscosity",
+      "Table 3": "Elemental composition of winter wheat - contains Na, Zn, Cu, Mn, Fe concentrations",
+      "Table 4": "Elemental composition of winter barley - contains Na, Zn, Cu, Mn, Fe concentrations"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 3": [
+        "Na",
+        "Zn",
+        "Cu",
+        "Mn",
+        "Fe"
+      ],
+      "Table 4": [
+        "Na",
+        "Zn",
+        "Cu",
+        "Mn",
+        "Fe"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 40,
+  "kimi_obs": 40,
+  "gemini_obs": 0,
+  "matched_obs": 39,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "",
+  "disagreements": [],
+  "consensus_observations": [
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "treatment_mean": 0.21,
+      "control_mean": 0.2,
+      "treatment_variance": 0.25,
+      "control_variance": 0.25,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "g/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.99999999999999,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "treatment_mean": 0.19,
+      "control_mean": 0.19,
+      "treatment_variance": 0.25,
+      "control_variance": 0.25,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "g/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "treatment_mean": 0.2,
+      "control_mean": 0.2,
+      "treatment_variance": 0.25,
+      "control_variance": 0.25,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "g/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 23.5,
+      "control_mean": 25.6,
+      "treatment_variance": 0.627,
+      "control_variance": 0.627,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.203125000000005,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 29.1,
+      "control_mean": 28.3,
+      "treatment_variance": 0.627,
+      "control_variance": 0.627,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 2.826855123674914,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 16.8,
+      "control_mean": 18.4,
+      "treatment_variance": 0.627,
+      "control_variance": 0.627,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.695652173913032,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 19.6,
+      "control_mean": 22.1,
+      "treatment_variance": 0.627,
+      "control_variance": 0.627,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -11.312217194570135,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 3.55,
+      "control_mean": 3.22,
+      "treatment_variance": 0.178,
+      "control_variance": 0.178,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 10.248447204968931,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 3.12,
+      "control_mean": 2.95,
+      "treatment_variance": 0.178,
+      "control_variance": 0.178,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 5.762711864406777,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 2.76,
+      "control_mean": 2.85,
+      "treatment_variance": 0.178,
+      "control_variance": 0.178,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.157894736842116,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 2.68,
+      "control_mean": 2.98,
+      "treatment_variance": 0.178,
+      "control_variance": 0.178,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.067114093959725,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 9.01,
+      "control_mean": 9.08,
+      "treatment_variance": 1.242,
+      "control_variance": 1.242,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -0.7709251101321617,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 9.81,
+      "control_mean": 12.1,
+      "treatment_variance": 1.242,
+      "control_variance": 1.242,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -18.925619834710737,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 8.56,
+      "control_mean": 9.99,
+      "treatment_variance": 1.242,
+      "control_variance": 1.242,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.314314314314311,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 11.7,
+      "control_mean": 15.6,
+      "treatment_variance": 1.242,
+      "control_variance": 1.242,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -25.000000000000007,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 18.0,
+      "control_mean": 19.8,
+      "treatment_variance": 0.601,
+      "control_variance": 0.601,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -9.090909090909093,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 22.1,
+      "control_mean": 24.1,
+      "treatment_variance": 0.601,
+      "control_variance": 0.601,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2002",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -8.29875518672199,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 19.4,
+      "control_mean": 21.0,
+      "treatment_variance": 0.601,
+      "control_variance": 0.601,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.619047619047626,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 21.6,
+      "control_mean": 24.9,
+      "treatment_variance": 0.601,
+      "control_variance": 0.601,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "wheat",
+        "cultivar": "Batis",
+        "year": "2005",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -13.253012048192762,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "treatment_mean": 0.27,
+      "control_mean": 0.29,
+      "treatment_variance": 0.008,
+      "control_variance": 0.008,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "g/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -6.896551724137918,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "treatment_mean": 0.3,
+      "control_mean": 0.3,
+      "treatment_variance": 0.008,
+      "control_variance": 0.008,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "g/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "treatment_mean": 0.33,
+      "control_mean": 0.34,
+      "treatment_variance": 0.008,
+      "control_variance": 0.008,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "g/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -2.9411764705882377,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "treatment_mean": 0.33,
+      "control_mean": 0.33,
+      "treatment_variance": 0.008,
+      "control_variance": 0.008,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "g/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 19.7,
+      "control_mean": 32.5,
+      "treatment_variance": 2.256,
+      "control_variance": 2.256,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -39.38461538461539,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 21.1,
+      "control_mean": 24.6,
+      "treatment_variance": 2.256,
+      "control_variance": 2.256,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -14.227642276422763,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 20.1,
+      "control_mean": 25.0,
+      "treatment_variance": 2.256,
+      "control_variance": 2.256,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -19.599999999999994,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 23.1,
+      "control_mean": 27.2,
+      "treatment_variance": 2.256,
+      "control_variance": 2.256,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.0735294117647,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 3.31,
+      "control_mean": 7.67,
+      "treatment_variance": 0.799,
+      "control_variance": 0.799,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -56.84485006518904,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 3.62,
+      "control_mean": 3.93,
+      "treatment_variance": 0.799,
+      "control_variance": 0.799,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -7.888040712468195,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 3.25,
+      "control_mean": 3.62,
+      "treatment_variance": 0.799,
+      "control_variance": 0.799,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -10.220994475138125,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 3.31,
+      "control_mean": 4.04,
+      "treatment_variance": 0.799,
+      "control_variance": 0.799,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -18.06930693069307,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 6.16,
+      "control_mean": 3.59,
+      "treatment_variance": 1.176,
+      "control_variance": 1.176,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [potential T/C swap - verify]",
+      "effect_pct": 71.58774373259054,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 6.42,
+      "control_mean": 7.77,
+      "treatment_variance": 1.176,
+      "control_variance": 1.176,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -17.37451737451737,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 8.51,
+      "control_mean": 10.7,
+      "treatment_variance": 1.176,
+      "control_variance": 1.176,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -20.467289719626162,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "treatment_mean": 9.6,
+      "control_mean": 11.4,
+      "treatment_variance": 1.176,
+      "control_variance": 1.176,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -15.789473684210531,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 33.0,
+      "control_mean": 24.9,
+      "treatment_variance": 3.849,
+      "control_variance": 3.849,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 32.53012048192772,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 40.4,
+      "control_mean": 31.2,
+      "treatment_variance": 3.849,
+      "control_variance": 3.849,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2000",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 29.48717948717949,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 35.4,
+      "control_mean": 33.9,
+      "treatment_variance": 3.849,
+      "control_variance": 3.849,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N50"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": 4.424778761061947,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "treatment_mean": 34.5,
+      "control_mean": 35.8,
+      "treatment_variance": 3.849,
+      "control_variance": 3.849,
+      "variance_type": "SE",
+      "n": 2,
+      "unit": "mg/kg",
+      "data_source": "Table 4",
+      "treatment_description": "Elevated CO2 (550 ppm)",
+      "control_description": "Ambient CO2 (380 ppm)",
+      "moderators": {
+        "species": "barley",
+        "cultivar": "Theresa",
+        "year": "2003",
+        "nitrogen_level": "N100"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%)",
+      "effect_pct": -3.631284916201109,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 1,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 1,
+    "original_count": 40,
+    "final_count": 39
+  },
+  "verification_flags": [
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Na",
+        "treatment_mean": 0.21,
+        "control_mean": 0.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +5.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 168.35875742536848,
+            "note": "CV = 168.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 4.99999999999999
+      }
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Na",
+        "treatment_mean": 0.19,
+        "control_mean": 0.19,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 186.08073189119673,
+            "note": "CV = 186.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Na",
+        "treatment_mean": 0.2,
+        "control_mean": 0.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 176.7766952966369,
+            "note": "CV = 176.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 23.5,
+        "control_mean": 25.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.773242143012471,
+            "note": "CV = 3.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -8.203125000000005
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 29.1,
+        "control_mean": 28.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +2.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.047119943669865,
+            "note": "CV = 3.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 2.826855123674914
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 16.8,
+        "control_mean": 18.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.7%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 5.278047045285301,
+            "note": "CV = 5.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": true,
+            "reported": "SE",
+            "calculated": "SE",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SE gives reasonable CV=5.0%"
+          }
+        },
+        "effect_pct": -8.695652173913032
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 19.6,
+        "control_mean": 22.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -11.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.524040324530258,
+            "note": "CV = 4.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -11.312217194570135
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 3.55,
+        "control_mean": 3.22,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +10.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -9.295774647887313,
+            "note": "Effect +10.2% violates expected direction; unswapped would be -9.3%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 7.09098631274397,
+            "note": "CV = 7.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.3%"
+          }
+        },
+        "effect_pct": 10.248447204968931,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +10.2%, corrected would be -9.3%"
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 3.12,
+        "control_mean": 2.95,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +5.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -5.448717948717946,
+            "note": "Effect +5.8% violates expected direction; unswapped would be -5.4%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 8.06826968276958,
+            "note": "CV = 8.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=5.9%"
+          }
+        },
+        "effect_pct": 5.762711864406777,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +5.8%, corrected would be -5.4%"
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 2.76,
+        "control_mean": 2.85,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.120652684869961,
+            "note": "CV = 9.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.3%"
+          }
+        },
+        "effect_pct": -3.157894736842116
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 2.68,
+        "control_mean": 2.98,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 9.392910973970556,
+            "note": "CV = 9.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=6.3%"
+          }
+        },
+        "effect_pct": -10.067114093959725
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 9.01,
+        "control_mean": 9.08,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -0.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 19.49448662005976,
+            "note": "CV = 19.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.7%"
+          }
+        },
+        "effect_pct": -0.7709251101321617
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 9.81,
+        "control_mean": 12.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -18.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.90472216582451,
+            "note": "CV = 17.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.3%"
+          }
+        },
+        "effect_pct": -18.925619834710737
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 8.56,
+        "control_mean": 9.99,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -14.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 20.519313603590934,
+            "note": "CV = 20.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.4%"
+          }
+        },
+        "effect_pct": -14.314314314314311
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 11.7,
+        "control_mean": 15.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -25.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.012420892883627,
+            "note": "CV = 15.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.1%"
+          }
+        },
+        "effect_pct": -25.000000000000007
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 18.0,
+        "control_mean": 19.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -9.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.721901949923501,
+            "note": "CV = 4.7%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -9.090909090909093
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 22.1,
+        "control_mean": 24.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -8.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.845892990887919,
+            "note": "CV = 3.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -8.29875518672199
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 19.4,
+        "control_mean": 21.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.381146139104279,
+            "note": "CV = 4.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -7.619047619047626
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 21.6,
+        "control_mean": 24.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -13.3%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.934918291602917,
+            "note": "CV = 3.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -13.253012048192762
+      }
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Na",
+        "treatment_mean": 0.27,
+        "control_mean": 0.29,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -6.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 4.190262407031393,
+            "note": "CV = 4.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -6.896551724137918
+      }
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Na",
+        "treatment_mean": 0.3,
+        "control_mean": 0.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.771236166328254,
+            "note": "CV = 3.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Na",
+        "treatment_mean": 0.33,
+        "control_mean": 0.34,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -2.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.428396514843867,
+            "note": "CV = 3.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": -2.9411764705882377
+      }
+    },
+    {
+      "element": "Na",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Na",
+        "treatment_mean": 0.33,
+        "control_mean": 0.33,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 3.428396514843867,
+            "note": "CV = 3.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 19.7,
+        "control_mean": 32.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -39.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.19525785133859,
+            "note": "CV = 16.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=8.6%"
+          }
+        },
+        "effect_pct": -39.38461538461539
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 21.1,
+        "control_mean": 24.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -14.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.120690979685792,
+            "note": "CV = 15.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.9%"
+          }
+        },
+        "effect_pct": -14.227642276422763
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 20.1,
+        "control_mean": 25.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -19.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.872964162754736,
+            "note": "CV = 15.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.0%"
+          }
+        },
+        "effect_pct": -19.599999999999994
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Zn",
+        "treatment_mean": 23.1,
+        "control_mean": 27.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.811540245513863,
+            "note": "CV = 13.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=9.0%"
+          }
+        },
+        "effect_pct": -15.0735294117647
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 3.31,
+        "control_mean": 7.67,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -56.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 34.137662729187404,
+            "note": "CV = 34.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=14.6%"
+          }
+        },
+        "effect_pct": -56.84485006518904
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 3.62,
+        "control_mean": 3.93,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -7.9%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 31.2142717219918,
+            "note": "CV = 31.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=21.2%"
+          }
+        },
+        "effect_pct": -7.888040712468195
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 3.25,
+        "control_mean": 3.62,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -10.2%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 34.76789650264933,
+            "note": "CV = 34.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=23.3%"
+          }
+        },
+        "effect_pct": -10.220994475138125
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Cu",
+        "treatment_mean": 3.31,
+        "control_mean": 4.04,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -18.1%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 34.137662729187404,
+            "note": "CV = 34.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=21.7%"
+          }
+        },
+        "effect_pct": -18.06930693069307
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 6.16,
+        "control_mean": 3.59,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +71.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -41.72077922077923,
+            "note": "Effect +71.6% violates expected direction; unswapped would be -41.7%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 26.998622554395453,
+            "note": "CV = 27.0%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=24.1%"
+          }
+        },
+        "effect_pct": 71.58774373259054,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +71.6%, corrected would be -41.7%"
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 6.42,
+        "control_mean": 7.77,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -17.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 25.905220394871648,
+            "note": "CV = 25.9%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=16.6%"
+          }
+        },
+        "effect_pct": -17.37451737451737
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 8.51,
+        "control_mean": 10.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -20.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 19.543068735026555,
+            "note": "CV = 19.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=12.2%"
+          }
+        },
+        "effect_pct": -20.467289719626162
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Mn",
+        "treatment_mean": 9.6,
+        "control_mean": 11.4,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -15.8%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 17.324116139070416,
+            "note": "CV = 17.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.2%"
+          }
+        },
+        "effect_pct": -15.789473684210531
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 33.0,
+        "control_mean": 24.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +32.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -24.545454545454547,
+            "note": "Effect +32.5% violates expected direction; unswapped would be -24.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 16.494872732042552,
+            "note": "CV = 16.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=13.3%"
+          }
+        },
+        "effect_pct": 32.53012048192772,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +32.5%, corrected would be -24.5%"
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 40.4,
+        "control_mean": 31.2,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +29.5%, expected negative"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": -22.772277227722775,
+            "note": "Effect +29.5% violates expected direction; unswapped would be -22.8%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 13.473534657361494,
+            "note": "CV = 13.5%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=10.8%"
+          }
+        },
+        "effect_pct": 29.48717948717949,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect +29.5%, corrected would be -22.8%"
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 35.4,
+        "control_mean": 33.9,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +4.4%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.376576275632893,
+            "note": "CV = 15.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.1%"
+          }
+        },
+        "effect_pct": 4.424778761061947
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim",
+        "variance_type"
+      ],
+      "details": {
+        "element": "Fe",
+        "treatment_mean": 34.5,
+        "control_mean": 35.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is -3.6%, expected negative"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 15.77770435238853,
+            "note": "CV = 15.8%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 2,
+            "note": "n=2"
+          },
+          "variance_type": {
+            "passed": false,
+            "reported": "SE",
+            "calculated": "SD",
+            "confidence": 0.5,
+            "reason": "CV heuristic: as SD gives reasonable CV=11.0%"
+          }
+        },
+        "effect_pct": -3.631284916201109
+      }
+    }
+  ]
+}

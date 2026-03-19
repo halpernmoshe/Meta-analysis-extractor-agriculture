@@ -1,0 +1,313 @@
+{
+  "paper_id": "111_Mondal_2013_Foliar application of chitosan improves",
+  "gt_rows": [
+    {
+      "pair": "745",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "0.4",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.51,
+      "treat_mean": 0.464,
+      "ctrl_sd": 0.021675000000000003,
+      "treat_sd": 0.01972
+    },
+    {
+      "pair": "746",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "0.6",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.51,
+      "treat_mean": 0.559,
+      "ctrl_sd": 0.021675000000000003,
+      "treat_sd": 0.023757500000000004
+    },
+    {
+      "pair": "747",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "0.8",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.51,
+      "treat_mean": 0.632,
+      "ctrl_sd": 0.021675000000000003,
+      "treat_sd": 0.026860000000000002
+    },
+    {
+      "pair": "748",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.51,
+      "treat_mean": 0.595,
+      "ctrl_sd": 0.021675000000000003,
+      "treat_sd": 0.0252875
+    },
+    {
+      "pair": "749",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "0.4",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.605,
+      "treat_mean": 0.657,
+      "ctrl_sd": 0.025712500000000003,
+      "treat_sd": 0.027922500000000003
+    },
+    {
+      "pair": "750",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "0.6",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.605,
+      "treat_mean": 0.675,
+      "ctrl_sd": 0.025712500000000003,
+      "treat_sd": 0.028687500000000005
+    },
+    {
+      "pair": "751",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "0.8",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.605,
+      "treat_mean": 0.724,
+      "ctrl_sd": 0.025712500000000003,
+      "treat_sd": 0.030770000000000002
+    },
+    {
+      "pair": "752",
+      "crop": "maize",
+      "CropCategory": "Cereals ",
+      "product": "",
+      "PBsCategory": "Chi",
+      "method": "Foliar",
+      "dose": "1",
+      "replicates": "3",
+      "ifdoseresponse": "1",
+      "Frequency": "3",
+      "country": "Bangladesh",
+      "ctrl_mean": 0.605,
+      "treat_mean": 0.763,
+      "ctrl_sd": 0.025712500000000003,
+      "treat_sd": 0.032427500000000005
+    }
+  ],
+  "json_obs": [
+    {
+      "element": "seed weight/plant (g) - pot",
+      "tissue": "grain",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Chitosan foliar spray 25 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-8",
+        "experimental_system": "pot",
+        "concentration_ppm": 50,
+        "chitosan_concentration": "25 ppm"
+      },
+      "control_mean": 6.55,
+      "treatment_mean": 7.08,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed weight/plant (g) - pot",
+      "tissue": "grain",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Chitosan foliar spray 50 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-7",
+        "experimental_system": "pot",
+        "concentration_ppm": 75,
+        "chitosan_concentration": "50 ppm"
+      },
+      "control_mean": 6.55,
+      "treatment_mean": 8.16,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed weight/plant (g) - pot",
+      "tissue": "grain",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Chitosan foliar spray 75 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-7",
+        "experimental_system": "pot",
+        "concentration_ppm": 100,
+        "chitosan_concentration": "75 ppm"
+      },
+      "control_mean": 6.55,
+      "treatment_mean": 7.66,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed weight/plant (g) - pot",
+      "tissue": "grain",
+      "unit": "g/plant",
+      "n": 4,
+      "treatment_description": "Chitosan foliar spray 100 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-8",
+        "experimental_system": "pot",
+        "concentration_ppm": 75,
+        "chitosan_concentration": "100 ppm"
+      },
+      "control_mean": 6.55,
+      "treatment_mean": 7.09,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed weight/plant (g) - field",
+      "tissue": "grain",
+      "unit": "g/plant",
+      "n": 3,
+      "treatment_description": "Chitosan foliar spray 25 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-7",
+        "experimental_system": "field",
+        "concentration_ppm": 100,
+        "chitosan_concentration": "25 ppm"
+      },
+      "control_mean": 7.28,
+      "treatment_mean": 8.7,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed weight/plant (g) - field",
+      "tissue": "grain",
+      "unit": "g/plant",
+      "n": 3,
+      "treatment_description": "Chitosan foliar spray 50 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-7",
+        "experimental_system": "field",
+        "concentration_ppm": 75,
+        "chitosan_concentration": "50 ppm"
+      },
+      "control_mean": 7.28,
+      "treatment_mean": 9.31,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed yield (kg/ha) - field",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 3,
+      "treatment_description": "Chitosan foliar spray 25 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-8",
+        "experimental_system": "field",
+        "concentration_ppm": 50,
+        "chitosan_concentration": "25 ppm"
+      },
+      "control_mean": 1556.0,
+      "treatment_mean": 1696.0,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed yield (kg/ha) - field",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 3,
+      "treatment_description": "Chitosan foliar spray 50 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-7",
+        "experimental_system": "field",
+        "concentration_ppm": 25,
+        "chitosan_concentration": "50 ppm"
+      },
+      "control_mean": 1556.0,
+      "treatment_mean": 1893.0,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed yield (kg/ha) - field",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 3,
+      "treatment_description": "Chitosan foliar spray 75 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-7",
+        "experimental_system": "field",
+        "concentration_ppm": 100,
+        "chitosan_concentration": "75 ppm"
+      },
+      "control_mean": 1556.0,
+      "treatment_mean": 1913.0,
+      "confidence": "medium"
+    },
+    {
+      "element": "seed yield (kg/ha) - field",
+      "tissue": "grain",
+      "unit": "kg/ha",
+      "n": 3,
+      "treatment_description": "Chitosan foliar spray 100 ppm",
+      "control_description": "No chitosan (0 ppm)",
+      "moderators": {
+        "cultivar": "BINAmung-8",
+        "experimental_system": "field",
+        "concentration_ppm": 75,
+        "chitosan_concentration": "100 ppm"
+      },
+      "control_mean": 1556.0,
+      "treatment_mean": 1704.0,
+      "confidence": "medium"
+    }
+  ]
+}

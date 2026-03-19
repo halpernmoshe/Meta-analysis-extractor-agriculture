@@ -1,0 +1,4282 @@
+{
+  "paper_id": "62_Morshedi_2012",
+  "recon": {
+    "paper_id": "62_Morshedi_2012",
+    "warnings": [
+      "This paper does NOT measure grain Zn concentration - it measures yield components, protein content, but no Zn biofortification data",
+      "Study focuses on Zn effects under salinity stress, not Zn biofortification for human nutrition",
+      "Multiple Zn rates used (0, 20, 40 kg/ha field; 0, 0.4, 0.8 g/pot greenhouse) but no grain Zn concentration reported",
+      "Factorial design with K\u00d7Zn interactions - treatments are combinations, not simple Zn vs control",
+      "Two separate experiments (greenhouse and field) with different units and application rates",
+      "Duncan's Multiple Range test used for mean separation, not standard error/LSD reporting",
+      "WARNING: SCANNED PDF - Text may have OCR errors",
+      "WARNING: LETTER-VAR - Variance shown as letters (a,b,c), not numbers",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": "DMR",
+    "variance_source": "Duncan's new multiple range (DMR) test was used to compare the treatment means... Means followed by the same letter do not differ significantly at p 50.05by Duncan's new multiple range tests",
+    "variance_confidence": "high",
+    "control_definition": "Zn0 = 0 kg Zn ha\u207b\u00b9 in field, Zn0 = 0 g Zn pot\u207b\u00b9 in greenhouse",
+    "treatment_definition": "Zn1 = 20 kg ha\u207b\u00b9 field/0.4 g pot\u207b\u00b9 greenhouse; Zn2 = 40 kg ha\u207b\u00b9 field/0.8 g pot\u207b\u00b9 greenhouse, as ZnSO4",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": "Factorial design means control is Zn0K0, but treatments include Zn0K1, Zn0K2, etc. - only Zn effect comparisons are valid for meta-analysis",
+    "experimental_design": "factorial",
+    "sample_size_found": 3,
+    "sample_size_source": "randomized complete block design with three replications was employed",
+    "factorial_structure": "[\"Zn rate\", \"K rate\", \"genotype\", \"environment (greenhouse vs field)\"]",
+    "extraction_guidance": "This paper should be EXCLUDED from the Zn biofortification meta-analysis as it does not measure grain Zn concentration. It focuses on agronomic performance under salinity stress, not nutritional biofortification. The outcome variables are yield components and protein content, not mineral concentrations.",
+    "raw_response": "```json\n{\n    \"paper_summary\": {\n        \"title\": \"The role of potassium and zinc in reducing salinity and alkalinity stress conditions in two wheat genotypes\",\n        \"species\": \"Triticum aestivum (wheat)\",\n        \"experimental_system\": \"greenhouse and field\",\n        \"co2_levels\": {\"control\": \"not applicable\", \"elevated\": \"not applicable\"}\n    },\n    \"warnings\": [\n        \"This paper does NOT measure grain Zn concentration - it measures yield components, protein content, but no Zn biofortification data\",\n        \"Study focuses on Zn effects under salinity stress, not Zn biofortification for human nutrition\",\n        \"Multiple Zn rates used (0, 20, 40 kg/ha field; 0, 0.4, 0.8 g/pot greenhouse) but no grain Zn concentration reported\",\n        \"Factorial design with K\u00d7Zn interactions - treatments are combinations, not simple Zn vs control\",\n        \"Two separate experiments (greenhouse and field) with different units and application rates\",\n        \"Duncan's Multiple Range test used for mean separation, not standard error/LSD reporting\"\n    ],\n    \"variance_detection\": {\n        \"type\": \"DMR\",\n        \"source\": \"Duncan's new multiple range (DMR) test was used to compare the treatment means... Means followed by the same letter do not differ significantly at p 50.05by Duncan's new multiple range tests\",\n        \"confidence\": \"high\"\n    },\n    \"treatment_control\": {\n        \"control_definition\": \"Zn0 = 0 kg Zn ha\u207b\u00b9 in field, Zn0 = 0 g Zn pot\u207b\u00b9 in greenhouse\",\n        \"treatment_definition\": \"Zn1 = 20 kg ha\u207b\u00b9 field/0.4 g pot\u207b\u00b9 greenhouse; Zn2 = 40 kg ha\u207b\u00b9 field/0.8 g pot\u207b\u00b9 greenhouse, as ZnSO4\",\n        \"identification_method\": \"Look for Zn0, Zn1, Zn2 designations in tables, combined with K0, K1, K2, K3 levels\",\n        \"potential_confusion\": \"Factorial design means control is Zn0K0, but treatments include Zn0K1, Zn0K2, etc. - only Zn effect comparisons are valid for meta-analysis\"\n    },\n    \"sample_size\": {\n        \"n\": 3,\n        \"source\": \"randomized complete block",
+    "tables_without_target_data": [
+      "Table 2",
+      "Table 3",
+      "Table 4",
+      "Table 5"
+    ],
+    "table_descriptions": {
+      "Table 2": "Main effects on ear length, grains per ear, 1000-grain weight, grain weight per ear, grain yield, protein content - greenhouse",
+      "Table 3": "Zn\u00d7K interaction effects on same variables - greenhouse",
+      "Table 4": "Main effects on same variables - field",
+      "Table 5": "Zn\u00d7K interaction effects on same variables - field"
+    },
+    "figures_with_data": [],
+    "outcome_variables_detected": {
+      "Table 2": [
+        "Ear length (cm)",
+        "No. of grains per ear",
+        "1000-grain weight (g)",
+        "Grain weight per ear (g)",
+        "Grain yield (g pot\u207b\u00b9)",
+        "Grain protein content (%)"
+      ],
+      "Table 3": [
+        "No. of grains per year",
+        "Grain weight per year (g)",
+        "1000-grain weight (g)",
+        "Grain yield (g pot\u207b\u00b9)",
+        "Grain protein content (%)"
+      ],
+      "Table 4": [
+        "Ear length (cm)",
+        "No. of grains per year",
+        "1000-grain weight (g)",
+        "Grain weight per year (g)",
+        "Grain yield (t ha\u207b\u00b9)",
+        "Grain protein content (%)"
+      ],
+      "Table 5": [
+        "No. of grains per ear",
+        "Grain weight per ear (g)",
+        "1000-grain weight (g)",
+        "Grain yield (t ha\u207b\u00b9)",
+        "Grain protein content (%)"
+      ]
+    },
+    "extraction_method": "hybrid",
+    "extraction_method_reason": "Scanned/image tables - use vision to supplement text",
+    "challenge_hints": [
+      "Verify all numbers carefully - OCR may confuse 0/O, 1/l/I",
+      "If numbers look wrong, flag for manual review",
+      "Cannot extract numeric variance - only significance groupings",
+      "Look for LSD or pooled SE values in table footnotes",
+      "May need to calculate variance from other reported statistics",
+      "FACTORIAL design - extract EACH factor combination separately",
+      "Do NOT pool across factors - each row is a separate observation",
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": true,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "HARD"
+  },
+  "claude_obs": 0,
+  "kimi_obs": 46,
+  "gemini_obs": 0,
+  "matched_obs": 44,
+  "tiebreaker_used": false,
+  "tiebreaker_reason": "Claude extracted 0 obs, Kimi extracted 46",
+  "disagreements": [
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 19.9,
+        "control_mean": 18.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse",
+          "Zn_rate": "20 kg ha\u207b\u00b9 equivalent"
+        },
+        "confidence": "medium",
+        "notes": "Factorial design; variance reported as DMR grouping letters only (c vs c); control and treatment share same letter",
+        "effect_pct": 9.944751381215452,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 24.5,
+        "control_mean": 18.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse",
+          "Zn_rate": "40 kg ha\u207b\u00b9 equivalent"
+        },
+        "confidence": "medium",
+        "notes": "Factorial design; DMR variance only",
+        "effect_pct": 35.359116022099435,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 31.3,
+        "control_mean": 25.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse",
+          "Zn_rate": "20 kg ha\u207b\u00b9 equivalent"
+        },
+        "confidence": "medium",
+        "notes": "Salinity-tolerant genotype",
+        "effect_pct": 20.84942084942086,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 30.5,
+        "control_mean": 25.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse",
+          "Zn_rate": "40 kg ha\u207b\u00b9 equivalent"
+        },
+        "confidence": "medium",
+        "notes": "Salinity-tolerant genotype",
+        "effect_pct": 17.760617760617766,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 20.6,
+        "control_mean": 19.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K1",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 7.2916666666666785,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 21.3,
+        "control_mean": 19.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K1",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 10.937500000000009,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 31.5,
+        "control_mean": 26.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K1",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 18.867924528301888,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 32.2,
+        "control_mean": 26.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K1",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 21.50943396226416,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 23.5,
+        "control_mean": 20.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K2",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 15.763546798029552,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 24.9,
+        "control_mean": 20.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K2",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 22.660098522167477,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 32.6,
+        "control_mean": 27.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K2",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 17.26618705035971,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 33.7,
+        "control_mean": 27.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K2",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 21.22302158273382,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 21.1,
+        "control_mean": 19.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K3",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 10.471204188481673,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 29.9,
+        "control_mean": 19.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K3",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "Large effect; DMR letter changed from c to b",
+        "effect_pct": 56.54450261780103,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 30.9,
+        "control_mean": 29.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K3",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 5.821917808219176,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 35.2,
+        "control_mean": 29.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K3",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "Highest value observed for this genotype",
+        "effect_pct": 20.547945205479465,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 5.1,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g pot\u207b\u00b9",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 21.428571428571416,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 5.2,
+        "control_mean": 4.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g pot\u207b\u00b9",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 23.809523809523807,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 5.5,
+        "control_mean": 5.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g pot\u207b\u00b9",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 5.769230769230766,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 6.2,
+        "control_mean": 5.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g pot\u207b\u00b9",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 19.23076923076923,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 16.1,
+        "control_mean": 13.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 15.82733812949641,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 16.7,
+        "control_mean": 13.9,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 20.143884892086323,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 14.4,
+        "control_mean": 13.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 10.769230769230772,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 16.2,
+        "control_mean": 13.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 24.61538461538461,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "kimi": {
+        "element": "No. of grains per ear",
+        "tissue": "grain",
+        "treatment_mean": 26.3,
+        "control_mean": 24.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "count",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 9.128630705394187,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "kimi": {
+        "element": "No. of grains per ear",
+        "tissue": "grain",
+        "treatment_mean": 27.5,
+        "control_mean": 24.1,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "count",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 14.10788381742738,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "kimi": {
+        "element": "No. of grains per ear",
+        "tissue": "grain",
+        "treatment_mean": 27.5,
+        "control_mean": 25.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "count",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 6.589147286821702,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "kimi": {
+        "element": "No. of grains per ear",
+        "tissue": "grain",
+        "treatment_mean": 29.4,
+        "control_mean": 25.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "count",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 13.953488372093014,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain weight per ear (g)",
+        "tissue": "grain",
+        "treatment_mean": 0.7,
+        "control_mean": 0.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 39.99999999999999,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain weight per ear (g)",
+        "tissue": "grain",
+        "treatment_mean": 0.7,
+        "control_mean": 0.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "Same mean as Zn1 but different DMR grouping",
+        "effect_pct": 39.99999999999999,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain weight per ear (g)",
+        "tissue": "grain",
+        "treatment_mean": 0.8,
+        "control_mean": 0.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "No change from control",
+        "effect_pct": 0.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain weight per ear (g)",
+        "tissue": "grain",
+        "treatment_mean": 0.9,
+        "control_mean": 0.8,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 3",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 12.499999999999996,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 31.2,
+        "control_mean": 26.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "low",
+        "notes": "OCR may have swapped genotype columns for some rows; values appear inconsistent with Table 4 main effects",
+        "effect_pct": 20.0,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 25.0,
+        "control_mean": 26.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "low",
+        "notes": "Value lower than control; possible OCR error in genotype assignment",
+        "effect_pct": -3.8461538461538463,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 19.9,
+        "control_mean": 19.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "low",
+        "notes": "",
+        "effect_pct": 3.64583333333333,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "1000-grain weight (g)",
+        "tissue": "grain",
+        "treatment_mean": 30.2,
+        "control_mean": 19.2,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "g",
+        "data_source": "Table 5",
+        "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "low",
+        "notes": "Large increase; verify table column alignment",
+        "effect_pct": 57.29166666666667,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 3.4,
+        "control_mean": 3.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha\u207b\u00b9",
+        "data_source": "Table 5",
+        "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 3.030303030303033,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 2.4,
+        "control_mean": 3.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha\u207b\u00b9",
+        "data_source": "Table 5",
+        "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "low",
+        "notes": "Value lower than control; likely OCR column swap",
+        "effect_pct": -27.27272727272727,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 2.1,
+        "control_mean": 1.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha\u207b\u00b9",
+        "data_source": "Table 5",
+        "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 31.25,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "tissue": "grain",
+        "treatment_mean": 3.9,
+        "control_mean": 1.6,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "t ha\u207b\u00b9",
+        "data_source": "Table 5",
+        "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+        "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 143.74999999999997,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 14.4,
+        "control_mean": 12.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 5",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 15.200000000000003,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 16.7,
+        "control_mean": 12.5,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 5",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Baccrosroshan",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 33.599999999999994,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 16.1,
+        "control_mean": 13.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 5",
+        "treatment_description": "Zn1 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 17.5182481751825,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Grain protein content (%)",
+        "tissue": "grain",
+        "treatment_mean": 16.2,
+        "control_mean": 13.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "%",
+        "data_source": "Table 5",
+        "treatment_description": "Zn2 + K0",
+        "control_description": "Zn0 + K0",
+        "moderators": {
+          "cultivar": "Line No. 4",
+          "K_level": "K0",
+          "experiment": "Field"
+        },
+        "confidence": "medium",
+        "notes": "",
+        "effect_pct": 18.248175182481752,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Ear length (cm)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Ear length (cm)",
+        "tissue": "grain",
+        "treatment_mean": 8.3,
+        "control_mean": 8.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 4",
+        "treatment_description": "Zn2 (main effect)",
+        "control_description": "Zn0 (main effect)",
+        "moderators": {
+          "cultivar": "Pooled across genotypes",
+          "experiment": "Field"
+        },
+        "confidence": "low",
+        "notes": "Main effect from Table 4; violates no-pooling rule but included for completeness",
+        "effect_pct": 3.750000000000009,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    },
+    {
+      "type": "kimi_only",
+      "element": "Ear length (cm)",
+      "tissue": "grain",
+      "kimi": {
+        "element": "Ear length (cm)",
+        "tissue": "grain",
+        "treatment_mean": 8.3,
+        "control_mean": 8.0,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "cm",
+        "data_source": "Table 2",
+        "treatment_description": "Zn2 (main effect)",
+        "control_description": "Zn0 (main effect)",
+        "moderators": {
+          "cultivar": "Pooled across genotypes",
+          "experiment": "Greenhouse"
+        },
+        "confidence": "low",
+        "notes": "Main effect from Table 2",
+        "effect_pct": 3.750000000000009,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 19.9,
+      "control_mean": 18.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse",
+        "Zn_rate": "20 kg ha\u207b\u00b9 equivalent"
+      },
+      "confidence": "low",
+      "notes": "Factorial design; variance reported as DMR grouping letters only (c vs c); control and treatment share same letter [single-model fallback: Kimi only]",
+      "effect_pct": 9.944751381215452,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 24.5,
+      "control_mean": 18.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse",
+        "Zn_rate": "40 kg ha\u207b\u00b9 equivalent"
+      },
+      "confidence": "low",
+      "notes": "Factorial design; DMR variance only [single-model fallback: Kimi only]",
+      "effect_pct": 35.359116022099435,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 31.3,
+      "control_mean": 25.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse",
+        "Zn_rate": "20 kg ha\u207b\u00b9 equivalent"
+      },
+      "confidence": "low",
+      "notes": "Salinity-tolerant genotype [single-model fallback: Kimi only]",
+      "effect_pct": 20.84942084942086,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 30.5,
+      "control_mean": 25.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9 as ZnSO\u2084) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0 (0 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse",
+        "Zn_rate": "40 kg ha\u207b\u00b9 equivalent"
+      },
+      "confidence": "low",
+      "notes": "Salinity-tolerant genotype [single-model fallback: Kimi only]",
+      "effect_pct": 17.760617760617766,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 20.6,
+      "control_mean": 19.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K1",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 7.2916666666666785,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 21.3,
+      "control_mean": 19.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K1",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 10.937500000000009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 31.5,
+      "control_mean": 26.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K1",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 18.867924528301888,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 32.2,
+      "control_mean": 26.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K1 (1.1 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K1",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 21.50943396226416,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 23.5,
+      "control_mean": 20.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K2",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 15.763546798029552,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 24.9,
+      "control_mean": 20.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K2",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 22.660098522167477,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 32.6,
+      "control_mean": 27.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K2",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 17.26618705035971,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 33.7,
+      "control_mean": 27.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K2 (2.2 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K2",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 21.22302158273382,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 21.1,
+      "control_mean": 19.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K3",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 10.471204188481673,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 29.9,
+      "control_mean": 19.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K3",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "Large effect; DMR letter changed from c to b [single-model fallback: Kimi only]",
+      "effect_pct": 56.54450261780103,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 30.9,
+      "control_mean": 29.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K3",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 5.821917808219176,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 35.2,
+      "control_mean": 29.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K3 (3.3 g K\u2082SO\u2084 pot\u207b\u00b9)",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K3",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "Highest value observed for this genotype [single-model fallback: Kimi only]",
+      "effect_pct": 20.547945205479465,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 5.1,
+      "control_mean": 4.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g pot\u207b\u00b9",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 21.428571428571416,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 5.2,
+      "control_mean": 4.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g pot\u207b\u00b9",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 23.809523809523807,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 5.5,
+      "control_mean": 5.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g pot\u207b\u00b9",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 (0.4 g Zn pot\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 5.769230769230766,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 6.2,
+      "control_mean": 5.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g pot\u207b\u00b9",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 (0.8 g Zn pot\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 g Zn pot\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 19.23076923076923,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 16.1,
+      "control_mean": 13.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 15.82733812949641,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 16.7,
+      "control_mean": 13.9,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 20.143884892086323,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 14.4,
+      "control_mean": 13.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 10.769230769230772,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 16.2,
+      "control_mean": 13.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 24.61538461538461,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "treatment_mean": 26.3,
+      "control_mean": 24.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 9.128630705394187,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "treatment_mean": 27.5,
+      "control_mean": 24.1,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 14.10788381742738,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "treatment_mean": 27.5,
+      "control_mean": 25.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 6.589147286821702,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "treatment_mean": 29.4,
+      "control_mean": 25.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "count",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 13.953488372093014,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "treatment_mean": 0.7,
+      "control_mean": 0.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 39.99999999999999,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "treatment_mean": 0.8,
+      "control_mean": 0.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "No change from control [single-model fallback: Kimi only]",
+      "effect_pct": 0.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "treatment_mean": 0.9,
+      "control_mean": 0.8,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 3",
+      "treatment_description": "Zn2 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Greenhouse"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 12.499999999999996,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 31.2,
+      "control_mean": 26.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "OCR may have swapped genotype columns for some rows; values appear inconsistent with Table 4 main effects [single-model fallback: Kimi only]",
+      "effect_pct": 20.0,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 25.0,
+      "control_mean": 26.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "Value lower than control; possible OCR error in genotype assignment [single-model fallback: Kimi only]",
+      "effect_pct": -3.8461538461538463,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 19.9,
+      "control_mean": 19.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 3.64583333333333,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "treatment_mean": 30.2,
+      "control_mean": 19.2,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "g",
+      "data_source": "Table 5",
+      "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "Large increase; verify table column alignment [single-model fallback: Kimi only]",
+      "effect_pct": 57.29166666666667,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 3.4,
+      "control_mean": 3.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha\u207b\u00b9",
+      "data_source": "Table 5",
+      "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 3.030303030303033,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 2.4,
+      "control_mean": 3.3,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha\u207b\u00b9",
+      "data_source": "Table 5",
+      "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "Value lower than control; likely OCR column swap [single-model fallback: Kimi only]",
+      "effect_pct": -27.27272727272727,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 2.1,
+      "control_mean": 1.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha\u207b\u00b9",
+      "data_source": "Table 5",
+      "treatment_description": "Zn1 (20 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 31.25,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "treatment_mean": 3.9,
+      "control_mean": 1.6,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "t ha\u207b\u00b9",
+      "data_source": "Table 5",
+      "treatment_description": "Zn2 (40 kg Zn ha\u207b\u00b9) + K0",
+      "control_description": "Zn0 (0 kg Zn ha\u207b\u00b9) + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 143.74999999999997,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 14.4,
+      "control_mean": 12.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 15.200000000000003,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 16.7,
+      "control_mean": 12.5,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Zn2 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Baccrosroshan",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 33.599999999999994,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 16.1,
+      "control_mean": 13.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Zn1 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 17.5182481751825,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "treatment_mean": 16.2,
+      "control_mean": 13.7,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "%",
+      "data_source": "Table 5",
+      "treatment_description": "Zn2 + K0",
+      "control_description": "Zn0 + K0",
+      "moderators": {
+        "cultivar": "Line No. 4",
+        "K_level": "K0",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "[single-model fallback: Kimi only]",
+      "effect_pct": 18.248175182481752,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Ear length (cm)",
+      "tissue": "grain",
+      "treatment_mean": 8.3,
+      "control_mean": 8.0,
+      "treatment_variance": null,
+      "control_variance": null,
+      "variance_type": null,
+      "n": 3,
+      "unit": "cm",
+      "data_source": "Table 4",
+      "treatment_description": "Zn2 (main effect)",
+      "control_description": "Zn0 (main effect)",
+      "moderators": {
+        "cultivar": "Pooled across genotypes",
+        "experiment": "Field"
+      },
+      "confidence": "low",
+      "notes": "Main effect from Table 4; violates no-pooling rule but included for completeness [single-model fallback: Kimi only]",
+      "effect_pct": 3.750000000000009,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 2,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 46,
+    "final_count": 44
+  },
+  "verification_flags": [
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 19.9,
+        "control_mean": 18.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.944751381215452
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 24.5,
+        "control_mean": 18.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +35.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 35.359116022099435
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 31.3,
+        "control_mean": 25.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 20.84942084942086
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 30.5,
+        "control_mean": 25.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.760617760617766
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 20.6,
+        "control_mean": 19.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +7.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 7.2916666666666785
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 21.3,
+        "control_mean": 19.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.937500000000009
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 31.5,
+        "control_mean": 26.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 18.867924528301888
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 32.2,
+        "control_mean": 26.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 21.50943396226416
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 23.5,
+        "control_mean": 20.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 15.763546798029552
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 24.9,
+        "control_mean": 20.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +22.7%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 22.660098522167477
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 32.6,
+        "control_mean": 27.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.26618705035971
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 33.7,
+        "control_mean": 27.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 21.22302158273382
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 21.1,
+        "control_mean": 19.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.471204188481673
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 29.9,
+        "control_mean": 19.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +56.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 56.54450261780103
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 30.9,
+        "control_mean": 29.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 5.821917808219176
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 35.2,
+        "control_mean": 29.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 20.547945205479465
+      }
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "treatment_mean": 5.1,
+        "control_mean": 4.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.4%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 21.428571428571416
+      }
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "treatment_mean": 5.2,
+        "control_mean": 4.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +23.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 23.809523809523807
+      }
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "treatment_mean": 5.5,
+        "control_mean": 5.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +5.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 5.769230769230766
+      }
+    },
+    {
+      "element": "Grain yield (g pot\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (g pot\u207b\u00b9)",
+        "treatment_mean": 6.2,
+        "control_mean": 5.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 19.23076923076923
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 16.1,
+        "control_mean": 13.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 15.82733812949641
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 16.7,
+        "control_mean": 13.9,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 20.143884892086323
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 14.4,
+        "control_mean": 13.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +10.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 10.769230769230772
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 16.2,
+        "control_mean": 13.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +24.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 24.61538461538461
+      }
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "No. of grains per ear",
+        "treatment_mean": 26.3,
+        "control_mean": 24.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.128630705394187
+      }
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "No. of grains per ear",
+        "treatment_mean": 27.5,
+        "control_mean": 24.1,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.1%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 14.10788381742738
+      }
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "No. of grains per ear",
+        "treatment_mean": 27.5,
+        "control_mean": 25.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +6.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 6.589147286821702
+      }
+    },
+    {
+      "element": "No. of grains per ear",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "No. of grains per ear",
+        "treatment_mean": 29.4,
+        "control_mean": 25.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +14.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 13.953488372093014
+      }
+    },
+    {
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain weight per ear (g)",
+        "treatment_mean": 0.7,
+        "control_mean": 0.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +40.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 39.99999999999999
+      }
+    },
+    {
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "grim"
+      ],
+      "details": {
+        "element": "Grain weight per ear (g)",
+        "treatment_mean": 0.8,
+        "control_mean": 0.8,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is +0.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 0.0
+      }
+    },
+    {
+      "element": "Grain weight per ear (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain weight per ear (g)",
+        "treatment_mean": 0.9,
+        "control_mean": 0.8,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +12.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 12.499999999999996
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 31.2,
+        "control_mean": 26.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +20.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 20.0
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 25.0,
+        "control_mean": 26.0,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -3.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": true,
+            "treatment_valid": true,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -3.8461538461538463
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 19.9,
+        "control_mean": 19.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 3.64583333333333
+      }
+    },
+    {
+      "element": "1000-grain weight (g)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "1000-grain weight (g)",
+        "treatment_mean": 30.2,
+        "control_mean": 19.2,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +57.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 57.29166666666667
+      }
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "treatment_mean": 3.4,
+        "control_mean": 3.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 3.030303030303033
+      }
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "direction",
+        "tc_swap",
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "treatment_mean": 2.4,
+        "control_mean": 3.3,
+        "checks": {
+          "direction": {
+            "passed": false,
+            "note": "Effect is -27.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": false,
+            "likely_swapped": true,
+            "corrected_effect": 37.49999999999999,
+            "note": "Effect -27.3% violates expected direction; unswapped would be +37.5%"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": -27.27272727272727,
+        "swap_warning": "\u26a0\ufe0f LIKELY T/C SWAP: Current effect -27.3%, corrected would be +37.5%"
+      }
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "treatment_mean": 2.1,
+        "control_mean": 1.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +31.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 31.25
+      }
+    },
+    {
+      "element": "Grain yield (t ha\u207b\u00b9)",
+      "tissue": "grain",
+      "failed_checks": [
+        "magnitude",
+        "grim"
+      ],
+      "details": {
+        "element": "Grain yield (t ha\u207b\u00b9)",
+        "treatment_mean": 3.9,
+        "control_mean": 1.6,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +143.7%, expected positive"
+          },
+          "magnitude": {
+            "passed": false,
+            "note": "Effect of +143.7% seems extreme"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 143.74999999999997
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 14.4,
+        "control_mean": 12.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +15.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 15.200000000000003
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 16.7,
+        "control_mean": 12.5,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +33.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 33.599999999999994
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 16.1,
+        "control_mean": 13.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.5%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.5182481751825
+      }
+    },
+    {
+      "element": "Grain protein content (%)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Grain protein content (%)",
+        "treatment_mean": 16.2,
+        "control_mean": 13.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +18.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 18.248175182481752
+      }
+    },
+    {
+      "element": "Ear length (cm)",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Ear length (cm)",
+        "treatment_mean": 8.3,
+        "control_mean": 8.0,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +3.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": true
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 3.750000000000009
+      }
+    }
+  ]
+}

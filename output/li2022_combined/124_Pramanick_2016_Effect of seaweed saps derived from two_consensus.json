@@ -1,0 +1,1544 @@
+{
+  "paper_id": "124_Pramanick_2016_Effect of seaweed saps derived from two",
+  "recon": {
+    "paper_id": "124_Pramanick_2016_Effect of seaweed saps derived from two",
+    "warnings": [
+      "Recon error: 'list' object has no attribute 'get'",
+      "WARNING: VAR-UNCLEAR - Variance type not clearly stated"
+    ],
+    "variance_type": null,
+    "variance_source": null,
+    "variance_confidence": "low",
+    "control_definition": "",
+    "treatment_definition": "",
+    "tables_with_target_data": [],
+    "potential_tc_confusion": null,
+    "experimental_design": "",
+    "sample_size_found": null,
+    "sample_size_source": null,
+    "factorial_structure": null,
+    "extraction_guidance": "",
+    "raw_response": "",
+    "tables_without_target_data": [],
+    "table_descriptions": {},
+    "figures_with_data": [],
+    "outcome_variables_detected": {},
+    "extraction_method": "text",
+    "extraction_method_reason": "Standard text extraction should work",
+    "challenge_hints": [
+      "Check Methods section for 'mean \u00b1 SE' or 'mean \u00b1 SD' statement",
+      "Check table footnotes for variance definitions",
+      "If unclear, flag variance_type as 'UNKNOWN'"
+    ],
+    "is_scanned": false,
+    "is_fig_only": false,
+    "has_image_tables": false,
+    "estimated_difficulty": "EASY"
+  },
+  "claude_obs": 18,
+  "kimi_obs": 18,
+  "gemini_obs": 12,
+  "matched_obs": 10,
+  "tiebreaker_used": true,
+  "tiebreaker_reason": "Low consensus: 0/18 (0%) \u2014 Claude=18, Kimi=18",
+  "disagreements": [
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1085.6,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "2.5% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 19.257387674393055,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1090.3,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "5% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 19.77370097769966,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1158.6,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "10% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 27.27672195979347,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1265.0,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "15% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 38.96517631550039,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 995.3,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "2.5% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 9.337581017247063,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1036.5,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "5% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 13.863561463253879,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1103.0,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "10% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 21.168845435570695,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1216.1,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "15% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 33.59332088322531,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "seed_yield",
+      "tissue": "grain",
+      "claude": {
+        "element": "seed_yield",
+        "tissue": "grain",
+        "treatment_mean": 1101.7,
+        "control_mean": 910.3,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "7.5% Kappaphycus-sap + 50% RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 21.026035372953984,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 4157.9,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "2.5% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 11.991273197403503,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 4199.5,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "5% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 13.111751555471765,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 4372.1,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "10% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 17.76065935841842,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 5220.3,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "15% Kappaphycus-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 40.60656664960811,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 3909.7,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "2.5% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 5.306111455275137,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 4125.3,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "5% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 11.113206022571184,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 4657.8,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "10% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 25.455867697363114,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 5107.2,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "15% Gracilaria-sap + RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 37.56026611361004,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "claude_only_after_vote",
+      "element": "stover_yield",
+      "tissue": "shoot",
+      "claude": {
+        "element": "stover_yield",
+        "tissue": "shoot",
+        "treatment_mean": 4298.3,
+        "control_mean": 3712.7,
+        "treatment_variance": null,
+        "control_variance": null,
+        "variance_type": null,
+        "n": 3,
+        "unit": "kg/ha",
+        "data_source": "Table 5",
+        "treatment_description": "7.5% Kappaphycus-sap + 50% RDF",
+        "control_description": "RDF + Water spray",
+        "moderators": {},
+        "confidence": "high",
+        "notes": "Foliar spray at 20 and 40 DAS",
+        "effect_pct": 15.772887655883869,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "kimi": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 4157.9,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "2.5% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Kappaphycus",
+          "concentration": "2.5%",
+          "rdf_level": "100%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 11.991273197403503,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 4199.5,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "5% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Kappaphycus",
+          "concentration": "5%",
+          "rdf_level": "100%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 13.111751555471765,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 5220.3,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "15% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Kappaphycus",
+          "concentration": "15%",
+          "rdf_level": "100%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 40.60656664960811,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 3909.7,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "2.5% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Gracilaria",
+          "concentration": "2.5%",
+          "rdf_level": "100%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 5.306111455275137,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 4125.3,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "5% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Gracilaria",
+          "concentration": "5%",
+          "rdf_level": "100%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 11.113206022571184,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 4657.8,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "10% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Gracilaria",
+          "concentration": "10%",
+          "rdf_level": "100%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 25.455867697363114,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 5107.2,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "15% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Gracilaria",
+          "concentration": "15%",
+          "rdf_level": "100%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 37.56026611361004,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    },
+    {
+      "type": "kimi_only_after_vote",
+      "element": "Stover yield",
+      "tissue": "stover",
+      "kimi": {
+        "element": "Stover yield",
+        "tissue": "stover",
+        "treatment_mean": 4298.3,
+        "control_mean": 3712.7,
+        "treatment_variance": 9.07,
+        "control_variance": 9.07,
+        "variance_type": "SE",
+        "n": 3,
+        "unit": "kg ha-1",
+        "data_source": "Table 5",
+        "treatment_description": "7.5% Kappaphycus sap + 50% RDF (10:20:20 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+        "control_description": "RDF + Water spray",
+        "moderators": {
+          "biostimulant_type": "Kappaphycus",
+          "concentration": "7.5%",
+          "rdf_level": "50%"
+        },
+        "confidence": "high",
+        "notes": "Oven-dried stover yield.",
+        "effect_pct": 15.772887655883869,
+        "ln_rr": null,
+        "grim_valid": null,
+        "cv_reasonable": null,
+        "direction_expected": null
+      },
+      "claude": null,
+      "gemini": null
+    }
+  ],
+  "consensus_observations": [
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1085.6,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "2.5% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Kappaphycus",
+        "concentration": "2.5%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 19.257387674393055,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1090.3,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "5% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Kappaphycus",
+        "concentration": "5%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 19.77370097769966,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1158.6,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "10% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Kappaphycus",
+        "concentration": "10%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 27.27672195979347,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Stover yield",
+      "tissue": "stover",
+      "treatment_mean": 4372.1,
+      "control_mean": 3712.7,
+      "treatment_variance": 9.07,
+      "control_variance": 9.07,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "10% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Kappaphycus",
+        "concentration": "10%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=9.7%) [Kimi+Gemini agree]",
+      "effect_pct": 17.76065935841842,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1265.0,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "15% Kappaphycus sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Kappaphycus",
+        "concentration": "15%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 38.96517631550039,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 995.3,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "2.5% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Gracilaria",
+        "concentration": "2.5%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 9.337581017247063,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1036.5,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "5% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Gracilaria",
+        "concentration": "5%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 13.863561463253879,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1103.0,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "10% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Gracilaria",
+        "concentration": "10%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 21.168845435570695,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1216.1,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "15% Gracilaria sap + RDF (20:40:40 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Gracilaria",
+        "concentration": "15%",
+        "fertilizer_level": "100% RDF",
+        "rdf_level": "100%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 33.59332088322531,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "treatment_mean": 1101.7,
+      "control_mean": 910.3,
+      "treatment_variance": 8.12,
+      "control_variance": 8.12,
+      "variance_type": "SE",
+      "n": 3,
+      "unit": "kg ha-1",
+      "data_source": "Table 5",
+      "treatment_description": "7.5% Kappaphycus sap + 50% RDF (10:20:20 NPK kg ha-1), foliar spray at 20 and 40 DAS",
+      "control_description": "RDF + Water spray",
+      "moderators": {
+        "cultivar": "not specified",
+        "year": "2012",
+        "site": "Uttar Chandamari, West Bengal, India",
+        "biostimulant_type": "Kappaphycus",
+        "concentration": "7.5%",
+        "fertilizer_level": "50% RDF",
+        "rdf_level": "50%"
+      },
+      "confidence": "high",
+      "notes": "Models agree (diff=0.0%) [Kimi+Gemini agree]",
+      "effect_pct": 21.026035372953984,
+      "ln_rr": null,
+      "grim_valid": null,
+      "cv_reasonable": null,
+      "direction_expected": null
+    }
+  ],
+  "post_processing": {
+    "duplicates_removed": 0,
+    "null_means_removed": 0,
+    "tc_swaps_corrected": 0,
+    "original_count": 10,
+    "final_count": 10
+  },
+  "verification_flags": [
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1085.6,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.2955280542980179,
+            "note": "CV = 1.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 19.257387674393055
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1090.3,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +19.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.2899433694817282,
+            "note": "CV = 1.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 19.77370097769966
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1158.6,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +27.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.213900617767934,
+            "note": "CV = 1.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 27.27672195979347
+      }
+    },
+    {
+      "element": "Stover yield",
+      "tissue": "stover",
+      "failed_checks": [
+        "grim",
+        "cv"
+      ],
+      "details": {
+        "element": "Stover yield",
+        "treatment_mean": 4372.1,
+        "control_mean": 3712.7,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +17.8%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": false,
+            "cv_value": 0.35931705186637347,
+            "note": "CV = 0.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 17.76065935841842
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1265.0,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +39.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.1117986211430262,
+            "note": "CV = 1.1%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 38.96517631550039
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 995.3,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +9.3%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.4130666690906544,
+            "note": "CV = 1.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 9.337581017247063
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1036.5,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +13.9%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.3568984618870508,
+            "note": "CV = 1.4%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 13.863561463253879
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1103.0,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.2%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": true,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.2750908936953111,
+            "note": "CV = 1.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 21.168845435570695
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1216.1,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +33.6%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.156504609609348,
+            "note": "CV = 1.2%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 33.59332088322531
+      }
+    },
+    {
+      "element": "Seed yield",
+      "tissue": "grain",
+      "failed_checks": [
+        "grim"
+      ],
+      "details": {
+        "element": "Seed yield",
+        "treatment_mean": 1101.7,
+        "control_mean": 910.3,
+        "checks": {
+          "direction": {
+            "passed": true,
+            "note": "Effect is +21.0%, expected positive"
+          },
+          "tc_swap": {
+            "passed": true,
+            "likely_swapped": false,
+            "corrected_effect": null,
+            "note": "No swap detected"
+          },
+          "grim": {
+            "passed": false,
+            "treatment_valid": false,
+            "control_valid": false
+          },
+          "cv": {
+            "passed": true,
+            "cv_value": 1.2765954940055624,
+            "note": "CV = 1.3%"
+          },
+          "sample_size": {
+            "passed": true,
+            "n": 3,
+            "note": "n=3"
+          }
+        },
+        "effect_pct": 21.026035372953984
+      }
+    }
+  ]
+}
