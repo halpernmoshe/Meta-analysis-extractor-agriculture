@@ -1,0 +1,4 @@
+Dataset,N_matched_obs,N_papers,Aggregate_effect_Run1,Aggregate_effect_Run2,Effect_diff_pp,Notes
+Loladze 2014,665,41,-4.95%,-5.04%,0.09,Run1 vs Run2 agent extraction
+Hui 2025,362,24,,,6.31,Large effect-size scale amplifies small proportional differences
+Li 2022,204,30,10.16%,10.39%,0.23,Aggregate effect stable across runs

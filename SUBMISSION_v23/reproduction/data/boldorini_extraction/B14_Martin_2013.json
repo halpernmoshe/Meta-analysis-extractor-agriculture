@@ -1,0 +1,33 @@
+{
+  "paper_id": "B14_Martin_2013",
+  "author": "Martin",
+  "year": 2013,
+  "title": "Natural enemy exclusion effects on cabbage",
+  "crop": "cabbage",
+  "predator_type": "Birds",
+  "country": "South Korea",
+  "observations": [
+    {
+      "obs_id": "B14_01",
+      "outcome": "Biomass",
+      "treatment_mean": 132,
+      "control_mean": 207,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 15,
+      "control_se": 25,
+      "treatment_n": 18,
+      "control_n": 18,
+      "variance_type": "SE",
+      "unit": "g",
+      "source_type": "figure",
+      "data_source": "Figure 1C",
+      "treatment_description": "Full cage exclusion",
+      "control_description": "Open",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Birds"
+      }
+    }
+  ]
+}

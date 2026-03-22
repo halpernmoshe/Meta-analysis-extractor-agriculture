@@ -1,0 +1,33 @@
+{
+  "paper_id": "B05_Garfinkel_2015",
+  "author": "Garfinkel",
+  "year": 2015,
+  "title": "Bird exclosure effects on kale",
+  "crop": "kale",
+  "predator_type": "Birds",
+  "country": "USA",
+  "observations": [
+    {
+      "obs_id": "B05_01",
+      "outcome": "Salable leaves",
+      "treatment_mean": 30.0,
+      "control_mean": 24.4,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 12.0,
+      "control_se": 8.0,
+      "treatment_n": 7,
+      "control_n": 7,
+      "variance_type": "SE",
+      "unit": "leaves",
+      "source_type": "table",
+      "data_source": "Table 5",
+      "treatment_description": "Bird exclosure",
+      "control_description": "Open",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Birds"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "paper_id": "B01_Ali_2018",
+  "author": "Ali",
+  "year": 2018,
+  "title": "Natural enemy effects on wheat yield",
+  "crop": "wheat",
+  "predator_type": "Beetles",
+  "country": "China",
+  "observations": [
+    {
+      "obs_id": "B01_01",
+      "outcome": "Grain yield",
+      "treatment_mean": 800,
+      "control_mean": 1290,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 150,
+      "control_se": 150,
+      "treatment_n": 10,
+      "control_n": 10,
+      "variance_type": "SE",
+      "unit": "kg/ha",
+      "source_type": "figure",
+      "data_source": "Figure 5",
+      "treatment_description": "Exclusion cage",
+      "control_description": "Open field",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Beetles"
+      }
+    }
+  ]
+}

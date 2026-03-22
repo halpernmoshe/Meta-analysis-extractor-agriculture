@@ -1,0 +1,99 @@
+{
+  "paper_id": "B08_Hooks_2003",
+  "author": "Hooks",
+  "year": 2003,
+  "title": "Bird and spider predation effects on broccoli",
+  "crop": "broccoli",
+  "predator_type": "Spiders",
+  "country": "USA",
+  "observations": [
+    {
+      "obs_id": "B08_01",
+      "outcome": "Head weight",
+      "treatment_mean": 0.182,
+      "control_mean": 0.161,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 0.01,
+      "control_se": 0.01,
+      "treatment_n": 11,
+      "control_n": 11,
+      "variance_type": "SE",
+      "unit": "kg",
+      "source_type": "table",
+      "data_source": "Table 3 Spider vs Check head",
+      "treatment_description": "Spider exclusion",
+      "control_description": "Check",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Spiders"
+      }
+    },
+    {
+      "obs_id": "B08_02",
+      "outcome": "Whole plant weight",
+      "treatment_mean": 153.5,
+      "control_mean": 166.2,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 6.7,
+      "control_se": 9.7,
+      "treatment_n": 11,
+      "control_n": 11,
+      "variance_type": "SE",
+      "unit": "g",
+      "source_type": "table",
+      "data_source": "Table 3 Spider vs B+S plant",
+      "treatment_description": "Spider cage (no spiders)",
+      "control_description": "B+S cage",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Spiders"
+      }
+    },
+    {
+      "obs_id": "B08_03",
+      "outcome": "Head weight",
+      "treatment_mean": 0.177,
+      "control_mean": 0.161,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 0.02,
+      "control_se": 0.01,
+      "treatment_n": 11,
+      "control_n": 11,
+      "variance_type": "SE",
+      "unit": "kg",
+      "source_type": "table",
+      "data_source": "Table 3 Bird vs Check head",
+      "treatment_description": "Bird exclusion",
+      "control_description": "Check",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Birds"
+      }
+    },
+    {
+      "obs_id": "B08_04",
+      "outcome": "Whole plant weight",
+      "treatment_mean": 139.2,
+      "control_mean": 166.2,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 9.5,
+      "control_se": 9.7,
+      "treatment_n": 11,
+      "control_n": 11,
+      "variance_type": "SE",
+      "unit": "g",
+      "source_type": "table",
+      "data_source": "Table 3 Bird vs B+S plant",
+      "treatment_description": "Bird cage (no birds)",
+      "control_description": "B+S cage",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Birds"
+      }
+    }
+  ]
+}

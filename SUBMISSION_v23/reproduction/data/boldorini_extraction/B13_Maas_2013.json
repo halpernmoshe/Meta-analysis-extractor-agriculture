@@ -1,0 +1,55 @@
+{
+  "paper_id": "B13_Maas_2013",
+  "author": "Maas",
+  "year": 2013,
+  "title": "Bird and bat exclusion effects on cacao",
+  "crop": "cacao",
+  "predator_type": "Birds",
+  "country": "Indonesia",
+  "observations": [
+    {
+      "obs_id": "B13_01",
+      "outcome": "Cacao yield log",
+      "treatment_mean": -0.7,
+      "control_mean": -0.47,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 0.5,
+      "control_se": 0.5,
+      "treatment_n": 15,
+      "control_n": 15,
+      "variance_type": "SE",
+      "unit": "log(kg/ha/yr)",
+      "source_type": "figure",
+      "data_source": "Figure 4 Birds",
+      "treatment_description": "Day exclosure (birds excluded)",
+      "control_description": "Control",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Birds"
+      }
+    },
+    {
+      "obs_id": "B13_02",
+      "outcome": "Cacao yield log",
+      "treatment_mean": -0.7,
+      "control_mean": -0.55,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 0.5,
+      "control_se": 0.5,
+      "treatment_n": 15,
+      "control_n": 15,
+      "variance_type": "SE",
+      "unit": "log(kg/ha/yr)",
+      "source_type": "figure",
+      "data_source": "Figure 4 Vertebrates",
+      "treatment_description": "Full exclosure",
+      "control_description": "Control",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Vertebrates"
+      }
+    }
+  ]
+}

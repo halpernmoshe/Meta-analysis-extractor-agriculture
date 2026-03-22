@@ -1,0 +1,701 @@
+{
+  "timestamp": "2026-03-22T09:27:56.435822",
+  "n_datasets_loaded": 5,
+  "n_datasets_expected": 5,
+  "total_obs": 1149,
+  "total_papers": 136,
+  "all_checks_pass": true,
+  "checks_summary": {
+    "total": 43,
+    "passed": 43,
+    "failed": 0
+  },
+  "errors": [],
+  "datasets": [
+    {
+      "dataset": "Loladze 2014 (CO2/minerals)",
+      "n_obs": 413,
+      "n_papers": 45,
+      "pearson": {
+        "r": 0.9839,
+        "p": 1.92246523248374e-309,
+        "ci95_low": 0.9805,
+        "ci95_high": 0.9867,
+        "n": 413
+      },
+      "icc": {
+        "icc": 0.9836,
+        "ci95_low": 0.9801,
+        "ci95_high": 0.9865
+      },
+      "mae": 1.3569,
+      "median_ae": 0.1,
+      "direction": {
+        "correct": 376,
+        "total": 395,
+        "pct": 95.2
+      },
+      "overall_effect": {
+        "gt_mean": -7.8298,
+        "ext_mean": -7.8187,
+        "diff_pp": 0.0111
+      },
+      "tost_battery": {
+        "fixed_2pp": {
+          "margin": 2.0,
+          "mean_diff": 0.0111,
+          "se": 0.1295,
+          "p_tost": 0.0,
+          "ci90_low": -0.2024,
+          "ci90_high": 0.2246,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "fixed_3pp": {
+          "margin": 3.0,
+          "mean_diff": 0.0111,
+          "se": 0.1295,
+          "p_tost": 0.0,
+          "ci90_low": -0.2024,
+          "ci90_high": 0.2246,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "proportional_20pct": {
+          "margin": 2.477,
+          "mean_diff": 0.0111,
+          "se": 0.1295,
+          "p_tost": 0.0,
+          "ci90_low": -0.2024,
+          "ci90_high": 0.2246,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 20
+        },
+        "proportional_10pct": {
+          "margin": 1.2385,
+          "mean_diff": 0.0111,
+          "se": 0.1295,
+          "p_tost": 0.0,
+          "ci90_low": -0.2024,
+          "ci90_high": 0.2246,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 10
+        }
+      },
+      "mean_abs_effect": 12.3849,
+      "cohens_d": 0.0042,
+      "thresholds": {
+        "1": 68.0,
+        "3": 82.3,
+        "5": 91.5,
+        "10": 100.0
+      },
+      "tiers": {
+        "Excellent": 27,
+        "Good": 14,
+        "Fair": 4,
+        "Poor": 0
+      },
+      "rmse": 2.6281,
+      "max_ae": 9.97,
+      "sd_error": 2.6313
+    },
+    {
+      "dataset": "Hui 2023 (Zn/wheat)",
+      "n_obs": 319,
+      "n_papers": 17,
+      "pearson": {
+        "r": 0.9994,
+        "p": 0.0,
+        "ci95_low": 0.9993,
+        "ci95_high": 0.9995,
+        "n": 319
+      },
+      "icc": {
+        "icc": 0.9994,
+        "ci95_low": 0.9992,
+        "ci95_high": 0.9995
+      },
+      "mae": 0.4317,
+      "median_ae": 0.0,
+      "direction": {
+        "correct": 314,
+        "total": 315,
+        "pct": 99.7
+      },
+      "overall_effect": {
+        "gt_mean": 49.6066,
+        "ext_mean": 49.7237,
+        "diff_pp": 0.1171
+      },
+      "tost_battery": {
+        "fixed_2pp": {
+          "margin": 2.0,
+          "mean_diff": 0.1171,
+          "se": 0.0908,
+          "p_tost": 0.0,
+          "ci90_low": -0.0327,
+          "ci90_high": 0.2668,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "fixed_3pp": {
+          "margin": 3.0,
+          "mean_diff": 0.1171,
+          "se": 0.0908,
+          "p_tost": 0.0,
+          "ci90_low": -0.0327,
+          "ci90_high": 0.2668,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "proportional_20pct": {
+          "margin": 10.0464,
+          "mean_diff": 0.1171,
+          "se": 0.0908,
+          "p_tost": 0.0,
+          "ci90_low": -0.0327,
+          "ci90_high": 0.2668,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 20
+        },
+        "proportional_10pct": {
+          "margin": 5.0232,
+          "mean_diff": 0.1171,
+          "se": 0.0908,
+          "p_tost": 0.0,
+          "ci90_low": -0.0327,
+          "ci90_high": 0.2668,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 10
+        }
+      },
+      "mean_abs_effect": 50.2319,
+      "cohens_d": 0.0722,
+      "thresholds": {
+        "1": 90.6,
+        "3": 95.9,
+        "5": 96.9,
+        "10": 99.7
+      },
+      "tiers": {
+        "Excellent": 14,
+        "Good": 2,
+        "Fair": 1,
+        "Poor": 0
+      },
+      "rmse": 1.6226,
+      "max_ae": 12.36,
+      "sd_error": 1.6209
+    },
+    {
+      "dataset": "Li 2022 (biostimulant/yield)",
+      "n_obs": 117,
+      "n_papers": 31,
+      "pearson": {
+        "r": 0.9935,
+        "p": 1.976101999050672e-110,
+        "ci95_low": 0.9906,
+        "ci95_high": 0.9955,
+        "n": 117
+      },
+      "icc": {
+        "icc": 0.9934,
+        "ci95_low": 0.9906,
+        "ci95_high": 0.9955
+      },
+      "mae": 1.0119,
+      "median_ae": 0.487,
+      "direction": {
+        "correct": 116,
+        "total": 117,
+        "pct": 99.1
+      },
+      "overall_effect": {
+        "gt_mean": 16.9434,
+        "ext_mean": 16.7962,
+        "diff_pp": 0.1472
+      },
+      "tost_battery": {
+        "fixed_2pp": {
+          "margin": 2.0,
+          "mean_diff": -0.1472,
+          "se": 0.1429,
+          "p_tost": 0.0,
+          "ci90_low": -0.3841,
+          "ci90_high": 0.0897,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "fixed_3pp": {
+          "margin": 3.0,
+          "mean_diff": -0.1472,
+          "se": 0.1429,
+          "p_tost": 0.0,
+          "ci90_low": -0.3841,
+          "ci90_high": 0.0897,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "proportional_20pct": {
+          "margin": 3.4097,
+          "mean_diff": -0.1472,
+          "se": 0.1429,
+          "p_tost": 0.0,
+          "ci90_low": -0.3841,
+          "ci90_high": 0.0897,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 20
+        },
+        "proportional_10pct": {
+          "margin": 1.7048,
+          "mean_diff": -0.1472,
+          "se": 0.1429,
+          "p_tost": 0.0,
+          "ci90_low": -0.3841,
+          "ci90_high": 0.0897,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 10
+        }
+      },
+      "mean_abs_effect": 17.0485,
+      "cohens_d": -0.0953,
+      "thresholds": {
+        "1": 63.2,
+        "3": 92.3,
+        "5": 100.0,
+        "10": 100.0
+      },
+      "tiers": {
+        "Excellent": 26,
+        "Good": 5,
+        "Fair": 0,
+        "Poor": 0
+      },
+      "rmse": 1.5457,
+      "max_ae": 4.61,
+      "sd_error": 1.5453
+    },
+    {
+      "dataset": "Biochar (Li 2024)",
+      "n_obs": 254,
+      "n_papers": 26,
+      "pearson": {
+        "r": 0.9965,
+        "p": 6.092608702675179e-274,
+        "ci95_low": 0.9955,
+        "ci95_high": 0.9973,
+        "n": 254
+      },
+      "icc": {
+        "icc": 0.9964,
+        "ci95_low": 0.9955,
+        "ci95_high": 0.9973
+      },
+      "mae": 1.2033,
+      "median_ae": 0.635,
+      "direction": {
+        "correct": 227,
+        "total": 246,
+        "pct": 92.3
+      },
+      "overall_effect": {
+        "gt_mean": 12.2717,
+        "ext_mean": 12.0533,
+        "diff_pp": 0.2184
+      },
+      "tost_battery": {
+        "fixed_2pp": {
+          "margin": 2.0,
+          "mean_diff": -0.2184,
+          "se": 0.1096,
+          "p_tost": 0.0,
+          "ci90_low": -0.3993,
+          "ci90_high": -0.0374,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "fixed_3pp": {
+          "margin": 3.0,
+          "mean_diff": -0.2184,
+          "se": 0.1096,
+          "p_tost": 0.0,
+          "ci90_low": -0.3993,
+          "ci90_high": -0.0374,
+          "equivalent": true,
+          "margin_type": "fixed"
+        },
+        "proportional_20pct": {
+          "margin": 3.2181,
+          "mean_diff": -0.2184,
+          "se": 0.1096,
+          "p_tost": 0.0,
+          "ci90_low": -0.3993,
+          "ci90_high": -0.0374,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 20
+        },
+        "proportional_10pct": {
+          "margin": 1.6091,
+          "mean_diff": -0.2184,
+          "se": 0.1096,
+          "p_tost": 0.0,
+          "ci90_low": -0.3993,
+          "ci90_high": -0.0374,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 10
+        }
+      },
+      "mean_abs_effect": 16.0906,
+      "cohens_d": -0.125,
+      "thresholds": {
+        "1": 57.5,
+        "3": 87.0,
+        "5": 100.0,
+        "10": 100.0
+      },
+      "tiers": {
+        "Excellent": 22,
+        "Good": 4,
+        "Fair": 0,
+        "Poor": 0
+      },
+      "rmse": 1.757,
+      "max_ae": 4.85,
+      "sd_error": 1.7469
+    },
+    {
+      "dataset": "Boldorini 2024 (predator/yield)",
+      "n_obs": 46,
+      "n_papers": 17,
+      "pearson": {
+        "r": 0.9964,
+        "p": 9.271348045361055e-49,
+        "ci95_low": 0.9934,
+        "ci95_high": 0.998,
+        "n": 46
+      },
+      "icc": {
+        "icc": 0.9956,
+        "ci95_low": 0.992,
+        "ci95_high": 0.9975
+      },
+      "mae": 3.0587,
+      "median_ae": 0.0464,
+      "direction": {
+        "correct": 42,
+        "total": 44,
+        "pct": 95.5
+      },
+      "overall_effect": {
+        "gt_mean": 36.9172,
+        "ext_mean": 38.5261,
+        "diff_pp": 1.6089
+      },
+      "tost_battery": {
+        "fixed_2pp": {
+          "margin": 2.0,
+          "mean_diff": 1.6089,
+          "se": 1.6126,
+          "p_tost": 0.404745,
+          "ci90_low": -1.0994,
+          "ci90_high": 4.3172,
+          "equivalent": false,
+          "margin_type": "fixed"
+        },
+        "fixed_3pp": {
+          "margin": 3.0,
+          "mean_diff": 1.6089,
+          "se": 1.6126,
+          "p_tost": 0.196464,
+          "ci90_low": -1.0994,
+          "ci90_high": 4.3172,
+          "equivalent": false,
+          "margin_type": "fixed"
+        },
+        "proportional_20pct": {
+          "margin": 9.4155,
+          "mean_diff": 1.6089,
+          "se": 1.6126,
+          "p_tost": 8e-06,
+          "ci90_low": -1.0994,
+          "ci90_high": 4.3172,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 20
+        },
+        "proportional_10pct": {
+          "margin": 4.7078,
+          "mean_diff": 1.6089,
+          "se": 1.6126,
+          "p_tost": 0.030501,
+          "ci90_low": -1.0994,
+          "ci90_high": 4.3172,
+          "equivalent": true,
+          "margin_type": "proportional",
+          "margin_pct": 10
+        }
+      },
+      "mean_abs_effect": 47.0776,
+      "cohens_d": 0.1471,
+      "thresholds": {
+        "1": 84.8,
+        "3": 89.1,
+        "5": 93.5,
+        "10": 93.5
+      },
+      "tiers": {
+        "Excellent": 14,
+        "Good": 2,
+        "Fair": 0,
+        "Poor": 1
+      },
+      "rmse": 10.9369,
+      "max_ae": 49.04,
+      "sd_error": 10.9375,
+      "pearson_lnRR": {
+        "r": 0.9717,
+        "p": 3.3000494696761957e-29,
+        "ci95_low": 0.9491,
+        "ci95_high": 0.9843,
+        "n": 46
+      },
+      "cohens_d_lnRR": 0.2169
+    }
+  ],
+  "verification": {
+    "Loladze": [
+      {
+        "metric": "n_obs",
+        "status": "PASS",
+        "detail": "computed=413.0000, expected=413.0000, tol=2"
+      },
+      {
+        "metric": "n_papers",
+        "status": "PASS",
+        "detail": "computed=45.0000, expected=45.0000, tol=1"
+      },
+      {
+        "metric": "Pearson r",
+        "status": "PASS",
+        "detail": "computed=0.9839, expected=0.9840, tol=0.005"
+      },
+      {
+        "metric": "MAE",
+        "status": "PASS",
+        "detail": "computed=1.3569, expected=1.3600, tol=0.1"
+      },
+      {
+        "metric": "ICC",
+        "status": "PASS",
+        "detail": "computed=0.9836, expected=0.9840, tol=0.005"
+      },
+      {
+        "metric": "Direction %",
+        "status": "PASS",
+        "detail": "computed=95.2000, expected=95.0000, tol=1.0"
+      },
+      {
+        "metric": "Effect diff pp",
+        "status": "PASS",
+        "detail": "computed=0.0111, expected=0.0100, tol=0.1"
+      },
+      {
+        "metric": "GT mean",
+        "status": "PASS",
+        "detail": "computed=-7.8298, expected=-7.8300, tol=0.1"
+      },
+      {
+        "metric": "Ext mean",
+        "status": "PASS",
+        "detail": "computed=-7.8187, expected=-7.8200, tol=0.1"
+      },
+      {
+        "metric": "Cohen's d",
+        "status": "PASS",
+        "detail": "computed=0.0042, expected=0.0040, tol=0.01"
+      },
+      {
+        "metric": "TOST +/-2pp",
+        "status": "PASS",
+        "detail": "computed=True, expected=True"
+      }
+    ],
+    "Hui": [
+      {
+        "metric": "n_obs",
+        "status": "PASS",
+        "detail": "computed=319.0000, expected=319.0000, tol=2"
+      },
+      {
+        "metric": "n_papers",
+        "status": "PASS",
+        "detail": "computed=17.0000, expected=17.0000, tol=1"
+      },
+      {
+        "metric": "Pearson r",
+        "status": "PASS",
+        "detail": "computed=0.9994, expected=0.9990, tol=0.005"
+      },
+      {
+        "metric": "MAE",
+        "status": "PASS",
+        "detail": "computed=0.4317, expected=0.4300, tol=0.1"
+      },
+      {
+        "metric": "ICC",
+        "status": "PASS",
+        "detail": "computed=0.9994, expected=0.9990, tol=0.005"
+      },
+      {
+        "metric": "Direction %",
+        "status": "PASS",
+        "detail": "computed=99.7000, expected=99.7000, tol=1.0"
+      },
+      {
+        "metric": "Effect diff pp",
+        "status": "PASS",
+        "detail": "computed=0.1171, expected=0.1200, tol=0.1"
+      },
+      {
+        "metric": "GT mean",
+        "status": "PASS",
+        "detail": "computed=49.6066, expected=49.6100, tol=0.1"
+      },
+      {
+        "metric": "Ext mean",
+        "status": "PASS",
+        "detail": "computed=49.7237, expected=49.7200, tol=0.1"
+      },
+      {
+        "metric": "Cohen's d",
+        "status": "PASS",
+        "detail": "computed=0.0722, expected=0.0720, tol=0.01"
+      },
+      {
+        "metric": "TOST +/-2pp",
+        "status": "PASS",
+        "detail": "computed=True, expected=True"
+      }
+    ],
+    "Li 2022": [
+      {
+        "metric": "n_obs",
+        "status": "PASS",
+        "detail": "computed=117.0000, expected=117.0000, tol=2"
+      },
+      {
+        "metric": "n_papers",
+        "status": "PASS",
+        "detail": "computed=31.0000, expected=31.0000, tol=1"
+      },
+      {
+        "metric": "Pearson r",
+        "status": "PASS",
+        "detail": "computed=0.9935, expected=0.9940, tol=0.005"
+      },
+      {
+        "metric": "MAE",
+        "status": "PASS",
+        "detail": "computed=1.0119, expected=1.0100, tol=0.1"
+      }
+    ],
+    "Biochar": [
+      {
+        "metric": "n_obs",
+        "status": "PASS",
+        "detail": "computed=254.0000, expected=254.0000, tol=2"
+      },
+      {
+        "metric": "n_papers",
+        "status": "PASS",
+        "detail": "computed=26.0000, expected=26.0000, tol=1"
+      },
+      {
+        "metric": "Pearson r",
+        "status": "PASS",
+        "detail": "computed=0.9965, expected=0.9970, tol=0.005"
+      },
+      {
+        "metric": "MAE",
+        "status": "PASS",
+        "detail": "computed=1.2033, expected=1.2000, tol=0.1"
+      },
+      {
+        "metric": "ICC",
+        "status": "PASS",
+        "detail": "computed=0.9964, expected=0.9970, tol=0.005"
+      },
+      {
+        "metric": "Direction %",
+        "status": "PASS",
+        "detail": "computed=92.3000, expected=92.3000, tol=1.0"
+      },
+      {
+        "metric": "Effect diff pp",
+        "status": "PASS",
+        "detail": "computed=0.2184, expected=0.2200, tol=0.1"
+      },
+      {
+        "metric": "GT mean",
+        "status": "PASS",
+        "detail": "computed=12.2717, expected=12.2700, tol=0.1"
+      },
+      {
+        "metric": "Ext mean",
+        "status": "PASS",
+        "detail": "computed=12.0533, expected=12.0500, tol=0.1"
+      },
+      {
+        "metric": "Cohen's d",
+        "status": "PASS",
+        "detail": "computed=-0.1250, expected=-0.1250, tol=0.01"
+      },
+      {
+        "metric": "TOST +/-2pp",
+        "status": "PASS",
+        "detail": "computed=True, expected=True"
+      }
+    ],
+    "Boldorini": [
+      {
+        "metric": "n_obs",
+        "status": "PASS",
+        "detail": "computed=46.0000, expected=46.0000, tol=2"
+      },
+      {
+        "metric": "n_papers",
+        "status": "PASS",
+        "detail": "computed=17.0000, expected=18.0000, tol=1"
+      },
+      {
+        "metric": "Pearson r (lnRR)",
+        "status": "PASS",
+        "detail": "computed=0.9717, expected=0.9720, tol=0.005"
+      },
+      {
+        "metric": "MAE",
+        "status": "PASS",
+        "detail": "computed=3.0587, expected=3.0600, tol=0.1"
+      },
+      {
+        "metric": "Direction %",
+        "status": "PASS",
+        "detail": "computed=95.5000, expected=95.7000, tol=1.0"
+      },
+      {
+        "metric": "Cohen's d (lnRR)",
+        "status": "PASS",
+        "detail": "computed=0.2169, expected=0.2170, tol=0.01"
+      }
+    ]
+  }
+}

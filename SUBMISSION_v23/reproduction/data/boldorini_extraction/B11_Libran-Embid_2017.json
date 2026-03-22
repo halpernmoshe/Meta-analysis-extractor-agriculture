@@ -1,0 +1,33 @@
+{
+  "paper_id": "B11_Libran-Embid_2017",
+  "author": "Libran-Embid",
+  "year": 2017,
+  "title": "Flying vertebrate exclusion effects on coffee",
+  "crop": "coffee",
+  "predator_type": "Vertebrates",
+  "country": "Brazil",
+  "observations": [
+    {
+      "obs_id": "B11_01",
+      "outcome": "Fruit set",
+      "treatment_mean": 0.82,
+      "control_mean": 0.81,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 0.04,
+      "control_se": 0.04,
+      "treatment_n": 32,
+      "control_n": 32,
+      "variance_type": "SE",
+      "unit": "proportion",
+      "source_type": "figure",
+      "data_source": "Figures 4/5",
+      "treatment_description": "Flying vertebrate exclusion",
+      "control_description": "Open",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Vertebrates"
+      }
+    }
+  ]
+}

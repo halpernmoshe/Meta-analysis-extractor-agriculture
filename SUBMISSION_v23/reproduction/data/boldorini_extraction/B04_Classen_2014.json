@@ -1,0 +1,33 @@
+{
+  "paper_id": "B04_Classen_2014",
+  "author": "Classen",
+  "year": 2014,
+  "title": "Vertebrate exclosure effects on coffee",
+  "crop": "coffee",
+  "predator_type": "Vertebrates",
+  "country": "Tanzania",
+  "observations": [
+    {
+      "obs_id": "B04_01",
+      "outcome": "Fruit set",
+      "treatment_mean": 46.0,
+      "control_mean": 64.0,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 10.0,
+      "control_se": 5.0,
+      "treatment_n": 3,
+      "control_n": 3,
+      "variance_type": "SE",
+      "unit": "fruits/branch",
+      "source_type": "figure",
+      "data_source": "Table 1 / Figure 2",
+      "treatment_description": "Vertebrate exclusion",
+      "control_description": "Open",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Vertebrates"
+      }
+    }
+  ]
+}

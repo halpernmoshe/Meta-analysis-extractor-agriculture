@@ -1,0 +1,33 @@
+{
+  "paper_id": "B02_Bisseleua_2017",
+  "author": "Bisseleua",
+  "year": 2017,
+  "title": "Ant exclusion effects on cocoa",
+  "crop": "cacao",
+  "predator_type": "Invertebrates",
+  "country": "Cameroon",
+  "observations": [
+    {
+      "obs_id": "B02_01",
+      "outcome": "Cocoa yield",
+      "treatment_mean": 285,
+      "control_mean": 357,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 20,
+      "control_se": 35,
+      "treatment_n": 5,
+      "control_n": 5,
+      "variance_type": "SE",
+      "unit": "kg/ha/yr",
+      "source_type": "figure",
+      "data_source": "Figure 4",
+      "treatment_description": "Ant exclusion",
+      "control_description": "Control (ants present)",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "predator_group": "Invertebrates"
+      }
+    }
+  ]
+}

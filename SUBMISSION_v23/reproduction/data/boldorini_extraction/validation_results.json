@@ -1,0 +1,477 @@
+{
+  "n_gt": 47,
+  "n_extracted": 48,
+  "n_matched": 46,
+  "capture_pct": 97.9,
+  "pearson_r": 0.972,
+  "mae_lnRR": 0.0258,
+  "mae_pp": 3.06,
+  "direction_pct": 95.7,
+  "tost_p": 0.0,
+  "cohens_d": 0.217,
+  "overall_gt_lnRR": 0.1751,
+  "overall_ext_lnRR": 0.198,
+  "overall_diff_pp": 2.76,
+  "matched_observations": [
+    {
+      "gt_id": "id_1",
+      "author": "Vichitbandha_Wise",
+      "year": 2002,
+      "crop": "Soybean",
+      "gt_yi": 0.300995678,
+      "ext_lnRR": 0.32850406697203605,
+      "gt_effect_pct": 35.1204,
+      "ext_effect_pct": 38.8889
+    },
+    {
+      "gt_id": "id_2",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": 0.03293881,
+      "ext_lnRR": 0.03293880971242035,
+      "gt_effect_pct": 3.3487,
+      "ext_effect_pct": 3.3487
+    },
+    {
+      "gt_id": "id_3",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": 0.053281367,
+      "ext_lnRR": 0.05328136661293678,
+      "gt_effect_pct": 5.4726,
+      "ext_effect_pct": 5.4726
+    },
+    {
+      "gt_id": "id_4",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": 0.014293811,
+      "ext_lnRR": 0.014293811257144904,
+      "gt_effect_pct": 1.4396,
+      "ext_effect_pct": 1.4396
+    },
+    {
+      "gt_id": "id_5",
+      "author": "Suenaga_Hamamura",
+      "year": 2015,
+      "crop": "Cabbage",
+      "gt_yi": 0.068996383,
+      "ext_lnRR": 0.10354067894084036,
+      "gt_effect_pct": 7.1432,
+      "ext_effect_pct": 10.9091
+    },
+    {
+      "gt_id": "id_6",
+      "author": "Suenaga_Hamamura",
+      "year": 2015,
+      "crop": "Cabbage",
+      "gt_yi": 0.125161697,
+      "ext_lnRR": 0.12323264042394806,
+      "gt_effect_pct": 13.3332,
+      "ext_effect_pct": 13.1148
+    },
+    {
+      "gt_id": "id_7",
+      "author": "Suenaga_Hamamura",
+      "year": 2015,
+      "crop": "Cabbage",
+      "gt_yi": -0.435308212,
+      "ext_lnRR": -0.4274440148269396,
+      "gt_effect_pct": -35.2935,
+      "ext_effect_pct": -34.7826
+    },
+    {
+      "gt_id": "id_8",
+      "author": "Suenaga_Hamamura",
+      "year": 2015,
+      "crop": "Cabbage",
+      "gt_yi": 0.646608009,
+      "ext_lnRR": 0.6418538861723947,
+      "gt_effect_pct": 90.9054,
+      "ext_effect_pct": 90.0
+    },
+    {
+      "gt_id": "id_9",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": 0.013498518,
+      "ext_lnRR": 0.013498517670895377,
+      "gt_effect_pct": 1.359,
+      "ext_effect_pct": 1.359
+    },
+    {
+      "gt_id": "id_10",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": 0.004728141,
+      "ext_lnRR": 0.004728141195946116,
+      "gt_effect_pct": 0.4739,
+      "ext_effect_pct": 0.4739
+    },
+    {
+      "gt_id": "id_11",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": -0.009777373,
+      "ext_lnRR": -0.009777372838294938,
+      "gt_effect_pct": -0.973,
+      "ext_effect_pct": -0.973
+    },
+    {
+      "gt_id": "id_12",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": 0.036409027,
+      "ext_lnRR": 0.036409027191427384,
+      "gt_effect_pct": 3.708,
+      "ext_effect_pct": 3.708
+    },
+    {
+      "gt_id": "id_13",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": 0.009478744,
+      "ext_lnRR": 0.009478743954543739,
+      "gt_effect_pct": 0.9524,
+      "ext_effect_pct": 0.9524
+    },
+    {
+      "gt_id": "id_14",
+      "author": "Lang",
+      "year": 2003,
+      "crop": "Wheat",
+      "gt_yi": -0.04691692,
+      "ext_lnRR": -0.0469169197877516,
+      "gt_effect_pct": -4.5833,
+      "ext_effect_pct": -4.5833
+    },
+    {
+      "gt_id": "id_15",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Cucumber",
+      "gt_yi": 0.410405546,
+      "ext_lnRR": 0.4081936227613685,
+      "gt_effect_pct": 50.7429,
+      "ext_effect_pct": 50.4098
+    },
+    {
+      "gt_id": "id_16",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Squash",
+      "gt_yi": -0.175632569,
+      "ext_lnRR": -0.17114825619582946,
+      "gt_effect_pct": -16.1074,
+      "ext_effect_pct": -15.7303
+    },
+    {
+      "gt_id": "id_17",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Cucumber",
+      "gt_yi": 0.22684659,
+      "ext_lnRR": 0.22518923903750296,
+      "gt_effect_pct": 25.4637,
+      "ext_effect_pct": 25.256
+    },
+    {
+      "gt_id": "id_18",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Squash",
+      "gt_yi": 2.154165088,
+      "ext_lnRR": 2.120263536200091,
+      "gt_effect_pct": 762.069,
+      "ext_effect_pct": 733.3333
+    },
+    {
+      "gt_id": "id_19",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Cucumber",
+      "gt_yi": 0.395616415,
+      "ext_lnRR": 0.39597351142659315,
+      "gt_effect_pct": 48.5299,
+      "ext_effect_pct": 48.583
+    },
+    {
+      "gt_id": "id_20",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Squash",
+      "gt_yi": 0.21319322,
+      "ext_lnRR": 0.2066142493629992,
+      "gt_effect_pct": 23.7624,
+      "ext_effect_pct": 22.9508
+    },
+    {
+      "gt_id": "id_21",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Cucumber",
+      "gt_yi": 0.237303287,
+      "ext_lnRR": 0.23483959107740116,
+      "gt_effect_pct": 26.7826,
+      "ext_effect_pct": 26.4706
+    },
+    {
+      "gt_id": "id_22",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Squash",
+      "gt_yi": -0.799845384,
+      "ext_lnRR": -0.7898768070184963,
+      "gt_effect_pct": -55.0602,
+      "ext_effect_pct": -54.6099
+    },
+    {
+      "gt_id": "id_23",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Cucumber",
+      "gt_yi": 0.103778033,
+      "ext_lnRR": 0.10192113135591681,
+      "gt_effect_pct": 10.9354,
+      "ext_effect_pct": 10.7296
+    },
+    {
+      "gt_id": "id_24",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Squash",
+      "gt_yi": 0.273608345,
+      "ext_lnRR": 0.287682072451781,
+      "gt_effect_pct": 31.47,
+      "ext_effect_pct": 33.3333
+    },
+    {
+      "gt_id": "id_25",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Cucumber",
+      "gt_yi": 0.679146952,
+      "ext_lnRR": 0.6777622617204659,
+      "gt_effect_pct": 97.2195,
+      "ext_effect_pct": 96.9466
+    },
+    {
+      "gt_id": "id_26",
+      "author": "Snyder_Wise",
+      "year": 2001,
+      "crop": "Squash",
+      "gt_yi": 0.0,
+      "ext_lnRR": 0.0,
+      "gt_effect_pct": 0.0,
+      "ext_effect_pct": 0.0
+    },
+    {
+      "gt_id": "id_27",
+      "author": "Mols",
+      "year": 2002,
+      "crop": "Apple",
+      "gt_yi": 0.512115115,
+      "ext_lnRR": 0.5121151145958623,
+      "gt_effect_pct": 66.8817,
+      "ext_effect_pct": 66.8817
+    },
+    {
+      "gt_id": "id_28",
+      "author": "Hooks_et_al",
+      "year": 2003,
+      "crop": "Broccoli",
+      "gt_yi": -0.122602322,
+      "ext_lnRR": -0.12260232209233227,
+      "gt_effect_pct": -11.5385,
+      "ext_effect_pct": -11.5385
+    },
+    {
+      "gt_id": "id_29",
+      "author": "Hooks_et_al",
+      "year": 2003,
+      "crop": "Broccoli",
+      "gt_yi": 0.079491315,
+      "ext_lnRR": 0.07949131539409589,
+      "gt_effect_pct": 8.2736,
+      "ext_effect_pct": 8.2736
+    },
+    {
+      "gt_id": "id_30",
+      "author": "Hooks_et_al",
+      "year": 2003,
+      "crop": "Broccoli",
+      "gt_yi": -0.094745368,
+      "ext_lnRR": -0.09474536758936608,
+      "gt_effect_pct": -9.0395,
+      "ext_effect_pct": -9.0395
+    },
+    {
+      "gt_id": "id_31",
+      "author": "Hooks_et_al",
+      "year": 2003,
+      "crop": "Broccoli",
+      "gt_yi": 0.177280135,
+      "ext_lnRR": 0.17728013452102848,
+      "gt_effect_pct": 19.3966,
+      "ext_effect_pct": 19.3966
+    },
+    {
+      "gt_id": "id_32",
+      "author": "Maas",
+      "year": 2013,
+      "crop": "Cacao",
+      "gt_yi": -0.39834764,
+      "ext_lnRR": 0.1499999999999999,
+      "gt_effect_pct": -32.8571,
+      "ext_effect_pct": 16.1834
+    },
+    {
+      "gt_id": "id_33",
+      "author": "Borkhataria",
+      "year": 2012,
+      "crop": "Rice",
+      "gt_yi": -0.059188871,
+      "ext_lnRR": -0.05918887139033065,
+      "gt_effect_pct": -5.7471,
+      "ext_effect_pct": -5.7471
+    },
+    {
+      "gt_id": "id_34",
+      "author": "Martin",
+      "year": 2013,
+      "crop": "Brassica",
+      "gt_yi": 0.449663815,
+      "ext_lnRR": 0.44991687067899816,
+      "gt_effect_pct": 56.7785,
+      "ext_effect_pct": 56.8182
+    },
+    {
+      "gt_id": "id_35",
+      "author": "Maas",
+      "year": 2013,
+      "crop": "Cacao",
+      "gt_yi": -0.241162057,
+      "ext_lnRR": 0.22999999999999998,
+      "gt_effect_pct": -21.4286,
+      "ext_effect_pct": 25.86
+    },
+    {
+      "gt_id": "id_36",
+      "author": "Ali",
+      "year": 2018,
+      "crop": "Wheat",
+      "gt_yi": 0.484055383,
+      "ext_lnRR": 0.4777857696877905,
+      "gt_effect_pct": 62.2642,
+      "ext_effect_pct": 61.25
+    },
+    {
+      "gt_id": "id_38",
+      "author": "Garfinkel",
+      "year": 2015,
+      "crop": "Brassica",
+      "gt_yi": -0.205426431,
+      "ext_lnRR": -0.2066142493629993,
+      "gt_effect_pct": -18.57,
+      "ext_effect_pct": -18.6667
+    },
+    {
+      "gt_id": "id_39",
+      "author": "Gras",
+      "year": 2016,
+      "crop": "Cacao",
+      "gt_yi": 0.486709458,
+      "ext_lnRR": 0.4858793558194133,
+      "gt_effect_pct": 62.6954,
+      "ext_effect_pct": 62.5604
+    },
+    {
+      "gt_id": "id_40",
+      "author": "Gras",
+      "year": 2016,
+      "crop": "Cacao",
+      "gt_yi": 0.551949051,
+      "ext_lnRR": 0.5520019800155568,
+      "gt_effect_pct": 73.6635,
+      "ext_effect_pct": 73.6726
+    },
+    {
+      "gt_id": "id_41",
+      "author": "Classen",
+      "year": 2014,
+      "crop": "Coffee",
+      "gt_yi": 0.329094427,
+      "ext_lnRR": 0.3302416868705768,
+      "gt_effect_pct": 38.9709,
+      "ext_effect_pct": 39.1304
+    },
+    {
+      "gt_id": "id_42",
+      "author": "Libran-Embid",
+      "year": 2017,
+      "crop": "Coffee",
+      "gt_yi": -0.012270093,
+      "ext_lnRR": -0.012270092591814247,
+      "gt_effect_pct": -1.2195,
+      "ext_effect_pct": -1.2195
+    },
+    {
+      "gt_id": "id_43",
+      "author": "Saunders",
+      "year": 2016,
+      "crop": "Apple",
+      "gt_yi": 0.30538165,
+      "ext_lnRR": 0.3053816495511819,
+      "gt_effect_pct": 35.7143,
+      "ext_effect_pct": 35.7143
+    },
+    {
+      "gt_id": "id_44",
+      "author": "Garfinkel",
+      "year": 2020,
+      "crop": "Cereals",
+      "gt_yi": -0.239193405,
+      "ext_lnRR": -0.23928553158993063,
+      "gt_effect_pct": -21.2737,
+      "ext_effect_pct": -21.281
+    },
+    {
+      "gt_id": "id_45",
+      "author": "Garfinkel",
+      "year": 2020,
+      "crop": "Cereals",
+      "gt_yi": 0.091969598,
+      "ext_lnRR": 0.09115216965566127,
+      "gt_effect_pct": 9.6331,
+      "ext_effect_pct": 9.5436
+    },
+    {
+      "gt_id": "id_46",
+      "author": "Bisseleua",
+      "year": 2017,
+      "crop": "Cacao",
+      "gt_yi": 0.225013319,
+      "ext_lnRR": 0.22524660151098846,
+      "gt_effect_pct": 25.2339,
+      "ext_effect_pct": 25.2632
+    },
+    {
+      "gt_id": "id_47",
+      "author": "Ismoilov",
+      "year": 2020,
+      "crop": "Tomato",
+      "gt_yi": 1.200394983,
+      "ext_lnRR": 1.200394982978052,
+      "gt_effect_pct": 232.1429,
+      "ext_effect_pct": 232.1429
+    }
+  ]
+}

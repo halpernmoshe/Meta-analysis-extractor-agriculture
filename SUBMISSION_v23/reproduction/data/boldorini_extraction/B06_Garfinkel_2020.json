@@ -1,0 +1,57 @@
+{
+  "paper_id": "B06_Garfinkel_2020",
+  "author": "Garfinkel",
+  "year": 2020,
+  "title": "Bird exclosure effects on corn and soybeans",
+  "crop": "cereals",
+  "predator_type": "Birds",
+  "country": "USA",
+  "observations": [
+    {
+      "obs_id": "B06_01",
+      "outcome": "Soybean yield",
+      "treatment_mean": 96.8,
+      "control_mean": 76.2,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 15.0,
+      "control_se": 12.0,
+      "treatment_n": 6,
+      "control_n": 6,
+      "variance_type": "SE",
+      "unit": "g",
+      "source_type": "table",
+      "data_source": "Table 1 soybeans",
+      "treatment_description": "Bird exclosure",
+      "control_description": "Open",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "crop": "soybeans",
+        "predator_group": "Birds"
+      }
+    },
+    {
+      "obs_id": "B06_02",
+      "outcome": "Corn yield",
+      "treatment_mean": 482,
+      "control_mean": 528,
+      "treatment_sd": null,
+      "control_sd": null,
+      "treatment_se": 55,
+      "control_se": 55,
+      "treatment_n": 6,
+      "control_n": 6,
+      "variance_type": "SE",
+      "unit": "g",
+      "source_type": "table",
+      "data_source": "Table 1 corn",
+      "treatment_description": "Bird exclosure",
+      "control_description": "Open",
+      "treatment_type": "Exclusion",
+      "moderators": {
+        "crop": "corn",
+        "predator_group": "Birds"
+      }
+    }
+  ]
+}

@@ -39,11 +39,15 @@
 !configs/
 !configs/**
 
-# ===== Allow: data files (ontology only) =====
+# ===== Allow: data files (ontology, GT, paper mappings) =====
 !data/
 !data/ontology.json
 !data/few_shot_examples/
 !data/few_shot_examples/**
+!data/ground_truth/
+!data/ground_truth/**
+!data/pdf_doi_mapping/
+!data/pdf_doi_mapping/**
 
 # ===== Allow: validation & analysis scripts =====
 !validate_full_46.py
@@ -71,6 +75,14 @@
 !deep_validation_analysis.py
 !programmatic_gt_classifier.py
 
+# ===== Allow: meta-comparison and agent validation =====
+!loladze_meta_comparison.py
+!hui_meta_comparison.py
+!li_meta_comparison.py
+!validate_agent_v5.py
+!reproduce_all.py
+!run_all_validations.py
+
 # ===== Allow: figure generation =====
 !paper_figures.py
 !generate_agent_figures.py
@@ -84,16 +96,24 @@
 !PAPER_FULL_DRAFT.md
 !SPOT_CHECK_LOG.md
 
+# ===== Allow: SUBMISSION_v23 (current submission package) =====
+!SUBMISSION_v23/
+!SUBMISSION_v23/**
+
 # ===== Allow: final submission =====
 !FINAL_SUBMISSION_2026-03-08/
 !FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v3.md
 !FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v12.md
 !FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v13.md
+!FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v14.md
 !FINAL_SUBMISSION_2026-03-08/cover_letter.md
 !FINAL_SUBMISSION_2026-03-08/COVER_LETTER_RSM.md
 !FINAL_SUBMISSION_2026-03-08/SUBMISSION_CHECKLIST.md
 !FINAL_SUBMISSION_2026-03-08/improved_formal_stats.json
 !FINAL_SUBMISSION_2026-03-08/fresh_stats.json
+!FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v15.md
+!FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v16.md
+!FINAL_SUBMISSION_2026-03-08/REPRODUCE.md
 
 # ===== Allow: output subdirectories (figures, stats, extraction results) =====
 !output/
@@ -130,11 +150,24 @@
 !output/li2022_agent_extraction/
 !output/li2022_agent_extraction/**
 
+# Agent replication results
+!output/loladze_agent_replication/
+!output/loladze_agent_replication/**
+!output/hui2023_agent_replication/
+!output/hui2023_agent_replication/**
+!output/li2022_agent_replication/
+!output/li2022_agent_replication/**
+
+# Supplementary output
+!output/supplementary/
+!output/supplementary/**
+
 # Agreement and replication results
 !output/agent_pipeline_agreement.json
 !output/replication_agreement.json
 !output/supplementary_table_s1_cr2.md
 !output/supplementary_table_s1_cr2.json
+!output/reproducibility_check.json
 
 # CR2 TOST analysis
 !supplementary_cr2_tost.py
@@ -202,6 +235,15 @@ tmp*.txt
 # Exclude large binary files
 *.pdf
 *.xlsx
+
+# But allow SUBMISSION_v23 docx and png files
+!SUBMISSION_v23/**/*.docx
+!SUBMISSION_v23/**/*.png
+
+# But allow ground truth Excel files and paper mapping CSVs
+!data/ground_truth/*.xlsx
+!data/ground_truth/README.md
+!data/pdf_doi_mapping/*.csv
 
 # Exclude backup/staging directories
 loladze_output/
