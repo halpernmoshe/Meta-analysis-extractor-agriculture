@@ -1,0 +1,174 @@
+{
+  "review_id": "mycorrhiza_crop_yield",
+  "title": "Arbuscular mycorrhizal fungi inoculation effects on crop yield",
+  "research_question": "Does inoculation with arbuscular mycorrhizal fungi (AMF) increase crop yield, and how does the effect vary by crop type and P availability?",
+
+  "pico": {
+    "population": {
+      "description": "Crop plants inoculated with AMF in field or greenhouse experiments",
+      "search_terms": ["crop", "plant", "grain", "cereal", "legume", "vegetable", "fruit"],
+      "exclude_terms": ["forest tree only", "ornamental only", "non-crop wild species only"]
+    },
+    "intervention": {
+      "description": "Inoculation with arbuscular mycorrhizal fungi (AMF)",
+      "search_terms": [
+        "mycorrhiza", "mycorrhizal", "arbuscular mycorrhiza", "AMF",
+        "AM fungi", "vesicular-arbuscular mycorrhiza", "VAM",
+        "Glomus", "Rhizophagus", "Funneliformis", "Claroideoglomus",
+        "mycorrhizal inoculation", "mycorrhizal colonization",
+        "Glomus intraradices", "Glomus mosseae", "Rhizophagus irregularis",
+        "mycorrhizal fungi crop yield", "AMF inoculation yield"
+      ]
+    },
+    "comparator": {
+      "description": "Non-inoculated control (no AMF added)",
+      "definition": "Plants grown without mycorrhizal inoculum, or with sterilized inoculum",
+      "search_terms": ["non-mycorrhizal", "uninoculated", "control", "without AMF", "-AMF", "NM"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Plant biomass or crop yield",
+        "search_terms": [
+          "yield", "grain yield", "biomass", "dry weight", "fresh weight",
+          "shoot biomass", "plant biomass", "total biomass",
+          "fruit yield", "seed yield", "productivity",
+          "kg/ha", "g/plant", "Mg/ha"
+        ],
+        "unit": "g/plant, kg/ha, Mg/ha, or relative to control",
+        "direction_of_interest": "positive (AMF expected to increase yield)"
+      },
+      "secondary": [
+        {
+          "name": "phosphorus_uptake",
+          "search_terms": ["P uptake", "phosphorus uptake", "P content", "P concentration"],
+          "direction_of_interest": "increase"
+        },
+        {
+          "name": "root_colonization",
+          "search_terms": ["colonization", "root colonization", "mycorrhizal colonization", "infection rate"],
+          "direction_of_interest": "increase"
+        }
+      ]
+    }
+  },
+
+  "intervention": "Inoculation with arbuscular mycorrhizal fungi (AMF)",
+  "control": "Non-inoculated control (no AMF or sterilized inoculum)",
+
+  "primary_outcomes": [
+    "Plant biomass or crop yield (shoot dry weight, grain yield, total biomass)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+23% plant biomass (range +10% to +50% depending on P availability)",
+
+  "important_moderators": [
+    "Crop species or functional group (C3 grass, C4 grass, legume, non-legume forb)",
+    "AMF species or genus (Glomus, Rhizophagus, mixed inoculum)",
+    "Phosphorus fertilization level (low P, adequate P, high P)",
+    "Soil P availability (Olsen P mg/kg)",
+    "N fertilization level",
+    "Study type (field, greenhouse, pot)",
+    "Soil type",
+    "Climate zone",
+    "Sterilized vs non-sterilized soil"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY AMF species x crop x P level combination separately",
+    "2. Treatment = +AMF (inoculated); Control = -AMF (non-inoculated or sterilized)",
+    "3. If multiple AMF species tested, extract EACH vs the non-AMF control",
+    "4. Get variance (SE/SD) and sample size (n/replicates)",
+    "5. Record AMF species and P fertilization level",
+    "6. Biomass outcomes acceptable when grain yield not reported"
+  ],
+
+  "tc_confusion_warnings": [
+    "Treatment is +AMF (inoculated), Control is -AMF (non-inoculated)",
+    "In factorial AMF x P designs, extract each AMF vs non-AMF at matching P level",
+    "Sterilized soil control may behave differently from field soil - note if soil was sterilized",
+    "Some papers compare AMF species to each other - we want each vs the NON-AMF control",
+    "Root colonization % is NOT the yield outcome - extract yield/biomass as the primary outcome"
+  ],
+
+  "search": {
+    "seed_dois": [
+      "10.1111/j.1461-0248.2010.01502.x",
+      "10.1007/s00572-014-0599-1",
+      "10.1016/j.soilbio.2012.04.029"
+    ],
+    "seed_papers_description": "Hoeksema et al. 2010 (Ecology Letters, major meta-analysis), Berruti et al. 2016 (review of AMF in agriculture), Lekberg & Koide 2005",
+    "databases": ["openalex", "semantic_scholar"],
+    "date_range": {
+      "start": 1990,
+      "end": 2026
+    },
+    "language": ["en"],
+    "study_types_eligible": ["field_experiment", "greenhouse_experiment", "pot_experiment", "field trial"],
+    "study_types_excluded": ["review", "meta-analysis", "simulation", "model", "commentary", "editorial"],
+    "citation_chasing": {
+      "forward": true,
+      "backward": true,
+      "depth": 1
+    }
+  },
+
+  "screening": {
+    "inclusion_criteria": [
+      "Experiment comparing AMF-inoculated vs non-inoculated plants",
+      "Reports yield or biomass data (numeric means)",
+      "Crop or agricultural plant species",
+      "Includes a clear non-AMF control"
+    ],
+    "exclusion_criteria": [
+      "Review or meta-analysis (no primary data)",
+      "No yield or biomass data",
+      "Only wild/forest species with no agricultural relevance",
+      "No non-AMF control treatment",
+      "Only root colonization data without yield/biomass"
+    ],
+    "llm_enabled": false
+  },
+
+  "extraction": {
+    "target_outcomes": ["plant_biomass", "crop_yield"],
+    "moderators": [
+      "crop_species",
+      "crop_functional_group",
+      "AMF_species",
+      "P_fertilization_level",
+      "soil_P_availability",
+      "N_fertilization",
+      "study_type",
+      "soil_sterilization",
+      "soil_type",
+      "country"
+    ],
+    "effect_size": {
+      "primary": "lnRR",
+      "report_as": "percentage_change"
+    },
+    "variance_handling": {
+      "acceptable_types": ["SD", "SE", "SEM", "CI_95", "LSD", "CV"],
+      "missing_strategy": "exclude",
+      "sensitivity_analysis": true
+    }
+  },
+
+  "models": {
+    "recon_model": "gemini-2.5-flash",
+    "extract_model": "claude-sonnet-4-20250514",
+    "provider": "auto"
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "source": "Hoeksema et al. 2010 (Ecology Letters 13:394-407)",
+    "known_included_papers": 100,
+    "published_pooled_effect": {
+      "estimate": 23,
+      "unit": "percent_change",
+      "notes": "Overall +23% plant biomass; C4 grasses +57%, forbs +32%, C3 grasses +14%, woody plants +18%; Low P: larger effect; High P: reduced effect"
+    }
+  }
+}

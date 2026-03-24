@@ -1,0 +1,163 @@
+{
+  "review_id": "notill_vs_conventional_tillage",
+  "title": "No-till vs conventional tillage effects on crop yield",
+  "research_question": "Does no-till management affect crop yield compared to conventional tillage, and how does this vary by crop type and climate?",
+
+  "pico": {
+    "population": {
+      "description": "Crop plants grown in field experiments comparing tillage systems",
+      "search_terms": ["crop yield", "grain yield", "field experiment", "tillage experiment"],
+      "exclude_terms": ["simulation", "model", "erosion only", "greenhouse"]
+    },
+    "intervention": {
+      "description": "No-till or zero-till management (seeds planted directly into undisturbed soil)",
+      "search_terms": [
+        "no-till", "no till", "zero tillage", "zero-till", "direct seeding",
+        "direct drilling", "no-tillage", "conservation tillage",
+        "NT", "ZT", "minimum tillage", "reduced tillage",
+        "tillage system comparison", "tillage effects on yield"
+      ]
+    },
+    "comparator": {
+      "description": "Conventional tillage (moldboard plow, disk, chisel, or other inversion/intensive tillage)",
+      "definition": "Soil mechanically disturbed before planting using plow, disk, or similar implements",
+      "search_terms": ["conventional tillage", "moldboard plow", "plowed", "tilled", "disk tillage", "inversion tillage"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Crop grain yield per unit area",
+        "search_terms": [
+          "yield", "grain yield", "crop yield", "seed yield",
+          "productivity", "kg/ha", "Mg/ha", "t/ha", "bu/acre"
+        ],
+        "unit": "kg/ha, Mg/ha, t/ha",
+        "direction_of_interest": "either (no-till can increase or decrease yield depending on crop/climate)"
+      }
+    }
+  },
+
+  "intervention": "No-till or zero-till (direct seeding without soil disturbance)",
+  "control": "Conventional tillage (moldboard plow, disk, or inversion tillage)",
+
+  "primary_outcomes": [
+    "Crop grain yield (kg/ha, Mg/ha, t/ha)"
+  ],
+
+  "expected_direction": "negative",
+  "typical_effect_size": "-5.7% overall, varies by crop: wheat -2.6%, maize -7.6%, rice -7.5%, soybean +0.3%",
+
+  "important_moderators": [
+    "Crop species (wheat, maize, rice, soybean, barley, sorghum, cotton, etc.)",
+    "Climate (tropical, subtropical, temperate, arid, semi-arid)",
+    "Aridity index or precipitation",
+    "Study duration (years under no-till)",
+    "Residue management (retained, removed, burned)",
+    "Crop rotation (monoculture, rotation, includes legume)",
+    "Region or country",
+    "Soil type or texture (clay, loam, sand)",
+    "Irrigation (irrigated vs rainfed)",
+    "N fertilizer rate"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY crop-year-site combination separately",
+    "2. Treatment = NO-TILL; Control = CONVENTIONAL TILLAGE (most intensive tillage in the study)",
+    "3. If multiple crops tested, extract EACH crop vs control",
+    "4. If reduced tillage AND no-till both present, extract no-till vs conventional (not reduced vs conventional)",
+    "5. Get variance (SE/SD/LSD) and sample size (n)",
+    "6. Record crop species and years since no-till adoption",
+    "7. Record residue management practice"
+  ],
+
+  "tc_confusion_warnings": [
+    "Treatment is NO-TILL (less disturbance), Control is CONVENTIONAL TILLAGE (more disturbance)",
+    "Reduced tillage is NOT no-till - if both exist, compare no-till vs conventional",
+    "Some papers have 3+ tillage levels - extract the no-till vs most intensive tillage comparison",
+    "Strip-till is intermediate - do not include as no-till unless paper explicitly calls it no-till",
+    "Long-term trials may show different effects in early vs late years - extract each year separately"
+  ],
+
+  "search": {
+    "seed_dois": [
+      "10.1038/nature15168",
+      "10.1016/j.still.2014.11.010",
+      "10.1038/s43016-020-0051-3"
+    ],
+    "seed_papers_description": "Pittelkow et al. 2015 (Nature, global meta-analysis of no-till), Van den Putte et al. 2010, Derpsch et al. 2014",
+    "databases": ["openalex", "semantic_scholar"],
+    "date_range": {
+      "start": 1990,
+      "end": 2026
+    },
+    "language": ["en"],
+    "study_types_eligible": ["field_experiment", "long-term trial", "on-farm trial", "field trial"],
+    "study_types_excluded": ["review", "meta-analysis", "simulation", "model", "commentary", "editorial", "greenhouse"],
+    "citation_chasing": {
+      "forward": true,
+      "backward": true,
+      "depth": 1
+    }
+  },
+
+  "screening": {
+    "inclusion_criteria": [
+      "Primary field experiment comparing no-till to conventional tillage",
+      "Reports crop yield data (numeric means)",
+      "No-till treatment has no or minimal soil disturbance at planting",
+      "Conventional tillage uses moldboard plow, disk, or similar",
+      "Field-scale experiment"
+    ],
+    "exclusion_criteria": [
+      "Review or meta-analysis (no primary data)",
+      "Modeling or simulation study",
+      "No yield data reported",
+      "Only soil properties without yield",
+      "Only reduced tillage, no true no-till treatment",
+      "Greenhouse or pot experiment"
+    ],
+    "llm_enabled": false
+  },
+
+  "extraction": {
+    "target_outcomes": ["crop_grain_yield"],
+    "moderators": [
+      "crop_species",
+      "climate_zone",
+      "country",
+      "study_duration_years",
+      "residue_management",
+      "crop_rotation",
+      "irrigation",
+      "soil_type",
+      "N_rate_kg_ha"
+    ],
+    "effect_size": {
+      "primary": "lnRR",
+      "report_as": "percentage_change"
+    },
+    "variance_handling": {
+      "acceptable_types": ["SD", "SE", "SEM", "CI_95", "LSD", "CV"],
+      "missing_strategy": "exclude",
+      "sensitivity_analysis": true
+    }
+  },
+
+  "models": {
+    "recon_model": "gemini-2.5-flash",
+    "extract_model": "claude-sonnet-4-20250514",
+    "provider": "auto"
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "source": "Pittelkow et al. 2015 (Nature 517:365-368)",
+    "known_included_papers": 610,
+    "published_pooled_effect": {
+      "estimate": -5.7,
+      "unit": "percent_change",
+      "ci_lower": -6.7,
+      "ci_upper": -4.8,
+      "notes": "Overall -5.7%; Wheat -2.6%; Maize -7.6%; Rice -7.5%; Soybean +0.3%; Oilseed rape -9.0%"
+    }
+  }
+}

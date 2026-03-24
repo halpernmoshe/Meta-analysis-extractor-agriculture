@@ -1,0 +1,163 @@
+{
+  "review_id": "organic_vs_conventional_yield",
+  "title": "Organic vs conventional farming crop yield gap",
+  "research_question": "How much lower is crop yield under organic farming compared to conventional farming?",
+
+  "pico": {
+    "population": {
+      "description": "Crop plants grown in field experiments comparing farming systems",
+      "search_terms": ["crop yield", "grain yield", "crop production", "agricultural yield", "field experiment"],
+      "exclude_terms": ["simulation", "model", "life cycle assessment", "economic analysis only"]
+    },
+    "intervention": {
+      "description": "Organic farming system (certified organic or following organic principles: no synthetic fertilizers, no synthetic pesticides)",
+      "search_terms": [
+        "organic farming", "organic agriculture", "organic production",
+        "organic management", "organic system", "organic cultivation",
+        "organic vs conventional", "organic versus conventional",
+        "farming system comparison", "low-input farming",
+        "organic crop", "organically grown", "organically managed"
+      ]
+    },
+    "comparator": {
+      "description": "Conventional farming system (using synthetic fertilizers and/or pesticides)",
+      "definition": "Conventional management with synthetic inputs allowed, serving as the high-input reference",
+      "search_terms": ["conventional farming", "conventional agriculture", "conventional system", "conventional management", "high-input"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Crop yield (grain, fruit, or total biomass harvested per unit area)",
+        "search_terms": [
+          "yield", "grain yield", "crop yield", "fruit yield",
+          "seed yield", "tuber yield", "productivity",
+          "kg/ha", "Mg/ha", "t/ha", "bu/acre", "tons per hectare"
+        ],
+        "unit": "kg/ha, Mg/ha, t/ha",
+        "direction_of_interest": "negative (organic typically yields less)"
+      }
+    }
+  },
+
+  "intervention": "Organic farming (no synthetic fertilizers or pesticides)",
+  "control": "Conventional farming (synthetic inputs allowed)",
+
+  "primary_outcomes": [
+    "Crop yield (grain, fruit, or harvested biomass per hectare)"
+  ],
+
+  "expected_direction": "negative",
+  "typical_effect_size": "-19% to -25% yield gap (organic lower than conventional)",
+
+  "important_moderators": [
+    "Crop type (cereal, legume, fruit, vegetable, oilseed, root/tuber)",
+    "Crop species (wheat, maize, rice, soybean, tomato, potato, etc.)",
+    "Region or country",
+    "Climate zone (temperate, tropical, subtropical)",
+    "Study duration (years)",
+    "Organic certification status (certified, transitional, organic-principles)",
+    "Experiment type (long-term trial, on-farm comparison, field trial)",
+    "Irrigation (irrigated vs rainfed)",
+    "Soil type"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY crop-year combination separately",
+    "2. Treatment = ORGANIC system; Control = CONVENTIONAL system",
+    "3. If multiple crops compared, extract EACH crop as separate observation",
+    "4. Get variance (SE/SD/LSD) and sample size (n) for meta-analysis weighting",
+    "5. Record crop species and study duration",
+    "6. Convert all yields to consistent units (prefer kg/ha or Mg/ha)"
+  ],
+
+  "tc_confusion_warnings": [
+    "Treatment is ORGANIC (lower input), Control is CONVENTIONAL (higher input)",
+    "Some papers compare 3+ systems (organic, integrated, conventional) - extract organic vs conventional only",
+    "Low-input is NOT the same as organic unless explicitly stated",
+    "Transitional organic may show different effects than established organic - record years since conversion",
+    "Watch for factorial designs (organic x irrigation) - extract each organic vs conventional at same irrigation level"
+  ],
+
+  "search": {
+    "seed_dois": [
+      "10.1098/rspb.2014.1396",
+      "10.1038/nature11069",
+      "10.1016/j.agsy.2011.09.002"
+    ],
+    "seed_papers_description": "Ponisio et al. 2015 (meta-analysis, Proc R Soc B), Seufert et al. 2012 (Nature), de Ponti et al. 2012 (Agric Syst)",
+    "databases": ["openalex", "semantic_scholar"],
+    "date_range": {
+      "start": 1990,
+      "end": 2026
+    },
+    "language": ["en"],
+    "study_types_eligible": ["field_experiment", "long-term trial", "on-farm comparison", "field trial"],
+    "study_types_excluded": ["review", "meta-analysis", "simulation", "model", "commentary", "editorial", "greenhouse", "pot experiment"],
+    "citation_chasing": {
+      "forward": true,
+      "backward": true,
+      "depth": 1
+    }
+  },
+
+  "screening": {
+    "inclusion_criteria": [
+      "Primary field experiment comparing organic and conventional systems",
+      "Reports crop yield data (numeric means)",
+      "Organic system prohibits synthetic fertilizers and pesticides",
+      "Conventional system uses standard synthetic inputs",
+      "Field-scale experiment (not pot or greenhouse)"
+    ],
+    "exclusion_criteria": [
+      "Review or meta-analysis (no primary data)",
+      "Modeling or simulation study",
+      "No yield data reported",
+      "No true conventional control (only organic vs organic)",
+      "Only economic or environmental comparison without yield data",
+      "Greenhouse or pot experiment"
+    ],
+    "llm_enabled": false
+  },
+
+  "extraction": {
+    "target_outcomes": ["crop_yield"],
+    "moderators": [
+      "crop_type",
+      "crop_species",
+      "country",
+      "region",
+      "climate_zone",
+      "study_duration_years",
+      "experiment_type",
+      "irrigation",
+      "soil_type"
+    ],
+    "effect_size": {
+      "primary": "lnRR",
+      "report_as": "percentage_change"
+    },
+    "variance_handling": {
+      "acceptable_types": ["SD", "SE", "SEM", "CI_95", "LSD", "CV"],
+      "missing_strategy": "exclude",
+      "sensitivity_analysis": true
+    }
+  },
+
+  "models": {
+    "recon_model": "gemini-2.5-flash",
+    "extract_model": "claude-sonnet-4-20250514",
+    "provider": "auto"
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "source": "Ponisio et al. 2015 (Proc R Soc B 282:20141396)",
+    "known_included_papers": 115,
+    "published_pooled_effect": {
+      "estimate": -19.2,
+      "unit": "percent_change",
+      "ci_lower": -21.5,
+      "ci_upper": -16.8,
+      "notes": "Ponisio 2015: -19.2%; Seufert 2012: -25%; de Ponti 2012: -20%"
+    }
+  }
+}
