@@ -107,6 +107,8 @@ pipeline_replication/**
 !pipeline_replication/legume_rotation/config.json
 !pipeline_replication/biochar_crop_yield/
 !pipeline_replication/biochar_crop_yield/config.json
+!pipeline_replication/intercropping_yield/
+!pipeline_replication/intercropping_yield/config.json
 
 # ===== Allow: utility scripts =====
 !md_to_docx.py

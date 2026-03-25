@@ -1,0 +1,34 @@
+{
+  "topic": "intercropping_yield",
+  "description": "Effect of intercropping (growing two or more crops simultaneously in the same field) on crop yield compared to sole cropping / monoculture",
+  "pico": {
+    "population": "Field crops (cereals, legumes, vegetables) grown in intercropping systems",
+    "intervention": "Intercropping (strip, row, relay, mixed) with any companion crop",
+    "comparison": "Sole cropping / monoculture of the same crop",
+    "outcome": "Crop yield (grain yield, biomass, total yield) of the primary crop or combined system"
+  },
+  "search_query": "intercropping AND (yield OR productivity OR biomass) AND (monoculture OR sole OR monocrop)",
+  "seed_dois": [
+    "10.1016/j.agee.2014.09.028",
+    "10.1016/j.fcr.2019.107585",
+    "10.1007/s13593-019-0599-x"
+  ],
+  "benchmark": {
+    "source": "Yu et al. 2015, Agronomy for Sustainable Development",
+    "doi": "10.1007/s13593-014-0266-y",
+    "effect_description": "Intercropping increases total yield by ~22% (Land Equivalent Ratio 1.22)",
+    "effect_pct": 22.0,
+    "effect_ci_lo": 16.0,
+    "effect_ci_hi": 28.0,
+    "effect_metric": "LER-based yield advantage (%)",
+    "n_studies": 100,
+    "notes": "Meta-analysis of 100 studies; LER = 1.22 means 22% more total land needed for monocultures to match intercrop output. Also supported by Li et al. 2020 (10.1016/j.fcr.2019.107585) finding similar magnitudes."
+  },
+  "models": {
+    "screen": "gpt-4o-mini",
+    "extract": "claude-sonnet-4-20250514"
+  },
+  "pre_registered": true,
+  "registered_date": "2026-03-25",
+  "replaces": "cover_crop_soybean (dropped due to <1% OA PDF availability)"
+}
