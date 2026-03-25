@@ -1,0 +1,163 @@
+{
+  "review_id": "legume_rotation_yield",
+  "title": "Legume rotation effects on subsequent crop yield",
+  "research_question": "Does including a legume in crop rotation increase the yield of the subsequent non-legume crop?",
+
+  "pico": {
+    "population": {
+      "description": "Field crops grown after a legume pre-crop in rotation experiments",
+      "search_terms": ["crop yield", "grain yield", "field experiment", "rotation experiment"],
+      "exclude_terms": ["simulation", "model", "greenhouse", "pot experiment"]
+    },
+    "intervention": {
+      "description": "Legume-based crop rotation (legume grown as the preceding crop before the target crop)",
+      "search_terms": [
+        "legume rotation", "crop rotation", "legume pre-crop", "preceding legume",
+        "soybean rotation", "pea rotation", "lentil rotation", "chickpea rotation",
+        "faba bean rotation", "clover rotation", "lupin rotation",
+        "legume-cereal rotation", "rotation effect", "break crop",
+        "nitrogen fixation rotation", "biological nitrogen fixation",
+        "legume residue", "green manure legume"
+      ]
+    },
+    "comparator": {
+      "description": "Continuous cropping or non-legume rotation (cereal after cereal, fallow, or non-legume break crop)",
+      "definition": "No legume in preceding crop or continuous monoculture",
+      "search_terms": ["continuous cropping", "monoculture", "cereal-cereal", "non-legume rotation", "fallow", "continuous wheat", "continuous maize"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Subsequent crop grain yield per unit area",
+        "search_terms": [
+          "yield", "grain yield", "crop yield", "seed yield",
+          "productivity", "kg/ha", "Mg/ha", "t/ha"
+        ],
+        "unit": "kg/ha, Mg/ha, t/ha",
+        "direction_of_interest": "positive (legume rotation expected to increase yield)"
+      }
+    }
+  },
+
+  "intervention": "Legume-based crop rotation (legume as preceding crop)",
+  "control": "Continuous cropping or non-legume rotation",
+
+  "primary_outcomes": [
+    "Subsequent crop grain yield (kg/ha, Mg/ha, t/ha)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+20% yield increase (range +10% to +30% depending on crop and region)",
+
+  "important_moderators": [
+    "Legume species (soybean, pea, lentil, chickpea, faba bean, clover, lupin)",
+    "Subsequent crop species (wheat, maize, barley, sorghum, rice)",
+    "Climate zone (tropical, subtropical, temperate, arid)",
+    "Country/region",
+    "N fertilizer rate applied to subsequent crop (kg/ha)",
+    "Legume residue management (returned, removed, burned)",
+    "Irrigation (irrigated vs rainfed)",
+    "Soil type",
+    "Rotation cycle length (years)"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract yield of the SUBSEQUENT CROP (after legume), NOT the legume yield itself",
+    "2. Treatment = crop grown AFTER a legume; Control = crop grown after non-legume or in monoculture",
+    "3. Extract EACH crop-year-site combination separately",
+    "4. Get variance (SE/SD/LSD) and sample size (n/replicates)",
+    "5. Record which legume species was the preceding crop",
+    "6. Record the subsequent crop species and N fertilizer rate"
+  ],
+
+  "tc_confusion_warnings": [
+    "Treatment is the SUBSEQUENT CROP yield after legume rotation, NOT the legume yield",
+    "Control is the same crop grown after a non-legume or in continuous monoculture",
+    "Some papers report legume yield AND subsequent crop yield - extract ONLY the subsequent crop",
+    "N fertilizer levels may differ between treatments - record exact rates",
+    "Multi-year rotation studies: extract each rotation cycle separately",
+    "Some papers compare multiple legume species - extract each vs same control"
+  ],
+
+  "search": {
+    "seed_dois": [
+      "10.1073/pnas.2204951119",
+      "10.1016/j.agee.2009.06.005",
+      "10.1016/j.fcr.2016.09.008"
+    ],
+    "seed_papers_description": "Zhao et al. 2022 (PNAS, global legume rotation meta-analysis), Peoples et al. 2009, Angus et al. 2015",
+    "databases": ["openalex"],
+    "date_range": {
+      "start": 1990,
+      "end": 2026
+    },
+    "language": ["en"],
+    "study_types_eligible": ["field_experiment", "long-term trial", "on-farm trial"],
+    "study_types_excluded": ["review", "meta-analysis", "simulation", "model", "commentary", "editorial", "greenhouse"],
+    "citation_chasing": {
+      "forward": true,
+      "backward": true,
+      "depth": 1
+    }
+  },
+
+  "screening": {
+    "inclusion_criteria": [
+      "Primary field experiment comparing legume vs non-legume rotation",
+      "Reports yield data for the subsequent (non-legume) crop",
+      "Includes a legume pre-crop treatment and a non-legume or monoculture control",
+      "Reports numeric yield means"
+    ],
+    "exclusion_criteria": [
+      "Review or meta-analysis (no primary data)",
+      "Modeling or simulation study",
+      "No yield data reported",
+      "Only reports legume yield, not subsequent crop yield",
+      "Greenhouse or pot experiment",
+      "Intercropping study (not rotation)"
+    ],
+    "llm_enabled": false
+  },
+
+  "extraction": {
+    "target_outcomes": ["crop_grain_yield"],
+    "moderators": [
+      "legume_species",
+      "subsequent_crop_species",
+      "climate_zone",
+      "country",
+      "N_rate_kg_ha",
+      "residue_management",
+      "irrigation",
+      "soil_type",
+      "rotation_years"
+    ],
+    "effect_size": {
+      "primary": "lnRR",
+      "report_as": "percentage_change"
+    },
+    "variance_handling": {
+      "acceptable_types": ["SD", "SE", "SEM", "CI_95", "LSD", "CV"],
+      "missing_strategy": "exclude",
+      "sensitivity_analysis": true
+    }
+  },
+
+  "models": {
+    "recon_model": "gemini-2.5-flash",
+    "extract_model": "claude-sonnet-4-20250514",
+    "provider": "auto"
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "source": "Zhao et al. 2022 (PNAS 119:e2204951119)",
+    "known_included_papers": 427,
+    "published_pooled_effect": {
+      "estimate": 20.0,
+      "unit": "percent_change",
+      "ci_lower": 18.0,
+      "ci_upper": 22.0,
+      "notes": "Overall +20% yield increase; wheat +20%, maize +22%, barley +16%; larger with no N fertilizer (+28%) vs high N (+10%)"
+    }
+  }
+}

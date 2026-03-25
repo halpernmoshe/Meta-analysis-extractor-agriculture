@@ -89,6 +89,25 @@
 !fig_tost_equivalence.py
 !fig1_pipeline_architecture.py
 
+# ===== Allow: pipeline replication configs and scripts =====
+!pipeline_replication/
+!pipeline_replication/**
+# Re-ignore everything except what we want
+pipeline_replication/**
+!pipeline_replication/pico_validate.py
+!pipeline_replication/resynthesize_all.py
+!pipeline_replication/REPLICATION_RESULTS_SUMMARY.md
+!pipeline_replication/organic_yield_gap/
+!pipeline_replication/organic_yield_gap/config.json
+!pipeline_replication/notill_tillage/
+!pipeline_replication/notill_tillage/config.json
+!pipeline_replication/mycorrhiza_yield/
+!pipeline_replication/mycorrhiza_yield/config.json
+!pipeline_replication/legume_rotation/
+!pipeline_replication/legume_rotation/config.json
+!pipeline_replication/biochar_crop_yield/
+!pipeline_replication/biochar_crop_yield/config.json
+
 # ===== Allow: utility scripts =====
 !md_to_docx.py
 

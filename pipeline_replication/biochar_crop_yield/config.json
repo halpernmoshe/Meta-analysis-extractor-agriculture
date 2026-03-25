@@ -1,0 +1,163 @@
+{
+  "review_id": "biochar_crop_yield_all",
+  "title": "Biochar effects on crop yield across all crops",
+  "research_question": "Does biochar application increase crop yield across crop types and soil conditions?",
+
+  "pico": {
+    "population": {
+      "description": "Field and greenhouse crops receiving biochar soil amendment",
+      "search_terms": ["crop yield", "grain yield", "biochar", "field experiment"],
+      "exclude_terms": ["simulation", "model only", "no yield data"]
+    },
+    "intervention": {
+      "description": "Biochar application to soil (any feedstock, any rate)",
+      "search_terms": [
+        "biochar", "bio-char", "biomass char", "charcoal amendment",
+        "pyrolysis char", "biochar application", "biochar amendment",
+        "biochar soil", "biochar yield", "biochar crop",
+        "biochar fertilizer", "biochar compost"
+      ]
+    },
+    "comparator": {
+      "description": "No biochar (unamended control soil, or same fertilization without biochar)",
+      "definition": "Control plots receiving no biochar but same base fertilization",
+      "search_terms": ["control", "no biochar", "unamended", "without biochar", "no char"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Crop yield or biomass per unit area",
+        "search_terms": [
+          "yield", "grain yield", "crop yield", "biomass yield",
+          "dry matter", "fresh weight", "fruit yield", "tuber yield",
+          "productivity", "kg/ha", "Mg/ha", "t/ha", "g/plant", "g/pot"
+        ],
+        "unit": "kg/ha, Mg/ha, t/ha, g/plant",
+        "direction_of_interest": "positive (biochar expected to increase yield)"
+      }
+    }
+  },
+
+  "intervention": "Biochar soil amendment (any feedstock, any application rate)",
+  "control": "No biochar (unamended control)",
+
+  "primary_outcomes": [
+    "Crop yield (kg/ha, Mg/ha, t/ha, g/plant)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+15-25% yield increase (varies widely by soil type, crop, and biochar rate)",
+
+  "important_moderators": [
+    "Crop species",
+    "Biochar feedstock (wood, crop residue, manure, sludge)",
+    "Biochar application rate (t/ha)",
+    "Pyrolysis temperature",
+    "Soil type (sandy, loamy, clay)",
+    "Soil pH",
+    "Climate zone (tropical, subtropical, temperate)",
+    "Country/region",
+    "Experiment type (field, greenhouse, pot)",
+    "Study duration",
+    "Co-amendment (biochar alone vs biochar + fertilizer)"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Treatment = biochar-amended; Control = no-biochar control (SAME base fertilization)",
+    "2. Extract EACH biochar rate × crop combination separately",
+    "3. If biochar + fertilizer vs fertilizer alone: that's a valid comparison",
+    "4. If biochar alone vs nothing: that's also valid",
+    "5. Get variance (SE/SD/LSD) and sample size (n/replicates)",
+    "6. Record biochar rate (t/ha) and feedstock type",
+    "7. Record crop species and soil properties"
+  ],
+
+  "tc_confusion_warnings": [
+    "Treatment is WITH biochar, Control is WITHOUT biochar",
+    "Some studies have biochar + compost vs compost alone - extract as biochar effect",
+    "Some studies have multiple biochar rates - extract EACH rate vs control separately",
+    "Pot experiments and field experiments both valid but record experiment type",
+    "Some studies compare biochar types (feedstocks) - each vs same control"
+  ],
+
+  "search": {
+    "seed_dois": [
+      "10.1016/j.agee.2017.06.022",
+      "10.1038/s43016-021-00429-3",
+      "10.1007/s10311-019-00959-2"
+    ],
+    "seed_papers_description": "Ye et al. 2020 (GCB Bioenergy), Jeffery et al. 2017, biochar meta-analyses",
+    "databases": ["openalex"],
+    "date_range": {
+      "start": 2000,
+      "end": 2026
+    },
+    "language": ["en"],
+    "study_types_eligible": ["field_experiment", "greenhouse_experiment", "pot_experiment"],
+    "study_types_excluded": ["review", "meta-analysis", "simulation", "model", "commentary"],
+    "citation_chasing": {
+      "forward": true,
+      "backward": true,
+      "depth": 1
+    }
+  },
+
+  "screening": {
+    "inclusion_criteria": [
+      "Primary experiment testing biochar effect on crop yield",
+      "Reports crop yield or biomass data (numeric means)",
+      "Has a no-biochar control",
+      "Reports treatment and control yield separately"
+    ],
+    "exclusion_criteria": [
+      "Review or meta-analysis (no primary data)",
+      "No yield/biomass data reported",
+      "Only soil properties without crop data",
+      "Only reports biochar effects on non-yield outcomes (e.g., only soil carbon)"
+    ],
+    "llm_enabled": false
+  },
+
+  "extraction": {
+    "target_outcomes": ["crop_yield", "biomass_yield"],
+    "moderators": [
+      "crop_species",
+      "biochar_feedstock",
+      "biochar_rate_t_ha",
+      "pyrolysis_temperature",
+      "soil_type",
+      "soil_pH",
+      "climate_zone",
+      "country",
+      "experiment_type",
+      "co_amendment"
+    ],
+    "effect_size": {
+      "primary": "lnRR",
+      "report_as": "percentage_change"
+    },
+    "variance_handling": {
+      "acceptable_types": ["SD", "SE", "SEM", "CI_95", "LSD", "CV"],
+      "missing_strategy": "exclude",
+      "sensitivity_analysis": true
+    }
+  },
+
+  "models": {
+    "recon_model": "gemini-2.5-flash",
+    "extract_model": "claude-sonnet-4-20250514",
+    "provider": "auto"
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "source": "Ye et al. 2020 (GCB Bioenergy 12:401-415)",
+    "known_included_papers": 300,
+    "published_pooled_effect": {
+      "estimate": 16.0,
+      "unit": "percent_change",
+      "ci_lower": 12.0,
+      "ci_upper": 20.0,
+      "notes": "Overall +16%; higher in tropical soils (+25%) vs temperate (+10%); sandy soils (+22%) > clay (+10%); field +12%, pot +25%"
+    }
+  }
+}
