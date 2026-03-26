@@ -241,3 +241,17 @@ This entry.
 2. Run LLM semantic adjudication on V1 topics to compare vs keyword baseline
 3. Select final V2 topic set from preregistered 6
 4. Run full V2 evaluation
+
+---
+
+## 2026-03-26 (afternoon) — Phase 0 Complete (PARTIAL GO)
+
+Phase 0 pre-flight complete with one critical fix applied:
+
+- **qc_hard_filters.py plausibility fix**: EFFECT_PCT_UPPER tightened from 500% to 200%, EFFECT_PCT_LOWER from -90% to -80%. Root cause: Alrijabo V1 outlier rows (+194% to +609%) had lnRR values of 1.07–1.96, all slipping under the |lnRR| > 2.0 threshold. Percent-change primary filter now catches these. See PHASE0_FIXES_2026-03-26.md.
+
+- **Revised execution order confirmed**: Phase A (V1 re-adjudication) → Phase B (humic_acid pilot) → Phase C (preregistered topics). LLM adjudication running on all 6 V1 topics now.
+
+- **Preregistration updated**: humic_acid_yield moved to non-preregistered pipeline validation test. Confirmatory evaluation set = 5 topics (Topics 2–6). Success criteria updated to ≥4/5 direction (P1) and ≥3/5 CI overlap (P2). Pilot vs Confirmatory Distinction section added.
+
+- **V2_TESTING_PLAN.md updated**: Revised Execution Order (Phase A/B/C) added at top of document.

@@ -31,11 +31,13 @@ Systematic reviews and meta-analyses underpin evidence-based agricultural policy
 
 V2 makes two confirmatory claims evaluated by preregistered primary analyses:
 
-**P1 - Direction agreement**: Pipeline V2 will correctly identify the sign (positive/negative) of the benchmark published pooled effect for at least 5 of 6 preregistered topics.
+**P1 - Direction agreement**: Pipeline V2 will correctly identify the sign (positive/negative) of the benchmark published pooled effect for at least 4 of 5 preregistered confirmatory topics.
 
-**P2 - CI overlap**: Pipeline V2 95% confidence interval will include the benchmark point estimate for at least 3 of 6 preregistered topics.
+**P2 - CI overlap**: Pipeline V2 95% confidence interval will include the benchmark point estimate for at least 3 of 5 preregistered confirmatory topics.
 
 These claims are evaluated against published benchmark meta-analyses chosen before any V2 results were produced.
+
+**Note on evaluation set**: The 5 confirmatory topics are: amf_inoculation_yield, biochar_tropical_yield, elevated_co2_face_yield, legume_rotation, and cover_crop_corn_yield. humic_acid_yield is a non-preregistered pilot test (see Section 3, Topic 1 and the Pilot vs Confirmatory Distinction section below). Its results do not count toward P1 or P2.
 
 ### 1.4 What V2 Does Not Claim
 
@@ -80,7 +82,9 @@ Topics were selected using an 8-dimension scoring system before any V2 extractio
 
 ---
 
-### Topic 1: humic_acid_yield (PILOT)
+### Topic 1: humic_acid_yield (PIPELINE VALIDATION TEST — NOT CONFIRMATORY)
+
+> **IMPORTANT**: humic_acid_yield is NOT part of the preregistered confirmatory evaluation. It is a pipeline validation test run BEFORE the preregistered evaluation begins, after all lessons are learned from V1 LLM re-adjudication. Its results will be used solely to fix pipeline bugs and will NOT be included in P1/P2 success criteria. The 5 preregistered confirmatory topics are Topics 2–6.
 
 - **Config**: `humic_acid_yield/config.json`
 - **Benchmark paper**: Ma, Cheng & Zhang (2024). "The Impact of Humic Acid Fertilizers on Crop Yield and Nitrogen Use Efficiency: A Meta-Analysis." *Agronomy* (MDPI) 14(12):2763.
@@ -89,7 +93,7 @@ Topics were selected using an 8-dimension scoring system before any V2 extractio
 - **Estimand**: Exogenous humic acid application vs. no-HA control; primary outcome = crop yield (grain, fruit, tuber, or harvestable biomass)
 - **Expected direction**: Positive (yield increase)
 - **Known traps**: HA co-applied with other biostimulants (seaweed, PGPR, chitosan); HA as measured soil variable not applied treatment; reviews dominate search results; pot experiments inflate effects vs. field
-- **Why selected**: Fully OA benchmark (MDPI); clean estimand; never tested in V1; pilot topic for V2 operational refinement
+- **Why selected**: Fully OA benchmark (MDPI); clean estimand; never tested in V1; pipeline validation test topic for V2 operational refinement before confirmatory run
 
 ---
 
@@ -160,19 +164,21 @@ All analyses were specified before any V2 extraction results were produced. No p
 
 ### 4.1 Primary Confirmatory Analyses
 
+Evaluated on the 5 preregistered confirmatory topics only (Topics 2–6: amf_inoculation_yield, biochar_tropical_yield, elevated_co2_face_yield, legume_rotation, cover_crop_corn_yield). humic_acid_yield results are excluded from P1 and P2.
+
 **P1 - Direction Agreement**
-- Hypothesis: Pipeline V2 produces a pooled effect with the same sign as the benchmark for >= 5/6 topics.
+- Hypothesis: Pipeline V2 produces a pooled effect with the same sign as the benchmark for >= 4/5 confirmatory topics.
 - Analysis: Compare sign of pipeline pooled effect vs. benchmark reported effect, per topic.
-- Success threshold: >= 5/6 topics
-- Partial success: >= 4/6 topics
-- Failure: < 4/6 topics
+- Success threshold: >= 4/5 topics
+- Partial success: >= 3/5 topics
+- Failure: < 3/5 topics
 
 **P2 - CI Overlap**
-- Hypothesis: Pipeline V2 95% CI includes the benchmark point estimate for >= 3/6 topics.
+- Hypothesis: Pipeline V2 95% CI includes the benchmark point estimate for >= 3/5 confirmatory topics.
 - Analysis: Check whether benchmark point estimate falls within [pipeline CI lower, pipeline CI upper].
-- Success threshold: >= 3/6 topics
-- Partial success: >= 2/6 topics
-- Failure: <= 1/6 topics
+- Success threshold: >= 3/5 topics
+- Partial success: >= 2/5 topics
+- Failure: <= 1/5 topics
 
 ### 4.2 Secondary Exploratory Analyses
 
@@ -192,15 +198,43 @@ For 3 topics carried forward from V1 (legume_rotation, elevated_co2_face_yield, 
 
 ## Section 5 — Success / Failure Criteria
 
-**Primary Success**: Both P1 (>= 5/6 direction) AND P2 (>= 3/6 CI overlap).
+**Primary Success**: Both P1 (>= 4/5 direction) AND P2 (>= 3/5 CI overlap).
 
 **Partial Success**:
-- >= 5/6 direction AND >= 2/6 CI overlap, OR
-- >= 4/6 direction AND >= 3/6 CI overlap.
+- >= 4/5 direction AND >= 2/5 CI overlap, OR
+- >= 3/5 direction AND >= 3/5 CI overlap.
 
-**Failure**: < 4/6 direction agreement, OR both P1 and P2 below partial threshold.
+**Failure**: < 3/5 direction agreement, OR both P1 and P2 below partial threshold.
 
-**Reporting commitment**: Results will be reported regardless of direction. All 6 topics will be run and reported. Failure results are as scientifically valuable as success results.
+**Evaluation set**: 5 confirmatory topics (Topics 2–6). humic_acid_yield is excluded from success criteria.
+
+**Reporting commitment**: Results will be reported regardless of direction. All 5 confirmatory topics will be run and reported. humic_acid_yield results will be reported as an appendix for transparency. Failure results are as scientifically valuable as success results.
+
+---
+
+## Pilot vs Confirmatory Distinction
+
+*(Added 2026-03-26 to clarify evaluation scope)*
+
+### humic_acid_yield is a pipeline validation test, not a preregistered topic
+
+humic_acid_yield is run as a full-pipeline test BEFORE the preregistered confirmatory evaluation begins. Its purpose is to surface pipeline bugs, calibrate adjudication prompts, and validate that Stages 3–9 work end-to-end on a clean new topic. It is NOT part of the preregistered evaluation set.
+
+**humic_acid_yield results will NOT be included in P1/P2 success criteria.** The 5 confirmatory topics (Topics 2–6) are the evaluation set.
+
+### Execution order
+
+The pipeline will be run in this sequence:
+
+**Phase A — V1 LLM Re-adjudication** (before any new topic is run): Claude Code reads all 6 existing V1 extracted-row datasets and applies LLM semantic adjudication to learn from the V1 failures before any new extraction begins.
+
+**Phase B — humic_acid_yield pipeline test**: Full Stages 3–9 run on humic_acid_yield after Phase A lessons are incorporated. Results used to fix bugs only. Proceed only after Phase A is complete.
+
+**Phase C — Preregistered confirmatory topics**: amf_inoculation_yield, biochar_tropical_yield, elevated_co2_face_yield, legume_rotation (V2 rerun), cover_crop_corn_yield. Run only after Phase B validates the pipeline. Results count toward P1/P2.
+
+### Why this order
+
+Running confirmatory topics before learning from V1 data would risk repeating known failure modes. The Phase A re-adjudication extracts all available lessons from already-extracted data (no new API costs, no new papers) before the first dollar is spent on confirmatory extraction.
 
 ---
 
@@ -252,7 +286,7 @@ Log format: date, stage(s) affected, description of change, reason, expected imp
 
 ### 7.3 Non-Reporting Commitment
 
-Results will be reported regardless of direction. All 6 topics will be run and reported.
+Results will be reported regardless of direction. All 5 confirmatory topics will be run and reported. humic_acid_yield pilot results will be reported as a separate appendix for transparency.
 
 ---
 
@@ -294,12 +328,18 @@ V2 addresses all five via LLM adjudication, effector normalization, and determin
 | Topic configs and benchmark specs written | 2026-03-25 |
 | Dress rehearsal (humic_acid_yield search + screen) | 2026-03-26 |
 | **Preregistration frozen** | **2026-03-26** |
-| Pilot run (humic_acid_yield Stages 3-9) | 2026-03-26 (planned) |
-| LLM adjudication V1 comparison (exploratory) | TBD |
-| Full V2 run (all 6 topics) | TBD |
+| **Phase 1 — V1 LLM re-adjudication (all 6 existing topics)** | TBD |
+| **Phase 2 — humic_acid_yield pipeline test (Stages 3-9)** | TBD (after Phase 1) |
+| **Phase 3 — Preregistered confirmatory topics (5 topics)** | TBD (after Phase 2) |
 | V2 results paper | TBD |
 
-The humic_acid_yield pilot serves as a dress rehearsal for operational refinements. Pilot results are NOT part of the V2 confirmatory evaluation. If the pilot reveals a bug requiring architectural change, this will be logged as a deviation before proceeding to full evaluation.
+**Phase 1** covers LLM semantic adjudication of all 6 previously-extracted V1 topics (legume_rotation, mycorrhiza_yield, organic_yield_gap, notill_tillage, biochar_crop_yield, intercropping_yield). No new papers are read; no new extraction is run. Purpose: extract all lessons from existing data before touching any preregistered topic.
+
+**Phase 2** is the humic_acid_yield pipeline validation test. Full Stages 3–9 run after Phase 1 lessons are incorporated. Results used to fix pipeline bugs. NOT part of the confirmatory evaluation.
+
+**Phase 3** covers the 5 preregistered confirmatory topics (Topics 2–6). Run only after Phase 2 validates the end-to-end pipeline. Results count toward P1/P2 success criteria.
+
+If any phase reveals a bug requiring architectural change, this will be logged as a deviation in codex/STATUS_LOG.md before proceeding.
 
 ---
 
