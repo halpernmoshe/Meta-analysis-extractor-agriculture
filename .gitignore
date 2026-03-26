@@ -110,6 +110,25 @@ pipeline_replication/**
 !pipeline_replication/intercropping_yield/
 !pipeline_replication/intercropping_yield/config.json
 
+# ===== Allow: pipeline replication V2 preregistration and frozen docs =====
+!pipeline_replication/PREREGISTRATION_V2_2026-03-26.md
+!pipeline_replication/codex/
+!pipeline_replication/codex/**
+!pipeline_replication/humic_acid_yield/
+!pipeline_replication/humic_acid_yield/**
+!pipeline_replication/amf_inoculation_yield/
+!pipeline_replication/amf_inoculation_yield/config.json
+!pipeline_replication/amf_inoculation_yield/benchmark_spec.md
+!pipeline_replication/biochar_tropical_yield/
+!pipeline_replication/biochar_tropical_yield/config.json
+!pipeline_replication/biochar_tropical_yield/benchmark_spec.md
+!pipeline_replication/elevated_co2_face_yield/
+!pipeline_replication/elevated_co2_face_yield/config.json
+!pipeline_replication/elevated_co2_face_yield/benchmark_spec.md
+!pipeline_replication/cover_crop_corn_yield/
+!pipeline_replication/cover_crop_corn_yield/config.json
+!pipeline_replication/cover_crop_corn_yield/benchmark_spec.md
+
 # ===== Allow: utility scripts =====
 !md_to_docx.py
 

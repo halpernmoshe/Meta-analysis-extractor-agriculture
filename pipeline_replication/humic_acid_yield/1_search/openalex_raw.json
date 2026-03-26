@@ -1,0 +1,239 @@
+{
+  "query_metadata": {
+    "search_string": "humic acid crop yield",
+    "api_url": "https://api.openalex.org/works?search=humic+acid+crop+yield&filter=type:article,publication_year:1990-2026&per-page=25&select=id,doi,title,abstract_inverted_index,publication_year,primary_location",
+    "retrieved_date": "2026-03-26",
+    "total_hits": 39194,
+    "retrieved": 25,
+    "page": 1,
+    "notes": "Full corpus estimated 39,194 records. This file contains the first 25 results (relevance-ranked by OpenAlex). Dress rehearsal uses these 25 for manual PICO screening."
+  },
+  "results": [
+    {
+      "rank": 1,
+      "id": "https://openalex.org/W4404585314",
+      "doi": "https://doi.org/10.3390/agronomy14122763",
+      "title": "The Impact of Humic Acid Fertilizers on Crop Yield and Nitrogen Use Efficiency: A Meta-Analysis",
+      "publication_year": 2024,
+      "journal": "Agronomy (MDPI)",
+      "abstract_summary": "Meta-analysis of 93 articles, 383 yield observations. +12% yield increase from HA fertilizers, +27% NUE, +17% N uptake. Optimal at 100-200 kg/ha, precipitation >300mm, temperature >10C, soil pH 6-8. Cash crops > upland cereals > paddy rice.",
+      "is_benchmark_paper": true
+    },
+    {
+      "rank": 2,
+      "id": "https://openalex.org/W2899161347",
+      "doi": "https://doi.org/10.1080/01904167.2018.1527932",
+      "title": "Effect of humic acid and fulvic acid based liquid and foliar fertilizers on the yield of wheat crop",
+      "publication_year": 2018,
+      "journal": "Journal of Plant Nutrition",
+      "abstract_summary": "Organic-mineral liquid fertigation with HA, FA, and NPK micronutrients applied to wheat. Compares multiple treatment arms vs control. Reports biological yield (grain+straw) and grain yield. HA/FA not isolated from other co-applied nutrients."
+    },
+    {
+      "rank": 3,
+      "id": "https://openalex.org/W4381513939",
+      "doi": "https://doi.org/10.1016/j.jclepro.2023.137783",
+      "title": "Straw returning combined with controlled-release nitrogen fertilizer affected organic carbon storage and crop yield by changing humic acid composition and aggregate distribution",
+      "publication_year": 2023,
+      "journal": "Journal of Cleaner Production",
+      "abstract_summary": "Straw incorporation + controlled-release N fertilizer trial. Humic acid is a measured soil quality indicator (response variable), NOT the applied treatment. No HA application vs no-HA comparison."
+    },
+    {
+      "rank": 4,
+      "id": "https://openalex.org/W3036323676",
+      "doi": "https://doi.org/10.5513/jcea01/21.2.2576",
+      "title": "Possibility of increasing early crop potato yield with foliar application of seaweed extracts and humic acids",
+      "publication_year": 2020,
+      "journal": "Journal of Central European Agriculture",
+      "abstract_summary": "Biostimulants including seaweed extracts AND humic/fulvic acids applied to three potato cultivars. Did not affect tuber number but increased tuber weight and yield. HA not isolated from seaweed co-application."
+    },
+    {
+      "rank": 5,
+      "id": "https://openalex.org/W4310036775",
+      "doi": "https://doi.org/10.3390/agriculture12121996",
+      "title": "The Application of Humic Acid Urea Improves Nitrogen Use Efficiency and Crop Yield by Reducing the Nitrogen Loss Compared with Urea",
+      "publication_year": 2022,
+      "journal": "Agriculture (MDPI)",
+      "abstract_summary": "HA-urea compound fertilizer vs plain urea applied to maize-wheat rotation. Reduced N losses by ~24%, improved soil ammonium/available P, enhanced enzyme activity. Yield reported. HA is the isolated variable (urea vs HA-urea)."
+    },
+    {
+      "rank": 6,
+      "id": "https://openalex.org/W2214643862",
+      "doi": "https://doi.org/10.12692/ijb/6.12.81-89",
+      "title": "Use of coal derived humic acid as soil conditioner for soil physical properties and its impact on wheat crop yield",
+      "publication_year": 2015,
+      "journal": "International Journal of Biosciences",
+      "abstract_summary": "Loamy sand soil amended with 0-150 kg/ha coal-derived HA. Improved aggregate stability, bulk density, hydraulic conductivity. Wheat yield 'reflected valuable increase' at 150 kg/ha. HA is isolated treatment variable."
+    },
+    {
+      "rank": 7,
+      "id": "https://openalex.org/W2969669855",
+      "doi": "https://doi.org/10.1038/s41598-019-48620-4",
+      "title": "Humic Acid Fertilizer Improved Soil Properties and Soil Microbial Diversity of Continuous Cropping Peanut: A Three-Year Experiment",
+      "publication_year": 2019,
+      "journal": "Scientific Reports",
+      "abstract_summary": "3-year field trial in North China Plain. HA fertilizer vs control on peanut continuous cropping. Improved total N, P, K, organic matter, enzyme activities, microbial diversity. Yield data likely reported alongside soil outcomes."
+    },
+    {
+      "rank": 8,
+      "id": "https://openalex.org/W2584856753",
+      "doi": "https://doi.org/10.1186/s40538-017-0089-5",
+      "title": "The role of biostimulants and bioeffectors as alleviators of abiotic stress in crop plants",
+      "publication_year": 2017,
+      "journal": "Chemical and Biological Technologies in Agriculture",
+      "abstract_summary": "Review article on biostimulants including HA, FA, protein hydrolysates, seaweed extracts, mycorrhizal fungi. No primary experiment. Synthesizes mechanisms of stress alleviation."
+    },
+    {
+      "rank": 9,
+      "id": "https://openalex.org/W2949573358",
+      "doi": "https://doi.org/10.3390/agronomy9060335",
+      "title": "Plant Biostimulants: Importance of the Quality and Yield of Horticultural Crops and the Improvement of Plant Tolerance to Abiotic Stress - A Review",
+      "publication_year": 2019,
+      "journal": "Agronomy (MDPI)",
+      "abstract_summary": "Review of plant biostimulants including HA and FA. No primary yield data. Covers mechanisms, stress tolerance, sustainable agriculture applications."
+    },
+    {
+      "rank": 10,
+      "id": "https://openalex.org/W4214909181",
+      "doi": "https://doi.org/10.3389/fagro.2022.848621",
+      "title": "Understanding the Role of Humic Acids on Crop Performance and Soil Health",
+      "publication_year": 2022,
+      "journal": "Frontiers in Agronomy",
+      "abstract_summary": "Review of HA mechanisms on soil physical, chemical, biological properties and crop growth. Not a primary experiment. No treatment vs control comparison."
+    },
+    {
+      "rank": 11,
+      "id": "https://openalex.org/W2901327706",
+      "doi": "https://doi.org/10.3389/fpls.2018.01655",
+      "title": "Synergistic Biostimulatory Action: Designing the Next Generation of Plant Biostimulants for Sustainable Agriculture",
+      "publication_year": 2018,
+      "journal": "Frontiers in Plant Science",
+      "abstract_summary": "Review/perspective on next-generation biostimulants including HA, protein hydrolysates, seaweed extracts. No primary yield data."
+    },
+    {
+      "rank": 12,
+      "id": "https://openalex.org/W4390588152",
+      "doi": "https://doi.org/10.30848/pjb2024-3(41)",
+      "title": "Response of integrated use of humic acid and chemical fertilizer on growth and yield of rice crop (Oryza sativa L.) in calcareous soil",
+      "publication_year": 2024,
+      "journal": "Pakistan Journal of Botany",
+      "abstract_summary": "HA + chemical fertilizer (K, GA3) vs control on rice in calcareous soil. Reports grain yield, 1000-grain weight, spike length. 140% increase in plant height noted. HA is a key treatment variable but co-applied with K/GA3."
+    },
+    {
+      "rank": 13,
+      "id": "https://openalex.org/W2064300684",
+      "doi": "https://doi.org/10.1051/agro:2005017",
+      "title": "Effect of foliar application of N and humic acids on growth and yield of durum wheat",
+      "publication_year": 2005,
+      "journal": "Agronomy for Sustainable Development",
+      "abstract_summary": "Foliar N and HA applied to durum wheat. Yield reported. HA co-applied with N fertilizer - unclear if HA-only arm exists to isolate HA effect from N effect."
+    },
+    {
+      "rank": 14,
+      "id": "https://openalex.org/W2162395982",
+      "doi": "https://doi.org/10.1023/a:1009823600950",
+      "title": "Amelioration of Al toxicity and P deficiency in acid soils by additions of organic residues: a critical review",
+      "publication_year": 2001,
+      "journal": "Nutrient Cycling in Agroecosystems",
+      "abstract_summary": "Critical review on organic residues for Al/P management in acid soils. Not an HA application trial. Not relevant to humic acid crop yield estimand."
+    },
+    {
+      "rank": 15,
+      "id": "https://openalex.org/W2144030250",
+      "doi": "https://doi.org/10.1073/pnas.0401349101",
+      "title": "Nitrogen-bonded aromatics in soil organic matter and their implications for a yield decline in intensive rice cropping",
+      "publication_year": 2004,
+      "journal": "PNAS",
+      "abstract_summary": "Mechanistic NMR spectroscopy study of SOM fractions in rice soil. Humic acid is a soil organic fraction studied analytically, not applied as a treatment. No HA application vs control comparison."
+    },
+    {
+      "rank": 16,
+      "id": "https://openalex.org/W3015247682",
+      "doi": "https://doi.org/10.1038/s41598-020-62669-6",
+      "title": "Sulfur-enriched leonardite and humic acid soil amendments enhance tolerance to drought and phosphorus deficiency stress in maize",
+      "publication_year": 2020,
+      "journal": "Scientific Reports",
+      "abstract_summary": "Field trials with leonardite-derived HA on maize under drought and P-deficiency stress. Reports grain yield, biomass, antioxidant activity. HA appears to be isolated treatment variable. Grain yield is a reported outcome."
+    },
+    {
+      "rank": 17,
+      "id": "https://openalex.org/W2382824446",
+      "doi": null,
+      "title": "The Recent Situation for Manufacturing Urea Humic Acid and Mechanism in Increasing Crop Yield",
+      "publication_year": 2004,
+      "journal": "Tu Jang T'ung Pao (Soil Science Bulletin - Chinese)",
+      "abstract_summary": "Appears to be a Chinese-language review of HA manufacturing and mechanisms. No primary yield data. No English abstract. No DOI."
+    },
+    {
+      "rank": 18,
+      "id": "https://openalex.org/W3008890697",
+      "doi": "https://doi.org/10.3390/agronomy10030319",
+      "title": "The Integration of Bio and Organic Fertilizers Improve Plant Growth, Grain Yield, Quality and Metabolism of Hybrid Maize",
+      "publication_year": 2020,
+      "journal": "Agronomy (MDPI)",
+      "abstract_summary": "Bio+organic fertilizer combination (HA + biogas slurry + microbial inoculants) applied to maize. Grain yield reported. HA is one of multiple co-applied treatments; cannot isolate HA effect from biofertilizer effect."
+    },
+    {
+      "rank": 19,
+      "id": "https://openalex.org/W2943784073",
+      "doi": "https://doi.org/10.1016/j.apsoil.2019.04.024",
+      "title": "Maize growth and nutrient uptake following integrated improvement of vermicompost and humic acid fertilizer on coastal saline soil",
+      "publication_year": 2019,
+      "journal": "Applied Soil Ecology",
+      "abstract_summary": "Vermicompost AND HA fertilizer applied together on coastal saline soil for maize. HA co-applied with vermicompost - intervention confounded. Cannot isolate HA effect from vermicompost effect."
+    },
+    {
+      "rank": 20,
+      "id": "https://openalex.org/W2008037057",
+      "doi": "https://doi.org/10.1007/s11157-014-9347-1",
+      "title": "Vermicompost as an effective organic fertilizer and biocontrol agent: effect on growth, yield and quality of plants",
+      "publication_year": 2014,
+      "journal": "Reviews in Environmental Science and Bio/Technology",
+      "abstract_summary": "Review of vermicompost as fertilizer and biocontrol agent. HA is a component of vermicompost. Not an HA application trial. Review only."
+    },
+    {
+      "rank": 21,
+      "id": "https://openalex.org/W4210398479",
+      "doi": "https://doi.org/10.1007/s42729-022-00762-7",
+      "title": "Efficacy of Humic Acids and Chitosan for Enhancing Yield and Sugar Quality of Sugar Beet Under Moderate and Severe Drought",
+      "publication_year": 2022,
+      "journal": "Journal of Soil Science and Plant Nutrition",
+      "abstract_summary": "HA and chitosan applied to sugar beet under drought. Yield and sugar quality reported. HA co-applied with chitosan - cannot isolate HA-only effect without examining factorial design arms."
+    },
+    {
+      "rank": 22,
+      "id": "https://openalex.org/W3117576049",
+      "doi": "https://doi.org/10.3390/agronomy11010014",
+      "title": "Biostimulant-Treated Seedlings under Sustainable Agriculture: A Global Perspective Facing Climate Change",
+      "publication_year": 2020,
+      "journal": "Agronomy (MDPI)",
+      "abstract_summary": "Review of biostimulants including HA, fulvic acids, protein hydrolysates, seaweed extracts, beneficial bacteria. No primary experiment data."
+    },
+    {
+      "rank": 23,
+      "id": "https://openalex.org/W3062957344",
+      "doi": "https://doi.org/10.3390/agronomy10091224",
+      "title": "Application of Single Superphosphate with Humic Acid Improves the Growth, Yield and Phosphorus Uptake of Wheat in Calcareous Soil",
+      "publication_year": 2020,
+      "journal": "Agronomy (MDPI)",
+      "abstract_summary": "Field experiment: HA added to single superphosphate (SSP) vs SSP alone on wheat in calcareous soil. Reports grain yield, straw yield, biological yield, spike length, grain count, 1000-grain weight. HA is isolated variable (SSP+HA vs SSP)."
+    },
+    {
+      "rank": 24,
+      "id": "https://openalex.org/W2949353203",
+      "doi": "https://doi.org/10.3390/su11123417",
+      "title": "Integrated Use of Humic Acid and Plant Growth Promoting Rhizobacteria to Ensure Higher Potato Productivity",
+      "publication_year": 2019,
+      "journal": "Sustainability (MDPI)",
+      "abstract_summary": "HA + PGPR inoculation on potato. ~140% production increase vs control; 111% for conventional fertilizer alone. HA co-applied with bacteria - confounded unless factorial design allows isolation."
+    },
+    {
+      "rank": 25,
+      "id": "https://openalex.org/W2784765016",
+      "doi": "https://doi.org/10.1007/s11368-018-1916-4",
+      "title": "Humic products in agriculture: potential benefits and research challenges - a review",
+      "publication_year": 2018,
+      "journal": "Journal of Soils and Sediments",
+      "abstract_summary": "Review of humic product use in agriculture. Covers mechanisms, product types, application methods, field evidence. No primary experiment data."
+    }
+  ]
+}
