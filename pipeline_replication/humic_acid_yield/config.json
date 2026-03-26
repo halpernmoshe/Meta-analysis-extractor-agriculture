@@ -68,7 +68,7 @@
     "3. If multiple rates tested, extract EACH rate vs the same control separately",
     "4. Get variance (SE/SD/LSD) and sample size (n/replicates)",
     "5. Record humic acid source, application method, and rate",
-    "6. Focus on CROP YIELD as primary outcome, not plant height/root length/chlorophyll"
+    "6. Focus on HARVESTABLE CROP YIELD per unit area as primary outcome — DO NOT extract yield components, growth traits, or physiological measurements"
   ],
 
   "tc_confusion_warnings": [

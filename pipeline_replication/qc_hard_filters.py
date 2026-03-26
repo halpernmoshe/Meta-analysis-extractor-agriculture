@@ -399,6 +399,70 @@ def run_qc(topic_dir: Path, config: dict, dry_run: bool = False):
         "action": "flag_only",
     })
 
+    # ── Check 8: Universal non-yield outcome flag ─────────────────────
+    # Flag rows where outcome_variable matches universal non-yield patterns.
+    # These patterns indicate yield components, morphological traits, or quality
+    # measurements that should not enter a yield synthesis without explicit
+    # topic-config approval. Flags are passed to LLM adjudication — NOT auto-excluded.
+    # Learned from V1: keyword adjudicator passed >300 such rows across 6 topics.
+    import re as _re
+
+    _NON_YIELD_PATTERNS = [
+        # Morphological / structural traits
+        r'\b(plant[\s_]height|stem[\s_]height|shoot[\s_]height|canopy[\s_]height)\b',
+        r'\b(leaf[\s_]area|LAI|leaf[\s_]area[\s_]index)\b',
+        r'\b(tiller[\s_](?:number|count|density))\b',
+        r'\b(SPAD|chlorophyll[\s_](?:content|index|concentration))\b',
+        r'\b(stem[\s_](?:diameter|girth|thickness))\b',
+        r'\b(number[\s_]of[\s_](?:leaves|branches|shoots|pods?|fruits?))\b',
+        # Root-specific biomass (root ≠ harvestable yield)
+        r'\b(root[\s_](?:length|biomass|dry[\s_]weight|fresh[\s_]weight|volume|depth))\b',
+        # Yield components (not harvestable area yield)
+        r'\b(1000[\s\-_]?grain|thousand[\s\-_]?grain|test[\s_]weight|hectoliter[\s_]weight|'
+        r'hectolitre[\s_]weight)\b',
+        r'\b(grains?[\s_]per[\s_](spike|panicle|ear|plant))\b',
+        r'\b(ear[\s_]length|spike[\s_]length|panicle[\s_]length)\b',
+        r'\b(pods?[\s_]per[\s_]plant|seeds?[\s_]per[\s_]pod)\b',
+        # Biological / mycorrhizal colonisation
+        r'\b(coloniz(?:ation|ed)|mycorrhizal[\s_]coloniz)\b',
+        # Germination indices
+        r'\b(germination[\s_](?:rate|percentage|index|speed))\b',
+        # Nutrient / quality traits
+        r'\b(nutrient[\s_](?:concentration|content|uptake))\b',
+        r'\b(protein[\s_]content|oil[\s_]content|starch[\s_]content|fat[\s_]content)\b',
+        r'\b([NnPpKk][\s_](?:concentration|content|uptake|accumulation))\b',
+    ]
+
+    if "outcome_variable" in df.columns:
+        non_yield_mask = df["outcome_variable"].apply(
+            lambda x: any(
+                _re.search(p, str(x), _re.IGNORECASE)
+                for p in _NON_YIELD_PATTERNS
+            ) if pd.notna(x) else False
+        )
+        df["_qc_possible_non_yield"] = non_yield_mask
+        n_non_yield = int(non_yield_mask.sum())
+        audit["checks"].append({
+            "check": "universal_non_yield_outcome",
+            "description": (
+                "Outcome variable matches universal non-yield patterns "
+                "(yield component, morphological trait, or quality metric). "
+                "Rows are FLAGGED for LLM adjudication — NOT auto-excluded. "
+                "V1 lesson: keyword adjudicator passed >300 such rows across 6 topics."
+            ),
+            "rows_flagged": n_non_yield,
+            "patterns_checked": len(_NON_YIELD_PATTERNS),
+            "action": "flag_for_llm_adjudication",
+        })
+    else:
+        df["_qc_possible_non_yield"] = False
+        audit["checks"].append({
+            "check": "universal_non_yield_outcome",
+            "description": "SKIPPED — outcome_variable column not found in data",
+            "rows_flagged": 0,
+            "action": "flag_for_llm_adjudication",
+        })
+
     # ── Summary ──────────────────────────────────────────────────────────
     n_output = len(df)
     n_papers_output = df["paper_id"].nunique()

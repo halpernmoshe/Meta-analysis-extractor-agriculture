@@ -49,6 +49,40 @@ This confirms the Codex conclusion: need true LLM-based semantic adjudication (C
    - Pilot topic: humic_acid_yield (fully OA, clean estimand, never tested)
    - Preregistered success criteria defined
 
+## 2026-03-26 (evening) — Phase B Complete: humic_acid_yield Pilot
+
+### Completed
+
+**Universal pipeline fixes (apply to all topics):**
+- adjudicate_llm_universal.py: Added 5 universal error patterns to system prompt
+  (yield_component, morphological_trait, quality_trait_not_yield, confounded_intervention, per_plant_no_area_conversion)
+- qc_hard_filters.py: Added Check 8 — regex scan for non-yield outcomes, flags for LLM review
+- humic_acid_yield/config.json: Cleaned up (removed topic-specific additions that duplicated universal logic)
+
+**humic_acid_yield pilot run (Stages 1-9):**
+- Stage 1: 152 unique papers from OpenAlex (5 queries + backward citations)
+- Stage 2: 168 screened → 72 INCLUDE, 21 UNSURE, 75 EXCLUDE
+- Stage 3: ~79% OA rate for INCLUDE papers
+- Stage 4: 15 rows extracted from 5 pilot papers
+- Stage 5: 2 rows flagged by QC (>25% effect), 13 pass
+- Stage 6: 1 excluded (straw yield), 2 flagged, 12 kept
+- Stage 7: 14 rows normalized (crop_type, setting, ha_source)
+- Stage 8: Pilot effect +10.9-11.5% vs benchmark +12% (gap <1.5pp, benchmark within CI)
+- Stage 9: PIPELINE CLEARED FOR PHASE C
+
+### Key Result
+Pilot effect +11.5% vs benchmark +12%. Gap = -0.5pp. Benchmark within 95% CI.
+Universal yield-component detection caught 1 straw yield row that would have inflated the estimate.
+
+### Recommended schema enhancements before Phase C
+- stress_condition boolean
+- temporal_replicate boolean
+- ha_isolation_confidence field
+
+### Next Steps
+1. Decide whether to implement the 3 schema enhancements
+2. Proceed to Phase C: run the 5 preregistered confirmatory topics
+
 7. **Topic configs for all 6 V2 topics** (JSON)
    - New: `humic_acid_yield/config.json`, `amf_inoculation_yield/config.json`, `biochar_tropical_yield/config.json`
    - New: `elevated_co2_face_yield/config.json`, `cover_crop_corn_yield/config.json`
