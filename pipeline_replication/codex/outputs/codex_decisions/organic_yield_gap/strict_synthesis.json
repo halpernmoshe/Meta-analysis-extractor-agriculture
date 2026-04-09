@@ -1,0 +1,11 @@
+{
+  "k": 128,
+  "pooled_pct": -4.89,
+  "ci_lo_pct": -8.5,
+  "ci_hi_pct": -1.14,
+  "I2": 94.7,
+  "tau2": 0.039109,
+  "benchmark_pct": -19.2,
+  "benchmark_source": "Ponisio et al. 2015",
+  "abs_diff_vs_benchmark": 14.31
+}

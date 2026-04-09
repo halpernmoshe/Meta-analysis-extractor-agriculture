@@ -1,0 +1,123 @@
+{
+  "name": "Legume Rotation Effects on Subsequent Crop Yield",
+  "description": "Global meta-analysis of yield advantages from legume-based rotations. Based on Zhao et al. 2022 (PNAS). Dataset has 11,768 observations with pre-computed effect sizes (response ratios) but NO raw treatment/control means or variance values. NO study/paper identifiers (author, year, DOI) in the dataset.",
+
+  "intervention": "Legume rotation (growing legume as pre-crop before the subsequent crop)",
+  "control": "Non-legume rotation or continuous cropping (no legume pre-crop)",
+
+  "primary_outcomes": [
+    "Subsequent crop yield (kg/ha or t/ha)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+20% yield increase on average (median +10%)",
+
+  "important_moderators": [
+    "Pre-crop legume species (PreEff: soybean, pea, alfalfa, faba bean, etc.)",
+    "Subsequent crop species (SubEff: wheat, maize, barley, sorghum, etc.)",
+    "Main crop type (grain, oilseed, root, forage, cotton, sugar)",
+    "Legume purpose (PreLegPur: Seed, Green manure, Forage)",
+    "Legume residue management (PreLegRes: Return, Remove)",
+    "Soil texture (ST2: Fine, Medium, Coarse)",
+    "Soil pH",
+    "Soil organic carbon (SOC, g/kg)",
+    "N fertilizer rate (NFR, kg/ha)",
+    "Conservation tillage (ConsTill: yes/no)",
+    "Irrigation (IG: yes/no)",
+    "Aridity index (AI)",
+    "Mean annual precipitation (MAP, mm)",
+    "Mean annual temperature (MAT, C)",
+    "Rotation cycles (RC)",
+    "Crop diversity (CD2, number of species)",
+    "Continent/Country",
+    "Latitude/Longitude"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract yield data for BOTH legume rotation AND non-legume control treatments",
+    "2. Control = continuous cropping or non-legume rotation; Treatment = legume pre-crop rotation",
+    "3. Get variance (SE/SD/LSD) and sample size (n/replicates) for each treatment",
+    "4. Record legume species, subsequent crop, and management practices",
+    "5. Calculate response ratio (RR = treatment yield / control yield)"
+  ],
+
+  "tc_confusion_warnings": [
+    "Control is the NON-LEGUME rotation (e.g., fallow, cereal-cereal)",
+    "Treatment is the LEGUME rotation (e.g., soybean-wheat, pea-maize)",
+    "Some papers test multiple legume species - extract each vs same control",
+    "Watch for units (kg/ha vs t/ha vs g/plant)",
+    "Multi-year studies may report each year separately"
+  ],
+
+  "pico": {
+    "population": {
+      "crop_groups": ["cereals", "oilseeds", "root crops", "forage", "cotton", "sugar crops"],
+      "environments": ["field"]
+    },
+    "intervention": {
+      "treatment_variable": "LEGUME_ROTATION",
+      "treatment_keywords": ["legume rotation", "crop rotation", "pre-crop", "preceding crop", "soybean-wheat", "pea-maize", "legume phase"]
+    },
+    "comparison": {
+      "control_definition": "Non-legume rotation or continuous cropping",
+      "control_keywords": ["continuous", "monoculture", "fallow", "cereal-cereal", "non-legume", "without legume"]
+    }
+  },
+
+  "ground_truth": {
+    "dataset": "../Zhao_2022/data.csv",
+    "dataset_encoding": "latin-1",
+    "dataset_sheet": null,
+    "reference_sheet": null,
+    "reference": "Zhao et al. 2022, PNAS (legume rotation yield advantage)",
+    "data_doi": "10.6084/m9.figshare.20290923",
+    "total_observations": 11768,
+    "total_studies": "UNKNOWN - no study identifiers in dataset",
+    "unique_sites": 427,
+    "gt_columns": {
+      "control_mean": null,
+      "control_sd": null,
+      "control_n": "RepNL",
+      "treatment_mean": null,
+      "treatment_sd": null,
+      "treatment_n": "RepL",
+      "effect_ratio": "RR_Y",
+      "log_response_ratio": "yi",
+      "sampling_variance": "vi",
+      "weight": "wgt"
+    },
+    "gt_limitations": [
+      "NO raw treatment/control means - only pre-computed response ratios",
+      "NO author/year/DOI columns - cannot match to individual papers",
+      "NO SD/SE columns - only sampling variance of lnRR (vi)",
+      "Validation would require effect-size-level matching, not observation-level",
+      "Would need the original paper's reference list to identify source studies"
+    ],
+    "subsample_strategy": "Not applicable without study identifiers; would need paper reference list"
+  },
+
+  "models": {
+    "recon": "gemini-2.5-flash-lite",
+    "extract": "gemini-2.5-pro"
+  },
+
+  "gap_fill": {
+    "enabled": true,
+    "priority": "variance",
+    "max_papers": null
+  },
+
+  "variance_verification": {
+    "enabled": true,
+    "run_grim": true,
+    "run_grimmer": true,
+    "run_pvalue_triangulation": true,
+    "cv_bounds": [1, 100],
+    "flag_suspicious": true
+  },
+
+  "extraction": {
+    "max_tokens": 32768,
+    "prioritize_primary_outcome": true
+  }
+}

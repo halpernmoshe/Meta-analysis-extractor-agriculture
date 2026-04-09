@@ -1,0 +1,45 @@
+{
+  "paper_id": "Radkowski_2018",
+  "title": "Influence of foliar fertilization with amino acid preparations on morphological traits and seed yield of timothy",
+  "authors": "Radkowski A, Radkowska I",
+  "year": 2018,
+  "species": "Phleum pratense (timothy grass)",
+  "consensus_observations": [
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 905,
+      "control_mean": 874,
+      "effect_pct": 3.55,
+      "n": 4,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "Microfert amino acid fertilizer 1.8 L/ha (3-year mean)",
+      "control_description": "Control (water only, 3-year mean)",
+      "moderators": {"biostimulant_type": "amino_acid", "dose": "1.8 L/ha"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 967,
+      "control_mean": 874,
+      "effect_pct": 10.64,
+      "n": 4,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "Microfert amino acid fertilizer 3.0 L/ha (3-year mean)",
+      "control_description": "Control (water only, 3-year mean)",
+      "moderators": {"biostimulant_type": "amino_acid", "dose": "3.0 L/ha"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 998,
+      "control_mean": 874,
+      "effect_pct": 14.19,
+      "n": 4,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "Microfert amino acid fertilizer 4.5 L/ha (3-year mean)",
+      "control_description": "Control (water only, 3-year mean)",
+      "moderators": {"biostimulant_type": "amino_acid", "dose": "4.5 L/ha"}
+    }
+  ]
+}

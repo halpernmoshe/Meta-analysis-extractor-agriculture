@@ -1,0 +1,171 @@
+{
+  "topic": "notill_tillage",
+  "n_rows": 605,
+  "severity_counts": {
+    "needs_review": 408,
+    "clean": 163,
+    "likely_off_target": 34
+  },
+  "reason_counts_top": {
+    "paper_warning": 238,
+    "intervention_drift": 231,
+    "non_independent_average": 69,
+    "biomass_proxy": 66,
+    "quality_or_composition": 30,
+    "low_confidence": 9,
+    "yield_attribute": 4,
+    "extreme_effect": 1
+  },
+  "top_flagged_examples": [
+    {
+      "row_number": 109,
+      "paper_id": "BJRadford_1995_Conservation_tillage_increases_in_soil",
+      "outcome": "grain yield",
+      "effect_pct": "2.85714285714286",
+      "confidence": "medium",
+      "severity": "likely_off_target",
+      "reasons": [
+        "intervention_drift",
+        "paper_warning",
+        "quality_or_composition"
+      ],
+      "treatment_description": "No tillage (NT), herbicide-only fallow weed control",
+      "control_description": "Traditional tillage (TT), disc plough + scarifier",
+      "notes": "Similar yields across treatments. Grain protein declined with reduced tillage (TT 9.1%, NT 7.8%), indicating N shortage in conservation tillage. Values estimated from bar chart."
+    },
+    {
+      "row_number": 429,
+      "paper_id": "RamCDalal_1998_Sustaining_productivity_of_a_Vertisol",
+      "outcome": "wheat grain yield",
+      "effect_pct": "-7.142857142857142",
+      "confidence": "low",
+      "severity": "likely_off_target",
+      "reasons": [
+        "low_confidence",
+        "paper_warning",
+        "quality_or_composition"
+      ],
+      "treatment_description": "Zero tillage (ZT), chickpea-wheat rotation, 0 kg N/ha",
+      "control_description": "Conventional tillage (CT), chickpea-wheat rotation, 0 kg N/ha",
+      "notes": "Estimated from Figure 6, 1996 panel at N=0. LOW CONFIDENCE: 1996 panels have overlapping yield and protein lines making reading difficult. Text does not state explicit CT vs ZT comparison for 1996. 1996 had good rainfall (755 mm) so ZT moisture conservation benefit may have been less important. Text notes large yield increases with N in 1996 ZT."
+    },
+    {
+      "row_number": 430,
+      "paper_id": "RamCDalal_1998_Sustaining_productivity_of_a_Vertisol",
+      "outcome": "wheat grain yield",
+      "effect_pct": "-13.88888888888889",
+      "confidence": "low",
+      "severity": "likely_off_target",
+      "reasons": [
+        "low_confidence",
+        "paper_warning",
+        "quality_or_composition"
+      ],
+      "treatment_description": "Zero tillage (ZT), wheat-wheat rotation (continuous wheat), 0 kg N/ha",
+      "control_description": "Conventional tillage (CT), wheat-wheat rotation (continuous wheat), 0 kg N/ha",
+      "notes": "Estimated from Figure 6, 1996 panel at N=0. LOW CONFIDENCE: Figure reading uncertain due to overlapping yield/protein lines. Text does not report explicit CT vs ZT for 1996. Negative ZT effect at 0 N in a wet year (755 mm) is plausible but should be verified. Text notes ZT showed large yield response to N in 1996."
+    },
+    {
+      "row_number": 315,
+      "paper_id": "KhawarJabran_2015_Korumal\u0131_Toprak_\u0130\u015fleme_Sistemlerinde_Yeti\u015ftirilen",
+      "outcome": "Plant height",
+      "effect_pct": "1.017293997965412",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "paper_warning",
+        "yield_attribute"
+      ],
+      "treatment_description": "Zero tillage (no cultivation, direct seeding)",
+      "control_description": "Conventional tillage (four cultivations followed by two plankings)",
+      "notes": "Non-significant difference. No LSD reported."
+    },
+    {
+      "row_number": 317,
+      "paper_id": "KhawarJabran_2015_Korumal\u0131_Toprak_\u0130\u015fleme_Sistemlerinde_Yeti\u015ftirilen",
+      "outcome": "Spikelets per spike",
+      "effect_pct": "1.1834319526627388",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "paper_warning",
+        "yield_attribute"
+      ],
+      "treatment_description": "Zero tillage (no cultivation, direct seeding)",
+      "control_description": "Conventional tillage (four cultivations followed by two plankings)",
+      "notes": "Non-significant difference. No LSD reported."
+    },
+    {
+      "row_number": 319,
+      "paper_id": "KhawarJabran_2015_Korumal\u0131_Toprak_\u0130\u015fleme_Sistemlerinde_Yeti\u015ftirilen",
+      "outcome": "Productive tillers",
+      "effect_pct": "21.24950258654993",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "paper_warning",
+        "yield_attribute"
+      ],
+      "treatment_description": "Zero tillage (no cultivation, direct seeding)",
+      "control_description": "Conventional tillage (four cultivations followed by two plankings)",
+      "notes": "Non-significant difference. No LSD reported."
+    },
+    {
+      "row_number": 369,
+      "paper_id": "MarjaJalli_2021_Effects_of_Crop_Rotation_on",
+      "outcome": "1000 seed weight",
+      "effect_pct": "0.0",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "paper_warning",
+        "quality_or_composition"
+      ],
+      "treatment_description": "No-tillage, CR2, Period 1",
+      "control_description": "Plowed, CR2, Period 1",
+      "notes": "Grain quality parameter. Identical means."
+    },
+    {
+      "row_number": 168,
+      "paper_id": "ElenaPartal_2023_Effects_of_Different_Soil_Tillage",
+      "outcome": "Grain protein content",
+      "effect_pct": "4.347826086956519",
+      "confidence": "medium",
+      "severity": "likely_off_target",
+      "reasons": [
+        "quality_or_composition"
+      ],
+      "treatment_description": "No-tillage (direct sowing)",
+      "control_description": "Conventional tillage - autumn plowing (22-25 cm) + disk (8-10 cm)",
+      "notes": "2020. No LSD reported separately for protein. Unit listed as 'g' in the paper but likely represents % or g/100g."
+    },
+    {
+      "row_number": 169,
+      "paper_id": "ElenaPartal_2023_Effects_of_Different_Soil_Tillage",
+      "outcome": "Grain protein content",
+      "effect_pct": "-0.9708737864077808",
+      "confidence": "medium",
+      "severity": "likely_off_target",
+      "reasons": [
+        "quality_or_composition"
+      ],
+      "treatment_description": "No-tillage (direct sowing)",
+      "control_description": "Conventional tillage - autumn plowing (22-25 cm) + disk (8-10 cm)",
+      "notes": "2021. No LSD reported separately for protein."
+    },
+    {
+      "row_number": 170,
+      "paper_id": "ElenaPartal_2023_Effects_of_Different_Soil_Tillage",
+      "outcome": "Grain protein content",
+      "effect_pct": "5.970149253731335",
+      "confidence": "medium",
+      "severity": "likely_off_target",
+      "reasons": [
+        "quality_or_composition"
+      ],
+      "treatment_description": "No-tillage (direct sowing)",
+      "control_description": "Conventional tillage - autumn plowing (22-25 cm) + disk (8-10 cm)",
+      "notes": "2022. No LSD reported separately for protein."
+    }
+  ]
+}

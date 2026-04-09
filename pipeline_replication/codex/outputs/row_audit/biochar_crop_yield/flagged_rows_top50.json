@@ -1,0 +1,752 @@
+[
+  {
+    "row_number": 19,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Shoot fresh biomass",
+    "effect_pct": "112.27272727272728",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect",
+      "paper_warning"
+    ],
+    "treatment_description": "Biochar 40 t/ha + Straw residues 25 t/ha + NPK",
+    "control_description": "Straw residues 25 t/ha + NPK (no biochar)",
+    "notes": "T5 vs T4. T5=46.70g text-confirmed (labeled 'a'). T4 estimated from figure ~22g (labeled 'b'). Text anomalously reports T4=45g which contradicts figure; figure value used."
+  },
+  {
+    "row_number": 78,
+    "paper_id": "ClaudiaKammann_2015_Plant_growth_improvement_mediated_by",
+    "outcome": "Total aboveground biomass",
+    "effect_pct": "206.66666666666663",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect",
+      "paper_warning"
+    ],
+    "treatment_description": "Co-composted biochar (BC_comp) 2% w/w, no compost, 28 kg N/ha",
+    "control_description": "No biochar control, no compost, 28 kg N/ha",
+    "notes": "BC_comp = 305% of control per figure annotation. Absolute values estimated from Figure 2 y-axis. Biochar co-composted with animal manure/straw for 6 weeks at Ithaka Institute."
+  },
+  {
+    "row_number": 139,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "19.99999999999999",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence",
+      "paper_warning"
+    ],
+    "treatment_description": "Biochar 1.5% w/w + fertilizer",
+    "control_description": "CKF (fertilizer only, no biochar)",
+    "notes": "Estimated from bar chart. Co-application had no consistent positive effect on root biomass."
+  },
+  {
+    "row_number": 140,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "79.99999999999999",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence",
+      "paper_warning"
+    ],
+    "treatment_description": "Biochar 5% w/w + fertilizer",
+    "control_description": "CKF (fertilizer only, no biochar)",
+    "notes": "Estimated from bar chart. Co-application had no consistent positive effect on root biomass."
+  },
+  {
+    "row_number": 20,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Shoot fresh biomass",
+    "effect_pct": "104.54545454545455",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 40 t/ha + Straw residues 12.5 t/ha + NPK",
+    "control_description": "Straw residues 12.5 t/ha + NPK (no biochar)",
+    "notes": "T6 vs T3. T6=45g text-confirmed (labeled 'a'). T3 estimated from figure ~22g (labeled 'b')."
+  },
+  {
+    "row_number": 27,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Root dry biomass",
+    "effect_pct": "116.88311688311688",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 40 t/ha (banana-derived, 350\u00b0C pyrolysis) + NPK",
+    "control_description": "No biochar control (NPK only)",
+    "notes": "T2 vs T1. Both text-confirmed: T2=1.67g (labeled 'a'), T1=0.77g (labeled 'c')."
+  },
+  {
+    "row_number": 29,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Root dry biomass",
+    "effect_pct": "-17.293233082706767",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Biochar 40 t/ha + Straw residues 12.5 t/ha + NPK",
+    "control_description": "Straw residues 12.5 t/ha + NPK (no biochar)",
+    "notes": "T6 vs T3. T6 estimated from figure ~1.1g (labeled 'b'). T3=1.33g text-confirmed (labeled 'b'). Same significance group \u2014 negative but non-significant effect of biochar addition on root dry biomass in this comparison."
+  },
+  {
+    "row_number": 76,
+    "paper_id": "Bonanomi_2017_Biochar_As_Plant_Growth_Promoter",
+    "outcome": "Lettuce shoot dry weight",
+    "effect_pct": "160.0",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning"
+    ],
+    "treatment_description": "Activated carbon (AC, Sigma-Aldrich) at 2% w/w (10 g per 500 g pot)",
+    "control_description": "Unamended soil (no biochar, no organic amendment)",
+    "notes": "Values estimated from Figure 2B. Duncan letter 'ab'. Text highlights AC as showing 'highly significant stimulation'. AC was purchased (Sigma-Aldrich), pyrolysis temperature unknown. Lowest H/C ratio (0.21) among all biochars. Additive interactions with all NPOA types in mixtures (Figure 4B)."
+  },
+  {
+    "row_number": 77,
+    "paper_id": "Bonanomi_2017_Biochar_As_Plant_Growth_Promoter",
+    "outcome": "Lettuce shoot dry weight",
+    "effect_pct": "225.0",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning"
+    ],
+    "treatment_description": "Commercial Fagus wood biochar at 2% w/w (10 g per 500 g pot)",
+    "control_description": "Unamended soil (no biochar, no organic amendment)",
+    "notes": "Values estimated from Figure 2B. Duncan letter 'a' (highest growth). Commercial biochar from Fagus wood, purchased from local market \u2014 pyrolysis conditions unknown. Strongest growth promotion among all 10 biochars (+225% vs control). Low H/C (0.37) consistent with paper's finding that H/C is best predictor of biochar growth promotion."
+  },
+  {
+    "row_number": 81,
+    "paper_id": "ClaudiaKammann_2015_Plant_growth_improvement_mediated_by",
+    "outcome": "Total aboveground biomass",
+    "effect_pct": "-15.999999999999998",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Untreated biochar (BC_pure) 2% w/w, plus compost 2% w/w, 28 kg N/ha",
+    "control_description": "Compost only (no biochar), 28 kg N/ha",
+    "notes": "BC_pure = 83% of control per figure annotation. Reduction not significant at this nutrient level (text: 'in the N-140 treatments the reductions were not significant' but this is N-28 with compost; significance uncertain from figure letters)."
+  },
+  {
+    "row_number": 83,
+    "paper_id": "ClaudiaKammann_2015_Plant_growth_improvement_mediated_by",
+    "outcome": "Total aboveground biomass",
+    "effect_pct": "-9.999999999999993",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Untreated biochar (BC_pure) 2% w/w, no compost, 140 kg N/ha",
+    "control_description": "No biochar control, no compost, 140 kg N/ha",
+    "notes": "BC_pure = 90% of control per figure annotation. Text states 'in the N-140 treatments the reductions were not significant'."
+  },
+  {
+    "row_number": 85,
+    "paper_id": "ClaudiaKammann_2015_Plant_growth_improvement_mediated_by",
+    "outcome": "Total aboveground biomass",
+    "effect_pct": "-3.157894736842113",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Untreated biochar (BC_pure) 2% w/w, plus compost 2% w/w, 140 kg N/ha",
+    "control_description": "Compost only (no biochar), 140 kg N/ha",
+    "notes": "BC_pure = 97% of control per figure annotation. Essentially no effect at highest nutrient level with compost. Text confirms BC_pure reductions 'not significant' at N-140."
+  },
+  {
+    "row_number": 130,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Shoot biomass",
+    "effect_pct": "113.33333333333336",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 1.5% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. Text states shoot biomass increased 111-143% across all biochar alone treatments vs CK. Stacked bar chart with error bars; variance type (SD vs SE) not declared."
+  },
+  {
+    "row_number": 131,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Shoot biomass",
+    "effect_pct": "126.66666666666669",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 5% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. Total biomass significantly higher than CK (capital letter A vs B)."
+  },
+  {
+    "row_number": 132,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Shoot biomass",
+    "effect_pct": "126.66666666666669",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 10% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. Text states total biomass increased up to 152% at BC-10%."
+  },
+  {
+    "row_number": 134,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "120.0",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 5% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. Text states root biomass significantly promoted by 113-190% at rates >=5%."
+  },
+  {
+    "row_number": 135,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "180.0",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 10% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. Text states root biomass increased by up to 190% at >=5% rates."
+  },
+  {
+    "row_number": 138,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Shoot biomass",
+    "effect_pct": "13.636363636363635",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Biochar 10% w/w + fertilizer (urea 112.5 kg N/ha + calcium superphosphate 112.5 kg P2O5/ha)",
+    "control_description": "CKF (fertilizer only, no biochar)",
+    "notes": "Estimated from bar chart. Text notes BCF-10% did not significantly increase total biomass (exception noted). Co-application inconsistent effect on shoot."
+  },
+  {
+    "row_number": 141,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "40.00000000000001",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence"
+    ],
+    "treatment_description": "Biochar 10% w/w + fertilizer",
+    "control_description": "CKF (fertilizer only, no biochar)",
+    "notes": "Estimated from bar chart. Sesbania root tips decreased by 76.6% in BCF-10% (Table 2), suggesting negative effect at high rate."
+  },
+  {
+    "row_number": 145,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "0.0",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence"
+    ],
+    "treatment_description": "Biochar 1.5% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. No significant effect on root biomass except at 10% rate."
+  },
+  {
+    "row_number": 146,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "19.99999999999999",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence"
+    ],
+    "treatment_description": "Biochar 5% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. Text: no significant root effect at BC-5% for Seashore mallow."
+  },
+  {
+    "row_number": 147,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "109.99999999999999",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "extreme_effect"
+    ],
+    "treatment_description": "Biochar 10% w/w (peanut shell, 350C)",
+    "control_description": "CK (no biochar, no fertilizer)",
+    "notes": "Estimated from bar chart. Text states root biomass increased by 112% in BC-10% only."
+  },
+  {
+    "row_number": 151,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "8.333333333333341",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence"
+    ],
+    "treatment_description": "Biochar 1.5% w/w + fertilizer",
+    "control_description": "CKF (fertilizer only, no biochar)",
+    "notes": "Estimated from bar chart. Root biomass difference small."
+  },
+  {
+    "row_number": 152,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "8.333333333333341",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence"
+    ],
+    "treatment_description": "Biochar 5% w/w + fertilizer",
+    "control_description": "CKF (fertilizer only, no biochar)",
+    "notes": "Estimated from bar chart."
+  },
+  {
+    "row_number": 153,
+    "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+    "outcome": "Root biomass",
+    "effect_pct": "16.666666666666682",
+    "confidence": "low",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "low_confidence"
+    ],
+    "treatment_description": "Biochar 10% w/w + fertilizer",
+    "control_description": "CKF (fertilizer only, no biochar)",
+    "notes": "Estimated from bar chart."
+  },
+  {
+    "row_number": 218,
+    "paper_id": "Jos\u00e9AntonioAlburquerque_2013_Enhanced_wheat_yield_by_biochar",
+    "outcome": "Total dry plant biomass",
+    "effect_pct": "1.8181818181818195",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Olive tree pruning biochar 0.5% w/w, no mineral fertilization (F0)",
+    "control_description": "No biochar, no mineral fertilization (F0)",
+    "notes": "Values estimated from Figure 2. ANOVA: OPB biochar rate effect NS for total biomass (Table 1)."
+  },
+  {
+    "row_number": 244,
+    "paper_id": "KhadimDawar_2021_Biochar_and_urease_inhibitor_mitigate",
+    "outcome": "Biomass yield",
+    "effect_pct": "24.274905422446405",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Urea (150 kg N/ha) + Biochar (10 t/ha eucalyptus, 350\u00b0C)",
+    "control_description": "Urea (150 kg N/ha) alone",
+    "notes": "Paper reports 24% increase in biomass over urea alone, consistent with calculation."
+  },
+  {
+    "row_number": 249,
+    "paper_id": "MargaridaArrobas_2021_Biochar_and_zeolites_did_not",
+    "outcome": "Maize dry matter yield",
+    "effect_pct": "-4.666666666666662",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "non_independent_average"
+    ],
+    "treatment_description": "Biochar (10 t/ha Acacia dealbata wood), marginal mean over P rates",
+    "control_description": "Mineral control (no soil conditioner), marginal mean over P rates",
+    "notes": "Marginal mean of conditioner averaged over 4 P rates. ANOVA conditioner p=0.3919. All conditioners labeled 'a' (not significantly different). n=3 blocks (replicates); each mean averaged over 4 P subplots. SE estimated from error bars."
+  },
+  {
+    "row_number": 250,
+    "paper_id": "MargaridaArrobas_2021_Biochar_and_zeolites_did_not",
+    "outcome": "Maize dry matter yield",
+    "effect_pct": "-7.142857142857142",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "non_independent_average"
+    ],
+    "treatment_description": "Biochar (10 t/ha Acacia dealbata wood), marginal mean over P rates",
+    "control_description": "Mineral control (no soil conditioner), marginal mean over P rates",
+    "notes": "Marginal mean of conditioner averaged over 4 P rates. ANOVA conditioner p=0.0652 (approaching significance). Biochar appeared lowest but all labeled 'a'. n=3 blocks; SE estimated from error bars."
+  },
+  {
+    "row_number": 251,
+    "paper_id": "MargaridaArrobas_2021_Biochar_and_zeolites_did_not",
+    "outcome": "Oat dry matter yield",
+    "effect_pct": "4.347826086956526",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Biochar (10 t/ha Acacia dealbata wood), marginal mean over P rates",
+    "control_description": "Mineral control (no soil conditioner), marginal mean over P rates",
+    "notes": "First oat crop (winter 2018-2019). Conditioner means range 2.1-2.4 t/ha (abstract). ANOVA conditioner p=0.0652. All conditioners labeled 'a'. Oats received no fertilization. SE estimated from error bars."
+  },
+  {
+    "row_number": 252,
+    "paper_id": "MargaridaArrobas_2021_Biochar_and_zeolites_did_not",
+    "outcome": "Oat dry matter yield",
+    "effect_pct": "-3.2258064516129057",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Biochar (10 t/ha Acacia dealbata wood), marginal mean over P rates",
+    "control_description": "Mineral control (no soil conditioner), marginal mean over P rates",
+    "notes": "Second oat crop (winter 2019-2020). Conditioner means range 3.0-3.2 t/ha (abstract). ANOVA conditioner p=0.1016. All conditioners labeled 'a'. SE estimated from error bars."
+  },
+  {
+    "row_number": 263,
+    "paper_id": "MstAsifaAfroz_2023_Soil_amendment_with_biochar_improves",
+    "outcome": "Straw yield",
+    "effect_pct": "11.650485436893215",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "T3: RFD + Biochar @ 1.0 t/ha",
+    "control_description": "T2: RFD (Recommended Fertilizer Dose, no biochar)",
+    "notes": "T3 straw yield 'a', T2 straw yield 'ab'. Highest straw yield tied with T4. RCBD with 3 replications."
+  },
+  {
+    "row_number": 264,
+    "paper_id": "MstAsifaAfroz_2023_Soil_amendment_with_biochar_improves",
+    "outcome": "Straw yield",
+    "effect_pct": "11.650485436893215",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "T4: RFD + Biochar @ 1.5 t/ha",
+    "control_description": "T2: RFD (Recommended Fertilizer Dose, no biochar)",
+    "notes": "T4 straw yield 'a', T2 straw yield 'ab'. Tied with T3 for highest straw yield. RCBD with 3 replications."
+  },
+  {
+    "row_number": 265,
+    "paper_id": "MstAsifaAfroz_2023_Soil_amendment_with_biochar_improves",
+    "outcome": "Straw yield",
+    "effect_pct": "2.912621359223311",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "T5: RFD + Biochar @ 2.0 t/ha",
+    "control_description": "T2: RFD (Recommended Fertilizer Dose, no biochar)",
+    "notes": "T5 straw yield 'ab', T2 straw yield 'ab'. Not significantly different. RCBD with 3 replications."
+  },
+  {
+    "row_number": 266,
+    "paper_id": "MstAsifaAfroz_2023_Soil_amendment_with_biochar_improves",
+    "outcome": "Straw yield",
+    "effect_pct": "4.2071197411003345",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "T6: 75% RFD + Biochar @ 1.0 t/ha",
+    "control_description": "T2: RFD (Recommended Fertilizer Dose, no biochar)",
+    "notes": "Confounded comparison: treatment has 75% RFD (reduced fertilizer) plus biochar vs control with 100% RFD without biochar. RCBD with 3 replications."
+  },
+  {
+    "row_number": 267,
+    "paper_id": "MstAsifaAfroz_2023_Soil_amendment_with_biochar_improves",
+    "outcome": "Straw yield",
+    "effect_pct": "-15.533980582524274",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "T7: 75% RFD + Biochar @ 1.5 t/ha",
+    "control_description": "T2: RFD (Recommended Fertilizer Dose, no biochar)",
+    "notes": "Confounded comparison: treatment has 75% RFD plus biochar vs 100% RFD without biochar. Negative effect likely due to reduced fertilizer. T7 superscript 'bc' differs from T2 'ab'. RCBD with 3 replications."
+  },
+  {
+    "row_number": 268,
+    "paper_id": "MstAsifaAfroz_2023_Soil_amendment_with_biochar_improves",
+    "outcome": "Straw yield",
+    "effect_pct": "-12.297734627831712",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "T8: 75% RFD + Biochar @ 2.0 t/ha",
+    "control_description": "T2: RFD (Recommended Fertilizer Dose, no biochar)",
+    "notes": "Confounded comparison: treatment has 75% RFD plus biochar vs 100% RFD without biochar. Negative effect likely due to reduced fertilizer. RCBD with 3 replications."
+  },
+  {
+    "row_number": 278,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "13.513513513513514",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Wheat straw biochar (WSB) 1% w/w, 0 mM NaCl",
+    "control_description": "No biochar (Control), 0 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 279,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "10.81081081081081",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Rice husk biochar (RHB) 1% w/w, 0 mM NaCl",
+    "control_description": "No biochar (Control), 0 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 280,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "6.756756756756757",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Sawdust biochar (SDB) 1% w/w, 0 mM NaCl",
+    "control_description": "No biochar (Control), 0 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 281,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "20.754716981132077",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Wheat straw biochar (WSB) 1% w/w, 25 mM NaCl",
+    "control_description": "No biochar (Control), 25 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 282,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "20.754716981132077",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Rice husk biochar (RHB) 1% w/w, 25 mM NaCl",
+    "control_description": "No biochar (Control), 25 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 283,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "15.09433962264151",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Sawdust biochar (SDB) 1% w/w, 25 mM NaCl",
+    "control_description": "No biochar (Control), 25 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 284,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "16.0",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Wheat straw biochar (WSB) 1% w/w, 50 mM NaCl",
+    "control_description": "No biochar (Control), 50 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 285,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "12.0",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Rice husk biochar (RHB) 1% w/w, 50 mM NaCl",
+    "control_description": "No biochar (Control), 50 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 286,
+    "paper_id": "SumeiDuan_2024_Effects_of_biochar_types_on",
+    "outcome": "Straw yield",
+    "effect_pct": "12.0",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy",
+      "paper_warning"
+    ],
+    "treatment_description": "Sawdust biochar (SDB) 1% w/w, 50 mM NaCl",
+    "control_description": "No biochar (Control), 50 mM NaCl",
+    "notes": "Values are means \u00b1 SE of four replicates."
+  },
+  {
+    "row_number": 18,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Shoot fresh biomass",
+    "effect_pct": "17.792207792207794",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy"
+    ],
+    "treatment_description": "Biochar 40 t/ha (banana-derived, 350\u00b0C pyrolysis) + NPK",
+    "control_description": "No biochar control (NPK only)",
+    "notes": "T2 vs T1. Text-confirmed: T2=18.14g (labeled 'c'), T1=15.4g (labeled 'd'). Different significance groups."
+  },
+  {
+    "row_number": 21,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Root fresh biomass",
+    "effect_pct": "60.86956521739132",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy"
+    ],
+    "treatment_description": "Biochar 40 t/ha (banana-derived, 350\u00b0C pyrolysis) + NPK",
+    "control_description": "No biochar control (NPK only)",
+    "notes": "T2 vs T1. Both text-confirmed: T2=3.70g (labeled 'ab'), T1=2.30g (labeled 'c')."
+  },
+  {
+    "row_number": 22,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Root fresh biomass",
+    "effect_pct": "30.303030303030305",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy"
+    ],
+    "treatment_description": "Biochar 40 t/ha + Straw residues 25 t/ha + NPK",
+    "control_description": "Straw residues 25 t/ha + NPK (no biochar)",
+    "notes": "T5 vs T4. T5=4.30g text-confirmed (labeled 'a'). T4 estimated from figure ~3.3g (labeled 'b')."
+  },
+  {
+    "row_number": 23,
+    "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+    "outcome": "Root fresh biomass",
+    "effect_pct": "52.17391304347827",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "biomass_proxy"
+    ],
+    "treatment_description": "Biochar 40 t/ha + Straw residues 12.5 t/ha + NPK",
+    "control_description": "Straw residues 12.5 t/ha + NPK (no biochar)",
+    "notes": "T6 vs T3. T6 estimated from figure ~3.5g (labeled 'b'). T3=2.30g text-confirmed (labeled 'c')."
+  }
+]

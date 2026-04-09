@@ -1,0 +1,75 @@
+{
+  "paper_id": "058_Fichhof_2018",
+  "title": "Management of Biostimulant and Silicon in Mineral Nutrition and Quality of Cotton Fiber",
+  "authors": "Fichhof WH, de A. Silva R, de Oliveira LS, da Silva RM",
+  "year": 2018,
+  "species": "Gossypium hirsutum L.",
+  "crop": "cotton",
+  "experiment_type": "field",
+  "location": "Brazil (Bahia)",
+  "consensus_observations": [
+    {
+      "outcome": "seed cotton productivity",
+      "treatment_mean": 5922.37,
+      "control_mean": 5961.75,
+      "effect_pct": -0.66,
+      "n": 4,
+      "unit": "kg/ha",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Veritas biostimulant (CaT technology) 1 L/ha, 4 applications",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "cotton",
+        "cultivar": "FM 983GLT + FM 954GLT (pooled)",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Veritas (CaT technology biostimulant)",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha"
+      }
+    },
+    {
+      "outcome": "seed cotton productivity",
+      "treatment_mean": 5988.50,
+      "control_mean": 5961.75,
+      "effect_pct": 0.45,
+      "n": 4,
+      "unit": "kg/ha",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Silicon (Si) 2.5 kg/ha, 4 applications",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "cotton",
+        "cultivar": "FM 983GLT + FM 954GLT (pooled)",
+        "biostimulant_type": "silicon",
+        "biostimulant_product": "Silicon foliar",
+        "application_method": "foliar",
+        "application_rate": "2.5 kg/ha"
+      }
+    },
+    {
+      "outcome": "seed cotton productivity",
+      "treatment_mean": 6005.75,
+      "control_mean": 5961.75,
+      "effect_pct": 0.74,
+      "n": 4,
+      "unit": "kg/ha",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Si + Veritas biostimulant combined",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "cotton",
+        "cultivar": "FM 983GLT + FM 954GLT (pooled)",
+        "biostimulant_type": "other",
+        "biostimulant_product": "Si + Veritas combined",
+        "application_method": "foliar",
+        "application_rate": "2.5 kg Si/ha + 1 L Veritas/ha"
+      }
+    }
+  ]
+}

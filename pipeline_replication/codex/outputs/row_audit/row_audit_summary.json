@@ -1,0 +1,1037 @@
+[
+  {
+    "topic": "organic_yield_gap",
+    "n_rows": 378,
+    "severity_counts": {
+      "needs_review": 150,
+      "likely_off_target": 75,
+      "clean": 153
+    },
+    "reason_counts_top": {
+      "paper_warning": 107,
+      "non_independent_average": 69,
+      "quality_or_composition": 56,
+      "intervention_drift": 47,
+      "system_productivity": 15,
+      "yield_attribute": 4,
+      "extreme_effect": 2
+    },
+    "top_flagged_examples": [
+      {
+        "row_number": 6,
+        "paper_id": "AmitaParmar_2026_Performance_of_organic_and_natural",
+        "outcome": "Okra equivalent yield (system productivity)",
+        "effect_pct": "12.711090826106803",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "Module-III: Conventional Farming (FYM 10 t/ha + RDF + recommended fungicides, insecticides, herbicides)",
+        "control_description": "Module-II: Organic Farming (50% RDN vermicompost + 50% RDN FYM + Bio NPK + Trichoderma + biological plant protection)",
+        "notes": "Okra equivalent yield combines okra fruit yield and cowpea pod yield into a single system productivity metric. CD = 6.09 for this parameter (only significant CD in yield tables). S.Em. is pooled standard error from ANOVA. CV% = 8.46. Note: Module-III and Module-IV had significantly higher okra equivalent yield than Module-I and Module-II based on CD at 5%."
+      },
+      {
+        "row_number": 81,
+        "paper_id": "DionysForster_2013_Yield_and_Economic_Performance_of",
+        "outcome": "Total crop rotation productivity (4-year average)",
+        "effect_pct": "-12.0203602192639",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "non_independent_average",
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "BIODYN (biodynamic organic) - cotton + soybean + wheat",
+        "control_description": "CON (conventional) - cotton + soybean + wheat",
+        "notes": "4-year average total productivity. Not independent of per-cycle data."
+      },
+      {
+        "row_number": 82,
+        "paper_id": "DionysForster_2013_Yield_and_Economic_Performance_of",
+        "outcome": "Total crop rotation productivity (4-year average)",
+        "effect_pct": "-12.398851474810755",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "non_independent_average",
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "BIOORG (organic) - cotton + soybean + wheat",
+        "control_description": "CON (conventional) - cotton + soybean + wheat",
+        "notes": "4-year average total productivity. Not independent of per-cycle data."
+      },
+      {
+        "row_number": 83,
+        "paper_id": "DionysForster_2013_Yield_and_Economic_Performance_of",
+        "outcome": "Total crop rotation productivity (4-year average)",
+        "effect_pct": "-21.70731707317073",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "non_independent_average",
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "BIODYN (biodynamic organic) - cotton + soybean + wheat",
+        "control_description": "CONBtC (conventional+Bt) - cotton + soybean + wheat + wheat 2",
+        "notes": "4-year average. CAUTION: CONBtC total includes wheat 2 (avg ~787 kg/ha) grown only in 2009-2010. Not like-for-like. Not independent of per-cycle data."
+      },
+      {
+        "row_number": 84,
+        "paper_id": "DionysForster_2013_Yield_and_Economic_Performance_of",
+        "outcome": "Total crop rotation productivity (4-year average)",
+        "effect_pct": "-22.044134727061557",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "non_independent_average",
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "BIOORG (organic) - cotton + soybean + wheat",
+        "control_description": "CONBtC (conventional+Bt) - cotton + soybean + wheat + wheat 2",
+        "notes": "4-year average. CAUTION: CONBtC total includes wheat 2. Not like-for-like. Not independent of per-cycle data."
+      },
+      {
+        "row_number": 7,
+        "paper_id": "AmitaParmar_2026_Performance_of_organic_and_natural",
+        "outcome": "Okra number of fruits per plant",
+        "effect_pct": "-2.4922118380062326",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "yield_attribute"
+        ],
+        "treatment_description": "Module-II: Organic Farming",
+        "control_description": "Module-III: Conventional Farming",
+        "notes": "Yield attribute, not direct yield. CV% = 6.16."
+      },
+      {
+        "row_number": 8,
+        "paper_id": "AmitaParmar_2026_Performance_of_organic_and_natural",
+        "outcome": "Cowpea number of pods per plant",
+        "effect_pct": "-5.059021922428331",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "yield_attribute"
+        ],
+        "treatment_description": "Module-II: Organic Farming",
+        "control_description": "Module-III: Conventional Farming",
+        "notes": "Yield attribute, not direct yield. CV% = 6.39."
+      },
+      {
+        "row_number": 73,
+        "paper_id": "DionysForster_2013_Yield_and_Economic_Performance_of",
+        "outcome": "Total crop rotation productivity",
+        "effect_pct": "-23.69729985788726",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "BIODYN (biodynamic organic) - cotton + soybean + wheat",
+        "control_description": "CON (conventional) - cotton + soybean + wheat",
+        "notes": "Total productivity = seed cotton + soybean grains + wheat grains. System P<0.001; System\u00d7Cycle P<0.001. BIODYN 'b', CON 'a'. Conventional +30% more productive in Cycle 1."
+      },
+      {
+        "row_number": 79,
+        "paper_id": "DionysForster_2013_Yield_and_Economic_Performance_of",
+        "outcome": "Total crop rotation productivity",
+        "effect_pct": "-20.776589758019135",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "BIODYN (biodynamic organic) - cotton + soybean + wheat",
+        "control_description": "CONBtC (conventional+Bt) - cotton + soybean + wheat + wheat 2",
+        "notes": "CAUTION: CONBtC total in Cycle 2 includes wheat 2 (1573 kg/ha additional crop) which organic systems did not grow. Comparison not like-for-like. CONBtC 'a', BIODYN 'b'."
+      },
+      {
+        "row_number": 80,
+        "paper_id": "DionysForster_2013_Yield_and_Economic_Performance_of",
+        "outcome": "Total crop rotation productivity",
+        "effect_pct": "-21.39561057962859",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "system_productivity"
+        ],
+        "treatment_description": "BIOORG (organic) - cotton + soybean + wheat",
+        "control_description": "CONBtC (conventional+Bt) - cotton + soybean + wheat + wheat 2",
+        "notes": "CAUTION: CONBtC includes wheat 2 in Cycle 2. Not like-for-like comparison. CONBtC 'a', BIOORG 'b'."
+      }
+    ]
+  },
+  {
+    "topic": "notill_tillage",
+    "n_rows": 605,
+    "severity_counts": {
+      "needs_review": 408,
+      "clean": 163,
+      "likely_off_target": 34
+    },
+    "reason_counts_top": {
+      "paper_warning": 238,
+      "intervention_drift": 231,
+      "non_independent_average": 69,
+      "biomass_proxy": 66,
+      "quality_or_composition": 30,
+      "low_confidence": 9,
+      "yield_attribute": 4,
+      "extreme_effect": 1
+    },
+    "top_flagged_examples": [
+      {
+        "row_number": 109,
+        "paper_id": "BJRadford_1995_Conservation_tillage_increases_in_soil",
+        "outcome": "grain yield",
+        "effect_pct": "2.85714285714286",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "paper_warning",
+          "quality_or_composition"
+        ],
+        "treatment_description": "No tillage (NT), herbicide-only fallow weed control",
+        "control_description": "Traditional tillage (TT), disc plough + scarifier",
+        "notes": "Similar yields across treatments. Grain protein declined with reduced tillage (TT 9.1%, NT 7.8%), indicating N shortage in conservation tillage. Values estimated from bar chart."
+      },
+      {
+        "row_number": 429,
+        "paper_id": "RamCDalal_1998_Sustaining_productivity_of_a_Vertisol",
+        "outcome": "wheat grain yield",
+        "effect_pct": "-7.142857142857142",
+        "confidence": "low",
+        "severity": "likely_off_target",
+        "reasons": [
+          "low_confidence",
+          "paper_warning",
+          "quality_or_composition"
+        ],
+        "treatment_description": "Zero tillage (ZT), chickpea-wheat rotation, 0 kg N/ha",
+        "control_description": "Conventional tillage (CT), chickpea-wheat rotation, 0 kg N/ha",
+        "notes": "Estimated from Figure 6, 1996 panel at N=0. LOW CONFIDENCE: 1996 panels have overlapping yield and protein lines making reading difficult. Text does not state explicit CT vs ZT comparison for 1996. 1996 had good rainfall (755 mm) so ZT moisture conservation benefit may have been less important. Text notes large yield increases with N in 1996 ZT."
+      },
+      {
+        "row_number": 430,
+        "paper_id": "RamCDalal_1998_Sustaining_productivity_of_a_Vertisol",
+        "outcome": "wheat grain yield",
+        "effect_pct": "-13.88888888888889",
+        "confidence": "low",
+        "severity": "likely_off_target",
+        "reasons": [
+          "low_confidence",
+          "paper_warning",
+          "quality_or_composition"
+        ],
+        "treatment_description": "Zero tillage (ZT), wheat-wheat rotation (continuous wheat), 0 kg N/ha",
+        "control_description": "Conventional tillage (CT), wheat-wheat rotation (continuous wheat), 0 kg N/ha",
+        "notes": "Estimated from Figure 6, 1996 panel at N=0. LOW CONFIDENCE: Figure reading uncertain due to overlapping yield/protein lines. Text does not report explicit CT vs ZT for 1996. Negative ZT effect at 0 N in a wet year (755 mm) is plausible but should be verified. Text notes ZT showed large yield response to N in 1996."
+      },
+      {
+        "row_number": 315,
+        "paper_id": "KhawarJabran_2015_Korumal\u0131_Toprak_\u0130\u015fleme_Sistemlerinde_Yeti\u015ftirilen",
+        "outcome": "Plant height",
+        "effect_pct": "1.017293997965412",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "yield_attribute"
+        ],
+        "treatment_description": "Zero tillage (no cultivation, direct seeding)",
+        "control_description": "Conventional tillage (four cultivations followed by two plankings)",
+        "notes": "Non-significant difference. No LSD reported."
+      },
+      {
+        "row_number": 317,
+        "paper_id": "KhawarJabran_2015_Korumal\u0131_Toprak_\u0130\u015fleme_Sistemlerinde_Yeti\u015ftirilen",
+        "outcome": "Spikelets per spike",
+        "effect_pct": "1.1834319526627388",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "yield_attribute"
+        ],
+        "treatment_description": "Zero tillage (no cultivation, direct seeding)",
+        "control_description": "Conventional tillage (four cultivations followed by two plankings)",
+        "notes": "Non-significant difference. No LSD reported."
+      },
+      {
+        "row_number": 319,
+        "paper_id": "KhawarJabran_2015_Korumal\u0131_Toprak_\u0130\u015fleme_Sistemlerinde_Yeti\u015ftirilen",
+        "outcome": "Productive tillers",
+        "effect_pct": "21.24950258654993",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "yield_attribute"
+        ],
+        "treatment_description": "Zero tillage (no cultivation, direct seeding)",
+        "control_description": "Conventional tillage (four cultivations followed by two plankings)",
+        "notes": "Non-significant difference. No LSD reported."
+      },
+      {
+        "row_number": 369,
+        "paper_id": "MarjaJalli_2021_Effects_of_Crop_Rotation_on",
+        "outcome": "1000 seed weight",
+        "effect_pct": "0.0",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "quality_or_composition"
+        ],
+        "treatment_description": "No-tillage, CR2, Period 1",
+        "control_description": "Plowed, CR2, Period 1",
+        "notes": "Grain quality parameter. Identical means."
+      },
+      {
+        "row_number": 168,
+        "paper_id": "ElenaPartal_2023_Effects_of_Different_Soil_Tillage",
+        "outcome": "Grain protein content",
+        "effect_pct": "4.347826086956519",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "quality_or_composition"
+        ],
+        "treatment_description": "No-tillage (direct sowing)",
+        "control_description": "Conventional tillage - autumn plowing (22-25 cm) + disk (8-10 cm)",
+        "notes": "2020. No LSD reported separately for protein. Unit listed as 'g' in the paper but likely represents % or g/100g."
+      },
+      {
+        "row_number": 169,
+        "paper_id": "ElenaPartal_2023_Effects_of_Different_Soil_Tillage",
+        "outcome": "Grain protein content",
+        "effect_pct": "-0.9708737864077808",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "quality_or_composition"
+        ],
+        "treatment_description": "No-tillage (direct sowing)",
+        "control_description": "Conventional tillage - autumn plowing (22-25 cm) + disk (8-10 cm)",
+        "notes": "2021. No LSD reported separately for protein."
+      },
+      {
+        "row_number": 170,
+        "paper_id": "ElenaPartal_2023_Effects_of_Different_Soil_Tillage",
+        "outcome": "Grain protein content",
+        "effect_pct": "5.970149253731335",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "quality_or_composition"
+        ],
+        "treatment_description": "No-tillage (direct sowing)",
+        "control_description": "Conventional tillage - autumn plowing (22-25 cm) + disk (8-10 cm)",
+        "notes": "2022. No LSD reported separately for protein."
+      }
+    ]
+  },
+  {
+    "topic": "mycorrhiza_yield",
+    "n_rows": 175,
+    "severity_counts": {
+      "needs_review": 51,
+      "likely_off_target": 16,
+      "clean": 108
+    },
+    "reason_counts_top": {
+      "paper_warning": 25,
+      "extreme_effect": 20,
+      "non_independent_average": 19,
+      "yield_attribute": 16,
+      "co_intervention_contamination": 15,
+      "system_productivity": 7
+    },
+    "top_flagged_examples": [
+      {
+        "row_number": 4,
+        "paper_id": "Arbuscular_mycorrhiza_enhances_nutrient__2011",
+        "outcome": "Total biomass",
+        "effect_pct": "29.470672389127333",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "non_independent_average",
+          "paper_warning",
+          "yield_attribute"
+        ],
+        "treatment_description": "AMF inoculation (Symbivit), non-sterilized soil, 2007",
+        "control_description": "No AMF inoculation, non-sterilized soil, 2007",
+        "notes": "Means and SEM in brackets. n=10 (pooled across N+/N- treatments). Non-sterilized soil still showed positive AMF effect on biomass. Control (M-) had 17.8% indigenous AMF colonization."
+      },
+      {
+        "row_number": 74,
+        "paper_id": "Chen_2017_Arbuscular_Mycorrhizal_Symbiosis_Alleviates_Salt",
+        "outcome": "Shoot dry weight",
+        "effect_pct": "129.99999999999997",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "extreme_effect",
+          "yield_attribute"
+        ],
+        "treatment_description": "Inoculated with Rhizophagus irregularis (BGC BJ109), 100 mM NaCl",
+        "control_description": "Non-mycorrhizal (autoclaved inoculum filtrate), 100 mM NaCl",
+        "notes": "Values estimated from bar chart. Error bars assumed SE. Mycorrhizal colonization was ~87% at 100 mM NaCl (similar to 0 mM, no significant difference)."
+      },
+      {
+        "row_number": 75,
+        "paper_id": "Chen_2017_Arbuscular_Mycorrhizal_Symbiosis_Alleviates_Salt",
+        "outcome": "Shoot dry weight",
+        "effect_pct": "130.76923076923077",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "extreme_effect",
+          "yield_attribute"
+        ],
+        "treatment_description": "Inoculated with Rhizophagus irregularis (BGC BJ109), 200 mM NaCl",
+        "control_description": "Non-mycorrhizal (autoclaved inoculum filtrate), 200 mM NaCl",
+        "notes": "Values estimated from bar chart. Error bars assumed SE. Mycorrhizal colonization decreased to 79.16% at 200 mM NaCl."
+      },
+      {
+        "row_number": 133,
+        "paper_id": "Phosphorus_and_Nitrogen_Regulate_Arbuscu_2014",
+        "outcome": "Shoot fresh weight",
+        "effect_pct": "50.0",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "yield_attribute"
+        ],
+        "treatment_description": "Inoculated with R. irregularis (MUCL 43204), water only, 48 days",
+        "control_description": "Non-inoculated, water only, 48 days",
+        "notes": "Values estimated from Figure 6a. Text states 'plants that were not supplied with nutrient solution did not show a significant MGR despite considerable colonization levels'. MGR ~1.0 (Figure 3d). Nutrient-starved plants gained qualitative nutrient benefit but not significant growth."
+      },
+      {
+        "row_number": 134,
+        "paper_id": "Phosphorus_and_Nitrogen_Regulate_Arbuscu_2014",
+        "outcome": "Shoot fresh weight",
+        "effect_pct": "33.33333333333333",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "paper_warning",
+          "yield_attribute"
+        ],
+        "treatment_description": "Inoculated with R. irregularis (MUCL 43204), 5 mM KH2PO4 alone, 48 days",
+        "control_description": "Non-inoculated, 5 mM KH2PO4 alone, 48 days",
+        "notes": "Values estimated from Figure 6a. Under Pi alone without nutrient solution, AMF colonization was reduced to ~30% and interaction was parasitic: mycorrhizal plants had LOWER nutrient levels than non-myc controls (Figure 5b). No significant MGR. AM acted as parasite under P-only conditions."
+      },
+      {
+        "row_number": 73,
+        "paper_id": "Chen_2017_Arbuscular_Mycorrhizal_Symbiosis_Alleviates_Salt",
+        "outcome": "Shoot dry weight",
+        "effect_pct": "66.66666666666666",
+        "confidence": "medium",
+        "severity": "likely_off_target",
+        "reasons": [
+          "yield_attribute"
+        ],
+        "treatment_description": "Inoculated with Rhizophagus irregularis (BGC BJ109), 0 mM NaCl",
+        "control_description": "Non-mycorrhizal (autoclaved inoculum filtrate), 0 mM NaCl",
+        "notes": "Values estimated from bar chart. Error bars assumed SE based on plant science convention but not explicitly stated in paper. Two-way ANOVA: P_AMF***, P_salt***, P_AMF\u00d7salt*. Mycorrhizal colonization was 89.29% at 0 mM NaCl."
+      },
+      {
+        "row_number": 111,
+        "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+        "outcome": "number of fruits per plant",
+        "effect_pct": "14.236706689536879",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "yield_attribute"
+        ],
+        "treatment_description": "+AMF, yeast 5 g/L, NPK 0 kg/ha",
+        "control_description": "-AMF, yeast 5 g/L, NPK 0 kg/ha",
+        "notes": "Triple interaction. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+      },
+      {
+        "row_number": 112,
+        "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+        "outcome": "number of fruits per plant",
+        "effect_pct": "-11.800356506238867",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "yield_attribute"
+        ],
+        "treatment_description": "+AMF, yeast 5 g/L, NPK 150 kg/ha",
+        "control_description": "-AMF, yeast 5 g/L, NPK 150 kg/ha",
+        "notes": "Triple interaction. Negative AMF effect on fruit number at this combination. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+      },
+      {
+        "row_number": 113,
+        "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+        "outcome": "number of fruits per plant",
+        "effect_pct": "49.7833622183709",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "yield_attribute"
+        ],
+        "treatment_description": "+AMF, yeast 5 g/L, NPK 300 kg/ha",
+        "control_description": "-AMF, yeast 5 g/L, NPK 300 kg/ha",
+        "notes": "Triple interaction. Highest fruit number overall. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+      },
+      {
+        "row_number": 114,
+        "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+        "outcome": "number of fruits per plant",
+        "effect_pct": "-1.8296973961998702",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "yield_attribute"
+        ],
+        "treatment_description": "+AMF, yeast 5 g/L, NPK 450 kg/ha",
+        "control_description": "-AMF, yeast 5 g/L, NPK 450 kg/ha",
+        "notes": "Triple interaction. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+      }
+    ]
+  },
+  {
+    "topic": "legume_rotation",
+    "n_rows": 421,
+    "severity_counts": {
+      "needs_review": 206,
+      "clean": 135,
+      "likely_off_target": 80
+    },
+    "reason_counts_top": {
+      "paper_warning": 142,
+      "intervention_drift": 89,
+      "low_confidence": 84,
+      "rotation_topic_contamination": 77,
+      "non_independent_average": 45,
+      "extreme_effect": 24,
+      "system_productivity": 11,
+      "quality_or_composition": 3
+    },
+    "top_flagged_examples": [
+      {
+        "row_number": 224,
+        "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+        "outcome": "Sorghum grain yield (intercropped with legume)",
+        "effect_pct": "32.35294117647059",
+        "confidence": "low",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "low_confidence",
+          "paper_warning",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Sorghum intercropped with fodder cowpea, N120",
+        "control_description": "Sole sorghum, N120",
+        "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values. Fodder cowpea intercrop showed steepest N response."
+      },
+      {
+        "row_number": 390,
+        "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+        "outcome": "Pod weight (V. faba)",
+        "effect_pct": "348.23186292380603",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "extreme_effect",
+          "intervention_drift",
+          "paper_warning",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "PGPR + rhizobia + AMF (PRM: PGP27+BS17+RhOF4+RhOF155+AMF) inoculation on V. faba",
+        "control_description": "No inoculation control (C) on V. faba",
+        "notes": "CAUTION: This paper studies biofertilizer inoculation effects, NOT legume rotation. PRM was the best treatment with 348% increase."
+      },
+      {
+        "row_number": 395,
+        "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+        "outcome": "Spike weight (T. durum)",
+        "effect_pct": "143.0939226519337",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "extreme_effect",
+          "intervention_drift",
+          "paper_warning",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "PGPR + rhizobia + AMF (PRM: PGP27+BS17+RhOF4+RhOF155+AMF) inoculation on T. durum wheat",
+        "control_description": "No inoculation control (C) on T. durum wheat",
+        "notes": "CAUTION: This paper studies biofertilizer inoculation effects on wheat, NOT legume rotation. PRM was the best treatment with 143% increase in spike weight. Text confirms this value."
+      },
+      {
+        "row_number": 101,
+        "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+        "outcome": "Maize grain dry matter",
+        "effect_pct": "0.0",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "paper_warning",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Intercropped maize (IM) with soybean, reduced nitrogen (RN, 180 kg N/ha)",
+        "control_description": "Monoculture maize (MM), reduced nitrogen (RN, 180 kg N/ha)",
+        "notes": "Relay strip intercropping (not rotation). RN = 180 kg N/ha total. Year 2014. Identical means for IM and MM."
+      },
+      {
+        "row_number": 104,
+        "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+        "outcome": "proso millet grain yield",
+        "effect_pct": "5.565795980757978",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "paper_warning",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Proso millet intercropped with mung bean (4P2M: 4 rows proso millet + 2 rows mung bean)",
+        "control_description": "Monoculture proso millet (MP)",
+        "notes": "Intercropping study. 4P2M had smallest yield benefit among intercropping patterns in 2017."
+      },
+      {
+        "row_number": 114,
+        "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+        "outcome": "proso millet grain yield",
+        "effect_pct": "75.43058925268444",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "paper_warning",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Proso millet intercropped with mung bean (2P4M: 2 rows proso millet + 4 rows mung bean)",
+        "control_description": "Monoculture proso millet (MP)",
+        "notes": "Intercropping study. 2P4M achieved highest yield in 2019 (75.4% increase). Greatest mung bean proportion. Maximum yield across all year-treatment combinations."
+      },
+      {
+        "row_number": 221,
+        "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+        "outcome": "Sorghum grain yield (intercropped with legume)",
+        "effect_pct": "22.22222222222222",
+        "confidence": "low",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "low_confidence",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Sorghum intercropped with fodder cowpea, N0",
+        "control_description": "Sole sorghum, N0",
+        "notes": "REVIEW PAPER - values estimated from line graph Figure 3 (Ghosh et al. 2007). Q = quintal = 100 kg. Intercropping (not rotation). Fodder cowpea showed highest yield benefit."
+      },
+      {
+        "row_number": 222,
+        "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+        "outcome": "Sorghum grain yield (intercropped with legume)",
+        "effect_pct": "27.586206896551722",
+        "confidence": "low",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "low_confidence",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Sorghum intercropped with fodder cowpea, N40",
+        "control_description": "Sole sorghum, N40",
+        "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+      },
+      {
+        "row_number": 223,
+        "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+        "outcome": "Sorghum grain yield (intercropped with legume)",
+        "effect_pct": "29.03225806451613",
+        "confidence": "low",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "low_confidence",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Sorghum intercropped with fodder cowpea, N80",
+        "control_description": "Sole sorghum, N80",
+        "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+      },
+      {
+        "row_number": 225,
+        "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+        "outcome": "Sorghum grain yield (intercropped with legume)",
+        "effect_pct": "14.814814814814813",
+        "confidence": "low",
+        "severity": "likely_off_target",
+        "reasons": [
+          "intervention_drift",
+          "low_confidence",
+          "rotation_topic_contamination"
+        ],
+        "treatment_description": "Sorghum intercropped with grain cowpea, N0",
+        "control_description": "Sole sorghum, N0",
+        "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+      }
+    ]
+  },
+  {
+    "topic": "biochar_crop_yield",
+    "n_rows": 348,
+    "severity_counts": {
+      "clean": 142,
+      "needs_review": 206
+    },
+    "reason_counts_top": {
+      "biomass_proxy": 143,
+      "paper_warning": 76,
+      "low_confidence": 21,
+      "extreme_effect": 14,
+      "non_independent_average": 2
+    },
+    "top_flagged_examples": [
+      {
+        "row_number": 19,
+        "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+        "outcome": "Shoot fresh biomass",
+        "effect_pct": "112.27272727272728",
+        "confidence": "medium",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "extreme_effect",
+          "paper_warning"
+        ],
+        "treatment_description": "Biochar 40 t/ha + Straw residues 25 t/ha + NPK",
+        "control_description": "Straw residues 25 t/ha + NPK (no biochar)",
+        "notes": "T5 vs T4. T5=46.70g text-confirmed (labeled 'a'). T4 estimated from figure ~22g (labeled 'b'). Text anomalously reports T4=45g which contradicts figure; figure value used."
+      },
+      {
+        "row_number": 78,
+        "paper_id": "ClaudiaKammann_2015_Plant_growth_improvement_mediated_by",
+        "outcome": "Total aboveground biomass",
+        "effect_pct": "206.66666666666663",
+        "confidence": "medium",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "extreme_effect",
+          "paper_warning"
+        ],
+        "treatment_description": "Co-composted biochar (BC_comp) 2% w/w, no compost, 28 kg N/ha",
+        "control_description": "No biochar control, no compost, 28 kg N/ha",
+        "notes": "BC_comp = 305% of control per figure annotation. Absolute values estimated from Figure 2 y-axis. Biochar co-composted with animal manure/straw for 6 weeks at Ithaka Institute."
+      },
+      {
+        "row_number": 139,
+        "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+        "outcome": "Root biomass",
+        "effect_pct": "19.99999999999999",
+        "confidence": "low",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "low_confidence",
+          "paper_warning"
+        ],
+        "treatment_description": "Biochar 1.5% w/w + fertilizer",
+        "control_description": "CKF (fertilizer only, no biochar)",
+        "notes": "Estimated from bar chart. Co-application had no consistent positive effect on root biomass."
+      },
+      {
+        "row_number": 140,
+        "paper_id": "HaoZheng_2017_Enhanced_growth_of_halophyte_plants",
+        "outcome": "Root biomass",
+        "effect_pct": "79.99999999999999",
+        "confidence": "low",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "low_confidence",
+          "paper_warning"
+        ],
+        "treatment_description": "Biochar 5% w/w + fertilizer",
+        "control_description": "CKF (fertilizer only, no biochar)",
+        "notes": "Estimated from bar chart. Co-application had no consistent positive effect on root biomass."
+      },
+      {
+        "row_number": 20,
+        "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+        "outcome": "Shoot fresh biomass",
+        "effect_pct": "104.54545454545455",
+        "confidence": "medium",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "extreme_effect"
+        ],
+        "treatment_description": "Biochar 40 t/ha + Straw residues 12.5 t/ha + NPK",
+        "control_description": "Straw residues 12.5 t/ha + NPK (no biochar)",
+        "notes": "T6 vs T3. T6=45g text-confirmed (labeled 'a'). T3 estimated from figure ~22g (labeled 'b')."
+      },
+      {
+        "row_number": 27,
+        "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+        "outcome": "Root dry biomass",
+        "effect_pct": "116.88311688311688",
+        "confidence": "high",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "extreme_effect"
+        ],
+        "treatment_description": "Biochar 40 t/ha (banana-derived, 350\u00b0C pyrolysis) + NPK",
+        "control_description": "No biochar control (NPK only)",
+        "notes": "T2 vs T1. Both text-confirmed: T2=1.67g (labeled 'a'), T1=0.77g (labeled 'c')."
+      },
+      {
+        "row_number": 29,
+        "paper_id": "BakhtyarAhmedAhmed_2024_Investigating_the_Effects_of_BananaDerived",
+        "outcome": "Root dry biomass",
+        "effect_pct": "-17.293233082706767",
+        "confidence": "medium",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "paper_warning"
+        ],
+        "treatment_description": "Biochar 40 t/ha + Straw residues 12.5 t/ha + NPK",
+        "control_description": "Straw residues 12.5 t/ha + NPK (no biochar)",
+        "notes": "T6 vs T3. T6 estimated from figure ~1.1g (labeled 'b'). T3=1.33g text-confirmed (labeled 'b'). Same significance group \u2014 negative but non-significant effect of biochar addition on root dry biomass in this comparison."
+      },
+      {
+        "row_number": 76,
+        "paper_id": "Bonanomi_2017_Biochar_As_Plant_Growth_Promoter",
+        "outcome": "Lettuce shoot dry weight",
+        "effect_pct": "160.0",
+        "confidence": "medium",
+        "severity": "needs_review",
+        "reasons": [
+          "extreme_effect",
+          "paper_warning"
+        ],
+        "treatment_description": "Activated carbon (AC, Sigma-Aldrich) at 2% w/w (10 g per 500 g pot)",
+        "control_description": "Unamended soil (no biochar, no organic amendment)",
+        "notes": "Values estimated from Figure 2B. Duncan letter 'ab'. Text highlights AC as showing 'highly significant stimulation'. AC was purchased (Sigma-Aldrich), pyrolysis temperature unknown. Lowest H/C ratio (0.21) among all biochars. Additive interactions with all NPOA types in mixtures (Figure 4B)."
+      },
+      {
+        "row_number": 77,
+        "paper_id": "Bonanomi_2017_Biochar_As_Plant_Growth_Promoter",
+        "outcome": "Lettuce shoot dry weight",
+        "effect_pct": "225.0",
+        "confidence": "medium",
+        "severity": "needs_review",
+        "reasons": [
+          "extreme_effect",
+          "paper_warning"
+        ],
+        "treatment_description": "Commercial Fagus wood biochar at 2% w/w (10 g per 500 g pot)",
+        "control_description": "Unamended soil (no biochar, no organic amendment)",
+        "notes": "Values estimated from Figure 2B. Duncan letter 'a' (highest growth). Commercial biochar from Fagus wood, purchased from local market \u2014 pyrolysis conditions unknown. Strongest growth promotion among all 10 biochars (+225% vs control). Low H/C (0.37) consistent with paper's finding that H/C is best predictor of biochar growth promotion."
+      },
+      {
+        "row_number": 81,
+        "paper_id": "ClaudiaKammann_2015_Plant_growth_improvement_mediated_by",
+        "outcome": "Total aboveground biomass",
+        "effect_pct": "-15.999999999999998",
+        "confidence": "medium",
+        "severity": "needs_review",
+        "reasons": [
+          "biomass_proxy",
+          "paper_warning"
+        ],
+        "treatment_description": "Untreated biochar (BC_pure) 2% w/w, plus compost 2% w/w, 28 kg N/ha",
+        "control_description": "Compost only (no biochar), 28 kg N/ha",
+        "notes": "BC_pure = 83% of control per figure annotation. Reduction not significant at this nutrient level (text: 'in the N-140 treatments the reductions were not significant' but this is N-28 with compost; significance uncertain from figure letters)."
+      }
+    ]
+  },
+  {
+    "topic": "intercropping_yield",
+    "n_rows": 92,
+    "severity_counts": {
+      "needs_review": 6,
+      "clean": 3,
+      "likely_off_target": 83
+    },
+    "reason_counts_top": {
+      "component_yield_not_system_estimand": 83,
+      "non_independent_average": 24,
+      "paper_warning": 12,
+      "extreme_effect": 6
+    },
+    "top_flagged_examples": [
+      {
+        "row_number": 54,
+        "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+        "outcome": "Grain yield",
+        "effect_pct": "28.235294117647065",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "non_independent_average",
+          "paper_warning"
+        ],
+        "treatment_description": "Maize/faba bean strip intercropping, 0 kg P/ha, 2011",
+        "control_description": "Weighted mean of maize and faba bean monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+        "notes": "Mono = weighted mean of maize and faba bean monoculture yields using area proportions in intercrop (80cm maize : 60cm companion). Values followed by same lowercase letter not significantly different by LSD at P<0.05."
+      },
+      {
+        "row_number": 67,
+        "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+        "outcome": "Grain yield",
+        "effect_pct": "14.925373134328357",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "non_independent_average",
+          "paper_warning"
+        ],
+        "treatment_description": "Maize/soybean strip intercropping, 0 kg P/ha, 2012",
+        "control_description": "Weighted mean of maize and soybean monocultures (57:43 area ratio), 0 kg P/ha, 2012",
+        "notes": "Text mentions soybean/maize intercropping without P did not significantly overyield in 2012."
+      },
+      {
+        "row_number": 11,
+        "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+        "outcome": "Maize grain yield",
+        "effect_pct": "-1.2965964343598066",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "paper_warning"
+        ],
+        "treatment_description": "Intercropped maize (IM) in maize-soybean relay strip intercropping, no nitrogen (NN, 0 kg N/ha)",
+        "control_description": "Monoculture maize (MM), no nitrogen (NN, 0 kg N/ha)",
+        "notes": "NN = no nitrogen treatment. Plant density per unit area equal for intercropping and monoculture."
+      },
+      {
+        "row_number": 18,
+        "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+        "outcome": "Maize grain yield",
+        "effect_pct": "0.0",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "paper_warning"
+        ],
+        "treatment_description": "Intercropped maize (IM) in maize-soybean relay strip intercropping, reduced nitrogen (RN, 180 kg N/ha)",
+        "control_description": "Monoculture maize (MM), reduced nitrogen (RN, 180 kg N/ha)",
+        "notes": "RN = reduced nitrogen, 180 kg N/ha total. Identical means for IM and MM."
+      },
+      {
+        "row_number": 53,
+        "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+        "outcome": "Grain yield of mung bean",
+        "effect_pct": "-53.195097510213515",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "paper_warning"
+        ],
+        "treatment_description": "Mung bean intercropped with proso millet (2P2M)",
+        "control_description": "Monoculture mung bean (MM)",
+        "notes": "Duplicate entry consolidated with earlier grain yield rows for cross-check. Values confirmed."
+      },
+      {
+        "row_number": 55,
+        "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+        "outcome": "Grain yield",
+        "effect_pct": "28.73563218390805",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "non_independent_average"
+        ],
+        "treatment_description": "Maize/soybean strip intercropping, 0 kg P/ha, 2011",
+        "control_description": "Weighted mean of maize and soybean monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+        "notes": "Inter significantly higher than Mono (different letters). Soybean = Glycine max cv. Wuke no. 2."
+      },
+      {
+        "row_number": 56,
+        "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+        "outcome": "Grain yield",
+        "effect_pct": "27.77777777777778",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "non_independent_average"
+        ],
+        "treatment_description": "Maize/chickpea strip intercropping, 0 kg P/ha, 2011",
+        "control_description": "Weighted mean of maize and chickpea monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+        "notes": "Chickpea = Cicer arietinum cv. Longying no. 1."
+      },
+      {
+        "row_number": 57,
+        "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+        "outcome": "Grain yield",
+        "effect_pct": "45.78313253012046",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "non_independent_average"
+        ],
+        "treatment_description": "Maize/turnip strip intercropping, 0 kg P/ha, 2011",
+        "control_description": "Weighted mean of maize and turnip monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+        "notes": "Turnip = Brassica campestris cv. Gannan no. 4. Highest effect in P=0 group 2011."
+      },
+      {
+        "row_number": 58,
+        "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+        "outcome": "Grain yield",
+        "effect_pct": "11.340206185567025",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "non_independent_average"
+        ],
+        "treatment_description": "Maize/faba bean strip intercropping, 40 kg P/ha, 2011",
+        "control_description": "Weighted mean of maize and faba bean monocultures (57:43 area ratio), 40 kg P/ha, 2011",
+        "notes": "Not significantly different (both share letter c). Text confirms faba bean/maize at 40 P in 2011 was the sole exception to significant overyielding."
+      },
+      {
+        "row_number": 59,
+        "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+        "outcome": "Grain yield",
+        "effect_pct": "46.391752577319586",
+        "confidence": "high",
+        "severity": "likely_off_target",
+        "reasons": [
+          "component_yield_not_system_estimand",
+          "non_independent_average"
+        ],
+        "treatment_description": "Maize/soybean strip intercropping, 40 kg P/ha, 2011",
+        "control_description": "Weighted mean of maize and soybean monocultures (57:43 area ratio), 40 kg P/ha, 2011",
+        "notes": "Highest grain yield recorded in Table 1 (14.2 Mg/ha). Significantly higher than monoculture."
+      }
+    ]
+  }
+]

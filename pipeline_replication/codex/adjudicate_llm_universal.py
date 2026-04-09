@@ -190,7 +190,7 @@ def build_user_message(topic_brief: dict, row: dict, heuristic_flags: dict) -> s
     row_compact = {
         "row_id": row.get("row_id", ""),
         "title": row.get("title", ""),
-        "outcome": row.get("outcome", ""),
+        "outcome": row.get("outcome_variable", ""),
         "outcome_unit": row.get("outcome_unit", ""),
         "treatment_mean": row.get("treatment_mean"),
         "control_mean": row.get("control_mean"),

@@ -1,0 +1,20 @@
+{
+  "topic": "intercropping_yield",
+  "n_rows_before": 92,
+  "n_rows_after": 9,
+  "n_removed": 83,
+  "pct_removed": 90.21739130434783,
+  "meta_before": {
+    "k": 92,
+    "pooled_pct": 11.888210231954055,
+    "ci_lo_pct": 4.009906763622362,
+    "ci_hi_pct": 20.363261332029946
+  },
+  "meta_after": {
+    "k": 9,
+    "pooled_pct": 107.23888189457824,
+    "ci_lo_pct": 97.17899269196835,
+    "ci_hi_pct": 117.81201730758374
+  },
+  "delta_pct_points": 95.3506716626242
+}

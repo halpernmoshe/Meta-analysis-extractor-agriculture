@@ -1,0 +1,232 @@
+{
+  "paper_id": "009_Ali_2019",
+  "title": "Biostimulatory activities of Ascophyllum nodosum extract in tomato and sweet pepper crops in a tropical environment",
+  "authors": "Ali O, Ramsubhag A, Jayaraman J",
+  "year": 2019,
+  "species": "Solanum lycopersicum, Capsicum annuum",
+  "crop": "tomato, sweet pepper",
+  "experiment_type": "greenhouse + field",
+  "location": "Trinidad and Tobago",
+  "consensus_observations": [
+    {
+      "outcome": "total plant biomass",
+      "treatment_mean": 38.30,
+      "control_mean": 17.24,
+      "effect_pct": 122.16,
+      "n": 30,
+      "unit": "g",
+      "variance_value": 0.90,
+      "variance_type": "SD",
+      "data_source": "Table 2",
+      "treatment_description": "A. nodosum extract (Stimplex) 0.5% foliar every 10 days",
+      "control_description": "Water spray control",
+      "moderators": {
+        "crop": "tomato",
+        "cultivar": "Hybrid-61",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5%",
+        "season": "greenhouse"
+      }
+    },
+    {
+      "outcome": "total plant biomass",
+      "treatment_mean": 22.50,
+      "control_mean": 11.80,
+      "effect_pct": 90.68,
+      "n": 30,
+      "unit": "g",
+      "variance_value": 0.04,
+      "variance_type": "SD",
+      "data_source": "Table 3",
+      "treatment_description": "A. nodosum extract (Stimplex) 0.5% foliar every 10 days",
+      "control_description": "Water spray control",
+      "moderators": {
+        "crop": "sweet pepper",
+        "cultivar": "Amrit",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5%",
+        "season": "greenhouse"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 258.15,
+      "control_mean": 167.79,
+      "effect_pct": 53.85,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.14,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "A. nodosum extract (AN) 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "tomato",
+        "cultivar": "Hybrid-61",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5%",
+        "season": "dry"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 358.14,
+      "control_mean": 167.79,
+      "effect_pct": 113.44,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.33,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "AN + Fungicide alternating 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "tomato",
+        "cultivar": "Hybrid-61",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5% + fungicide",
+        "season": "dry"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 239.91,
+      "control_mean": 122.70,
+      "effect_pct": 95.53,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.23,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "A. nodosum extract (AN) 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "tomato",
+        "cultivar": "Hybrid-61",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5%",
+        "season": "wet"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 286.84,
+      "control_mean": 122.70,
+      "effect_pct": 133.77,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.01,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "AN + Fungicide alternating 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "tomato",
+        "cultivar": "Hybrid-61",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5% + fungicide",
+        "season": "wet"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 364.10,
+      "control_mean": 212.04,
+      "effect_pct": 71.71,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.99,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "A. nodosum extract (AN) 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "sweet pepper",
+        "cultivar": "Amrit",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5%",
+        "season": "dry"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 454.93,
+      "control_mean": 212.04,
+      "effect_pct": 114.55,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.01,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "AN + Fungicide alternating 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "sweet pepper",
+        "cultivar": "Amrit",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5% + fungicide",
+        "season": "dry"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 254.66,
+      "control_mean": 129.92,
+      "effect_pct": 96.01,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.07,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "A. nodosum extract (AN) 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "sweet pepper",
+        "cultivar": "Amrit",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5%",
+        "season": "wet"
+      }
+    },
+    {
+      "outcome": "fruit yield",
+      "treatment_mean": 302.27,
+      "control_mean": 129.92,
+      "effect_pct": 132.66,
+      "n": 3,
+      "unit": "kg",
+      "variance_value": 1.75,
+      "variance_type": "SD",
+      "data_source": "Table 6",
+      "treatment_description": "AN + Fungicide alternating 0.5% foliar",
+      "control_description": "Untreated control (C)",
+      "moderators": {
+        "crop": "sweet pepper",
+        "cultivar": "Amrit",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Stimplex (Ascophyllum nodosum, Acadian Seaplants)",
+        "application_method": "foliar",
+        "application_rate": "0.5% + fungicide",
+        "season": "wet"
+      }
+    }
+  ]
+}

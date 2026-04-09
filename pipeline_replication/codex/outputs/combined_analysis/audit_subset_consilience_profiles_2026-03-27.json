@@ -1,0 +1,55 @@
+{
+  "total_claims": 113,
+  "by_label": {
+    "clean_support": {
+      "n_claims": 11,
+      "mean_numeric_grounding": 2.364,
+      "mean_cross_model_concordance": 3.0,
+      "mean_within_paper_support": 3.0,
+      "mean_construct_drift": 0.636,
+      "mean_benchmark_comparability": 2.364,
+      "mean_structural_risk": 1.0,
+      "mean_overall_score": 9.091,
+      "papers": [
+        "020_Overdieck_1993",
+        "031_Pal_2003"
+      ]
+    },
+    "likely_alignment_or_structure_problem": {
+      "n_claims": 92,
+      "mean_numeric_grounding": 2.011,
+      "mean_cross_model_concordance": 0.717,
+      "mean_within_paper_support": 3.0,
+      "mean_construct_drift": 0.837,
+      "mean_benchmark_comparability": 2.217,
+      "mean_structural_risk": 1.5,
+      "mean_overall_score": 5.609,
+      "papers": [
+        "002_Ziska_1997",
+        "003_Baslam_2012",
+        "004_Finzi_2001",
+        "005_Niinemets_1999",
+        "007_Woodin_1992",
+        "016_Fernando_2012a",
+        "017_Fangmeier_2002",
+        "021_Wilsey_1994",
+        "040_Pfirrmann_1996",
+        "044_Housman_2012",
+        "051_Niu_2013"
+      ]
+    },
+    "likely_extraction_coverage_problem": {
+      "n_claims": 10,
+      "mean_numeric_grounding": 3.0,
+      "mean_cross_model_concordance": 3.0,
+      "mean_within_paper_support": 3.0,
+      "mean_construct_drift": 2.0,
+      "mean_benchmark_comparability": 2.0,
+      "mean_structural_risk": 1.0,
+      "mean_overall_score": 8.0,
+      "papers": [
+        "011_Huluka_1994"
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "summary": {
+    "paper_id": "011_Huluka_1994",
+    "roles_loaded": [
+      "benchmark_agent",
+      "consistency_agent",
+      "design_agent",
+      "figure_agent",
+      "narrative_agent",
+      "table_agent"
+    ],
+    "n_claim_rows": 7,
+    "n_constraints": 6,
+    "n_role_contradictions": 3,
+    "claim_contradiction_counts": {
+      "single_role_only": 5,
+      "timepoint_mismatch": 2,
+      "ratio_only_target": 2
+    }
+  },
+  "constraints": [
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "benchmark_agent",
+      "constraint_type": "benchmark",
+      "constraint_text": "Benchmark matching for this paper should prefer DOY 247 figure-ratio targets over the easier DOY 177 numeric table.",
+      "applies_to_claim_keys": "[\"target::doy247_leaf_benchmark\", \"target::doy177_leaf_table\"]",
+      "confidence": "high",
+      "source_locator": "report"
+    },
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "consistency_agent",
+      "constraint_type": "consilience",
+      "constraint_text": "Treat DOY 177 table extraction as technically correct but benchmark-misaligned because the GT target is the final-harvest DOY 247 figure ratio.",
+      "applies_to_claim_keys": "[\"consistency::overall_verdict\", \"target::doy177_leaf_table\", \"target::doy247_leaf_benchmark\", \"target::variance_se_table2\"]",
+      "confidence": "high",
+      "source_locator": "merged role comparison"
+    },
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "design_agent",
+      "constraint_type": "design",
+      "constraint_text": "Do not treat DOY 177 table values as interchangeable with DOY 247 final-harvest figure ratios.",
+      "applies_to_claim_keys": "[\"target::doy177_leaf_table\", \"target::doy247_leaf_benchmark\", \"design::multi_date_sampling\"]",
+      "confidence": "high",
+      "source_locator": "report"
+    },
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "figure_agent",
+      "constraint_type": "figure_only",
+      "constraint_text": "The DOY 247 benchmark target is figure-supported but ratio-only; it should not be treated as having the same numeric grounding as Table 2.",
+      "applies_to_claim_keys": "[\"target::doy247_leaf_benchmark\", \"target::doy177_leaf_table\"]",
+      "confidence": "high",
+      "source_locator": "Figure 1 / Figure 2"
+    },
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "narrative_agent",
+      "constraint_type": "narrative_scope",
+      "constraint_text": "Narrative support should be used to interpret the timepoint shift, not to treat DOY 177 and DOY 247 as interchangeable observations.",
+      "applies_to_claim_keys": "[\"narrative::seasonal_attenuation\", \"target::doy177_leaf_table\", \"target::doy247_leaf_benchmark\"]",
+      "confidence": "high",
+      "source_locator": "report discussion"
+    },
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "table_agent",
+      "constraint_type": "table_scope",
+      "constraint_text": "Table-grounded support exists only for DOY 177; do not infer that later harvest means are table-supported.",
+      "applies_to_claim_keys": "[\"target::doy177_leaf_table\", \"target::doy247_leaf_benchmark\", \"target::variance_se_table2\"]",
+      "confidence": "high",
+      "source_locator": "Table 2 / report"
+    }
+  ],
+  "contradictions": [
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "benchmark_agent",
+      "contradiction_type": "timepoint_mismatch",
+      "claim_keys": "[\"target::doy247_leaf_benchmark\", \"target::doy177_leaf_table\"]",
+      "description": "The benchmark uses final-harvest DOY 247 leaf ratios, but the extracted numeric table is from DOY 177.",
+      "severity": ""
+    },
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "consistency_agent",
+      "contradiction_type": "timepoint_mismatch",
+      "claim_keys": "[\"target::doy247_leaf_benchmark\", \"target::doy177_leaf_table\"]",
+      "description": "Later figure-based DOY 247 benchmark targets are being compared against earlier DOY 177 table observations.",
+      "severity": ""
+    },
+    {
+      "paper_id": "011_Huluka_1994",
+      "role": "consistency_agent",
+      "contradiction_type": "ratio_only_target",
+      "claim_keys": "[\"target::doy247_leaf_benchmark\", \"target::variance_se_table2\"]",
+      "description": "The benchmark target exists only as figure ratios without absolute means or SE, while the table-side alternative is fully numeric but from the wrong date.",
+      "severity": ""
+    }
+  ]
+}

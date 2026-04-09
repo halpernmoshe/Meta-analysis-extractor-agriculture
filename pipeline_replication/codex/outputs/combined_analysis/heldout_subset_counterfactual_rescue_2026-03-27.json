@@ -1,0 +1,30 @@
+{
+  "total_claims": 74,
+  "rescue_mode_counts": {},
+  "by_label": {
+    "clean_support": {
+      "n_claims": 34,
+      "n_rescuable": 0,
+      "rescuable_fraction": 0.0,
+      "papers": []
+    },
+    "likely_alignment_or_structure_problem": {
+      "n_claims": 26,
+      "n_rescuable": 0,
+      "rescuable_fraction": 0.0,
+      "papers": []
+    },
+    "likely_extraction_coverage_problem": {
+      "n_claims": 10,
+      "n_rescuable": 0,
+      "rescuable_fraction": 0.0,
+      "papers": []
+    },
+    "unclear": {
+      "n_claims": 4,
+      "n_rescuable": 0,
+      "rescuable_fraction": 0.0,
+      "papers": []
+    }
+  }
+}

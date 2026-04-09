@@ -1,0 +1,61 @@
+{
+  "paper_id": "pse_pse-201308-0003",
+  "title": "Improving nutritional quality of wheat through soil and foliar zinc application",
+  "authors": "Bharti K, Pandey N, Shankhdhar D, Srivastava PC, Shankhdhar SC",
+  "year": 2013,
+  "species": "Triticum aestivum",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 22.7,
+      "control_mean": 17.23,
+      "effect_pct": 31.75,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Soil application of 20 kg ZnSO4/ha (Zn20)",
+      "control_description": "No ZnSO4 application (Zn0)",
+      "moderators": {"year": "2009-2010", "cultivar": "mean of 10 genotypes", "application_method": "soil"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 32.18,
+      "control_mean": 17.47,
+      "effect_pct": 84.20,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Soil application 20 kg ZnSO4/ha + foliar spray 0.5% ZnSO4 (Zn20+F)",
+      "control_description": "No ZnSO4 application (Zn0)",
+      "moderators": {"year": "2009-2010", "cultivar": "mean of 10 genotypes", "application_method": "soil+foliar"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 22.6,
+      "control_mean": 21.14,
+      "effect_pct": 6.91,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Soil application of 20 kg ZnSO4/ha (Zn20)",
+      "control_description": "No ZnSO4 application (Zn0)",
+      "moderators": {"year": "2010-2011", "cultivar": "mean of 10 genotypes", "application_method": "soil"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 35.45,
+      "control_mean": 21.14,
+      "effect_pct": 67.74,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Soil application 20 kg ZnSO4/ha + foliar spray 0.5% ZnSO4 (Zn20+F)",
+      "control_description": "No ZnSO4 application (Zn0)",
+      "moderators": {"year": "2010-2011", "cultivar": "mean of 10 genotypes", "application_method": "soil+foliar"}
+    }
+  ]
+}

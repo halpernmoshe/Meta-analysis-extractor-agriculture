@@ -1,4 +1,5 @@
 {
+  "review_id": "li2022_biostimulant_yield",
   "name": "Biostimulant Effects on Crop Yield in Field Trials",
   "description": "This meta-analysis examines the effect of non-microbial plant biostimulants on crop yield in open-field trials. Biostimulant categories include seaweed extracts (SWE), protein hydrolysates (PHs), protein extracts (PE), humic/fulvic acids (HFA), chitosan (Chi), silicon (Si), and phosphite (Phi). Based on Li et al. 2022 (Frontiers in Plant Science 13:836702).",
 
@@ -41,21 +42,55 @@
 
   "pico": {
     "population": {
-      "crop_groups": ["vegetables", "cereals", "fruits", "legumes"],
-      "environments": ["field", "open field"]
+      "description": "Crop plants in open-field trials",
+      "search_terms": ["crop*", "vegetable*", "cereal*", "fruit*", "legume*", "tomato", "wheat", "maize", "potato", "lettuce", "bean*", "pepper", "strawberry", "grape"],
+      "exclude_terms": []
     },
     "intervention": {
-      "treatment_variable": "BIOSTIMULANT",
-      "treatment_keywords": ["biostimulant", "seaweed", "humic", "fulvic", "protein hydrolysate", "chitosan", "Ascophyllum", "extract"]
+      "description": "Plant biostimulant application",
+      "search_terms": ["biostimulant*", "seaweed extract*", "humic acid*", "fulvic acid*", "protein hydrolysate*", "chitosan", "silicon", "phosphite", "Ascophyllum", "plant extract*"]
     },
-    "comparison": {
-      "control_definition": "No biostimulant application (untreated control)",
-      "control_keywords": ["control", "untreated", "CK", "no biostimulant", "water only", "0"]
+    "comparator": {
+      "description": "Untreated control (no biostimulant)",
+      "search_terms": ["control", "untreated", "no biostimulant"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Crop yield",
+        "search_terms": ["yield", "fresh yield", "crop yield", "fruit yield", "biomass", "harvest", "production", "t/ha", "kg/ha"]
+      }
     }
+  },
+
+  "search": {
+    "seed_dois": [
+      "10.3389/fpls.2022.836702"
+    ],
+    "study_types_eligible": ["field_experiment", "field trial", "open field"],
+    "study_types_excluded": ["review", "meta-analysis", "model_simulation", "commentary", "editorial"]
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "known_included_papers": 181,
+    "known_observations": 1108,
+    "known_papers": [
+      "10.3389/fpls.2022.836702"
+    ],
+    "published_pooled_effect": {
+      "estimate": 17.9,
+      "unit": "percent_change"
+    }
+  },
+
+  "screening": {
+    "llm_enabled": false
   },
 
   "ground_truth": {
     "dataset": "../Li 2022/Data_Sheet_2.XLSX",
+    "dataset_sheet": "Supplementary Data 2",
+    "dataset_header_row": 1,
     "papers_dir": "../Li 2022/downloaded_papers/",
     "reference": "Li et al. 2022, Frontiers in Plant Science 13:836702",
     "total_observations": 1108,

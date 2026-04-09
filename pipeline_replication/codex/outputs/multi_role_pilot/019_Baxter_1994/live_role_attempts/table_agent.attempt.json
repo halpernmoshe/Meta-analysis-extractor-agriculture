@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "provider": "kimi",
+  "role_name": "table_agent",
+  "duration_seconds": 42.71405482292175,
+  "claims": 2,
+  "constraints": 0,
+  "contradictions": 1,
+  "prompt_tokens": 3419,
+  "completion_tokens": 4074,
+  "backup_path": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\table_agent.prelive.json",
+  "attempt_path": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\live_role_attempts\\table_agent.attempt.json"
+}

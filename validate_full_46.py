@@ -19,12 +19,27 @@ load_dotenv()
 
 import openpyxl
 
-GT_PATH = r"C:\Users\moshe\Dropbox\Testing metaanalyis program\Loladze\CO2+Dataset.xlsx"
+BASE_DIR = Path(__file__).resolve().parent
+
+# Ground truth path: check env var, then data/ground_truth/, then relative sibling directory
+GT_PATH = os.environ.get('GT_PATH_LOLADZE', '')
+if not GT_PATH or not Path(GT_PATH).exists():
+    _candidates = [
+        BASE_DIR / 'data' / 'ground_truth' / 'loladze_co2_dataset.xlsx',
+        BASE_DIR.parent / 'Loladze' / 'CO2+Dataset.xlsx',
+    ]
+    GT_PATH = next((str(c) for c in _candidates if c.exists()), str(_candidates[0]))
+
+if not Path(GT_PATH).exists():
+    print(f"Ground truth not found at {GT_PATH}")
+    print("Set GT_PATH_LOLADZE environment variable or place file at the expected path.")
+    print("See REPRODUCE.md Section 3 for download instructions.")
+    sys.exit(1)
 import argparse as _argparse
 _parser = _argparse.ArgumentParser(add_help=False)
 _parser.add_argument('--results-dir', default=None)
 _args, _ = _parser.parse_known_args()
-RESULTS_DIR = Path(_args.results_dir) if _args.results_dir else Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\loladze_full_46_v2")
+RESULTS_DIR = Path(_args.results_dir) if _args.results_dir else BASE_DIR / 'output' / 'loladze_full_46_v2'
 
 # Mislabeled PDFs: filename doesn't match actual paper content
 MISLABELED_PDFS = {

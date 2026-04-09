@@ -1,0 +1,117 @@
+{
+  "paper_id": "Pramanick_2016",
+  "title": "Effect of seaweed saps on growth and yield improvement of green gram",
+  "authors": "Pramanick B, Brahmachari K, Ghosh A",
+  "year": 2013,
+  "species": "Vigna radiata (green gram)",
+  "consensus_observations": [
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1085.6,
+      "control_mean": 910.3,
+      "effect_pct": 19.26,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "2.5% Kappaphycus sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Kappaphycus", "concentration": "2.5%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1090.3,
+      "control_mean": 910.3,
+      "effect_pct": 19.77,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "5% Kappaphycus sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Kappaphycus", "concentration": "5%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1158.6,
+      "control_mean": 910.3,
+      "effect_pct": 27.28,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "10% Kappaphycus sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Kappaphycus", "concentration": "10%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1265.0,
+      "control_mean": 910.3,
+      "effect_pct": 38.97,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "15% Kappaphycus sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Kappaphycus", "concentration": "15%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 995.3,
+      "control_mean": 910.3,
+      "effect_pct": 9.34,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "2.5% Gracilaria sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Gracilaria", "concentration": "2.5%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1036.5,
+      "control_mean": 910.3,
+      "effect_pct": 13.86,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "5% Gracilaria sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Gracilaria", "concentration": "5%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1103.0,
+      "control_mean": 910.3,
+      "effect_pct": 21.17,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "10% Gracilaria sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Gracilaria", "concentration": "10%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1216.1,
+      "control_mean": 910.3,
+      "effect_pct": 33.58,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "15% Gracilaria sap + RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Gracilaria", "concentration": "15%"}
+    },
+    {
+      "outcome": "seed_yield",
+      "treatment_mean": 1101.7,
+      "control_mean": 910.3,
+      "effect_pct": 21.02,
+      "n": 3,
+      "unit": "kg/ha",
+      "data_source": "table",
+      "treatment_description": "7.5% Kappaphycus sap + 50% RDF",
+      "control_description": "RDF + water spray",
+      "moderators": {"biostimulant_type": "seaweed", "species": "Kappaphycus", "concentration": "7.5%", "fertilizer": "50% RDF"}
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+topic_name,benchmark_paper,estimand_clarity,intervention_clarity,comparator_clarity,setting_consistency,oa_feasibility,benchmark_richness,moderator_extractability,low_estimand_trap,total,notes
+legume_rotation_yield,Zhao et al. 2022 (Nat Comm),5,5,4,4,5,5,4,5,37,Already tested in V1; strong result; massive OA dataset; Nature Comms fully OA
+amf_inoculation_yield_rainfed,Wu et al. 2022 (PeerJ),5,5,4,4,5,4,4,4,35,Fully OA journal; clear AMF vs non-AMF; yield primary; 546 obs
+biochar_tropical_yield,Jeffery et al. 2017 (ERL),5,5,5,3,5,4,4,4,35,ERL fully OA; clear binary comparison; tropical vs temperate subgroups well-defined
+biological_seed_treatment_yield,Rocha et al. 2022 (Agron Sust Dev),4,3,4,4,5,4,3,4,31,OA journal; broad intervention (many organisms); yield primary; global scope
+humic_acid_yield,Olk et al. 2024 (Agronomy MDPI),5,5,5,3,5,3,3,5,34,MDPI fully OA; very clear intervention; moderate benchmark detail; clean estimand
+elevated_co2_face_yield,Ainsworth & Long 2021 (GCB),5,5,5,4,3,5,4,5,36,Gold-standard FACE literature; clear estimand; moderate OA; well-known corpus
+cover_crop_corn_yield,Marcillo & Miguez 2017 (JSWC),5,5,4,4,3,4,4,5,34,Clear subsequent-crop yield; moderate OA; US/Canada focus; clean comparison
+deficit_irrigation_veg_yield,Gu et al. 2021 (Sci Rep),4,3,4,4,5,4,3,3,30,OA journal; continuous intervention (deficit level varies); yield primary
+plastic_mulch_yield,Gao et al. 2019 (STOTEN),5,5,5,4,2,4,3,5,33,Very clear intervention; low OA feasibility (Elsevier + Chinese journals)
+notill_vs_conventional_yield,Pittelkow et al. 2015 (FCR),4,4,4,4,3,5,4,3,31,Already tested in V1; gold-standard benchmark; intervention definition drifts
+organic_yield_gap,Ponisio et al. 2015 (Proc R Soc B),4,3,3,4,4,4,3,3,28,Already tested in V1; intervention definition broad; outcome leakage risk
+biostimulant_yield_all,Li et al. 2022 (Frontiers),3,2,4,4,5,3,3,2,26,Very broad intervention category; low estimand clarity; OA journal
+zn_biofortification_wheat,Wang et al. 2025 (Nat Comm),4,5,5,4,5,5,4,3,35,OA; very clear intervention; but yield is SECONDARY outcome (Zn conc is primary)
+nitrogen_fertilizer_yield,Niu et al. 2022 (STOTEN),3,2,3,4,2,3,3,2,22,Continuous intervention (rate); no clear binary comparison; low OA
+compost_amendment_yield,Wei et al. 2022 (STOTEN),3,2,3,3,2,3,3,2,21,Broad intervention; soil carbon often co-primary; low OA
+maize_density_yield,Li et al. 2024 (FCR),3,2,3,4,2,3,3,2,22,Continuous intervention; no binary comparison; low OA
+intercropping_yield_ler,Yu et al. 2015 (Agron Sust Dev),3,4,4,4,4,4,3,1,27,Already tested V1; major estimand trap (LER vs component yield)
+salinity_rice_yield,Various 2023 (EJA),4,3,3,3,2,3,3,3,24,Continuous stressor; low OA; moderate benchmark clarity

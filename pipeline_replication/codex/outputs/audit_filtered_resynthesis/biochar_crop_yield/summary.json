@@ -1,0 +1,20 @@
+{
+  "topic": "biochar_crop_yield",
+  "n_rows_before": 348,
+  "n_rows_after": 348,
+  "n_removed": 0,
+  "pct_removed": 0.0,
+  "meta_before": {
+    "k": 348,
+    "pooled_pct": 17.62940837634126,
+    "ci_lo_pct": 14.907048499319743,
+    "ci_hi_pct": 20.416265979105507
+  },
+  "meta_after": {
+    "k": 348,
+    "pooled_pct": 17.62940837634126,
+    "ci_lo_pct": 14.907048499319743,
+    "ci_hi_pct": 20.416265979105507
+  },
+  "delta_pct_points": 0.0
+}

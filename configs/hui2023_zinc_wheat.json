@@ -1,4 +1,5 @@
 {
+  "review_id": "hui2023_zinc_wheat",
   "name": "Zinc Biofortification in Wheat",
   "description": "This meta-analysis examines how Zn fertilizer application (soil, foliar, and soil+foliar) affects grain Zn concentration in wheat. The goal is agronomic biofortification to address Zn deficiency in human nutrition. Based on Hui et al. 2025 (Nature Communications 16:3913), 139 studies, 2,771 observations.",
 
@@ -48,30 +49,66 @@
 
   "pico": {
     "population": {
-      "crop_species": ["wheat", "Triticum aestivum", "Triticum durum"],
-      "environments": ["field", "greenhouse", "growth chamber"]
+      "description": "Wheat (Triticum aestivum, T. durum)",
+      "search_terms": ["wheat", "Triticum", "grain", "cereal"],
+      "exclude_terms": []
     },
     "intervention": {
-      "treatment_variable": "ZN_FERT",
-      "treatment_keywords": ["zinc", "Zn", "ZnSO4", "ZnO", "Zn-EDTA", "zinc sulfate", "zinc oxide"]
+      "description": "Zinc fertilizer application",
+      "search_terms": ["zinc", "Zn", "ZnSO4", "ZnO", "Zn-EDTA", "zinc sulfate", "zinc oxide", "foliar Zn", "soil Zn", "biofortification"]
     },
-    "comparison": {
-      "control_definition": "No Zn fertilizer application (CK)",
-      "control_keywords": ["control", "CK", "no Zn", "without Zn", "0 Zn", "no zinc", "-Zn", "zero Zn"]
+    "comparator": {
+      "description": "No Zn fertilizer application",
+      "search_terms": ["control", "CK", "no Zn", "without zinc", "unfertilized"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Grain Zn concentration (mg/kg)",
+        "search_terms": ["zinc concentration", "Zn concentration", "grain Zn", "Zn content", "biofortification", "micronutrient"]
+      }
     }
   },
 
+  "search": {
+    "seed_dois": ["10.1038/s41467-025-58395-6"],
+    "study_types_eligible": ["field_experiment", "greenhouse", "growth_chamber", "pot experiment"],
+    "study_types_excluded": ["review", "meta-analysis", "model_simulation", "commentary"]
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "known_included_papers": 139,
+    "known_observations": 2771,
+    "known_papers": ["10.1038/s41467-025-58395-6"],
+    "published_pooled_effect": {
+      "estimate": 29.0,
+      "unit": "percent_change"
+    }
+  },
+
+  "screening": {
+    "llm_enabled": false
+  },
+
   "ground_truth": {
-    "dataset": "../Hui 2023 source data/Source Data/pdfs/ground.xlsx",
+    "dataset": "data/hui2023_gt_combined.csv",
+    "dataset_encoding": "utf-8",
     "papers_dir": "../Hui 2023 source data/Source Data/pdfs/",
     "reference": "Hui et al. 2025, Nature Communications 16:3913",
     "total_observations": 2771,
     "total_studies": 139,
     "available_pdfs": 8,
-    "sheets": {
-      "Data 1 Global wheat": "2772 observations - grain Zn by country",
-      "Data 2 Soil application": "857 observations with full moderators",
-      "Data 3 Foliar application": "828 observations with full moderators"
-    }
+    "gt_columns": {
+      "study_id": "study_id",
+      "publication": "publication",
+      "country": "country",
+      "control_mean": "zn_ctrl",
+      "treatment_mean": "zn_treat",
+      "effect_ratio": "zn_effect_rr",
+      "control_n": "n",
+      "treatment_n": "n",
+      "app_type": "app_type"
+    },
+    "notes": "GT combined from MOESM5_dataset.xlsx sheets 2-4 (Soil, Foliar, Soil+Foliar). Effect size is response ratio (RR = T/C - 1). Grain Zn concentration in mg/kg."
   }
 }

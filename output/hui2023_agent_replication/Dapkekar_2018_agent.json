@@ -1,0 +1,74 @@
+{
+  "paper_id": "Dapkekar_2018",
+  "title": "Zinc use efficiency is enhanced in wheat through nanofertilization",
+  "authors": "Dapkekar A, Deshpande P, Oak MD, Paknikar KM, Rajwade JM",
+  "year": 2018,
+  "species": "Triticum durum",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 59.40,
+      "control_mean": 39.50,
+      "effect_pct": 50.4,
+      "n": 32,
+      "unit": "ug/g",
+      "data_source": "Table 2",
+      "treatment_description": "Urea + ZnSO4 foliar (400 mg/L Zn), T2",
+      "control_description": "Water foliar control, T0",
+      "moderators": {"zn_form": "ZnSO4", "zn_conc_mg_L": 400, "cultivar": "pooled MACS3125+UC1114"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 46.62,
+      "control_mean": 39.50,
+      "effect_pct": 18.0,
+      "n": 32,
+      "unit": "ug/g",
+      "data_source": "Table 2",
+      "treatment_description": "Urea + ZnSO4 foliar (40 mg/L Zn), T3",
+      "control_description": "Water foliar control, T0",
+      "moderators": {"zn_form": "ZnSO4", "zn_conc_mg_L": 40, "cultivar": "pooled MACS3125+UC1114"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 53.30,
+      "control_mean": 39.50,
+      "effect_pct": 34.9,
+      "n": 32,
+      "unit": "ug/g",
+      "data_source": "Table 2",
+      "treatment_description": "Urea + Zn-CNP nano-1 foliar (40 mg/L Zn), T4",
+      "control_description": "Water foliar control, T0",
+      "moderators": {"zn_form": "Zn-CNP nanoparticle", "zn_conc_mg_L": 40, "cultivar": "pooled MACS3125+UC1114"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 43.50,
+      "control_mean": 39.50,
+      "effect_pct": 10.1,
+      "n": 32,
+      "unit": "ug/g",
+      "data_source": "Table 2",
+      "treatment_description": "Urea + Zn-CNP nano-2 foliar (4 mg/L Zn), T5",
+      "control_description": "Water foliar control, T0",
+      "moderators": {"zn_form": "Zn-CNP nanoparticle", "zn_conc_mg_L": 4, "cultivar": "pooled MACS3125+UC1114"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 46.09,
+      "control_mean": 48.97,
+      "effect_pct": -5.9,
+      "n": 96,
+      "unit": "ug/g",
+      "data_source": "Table 3",
+      "treatment_description": "MACS 3125 genotype (all treatments pooled)",
+      "control_description": "UC 1114 genotype (all treatments pooled)",
+      "moderators": {"comparison": "genotype", "cultivar_treatment": "MACS 3125", "cultivar_control": "UC 1114"}
+    }
+  ]
+}

@@ -6,13 +6,17 @@ Tries multiple sources in priority order to find and download PDFs:
 1. OpenAlex OA URL (if provided in search results)
 2. Unpaywall API (free, requires email)
 3. CORE API (core.ac.uk, ~200M OA papers, free API key)
-4. Fatcat / Internet Archive (~500M works, no key needed)
-5. OpenAIRE (~100M works, no key needed)
-6. Semantic Scholar API (open access PDF field)
-7. PubMed Central (for papers with PMC IDs)
-8. Publisher-specific URL patterns (MDPI, Frontiers, PLOS, Elsevier, Springer, Wiley, T&F, Cambridge)
-9. Europe PMC (europepmc.org)
-10. DOI redirect + landing page HTML parsing
+4. CrossRef fulltext links (publisher-provided PDF URLs)
+5. Fatcat / Internet Archive (~500M works, no key needed)
+6. OpenAIRE (~100M works, no key needed)
+7. Semantic Scholar API (open access PDF field)
+8. PubMed Central via DOI→PMCID lookup (NCBI ID Converter)
+9. PubMed Central (for papers with PMC IDs in input)
+10. bioRxiv/medRxiv (preprint versions of published papers)
+11. Publisher-specific URL patterns (MDPI, Frontiers, PLOS, Elsevier, Springer, Wiley, T&F, Cambridge)
+12. Europe PMC (europepmc.org)
+13. DOI redirect + landing page HTML parsing
+14. Title-based Semantic Scholar search (fallback when DOI missing)
 
 Usage:
     # From search_pipeline.py output:
@@ -165,13 +169,17 @@ class PDFDownloader:
             ("openalex_oa", lambda fp: self._try_oa_url(oa_url, fp) if oa_url else False),
             ("unpaywall", lambda fp: self._try_unpaywall(doi, fp) if doi else False),
             ("core", lambda fp: self._try_core(doi, fp) if self.core_api_key and doi else False),
+            ("crossref", lambda fp: self._try_crossref(doi, fp) if doi else False),
             ("fatcat", lambda fp: self._try_fatcat(doi, fp) if doi else False),
             ("openaire", lambda fp: self._try_openaire(doi, fp) if doi else False),
             ("semantic_scholar", lambda fp: self._try_semantic_scholar(doi, fp) if doi else False),
+            ("pmc_lookup", lambda fp: self._try_pmc_from_doi(doi, fp) if doi and not pmcid else False),
             ("pmc", lambda fp: self._try_pmc(pmcid, fp) if pmcid else False),
+            ("biorxiv", lambda fp: self._try_biorxiv(doi, title, fp) if doi or title else False),
             ("publisher_specific", lambda fp: self._try_publisher_specific(doi, fp) if doi else False),
             ("europe_pmc", lambda fp: self._try_europe_pmc(doi, fp) if doi else False),
             ("doi_redirect", lambda fp: self._try_doi_redirect(doi, fp) if doi else False),
+            ("title_search", lambda fp: self._try_title_search(title, fp) if title and not doi else False),
         ]
 
         for source_name, try_fn in sources:
@@ -967,6 +975,209 @@ class PDFDownloader:
         except (requests.RequestException, json.JSONDecodeError, KeyError):
             pass
         return False
+
+    # -----------------------------------------------------------------------
+    # New sources (added 2026-03-25)
+    # -----------------------------------------------------------------------
+
+    def _try_crossref(self, doi: str, filepath: Path) -> bool:
+        """Query CrossRef API for fulltext PDF links.
+
+        CrossRef stores publisher-provided fulltext links for many papers.
+        These often include direct PDF URLs even for paywalled papers
+        that have OA versions via author-deposit or green OA.
+        No API key required; email enables polite pool.
+        """
+        if not doi:
+            return False
+
+        api_url = f"https://api.crossref.org/works/{doi}"
+        headers = {"User-Agent": f"MetaAnalysisPipeline/1.0 (mailto:{self.email})"}
+        try:
+            resp = self.session.get(api_url, headers=headers, timeout=REQUEST_TIMEOUT)
+            if resp.status_code != 200:
+                log.debug("CrossRef returned %d for %s", resp.status_code, doi)
+                return False
+
+            data = resp.json()
+            message = data.get("message", {})
+
+            # Check for fulltext links
+            links = message.get("link", [])
+            for link in links:
+                url = link.get("URL", "")
+                content_type = link.get("content-type", "")
+                if "pdf" in content_type.lower() and url:
+                    if self._download_file(url, filepath):
+                        return True
+
+            # Check for license links that indicate OA
+            licenses = message.get("license", [])
+            is_oa = any(
+                "creativecommons" in (lic.get("URL", "") or "").lower()
+                for lic in licenses
+            )
+
+            # If OA and we have a resource link, try it
+            if is_oa:
+                resource = message.get("resource", {})
+                primary = resource.get("primary", {})
+                primary_url = primary.get("URL", "")
+                if primary_url:
+                    return self._try_links_from_page(primary_url, filepath)
+
+            return False
+
+        except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+            log.debug("CrossRef error for %s: %s", doi, e)
+            return False
+
+    def _try_pmc_from_doi(self, doi: str, filepath: Path) -> bool:
+        """Look up PMC ID from DOI via NCBI ID Converter, then download from PMC.
+
+        Many papers are deposited in PMC but the input data doesn't include
+        the PMC ID. This converts DOI → PMCID using the NCBI converter API.
+        """
+        if not doi:
+            return False
+
+        api_url = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
+        params = {
+            "ids": doi,
+            "format": "json",
+            "tool": "meta_analysis_pipeline",
+            "email": self.email,
+        }
+        try:
+            resp = self.session.get(api_url, params=params, timeout=REQUEST_TIMEOUT)
+            if resp.status_code != 200:
+                log.debug("NCBI ID Converter returned %d for %s", resp.status_code, doi)
+                return False
+
+            data = resp.json()
+            records = data.get("records", [])
+            if not records:
+                return False
+
+            pmcid = records[0].get("pmcid", "")
+            if not pmcid:
+                log.debug("No PMC ID found for DOI %s", doi)
+                return False
+
+            log.debug("Found PMC ID %s for DOI %s", pmcid, doi)
+            return self._try_pmc(pmcid, filepath)
+
+        except (requests.RequestException, json.JSONDecodeError, KeyError) as e:
+            log.debug("NCBI ID Converter error for %s: %s", doi, e)
+            return False
+
+    def _try_biorxiv(self, doi: str, title: str, filepath: Path) -> bool:
+        """Try bioRxiv/medRxiv for preprint versions.
+
+        Many published papers have earlier preprint versions on bioRxiv/medRxiv.
+        The bioRxiv API can find these from the published DOI.
+        """
+        if not doi:
+            return False
+
+        # Check if this is directly a bioRxiv/medRxiv DOI
+        if doi.startswith("10.1101/"):
+            pdf_url = f"https://www.biorxiv.org/content/{doi}v1.full.pdf"
+            if self._download_file(pdf_url, filepath):
+                return True
+            pdf_url = f"https://www.medrxiv.org/content/{doi}v1.full.pdf"
+            if self._download_file(pdf_url, filepath):
+                return True
+
+        # Try bioRxiv API to find preprint version of a published paper
+        api_url = f"https://api.biorxiv.org/details/biorxiv/{doi}"
+        try:
+            resp = self.session.get(api_url, timeout=REQUEST_TIMEOUT)
+            if resp.status_code == 200:
+                data = resp.json()
+                collection = data.get("collection", [])
+                if collection:
+                    biorxiv_doi = collection[0].get("biorxiv_doi", "")
+                    if biorxiv_doi:
+                        pdf_url = f"https://www.biorxiv.org/content/10.1101/{biorxiv_doi}v1.full.pdf"
+                        if self._download_file(pdf_url, filepath):
+                            return True
+        except (requests.RequestException, json.JSONDecodeError):
+            pass
+
+        # Try medRxiv too
+        api_url = f"https://api.biorxiv.org/details/medrxiv/{doi}"
+        try:
+            resp = self.session.get(api_url, timeout=REQUEST_TIMEOUT)
+            if resp.status_code == 200:
+                data = resp.json()
+                collection = data.get("collection", [])
+                if collection:
+                    medrxiv_doi = collection[0].get("biorxiv_doi", "")
+                    if medrxiv_doi:
+                        pdf_url = f"https://www.medrxiv.org/content/10.1101/{medrxiv_doi}v1.full.pdf"
+                        if self._download_file(pdf_url, filepath):
+                            return True
+        except (requests.RequestException, json.JSONDecodeError):
+            pass
+
+        return False
+
+    def _try_title_search(self, title: str, filepath: Path) -> bool:
+        """Search Semantic Scholar by title as last resort when DOI is missing.
+
+        This catches papers that have OA PDFs but weren't found because
+        the DOI was missing or malformed in the search results.
+        """
+        if not title or len(title) < 10:
+            return False
+
+        # Clean title for search
+        clean_title = re.sub(r'[^\w\s]', ' ', title).strip()
+        if len(clean_title) < 10:
+            return False
+
+        api_url = "https://api.semanticscholar.org/graph/v1/paper/search"
+        params = {
+            "query": clean_title[:200],
+            "limit": 3,
+            "fields": "openAccessPdf,title",
+        }
+        try:
+            resp = self.session.get(api_url, params=params, timeout=REQUEST_TIMEOUT)
+            if resp.status_code == 429:
+                time.sleep(5)
+                resp = self.session.get(api_url, params=params, timeout=REQUEST_TIMEOUT)
+
+            if resp.status_code != 200:
+                return False
+
+            data = resp.json()
+            papers = data.get("data", [])
+
+            for paper in papers:
+                # Verify title similarity before downloading
+                found_title = (paper.get("title") or "").lower()
+                query_title = title.lower()
+                # Simple word overlap check
+                query_words = set(query_title.split())
+                found_words = set(found_title.split())
+                if len(query_words) > 0:
+                    overlap = len(query_words & found_words) / len(query_words)
+                    if overlap < 0.5:
+                        continue
+
+                oa_pdf = paper.get("openAccessPdf") or {}
+                pdf_url = oa_pdf.get("url")
+                if pdf_url:
+                    if self._download_file(pdf_url, filepath):
+                        return True
+
+            return False
+
+        except (requests.RequestException, json.JSONDecodeError) as e:
+            log.debug("Title search error for '%s': %s", title[:40], e)
+            return False
 
     # -----------------------------------------------------------------------
     # File handling utilities

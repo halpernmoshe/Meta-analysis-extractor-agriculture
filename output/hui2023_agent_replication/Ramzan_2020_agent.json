@@ -1,0 +1,105 @@
+{
+  "paper_id": "Ramzan_2020",
+  "title": "Biofortification with Zinc and Iron Improves the Grain Quality and Yield of Wheat Crop",
+  "authors": ["Ramzan Y", "Hafeez MB", "Khan S", "Nadeem M", "Saleem-ur-Rahman", "Batool S", "Ahmad J"],
+  "year": 2020,
+  "species": "Triticum aestivum",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 61.33,
+      "control_mean": 41.08,
+      "effect_pct": 49.31,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Fig 3b",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4, 2-year mean",
+      "control_description": "Control (no Zn or Fe), 2-year mean",
+      "moderators": {
+        "zn_application": "foliar",
+        "zn_rate": "0.5% ZnSO4"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 55.0,
+      "control_mean": 41.08,
+      "effect_pct": 33.89,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Fig 3b",
+      "treatment_description": "Foliar spray of 0.5% ZnSO4 and 1% FeSO4, 2-year mean",
+      "control_description": "Control (no Zn or Fe), 2-year mean",
+      "moderators": {
+        "zn_application": "foliar",
+        "zn_rate": "0.5% ZnSO4 + 1% FeSO4"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 48.0,
+      "control_mean": 41.08,
+      "effect_pct": 16.85,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Fig 3b",
+      "treatment_description": "Soil supplementation of 10 kg Zn ha-1, 2-year mean",
+      "control_description": "Control (no Zn or Fe), 2-year mean",
+      "moderators": {
+        "zn_application": "soil",
+        "zn_rate": "10 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 46.0,
+      "control_mean": 41.08,
+      "effect_pct": 11.97,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Fig 3b",
+      "treatment_description": "Soil supplementation of 10 kg Zn ha-1 and 12 kg Fe ha-1, 2-year mean",
+      "control_description": "Control (no Zn or Fe), 2-year mean",
+      "moderators": {
+        "zn_application": "soil",
+        "zn_rate": "10 kg Zn ha-1 + 12 kg Fe ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 42.0,
+      "control_mean": 41.08,
+      "effect_pct": 2.24,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Fig 3b",
+      "treatment_description": "Soil supplementation of 12 kg Fe ha-1, 2-year mean",
+      "control_description": "Control (no Zn or Fe), 2-year mean",
+      "moderators": {
+        "zn_application": "none",
+        "fe_application": "soil 12 kg Fe ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 50.0,
+      "control_mean": 41.08,
+      "effect_pct": 21.71,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Fig 3b",
+      "treatment_description": "Foliar spray of 1% FeSO4, 2-year mean",
+      "control_description": "Control (no Zn or Fe), 2-year mean",
+      "moderators": {
+        "zn_application": "none",
+        "fe_application": "foliar 1% FeSO4"
+      }
+    }
+  ]
+}

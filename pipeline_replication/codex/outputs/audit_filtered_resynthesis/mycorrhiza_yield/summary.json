@@ -1,0 +1,20 @@
+{
+  "topic": "mycorrhiza_yield",
+  "n_rows_before": 175,
+  "n_rows_after": 159,
+  "n_removed": 16,
+  "pct_removed": 9.142857142857142,
+  "meta_before": {
+    "k": 175,
+    "pooled_pct": 28.962847239620704,
+    "ci_lo_pct": 23.267898843405188,
+    "ci_hi_pct": 34.92090093364584
+  },
+  "meta_after": {
+    "k": 159,
+    "pooled_pct": 28.991645134736444,
+    "ci_lo_pct": 22.98176486381962,
+    "ci_hi_pct": 35.295216595650004
+  },
+  "delta_pct_points": 0.0287978951157406
+}

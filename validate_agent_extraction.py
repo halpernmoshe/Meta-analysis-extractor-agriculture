@@ -15,8 +15,14 @@ if sys.platform == 'win32':
 
 import openpyxl
 
-GT_PATH = r"C:\Users\moshe\Dropbox\Testing metaanalyis program\Loladze\CO2+Dataset.xlsx"
-AGENT_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\agent_extraction")
+BASE_DIR = Path(__file__).resolve().parent
+GT_PATH = os.environ.get('GT_PATH_LOLADZE', str(BASE_DIR.parent / 'Loladze' / 'CO2+Dataset.xlsx'))
+if not Path(GT_PATH).exists():
+    print(f"Ground truth not found at {GT_PATH}")
+    print("Set GT_PATH_LOLADZE environment variable or place file at the expected path.")
+    print("See REPRODUCE.md Section 3 for download instructions.")
+    sys.exit(1)
+AGENT_DIR = BASE_DIR / 'output' / 'agent_extraction'
 
 # Complete mapping of our paper IDs to Loladze references
 PAPER_TO_LOLADZE_REF = {

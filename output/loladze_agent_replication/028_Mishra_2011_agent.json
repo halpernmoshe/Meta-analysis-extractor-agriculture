@@ -1,0 +1,87 @@
+{
+  "paper_id": "028_Mishra_2011",
+  "title": "Elevated CO2 affects plant responses to variation in boron availability",
+  "authors": "Mishra, S.; Heckathorn, S.A.; Frantz, J.M.",
+  "year": 2012,
+  "species": "Pelargonium x hortorum",
+  "consensus_observations": [
+    {
+      "element": "B",
+      "tissue": "leaf",
+      "treatment_mean": 80,
+      "control_mean": 120,
+      "effect_pct": -33.33,
+      "n": 3,
+      "unit": "mg/kg dw",
+      "data_source": "Figure 3a",
+      "treatment_description": "700 ppm CO2",
+      "control_description": "370 ppm CO2",
+      "moderators": {"boron_level": "45 uM B (near-optimal)"}
+    },
+    {
+      "element": "B",
+      "tissue": "root",
+      "treatment_mean": 60,
+      "control_mean": 80,
+      "effect_pct": -25.00,
+      "n": 3,
+      "unit": "mg/kg dw",
+      "data_source": "Figure 3b",
+      "treatment_description": "700 ppm CO2",
+      "control_description": "370 ppm CO2",
+      "moderators": {"boron_level": "45 uM B (near-optimal)"}
+    },
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "treatment_mean": 3500,
+      "control_mean": 4500,
+      "effect_pct": -22.22,
+      "n": 3,
+      "unit": "mg/kg dw",
+      "data_source": "Figure 4a",
+      "treatment_description": "700 ppm CO2",
+      "control_description": "370 ppm CO2",
+      "moderators": {"boron_level": "45 uM B (near-optimal)"}
+    },
+    {
+      "element": "Fe",
+      "tissue": "leaf",
+      "treatment_mean": 3200,
+      "control_mean": 2500,
+      "effect_pct": 28.00,
+      "n": 3,
+      "unit": "mg/kg dw",
+      "data_source": "Figure 4d",
+      "treatment_description": "700 ppm CO2",
+      "control_description": "370 ppm CO2",
+      "moderators": {"boron_level": "45 uM B (near-optimal)"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "root",
+      "treatment_mean": 1200,
+      "control_mean": 1600,
+      "effect_pct": -25.00,
+      "n": 3,
+      "unit": "mg/kg dw",
+      "data_source": "Figure 4b",
+      "treatment_description": "700 ppm CO2",
+      "control_description": "370 ppm CO2",
+      "moderators": {"boron_level": "45 uM B (near-optimal)"}
+    },
+    {
+      "element": "Cu",
+      "tissue": "root",
+      "treatment_mean": 400,
+      "control_mean": 500,
+      "effect_pct": -20.00,
+      "n": 3,
+      "unit": "mg/kg dw",
+      "data_source": "Figure 4c",
+      "treatment_description": "700 ppm CO2",
+      "control_description": "370 ppm CO2",
+      "moderators": {"boron_level": "45 uM B (near-optimal)"}
+    }
+  ]
+}

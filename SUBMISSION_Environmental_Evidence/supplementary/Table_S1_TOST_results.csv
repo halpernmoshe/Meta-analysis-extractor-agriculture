@@ -1,0 +1,21 @@
+Dataset,Margin_type,Margin_pp,Margin_label,N_obs,Mean_diff_pp,TOST_p,Result
+Loladze 2014 (mineral/CO2),Fixed,2.0,+/-2pp,413,0.0111,0.0,Equivalent
+Loladze 2014 (mineral/CO2),Fixed,3.0,+/-3pp,413,0.0111,0.0,Equivalent
+Loladze 2014 (mineral/CO2),Proportional (20%),2.477,+/-20% of |effect| = +/-2.48pp,413,0.0111,0.0,Equivalent
+Loladze 2014 (mineral/CO2),Proportional (10%),1.2385,+/-10% of |effect| = +/-1.24pp,413,0.0111,0.0,Equivalent
+Hui 2025 (Zn/wheat),Fixed,2.0,+/-2pp,319,0.1171,0.0,Equivalent
+Hui 2025 (Zn/wheat),Fixed,3.0,+/-3pp,319,0.1171,0.0,Equivalent
+Hui 2025 (Zn/wheat),Proportional (20%),10.0464,+/-20% of |effect| = +/-10.05pp,319,0.1171,0.0,Equivalent
+Hui 2025 (Zn/wheat),Proportional (10%),5.0232,+/-10% of |effect| = +/-5.02pp,319,0.1171,0.0,Equivalent
+Li 2022 (biostimulant/yield),Fixed,2.0,+/-2pp,117,-0.1472,0.0,Equivalent
+Li 2022 (biostimulant/yield),Fixed,3.0,+/-3pp,117,-0.1472,0.0,Equivalent
+Li 2022 (biostimulant/yield),Proportional (20%),3.4097,+/-20% of |effect| = +/-3.41pp,117,-0.1472,0.0,Equivalent
+Li 2022 (biostimulant/yield),Proportional (10%),1.7048,+/-10% of |effect| = +/-1.70pp,117,-0.1472,0.0,Equivalent
+Biochar 2024 (biochar/yield),Fixed,2.0,+/-2pp,254,-0.2184,0.0,Equivalent
+Biochar 2024 (biochar/yield),Fixed,3.0,+/-3pp,254,-0.2184,0.0,Equivalent
+Biochar 2024 (biochar/yield),Proportional (20%),3.2181,+/-20% of |effect| = +/-3.22pp,254,-0.2184,0.0,Equivalent
+Biochar 2024 (biochar/yield),Proportional (10%),1.6091,+/-10% of |effect| = +/-1.61pp,254,-0.2184,0.0,Equivalent
+Boldorini 2024 (predator/yield),Fixed,2.0,+/-2pp,46,1.6089,0.404745,Not equivalent
+Boldorini 2024 (predator/yield),Fixed,3.0,+/-3pp,46,1.6089,0.196464,Not equivalent
+Boldorini 2024 (predator/yield),Proportional (20%),9.4155,+/-20% of |effect| = +/-9.42pp,46,1.6089,8e-06,Equivalent
+Boldorini 2024 (predator/yield),Proportional (10%),4.7078,+/-10% of |effect| = +/-4.71pp,46,1.6089,0.030501,Equivalent

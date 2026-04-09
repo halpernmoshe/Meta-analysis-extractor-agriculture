@@ -1,0 +1,67 @@
+{
+  "topic": "notill_tillage",
+  "total_rows": 881,
+  "decision_counts": {
+    "keep": 418,
+    "exclude": 421,
+    "flag": 42
+  },
+  "major_exclusion_reasons": [
+    {
+      "reason": "topic_exclude_outcome",
+      "count": 168
+    },
+    {
+      "reason": "universal_hard_exclude_outcome",
+      "count": 72
+    },
+    {
+      "reason": "intervention_mismatch",
+      "count": 61
+    },
+    {
+      "reason": "missing_or_non_numeric_mean",
+      "count": 57
+    },
+    {
+      "reason": "ambiguous_tillage",
+      "count": 31
+    },
+    {
+      "reason": "outcome_mismatch",
+      "count": 30
+    },
+    {
+      "reason": "flagged_outcome",
+      "count": 24
+    },
+    {
+      "reason": "low_confidence",
+      "count": 18
+    },
+    {
+      "reason": "nonpositive_mean",
+      "count": 2
+    }
+  ],
+  "kept_rows": 418,
+  "kept_papers": 42,
+  "all_meta": {
+    "k": 439,
+    "pooled_pct": 2.71,
+    "ci_lo_pct": 1.96,
+    "ci_hi_pct": 3.48,
+    "I2": 95.3,
+    "tau2": 0.00432
+  },
+  "kept_meta": {
+    "k": 230,
+    "pooled_pct": 1.2,
+    "ci_lo_pct": 0.22,
+    "ci_hi_pct": 2.18,
+    "I2": 91.8,
+    "tau2": 0.003553
+  },
+  "benchmark_pct": -5.7,
+  "benchmark_source": "Pittelkow et al. 2015"
+}

@@ -1,42 +1,41 @@
 # Cover Letter
 
-Dear Editors of Research Synthesis Methods,
+Dear Editors of *Research Synthesis Methods*,
 
-I am pleased to submit for your consideration the manuscript entitled **"Multi-Model AI Consensus for Confidence-Stratified Data Extraction in Plant Science Meta-Analysis"** for publication in Research Synthesis Methods.
+I am pleased to submit the manuscript entitled **"Breaking the Extraction Bottleneck: A Single AI Agent Reproduces Five Published Meta-Analyses"** for consideration in *Research Synthesis Methods*.
 
-## Why this manuscript matters for RSM readers
+## Summary
 
-Data extraction remains the primary bottleneck in evidence synthesis, consuming 2-8 hours per paper with single-extractor error rates approaching 18%. While large language models (LLMs) have shown promise for categorical study characteristics (>90% accuracy), they achieve only 26-36% accuracy on the continuous quantitative outcomes that meta-analysis actually pools. This paper addresses this fundamental gap.
+This manuscript presents the first validation study of AI-extracted continuous quantitative data against multiple independent published meta-analysis datasets with formal equivalence testing. A single AI agent (Claude Opus 4.6) extracted effect-size data from source PDFs across five agricultural meta-analyses spanning diverse domains (CO2/plant minerals, zinc biofortification, biostimulants, biochar, predator biocontrol), totaling 1,382 matched observations from 138 papers. All five datasets passed TOST equivalence testing at +/-3 percentage points, and aggregate effects were reproduced within 0.12--2.76 pp of published values.
 
-## Key contributions
+## Key Contributions
 
-1. **First validation on agricultural/ecological data.** To our knowledge, this is the first AI extraction system validated against published plant science meta-analysis datasets, addressing the observation by Clark et al. (2025) that 17 of 19 generative AI systematic review studies focus on clinical/biomedical settings.
+1. **First multi-dataset equivalence validation of AI extraction.** Previous studies have evaluated AI extraction accuracy on single datasets or with informal metrics. This is the first to apply ICC, TOST with cluster-robust standard errors, and Bland-Altman analysis across five independent datasets, including a fully prospective holdout (biochar, r = 0.997).
 
-2. **The Three-Barrier Model with programmatic circularity breaking.** We introduce a conceptual framework decomposing extraction *validation* into three distinct challenges: the Reading Barrier (table comprehension), the Granularity Barrier (analytical sub-selection concordance), and the Provenance Barrier (reference-standard integrity). Crucially, the classification of discrepancy sources is performed by a fully programmatic algorithm using only observable data properties (zero-error fraction, direction agreement, MAE thresholds)---not by LLM auditors---breaking the "LLMs confirming LLMs" circularity that otherwise undermines validation credibility. This framework has immediate methodological implications for how future AI extraction benchmarks should be designed and interpreted.
+2. **LLM-driven alignment as a methodological contribution.** We demonstrate that most apparent extraction error in validation studies is actually alignment error -- the failure to correctly match extracted observations to reference-standard rows. LLM-driven alignment improved the Loladze correlation from r = 0.812 to r = 0.964 without changing any extracted values.
 
-3. **Multi-model consensus as a confidence predictor.** Building on Khan et al. (2025), we demonstrate that inter-model agreement predicts extraction accuracy with sufficient reliability to support automated triage: ~75% of observations are auto-validated at MAE < 5%, while the flagged minority concentrates 95% of large errors.
+3. **Ground-truth-free validation.** Cross-method agreement between the agent and an independent consensus pipeline (r > 0.93 on 1,889 observations) provides validation evidence that does not depend on any reference standard, addressing the circularity concern inherent in benchmark-based evaluation.
 
-4. **Formal equivalence testing.** We are the first AI extraction study to apply TOST, ICC, and Bland-Altman agreement analyses, providing a statistical framework appropriate for RSM's methodologically rigorous readership.
+4. **Source type transparency.** Every observation is labeled by data source (table vs. figure), revealing that table-sourced data is 5.5x more precise than figure-sourced data -- a finding with direct implications for reporting standards and extraction tool design.
 
-5. **Practical impact.** The pipeline reduces human extraction time by an estimated 70–75% at a cost of ~$0.37 per paper (January–March 2026 API pricing), shifting the bottleneck from manual data entry to automated triage.
+## Why *Research Synthesis Methods*
 
-## Validation scope
-
-The pipeline was validated against three published datasets totaling 921 matched observations across 92 papers:
-- Loladze 2014 (CO2/mineral concentrations, development case study: ICC = 0.870, r = 0.886, MAE = 4.36 pp on 413 unambiguous observations)
-- Hui et al. 2023 (zinc biofortification/wheat, independent holdout: ICC = 0.999, r = 0.999, MAE = 0.43 pp, 308 observations)
-- Li et al. 2022 (biostimulants/agronomic outcomes, cross-domain: ICC = 0.949, r = 0.951, MAE = 2.30 pp, 200 observations)
-
-Aggregate meta-analytic effects were reproduced to within 0.05-0.84 percentage points across all datasets. On the independent holdout, 81% of observations had zero error.
+RSM is the leading methodological journal for evidence synthesis, and this work addresses the journal's core readership: researchers developing and evaluating tools for systematic review and meta-analysis. The manuscript introduces a statistical validation framework (equivalence testing, cross-method agreement, source-type labeling) that is directly applicable to future evaluations of AI extraction tools. The findings are consistent with the 2025 Cochrane--Campbell--JBI--CEE joint position statement calling for domain-specific validation studies before AI tools can be recommended for routine use in evidence synthesis.
 
 ## Declarations
 
-This manuscript has not been published elsewhere and is not under consideration at another journal. All code, data, and validation scripts are publicly available. I confirm that appropriate ethical standards have been followed in the conduct of this research.
+- This manuscript has not been published elsewhere and is not under consideration at another journal.
+- There are no conflicts of interest to declare.
+- The author has no financial relationship with Anthropic, Google, or Moonshot AI beyond standard API usage.
+- All code, extracted data, and validation scripts are publicly available at [https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture](https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture).
+- Ground-truth datasets are from published open-access sources (Loladze 2014, eLife; Hui et al. 2025, Nature Communications; Li et al. 2022, Frontiers in Plant Science; Li et al. 2024, Scientific Data; Boldorini et al. 2024, Proc. R. Soc. B).
+- No human subjects were involved in this research.
 
-I believe this work will be of significant interest to RSM's readership and look forward to your consideration.
+I look forward to your consideration.
 
 Sincerely,
 
 Moshe Halpern
 Institute of Soil, Water and Environmental Sciences
-Agricultural Research Organization -- Volcani Center, Israel
+Agricultural Research Organization -- Volcani Center
+Rishon LeZion 7505101, Israel

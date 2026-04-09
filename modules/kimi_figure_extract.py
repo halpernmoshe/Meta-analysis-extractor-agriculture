@@ -38,6 +38,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
+load_dotenv(Path(__file__).resolve().parent.parent / ".env.kimi", override=False)
 
 
 @dataclass

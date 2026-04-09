@@ -1,0 +1,63 @@
+{
+  "review_id": "notill_vs_conventional_tillage",
+  "title": "No-till vs conventional tillage effects on crop yield",
+  "research_question": "Does no-till management affect crop yield compared to conventional tillage, and how does this vary by crop type and climate?",
+  "population_description": "Crop plants grown in field experiments comparing tillage systems",
+  "intervention_description": "No-till or zero-till management (seeds planted directly into undisturbed soil)",
+  "intervention_terms": [
+    "no-till",
+    "no till",
+    "zero tillage",
+    "zero-till",
+    "direct seeding",
+    "direct drilling",
+    "no-tillage",
+    "conservation tillage",
+    "NT",
+    "ZT",
+    "minimum tillage",
+    "reduced tillage",
+    "tillage system comparison",
+    "tillage effects on yield"
+  ],
+  "comparator_description": "Conventional tillage (moldboard plow, disk, chisel, or other inversion/intensive tillage)",
+  "comparator_terms": [
+    "conventional tillage",
+    "moldboard plow",
+    "plowed",
+    "tilled",
+    "disk tillage",
+    "inversion tillage"
+  ],
+  "outcome_description": "Crop grain yield per unit area",
+  "outcome_terms": [
+    "yield",
+    "grain yield",
+    "crop yield",
+    "seed yield",
+    "productivity",
+    "kg/ha",
+    "Mg/ha",
+    "t/ha",
+    "bu/acre"
+  ],
+  "expected_direction": "negative",
+  "tc_confusion_warnings": [
+    "Treatment is NO-TILL (less disturbance), Control is CONVENTIONAL TILLAGE (more disturbance)",
+    "Reduced tillage is NOT no-till - if both exist, compare no-till vs conventional",
+    "Some papers have 3+ tillage levels - extract the no-till vs most intensive tillage comparison",
+    "Strip-till is intermediate - do not include as no-till unless paper explicitly calls it no-till",
+    "Long-term trials may show different effects in early vs late years - extract each year separately"
+  ],
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY crop-year-site combination separately",
+    "2. Treatment = NO-TILL; Control = CONVENTIONAL TILLAGE (most intensive tillage in the study)",
+    "3. If multiple crops tested, extract EACH crop vs control",
+    "4. If reduced tillage AND no-till both present, extract no-till vs conventional (not reduced vs conventional)",
+    "5. Get variance (SE/SD/LSD) and sample size (n)",
+    "6. Record crop species and years since no-till adoption",
+    "7. Record residue management practice"
+  ],
+  "benchmark_source": "Pittelkow et al. 2015 (Nature 517:365-368)",
+  "benchmark_notes": "Overall -5.7%; Wheat -2.6%; Maize -7.6%; Rice -7.5%; Soybean +0.3%; Oilseed rape -9.0%"
+}

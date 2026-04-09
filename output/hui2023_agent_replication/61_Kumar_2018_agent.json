@@ -1,0 +1,9 @@
+{
+  "paper_id": "61_Kumar_2018",
+  "title": "Genome-wide association study for grain Zn concentration in wheat (actually Velu et al. 2018)",
+  "authors": "Velu, G. et al.",
+  "year": 2018,
+  "species": "Triticum aestivum",
+  "consensus_observations": [],
+  "notes": "Population-level GWAS study of 330 wheat lines. Reports Zn concentration distributions across environments but no simple control vs treatment Zn fertilization comparisons. Not amenable to treatment/control extraction for meta-analysis."
+}

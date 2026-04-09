@@ -1,0 +1,150 @@
+{
+  "paper_id": "027_Chen_2021",
+  "title": "Effects of Seaweed Extracts on the Growth, Physiological Activity, Cane Yield and Sucrose Content of Sugarcane in China",
+  "authors": "Chen D, Zhou W, Yang J, Ao J, Huang Y, Shen D, Jiang Y, Huang Z, Shen H",
+  "year": 2021,
+  "species": "Saccharum officinarum L.",
+  "crop": "sugarcane",
+  "experiment_type": "field",
+  "location": "China (Suixi and Wengyuan)",
+  "consensus_observations": [
+    {
+      "outcome": "cane yield",
+      "treatment_mean": 109.03,
+      "control_mean": 99.87,
+      "effect_pct": 9.17,
+      "n": 4,
+      "unit": "t/hm2",
+      "variance_value": 1.61,
+      "variance_type": "SE",
+      "data_source": "Table 7",
+      "treatment_description": "SE at seedling + elongation stages (SE2), 3 L/ha",
+      "control_description": "Water spray control (CK)",
+      "moderators": {
+        "crop": "sugarcane",
+        "cultivar": "ROC22",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Seaweed extract (kelp enzymatic hydrolysate)",
+        "application_method": "foliar (aerial)",
+        "application_rate": "3 L/ha diluted 100x",
+        "site": "Suixi",
+        "year_range": "2017-2019 average"
+      }
+    },
+    {
+      "outcome": "cane yield",
+      "treatment_mean": 108.82,
+      "control_mean": 99.87,
+      "effect_pct": 8.96,
+      "n": 4,
+      "unit": "t/hm2",
+      "variance_value": 2.98,
+      "variance_type": "SE",
+      "data_source": "Table 7",
+      "treatment_description": "SE at seedling + elongation + mature stages (SE3), 3 L/ha",
+      "control_description": "Water spray control (CK)",
+      "moderators": {
+        "crop": "sugarcane",
+        "cultivar": "ROC22",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Seaweed extract (kelp enzymatic hydrolysate)",
+        "application_method": "foliar (aerial)",
+        "application_rate": "3 L/ha diluted 100x",
+        "site": "Suixi",
+        "year_range": "2017-2019 average"
+      }
+    },
+    {
+      "outcome": "cane yield",
+      "treatment_mean": 102.54,
+      "control_mean": 99.87,
+      "effect_pct": 2.67,
+      "n": 4,
+      "unit": "t/hm2",
+      "variance_value": 1.75,
+      "variance_type": "SE",
+      "data_source": "Table 7",
+      "treatment_description": "SE at seedling stage only (SE1), 3 L/ha",
+      "control_description": "Water spray control (CK)",
+      "moderators": {
+        "crop": "sugarcane",
+        "cultivar": "ROC22",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Seaweed extract (kelp enzymatic hydrolysate)",
+        "application_method": "foliar (aerial)",
+        "application_rate": "3 L/ha diluted 100x",
+        "site": "Suixi",
+        "year_range": "2017-2019 average"
+      }
+    },
+    {
+      "outcome": "cane yield",
+      "treatment_mean": 102.21,
+      "control_mean": 93.92,
+      "effect_pct": 8.83,
+      "n": 4,
+      "unit": "t/hm2",
+      "variance_value": 1.24,
+      "variance_type": "SE",
+      "data_source": "Table 7",
+      "treatment_description": "SE at seedling + elongation stages (SE2), 3 L/ha",
+      "control_description": "Water spray control (CK)",
+      "moderators": {
+        "crop": "sugarcane",
+        "cultivar": "Yuetang60",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Seaweed extract (kelp enzymatic hydrolysate)",
+        "application_method": "foliar (aerial)",
+        "application_rate": "3 L/ha diluted 100x",
+        "site": "Wengyuan",
+        "year_range": "2017-2019 average"
+      }
+    },
+    {
+      "outcome": "cane yield",
+      "treatment_mean": 102.87,
+      "control_mean": 93.92,
+      "effect_pct": 9.53,
+      "n": 4,
+      "unit": "t/hm2",
+      "variance_value": 0.93,
+      "variance_type": "SE",
+      "data_source": "Table 7",
+      "treatment_description": "SE at seedling + elongation + mature stages (SE3), 3 L/ha",
+      "control_description": "Water spray control (CK)",
+      "moderators": {
+        "crop": "sugarcane",
+        "cultivar": "Yuetang60",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Seaweed extract (kelp enzymatic hydrolysate)",
+        "application_method": "foliar (aerial)",
+        "application_rate": "3 L/ha diluted 100x",
+        "site": "Wengyuan",
+        "year_range": "2017-2019 average"
+      }
+    },
+    {
+      "outcome": "cane yield",
+      "treatment_mean": 97.71,
+      "control_mean": 93.92,
+      "effect_pct": 4.04,
+      "n": 4,
+      "unit": "t/hm2",
+      "variance_value": 2.92,
+      "variance_type": "SE",
+      "data_source": "Table 7",
+      "treatment_description": "SE at seedling stage only (SE1), 3 L/ha",
+      "control_description": "Water spray control (CK)",
+      "moderators": {
+        "crop": "sugarcane",
+        "cultivar": "Yuetang60",
+        "biostimulant_type": "SWE",
+        "biostimulant_product": "Seaweed extract (kelp enzymatic hydrolysate)",
+        "application_method": "foliar (aerial)",
+        "application_rate": "3 L/ha diluted 100x",
+        "site": "Wengyuan",
+        "year_range": "2017-2019 average"
+      }
+    }
+  ]
+}

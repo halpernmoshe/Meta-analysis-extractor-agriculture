@@ -1,0 +1,283 @@
+[
+  {
+    "topic": "organic_yield_gap",
+    "benchmark_pct": -19.2,
+    "benchmark_source": "Ponisio et al. 2015",
+    "before": {
+      "n_rows": 378,
+      "n_papers": 26,
+      "dl_re": {
+        "k": 199,
+        "pooled_pct": -9.46,
+        "ci_lo_pct": -11.21,
+        "ci_hi_pct": -7.67,
+        "I2": 94.5
+      },
+      "simple_mean_pct": -8.81
+    },
+    "after_codex": {
+      "n_rows": 266,
+      "n_papers": 21,
+      "n_flagged": 31,
+      "n_excluded": 293,
+      "retention_pct": 45.1,
+      "dl_re": {
+        "k": 128,
+        "pooled_pct": -4.89,
+        "ci_lo_pct": -8.5,
+        "ci_hi_pct": -1.14,
+        "I2": 94.7
+      },
+      "simple_mean_pct": 4.79,
+      "diff_vs_benchmark": 14.31,
+      "direction_match": true,
+      "ci_overlap": false
+    },
+    "benchmark_aligned_subset": {
+      "n_rows": 171,
+      "n_papers": 15,
+      "dl_re": {
+        "k": 55,
+        "pooled_pct": -5.11,
+        "ci_lo_pct": -10.05,
+        "ci_hi_pct": 0.11,
+        "I2": 96.6
+      },
+      "simple_mean_pct": 8.03,
+      "diff_vs_benchmark": 14.09
+    }
+  },
+  {
+    "topic": "notill_tillage",
+    "benchmark_pct": -5.7,
+    "benchmark_source": "Pittelkow et al. 2015",
+    "before": {
+      "n_rows": 605,
+      "n_papers": 44,
+      "dl_re": {
+        "k": 332,
+        "pooled_pct": 1.18,
+        "ci_lo_pct": 0.43,
+        "ci_hi_pct": 1.93,
+        "I2": 94.7
+      },
+      "simple_mean_pct": 2.87
+    },
+    "after_codex": {
+      "n_rows": 418,
+      "n_papers": 42,
+      "n_flagged": 42,
+      "n_excluded": 421,
+      "retention_pct": 47.4,
+      "dl_re": {
+        "k": 230,
+        "pooled_pct": 1.2,
+        "ci_lo_pct": 0.22,
+        "ci_hi_pct": 2.18,
+        "I2": 91.8
+      },
+      "simple_mean_pct": 10.93,
+      "diff_vs_benchmark": 6.9,
+      "direction_match": false,
+      "ci_overlap": false
+    },
+    "benchmark_aligned_subset": {
+      "n_rows": 60,
+      "n_papers": 12,
+      "dl_re": {
+        "k": 35,
+        "pooled_pct": 6.72,
+        "ci_lo_pct": 3.91,
+        "ci_hi_pct": 9.61,
+        "I2": 72.5
+      },
+      "simple_mean_pct": 31.6,
+      "diff_vs_benchmark": 12.42
+    }
+  },
+  {
+    "topic": "mycorrhiza_yield",
+    "benchmark_pct": 23.0,
+    "benchmark_source": "Hoeksema et al. 2010",
+    "before": {
+      "n_rows": 175,
+      "n_papers": 16,
+      "dl_re": {
+        "k": 124,
+        "pooled_pct": 32.93,
+        "ci_lo_pct": 23.52,
+        "ci_hi_pct": 43.06,
+        "I2": 99.6
+      },
+      "simple_mean_pct": 36.06
+    },
+    "after_codex": {
+      "n_rows": 256,
+      "n_papers": 19,
+      "n_flagged": 32,
+      "n_excluded": 300,
+      "retention_pct": 43.5,
+      "dl_re": {
+        "k": 169,
+        "pooled_pct": 29.26,
+        "ci_lo_pct": 22.9,
+        "ci_hi_pct": 35.95,
+        "I2": 99.5
+      },
+      "simple_mean_pct": 49.21,
+      "diff_vs_benchmark": 6.26,
+      "direction_match": true,
+      "ci_overlap": true
+    },
+    "benchmark_aligned_subset": {
+      "n_rows": 59,
+      "n_papers": 4,
+      "dl_re": {
+        "k": 50,
+        "pooled_pct": 74.69,
+        "ci_lo_pct": 58.53,
+        "ci_hi_pct": 92.51,
+        "I2": 99.5
+      },
+      "simple_mean_pct": 79.11,
+      "diff_vs_benchmark": 51.69
+    }
+  },
+  {
+    "topic": "legume_rotation",
+    "benchmark_pct": 20.0,
+    "benchmark_source": "Zhao et al. 2022",
+    "before": {
+      "n_rows": 421,
+      "n_papers": 28,
+      "dl_re": {
+        "k": 140,
+        "pooled_pct": 21.11,
+        "ci_lo_pct": 15.22,
+        "ci_hi_pct": 27.3,
+        "I2": 98.5
+      },
+      "simple_mean_pct": 29.54
+    },
+    "after_codex": {
+      "n_rows": 363,
+      "n_papers": 26,
+      "n_flagged": 88,
+      "n_excluded": 91,
+      "retention_pct": 67.0,
+      "dl_re": {
+        "k": 200,
+        "pooled_pct": 17.66,
+        "ci_lo_pct": 13.24,
+        "ci_hi_pct": 22.25,
+        "I2": 99.5
+      },
+      "simple_mean_pct": 19.23,
+      "diff_vs_benchmark": -2.34,
+      "direction_match": true,
+      "ci_overlap": true
+    },
+    "benchmark_aligned_subset": {
+      "n_rows": 58,
+      "n_papers": 11,
+      "dl_re": {
+        "k": 37,
+        "pooled_pct": 17.47,
+        "ci_lo_pct": 12.05,
+        "ci_hi_pct": 23.14,
+        "I2": 91.4
+      },
+      "simple_mean_pct": 17.86,
+      "diff_vs_benchmark": -2.53
+    }
+  },
+  {
+    "topic": "biochar_crop_yield",
+    "benchmark_pct": 16.0,
+    "benchmark_source": "Ye et al. 2020",
+    "before": {
+      "n_rows": 348,
+      "n_papers": 25,
+      "dl_re": {
+        "k": 172,
+        "pooled_pct": 9.62,
+        "ci_lo_pct": 7.8,
+        "ci_hi_pct": 11.47,
+        "I2": 88.1
+      },
+      "simple_mean_pct": 20.87
+    },
+    "after_codex": {
+      "n_rows": 332,
+      "n_papers": 19,
+      "n_flagged": 12,
+      "n_excluded": 285,
+      "retention_pct": 52.8,
+      "dl_re": {
+        "k": 181,
+        "pooled_pct": 6.66,
+        "ci_lo_pct": 4.43,
+        "ci_hi_pct": 8.94,
+        "I2": 93.7
+      },
+      "simple_mean_pct": 21.04,
+      "diff_vs_benchmark": -9.34,
+      "direction_match": true,
+      "ci_overlap": false
+    },
+    "benchmark_aligned_subset": {
+      "n_rows": 26,
+      "n_papers": 3,
+      "dl_re": {
+        "k": 14,
+        "pooled_pct": 23.77,
+        "ci_lo_pct": 18.51,
+        "ci_hi_pct": 29.27,
+        "I2": 90.0
+      },
+      "simple_mean_pct": 21.18,
+      "diff_vs_benchmark": 7.77
+    }
+  },
+  {
+    "topic": "intercropping_yield",
+    "benchmark_pct": 22.0,
+    "benchmark_source": "Yu et al. 2015",
+    "before": {
+      "n_rows": 92,
+      "n_papers": 5,
+      "dl_re": {
+        "k": 59,
+        "pooled_pct": -1.62,
+        "ci_lo_pct": -6.19,
+        "ci_hi_pct": 3.17,
+        "I2": 95.9
+      },
+      "simple_mean_pct": 18.77
+    },
+    "after_codex": {
+      "n_rows": 194,
+      "n_papers": 6,
+      "n_flagged": 24,
+      "n_excluded": 12,
+      "retention_pct": 84.3,
+      "dl_re": {
+        "k": 155,
+        "pooled_pct": -3.09,
+        "ci_lo_pct": -6.52,
+        "ci_hi_pct": 0.46,
+        "I2": 96.5
+      },
+      "simple_mean_pct": 10.26,
+      "diff_vs_benchmark": -25.09,
+      "direction_match": false,
+      "ci_overlap": false
+    },
+    "benchmark_aligned_subset": {
+      "n_rows": 9,
+      "n_papers": 1,
+      "dl_re": null,
+      "simple_mean_pct": 107.78
+    }
+  }
+]

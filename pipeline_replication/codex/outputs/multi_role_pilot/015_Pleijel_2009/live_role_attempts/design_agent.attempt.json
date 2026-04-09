@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "provider": "kimi",
+  "role_name": "design_agent",
+  "duration_seconds": 59.82873606681824,
+  "claims": 2,
+  "constraints": 10,
+  "contradictions": 0,
+  "prompt_tokens": 2488,
+  "completion_tokens": 6705,
+  "backup_path": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\design_agent.prelive.json",
+  "attempt_path": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\live_role_attempts\\design_agent.attempt.json"
+}

@@ -155,6 +155,11 @@ pipeline_replication/**
 !FINAL_SUBMISSION_2026-03-08/PAPER_FINAL_v16.md
 !FINAL_SUBMISSION_2026-03-08/REPRODUCE.md
 
+# ===== Allow: Environmental Evidence submission (April 2026) =====
+!SUBMISSION_Environmental_Evidence/
+!SUBMISSION_Environmental_Evidence/**
+!SUBMISSION_Environmental_Evidence/**/*.docx
+
 # ===== Allow: output subdirectories (figures, stats, extraction results) =====
 !output/
 !output/paper_figures/

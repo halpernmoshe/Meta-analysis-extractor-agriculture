@@ -1,0 +1,26 @@
+{
+  "paper_id": "Yilmaz_1998",
+  "title": "Effect of seed zinc content on grain yield and zinc concentration of wheat grown in zinc-deficient calcareous soils",
+  "authors": ["Yilmaz A", "Ekiz H", "Gultekin I", "Torun B", "Barut H", "Karanlik S", "Cakmak I"],
+  "year": 1998,
+  "species": "Triticum aestivum cv. Atay 85",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 13.2,
+      "control_mean": 9.8,
+      "effect_pct": 34.69,
+      "n": 6,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "23 kg Zn ha-1 soil application, rainfed, mean of 3 seed Zn levels",
+      "control_description": "0 kg Zn ha-1, rainfed, mean of 3 seed Zn levels",
+      "moderators": {
+        "zn_application": "soil",
+        "zn_rate": "23 kg Zn ha-1",
+        "irrigation": "rainfed"
+      }
+    }
+  ]
+}

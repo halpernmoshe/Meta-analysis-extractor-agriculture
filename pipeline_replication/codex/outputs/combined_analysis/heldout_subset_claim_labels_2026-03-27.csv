@@ -1,0 +1,75 @@
+claim_key,element,initial_label,label_confidence,label_rationale,paper_id,tissue
+001_Ma_2007::Ca::grain,Ca,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,001_Ma_2007,grain
+001_Ma_2007::Fe::grain,Fe,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,001_Ma_2007,grain
+001_Ma_2007::S::grain,S,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,001_Ma_2007,grain
+001_Ma_2007::Zn::grain,Zn,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,001_Ma_2007,grain
+006_Azam_2013::C::root,C,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Ca::root,Ca,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Cd::root,Cd,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Cr::root,Cr,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Cu::root,Cu,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Fe::root,Fe,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::H::root,H,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::K::root,K,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Mg::root,Mg,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Mn::root,Mn,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::N::root,N,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Ni::root,Ni,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Pb::root,Pb,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::S::root,S,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+006_Azam_2013::Zn::root,Zn,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,006_Azam_2013,root
+008_Campbell_2002::P::leaf,P,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,008_Campbell_2002,leaf
+008_Campbell_2002::P::root,P,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,008_Campbell_2002,root
+008_Campbell_2002::P::whole,P,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,008_Campbell_2002,whole plant
+014_Lieffering_2004::B::grain,B,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Ca::grain,Ca,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Co::grain,Co,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Cu::grain,Cu,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Fe::grain,Fe,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::K::grain,K,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Mg::grain,Mg,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Mn::grain,Mn,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Mo::grain,Mo,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::N::grain,N,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Na::grain,Na,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::P::grain,P,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::S::grain,S,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Se::grain,Se,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+014_Lieffering_2004::Zn::grain,Zn,likely_alignment_or_structure_problem,medium,"Coverage-limited paper, but this specific claim shows disagreement or wrong-tissue/arm structure.",014_Lieffering_2004,grain
+018_Al-Rawahy_2013::Ca::leaf,Ca,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,018_Al-Rawahy_2013,leaf
+018_Al-Rawahy_2013::Fe::leaf,Fe,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,018_Al-Rawahy_2013,leaf
+018_Al-Rawahy_2013::K::leaf,K,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,018_Al-Rawahy_2013,leaf
+018_Al-Rawahy_2013::Mg::leaf,Mg,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,018_Al-Rawahy_2013,leaf
+018_Al-Rawahy_2013::N::leaf,N,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,018_Al-Rawahy_2013,leaf
+018_Al-Rawahy_2013::P::leaf,P,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,018_Al-Rawahy_2013,leaf
+018_Al-Rawahy_2013::Zn::leaf,Zn,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,018_Al-Rawahy_2013,leaf
+022_Blank_2011::C::whole,C,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,022_Blank_2011,shoot
+022_Blank_2011::Ca::whole,Ca,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,022_Blank_2011,shoot
+022_Blank_2011::K::whole,K,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,022_Blank_2011,shoot
+022_Blank_2011::Mg::whole,Mg,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,022_Blank_2011,shoot
+022_Blank_2011::Mn::whole,Mn,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,022_Blank_2011,shoot
+022_Blank_2011::N::whole,N,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,022_Blank_2011,shoot
+022_Blank_2011::P::whole,P,likely_extraction_coverage_problem,high,Report explicitly marks the paper as skipped / zero-match / non-comparable concentration data.,022_Blank_2011,shoot
+025_Guo_2011::Cd::grain,Cd,unclear,low,Claim appears only in disagreement structure without stable consensus support.,025_Guo_2011,grain
+025_Guo_2011::Cd::whole,Cd,unclear,low,Claim appears only in disagreement structure without stable consensus support.,025_Guo_2011,shoot
+025_Guo_2011::Cu::grain,Cu,unclear,low,Claim appears only in disagreement structure without stable consensus support.,025_Guo_2011,grain
+025_Guo_2011::Cu::whole,Cu,unclear,low,Claim appears only in disagreement structure without stable consensus support.,025_Guo_2011,shoot
+032_Kanowski_2001::Ca::leaf,Ca,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,032_Kanowski_2001,leaf
+032_Kanowski_2001::K::leaf,K,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,032_Kanowski_2001,leaf
+032_Kanowski_2001::N::leaf,N,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,032_Kanowski_2001,leaf
+032_Kanowski_2001::Na::leaf,Na,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,032_Kanowski_2001,leaf
+032_Kanowski_2001::P::leaf,P,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,032_Kanowski_2001,leaf
+058_ONeill_1987::Al::whole,Al,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::B::whole,B,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::Ba::whole,Ba,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,058_ONeill_1987,whole plant
+058_ONeill_1987::Ca::whole,Ca,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,058_ONeill_1987,whole plant
+058_ONeill_1987::Cu::whole,Cu,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::Fe::whole,Fe,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,058_ONeill_1987,whole plant
+058_ONeill_1987::K::whole,K,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::Mg::whole,Mg,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,058_ONeill_1987,whole plant
+058_ONeill_1987::Mn::whole,Mn,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::N::whole,N,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::P::whole,P,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::S::whole,S,clean_support,medium,Consensus-backed claim with no recorded Claude/Kimi disagreement.,058_ONeill_1987,whole plant
+058_ONeill_1987::Sr::whole,Sr,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,058_ONeill_1987,whole plant
+058_ONeill_1987::Zn::whole,Zn,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity raise alignment risk.,058_ONeill_1987,whole plant

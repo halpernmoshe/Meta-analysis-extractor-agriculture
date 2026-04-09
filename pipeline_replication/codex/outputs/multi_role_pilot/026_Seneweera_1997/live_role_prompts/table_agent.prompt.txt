@@ -1,0 +1,231 @@
+Role: table_agent
+
+Task:
+Read the full paper and extract only table-grounded numeric claims: means, variance, n, source table/row, and direct treatment-control contrasts from tables.
+
+Paper Context:
+- paper_id: 026_Seneweera_1997
+- pdf_paths: [
+  "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\input\\026_Seneweera_1997.pdf",
+  "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validated\\026_Seneweera_1997.pdf",
+  "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validation_input\\026_Seneweera_1997.pdf",
+  "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\mineral_validation_input\\026_Seneweera_1997.pdf"
+]
+- report_path: C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\loladze_combined_51\per_paper\026_Seneweera_1997_report.md
+
+Report Excerpt:
+# Extraction Quality Report: 026_Seneweera_1997
+
+**Paper:** Seneweera & Conroy (1997). Growth, grain yield and quality of rice (*Oryza sativa* L.) in response to elevated CO2 and phosphorus nutrition. *Soil Science and Plant Nutrition*, 43(sup1), 1131-1136.
+
+**Summary:** 28/34 GT rows matched (82.4% capture), MAE = 9.6% (lnRR units: 0.0964). The headline MAE is strongly inflated by tissue mismatches for Ca and Zn. When those 12 matched-but-wrong-tissue rows are excluded, MAE for the 16 correctly matched rows is 4.8%.
+
+---
+
+## 1. Paper Design
+
+**Species:** Rice (*Oryza sativa* L. cv. Jarrah), early-maturing Australian cultivar.
+
+**CO2 levels:** 350 vs 700 µL CO2 L-1, maintained in controlled growth chambers.
+
+**Phosphorus factorial:** 6 P addition levels (0, 30, 60, 120, 240, 480 mg CaHPO4·2H2O kg-1 soil). 10 pots per P level, 5 assigned to each CO2 chamber. n=5 replicates per cell.
+
+**Growth conditions:** 6 kg soil per pot (8L, 40×8 cm); flooded; 12 h light at 28°C; 21°C dark; N added as urea.
+
+**Harvests:**
+- **First harvest (56 DAP, maximum tillering):** shoots separated into leaves (blades) and sheaths, frozen in liquid N, freeze-dried. Chemical analysis of N, P, Ca, Zn, starch in both fractions.
+- **Final harvest (139-146 DAP, grain maturity):** 700 µL treatment harvested at 139 DAP, 350 µL at 146 DAP. Shoot separated into leaves, stems, panicles. Grain chemical analysis for N and P (Table 2). Grain Ca and Zn reported graphically in Figures 3b and 4a. Grain Fe reported graphically in Figure 4b.
+
+**Key design complexity:** Full 2 × 6 factorial (CO2 × P level), two harvest times, two tissue types at first harvest (blades vs sheaths), multiple grain fractions at final harvest.
+
+**Variance:** LSD (p ≤ 0.05) reported for Table 2 grain data (LSD = 1.0 g/kg for N, 0.3 g/kg for P). No variance reported in Table 1 (leaf data). Figures show standard errors as error bars but values are not tabulated.
+
+**PDF quality:** Scanned document with image tables. Recon flagged: SCANNED, IMAGE-TABLES, VAR-UNCLEAR. Estimated difficulty: HARD.
+
+---
+
+## 2. Loladze GT
+
+The Loladze et al. (2014) ground truth contains **34 rows** for this paper, drawn from two distinct sets of data sources:
+
+| GT group | Source | Tissue | Element | P levels | Rows |
+|---|---|---|---|---|---|
+| Blade average | Table 1 (averaged over 6 P levels) | blades | N, P, Ca, Zn | pooled | 4 |
+| Grain N | Table 2 | grain | N | 0,30,60,120,240,480 | 6 |
+| Grain P | Table 2 | grain | P | 0,30,60,120,240,480 | 6 |
+| Grain Ca | Figure 3b | grain | Ca | 0,30,60,120,240,480 | 6 |
+| Grain Zn | Figure 4a | grain | Zn | 0,30,60,120,240,480 | 6 |
+| Grain Fe | Figure 4b | grain | Fe | 0,30,60,120,240,480 | 6 |
+| **Total** | | | | | **34** |
+
+**Key GT characteristics for grain Ca and Zn:** Loladze read Ca and Zn grain concentrations from Figures 3b and 4a respectively. Grain Ca in Figure 3b is expressed in percent (%) and takes values around 0.054-0.064% (control) and 0.054-0.061% (treatment), corresponding to lnRR values of approximately 0.002 to 0.054 — very small effects near zero. Grain Zn in Figure 4a takes values of approximately 20-35 mg/kg (control) and 18-30 mg/kg (treatment), giving lnRR values of approximately -0.02 to -0.15.
+
+**GT blade averages:** Loladze pooled across all 6 P treatments for the 56 DAP blade data, producing one average lnRR per element. This pooling is noted in the `info` column as "avg over 6 P treatments".
+
+---
+
+## 3. AI Extraction
+
+The consensus used Claude and Kimi (Gemini produced 0 observations). Claude and Kimi agreed on all 36 consensus observations (no tiebreaker needed).
+
+**AI extracted 36 observations across two tissue/source combinations:**
+
+| AI group | Source | Tissue label | Element | P levels | Obs |
+|---|---|---|---|---|---|
+| Leaf per P-level | Table 1 (blades section) | leaf | N, P, Ca, Zn | 0,30,60,120,240,480 | 24 |
+| Grain N | Table 2 | grain | N | 0,30,60,120,240,480 | 6 |
+| Grain P | Table 2 | grain | P | 0,30,60,120,240,480 | 6 |
+| **Total** | | | | | **36** |
+
+**What AI did not extract:**
+- Grain Ca (Figure 3b) — never extracted; figures were not digitized
+- Grain Zn (Figure 4a) — never extracted; figures were not digitized
+- Grain Fe (Figure 4b) — never extracted; figures were not digitized
+- Sheath data from Table 1 (only Kimi extracted sheaths, in the kimi_only disagreements, but these were excluded from consensus as Claude-only extractions were the base)
+
+**Variance:** AI correctly identified LSD for grain Table 2 observations (LSD = 1.0 for N, 0.3 for P). No variance extracted for leaf observations (correctly noted as absent in Table 1).
+
+**Verification flags:** 30 flags total — 15 direction failures, 9 T/C swap warnings, 22 GRIM failures, 12 variance_type flags. The direction and swap flags are concentrated in the leaf Ca and leaf P observations where elevated CO2 caused unexpected positive Ca effects and context-dependent P effects across the P gradient.
+
+---
+
+## 4. Matched vs Unmatched + Error Analysis
+
+### 4.1 The 6 Unmatched GT Rows
+
+The 6 unmatched GT rows are the **grain Fe observations at 6 P levels (Figure 4b)**. The AI never attempted to extract figure-based data, so Fe was completely absent from the consensus output. There was no AI candidate to match against.
+
+### 4.2 Match Table for the 28 Matched Rows
+
+**Blade averages (4 rows — correct tissue, good matches):**
+
+| Element | AI lnRR | GT lnRR | Error |
+|---|---|---|---|
+| N | -0.1177 | -0.0972 | 0.0205 |
+| P | -0.0010 | +0.0448 | 0.0458 |
+| Ca | +0.1469 | +0.1639 | 0.0170 |
+| Zn | -0.0102 | -0.0252 | 0.0150 |
+
+MAE for blade averages = 0.025. Note: the matcher averaged the AI's 6 per-P-level leaf observations to produce the lnRR used for these comparisons (n_candidates = 6 for N, P, Ca, Zn blade rows).
+
+**Grain N (6 rows — correct tissue, good matches):**
+
+| P level (mg/kg) | AI lnRR | GT lnRR | Error |
+|---|---|---|---|
+| 0 | -0.1177 | -0.2222 | 0.1045 |
+| 30 | -0.1305 | -0.1163 | 0.0142 |
+| 60 | -0.0976 | -0.1176 | 0.0200 |
+| 120 | -0.0934 | -0.1579 | 0.0645 |
+| 240 | -0.1944 | -0.2222 | 0.0278 |
+| 480 | -0.0448 | 0.0000 | 0.0448 |
+
+MAE = 0.046. Direction consistently correct (elevated CO2 reduces grain N). The larger error at P=0 may reflect that the AI averaged the leaf N lnRR (-0.118) while GT used grain N directly, but both models agree the value is around -0.118.
+
+**Grain P (6 rows — correct tissue, moderate accuracy):**
+
+| P level (mg/kg) | AI lnRR | GT lnRR | Error |
+|---|---|---|---|
+| 0 | -0.0010 | +0.0439 | 0.0449 |
+| 30 | +0.0864 | -0.0090 | 0.0954 |
+| 60 | -0.0843 | -0.0972 | 0.0129 |
+| 120 | -0.1022 | -0.2043 | 0.1021 |
+| 240 | +0.0203 | -0.0771 | 0.0974 |
+| 480 | -0.0039 | +0.0323 | 0.0362 |
+
+MAE = 0.065. Direction agreement is only 3/6 (P=0, P=30, P=240 disagree in sign). Grain P under elevated CO2 shows non-monotonic behavior across the P gradient — effects close to zero and highly variable, making accurate extraction inherently difficult.
+
+**Grain Ca (6 rows — WRONG TISSUE MATCHED, large errors):**
+
+| P level (mg/kg) | AI lnRR (leaf blade) | GT lnRR (grain, Fig 3b) | Error |
+|---|---|---|---|
+| 0 | +0.1469 | +0.0190 | 0.1279 |
+| 30 | +0.0468 | +0.0300 | 0.0168 |
+| 60 | +0.1862 | +0.0320 | 0.1542 |
+| 120 | +0.1057 | +0.0020 | 0.1037 |
+| 240 | +0.1673 | +0.0170 | 0.1503 |
+| 480 | +0.3616 | +0.0540 | 0.3076 |
+
+MAE = 0.143. The AI extracted leaf blade Ca values (g/kg scale, from Table 1), not grain Ca (% scale, from Figure 3b). The validator had no grain Ca AI candidates and fell back to the leaf Ca observations. Direction happens to be correct (elevated CO2 consistently increased Ca in both tissues), but magnitudes are very different: grain Ca shows effects of 2-5% while leaf blade Ca shows effects of 1-36%.
+
+**Grain Zn (6 rows — WRONG TISSUE MATCHED, large errors):**
+
+| P level (mg/kg) | AI lnRR (leaf blade) | GT lnRR (grain, Fig 4a) | Error |
+|---|---|---|---|
+| 0 | -0.0102 | -0.1240 | 0.1138 |
+| 30 | -0.1286 | -0.0780 | 0.0506 |
+| 60 | +0.3400 | -0.1120 | 0.4520 |
+| 120 |
+
+Output Requirements:
+Return strict JSON matching this schema shape. Preserve the role and paper_id.
+{
+  "paper_id": "026_Seneweera_1997",
+  "role": "table_agent",
+  "claims": [
+    {
+      "claim_id": "seneweera_table_1",
+      "claim_key": "target::blade_table_average",
+      "claim_text": "Table extraction correctly supports blade chemistry and blade-average benchmark rows from the first harvest.",
+      "element": "N/P/Ca/Zn",
+      "outcome": "blade_concentration",
+      "tissue": "blades",
+      "arm": "350_vs_700_co2",
+      "timepoint": "56 DAP pooled over P",
+      "direction": "mixed",
+      "unit": "table values",
+      "source_channel": "table",
+      "source_locator": "Table 1",
+      "benchmark_comparable": true,
+      "confidence": "high",
+      "evidence_quote": "Blade averages are correct tissue, good matches, MAE about 0.025.",
+      "notes": "This is the successful table-side benchmark family."
+    },
+    {
+      "claim_id": "seneweera_table_2",
+      "claim_key": "target::grain_np_table",
+      "claim_text": "Table extraction also correctly supports grain N and grain P rows from the final-harvest grain table.",
+      "element": "N/P",
+      "outcome": "grain_concentration",
+      "tissue": "grain",
+      "arm": "350_vs_700_co2",
+      "timepoint": "final harvest by P level",
+      "direction": "mixed",
+      "unit": "table values with LSD",
+      "source_channel": "table",
+      "source_locator": "Table 2",
+      "benchmark_comparable": true,
+      "confidence": "high",
+      "evidence_quote": "AI correctly identified LSD for grain Table 2 observations; grain N and P are the correctly matched grain rows.",
+      "notes": "This is the other successful table-side benchmark family."
+    },
+    {
+      "claim_id": "seneweera_table_3",
+      "claim_key": "target::leaf_substitute_for_grain",
+      "claim_text": "When grain Ca and Zn figure targets are missing, the available leaf blade table rows become a wrong-tissue substitute rather than a valid benchmark match.",
+      "element": "Ca/Zn",
+      "outcome": "substitute_candidate",
+      "tissue": "leaf",
+      "arm": "350_vs_700_co2",
+      "timepoint": "56 DAP",
+      "direction": "mixed",
+      "unit": "table values",
+      "source_channel": "table",
+      "source_locator": "Table 1",
+      "benchmark_comparable": false,
+      "confidence": "high",
+      "evidence_quote": "The validator had no grain Ca or Zn AI candidates and fell back to the leaf Ca and Zn observations.",
+      "notes": "This is the tissue mismatch artifact inflating MAE."
+    }
+  ],
+  "constraints": [],
+  "contradictions": [],
+  "notes": ""
+}
+
+Instructions:
+- Use the full paper context, not just one section.
+- Keep claims short and specific.
+- Prefer benchmark-relevant distinctions over generic summaries.
+- If the paper supports multiple nearby constructs, separate them.
+- If there is a contradiction or mismatch, state it explicitly in contradictions or notes.
+- Return only JSON.

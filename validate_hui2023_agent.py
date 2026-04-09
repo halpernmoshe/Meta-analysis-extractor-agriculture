@@ -8,7 +8,7 @@ Matching strategy:
 1. Citation-based: map paper filenames to GT publication strings
 2. Value-based: match extracted control/treatment means to GT rows
 """
-import sys, json, math
+import sys, os, json, math
 from pathlib import Path
 from datetime import datetime
 
@@ -17,8 +17,14 @@ if sys.platform == 'win32':
 
 import openpyxl
 
-GT_PATH = r"C:\Users\moshe\Dropbox\Testing metaanalyis program\Hui 2023 source data\Source Data\pdfs\ground.xlsx"
-AGENT_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\hui2023_agent_extraction")
+BASE_DIR = Path(__file__).resolve().parent
+GT_PATH = os.environ.get('GT_PATH_HUI', str(BASE_DIR.parent / 'Hui 2023 source data' / 'Source Data' / 'pdfs' / 'ground.xlsx'))
+if not Path(GT_PATH).exists():
+    print(f"Ground truth not found at {GT_PATH}")
+    print("Set GT_PATH_HUI environment variable or place file at the expected path.")
+    print("See REPRODUCE.md Section 3 for download instructions.")
+    sys.exit(1)
+AGENT_DIR = BASE_DIR / 'output' / 'hui2023_agent_extraction'
 
 # Map agent extraction filenames to GT publication substrings
 # Key = part of filename (without _agent.json), Value = list of search terms (AND logic)

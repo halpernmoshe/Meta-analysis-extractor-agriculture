@@ -1,0 +1,11 @@
+{
+  "k": 181,
+  "pooled_pct": 6.66,
+  "ci_lo_pct": 4.43,
+  "ci_hi_pct": 8.94,
+  "I2": 93.7,
+  "tau2": 0.016919,
+  "benchmark_pct": 16.0,
+  "benchmark_source": "Ye et al. 2020",
+  "abs_diff_vs_benchmark": 9.34
+}

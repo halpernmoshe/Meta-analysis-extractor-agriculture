@@ -1,0 +1,137 @@
+{
+  "paper_id": "59_Khoshgoftarmanesh_2013",
+  "title": "The effectiveness of foliar applications of synthesized zinc-amino acid chelates in comparison with zinc sulfate to increase yield and grain nutritional quality of wheat",
+  "authors": "Ghasemi, S.; Khoshgoftarmanesh, A.H.; Afyuni, M.; Hadadzadeh, H.",
+  "year": 2013,
+  "species": "Triticum aestivum",
+  "consensus_observations": [
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.55, "control_mean": 1.25, "effect_pct": 24.0,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 2.0, "control_mean": 1.25, "effect_pct": 60.0,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 2.1, "control_mean": 1.25, "effect_pct": 68.0,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 2.25, "control_mean": 1.25, "effect_pct": 80.0,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.4, "control_mean": 1.15, "effect_pct": 21.74,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.5, "control_mean": 1.15, "effect_pct": 30.43,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.7, "control_mean": 1.15, "effect_pct": 47.83,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.8, "control_mean": 1.15, "effect_pct": 56.52,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2009-2010"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.5, "control_mean": 1.2, "effect_pct": 25.0,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2010-2011"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.55, "control_mean": 1.2, "effect_pct": 29.17,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2010-2011"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.75, "control_mean": 1.2, "effect_pct": 45.83,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2010-2011"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.6, "control_mean": 1.2, "effect_pct": 33.33,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Back Cross", "year": "2010-2011"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.35, "control_mean": 1.1, "effect_pct": 22.73,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar ZnSO4 (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2010-2011"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.5, "control_mean": 1.1, "effect_pct": 36.36,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Arg [Zn(Arg)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2010-2011"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.6, "control_mean": 1.1, "effect_pct": 45.45,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-Gly [Zn(Gly)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2010-2011"}
+    },
+    {
+      "element": "Zn", "tissue": "grain",
+      "treatment_mean": 1.55, "control_mean": 1.1, "effect_pct": 40.91,
+      "n": 3, "unit": "mg/100g DW", "data_source": "Figure 3",
+      "treatment_description": "Foliar Zn-His [Zn(His)2] (0.2% w/v Zn)",
+      "control_description": "Control (no Zn fertilizer)",
+      "moderators": {"cultivar": "Kavir", "year": "2010-2011"}
+    }
+  ]
+}

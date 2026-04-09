@@ -1,0 +1,97 @@
+{
+  "papers": [
+    {
+      "paper_id": "011_Huluka_1994",
+      "dir": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\011_Huluka_1994",
+      "pdf_paths": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\input\\011_Huluka_1994.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validated\\011_Huluka_1994.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validation_input\\011_Huluka_1994.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\mineral_validation_input\\011_Huluka_1994.pdf"
+      ],
+      "role_files": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\011_Huluka_1994\\design_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\011_Huluka_1994\\narrative_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\011_Huluka_1994\\table_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\011_Huluka_1994\\figure_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\011_Huluka_1994\\benchmark_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\011_Huluka_1994\\consistency_agent.json"
+      ]
+    },
+    {
+      "paper_id": "015_Pleijel_2009",
+      "dir": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009",
+      "pdf_paths": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\input\\015_Pleijel_2009.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validated\\015_Pleijel_2009.pdf"
+      ],
+      "role_files": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\design_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\narrative_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\table_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\figure_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\benchmark_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\consistency_agent.json"
+      ]
+    },
+    {
+      "paper_id": "019_Baxter_1994",
+      "dir": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994",
+      "pdf_paths": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\input\\019_Baxter_1994.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validated\\019_Baxter_1994.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validation_input\\019_Baxter_1994.pdf"
+      ],
+      "role_files": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\design_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\narrative_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\table_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\figure_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\benchmark_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\019_Baxter_1994\\consistency_agent.json"
+      ]
+    },
+    {
+      "paper_id": "026_Seneweera_1997",
+      "dir": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\026_Seneweera_1997",
+      "pdf_paths": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\input\\026_Seneweera_1997.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validated\\026_Seneweera_1997.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validation_input\\026_Seneweera_1997.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\mineral_validation_input\\026_Seneweera_1997.pdf"
+      ],
+      "role_files": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\026_Seneweera_1997\\design_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\026_Seneweera_1997\\narrative_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\026_Seneweera_1997\\table_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\026_Seneweera_1997\\figure_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\026_Seneweera_1997\\benchmark_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\026_Seneweera_1997\\consistency_agent.json"
+      ]
+    },
+    {
+      "paper_id": "035_Oksanen_2005",
+      "dir": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\035_Oksanen_2005",
+      "pdf_paths": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\input\\035_Oksanen_2005.pdf",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\Loladze\\validated\\035_Oksanen_2005.pdf"
+      ],
+      "role_files": [
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\035_Oksanen_2005\\design_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\035_Oksanen_2005\\narrative_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\035_Oksanen_2005\\table_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\035_Oksanen_2005\\figure_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\035_Oksanen_2005\\benchmark_agent.json",
+        "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\035_Oksanen_2005\\consistency_agent.json"
+      ]
+    }
+  ],
+  "roles": [
+    "design_agent",
+    "narrative_agent",
+    "table_agent",
+    "figure_agent",
+    "benchmark_agent",
+    "consistency_agent"
+  ]
+}

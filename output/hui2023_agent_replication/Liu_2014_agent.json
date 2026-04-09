@@ -1,0 +1,36 @@
+{
+  "paper_id": "Liu_2014",
+  "title": "Effects of Zn Fertilization on Hordein Transcripts at Early Developmental Stage of Barley Grain and Correlation with Increased Zn Concentration in the Mature Grain",
+  "authors": "Uddin MN, Kaczmarczyk A, Vincze E",
+  "year": 2014,
+  "species": "Hordeum vulgare",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 151.1,
+      "control_mean": 65.0,
+      "effect_pct": 132.5,
+      "n": 9,
+      "unit": "ug/g",
+      "data_source": "Table 1",
+      "treatment_description": "Medium Zn fertilization (0.25 mM soil + 1 mM foliar ZnSO4)",
+      "control_description": "Low Zn (basic nutrient only, no Zn supplement)",
+      "moderators": {"zn_level": "medium", "species": "barley cv. Golden Promise"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 466.4,
+      "control_mean": 65.0,
+      "effect_pct": 617.5,
+      "n": 8,
+      "unit": "ug/g",
+      "data_source": "Table 1",
+      "treatment_description": "High Zn fertilization (1 mM soil + 10 mM foliar ZnSO4)",
+      "control_description": "Low Zn (basic nutrient only, no Zn supplement)",
+      "moderators": {"zn_level": "high", "species": "barley cv. Golden Promise"}
+    }
+  ],
+  "notes": "This paper studies barley (Hordeum vulgare cv. Golden Promise), not wheat. Included for completeness but species is barley."
+}

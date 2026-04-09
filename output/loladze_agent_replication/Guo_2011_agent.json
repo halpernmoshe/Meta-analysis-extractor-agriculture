@@ -1,0 +1,90 @@
+{
+  "paper_id": "Guo_2011",
+  "title": "Elevated CO2 Levels Affects the Concentrations of Copper and Cadmium in Crops Grown in Soil Contaminated with Heavy Metals under Fully Open-Air Field Conditions",
+  "authors": "Guo H, Zhu J, Zhou H, Sun Y, Yin Y, Pei D, Ji R, Wu J, Wang X",
+  "year": 2011,
+  "species": "Oryza sativa, Triticum aestivum",
+  "treatment_CO2_ppm": 570,
+  "control_CO2_ppm": 370,
+  "notes": "FACE experiment in Jiangsu, China. Paper focuses on Cu and Cd concentrations in contaminated soils. Data from Figures 1-4 (bar graphs). Values are approximate from figure reading. n=3 replicate pots. Values are means +/- SD. Control soil (0 mg/kg Cu or Cd added) used for uncontaminated comparison. CO2 ~200 umol/mol above ambient (~370), so FACE ~570.",
+  "consensus_observations": [
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 4.5,
+      "control_mean": 5.0,
+      "effect_pct": -10.0,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 1d",
+      "treatment_description": "FACE (~570 umol/mol CO2), 0 Cu added",
+      "control_description": "ambient (~370 umol/mol CO2), 0 Cu added",
+      "moderators": {"species": "Oryza sativa", "soil_Cu": 0, "season": "1st rice"}
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 4.0,
+      "control_mean": 5.5,
+      "effect_pct": -27.3,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 1f",
+      "treatment_description": "FACE (~570 umol/mol CO2), 0 Cu added",
+      "control_description": "ambient (~370 umol/mol CO2), 0 Cu added",
+      "moderators": {"species": "Oryza sativa", "soil_Cu": 0, "season": "2nd rice"}
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 4.0,
+      "control_mean": 5.0,
+      "effect_pct": -20.0,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 2d",
+      "treatment_description": "FACE (~570 umol/mol CO2), 0 Cu added",
+      "control_description": "ambient (~370 umol/mol CO2), 0 Cu added",
+      "moderators": {"species": "Triticum aestivum", "soil_Cu": 0, "season": "1st wheat"}
+    },
+    {
+      "element": "Cu",
+      "tissue": "grain",
+      "treatment_mean": 7.0,
+      "control_mean": 8.0,
+      "effect_pct": -12.5,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 2f",
+      "treatment_description": "FACE (~570 umol/mol CO2), 0 Cu added",
+      "control_description": "ambient (~370 umol/mol CO2), 0 Cu added",
+      "moderators": {"species": "Triticum aestivum", "soil_Cu": 0, "season": "2nd wheat"}
+    },
+    {
+      "element": "Cu",
+      "tissue": "shoot",
+      "treatment_mean": 3.0,
+      "control_mean": 4.0,
+      "effect_pct": -25.0,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 1a",
+      "treatment_description": "FACE (~570 umol/mol CO2), 0 Cu added, midtillering",
+      "control_description": "ambient (~370 umol/mol CO2), 0 Cu added, midtillering",
+      "moderators": {"species": "Oryza sativa", "soil_Cu": 0, "stage": "midtillering"}
+    },
+    {
+      "element": "Cu",
+      "tissue": "shoot",
+      "treatment_mean": 5.0,
+      "control_mean": 5.0,
+      "effect_pct": 0.0,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Figure 2a",
+      "treatment_description": "FACE (~570 umol/mol CO2), 0 Cu added, midtillering",
+      "control_description": "ambient (~370 umol/mol CO2), 0 Cu added, midtillering",
+      "moderators": {"species": "Triticum aestivum", "soil_Cu": 0, "stage": "midtillering"}
+    }
+  ]
+}

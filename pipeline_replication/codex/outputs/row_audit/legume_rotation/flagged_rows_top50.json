@@ -1,0 +1,786 @@
+[
+  {
+    "row_number": 224,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "32.35294117647059",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with fodder cowpea, N120",
+    "control_description": "Sole sorghum, N120",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values. Fodder cowpea intercrop showed steepest N response."
+  },
+  {
+    "row_number": 390,
+    "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+    "outcome": "Pod weight (V. faba)",
+    "effect_pct": "348.23186292380603",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "extreme_effect",
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM: PGP27+BS17+RhOF4+RhOF155+AMF) inoculation on V. faba",
+    "control_description": "No inoculation control (C) on V. faba",
+    "notes": "CAUTION: This paper studies biofertilizer inoculation effects, NOT legume rotation. PRM was the best treatment with 348% increase."
+  },
+  {
+    "row_number": 395,
+    "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+    "outcome": "Spike weight (T. durum)",
+    "effect_pct": "143.0939226519337",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "extreme_effect",
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM: PGP27+BS17+RhOF4+RhOF155+AMF) inoculation on T. durum wheat",
+    "control_description": "No inoculation control (C) on T. durum wheat",
+    "notes": "CAUTION: This paper studies biofertilizer inoculation effects on wheat, NOT legume rotation. PRM was the best treatment with 143% increase in spike weight. Text confirms this value."
+  },
+  {
+    "row_number": 101,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "0.0",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, reduced nitrogen (RN, 180 kg N/ha)",
+    "control_description": "Monoculture maize (MM), reduced nitrogen (RN, 180 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). RN = 180 kg N/ha total. Year 2014. Identical means for IM and MM."
+  },
+  {
+    "row_number": 104,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "5.565795980757978",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (4P2M: 4 rows proso millet + 2 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study. 4P2M had smallest yield benefit among intercropping patterns in 2017."
+  },
+  {
+    "row_number": 114,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "75.43058925268444",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (2P4M: 2 rows proso millet + 4 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study. 2P4M achieved highest yield in 2019 (75.4% increase). Greatest mung bean proportion. Maximum yield across all year-treatment combinations."
+  },
+  {
+    "row_number": 221,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "22.22222222222222",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with fodder cowpea, N0",
+    "control_description": "Sole sorghum, N0",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3 (Ghosh et al. 2007). Q = quintal = 100 kg. Intercropping (not rotation). Fodder cowpea showed highest yield benefit."
+  },
+  {
+    "row_number": 222,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "27.586206896551722",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with fodder cowpea, N40",
+    "control_description": "Sole sorghum, N40",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 223,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "29.03225806451613",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with fodder cowpea, N80",
+    "control_description": "Sole sorghum, N80",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 225,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "14.814814814814813",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with grain cowpea, N0",
+    "control_description": "Sole sorghum, N0",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 226,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "14.705882352941178",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with grain cowpea, N120",
+    "control_description": "Sole sorghum, N120",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 227,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "7.4074074074074066",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with soybean, N0",
+    "control_description": "Sole sorghum, N0",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 228,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "5.88235294117647",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with soybean, N120",
+    "control_description": "Sole sorghum, N120",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 229,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "3.7037037037037033",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with groundnut, N0",
+    "control_description": "Sole sorghum, N0",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 230,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "2.941176470588235",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with groundnut, N120",
+    "control_description": "Sole sorghum, N120",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 231,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "11.11111111111111",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with green gram, N0",
+    "control_description": "Sole sorghum, N0",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 232,
+    "paper_id": "Kebede_2021_Contribution_Utilization_and_Improvement_of",
+    "outcome": "Sorghum grain yield (intercropped with legume)",
+    "effect_pct": "8.823529411764707",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Sorghum intercropped with green gram, N120",
+    "control_description": "Sole sorghum, N120",
+    "notes": "REVIEW PAPER - values estimated from line graph Figure 3. Approximate values."
+  },
+  {
+    "row_number": 321,
+    "paper_id": "Naab_2017_Conservation_Agriculture_Improves_Soil_Quality",
+    "outcome": "Maize grain yield",
+    "effect_pct": "-12.195121951219512",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Maize intercropped with soybean (SB/MZ), conventional tillage (CT)",
+    "control_description": "Continuous sole maize (CMZ), conventional tillage (CT)",
+    "notes": "INTERCROPPING comparison (soybean grown simultaneously with maize), NOT rotation. Maize yield in intercrop is LOWER than sole maize due to interspecific competition. Estimated from Figure 4A. No significant cropping system effect in 2011."
+  },
+  {
+    "row_number": 322,
+    "paper_id": "Naab_2017_Conservation_Agriculture_Improves_Soil_Quality",
+    "outcome": "Maize grain yield",
+    "effect_pct": "7.6923076923076925",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Maize intercropped with soybean (SB/MZ), manual tillage (MT)",
+    "control_description": "Continuous sole maize (CMZ), manual tillage (MT)",
+    "notes": "INTERCROPPING comparison. Estimated from Figure 4A."
+  },
+  {
+    "row_number": 323,
+    "paper_id": "Naab_2017_Conservation_Agriculture_Improves_Soil_Quality",
+    "outcome": "Maize grain yield",
+    "effect_pct": "-3.7037037037037033",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Maize intercropped with soybean (SB/MZ), no-tillage (NT)",
+    "control_description": "Continuous sole maize (CMZ), no-tillage (NT)",
+    "notes": "INTERCROPPING comparison. Estimated from Figure 4A."
+  },
+  {
+    "row_number": 324,
+    "paper_id": "Naab_2017_Conservation_Agriculture_Improves_Soil_Quality",
+    "outcome": "Maize grain yield",
+    "effect_pct": "-18.51851851851852",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Maize intercropped with soybean (SB/MZ), conventional tillage (CT)",
+    "control_description": "Continuous sole maize (CMZ), conventional tillage (CT)",
+    "notes": "INTERCROPPING comparison. CT intercropped maize significantly LOWER than CT sole maize (P=0.019 for interaction). Estimated from Figure 4B."
+  },
+  {
+    "row_number": 325,
+    "paper_id": "Naab_2017_Conservation_Agriculture_Improves_Soil_Quality",
+    "outcome": "Maize grain yield",
+    "effect_pct": "-6.7164179104477615",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Maize intercropped with soybean (SB/MZ), manual tillage (MT)",
+    "control_description": "Continuous sole maize (CMZ), manual tillage (MT)",
+    "notes": "INTERCROPPING comparison. Estimated from Figure 4B."
+  },
+  {
+    "row_number": 326,
+    "paper_id": "Naab_2017_Conservation_Agriculture_Improves_Soil_Quality",
+    "outcome": "Maize grain yield",
+    "effect_pct": "-8.321579689703809",
+    "confidence": "low",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "low_confidence",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Maize intercropped with soybean (SB/MZ), no-tillage (NT)",
+    "control_description": "Continuous sole maize (CMZ), no-tillage (NT)",
+    "notes": "INTERCROPPING comparison. Estimated from Figure 4B."
+  },
+  {
+    "row_number": 345,
+    "paper_id": "Nawaz_2020_Potential_of_Salt_Tolerant_PGPR",
+    "outcome": "100 grain weight",
+    "effect_pct": "32.94797687861271",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "P. fluorescens inoculation (T2), Galaxy-13 variety",
+    "control_description": "Uninoculated control (T1), Galaxy-13 variety",
+    "notes": "PICO MISMATCH: Paper studies PGPR inoculation, not legume rotation. LSD letter groupings only."
+  },
+  {
+    "row_number": 348,
+    "paper_id": "Nawaz_2020_Potential_of_Salt_Tolerant_PGPR",
+    "outcome": "100 grain weight",
+    "effect_pct": "53.179190751445084",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR consortium (P. fluorescens + B. pumilus + E. aurantiacum) inoculation (T5), Galaxy-13 variety",
+    "control_description": "Uninoculated control (T1), Galaxy-13 variety",
+    "notes": "PICO MISMATCH: Paper studies PGPR inoculation, not legume rotation."
+  },
+  {
+    "row_number": 349,
+    "paper_id": "Nawaz_2020_Potential_of_Salt_Tolerant_PGPR",
+    "outcome": "100 grain weight",
+    "effect_pct": "23.033707865168534",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "P. fluorescens inoculation (T2), Aas-11 variety",
+    "control_description": "Uninoculated control (T1), Aas-11 variety",
+    "notes": "PICO MISMATCH: Paper studies PGPR inoculation, not legume rotation."
+  },
+  {
+    "row_number": 352,
+    "paper_id": "Nawaz_2020_Potential_of_Salt_Tolerant_PGPR",
+    "outcome": "100 grain weight",
+    "effect_pct": "48.314606741573044",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR consortium (P. fluorescens + B. pumilus + E. aurantiacum) inoculation (T5), Aas-11 variety",
+    "control_description": "Uninoculated control (T1), Aas-11 variety",
+    "notes": "PICO MISMATCH: Paper studies PGPR inoculation, not legume rotation."
+  },
+  {
+    "row_number": 386,
+    "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+    "outcome": "Pod weight (V. faba)",
+    "effect_pct": "21.873860736419978",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR alone (PG: PGP27+BS17) inoculation on V. faba",
+    "control_description": "No inoculation control (C) on V. faba",
+    "notes": "CAUTION: This paper studies biofertilizer inoculation effects, NOT legume rotation. Treatment is microbial inoculation, not crop sequence. PG pod weight not significantly different from control (both letter d)."
+  },
+  {
+    "row_number": 388,
+    "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+    "outcome": "Pod weight (V. faba)",
+    "effect_pct": "87.20379146919431",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR + rhizobia (PR: PGP27+BS17+RhOF4+RhOF155) inoculation on V. faba",
+    "control_description": "No inoculation control (C) on V. faba",
+    "notes": "CAUTION: This paper studies biofertilizer inoculation effects, NOT legume rotation."
+  },
+  {
+    "row_number": 391,
+    "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+    "outcome": "Spike weight (T. durum)",
+    "effect_pct": "20.441988950276244",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR alone (PG: PGP27+BS17) inoculation on T. durum wheat",
+    "control_description": "No inoculation control (C) on T. durum wheat",
+    "notes": "CAUTION: This paper studies biofertilizer inoculation effects on wheat, NOT legume rotation effects on subsequent wheat yield. PG spike weight not significantly different from control (both letter c)."
+  },
+  {
+    "row_number": 393,
+    "paper_id": "Raklami_2019_Use_of_Rhizobacteria_and_Mycorrhizae",
+    "outcome": "Spike weight (T. durum)",
+    "effect_pct": "61.32596685082873",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "paper_warning",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "PGPR + rhizobia (PR: PGP27+BS17+RhOF4+RhOF155) inoculation on T. durum wheat",
+    "control_description": "No inoculation control (C) on T. durum wheat",
+    "notes": "CAUTION: This paper studies biofertilizer inoculation effects on wheat, NOT legume rotation. Text confirms 61% increase for PR treatment."
+  },
+  {
+    "row_number": 94,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "-1.2965964343598066",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, no nitrogen (NN, 0 kg N/ha)",
+    "control_description": "Monoculture maize (MM), no nitrogen (NN, 0 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). IM = intercropped maize with soybean (legume facilitation); MM = monoculture maize (no legume). NN = 0 kg N/ha total. Data are mean\u00b1SD. Letters indicate LSD grouping at P<0.05."
+  },
+  {
+    "row_number": 95,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "-1.7366136034732287",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, reduced nitrogen (RN, 180 kg N/ha)",
+    "control_description": "Monoculture maize (MM), reduced nitrogen (RN, 180 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). RN = 180 kg N/ha total. Year 2012."
+  },
+  {
+    "row_number": 96,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "-11.682892906815031",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, conventional nitrogen (CN, 240 kg N/ha)",
+    "control_description": "Monoculture maize (MM), conventional nitrogen (CN, 240 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). CN = 240 kg N/ha total. Year 2012. Intercropped maize yield significantly lower than monoculture at high N."
+  },
+  {
+    "row_number": 97,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "-10.492845786963438",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, no nitrogen (NN, 0 kg N/ha)",
+    "control_description": "Monoculture maize (MM), no nitrogen (NN, 0 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). NN = 0 kg N/ha total. Year 2013."
+  },
+  {
+    "row_number": 98,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "9.367088607594939",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, reduced nitrogen (RN, 180 kg N/ha)",
+    "control_description": "Monoculture maize (MM), reduced nitrogen (RN, 180 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). RN = 180 kg N/ha total. Year 2013. Intercropped maize yield HIGHER than monoculture under reduced N."
+  },
+  {
+    "row_number": 99,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "-3.209876543209874",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, conventional nitrogen (CN, 240 kg N/ha)",
+    "control_description": "Monoculture maize (MM), conventional nitrogen (CN, 240 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). CN = 240 kg N/ha total. Year 2013."
+  },
+  {
+    "row_number": 100,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "3.214285714285725",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, no nitrogen (NN, 0 kg N/ha)",
+    "control_description": "Monoculture maize (MM), no nitrogen (NN, 0 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). NN = 0 kg N/ha total. Year 2014. Intercropped maize yield slightly higher than monoculture without N."
+  },
+  {
+    "row_number": 102,
+    "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+    "outcome": "Maize grain dry matter",
+    "effect_pct": "-12.952158693115523",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Intercropped maize (IM) with soybean, conventional nitrogen (CN, 240 kg N/ha)",
+    "control_description": "Monoculture maize (MM), conventional nitrogen (CN, 240 kg N/ha)",
+    "notes": "Relay strip intercropping (not rotation). CN = 240 kg N/ha total. Year 2014. Intercropped maize yield significantly lower than monoculture at high N. IMPORTANT: This paper studies relay strip INTERCROPPING, not crop ROTATION. Maize and soybean are grown simultaneously in alternating strips with overlapping growth periods. The comparison (IM vs MM) captures legume facilitation effects but is structurally different from sequential rotation. Meta-analyst should decide on inclusion criteria."
+  },
+  {
+    "row_number": 103,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "11.695814413523339",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (2P2M: 2 rows proso millet + 2 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "This is an INTERCROPPING study (legume grown simultaneously), not a rotation study (legume as preceding crop). Treatment and control are both year-2017 crops. Basal fertilizer: 120 kg N/ha, 100 kg P2O5/ha, 75 kg K2O/ha applied before planting."
+  },
+  {
+    "row_number": 105,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "15.35314480960302",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (4P4M: 4 rows proso millet + 4 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study."
+  },
+  {
+    "row_number": 106,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "20.66268039383176",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (2P4M: 2 rows proso millet + 4 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study. 2P4M achieved highest yield in 2017. Greatest proportion of mung bean rows."
+  },
+  {
+    "row_number": 107,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "22.543215160377592",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (2P2M: 2 rows proso millet + 2 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study."
+  },
+  {
+    "row_number": 108,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "7.943980787978229",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (4P2M: 4 rows proso millet + 2 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study."
+  },
+  {
+    "row_number": 109,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "24.82107615854675",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (4P4M: 4 rows proso millet + 4 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study."
+  },
+  {
+    "row_number": 110,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "53.86737047340514",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (2P4M: 2 rows proso millet + 4 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study. 2P4M achieved highest yield in 2018 (53.9% increase). Greatest mung bean proportion."
+  },
+  {
+    "row_number": 111,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "54.50287059501792",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (2P2M: 2 rows proso millet + 2 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study. 2019 showed largest yield increases across all treatments."
+  },
+  {
+    "row_number": 112,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "28.297581013235966",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (4P2M: 4 rows proso millet + 2 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study."
+  },
+  {
+    "row_number": 113,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet grain yield",
+    "effect_pct": "65.51442504023638",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (4P4M: 4 rows proso millet + 4 rows mung bean)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Intercropping study."
+  },
+  {
+    "row_number": 115,
+    "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+    "outcome": "proso millet 1000-grain weight",
+    "effect_pct": "3.252032520325217",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "intervention_drift",
+      "rotation_topic_contamination"
+    ],
+    "treatment_description": "Proso millet intercropped with mung bean (2P2M)",
+    "control_description": "Monoculture proso millet (MP)",
+    "notes": "Control SE reported as 0.0 (likely rounded from very small value <0.05). 1000-grain weight is a secondary yield component."
+  }
+]

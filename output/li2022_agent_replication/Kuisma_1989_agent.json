@@ -1,0 +1,45 @@
+{
+  "paper_id": "095_Kuisma_1989",
+  "title": "The effect of foliar application of seaweed extract on potato",
+  "authors": "Kuisma, P.",
+  "year": 1989,
+  "species": "Solanum tuberosum (potato, cv. Record)",
+  "consensus_observations": [
+    {
+      "outcome": "ware_yield",
+      "treatment_mean": 38.40,
+      "control_mean": 35.63,
+      "effect_pct": 7.78,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "SM3 seaweed extract 5 l/ha, mean of 3 application dates",
+      "control_description": "Untreated control",
+      "moderators": {"biostimulant": "SM3 seaweed extract", "dose": "5 l/ha", "species": "potato"}
+    },
+    {
+      "outcome": "ware_yield",
+      "treatment_mean": 37.27,
+      "control_mean": 35.63,
+      "effect_pct": 4.60,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "SM3 seaweed extract 10 l/ha, mean of 3 application dates",
+      "control_description": "Untreated control",
+      "moderators": {"biostimulant": "SM3 seaweed extract", "dose": "10 l/ha", "species": "potato"}
+    },
+    {
+      "outcome": "ware_yield",
+      "treatment_mean": 39.29,
+      "control_mean": 35.63,
+      "effect_pct": 10.27,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "Table 5",
+      "treatment_description": "SM3 seaweed extract 20 l/ha, mean of 3 application dates",
+      "control_description": "Untreated control",
+      "moderators": {"biostimulant": "SM3 seaweed extract", "dose": "20 l/ha", "species": "potato"}
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "paper_id": "Peck_2008",
+  "title": "Zinc nutrition influences the protein composition of flour in bread wheat (Triticum aestivum L.)",
+  "authors": ["Peck AW", "McDonald GK", "Graham RD"],
+  "year": 2008,
+  "species": "Triticum aestivum cvs. Frame and Goldmark",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 12.4,
+      "control_mean": 11.4,
+      "effect_pct": 8.77,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 soil applied, Lameroo 1998",
+      "control_description": "0 kg Zn ha-1, Lameroo 1998",
+      "moderators": {
+        "site": "Lameroo",
+        "year": 1998,
+        "zn_application": "soil",
+        "zn_rate": "7.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 26.0,
+      "control_mean": 11.4,
+      "effect_pct": 128.07,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + foliar spray, Lameroo 1998",
+      "control_description": "0 kg Zn ha-1, Lameroo 1998",
+      "moderators": {
+        "site": "Lameroo",
+        "year": 1998,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + foliar"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 14.5,
+      "control_mean": 11.4,
+      "effect_pct": 27.19,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "22.5 kg Zn ha-1 soil applied, Lameroo 1998",
+      "control_description": "0 kg Zn ha-1, Lameroo 1998",
+      "moderators": {
+        "site": "Lameroo",
+        "year": 1998,
+        "zn_application": "soil",
+        "zn_rate": "22.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 14.0,
+      "control_mean": 12.2,
+      "effect_pct": 14.75,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 soil applied, Tintinara 1998",
+      "control_description": "0 kg Zn ha-1, Tintinara 1998",
+      "moderators": {
+        "site": "Tintinara",
+        "year": 1998,
+        "zn_application": "soil",
+        "zn_rate": "7.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 23.4,
+      "control_mean": 12.2,
+      "effect_pct": 91.80,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + foliar spray, Tintinara 1998",
+      "control_description": "0 kg Zn ha-1, Tintinara 1998",
+      "moderators": {
+        "site": "Tintinara",
+        "year": 1998,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + foliar"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 15.7,
+      "control_mean": 12.2,
+      "effect_pct": 28.69,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "22.5 kg Zn ha-1 soil applied, Tintinara 1998",
+      "control_description": "0 kg Zn ha-1, Tintinara 1998",
+      "moderators": {
+        "site": "Tintinara",
+        "year": 1998,
+        "zn_application": "soil",
+        "zn_rate": "22.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 14.2,
+      "control_mean": 14.1,
+      "effect_pct": 0.71,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "2.5 kg Zn ha-1 soil applied, Minnipa 1998",
+      "control_description": "0 kg Zn ha-1, Minnipa 1998",
+      "moderators": {
+        "site": "Minnipa",
+        "year": 1998,
+        "zn_application": "soil",
+        "zn_rate": "2.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 16.8,
+      "control_mean": 14.1,
+      "effect_pct": 19.15,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 soil applied, Minnipa 1998",
+      "control_description": "0 kg Zn ha-1, Minnipa 1998",
+      "moderators": {
+        "site": "Minnipa",
+        "year": 1998,
+        "zn_application": "soil",
+        "zn_rate": "7.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 15.5,
+      "control_mean": 14.1,
+      "effect_pct": 9.93,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "22.5 kg Zn ha-1 soil applied, Minnipa 1998",
+      "control_description": "0 kg Zn ha-1, Minnipa 1998",
+      "moderators": {
+        "site": "Minnipa",
+        "year": 1998,
+        "zn_application": "soil",
+        "zn_rate": "22.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 12.3,
+      "control_mean": 10.9,
+      "effect_pct": 12.84,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 soil applied, Birchip 1999",
+      "control_description": "0 kg Zn ha-1, Birchip 1999",
+      "moderators": {
+        "site": "Birchip",
+        "year": 1999,
+        "zn_application": "soil",
+        "zn_rate": "7.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 20.3,
+      "control_mean": 10.9,
+      "effect_pct": 86.24,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + 1 foliar spray, Birchip 1999",
+      "control_description": "0 kg Zn ha-1, Birchip 1999",
+      "moderators": {
+        "site": "Birchip",
+        "year": 1999,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + 1 spray"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 21.0,
+      "control_mean": 10.9,
+      "effect_pct": 92.66,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + 2 foliar sprays, Birchip 1999",
+      "control_description": "0 kg Zn ha-1, Birchip 1999",
+      "moderators": {
+        "site": "Birchip",
+        "year": 1999,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + 2 sprays"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 21.8,
+      "control_mean": 20.5,
+      "effect_pct": 6.34,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 soil applied, Horsham SD1 1999",
+      "control_description": "0 kg Zn ha-1, Horsham SD1 1999",
+      "moderators": {
+        "site": "Horsham SD1",
+        "year": 1999,
+        "zn_application": "soil",
+        "zn_rate": "7.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 26.8,
+      "control_mean": 20.5,
+      "effect_pct": 30.73,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + 1 foliar spray, Horsham SD1 1999",
+      "control_description": "0 kg Zn ha-1, Horsham SD1 1999",
+      "moderators": {
+        "site": "Horsham SD1",
+        "year": 1999,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + 1 spray"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 30.3,
+      "control_mean": 20.5,
+      "effect_pct": 47.80,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + 2 foliar sprays, Horsham SD1 1999",
+      "control_description": "0 kg Zn ha-1, Horsham SD1 1999",
+      "moderators": {
+        "site": "Horsham SD1",
+        "year": 1999,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + 2 sprays"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 20.1,
+      "control_mean": 19.9,
+      "effect_pct": 1.01,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 soil applied, Horsham SD2 1999",
+      "control_description": "0 kg Zn ha-1, Horsham SD2 1999",
+      "moderators": {
+        "site": "Horsham SD2",
+        "year": 1999,
+        "zn_application": "soil",
+        "zn_rate": "7.5 kg Zn ha-1"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 24.5,
+      "control_mean": 19.9,
+      "effect_pct": 23.12,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + 1 foliar spray, Horsham SD2 1999",
+      "control_description": "0 kg Zn ha-1, Horsham SD2 1999",
+      "moderators": {
+        "site": "Horsham SD2",
+        "year": 1999,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + 1 spray"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 33.3,
+      "control_mean": 19.9,
+      "effect_pct": 67.34,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "7.5 kg Zn ha-1 + 2 foliar sprays, Horsham SD2 1999",
+      "control_description": "0 kg Zn ha-1, Horsham SD2 1999",
+      "moderators": {
+        "site": "Horsham SD2",
+        "year": 1999,
+        "zn_application": "soil+foliar",
+        "zn_rate": "7.5 kg Zn ha-1 + 2 sprays"
+      }
+    }
+  ]
+}

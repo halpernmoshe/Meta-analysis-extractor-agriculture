@@ -1,0 +1,219 @@
+{
+  "paper_id": "Pohl_2019",
+  "title": "The Eggplant Yield and Fruit Composition as Affected by Genetic Factor and Biostimulant Application",
+  "authors": ["Pohl, A.", "Grabowska, A.", "Kalisz, A.", "Sekara, A."],
+  "year": 2019,
+  "species": "Solanum melongena",
+  "consensus_observations": [
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 4.3,
+      "control_mean": 3.8,
+      "effect_pct": 13.16,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar at 2-week intervals",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Cristal F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2013
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 4.5,
+      "control_mean": 4.0,
+      "effect_pct": 12.50,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Epic F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2013
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 3.5,
+      "control_mean": 2.5,
+      "effect_pct": 40.00,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Flavine F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2013
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 3.5,
+      "control_mean": 2.8,
+      "effect_pct": 25.00,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Gascona F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2013
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 3.4,
+      "control_mean": 3.3,
+      "effect_pct": 3.03,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Onyx F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2013
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 4.5,
+      "control_mean": 3.6,
+      "effect_pct": 25.00,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "WA 6020 F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2013
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 3.5,
+      "control_mean": 3.5,
+      "effect_pct": 0.00,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Cristal F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2014
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 3.5,
+      "control_mean": 2.8,
+      "effect_pct": 25.00,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Epic F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2014
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 2.5,
+      "control_mean": 1.5,
+      "effect_pct": 66.67,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "Flavine F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2014
+      }
+    },
+    {
+      "outcome": "total_marketable_yield",
+      "treatment_mean": 3.0,
+      "control_mean": 2.5,
+      "effect_pct": 20.00,
+      "n": 3,
+      "unit": "kg/m2",
+      "data_source": "Figure 2",
+      "treatment_description": "Goemar BM-86 (A. nodosum extract) 1.5 dm3/ha, 3x foliar",
+      "control_description": "Untreated control",
+      "moderators": {
+        "crop": "eggplant",
+        "cultivar": "WA 6020 F1",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray",
+        "rate": "1.5 dm3/ha",
+        "field_or_greenhouse": "field",
+        "location": "Krakow, Poland",
+        "year": 2014
+      }
+    }
+  ]
+}

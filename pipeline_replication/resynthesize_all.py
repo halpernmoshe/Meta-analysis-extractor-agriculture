@@ -11,6 +11,7 @@ Usage:
 
 import json
 import math
+import sys
 import warnings
 from pathlib import Path
 
@@ -235,6 +236,95 @@ def synthesize_topic(topic_dir: Path, benchmark_est: float, benchmark_ci: tuple 
     return result
 
 
+def synthesize_intercropping(topic_dir: Path, benchmark_est: float, benchmark_ci: tuple = None,
+                              benchmark_source: str = ""):
+    """Special synthesis for intercropping: LER-only primary, individual crop yield secondary."""
+    csv_path = topic_dir / "4_extract" / "summary_validated.csv"
+    if not csv_path.exists():
+        print(f"  No validated CSV for {topic_dir.name}")
+        return None
+
+    df = pd.read_csv(csv_path)
+
+    # Split by observation type
+    df_ler = df[df["_obs_type"] == "LER"].copy() if "_obs_type" in df.columns else pd.DataFrame()
+    df_crop = df[df["_obs_type"] == "individual_crop_yield"].copy() if "_obs_type" in df.columns else df.copy()
+
+    results = {}
+
+    # --- Primary synthesis: LER only ---
+    if len(df_ler) > 0:
+        df_ler["effect_pct"] = (
+            (df_ler["treatment_mean"] - df_ler["control_mean"])
+            / df_ler["control_mean"].abs() * 100
+        )
+        # Require positive means
+        df_ler = df_ler[(df_ler["treatment_mean"] > 0) & (df_ler["control_mean"] > 0)].copy()
+        # Outlier removal (LER effects can be large, but cap at 500%)
+        df_ler = df_ler[(df_ler["effect_pct"] > -90) & (df_ler["effect_pct"] < 500)].copy()
+
+        effs_ler = df_ler["effect_pct"].dropna()
+        simple_mean = float(effs_ler.mean())
+        simple_median = float(effs_ler.median())
+        boot_lo, boot_hi = bootstrap_ci(effs_ler.tolist())
+
+        # DL on LER
+        lnRR_vals, lnRR_vars = [], []
+        for _, row in df_ler.iterrows():
+            lr = compute_lnRR(row["treatment_mean"], row["control_mean"])
+            if lr is None:
+                continue
+            sd_t, sd_c, n_t, n_c = get_sd(row)
+            vr = compute_variance_lnRR(sd_t, sd_c, n_t, n_c,
+                                        row["treatment_mean"], row["control_mean"])
+            if vr and vr > 0:
+                lnRR_vals.append(lr)
+                lnRR_vars.append(vr)
+
+        dl = None
+        if len(lnRR_vals) >= 3:
+            dl = dersimonian_laird(lnRR_vals, lnRR_vars)
+
+        dl_pct = dl["pooled_pct"] if dl else simple_mean
+        dl_ci = [dl["ci_lo_pct"], dl["ci_hi_pct"]] if dl else [boot_lo, boot_hi]
+        direction_match = (dl_pct > 0) == (benchmark_est > 0) if dl_pct != 0 else None
+        ci_overlap = (dl_ci[0] <= benchmark_est <= dl_ci[1]) if dl_ci[0] is not None else None
+
+        results = {
+            "topic": topic_dir.name,
+            "analysis": "LER_only (primary)",
+            "n_obs_validated": int(len(df)),
+            "n_papers_validated": int(df["paper_id"].nunique()),
+            "n_yield_obs": int(len(df_ler)),
+            "n_yield_papers": int(df_ler["paper_id"].nunique()),
+            "simple_mean_pct": round(simple_mean, 2),
+            "simple_median_pct": round(simple_median, 2),
+            "bootstrap_ci_95": [round(boot_lo, 2), round(boot_hi, 2)] if boot_lo else None,
+            "DL_pooled_pct": round(dl["pooled_pct"], 2) if dl else None,
+            "DL_ci_95_pct": [round(dl["ci_lo_pct"], 2), round(dl["ci_hi_pct"], 2)] if dl else None,
+            "DL_I2": round(dl["I2"], 1) if dl else None,
+            "DL_k": dl["k"] if dl else None,
+            "benchmark_pct": benchmark_est,
+            "benchmark_source": benchmark_source,
+            "direction_match": direction_match,
+            "benchmark_in_CI": ci_overlap,
+            "pct_negative": round((effs_ler < 0).mean() * 100, 1),
+            "pct_positive": round((effs_ler > 0).mean() * 100, 1),
+        }
+
+        # Print secondary analysis too
+        if len(df_crop) > 0:
+            df_crop["effect_pct"] = (
+                (df_crop["treatment_mean"] - df_crop["control_mean"])
+                / df_crop["control_mean"].abs() * 100
+            )
+            crop_effs = df_crop["effect_pct"].dropna()
+            print(f"  [Secondary] Individual crop yields: {len(df_crop)} obs, "
+                  f"mean={crop_effs.mean():+.1f}%, median={crop_effs.median():+.1f}%")
+
+    return results
+
+
 def main():
     topics = [
         {
@@ -267,7 +357,17 @@ def main():
             "benchmark_ci": (12.0, 20.0),
             "source": "Ye et al. 2020",
         },
+        {
+            "dir": ROOT / "intercropping_yield",
+            "benchmark": 22.0,
+            "benchmark_ci": (16.0, 28.0),
+            "source": "Yu et al. 2015",
+            "custom_synthesizer": "intercropping",
+        },
     ]
+
+    # Allow filtering by topic name via command line argument
+    filter_topic = sys.argv[1] if len(sys.argv) > 1 else None
 
     print("=" * 70)
     print("RE-SYNTHESIS WITH PICO-VALIDATED DATA")
@@ -275,15 +375,25 @@ def main():
 
     all_results = []
     for topic in topics:
+        if filter_topic and topic["dir"].name != filter_topic:
+            continue
         if not topic["dir"].exists():
             continue
         print(f"\n--- {topic['dir'].name} ---")
-        result = synthesize_topic(
-            topic["dir"],
-            topic["benchmark"],
-            topic.get("benchmark_ci"),
-            topic["source"],
-        )
+        if topic.get("custom_synthesizer") == "intercropping":
+            result = synthesize_intercropping(
+                topic["dir"],
+                topic["benchmark"],
+                topic.get("benchmark_ci"),
+                topic["source"],
+            )
+        else:
+            result = synthesize_topic(
+                topic["dir"],
+                topic["benchmark"],
+                topic.get("benchmark_ci"),
+                topic["source"],
+            )
         if result:
             all_results.append(result)
             dl_str = f"{result['DL_pooled_pct']:+.2f}% [{result['DL_ci_95_pct'][0]:+.1f}, {result['DL_ci_95_pct'][1]:+.1f}]" if result["DL_pooled_pct"] is not None else f"{result['simple_mean_pct']:+.2f}% (simple mean)"
@@ -307,6 +417,7 @@ def main():
         "mycorrhiza_yield": "+29.2%",
         "legume_rotation": "?",
         "biochar_crop_yield": "?",
+        "intercropping_yield": "-0.4%",
     }
     for r in all_results:
         after = f"{r['DL_pooled_pct']:+.1f}%" if r["DL_pooled_pct"] is not None else f"{r['simple_mean_pct']:+.1f}%"

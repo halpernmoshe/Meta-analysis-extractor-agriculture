@@ -1,0 +1,59 @@
+{
+  "topic": "legume_rotation",
+  "total_rows": 542,
+  "decision_counts": {
+    "keep": 363,
+    "flag": 88,
+    "exclude": 91
+  },
+  "major_exclusion_reasons": [
+    {
+      "reason": "low_confidence",
+      "count": 82
+    },
+    {
+      "reason": "universal_hard_exclude_outcome",
+      "count": 59
+    },
+    {
+      "reason": "nonpositive_mean",
+      "count": 18
+    },
+    {
+      "reason": "missing_or_non_numeric_mean",
+      "count": 9
+    },
+    {
+      "reason": "flagged_outcome",
+      "count": 6
+    },
+    {
+      "reason": "topic_exclude_outcome",
+      "count": 3
+    },
+    {
+      "reason": "outcome_mismatch",
+      "count": 2
+    }
+  ],
+  "kept_rows": 363,
+  "kept_papers": 26,
+  "all_meta": {
+    "k": 212,
+    "pooled_pct": 17.82,
+    "ci_lo_pct": 13.52,
+    "ci_hi_pct": 22.28,
+    "I2": 99.5,
+    "tau2": 0.070471
+  },
+  "kept_meta": {
+    "k": 200,
+    "pooled_pct": 17.66,
+    "ci_lo_pct": 13.24,
+    "ci_hi_pct": 22.25,
+    "I2": 99.5,
+    "tau2": 0.070451
+  },
+  "benchmark_pct": 20.0,
+  "benchmark_source": "Zhao et al. 2022"
+}

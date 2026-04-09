@@ -1,0 +1,113 @@
+{
+  "paper_id": "fpls-08-00281",
+  "title": "Biofortification of Wheat Cultivars to Combat Zinc Deficiency",
+  "authors": "Chattha MU, Hassan MU, Khan I, Chattha MB, Mahmood A, Chattha MU, Nawaz M, Subhani MN, Kharal M, Khan S",
+  "year": 2017,
+  "species": "Triticum aestivum",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 38.4,
+      "control_mean": 33.1,
+      "effect_pct": 16.01,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Seed priming with 0.3% ZnSO4",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2013-2014", "cultivar": "mean of 3 cultivars", "application_method": "seed priming"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 44.4,
+      "control_mean": 33.1,
+      "effect_pct": 34.14,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil application of 50 kg ZnSO4/ha",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2013-2014", "cultivar": "mean of 3 cultivars", "application_method": "soil"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 59.6,
+      "control_mean": 33.1,
+      "effect_pct": 80.06,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar application of 0.5% ZnSO4 at booting and milking",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2013-2014", "cultivar": "mean of 3 cultivars", "application_method": "foliar"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 62.3,
+      "control_mean": 33.1,
+      "effect_pct": 88.22,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil + foliar application of ZnSO4",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2013-2014", "cultivar": "mean of 3 cultivars", "application_method": "soil+foliar"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 40.5,
+      "control_mean": 33.7,
+      "effect_pct": 20.18,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Seed priming with 0.3% ZnSO4",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2014-2015", "cultivar": "mean of 3 cultivars", "application_method": "seed priming"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 47.6,
+      "control_mean": 33.7,
+      "effect_pct": 41.25,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil application of 50 kg ZnSO4/ha",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2014-2015", "cultivar": "mean of 3 cultivars", "application_method": "soil"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 60.7,
+      "control_mean": 33.7,
+      "effect_pct": 80.12,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Foliar application of 0.5% ZnSO4 at booting and milking",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2014-2015", "cultivar": "mean of 3 cultivars", "application_method": "foliar"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 63.1,
+      "control_mean": 33.7,
+      "effect_pct": 87.24,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Soil + foliar application of ZnSO4",
+      "control_description": "No zinc application",
+      "moderators": {"year": "2014-2015", "cultivar": "mean of 3 cultivars", "application_method": "soil+foliar"}
+    }
+  ]
+}

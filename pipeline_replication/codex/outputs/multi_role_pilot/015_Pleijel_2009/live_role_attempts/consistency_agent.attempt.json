@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "provider": "kimi",
+  "role_name": "consistency_agent",
+  "duration_seconds": 39.07008743286133,
+  "claims": 4,
+  "constraints": 1,
+  "contradictions": 0,
+  "prompt_tokens": 2278,
+  "completion_tokens": 4337,
+  "backup_path": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\consistency_agent.prelive.json",
+  "attempt_path": "C:\\Users\\moshe\\Dropbox\\Testing metaanalyis program\\meta_analysis_extractor\\pipeline_replication\\codex\\outputs\\multi_role_pilot\\015_Pleijel_2009\\live_role_attempts\\consistency_agent.attempt.json"
+}

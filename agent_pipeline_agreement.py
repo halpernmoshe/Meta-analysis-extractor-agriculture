@@ -22,11 +22,13 @@ if sys.platform == 'win32':
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
+BASE_DIR = Path(__file__).resolve().parent
+
 DATASETS = {
     'loladze': {
         'name': 'Loladze 2014 (CO2/minerals)',
-        'pipeline_dir': Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\loladze_v3_combined"),
-        'agent_dir': Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\agent_extraction"),
+        'pipeline_dir': BASE_DIR / 'output' / 'loladze_v3_combined',
+        'agent_dir': BASE_DIR / 'output' / 'agent_extraction',
         'pipeline_glob': '*_consensus.json',
         'agent_glob': '*_agent*.json',
         'value_key': 'element',  # What obs are about
@@ -34,8 +36,8 @@ DATASETS = {
     },
     'hui2023': {
         'name': 'Hui 2023 (Zn/wheat)',
-        'pipeline_dir': Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\hui2023_full_35"),
-        'agent_dir': Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\hui2023_agent_extraction"),
+        'pipeline_dir': BASE_DIR / 'output' / 'hui2023_full_35',
+        'agent_dir': BASE_DIR / 'output' / 'hui2023_agent_extraction',
         'pipeline_glob': '*_consensus.json',
         'agent_glob': '*_agent*.json',
         'value_key': 'element',
@@ -43,8 +45,8 @@ DATASETS = {
     },
     'li2022': {
         'name': 'Li 2022 (biostimulants/yield)',
-        'pipeline_dir': Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\li2022_combined"),
-        'agent_dir': Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\li2022_agent_extraction"),
+        'pipeline_dir': BASE_DIR / 'output' / 'li2022_combined',
+        'agent_dir': BASE_DIR / 'output' / 'li2022_agent_extraction',
         'pipeline_glob': '*_consensus.json',
         'agent_glob': '*_agent*.json',
         'value_key': 'outcome',

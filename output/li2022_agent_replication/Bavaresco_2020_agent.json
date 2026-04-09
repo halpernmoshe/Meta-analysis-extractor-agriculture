@@ -1,0 +1,48 @@
+{
+  "paper_id": "Bavaresco_2020",
+  "title": "Protein hydrolysates modulate leaf proteome and metabolome in water-stressed grapevines",
+  "authors": ["L. Bavaresco", "L. Lucini", "C. Squeri", "M. Zamboni", "T. Frioni"],
+  "year": 2020,
+  "journal": "Scientia Horticulturae",
+  "species": "Vitis vinifera",
+  "crop": "grapevine",
+  "cultivar": "Montepulciano",
+  "experiment_type": "pot (outdoor)",
+  "location": "Piacenza, Italy",
+  "n_replicates": 5,
+  "note": "Table 9: vine yield (kg/vine). PHs did NOT significantly affect yield. SNK test, letters absent means ns. Single season 2016, potted vines.",
+  "consensus_observations": [
+    {
+      "observation_id": 1,
+      "outcome": "vine yield",
+      "unit": "kg/vine",
+      "biostimulant_type": "Trainer protein hydrolysate (PH1)",
+      "application_method": "foliar",
+      "rate": "3 mL/L",
+      "treatment_mean": 1.92,
+      "control_mean": 1.67,
+      "effect_pct": 15.0,
+      "n": 5,
+      "data_source": "Table 9",
+      "treatment_description": "Trainer PH1 foliar spray 3 mL/L, potted vines",
+      "control_description": "Water-sprayed control potted vines",
+      "moderators": {"biostimulant_category": "protein hydrolysate", "PH_source": "legume-derived (Trainer)", "significance": "ns"}
+    },
+    {
+      "observation_id": 2,
+      "outcome": "vine yield",
+      "unit": "kg/vine",
+      "biostimulant_type": "Stimtide protein hydrolysate (PH2)",
+      "application_method": "foliar",
+      "rate": "3 mL/L",
+      "treatment_mean": 1.73,
+      "control_mean": 1.67,
+      "effect_pct": 3.6,
+      "n": 5,
+      "data_source": "Table 9",
+      "treatment_description": "Stimtide PH2 foliar spray 3 mL/L, potted vines",
+      "control_description": "Water-sprayed control potted vines",
+      "moderators": {"biostimulant_category": "protein hydrolysate", "PH_source": "legume-derived (Stimtide)", "significance": "ns"}
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+[
+  {
+    "claim_key": "002_Ziska_1997::Ca::grain",
+    "paper_id": "002_Ziska_1997",
+    "element": "Ca",
+    "tissue": "grain",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "002_Ziska_1997::K::grain",
+    "paper_id": "002_Ziska_1997",
+    "element": "K",
+    "tissue": "grain",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "002_Ziska_1997::N::grain",
+    "paper_id": "002_Ziska_1997",
+    "element": "N",
+    "tissue": "grain",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Claim depends on proxy use or averaging across non-target design dimensions."
+  },
+  {
+    "claim_key": "003_Baslam_2012::C::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "C",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::Ca::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "Ca",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::Cu::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "Cu",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::Fe::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "Fe",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::K::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "K",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::Mg::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "Mg",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::Mn::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "Mn",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::N::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "N",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::P::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "P",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "003_Baslam_2012::Zn::leaf",
+    "paper_id": "003_Baslam_2012",
+    "element": "Zn",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "004_Finzi_2001::N::leaf",
+    "paper_id": "004_Finzi_2001",
+    "element": "N",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "004_Finzi_2001::P::leaf",
+    "paper_id": "004_Finzi_2001",
+    "element": "P",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support."
+  },
+  {
+    "claim_key": "007_Woodin_1992::Ca::leaf",
+    "paper_id": "007_Woodin_1992",
+    "element": "Ca",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Factorial structure and treatment/control ambiguity make claim alignment risky."
+  },
+  {
+    "claim_key": "007_Woodin_1992::K::leaf",
+    "paper_id": "007_Woodin_1992",
+    "element": "K",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Factorial structure and treatment/control ambiguity make claim alignment risky."
+  },
+  {
+    "claim_key": "007_Woodin_1992::Mg::leaf",
+    "paper_id": "007_Woodin_1992",
+    "element": "Mg",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Factorial structure and treatment/control ambiguity make claim alignment risky."
+  },
+  {
+    "claim_key": "007_Woodin_1992::N::leaf",
+    "paper_id": "007_Woodin_1992",
+    "element": "N",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Factorial structure and treatment/control ambiguity make claim alignment risky."
+  },
+  {
+    "claim_key": "007_Woodin_1992::P::leaf",
+    "paper_id": "007_Woodin_1992",
+    "element": "P",
+    "tissue": "leaf",
+    "initial_label": "likely_alignment_or_structure_problem",
+    "label_confidence": "medium",
+    "label_rationale": "Factorial structure and treatment/control ambiguity make claim alignment risky."
+  },
+  {
+    "claim_key": "020_Overdieck_1993::Ca::whole plant",
+    "paper_id": "020_Overdieck_1993",
+    "element": "Ca",
+    "tissue": "whole plant",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "020_Overdieck_1993::Fe::whole plant",
+    "paper_id": "020_Overdieck_1993",
+    "element": "Fe",
+    "tissue": "whole plant",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "020_Overdieck_1993::K::whole plant",
+    "paper_id": "020_Overdieck_1993",
+    "element": "K",
+    "tissue": "whole plant",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "020_Overdieck_1993::Mg::whole plant",
+    "paper_id": "020_Overdieck_1993",
+    "element": "Mg",
+    "tissue": "whole plant",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "020_Overdieck_1993::Mn::whole plant",
+    "paper_id": "020_Overdieck_1993",
+    "element": "Mn",
+    "tissue": "whole plant",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "020_Overdieck_1993::N::whole plant",
+    "paper_id": "020_Overdieck_1993",
+    "element": "N",
+    "tissue": "whole plant",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "020_Overdieck_1993::P::whole plant",
+    "paper_id": "020_Overdieck_1993",
+    "element": "P",
+    "tissue": "whole plant",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "031_Pal_2003::Ca::leaf",
+    "paper_id": "031_Pal_2003",
+    "element": "Ca",
+    "tissue": "leaf",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "031_Pal_2003::Fe::leaf",
+    "paper_id": "031_Pal_2003",
+    "element": "Fe",
+    "tissue": "leaf",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "031_Pal_2003::N::leaf",
+    "paper_id": "031_Pal_2003",
+    "element": "N",
+    "tissue": "leaf",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  },
+  {
+    "claim_key": "031_Pal_2003::P::leaf",
+    "paper_id": "031_Pal_2003",
+    "element": "P",
+    "tissue": "leaf",
+    "initial_label": "clean_support",
+    "label_confidence": "high",
+    "label_rationale": "Consensus claim with no recorded Claude/Kimi disagreement."
+  }
+]

@@ -1,0 +1,186 @@
+{
+  "review_id": "biochar_tropical_yield",
+  "title": "Effect of biochar amendment on crop yield in tropical soils",
+  "research_question": "Does biochar soil amendment increase crop yield in tropical regions compared to unamended controls?",
+
+  "pico": {
+    "population": {
+      "description": "Tropical field and greenhouse crops grown in biochar-amended soils",
+      "search_terms": ["crop yield", "grain yield", "biochar experiment", "tropical soil", "biochar trial"],
+      "exclude_terms": ["simulation", "model only", "review only", "wastewater", "remediation only"]
+    },
+    "intervention": {
+      "description": "Biochar soil amendment (any feedstock, any pyrolysis temperature)",
+      "search_terms": [
+        "biochar", "charcoal amendment", "pyrolyzed biomass",
+        "biochar application", "biochar amendment", "biochar soil",
+        "black carbon amendment", "carbonized biomass",
+        "rice husk biochar", "wood biochar", "crop residue biochar",
+        "biochar rate", "biochar dose"
+      ]
+    },
+    "comparator": {
+      "description": "No biochar application (unamended control soil)",
+      "definition": "Same crop grown without biochar addition",
+      "search_terms": ["control", "CK", "unamended", "no biochar", "without biochar", "0 t/ha biochar"]
+    },
+    "outcome": {
+      "primary": {
+        "description": "Crop yield (grain yield, fruit yield, tuber yield, biomass)",
+        "search_terms": [
+          "yield", "grain yield", "crop yield", "seed yield",
+          "biomass", "dry matter", "fresh weight",
+          "kg/ha", "Mg/ha", "t/ha", "g/plant", "g/pot"
+        ],
+        "unit": "kg/ha, Mg/ha, t/ha, or g/plant",
+        "direction_of_interest": "positive (biochar expected to increase yield, especially in tropics)"
+      }
+    }
+  },
+
+  "intervention": "Biochar soil amendment (any feedstock and pyrolysis conditions)",
+  "control": "No biochar application (unamended control)",
+
+  "primary_outcomes": [
+    "Crop yield (grain yield, fruit yield, tuber yield, total biomass per unit area)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+25% yield increase in tropical soils (vs +10% in temperate)",
+
+  "important_moderators": [
+    "Biochar feedstock type (wood, crop residue, manure, sewage sludge)",
+    "Pyrolysis temperature (C)",
+    "Biochar application rate (t/ha)",
+    "Crop species",
+    "Crop type (cereal, vegetable, legume, root/tuber)",
+    "Study setting (field, greenhouse, pot)",
+    "Soil pH (acidic vs neutral vs alkaline)",
+    "Soil texture (sandy, loamy, clay)",
+    "Climate zone (must be tropical or subtropical)",
+    "Country/region",
+    "Experimental duration",
+    "Co-application with fertilizer"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract yield for BOTH biochar treatment AND unamended control",
+    "2. Control = no biochar (unamended); Treatment = with biochar",
+    "3. If multiple rates tested, extract EACH rate vs same control separately",
+    "4. Get variance (SE/SD/LSD) and sample size (n/replicates)",
+    "5. Record biochar feedstock, pyrolysis temperature, and application rate",
+    "6. Record study location to confirm tropical/subtropical setting",
+    "7. Focus on CROP YIELD, not soil properties"
+  ],
+
+  "tc_confusion_warnings": [
+    "Control is the NO BIOCHAR treatment",
+    "Treatment is WITH BIOCHAR amendment",
+    "Some papers test biochar + NPK factorial — extract biochar+NPK vs NPK (isolate biochar effect)",
+    "Multiple application rates should be extracted as separate rows",
+    "Pot experiments may report g/pot or g/plant — extract as-is with unit noted",
+    "RESTRICT to tropical/subtropical locations — exclude temperate/boreal studies",
+    "Check paper location: Africa, South/Southeast Asia, Central/South America, Oceania tropics"
+  ],
+
+  "geographic_filter": {
+    "include_zones": ["tropical", "subtropical"],
+    "include_latitude_range": [-30, 30],
+    "include_countries_examples": [
+      "Nigeria", "Ghana", "Kenya", "Brazil", "India", "Indonesia", "Thailand",
+      "Colombia", "Vietnam", "Philippines", "Bangladesh", "Tanzania", "Cameroon",
+      "Zambia", "Zimbabwe", "China (southern)", "Australia (northern)"
+    ],
+    "exclude_zones": ["temperate", "boreal", "mediterranean"]
+  },
+
+  "search": {
+    "seed_dois": [
+      "10.1088/1748-9326/aa9c74"
+    ],
+    "seed_papers_description": "Jeffery et al. 2017 (Environmental Research Letters, biochar crop yield meta-analysis with tropical/temperate subgroups)",
+    "databases": ["openalex"],
+    "date_range": {
+      "start": 2000,
+      "end": 2026
+    },
+    "language": ["en"],
+    "study_types_eligible": ["field_experiment", "greenhouse_experiment", "pot_experiment"],
+    "study_types_excluded": ["review", "meta-analysis", "simulation", "model", "commentary"],
+    "citation_chasing": {
+      "forward": true,
+      "backward": true,
+      "depth": 1
+    }
+  },
+
+  "screening": {
+    "inclusion_criteria": [
+      "Primary experiment comparing biochar-amended vs unamended soil",
+      "Reports yield or biomass data (numeric means)",
+      "Study conducted in tropical or subtropical region",
+      "Biochar is the experimental variable (not confounded with other amendments)",
+      "Includes both biochar treatment and unamended control"
+    ],
+    "exclusion_criteria": [
+      "Review or meta-analysis (no primary data)",
+      "Study in temperate, boreal, or mediterranean climate",
+      "No yield or biomass data reported",
+      "Only reports soil properties without crop yield",
+      "Remediation/wastewater study (not agricultural production)",
+      "Biochar used only as growing medium (soilless culture)"
+    ],
+    "llm_enabled": false
+  },
+
+  "extraction": {
+    "target_outcomes": ["crop_grain_yield", "crop_biomass", "crop_fruit_yield", "crop_tuber_yield"],
+    "moderators": [
+      "biochar_feedstock",
+      "pyrolysis_temperature_C",
+      "application_rate_t_ha",
+      "crop_species",
+      "crop_type",
+      "study_setting",
+      "soil_pH",
+      "soil_texture",
+      "climate_zone",
+      "country",
+      "latitude",
+      "experiment_duration_years",
+      "co_fertilizer"
+    ],
+    "effect_size": {
+      "primary": "lnRR",
+      "report_as": "percentage_change"
+    },
+    "variance_handling": {
+      "acceptable_types": ["SD", "SE", "SEM", "CI_95", "LSD", "CV"],
+      "missing_strategy": "exclude",
+      "sensitivity_analysis": true
+    }
+  },
+
+  "models": {
+    "recon_model": "gemini-2.5-flash",
+    "extract_model": "claude-sonnet-4-20250514",
+    "provider": "auto"
+  },
+
+  "benchmark": {
+    "enabled": true,
+    "source": "Jeffery et al. 2017 (Environmental Research Letters 12:053001)",
+    "doi": "10.1088/1748-9326/aa67bd",
+    "known_included_papers": null,
+    "published_pooled_effect": {
+      "estimate": 25.0,
+      "unit": "percent_change",
+      "ci_lower": 15.0,
+      "ci_upper": 35.0,
+      "notes": "Tropical subgroup (k=527 observations, 62 publications, latitude <=35 degrees). Overall grand mean +13%. Text states 'crop yields significantly increase by approximately 25%' in the tropics. CI bounds read from Figure 1 forest plot (paper text gives only 'approximately 25%'; exact tabular values are in supplementary MetaWin output not directly accessible). Graphical reading from Figure 1: lower ~+15%, upper ~+35%. Temperate soils show approximately -3% (CI crosses zero). ERL fully open access (CC-BY). DOI: 10.1088/1748-9326/aa67bd. Published April 2017."
+    }
+  },
+
+  "pre_registered": true,
+  "registered_date": "2026-03-25"
+}

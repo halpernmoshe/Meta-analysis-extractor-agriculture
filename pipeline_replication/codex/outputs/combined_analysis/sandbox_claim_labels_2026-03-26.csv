@@ -1,0 +1,32 @@
+claim_key,paper_id,element,tissue,initial_label,label_confidence,label_rationale
+002_Ziska_1997::Ca::grain,002_Ziska_1997,Ca,grain,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+002_Ziska_1997::K::grain,002_Ziska_1997,K,grain,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+002_Ziska_1997::N::grain,002_Ziska_1997,N,grain,likely_alignment_or_structure_problem,medium,Claim depends on proxy use or averaging across non-target design dimensions.
+003_Baslam_2012::C::leaf,003_Baslam_2012,C,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::Ca::leaf,003_Baslam_2012,Ca,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::Cu::leaf,003_Baslam_2012,Cu,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::Fe::leaf,003_Baslam_2012,Fe,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::K::leaf,003_Baslam_2012,K,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::Mg::leaf,003_Baslam_2012,Mg,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::Mn::leaf,003_Baslam_2012,Mn,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::N::leaf,003_Baslam_2012,N,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::P::leaf,003_Baslam_2012,P,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+003_Baslam_2012::Zn::leaf,003_Baslam_2012,Zn,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+004_Finzi_2001::N::leaf,004_Finzi_2001,N,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+004_Finzi_2001::P::leaf,004_Finzi_2001,P,leaf,likely_alignment_or_structure_problem,medium,Paper-level disagreement or swap risk suggests structure/matching problem rather than clean support.
+007_Woodin_1992::Ca::leaf,007_Woodin_1992,Ca,leaf,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity make claim alignment risky.
+007_Woodin_1992::K::leaf,007_Woodin_1992,K,leaf,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity make claim alignment risky.
+007_Woodin_1992::Mg::leaf,007_Woodin_1992,Mg,leaf,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity make claim alignment risky.
+007_Woodin_1992::N::leaf,007_Woodin_1992,N,leaf,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity make claim alignment risky.
+007_Woodin_1992::P::leaf,007_Woodin_1992,P,leaf,likely_alignment_or_structure_problem,medium,Factorial structure and treatment/control ambiguity make claim alignment risky.
+020_Overdieck_1993::Ca::whole plant,020_Overdieck_1993,Ca,whole plant,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+020_Overdieck_1993::Fe::whole plant,020_Overdieck_1993,Fe,whole plant,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+020_Overdieck_1993::K::whole plant,020_Overdieck_1993,K,whole plant,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+020_Overdieck_1993::Mg::whole plant,020_Overdieck_1993,Mg,whole plant,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+020_Overdieck_1993::Mn::whole plant,020_Overdieck_1993,Mn,whole plant,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+020_Overdieck_1993::N::whole plant,020_Overdieck_1993,N,whole plant,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+020_Overdieck_1993::P::whole plant,020_Overdieck_1993,P,whole plant,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+031_Pal_2003::Ca::leaf,031_Pal_2003,Ca,leaf,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+031_Pal_2003::Fe::leaf,031_Pal_2003,Fe,leaf,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+031_Pal_2003::N::leaf,031_Pal_2003,N,leaf,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.
+031_Pal_2003::P::leaf,031_Pal_2003,P,leaf,clean_support,high,Consensus claim with no recorded Claude/Kimi disagreement.

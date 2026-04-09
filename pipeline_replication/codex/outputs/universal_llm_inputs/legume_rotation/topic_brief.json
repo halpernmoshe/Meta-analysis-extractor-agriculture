@@ -1,0 +1,67 @@
+{
+  "review_id": "legume_rotation_yield",
+  "title": "Legume rotation effects on subsequent crop yield",
+  "research_question": "Does including a legume in crop rotation increase the yield of the subsequent non-legume crop?",
+  "population_description": "Field crops grown after a legume pre-crop in rotation experiments",
+  "intervention_description": "Legume-based crop rotation (legume grown as the preceding crop before the target crop)",
+  "intervention_terms": [
+    "legume rotation",
+    "crop rotation",
+    "legume pre-crop",
+    "preceding legume",
+    "soybean rotation",
+    "pea rotation",
+    "lentil rotation",
+    "chickpea rotation",
+    "faba bean rotation",
+    "clover rotation",
+    "lupin rotation",
+    "legume-cereal rotation",
+    "rotation effect",
+    "break crop",
+    "nitrogen fixation rotation",
+    "biological nitrogen fixation",
+    "legume residue",
+    "green manure legume"
+  ],
+  "comparator_description": "Continuous cropping or non-legume rotation (cereal after cereal, fallow, or non-legume break crop)",
+  "comparator_terms": [
+    "continuous cropping",
+    "monoculture",
+    "cereal-cereal",
+    "non-legume rotation",
+    "fallow",
+    "continuous wheat",
+    "continuous maize"
+  ],
+  "outcome_description": "Subsequent crop grain yield per unit area",
+  "outcome_terms": [
+    "yield",
+    "grain yield",
+    "crop yield",
+    "seed yield",
+    "productivity",
+    "kg/ha",
+    "Mg/ha",
+    "t/ha"
+  ],
+  "expected_direction": "positive",
+  "tc_confusion_warnings": [
+    "Treatment is the SUBSEQUENT CROP yield after legume rotation, NOT the legume yield",
+    "Control is the same crop grown after a non-legume or in continuous monoculture",
+    "Some papers report legume yield AND subsequent crop yield - extract ONLY the subsequent crop",
+    "N fertilizer levels may differ between treatments - record exact rates",
+    "Multi-year rotation studies: extract each rotation cycle separately",
+    "Some papers compare multiple legume species - extract each vs same control"
+  ],
+  "extraction_priorities": [
+    "1. CRITICAL: Extract yield of the SUBSEQUENT CROP (after legume), NOT the legume yield itself",
+    "2. Treatment = crop grown AFTER a legume; Control = crop grown after non-legume or in monoculture",
+    "3. Extract EACH crop-year-site combination separately",
+    "4. Get variance (SE/SD/LSD) and sample size (n/replicates)",
+    "5. Record which legume species was the preceding crop",
+    "6. Record the subsequent crop species and N fertilizer rate"
+  ],
+  "benchmark_source": "Zhao et al. 2022 (PNAS 119:e2204951119)",
+  "benchmark_notes": "Overall +20% yield increase; wheat +20%, maize +22%, barley +16%; larger with no N fertilizer (+28%) vs high N (+10%)"
+}

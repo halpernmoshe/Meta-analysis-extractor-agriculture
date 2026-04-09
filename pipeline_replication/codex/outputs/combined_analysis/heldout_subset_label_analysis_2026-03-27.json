@@ -1,0 +1,67 @@
+{
+  "total_claims": 74,
+  "label_counts": {
+    "clean_support": 34,
+    "likely_alignment_or_structure_problem": 26,
+    "likely_extraction_coverage_problem": 10,
+    "unclear": 4
+  },
+  "by_label": {
+    "clean_support": {
+      "n_claims": 34,
+      "mean_claim_disagreement_count": 0.0,
+      "mean_cross_model_support_n": 2.206,
+      "mean_risk_flag_count": 2.353,
+      "paper_root_causes": {
+        "none": 34
+      },
+      "papers": [
+        "001_Ma_2007",
+        "006_Azam_2013",
+        "018_Al-Rawahy_2013",
+        "058_ONeill_1987"
+      ]
+    },
+    "likely_alignment_or_structure_problem": {
+      "n_claims": 26,
+      "mean_claim_disagreement_count": 2.885,
+      "mean_cross_model_support_n": 1.923,
+      "mean_risk_flag_count": 5.385,
+      "paper_root_causes": {
+        "extraction_coverage_limitation": 15,
+        "none": 11
+      },
+      "papers": [
+        "014_Lieffering_2004",
+        "032_Kanowski_2001",
+        "058_ONeill_1987"
+      ]
+    },
+    "likely_extraction_coverage_problem": {
+      "n_claims": 10,
+      "mean_claim_disagreement_count": 3.4,
+      "mean_cross_model_support_n": 1.2,
+      "mean_risk_flag_count": 4.9,
+      "paper_root_causes": {
+        "extraction_coverage_limitation": 3,
+        "none": 7
+      },
+      "papers": [
+        "008_Campbell_2002",
+        "022_Blank_2011"
+      ]
+    },
+    "unclear": {
+      "n_claims": 4,
+      "mean_claim_disagreement_count": 4.25,
+      "mean_cross_model_support_n": 0.5,
+      "mean_risk_flag_count": 4.0,
+      "paper_root_causes": {
+        "none": 4
+      },
+      "papers": [
+        "025_Guo_2011"
+      ]
+    }
+  }
+}

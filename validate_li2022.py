@@ -13,11 +13,30 @@ from datetime import datetime
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
+from dotenv import load_dotenv
+load_dotenv()
+
 import openpyxl
 import numpy as np
 
-GT_PATH = r"C:\Users\moshe\Dropbox\Testing metaanalyis program\Li 2022\Data_Sheet_2.XLSX"
-DEFAULT_RESULTS_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\li2022_consensus")
+BASE_DIR = Path(__file__).resolve().parent
+
+# Ground truth path: check env var, then data/ground_truth/, then relative sibling directory
+GT_PATH = os.environ.get('GT_PATH_LI', '')
+if not GT_PATH or not Path(GT_PATH).exists():
+    _candidates = [
+        BASE_DIR / 'data' / 'ground_truth' / 'li2022_Data_Sheet_2.xlsx',
+        BASE_DIR.parent / 'Li 2022' / 'Data_Sheet_2.XLSX',
+    ]
+    GT_PATH = next((str(c) for c in _candidates if c.exists()), str(_candidates[0]))
+
+if not Path(GT_PATH).exists():
+    print(f"Ground truth not found at {GT_PATH}")
+    print("Set GT_PATH_LI environment variable or place file at the expected path.")
+    print("See REPRODUCE.md Section 3 for download instructions.")
+    sys.exit(1)
+
+DEFAULT_RESULTS_DIR = BASE_DIR / 'output' / 'li2022_consensus'
 
 # Scale factors for unit conversion (g vs kg vs t/ha etc.)
 SCALE_FACTORS = [1, 10, 100, 1000, 0.1, 0.01, 0.001, 10000, 0.0001]

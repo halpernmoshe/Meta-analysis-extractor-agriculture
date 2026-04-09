@@ -1,0 +1,81 @@
+{
+  "paper_id": "094_Kowalska_2021",
+  "title": "Effect of Different Forms of Silicon on Growth of Spring Wheat Cultivated in Organic Farming System",
+  "authors": "Kowalska, J.; Tyburski, J.; Jakubowska, M.; Krzyminska, J.",
+  "year": 2021,
+  "species": "Triticum aestivum (spring wheat, cv. Arabella)",
+  "consensus_observations": [
+    {
+      "outcome": "grain_yield",
+      "treatment_mean": 4.75,
+      "control_mean": 3.88,
+      "effect_pct": 22.42,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) soil application, mean 2017-2018",
+      "control_description": "Untreated control, mean 2017-2018",
+      "moderators": {"biostimulant": "AdeSil (silicon powder)", "application": "soil", "species": "spring wheat"}
+    },
+    {
+      "outcome": "grain_yield",
+      "treatment_mean": 5.35,
+      "control_mean": 3.88,
+      "effect_pct": 37.89,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) soil + foliar application, mean 2017-2018",
+      "control_description": "Untreated control, mean 2017-2018",
+      "moderators": {"biostimulant": "AdeSil (silicon powder)", "application": "soil+foliar", "species": "spring wheat"}
+    },
+    {
+      "outcome": "grain_yield",
+      "treatment_mean": 4.25,
+      "control_mean": 3.88,
+      "effect_pct": 9.54,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "AdeSil (diatomaceous earth) foliar application, mean 2017-2018",
+      "control_description": "Untreated control, mean 2017-2018",
+      "moderators": {"biostimulant": "AdeSil (silicon powder)", "application": "foliar", "species": "spring wheat"}
+    },
+    {
+      "outcome": "grain_yield",
+      "treatment_mean": 4.49,
+      "control_mean": 3.88,
+      "effect_pct": 15.72,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) soil application, mean 2017-2018",
+      "control_description": "Untreated control, mean 2017-2018",
+      "moderators": {"biostimulant": "ZumSil (liquid silicon)", "application": "soil", "species": "spring wheat"}
+    },
+    {
+      "outcome": "grain_yield",
+      "treatment_mean": 4.97,
+      "control_mean": 3.88,
+      "effect_pct": 28.09,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) soil + foliar application, mean 2017-2018",
+      "control_description": "Untreated control, mean 2017-2018",
+      "moderators": {"biostimulant": "ZumSil (liquid silicon)", "application": "soil+foliar", "species": "spring wheat"}
+    },
+    {
+      "outcome": "grain_yield",
+      "treatment_mean": 4.84,
+      "control_mean": 3.88,
+      "effect_pct": 24.74,
+      "n": 8,
+      "unit": "t/ha",
+      "data_source": "Table 7",
+      "treatment_description": "ZumSil (monosilicic acid) foliar application, mean 2017-2018",
+      "control_description": "Untreated control, mean 2017-2018",
+      "moderators": {"biostimulant": "ZumSil (liquid silicon)", "application": "foliar", "species": "spring wheat"}
+    }
+  ]
+}

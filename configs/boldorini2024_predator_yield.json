@@ -1,0 +1,86 @@
+{
+  "name": "Predator Effects on Crop Yield",
+  "description": "This meta-analysis examines how predators (spiders, beetles, birds, invertebrates, vertebrates) affect crop yield in agroecosystems. Predator treatments include exclusion experiments (cages, nets) and predator addition. Based on Boldorini et al. 2024 (Proc. R. Soc. B 291:20232522), 19 papers, 47 observations.",
+
+  "intervention": "Predator presence/absence manipulation (exclusion cages/nets or predator addition)",
+  "control": "Natural predator levels (open plots, no manipulation)",
+
+  "primary_outcomes": [
+    "Crop yield (kg/ha, g/plant, g/m2, number of fruits, or mass per plant)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "Predators increase yield via pest suppression (positive lnRR)",
+
+  "important_moderators": [
+    "Predator type (Spiders, Beetles, Birds, Invertebrates, Vertebrates)",
+    "Treatment type (Exclusion vs Addition)",
+    "Crop species",
+    "Crop family",
+    "Country/location",
+    "Latitude",
+    "Study year"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract yield means, SD, and N for treatment and control groups",
+    "2. Treatment = predator exclusion (reduced predators) or predator addition (increased predators)",
+    "3. Control = natural/ambient predator levels (open plots)",
+    "4. For EXCLUSION experiments: treatment = caged/netted (fewer predators), control = open",
+    "5. For ADDITION experiments: treatment = augmented predators, control = natural levels",
+    "6. Extract variance (SD preferred, also SE/SEM) and sample size (n/replicates)",
+    "7. Note which predator group is manipulated (spiders, beetles, birds, etc.)"
+  ],
+
+  "tc_confusion_warnings": [
+    "EXCLUSION experiments: predator-reduced plots are TREATMENT, open plots are CONTROL",
+    "ADDITION experiments: predator-augmented plots are TREATMENT, natural plots are CONTROL",
+    "Some papers test multiple predator groups (spiders AND beetles) - extract each separately",
+    "Some papers have multiple crop types or years - extract each combination",
+    "Yield can be reported in different units (weight, count, biomass) - extract as reported",
+    "The GT uses lnRR (log response ratio) as effect size: lnRR = ln(treatment/control)"
+  ],
+
+  "pico": {
+    "population": {
+      "crop_groups": ["cereals", "vegetables", "fruits", "legumes", "all crops"],
+      "environments": ["field", "agroforestry", "orchard"]
+    },
+    "intervention": {
+      "treatment_variable": "PREDATOR_MANIPULATION",
+      "treatment_keywords": ["exclusion", "cage", "exclosure", "netting", "addition", "augmentation", "predator"]
+    },
+    "comparison": {
+      "control_definition": "Natural/ambient predator levels (open, unmanipulated plots)",
+      "control_keywords": ["control", "open", "unmanipulated", "ambient", "natural", "uncaged"]
+    }
+  },
+
+  "ground_truth": {
+    "dataset": "../Boldorini_2024/rspb20232522_si_005.csv",
+    "dataset_delimiter": ";",
+    "dataset_encoding": "utf-8",
+    "papers_dir": "input_boldorini/",
+    "reference": "Boldorini et al. 2024, Proc. R. Soc. B 291:20232522",
+    "total_observations": 47,
+    "total_studies": 19,
+    "gt_columns": {
+      "study_id": "es_id",
+      "author": "author",
+      "year": "year",
+      "doi": "doi",
+      "treatment_mean": "mean_yieldtreat",
+      "treatment_sd": "sd_yieldtreat",
+      "treatment_n": "n_yieldtreat",
+      "control_mean": "mean_yieldcontrol",
+      "control_sd": "sd_yieldcontrol",
+      "control_n": "n_yieldcontrol",
+      "effect_yi": "yi",
+      "effect_vi": "vi",
+      "crop": "crop",
+      "predator_type": "predat_id",
+      "treatment_type": "treatment"
+    },
+    "notes": "Effect size is lnRR (yi) with variance vi. Treatment types: Exclusion (predator removal) and Addition (predator augmentation). Predator types: Spiders, Beetles, Birds, Invertebrates, Vertebrates. 47 observations from 19 papers. 100% data completeness."
+  }
+}

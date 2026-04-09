@@ -1,0 +1,45 @@
+{
+  "paper_id": "Rehman_2018",
+  "title": "Characterizing wheat genotypes for grain zinc biofortification",
+  "authors": ["Rehman A", "Farooq M", "Ozturk L", "Asif M", "Siddique KHM"],
+  "year": 2018,
+  "species": "Triticum aestivum (28 Pakistani genotypes)",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 36.5,
+      "control_mean": 27.5,
+      "effect_pct": 32.73,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "+Zn (10 kg ha-1 soil), mean of 28 genotypes, 2013-2014",
+      "control_description": "-Zn (no application), mean of 28 genotypes, 2013-2014",
+      "moderators": {
+        "zn_application": "soil",
+        "zn_rate": "10 kg Zn ha-1",
+        "year": "2013-2014",
+        "genotypes": "28 genotype mean"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 36.9,
+      "control_mean": 30.7,
+      "effect_pct": 20.20,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "+Zn (10 kg ha-1 soil), mean of 28 genotypes, 2014-2015",
+      "control_description": "-Zn (no application), mean of 28 genotypes, 2014-2015",
+      "moderators": {
+        "zn_application": "soil",
+        "zn_rate": "10 kg Zn ha-1",
+        "year": "2014-2015",
+        "genotypes": "28 genotype mean"
+      }
+    }
+  ]
+}

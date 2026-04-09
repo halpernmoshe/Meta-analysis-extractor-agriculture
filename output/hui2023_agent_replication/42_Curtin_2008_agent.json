@@ -1,0 +1,91 @@
+{
+  "paper_id": "42_Curtin_2008",
+  "title": "Micronutrient requirements of wheat in Canterbury, New Zealand",
+  "authors": "Curtin D, Hanson R, van der Weerden TJ",
+  "year": 2008,
+  "species": "Triticum aestivum",
+  "journal": "New Zealand Journal of Crop and Horticultural Science",
+  "volume": "36",
+  "pages": "169-181",
+  "notes": "Year 2 trials at 3 sites measured grain Zn concentration (Table 8). The Zn treatment was Cu+Mn+Zn combined application vs control. Individual Zn-only treatment was not tested. The Cu+Mn+Zn treatment includes confounding micronutrients, but Zn is the primary driver of grain Zn changes. Text states Zn application significantly increased grain Zn (P<0.005) with average increase of 13.5%.",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 34.0,
+      "control_mean": 29.8,
+      "effect_pct": 14.1,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "table",
+      "treatment_description": "Cu+Mn+Zn applied (no lime), Barrhill site",
+      "control_description": "Control (no micronutrients, no lime), Barrhill site",
+      "moderators": {"zn_method": "soil", "site": "Barrhill", "lime": "no"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 31.3,
+      "control_mean": 28.3,
+      "effect_pct": 10.6,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "table",
+      "treatment_description": "Cu+Mn+Zn applied (with lime 10 t/ha), Barrhill site",
+      "control_description": "Control (no micronutrients, with lime 10 t/ha), Barrhill site",
+      "moderators": {"zn_method": "soil", "site": "Barrhill", "lime": "yes"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 13.0,
+      "control_mean": 14.8,
+      "effect_pct": -12.2,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "table",
+      "treatment_description": "Cu+Mn+Zn applied (no lime), Rakaia site",
+      "control_description": "Control (no micronutrients, no lime), Rakaia site",
+      "moderators": {"zn_method": "soil", "site": "Rakaia", "lime": "no"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 16.3,
+      "control_mean": 17.0,
+      "effect_pct": -4.1,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "table",
+      "treatment_description": "Cu+Mn+Zn applied (with lime 10 t/ha), Rakaia site",
+      "control_description": "Control (no micronutrients, with lime 10 t/ha), Rakaia site",
+      "moderators": {"zn_method": "soil", "site": "Rakaia", "lime": "yes"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 24.8,
+      "control_mean": 23.0,
+      "effect_pct": 7.8,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "table",
+      "treatment_description": "Cu+Mn+Zn applied (no lime), Leeston site",
+      "control_description": "Control (no micronutrients, no lime), Leeston site",
+      "moderators": {"zn_method": "soil", "site": "Leeston", "lime": "no"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 24.0,
+      "control_mean": 22.0,
+      "effect_pct": 9.1,
+      "n": 4,
+      "unit": "mg/kg",
+      "data_source": "table",
+      "treatment_description": "Cu+Mn+Zn applied (with lime 10 t/ha), Leeston site",
+      "control_description": "Control (no micronutrients, with lime 10 t/ha), Leeston site",
+      "moderators": {"zn_method": "soil", "site": "Leeston", "lime": "yes"}
+    }
+  ]
+}

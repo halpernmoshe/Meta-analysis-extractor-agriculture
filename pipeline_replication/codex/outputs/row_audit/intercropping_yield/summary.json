@@ -1,0 +1,169 @@
+{
+  "topic": "intercropping_yield",
+  "n_rows": 92,
+  "severity_counts": {
+    "needs_review": 6,
+    "clean": 3,
+    "likely_off_target": 83
+  },
+  "reason_counts_top": {
+    "component_yield_not_system_estimand": 83,
+    "non_independent_average": 24,
+    "paper_warning": 12,
+    "extreme_effect": 6
+  },
+  "top_flagged_examples": [
+    {
+      "row_number": 54,
+      "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+      "outcome": "Grain yield",
+      "effect_pct": "28.235294117647065",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "non_independent_average",
+        "paper_warning"
+      ],
+      "treatment_description": "Maize/faba bean strip intercropping, 0 kg P/ha, 2011",
+      "control_description": "Weighted mean of maize and faba bean monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+      "notes": "Mono = weighted mean of maize and faba bean monoculture yields using area proportions in intercrop (80cm maize : 60cm companion). Values followed by same lowercase letter not significantly different by LSD at P<0.05."
+    },
+    {
+      "row_number": 67,
+      "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+      "outcome": "Grain yield",
+      "effect_pct": "14.925373134328357",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "non_independent_average",
+        "paper_warning"
+      ],
+      "treatment_description": "Maize/soybean strip intercropping, 0 kg P/ha, 2012",
+      "control_description": "Weighted mean of maize and soybean monocultures (57:43 area ratio), 0 kg P/ha, 2012",
+      "notes": "Text mentions soybean/maize intercropping without P did not significantly overyield in 2012."
+    },
+    {
+      "row_number": 11,
+      "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+      "outcome": "Maize grain yield",
+      "effect_pct": "-1.2965964343598066",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "paper_warning"
+      ],
+      "treatment_description": "Intercropped maize (IM) in maize-soybean relay strip intercropping, no nitrogen (NN, 0 kg N/ha)",
+      "control_description": "Monoculture maize (MM), no nitrogen (NN, 0 kg N/ha)",
+      "notes": "NN = no nitrogen treatment. Plant density per unit area equal for intercropping and monoculture."
+    },
+    {
+      "row_number": 18,
+      "paper_id": "Chen_2017_Effects_of_reduced_nitrogen_inputs",
+      "outcome": "Maize grain yield",
+      "effect_pct": "0.0",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "paper_warning"
+      ],
+      "treatment_description": "Intercropped maize (IM) in maize-soybean relay strip intercropping, reduced nitrogen (RN, 180 kg N/ha)",
+      "control_description": "Monoculture maize (MM), reduced nitrogen (RN, 180 kg N/ha)",
+      "notes": "RN = reduced nitrogen, 180 kg N/ha total. Identical means for IM and MM."
+    },
+    {
+      "row_number": 53,
+      "paper_id": "Dang_2020_Intercropping_Alters_the_Soil_Microbial",
+      "outcome": "Grain yield of mung bean",
+      "effect_pct": "-53.195097510213515",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "paper_warning"
+      ],
+      "treatment_description": "Mung bean intercropped with proso millet (2P2M)",
+      "control_description": "Monoculture mung bean (MM)",
+      "notes": "Duplicate entry consolidated with earlier grain yield rows for cross-check. Values confirmed."
+    },
+    {
+      "row_number": 55,
+      "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+      "outcome": "Grain yield",
+      "effect_pct": "28.73563218390805",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "non_independent_average"
+      ],
+      "treatment_description": "Maize/soybean strip intercropping, 0 kg P/ha, 2011",
+      "control_description": "Weighted mean of maize and soybean monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+      "notes": "Inter significantly higher than Mono (different letters). Soybean = Glycine max cv. Wuke no. 2."
+    },
+    {
+      "row_number": 56,
+      "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+      "outcome": "Grain yield",
+      "effect_pct": "27.77777777777778",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "non_independent_average"
+      ],
+      "treatment_description": "Maize/chickpea strip intercropping, 0 kg P/ha, 2011",
+      "control_description": "Weighted mean of maize and chickpea monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+      "notes": "Chickpea = Cicer arietinum cv. Longying no. 1."
+    },
+    {
+      "row_number": 57,
+      "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+      "outcome": "Grain yield",
+      "effect_pct": "45.78313253012046",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "non_independent_average"
+      ],
+      "treatment_description": "Maize/turnip strip intercropping, 0 kg P/ha, 2011",
+      "control_description": "Weighted mean of maize and turnip monocultures (57:43 area ratio), 0 kg P/ha, 2011",
+      "notes": "Turnip = Brassica campestris cv. Gannan no. 4. Highest effect in P=0 group 2011."
+    },
+    {
+      "row_number": 58,
+      "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+      "outcome": "Grain yield",
+      "effect_pct": "11.340206185567025",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "non_independent_average"
+      ],
+      "treatment_description": "Maize/faba bean strip intercropping, 40 kg P/ha, 2011",
+      "control_description": "Weighted mean of maize and faba bean monocultures (57:43 area ratio), 40 kg P/ha, 2011",
+      "notes": "Not significantly different (both share letter c). Text confirms faba bean/maize at 40 P in 2011 was the sole exception to significant overyielding."
+    },
+    {
+      "row_number": 59,
+      "paper_id": "Wang_2014_Intercropping_Enhances_Productivity_and_Maintains",
+      "outcome": "Grain yield",
+      "effect_pct": "46.391752577319586",
+      "confidence": "high",
+      "severity": "likely_off_target",
+      "reasons": [
+        "component_yield_not_system_estimand",
+        "non_independent_average"
+      ],
+      "treatment_description": "Maize/soybean strip intercropping, 40 kg P/ha, 2011",
+      "control_description": "Weighted mean of maize and soybean monocultures (57:43 area ratio), 40 kg P/ha, 2011",
+      "notes": "Highest grain yield recorded in Table 1 (14.2 Mg/ha). Significantly higher than monoculture."
+    }
+  ]
+}

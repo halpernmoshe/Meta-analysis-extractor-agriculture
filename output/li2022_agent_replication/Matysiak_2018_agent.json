@@ -1,0 +1,135 @@
+{
+  "paper_id": "Matysiak_2018",
+  "title": "Herbicides with natural and synthetic biostimulants in spring wheat",
+  "authors": ["Matysiak, K.", "Miziniak, W.", "Kaczmarek, S.", "Kierzek, R."],
+  "year": 2018,
+  "species": "Triticum aestivum",
+  "consensus_observations": [
+    {
+      "outcome": "yield",
+      "treatment_mean": 6.54,
+      "control_mean": 6.16,
+      "effect_pct": 6.17,
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4, 2014",
+      "treatment_description": "MCPA+dicamba + Kelpak (Ecklonia maxima) 2 L/ha tank mix at BBCH 30",
+      "control_description": "Untreated control (no herbicide, no biostimulant)",
+      "moderators": {
+        "crop": "spring wheat",
+        "cultivar": "Torridon",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray (tank mix with herbicide)",
+        "rate": "2 L/ha",
+        "field_or_greenhouse": "field",
+        "location": "Torun, Poland",
+        "year": 2014
+      }
+    },
+    {
+      "outcome": "yield",
+      "treatment_mean": 7.54,
+      "control_mean": 6.16,
+      "effect_pct": 22.40,
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4, 2014",
+      "treatment_description": "Dicamba+triasulfuron + Kelpak 2 L/ha tank mix at BBCH 30",
+      "control_description": "Untreated control (no herbicide, no biostimulant)",
+      "moderators": {
+        "crop": "spring wheat",
+        "cultivar": "Torridon",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray (tank mix with herbicide)",
+        "rate": "2 L/ha",
+        "field_or_greenhouse": "field",
+        "location": "Torun, Poland",
+        "year": 2014
+      }
+    },
+    {
+      "outcome": "yield",
+      "treatment_mean": 7.17,
+      "control_mean": 6.16,
+      "effect_pct": 16.40,
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4, 2014",
+      "treatment_description": "Florasulam+2,4-D + Kelpak 2 L/ha tank mix at BBCH 30",
+      "control_description": "Untreated control (no herbicide, no biostimulant)",
+      "moderators": {
+        "crop": "spring wheat",
+        "cultivar": "Torridon",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray (tank mix with herbicide)",
+        "rate": "2 L/ha",
+        "field_or_greenhouse": "field",
+        "location": "Torun, Poland",
+        "year": 2014
+      }
+    },
+    {
+      "outcome": "yield",
+      "treatment_mean": 5.03,
+      "control_mean": 4.49,
+      "effect_pct": 12.03,
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4, 2015",
+      "treatment_description": "MCPA+dicamba + Kelpak 2 L/ha tank mix at BBCH 30",
+      "control_description": "Untreated control (no herbicide, no biostimulant)",
+      "moderators": {
+        "crop": "spring wheat",
+        "cultivar": "Torridon",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray (tank mix with herbicide)",
+        "rate": "2 L/ha",
+        "field_or_greenhouse": "field",
+        "location": "Torun, Poland",
+        "year": 2015
+      }
+    },
+    {
+      "outcome": "yield",
+      "treatment_mean": 4.53,
+      "control_mean": 4.49,
+      "effect_pct": 0.89,
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4, 2015",
+      "treatment_description": "Dicamba+triasulfuron + Kelpak 2 L/ha tank mix at BBCH 30",
+      "control_description": "Untreated control (no herbicide, no biostimulant)",
+      "moderators": {
+        "crop": "spring wheat",
+        "cultivar": "Torridon",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray (tank mix with herbicide)",
+        "rate": "2 L/ha",
+        "field_or_greenhouse": "field",
+        "location": "Torun, Poland",
+        "year": 2015
+      }
+    },
+    {
+      "outcome": "yield",
+      "treatment_mean": 4.27,
+      "control_mean": 4.49,
+      "effect_pct": -4.90,
+      "n": 4,
+      "unit": "t/ha",
+      "data_source": "Table 4, 2015",
+      "treatment_description": "Florasulam+2,4-D + Kelpak 2 L/ha tank mix at BBCH 30",
+      "control_description": "Untreated control (no herbicide, no biostimulant)",
+      "moderators": {
+        "crop": "spring wheat",
+        "cultivar": "Torridon",
+        "biostimulant_type": "SWE",
+        "application_method": "foliar spray (tank mix with herbicide)",
+        "rate": "2 L/ha",
+        "field_or_greenhouse": "field",
+        "location": "Torun, Poland",
+        "year": 2015
+      }
+    }
+  ]
+}

@@ -53,6 +53,7 @@ except ImportError:
 
 # Load environment variables
 load_dotenv()
+load_dotenv(Path(__file__).parent / ".env.kimi", override=False)
 
 
 # =============================================================================

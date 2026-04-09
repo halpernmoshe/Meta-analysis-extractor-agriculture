@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
+load_dotenv(Path(__file__).parent / ".env.kimi", override=False)
 
 # API Configuration
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")

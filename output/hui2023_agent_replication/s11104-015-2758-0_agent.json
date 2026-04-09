@@ -1,0 +1,87 @@
+{
+  "paper_id": "s11104-015-2758-0",
+  "title": "Zinc (Zn) concentration of bread wheat grown under Mediterranean conditions as affected by genotype and soil/foliar Zn application",
+  "authors": "Gomez-Coronado F, Poblaciones MJ, Almeida AS, Cakmak I",
+  "year": 2016,
+  "species": "Triticum aestivum",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 37.0,
+      "control_mean": 32.6,
+      "effect_pct": 13.50,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Soil Zn application (50 kg ZnSO4.7H2O/ha)",
+      "control_description": "No Zn application (control)",
+      "moderators": {"year": "2010-2011", "cultivar": "mean of 13 cultivars", "application_method": "soil"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 50.4,
+      "control_mean": 32.6,
+      "effect_pct": 54.60,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application (0.5% ZnSO4.7H2O at anthesis and milk stages)",
+      "control_description": "No Zn application (control)",
+      "moderators": {"year": "2010-2011", "cultivar": "mean of 13 cultivars", "application_method": "foliar"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 52.5,
+      "control_mean": 32.6,
+      "effect_pct": 61.04,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Soil + foliar Zn application",
+      "control_description": "No Zn application (control)",
+      "moderators": {"year": "2010-2011", "cultivar": "mean of 13 cultivars", "application_method": "soil+foliar"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 36.4,
+      "control_mean": 32.9,
+      "effect_pct": 10.64,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Soil Zn application (50 kg ZnSO4.7H2O/ha)",
+      "control_description": "No Zn application (control)",
+      "moderators": {"year": "2012-2013", "cultivar": "mean of 13 cultivars", "application_method": "soil"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 44.3,
+      "control_mean": 32.9,
+      "effect_pct": 34.65,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Foliar Zn application (0.5% ZnSO4.7H2O at anthesis and milk stages)",
+      "control_description": "No Zn application (control)",
+      "moderators": {"year": "2012-2013", "cultivar": "mean of 13 cultivars", "application_method": "foliar"}
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 51.1,
+      "control_mean": 32.9,
+      "effect_pct": 55.32,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 3",
+      "treatment_description": "Soil + foliar Zn application",
+      "control_description": "No Zn application (control)",
+      "moderators": {"year": "2012-2013", "cultivar": "mean of 13 cultivars", "application_method": "soil+foliar"}
+    }
+  ]
+}

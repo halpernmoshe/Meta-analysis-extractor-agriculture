@@ -4,6 +4,33 @@ import re
 from pathlib import Path
 from fpdf import FPDF
 
+# Unicode -> ASCII replacements for Helvetica compatibility
+UNICODE_MAP = {
+    '\u2014': '--',   # em dash
+    '\u2013': '-',    # en dash
+    '\u2019': "'",    # right single quote
+    '\u2018': "'",    # left single quote
+    '\u201c': '"',    # left double quote
+    '\u201d': '"',    # right double quote
+    '\u2022': '-',    # bullet
+    '\u00b1': '+-',   # plus-minus
+    '\u2264': '<=',   # less than or equal
+    '\u2265': '>=',   # greater than or equal
+    '\u00d7': 'x',    # multiplication sign
+    '\u2026': '...',  # ellipsis
+    '\u03b1': 'alpha',
+    '\u03b2': 'beta',
+    '\u0394': 'Delta',
+}
+
+
+def sanitize(text):
+    """Replace Unicode chars that Helvetica can't render."""
+    for u, a in UNICODE_MAP.items():
+        text = text.replace(u, a)
+    # Strip any remaining non-latin1 chars
+    return text.encode('latin-1', errors='replace').decode('latin-1')
+
 
 class MarkdownPDF(FPDF):
     def footer(self):
@@ -12,18 +39,37 @@ class MarkdownPDF(FPDF):
         self.cell(0, 10, f'Page {self.page_no()}', new_x="RIGHT", new_y="TOP", align='C')
 
 
-def break_long_words(text, max_chars=60):
+def break_long_words(text, max_chars=70):
     """Insert soft breaks in words longer than max_chars."""
     words = text.split(' ')
     result = []
     for w in words:
         if len(w) > max_chars:
-            # Break at slashes, dots, or every max_chars
+            # Break at slashes, dots, underscores, hyphens
             broken = re.sub(r'([/._-])', r'\1 ', w)
-            result.append(broken)
+            # If still too long, force-break every max_chars
+            parts = broken.split(' ')
+            final_parts = []
+            for p in parts:
+                while len(p) > max_chars:
+                    final_parts.append(p[:max_chars])
+                    p = p[max_chars:]
+                final_parts.append(p)
+            result.append(' '.join(final_parts))
         else:
             result.append(w)
     return ' '.join(result)
+
+
+def clean_markdown(text):
+    """Strip markdown formatting to plain text."""
+    text = re.sub(r'\*\*(.+?)\*\*', r'\1', text)
+    text = re.sub(r'\*(.+?)\*', r'\1', text)
+    text = re.sub(r'\[(.+?)\]\((.+?)\)', r'\1', text)
+    text = re.sub(r'`(.+?)`', r'\1', text)
+    # Convert ^N^ superscript citations to [N]
+    text = re.sub(r'\^(\d[\d,]*)\^', r'[\1]', text)
+    return text
 
 
 def md_to_pdf(md_path, pdf_path):
@@ -49,11 +95,10 @@ def md_to_pdf(md_path, pdf_path):
                 pdf.ln(2)
             continue
 
-        # Inside code block - render as monospace
+        # Inside code block
         if in_code_block:
-            pdf.set_font('Courier', '', 8)
-            # Truncate very long lines
-            display = line[:100]
+            pdf.set_font('Courier', '', 7)
+            display = sanitize(line[:110])
             pdf.cell(0, 4, display, new_x="LMARGIN", new_y="NEXT")
             pdf.set_font('Helvetica', '', 10)
             continue
@@ -66,18 +111,20 @@ def md_to_pdf(md_path, pdf_path):
             pdf.ln(2)
             continue
 
-        # Skip table formatting lines
-        if re.match(r'^\|[-\s|:]+\|$', stripped):
+        # Skip table formatting/separator lines (e.g., |---|---|)
+        if re.match(r'^\|[\s\-|:]+\|?$', stripped):
+            continue
+        if stripped.startswith('|--') or stripped.startswith('|:--'):
             continue
 
         # Table rows
         if stripped.startswith('|'):
-            pdf.set_font('Helvetica', '', 8)
+            pdf.set_font('Helvetica', '', 7)
             cells = [c.strip() for c in stripped.split('|')[1:-1]]
             clean_row = '  |  '.join(cells)
-            clean_row = re.sub(r'\*\*(.+?)\*\*', r'\1', clean_row)
-            clean_row = re.sub(r'`(.+?)`', r'\1', clean_row)
-            pdf.cell(0, 4, clean_row[:120], new_x="LMARGIN", new_y="NEXT")
+            clean_row = clean_markdown(clean_row)
+            clean_row = sanitize(clean_row)
+            pdf.cell(0, 4, clean_row[:140], new_x="LMARGIN", new_y="NEXT")
             pdf.set_font('Helvetica', '', 10)
             continue
 
@@ -85,32 +132,34 @@ def md_to_pdf(md_path, pdf_path):
         if stripped.startswith('# '):
             pdf.ln(4)
             pdf.set_font('Helvetica', 'B', 14)
-            pdf.multi_cell(0, 7, stripped[2:])
+            pdf.multi_cell(0, 7, sanitize(clean_markdown(stripped[2:])))
             pdf.ln(2)
             pdf.set_font('Helvetica', '', 10)
             continue
         if stripped.startswith('## '):
             pdf.ln(3)
             pdf.set_font('Helvetica', 'B', 12)
-            pdf.multi_cell(0, 6, stripped[3:])
+            pdf.multi_cell(0, 6, sanitize(clean_markdown(stripped[3:])))
             pdf.ln(1)
             pdf.set_font('Helvetica', '', 10)
             continue
         if stripped.startswith('### '):
             pdf.ln(2)
             pdf.set_font('Helvetica', 'B', 10)
-            pdf.multi_cell(0, 5, stripped[4:])
+            pdf.multi_cell(0, 5, sanitize(clean_markdown(stripped[4:])))
             pdf.ln(1)
+            pdf.set_font('Helvetica', '', 10)
+            continue
+        if stripped.startswith('#### '):
+            pdf.ln(1)
+            pdf.set_font('Helvetica', 'B', 10)
+            pdf.multi_cell(0, 5, sanitize(clean_markdown(stripped[5:])))
             pdf.set_font('Helvetica', '', 10)
             continue
 
         # Clean markdown formatting
-        clean = stripped
-        clean = re.sub(r'\*\*(.+?)\*\*', r'\1', clean)
-        clean = re.sub(r'\*(.+?)\*', r'\1', clean)
-        clean = re.sub(r'\[(.+?)\]\((.+?)\)', r'\1 (\2)', clean)
-        clean = re.sub(r'`(.+?)`', r'\1', clean)
-        clean = clean.replace('\u2014', '--').replace('\u2013', '-')
+        clean = clean_markdown(stripped)
+        clean = sanitize(clean)
 
         # Bullet points
         if clean.startswith('- '):
@@ -132,6 +181,8 @@ def md_to_pdf(md_path, pdf_path):
 if __name__ == '__main__':
     script_dir = Path(__file__).parent
     out_dir = script_dir / 'SUBMISSION_CLEAN'
+    out_dir.mkdir(exist_ok=True)
 
+    md_to_pdf(script_dir / 'PAPER_FINAL_v23.md', out_dir / 'Halpern_Manuscript_2026.pdf')
     md_to_pdf(script_dir / 'COVER_LETTER.md', out_dir / 'Cover_Letter.pdf')
     md_to_pdf(script_dir / 'CODE_AVAILABILITY.md', out_dir / 'Code_Availability.pdf')

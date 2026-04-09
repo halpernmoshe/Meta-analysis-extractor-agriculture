@@ -1,0 +1,57 @@
+{
+  "paper_id": "Rahman_2018",
+  "title": "Chitosan biopolymer promotes yield and stimulates accumulation of antioxidants in strawberry fruit",
+  "authors": "Rahman M, Mukta JA, Sabir AA, Gupta DR, Mohi-Ud-Din M, Hasanuzzaman M, Miah MG, Rahman M, Islam MT",
+  "year": 2018,
+  "species": "Fragaria x ananassa (strawberry)",
+  "consensus_observations": [
+    {
+      "outcome": "fruit_yield",
+      "treatment_mean": 246.6,
+      "control_mean": 246.6,
+      "effect_pct": 29.0,
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "figure",
+      "treatment_description": "Chitosan 125 ppm foliar spray",
+      "control_description": "Untreated control (water + 0.1N HCl/NaOH pH 6.5)",
+      "moderators": {"biostimulant_type": "chitosan", "concentration": "125 ppm"}
+    },
+    {
+      "outcome": "fruit_yield",
+      "treatment_mean": 246.6,
+      "control_mean": 246.6,
+      "effect_pct": 32.0,
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "figure",
+      "treatment_description": "Chitosan 250 ppm foliar spray",
+      "control_description": "Untreated control (water + 0.1N HCl/NaOH pH 6.5)",
+      "moderators": {"biostimulant_type": "chitosan", "concentration": "250 ppm"}
+    },
+    {
+      "outcome": "fruit_yield",
+      "treatment_mean": 351.25,
+      "control_mean": 246.6,
+      "effect_pct": 42.0,
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "figure",
+      "treatment_description": "Chitosan 500 ppm foliar spray",
+      "control_description": "Untreated control (water + 0.1N HCl/NaOH pH 6.5)",
+      "moderators": {"biostimulant_type": "chitosan", "concentration": "500 ppm"}
+    },
+    {
+      "outcome": "fruit_yield",
+      "treatment_mean": 246.6,
+      "control_mean": 246.6,
+      "effect_pct": 40.0,
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "figure",
+      "treatment_description": "Chitosan 1000 ppm foliar spray",
+      "control_description": "Untreated control (water + 0.1N HCl/NaOH pH 6.5)",
+      "moderators": {"biostimulant_type": "chitosan", "concentration": "1000 ppm"}
+    }
+  ]
+}

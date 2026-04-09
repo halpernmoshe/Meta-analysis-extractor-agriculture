@@ -48,16 +48,20 @@ See [REPRODUCE.md](REPRODUCE.md) for full reproduction instructions.
 
 ```
 meta_analysis_extractor/
-├── meta_extract.py                 # Main entry point
-├── consensus_pipeline.py           # Multi-model consensus logic
+├── meta_extract.py                 # Main entry point (CLI)
+├── consensus_pipeline.py           # Multi-model consensus extraction
 ├── config.py                       # Model configuration and API routing
 ├── core/                           # Orchestrator, LLM wrapper, state management
 ├── modules/                        # Recon, extraction, gap-fill, export
 ├── prompts/                        # LLM prompt templates
+├── mcp_server/                     # MCP server + CLI (server.py, cli.py, gt_matcher.py)
 ├── configs/                        # Dataset-specific JSON configurations
-│   ├── loladze_co2_minerals.json
-│   ├── hui2023_zinc_wheat.json
-│   └── li2022_biostimulant_yield.json
+├── scripts/                        # Reusable utilities
+│   ├── formal_statistics.py        #   ICC, TOST, Bland-Altman, Cohen's d
+│   ├── sensitivity_loo.py          #   Leave-one-out sensitivity
+│   ├── variance_imputation.py      #   Variance imputation module
+│   ├── generate_agent_figures.py   #   Publication figure generation
+│   └── ...                         #   (15 scripts total)
 ├── validate_full_46.py             # Loladze 2014 pipeline validation
 ├── validate_hui2023.py             # Hui 2023 pipeline validation
 ├── validate_li2022.py              # Li 2022 pipeline validation
@@ -66,24 +70,14 @@ meta_analysis_extractor/
 ├── validate_li2022_agent.py        # Agent extraction validation (Li)
 ├── agent_pipeline_agreement.py     # GT-free cross-method agreement
 ├── validate_replication.py         # Run-to-run reproducibility
-├── formal_statistics.py            # ICC, TOST, Bland-Altman, Cohen's d
-├── formal_stats_agent.py           # Agent formal statistics
-├── supplementary_cr2_tost.py       # CR2 bias-corrected TOST analysis
-├── generate_agent_figures.py       # Publication figure generation
-├── paper_figures.py                # Pipeline figure generation
-├── programmatic_gt_classifier.py   # Li 2022 scale-harmonized matching
-├── harmonize_li2022_agent.py       # Li 2022 agent scale harmonization
-├── output/                         # Pre-computed extraction results
-│   ├── loladze_v3_combined/        # Loladze pipeline results
-│   ├── hui2023_full_35/            # Hui pipeline results
-│   ├── li2022_combined/            # Li pipeline results
-│   ├── agent_extraction/           # Agent extraction results
-│   ├── paper_figures/              # Publication-ready figures
-│   └── formal_stats/              # Statistical analysis outputs
+├── reproduce_all.py                # Master reproduction script
+├── output/                         # Pre-computed extraction results (do not modify)
+├── input*/                         # PDF inputs by dataset
+├── archive/                        # Superseded/one-off scripts (organized by category)
 ├── data/                           # Ontology and few-shot examples
 ├── requirements.txt
-├── .env.example                    # API key template
 ├── REPRODUCE.md                    # Full reproduction guide
+├── RESULTS_COMPENDIUM.md           # Complete validated results
 ├── CITATION.cff
 └── LICENSE                         # MIT
 ```

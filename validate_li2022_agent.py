@@ -17,8 +17,14 @@ if sys.platform == 'win32':
 
 import openpyxl
 
-GT_PATH = r"C:\Users\moshe\Dropbox\Testing metaanalyis program\Li 2022\Data_Sheet_2.XLSX"
-AGENT_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\li2022_agent_extraction")
+BASE_DIR = Path(__file__).resolve().parent
+GT_PATH = os.environ.get('GT_PATH_LI', str(BASE_DIR.parent / 'Li 2022' / 'Data_Sheet_2.XLSX'))
+if not Path(GT_PATH).exists():
+    print(f"Ground truth not found at {GT_PATH}")
+    print("Set GT_PATH_LI environment variable or place file at the expected path.")
+    print("See REPRODUCE.md Section 3 for download instructions.")
+    sys.exit(1)
+AGENT_DIR = BASE_DIR / 'output' / 'li2022_agent_extraction'
 
 SCALE_FACTORS = [1, 10, 100, 1000, 0.1, 0.01, 0.001, 10000, 0.0001]
 

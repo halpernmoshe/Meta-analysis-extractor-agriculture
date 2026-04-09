@@ -137,12 +137,15 @@ Topics were selected using an 8-dimension scoring system before any V2 extractio
 ### Topic 5: elevated_co2_face_yield
 
 - **Config**: `elevated_co2_face_yield/config.json`
-- **Benchmark paper**: Ainsworth & Long (2021). "30 years of free-air carbon dioxide enrichment (FACE): What have we learned about future crop productivity and its potential for adaptation?" *Global Change Biology*.
-- **Benchmark effect**: ~+8-15% for C3 crops (wheat ~+8%, rice ~+12%, soybean ~+16%); near-zero for C4 crops
-- **Estimand**: Elevated CO2 (~+200 ppm above ambient) vs. ambient CO2; FACE studies; primary outcome = grain yield
+- **Benchmark paper (PRIMARY)**: Long SP, Ainsworth EA, Leakey ADB, Nosberger J, Ort DR (2006). "Food for Thought: Lower-Than-Expected Crop Yield Stimulation with Rising CO2 Concentrations." *Science* 312(5782):1918-1921. DOI: 10.1126/science.1114722. PMID: 16809532. Open access.
+- **Benchmark paper (SECONDARY)**: Ainsworth & Long (2021). "30 years of free-air carbon dioxide enrichment (FACE): What have we learned about future crop productivity and its potential for adaptation?" *Global Change Biology* 27(1):27-49. DOI: 10.1111/gcb.15375. PMID: 33135850. Closed access; CI not obtainable. Retained as secondary reference.
+- **Benchmark effect**: ~+8% for FACE C3 grain cereals (wheat, rice); ~+13% for FACE C3 legumes (soybean); ~0% for C4 crops (maize, sorghum). Key finding: FACE shows ~50% less yield stimulation than prior enclosure studies. Long et al. 2006 is a perspective/synthesis article; formal 95% CI not reported. Benchmark range for CI overlap evaluation: approximately +5% to +13% for FACE C3 cereals.
+- **Estimand**: Elevated CO2 (~+200 ppm above ambient) vs. ambient CO2; FACE studies only; primary outcome = grain yield; C3 crop focus
 - **Expected direction**: Positive for C3 crops; near-zero for C4 crops
-- **Known traps**: CO2 x nutrient interaction confounds; elevated ozone co-treatments; per-plant vs. per-area yield; OTC studies may inflate effect vs. FACE
+- **Known traps**: CO2 x nutrient interaction confounds; elevated ozone co-treatments; per-plant vs. per-area yield; OTC studies inflate effect vs. FACE (excluded by design)
+- **Study design restriction**: FACE (Free-Air CO2 Enrichment) experiments only; OTC and chamber studies excluded to match benchmark scope. This is a pre-registered design decision.
 - **Why selected**: Policy-relevant IPCC topic; 30 years of FACE data = large corpus; C3/C4 split tests subgroup analysis; carried forward from V1
+- **Benchmark update note**: Updated 2026-03-26, pre-run. Primary benchmark changed from Ainsworth & Long 2021 to Long et al. 2006 because Long et al. 2006 is FACE-specific (matches pipeline scope restriction), open-access with obtainable benchmark range, and the canonical FACE cereal reference. Ainsworth & Long 2021 retained as secondary. Change made before any pipeline data collection for this topic.
 
 ---
 
@@ -184,11 +187,11 @@ Evaluated on the 5 preregistered confirmatory topics only (Topics 2–6: amf_ino
 
 **S1 - Absolute Gap**
 
-For each topic: compute |pipeline pooled estimate - benchmark point estimate| in percentage points. No formal success threshold. Target for reporting: <= 10pp in >= 4/6 topics.
+For each topic: compute |pipeline pooled estimate - benchmark point estimate| in percentage points. No formal success threshold. Target for reporting: <= 10pp in >= 4/5 confirmatory topics.
 
 **S2 - Benchmark-Aligned Subset**
 
-For each topic: filter to rows labeled benchmark_aligned by Stage 7 effector normalization (field setting + direct yield outcome + isolated intervention + appropriate comparator). Compare aligned-subset pooled estimate vs. full-dataset estimate vs. benchmark. Hypothesis (exploratory): alignment filter improves agreement in >= 3/6 topics.
+For each topic: filter to rows labeled benchmark_aligned by Stage 7 effector normalization (field setting + direct yield outcome + isolated intervention + appropriate comparator). Compare aligned-subset pooled estimate vs. full-dataset estimate vs. benchmark. Hypothesis (exploratory): alignment filter improves agreement in >= 3/5 confirmatory topics.
 
 **S3 - V2 vs V1 Improvement (Carried-Forward Topics)**
 
@@ -278,6 +281,8 @@ LLM replaces keyword-based filtering for: intervention isolation, outcome disamb
 - Download retry logic changes (implementation detail)
 - Additional exploratory analyses clearly labeled as post-hoc
 
+**Model plan**: Initial Phase C runs use claude-sonnet-4-20250514. If P1 or P2 outcomes are borderline (within 1 topic of threshold), a confirmatory re-run using the most capable available Anthropic model (Opus 4.6) will be conducted and both runs reported. This is not considered a deviation.
+
 ### 7.2 Requires Deviation Log Entry (in codex/STATUS_LOG.md)
 
 Any change to: stage architecture, adjudication decision policy or output schema, primary success criteria, topic set, benchmark assignments, variance conversion hierarchy, synthesis method.
@@ -296,6 +301,8 @@ Results will be reported regardless of direction. All 5 confirmatory topics will
 
 V1 was development work run iteratively. Topics were not preregistered. Results below are for reference only and do not contribute to V2 confirmatory evaluation.
 
+**Note on legume_rotation prior results**: The raw V1 extracted data for legume_rotation was produced on 2026-03-25, one day before this preregistration was written. A preliminary synthesis using keyword adjudication (+15.7%) was also visible at preregistration time. The Phase C confirmatory run for legume_rotation will use a fresh Stage 4 re-extraction under the V2 auditable extraction protocol (extract_stage4_universal.py), ensuring the confirmatory result is independent of any prior run. The 2026-03-25 result is treated as a V1 development data point only.
+
 | Topic | V1 Pooled Effect | Benchmark | Direction | Abs Gap |
 |-------|-----------------|-----------|-----------|---------|
 | organic_yield_gap | -4.9% | -19.2% | CORRECT | 14.3pp |
@@ -305,7 +312,7 @@ V1 was development work run iteratively. Topics were not preregistered. Results 
 | biochar_crop_yield | +6.7% | +16.0% | CORRECT | 9.3pp |
 | intercropping_yield | -3.1% | +22.0% | WRONG | 25.1pp |
 
-V1 direction agreement: 4/6 topics (67%). V2 primary target: >= 5/6.
+V1 direction agreement: 4/6 topics (67%). V2 primary target: >= 4/5 confirmatory topics (see Section 5).
 
 ### 8.2 V1 Lessons Motivating V2 Design
 
@@ -349,9 +356,10 @@ If any phase reveals a bug requiring architectural change, this will be logged a
 |-------|-----------|------|---------|--------|-----|
 | humic_acid_yield | Ma, Cheng & Zhang | 2024 | Agronomy (MDPI) | +12% | 10.3390/agronomy14122763 |
 | amf_inoculation_yield | Wu et al. | 2022 | PeerJ | +23% | TBC |
-| biochar_tropical_yield | Jeffery et al. | 2017 | ERL (IOP) | +25% tropics | TBC |
+| biochar_tropical_yield | Jeffery et al. | 2017 | ERL (IOP) | +25% tropics (95% CI: ~+15% to +35%, graphical read from Fig 1) | 10.1088/1748-9326/aa67bd |
 | legume_rotation | Zhao et al. | 2022 | Nature Comm. | +20% | 10.1038/s41467-022-28412-9 |
-| elevated_co2_face_yield | Ainsworth & Long | 2021 | Global Change Biol. | ~+10-15% C3 | TBC |
+| elevated_co2_face_yield | Long et al. (PRIMARY) | 2006 | Science | ~+8% FACE cereals; ~+13% FACE legumes; ~0% C4; range ~+5-13% (no formal CI; perspective article) | 10.1126/science.1114722 |
+| elevated_co2_face_yield | Ainsworth & Long (SECONDARY) | 2021 | Global Change Biol. | ~+18% all C3 crops pooled; CI not obtainable (closed access) | 10.1111/gcb.15375 |
 | cover_crop_corn_yield | Marcillo & Miguez | 2017 | JSWC | -1% to +3% | TBC |
 
 TBC = To be confirmed from journal website.

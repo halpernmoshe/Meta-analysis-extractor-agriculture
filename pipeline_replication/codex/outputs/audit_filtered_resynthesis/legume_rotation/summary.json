@@ -1,0 +1,20 @@
+{
+  "topic": "legume_rotation",
+  "n_rows_before": 421,
+  "n_rows_after": 341,
+  "n_removed": 80,
+  "pct_removed": 19.002375296912113,
+  "meta_before": {
+    "k": 421,
+    "pooled_pct": 23.3229925851546,
+    "ci_lo_pct": 19.783437869604548,
+    "ci_hi_pct": 26.96713978700489
+  },
+  "meta_after": {
+    "k": 341,
+    "pooled_pct": 23.449565831200413,
+    "ci_lo_pct": 19.401773559198055,
+    "ci_hi_pct": 27.63458070709617
+  },
+  "delta_pct_points": 0.12657324604581177
+}

@@ -1,0 +1,737 @@
+[
+  {
+    "row_number": 4,
+    "paper_id": "Arbuscular_mycorrhiza_enhances_nutrient__2011",
+    "outcome": "Total biomass",
+    "effect_pct": "29.470672389127333",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "non_independent_average",
+      "paper_warning",
+      "yield_attribute"
+    ],
+    "treatment_description": "AMF inoculation (Symbivit), non-sterilized soil, 2007",
+    "control_description": "No AMF inoculation, non-sterilized soil, 2007",
+    "notes": "Means and SEM in brackets. n=10 (pooled across N+/N- treatments). Non-sterilized soil still showed positive AMF effect on biomass. Control (M-) had 17.8% indigenous AMF colonization."
+  },
+  {
+    "row_number": 74,
+    "paper_id": "Chen_2017_Arbuscular_Mycorrhizal_Symbiosis_Alleviates_Salt",
+    "outcome": "Shoot dry weight",
+    "effect_pct": "129.99999999999997",
+    "confidence": "medium",
+    "severity": "likely_off_target",
+    "reasons": [
+      "extreme_effect",
+      "yield_attribute"
+    ],
+    "treatment_description": "Inoculated with Rhizophagus irregularis (BGC BJ109), 100 mM NaCl",
+    "control_description": "Non-mycorrhizal (autoclaved inoculum filtrate), 100 mM NaCl",
+    "notes": "Values estimated from bar chart. Error bars assumed SE. Mycorrhizal colonization was ~87% at 100 mM NaCl (similar to 0 mM, no significant difference)."
+  },
+  {
+    "row_number": 75,
+    "paper_id": "Chen_2017_Arbuscular_Mycorrhizal_Symbiosis_Alleviates_Salt",
+    "outcome": "Shoot dry weight",
+    "effect_pct": "130.76923076923077",
+    "confidence": "medium",
+    "severity": "likely_off_target",
+    "reasons": [
+      "extreme_effect",
+      "yield_attribute"
+    ],
+    "treatment_description": "Inoculated with Rhizophagus irregularis (BGC BJ109), 200 mM NaCl",
+    "control_description": "Non-mycorrhizal (autoclaved inoculum filtrate), 200 mM NaCl",
+    "notes": "Values estimated from bar chart. Error bars assumed SE. Mycorrhizal colonization decreased to 79.16% at 200 mM NaCl."
+  },
+  {
+    "row_number": 133,
+    "paper_id": "Phosphorus_and_Nitrogen_Regulate_Arbuscu_2014",
+    "outcome": "Shoot fresh weight",
+    "effect_pct": "50.0",
+    "confidence": "medium",
+    "severity": "likely_off_target",
+    "reasons": [
+      "paper_warning",
+      "yield_attribute"
+    ],
+    "treatment_description": "Inoculated with R. irregularis (MUCL 43204), water only, 48 days",
+    "control_description": "Non-inoculated, water only, 48 days",
+    "notes": "Values estimated from Figure 6a. Text states 'plants that were not supplied with nutrient solution did not show a significant MGR despite considerable colonization levels'. MGR ~1.0 (Figure 3d). Nutrient-starved plants gained qualitative nutrient benefit but not significant growth."
+  },
+  {
+    "row_number": 134,
+    "paper_id": "Phosphorus_and_Nitrogen_Regulate_Arbuscu_2014",
+    "outcome": "Shoot fresh weight",
+    "effect_pct": "33.33333333333333",
+    "confidence": "medium",
+    "severity": "likely_off_target",
+    "reasons": [
+      "paper_warning",
+      "yield_attribute"
+    ],
+    "treatment_description": "Inoculated with R. irregularis (MUCL 43204), 5 mM KH2PO4 alone, 48 days",
+    "control_description": "Non-inoculated, 5 mM KH2PO4 alone, 48 days",
+    "notes": "Values estimated from Figure 6a. Under Pi alone without nutrient solution, AMF colonization was reduced to ~30% and interaction was parasitic: mycorrhizal plants had LOWER nutrient levels than non-myc controls (Figure 5b). No significant MGR. AM acted as parasite under P-only conditions."
+  },
+  {
+    "row_number": 73,
+    "paper_id": "Chen_2017_Arbuscular_Mycorrhizal_Symbiosis_Alleviates_Salt",
+    "outcome": "Shoot dry weight",
+    "effect_pct": "66.66666666666666",
+    "confidence": "medium",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "Inoculated with Rhizophagus irregularis (BGC BJ109), 0 mM NaCl",
+    "control_description": "Non-mycorrhizal (autoclaved inoculum filtrate), 0 mM NaCl",
+    "notes": "Values estimated from bar chart. Error bars assumed SE based on plant science convention but not explicitly stated in paper. Two-way ANOVA: P_AMF***, P_salt***, P_AMF\u00d7salt*. Mycorrhizal colonization was 89.29% at 0 mM NaCl."
+  },
+  {
+    "row_number": 111,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "14.236706689536879",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, yeast 5 g/L, NPK 0 kg/ha",
+    "control_description": "-AMF, yeast 5 g/L, NPK 0 kg/ha",
+    "notes": "Triple interaction. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 112,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "-11.800356506238867",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, yeast 5 g/L, NPK 150 kg/ha",
+    "control_description": "-AMF, yeast 5 g/L, NPK 150 kg/ha",
+    "notes": "Triple interaction. Negative AMF effect on fruit number at this combination. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 113,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "49.7833622183709",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, yeast 5 g/L, NPK 300 kg/ha",
+    "control_description": "-AMF, yeast 5 g/L, NPK 300 kg/ha",
+    "notes": "Triple interaction. Highest fruit number overall. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 114,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "-1.8296973961998702",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, yeast 5 g/L, NPK 450 kg/ha",
+    "control_description": "-AMF, yeast 5 g/L, NPK 450 kg/ha",
+    "notes": "Triple interaction. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 115,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "33.5480407944176",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, water spray, NPK 0 kg/ha",
+    "control_description": "-AMF, water spray, NPK 0 kg/ha",
+    "notes": "Triple interaction. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 116,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "8.25565912117177",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, water spray, NPK 150 kg/ha",
+    "control_description": "-AMF, water spray, NPK 150 kg/ha",
+    "notes": "Triple interaction. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 117,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "-11.632341723874895",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, water spray, NPK 300 kg/ha",
+    "control_description": "-AMF, water spray, NPK 300 kg/ha",
+    "notes": "Triple interaction. Negative AMF effect on fruit number. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 118,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "3.923725705903925",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF, water spray, NPK 450 kg/ha",
+    "control_description": "-AMF, water spray, NPK 450 kg/ha",
+    "notes": "Triple interaction. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 130,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "number of fruits per plant",
+    "effect_pct": "8.667476711219106",
+    "confidence": "high",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "+AMF (main effect, averaged across all yeast and NPK levels)",
+    "control_description": "-AMF (main effect, averaged across all yeast and NPK levels)",
+    "notes": "Main effect of mycorrhiza on fruit number was NOT statistically significant. RCBD split-split-plot, 3 replicates. No SE/SD reported."
+  },
+  {
+    "row_number": 135,
+    "paper_id": "Phosphorus_and_Nitrogen_Regulate_Arbuscu_2014",
+    "outcome": "Shoot fresh weight",
+    "effect_pct": "15.384615384615385",
+    "confidence": "medium",
+    "severity": "likely_off_target",
+    "reasons": [
+      "yield_attribute"
+    ],
+    "treatment_description": "Inoculated with R. irregularis (MUCL 43204), 5 mM KH2PO4 + basic nutrient solution, 48 days",
+    "control_description": "Non-inoculated, 5 mM KH2PO4 + basic nutrient solution, 48 days",
+    "notes": "Values estimated from Figure 6a. High Pi strongly inhibited AM colonization (reduced to ~3% with full nutrients, Figure 3a). Despite reduced colonization, some growth observed. AM colonization under combined high P + nutrients was very low. The inhibitory Pi effect dominates when nutrients are adequate."
+  },
+  {
+    "row_number": 157,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Root dry weight",
+    "effect_pct": "115.43715846994533",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning",
+      "system_productivity"
+    ],
+    "treatment_description": "AMF alone (Glomus + Sclerocystis + Acaulospora consortium)",
+    "control_description": "No inoculation control",
+    "notes": "M treatment vs C."
+  },
+  {
+    "row_number": 158,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Shoot dry weight",
+    "effect_pct": "130.12218877279972",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect",
+      "paper_warning"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM: BS17+PGP27+RhOF4+RhOF155+AMF consortium)",
+    "control_description": "No inoculation control",
+    "notes": "PRM treatment vs C. PRM includes bacteria and AMF; AMF effect is confounded with bacterial inoculants. Abstract reports 130% improvement for V. faba shoot DW."
+  },
+  {
+    "row_number": 159,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Root dry weight",
+    "effect_pct": "203.41530054644807",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect",
+      "paper_warning"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM: BS17+PGP27+RhOF4+RhOF155+AMF consortium)",
+    "control_description": "No inoculation control",
+    "notes": "PRM treatment vs C. Abstract reports 200% improvement for V. faba root DW."
+  },
+  {
+    "row_number": 162,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Shoot dry weight",
+    "effect_pct": "126.95312499999997",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning",
+      "system_productivity"
+    ],
+    "treatment_description": "AMF alone (Glomus + Sclerocystis + Acaulospora consortium)",
+    "control_description": "No inoculation control",
+    "notes": "M treatment vs C. Wheat. Mycorrhization frequency: M=93.33%, C=35%."
+  },
+  {
+    "row_number": 163,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Root dry weight",
+    "effect_pct": "126.31578947368418",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning",
+      "system_productivity"
+    ],
+    "treatment_description": "AMF alone (Glomus + Sclerocystis + Acaulospora consortium)",
+    "control_description": "No inoculation control",
+    "notes": "M treatment vs C. Wheat."
+  },
+  {
+    "row_number": 168,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Pod number",
+    "effect_pct": "111.90476190476191",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning",
+      "system_productivity"
+    ],
+    "treatment_description": "AMF alone (Glomus + Sclerocystis + Acaulospora consortium)",
+    "control_description": "No inoculation control",
+    "notes": "M treatment vs C. Faba bean pod number. Text reports 157% increase over control for M (including pod weight increase)."
+  },
+  {
+    "row_number": 169,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Pod weight",
+    "effect_pct": "157.01786365293475",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning",
+      "system_productivity"
+    ],
+    "treatment_description": "AMF alone (Glomus + Sclerocystis + Acaulospora consortium)",
+    "control_description": "No inoculation control",
+    "notes": "M treatment vs C. Faba bean green pod weight (grain yield proxy). Table 5 reports 'Increase pod weight over control' as 157% for M."
+  },
+  {
+    "row_number": 2,
+    "paper_id": "Arbuscular_mycorrhiza_enhances_nutrient__2011",
+    "outcome": "Total biomass",
+    "effect_pct": "1.360544217687076",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "non_independent_average",
+      "paper_warning"
+    ],
+    "treatment_description": "AMF inoculation (Symbivit), sterilized soil, 2006",
+    "control_description": "No AMF inoculation, sterilized soil, 2006",
+    "notes": "Means and SEM in brackets. n=10 (pooled across N+/N- treatments, 5 reps each). Biomass difference not significant in 2006."
+  },
+  {
+    "row_number": 3,
+    "paper_id": "Arbuscular_mycorrhiza_enhances_nutrient__2011",
+    "outcome": "Total biomass",
+    "effect_pct": "42.666666666666664",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "non_independent_average",
+      "paper_warning"
+    ],
+    "treatment_description": "AMF inoculation (Symbivit), sterilized soil, 2007",
+    "control_description": "No AMF inoculation, sterilized soil, 2007",
+    "notes": "Means and SEM in brackets. n=10 (pooled across N+/N- treatments). Biomass difference significant in 2007. Text states AMF increased total dry matter significantly in 2007."
+  },
+  {
+    "row_number": 36,
+    "paper_id": "Arbuscular_mycorrhizal_fungus_improves_t_2016",
+    "outcome": "Leaf fresh weight",
+    "effect_pct": "109.44827586206898",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect",
+      "paper_warning"
+    ],
+    "treatment_description": "Butterhead lettuce inoculated with 50 spores of Funneliformis mosseae",
+    "control_description": "Uninoculated butterhead lettuce (no-AMF)",
+    "notes": "Primary yield outcome. CRD with 4 replications (plots) and 6 subreplications (plants per plot). No SE/SD reported in paper; only means and p-values from t-test. Abandoned field, no fertilizer."
+  },
+  {
+    "row_number": 136,
+    "paper_id": "Potential_of_AM_Fungi_in_Phytoremediatio_2014",
+    "outcome": "Grain yield",
+    "effect_pct": "-7.321131447587355",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "non_independent_average",
+      "paper_warning"
+    ],
+    "treatment_description": "AMF inoculation (Glomus intraradices dominant) + NPK basal dose",
+    "control_description": "NPK basal dose only (no AMF, no heavy metals)",
+    "notes": "CRD with 4 replications. AMF spores (100 per 100g soil) dominated by G. intraradices from berseem rhizosphere. LSD at P<=0.05 is pooled across all 9 treatments. 5 plants per pot, grown 127 days."
+  },
+  {
+    "row_number": 137,
+    "paper_id": "Potential_of_AM_Fungi_in_Phytoremediatio_2014",
+    "outcome": "Shoot dry matter yield",
+    "effect_pct": "-1.3905894700017492",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "non_independent_average",
+      "paper_warning"
+    ],
+    "treatment_description": "AMF inoculation (Glomus intraradices dominant) + NPK basal dose",
+    "control_description": "NPK basal dose only (no AMF, no heavy metals)",
+    "notes": "CRD with 4 replications. LSD at P<=0.05 pooled across all 9 treatments."
+  },
+  {
+    "row_number": 139,
+    "paper_id": "Potential_of_AM_Fungi_in_Phytoremediatio_2014",
+    "outcome": "100 grain weight",
+    "effect_pct": "-3.8031319910514525",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "non_independent_average",
+      "paper_warning"
+    ],
+    "treatment_description": "AMF inoculation (Glomus intraradices dominant) + NPK basal dose",
+    "control_description": "NPK basal dose only (no AMF, no heavy metals)",
+    "notes": "CRD with 4 replications. LSD at P<=0.05 pooled across all 9 treatments."
+  },
+  {
+    "row_number": 156,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Shoot dry weight",
+    "effect_pct": "97.39684788383212",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning",
+      "system_productivity"
+    ],
+    "treatment_description": "AMF alone (Glomus + Sclerocystis + Acaulospora consortium)",
+    "control_description": "No inoculation control",
+    "notes": "M treatment vs C. Mycorrhization frequency: M=95%, C=35%. Letters indicate significant differences (SNK test p<0.05)."
+  },
+  {
+    "row_number": 161,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Root dry weight",
+    "effect_pct": "105.64814814814814",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM)",
+    "control_description": "PGPR + rhizobia without AMF (PR)",
+    "notes": "PRM vs PR comparison isolates AMF effect in presence of bacteria."
+  },
+  {
+    "row_number": 164,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Shoot dry weight",
+    "effect_pct": "293.74999999999994",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM)",
+    "control_description": "No inoculation control",
+    "notes": "PRM treatment vs C. Wheat. Abstract reports ~4x increase for T. durum biomass. PRM includes bacteria + AMF."
+  },
+  {
+    "row_number": 165,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Root dry weight",
+    "effect_pct": "258.2995951417003",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM)",
+    "control_description": "No inoculation control",
+    "notes": "PRM treatment vs C. Wheat."
+  },
+  {
+    "row_number": 170,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Pod number",
+    "effect_pct": "157.14285714285714",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM)",
+    "control_description": "No inoculation control",
+    "notes": "PRM treatment vs C. Faba bean pod number. Abstract reports 270 x 10^4 pods/ha for PRM."
+  },
+  {
+    "row_number": 171,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Pod weight",
+    "effect_pct": "348.23186292380603",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM)",
+    "control_description": "No inoculation control",
+    "notes": "PRM treatment vs C. Faba bean pod weight. Abstract reports 30737.5 kg/ha. Table 5 reports 348% increase."
+  },
+  {
+    "row_number": 173,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Pod weight",
+    "effect_pct": "139.43524829600779",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM)",
+    "control_description": "PGPR + rhizobia without AMF (PR)",
+    "notes": "PRM vs PR comparison isolates AMF effect. Faba bean pod weight."
+  },
+  {
+    "row_number": 174,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Spike dry weight",
+    "effect_pct": "26.703499079189687",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning",
+      "system_productivity"
+    ],
+    "treatment_description": "AMF alone (Glomus + Sclerocystis + Acaulospora consortium)",
+    "control_description": "No inoculation control",
+    "notes": "M treatment vs C. Wheat spike weight. Letter grouping 'bc' overlaps with 'c', suggesting non-significant difference. Table 5 reports 26% increase."
+  },
+  {
+    "row_number": 175,
+    "paper_id": "Use_of_Rhizobacteria_and_Mycorrhizae_Con_2019",
+    "outcome": "Spike dry weight",
+    "effect_pct": "143.0939226519337",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination",
+      "extreme_effect"
+    ],
+    "treatment_description": "PGPR + rhizobia + AMF (PRM)",
+    "control_description": "No inoculation control",
+    "notes": "PRM treatment vs C. Wheat spike weight. Abstract reports 10560 kg/ha. Table 5 reports 143% increase."
+  },
+  {
+    "row_number": 35,
+    "paper_id": "Arbuscular_mycorrhizal_fungi__AMF__enhan_2020",
+    "outcome": "Seed cotton yield",
+    "effect_pct": "28.535569627474477",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning"
+    ],
+    "treatment_description": "+AMF (Rhizophagus irregularis CD1 inoculated)",
+    "control_description": "-AMF (non-inoculated control)",
+    "notes": "Calculated yield = plants per hectare (41667) x mature boll number x single boll weight / 1000. 2-year field experiment. Variance assumed SE based on Table 3 header 'Standard errors' and figure captions 'means \u00b1 standard error'. Yield increase 28.54% explicitly stated."
+  },
+  {
+    "row_number": 39,
+    "paper_id": "Ceballos_2013_The_In_Vitro_Mass_Produced",
+    "outcome": "Root dry weight",
+    "effect_pct": "17.985611510791355",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "non_independent_average"
+    ],
+    "treatment_description": "+AMF (R. irregularis), pooled across P levels",
+    "control_description": "-AMF (non-inoculated), pooled across P levels",
+    "notes": "Text states 18.3% increase in root dry mass (F(1,3)=22.84, P\u22640.017). No AMF x P interaction for dry weight. Values estimated from Figure 1a; n=36 per AMF level (12 reps \u00d7 3 P levels pooled). Error bars = +1 SE."
+  },
+  {
+    "row_number": 46,
+    "paper_id": "Cely_2016_Inoculant_of_Arbuscular_Mycorrhizal_Fungi",
+    "outcome": "Shoot dry weight (biomass)",
+    "effect_pct": "35.04672897196262",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning"
+    ],
+    "treatment_description": "R. clarus inoculation plus 65 kg/ha KCl",
+    "control_description": "Non-AMF inoculation and non-fertilizer application",
+    "notes": "Variance type inferred as SD based on magnitude relative to means (not explicitly stated in table). n=5 replicates (randomized block design, 5 plots per treatment). AMF treatment received 65 kg/ha KCl while Control received nothing, so P level not perfectly matched."
+  },
+  {
+    "row_number": 49,
+    "paper_id": "Cely_2016_Inoculant_of_Arbuscular_Mycorrhizal_Fungi",
+    "outcome": "Grain yield",
+    "effect_pct": "94.44444444444444",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning"
+    ],
+    "treatment_description": "R. clarus inoculation plus 65 kg/ha KCl",
+    "control_description": "Non-AMF inoculation and non-fertilizer application",
+    "notes": "Values estimated from bar chart. Figure caption confirms bars represent SE of means. AMF vs Control both share Tukey group separation (a vs b). SE values approximate from error bars."
+  },
+  {
+    "row_number": 52,
+    "paper_id": "Cely_2016_Inoculant_of_Arbuscular_Mycorrhizal_Fungi",
+    "outcome": "Grain yield",
+    "effect_pct": "25.0",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning"
+    ],
+    "treatment_description": "R. clarus inoculation plus 65 kg/ha KCl",
+    "control_description": "Non-AMF inoculation and non-fertilizer application",
+    "notes": "Values estimated from bar chart. SE from error bars. BRS 359 RR is transgenic (Roundup Ready) soybean variety."
+  },
+  {
+    "row_number": 58,
+    "paper_id": "Cely_2016_Inoculant_of_Arbuscular_Mycorrhizal_Fungi",
+    "outcome": "Lint cotton yield",
+    "effect_pct": "118.18181818181819",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect"
+    ],
+    "treatment_description": "R. clarus inoculation plus 65 kg/ha KCl + 200 kg/ha urea",
+    "control_description": "Non-AMF inoculation and non-fertilizer application",
+    "notes": "Values estimated from bar chart. Figure caption confirms bars = SE. N level confounded (AMF gets urea, Control gets nothing)."
+  },
+  {
+    "row_number": 60,
+    "paper_id": "Cely_2016_Inoculant_of_Arbuscular_Mycorrhizal_Fungi",
+    "outcome": "Lint cotton yield",
+    "effect_pct": "118.18181818181819",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect"
+    ],
+    "treatment_description": "R. clarus inoculation plus 100 kg/ha PK 20:20 + 200 kg/ha urea (half P dose)",
+    "control_description": "Non-AMF inoculation and non-fertilizer application",
+    "notes": "Values estimated from bar chart. AMF+1/2Fert vs Control: P and N levels not matched. SE from error bars."
+  },
+  {
+    "row_number": 76,
+    "paper_id": "Chen_2017_Arbuscular_Mycorrhizal_Symbiosis_Alleviates_Salt",
+    "outcome": "Root dry weight",
+    "effect_pct": "54.54545454545453",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning"
+    ],
+    "treatment_description": "Inoculated with Rhizophagus irregularis (BGC BJ109), 0 mM NaCl",
+    "control_description": "Non-mycorrhizal (autoclaved inoculum filtrate), 0 mM NaCl",
+    "notes": "Values estimated from bar chart. Error bars assumed SE. Two-way ANOVA: P_AMF***, P_salt***, P_AMF\u00d7salt NS."
+  },
+  {
+    "row_number": 83,
+    "paper_id": "Conversa_2015_Influence_of_biochar_mycorrhizal_inoculation",
+    "outcome": "Total plant dry weight",
+    "effect_pct": "19.298245614035082",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "co_intervention_contamination"
+    ],
+    "treatment_description": "AMF inoculated (MICO+; Glomus intraradices + Glomus mosseae, 12 kg/m3)",
+    "control_description": "Non-inoculated (MICO0)",
+    "notes": "Main effect of AMF inoculation averaged across 3 biochar rates (BC0, BC30, BC70) and 2 fertilizer rates (FERT1, FERT2). Significance from Table 4 ANOVA F-test for Total DW at 74 DAT. No per-group variance reported; LSD used for mean separation."
+  },
+  {
+    "row_number": 87,
+    "paper_id": "EFFECT_OF_ENDOTROPHIC_MYCORRHIZA_AND_CHE_2021",
+    "outcome": "total fruit yield",
+    "effect_pct": "61.23834233223475",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning"
+    ],
+    "treatment_description": "+AMF, yeast 5 g/L, NPK 0 kg/ha",
+    "control_description": "-AMF, yeast 5 g/L, NPK 0 kg/ha",
+    "notes": "Triple interaction (Mycorrhiza x Yeast x NPK). RCBD split-split-plot, 3 replicates. No SE/SD reported; means compared by Duncan test at 0.05. Eggplant cultivar also transliterated as 'Elton Kobry'."
+  },
+  {
+    "row_number": 132,
+    "paper_id": "Phosphorus_and_Nitrogen_Regulate_Arbuscu_2014",
+    "outcome": "Shoot fresh weight",
+    "effect_pct": "100.0",
+    "confidence": "medium",
+    "severity": "needs_review",
+    "reasons": [
+      "extreme_effect"
+    ],
+    "treatment_description": "Inoculated with R. irregularis (MUCL 43204), basic nutrient solution, 48 days",
+    "control_description": "Non-inoculated, basic nutrient solution, 48 days",
+    "notes": "Values estimated from Figure 6a bar chart. Strongest positive MGR observed under nutrient solution without added P. MGR ~2.0 (Figure 3d). Error bars are SD per Methods section."
+  },
+  {
+    "row_number": 138,
+    "paper_id": "Potential_of_AM_Fungi_in_Phytoremediatio_2014",
+    "outcome": "Root dry matter yield",
+    "effect_pct": "6.666666666666672",
+    "confidence": "high",
+    "severity": "needs_review",
+    "reasons": [
+      "paper_warning"
+    ],
+    "treatment_description": "AMF inoculation (Glomus intraradices dominant) + NPK basal dose",
+    "control_description": "NPK basal dose only (no AMF, no heavy metals)",
+    "notes": "Table header says mg/pot but root values (2.4-3.7) are consistent with g/pot. LSD at P<=0.05 of 0.1542 confirms g scale."
+  }
+]

@@ -1,0 +1,569 @@
+{
+  "paper_id": "58_Kalayci_1999",
+  "title": "Grain yield, zinc efficiency and zinc concentration of wheat cultivars grown in a zinc-deficient calcareous soil in field and greenhouse",
+  "authors": "Kalayci, M.; Torun, B.; Eker, S.; Aydin, M.; Ozturk, L.; Cakmak, I.",
+  "year": 1999,
+  "species": "Triticum aestivum / Triticum durum",
+  "consensus_observations": [
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 16, "control_mean": 8, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Sertak 52", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 15, "control_mean": 9, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Sertak 52", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 8, "effect_pct": 37.5,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-3", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 9, "effect_pct": 44.44,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-3", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 6, "effect_pct": 116.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Yayla 305", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 15, "control_mean": 9, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Yayla 305", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 8, "effect_pct": 75.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kirac 66", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 11, "effect_pct": 27.27,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kirac 66", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 6, "effect_pct": 116.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "AK 702", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 9, "effect_pct": 22.22,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "AK 702", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 6, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Gun 91", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 8, "effect_pct": 62.5,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Gun 91", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 9, "control_mean": 6, "effect_pct": 50.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kirgiz 95", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 10, "effect_pct": 20.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kirgiz 95", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Gerek 79", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Gerek 79", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 6, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 14", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 7, "effect_pct": 57.14,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 14", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 7, "effect_pct": 85.71,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "P 8-6", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 6, "effect_pct": 133.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "P 8-6", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 7, "effect_pct": 85.71,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "4-11", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 7, "effect_pct": 85.71,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "4-11", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 5, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-14", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 7, "effect_pct": 42.86,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-14", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 6, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Bezostaya 1", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Bezostaya 1", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 7, "effect_pct": 85.71,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Zitarka", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 7, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Zitarka", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 6, "effect_pct": 116.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kutluk 94", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 6, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kutluk 94", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 6, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "4-22", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "4-22", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 6, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-11", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 15, "control_mean": 8, "effect_pct": 87.5,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-11", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 6, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Atay 85", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 8, "effect_pct": 37.5,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Atay 85", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 15, "control_mean": 6, "effect_pct": 150.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 84-16", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 8, "effect_pct": 62.5,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 84-16", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 6, "effect_pct": 133.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Hawk", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 6, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Hawk", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 5, "effect_pct": 120.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD2-8", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 7, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD2-8", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 7, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 86-7", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 8, "effect_pct": 62.5,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 86-7", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kata A-1", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kata A-1", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 2-23", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 5, "effect_pct": 140.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 2-23", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "P 8-8", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "P 8-8", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 7, "effect_pct": 57.14,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Bolal 2973", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 9, "control_mean": 6, "effect_pct": 50.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Bolal 2973", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 6, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 1-21", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 8, "effect_pct": 50.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 1-21", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 6, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "P. Niska", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 8, "effect_pct": 62.5,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "P. Niska", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Partizanka", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Partizanka", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 5, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 1-22", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 8, "effect_pct": 25.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 1-22", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 7, "effect_pct": 85.71,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kiziltan", "wheat_type": "durum", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 7, "effect_pct": 57.14,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kiziltan", "wheat_type": "durum", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 8, "control_mean": 6, "effect_pct": 33.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-8-1", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 5, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "ES 90-8-1", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kirkpinar 79", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kirkpinar 79", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 17, "control_mean": 6, "effect_pct": 183.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kunduru 1149", "wheat_type": "durum", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 7, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Kunduru 1149", "wheat_type": "durum", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 10, "control_mean": 6, "effect_pct": 66.67,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "BDME-9", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "BDME-9", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 13, "control_mean": 5, "effect_pct": 160.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Cakmak 79", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 7, "effect_pct": 57.14,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Cakmak 79", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 6, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Dagdas", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 6, "effect_pct": 83.33,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "Dagdas", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 5, "effect_pct": 180.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 2-22", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 7, "effect_pct": 71.43,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 2-22", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 6, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "BDME-10", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 12, "control_mean": 6, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "BDME-10", "wheat_type": "bread", "year": "1994-1995"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 11, "control_mean": 5, "effect_pct": 120.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 1-2", "wheat_type": "bread", "year": "1993-1994"}
+    },
+    {
+      "element": "Zn", "tissue": "grain", "treatment_mean": 14, "control_mean": 7, "effect_pct": 100.0,
+      "n": 4, "unit": "mg/kg DW", "data_source": "Table 2",
+      "treatment_description": "+Zn (23 kg Zn/ha as ZnSO4)",
+      "control_description": "-Zn (no Zn added)",
+      "moderators": {"cultivar": "SBVD 1-2", "wheat_type": "bread", "year": "1994-1995"}
+    }
+  ]
+}

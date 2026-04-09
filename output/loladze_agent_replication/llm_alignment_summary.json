@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-03-19T09:41:52.585244",
+  "description": "LLM-driven alignment of single-agent Loladze extraction vs GT",
+  "results": {
+    "v5_hungarian_baseline": {
+      "n_matched": 650,
+      "r": 0.887,
+      "mae_pp": 3.63,
+      "direction_pct": 90.8,
+      "overall_diff_pp": 0.5,
+      "method": "Non-circular Hungarian with tie-breaking"
+    },
+    "llm_alignment_5pp": {
+      "n_matched": 379,
+      "r": 0.995,
+      "mae_pp": 0.8,
+      "direction_pct": 95.4,
+      "overall_diff_pp": 0.06,
+      "method": "LLM alignment, element constraint, auto strategy, 5pp tolerance",
+      "tiers": {
+        "excellent": 32,
+        "good": 11,
+        "fair": 0,
+        "poor": 0
+      }
+    },
+    "llm_alignment_10pp": {
+      "n_matched": 413,
+      "r": 0.984,
+      "mae_pp": 1.36,
+      "direction_pct": 95.0,
+      "overall_diff_pp": 0.01,
+      "method": "LLM alignment, element constraint, auto strategy, 10pp tolerance",
+      "tiers": {
+        "excellent": 27,
+        "good": 14,
+        "fair": 4,
+        "poor": 0
+      }
+    }
+  },
+  "key_finding": "LLM alignment dramatically improves r (0.887 -> 0.984) by avoiding cross-tissue and cross-treatment mismatches that contaminated the Hungarian matching approach.",
+  "files": {
+    "alignment_5pp": "output/loladze_agent_replication/alignment_fixed2.json",
+    "alignment_10pp": "output/loladze_agent_replication/alignment_fixed3.json",
+    "validation_5pp": "output/loladze_agent_replication/validation_llm_5pp.json",
+    "validation_10pp": "output/loladze_agent_replication/validation_llm_10pp.json"
+  }
+}

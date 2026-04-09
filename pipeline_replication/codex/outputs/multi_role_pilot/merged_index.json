@@ -1,0 +1,97 @@
+{
+  "011_Huluka_1994": {
+    "paper_id": "011_Huluka_1994",
+    "roles_loaded": [
+      "benchmark_agent",
+      "consistency_agent",
+      "design_agent",
+      "figure_agent",
+      "narrative_agent",
+      "table_agent"
+    ],
+    "n_claim_rows": 7,
+    "n_constraints": 6,
+    "n_role_contradictions": 3,
+    "claim_contradiction_counts": {
+      "single_role_only": 5,
+      "timepoint_mismatch": 2,
+      "ratio_only_target": 2
+    }
+  },
+  "015_Pleijel_2009": {
+    "paper_id": "015_Pleijel_2009",
+    "roles_loaded": [
+      "benchmark_agent",
+      "consistency_agent",
+      "design_agent",
+      "figure_agent",
+      "narrative_agent",
+      "table_agent"
+    ],
+    "n_claim_rows": 7,
+    "n_constraints": 16,
+    "n_role_contradictions": 0,
+    "claim_contradiction_counts": {
+      "single_role_only": 5
+    }
+  },
+  "019_Baxter_1994": {
+    "paper_id": "019_Baxter_1994",
+    "roles_loaded": [
+      "benchmark_agent",
+      "consistency_agent",
+      "design_agent",
+      "figure_agent",
+      "narrative_agent",
+      "table_agent"
+    ],
+    "n_claim_rows": 8,
+    "n_constraints": 5,
+    "n_role_contradictions": 3,
+    "claim_contradiction_counts": {
+      "construct_drift": 2,
+      "single_role_only": 7,
+      "benchmark_comparability_conflict": 2,
+      "unit_conflict": 2
+    }
+  },
+  "026_Seneweera_1997": {
+    "paper_id": "026_Seneweera_1997",
+    "roles_loaded": [
+      "benchmark_agent",
+      "consistency_agent",
+      "design_agent",
+      "figure_agent",
+      "narrative_agent",
+      "table_agent"
+    ],
+    "n_claim_rows": 7,
+    "n_constraints": 5,
+    "n_role_contradictions": 3,
+    "claim_contradiction_counts": {
+      "single_role_only": 5,
+      "figure_only_missingness": 2,
+      "tissue_mismatch": 2,
+      "unit_conflict": 1
+    }
+  },
+  "035_Oksanen_2005": {
+    "paper_id": "035_Oksanen_2005",
+    "roles_loaded": [
+      "benchmark_agent",
+      "consistency_agent",
+      "design_agent",
+      "figure_agent",
+      "narrative_agent",
+      "table_agent"
+    ],
+    "n_claim_rows": 6,
+    "n_constraints": 5,
+    "n_role_contradictions": 3,
+    "claim_contradiction_counts": {
+      "single_role_only": 4,
+      "arm_mismatch": 2,
+      "candidate_corruption": 2
+    }
+  }
+}

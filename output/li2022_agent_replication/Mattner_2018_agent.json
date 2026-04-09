@@ -1,0 +1,72 @@
+{
+  "paper_id": "Mattner_2018",
+  "title": "Increased growth response of strawberry roots to a commercial extract from Durvillaea potatorum and Ascophyllum nodosum",
+  "authors": ["Mattner, S.W.", "Milinkovic, M.", "Arioli, T."],
+  "year": 2018,
+  "species": "Fragaria x ananassa",
+  "consensus_observations": [
+    {
+      "outcome": "runner_yield",
+      "treatment_mean": 103.4,
+      "control_mean": 86.7,
+      "effect_pct": 19.26,
+      "n": 16,
+      "unit": "runners/m",
+      "data_source": "Table 1",
+      "treatment_description": "Seasol (D. potatorum + A. nodosum) seaweed extract 10 L/ha monthly drench, 6 applications",
+      "control_description": "Untreated (water)",
+      "moderators": {
+        "crop": "strawberry",
+        "cultivar": "Fortuna",
+        "biostimulant_type": "SWE",
+        "application_method": "drench",
+        "rate": "10 L/ha (1:400 dilution)",
+        "field_or_greenhouse": "field",
+        "location": "Toolangi, Victoria, Australia",
+        "year": 2015
+      }
+    },
+    {
+      "outcome": "runner_yield",
+      "treatment_mean": 156.7,
+      "control_mean": 144.5,
+      "effect_pct": 8.44,
+      "n": 16,
+      "unit": "runners/m",
+      "data_source": "Table 1",
+      "treatment_description": "Seasol (D. potatorum + A. nodosum) seaweed extract 10 L/ha monthly drench, 8 applications",
+      "control_description": "Untreated (water)",
+      "moderators": {
+        "crop": "strawberry",
+        "cultivar": "Albion",
+        "biostimulant_type": "SWE",
+        "application_method": "drench",
+        "rate": "10 L/ha (1:400 dilution)",
+        "field_or_greenhouse": "field",
+        "location": "Toolangi, Victoria, Australia",
+        "year": 2015
+      }
+    },
+    {
+      "outcome": "fruit_yield",
+      "treatment_mean": 547.6,
+      "control_mean": 502.8,
+      "effect_pct": 8.91,
+      "n": 3,
+      "unit": "g/plant",
+      "data_source": "Table 6",
+      "treatment_description": "Seasol seaweed extract 10 L/ha monthly drench in fruit sector, 7 applications",
+      "control_description": "Untreated in both nursery and fruit sectors",
+      "moderators": {
+        "crop": "strawberry",
+        "cultivar": "Albion",
+        "biostimulant_type": "SWE",
+        "application_method": "drench",
+        "rate": "10 L/ha (1:400 dilution)",
+        "field_or_greenhouse": "field",
+        "location": "Coldstream, Victoria, Australia",
+        "year": 2016
+      }
+    }
+  ]
+}

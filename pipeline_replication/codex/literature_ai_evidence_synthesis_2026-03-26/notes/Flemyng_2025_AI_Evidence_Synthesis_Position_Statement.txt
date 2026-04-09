@@ -1,0 +1,407 @@
+Environmental Evidence
+
+Flemyng et al. Environmental Evidence
+(2025) 14:20
+https://doi.org/10.1186/s13750-025-00374-5
+
+Open Access
+
+E D I TO R I A L
+
+Position statement on artificial intelligence
+(AI) use in evidence synthesis across Cochrane,
+the Campbell Collaboration, JBI and the
+Collaboration for Environmental Evidence
+2025
+Ella Flemyng1* , Anna Noel-Storr1, Biljana Macura2 , Gerald Gartlehner3, James Thomas4, Joerg J. Meerpohl5,6,
+Zoe Jordan7, Jan Minx8, Angelika Eisele-Metzger5, Candyce Hamel9, Paweł Jemioło10,11, Kylie Porritt7 and
+Matthew Grainger12
+Key messages
+1. Evidence synthesists are ultimately responsible for their evidence synthesis, including the decision to use artificial
+intelligence (AI) and automation, and to ensure adherence to legal and ethical standards.
+2. Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental Evidence support the aims
+of the Responsible use of AI in evidence SynthEsis (RAISE) recommendations, which provides a framework for
+ensuring responsible use of AI and automation across all roles within the evidence synthesis ecosystem.
+3. Evidence synthesists developing and publishing syntheses with Cochrane, the Campbell Collaboration, JBI and
+the Collaboration for Environmental Evidence can use AI and automation as long as they can demonstrate that it
+will not compromise the methodological rigour or integrity of their synthesis.
+4. AI and automation in evidence synthesis should be used with human oversight.
+5. Any use of AI or automation that makes or suggests judgements should be fully and transparently reported in
+the evidence synthesis report.
+6. AI tool developers should proactively ensure their AI systems or tools adhere to the RAISE recommendations so
+we have clear, transparent and publicly available information to inform decisions about whether an AI system or
+tool could and should be used in evidence synthesis.
+
+*Correspondence:
+Ella Flemyng
+eflemyng@cochrane.org
+1
+Cochrane, London, UK
+2
+Stockholm Environment Institute, HQ and Collaboration for
+Environmental Evidence, Stockholm, Sweden
+3
+University for Continuing Education Krems, Krems an der Donau, Austria
+4
+EPPI Centre, UCL Social Research Institute, University College London,
+London, UK
+
+5
+
+Institute for Evidence in Medicine, Medical Center - University of
+Freiburg/Medical Faculty - University of Freiburg, Freiburg im Breisgau,
+Germany
+6
+Cochrane Germany, Cochrane Germany Foundation, Freiburg, Germany
+7
+School of Public Health, JBI, University of Adelaide, Adelaide, Australia
+8
+Potsdam Institute for Climate Impacts Research, Potsdam, Germany
+9
+Ottawa Hospital Research Institute, Ottawa, Canada
+10
+AGH University of Krakow, Kraków, Poland
+11
+Department of Hygiene and Dietetics, Faculty of Medicine, Jagiellonian
+University Medical College, Kraków, Poland
+12
+Norwegian Institute for Nature Research, Trondheim, Norway
+
+© The Author(s) 2025. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use,
+sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and
+the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included
+in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will
+need to obtain permission directly from the copyright holder. To view a copy of this licence, visit ​h​t​t​p​​:​/​/​​c​r​e​a​​t​i​​v​e​c​​o​m​m​​o​n​s​.​​o​r​​g​/​l​i​c​e​n​s​e​s​/​b​y​/​4​.​0​/. The
+Creative Commons Public Domain Dedication waiver (​h​t​t​p​​:​/​/​​c​r​e​a​​t​i​​v​e​c​​o​m​m​​o​n​s​.​​o​r​​g​/​p​​u​b​l​​i​c​d​o​​m​a​​i​n​/​z​e​r​o​/​1​.​0​/) applies to the data made available
+in this article, unless otherwise stated in a credit line to the data.
+
+Flemyng et al. Environmental Evidence
+
+(2025) 14:20
+
+Evidence syntheses, including systematic reviews, are a
+type of research that uses systematic, replicable methods to evaluate all available evidence on a specific question. They are built on the principles of research integrity,
+including rigour, transparency, and reproducibility. There
+is wide recognition that artificial intelligence (AI) and
+automation have the potential to transform the way we
+produce evidence syntheses, making the process significantly more efficient. However, this technology is
+potentially disruptive, characterized by opaque decision
+making and black-box predictions, susceptible to overfitting, potentially embedded with algorithmic biases, and at
+risk of fabricated outputs and hallucinations. To safeguard
+evidence synthesis as the cornerstone of trusted, evidenceinformed decision making, Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental
+Evidence (CEE), have come together to collaborate on a
+responsible and pragmatic approach to AI use in evidence
+synthesis.
+By AI, we mean different types of automation, as
+described within the Responsible use of AI in evidence
+SynthEsis recommendations (RAISE) [1]; specifically,
+“advanced technologies that enable machines to do highly
+complex tasks effectively—which would require intelligence if a person were to perform them”. This ranges
+from general automation applications, such as rule-based
+or trained machine learning algorithms, to more recent
+large language models and generative AI approaches.
+Incorporating AI in evidence synthesis comes with
+challenges as well as opportunities. Whilst it is clear we
+need to make better use of AI for evidence synthesis to
+become more timely, affordable and sustainable, we must
+also acknowledge the environmental and social costs
+associated with some forms of AI, particularly large-scale
+language models. There are risks that misuse could erode
+methodological standards by exacerbating existing biases
+and reducing reliability [2, 3]. These concerns are particularly relevant as current AI developments are often
+driven by commercial interests, and as such are often
+opaque regarding limitations, and lacking appropriate
+validation and evaluation. Overall, this undermines the
+reliability and replicability of AI-driven outputs.
+To this end, Cochrane, the Campbell Collaboration, JBI
+and the CEE have come together to form a joint AI Methods Group [4]. The group officially supports the aims of
+RAISE [1], which states that we need to work together
+to ensure AI does not compromise the principles of
+research integrity on which evidence synthesis was built.
+RAISE offers tailored recommendations for roles across
+the evidence synthesis ecosystem: from evidence synthesists to methodologists; from AI development teams to
+organizations or publishers involved in evidence synthesis. It is a first step to help clarify everyone’s responsibilities to ensure safe and responsible AI use. Whilst each of
+
+Page 2 of 5
+
+our organizations has different resources and infrastructure, and therefore our approach to implementing the
+RAISE recommendations may differ, our aim is to align
+with best practice principles and share lessons learned on
+effective approaches.
+RAISE, and our position on AI use for those who
+author evidence synthesis with our organizations
+(Table 1), will continue to evolve as the field and evidence
+base evolves. We recommend that the most up-to-date
+version of RAISE [1] and this published position statement should always be used.
+A key area for further guidance is how to approach
+justifying the use of AI in the specific synthesis. During
+protocol development, evidence synthesists need to consider many potential trade-offs, often related to balancing capacity and resource availability against questions
+of urgency, relevance and scope. It can be helpful to consider the use of AI as an additional trade-off decision you
+need to make. As part of the decision, evidence synthesists should consider the context of their synthesis (e.g.
+who will use it and what it is for), what the risk tolerance
+might be for errors affecting the findings or conclusions
+of the synthesis, and what potential risk mitigation strategies are available.
+In some contexts, the use of AI may enhance the quality of evidence synthesis and help address some of the
+trade-offs inherent to accelerated timelines. Cochrane’s
+Rapid Review Methods Group has a separate position
+statement on this (currently under editorial consideration). For example, abstract screening in rapid reviews is
+often conducted by a single review author, which carries
+an estimated 13% risk of falsely excluding a relevant study
+[13]. Using AI as a second ‘reviewer’ could help reduce
+this risk.
+For evidence synthesists to be able to make informed
+decisions, AI tool developers must ensure that there is
+publicly available and transparent information about the
+AI system or tools [6]. Our organizations therefore call
+for AI tool developers to adhere proactively to the RAISE
+recommendations [1], in particular, ensuring there is:
+1. Clear, public information about how the AI system
+or tool works, and terms and conditions;
+2. Publicly available testing, training and validation
+evaluations with full and transparent reporting,
+including the scope, domain, sources, methods, etc.,
+of the data used in each [5]; and
+3. Public and transparent information on the strengths
+and limitations of the AI system or tool, including
+any potential biases, which relates to the scope,
+domains and breadth of the data used for training,
+testing and validation.
+
+Flemyng et al. Environmental Evidence
+
+(2025) 14:20
+
+Page 3 of 5
+
+Table 1 Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental Evidence position for evidence
+synthesists on AI use based on Responsible use of AI in evidence SynthEsis (RAISE) recommendations (version 2.1 in development as of
+22 September 2025)
+RAISE
+recommendation
+Remain ultimately
+responsible for the
+evidence synthesis
+
+Further guidance
+
+1. An author is accountable for the content, methods and findings of their evidence synthesis, including the decision to use
+AI, how it is used, and its impact on the synthesis
+2. When considering using an AI system or tool, be critical of its evaluations [5], to understand whether it does what it states
+to an adequate level, as well as its limitations and whether it can be applied to the context of the specific synthesis [6]
+3. Use of AI should be justified and should involve demonstrating that the tools are methodologically sound, that they
+do not undermine the trustworthiness or reliability of the synthesis or its conclusions, and that it is appropriate to use a
+specific AI system or tool in the context of the specific evidence synthesis
+Report AI use in your
+1. Authors can use AI within their syntheses and to prepare their manuscript [7–10]
+evidence synthesis man- 2. Authors should declare when they have used AI if it makes or suggests judgements, such as in relation to the eligibility
+uscript transparently
+of a study, appraisals (including risk of bias assessments), extraction of bibliographic, numerical or qualitative data from a
+study or its results, synthesis of data from two or more studies, assessments of the certainty of evidence (including GRADE
+domains or overall certainty ratings for an outcome or finding), drafting text that summarizes the overall strength of
+evidence, related implications for decision making or research, or plain language summaries. Generally, AI used to improve
+spelling, grammar or manuscript structure does not need to be listed, but we recommend authors check the journal’s
+specific policy to ensure adherence
+3. Adhere to the established reporting standards used by each journal, such as PRISMA [11] or ROSES [12]. PRISMA, for
+example, includes items on reporting automation tools used at different stages of the synthesis process. This should be reported in the section specified by each journal, such as Acknowledgements, Methods or a specific section for disclosure of
+AI use. If these details are extensive or the AI is used in multiple stages of the synthesis process, consider using supplementary materials or tabular presentation, or both. In general, authors should report the following
+a. The name(s) of the AI system(s), tool(s) or platform(s), version(s) and date(s) used
+b. The purpose of using AI and which parts of the evidence synthesis process were impacted. Cite or reference user guidance or report how AI was used, including any modifications that were applied
+c. The justification for using AI, including evidence that the AI system or tool is methodologically sound and will not
+undermine the trustworthiness or reliability of the synthesis or its conclusions (e.g. citing or referencing evaluations of its
+performance that detail the impact of errors, limitations and generalizability) and how it has been validated (and piloted, if
+applicable) to ensure that it is appropriate for use in the context of the specific evidence synthesis. Wherever possible and
+practical, make the inputs (e.g. prompt development), outputs, datasets and code publicly and freely available (for instance,
+on repositories or as supplementary materials) and describe any steps taken to verify AI-generated outputs
+d. Any financial and non-financial interests the evidence synthesists have in the AI system or tool, along with the AI system
+or tool’s funding sources
+e. Any limitations of using AI in the review processes, including any potential biases. Comment on the potential impact of
+each limitation
+Ensure ethical, legal and Ensure ethical, legal and regulatory standards are adhered to as part of applying AI to your synthesis. For example, be aware
+regulatory standards
+of issues relating to plagiarism, provenance, copyright, intellectual property, jurisdiction, licensing; and confidentiality,
+are adhered to when
+compliance and privacy responsibilities, including data protection laws [6]
+using AI
+
+Evaluation and validation studies are critical to determine whether an AI system or tool performs to an adequate level for evidence syntheses in general, as well as
+for the specific topics addressed in a given synthesis.
+Although AI tool developers are responsible for assessing their tools and systems, evaluations by independent
+methodologists who do not have a conflict of interest in
+their performance should also be considered whenever
+available. Clear terms and conditions are vital for ensuring evidence synthesists can adhere to ethical, legal and
+regulatory standards. Information about the system
+and the scope and domains of the data used for training, testing and validation will help evidence synthesists
+understand the strengths and limitations, and how well
+it will apply to their synthesis. For example, the more
+similar the scope and domains are to your synthesis, the
+more confidence you could have in using it. Biases may
+
+include using English-only or open-access-only data in
+the training and testing stages, which may or may not
+be important to the synthesis context. Alternatively, the
+appropriately justified use of an AI system or tool in
+another similar scoped evidence synthesis could form the
+basis of your justification to use it. Depending on how
+certain an evidence synthesist is about an AI system or
+tool in their synthesis, they may need to pilot (or calibrate) the AI system or tool to validate its performance
+within their evidence synthesis, to ensure its use will not
+undermine the trustworthiness or reliability of the synthesis or its conclusions. This requires upfront investment from the author team in terms of time, effort and
+skill, so a decision will need to be made as to whether the
+effort is worth the potential gain.
+This process to consider the trade-off is the foundation for ensuring human oversight in the decision and
+
+Flemyng et al. Environmental Evidence
+
+(2025) 14:20
+
+application of AI in evidence synthesis. Work is under
+way to develop a framework that guides evidence synthesists through these considerations, so decisions can be
+made transparently and consistently.
+Decisions to use AI should be considered and reported
+as part of protocol development. Below is a generic
+reporting template that could be used:
+We will use [AI system/tool/approach name, version, date] developed by [organization/developer]
+for [specific purpose(s)] in [the evidence synthesis
+process]. The [AI system/tool/approach] will [state it
+will be used according to the user guide, and include
+reference, and/or briefly describe any customization, training, or parameters to be applied]. Outputs
+from the [AI system/tool/approach] are justified for
+use in our synthesis because [describe how you have
+determined it is methodologically sound and will
+not undermine the trustworthiness or reliability of
+the synthesis or its conclusions and how it has been
+validated or calibrated to ensure that it is appropriate for use in the context of the specific evidence
+synthesis, if not covered in the user guide, evaluations or elsewhere]. Limitations [of the AI system/
+tool/approach] include [describe known limitations,
+potential biases, and ethical concerns]/[are included
+as a supplementary material]. [If applicable] A
+detailed description of the methodology, including
+parameters and validation procedures, is available
+in [supplementary materials].
+We understand that this is a new frontier for evidence
+synthesists to navigate. How do you know when it is
+appropriate and safe to use AI in your synthesis? In addition to the recommendations for the different roles in the
+evidence synthesis ecosystem, RAISE also includes guidance for implementing the recommendations in practice,
+covering building and validation of AI systems and tools,
+conducting evaluations to build a cumulative evidence
+base for AI use, performance metrics for AI evaluations,
+the current status of available AI for evidence synthesis,
+selecting and using AI in your evidence synthesis, and
+ethical, legal and regulatory considerations when using
+AI [1, 5, 6].
+Ultimately, evidence synthesists are responsible for
+their work, how they use AI, and any implications,
+including social and environmental impacts. Our organizations and the joint Methods Group are committed
+to improving AI literacy for our authors and editors to
+help make these decisions around AI use. We are aligning our work with developments happening across the
+ecosystem, including the Evidence Synthesis Infrastructure Collaborative [14], the RAISE initiative [1] and the
+Digital Evidence Synthesis Tool INnovation for Yielding
+
+Page 4 of 5
+
+Improvements in Climate & Health (DESTINY) project
+[15], among others. This is to ensure that the members of
+Cochrane, the Campbell Collaboration, JBI and CEE, as
+well as the wider field, have the resources and guidance
+they need to use AI responsibly, efficiently and equitably
+within their evidence synthesis.
+This article has been published simultaneously with
+Cochrane Database of Systematic Reviews, Campbell Systematic Reviews, JBI Evidence Synthesis, and Environmental Evidence. The articles are identical except for minor
+stylistic and spelling differences in keeping with each
+journal's style. Any of these journals can be used when
+citing this article.
+Acknowledgements
+This article has been published simultaneously with JBI Evidence Synthesis,
+Campbell Systematic Reviews, Cochrane Database of Systematic Reviews and
+Environmental Evidence. We would like to include a special thanks for the
+detailed feedback from the following groups that informed this statement:
+Cochrane Editorial Board, including patient representatives; Cochrane
+Methods Executive; Campbell Executive editor team; JBI Executive team; and
+the Collaboration for Environmental Evidence Executive team.
+Provenance and peer review
+This editorial was commissioned based on a co‐publication with JBI Evidence
+Synthesis, Campbell Systematic Reviews, Cochrane Database of Systematic
+Reviews and Environmental Evidence. This position statement was fully peer
+reviewed by leaders of Cochrane, the Campbell Collaboration, JBI and the
+Collaboration for Environmental Evidence as part of the endorsement process.
+Author contributions
+EF (Conceptualization, Supervision,Writing – Original Draft Preparation); all
+other authors (Writing – Review & Editing).
+
+Declarations
+Data availability
+No datasets were generated or analysed as part of developingthiseditorial.
+Competing interests
+All authors are leaders in the joint AI Methods Group with Cochrane, the
+Campbell Collaboration, JBI and the Collaboration for Environmental Evidence.
+EF and ANS are employed by Cochrane. ZJ and KP are employed by JBI. BM
+and MG are associated with the Collaboration for Environmental Evidence. GG
+is associated with Cochrane Austria. JM and AEM are associated with Cochrane
+Germany. JM is associated with Campbell Climate Solutions. PJ is associated
+with Cochrane Poland. JT, EF, ANS, ZJ, PJ, BM, JM, JJM, GG are authors of the
+Responsible use of AI in evidence SynthEsis recommendations. No authors
+listed were involved in the editorial process or decisions for this editorial.
+
+References
+1. Thomas J, Flemyng E, Noel-Storr A, Moy W, Marshall IJ, Hajji R, et al. Responsible use of AI in evidence SynthEsis (RAISE) 1: recommendations for practice.
+In: Open Science Framework, Washington DC: Center for Open Science. ​h​t​t​p​​s​
+:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​7​6​0​​5​/​​O​S​F​.​I​O​/​F​W​A​U​D. https://osf.io/. Accessed 22 Sep 2025.
+2. Hanna MG, Pantanowitz L, Jackson B, Palmer O, Visweswaran S, Pantanowitz
+J, et al. Ethical and bias considerations in artificial intelligence/machine learning. Mod Pathol. 2025;38(3):100686. ​h​t​t​p​​s​:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​0​1​6​​/​j​​.​m​o​​d​p​a​​t​.​2​0​​2​4​​.​1​0​
+0​6​8​6.
+3. Siemens W, von Elm E, Binder H, Böhringer D, Eisele-Metzger A, Gartlehner
+G, et al. Opportunities, challenges and risks of using artificial intelligence for
+
+Flemyng et al. Environmental Evidence
+
+(2025) 14:20
+
+evidence synthesis. BMJ Evid Based Med. 2025. ​h​t​t​p​​s​:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​1​3​6​​/​b​​m​j​e​
+b​m​-​2​0​2​4​-​1​1​3​3​2​0.
+4. AI Methods Group. ​h​t​t​p​​s​:​/​​/​m​e​t​​h​o​​d​s​.​​c​o​c​​h​r​a​n​​e​.​​o​r​g​/​a​i​/​a​b​o​u​t​-​u​s. Accessed 22
+Sep 2025.
+5. Thomas J, Flemyng E, Noel-Storr A, Moy W, Marshall IJ, Hajji R, et al. Responsible use of AI in evidence SynthEsis (RAISE) 2: building and evaluating AI
+evidence synthesis tools. In: Open Science Framework, Washington DC:
+Center for Open Science. ​h​t​t​p​​s​:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​7​6​0​​5​/​​O​S​F​.​I​O​/​F​W​A​U​D. ​h​t​t​p​s​:​/​/​o​s​f​
+.​i​o​/​​​​.​ Accessed 22 Sep 2025.
+6. Thomas J, Flemyng E, Noel-Storr A, Moy W, Marshall IJ, Hajji R, et al. Responsible use of AI in evidence SynthEsis (RAISE) 3: selecting and using AI evidence synthesis tools. In: Open Science Framework, Washington DC: Center
+for Open Science. ​h​t​t​p​​s​:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​7​6​0​​5​/​​O​S​F​.​I​O​/​F​W​A​U​D. https://osf.io/.
+Accessed 22 Sep 2025.
+7. Cochrane Database of Systematic Reviews: editorial policies. In the Cochrane
+Library. ​h​t​t​p​​s​:​/​​/​w​w​w​​.​c​​o​c​h​​r​a​n​​e​l​i​b​​r​a​​r​y​.​​c​o​m​​/​c​d​s​​r​/​​e​d​i​​t​o​r​​i​a​l​-​​p​o​​l​i​c​i​e​s​#​a​i. Accessed
+22 Sep 2025.
+8. Author guidelines. Campbell Systematic Reviews. ​h​t​t​p​​s​:​/​​/​o​n​l​​i​n​​e​l​i​​b​r​a​​r​y​.​w​​i​l​​
+e​y​.​​c​o​m​​/​p​a​g​​e​/​​j​o​u​​r​n​a​​l​/​1​8​​9​1​​1​8​0​​3​/​h​​o​m​e​p​​a​g​​e​/​a​​u​t​h​​o​r​-​g​​u​i​​d​e​l​i​n​e​s​#​s​t​a​n​d​a​r​d​s.
+Accessed 22 Sep 2025.
+9. Information for authors. JBI Evidence Synthesis. ​h​t​t​p​​s​:​/​​/​j​o​u​​r​n​​a​l​s​​.​l​w​​w​.​c​o​​m​/​​j​b​i​​s​
+r​i​​r​/​P​a​​g​e​​s​/​I​​F​A​s​​_​A​u​t​​h​o​​r​s​h​i​p​.​a​s​p​x. Accessed 22 Sep 2025.
+10. Editorial policies. BMC. ​h​t​t​p​​s​:​/​​/​w​w​w​​.​b​​i​o​m​​e​d​c​​e​n​t​r​​a​l​​.​c​o​​m​/​g​​e​t​p​u​​b​l​​i​s​h​​e​d​/​​e​d​i​t​​o​r​​
+i​a​l​​-​p​o​​l​i​c​i​​e​s​​#​a​r​t​i​f​i​c​i​a​l​+​i​n​t​e​l​l​i​g​e​n​c​e​+​%​2​8​a​i​%​2​9​/. Accessed 22 Sep 2025.
+
+Page 5 of 5
+
+11. Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, et al.
+The PRISMA 2020 statement: an updated guideline for reporting systematic
+reviews. BMJ. 2021;372:n71. ​h​t​t​p​​s​:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​1​3​6​​/​b​​m​j​.​n​7​1.
+12. Haddaway NR, Macura B, Whaley P, Pullin AS. ROSES RepOrting standards
+for Systematic Evidence Syntheses: pro forma, flow-diagram and descriptive
+summary of the plan and conduct of environmental systematic reviews and
+systematic maps. Environ Evid. 2018;7:7. ​h​t​t​p​​s​:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​1​8​6​​/​s​​1​3​7​5​0​-​0​1​
+8​-​0​1​2​1​-​7.
+13. Gartlehner G, Affengruber L, Titscher V, Noel-Storr A, Dooley G, Ballarini N, et
+al. Single-reviewer abstract screening missed 13 percent of relevant studies: a
+crowd-based, randomized controlled trial. J Clin Epidemiol. 2020;121:20–8. ​h​t​
+t​p​​s​:​/​​/​d​o​i​​.​o​​r​g​/​​1​0​.​​1​0​1​6​​/​j​​.​j​c​​l​i​n​​e​p​i​.​​2​0​​2​0​.​0​1​.​0​0​5.
+14. Evidence Synthesis Infrastructure Collaborative (ESIC). ​h​t​t​p​​s​:​/​​/​e​v​i​​d​e​​n​c​e​​s​y​n​​t​h​
+e​s​​i​s​​.​a​t​​l​a​s​​s​i​a​n​​.​n​​e​t​/​​w​i​k​​i​/​s​p​​a​c​​e​s​/​​E​S​E​​/​o​v​e​​r​v​​i​e​w​?​m​o​d​e​=​g​l​o​b​a​l. Accessed 22 Sep
+2025.
+15. DESTINY AI-Powered Living Evidence for Climate & Health. ​h​t​t​p​s​:​​​/​​/​d​e​s​t​i​​n​​y​​-​e​v​i​​
+d​e​n​​c​​e​​.​g​i​t​h​​u​b​.​​i​o​/​w​e​b​s​i​t​e​/. Accessed 22 Sep 2025.
+
+Publisher's Note
+
+Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional affiliations.
+
+

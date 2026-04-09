@@ -415,7 +415,7 @@ Not applicable (published literature only; no human subjects). No external fundi
 
 **Figure 1.** Scatter plots of agent-extracted vs. reference-standard effect sizes (percentage change from control). Panel A: Loladze 2014 (r = 0.848, N = 655). Panel B: Hui 2023 (r = 0.942, N = 461). Panel C: Li 2022 high-confidence (r = 0.968, N = 68). Dashed lines indicate identity (y = x). Points are colored by paper.
 
-**Figure 2.** Per-paper MAE distribution across all three datasets, sorted by accuracy. Color-coded by dataset (Loladze = blue, Hui = green, Li = orange). Loladze: median 3.8 pp, IQR 1.5–7.2. Hui: median 4.1 pp, IQR 1.0–9.5. Li: median 0.8 pp, IQR 0.2–2.1.
+**Figure 2.** Per-paper MAE distribution across all three datasets (N = 86 papers), sorted by accuracy. Color-coded by dataset (Loladze = blue, Hui = green, Li = orange). Observation counts (n) are annotated on each bar. Papers with MAE > 20 pp (4 of 86) each have n ≤ 4 matched observations; these errors reflect alignment ambiguity in complex factorial designs rather than value extraction failures (see Section 4.1).
 
 **Figure 3.** Bland-Altman plots showing the difference between agent-extracted and reference-standard effect sizes plotted against their mean. Panel A: Loladze 2014. Panel B: Hui 2023. Panel C: Li 2022. Horizontal solid lines show mean difference; dashed lines show 95% limits of agreement. The regression line for proportional bias is shown for Loladze (r = −0.150, p < 0.001).
 

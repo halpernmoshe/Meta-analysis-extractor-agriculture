@@ -8,7 +8,7 @@ Matching strategy:
 1. Citation-based: map paper filenames to GT publication strings
 2. Value-based: match extracted control/treatment means to GT rows
 """
-import sys, json, math, csv
+import sys, os, json, math, csv
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
@@ -16,10 +16,33 @@ from datetime import datetime
 if sys.platform == 'win32':
     sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
+from dotenv import load_dotenv
+load_dotenv()
+
 import openpyxl
 
-GT_PATH = r"C:\Users\moshe\Dropbox\Testing metaanalyis program\Hui 2023 source data\Source Data\pdfs\ground.xlsx"
-RESULTS_DIR = Path(r"C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\output\hui2023_v2")
+BASE_DIR = Path(__file__).resolve().parent
+
+# Ground truth path: check env var, then data/ground_truth/, then relative sibling directory
+GT_PATH = os.environ.get('GT_PATH_HUI', '')
+if not GT_PATH or not Path(GT_PATH).exists():
+    _candidates = [
+        BASE_DIR / 'data' / 'ground_truth' / 'hui2023_ground.xlsx',
+        BASE_DIR.parent / 'Hui 2023 source data' / 'Source Data' / 'pdfs' / 'ground.xlsx',
+    ]
+    GT_PATH = next((str(c) for c in _candidates if c.exists()), str(_candidates[0]))
+
+if not Path(GT_PATH).exists():
+    print(f"Ground truth not found at {GT_PATH}")
+    print("Set GT_PATH_HUI environment variable or place file at the expected path.")
+    print("See REPRODUCE.md Section 3 for download instructions.")
+    sys.exit(1)
+
+import argparse as _argparse
+_parser = _argparse.ArgumentParser(add_help=False)
+_parser.add_argument('--results-dir', default=None)
+_args, _ = _parser.parse_known_args()
+RESULTS_DIR = Path(_args.results_dir) if _args.results_dir else BASE_DIR / 'output' / 'hui2023_v2'
 
 # Map our paper filenames to unique substrings in GT Publication column
 # Each entry is a list of search terms - ALL must match (AND logic)

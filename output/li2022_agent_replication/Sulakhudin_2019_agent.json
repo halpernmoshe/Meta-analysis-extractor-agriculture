@@ -1,0 +1,81 @@
+{
+  "paper_id": "Sulakhudin_2019",
+  "title": "Application of Coastal Sediments and Foliar Seaweed Extract and Its Influence to Soil Properties, Growth and Yield of Shallot in Peatland",
+  "authors": "Sulakhudin, Hatta M, Suryadi UE",
+  "year": 2019,
+  "species": "Allium ascalonicum (shallot)",
+  "consensus_observations": [
+    {
+      "outcome": "tuber_yield",
+      "treatment_mean": 0.883,
+      "control_mean": 0.803,
+      "effect_pct": 9.96,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "table",
+      "treatment_description": "3% foliar seaweed extract (E. cottonii), no coastal sediment, Bima variety",
+      "control_description": "No seaweed, no coastal sediment, Bima variety",
+      "moderators": {"biostimulant_type": "seaweed", "variety": "Bima", "sediment": "0 t/ha"}
+    },
+    {
+      "outcome": "tuber_yield",
+      "treatment_mean": 1.160,
+      "control_mean": 1.097,
+      "effect_pct": 5.74,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "table",
+      "treatment_description": "3% foliar seaweed extract (E. cottonii), no coastal sediment, Moujung variety",
+      "control_description": "No seaweed, no coastal sediment, Moujung variety",
+      "moderators": {"biostimulant_type": "seaweed", "variety": "Moujung", "sediment": "0 t/ha"}
+    },
+    {
+      "outcome": "tuber_yield",
+      "treatment_mean": 1.307,
+      "control_mean": 1.283,
+      "effect_pct": 1.87,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "table",
+      "treatment_description": "3% foliar seaweed extract (E. cottonii), no coastal sediment, Sumenep variety",
+      "control_description": "No seaweed, no coastal sediment, Sumenep variety",
+      "moderators": {"biostimulant_type": "seaweed", "variety": "Sumenep", "sediment": "0 t/ha"}
+    },
+    {
+      "outcome": "tuber_yield",
+      "treatment_mean": 1.060,
+      "control_mean": 0.940,
+      "effect_pct": 12.77,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "table",
+      "treatment_description": "3% foliar seaweed extract + 40 t/ha coastal sediment, Bima variety",
+      "control_description": "No seaweed + 40 t/ha coastal sediment, Bima variety",
+      "moderators": {"biostimulant_type": "seaweed", "variety": "Bima", "sediment": "40 t/ha"}
+    },
+    {
+      "outcome": "tuber_yield",
+      "treatment_mean": 0.940,
+      "control_mean": 1.180,
+      "effect_pct": -20.34,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "table",
+      "treatment_description": "3% foliar seaweed extract + 40 t/ha coastal sediment, Moujung variety",
+      "control_description": "No seaweed + 40 t/ha coastal sediment, Moujung variety",
+      "moderators": {"biostimulant_type": "seaweed", "variety": "Moujung", "sediment": "40 t/ha"}
+    },
+    {
+      "outcome": "tuber_yield",
+      "treatment_mean": 1.917,
+      "control_mean": 1.383,
+      "effect_pct": 38.61,
+      "n": 3,
+      "unit": "t/ha",
+      "data_source": "table",
+      "treatment_description": "3% foliar seaweed extract + 40 t/ha coastal sediment, Sumenep variety",
+      "control_description": "No seaweed + 40 t/ha coastal sediment, Sumenep variety",
+      "moderators": {"biostimulant_type": "seaweed", "variety": "Sumenep", "sediment": "40 t/ha"}
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "paper_id": "ali_2019",
+  "title": "Effect of Ascophyllum nodosum Extract on Vegetative Growth, Yield and Quality of Tomato and Sweet Pepper Cultivars",
+  "authors": "Ali, Ramsubhag, Jayaraman",
+  "year": 2019,
+  "species": "Solanum lycopersicum (tomato), Capsicum annuum (sweet pepper)",
+  "consensus_observations": [
+    {
+      "outcome": "shoot_biomass_tomato",
+      "treatment_mean": 38.30,
+      "control_mean": 17.24,
+      "effect_pct": 122.16,
+      "n": 30,
+      "unit": "g/plant",
+      "data_source": "table_2",
+      "treatment_description": "A. nodosum extract, tomato greenhouse",
+      "control_description": "Water control, tomato greenhouse",
+      "moderators": {"crop": "tomato", "biostimulant_type": "seaweed_extract", "trial_type": "greenhouse"}
+    },
+    {
+      "outcome": "shoot_biomass_pepper",
+      "treatment_mean": 22.50,
+      "control_mean": 11.80,
+      "effect_pct": 90.68,
+      "n": 30,
+      "unit": "g/plant",
+      "data_source": "table_3",
+      "treatment_description": "A. nodosum extract, sweet pepper greenhouse",
+      "control_description": "Water control, sweet pepper greenhouse",
+      "moderators": {"crop": "sweet_pepper", "biostimulant_type": "seaweed_extract", "trial_type": "greenhouse"}
+    },
+    {
+      "outcome": "fruit_yield_dry_season",
+      "treatment_mean": 258.15,
+      "control_mean": 167.79,
+      "effect_pct": 53.85,
+      "n": 3,
+      "unit": "kg/plot",
+      "data_source": "table_6",
+      "treatment_description": "A. nodosum extract, tomato field dry season",
+      "control_description": "Water control, tomato field dry season",
+      "moderators": {"crop": "tomato", "biostimulant_type": "seaweed_extract", "trial_type": "field", "season": "dry"}
+    },
+    {
+      "outcome": "fruit_yield_wet_season",
+      "treatment_mean": 239.91,
+      "control_mean": 122.70,
+      "effect_pct": 95.53,
+      "n": 3,
+      "unit": "kg/plot",
+      "data_source": "table_6",
+      "treatment_description": "A. nodosum extract, tomato field wet season",
+      "control_description": "Water control, tomato field wet season",
+      "moderators": {"crop": "tomato", "biostimulant_type": "seaweed_extract", "trial_type": "field", "season": "wet"}
+    },
+    {
+      "outcome": "fruit_yield_dry_season",
+      "treatment_mean": 364.10,
+      "control_mean": 212.04,
+      "effect_pct": 71.71,
+      "n": 3,
+      "unit": "kg/plot",
+      "data_source": "table_6",
+      "treatment_description": "A. nodosum extract, sweet pepper field dry season",
+      "control_description": "Water control, sweet pepper field dry season",
+      "moderators": {"crop": "sweet_pepper", "biostimulant_type": "seaweed_extract", "trial_type": "field", "season": "dry"}
+    },
+    {
+      "outcome": "fruit_yield_wet_season",
+      "treatment_mean": 254.66,
+      "control_mean": 129.92,
+      "effect_pct": 96.01,
+      "n": 3,
+      "unit": "kg/plot",
+      "data_source": "table_6",
+      "treatment_description": "A. nodosum extract, sweet pepper field wet season",
+      "control_description": "Water control, sweet pepper field wet season",
+      "moderators": {"crop": "sweet_pepper", "biostimulant_type": "seaweed_extract", "trial_type": "field", "season": "wet"}
+    }
+  ]
+}

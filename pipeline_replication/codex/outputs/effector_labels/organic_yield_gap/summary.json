@@ -1,0 +1,35 @@
+{
+  "topic": "organic_yield_gap",
+  "total_rows": 266,
+  "crop_class_counts": {
+    "legume": 54,
+    "root_tuber": 12,
+    "grain_cereal": 115,
+    "fiber": 11,
+    "tree_crop": 8,
+    "oilseed": 55,
+    "null": 7,
+    "vegetable": 4
+  },
+  "study_setting_counts": {
+    "field": 189,
+    "unknown": 77
+  },
+  "climate_class_counts": {
+    "unknown": 242,
+    "tropical": 21,
+    "semi_arid": 3
+  },
+  "management_class_counts": {
+    "residue_only": 145,
+    "standard": 79,
+    "rotation_only": 39,
+    "residue_rotation": 3
+  },
+  "estimand_context_counts": {
+    "benchmark_aligned": 171,
+    "partially_aligned": 88,
+    "misaligned": 7
+  },
+  "null_soil_class_count": 266
+}

@@ -1,0 +1,13 @@
+{
+  "paper_id": "064_Godlewska_2016",
+  "note": "This paper (J. Elementology 21(2):373-381) reports microelement CONCENTRATIONS (Zn, Cu, Fe, Mn in mg/kg DM) in two grass species treated with Kelpak SL, NOT dry matter yield. The paper does not contain yield/biomass production data suitable for the Li 2022 biostimulant/yield meta-analysis. A companion paper by the same authors (Ciepiela & Godlewska 2016, Agrochimica 59(2):124-135) reports yield and protein data. The previous agent extraction may have referenced that companion paper.",
+  "title": "Effect of the biostimulant Kelpak SL on the content of some microelements in two grass species",
+  "authors": "Godlewska A, Ciepiela GA",
+  "year": 2016,
+  "species": "Dactylis glomerata L. cv. Amila, Festulolium braunii (K.Richt.) A. Camus cv. Felopa",
+  "crop": "grass (orchard grass + festulolium)",
+  "experiment_type": "field",
+  "location": "Poland (Siedlce)",
+  "exclusion_reason": "Paper reports microelement concentrations (Zn, Cu, Fe, Mn) not yield/biomass. No yield data in this PDF.",
+  "consensus_observations": []
+}

@@ -1,0 +1,422 @@
+{
+  "timestamp": "2026-03-17T19:03:46.082085",
+  "paper_version": "PAPER_FINAL_v16.md",
+  "python": "3.12.10",
+  "platform": "win32",
+  "summary": {
+    "total_claims": 38,
+    "passed": 24,
+    "failed": 14,
+    "skipped": 7
+  },
+  "scripts_run": [],
+  "claims": [
+    {
+      "claim": "bias_hui_d",
+      "description": "Hui Cohen's d",
+      "table": "Section 4.2.2",
+      "expected": 0.006,
+      "actual": 0.0163,
+      "tolerance": 0.02,
+      "passed": true,
+      "message": "Hui Cohen's d: expected=0.006, actual=0.0163, diff=0.0103, tol=0.02 [OK]"
+    },
+    {
+      "claim": "bias_li_d",
+      "description": "Li Cohen's d",
+      "table": "Section 4.2.2",
+      "expected": 0.065,
+      "actual": 0.0647,
+      "tolerance": 0.02,
+      "passed": true,
+      "message": "Li Cohen's d: expected=0.065, actual=0.0647, diff=0.0003, tol=0.02 [OK]"
+    },
+    {
+      "claim": "bias_loladze_d",
+      "description": "Loladze Cohen's d",
+      "table": "Section 4.2.2",
+      "expected": 0.054,
+      "actual": 0.103,
+      "tolerance": 0.02,
+      "passed": false,
+      "message": "Loladze Cohen's d: expected=0.054, actual=0.103, diff=0.049, tol=0.02 [MISMATCH]"
+    },
+    {
+      "claim": "table1_hui_icc",
+      "description": "Hui ICC",
+      "table": "Table 1",
+      "expected": 0.942,
+      "actual": 0.9415,
+      "tolerance": 0.005,
+      "passed": true,
+      "message": "Hui ICC: expected=0.942, actual=0.9415, diff=0.0005, tol=0.005 [OK]"
+    },
+    {
+      "claim": "table1_hui_mae",
+      "description": "Hui MAE (pp)",
+      "table": "Table 1",
+      "expected": 7.4,
+      "actual": 7.37,
+      "tolerance": 0.5,
+      "passed": true,
+      "message": "Hui MAE (pp): expected=7.4, actual=7.37, diff=0.03, tol=0.5 [OK]"
+    },
+    {
+      "claim": "table1_hui_obs",
+      "description": "Hui observations",
+      "table": "Table 1",
+      "expected": 461,
+      "actual": 461,
+      "tolerance": 5,
+      "passed": true,
+      "message": "Hui observations: expected=461, actual=461, diff=0, tol=5 [OK]"
+    },
+    {
+      "claim": "table1_hui_papers",
+      "description": "Hui papers",
+      "table": "Table 1",
+      "expected": 25,
+      "actual": 30,
+      "tolerance": 0,
+      "passed": false,
+      "message": "Hui papers: expected=25, actual=30, diff=5, tol=0 [MISMATCH]"
+    },
+    {
+      "claim": "table1_hui_r",
+      "description": "Hui r",
+      "table": "Table 1",
+      "expected": 0.942,
+      "actual": 0.9419,
+      "tolerance": 0.005,
+      "passed": true,
+      "message": "Hui r: expected=0.942, actual=0.9419, diff=0.0001, tol=0.005 [OK]"
+    },
+    {
+      "claim": "table1_li_highconf_mae",
+      "description": "Li high-confidence MAE (pp)",
+      "table": "Table 1",
+      "expected": 1.6,
+      "actual": 1.65,
+      "tolerance": 0.3,
+      "passed": true,
+      "message": "Li high-confidence MAE (pp): expected=1.6, actual=1.65, diff=0.05, tol=0.3 [OK]"
+    },
+    {
+      "claim": "table1_li_highconf_obs",
+      "description": "Li high-confidence observations",
+      "table": "Table 1",
+      "expected": 68,
+      "actual": 68,
+      "tolerance": 3,
+      "passed": true,
+      "message": "Li high-confidence observations: expected=68, actual=68, diff=0, tol=3 [OK]"
+    },
+    {
+      "claim": "table1_li_highconf_r",
+      "description": "Li high-confidence r",
+      "table": "Table 1",
+      "expected": 0.968,
+      "actual": 0.9677,
+      "tolerance": 0.005,
+      "passed": true,
+      "message": "Li high-confidence r: expected=0.968, actual=0.9677, diff=0.0003, tol=0.005 [OK]"
+    },
+    {
+      "claim": "table1_loladze_combined_obs",
+      "description": "Loladze combined observations",
+      "table": "Table 1",
+      "expected": 650,
+      "actual": 655,
+      "tolerance": 10,
+      "passed": true,
+      "message": "Loladze combined observations: expected=650, actual=655, diff=5, tol=10 [OK]"
+    },
+    {
+      "claim": "table1_loladze_combined_r",
+      "description": "Loladze combined r",
+      "table": "Table 1",
+      "expected": 0.887,
+      "actual": 0.848,
+      "tolerance": 0.01,
+      "passed": false,
+      "message": "Loladze combined r: expected=0.887, actual=0.848, diff=0.039, tol=0.01 [MISMATCH]"
+    },
+    {
+      "claim": "table1_loladze_metadata_icc",
+      "description": "Loladze metadata-resolved ICC",
+      "table": "Table 1",
+      "expected": 0.89,
+      "actual": 0.8452,
+      "tolerance": 0.01,
+      "passed": false,
+      "message": "Loladze metadata-resolved ICC: expected=0.89, actual=0.8452, diff=0.0448, tol=0.01 [MISMATCH]"
+    },
+    {
+      "claim": "table1_loladze_metadata_mae",
+      "description": "Loladze metadata-resolved MAE (pp)",
+      "table": "Table 1",
+      "expected": 3.4,
+      "actual": null,
+      "tolerance": 0.3,
+      "passed": false,
+      "message": "Loladze metadata-resolved MAE (pp): no computed value available"
+    },
+    {
+      "claim": "table1_loladze_metadata_obs",
+      "description": "Loladze metadata-resolved observations",
+      "table": "Table 1",
+      "expected": 447,
+      "actual": null,
+      "tolerance": 5,
+      "passed": false,
+      "message": "Loladze metadata-resolved observations: no computed value available"
+    },
+    {
+      "claim": "table1_loladze_metadata_r",
+      "description": "Loladze metadata-resolved r",
+      "table": "Table 1",
+      "expected": 0.891,
+      "actual": null,
+      "tolerance": 0.01,
+      "passed": false,
+      "message": "Loladze metadata-resolved r: no computed value available"
+    },
+    {
+      "claim": "table1_loladze_papers",
+      "description": "Loladze papers",
+      "table": "Table 1",
+      "expected": 46,
+      "actual": 46,
+      "tolerance": 0,
+      "passed": true,
+      "message": "Loladze papers: expected=46, actual=46, diff=0, tol=0 [OK]"
+    },
+    {
+      "claim": "table2_hui_tost_2pp",
+      "description": "Hui TOST +/-2pp",
+      "table": "Table 2",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "tolerance": null,
+      "passed": true,
+      "message": "Hui TOST +/-2pp: expected=FAIL, actual=FAIL"
+    },
+    {
+      "claim": "table2_hui_tost_3pp",
+      "description": "Hui TOST +/-3pp",
+      "table": "Table 2",
+      "expected": "PASS",
+      "actual": "PASS",
+      "tolerance": null,
+      "passed": true,
+      "message": "Hui TOST +/-3pp: expected=PASS, actual=PASS"
+    },
+    {
+      "claim": "table2_li_tost_2pp",
+      "description": "Li TOST +/-2pp",
+      "table": "Table 2",
+      "expected": "PASS",
+      "actual": "PASS",
+      "tolerance": null,
+      "passed": true,
+      "message": "Li TOST +/-2pp: expected=PASS, actual=PASS"
+    },
+    {
+      "claim": "table2_loladze_meta_tost_2pp",
+      "description": "Loladze metadata TOST +/-2pp",
+      "table": "Table 2",
+      "expected": "PASS",
+      "actual": "FAIL",
+      "tolerance": null,
+      "passed": false,
+      "message": "Loladze metadata TOST +/-2pp: expected=PASS, actual=FAIL"
+    },
+    {
+      "claim": "table3_hui_r",
+      "description": "Hui replication r",
+      "table": "Table 3",
+      "expected": 0.946,
+      "actual": 0.946,
+      "tolerance": 0.02,
+      "passed": true,
+      "message": "Hui replication r: expected=0.946, actual=0.946, diff=0, tol=0.02 [OK]"
+    },
+    {
+      "claim": "table3_li_r",
+      "description": "Li replication r",
+      "table": "Table 3",
+      "expected": 0.849,
+      "actual": 0.836,
+      "tolerance": 0.02,
+      "passed": true,
+      "message": "Li replication r: expected=0.849, actual=0.836, diff=0.013, tol=0.02 [OK]"
+    },
+    {
+      "claim": "table3_loladze_r",
+      "description": "Loladze replication r",
+      "table": "Table 3",
+      "expected": 0.816,
+      "actual": 0.816,
+      "tolerance": 0.02,
+      "passed": true,
+      "message": "Loladze replication r: expected=0.816, actual=0.816, diff=0, tol=0.02 [OK]"
+    },
+    {
+      "claim": "table3_total_obs",
+      "description": "Total matched observations (replication)",
+      "table": "Table 3",
+      "expected": 1231,
+      "actual": 1276,
+      "tolerance": 10,
+      "passed": false,
+      "message": "Total matched observations (replication): expected=1231, actual=1276, diff=45, tol=10 [MISMATCH]"
+    },
+    {
+      "claim": "table3_total_papers",
+      "description": "Total papers (replication)",
+      "table": "Table 3",
+      "expected": 95,
+      "actual": 99,
+      "tolerance": 2,
+      "passed": false,
+      "message": "Total papers (replication): expected=95, actual=99, diff=4, tol=2 [MISMATCH]"
+    },
+    {
+      "claim": "table4_hui_obs",
+      "description": "Hui agent-pipeline obs",
+      "table": "Table 4",
+      "expected": 185,
+      "actual": 185,
+      "tolerance": 10,
+      "passed": true,
+      "message": "Hui agent-pipeline obs: expected=185, actual=185, diff=0, tol=10 [OK]"
+    },
+    {
+      "claim": "table4_hui_r",
+      "description": "Hui agent-pipeline r",
+      "table": "Table 4",
+      "expected": 0.971,
+      "actual": 0.971,
+      "tolerance": 0.01,
+      "passed": true,
+      "message": "Hui agent-pipeline r: expected=0.971, actual=0.971, diff=0, tol=0.01 [OK]"
+    },
+    {
+      "claim": "table4_li_obs",
+      "description": "Li agent-pipeline obs",
+      "table": "Table 4",
+      "expected": 499,
+      "actual": 499,
+      "tolerance": 10,
+      "passed": true,
+      "message": "Li agent-pipeline obs: expected=499, actual=499, diff=0, tol=10 [OK]"
+    },
+    {
+      "claim": "table4_li_r",
+      "description": "Li agent-pipeline r",
+      "table": "Table 4",
+      "expected": 0.994,
+      "actual": 0.994,
+      "tolerance": 0.005,
+      "passed": true,
+      "message": "Li agent-pipeline r: expected=0.994, actual=0.994, diff=0, tol=0.005 [OK]"
+    },
+    {
+      "claim": "table4_loladze_obs",
+      "description": "Loladze agent-pipeline obs",
+      "table": "Table 4",
+      "expected": 1205,
+      "actual": 1205,
+      "tolerance": 20,
+      "passed": true,
+      "message": "Loladze agent-pipeline obs: expected=1205, actual=1205, diff=0, tol=20 [OK]"
+    },
+    {
+      "claim": "table4_loladze_r",
+      "description": "Loladze agent-pipeline r",
+      "table": "Table 4",
+      "expected": 0.933,
+      "actual": 0.933,
+      "tolerance": 0.01,
+      "passed": true,
+      "message": "Loladze agent-pipeline r: expected=0.933, actual=0.933, diff=0, tol=0.01 [OK]"
+    },
+    {
+      "claim": "table4_total_obs",
+      "description": "Total agent-pipeline observations",
+      "table": "Table 4",
+      "expected": 1889,
+      "actual": 1889,
+      "tolerance": 20,
+      "passed": true,
+      "message": "Total agent-pipeline observations: expected=1889, actual=1889, diff=0, tol=20 [OK]"
+    },
+    {
+      "claim": "tableA1_hui_mae",
+      "description": "Pipeline Hui MAE (pp)",
+      "table": "Table A1",
+      "expected": 0.43,
+      "actual": null,
+      "tolerance": 0.1,
+      "passed": false,
+      "message": "Pipeline Hui MAE (pp): no computed value available"
+    },
+    {
+      "claim": "tableA1_hui_r",
+      "description": "Pipeline Hui r",
+      "table": "Table A1",
+      "expected": 0.999,
+      "actual": null,
+      "tolerance": 0.005,
+      "passed": false,
+      "message": "Pipeline Hui r: no computed value available"
+    },
+    {
+      "claim": "tableA1_li_r",
+      "description": "Pipeline Li r",
+      "table": "Table A1",
+      "expected": 0.951,
+      "actual": null,
+      "tolerance": 0.01,
+      "passed": false,
+      "message": "Pipeline Li r: no computed value available"
+    },
+    {
+      "claim": "tableA1_loladze_r",
+      "description": "Pipeline Loladze r",
+      "table": "Table A1",
+      "expected": 0.886,
+      "actual": null,
+      "tolerance": 0.01,
+      "passed": false,
+      "message": "Pipeline Loladze r: no computed value available"
+    }
+  ],
+  "json_files_loaded": [
+    "agent_formal_stats_all",
+    "agent_pipeline_agreement",
+    "replication_agreement",
+    "cr2_tost",
+    "formal_stats/bland_altman_results",
+    "formal_stats/bootstrap_ci",
+    "formal_stats/icc_results",
+    "formal_stats/tost_results",
+    "hui2023_formal_stats/bland_altman_results",
+    "hui2023_formal_stats/bootstrap_ci",
+    "hui2023_formal_stats/icc_results",
+    "hui2023_formal_stats/paper_level_icc",
+    "hui2023_formal_stats/systematic_bias",
+    "hui2023_formal_stats/tost_results",
+    "li2022_formal_stats/bland_altman_clean",
+    "li2022_formal_stats/bland_altman_results",
+    "li2022_formal_stats/bootstrap_ci",
+    "li2022_formal_stats/bootstrap_clean",
+    "li2022_formal_stats/icc_clean",
+    "li2022_formal_stats/icc_results",
+    "li2022_formal_stats/paper_level_icc",
+    "li2022_formal_stats/systematic_bias",
+    "li2022_formal_stats/systematic_bias_clean",
+    "li2022_formal_stats/tost_clean",
+    "li2022_formal_stats/tost_results"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "topic": "organic_yield_gap",
+  "n_rows_before": 378,
+  "n_rows_after": 303,
+  "n_removed": 75,
+  "pct_removed": 19.841269841269842,
+  "meta_before": {
+    "k": 378,
+    "pooled_pct": -13.086814891354614,
+    "ci_lo_pct": -15.819227150013216,
+    "ci_hi_pct": -10.265711634757901
+  },
+  "meta_after": {
+    "k": 303,
+    "pooled_pct": -14.831614374055746,
+    "ci_lo_pct": -17.95604022506616,
+    "ci_hi_pct": -11.588203080055482
+  },
+  "delta_pct_points": -1.7447994827011328
+}

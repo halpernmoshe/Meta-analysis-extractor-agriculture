@@ -253,9 +253,20 @@ def run_qc(topic_dir: Path, config: dict, dry_run: bool = False):
         print(f"  No 4_extract/ directory for {topic_dir.name}")
         return None
 
-    # Load data: try summary.csv first, then merge JSONs
-    csv_path = extract_dir / "summary.csv"
-    if csv_path.exists():
+    # Load data: prefer verified > raw extraction > legacy summary > merge JSONs
+    # Priority: summary_verified.csv (Stage 4b output) > summary_raw.csv >
+    #           summary_validated.csv > summary.csv > merge individual JSONs
+    csv_path = None
+    for candidate in ["summary_verified.csv", "summary_raw.csv",
+                       "summary_validated.csv", "summary.csv"]:
+        _candidate = extract_dir / candidate
+        if _candidate.exists():
+            csv_path = _candidate
+            if candidate != "summary.csv":
+                print(f"  NOTE: Using {candidate} as QC input (highest-priority candidate)")
+            break
+
+    if csv_path is not None:
         df = pd.read_csv(csv_path)
     else:
         df = _merge_extraction_jsons(extract_dir)
