@@ -5,16 +5,15 @@ scope_matched_equivalence.py. Outputs PNGs to ./figures/ and prints the
 computed concordance r per dataset. Reproducible: no random state, no network.
 
 Figures produced (all grounded in the definitive scope-matched method):
-  fig1_concordance.png  - per-dataset reference-vs-AI cell-level %-effect scatter with
-                          identity line and computed r; the supporting cell-level
-                          concordance discussed in manuscript Section 3.5.1 (diagnostic,
-                          distinct from the treatment-mean scatter in manuscript Figure S4)
+  figS4_scatter.png     - per-dataset reference-vs-AI cell-level %-effect scatter with
+                          identity line and computed r; the supporting line-by-line
+                          concordance discussed in manuscript Section 3.5.1 (manuscript Figure S4)
   figS2_diff_forest.png - per-dataset AI-vs-reference pooled difference (pp) with paired 90% CI
                           and the proportional +/-20% equivalence margin (manuscript Figure S2)
   figS3_margin_grid.png - paired-TOST pass/fail across +/-5/10/15/20% margins (manuscript Figure S3)
 
-The Bland-Altman figure (manuscript Figure S6) is produced separately by
-bland_altman_figS6.py. The supporting line-by-line MATCH/coverage outputs
+The flow figure (manuscript Figure S1) is produced by make_figS1_flow.py, and the
+Bland-Altman figure (manuscript Figure S5) by bland_altman_figS5.py. The supporting line-by-line MATCH/coverage outputs
 (manuscript Table S6) are deposited under line_by_line_results/ (see its README).
 
 NOT regenerated here (need author input or a different pipeline):
@@ -130,8 +129,8 @@ for ax,ds in zip(axes,ORDER):
     ax.set_xlabel("Reference cell effect (%)",fontsize=8)
     if ds==ORDER[0]: ax.set_ylabel("AI cell effect (%)",fontsize=8)
     ax.tick_params(labelsize=7)
-fig.suptitle("Cell-level concordance (supporting analysis, Section 3.5.1): AI vs reference cell-level effects (identity line dashed)",fontsize=9)
-fig.tight_layout(rect=[0,0,1,0.94]); fig.savefig(f"{OUT}/fig1_concordance.png",dpi=200); plt.close(fig)
+fig.suptitle("Figure S4. Supporting line-by-line concordance: AI vs reference cell-level effects (identity line dashed)",fontsize=9)
+fig.tight_layout(rect=[0,0,1,0.94]); fig.savefig(f"{OUT}/figS4_scatter.png",dpi=200); plt.close(fig)
 
 # ---- Figure S2: diff forest with paired 90% CI + 20% margin --------------
 fig,ax=plt.subplots(figsize=(7,3.0))
@@ -170,4 +169,4 @@ fig.tight_layout(); fig.savefig(f"{OUT}/figS3_margin_grid.png",dpi=200); plt.clo
 print("Computed scope-matched concordance r (cell-level, outcome-blind matching):")
 for ds in ORDER:
     print(f"  {DISPLAY.get(ds, ds):24} r={D[ds]['r']:.3f}  (n={D[ds]['n']} common cells, {D[ds]['ns']} studies)")
-print(f"\nWrote: {OUT}/fig1_concordance.png, figS2_diff_forest.png, figS3_margin_grid.png")
+print(f"\nWrote: {OUT}/figS4_scatter.png, figS2_diff_forest.png, figS3_margin_grid.png")

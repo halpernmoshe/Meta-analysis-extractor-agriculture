@@ -11,8 +11,9 @@ Inclusion rule: a file is included only if it directly supports a reported analy
 | `scope_matched_equivalence.py` | Generates the primary Table S1/Table S5 numbers and the manuscript's main ~3.2 pp agreement claim |
 | `runs/*/keys/{ai,gt}/*.csv` | Cleaned key tables consumed by `scope_matched_equivalence.py` |
 | `EXPECTED_OUTPUT.txt` | Expected output for byte-level comparison after running the primary script |
-| `make_figures.py` and `figures/{fig1_concordance,figS2_diff_forest,figS3_margin_grid}.png` | Optional figure regeneration from the same key tables |
-| `bland_altman_figS6.py` and `figures/figS6_bland_altman.png` | Supporting Bland-Altman figure (Fig S6) + numeric LoA (Table S10) from bundled blind pairings |
+| `make_figS1_flow.py` and `figures/figS1_flow.png` | Figure S1 (per-dataset flow & attrition) from the Table 2.6 counts |
+| `make_figures.py` and `figures/{figS2_diff_forest,figS3_margin_grid,figS4_scatter}.png` | Figures S2/S3/S4 from the same key tables |
+| `bland_altman_figS5.py` and `figures/figS5_bland_altman.png` | Supporting Bland-Altman figure (Fig S5) + numeric LoA (Table S10) from bundled blind pairings |
 | `join_and_score.py` | Deterministic outcome-blind join tool for the supporting line-by-line analysis (§3.3) |
 | `line_by_line_results/*/` | Canonical line-by-line outputs (report.json, classification.csv) behind Table S6, with provenance README |
 | `runs/{biochar_v3,loladze_v3,hui_v4,li2022_v4}/pairings/*.jsonl` and `runs/li2022_v4/keys/` | Frozen blind pairings (and li2022_v4 keys) consumed by the supporting line-by-line/Bland-Altman analysis |

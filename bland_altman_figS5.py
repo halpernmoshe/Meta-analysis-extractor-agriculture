@@ -25,7 +25,7 @@ reproduce the canonical MATCH counts (Boldorini 19, Li X 211, Loladze 346,
 Hui 19, Li J 50).
 
 Outputs:
-  figures/figS6_bland_altman.png   (primary treatment-mean panels)
+  figures/figS5_bland_altman.png   (primary treatment-mean panels)
   prints both numeric LoA tables to stdout
 """
 import csv, glob, json, math, os, statistics
@@ -41,7 +41,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 # this repository under runs/ (biochar_v3/pairings, loladze_v3/pairings,
 # hui_v4/pairings, li2022_v4/pairings + li2022_v4/keys, boldorini join keys).
 RUNS = os.path.join(HERE, "runs")
-FIG_OUT = os.path.join(HERE, "figures", "figS6_bland_altman.png")
+FIG_OUT = os.path.join(HERE, "figures", "figS5_bland_altman.png")
 
 
 # ----------------------------- helpers --------------------------------------
@@ -287,7 +287,7 @@ def main():
         ax.tick_params(labelsize=8)
     axes[5].axis("off")
     axes[5].text(0.02, 0.95,
-                 "Figure S6. Bland-Altman agreement of AI-extracted vs reference\n"
+                 "Figure S5. Bland-Altman agreement of AI-extracted vs reference\n"
                  "TREATMENT MEANS, per dataset (primary metric).\n\n"
                  "Boldorini, Li X, Hui, Li J: log10 scale (native positive units);\n"
                  "y = log10(AI/reference), so 0 = exact agreement.\n\n"
