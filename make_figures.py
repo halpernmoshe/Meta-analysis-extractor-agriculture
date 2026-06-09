@@ -117,20 +117,23 @@ for ds,base in DS.items():
 
 ORDER=[d for d in ["Boldorini","Biochar","Loladze","Hui","Li2022"] if d in D]
 
-# ---- Figure 1: concordance scatter ---------------------------------------
-fig,axes=plt.subplots(1,len(ORDER),figsize=(3.0*len(ORDER),3.2))
-if len(ORDER)==1: axes=[axes]
-for ax,ds in zip(axes,ORDER):
-    d=D[ds]
+# ---- Figure S4: concordance scatter (2 rows x 3 cols for legibility) ------
+NCOL=3; NROW=2
+fig,axgrid=plt.subplots(NROW,NCOL,figsize=(3.6*NCOL,3.5*NROW))
+axes=axgrid.flatten()
+for idx,ds in enumerate(ORDER):
+    ax=axes[idx]; d=D[ds]
     ax.scatter(d["gx"],d["ax"],s=16,alpha=0.6,edgecolor="none")
     lo=min(d["gx"]+d["ax"]+[0]); hi=max(d["gx"]+d["ax"]+[0])
     pad=0.05*(hi-lo+1); ax.plot([lo-pad,hi+pad],[lo-pad,hi+pad],"k--",lw=0.8)
     ax.set_title(f"{DISPLAY.get(ds, ds)}\nr={d['r']:.3f}, n={d['n']}",fontsize=9)
     ax.set_xlabel("Reference cell effect (%)",fontsize=8)
-    if ds==ORDER[0]: ax.set_ylabel("AI cell effect (%)",fontsize=8)
+    ax.set_ylabel("AI cell effect (%)",fontsize=8)
     ax.tick_params(labelsize=7)
-fig.suptitle("Figure S4. Supporting line-by-line concordance: AI vs reference cell-level effects (identity line dashed)",fontsize=9)
-fig.tight_layout(rect=[0,0,1,0.94]); fig.savefig(f"{OUT}/figS4_scatter.png",dpi=200); plt.close(fig)
+for j in range(len(ORDER),NROW*NCOL):
+    axes[j].axis("off")
+fig.suptitle("Figure S4. Supporting line-by-line concordance: AI vs reference cell-level effects (identity line dashed)",fontsize=10)
+fig.tight_layout(rect=[0,0,1,0.95]); fig.savefig(f"{OUT}/figS4_scatter.png",dpi=200); plt.close(fig)
 
 # ---- Figure S2: diff forest with paired 90% CI + 20% margin --------------
 fig,ax=plt.subplots(figsize=(7,3.0))
