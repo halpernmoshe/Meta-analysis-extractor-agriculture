@@ -2,7 +2,7 @@
 
 This curated repository contains only the files needed to reproduce the reported analyses in the revised manuscript:
 
-Agreement Between an AI-Assisted, Scaffolded Extraction Workflow and Published Human-Extracted Meta-Analysis Datasets: A Scope-Matched Equivalence Study Across Five Agricultural Meta-Analyses
+Agreement Between an AI-Assisted, Scaffolded Extraction Workflow and Published Human-Extracted Reference Datasets: A Scope-Matched Equivalence Study Across Five Agricultural Datasets
 
 Legacy false starts, exploratory multi-model consensus code, working audits, local paths, source PDFs, and status trackers are intentionally excluded.
 
