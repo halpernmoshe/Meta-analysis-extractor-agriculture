@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+gt__B16_Saunders_2016__id_43,gt,B16_Saunders_2016,crop_yield_under_predator,apple,vertebrates,none,0,pooled,single_cell,%,absolute_control,14,19,Results,0,author=Saunders year=2016 crop=Apple/Malus predat_id=Vertebrates treatment=Exclusion study_year=2015 mean_t=14 mean_c=19,gt-col-decode

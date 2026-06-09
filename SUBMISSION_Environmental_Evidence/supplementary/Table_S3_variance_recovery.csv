@@ -1,6 +1,0 @@
-Dataset,N_matched,Direct_variance_pct,Indirect_recovery_count,Indirect_recovery_pct,Imputation_spread_pp,Table_obs,Figure_obs,Text_obs,Table_MAE,Figure_MAE,Notes
-Biochar 2024,254,25.5,83,22.4,0.78,67,133,10,0.61,1.41,Table data 5.5x more precise than figure data
-Loladze 2014,413,N/A,N/A,N/A,N/A,,,,,,GT uses percentage change; variance not validated separately
-Hui 2025,319,N/A,N/A,N/A,N/A,,,,,,Validated on effect sizes; variance not separately assessed
-Li 2022,117,N/A,N/A,N/A,N/A,,,,,,Effect-size-only validation
-Boldorini 2024,46,N/A,N/A,N/A,N/A,,,,,,lnRR-based validation

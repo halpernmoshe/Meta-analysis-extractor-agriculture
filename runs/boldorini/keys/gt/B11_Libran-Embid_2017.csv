@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+gt__B11_Libran-Embid_2017__id_42,gt,B11_Libran-Embid_2017,crop_yield_under_predator,coffee,vertebrates,none,0,pooled,single_cell,proportion,absolute_control,0.82,0.81,Figure,1,author=Libran-Embid year=2017 crop=Coffee/Coffea predat_id=Vertebrates treatment=Exclusion study_year=2015 mean_t=0.82 mean_c=0.81,gt-col-decode

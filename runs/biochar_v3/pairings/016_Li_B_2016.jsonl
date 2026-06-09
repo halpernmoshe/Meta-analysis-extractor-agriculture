@@ -1,0 +1,42 @@
+{"gt_row_id":"gt__StudyID16__r0","ai_row_id":"016_Li_B_2016__ai__1","ambiguous":false,"basis":"Table 5 season1 amaranth N0C1 (C1=20 t/ha biochar, N0)","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r1","ai_row_id":"016_Li_B_2016__ai__2","ambiguous":false,"basis":"Table 5 season1 amaranth N0C2 (C2=40 t/ha, N0)","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r2","ai_row_id":"016_Li_B_2016__ai__19","ambiguous":false,"basis":"Table 5 season1 amaranth N1C1; N1 code (GT per-season 313 = AI annualized 1233 kg N/ha)","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r3","ai_row_id":"016_Li_B_2016__ai__20","ambiguous":false,"basis":"Table 5 season1 amaranth N1C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r4","ai_row_id":"016_Li_B_2016__ai__37","ambiguous":false,"basis":"Table 5 season1 amaranth N2C1; N2 code (GT 417 = AI 1644)","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r5","ai_row_id":"016_Li_B_2016__ai__38","ambiguous":false,"basis":"Table 5 season1 amaranth N2C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r6","ai_row_id":"016_Li_B_2016__ai__3","ambiguous":false,"basis":"Table 5 season2 water_spinach N0C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r7","ai_row_id":"016_Li_B_2016__ai__4","ambiguous":false,"basis":"Table 5 season2 water_spinach N0C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r8","ai_row_id":"016_Li_B_2016__ai__21","ambiguous":false,"basis":"Table 5 season2 water_spinach N1C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r9","ai_row_id":"016_Li_B_2016__ai__22","ambiguous":false,"basis":"Table 5 season2 water_spinach N1C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r10","ai_row_id":"016_Li_B_2016__ai__39","ambiguous":false,"basis":"Table 5 season2 water_spinach N2C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r11","ai_row_id":"016_Li_B_2016__ai__40","ambiguous":false,"basis":"Table 5 season2 water_spinach N2C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r12","ai_row_id":"016_Li_B_2016__ai__5","ambiguous":false,"basis":"Table 5 season3 bok_choy(=pak_choi) N0C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r13","ai_row_id":"016_Li_B_2016__ai__6","ambiguous":false,"basis":"Table 5 season3 bok_choy N0C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r14","ai_row_id":"016_Li_B_2016__ai__23","ambiguous":false,"basis":"Table 5 season3 bok_choy N1C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r15","ai_row_id":"016_Li_B_2016__ai__24","ambiguous":false,"basis":"Table 5 season3 bok_choy N1C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r16","ai_row_id":"016_Li_B_2016__ai__41","ambiguous":false,"basis":"Table 5 season3 bok_choy N2C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r17","ai_row_id":"016_Li_B_2016__ai__42","ambiguous":false,"basis":"Table 5 season3 bok_choy N2C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r18","ai_row_id":"016_Li_B_2016__ai__11","ambiguous":false,"basis":"Table 5 season6 bok_choy(=pak_choi) N0C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r19","ai_row_id":"016_Li_B_2016__ai__12","ambiguous":false,"basis":"Table 5 season6 bok_choy N0C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r20","ai_row_id":"016_Li_B_2016__ai__29","ambiguous":false,"basis":"Table 5 season6 bok_choy N1C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r21","ai_row_id":"016_Li_B_2016__ai__30","ambiguous":false,"basis":"Table 5 season6 bok_choy N1C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r22","ai_row_id":"016_Li_B_2016__ai__47","ambiguous":false,"basis":"Table 5 season6 bok_choy N2C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r23","ai_row_id":"016_Li_B_2016__ai__48","ambiguous":false,"basis":"Table 5 season6 bok_choy N2C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r24","ai_row_id":"016_Li_B_2016__ai__13","ambiguous":false,"basis":"Table 5 season7 amaranth N0C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r25","ai_row_id":"016_Li_B_2016__ai__14","ambiguous":false,"basis":"Table 5 season7 amaranth N0C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r26","ai_row_id":"016_Li_B_2016__ai__31","ambiguous":false,"basis":"Table 5 season7 amaranth N1C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r27","ai_row_id":"016_Li_B_2016__ai__32","ambiguous":false,"basis":"Table 5 season7 amaranth N1C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r28","ai_row_id":"016_Li_B_2016__ai__49","ambiguous":false,"basis":"Table 5 season7 amaranth N2C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r29","ai_row_id":"016_Li_B_2016__ai__50","ambiguous":false,"basis":"Table 5 season7 amaranth N2C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r30","ai_row_id":"016_Li_B_2016__ai__7","ambiguous":false,"basis":"Table 5 season4 coriander N0C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r31","ai_row_id":"016_Li_B_2016__ai__8","ambiguous":false,"basis":"Table 5 season4 coriander N0C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r32","ai_row_id":"016_Li_B_2016__ai__25","ambiguous":false,"basis":"Table 5 season4 coriander N1C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r33","ai_row_id":"016_Li_B_2016__ai__26","ambiguous":false,"basis":"Table 5 season4 coriander N1C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r34","ai_row_id":"016_Li_B_2016__ai__43","ambiguous":false,"basis":"Table 5 season4 coriander N2C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r35","ai_row_id":"016_Li_B_2016__ai__44","ambiguous":false,"basis":"Table 5 season4 coriander N2C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r36","ai_row_id":"016_Li_B_2016__ai__9","ambiguous":false,"basis":"Table 5 season5 water_spinach N0C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r37","ai_row_id":"016_Li_B_2016__ai__10","ambiguous":false,"basis":"Table 5 season5 water_spinach N0C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r38","ai_row_id":"016_Li_B_2016__ai__27","ambiguous":false,"basis":"Table 5 season5 water_spinach N1C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r39","ai_row_id":"016_Li_B_2016__ai__28","ambiguous":false,"basis":"Table 5 season5 water_spinach N1C2","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r40","ai_row_id":"016_Li_B_2016__ai__45","ambiguous":false,"basis":"Table 5 season5 water_spinach N2C1","confidence":"high","reason_if_unmatched":null}
+{"gt_row_id":"gt__StudyID16__r41","ai_row_id":"016_Li_B_2016__ai__46","ambiguous":false,"basis":"Table 5 season5 water_spinach N2C2","confidence":"high","reason_if_unmatched":null}

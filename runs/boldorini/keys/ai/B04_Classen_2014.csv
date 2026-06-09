@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+B04_Classen_2014__ai__0,ai,B04_Classen_2014,crop_yield_under_predator,coffee,exclusion,vertebrate,0,pooled,single_cell,fruits/branch,absolute_control,46.0,64.0,Table 1 / Figure 2,1,"T:Vertebrate exclusion (predator_group=Vertebrates) || C:Open || outcome=Fruit set; data_source notes Figure 2 -> is_figure=1",ai-decode

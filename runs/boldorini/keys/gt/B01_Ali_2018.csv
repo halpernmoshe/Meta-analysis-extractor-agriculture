@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+gt__B01_Ali_2018__id_36,gt,B01_Ali_2018,crop_yield_under_predator,wheat,exclusion,none,0,pooled,single_cell,kg/ha,absolute_control,795,1290,Figure,1,author=Ali year=2018 crop=Wheat/Triticum predat_id=Beetles treatment=Exclusion study_year=2012 mean_t=795 mean_c=1290,gt-col-decode

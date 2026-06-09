@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+gt__B05_Garfinkel_2015__id_38,gt,B05_Garfinkel_2015,crop_yield_under_predator,kale,exclusion,none,0,pooled,single_cell,leaves,absolute_control,30,24.429,Table 5,0,author=Garfinkel year=2015 crop=Brassica/Brassica predat_id=Birds treatment=Exclusion study_year=2012 mean_t=30 mean_c=24.429,gt-col-decode

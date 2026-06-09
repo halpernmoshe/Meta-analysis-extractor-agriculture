@@ -1,0 +1,23 @@
+{
+  "dataset": "li2022",
+  "gt_rows_table": 1108,
+  "gt_rows_figure_tier": 0,
+  "counts": {
+    "AMBIGUOUS": 177,
+    "MATCH": 50,
+    "NO_MATCH": 881
+  },
+  "match_rate_table": 0.0451,
+  "treatment_mean_agreement": {
+    "n": 50,
+    "r": 0.5201751561028631,
+    "mae": 700.8569426543535
+  },
+  "control_mean_agreement": {
+    "n": 50,
+    "r": 0.5747179002796933,
+    "mae": 648.4879417980861
+  },
+  "control_token_concordance": 1.0,
+  "passes_75pct": false
+}

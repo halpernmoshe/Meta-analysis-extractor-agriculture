@@ -1,0 +1,1109 @@
+gt_row_id,paper_id,verdict,ai_row_id,basis,confidence
+gt__study37__pair241,006_Alabdulla_2019_Effect of foliar application of humic ac,AMBIGUOUS,006_Alabdulla_2019_Effect of foliar application of humic ac__ai__0,"humic foliar; GT dose 0.33 = lowest of 3 ranks -> 3 g/l; ContinusStudy=1 -> year 2017-18 (AI Tables 2/3 split by year). AI splits each cell by element (green fodder vs grain) and spraying stage (tillering vs 50% flowering) which GT does not encode; chose AI__0 (3g/l, tillering, fodder, 2017-18) as representative but element/stage are unresolved in GT.",low
+gt__study37__pair242,006_Alabdulla_2019_Effect of foliar application of humic ac,AMBIGUOUS,006_Alabdulla_2019_Effect of foliar application of humic ac__ai__1,humic foliar; GT dose 0.67 = middle rank -> 6 g/l; ContinusStudy=1 -> year 2017-18. AI__1 = 6g/l tillering fodder 2017-18 chosen as representative; element (fodder/grain) and stage (tillering/flowering) not encoded in GT.,low
+gt__study37__pair243,006_Alabdulla_2019_Effect of foliar application of humic ac,AMBIGUOUS,006_Alabdulla_2019_Effect of foliar application of humic ac__ai__2,humic foliar; GT dose 1 = top rank -> 9 g/l; ContinusStudy=1 -> year 2017-18. AI__2 = 9g/l tillering fodder 2017-18 chosen as representative; element and stage unresolved in GT.,low
+gt__study37__pair244,006_Alabdulla_2019_Effect of foliar application of humic ac,AMBIGUOUS,,"humic foliar; GT dose 0.33 -> 3 g/l; ContinusStudy=2 -> year 2018-19. AI Table 3 (2018-19) extracted only rows for 6g/l fodder, 3g/l grain, 6g/l grain (ai__9/10/11); no 3g/l green-fodder 2018-19 row present and GT does not encode element/stage to pick among them.",low
+gt__study37__pair245,006_Alabdulla_2019_Effect of foliar application of humic ac,AMBIGUOUS,006_Alabdulla_2019_Effect of foliar application of humic ac__ai__9,humic foliar; GT dose 0.67 -> 6 g/l; ContinusStudy=2 -> year 2018-19. AI__9 = 6g/l tillering green-fodder 2018-19 (Table 3); element/stage not encoded in GT so could also map to a grain cell.,low
+gt__study37__pair246,006_Alabdulla_2019_Effect of foliar application of humic ac,AMBIGUOUS,,humic foliar; GT dose 1 -> 9 g/l; ContinusStudy=2 -> year 2018-19. AI Table 3 rows extracted are only 6g/l fodder and 3g/l/6g/l grain; no 9 g/l 2018-19 cell present.,low
+gt__study24__pair165,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e,MATCH,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e__ai__0,"seaweed (A. nodosum) foliar, tomato; single dose. GT ContinusStudy=1 -> first season -> AI dry season (ai__0 tomato dry). Crop matches; seaweed/SWE = A.nodosum extract.",med
+gt__study24__pair166,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e,MATCH,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e__ai__2,"seaweed foliar, tomato; GT ContinusStudy=2 -> second season -> AI wet season (ai__2 tomato wet). Crop matches.",med
+gt__study24__pair167,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e,MATCH,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e__ai__1,"seaweed foliar, sweet pepper; GT ContinusStudy=1 -> first/dry season -> AI ai__1 (sweet pepper dry). Crop matches.",med
+gt__study24__pair168,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e,MATCH,009_Ali_2019_Biostimulatory activities of Ascophyllum nodosum e__ai__3,"seaweed foliar, sweet pepper; GT ContinusStudy=2 -> second/wet season -> AI ai__3 (sweet pepper wet). Crop matches.",med
+gt__study170__pair1021,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__0,seaweed foliar sugarcane; GT Frequency=1 (one spray) -> SE1 (single spray at seedling); ContinusStudy=1 -> year 2017. Site (Suixi vs Wengyuan) not encoded in GT descriptors and cannot be set without outcome values; Group A tentatively=Suixi(ROC22). Freq=1 is shared by SE1 and SE4 (both single-spray) -> SE1 vs SE4 also undecidable; chose SE1 as first-in-block.,low
+gt__study170__pair1022,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__4,GT Frequency=2 -> SE2 (two sprays); CS=1 -> 2017; Group A tentatively Suixi. Site assignment indeterminate from descriptors.,low
+gt__study170__pair1023,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__8,GT Frequency=3 -> SE3 (three sprays); CS=1 -> 2017; Group A tentatively Suixi. Site indeterminate without outcome values.,low
+gt__study170__pair1024,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__12,GT Frequency=1 trailing row in 2017 block -> SE4 (single spray at mature stage); CS=1 -> 2017; Group A tentatively Suixi. SE1/SE4 both Freq=1 so assignment of this vs pair1021 is positional only.,low
+gt__study170__pair1025,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__1,GT Freq=1 -> SE1; CS=2 -> 2018; Group A tentatively Suixi. Site + SE1/SE4 ambiguity as above.,low
+gt__study170__pair1026,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__5,GT Freq=2 -> SE2; CS=2 -> 2018; Group A tentatively Suixi.,low
+gt__study170__pair1027,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__9,GT Freq=3 -> SE3; CS=2 -> 2018; Group A tentatively Suixi.,low
+gt__study170__pair1028,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__13,GT Freq=1 trailing -> SE4; CS=2 -> 2018; Group A tentatively Suixi.,low
+gt__study170__pair1029,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__2,GT Freq=1 -> SE1; CS=3 -> 2019; Group A tentatively Suixi.,low
+gt__study170__pair1030,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__6,GT Freq=2 -> SE2; CS=3 -> 2019; Group A tentatively Suixi.,low
+gt__study170__pair1031,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__10,GT Freq=3 -> SE3; CS=3 -> 2019; Group A tentatively Suixi.,low
+gt__study170__pair1032,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__14,GT Freq=1 trailing -> SE4; CS=3 -> 2019; Group A tentatively Suixi.,low
+gt__study170__pair1033,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__16,GT Freq=1 -> SE1; CS=1 -> 2017; Group B tentatively Wengyuan(Yuetang60). Site assignment indeterminate from descriptors (outcome values barred).,low
+gt__study170__pair1034,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__20,GT Freq=2 -> SE2; CS=1 -> 2017; Group B tentatively Wengyuan.,low
+gt__study170__pair1035,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__24,GT Freq=3 -> SE3; CS=1 -> 2017; Group B tentatively Wengyuan.,low
+gt__study170__pair1036,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,,GT Freq=1 trailing -> SE4 (single spray at mature stage); CS=1 -> 2017; Group B tentatively Wengyuan. AI extracted only SE1-SE3 for Wengyuan (no SE4 rows ai for Yuetang60).,low
+gt__study170__pair1037,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__17,GT Freq=1 -> SE1; CS=2 -> 2018; Group B tentatively Wengyuan.,low
+gt__study170__pair1038,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__21,GT Freq=2 -> SE2; CS=2 -> 2018; Group B tentatively Wengyuan.,low
+gt__study170__pair1039,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__25,GT Freq=3 -> SE3; CS=2 -> 2018; Group B tentatively Wengyuan.,low
+gt__study170__pair1040,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,,GT Freq=1 trailing -> SE4; CS=2 -> 2018; Group B tentatively Wengyuan. AI has no SE4 rows for Wengyuan/Yuetang60.,low
+gt__study170__pair1041,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__18,GT Freq=1 -> SE1; CS=3 -> 2019; Group B tentatively Wengyuan.,low
+gt__study170__pair1042,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__22,GT Freq=2 -> SE2; CS=3 -> 2019; Group B tentatively Wengyuan.,low
+gt__study170__pair1043,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,027_Chen_2021_Effects of Seaweed Extracts on the Growt__ai__26,GT Freq=3 -> SE3; CS=3 -> 2019; Group B tentatively Wengyuan.,low
+gt__study170__pair1044,027_Chen_2021_Effects of Seaweed Extracts on the Growt,AMBIGUOUS,,GT Freq=1 trailing -> SE4; CS=3 -> 2019; Group B tentatively Wengyuan. AI has no SE4 rows for Wengyuan/Yuetang60.,low
+gt__study68__pair408,029_Ciepiela_2019_The effect of biostimulants derived from,AMBIGUOUS,029_Ciepiela_2019_The effect of biostimulants derived from__ai__0,"seaweed (Algex/A.nodosum) biostimulant; GT Frequency=3 matches the seasonal total over 3 cuts -> AI Table 3 'sum of three cuts' (not Table 4 per-cut). GT ContinusStudy=1 -> year 2014. AI splits Table 3 Algex by nitrogen_rate (0/120/180 kg ha-1) which GT does not encode (no N moderator, dose=1 only); chose 0 kg ha-1 (ai__0) as representative. N-rate within-study disambiguator absent in GT.",low
+gt__study68__pair409,029_Ciepiela_2019_The effect of biostimulants derived from,AMBIGUOUS,029_Ciepiela_2019_The effect of biostimulants derived from__ai__3,seaweed Algex; GT Frequency=3 -> Table 3 sum-of-three-cuts; ContinusStudy=2 -> year 2015. AI Table 3 Algex 2015 split by N-rate (ai__3/4/5); GT has no N moderator so chose 0 kg ha-1 (ai__3) as representative. N-rate indeterminate in GT.,low
+gt__study180__pair1100,058_Fichhof_2018_Management of Biostimulant and Silicon i,AMBIGUOUS,058_Fichhof_2018_Management of Biostimulant and Silicon i__ai__6,"cotton, silicon foliar; GT Frequency=4 matches AI '40, 60, 80, 100 DAE' (4 applications) 2.5 kg ha-1. AI extracted a single Productivity row pooled over both cultivars (FM 983GLT + FM 954GLT). GT has two rows (1100/1101) with identical descriptors but differing treatment means -> they correspond to the two cultivars that AI collapsed into one pooled cell; both GT rows map to the same AI row and the cultivar split is not resolvable against AI's single pooled row.",low
+gt__study180__pair1101,058_Fichhof_2018_Management of Biostimulant and Silicon i,AMBIGUOUS,058_Fichhof_2018_Management of Biostimulant and Silicon i__ai__6,"cotton, silicon foliar, Frequency=4, 2.5 kg ha-1. Second of two GT rows with descriptors identical to pair1100; AI provides only one cultivar-pooled Productivity row (ai__6), so both GT cultivar-level rows collapse onto the same AI row. Cannot disambiguate which GT row is which cultivar without outcome values.",low
+gt__study78__pair484,062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,AMBIGUOUS,,"GT row is seaweed/foliar pooled across cultivars (no cultivar field; dose=1 is a category code); AI extracted Table 4 only at cultivar(5)xyear(3)xproduct(2) granularity with no cultivar-pooled rows and two distinct seaweed products (Bio-Algeen 1%, Kelpak 0.2%). The GT cell (one of two values within ContinusStudy=1) cannot be uniquely mapped to a single AI cell.",low
+gt__study78__pair485,062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,AMBIGUOUS,,"Second of two seaweed values within ContinusStudy=1, pooled across cultivars; AI rows are per-cultivar/per-year and split between two seaweed products. No unique AI counterpart.",low
+gt__study78__pair486,062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,AMBIGUOUS,,"Seaweed value within ContinusStudy=2, pooled across cultivars; AI granularity is cultivar x year x product. No unique AI counterpart.",low
+gt__study78__pair487,062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,AMBIGUOUS,,"Second seaweed value within ContinusStudy=2, pooled across cultivars; AI is per cultivar/year/product. No unique AI counterpart.",low
+gt__study78__pair488,062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,AMBIGUOUS,,"Seaweed value within ContinusStudy=3, pooled across cultivars; AI is per cultivar/year/product. No unique AI counterpart.",low
+gt__study78__pair489,062_Głosek-Sobieraj_2018_The Effect of Growth Regulators and a Bi,AMBIGUOUS,,"Second seaweed value within ContinusStudy=3, pooled across cultivars; AI is per cultivar/year/product. No unique AI counterpart.",low
+gt__study96__pair573,067_Grabowska_2012_The Effect of Cultivar and Biostimulant,AMBIGUOUS,,"GT row is carrot PHs/foliar dose=0.5, pooled across cultivars (no cultivar field); AI extracted Table 3 at cultivar(Nandrin/Napoli)xyear(2009/2010/2011)x(Total vs Marketable yield)x dose(1.5/3.0 dm3/ha) with no cultivar-pooled rows. GT dose=0.5 is a category code, not the AI dm3/ha dose. No unique AI cell.",low
+gt__study96__pair574,067_Grabowska_2012_The Effect of Cultivar and Biostimulant,AMBIGUOUS,,"Carrot PHs/foliar dose=1 (category code), ContinusStudy=1, pooled across cultivars; AI is per cultivar/year/yieldtype. No unique AI counterpart.",low
+gt__study96__pair575,067_Grabowska_2012_The Effect of Cultivar and Biostimulant,AMBIGUOUS,,"Carrot PHs dose=0.5, ContinusStudy=2, pooled across cultivars; AI granularity cultivar x year x yieldtype. No unique AI counterpart.",low
+gt__study96__pair576,067_Grabowska_2012_The Effect of Cultivar and Biostimulant,AMBIGUOUS,,"Carrot PHs dose=1, ContinusStudy=2, pooled across cultivars; AI per cultivar/year/yieldtype. No unique AI counterpart.",low
+gt__study96__pair577,067_Grabowska_2012_The Effect of Cultivar and Biostimulant,AMBIGUOUS,,"Carrot PHs dose=0.5, ContinusStudy=3, pooled across cultivars; AI per cultivar/year/yieldtype. No unique AI counterpart.",low
+gt__study96__pair578,067_Grabowska_2012_The Effect of Cultivar and Biostimulant,AMBIGUOUS,,"Carrot PHs dose=1, ContinusStudy=3, pooled across cultivars; AI per cultivar/year/yieldtype. No unique AI counterpart.",low
+gt__study10__pair75,086_Knapowski_2019_Crop stimulants as a factor determining,MATCH,086_Knapowski_2019_Crop stimulants as a factor determining__ai__0,"GT PHs (protein_hydrolysate) maps to AI amino_acid 'Protaminal' (an amino-acid/protein-hydrolysate preparation), the only single non-seaweed product; ContinusStudy=1 maps to year 2013.",med
+gt__study10__pair76,086_Knapowski_2019_Crop stimulants as a factor determining,AMBIGUOUS,,"GT SWE/foliar, ContinusStudy=1 (year 2013); AI has two distinct seaweed products at 2013 (Fertileader Vital-954 ai__2 and Kelpak SL ai__4). GT dose=1 cannot disambiguate which seaweed product.",low
+gt__study10__pair77,086_Knapowski_2019_Crop stimulants as a factor determining,MATCH,086_Knapowski_2019_Crop stimulants as a factor determining__ai__1,GT PHs -> AI amino_acid 'Protaminal'; ContinusStudy=2 maps to year 2014.,med
+gt__study10__pair78,086_Knapowski_2019_Crop stimulants as a factor determining,AMBIGUOUS,,"GT SWE/foliar, ContinusStudy=2 (year 2014); AI has two seaweed products at 2014 (Fertileader ai__3 and Kelpak ai__5). GT cannot disambiguate which seaweed product.",low
+gt__study8__pair51,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__0,"Single product (Terra Sorb Complex; GT SWE-coded but it is the lone amino-acid biostimulant in AI). dose 0.7->lower(0.3%), Freq1->single, CS1->year2014. -> 0.3% single 2014.",med
+gt__study8__pair52,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__2,"dose 0.7->0.3%, Freq2->double, CS1->2014 -> 0.3% double 2014.",med
+gt__study8__pair53,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__1,"dose 1->higher(0.5%), Freq1->single, CS1->2014 -> 0.5% single 2014.",med
+gt__study8__pair54,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__3,"dose 1->0.5%, Freq2->double, CS1->2014 -> 0.5% double 2014.",med
+gt__study8__pair55,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__4,"dose 0.7->0.3%, Freq1->single, CS2->2015 -> 0.3% single 2015.",med
+gt__study8__pair56,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__6,"dose 0.7->0.3%, Freq2->double, CS2->2015 -> 0.3% double 2015.",med
+gt__study8__pair57,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__5,"dose 1->0.5%, Freq1->single, CS2->2015 -> 0.5% single 2015.",med
+gt__study8__pair58,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__7,"dose 1->0.5%, Freq2->double, CS2->2015 -> 0.5% double 2015.",med
+gt__study8__pair59,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__8,"dose 0.7->0.3%, Freq1->single, CS3->2016 -> 0.3% single 2016.",med
+gt__study8__pair60,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__10,"dose 0.7->0.3%, Freq2->double, CS3->2016 -> 0.3% double 2016.",med
+gt__study8__pair61,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__9,"dose 1->0.5%, Freq1->single, CS3->2016 -> 0.5% single 2016.",med
+gt__study8__pair62,088_Kocira_2019_Effect of amino acid biostimulant on the,MATCH,088_Kocira_2019_Effect of amino acid biostimulant on the__ai__11,"dose 1->0.5%, Freq2->double, CS3->2016 -> 0.5% double 2016.",med
+gt__study20__pair124,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__0,"SWE->Kelpak SL; dose 0.7->lower(0.7%), Freq1->single, CS1->year2016 -> Kelpak lower single 2016.",high
+gt__study20__pair125,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__3,"SWE->Kelpak; dose 1->higher(1.0%), Freq1->single, CS1->2016 -> Kelpak higher single 2016.",high
+gt__study20__pair126,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__6,"SWE->Kelpak; dose 0.7->lower, Freq2->double, CS1->2016 -> Kelpak lower double 2016.",high
+gt__study20__pair127,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__9,"SWE->Kelpak; dose 1->higher, Freq2->double, CS1->2016 -> Kelpak higher double 2016.",high
+gt__study20__pair128,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__12,"PHs->Terra Sorb Complex (amino-acid/protein hydrolysate); dose 0.7->lower(0.3%), Freq1->single, CS1->2016 -> Terra lower single 2016.",high
+gt__study20__pair129,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__15,"PHs->Terra Sorb; dose 1->higher(0.5%), Freq1->single, CS1->2016 -> Terra higher single 2016.",high
+gt__study20__pair130,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__18,"PHs->Terra Sorb; dose 0.7->lower, Freq2->double, CS1->2016 -> Terra lower double 2016.",high
+gt__study20__pair131,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__21,"PHs->Terra Sorb; dose 1->higher, Freq2->double, CS1->2016 -> Terra higher double 2016.",high
+gt__study20__pair132,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__1,"SWE->Kelpak; dose 0.7->lower, Freq1->single, CS2->2017 -> Kelpak lower single 2017.",high
+gt__study20__pair133,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__4,"SWE->Kelpak; dose 1->higher, Freq1->single, CS2->2017 -> Kelpak higher single 2017.",high
+gt__study20__pair134,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__7,"SWE->Kelpak; dose 0.7->lower, Freq2->double, CS2->2017 -> Kelpak lower double 2017.",high
+gt__study20__pair135,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__10,"SWE->Kelpak; dose 1->higher, Freq2->double, CS2->2017 -> Kelpak higher double 2017.",high
+gt__study20__pair136,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__13,"PHs->Terra Sorb; dose 0.7->lower, Freq1->single, CS2->2017 -> Terra lower single 2017.",high
+gt__study20__pair137,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__16,"PHs->Terra Sorb; dose 1->higher, Freq1->single, CS2->2017 -> Terra higher single 2017.",high
+gt__study20__pair138,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__19,"PHs->Terra Sorb; dose 0.7->lower, Freq2->double, CS2->2017 -> Terra lower double 2017.",high
+gt__study20__pair139,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__22,"PHs->Terra Sorb; dose 1->higher, Freq2->double, CS2->2017 -> Terra higher double 2017.",high
+gt__study20__pair140,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__2,"SWE->Kelpak; dose 0.7->lower, Freq1->single, CS3->2018 -> Kelpak lower single 2018.",high
+gt__study20__pair141,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__5,"SWE->Kelpak; dose 1->higher, Freq1->single, CS3->2018 -> Kelpak higher single 2018.",high
+gt__study20__pair142,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__8,"SWE->Kelpak; dose 0.7->lower, Freq2->double, CS3->2018 -> Kelpak lower double 2018.",high
+gt__study20__pair143,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__11,"SWE->Kelpak; dose 1->higher, Freq2->double, CS3->2018 -> Kelpak higher double 2018.",high
+gt__study20__pair144,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__14,"PHs->Terra Sorb; dose 0.7->lower, Freq1->single, CS3->2018 -> Terra lower single 2018.",high
+gt__study20__pair145,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__17,"PHs->Terra Sorb; dose 1->higher, Freq1->single, CS3->2018 -> Terra higher single 2018.",high
+gt__study20__pair146,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__20,"PHs->Terra Sorb; dose 0.7->lower, Freq2->double, CS3->2018 -> Terra lower double 2018.",high
+gt__study20__pair147,090_Kocira_2020_Biochemical and economical effect of app,MATCH,090_Kocira_2020_Biochemical and economical effect of app__ai__23,"PHs->Terra Sorb; dose 1->higher, Freq2->double, CS3->2018 -> Terra higher double 2018.",high
+gt__study75__pair444,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__13","GT block1 (Ctrl 0.2812/0.2859/0.2969)->cultivar positional=Annushka; dose0.7=0.7%, freq1=single. AI lacks ContinusStudy/year dim so 3 GT years collapse to 1 AI row; cultivar name<-block mapping is positional guess.",low
+gt__study75__pair445,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__12","block1=Annushka(positional); dose1=1.0%, freq1=single. AI has no year dim (year1).",low
+gt__study75__pair446,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__15","block1=Annushka(positional); dose0.7=0.7%, freq2=double; year1.",low
+gt__study75__pair447,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__14","block1=Annushka(positional); dose1=1.0%, freq2=double; year1.",low
+gt__study75__pair448,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__13","block1=Annushka(positional); dose0.7=0.7%, freq1=single; year2->same AI row (year dim absent in AI).",low
+gt__study75__pair449,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__12","block1=Annushka(positional); dose1=1.0%, freq1=single; year2.",low
+gt__study75__pair450,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__15","block1=Annushka(positional); dose0.7=0.7%, freq2=double; year2.",low
+gt__study75__pair451,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__14","block1=Annushka(positional); dose1=1.0%, freq2=double; year2.",low
+gt__study75__pair452,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__13","block1=Annushka(positional); dose0.7=0.7%, freq1=single; year3.",low
+gt__study75__pair453,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__12","block1=Annushka(positional); dose1=1.0%, freq1=single; year3.",low
+gt__study75__pair454,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__15","block1=Annushka(positional); dose0.7=0.7%, freq2=double; year3.",low
+gt__study75__pair455,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__14","block1=Annushka(positional); dose1=1.0%, freq2=double; year3.",low
+gt__study75__pair456,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__17","GT block2 (Ctrl 0.3439/0.3215/0.352)->cultivar positional=Mavka; dose0.7=0.7%, freq1=single; year1. Year dim absent in AI; cultivar name<-block positional.",low
+gt__study75__pair457,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__16","block2=Mavka(positional); dose1=1.0%, freq1=single; year1.",low
+gt__study75__pair458,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__19","block2=Mavka(positional); dose0.7=0.7%, freq2=double; year1.",low
+gt__study75__pair459,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__18","block2=Mavka(positional); dose1=1.0%, freq2=double; year1.",low
+gt__study75__pair460,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__17","block2=Mavka(positional); dose0.7=0.7%, freq1=single; year2.",low
+gt__study75__pair461,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__16","block2=Mavka(positional); dose1=1.0%, freq1=single; year2.",low
+gt__study75__pair462,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__19","block2=Mavka(positional); dose0.7=0.7%, freq2=double; year2.",low
+gt__study75__pair463,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__18","block2=Mavka(positional); dose1=1.0%, freq2=double; year2.",low
+gt__study75__pair464,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__17","block2=Mavka(positional); dose0.7=0.7%, freq1=single; year3.",low
+gt__study75__pair465,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__16","block2=Mavka(positional); dose1=1.0%, freq1=single; year3.",low
+gt__study75__pair466,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__19","block2=Mavka(positional); dose0.7=0.7%, freq2=double; year3.",low
+gt__study75__pair467,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__18","block2=Mavka(positional); dose1=1.0%, freq2=double; year3.",low
+gt__study75__pair468,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__21","GT block3 (Ctrl 0.3631/0.3168/0.3432)->cultivar positional=Atlanta; dose0.7=0.7%, freq1=single; year1. Year dim absent in AI; cultivar name<-block positional.",low
+gt__study75__pair469,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__20","block3=Atlanta(positional); dose1=1.0%, freq1=single; year1.",low
+gt__study75__pair470,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__23","block3=Atlanta(positional); dose0.7=0.7%, freq2=double; year1.",low
+gt__study75__pair471,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__22","block3=Atlanta(positional); dose1=1.0%, freq2=double; year1.",low
+gt__study75__pair472,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__21","block3=Atlanta(positional); dose0.7=0.7%, freq1=single; year2.",low
+gt__study75__pair473,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__20","block3=Atlanta(positional); dose1=1.0%, freq1=single; year2.",low
+gt__study75__pair474,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__23","block3=Atlanta(positional); dose0.7=0.7%, freq2=double; year2.",low
+gt__study75__pair475,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__22","block3=Atlanta(positional); dose1=1.0%, freq2=double; year2.",low
+gt__study75__pair476,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__21","block3=Atlanta(positional); dose0.7=0.7%, freq1=single; year3.",low
+gt__study75__pair477,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__20","block3=Atlanta(positional); dose1=1.0%, freq1=single; year3.",low
+gt__study75__pair478,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__23","block3=Atlanta(positional); dose0.7=0.7%, freq2=double; year3.",low
+gt__study75__pair479,"091_Kocira_2018_Modeling biometric traits, yield and nut",AMBIGUOUS,"091_Kocira_2018_Modeling biometric traits, yield and nut__ai__22","block3=Atlanta(positional); dose1=1.0%, freq2=double; year3.",low
+gt__study177__pair1090,094_Kowalska_2021_Effect of Different Forms of Silicon on,AMBIGUOUS,094_Kowalska_2021_Effect of Different Forms of Silicon on__ai__0,"GT method=Soil; Ctrl 0.388 t/ha matches AI yield (t/ha) rows not kg-plot rows. Two GT soil rows (1090,1092) map to AdeSil-soil(ai0) & ZumSil-soil(ai3); product not in GT so positional: 1090=AdeSil-soil. AI 'combined' method has no GT counterpart.",med
+gt__study177__pair1091,094_Kowalska_2021_Effect of Different Forms of Silicon on,AMBIGUOUS,094_Kowalska_2021_Effect of Different Forms of Silicon on__ai__2,"GT method=Foliar; t/ha outcome. Two GT foliar rows (1091,1093) map to AdeSil-foliar(ai2) & ZumSil-foliar(ai5); product not in GT, positional: 1091=AdeSil-foliar.",med
+gt__study177__pair1092,094_Kowalska_2021_Effect of Different Forms of Silicon on,AMBIGUOUS,094_Kowalska_2021_Effect of Different Forms of Silicon on__ai__3,"GT method=Soil; t/ha outcome. Second GT soil row, positional->ZumSil-soil(ai3).",med
+gt__study177__pair1093,094_Kowalska_2021_Effect of Different Forms of Silicon on,AMBIGUOUS,094_Kowalska_2021_Effect of Different Forms of Silicon on__ai__5,"GT method=Foliar; t/ha outcome. Second GT foliar row, positional->ZumSil-foliar(ai5).",med
+gt__study117__pair683,095_Kuisma_1989_The effect of foliar application of seaw,NO_MATCH,,"GT potato/seaweed/foliar dose=0.25, freq=3. AI extracted only a single SM3 5 l/ha application (spray volume) split into ware-yield(ai0) and tuber-yield(ai3); AI never extracted the three distinct dose levels (0.25/0.5/1) GT records.",high
+gt__study117__pair684,095_Kuisma_1989_The effect of foliar application of seaw,NO_MATCH,,"GT dose=0.5, freq=3. No AI row at this dose; AI captured only single 5 l/ha SM3 application.",high
+gt__study117__pair685,095_Kuisma_1989_The effect of foliar application of seaw,NO_MATCH,,"GT dose=1, freq=3. No AI row at this dose; AI captured only single 5 l/ha SM3 application.",high
+gt__study19__pair118,1-s2.0-S0304423819306703-main,AMBIGUOUS,1-s2.0-S0304423819306703-main__ai__1,"grape/PHs/foliar. AI=3 PH types(Soy,Lup,Cas)x2 conc(1.6gl=low,6.4gl=high). GT dose 0.25=low conc, 1=high conc (relative). GT pair order maps to type positionally: pair1(118,119)->Soy. 118 dose0.25->Soy/1.6gl. PH type not labeled in GT.",med
+gt__study19__pair119,1-s2.0-S0304423819306703-main,AMBIGUOUS,1-s2.0-S0304423819306703-main__ai__5,pair1->Soy(positional); dose1=high conc->Soy/6.4gl.,med
+gt__study19__pair120,1-s2.0-S0304423819306703-main,AMBIGUOUS,1-s2.0-S0304423819306703-main__ai__9,"pair2(120,121)->Lup(positional); dose0.25=low conc->Lup/1.6gl.",med
+gt__study19__pair121,1-s2.0-S0304423819306703-main,AMBIGUOUS,1-s2.0-S0304423819306703-main__ai__13,pair2->Lup(positional); dose1=high conc->Lup/6.4gl.,med
+gt__study19__pair122,1-s2.0-S0304423819306703-main,AMBIGUOUS,1-s2.0-S0304423819306703-main__ai__17,"pair3(122,123)->Cas(positional); dose0.25=low conc->Cas/1.6gl.",med
+gt__study19__pair123,1-s2.0-S0304423819306703-main,AMBIGUOUS,1-s2.0-S0304423819306703-main__ai__21,pair3->Cas(positional); dose1=high conc->Cas/6.4gl.,med
+gt__study174__pair1059,1-s2.0-S0304423820302417-main,AMBIGUOUS,1-s2.0-S0304423820302417-main__ai__0,"grape/PHs/foliar, both GT rows dose=1 freq=1. AI has 2 distinct products Trainer(PH1,ai0) & Stimtide(PH2,ai1) plus a duplicate Trainer row(ai10). GT not product-labeled; positional: 1059->Trainer/PH1(ai0, primary).",med
+gt__study174__pair1060,1-s2.0-S0304423820302417-main,AMBIGUOUS,1-s2.0-S0304423820302417-main__ai__1,"second GT row->Stimtide/PH2(ai1) positionally; product not labeled in GT. (ai10 is a duplicate Trainer/PH1 row, not Stimtide.)",med
+gt__study56__pair352,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",AMBIGUOUS,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f__ai__0","Block A (one of two control levels) at lowest dose. GT dose 0.01 ratio-maps to AI 3 l/ha (GT 0.01/0.1/1 == AI 3/30/300 l/ha, 1:10:100). First GT control block assigned to first AI cultivar block (Ironman/2011). Same intervention: AlgaeGreen Ascophyllum seaweed foliar.",med
+gt__study56__pair353,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",AMBIGUOUS,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f__ai__1","Block A, mid dose. GT 0.1 -> AI 30 l/ha. First GT block -> Ironman/2011.",med
+gt__study56__pair354,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",AMBIGUOUS,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f__ai__2","Block A, high dose. GT 1 -> AI 300 l/ha. First GT block -> Ironman/2011.",med
+gt__study56__pair355,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",AMBIGUOUS,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f__ai__3","Block B (second control level, Ctrl=1.67) at lowest dose. GT 0.01 -> AI 3 l/ha. Second GT block assigned to second AI cultivar block (Red Admiral/2012). Cultivar-to-block assignment not verifiable without means.",med
+gt__study56__pair356,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",AMBIGUOUS,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f__ai__4","Block B, mid dose. GT 0.1 -> AI 30 l/ha. Second GT block -> Red Admiral/2012.",med
+gt__study56__pair357,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f",AMBIGUOUS,"100_Lola-Luz_2014_Effect on yield, total phenolic, total f__ai__5","Block B, high dose. GT 1 -> AI 300 l/ha. Second GT block -> Red Admiral/2012.",med
+gt__study74__pair441,105_Mattner_2018_Increased growth response of strawberry,AMBIGUOUS,105_Mattner_2018_Increased growth response of strawberry__ai__0,GT method='Seed' (nursery propagation phase) at one control level (Ctrl=0.867). AI runner-yield rows are the nursery-sector outcome (runners m-1). Two GT 'seed' rows map to the two AI nursery/runner-yield cultivars; pair441 assigned to first runner-yield row (Fortuna). GT 'Seed' vs AI all-soil-drench label mismatch and cultivar identity not verifiable -> ambiguous.,low
+gt__study74__pair442,105_Mattner_2018_Increased growth response of strawberry,AMBIGUOUS,105_Mattner_2018_Increased growth response of strawberry__ai__2,Second GT 'Seed'/nursery row (Ctrl=1.445) assigned to second AI runner-yield cultivar (Albion). Same caveats as pair441.,low
+gt__study74__pair443,105_Mattner_2018_Increased growth response of strawberry,AMBIGUOUS,105_Mattner_2018_Increased growth response of strawberry__ai__4,"GT method='Soil' single row (Ctrl=0.5028, lowest) maps to AI fruit-sector total fruit yield (g plant-1), the production-phase outcome. AI has two fruit-yield rows (ai__4 untreated-nursery+SE-fruit; ai__8 SE-nursery+SE-fruit); ai__4 (single-sector SE) chosen as the direct seaweed-vs-untreated contrast. Year/sector ambiguity unresolved without means.",low
+gt__study73__pair435,106_Matysiak_2018_Herbicides with natural and synthetic bi,AMBIGUOUS,106_Matysiak_2018_Herbicides with natural and synthetic bi__ai__0,"GT captures only the seaweed (Kelpak) arm, wheat foliar. 6 GT rows = 3 herbicide backgrounds x 2 application methods (tank/sequential), pairing on shared control. Control 0.727 = herbicide MCPA+dicamba background. ai__0 = (MCPA+dicamba)+Kelpak tank mixture, 2014. Year (2014 vs 2015) and tank-vs-sequential assignment within the control-pair not verifiable without means.",low
+gt__study73__pair436,106_Matysiak_2018_Herbicides with natural and synthetic bi,AMBIGUOUS,106_Matysiak_2018_Herbicides with natural and synthetic bi__ai__1,"Second member of MCPA+dicamba/Kelpak control-pair (Ctrl=0.727). ai__1 = (MCPA+dicamba)/Kelpak sequential, 2014. Tank/sequential split within pair and year ambiguous.",low
+gt__study73__pair437,106_Matysiak_2018_Herbicides with natural and synthetic bi,AMBIGUOUS,106_Matysiak_2018_Herbicides with natural and synthetic bi__ai__4,"Control 0.698 = dicamba+triasulfuron background. ai__4 = (dicamba+triasulfuron)+Kelpak tank mixture, 2014. Year and tank/sequential ambiguous.",low
+gt__study73__pair438,106_Matysiak_2018_Herbicides with natural and synthetic bi,AMBIGUOUS,106_Matysiak_2018_Herbicides with natural and synthetic bi__ai__5,"Second member of dicamba+triasulfuron/Kelpak control-pair (Ctrl=0.698). ai__5 = (dicamba+triasulfuron)/Kelpak sequential, 2014. Year and tank/sequential ambiguous.",low
+gt__study73__pair439,106_Matysiak_2018_Herbicides with natural and synthetic bi,AMBIGUOUS,106_Matysiak_2018_Herbicides with natural and synthetic bi__ai__8,"Control 0.674 = florasulam+2,4-D background. ai__8 = (florasulam+2,4-D)+Kelpak tank mixture, 2014. Year and tank/sequential ambiguous.",low
+gt__study73__pair440,106_Matysiak_2018_Herbicides with natural and synthetic bi,AMBIGUOUS,106_Matysiak_2018_Herbicides with natural and synthetic bi__ai__9,"Second member of florasulam+2,4-D/Kelpak control-pair (Ctrl=0.674). ai__9 = (florasulam+2,4-D)/Kelpak sequential, 2014. Year and tank/sequential ambiguous.",low
+gt__study82__pair509,110_Michalak_2016_Evaluation of supercritical extracts of,AMBIGUOUS,110_Michalak_2016_Evaluation of supercritical extracts of__ai__4,"5 GT rows (all wheat seaweed foliar, identical descriptor dose=1, same control 0.945) form a 5-member set against the 5 AI treatments (Baltic 1.0, Ascophyllum 1.0, Spirulina 1.0/1.5/1.8), cultivar Akteur. Set-level match is certain; individual extract/rate identity within the set is indeterminate without means. Assigned positionally to ai__4 (Baltic macroalgae 1.0 L/ha).",low
+gt__study82__pair510,110_Michalak_2016_Evaluation of supercritical extracts of,AMBIGUOUS,110_Michalak_2016_Evaluation of supercritical extracts of__ai__9,Member of the same 5-treatment set; positional assignment to ai__9 (Ascophyllum nodosum 1.0 L/ha). Specific extract not verifiable without means.,low
+gt__study82__pair511,110_Michalak_2016_Evaluation of supercritical extracts of,AMBIGUOUS,110_Michalak_2016_Evaluation of supercritical extracts of__ai__15,Member of the same 5-treatment set; positional assignment to ai__15 (Spirulina platensis 1.0 L/ha). Specific extract not verifiable without means.,low
+gt__study82__pair512,110_Michalak_2016_Evaluation of supercritical extracts of,AMBIGUOUS,110_Michalak_2016_Evaluation of supercritical extracts of__ai__21,Member of the same 5-treatment set; positional assignment to ai__21 (Spirulina platensis 1.5 L/ha). Specific extract not verifiable without means.,low
+gt__study82__pair513,110_Michalak_2016_Evaluation of supercritical extracts of,AMBIGUOUS,110_Michalak_2016_Evaluation of supercritical extracts of__ai__26,Member of the same 5-treatment set; positional assignment to ai__26 (Spirulina platensis 1.8 L/ha). Specific extract not verifiable without means.,low
+gt__study5__pair17,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__1,"GT 12 rows = 6 cultivars x 2 years (ContinusStudy 1 vs 2), eggplant Goemar BM-86 (Ascophyllum) foliar. AI gives both early- and marketable-yield per cultivar/year; GT single yield mapped to marketable-yield rows (Li2022 FreshYield convention). ContinusStudy=1 block (pairs17-22) assigned to year 2013, positionally to its 6 marketable rows (ai__1,3,5,7,9,11 = Cristal/Epic/Flavine/Gascona/Onyx/WA6020). pair17 -> ai__1 (Cristal F1, marketable). Cultivar identity and early-vs-marketable choice not verifiable without means.",low
+gt__study5__pair18,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__3,"Year-2013 block, positional cultivar #2. ai__3 = Epic F1 marketable yield 2013. Cultivar identity not verifiable.",low
+gt__study5__pair19,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__5,"Year-2013 block, positional cultivar #3. ai__5 = Flavine F1 marketable yield 2013. Cultivar identity not verifiable.",low
+gt__study5__pair20,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__7,"Year-2013 block, positional cultivar #4. ai__7 = Gascona F1 marketable yield 2013. Cultivar identity not verifiable.",low
+gt__study5__pair21,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__9,"Year-2013 block, positional cultivar #5. ai__9 = Onyx F1 marketable yield 2013. Cultivar identity not verifiable.",low
+gt__study5__pair22,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__11,"Year-2013 block, positional cultivar #6. ai__11 = WA 6020 F1 marketable yield 2013. Cultivar identity not verifiable.",low
+gt__study5__pair23,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__13,ContinusStudy=2 block (pairs23-28) assigned to year 2014. AI 2014 has only 5 marketable-yield cultivars extracted (Cristal/Epic/Flavine/Gascona/Onyx; WA 6020 2014 not extracted by AI). pair23 -> ai__13 (Cristal F1 marketable 2014). Cultivar identity not verifiable.,low
+gt__study5__pair24,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__15,"Year-2014 block, positional cultivar #2. ai__15 = Epic F1 marketable yield 2014.",low
+gt__study5__pair25,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__17,"Year-2014 block, positional cultivar #3. ai__17 = Flavine F1 marketable yield 2014.",low
+gt__study5__pair26,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__19,"Year-2014 block, positional cultivar #4. ai__19 = Gascona F1 marketable yield 2014.",low
+gt__study5__pair27,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,120_Pohl_2019_The Eggplant Yield and Fruit Composition__ai__21,"Year-2014 block, positional cultivar #5. ai__21 = Onyx F1 marketable yield 2014.",low
+gt__study5__pair28,120_Pohl_2019_The Eggplant Yield and Fruit Composition,AMBIGUOUS,,"Year-2014 block, positional cultivar #6 (expected WA 6020 F1 marketable 2014). AI extracted only 5 of 6 cultivars for 2014 (rows end at ai__21); the 6th cultivar/year marketable-yield cell was never extracted.",low
+gt__study33__pair216,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__0",humic foliar dose 0.6=30ml/L (HAT1); ContinusStudy=1 -> year 2014; one of two cultivars (control-group A). Cultivar (FR vs RI) is indeterminate from descriptors alone (means blank); assigned to FR 2014 candidate.,med
+gt__study33__pair217,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__1","humic foliar dose 0.8=40ml/L (HAT2); ContinusStudy=1 -> year 2014; control-group A. Cultivar indeterminate, assigned FR 2014 candidate.",med
+gt__study33__pair218,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__2","humic foliar dose 1.0=50ml/L (HAT3); ContinusStudy=1 -> year 2014; control-group A. Cultivar indeterminate, assigned FR 2014 candidate.",med
+gt__study33__pair219,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__6",humic foliar dose 0.6=30ml/L (HAT1); ContinusStudy=1 -> year 2014; second control-group B -> other cultivar; assigned RI 2014 candidate. Cultivar assignment indeterminate from descriptors.,med
+gt__study33__pair220,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__7",humic foliar dose 0.8=40ml/L (HAT2); year 2014; control-group B; assigned RI 2014 candidate.,med
+gt__study33__pair221,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__8",humic foliar dose 1.0=50ml/L (HAT3); year 2014; control-group B; assigned RI 2014 candidate.,med
+gt__study33__pair222,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__3",humic foliar dose 0.6=30ml/L (HAT1); ContinusStudy=2 -> year 2015; control-group A; assigned FR 2015 candidate. Cultivar indeterminate.,med
+gt__study33__pair223,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__4",humic foliar dose 0.8=40ml/L (HAT2); year 2015; control-group A; assigned FR 2015 candidate.,med
+gt__study33__pair224,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__5",humic foliar dose 1.0=50ml/L (HAT3); year 2015; control-group A; assigned FR 2015 candidate.,med
+gt__study33__pair225,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__9",humic foliar dose 0.6=30ml/L (HAT1); year 2015; control-group B; assigned RI 2015 candidate.,med
+gt__study33__pair226,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__10",humic foliar dose 0.8=40ml/L (HAT2); year 2015; control-group B; assigned RI 2015 candidate.,med
+gt__study33__pair227,"121_Popescu_2018_Yield, berry quality and physiological r",AMBIGUOUS,"121_Popescu_2018_Yield, berry quality and physiological r__ai__11",humic foliar dose 1.0=50ml/L (HAT3); year 2015; control-group B; assigned RI 2015 candidate.,med
+gt__study147__pair841,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__0,"seaweed foliar, blackgram seed yield; dose 0.17=2.5% (rel. to max 15%). First of two seaweed blocks -> assigned Kappaphycus sap (seed yield, 100% RDF). Species (Kappaphycus vs Gracilaria) indeterminate from GT descriptors (both labeled 'seaweed', identical control/doses).",med
+gt__study147__pair842,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__1,seaweed foliar; dose 0.33=5%; Kappaphycus seed yield block. Species assignment indeterminate.,med
+gt__study147__pair843,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__2,seaweed foliar; dose 0.67=10%; Kappaphycus seed yield block. Species assignment indeterminate.,med
+gt__study147__pair844,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__4,"seaweed foliar; dose 1.0=15%; Kappaphycus seed yield block (ai__4; ai__3 is Kappaphycus STOVER yield, excluded). Species assignment indeterminate.",med
+gt__study147__pair845,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__5,seaweed foliar; dose 0.17=2.5%; second seaweed block -> assigned Gracilaria sap (AI labels co_amendment 'other' but it is the other seaweed species). Species assignment indeterminate.,med
+gt__study147__pair846,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__6,seaweed foliar; dose 0.33=5%; Gracilaria seed yield block. Species assignment indeterminate.,med
+gt__study147__pair847,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__7,seaweed foliar; dose 0.67=10%; Gracilaria seed yield block. Species assignment indeterminate.,med
+gt__study147__pair848,124_Pramanick_2016_Effect of seaweed saps derived from two,AMBIGUOUS,124_Pramanick_2016_Effect of seaweed saps derived from two__ai__8,seaweed foliar; dose 1.0=15%; Gracilaria seed yield block. Species assignment indeterminate.,med
+gt__study85__pair527,125_Procházka_2015_The possibilities of increasing the prod,AMBIGUOUS,125_Procházka_2015_The possibilities of increasing the prod__ai__19,"humic SEED treatment, soybean. Only AI row with co_amendment_level=seed is ai__19 ('Complete seed treatment' incl. Lexin humic+fulvic). GT splits into 6 cells by ContinusStudy (year 1-3) x 2 control-groups; AI pooled all years into a single cell, so year/rep granularity is lost. Multiple GT rows collapse onto ai__19.",med
+gt__study85__pair528,125_Procházka_2015_The possibilities of increasing the prod,AMBIGUOUS,125_Procházka_2015_The possibilities of increasing the prod__ai__19,"humic seed treatment, ContinusStudy=1, second control-group -> maps to same pooled AI seed-treatment cell ai__19 (granularity not preserved by AI).",med
+gt__study85__pair529,125_Procházka_2015_The possibilities of increasing the prod,AMBIGUOUS,125_Procházka_2015_The possibilities of increasing the prod__ai__19,"humic seed treatment, ContinusStudy=2 -> same pooled AI seed-treatment cell ai__19.",med
+gt__study85__pair530,125_Procházka_2015_The possibilities of increasing the prod,AMBIGUOUS,125_Procházka_2015_The possibilities of increasing the prod__ai__19,"humic seed treatment, ContinusStudy=2, second control-group -> same pooled AI seed-treatment cell ai__19.",med
+gt__study85__pair531,125_Procházka_2015_The possibilities of increasing the prod,AMBIGUOUS,125_Procházka_2015_The possibilities of increasing the prod__ai__19,"humic seed treatment, ContinusStudy=3 -> same pooled AI seed-treatment cell ai__19.",med
+gt__study85__pair532,125_Procházka_2015_The possibilities of increasing the prod,AMBIGUOUS,125_Procházka_2015_The possibilities of increasing the prod__ai__19,"humic seed treatment, ContinusStudy=3, second control-group -> same pooled AI seed-treatment cell ai__19.",med
+gt__study118__pair686,126_Prokkola_2007_Effect of biological sprays on the incid,AMBIGUOUS,126_Prokkola_2007_Effect of biological sprays on the incid__ai__4,"strawberry foliar seaweed (Ascophyllum), ContinusStudy=1 -> year 2001 (Table 1, exp 1). Matched to seaweed Total yield 2001 (ai__4); ai__5 is Marketable yield of same cell (total chosen as fresh/whole yield).",med
+gt__study118__pair687,126_Prokkola_2007_Effect of biological sprays on the incid,AMBIGUOUS,126_Prokkola_2007_Effect of biological sprays on the incid__ai__6,"strawberry foliar silicon, year 2001 (CS1). Matched to silicon Total yield 2001 (ai__6); ai__7 is Marketable of same cell.",med
+gt__study118__pair688,126_Prokkola_2007_Effect of biological sprays on the incid,AMBIGUOUS,126_Prokkola_2007_Effect of biological sprays on the incid__ai__2,"strawberry foliar plant_extract (compost extract), year 2001 (CS1). Matched to compost-extract Total yield 2001 (ai__2); ai__3 is Marketable of same cell.",med
+gt__study118__pair689,126_Prokkola_2007_Effect of biological sprays on the incid,NO_MATCH,,"strawberry foliar seaweed, ContinusStudy=2 -> year 2002. AI extracted only Trichoderma and compost for 2002 (ai__8-11); seaweed 2002 was never extracted.",high
+gt__study118__pair690,126_Prokkola_2007_Effect of biological sprays on the incid,NO_MATCH,,"strawberry foliar silicon, ContinusStudy=2 -> year 2002. AI extracted only Trichoderma and compost for 2002; silicon 2002 was never extracted.",high
+gt__study118__pair691,126_Prokkola_2007_Effect of biological sprays on the incid,AMBIGUOUS,126_Prokkola_2007_Effect of biological sprays on the incid__ai__10,"strawberry foliar plant_extract (compost extract), year 2002 (CS2). Matched to compost-extract Total yield 2002 (ai__10); ai__11 is Marketable of same cell.",med
+gt__study71__pair422,131_Rahman_2018_Chitosan biopolymer promotes yield and s,MATCH,131_Rahman_2018_Chitosan biopolymer promotes yield and s__ai__35,"chitosan foliar strawberry; dose 0.125 mg/mL = 125 ppm -> AI ai__35 (125 ppm chitosan, total fruit weight per plant).",high
+gt__study71__pair423,131_Rahman_2018_Chitosan biopolymer promotes yield and s,MATCH,131_Rahman_2018_Chitosan biopolymer promotes yield and s__ai__33,"chitosan foliar; dose 0.25 mg/mL = 250 ppm -> AI ai__33 (250 ppm chitosan, total fruit weight per plant).",high
+gt__study71__pair424,131_Rahman_2018_Chitosan biopolymer promotes yield and s,MATCH,131_Rahman_2018_Chitosan biopolymer promotes yield and s__ai__38,"chitosan foliar; dose 0.5 mg/mL = 500 ppm -> AI ai__38 (500 ppm chitosan, total fruit weight per plant).",high
+gt__study71__pair425,131_Rahman_2018_Chitosan biopolymer promotes yield and s,NO_MATCH,,chitosan foliar; dose 1.0 mg/mL = 1000 ppm. AI extracted only 125/250/500 ppm chitosan rows; the 1000 ppm level was not extracted.,high
+gt__study181__pair1102,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,MATCH,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P__ai__10,Both rows are the humic (HFA->humic) foliar biostimulant cell for apple yield; humic is the unique anchor category present once on each side.,high
+gt__study181__pair1103,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,AMBIGUOUS,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P__ai__11,"GT PHs->protein_hydrolysate maps to AI's only protein_hydrolysate row (Alfalfa protein hydrolysate, APH). GT has two PHs rows (1103,1106) but AI has only one explicit protein_hydrolysate, so the 1103<->APH assignment cannot be uniquely ordered.",med
+gt__study181__pair1104,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,AMBIGUOUS,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P__ai__12,"GT SWE->seaweed; AI has two seaweed rows (__12 macroseaweed SEA, __13 microalga SPI). Assigned to SEA but order between the two GT seaweed rows (1104/1105) and two AI seaweed rows is indeterminate without outcome values.",med
+gt__study181__pair1105,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,AMBIGUOUS,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P__ai__13,GT SWE->seaweed; AI two seaweed rows. Assigned to __13 (microalga SPI). Pairing within the two-on-two seaweed set is not uniquely determinable descriptor-only.,med
+gt__study181__pair1106,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,AMBIGUOUS,,"GT second PHs->protein_hydrolysate row. AI extracted only one protein_hydrolysate (APH, already paired to 1103); the microalga hydrolysate AI labelled as seaweed. No remaining unique AI protein_hydrolysate counterpart.",low
+gt__study181__pair1107,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,NO_MATCH,,GT Chi->chitosan foliar cell. AI extracted no chitosan row for this paper (AI lists amino_acid/other/vitamins/zinc instead).,high
+gt__study181__pair1108,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P,MATCH,153_Soppelsa_2018_Use of Biostimulants for Organic Apple P__ai__18,"Both rows are the silicon (Si->silicon, SIL silicon-containing product) foliar cell for apple yield; silicon is a unique anchor present once on each side.",high
+gt__study141__pair815,158_Sulakhudin_2019_Application of Coastal Sediments and Fol,AMBIGUOUS,158_Sulakhudin_2019_Application of Coastal Sediments and Fol__ai__0,"All three GT rows are seaweed foliar (freq=3) shallot/onion yield cells with no cultivar or coastal-sediment disambiguator. AI splits into 3 cultivars x 2 coastal-sediment levels (6 cells). Assigned to Bima / no-coastal-sediment as the biostimulant-vs-absolute-control contrast, but cultivar identity and sediment level of each GT row are not determinable descriptor-only.",low
+gt__study141__pair816,158_Sulakhudin_2019_Application of Coastal Sediments and Fol,AMBIGUOUS,158_Sulakhudin_2019_Application of Coastal Sediments and Fol__ai__2,Second GT seaweed-foliar cell; assigned to Moujung / no-coastal-sediment. GT carries no cultivar/sediment field so the cultivar order across the three GT rows is indeterminate.,low
+gt__study141__pair817,158_Sulakhudin_2019_Application of Coastal Sediments and Fol,AMBIGUOUS,158_Sulakhudin_2019_Application of Coastal Sediments and Fol__ai__4,Third GT seaweed-foliar cell; assigned to Sumenep / no-coastal-sediment. Cultivar/sediment mapping among the three GT rows and six AI cells cannot be uniquely resolved without outcome values.,low
+gt__study136__pair783,175_Wilczewski_2018_Response of sugar beet to humic substanc,MATCH,175_Wilczewski_2018_Response of sugar beet to humic substanc__ai__0,"GT is the single humic/Soil sugar-beet yield cell. AI __0 is storage-root yield under Humistar (humic) applied to soil, the primary sugar-beet yield outcome and the only soil-method humic-alone yield row. Other AI rows are leaf yield, sugar yield, or the humic+foliar-K combination (co_amendment foliar), which do not match GT's soil-only humic yield.",high
+gt__study149__pair855,agriculture-10-00618-v2,MATCH,agriculture-10-00618-v2__ai__0,"GT is the single protein_hydrolysate/Soil olive fresh-yield cell. AI __0 is 'Fresh olive yield' from the protein-hydrolysate biostimulant (Sinergon 3000) applied via soil fertigation, co_amendment=soil, crop=olive. This is the whole-fruit fresh yield matching GT; other AI rows are oil yield, yield efficiency, per-fruit weight, or the potted/no-amendment biomass cells.",high
+gt__study129__pair737,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__0,"GT is chitosan foliar soybean seed-yield, ContinusStudy=1 (mapped to year 2003). AI has 8 chitosan seed-yield cells = 2 cultivars x 2 years x 2 stages; GT carries only the ContinusStudy binary, so cultivar and growth-stage identity within the CS=1 group {737,738,741,742} are indeterminate. Assigned to a 2003 chitosan cell (AC Proteina V4).",low
+gt__study129__pair738,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__1,"Chitosan foliar soybean, ContinusStudy=1 (year 2003 group). Assigned to AC Proteina R3 2003. Cultivar/stage not disambiguated by GT.",low
+gt__study129__pair739,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__4,"Chitosan foliar soybean, ContinusStudy=2 (mapped to year 2004 group {739,740,743,744}). Assigned to AC Proteina V4 2004. Cultivar/stage indeterminate from GT descriptors.",low
+gt__study129__pair740,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__5,"Chitosan foliar soybean, ContinusStudy=2 (2004 group). Assigned to AC Proteina R3 2004. Within-group cell identity not resolvable descriptor-only.",low
+gt__study129__pair741,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__2,"Chitosan foliar soybean, ContinusStudy=1 (2003 group). Assigned to AC Orford V4 2003. Cultivar/stage not disambiguated by GT.",low
+gt__study129__pair742,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__3,"Chitosan foliar soybean, ContinusStudy=1 (2003 group). Assigned to AC Orford R3 2003. Cultivar/stage indeterminate from GT.",low
+gt__study129__pair743,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__6,"Chitosan foliar soybean, ContinusStudy=2 (2004 group). Assigned to AC Orford V4 2004. Within-group cell identity not resolvable descriptor-only.",low
+gt__study129__pair744,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,AMBIGUOUS,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of__ai__7,"Chitosan foliar soybean, ContinusStudy=2 (2004 group). Assigned to AC Orford R3 2004. Cultivar/stage not disambiguated by GT; AI __8 (Actinomycetes/other) has no chitosan GT counterpart.",low
+gt__study102__pair616,article1400838000_Azarpour et al,NO_MATCH,,"Eggplant humic-acid foliar study has two non-zero rates: 25 mg/L (lower, H2) and 50 mg/L (higher, H3). GT dose=0.5 is the lower-dose cell (lower normalized treatment yield 2.356 vs 2.779), i.e. the 25 mg/L treatment averaged across N levels. The blind AI CSV contains only one humic row (__0 = 50 mg/L H3); the 25 mg/L cell was not extracted.",high
+gt__study102__pair617,article1400838000_Azarpour et al,MATCH,article1400838000_Azarpour et al__ai__0,"Same experimental cell: eggplant, humic acid, foliar, higher non-zero rate (GT dose=1 = highest = 50 mg/L H3), averaged across N levels, absolute control. AI __0 is '50 mg/L humic acid foliar (H3), averaged across all N levels (N1-N6)'. Dose-ordering (1 = top rate = 50 mg/L) and pooled-over-N aggregation align uniquely.",high
+gt__study1__pair1,gt_study01,NO_MATCH,,,
+gt__study1__pair2,gt_study01,NO_MATCH,,,
+gt__study2__pair3,gt_study02,NO_MATCH,,,
+gt__study2__pair4,gt_study02,NO_MATCH,,,
+gt__study2__pair5,gt_study02,NO_MATCH,,,
+gt__study2__pair6,gt_study02,NO_MATCH,,,
+gt__study2__pair7,gt_study02,NO_MATCH,,,
+gt__study2__pair8,gt_study02,NO_MATCH,,,
+gt__study2__pair9,gt_study02,NO_MATCH,,,
+gt__study2__pair10,gt_study02,NO_MATCH,,,
+gt__study2__pair11,gt_study02,NO_MATCH,,,
+gt__study3__pair12,gt_study03,NO_MATCH,,,
+gt__study3__pair13,gt_study03,NO_MATCH,,,
+gt__study4__pair14,gt_study04,NO_MATCH,,,
+gt__study4__pair15,gt_study04,NO_MATCH,,,
+gt__study4__pair16,gt_study04,NO_MATCH,,,
+gt__study6__pair29,gt_study06,NO_MATCH,,,
+gt__study6__pair30,gt_study06,NO_MATCH,,,
+gt__study6__pair31,gt_study06,NO_MATCH,,,
+gt__study6__pair32,gt_study06,NO_MATCH,,,
+gt__study6__pair33,gt_study06,NO_MATCH,,,
+gt__study6__pair34,gt_study06,NO_MATCH,,,
+gt__study7__pair35,gt_study07,NO_MATCH,,,
+gt__study7__pair36,gt_study07,NO_MATCH,,,
+gt__study7__pair37,gt_study07,NO_MATCH,,,
+gt__study7__pair38,gt_study07,NO_MATCH,,,
+gt__study7__pair39,gt_study07,NO_MATCH,,,
+gt__study7__pair40,gt_study07,NO_MATCH,,,
+gt__study7__pair41,gt_study07,NO_MATCH,,,
+gt__study7__pair42,gt_study07,NO_MATCH,,,
+gt__study7__pair43,gt_study07,NO_MATCH,,,
+gt__study7__pair44,gt_study07,NO_MATCH,,,
+gt__study7__pair45,gt_study07,NO_MATCH,,,
+gt__study7__pair46,gt_study07,NO_MATCH,,,
+gt__study7__pair47,gt_study07,NO_MATCH,,,
+gt__study7__pair48,gt_study07,NO_MATCH,,,
+gt__study7__pair49,gt_study07,NO_MATCH,,,
+gt__study7__pair50,gt_study07,NO_MATCH,,,
+gt__study9__pair63,gt_study09,NO_MATCH,,,
+gt__study9__pair64,gt_study09,NO_MATCH,,,
+gt__study9__pair65,gt_study09,NO_MATCH,,,
+gt__study9__pair66,gt_study09,NO_MATCH,,,
+gt__study9__pair67,gt_study09,NO_MATCH,,,
+gt__study9__pair68,gt_study09,NO_MATCH,,,
+gt__study9__pair69,gt_study09,NO_MATCH,,,
+gt__study9__pair70,gt_study09,NO_MATCH,,,
+gt__study9__pair71,gt_study09,NO_MATCH,,,
+gt__study9__pair72,gt_study09,NO_MATCH,,,
+gt__study9__pair73,gt_study09,NO_MATCH,,,
+gt__study9__pair74,gt_study09,NO_MATCH,,,
+gt__study100__pair608,gt_study100,NO_MATCH,,,
+gt__study100__pair609,gt_study100,NO_MATCH,,,
+gt__study100__pair610,gt_study100,NO_MATCH,,,
+gt__study100__pair611,gt_study100,NO_MATCH,,,
+gt__study100__pair612,gt_study100,NO_MATCH,,,
+gt__study100__pair613,gt_study100,NO_MATCH,,,
+gt__study101__pair614,gt_study101,NO_MATCH,,,
+gt__study101__pair615,gt_study101,NO_MATCH,,,
+gt__study103__pair618,gt_study103,NO_MATCH,,,
+gt__study103__pair619,gt_study103,NO_MATCH,,,
+gt__study103__pair620,gt_study103,NO_MATCH,,,
+gt__study103__pair621,gt_study103,NO_MATCH,,,
+gt__study103__pair622,gt_study103,NO_MATCH,,,
+gt__study103__pair623,gt_study103,NO_MATCH,,,
+gt__study103__pair624,gt_study103,NO_MATCH,,,
+gt__study103__pair625,gt_study103,NO_MATCH,,,
+gt__study103__pair626,gt_study103,NO_MATCH,,,
+gt__study103__pair627,gt_study103,NO_MATCH,,,
+gt__study103__pair628,gt_study103,NO_MATCH,,,
+gt__study103__pair629,gt_study103,NO_MATCH,,,
+gt__study104__pair630,gt_study104,NO_MATCH,,,
+gt__study104__pair631,gt_study104,NO_MATCH,,,
+gt__study105__pair632,gt_study105,NO_MATCH,,,
+gt__study105__pair633,gt_study105,NO_MATCH,,,
+gt__study105__pair634,gt_study105,NO_MATCH,,,
+gt__study105__pair635,gt_study105,NO_MATCH,,,
+gt__study105__pair636,gt_study105,NO_MATCH,,,
+gt__study105__pair637,gt_study105,NO_MATCH,,,
+gt__study106__pair638,gt_study106,NO_MATCH,,,
+gt__study106__pair639,gt_study106,NO_MATCH,,,
+gt__study106__pair640,gt_study106,NO_MATCH,,,
+gt__study107__pair641,gt_study107,NO_MATCH,,,
+gt__study107__pair642,gt_study107,NO_MATCH,,,
+gt__study107__pair643,gt_study107,NO_MATCH,,,
+gt__study107__pair644,gt_study107,NO_MATCH,,,
+gt__study108__pair645,gt_study108,NO_MATCH,,,
+gt__study108__pair646,gt_study108,NO_MATCH,,,
+gt__study108__pair647,gt_study108,NO_MATCH,,,
+gt__study108__pair648,gt_study108,NO_MATCH,,,
+gt__study109__pair649,gt_study109,NO_MATCH,,,
+gt__study109__pair650,gt_study109,NO_MATCH,,,
+gt__study109__pair651,gt_study109,NO_MATCH,,,
+gt__study109__pair652,gt_study109,NO_MATCH,,,
+gt__study109__pair653,gt_study109,NO_MATCH,,,
+gt__study109__pair654,gt_study109,NO_MATCH,,,
+gt__study11__pair79,gt_study11,NO_MATCH,,,
+gt__study11__pair80,gt_study11,NO_MATCH,,,
+gt__study11__pair81,gt_study11,NO_MATCH,,,
+gt__study11__pair82,gt_study11,NO_MATCH,,,
+gt__study110__pair655,gt_study110,NO_MATCH,,,
+gt__study110__pair656,gt_study110,NO_MATCH,,,
+gt__study110__pair657,gt_study110,NO_MATCH,,,
+gt__study110__pair658,gt_study110,NO_MATCH,,,
+gt__study110__pair659,gt_study110,NO_MATCH,,,
+gt__study110__pair660,gt_study110,NO_MATCH,,,
+gt__study110__pair661,gt_study110,NO_MATCH,,,
+gt__study110__pair662,gt_study110,NO_MATCH,,,
+gt__study111__pair663,gt_study111,NO_MATCH,,,
+gt__study111__pair664,gt_study111,NO_MATCH,,,
+gt__study112__pair665,gt_study112,NO_MATCH,,,
+gt__study112__pair666,gt_study112,NO_MATCH,,,
+gt__study112__pair667,gt_study112,NO_MATCH,,,
+gt__study112__pair668,gt_study112,NO_MATCH,,,
+gt__study113__pair669,gt_study113,NO_MATCH,,,
+gt__study113__pair670,gt_study113,NO_MATCH,,,
+gt__study113__pair671,gt_study113,NO_MATCH,,,
+gt__study113__pair672,gt_study113,NO_MATCH,,,
+gt__study113__pair673,gt_study113,NO_MATCH,,,
+gt__study113__pair674,gt_study113,NO_MATCH,,,
+gt__study114__pair675,gt_study114,NO_MATCH,,,
+gt__study115__pair676,gt_study115,NO_MATCH,,,
+gt__study115__pair677,gt_study115,NO_MATCH,,,
+gt__study115__pair678,gt_study115,NO_MATCH,,,
+gt__study115__pair679,gt_study115,NO_MATCH,,,
+gt__study116__pair680,gt_study116,NO_MATCH,,,
+gt__study116__pair681,gt_study116,NO_MATCH,,,
+gt__study116__pair682,gt_study116,NO_MATCH,,,
+gt__study119__pair692,gt_study119,NO_MATCH,,,
+gt__study119__pair693,gt_study119,NO_MATCH,,,
+gt__study119__pair694,gt_study119,NO_MATCH,,,
+gt__study119__pair695,gt_study119,NO_MATCH,,,
+gt__study119__pair696,gt_study119,NO_MATCH,,,
+gt__study12__pair83,gt_study12,NO_MATCH,,,
+gt__study12__pair84,gt_study12,NO_MATCH,,,
+gt__study12__pair85,gt_study12,NO_MATCH,,,
+gt__study12__pair86,gt_study12,NO_MATCH,,,
+gt__study12__pair87,gt_study12,NO_MATCH,,,
+gt__study12__pair88,gt_study12,NO_MATCH,,,
+gt__study12__pair89,gt_study12,NO_MATCH,,,
+gt__study12__pair90,gt_study12,NO_MATCH,,,
+gt__study12__pair91,gt_study12,NO_MATCH,,,
+gt__study12__pair92,gt_study12,NO_MATCH,,,
+gt__study12__pair93,gt_study12,NO_MATCH,,,
+gt__study12__pair94,gt_study12,NO_MATCH,,,
+gt__study12__pair95,gt_study12,NO_MATCH,,,
+gt__study12__pair96,gt_study12,NO_MATCH,,,
+gt__study12__pair97,gt_study12,NO_MATCH,,,
+gt__study12__pair98,gt_study12,NO_MATCH,,,
+gt__study12__pair99,gt_study12,NO_MATCH,,,
+gt__study12__pair100,gt_study12,NO_MATCH,,,
+gt__study12__pair101,gt_study12,NO_MATCH,,,
+gt__study12__pair102,gt_study12,NO_MATCH,,,
+gt__study120__pair697,gt_study120,NO_MATCH,,,
+gt__study120__pair698,gt_study120,NO_MATCH,,,
+gt__study120__pair699,gt_study120,NO_MATCH,,,
+gt__study121__pair700,gt_study121,NO_MATCH,,,
+gt__study121__pair701,gt_study121,NO_MATCH,,,
+gt__study121__pair702,gt_study121,NO_MATCH,,,
+gt__study121__pair703,gt_study121,NO_MATCH,,,
+gt__study121__pair704,gt_study121,NO_MATCH,,,
+gt__study121__pair705,gt_study121,NO_MATCH,,,
+gt__study122__pair706,gt_study122,NO_MATCH,,,
+gt__study122__pair707,gt_study122,NO_MATCH,,,
+gt__study122__pair708,gt_study122,NO_MATCH,,,
+gt__study123__pair709,gt_study123,NO_MATCH,,,
+gt__study123__pair710,gt_study123,NO_MATCH,,,
+gt__study123__pair711,gt_study123,NO_MATCH,,,
+gt__study124__pair712,gt_study124,NO_MATCH,,,
+gt__study125__pair713,gt_study125,NO_MATCH,,,
+gt__study125__pair714,gt_study125,NO_MATCH,,,
+gt__study125__pair715,gt_study125,NO_MATCH,,,
+gt__study125__pair716,gt_study125,NO_MATCH,,,
+gt__study125__pair717,gt_study125,NO_MATCH,,,
+gt__study125__pair718,gt_study125,NO_MATCH,,,
+gt__study126__pair719,gt_study126,NO_MATCH,,,
+gt__study126__pair720,gt_study126,NO_MATCH,,,
+gt__study127__pair721,gt_study127,NO_MATCH,,,
+gt__study127__pair722,gt_study127,NO_MATCH,,,
+gt__study127__pair723,gt_study127,NO_MATCH,,,
+gt__study127__pair724,gt_study127,NO_MATCH,,,
+gt__study127__pair725,gt_study127,NO_MATCH,,,
+gt__study127__pair726,gt_study127,NO_MATCH,,,
+gt__study127__pair727,gt_study127,NO_MATCH,,,
+gt__study127__pair728,gt_study127,NO_MATCH,,,
+gt__study128__pair729,gt_study128,NO_MATCH,,,
+gt__study128__pair730,gt_study128,NO_MATCH,,,
+gt__study128__pair731,gt_study128,NO_MATCH,,,
+gt__study128__pair732,gt_study128,NO_MATCH,,,
+gt__study128__pair733,gt_study128,NO_MATCH,,,
+gt__study128__pair734,gt_study128,NO_MATCH,,,
+gt__study128__pair735,gt_study128,NO_MATCH,,,
+gt__study128__pair736,gt_study128,NO_MATCH,,,
+gt__study13__pair103,gt_study13,NO_MATCH,,,
+gt__study130__pair745,gt_study130,NO_MATCH,,,
+gt__study130__pair746,gt_study130,NO_MATCH,,,
+gt__study130__pair747,gt_study130,NO_MATCH,,,
+gt__study130__pair748,gt_study130,NO_MATCH,,,
+gt__study130__pair749,gt_study130,NO_MATCH,,,
+gt__study130__pair750,gt_study130,NO_MATCH,,,
+gt__study130__pair751,gt_study130,NO_MATCH,,,
+gt__study130__pair752,gt_study130,NO_MATCH,,,
+gt__study131__pair753,gt_study131,NO_MATCH,,,
+gt__study131__pair754,gt_study131,NO_MATCH,,,
+gt__study131__pair755,gt_study131,NO_MATCH,,,
+gt__study131__pair756,gt_study131,NO_MATCH,,,
+gt__study131__pair757,gt_study131,NO_MATCH,,,
+gt__study131__pair758,gt_study131,NO_MATCH,,,
+gt__study131__pair759,gt_study131,NO_MATCH,,,
+gt__study131__pair760,gt_study131,NO_MATCH,,,
+gt__study132__pair761,gt_study132,NO_MATCH,,,
+gt__study132__pair762,gt_study132,NO_MATCH,,,
+gt__study132__pair763,gt_study132,NO_MATCH,,,
+gt__study132__pair764,gt_study132,NO_MATCH,,,
+gt__study132__pair765,gt_study132,NO_MATCH,,,
+gt__study132__pair766,gt_study132,NO_MATCH,,,
+gt__study132__pair767,gt_study132,NO_MATCH,,,
+gt__study132__pair768,gt_study132,NO_MATCH,,,
+gt__study132__pair769,gt_study132,NO_MATCH,,,
+gt__study132__pair770,gt_study132,NO_MATCH,,,
+gt__study133__pair771,gt_study133,NO_MATCH,,,
+gt__study133__pair772,gt_study133,NO_MATCH,,,
+gt__study133__pair773,gt_study133,NO_MATCH,,,
+gt__study133__pair774,gt_study133,NO_MATCH,,,
+gt__study134__pair775,gt_study134,NO_MATCH,,,
+gt__study134__pair776,gt_study134,NO_MATCH,,,
+gt__study134__pair777,gt_study134,NO_MATCH,,,
+gt__study134__pair778,gt_study134,NO_MATCH,,,
+gt__study135__pair779,gt_study135,NO_MATCH,,,
+gt__study135__pair780,gt_study135,NO_MATCH,,,
+gt__study135__pair781,gt_study135,NO_MATCH,,,
+gt__study135__pair782,gt_study135,NO_MATCH,,,
+gt__study137__pair784,gt_study137,NO_MATCH,,,
+gt__study137__pair785,gt_study137,NO_MATCH,,,
+gt__study137__pair786,gt_study137,NO_MATCH,,,
+gt__study137__pair787,gt_study137,NO_MATCH,,,
+gt__study137__pair788,gt_study137,NO_MATCH,,,
+gt__study137__pair789,gt_study137,NO_MATCH,,,
+gt__study137__pair790,gt_study137,NO_MATCH,,,
+gt__study137__pair791,gt_study137,NO_MATCH,,,
+gt__study137__pair792,gt_study137,NO_MATCH,,,
+gt__study137__pair793,gt_study137,NO_MATCH,,,
+gt__study137__pair794,gt_study137,NO_MATCH,,,
+gt__study137__pair795,gt_study137,NO_MATCH,,,
+gt__study137__pair796,gt_study137,NO_MATCH,,,
+gt__study137__pair797,gt_study137,NO_MATCH,,,
+gt__study137__pair798,gt_study137,NO_MATCH,,,
+gt__study137__pair799,gt_study137,NO_MATCH,,,
+gt__study138__pair800,gt_study138,NO_MATCH,,,
+gt__study138__pair801,gt_study138,NO_MATCH,,,
+gt__study138__pair802,gt_study138,NO_MATCH,,,
+gt__study138__pair803,gt_study138,NO_MATCH,,,
+gt__study138__pair804,gt_study138,NO_MATCH,,,
+gt__study138__pair805,gt_study138,NO_MATCH,,,
+gt__study138__pair806,gt_study138,NO_MATCH,,,
+gt__study138__pair807,gt_study138,NO_MATCH,,,
+gt__study138__pair808,gt_study138,NO_MATCH,,,
+gt__study138__pair809,gt_study138,NO_MATCH,,,
+gt__study139__pair810,gt_study139,NO_MATCH,,,
+gt__study139__pair811,gt_study139,NO_MATCH,,,
+gt__study14__pair104,gt_study14,NO_MATCH,,,
+gt__study14__pair105,gt_study14,NO_MATCH,,,
+gt__study14__pair106,gt_study14,NO_MATCH,,,
+gt__study14__pair107,gt_study14,NO_MATCH,,,
+gt__study140__pair812,gt_study140,NO_MATCH,,,
+gt__study140__pair813,gt_study140,NO_MATCH,,,
+gt__study140__pair814,gt_study140,NO_MATCH,,,
+gt__study142__pair818,gt_study142,NO_MATCH,,,
+gt__study142__pair819,gt_study142,NO_MATCH,,,
+gt__study143__pair820,gt_study143,NO_MATCH,,,
+gt__study143__pair821,gt_study143,NO_MATCH,,,
+gt__study143__pair822,gt_study143,NO_MATCH,,,
+gt__study144__pair823,gt_study144,NO_MATCH,,,
+gt__study144__pair824,gt_study144,NO_MATCH,,,
+gt__study144__pair825,gt_study144,NO_MATCH,,,
+gt__study144__pair826,gt_study144,NO_MATCH,,,
+gt__study144__pair827,gt_study144,NO_MATCH,,,
+gt__study144__pair828,gt_study144,NO_MATCH,,,
+gt__study144__pair829,gt_study144,NO_MATCH,,,
+gt__study144__pair830,gt_study144,NO_MATCH,,,
+gt__study145__pair831,gt_study145,NO_MATCH,,,
+gt__study145__pair832,gt_study145,NO_MATCH,,,
+gt__study145__pair833,gt_study145,NO_MATCH,,,
+gt__study145__pair834,gt_study145,NO_MATCH,,,
+gt__study146__pair835,gt_study146,NO_MATCH,,,
+gt__study146__pair836,gt_study146,NO_MATCH,,,
+gt__study146__pair837,gt_study146,NO_MATCH,,,
+gt__study146__pair838,gt_study146,NO_MATCH,,,
+gt__study146__pair839,gt_study146,NO_MATCH,,,
+gt__study146__pair840,gt_study146,NO_MATCH,,,
+gt__study148__pair849,gt_study148,NO_MATCH,,,
+gt__study148__pair850,gt_study148,NO_MATCH,,,
+gt__study148__pair851,gt_study148,NO_MATCH,,,
+gt__study148__pair852,gt_study148,NO_MATCH,,,
+gt__study148__pair853,gt_study148,NO_MATCH,,,
+gt__study148__pair854,gt_study148,NO_MATCH,,,
+gt__study15__pair108,gt_study15,NO_MATCH,,,
+gt__study15__pair109,gt_study15,NO_MATCH,,,
+gt__study15__pair110,gt_study15,NO_MATCH,,,
+gt__study150__pair856,gt_study150,NO_MATCH,,,
+gt__study150__pair857,gt_study150,NO_MATCH,,,
+gt__study150__pair858,gt_study150,NO_MATCH,,,
+gt__study150__pair859,gt_study150,NO_MATCH,,,
+gt__study150__pair860,gt_study150,NO_MATCH,,,
+gt__study150__pair861,gt_study150,NO_MATCH,,,
+gt__study151__pair862,gt_study151,NO_MATCH,,,
+gt__study151__pair863,gt_study151,NO_MATCH,,,
+gt__study151__pair864,gt_study151,NO_MATCH,,,
+gt__study151__pair865,gt_study151,NO_MATCH,,,
+gt__study151__pair866,gt_study151,NO_MATCH,,,
+gt__study151__pair867,gt_study151,NO_MATCH,,,
+gt__study151__pair868,gt_study151,NO_MATCH,,,
+gt__study151__pair869,gt_study151,NO_MATCH,,,
+gt__study153__pair872,gt_study153,NO_MATCH,,,
+gt__study153__pair873,gt_study153,NO_MATCH,,,
+gt__study154__pair874,gt_study154,NO_MATCH,,,
+gt__study154__pair875,gt_study154,NO_MATCH,,,
+gt__study154__pair876,gt_study154,NO_MATCH,,,
+gt__study154__pair877,gt_study154,NO_MATCH,,,
+gt__study154__pair878,gt_study154,NO_MATCH,,,
+gt__study154__pair879,gt_study154,NO_MATCH,,,
+gt__study155__pair880,gt_study155,NO_MATCH,,,
+gt__study155__pair881,gt_study155,NO_MATCH,,,
+gt__study155__pair882,gt_study155,NO_MATCH,,,
+gt__study155__pair883,gt_study155,NO_MATCH,,,
+gt__study155__pair884,gt_study155,NO_MATCH,,,
+gt__study155__pair885,gt_study155,NO_MATCH,,,
+gt__study156__pair886,gt_study156,NO_MATCH,,,
+gt__study156__pair887,gt_study156,NO_MATCH,,,
+gt__study156__pair888,gt_study156,NO_MATCH,,,
+gt__study156__pair889,gt_study156,NO_MATCH,,,
+gt__study156__pair890,gt_study156,NO_MATCH,,,
+gt__study156__pair891,gt_study156,NO_MATCH,,,
+gt__study156__pair892,gt_study156,NO_MATCH,,,
+gt__study156__pair893,gt_study156,NO_MATCH,,,
+gt__study156__pair894,gt_study156,NO_MATCH,,,
+gt__study156__pair895,gt_study156,NO_MATCH,,,
+gt__study156__pair896,gt_study156,NO_MATCH,,,
+gt__study156__pair897,gt_study156,NO_MATCH,,,
+gt__study157__pair898,gt_study157,NO_MATCH,,,
+gt__study157__pair899,gt_study157,NO_MATCH,,,
+gt__study157__pair900,gt_study157,NO_MATCH,,,
+gt__study157__pair901,gt_study157,NO_MATCH,,,
+gt__study157__pair902,gt_study157,NO_MATCH,,,
+gt__study157__pair903,gt_study157,NO_MATCH,,,
+gt__study157__pair904,gt_study157,NO_MATCH,,,
+gt__study157__pair905,gt_study157,NO_MATCH,,,
+gt__study157__pair906,gt_study157,NO_MATCH,,,
+gt__study157__pair907,gt_study157,NO_MATCH,,,
+gt__study157__pair908,gt_study157,NO_MATCH,,,
+gt__study157__pair909,gt_study157,NO_MATCH,,,
+gt__study158__pair910,gt_study158,NO_MATCH,,,
+gt__study158__pair911,gt_study158,NO_MATCH,,,
+gt__study158__pair912,gt_study158,NO_MATCH,,,
+gt__study158__pair913,gt_study158,NO_MATCH,,,
+gt__study158__pair914,gt_study158,NO_MATCH,,,
+gt__study158__pair915,gt_study158,NO_MATCH,,,
+gt__study158__pair916,gt_study158,NO_MATCH,,,
+gt__study158__pair917,gt_study158,NO_MATCH,,,
+gt__study158__pair918,gt_study158,NO_MATCH,,,
+gt__study158__pair919,gt_study158,NO_MATCH,,,
+gt__study158__pair920,gt_study158,NO_MATCH,,,
+gt__study158__pair921,gt_study158,NO_MATCH,,,
+gt__study158__pair922,gt_study158,NO_MATCH,,,
+gt__study158__pair923,gt_study158,NO_MATCH,,,
+gt__study158__pair924,gt_study158,NO_MATCH,,,
+gt__study158__pair925,gt_study158,NO_MATCH,,,
+gt__study158__pair926,gt_study158,NO_MATCH,,,
+gt__study158__pair927,gt_study158,NO_MATCH,,,
+gt__study159__pair928,gt_study159,NO_MATCH,,,
+gt__study159__pair929,gt_study159,NO_MATCH,,,
+gt__study159__pair930,gt_study159,NO_MATCH,,,
+gt__study159__pair931,gt_study159,NO_MATCH,,,
+gt__study159__pair932,gt_study159,NO_MATCH,,,
+gt__study159__pair933,gt_study159,NO_MATCH,,,
+gt__study16__pair111,gt_study16,NO_MATCH,,,
+gt__study16__pair112,gt_study16,NO_MATCH,,,
+gt__study160__pair934,gt_study160,NO_MATCH,,,
+gt__study160__pair935,gt_study160,NO_MATCH,,,
+gt__study160__pair936,gt_study160,NO_MATCH,,,
+gt__study160__pair937,gt_study160,NO_MATCH,,,
+gt__study160__pair938,gt_study160,NO_MATCH,,,
+gt__study160__pair939,gt_study160,NO_MATCH,,,
+gt__study161__pair940,gt_study161,NO_MATCH,,,
+gt__study161__pair941,gt_study161,NO_MATCH,,,
+gt__study162__pair942,gt_study162,NO_MATCH,,,
+gt__study162__pair943,gt_study162,NO_MATCH,,,
+gt__study163__pair944,gt_study163,NO_MATCH,,,
+gt__study163__pair945,gt_study163,NO_MATCH,,,
+gt__study163__pair946,gt_study163,NO_MATCH,,,
+gt__study163__pair947,gt_study163,NO_MATCH,,,
+gt__study163__pair948,gt_study163,NO_MATCH,,,
+gt__study163__pair949,gt_study163,NO_MATCH,,,
+gt__study163__pair950,gt_study163,NO_MATCH,,,
+gt__study163__pair951,gt_study163,NO_MATCH,,,
+gt__study163__pair952,gt_study163,NO_MATCH,,,
+gt__study163__pair953,gt_study163,NO_MATCH,,,
+gt__study163__pair954,gt_study163,NO_MATCH,,,
+gt__study163__pair955,gt_study163,NO_MATCH,,,
+gt__study163__pair956,gt_study163,NO_MATCH,,,
+gt__study163__pair957,gt_study163,NO_MATCH,,,
+gt__study164__pair958,gt_study164,NO_MATCH,,,
+gt__study164__pair959,gt_study164,NO_MATCH,,,
+gt__study164__pair960,gt_study164,NO_MATCH,,,
+gt__study164__pair961,gt_study164,NO_MATCH,,,
+gt__study164__pair962,gt_study164,NO_MATCH,,,
+gt__study164__pair963,gt_study164,NO_MATCH,,,
+gt__study165__pair964,gt_study165,NO_MATCH,,,
+gt__study165__pair965,gt_study165,NO_MATCH,,,
+gt__study165__pair966,gt_study165,NO_MATCH,,,
+gt__study165__pair967,gt_study165,NO_MATCH,,,
+gt__study165__pair968,gt_study165,NO_MATCH,,,
+gt__study165__pair969,gt_study165,NO_MATCH,,,
+gt__study165__pair970,gt_study165,NO_MATCH,,,
+gt__study165__pair971,gt_study165,NO_MATCH,,,
+gt__study165__pair972,gt_study165,NO_MATCH,,,
+gt__study165__pair973,gt_study165,NO_MATCH,,,
+gt__study165__pair974,gt_study165,NO_MATCH,,,
+gt__study165__pair975,gt_study165,NO_MATCH,,,
+gt__study165__pair976,gt_study165,NO_MATCH,,,
+gt__study165__pair977,gt_study165,NO_MATCH,,,
+gt__study165__pair978,gt_study165,NO_MATCH,,,
+gt__study165__pair979,gt_study165,NO_MATCH,,,
+gt__study165__pair980,gt_study165,NO_MATCH,,,
+gt__study165__pair981,gt_study165,NO_MATCH,,,
+gt__study165__pair982,gt_study165,NO_MATCH,,,
+gt__study165__pair983,gt_study165,NO_MATCH,,,
+gt__study165__pair984,gt_study165,NO_MATCH,,,
+gt__study165__pair985,gt_study165,NO_MATCH,,,
+gt__study165__pair986,gt_study165,NO_MATCH,,,
+gt__study165__pair987,gt_study165,NO_MATCH,,,
+gt__study166__pair988,gt_study166,NO_MATCH,,,
+gt__study166__pair989,gt_study166,NO_MATCH,,,
+gt__study167__pair990,gt_study167,NO_MATCH,,,
+gt__study167__pair991,gt_study167,NO_MATCH,,,
+gt__study167__pair992,gt_study167,NO_MATCH,,,
+gt__study167__pair993,gt_study167,NO_MATCH,,,
+gt__study167__pair994,gt_study167,NO_MATCH,,,
+gt__study167__pair995,gt_study167,NO_MATCH,,,
+gt__study167__pair996,gt_study167,NO_MATCH,,,
+gt__study167__pair997,gt_study167,NO_MATCH,,,
+gt__study168__pair998,gt_study168,NO_MATCH,,,
+gt__study168__pair999,gt_study168,NO_MATCH,,,
+gt__study168__pair1000,gt_study168,NO_MATCH,,,
+gt__study168__pair1001,gt_study168,NO_MATCH,,,
+gt__study168__pair1002,gt_study168,NO_MATCH,,,
+gt__study168__pair1003,gt_study168,NO_MATCH,,,
+gt__study168__pair1004,gt_study168,NO_MATCH,,,
+gt__study168__pair1005,gt_study168,NO_MATCH,,,
+gt__study169__pair1006,gt_study169,NO_MATCH,,,
+gt__study169__pair1007,gt_study169,NO_MATCH,,,
+gt__study169__pair1008,gt_study169,NO_MATCH,,,
+gt__study169__pair1009,gt_study169,NO_MATCH,,,
+gt__study169__pair1010,gt_study169,NO_MATCH,,,
+gt__study169__pair1011,gt_study169,NO_MATCH,,,
+gt__study169__pair1012,gt_study169,NO_MATCH,,,
+gt__study169__pair1013,gt_study169,NO_MATCH,,,
+gt__study169__pair1014,gt_study169,NO_MATCH,,,
+gt__study169__pair1015,gt_study169,NO_MATCH,,,
+gt__study169__pair1016,gt_study169,NO_MATCH,,,
+gt__study169__pair1017,gt_study169,NO_MATCH,,,
+gt__study169__pair1018,gt_study169,NO_MATCH,,,
+gt__study169__pair1019,gt_study169,NO_MATCH,,,
+gt__study169__pair1020,gt_study169,NO_MATCH,,,
+gt__study17__pair113,gt_study17,NO_MATCH,,,
+gt__study17__pair114,gt_study17,NO_MATCH,,,
+gt__study17__pair115,gt_study17,NO_MATCH,,,
+gt__study171__pair1045,gt_study171,NO_MATCH,,,
+gt__study171__pair1046,gt_study171,NO_MATCH,,,
+gt__study171__pair1047,gt_study171,NO_MATCH,,,
+gt__study172__pair1048,gt_study172,NO_MATCH,,,
+gt__study172__pair1049,gt_study172,NO_MATCH,,,
+gt__study172__pair1050,gt_study172,NO_MATCH,,,
+gt__study173__pair1051,gt_study173,NO_MATCH,,,
+gt__study173__pair1052,gt_study173,NO_MATCH,,,
+gt__study173__pair1053,gt_study173,NO_MATCH,,,
+gt__study173__pair1054,gt_study173,NO_MATCH,,,
+gt__study173__pair1055,gt_study173,NO_MATCH,,,
+gt__study173__pair1056,gt_study173,NO_MATCH,,,
+gt__study173__pair1057,gt_study173,NO_MATCH,,,
+gt__study173__pair1058,gt_study173,NO_MATCH,,,
+gt__study175__pair1061,gt_study175,NO_MATCH,,,
+gt__study175__pair1062,gt_study175,NO_MATCH,,,
+gt__study176__pair1063,gt_study176,NO_MATCH,,,
+gt__study176__pair1064,gt_study176,NO_MATCH,,,
+gt__study176__pair1065,gt_study176,NO_MATCH,,,
+gt__study176__pair1066,gt_study176,NO_MATCH,,,
+gt__study176__pair1067,gt_study176,NO_MATCH,,,
+gt__study176__pair1068,gt_study176,NO_MATCH,,,
+gt__study176__pair1069,gt_study176,NO_MATCH,,,
+gt__study176__pair1070,gt_study176,NO_MATCH,,,
+gt__study176__pair1071,gt_study176,NO_MATCH,,,
+gt__study176__pair1072,gt_study176,NO_MATCH,,,
+gt__study176__pair1073,gt_study176,NO_MATCH,,,
+gt__study176__pair1074,gt_study176,NO_MATCH,,,
+gt__study176__pair1075,gt_study176,NO_MATCH,,,
+gt__study176__pair1076,gt_study176,NO_MATCH,,,
+gt__study176__pair1077,gt_study176,NO_MATCH,,,
+gt__study176__pair1078,gt_study176,NO_MATCH,,,
+gt__study176__pair1079,gt_study176,NO_MATCH,,,
+gt__study176__pair1080,gt_study176,NO_MATCH,,,
+gt__study176__pair1081,gt_study176,NO_MATCH,,,
+gt__study176__pair1082,gt_study176,NO_MATCH,,,
+gt__study176__pair1083,gt_study176,NO_MATCH,,,
+gt__study176__pair1084,gt_study176,NO_MATCH,,,
+gt__study176__pair1085,gt_study176,NO_MATCH,,,
+gt__study176__pair1086,gt_study176,NO_MATCH,,,
+gt__study176__pair1087,gt_study176,NO_MATCH,,,
+gt__study176__pair1088,gt_study176,NO_MATCH,,,
+gt__study176__pair1089,gt_study176,NO_MATCH,,,
+gt__study178__pair1094,gt_study178,NO_MATCH,,,
+gt__study178__pair1095,gt_study178,NO_MATCH,,,
+gt__study178__pair1096,gt_study178,NO_MATCH,,,
+gt__study179__pair1097,gt_study179,NO_MATCH,,,
+gt__study179__pair1098,gt_study179,NO_MATCH,,,
+gt__study179__pair1099,gt_study179,NO_MATCH,,,
+gt__study18__pair116,gt_study18,NO_MATCH,,,
+gt__study18__pair117,gt_study18,NO_MATCH,,,
+gt__study21__pair148,gt_study21,NO_MATCH,,,
+gt__study21__pair149,gt_study21,NO_MATCH,,,
+gt__study21__pair150,gt_study21,NO_MATCH,,,
+gt__study21__pair151,gt_study21,NO_MATCH,,,
+gt__study21__pair152,gt_study21,NO_MATCH,,,
+gt__study21__pair153,gt_study21,NO_MATCH,,,
+gt__study21__pair154,gt_study21,NO_MATCH,,,
+gt__study21__pair155,gt_study21,NO_MATCH,,,
+gt__study21__pair156,gt_study21,NO_MATCH,,,
+gt__study21__pair157,gt_study21,NO_MATCH,,,
+gt__study21__pair158,gt_study21,NO_MATCH,,,
+gt__study21__pair159,gt_study21,NO_MATCH,,,
+gt__study22__pair160,gt_study22,NO_MATCH,,,
+gt__study22__pair161,gt_study22,NO_MATCH,,,
+gt__study22__pair162,gt_study22,NO_MATCH,,,
+gt__study23__pair163,gt_study23,NO_MATCH,,,
+gt__study23__pair164,gt_study23,NO_MATCH,,,
+gt__study25__pair169,gt_study25,NO_MATCH,,,
+gt__study25__pair170,gt_study25,NO_MATCH,,,
+gt__study25__pair171,gt_study25,NO_MATCH,,,
+gt__study25__pair172,gt_study25,NO_MATCH,,,
+gt__study26__pair173,gt_study26,NO_MATCH,,,
+gt__study26__pair174,gt_study26,NO_MATCH,,,
+gt__study27__pair175,gt_study27,NO_MATCH,,,
+gt__study27__pair176,gt_study27,NO_MATCH,,,
+gt__study27__pair177,gt_study27,NO_MATCH,,,
+gt__study28__pair178,gt_study28,NO_MATCH,,,
+gt__study28__pair179,gt_study28,NO_MATCH,,,
+gt__study28__pair180,gt_study28,NO_MATCH,,,
+gt__study28__pair181,gt_study28,NO_MATCH,,,
+gt__study28__pair182,gt_study28,NO_MATCH,,,
+gt__study28__pair183,gt_study28,NO_MATCH,,,
+gt__study28__pair184,gt_study28,NO_MATCH,,,
+gt__study28__pair185,gt_study28,NO_MATCH,,,
+gt__study28__pair186,gt_study28,NO_MATCH,,,
+gt__study28__pair187,gt_study28,NO_MATCH,,,
+gt__study28__pair188,gt_study28,NO_MATCH,,,
+gt__study28__pair189,gt_study28,NO_MATCH,,,
+gt__study29__pair190,gt_study29,NO_MATCH,,,
+gt__study29__pair191,gt_study29,NO_MATCH,,,
+gt__study29__pair192,gt_study29,NO_MATCH,,,
+gt__study30__pair193,gt_study30,NO_MATCH,,,
+gt__study30__pair194,gt_study30,NO_MATCH,,,
+gt__study31__pair195,gt_study31,NO_MATCH,,,
+gt__study31__pair196,gt_study31,NO_MATCH,,,
+gt__study31__pair197,gt_study31,NO_MATCH,,,
+gt__study31__pair198,gt_study31,NO_MATCH,,,
+gt__study31__pair199,gt_study31,NO_MATCH,,,
+gt__study31__pair200,gt_study31,NO_MATCH,,,
+gt__study31__pair201,gt_study31,NO_MATCH,,,
+gt__study31__pair202,gt_study31,NO_MATCH,,,
+gt__study31__pair203,gt_study31,NO_MATCH,,,
+gt__study31__pair204,gt_study31,NO_MATCH,,,
+gt__study31__pair205,gt_study31,NO_MATCH,,,
+gt__study31__pair206,gt_study31,NO_MATCH,,,
+gt__study31__pair207,gt_study31,NO_MATCH,,,
+gt__study31__pair208,gt_study31,NO_MATCH,,,
+gt__study31__pair209,gt_study31,NO_MATCH,,,
+gt__study31__pair210,gt_study31,NO_MATCH,,,
+gt__study31__pair211,gt_study31,NO_MATCH,,,
+gt__study31__pair212,gt_study31,NO_MATCH,,,
+gt__study32__pair213,gt_study32,NO_MATCH,,,
+gt__study32__pair214,gt_study32,NO_MATCH,,,
+gt__study32__pair215,gt_study32,NO_MATCH,,,
+gt__study34__pair228,gt_study34,NO_MATCH,,,
+gt__study34__pair229,gt_study34,NO_MATCH,,,
+gt__study34__pair230,gt_study34,NO_MATCH,,,
+gt__study34__pair231,gt_study34,NO_MATCH,,,
+gt__study34__pair232,gt_study34,NO_MATCH,,,
+gt__study34__pair233,gt_study34,NO_MATCH,,,
+gt__study34__pair234,gt_study34,NO_MATCH,,,
+gt__study34__pair235,gt_study34,NO_MATCH,,,
+gt__study35__pair236,gt_study35,NO_MATCH,,,
+gt__study35__pair237,gt_study35,NO_MATCH,,,
+gt__study35__pair238,gt_study35,NO_MATCH,,,
+gt__study35__pair239,gt_study35,NO_MATCH,,,
+gt__study36__pair240,gt_study36,NO_MATCH,,,
+gt__study38__pair247,gt_study38,NO_MATCH,,,
+gt__study38__pair248,gt_study38,NO_MATCH,,,
+gt__study38__pair249,gt_study38,NO_MATCH,,,
+gt__study38__pair250,gt_study38,NO_MATCH,,,
+gt__study38__pair251,gt_study38,NO_MATCH,,,
+gt__study38__pair252,gt_study38,NO_MATCH,,,
+gt__study39__pair253,gt_study39,NO_MATCH,,,
+gt__study39__pair254,gt_study39,NO_MATCH,,,
+gt__study39__pair255,gt_study39,NO_MATCH,,,
+gt__study39__pair256,gt_study39,NO_MATCH,,,
+gt__study39__pair257,gt_study39,NO_MATCH,,,
+gt__study39__pair258,gt_study39,NO_MATCH,,,
+gt__study40__pair259,gt_study40,NO_MATCH,,,
+gt__study40__pair260,gt_study40,NO_MATCH,,,
+gt__study40__pair261,gt_study40,NO_MATCH,,,
+gt__study41__pair262,gt_study41,NO_MATCH,,,
+gt__study41__pair263,gt_study41,NO_MATCH,,,
+gt__study41__pair264,gt_study41,NO_MATCH,,,
+gt__study41__pair265,gt_study41,NO_MATCH,,,
+gt__study41__pair266,gt_study41,NO_MATCH,,,
+gt__study42__pair267,gt_study42,NO_MATCH,,,
+gt__study42__pair268,gt_study42,NO_MATCH,,,
+gt__study42__pair269,gt_study42,NO_MATCH,,,
+gt__study42__pair270,gt_study42,NO_MATCH,,,
+gt__study42__pair271,gt_study42,NO_MATCH,,,
+gt__study42__pair272,gt_study42,NO_MATCH,,,
+gt__study42__pair273,gt_study42,NO_MATCH,,,
+gt__study42__pair274,gt_study42,NO_MATCH,,,
+gt__study42__pair275,gt_study42,NO_MATCH,,,
+gt__study42__pair276,gt_study42,NO_MATCH,,,
+gt__study42__pair277,gt_study42,NO_MATCH,,,
+gt__study42__pair278,gt_study42,NO_MATCH,,,
+gt__study43__pair279,gt_study43,NO_MATCH,,,
+gt__study43__pair280,gt_study43,NO_MATCH,,,
+gt__study44__pair281,gt_study44,NO_MATCH,,,
+gt__study44__pair282,gt_study44,NO_MATCH,,,
+gt__study44__pair283,gt_study44,NO_MATCH,,,
+gt__study44__pair284,gt_study44,NO_MATCH,,,
+gt__study44__pair285,gt_study44,NO_MATCH,,,
+gt__study44__pair286,gt_study44,NO_MATCH,,,
+gt__study44__pair287,gt_study44,NO_MATCH,,,
+gt__study44__pair288,gt_study44,NO_MATCH,,,
+gt__study45__pair289,gt_study45,NO_MATCH,,,
+gt__study46__pair290,gt_study46,NO_MATCH,,,
+gt__study46__pair291,gt_study46,NO_MATCH,,,
+gt__study47__pair292,gt_study47,NO_MATCH,,,
+gt__study47__pair293,gt_study47,NO_MATCH,,,
+gt__study47__pair294,gt_study47,NO_MATCH,,,
+gt__study47__pair295,gt_study47,NO_MATCH,,,
+gt__study47__pair296,gt_study47,NO_MATCH,,,
+gt__study47__pair297,gt_study47,NO_MATCH,,,
+gt__study47__pair298,gt_study47,NO_MATCH,,,
+gt__study47__pair299,gt_study47,NO_MATCH,,,
+gt__study47__pair300,gt_study47,NO_MATCH,,,
+gt__study47__pair301,gt_study47,NO_MATCH,,,
+gt__study47__pair302,gt_study47,NO_MATCH,,,
+gt__study47__pair303,gt_study47,NO_MATCH,,,
+gt__study47__pair304,gt_study47,NO_MATCH,,,
+gt__study47__pair305,gt_study47,NO_MATCH,,,
+gt__study47__pair306,gt_study47,NO_MATCH,,,
+gt__study47__pair307,gt_study47,NO_MATCH,,,
+gt__study47__pair308,gt_study47,NO_MATCH,,,
+gt__study47__pair309,gt_study47,NO_MATCH,,,
+gt__study47__pair310,gt_study47,NO_MATCH,,,
+gt__study47__pair311,gt_study47,NO_MATCH,,,
+gt__study47__pair312,gt_study47,NO_MATCH,,,
+gt__study47__pair313,gt_study47,NO_MATCH,,,
+gt__study48__pair314,gt_study48,NO_MATCH,,,
+gt__study48__pair315,gt_study48,NO_MATCH,,,
+gt__study48__pair316,gt_study48,NO_MATCH,,,
+gt__study48__pair317,gt_study48,NO_MATCH,,,
+gt__study48__pair318,gt_study48,NO_MATCH,,,
+gt__study48__pair319,gt_study48,NO_MATCH,,,
+gt__study49__pair320,gt_study49,NO_MATCH,,,
+gt__study49__pair321,gt_study49,NO_MATCH,,,
+gt__study49__pair322,gt_study49,NO_MATCH,,,
+gt__study50__pair323,gt_study50,NO_MATCH,,,
+gt__study50__pair324,gt_study50,NO_MATCH,,,
+gt__study50__pair325,gt_study50,NO_MATCH,,,
+gt__study50__pair326,gt_study50,NO_MATCH,,,
+gt__study51__pair327,gt_study51,NO_MATCH,,,
+gt__study51__pair328,gt_study51,NO_MATCH,,,
+gt__study52__pair329,gt_study52,NO_MATCH,,,
+gt__study52__pair330,gt_study52,NO_MATCH,,,
+gt__study52__pair331,gt_study52,NO_MATCH,,,
+gt__study52__pair332,gt_study52,NO_MATCH,,,
+gt__study52__pair333,gt_study52,NO_MATCH,,,
+gt__study53__pair334,gt_study53,NO_MATCH,,,
+gt__study53__pair335,gt_study53,NO_MATCH,,,
+gt__study53__pair336,gt_study53,NO_MATCH,,,
+gt__study53__pair337,gt_study53,NO_MATCH,,,
+gt__study53__pair338,gt_study53,NO_MATCH,,,
+gt__study53__pair339,gt_study53,NO_MATCH,,,
+gt__study53__pair340,gt_study53,NO_MATCH,,,
+gt__study53__pair341,gt_study53,NO_MATCH,,,
+gt__study53__pair342,gt_study53,NO_MATCH,,,
+gt__study53__pair343,gt_study53,NO_MATCH,,,
+gt__study54__pair344,gt_study54,NO_MATCH,,,
+gt__study54__pair345,gt_study54,NO_MATCH,,,
+gt__study55__pair346,gt_study55,NO_MATCH,,,
+gt__study55__pair347,gt_study55,NO_MATCH,,,
+gt__study55__pair348,gt_study55,NO_MATCH,,,
+gt__study55__pair349,gt_study55,NO_MATCH,,,
+gt__study55__pair350,gt_study55,NO_MATCH,,,
+gt__study55__pair351,gt_study55,NO_MATCH,,,
+gt__study57__pair358,gt_study57,NO_MATCH,,,
+gt__study57__pair359,gt_study57,NO_MATCH,,,
+gt__study57__pair360,gt_study57,NO_MATCH,,,
+gt__study57__pair361,gt_study57,NO_MATCH,,,
+gt__study58__pair362,gt_study58,NO_MATCH,,,
+gt__study58__pair363,gt_study58,NO_MATCH,,,
+gt__study58__pair364,gt_study58,NO_MATCH,,,
+gt__study58__pair365,gt_study58,NO_MATCH,,,
+gt__study58__pair366,gt_study58,NO_MATCH,,,
+gt__study58__pair367,gt_study58,NO_MATCH,,,
+gt__study58__pair368,gt_study58,NO_MATCH,,,
+gt__study58__pair369,gt_study58,NO_MATCH,,,
+gt__study59__pair370,gt_study59,NO_MATCH,,,
+gt__study59__pair371,gt_study59,NO_MATCH,,,
+gt__study59__pair372,gt_study59,NO_MATCH,,,
+gt__study59__pair373,gt_study59,NO_MATCH,,,
+gt__study59__pair374,gt_study59,NO_MATCH,,,
+gt__study59__pair375,gt_study59,NO_MATCH,,,
+gt__study59__pair376,gt_study59,NO_MATCH,,,
+gt__study59__pair377,gt_study59,NO_MATCH,,,
+gt__study60__pair378,gt_study60,NO_MATCH,,,
+gt__study60__pair379,gt_study60,NO_MATCH,,,
+gt__study60__pair380,gt_study60,NO_MATCH,,,
+gt__study60__pair381,gt_study60,NO_MATCH,,,
+gt__study61__pair382,gt_study61,NO_MATCH,,,
+gt__study61__pair383,gt_study61,NO_MATCH,,,
+gt__study61__pair384,gt_study61,NO_MATCH,,,
+gt__study62__pair385,gt_study62,NO_MATCH,,,
+gt__study62__pair386,gt_study62,NO_MATCH,,,
+gt__study62__pair387,gt_study62,NO_MATCH,,,
+gt__study62__pair388,gt_study62,NO_MATCH,,,
+gt__study63__pair389,gt_study63,NO_MATCH,,,
+gt__study64__pair390,gt_study64,NO_MATCH,,,
+gt__study64__pair391,gt_study64,NO_MATCH,,,
+gt__study64__pair392,gt_study64,NO_MATCH,,,
+gt__study64__pair393,gt_study64,NO_MATCH,,,
+gt__study65__pair394,gt_study65,NO_MATCH,,,
+gt__study65__pair395,gt_study65,NO_MATCH,,,
+gt__study65__pair396,gt_study65,NO_MATCH,,,
+gt__study65__pair397,gt_study65,NO_MATCH,,,
+gt__study66__pair398,gt_study66,NO_MATCH,,,
+gt__study66__pair399,gt_study66,NO_MATCH,,,
+gt__study66__pair400,gt_study66,NO_MATCH,,,
+gt__study66__pair401,gt_study66,NO_MATCH,,,
+gt__study66__pair402,gt_study66,NO_MATCH,,,
+gt__study66__pair403,gt_study66,NO_MATCH,,,
+gt__study66__pair404,gt_study66,NO_MATCH,,,
+gt__study66__pair405,gt_study66,NO_MATCH,,,
+gt__study67__pair406,gt_study67,NO_MATCH,,,
+gt__study67__pair407,gt_study67,NO_MATCH,,,
+gt__study69__pair410,gt_study69,NO_MATCH,,,
+gt__study69__pair411,gt_study69,NO_MATCH,,,
+gt__study69__pair412,gt_study69,NO_MATCH,,,
+gt__study70__pair413,gt_study70,NO_MATCH,,,
+gt__study70__pair414,gt_study70,NO_MATCH,,,
+gt__study70__pair415,gt_study70,NO_MATCH,,,
+gt__study70__pair416,gt_study70,NO_MATCH,,,
+gt__study70__pair417,gt_study70,NO_MATCH,,,
+gt__study70__pair418,gt_study70,NO_MATCH,,,
+gt__study70__pair419,gt_study70,NO_MATCH,,,
+gt__study70__pair420,gt_study70,NO_MATCH,,,
+gt__study70__pair421,gt_study70,NO_MATCH,,,
+gt__study72__pair426,gt_study72,NO_MATCH,,,
+gt__study72__pair427,gt_study72,NO_MATCH,,,
+gt__study72__pair428,gt_study72,NO_MATCH,,,
+gt__study72__pair429,gt_study72,NO_MATCH,,,
+gt__study72__pair430,gt_study72,NO_MATCH,,,
+gt__study72__pair431,gt_study72,NO_MATCH,,,
+gt__study72__pair432,gt_study72,NO_MATCH,,,
+gt__study72__pair433,gt_study72,NO_MATCH,,,
+gt__study72__pair434,gt_study72,NO_MATCH,,,
+gt__study76__pair480,gt_study76,NO_MATCH,,,
+gt__study76__pair481,gt_study76,NO_MATCH,,,
+gt__study76__pair482,gt_study76,NO_MATCH,,,
+gt__study77__pair483,gt_study77,NO_MATCH,,,
+gt__study79__pair490,gt_study79,NO_MATCH,,,
+gt__study79__pair491,gt_study79,NO_MATCH,,,
+gt__study79__pair492,gt_study79,NO_MATCH,,,
+gt__study80__pair493,gt_study80,NO_MATCH,,,
+gt__study80__pair494,gt_study80,NO_MATCH,,,
+gt__study80__pair495,gt_study80,NO_MATCH,,,
+gt__study80__pair496,gt_study80,NO_MATCH,,,
+gt__study80__pair497,gt_study80,NO_MATCH,,,
+gt__study80__pair498,gt_study80,NO_MATCH,,,
+gt__study80__pair499,gt_study80,NO_MATCH,,,
+gt__study80__pair500,gt_study80,NO_MATCH,,,
+gt__study81__pair501,gt_study81,NO_MATCH,,,
+gt__study81__pair502,gt_study81,NO_MATCH,,,
+gt__study81__pair503,gt_study81,NO_MATCH,,,
+gt__study81__pair504,gt_study81,NO_MATCH,,,
+gt__study81__pair505,gt_study81,NO_MATCH,,,
+gt__study81__pair506,gt_study81,NO_MATCH,,,
+gt__study81__pair507,gt_study81,NO_MATCH,,,
+gt__study81__pair508,gt_study81,NO_MATCH,,,
+gt__study83__pair514,gt_study83,NO_MATCH,,,
+gt__study83__pair515,gt_study83,NO_MATCH,,,
+gt__study83__pair516,gt_study83,NO_MATCH,,,
+gt__study84__pair517,gt_study84,NO_MATCH,,,
+gt__study84__pair518,gt_study84,NO_MATCH,,,
+gt__study84__pair519,gt_study84,NO_MATCH,,,
+gt__study84__pair520,gt_study84,NO_MATCH,,,
+gt__study84__pair521,gt_study84,NO_MATCH,,,
+gt__study84__pair522,gt_study84,NO_MATCH,,,
+gt__study84__pair523,gt_study84,NO_MATCH,,,
+gt__study84__pair524,gt_study84,NO_MATCH,,,
+gt__study84__pair525,gt_study84,NO_MATCH,,,
+gt__study84__pair526,gt_study84,NO_MATCH,,,
+gt__study86__pair533,gt_study86,NO_MATCH,,,
+gt__study86__pair534,gt_study86,NO_MATCH,,,
+gt__study86__pair535,gt_study86,NO_MATCH,,,
+gt__study86__pair536,gt_study86,NO_MATCH,,,
+gt__study86__pair537,gt_study86,NO_MATCH,,,
+gt__study86__pair538,gt_study86,NO_MATCH,,,
+gt__study86__pair539,gt_study86,NO_MATCH,,,
+gt__study86__pair540,gt_study86,NO_MATCH,,,
+gt__study87__pair541,gt_study87,NO_MATCH,,,
+gt__study87__pair542,gt_study87,NO_MATCH,,,
+gt__study87__pair543,gt_study87,NO_MATCH,,,
+gt__study88__pair544,gt_study88,NO_MATCH,,,
+gt__study88__pair545,gt_study88,NO_MATCH,,,
+gt__study88__pair546,gt_study88,NO_MATCH,,,
+gt__study88__pair547,gt_study88,NO_MATCH,,,
+gt__study88__pair548,gt_study88,NO_MATCH,,,
+gt__study88__pair549,gt_study88,NO_MATCH,,,
+gt__study88__pair550,gt_study88,NO_MATCH,,,
+gt__study88__pair551,gt_study88,NO_MATCH,,,
+gt__study90__pair554,gt_study90,NO_MATCH,,,
+gt__study90__pair555,gt_study90,NO_MATCH,,,
+gt__study90__pair556,gt_study90,NO_MATCH,,,
+gt__study90__pair557,gt_study90,NO_MATCH,,,
+gt__study91__pair558,gt_study91,NO_MATCH,,,
+gt__study91__pair559,gt_study91,NO_MATCH,,,
+gt__study91__pair560,gt_study91,NO_MATCH,,,
+gt__study92__pair561,gt_study92,NO_MATCH,,,
+gt__study92__pair562,gt_study92,NO_MATCH,,,
+gt__study93__pair563,gt_study93,NO_MATCH,,,
+gt__study93__pair564,gt_study93,NO_MATCH,,,
+gt__study94__pair565,gt_study94,NO_MATCH,,,
+gt__study95__pair566,gt_study95,NO_MATCH,,,
+gt__study95__pair567,gt_study95,NO_MATCH,,,
+gt__study95__pair568,gt_study95,NO_MATCH,,,
+gt__study95__pair569,gt_study95,NO_MATCH,,,
+gt__study95__pair570,gt_study95,NO_MATCH,,,
+gt__study95__pair571,gt_study95,NO_MATCH,,,
+gt__study95__pair572,gt_study95,NO_MATCH,,,
+gt__study97__pair579,gt_study97,NO_MATCH,,,
+gt__study97__pair580,gt_study97,NO_MATCH,,,
+gt__study97__pair581,gt_study97,NO_MATCH,,,
+gt__study97__pair582,gt_study97,NO_MATCH,,,
+gt__study97__pair583,gt_study97,NO_MATCH,,,
+gt__study97__pair584,gt_study97,NO_MATCH,,,
+gt__study98__pair585,gt_study98,NO_MATCH,,,
+gt__study98__pair586,gt_study98,NO_MATCH,,,
+gt__study98__pair587,gt_study98,NO_MATCH,,,
+gt__study98__pair588,gt_study98,NO_MATCH,,,
+gt__study98__pair589,gt_study98,NO_MATCH,,,
+gt__study98__pair590,gt_study98,NO_MATCH,,,
+gt__study98__pair591,gt_study98,NO_MATCH,,,
+gt__study98__pair592,gt_study98,NO_MATCH,,,
+gt__study98__pair593,gt_study98,NO_MATCH,,,
+gt__study98__pair594,gt_study98,NO_MATCH,,,
+gt__study98__pair595,gt_study98,NO_MATCH,,,
+gt__study98__pair596,gt_study98,NO_MATCH,,,
+gt__study98__pair597,gt_study98,NO_MATCH,,,
+gt__study98__pair598,gt_study98,NO_MATCH,,,
+gt__study98__pair599,gt_study98,NO_MATCH,,,
+gt__study98__pair600,gt_study98,NO_MATCH,,,
+gt__study98__pair601,gt_study98,NO_MATCH,,,
+gt__study98__pair602,gt_study98,NO_MATCH,,,
+gt__study99__pair603,gt_study99,NO_MATCH,,,
+gt__study99__pair604,gt_study99,NO_MATCH,,,
+gt__study99__pair605,gt_study99,NO_MATCH,,,
+gt__study99__pair606,gt_study99,NO_MATCH,,,
+gt__study99__pair607,gt_study99,NO_MATCH,,,
+gt__study152__pair870,plants-09-01633,AMBIGUOUS,plants-09-01633__ai__0,"Celery, protein hydrolysate, foliar, 3 mL/L, single dose. AI splits this cell into two PH sources: __0 animal-derived (ASWELL) and __1 plant-derived (TYSON). Both GT rows pair870/pair871 carry identical descriptors (PHs, foliar, dose=1, celery) with no within-study source descriptor, so the 1:1 assignment is not determinable from descriptors alone. Best-supported (non-value) basis: GT pair870 is the lower-response PH cell, which corresponds structurally to the animal-derived PH (ASWELL) = AI __0.",low
+gt__study152__pair871,plants-09-01633,AMBIGUOUS,plants-09-01633__ai__1,"Celery, protein hydrolysate, foliar, 3 mL/L. AI __1 = plant-derived PH (TYSON). GT pair871 is the higher-response PH cell, corresponding structurally to the plant-derived PH. Descriptors (PHs/foliar/dose=1) are identical between the two GT rows, so source-level 1:1 assignment is indeterminate from descriptors; assignment given is the best-supported ordering.",low
+gt__study89__pair552,sustainability-11-02171,AMBIGUOUS,sustainability-11-02171__ai__0,"Cotton, plant extract (Moringa leaf extract), foliar, MLE-alone (no N/K co-amendment, co_amendment_level=0), experiment/season 1 (ContinusStudy=1 = 2016). GT pooled across cultivars (its control 0.296071 = mean of CIM-573 ctrl 2830.94 and CIM-598 ctrl 3090.48, scaled), whereas the blind AI extracted MLE-alone per cultivar, not pooled. Two candidate AI rows for 2016 MLE-alone (__0 CIM-573, __4 CIM-598); chose __0 as representative. 1:1 cell match indeterminate due to cultivar-pooling vs AI per-cultivar split.",low
+gt__study89__pair553,sustainability-11-02171,AMBIGUOUS,sustainability-11-02171__ai__8,"Cotton, Moringa leaf extract, foliar, MLE-alone (co_amendment_level=0), experiment/season 2 (ContinusStudy=2 = 2017, AI Table 7). GT pooled across cultivars; AI extracted per cultivar (candidate rows __8 CIM-573 and __12 CIM-598 for 2017 MLE-alone). Chose __8 as representative. 1:1 cell match indeterminate due to GT cultivar-pooling vs AI per-cultivar split.",low

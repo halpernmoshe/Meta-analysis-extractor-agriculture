@@ -1,0 +1,29 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+166_Haefele_2011__ai__1,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,irri_2005ws,single_cell,kg/ha,absolute_control,3810.0,3840.0,Table 6,0,site=IRRI; season=2005 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__2,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,irri_2005ws,single_cell,kg/ha,cofactor_matched_control,4720.0,5220.0,Table 6,0,site=IRRI; season=2005 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__3,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,irri_2006ds,single_cell,kg/ha,absolute_control,2680.0,2890.0,Table 6,0,site=IRRI; season=2006 DS; CRH vs C,ai-decode
+166_Haefele_2011__ai__4,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,irri_2006ds,single_cell,kg/ha,cofactor_matched_control,4790.0,4820.0,Table 6,0,site=IRRI; season=2006 DS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__5,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,irri_2006ws,single_cell,kg/ha,absolute_control,2890.0,3020.0,Table 6,0,site=IRRI; season=2006 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__6,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,irri_2006ws,single_cell,kg/ha,cofactor_matched_control,4320.0,4940.0,Table 6,0,site=IRRI; season=2006 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__7,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,irri_2007ds,single_cell,kg/ha,absolute_control,2180.0,2120.0,Table 6,0,site=IRRI; season=2007 DS; CRH vs C,ai-decode
+166_Haefele_2011__ai__8,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,irri_2007ds,single_cell,kg/ha,cofactor_matched_control,3210.0,3210.0,Table 6,0,site=IRRI; season=2007 DS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__9,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,irri_2007ws,single_cell,kg/ha,absolute_control,3160.0,3200.0,Table 6,0,site=IRRI; season=2007 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__10,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,irri_2007ws,single_cell,kg/ha,cofactor_matched_control,4070.0,4060.0,Table 6,0,site=IRRI; season=2007 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__11,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,irri_2008ds,single_cell,kg/ha,absolute_control,1980.0,2040.0,Table 6,0,site=IRRI; season=2008 DS; CRH vs C,ai-decode
+166_Haefele_2011__ai__12,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,irri_2008ds,single_cell,kg/ha,cofactor_matched_control,3770.0,3750.0,Table 6,0,site=IRRI; season=2008 DS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__13,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,irri_2008ws,single_cell,kg/ha,absolute_control,3110.0,3230.0,Table 6,0,site=IRRI; season=2008 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__14,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,irri_2008ws,single_cell,kg/ha,cofactor_matched_control,3900.0,4240.0,Table 6,0,site=IRRI; season=2008 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__15,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,pooled,pooled,kg/ha,absolute_control,2780.0,2850.0,Table 6,0,site=IRRI; season=Mean; CRH vs C,ai-decode
+166_Haefele_2011__ai__16,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,pooled,pooled,kg/ha,cofactor_matched_control,4150.0,4340.0,Table 6,0,site=IRRI; season=Mean; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__17,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,siniloan_2005ws,single_cell,kg/ha,absolute_control,3300.0,3010.0,Table 6,0,site=Siniloan; season=2005 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__18,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,siniloan_2005ws,single_cell,kg/ha,cofactor_matched_control,3290.0,3190.0,Table 6,0,site=Siniloan; season=2005 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__19,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,siniloan_2007ws,single_cell,kg/ha,absolute_control,3130.0,3090.0,Table 6,0,site=Siniloan; season=2007 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__20,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,siniloan_2007ws,single_cell,kg/ha,cofactor_matched_control,3540.0,3330.0,Table 6,0,site=Siniloan; season=2007 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__21,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,pooled,pooled,kg/ha,absolute_control,3310.0,3040.0,Table 6,0,site=Siniloan; season=Mean; CRH vs C,ai-decode
+166_Haefele_2011__ai__22,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,pooled,pooled,kg/ha,cofactor_matched_control,3220.0,3030.0,Table 6,0,site=Siniloan; season=Mean; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__23,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,ubon_2005ws,single_cell,kg/ha,absolute_control,2730.0,2630.0,Table 6,0,site=Ubon; season=2005 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__24,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,ubon_2005ws,single_cell,kg/ha,cofactor_matched_control,3710.0,3310.0,Table 6,0,site=Ubon; season=2005 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__25,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,ubon_2007ws,single_cell,kg/ha,absolute_control,1750.0,1970.0,Table 6,0,site=Ubon; season=2007 WS; CRH vs C,ai-decode
+166_Haefele_2011__ai__26,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,ubon_2007ws,single_cell,kg/ha,cofactor_matched_control,3330.0,2630.0,Table 6,0,site=Ubon; season=2007 WS; CRH+F vs C+F,ai-decode
+166_Haefele_2011__ai__27,ai,166_Haefele_2011,crop_yield,rice,41.3,none,0,pooled,pooled,kg/ha,absolute_control,2250.0,2070.0,Table 6,0,site=Ubon; season=Mean; CRH vs C,ai-decode
+166_Haefele_2011__ai__28,ai,166_Haefele_2011,crop_yield,rice,41.3,npk,medium,pooled,pooled,kg/ha,cofactor_matched_control,3100.0,2490.0,Table 6,0,site=Ubon; season=Mean; CRH+F vs C+F,ai-decode

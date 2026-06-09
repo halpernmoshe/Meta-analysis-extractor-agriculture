@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+gt__Liere_2015__id_37,gt,Liere_2015,crop_yield_under_predator,soybean,beetles,none,0,pooled,single_cell,count,absolute_control,17.18,17.17,,0,author=Liere year=2015 crop=Soybean/Glycine predat_id=Beetles treatment=Exclusion study_year=2012 mean_t=17.18 mean_c=17.17 || Liere2015 no AI counterpart (B12 absent); coords from GT cols only,gt-col-decode

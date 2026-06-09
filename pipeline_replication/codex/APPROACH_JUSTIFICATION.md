@@ -1,7 +1,0 @@
-# Justification For LLM-Based Post-Extraction Plus Effector Normalization
-
-The extraction stage is intentionally broad. Its job is to recover potentially relevant quantitative comparisons from heterogeneous agricultural papers. In this setting, the main failure mode is often not incorrect numbers, but semantic over-inclusion: rows that are numerically correct yet off-target with respect to the intended intervention, comparator, outcome, or benchmark estimand.
-
-For that reason, a second LLM-based post-processing layer is justified. The post-processor uses the original topic configuration to decide whether each extracted row actually matches the configured PICO and whether it is benchmark-comparable. A further LLM-based effector-normalization layer is also justified because many benchmark-relevant moderators are embedded in messy free text rather than standardized fields. Normalizing crop class, study setting, climate context, management context, and estimand context helps distinguish true replication failure from composition mismatch.
-
-This approach is universal rather than topic-specific. The logic is not hand-tuned to a single meta-analysis; instead, the same adjudication framework is applied using only the original config and extracted row fields. Our tests under `codex` show that this approach improves table quality and clarifies why some topics fail to replicate. It does not solve every mismatch on its own, but it is a principled and necessary step for turning broad extraction outputs into benchmark-comparable synthesis inputs.

@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+gt__B04_Classen_2014__id_41,gt,B04_Classen_2014,crop_yield_under_predator,coffee,vertebrates,none,0,pooled,single_cell,fruits/branch,absolute_control,46.06,64.01,Figure,1,author=Classen year=2014 crop=Coffee/Coffea predat_id=Vertebrates treatment=Exclusion study_year=2012 mean_t=46.06 mean_c=64.01,gt-col-decode

@@ -1,0 +1,755 @@
+gt_row_id,paper_id,verdict,ai_row_id,basis,confidence
+gt__001_Ma_2007__r1458,001_Ma_2007,MATCH,001_Ma_2007__ai__3,"Table 2 grain Ca, Yitpi, eCO2 550/aCO2 384, year 2008; matched to AI pooled/main-effect Ca row (TOS-pooled), which is the single value Loladze recorded per element-year rather than the duplicated per-TOS single_cell rows",high
+gt__001_Ma_2007__r1459,001_Ma_2007,MATCH,001_Ma_2007__ai__21,"Table 2 grain Ca, Yitpi, year 2009; AI pooled main-effect Ca y2009",high
+gt__001_Ma_2007__r1460,001_Ma_2007,MATCH,001_Ma_2007__ai__0,"Table 2 grain Fe, Yitpi, year 2008; AI pooled main-effect Fe y2008",high
+gt__001_Ma_2007__r1461,001_Ma_2007,MATCH,001_Ma_2007__ai__18,"Table 2 grain Fe, Yitpi, year 2009; AI pooled main-effect Fe y2009",high
+gt__001_Ma_2007__r1462,001_Ma_2007,MATCH,001_Ma_2007__ai__2,"Table 2 grain S, Yitpi, year 2008; AI pooled main-effect S y2008",high
+gt__001_Ma_2007__r1463,001_Ma_2007,MATCH,001_Ma_2007__ai__20,"Table 2 grain S, Yitpi, year 2009; AI pooled main-effect S y2009",high
+gt__001_Ma_2007__r1464,001_Ma_2007,MATCH,001_Ma_2007__ai__1,"Table 2 grain Zn, Yitpi, year 2008; AI pooled main-effect Zn y2008",high
+gt__001_Ma_2007__r1465,001_Ma_2007,MATCH,001_Ma_2007__ai__19,"Table 2 grain Zn, Yitpi, year 2009; AI pooled main-effect Zn y2009",high
+gt__001_Ma_2007__r1472,001_Ma_2007,MATCH,001_Ma_2007__ai__5,"Table 2 grain N (Grain N uptake -> N), Yitpi, year 2008; AI pooled main-effect N y2008",med
+gt__001_Ma_2007__r1473,001_Ma_2007,MATCH,001_Ma_2007__ai__23,"Table 2 grain N, Yitpi, year 2009; AI pooled main-effect N y2009",med
+gt__002_Ziska_1997__r610,002_Ziska_1997,MATCH,002_Ziska_1997__ai__1,"Table 4 grain Ca, IR 72; GT eCO2=663/aCO2=367 matches AI +300 uL/L level (~665 ppm) eco2_300_amb_369, not the +200 level",high
+gt__002_Ziska_1997__r611,002_Ziska_1997,MATCH,002_Ziska_1997__ai__3,"Table 4 grain K, IR 72; GT eCO2=663 matches AI +300 level eco2_300_amb_369",high
+gt__003_Baslam_2012__r361,003_Baslam_2012,MATCH,003_Baslam_2012__ai__1,"Table 2 leaf C, BRM cultivar, inner NM leaves, eCO2 700/aCO2 392; AI brm__inner_nm C",high
+gt__003_Baslam_2012__r362,003_Baslam_2012,MATCH,003_Baslam_2012__ai__16,"Table 2 leaf Ca, BRM inner NM; AI brm__inner_nm Ca",high
+gt__003_Baslam_2012__r363,003_Baslam_2012,MATCH,003_Baslam_2012__ai__47,"Table 2 leaf Cu, BRM inner NM; AI brm__inner_nm Cu (Cu only extracted as inner_nm)",high
+gt__003_Baslam_2012__r364,003_Baslam_2012,MATCH,003_Baslam_2012__ai__60,"Table 2 leaf Fe, BRM inner NM; AI brm__inner_nm Fe",high
+gt__003_Baslam_2012__r365,003_Baslam_2012,MATCH,003_Baslam_2012__ai__24,"Table 2 leaf K, BRM inner NM; AI brm__inner_nm K",high
+gt__003_Baslam_2012__r366,003_Baslam_2012,MATCH,003_Baslam_2012__ai__40,"Table 2 leaf Mg, BRM inner NM; AI brm__inner_nm Mg",high
+gt__003_Baslam_2012__r367,003_Baslam_2012,MATCH,003_Baslam_2012__ai__68,"Table 2 leaf Mn, BRM inner NM; AI brm__inner_nm Mn",high
+gt__003_Baslam_2012__r368,003_Baslam_2012,MATCH,003_Baslam_2012__ai__9,"Table 2 leaf N, BRM inner NM; AI brm__inner_nm N",high
+gt__003_Baslam_2012__r369,003_Baslam_2012,MATCH,003_Baslam_2012__ai__32,"Table 2 leaf P, BRM inner NM; AI brm__inner_nm P",high
+gt__003_Baslam_2012__r370,003_Baslam_2012,MATCH,003_Baslam_2012__ai__52,"Table 2 leaf Zn, BRM inner NM; AI brm__inner_nm Zn",high
+gt__003_Baslam_2012__r377,003_Baslam_2012,MATCH,003_Baslam_2012__ai__5,"Table 2 leaf C, MV cultivar, inner NM; AI mv__inner_nm C",high
+gt__003_Baslam_2012__r378,003_Baslam_2012,MATCH,003_Baslam_2012__ai__20,"Table 2 leaf Ca, MV inner NM; AI mv__inner_nm Ca",high
+gt__003_Baslam_2012__r379,003_Baslam_2012,MATCH,003_Baslam_2012__ai__49,"Table 2 leaf Cu, MV inner NM; AI mv__inner_nm Cu",high
+gt__003_Baslam_2012__r380,003_Baslam_2012,MATCH,003_Baslam_2012__ai__64,"Table 2 leaf Fe, MV inner NM; AI mv__inner_nm Fe",high
+gt__003_Baslam_2012__r381,003_Baslam_2012,MATCH,003_Baslam_2012__ai__28,"Table 2 leaf K, MV inner NM; AI mv__inner_nm K",high
+gt__003_Baslam_2012__r382,003_Baslam_2012,MATCH,003_Baslam_2012__ai__44,"Table 2 leaf Mg, MV inner NM; AI mv__inner_nm Mg",high
+gt__003_Baslam_2012__r383,003_Baslam_2012,MATCH,003_Baslam_2012__ai__72,"Table 2 leaf Mn, MV inner NM; AI mv__inner_nm Mn",high
+gt__003_Baslam_2012__r384,003_Baslam_2012,MATCH,003_Baslam_2012__ai__13,"Table 2 leaf N, MV inner NM; AI mv__inner_nm N",high
+gt__003_Baslam_2012__r385,003_Baslam_2012,MATCH,003_Baslam_2012__ai__36,"Table 2 leaf P, MV inner NM; AI mv__inner_nm P",high
+gt__003_Baslam_2012__r386,003_Baslam_2012,MATCH,003_Baslam_2012__ai__56,"Table 2 leaf Zn, MV inner NM; AI mv__inner_nm Zn",high
+gt__004_Finzi_2001__r10,004_Finzi_2001,MATCH,004_Finzi_2001__ai__73,"Acer rubrum foliar C, 1998; only C source is Table 3 leaf-litter carbon; AI acer_rubrum C y1998",med
+gt__004_Finzi_2001__r11,004_Finzi_2001,MATCH,004_Finzi_2001__ai__34,"Acer rubrum foliar N, 1998; Loladze foliar=green leaf; AI green-leaf N acer y1998",high
+gt__004_Finzi_2001__r12,004_Finzi_2001,MATCH,004_Finzi_2001__ai__35,"Acer rubrum foliar P, 1998; AI green-leaf P acer y1998",high
+gt__004_Finzi_2001__r134,004_Finzi_2001,MATCH,004_Finzi_2001__ai__67,"Cercis canadensis foliar C, 1998; Table 3 leaf-litter carbon; AI cercis C y1998",med
+gt__004_Finzi_2001__r135,004_Finzi_2001,MATCH,004_Finzi_2001__ai__22,"Cercis canadensis foliar N, 1998; AI green-leaf N cercis y1998",high
+gt__004_Finzi_2001__r136,004_Finzi_2001,MATCH,004_Finzi_2001__ai__23,"Cercis canadensis foliar P, 1998; AI green-leaf P cercis y1998",high
+gt__004_Finzi_2001__r176,004_Finzi_2001,MATCH,004_Finzi_2001__ai__70,"Cornus florida foliar C, 1998; Table 3 leaf-litter carbon; AI cornus C y1998",med
+gt__004_Finzi_2001__r177,004_Finzi_2001,MATCH,004_Finzi_2001__ai__28,"Cornus florida foliar N, 1998; AI green-leaf N cornus y1998",high
+gt__004_Finzi_2001__r178,004_Finzi_2001,MATCH,004_Finzi_2001__ai__29,"Cornus florida foliar P, 1998; AI green-leaf P cornus y1998",high
+gt__004_Finzi_2001__r413,004_Finzi_2001,MATCH,004_Finzi_2001__ai__76,"Liquidambar styraciflua foliar C, 1998; Table 3 leaf-litter carbon; AI liquidambar C y1998",med
+gt__004_Finzi_2001__r414,004_Finzi_2001,MATCH,004_Finzi_2001__ai__40,"Liquidambar foliar N, 1998; AI green-leaf N liquidambar y1998",high
+gt__004_Finzi_2001__r415,004_Finzi_2001,MATCH,004_Finzi_2001__ai__41,"Liquidambar foliar P, 1998; AI green-leaf P liquidambar y1998",high
+gt__004_Finzi_2001__r813,004_Finzi_2001,MATCH,004_Finzi_2001__ai__79,"Pinus taeda foliar C, 1998; Table 3 leaf-litter carbon; AI pinus_taeda C y1998",med
+gt__004_Finzi_2001__r814,004_Finzi_2001,NO_MATCH,,"GT is Pinus taeda foliar N pooled 'avg new & old' 1998; AI extracted only old-leaf pine green-leaf N (pinus_taeda__old_leaves), no new-leaf or new+old average cell",high
+gt__004_Finzi_2001__r815,004_Finzi_2001,NO_MATCH,,GT is Pinus taeda foliar P pooled 'avg new & old' 1998; AI only has old-leaf pine green-leaf P,high
+gt__005_Niinemets_1999__r890,005_Niinemets_1999,AMBIGUOUS,,"Quercus suber foliar Ca, eCO2 700/aCO2 350. GT flagged as undeterminable collision: two GT Ca rows (r890,r891) share canonical key with no recoverable N-level. AI has distinct Ca highN (ai__3, Table 1) and Ca lowN (ai__29, Table 1a) cells, but GT cannot be assigned to either without the N-level coordinate",low
+gt__005_Niinemets_1999__r891,005_Niinemets_1999,AMBIGUOUS,,"Quercus suber foliar Ca, second of the two colliding GT Ca rows; candidate AI cells are Ca highN (ai__3) and Ca lowN (ai__29)",low
+gt__005_Niinemets_1999__r892,005_Niinemets_1999,AMBIGUOUS,,"Quercus suber foliar K, eCO2 700/aCO2 350; GT flagged collision of two K rows (r892,r893) with no N-level. AI has K highN (ai__5/ai__32) and K lowN (ai__33)",low
+gt__005_Niinemets_1999__r893,005_Niinemets_1999,AMBIGUOUS,,"Quercus suber foliar K, second colliding GT K row; candidate AI cells K highN (ai__5/ai__32) and K lowN (ai__33)",low
+gt__005_Niinemets_1999__r894,005_Niinemets_1999,MATCH,005_Niinemets_1999__ai__4,"Q. suber foliar Mg, high N; AI Mg highN Table 1 (ai__4; duplicate ai__30 in Table 1a is the same cell)",high
+gt__005_Niinemets_1999__r895,005_Niinemets_1999,MATCH,005_Niinemets_1999__ai__31,"Q. suber foliar Mg, low N; AI Mg lowN Table 1a (ai__31)",high
+gt__005_Niinemets_1999__r896,005_Niinemets_1999,MATCH,005_Niinemets_1999__ai__0,"Q. suber foliar N, high N; AI N highN Table 1 (ai__0)",high
+gt__005_Niinemets_1999__r897,005_Niinemets_1999,MATCH,005_Niinemets_1999__ai__26,"Q. suber foliar N, low N; AI N lowN Table 1a (ai__26)",high
+gt__005_Niinemets_1999__r898,005_Niinemets_1999,MATCH,005_Niinemets_1999__ai__1,"Q. suber foliar P, high N; AI P highN Table 1 (ai__1; duplicate ai__27 in Table 1a is the same cell)",high
+gt__005_Niinemets_1999__r899,005_Niinemets_1999,MATCH,005_Niinemets_1999__ai__28,"Q. suber foliar P, low N; AI P lowN Table 1a (ai__28)",high
+gt__006_Azam_2013__r106,006_Azam_2013,MATCH,006_Azam_2013__ai__26,"Table 3 Grabe cultivar, Element C; GT cultivar=grabe element=c matches AI cultivar='Grabe' element='c'. AI year y2008_2009 is the Grabe block; GT has no year suffix but cultivar+element uniquely identify the cell.",high
+gt__006_Azam_2013__r107,006_Azam_2013,MATCH,006_Azam_2013__ai__30,"Table 3 Grabe, Element Ca matches AI cultivar='Grabe' element='ca'.",high
+gt__006_Azam_2013__r108,006_Azam_2013,MATCH,006_Azam_2013__ai__41,"Table 3 Grabe, Element Cd matches AI cultivar='Grabe' element='cd'.",high
+gt__006_Azam_2013__r109,006_Azam_2013,MATCH,006_Azam_2013__ai__40,"Table 3 Grabe, Element Cr matches AI cultivar='Grabe' element='cr'.",high
+gt__006_Azam_2013__r110,006_Azam_2013,MATCH,006_Azam_2013__ai__39,"Table 3 Grabe, Element Cu matches AI cultivar='Grabe' element='cu'.",high
+gt__006_Azam_2013__r111,006_Azam_2013,MATCH,006_Azam_2013__ai__36,"Table 3 Grabe, Element Fe matches AI cultivar='Grabe' element='fe'.",high
+gt__006_Azam_2013__r112,006_Azam_2013,MATCH,006_Azam_2013__ai__32,"Table 3 Grabe, Element K matches AI cultivar='Grabe' element='k'.",high
+gt__006_Azam_2013__r113,006_Azam_2013,MATCH,006_Azam_2013__ai__31,"Table 3 Grabe, Element Mg matches AI cultivar='Grabe' element='mg'.",high
+gt__006_Azam_2013__r114,006_Azam_2013,MATCH,006_Azam_2013__ai__35,"Table 3 Grabe, Element Mn matches AI cultivar='Grabe' element='mn'.",high
+gt__006_Azam_2013__r115,006_Azam_2013,MATCH,006_Azam_2013__ai__27,"Table 3 Grabe, Element N matches AI cultivar='Grabe' element='n'.",high
+gt__006_Azam_2013__r116,006_Azam_2013,MATCH,006_Azam_2013__ai__38,"Table 3 Grabe, Element Ni matches AI cultivar='Grabe' element='ni'.",high
+gt__006_Azam_2013__r117,006_Azam_2013,MATCH,006_Azam_2013__ai__37,"Table 3 Grabe, Element Pb matches AI cultivar='Grabe' element='pb'.",high
+gt__006_Azam_2013__r118,006_Azam_2013,MATCH,006_Azam_2013__ai__29,"Table 3 Grabe, Element S matches AI cultivar='Grabe' element='s'.",high
+gt__006_Azam_2013__r119,006_Azam_2013,MATCH,006_Azam_2013__ai__34,"Table 3 Grabe, Element Zn matches AI cultivar='Grabe' element='zn'.",high
+gt__006_Azam_2013__r185,006_Azam_2013,MATCH,006_Azam_2013__ai__0,"Table 3 T-1-111 (Daucus carota), Element C matches AI cultivar='T-1-111' element='c'.",high
+gt__006_Azam_2013__r186,006_Azam_2013,MATCH,006_Azam_2013__ai__4,"Table 3 T-1-111, Element Ca matches AI cultivar='T-1-111' element='ca'.",high
+gt__006_Azam_2013__r187,006_Azam_2013,MATCH,006_Azam_2013__ai__15,"Table 3 T-1-111, Element Cd matches AI cultivar='T-1-111' element='cd'.",high
+gt__006_Azam_2013__r188,006_Azam_2013,MATCH,006_Azam_2013__ai__14,"Table 3 T-1-111, Element Cr matches AI cultivar='T-1-111' element='cr'.",high
+gt__006_Azam_2013__r189,006_Azam_2013,MATCH,006_Azam_2013__ai__13,"Table 3 T-1-111, Element Cu matches AI cultivar='T-1-111' element='cu'.",high
+gt__006_Azam_2013__r190,006_Azam_2013,MATCH,006_Azam_2013__ai__10,"Table 3 T-1-111, Element Fe matches AI cultivar='T-1-111' element='fe'.",high
+gt__006_Azam_2013__r191,006_Azam_2013,MATCH,006_Azam_2013__ai__6,"Table 3 T-1-111, Element K matches AI cultivar='T-1-111' element='k'.",high
+gt__006_Azam_2013__r192,006_Azam_2013,MATCH,006_Azam_2013__ai__5,"Table 3 T-1-111, Element Mg matches AI cultivar='T-1-111' element='mg'.",high
+gt__006_Azam_2013__r193,006_Azam_2013,MATCH,006_Azam_2013__ai__9,"Table 3 T-1-111, Element Mn matches AI cultivar='T-1-111' element='mn'.",high
+gt__006_Azam_2013__r194,006_Azam_2013,MATCH,006_Azam_2013__ai__1,"Table 3 T-1-111, Element N matches AI cultivar='T-1-111' element='n'.",high
+gt__006_Azam_2013__r195,006_Azam_2013,MATCH,006_Azam_2013__ai__12,"Table 3 T-1-111, Element Ni matches AI cultivar='T-1-111' element='ni'.",high
+gt__006_Azam_2013__r196,006_Azam_2013,MATCH,006_Azam_2013__ai__11,"Table 3 T-1-111, Element Pb matches AI cultivar='T-1-111' element='pb'.",high
+gt__006_Azam_2013__r197,006_Azam_2013,MATCH,006_Azam_2013__ai__3,"Table 3 T-1-111, Element S matches AI cultivar='T-1-111' element='s'.",high
+gt__006_Azam_2013__r198,006_Azam_2013,MATCH,006_Azam_2013__ai__8,"Table 3 T-1-111, Element Zn matches AI cultivar='T-1-111' element='zn'.",high
+gt__006_Azam_2013__r913,006_Azam_2013,MATCH,006_Azam_2013__ai__16,"Table 3 Mino (Raphanus sativus), Element Ca matches AI cultivar='Mino' element='ca'.",high
+gt__006_Azam_2013__r914,006_Azam_2013,MATCH,006_Azam_2013__ai__25,"Table 3 Mino, Element Cr matches AI cultivar='Mino' element='cr'.",high
+gt__006_Azam_2013__r915,006_Azam_2013,MATCH,006_Azam_2013__ai__24,"Table 3 Mino, Element Cu matches AI cultivar='Mino' element='cu'.",high
+gt__006_Azam_2013__r916,006_Azam_2013,MATCH,006_Azam_2013__ai__21,"Table 3 Mino, Element Fe matches AI cultivar='Mino' element='fe'.",high
+gt__006_Azam_2013__r917,006_Azam_2013,MATCH,006_Azam_2013__ai__18,"Table 3 Mino, Element K matches AI cultivar='Mino' element='k'.",high
+gt__006_Azam_2013__r918,006_Azam_2013,MATCH,006_Azam_2013__ai__17,"Table 3 Mino, Element Mg matches AI cultivar='Mino' element='mg'.",high
+gt__006_Azam_2013__r919,006_Azam_2013,MATCH,006_Azam_2013__ai__20,"Table 3 Mino, Element Mn matches AI cultivar='Mino' element='mn'.",high
+gt__006_Azam_2013__r920,006_Azam_2013,MATCH,006_Azam_2013__ai__23,"Table 3 Mino, Element Ni matches AI cultivar='Mino' element='ni'.",high
+gt__006_Azam_2013__r921,006_Azam_2013,MATCH,006_Azam_2013__ai__22,"Table 3 Mino, Element Pb matches AI cultivar='Mino' element='pb'.",high
+gt__006_Azam_2013__r922,006_Azam_2013,MATCH,006_Azam_2013__ai__19,"Table 3 Mino, Element Zn matches AI cultivar='Mino' element='zn'.",high
+gt__007_Woodin_1992__r129,007_Woodin_1992,NO_MATCH,,"Fig 3a leaf-tissue Ca concentration. GT is foliar(leaf) Ca at eco2_570 (570 vs 370 ppm). AI only extracted leaf-foliar Ca at the 470 ppm level (ai__13, eco2_470_amb_370); the 570 ppm leaf Ca cell was not extracted by AI. CO2-level mismatch -> no same-cell counterpart.",high
+gt__007_Woodin_1992__r130,007_Woodin_1992,NO_MATCH,,Fig 3a leaf-tissue K concentration. GT is foliar K at eco2_570. AI only extracted leaf-foliar K at 470 ppm (ai__11); no 570 ppm leaf K cell present.,high
+gt__007_Woodin_1992__r131,007_Woodin_1992,NO_MATCH,,Fig 3a leaf-tissue Mg concentration. GT is foliar Mg at eco2_570. AI extracted Mg only as stem(above_ground) at 470 (ai__2) and leaf at 470 (ai__15); no 570 ppm leaf Mg cell present.,high
+gt__007_Woodin_1992__r132,007_Woodin_1992,MATCH,007_Woodin_1992__ai__1,"Fig 3a leaf-tissue N concentration. GT foliar N at eco2_570_amb_370 matches AI ai__1 (element='N concentration in leaf tissue', tissue leaf->foliar, eco2_570_amb_370, cultivar H.E. Beale = Calluna vulgaris var.). Only this AI N row is at 570 ppm.",high
+gt__007_Woodin_1992__r133,007_Woodin_1992,NO_MATCH,,Fig 3a leaf-tissue P concentration. GT is foliar P at eco2_570. AI only extracted leaf-foliar P at 470 ppm (ai__9); no 570 ppm leaf P cell present.,high
+gt__008_Campbell_2002__r478,008_Campbell_2002,NO_MATCH,,"GT is foliar (leaf) P CONCENTRATION at high P (Lupinus albus), eco2_750. AI extracted only two P observations: total plant P CONTENT mg/plant (whole plant, ai__0/ai__1) and proportion of plant P in roots (ai__2/ai__3). Neither is a foliar P concentration; tissue (foliar vs whole-plant/root) and quantity type (concentration vs content/proportion) both differ. No same-cell counterpart.",high
+gt__008_Campbell_2002__r479,008_Campbell_2002,NO_MATCH,,"GT is foliar P concentration at low P, eco2_750. AI has only whole-plant P content (ai__0 p0) and root P proportion (ai__2 p0), not foliar concentration. Tissue and quantity-type mismatch; no same-cell counterpart.",high
+gt__009_Barnes_1992__r900,009_Barnes_1992,MATCH,009_Barnes_1992__ai__5,"Table 4 (radish shoot = foliar nutrient composition, % shoot DW), Ca, CO2 effect at non-polluted O3 (20 nmol): 750 vs 350 (=765/385). GT foliar Ca cherry_belle eco2_765_amb_385 matches AI ai__5 (Ca, Table 4, non-polluted O3, eco2_765_amb_385). Tissue token differs (GT foliar vs AI above_ground/shoot) but paper text explicitly labels Table 4 shoot values 'foliar concentrations' -> same cell.",high
+gt__009_Barnes_1992__r901,009_Barnes_1992,MATCH,009_Barnes_1992__ai__3,"Table 4 shoot/foliar K, non-polluted O3, 765/385. Matches AI ai__3 (K, Table 4, non-polluted O3).",high
+gt__009_Barnes_1992__r902,009_Barnes_1992,MATCH,009_Barnes_1992__ai__4,"Table 4 shoot/foliar Mg, non-polluted O3, 765/385. Matches AI ai__4 (Mg, Table 4, non-polluted O3).",high
+gt__009_Barnes_1992__r903,009_Barnes_1992,MATCH,009_Barnes_1992__ai__0,"Table 4 shoot/foliar N, non-polluted O3, 765/385. Matches AI ai__0 (N, Table 4, non-polluted O3).",high
+gt__009_Barnes_1992__r904,009_Barnes_1992,MATCH,009_Barnes_1992__ai__2,"Table 4 shoot/foliar P, non-polluted O3, 765/385. Matches AI ai__2 (P, Table 4, non-polluted O3).",high
+gt__009_Barnes_1992__r905,009_Barnes_1992,MATCH,009_Barnes_1992__ai__1,"Table 4 shoot/foliar S, non-polluted O3, 765/385. Matches AI ai__1 (S, Table 4, non-polluted O3).",high
+gt__009_Barnes_1992__r906,009_Barnes_1992,NO_MATCH,,"GT foliar Zn cherry_belle eco2_765_amb_385. Tables 4 and 5 report only N,S,P,K,Mg,Ca,C/N - no Zn. AI extracted no Zn observation. No same-cell counterpart in AI.",high
+gt__010_Li_2010__r1368,010_Li_2010,NO_MATCH,,"GT grain Ca, Triso wheat, eco2_537_amb_387 (Hogy et al 2009 data). AI extraction file contains zero rows for this paper.",high
+gt__010_Li_2010__r1369,010_Li_2010,NO_MATCH,,"GT grain Cd, Triso. AI file empty.",high
+gt__010_Li_2010__r1370,010_Li_2010,NO_MATCH,,"GT grain Cr, Triso. AI file empty.",high
+gt__010_Li_2010__r1371,010_Li_2010,NO_MATCH,,"GT grain Fe, Triso. AI file empty.",high
+gt__010_Li_2010__r1372,010_Li_2010,NO_MATCH,,"GT grain K, Triso. AI file empty.",high
+gt__010_Li_2010__r1373,010_Li_2010,NO_MATCH,,"GT grain Mg, Triso. AI file empty.",high
+gt__010_Li_2010__r1374,010_Li_2010,NO_MATCH,,"GT grain Mn, Triso. AI file empty.",high
+gt__010_Li_2010__r1375,010_Li_2010,NO_MATCH,,"GT grain Mo, Triso. AI file empty.",high
+gt__010_Li_2010__r1376,010_Li_2010,NO_MATCH,,"GT grain Na, Triso. AI file empty.",high
+gt__010_Li_2010__r1377,010_Li_2010,NO_MATCH,,"GT grain Ni, Triso. AI file empty.",high
+gt__010_Li_2010__r1378,010_Li_2010,NO_MATCH,,"GT grain P, Triso. AI file empty.",high
+gt__010_Li_2010__r1379,010_Li_2010,NO_MATCH,,"GT grain Pb, Triso. AI file empty.",high
+gt__010_Li_2010__r1380,010_Li_2010,NO_MATCH,,"GT grain S, Triso. AI file empty.",high
+gt__010_Li_2010__r1381,010_Li_2010,NO_MATCH,,"GT grain Se, Triso. AI file empty.",high
+gt__010_Li_2010__r1382,010_Li_2010,NO_MATCH,,"GT grain Si, Triso. AI file empty.",high
+gt__010_Li_2010__r1383,010_Li_2010,NO_MATCH,,"GT grain Zn, Triso. AI file empty.",high
+gt__011_Huluka_1994__r263,011_Huluka_1994,NO_MATCH,,"GT B is leaf at DOY 247 (Fig.1 DOY=247 panel, ratio CONTROL:FACE); AI only extracted Table 2 = leaf nutrients on 26 June (DOY 177). Different timepoint, no DOY-247 AI row.",high
+gt__011_Huluka_1994__r264,011_Huluka_1994,NO_MATCH,,GT C at DOY 247 (Fig.1). AI extracted Table 2 (DOY 177) which has no C row at all.,high
+gt__011_Huluka_1994__r265,011_Huluka_1994,NO_MATCH,,GT Ca at DOY 247 (Fig.1); AI Ca (ai__1) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r266,011_Huluka_1994,NO_MATCH,,GT Cu at DOY 247 (Fig.1); AI Cu (ai__6) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r267,011_Huluka_1994,NO_MATCH,,GT Fe at DOY 247 (Fig.1); AI Fe (ai__7) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r268,011_Huluka_1994,NO_MATCH,,GT K at DOY 247 (Fig.1); AI K (ai__2) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r269,011_Huluka_1994,NO_MATCH,,GT Mg at DOY 247 (Fig.1); AI Mg (ai__3) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r270,011_Huluka_1994,NO_MATCH,,GT Mn at DOY 247 (Fig.1); AI Mn (ai__8) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r271,011_Huluka_1994,NO_MATCH,,GT Mo at DOY 247 (Fig.1). AI extracted Table 2 (DOY 177) which has no Mo row.,high
+gt__011_Huluka_1994__r272,011_Huluka_1994,NO_MATCH,,GT N at DOY 247 (Fig.1); AI N (ai__0) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r273,011_Huluka_1994,NO_MATCH,,GT P at DOY 247 (Fig.1); AI P (ai__4) is Table 2 DOY 177. Different timepoint.,high
+gt__011_Huluka_1994__r274,011_Huluka_1994,NO_MATCH,,GT Si at DOY 247 (Fig.1). AI extracted Table 2 (DOY 177) which has no Si row.,high
+gt__011_Huluka_1994__r275,011_Huluka_1994,NO_MATCH,,GT Zn at DOY 247 (Fig.1); AI Zn (ai__9) is Table 2 DOY 177. Different timepoint.,high
+gt__012_Wu_2004__r1402,012_Wu_2004,MATCH,012_Wu_2004__ai__3,"Table 1 grain K, wheat, eCO2 700 vs ambient 350. GT cultivar 'Turbo' is a Loladze-side label artifact; paper cultivar is Ganmai 8139 (same Wu 2004 wheat, grain, K, 700/350). AI extracted at 80% FWC (well-watered headline comparison); GT moisture unspecified.",high
+gt__012_Wu_2004__r1403,012_Wu_2004,MATCH,012_Wu_2004__ai__0,"Table 1 grain N (Nitrogen g/100g), wheat, eCO2 700 vs 350. Cultivar 'Turbo' vs 'Ganmai 8139' is a cross-side label artifact for the same paper/cell. AI 80% FWC = well-watered headline comparison.",high
+gt__012_Wu_2004__r1404,012_Wu_2004,MATCH,012_Wu_2004__ai__2,"Table 1 grain P, wheat, eCO2 700 vs 350. Cultivar label artifact (Turbo/Ganmai 8139). AI 80% FWC well-watered comparison.",high
+gt__012_Wu_2004__r1405,012_Wu_2004,MATCH,012_Wu_2004__ai__4,"Table 1 grain Zn (mg/kg), wheat, eCO2 700 vs 350. Cultivar label artifact (Turbo/Ganmai 8139). AI 80% FWC well-watered comparison.",high
+gt__013_Keutgen_2001__r171,013_Keutgen_2001,MATCH,013_Keutgen_2001__ai__42,"Table 3 old leaves, Ca, 900 ppm vs 300 ppm sub-ambient. AI ai__42 = Ca, foliar, old_leaves, eco2_900_amb_300. Species C. madurensis encoded as old_leaves on both sides.",high
+gt__013_Keutgen_2001__r172,013_Keutgen_2001,MATCH,013_Keutgen_2001__ai__30,"Table 3 old leaves, K, 900 vs 300. AI ai__30 = K, foliar, old_leaves, eco2_900_amb_300.",high
+gt__013_Keutgen_2001__r173,013_Keutgen_2001,MATCH,013_Keutgen_2001__ai__51,"Table 3 old leaves, Mg, 900 vs 300. AI ai__51 = Mg, foliar, old_leaves, eco2_900_amb_300.",high
+gt__013_Keutgen_2001__r174,013_Keutgen_2001,MATCH,013_Keutgen_2001__ai__11,"Table 3 old leaves, N, 900 vs 300. AI ai__11 = N, foliar, old_leaves, eco2_900_amb_300.",high
+gt__013_Keutgen_2001__r175,013_Keutgen_2001,NO_MATCH,,"Table 3 old leaves, P, 900 vs 300. AI extracted P old_leaves only at 450 ppm (ai__19); no P old_leaves at 900 ppm exists among AI rows (AI P series stops at ai__19).",high
+gt__014_Lieffering_2004__r574,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__4,"Fig.1 1999 panel, rice grain B, eCO2 625 (1999) vs ambient. AI ai__4 = B, grain, eco2_625...y1999. GT aCO2=365 vs AI aCO2=398 is a recorded-ambient-value difference for the same FACE ambient plots; year/eCO2 disambiguates.",high
+gt__014_Lieffering_2004__r575,014_Lieffering_2004,NO_MATCH,,"Fig.1 2000 panel, grain B, eCO2 570 (2000). AI extracted B only for 1999 (ai__4); no B at eco2_570/y2000.",high
+gt__014_Lieffering_2004__r576,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Cu, 2000 (eCO2 570). AI extracted no Cu rows at all.",high
+gt__014_Lieffering_2004__r577,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Cu, 1999 (eCO2 625). AI extracted no Cu rows at all.",high
+gt__014_Lieffering_2004__r578,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Fe, 2000 (eCO2 570). AI extracted Fe only for 1999 (ai__3); no Fe at eco2_570/y2000.",high
+gt__014_Lieffering_2004__r579,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__3,"Fig.1 1999 panel, grain Fe, eCO2 625. AI ai__3 = Fe, grain, eco2_625...y1999.",high
+gt__014_Lieffering_2004__r580,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__7,"Fig.1 2000 panel, grain K, eCO2 570. AI ai__7 = K, grain, eco2_570...y2000.",high
+gt__014_Lieffering_2004__r581,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain K, 1999 (eCO2 625). AI extracted K only for 2000 (ai__7); no K at eco2_625/y1999.",high
+gt__014_Lieffering_2004__r582,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__8,"Fig.1 2000 panel, grain Mg, eCO2 570. AI ai__8 = Mg, grain, eco2_570...y2000.",high
+gt__014_Lieffering_2004__r583,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__2,"Fig.1 1999 panel, grain Mg, eCO2 625. AI ai__2 = Mg, grain, eco2_625...y1999.",high
+gt__014_Lieffering_2004__r584,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Mn, 1999 (eCO2 625). AI extracted no Mn rows.",high
+gt__014_Lieffering_2004__r585,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Mn, 2000 (eCO2 570). AI extracted no Mn rows.",high
+gt__014_Lieffering_2004__r586,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Mo, 1999 (eCO2 625). AI extracted no Mo rows.",high
+gt__014_Lieffering_2004__r587,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Mo, 2000 (eCO2 570). AI extracted no Mo rows.",high
+gt__014_Lieffering_2004__r588,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__5,"Fig.1 2000 panel, grain N, eCO2 570. AI ai__5 = N, grain, eco2_570...y2000.",high
+gt__014_Lieffering_2004__r589,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__0,"Fig.1 1999 panel, grain N, eCO2 625. AI ai__0 = N, grain, eco2_625...y1999.",high
+gt__014_Lieffering_2004__r590,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__6,"Fig.1 2000 panel, grain P, eCO2 570. AI ai__6 = P, grain, eco2_570...y2000.",high
+gt__014_Lieffering_2004__r591,014_Lieffering_2004,MATCH,014_Lieffering_2004__ai__1,"Fig.1 1999 panel, grain P, eCO2 625. AI ai__1 = P, grain, eco2_625...y1999.",high
+gt__014_Lieffering_2004__r592,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain S, 2000 (eCO2 570). AI extracted no S rows.",high
+gt__014_Lieffering_2004__r593,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain S, 1999 (eCO2 625). AI extracted no S rows.",high
+gt__014_Lieffering_2004__r594,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Zn, 2000 (eCO2 570). AI extracted no Zn rows.",high
+gt__014_Lieffering_2004__r595,014_Lieffering_2004,NO_MATCH,,"Fig.1 grain Zn, 1999 (eCO2 625). AI extracted no Zn rows.",high
+gt__015_Pleijel_2009__r1265,015_Pleijel_2009,MATCH,015_Pleijel_2009__ai__8,"Table 1 Exp 2 (1995): CO2+2 [CO2]=667 vs OTC control 347, grain Zn, Dragon. AI ai__8 = Zn grain Dragon eco2_667_amb_347 (y1995) — exact CO2-pair match.",high
+gt__015_Pleijel_2009__r1266,015_Pleijel_2009,NO_MATCH,,"GT eco2_675_amb_355 = Table 1 Exp 3 (1996): CO2+ [CO2]=675 vs OTC control 355, grain Zn. AI extracted no 675-ppm row; Exp 3 (1996) was not extracted (AI Table-1 rows cover 1994 Exp1 and 1995 Exp5 CO2 levels only).",high
+gt__015_Pleijel_2009__r1267,015_Pleijel_2009,MATCH,015_Pleijel_2009__ai__1,"GT eco2_660_amb_355 = Table 1 Exp 1 (1994): CO2+ [CO2]=660 vs OTC control 355, grain Zn, Dragon. AI ai__1 = Zn grain Dragon eco2_660_amb_355 (y1994). Chosen over ai__0 (eco2_660_amb_360) because GT control is 355 not 360 — exact control match.",high
+gt__016_Fernando_2012a__r1466,016_Fernando_2012a,NO_MATCH,,"Table 3 grain Cu concentration for Yitpi; AI extracted only Table 3 dough/flour quality traits (flour yield, bread volume, mixing requirement, peak width/height, breakdown), no mineral elements",high
+gt__016_Fernando_2012a__r1467,016_Fernando_2012a,NO_MATCH,,Table 3 grain K concentration for Yitpi; AI rows contain no K (only quality traits),high
+gt__016_Fernando_2012a__r1468,016_Fernando_2012a,NO_MATCH,,Table 3 grain Mg concentration for Yitpi; AI rows contain no Mg,high
+gt__016_Fernando_2012a__r1469,016_Fernando_2012a,NO_MATCH,,Table 3 grain Mn concentration for Yitpi; AI rows contain no Mn,high
+gt__016_Fernando_2012a__r1470,016_Fernando_2012a,NO_MATCH,,Table 3 grain Na concentration for Yitpi; AI rows contain no Na,high
+gt__016_Fernando_2012a__r1471,016_Fernando_2012a,NO_MATCH,,Table 3 grain P concentration for Yitpi; AI rows contain no P,high
+gt__017_Fangmeier_2002__r971,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground Ca, O3 background (680 O3 vs O3 column, Table 4/5); AI extracted only the NF-vs-680 CO2 contrast, never the O3-background columns",med
+gt__017_Fangmeier_2002__r972,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber Ca, O3 background (680 O3 vs O3); AI captured only NF/680",med
+gt__017_Fangmeier_2002__r973,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__36,"Bintje aboveground Ca, NF background (NF vs 680). AI Table 5 (final harvest) AGB Ca concentration. Harvest (Table4 intermediate vs Table5 final) not in GT descriptor; both use same 3 sites GI/SB/TE, so harvest indeterminate; Table5/maturity chosen by convention",low
+gt__017_Fangmeier_2002__r974,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__37,"Bintje tuber Ca, NF vs 680. AI Table 5 tuber Ca concentration; GT tuber site list (JO,GI,GO,SB,TE = 5 loc.) matches final harvest (9 datasets incl JO/GO) per Table 1, favoring Table 5 over Table 4",med
+gt__017_Fangmeier_2002__r975,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground Fe, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r976,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber Fe, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r977,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__44,"Bintje aboveground Fe, NF vs 680. AI Table 5 AGB Fe concentration; harvest indeterminate from GT descriptor (AGB uses same 3 sites in both harvests)",low
+gt__017_Fangmeier_2002__r978,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__45,"Bintje tuber Fe, NF vs 680. AI Table 5 tuber Fe concentration; tuber 5-site list favors final harvest",med
+gt__017_Fangmeier_2002__r979,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground K, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r980,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber K, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r981,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__34,"Bintje aboveground K, NF vs 680. AI Table 5 AGB K concentration; harvest indeterminate for AGB",low
+gt__017_Fangmeier_2002__r982,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__35,"Bintje tuber K, NF vs 680. AI Table 5 tuber K concentration; tuber 5-site list favors final harvest",med
+gt__017_Fangmeier_2002__r983,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground Mg, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r984,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber Mg, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r985,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__38,"Bintje aboveground Mg, NF vs 680. AI Table 5 AGB Mg concentration; harvest indeterminate for AGB",low
+gt__017_Fangmeier_2002__r986,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__39,"Bintje tuber Mg, NF vs 680. AI Table 5 tuber Mg concentration; tuber 5-site list favors final harvest",med
+gt__017_Fangmeier_2002__r987,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground Mn, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r988,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber Mn, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r989,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__40,"Bintje aboveground Mn, NF vs 680. AI Table 5 AGB Mn concentration; harvest indeterminate for AGB",low
+gt__017_Fangmeier_2002__r990,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__41,"Bintje tuber Mn, NF vs 680. AI Table 5 tuber Mn concentration; tuber 5-site list favors final harvest",med
+gt__017_Fangmeier_2002__r991,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground N, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r992,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber N, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r993,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__30,"Bintje aboveground N, NF vs 680. AI Table 5 AGB N concentration; harvest indeterminate for AGB",low
+gt__017_Fangmeier_2002__r994,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__31,"Bintje tuber N, NF vs 680. AI Table 5 tuber N concentration; tuber 5-site list favors final harvest",med
+gt__017_Fangmeier_2002__r995,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground P, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r996,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber P, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r997,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__32,"Bintje aboveground P, NF vs 680. AI Table 5 AGB P concentration; harvest indeterminate for AGB",low
+gt__017_Fangmeier_2002__r998,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__33,"Bintje tuber P, NF vs 680. AI Table 5 tuber P concentration; tuber 5-site list favors final harvest",med
+gt__017_Fangmeier_2002__r999,017_Fangmeier_2002,NO_MATCH,,"Bintje aboveground Zn, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r1000,017_Fangmeier_2002,NO_MATCH,,"Bintje tuber Zn, O3 background; AI captured only NF/680",med
+gt__017_Fangmeier_2002__r1001,017_Fangmeier_2002,AMBIGUOUS,017_Fangmeier_2002__ai__42,"Bintje aboveground Zn, NF vs 680. AI Table 5 AGB Zn concentration; harvest indeterminate for AGB",low
+gt__017_Fangmeier_2002__r1002,017_Fangmeier_2002,MATCH,017_Fangmeier_2002__ai__43,"Bintje tuber Zn, NF vs 680. AI Table 5 tuber Zn concentration; tuber 5-site list favors final harvest",med
+gt__018_Al-Rawahy_2013__r544,018_Al-Rawahy_2013,AMBIGUOUS,018_Al-Rawahy_2013__ai__11,"Table 3 leaf Ca, Medicago sativa 'Victor'. GT encodes contrast eCO2=450/aCO2=350; AI extracted three separate CO2-vs-control cells (350/400/450). The 450 ppm AI row carries the elevated endpoint, but control anchor differs (AI control = charcoal-filtered ambient, GT ambient = 350 ppm level)",med
+gt__018_Al-Rawahy_2013__r545,018_Al-Rawahy_2013,AMBIGUOUS,018_Al-Rawahy_2013__ai__20,"Table 3 leaf Fe, Victor. GT eCO2=450/aCO2=350 maps to AI 450 ppm Fe row (elevated endpoint); control-anchor mismatch",med
+gt__018_Al-Rawahy_2013__r546,018_Al-Rawahy_2013,AMBIGUOUS,018_Al-Rawahy_2013__ai__5,"Table 3 leaf K, Victor. GT eCO2=450/aCO2=350 maps to AI 450 ppm K row; control-anchor mismatch",med
+gt__018_Al-Rawahy_2013__r547,018_Al-Rawahy_2013,AMBIGUOUS,018_Al-Rawahy_2013__ai__14,"Table 3 leaf Mg, Victor. GT eCO2=450/aCO2=350 maps to AI 450 ppm Mg row; control-anchor mismatch",med
+gt__018_Al-Rawahy_2013__r548,018_Al-Rawahy_2013,AMBIGUOUS,018_Al-Rawahy_2013__ai__2,"Table 3 leaf N, Victor. GT eCO2=450/aCO2=350 maps to AI 450 ppm N row; control-anchor mismatch",med
+gt__018_Al-Rawahy_2013__r549,018_Al-Rawahy_2013,AMBIGUOUS,018_Al-Rawahy_2013__ai__8,"Table 3 leaf P, Victor. GT eCO2=450/aCO2=350 maps to AI 450 ppm P row; control-anchor mismatch",med
+gt__018_Al-Rawahy_2013__r550,018_Al-Rawahy_2013,AMBIGUOUS,018_Al-Rawahy_2013__ai__17,"Table 3 leaf Zn, Victor. GT eCO2=450/aCO2=350 maps to AI 450 ppm Zn row; control-anchor mismatch",med
+gt__019_Baxter_1994__r13,019_Baxter_1994,NO_MATCH,,"Foliar Ca concentration (mg/g DW), Agrostis capillaris, from Fig 2 (leaf-blade concentration). AI extracted Table 1 whole-plant TOTAL CONTENT (mg/plant) instead, a different metric and tissue",high
+gt__019_Baxter_1994__r14,019_Baxter_1994,NO_MATCH,,"Foliar K concentration, Agrostis capillaris (Fig 2). AI has only whole-plant total K content (mg/plant)",high
+gt__019_Baxter_1994__r15,019_Baxter_1994,NO_MATCH,,"Foliar Mg concentration, Agrostis capillaris (Fig 2). AI has only whole-plant total Mg content",high
+gt__019_Baxter_1994__r16,019_Baxter_1994,NO_MATCH,,"Foliar N concentration, Agrostis capillaris (Fig 1). AI has only whole-plant total N content",high
+gt__019_Baxter_1994__r17,019_Baxter_1994,NO_MATCH,,"Foliar P concentration, Agrostis capillaris (Fig 1). AI has only whole-plant total P content",high
+gt__019_Baxter_1994__r223,019_Baxter_1994,NO_MATCH,,"Foliar Ca concentration, Festuca vivipara (Fig 2). AI has only whole-plant total Ca content (mg/plant)",high
+gt__019_Baxter_1994__r224,019_Baxter_1994,NO_MATCH,,"Foliar K concentration, Festuca vivipara (Fig 2). AI has only whole-plant total K content",high
+gt__019_Baxter_1994__r225,019_Baxter_1994,NO_MATCH,,"Foliar Mg concentration, Festuca vivipara (Fig 2). AI has only whole-plant total Mg content",high
+gt__019_Baxter_1994__r226,019_Baxter_1994,NO_MATCH,,"Foliar N concentration, Festuca vivipara (Fig 1). AI has only whole-plant total N content",high
+gt__019_Baxter_1994__r227,019_Baxter_1994,NO_MATCH,,"Foliar P concentration, Festuca vivipara (Fig 1). AI has only whole-plant total P content",high
+gt__019_Baxter_1994__r826,019_Baxter_1994,NO_MATCH,,"Foliar Ca concentration, Poa alpina (Fig 2). AI has only whole-plant total Ca content",high
+gt__019_Baxter_1994__r827,019_Baxter_1994,NO_MATCH,,"Foliar K concentration, Poa alpina (Fig 2). AI has only whole-plant total K content",high
+gt__019_Baxter_1994__r828,019_Baxter_1994,NO_MATCH,,"Foliar Mg concentration, Poa alpina (Fig 2). AI has only whole-plant total Mg content",high
+gt__019_Baxter_1994__r829,019_Baxter_1994,NO_MATCH,,"Foliar N concentration, Poa alpina (Fig 1). AI has only whole-plant total N content",high
+gt__019_Baxter_1994__r830,019_Baxter_1994,NO_MATCH,,"Foliar P concentration, Poa alpina (Fig 1). AI has only whole-plant total P content",high
+gt__020_Overdieck_1993__r3,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__6,"Table 4 Acer pseudoplatanus Ca, eCO2=650 vs 390. AI Ca@650 row (species acer_pseudo_platanus==acer_pseudoplatanus)",high
+gt__020_Overdieck_1993__r4,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__12,"Table 4 Acer Fe, eCO2=650. AI Fe@650 row",high
+gt__020_Overdieck_1993__r5,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__4,"Table 4 Acer K, eCO2=650. AI K@650 row",high
+gt__020_Overdieck_1993__r6,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__8,"Table 4 Acer Mg, eCO2=650. AI Mg@650 row",high
+gt__020_Overdieck_1993__r7,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__10,"Table 4 Acer Mn, eCO2=650. AI Mn@650 row",high
+gt__020_Overdieck_1993__r8,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__1,"Table 4 Acer N, eCO2=650. AI N@650 row",high
+gt__020_Overdieck_1993__r9,020_Overdieck_1993,NO_MATCH,,"Table 4 Acer P, eCO2=650 vs 390. AI extracted only Acer P at the 520 level (ai__2), not the 650 level",high
+gt__020_Overdieck_1993__r199,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__18,"Table 4 Fagus sylvatica Ca, eCO2=650. AI Fagus Ca@650 row",high
+gt__020_Overdieck_1993__r200,020_Overdieck_1993,NO_MATCH,,"Table 4 Fagus Fe, eCO2=650. AI extracted no Fagus Fe rows at all",high
+gt__020_Overdieck_1993__r201,020_Overdieck_1993,NO_MATCH,,"Table 4 Fagus K, eCO2=650 vs 390. AI extracted only Fagus K at the 520 level (ai__16), not the 650 level",high
+gt__020_Overdieck_1993__r202,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__20,"Table 4 Fagus Mg, eCO2=650. AI Fagus Mg@650 row",high
+gt__020_Overdieck_1993__r203,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__22,"Table 4 Fagus Mn, eCO2=650. AI Fagus Mn@650 row",high
+gt__020_Overdieck_1993__r204,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__14,"Table 4 Fagus N, eCO2=650. AI Fagus N@650 row",high
+gt__020_Overdieck_1993__r205,020_Overdieck_1993,NO_MATCH,,"Table 4 Fagus P, eCO2=650 vs 390. AI extracted only Fagus P at the 520 level (ai__15), not the 650 level",high
+gt__020_Overdieck_1993__r217,020_Overdieck_1993,NO_MATCH,,"Figure 2 Festuca pratensis Ca, eCO2=620/amb=300 (relative %). AI extracted no Festuca pratensis Ca row",high
+gt__020_Overdieck_1993__r218,020_Overdieck_1993,NO_MATCH,,"Figure 2 Festuca pratensis K, eCO2=620/amb=300. AI extracted no Festuca pratensis K row",high
+gt__020_Overdieck_1993__r219,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__31,"Figure 2 Festuca pratensis Mg, eCO2=620/amb=300. AI Festuca pratensis Mg (Fig 2) row, eco2_620_amb_300",high
+gt__020_Overdieck_1993__r220,020_Overdieck_1993,NO_MATCH,,"Figure 2 Festuca pratensis N, eCO2=620/amb=300. AI extracted no Festuca pratensis N row",high
+gt__020_Overdieck_1993__r221,020_Overdieck_1993,NO_MATCH,,"Figure 2 Festuca pratensis P, eCO2=620/amb=300. AI extracted no Festuca pratensis P row",high
+gt__020_Overdieck_1993__r222,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__33,"Figure 2 Festuca pratensis Zn. AI Festuca pratensis Zn (Fig 2) row; AI lists CO2 600/350 vs GT 620/300, same figure/species/element (minor CO2-label rounding within figure range)",med
+gt__020_Overdieck_1993__r460,020_Overdieck_1993,NO_MATCH,,"Figure 2 Lolium perenne Ca, eCO2=620/amb=300. AI extracted no Lolium perenne rows",high
+gt__020_Overdieck_1993__r461,020_Overdieck_1993,NO_MATCH,,Figure 2 Lolium perenne K. AI extracted no Lolium perenne rows,high
+gt__020_Overdieck_1993__r462,020_Overdieck_1993,NO_MATCH,,Figure 2 Lolium perenne N. AI extracted no Lolium perenne rows,high
+gt__020_Overdieck_1993__r463,020_Overdieck_1993,NO_MATCH,,Figure 2 Lolium perenne P. AI extracted no Lolium perenne rows,high
+gt__020_Overdieck_1993__r1125,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__27,"Figure 2 Trifolium pratense Ca, eCO2=620/amb=300. AI Trifolium pratense Ca (Fig 2) row",high
+gt__020_Overdieck_1993__r1126,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__26,Figure 2 Trifolium pratense K. AI Trifolium pratense K (Fig 2) row,high
+gt__020_Overdieck_1993__r1127,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__28,Figure 2 Trifolium pratense Mg. AI Trifolium pratense Mg (Fig 2) row,high
+gt__020_Overdieck_1993__r1128,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__24,Figure 2 Trifolium pratense N. AI Trifolium pratense N (Fig 2) row,high
+gt__020_Overdieck_1993__r1129,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__25,Figure 2 Trifolium pratense P. AI Trifolium pratense P (Fig 2) row,high
+gt__020_Overdieck_1993__r1130,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__29,Figure 2 Trifolium pratense Zn. AI Trifolium pratense Zn (Fig 2) row,high
+gt__020_Overdieck_1993__r1131,020_Overdieck_1993,NO_MATCH,,"Figure 2 Trifolium repens Ca, eCO2=620/amb=300. AI extracted only Trifolium repens P (ai__32), no Ca row",high
+gt__020_Overdieck_1993__r1132,020_Overdieck_1993,NO_MATCH,,"Figure 2 Trifolium repens K. AI extracted only Trifolium repens P, no K row",high
+gt__020_Overdieck_1993__r1133,020_Overdieck_1993,NO_MATCH,,"Figure 2 Trifolium repens N. AI extracted only Trifolium repens P, no N row",high
+gt__020_Overdieck_1993__r1134,020_Overdieck_1993,MATCH,020_Overdieck_1993__ai__32,"Figure 2 Trifolium repens P, eCO2=620/amb=300. AI Trifolium repens P (Fig 2) row; AI CO2 label 600/350 within same figure range",med
+gt__021_Wilsey_1994__r1107,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__18,"Table 1 leaf nutrient B, eCO2 700 vs aCO2 370; AI splits into Clipped (ai__18) and Unclipped (ai__19) contrasts but GT carries no clipping descriptor",low
+gt__021_Wilsey_1994__r1108,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__10,Table 1 leaf Ca 700vs370; two equally-plausible AI rows ai__10 (Clipped) / ai__11 (Unclipped); GT has no clip field,low
+gt__021_Wilsey_1994__r1109,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__22,Table 1 leaf Co 700vs370; AI ai__22 (Clipped)/ai__23 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1110,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__20,Table 1 leaf Cu 700vs370; AI ai__20 (Clipped)/ai__21 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1111,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__12,Table 1 leaf Fe 700vs370; AI ai__12 (Clipped)/ai__13 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1112,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__2,Table 1 leaf K 700vs370; AI ai__2 (Clipped)/ai__3 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1113,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__8,Table 1 leaf Mg 700vs370; AI ai__8 (Clipped)/ai__9 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1114,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__14,Table 1 leaf Mn 700vs370; AI ai__14 (Clipped)/ai__15 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1115,021_Wilsey_1994,MATCH,021_Wilsey_1994__ai__24,"Table 1 leaf Mo 700vs370; AI extracted only one Mo row (ai__24, Clipped) so the element match is unique",med
+gt__021_Wilsey_1994__r1116,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__0,Table 1 leaf N 700vs370; AI ai__0 (Clipped)/ai__1 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1117,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__4,Table 1 leaf Na 700vs370; AI ai__4 (Clipped)/ai__5 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1118,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__6,Table 1 leaf P 700vs370; AI ai__6 (Clipped)/ai__7 (Unclipped); GT no clip disambiguator,low
+gt__021_Wilsey_1994__r1119,021_Wilsey_1994,AMBIGUOUS,021_Wilsey_1994__ai__16,Table 1 leaf Zn 700vs370; AI ai__16 (Clipped)/ai__17 (Unclipped); GT no clip disambiguator,low
+gt__022_Blank_2011__r123,022_Blank_2011,AMBIGUOUS,,"Tissue Ca, Bromus tectorum, above-ground, future-vs-preindustrial CO2 (GT 420 vs 270). Paper Table 3 reports Ca per ecotype x age; GT is pooled-over-ecotype. AI emitted 3 ecotype-specific Ca rows (low ai__36-39, mid ai__40-43, high ai__44-47) all with control mis-read as 250 (paper pre-industrial is 270) and per-replicate duplicates; no pooled-ecotype 420-vs-270 row exists",low
+gt__022_Blank_2011__r124,022_Blank_2011,AMBIGUOUS,,"Tissue K pooled-over-ecotype 420-vs-270. AI K rows are per-ecotype (low ai__14-17, mid ai__18-21, high ai__22-25) with control mislabelled 250",low
+gt__022_Blank_2011__r125,022_Blank_2011,AMBIGUOUS,,"Tissue Mg pooled-over-ecotype 420-vs-270. AI Mg rows per-ecotype (low ai__26-29, mid ai__30-32, high ai__33-35) control mislabelled 250",low
+gt__022_Blank_2011__r126,022_Blank_2011,AMBIGUOUS,,"Tissue Mn pooled-over-ecotype 420-vs-270. AI Mn rows per-ecotype (low ai__48-51, mid ai__52-55, high ai__56-59) control mislabelled 250",low
+gt__022_Blank_2011__r127,022_Blank_2011,AMBIGUOUS,,"Tissue N pooled-over-ecotype 420-vs-270 (Table 2). AI N rows per-ecotype (low ai__0/2, mid ai__3, high ai__4); some with control 250 and a stray 360 (ai__1) - control misread",low
+gt__022_Blank_2011__r128,022_Blank_2011,AMBIGUOUS,,"Tissue P pooled-over-ecotype 420-vs-270 (Table 3). AI P rows per-ecotype (low ai__8-10, mid ai__11-12, high ai__13) control mislabelled 250",low
+gt__024_Nowak_2002__r551,024_Nowak_2002,MATCH,024_Nowak_2002__ai__3,"Leaf Ca, Boston fern, elevated vs 350. Single Ca leaf row (ai__3). CO2 contrast same cell; AI labelled elevated 1200 but paper Methods state 350 vs 1000 (GT correct), an AI CO2-level misread of the same single elevated treatment",high
+gt__024_Nowak_2002__r552,024_Nowak_2002,MATCH,024_Nowak_2002__ai__2,"Leaf K, single K leaf row ai__2; same elevated-vs-350 contrast (AI 1200 vs GT 1000 = elevated-level misread of same cell)",high
+gt__024_Nowak_2002__r553,024_Nowak_2002,MATCH,024_Nowak_2002__ai__4,"Leaf Mg, single Mg leaf row ai__4; same elevated-vs-350 contrast (AI 1200 vs GT 1000)",high
+gt__024_Nowak_2002__r554,024_Nowak_2002,MATCH,024_Nowak_2002__ai__0,"Leaf N, single N leaf row ai__0; same elevated-vs-350 contrast (AI 1200 vs GT 1000)",high
+gt__024_Nowak_2002__r555,024_Nowak_2002,MATCH,024_Nowak_2002__ai__1,"Leaf P, single P leaf row ai__1; same elevated-vs-350 contrast (AI 1200 vs GT 1000)",high
+gt__025_Guo_2011__r668,025_Guo_2011,AMBIGUOUS,025_Guo_2011__ai__10,"Rice Cd seeds at grain maturity, 1st sowing (harvest 2006) = Fig 3d. AI has two Fig 3d rows (ai__10, ai__11) that are identical descriptors; also neither AI row records the soil Cd-spike level (GT=Cd 0 / unspiked)",low
+gt__025_Guo_2011__r669,025_Guo_2011,AMBIGUOUS,025_Guo_2011__ai__9,"Rice Cd shoots(above_ground) grain maturity, 1st sowing (2006) = Fig 3c. AI has two Fig 3c rows (ai__9, ai__25); soil Cd-spike level not recorded by AI (GT=Cd 0)",low
+gt__025_Guo_2011__r670,025_Guo_2011,MATCH,025_Guo_2011__ai__12,"Rice Cd seeds grain maturity, 2nd sowing (harvest 2007) = Fig 3f; AI ai__12 is the only Fig 3f row",med
+gt__025_Guo_2011__r671,025_Guo_2011,MATCH,025_Guo_2011__ai__26,"Rice Cd shoots(above_ground) grain maturity, 2nd sowing (2007) = Fig 3e; AI ai__26 is the only Fig 3e row",med
+gt__025_Guo_2011__r672,025_Guo_2011,MATCH,025_Guo_2011__ai__0,"Rice Cu seeds grain maturity, 1st sowing (2006) = Fig 1d; AI ai__0 is the only Fig 1d row",med
+gt__025_Guo_2011__r673,025_Guo_2011,MATCH,025_Guo_2011__ai__16,"Rice Cu shoots(above_ground) grain maturity, 1st sowing (2006) = Fig 1c; AI ai__16 is the only Fig 1c row",med
+gt__025_Guo_2011__r674,025_Guo_2011,MATCH,025_Guo_2011__ai__3,"Rice Cu seeds grain maturity, 2nd sowing (2007) = Fig 1f; AI ai__3 is the only Fig 1f row",med
+gt__025_Guo_2011__r675,025_Guo_2011,AMBIGUOUS,025_Guo_2011__ai__1,"Rice Cu shoots(above_ground) grain maturity, 2nd sowing (2007) = Fig 1e. AI has two Fig 1e rows (ai__1, ai__2); soil Cu-spike level not recorded by AI (GT=Cu 0)",low
+gt__025_Guo_2011__r1450,025_Guo_2011,MATCH,025_Guo_2011__ai__13,"Wheat Cd seeds grain maturity, 1st wheat sowing (harvest 2007) = Fig 4d; AI ai__13 is the only Fig 4d row",med
+gt__025_Guo_2011__r1451,025_Guo_2011,NO_MATCH,,"Wheat Cd shoots(above_ground) grain maturity, 1st wheat sowing (2007) = Fig 4c. AI extracted no Fig 4c row (only Fig 4a midtillering ai__27/28 and Fig 4e GM-2nd ai__29)",med
+gt__025_Guo_2011__r1452,025_Guo_2011,MATCH,025_Guo_2011__ai__14,"Wheat Cd seeds grain maturity, 2nd wheat sowing (harvest 2008) = Fig 4f; AI ai__14 is the only Fig 4f row",med
+gt__025_Guo_2011__r1453,025_Guo_2011,MATCH,025_Guo_2011__ai__29,"Wheat Cd shoots(above_ground) grain maturity, 2nd wheat sowing (2008) = Fig 4e; AI ai__29 is the only Fig 4e row",med
+gt__025_Guo_2011__r1454,025_Guo_2011,AMBIGUOUS,025_Guo_2011__ai__4,"Wheat Cu seeds grain maturity, 1st wheat sowing (2007) = Fig 2d. AI has two Fig 2d rows (ai__4, ai__5); soil Cu-spike level not recorded (GT=Cu 0)",low
+gt__025_Guo_2011__r1455,025_Guo_2011,NO_MATCH,,"Wheat Cu shoots(above_ground) grain maturity, 1st wheat sowing (2007) = Fig 2c. AI extracted no Fig 2c row (only Fig 2a midtillering, 2b panicle-init, 2e/2f GM-2nd)",med
+gt__025_Guo_2011__r1456,025_Guo_2011,AMBIGUOUS,025_Guo_2011__ai__7,"Wheat Cu seeds grain maturity, 2nd wheat sowing (2008) = Fig 2f. AI has two Fig 2f rows (ai__7, ai__8); soil Cu-spike level not recorded (GT=Cu 0)",low
+gt__025_Guo_2011__r1457,025_Guo_2011,AMBIGUOUS,025_Guo_2011__ai__6,"Wheat Cu shoots(above_ground) grain maturity, 2nd wheat sowing (2008) = Fig 2e. AI has two Fig 2e rows (ai__6, ai__21); soil Cu-spike level not recorded (GT=Cu 0)",low
+gt__026_Seneweera_1997__r614,026_Seneweera_1997,NO_MATCH,,"Blades(foliar) Ca, Jarrah, averaged over 6 P treatments (pooled timepoint). AI only emitted per-P-level blade Ca rows (ai__1/9/17/25/33/41 and Jarrah ai__65 at p0); no P-pooled blade average exists",med
+gt__026_Seneweera_1997__r615,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__69,"Grain Ca, Jarrah, P0, 700vs350 = Fig 3b. AI ai__69 is the only grain Ca row (Fig 3b, p0)",high
+gt__026_Seneweera_1997__r616,026_Seneweera_1997,NO_MATCH,,"Grain Ca, Jarrah, P120. AI only extracted grain Ca at p0 (Fig 3b, ai__69); no P120 grain Ca row",med
+gt__026_Seneweera_1997__r617,026_Seneweera_1997,NO_MATCH,,"Grain Ca, Jarrah, P240. AI grain Ca only at p0",med
+gt__026_Seneweera_1997__r618,026_Seneweera_1997,NO_MATCH,,"Grain Ca, Jarrah, P30. AI grain Ca only at p0",med
+gt__026_Seneweera_1997__r619,026_Seneweera_1997,NO_MATCH,,"Grain Ca, Jarrah, P480. AI grain Ca only at p0",med
+gt__026_Seneweera_1997__r620,026_Seneweera_1997,NO_MATCH,,"Grain Ca, Jarrah, P60. AI grain Ca only at p0",med
+gt__026_Seneweera_1997__r621,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__71,"Grain Fe, Jarrah, P0, 700vs350 = Fig 4b. AI ai__71 is the only grain Fe row (Fig 4b, p0)",high
+gt__026_Seneweera_1997__r622,026_Seneweera_1997,NO_MATCH,,"Grain Fe, Jarrah, P120. AI grain Fe only at p0 (Fig 4b)",med
+gt__026_Seneweera_1997__r623,026_Seneweera_1997,NO_MATCH,,"Grain Fe, Jarrah, P240. AI grain Fe only at p0",med
+gt__026_Seneweera_1997__r624,026_Seneweera_1997,NO_MATCH,,"Grain Fe, Jarrah, P30. AI grain Fe only at p0",med
+gt__026_Seneweera_1997__r625,026_Seneweera_1997,NO_MATCH,,"Grain Fe, Jarrah, P480. AI grain Fe only at p0",med
+gt__026_Seneweera_1997__r626,026_Seneweera_1997,NO_MATCH,,"Grain Fe, Jarrah, P60. AI grain Fe only at p0",med
+gt__026_Seneweera_1997__r627,026_Seneweera_1997,NO_MATCH,,"Blades(foliar) N, Jarrah, averaged over 6 P treatments (pooled). AI only emitted per-P-level blade N rows (ai__2/10/18/26/34/42 and Jarrah ai__66 at p0); no P-pooled blade average",med
+gt__026_Seneweera_1997__r628,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__48,"Grain N, Jarrah, P0, 700vs350 = Table 2; AI ai__48 is grain N p0",high
+gt__026_Seneweera_1997__r629,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__54,"Grain N, P120, Table 2; AI ai__54 is grain N p120",high
+gt__026_Seneweera_1997__r630,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__56,"Grain N, P240, Table 2; AI ai__56 is grain N p240",high
+gt__026_Seneweera_1997__r631,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__50,"Grain N, P30, Table 2; AI ai__50 is grain N p30",high
+gt__026_Seneweera_1997__r632,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__58,"Grain N, P480, Table 2; AI ai__58 is grain N p480",high
+gt__026_Seneweera_1997__r633,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__52,"Grain N, P60, Table 2; AI ai__52 is grain N p60",high
+gt__026_Seneweera_1997__r634,026_Seneweera_1997,NO_MATCH,,"Blades(foliar) P, Jarrah, averaged over 6 P treatments (pooled). AI only emitted per-P-level blade P rows (ai__0/8/16/24/32/40 and Jarrah ai__64 at p0); no P-pooled blade average",med
+gt__026_Seneweera_1997__r635,026_Seneweera_1997,AMBIGUOUS,026_Seneweera_1997__ai__49,"Grain P, Jarrah, P0, Table 2. Two AI grain-P-p0 rows: ai__49 (blank-cultivar Table 2) and ai__68 (Jarrah-labelled Table 2) describe the same cell",low
+gt__026_Seneweera_1997__r636,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__55,"Grain P, P120, Table 2; AI ai__55 is grain P p120",high
+gt__026_Seneweera_1997__r637,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__57,"Grain P, P240, Table 2; AI ai__57 is grain P p240",high
+gt__026_Seneweera_1997__r638,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__51,"Grain P, P30, Table 2; AI ai__51 is grain P p30",high
+gt__026_Seneweera_1997__r639,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__59,"Grain P, P480, Table 2; AI ai__59 is grain P p480",high
+gt__026_Seneweera_1997__r640,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__53,"Grain P, P60, Table 2; AI ai__53 is grain P p60",high
+gt__026_Seneweera_1997__r641,026_Seneweera_1997,NO_MATCH,,"Blades(foliar) Zn, Jarrah, averaged over 6 P treatments (pooled). AI only emitted per-P-level blade Zn rows (ai__3/11/19/27/35/43 and Jarrah ai__67 at p0); no P-pooled blade average",med
+gt__026_Seneweera_1997__r642,026_Seneweera_1997,MATCH,026_Seneweera_1997__ai__70,"Grain Zn, Jarrah, P0, 700vs350 = Fig 4a. AI ai__70 is the only grain Zn row (Fig 4a, p0)",high
+gt__026_Seneweera_1997__r643,026_Seneweera_1997,NO_MATCH,,"Grain Zn, Jarrah, P120. AI grain Zn only at p0 (Fig 4a)",med
+gt__026_Seneweera_1997__r644,026_Seneweera_1997,NO_MATCH,,"Grain Zn, Jarrah, P240. AI grain Zn only at p0",med
+gt__026_Seneweera_1997__r645,026_Seneweera_1997,NO_MATCH,,"Grain Zn, Jarrah, P30. AI grain Zn only at p0",med
+gt__026_Seneweera_1997__r646,026_Seneweera_1997,NO_MATCH,,"Grain Zn, Jarrah, P480. AI grain Zn only at p0",med
+gt__026_Seneweera_1997__r647,026_Seneweera_1997,NO_MATCH,,"Grain Zn, Jarrah, P60. AI grain Zn only at p0",med
+gt__027_Peet_1986__r179,027_Peet_1986,MATCH,027_Peet_1986__ai__6,"Figure 4, Ca foliar cucumber eCO2 1000/amb 350; AI element=Ca matches GT Element=Ca (cultivar 'Calypso' on AI side; GT species-level cucumber, single species)",high
+gt__027_Peet_1986__r180,027_Peet_1986,AMBIGUOUS,027_Peet_1986__ai__3,"Figure 4, K foliar; AI has two duplicate K rows (ai__3, ai__4, both Chipper/Duke); GT is single K observation - picked first; duplicate AI rows make exact counterpart indeterminate",med
+gt__027_Peet_1986__r181,027_Peet_1986,MATCH,027_Peet_1986__ai__7,"Figure 4, Mg foliar cucumber; AI element=Mg (Calypso) matches GT Element=Mg",high
+gt__027_Peet_1986__r182,027_Peet_1986,NO_MATCH,,"Figure 4, Mn foliar cucumber; no AI row reports element Mn (AI extracted N,K,P,Ca,Mg,starch only)",high
+gt__027_Peet_1986__r183,027_Peet_1986,AMBIGUOUS,027_Peet_1986__ai__0,"Figure 4, N foliar; AI has three duplicate N rows (ai__0,1,2 all Chipper/Duke); GT single N observation - picked first; triplicate AI rows make exact counterpart indeterminate",med
+gt__027_Peet_1986__r184,027_Peet_1986,MATCH,027_Peet_1986__ai__5,"Figure 4, P foliar cucumber; AI element=P (Calypso) matches GT Element=P",high
+gt__028_Mishra_2011__r694,028_Mishra_2011,MATCH,028_Mishra_2011__ai__12,"Figure 3a, B foliar (leaf) Pelargonium hortorum eCO2 700/amb 370; GT element=B tissue=foliar matches AI leaf->foliar B (Fig 3a). GT AdditionalInfo='avg of three B treatments' (pooled) but the only foliar/leaf B observation on AI side is Fig 3a; AI also has root B (3b) which maps to edible, not foliar",high
+gt__028_Mishra_2011__r695,028_Mishra_2011,MATCH,028_Mishra_2011__ai__16,"Figure 4a, P foliar (leaf) Pelargonium hortorum; GT element=P tissue=foliar matches AI leaf->foliar P (Fig 4a)",high
+gt__029_Kuehny_1991__r137,029_Kuehny_1991,NO_MATCH,,"GT=Chrysanthemum morifolium foliar B, eCO2 675/amb 350, spring. PDF filed as 029_Kuehny_1991 is actually Cao & Tibbitts 1997 (potato leaves, varied CO2); AI extracted potato cultivars (Norland/Denali/Russet Burbank), CO2 500->1000/1500/2000, only N/P/K/Ca/Mg - a different study entirely",high
+gt__029_Kuehny_1991__r138,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar B winter; AI is Cao&Tibbitts potato study,high
+gt__029_Kuehny_1991__r139,029_Kuehny_1991,NO_MATCH,,"GT=Chrysanthemum foliar Ca spring eCO2 675/350; AI Ca is potato (Cao&Tibbitts) eCO2 1000-2000/500, no season",high
+gt__029_Kuehny_1991__r140,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Ca winter; AI is potato study,high
+gt__029_Kuehny_1991__r141,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Cu spring; AI is potato study with no Cu,high
+gt__029_Kuehny_1991__r142,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Cu winter; AI is potato study with no Cu,high
+gt__029_Kuehny_1991__r143,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Fe spring; AI is potato study with no Fe,high
+gt__029_Kuehny_1991__r144,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Fe winter; AI is potato study with no Fe,high
+gt__029_Kuehny_1991__r145,029_Kuehny_1991,NO_MATCH,,"GT=Chrysanthemum foliar K spring eCO2 675/350; AI K is potato (Cao&Tibbitts) eCO2 1000-2000/500, no season",high
+gt__029_Kuehny_1991__r146,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar K winter; AI is potato study,high
+gt__029_Kuehny_1991__r147,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Mg spring; AI Mg is potato study eCO2 1000-2000/500,high
+gt__029_Kuehny_1991__r148,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Mg winter; AI is potato study,high
+gt__029_Kuehny_1991__r149,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Mn spring; AI is potato study with no Mn,high
+gt__029_Kuehny_1991__r150,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Mn winter; AI is potato study with no Mn,high
+gt__029_Kuehny_1991__r151,029_Kuehny_1991,NO_MATCH,,"GT=Chrysanthemum foliar N spring eCO2 675/350; AI N is potato (Cao&Tibbitts) eCO2 1000-2000/500, no season",high
+gt__029_Kuehny_1991__r152,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar N winter; AI is potato study,high
+gt__029_Kuehny_1991__r153,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar P spring; AI P is potato study eCO2 1000-2000/500,high
+gt__029_Kuehny_1991__r154,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar P winter; AI is potato study,high
+gt__029_Kuehny_1991__r155,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar S spring; AI is potato study with no S,high
+gt__029_Kuehny_1991__r156,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar S winter; AI is potato study with no S,high
+gt__029_Kuehny_1991__r157,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Zn spring; AI is potato study with no Zn,high
+gt__029_Kuehny_1991__r158,029_Kuehny_1991,NO_MATCH,,GT=Chrysanthemum foliar Zn winter; AI is potato study with no Zn,high
+gt__030_Wroblewitz_2013__r341,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__28,"Table 4, Theresa Cu grain N100 2000; AI ai__28 = Cu Theresa n100 y2000",high
+gt__030_Wroblewitz_2013__r342,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__30,"Table 4, Theresa Cu grain N100 2003; AI ai__30 = Cu Theresa n100 y2003",high
+gt__030_Wroblewitz_2013__r343,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__27,"Table 4, Theresa Cu grain N50 2000; AI ai__27 = Cu Theresa n50 y2000",high
+gt__030_Wroblewitz_2013__r344,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__29,"Table 4, Theresa Cu grain N50 2003; AI ai__29 = Cu Theresa n50 y2003",high
+gt__030_Wroblewitz_2013__r345,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__36,"Table 4, Theresa Fe grain N100 2000; AI ai__36 = Fe Theresa n100 y2000",high
+gt__030_Wroblewitz_2013__r346,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__38,"Table 4, Theresa Fe grain N100 2003; AI ai__38 = Fe Theresa n100 y2003",high
+gt__030_Wroblewitz_2013__r347,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__35,"Table 4, Theresa Fe grain N50 2000; AI ai__35 = Fe Theresa n50 y2000",high
+gt__030_Wroblewitz_2013__r348,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__37,"Table 4, Theresa Fe grain N50 2003; AI ai__37 = Fe Theresa n50 y2003",high
+gt__030_Wroblewitz_2013__r349,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__32,"Table 4, Theresa Mn grain N100 2000; AI ai__32 = Mn Theresa n100 y2000",high
+gt__030_Wroblewitz_2013__r350,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__34,"Table 4, Theresa Mn grain N100 2003; AI ai__34 = Mn Theresa n100 y2003",high
+gt__030_Wroblewitz_2013__r351,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__31,"Table 4, Theresa Mn grain N50 2000; AI ai__31 = Mn Theresa n50 y2000",high
+gt__030_Wroblewitz_2013__r352,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__33,"Table 4, Theresa Mn grain N50 2003; AI ai__33 = Mn Theresa n50 y2003",high
+gt__030_Wroblewitz_2013__r353,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__20,"Table 4, Theresa Na grain N100 2000; AI ai__20 = Na Theresa n100 y2000",high
+gt__030_Wroblewitz_2013__r354,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__22,"Table 4, Theresa Na grain N100 2003; AI ai__22 = Na Theresa n100 y2003",high
+gt__030_Wroblewitz_2013__r355,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__19,"Table 4, Theresa Na grain N50 2000; AI ai__19 = Na Theresa n50 y2000",high
+gt__030_Wroblewitz_2013__r356,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__21,"Table 4, Theresa Na grain N50 2003; AI ai__21 = Na Theresa n50 y2003",high
+gt__030_Wroblewitz_2013__r357,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__24,"Table 4, Theresa Zn grain N100 2000; AI ai__24 = Zn Theresa n100 y2000",high
+gt__030_Wroblewitz_2013__r358,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__26,"Table 4, Theresa Zn grain N100 2003; AI ai__26 = Zn Theresa n100 y2003",high
+gt__030_Wroblewitz_2013__r359,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__23,"Table 4, Theresa Zn grain N50 2000; AI ai__23 = Zn Theresa n50 y2000",high
+gt__030_Wroblewitz_2013__r360,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__25,"Table 4, Theresa Zn grain N50 2003; AI ai__25 = Zn Theresa n50 y2003",high
+gt__030_Wroblewitz_2013__r1245,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__8,"Table 3, Batis Cu grain N100 2002; AI ai__8 = Cu Batis n100 y2002",high
+gt__030_Wroblewitz_2013__r1246,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__10,"Table 3, Batis Cu grain N100 2005; AI ai__10 = Cu Batis n100 y2005",high
+gt__030_Wroblewitz_2013__r1247,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__7,"Table 3, Batis Cu grain N50 2002; AI ai__7 = Cu Batis n50 y2002",high
+gt__030_Wroblewitz_2013__r1248,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__9,"Table 3, Batis Cu grain N50 2005; AI ai__9 = Cu Batis n50 y2005",high
+gt__030_Wroblewitz_2013__r1249,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__16,"Table 3, Batis Fe grain N100 2002; AI ai__16 = Fe Batis n100 y2002",high
+gt__030_Wroblewitz_2013__r1250,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__18,"Table 3, Batis Fe grain N100 2005; AI ai__18 = Fe Batis n100 y2005",high
+gt__030_Wroblewitz_2013__r1251,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__15,"Table 3, Batis Fe grain N50 2002; AI ai__15 = Fe Batis n50 y2002",high
+gt__030_Wroblewitz_2013__r1252,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__17,"Table 3, Batis Fe grain N50 2005; AI ai__17 = Fe Batis n50 y2005",high
+gt__030_Wroblewitz_2013__r1253,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__12,"Table 3, Batis Mn grain N100 2002; AI ai__12 = Mn Batis n100 y2002",high
+gt__030_Wroblewitz_2013__r1254,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__14,"Table 3, Batis Mn grain N100 2005; AI ai__14 = Mn Batis n100 y2005",high
+gt__030_Wroblewitz_2013__r1255,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__11,"Table 3, Batis Mn grain N50 2002; AI ai__11 = Mn Batis n50 y2002",high
+gt__030_Wroblewitz_2013__r1256,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__13,"Table 3, Batis Mn grain N50 2005; AI ai__13 = Mn Batis n50 y2005",high
+gt__030_Wroblewitz_2013__r1257,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__1,"Table 3, Batis Na grain N100 2002; AI ai__1 = Na Batis n100 y2002",high
+gt__030_Wroblewitz_2013__r1258,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__2,"Table 3, Batis Na grain N100 2005; AI ai__2 = Na Batis n100 y2005",high
+gt__030_Wroblewitz_2013__r1259,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__0,"Table 3, Batis Na grain N50 2002; AI ai__0 = Na Batis n50 y2002",high
+gt__030_Wroblewitz_2013__r1260,030_Wroblewitz_2013,NO_MATCH,,"Table 3, Batis Na grain N50 2005; AI Table 3 Na rows are ai__0(n50/2002), ai__1(n100/2002), ai__2(n100/2005) only - no n50/2005 Na row extracted",high
+gt__030_Wroblewitz_2013__r1261,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__4,"Table 3, Batis Zn grain N100 2002; AI ai__4 = Zn Batis n100 y2002",high
+gt__030_Wroblewitz_2013__r1262,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__6,"Table 3, Batis Zn grain N100 2005; AI ai__6 = Zn Batis n100 y2005",high
+gt__030_Wroblewitz_2013__r1263,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__3,"Table 3, Batis Zn grain N50 2002; AI ai__3 = Zn Batis n50 y2002",high
+gt__030_Wroblewitz_2013__r1264,030_Wroblewitz_2013,MATCH,030_Wroblewitz_2013__ai__5,"Table 3, Batis Zn grain N50 2005; AI ai__5 = Zn Batis n50 y2005",high
+gt__031_Pal_2003__r1120,031_Pal_2003,MATCH,031_Pal_2003__ai__15,"Table 3, organic carbon (%) foliar Pusa Jayant eCO2 600+-50/amb 350+-20 (AI encodes tolerances 50/20); AI element 'organic carbon'->c is the single C observation, matches GT Element=C",high
+gt__031_Pal_2003__r1121,031_Pal_2003,AMBIGUOUS,031_Pal_2003__ai__6,"Table 3, calcium (%) foliar Pusa Jayant; AI has three duplicate Ca rows (ai__6,7,8, likely 3 cuts/harvests); GT single Ca value - picked first; triplicate AI rows make exact counterpart indeterminate",med
+gt__031_Pal_2003__r1122,031_Pal_2003,AMBIGUOUS,031_Pal_2003__ai__9,"Table 3, iron (ppm) foliar Pusa Jayant; AI has three duplicate Fe rows (ai__9,10,11); GT single Fe value - picked first; triplicate AI rows make exact counterpart indeterminate",med
+gt__031_Pal_2003__r1123,031_Pal_2003,AMBIGUOUS,031_Pal_2003__ai__0,"Table 3, nitrogen (%) foliar Pusa Jayant; AI has three duplicate N rows (ai__0,1,2); GT single N value - picked first; triplicate AI rows make exact counterpart indeterminate",med
+gt__031_Pal_2003__r1124,031_Pal_2003,AMBIGUOUS,031_Pal_2003__ai__3,"Table 3, phosphorus (%) foliar Pusa Jayant; AI has three duplicate P rows (ai__3,4,5); GT single P value - picked first; triplicate AI rows make exact counterpart indeterminate",med
+gt__032_Kanowski_2001__r24,032_Kanowski_2001,MATCH,032_Kanowski_2001__ai__4,"Fig 1d Ca, Alphitonia petriei, Basalt soil; AI ai__4 = ca/foliar/alphitonia_petriei__basalt matches element x species x soil-disambiguator",high
+gt__032_Kanowski_2001__r25,032_Kanowski_2001,MATCH,032_Kanowski_2001__ai__3,"Fig 1d Ca, Alphitonia petriei, Rhyolite; AI ai__3 = ca/foliar/alphitonia_petriei__rhyolite",high
+gt__032_Kanowski_2001__r26,032_Kanowski_2001,NO_MATCH,,"GT K (potassium), Alphitonia, Basalt; AI extracted no K element for this paper (only N,P,Ca,Na + non-mineral phenolics/thickness)",high
+gt__032_Kanowski_2001__r27,032_Kanowski_2001,NO_MATCH,,"GT K, Alphitonia, Rhyolite; AI extracted no K element",high
+gt__032_Kanowski_2001__r28,032_Kanowski_2001,NO_MATCH,,"GT N, Alphitonia, Basalt; AI N for Alphitonia exists only for Rhyolite (ai__0), no Basalt N row extracted",high
+gt__032_Kanowski_2001__r29,032_Kanowski_2001,MATCH,032_Kanowski_2001__ai__0,"Fig 1a N, Alphitonia petriei, Rhyolite; AI ai__0 = n/foliar/alphitonia_petriei__rhyolite",high
+gt__032_Kanowski_2001__r30,032_Kanowski_2001,MATCH,032_Kanowski_2001__ai__7,"Fig 1e Na, Alphitonia petriei, Basalt; AI ai__7 = na/foliar/alphitonia_petriei__basalt",high
+gt__032_Kanowski_2001__r31,032_Kanowski_2001,NO_MATCH,,"GT Na, Alphitonia, Rhyolite; AI Na rows are ai__7 (Alphitonia/Basalt) and ai__8 (Flindersia/Rhyolite) only; no Alphitonia-Rhyolite Na extracted",high
+gt__032_Kanowski_2001__r32,032_Kanowski_2001,NO_MATCH,,"GT P, Alphitonia, Basalt; AI P for Alphitonia exists only for Rhyolite (ai__2), no Basalt P row",high
+gt__032_Kanowski_2001__r33,032_Kanowski_2001,MATCH,032_Kanowski_2001__ai__2,"Fig 1b P, Alphitonia petriei, Rhyolite; AI ai__2 = p/foliar/alphitonia_petriei__rhyolite",high
+gt__032_Kanowski_2001__r228,032_Kanowski_2001,AMBIGUOUS,,"GT Ca Flindersia brayleyana with NO soil coordinate (AdditionalInfo blank); GT itself flags UNDETERMINABLE_COLLISION (r228/r229 share key). AI Flindersia Ca rows are soil-split (ai__5 rhyolite, ai__6 basalt); cannot assign collapsed GT row to a specific soil without outcome values",low
+gt__032_Kanowski_2001__r229,032_Kanowski_2001,AMBIGUOUS,,"GT Ca Flindersia, no soil coordinate; GT-flagged collision with r228. AI splits Flindersia Ca by soil (ai__5/ai__6); indeterminate without values",low
+gt__032_Kanowski_2001__r230,032_Kanowski_2001,AMBIGUOUS,,"GT K Flindersia, no soil; AI extracted no K element at all, and GT flags collision r230/r231",low
+gt__032_Kanowski_2001__r231,032_Kanowski_2001,AMBIGUOUS,,"GT K Flindersia, no soil; AI extracted no K element; GT flags collision r230/r231",low
+gt__032_Kanowski_2001__r232,032_Kanowski_2001,AMBIGUOUS,,"GT N Flindersia, no soil coordinate; GT flags collision r232/r233. AI has Flindersia N only for Basalt (ai__1); cannot resolve collapsed GT row",low
+gt__032_Kanowski_2001__r233,032_Kanowski_2001,AMBIGUOUS,,"GT N Flindersia, no soil; GT flags collision r232/r233. AI Flindersia N only Basalt (ai__1); indeterminate",low
+gt__032_Kanowski_2001__r234,032_Kanowski_2001,AMBIGUOUS,,"GT Na Flindersia, no soil; GT flags collision r234/r235. AI Flindersia Na only Rhyolite (ai__8); indeterminate",low
+gt__032_Kanowski_2001__r235,032_Kanowski_2001,AMBIGUOUS,,"GT Na Flindersia, no soil; GT flags collision r234/r235. AI Flindersia Na only Rhyolite (ai__8); indeterminate",low
+gt__032_Kanowski_2001__r236,032_Kanowski_2001,AMBIGUOUS,,"GT P Flindersia, no soil; GT flags collision r236/r237. AI has no Flindersia P row (only Alphitonia/Rhyolite P, ai__2); indeterminate",low
+gt__032_Kanowski_2001__r237,032_Kanowski_2001,AMBIGUOUS,,"GT P Flindersia, no soil; GT flags collision r236/r237. AI has no Flindersia P row; indeterminate",low
+gt__033_Johnson_2003__r848,033_Johnson_2003,NO_MATCH,,"GT=Quercus geminata foliar B, eco2_725_amb_375 (scrub-oak paper). AI extracted the Johnson-2003 sweetgum-plantation paper (Table 4: blank species, foliage/litterfall/fine-root pools, 542 ppm). Species (Quercus vs sweetgum), CO2 (725 vs 542) and tissue structure do not align",high
+gt__033_Johnson_2003__r849,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar Ca 725/375; AI sweetgum paper, blank species, 542 ppm",high
+gt__033_Johnson_2003__r850,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar Cu 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r851,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar Fe 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r852,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar K 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r853,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar Mg 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r854,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar Mn 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r855,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar N 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r856,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar P 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r857,033_Johnson_2003,NO_MATCH,,GT Quercus geminata foliar S 725/375; AI sweetgum (and AI extracted no S element at all),high
+gt__033_Johnson_2003__r858,033_Johnson_2003,NO_MATCH,,"GT Quercus geminata foliar Zn 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r869,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar B 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r870,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar Ca 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r871,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar Cu 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r872,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar Fe 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r873,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar K 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r874,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar Mg 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r875,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar Mn 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r876,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar N 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r877,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar P 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__033_Johnson_2003__r878,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar S 725/375; AI sweetgum, no S element",high
+gt__033_Johnson_2003__r879,033_Johnson_2003,NO_MATCH,,"GT Quercus myrtifolia foliar Zn 725/375; AI sweetgum, blank species, 542 ppm",high
+gt__034_Johnson_1997__r782,034_Johnson_1997,NO_MATCH,,"GT=Pinus ponderosa 'Laws.' needles B, eco2_700_amb_350, unfertilized, 3rd yr (Johnson et al 1997 ponderosa pine). AI extracted Quercus geminata/myrtifolia scrub-oak leaf at 350/370 ppm (mislabeled 034 PDF = Johnson 2003 scrub oak). Species (Pinus vs Quercus), CO2, fertilization and year dimensions do not align",high
+gt__034_Johnson_1997__r783,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles Ca, 700/350, unfertilized; AI = Quercus scrub oak 350/370",high
+gt__034_Johnson_1997__r784,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles Cu, 1993, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r785,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles Fe, 1993, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r786,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles K, 3rd yr, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r787,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles Mg, 3rd yr, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r788,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles Mn, 1993, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r789,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles N, 3rd yr, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r790,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles P, 3rd yr, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r791,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles S, 3rd yr, unfertilized; AI = Quercus scrub oak",high
+gt__034_Johnson_1997__r792,034_Johnson_1997,NO_MATCH,,"GT Pinus ponderosa needles Zn, 1993, unfertilized; AI = Quercus scrub oak",high
+gt__035_Oksanen_2005__r52,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__9,"Table 8 foliar B, Betula pendula clones 4&80 pooled, pooled CO2; AI ai__9 = b/foliar/clones_4_and_80_pooled/pooled. GT 'Roth'+'2 clones' == AI pooled clones 4&80. A duplicate foliar B row (ai__44) also exists in Table 8",med
+gt__035_Oksanen_2005__r53,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__3,"Table 8 foliar Ca, clones 4&80 pooled; AI ai__3 = ca/foliar/clones_4_and_80_pooled. Duplicate foliar Ca (ai__38) also present",med
+gt__035_Oksanen_2005__r54,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__8,"Table 8 foliar Cu, clones 4&80 pooled; AI ai__8 = cu/foliar/clones_4_and_80_pooled. Duplicate foliar Cu (ai__43) also present",med
+gt__035_Oksanen_2005__r55,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__2,"Table 8 foliar K, clones 4&80 pooled; AI ai__2 = k/foliar/clones_4_and_80_pooled. Duplicate foliar K (ai__37) also present",med
+gt__035_Oksanen_2005__r56,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__4,"Table 8 foliar Mg, clones 4&80 pooled; AI ai__4 = mg/foliar/clones_4_and_80_pooled. Duplicate foliar Mg (ai__39) also present",med
+gt__035_Oksanen_2005__r57,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__5,"Table 8 foliar Mn, clones 4&80 pooled; AI ai__5 = mn/foliar/clones_4_and_80_pooled. Duplicate foliar Mn (ai__40) also present",med
+gt__035_Oksanen_2005__r58,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__0,"Table 8 foliar N, clones 4&80 pooled; AI ai__0 = n/foliar/clones_4_and_80_pooled. N appears only once in the foliar/leaf Table-8 set, so unambiguous",high
+gt__035_Oksanen_2005__r59,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__1,"Table 8 foliar P, clones 4&80 pooled; AI ai__1 = p/foliar/clones_4_and_80_pooled. Duplicate foliar P (ai__36) also present",med
+gt__035_Oksanen_2005__r60,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__10,"Table 8 foliar S, clones 4&80 pooled; AI ai__10 = s/foliar/clones_4_and_80_pooled. Duplicate foliar S (ai__45) also present",med
+gt__035_Oksanen_2005__r61,035_Oksanen_2005,MATCH,035_Oksanen_2005__ai__7,"Table 8 foliar Zn, clones 4&80 pooled; AI ai__7 = zn/foliar/clones_4_and_80_pooled. Duplicate foliar Zn (ai__42) also present",med
+gt__036_Schenk_1997__r464,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__30,"Table 1 (mg/g conc) Ca 1992. PDF Table 1 has 3 species-columns in order Perennial ryegrass|White clover|Total. AI emitted 3 descriptor-identical blank-species rows per element-year (Ca block ai__30-35); positional 1st triplet member (ai__30) = ryegrass/1992. Species not in AI descriptors, only inferable from column order",low
+gt__036_Schenk_1997__r465,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__31,"Table 1 Ca 1993, ryegrass column (order pos1); AI ai__31 (blank species). Species only by column order",low
+gt__036_Schenk_1997__r466,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__12,"Table 1 K 1992, ryegrass column (K block ai__12-17, pos1=ai__12); blank species",low
+gt__036_Schenk_1997__r467,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__13,"Table 1 K 1993, ryegrass column (ai__13); blank species",low
+gt__036_Schenk_1997__r468,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__24,"Table 1 Mg 1992, ryegrass column (Mg block ai__24-29, pos1=ai__24); blank species",low
+gt__036_Schenk_1997__r469,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__25,"Table 1 Mg 1993, ryegrass column (ai__25); blank species",low
+gt__036_Schenk_1997__r470,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__0,"Table 1 N 1992, ryegrass column (N block ai__0-5, pos1=ai__0); blank species",low
+gt__036_Schenk_1997__r471,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__1,"Table 1 N 1993, ryegrass column (ai__1); blank species",low
+gt__036_Schenk_1997__r472,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__36,"Table 1 Na 1992, ryegrass column (Na block ai__36-41, pos1=ai__36); blank species",low
+gt__036_Schenk_1997__r473,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__37,"Table 1 Na 1993, ryegrass column (ai__37); blank species",low
+gt__036_Schenk_1997__r474,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__6,"Table 1 P 1992, ryegrass column (P block ai__6-11, pos1=ai__6); blank species",low
+gt__036_Schenk_1997__r475,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__7,"Table 1 P 1993, ryegrass column (ai__7); blank species",low
+gt__036_Schenk_1997__r476,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__18,"Table 1 S 1992, ryegrass column (S block ai__18-23, pos1=ai__18); blank species",low
+gt__036_Schenk_1997__r477,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__19,"Table 1 S 1993, ryegrass column (ai__19); blank species",low
+gt__036_Schenk_1997__r1135,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__32,"Table 1 Ca 1992, white-clover column (order pos2 of Ca block = ai__32); blank species. Trifolium repens = clover column per PDF",low
+gt__036_Schenk_1997__r1136,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__33,"Table 1 Ca 1993, clover column (ai__33); blank species",low
+gt__036_Schenk_1997__r1137,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__14,"Table 1 K 1992, clover column (K block pos2 = ai__14); blank species",low
+gt__036_Schenk_1997__r1138,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__15,"Table 1 K 1993, clover column (ai__15); blank species",low
+gt__036_Schenk_1997__r1139,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__26,"Table 1 Mg 1992, clover column (Mg block pos2 = ai__26); blank species",low
+gt__036_Schenk_1997__r1140,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__27,"Table 1 Mg 1993, clover column (ai__27); blank species",low
+gt__036_Schenk_1997__r1141,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__2,"Table 1 N 1992, clover column (N block pos2 = ai__2); blank species",low
+gt__036_Schenk_1997__r1142,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__3,"Table 1 N 1993, clover column (ai__3); blank species",low
+gt__036_Schenk_1997__r1143,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__38,"Table 1 Na 1992, clover column (Na block pos2 = ai__38); blank species",low
+gt__036_Schenk_1997__r1144,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__39,"Table 1 Na 1993, clover column (ai__39); blank species",low
+gt__036_Schenk_1997__r1145,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__8,"Table 1 P 1992, clover column (P block pos2 = ai__8); blank species",low
+gt__036_Schenk_1997__r1146,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__9,"Table 1 P 1993, clover column (ai__9); blank species",low
+gt__036_Schenk_1997__r1147,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__20,"Table 1 S 1992, clover column (S block pos2 = ai__20); blank species",low
+gt__036_Schenk_1997__r1148,036_Schenk_1997,AMBIGUOUS,036_Schenk_1997__ai__21,"Table 1 S 1993, clover column (ai__21); blank species",low
+gt__037_de_2000__r335,037_de_2000,MATCH,037_de_2000__ai__1,"Fig 3b 'shoot Fe concentration' (mmol/kg shoot DW) = mineral concentration ratio; matches GT Fe shoot conc. ai__0 is 'shoot Fe content' (per-shoot amount, not concentration); ai__2 is chlorophyll/SPAD (non-mineral). Element Fe x shoot/above_ground x eCO2 800/amb 400 all align.",high
+gt__038_Newbery_1995__r18,038_Newbery_1995,AMBIGUOUS,038_Newbery_1995__ai__3,"GT C, above_ground, pooled ('avg of 10 treatments') = concentration ratio. Table 5 holds %C concentration (matches); Table 4 holds total C g/shoot content (excluded). AI duplicated each Table 5 element many times (C at ai__3,7,11,...); first C occurrence chosen. Multiple identical AI duplicates make exact cell indeterminate.",med
+gt__038_Newbery_1995__r19,038_Newbery_1995,AMBIGUOUS,038_Newbery_1995__ai__0,"GT K, above_ground, pooled = concentration. Table 5 %K (ai__0,4,8,...); first occurrence chosen. Table 4 mg/shoot K is content (excluded). Multiple identical Table 5 K duplicates -> exact cell indeterminate.",med
+gt__038_Newbery_1995__r20,038_Newbery_1995,AMBIGUOUS,038_Newbery_1995__ai__2,"GT N, above_ground, pooled = concentration. Table 5 %N (ai__2,6,10,...); first occurrence chosen. Table 4 mg/shoot N is content (excluded). Multiple identical Table 5 N duplicates -> exact cell indeterminate.",med
+gt__038_Newbery_1995__r21,038_Newbery_1995,AMBIGUOUS,038_Newbery_1995__ai__1,"GT P, above_ground, pooled = concentration. Table 5 %P (ai__1,5,9,...); first occurrence chosen. Table 4 mg/shoot P is content (excluded). Multiple identical Table 5 P duplicates -> exact cell indeterminate.",med
+gt__039_Heagle_1993__r1151,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted for this paper.,high
+gt__039_Heagle_1993__r1152,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1153,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1154,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1155,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1156,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1157,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1158,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1159,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1160,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1161,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1162,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1163,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1164,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1165,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1166,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1167,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1168,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1169,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1170,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1171,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__039_Heagle_1993__r1172,039_Heagle_1993,NO_MATCH,,AI CSV contains header only; no observations extracted.,high
+gt__040_Pfirrmann_1996__r710,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__42,"GT '-K, 1988 needles' C -> Table 4 (1988-year needles, mean of clones 773+399). AI clone 'mean of 399 and 773' = GT species-mean (n_species_in_ref=1). Table 4 -K C = ai__42 (dup ai__44).",med
+gt__040_Pfirrmann_1996__r711,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__41,"GT '+K, 1988 needles' C -> Table 4 +K C = ai__41 (dup ai__43). Table 4 = previous-1988 needles per PDF caption.",med
+gt__040_Pfirrmann_1996__r712,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__58,"GT '-K, 1988 needles' Ca -> Table 4 -K Ca = ai__58 (dup ai__60).",med
+gt__040_Pfirrmann_1996__r713,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__57,"GT '+K, 1988 needles' Ca -> Table 4 +K Ca = ai__57 (dup ai__59).",med
+gt__040_Pfirrmann_1996__r714,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__70,"GT '-K, 1988 needles' Cu -> Table 4 -K Cu = ai__70 (dup ai__72).",med
+gt__040_Pfirrmann_1996__r715,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__69,"GT '+K, 1988 needles' Cu -> Table 4 +K Cu = ai__69 (dup ai__71).",med
+gt__040_Pfirrmann_1996__r716,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__78,"GT '-K, 1988 needles' Fe -> Table 4 -K Fe = ai__78 (dup ai__80).",med
+gt__040_Pfirrmann_1996__r717,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__77,"GT '+K, 1988 needles' Fe -> Table 4 +K Fe = ai__77 (dup ai__79).",med
+gt__040_Pfirrmann_1996__r718,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__50,"GT '-K, 1988 needles' K -> Table 4 -K K = ai__50 (dup ai__52).",med
+gt__040_Pfirrmann_1996__r719,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__49,"GT '+K, 1988 needles' K -> Table 4 +K K = ai__49 (dup ai__51).",med
+gt__040_Pfirrmann_1996__r720,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__54,"GT '-K, 1988 needles' Mg -> Table 4 -K Mg = ai__54 (dup ai__56).",med
+gt__040_Pfirrmann_1996__r721,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__53,"GT '+K, 1988 needles' Mg -> Table 4 +K Mg = ai__53 (dup ai__55).",med
+gt__040_Pfirrmann_1996__r722,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__82,"GT '-K, 1988 needles' Mn -> Table 4 -K Mn = ai__82 (dup ai__84).",med
+gt__040_Pfirrmann_1996__r723,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__81,"GT '+K, 1988 needles' Mn -> Table 4 +K Mn = ai__81 (dup ai__83).",med
+gt__040_Pfirrmann_1996__r724,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__46,"GT '-K, 1988 needles' N -> Table 4 -K N = ai__46 (dup ai__48).",med
+gt__040_Pfirrmann_1996__r725,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__45,"GT '+K, 1988 needles' N -> Table 4 +K N = ai__45 (dup ai__47).",med
+gt__040_Pfirrmann_1996__r726,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__66,"GT '-K, 1988 needles' P -> Table 4 -K P = ai__66 (dup ai__68).",med
+gt__040_Pfirrmann_1996__r727,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__65,"GT '+K, 1988 needles' P -> Table 4 +K P = ai__65 (dup ai__67).",med
+gt__040_Pfirrmann_1996__r728,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__62,"GT '-K, 1988 needles' S -> Table 4 -K S = ai__62 (dup ai__64).",med
+gt__040_Pfirrmann_1996__r729,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__61,"GT '+K, 1988 needles' S -> Table 4 +K S = ai__61 (dup ai__63).",med
+gt__040_Pfirrmann_1996__r730,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__74,"GT '-K, 1988 needles' Zn -> Table 4 -K Zn = ai__74 (dup ai__76).",med
+gt__040_Pfirrmann_1996__r731,040_Pfirrmann_1996,AMBIGUOUS,040_Pfirrmann_1996__ai__73,"GT '+K, 1988 needles' Zn -> Table 4 +K Zn = ai__73 (dup ai__75).",med
+gt__041_Mjwara_1996__r696,041_Mjwara_1996,NO_MATCH,,"GT Ca foliar Contender eCO2 700/360. AI extracted only one row (N, Fig 7); no Ca row present.",high
+gt__041_Mjwara_1996__r697,041_Mjwara_1996,NO_MATCH,,GT Cu foliar Contender. AI extracted only N (Fig 7); no Cu row.,high
+gt__041_Mjwara_1996__r698,041_Mjwara_1996,NO_MATCH,,GT Fe foliar Contender. AI extracted only N (Fig 7); no Fe row.,high
+gt__041_Mjwara_1996__r699,041_Mjwara_1996,NO_MATCH,,GT K foliar Contender. AI extracted only N (Fig 7); no K row.,high
+gt__041_Mjwara_1996__r700,041_Mjwara_1996,NO_MATCH,,GT Mg foliar Contender. AI extracted only N (Fig 7); no Mg row.,high
+gt__041_Mjwara_1996__r701,041_Mjwara_1996,NO_MATCH,,GT Mn foliar Contender. AI extracted only N (Fig 7); no Mn row.,high
+gt__041_Mjwara_1996__r702,041_Mjwara_1996,MATCH,041_Mjwara_1996__ai__0,"GT N foliar Contender eCO2 700/360 matches AI ai__0 element=N, cultivar Contender, leaf->foliar, eco2_700_amb_360 (Fig 7). Sole element shared on both sides.",high
+gt__041_Mjwara_1996__r703,041_Mjwara_1996,NO_MATCH,,GT P foliar Contender. AI extracted only N (Fig 7); no P row.,high
+gt__041_Mjwara_1996__r704,041_Mjwara_1996,NO_MATCH,,GT Zn foliar Contender. AI extracted only N (Fig 7); no Zn row.,high
+gt__042_Luomala_2005__r793,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__19,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r794,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__16,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r795,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__18,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r796,042_Luomala_2005,MATCH,042_Luomala_2005__ai__21,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). Zn/Fe/Mn appear only in this AI block.",high
+gt__042_Luomala_2005__r797,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__14,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r798,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__15,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r799,042_Luomala_2005,MATCH,042_Luomala_2005__ai__22,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). Zn/Fe/Mn appear only in this AI block.",high
+gt__042_Luomala_2005__r800,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__12,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r801,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__13,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r802,042_Luomala_2005,AMBIGUOUS,042_Luomala_2005__ai__17,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). AI also extracted a duplicate partial block (ai0-10) for this element (single-year, same Table 5 cell).",med
+gt__042_Luomala_2005__r803,042_Luomala_2005,MATCH,042_Luomala_2005__ai__20,"Table 5 needle nutrient conc, Pinus sylvestris current needles; GT pooled-across-cohorts maps to AI complete 11-element foliar set (block ai12-22, yr1997). Zn/Fe/Mn appear only in this AI block.",high
+gt__043_Natali_2009__r426,043_Natali_2009,MATCH,043_Natali_2009__ai__20,"Table 6 trace-element leaf conc; element=al, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r427,043_Natali_2009,MATCH,043_Natali_2009__ai__30,"Table 6 trace-element leaf conc; element=al, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r428,043_Natali_2009,MATCH,043_Natali_2009__ai__21,"Table 6 trace-element leaf conc; element=co, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r429,043_Natali_2009,MATCH,043_Natali_2009__ai__31,"Table 6 trace-element leaf conc; element=co, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r430,043_Natali_2009,MATCH,043_Natali_2009__ai__24,"Table 6 trace-element leaf conc; element=cu, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r431,043_Natali_2009,MATCH,043_Natali_2009__ai__34,"Table 6 trace-element leaf conc; element=cu, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r432,043_Natali_2009,MATCH,043_Natali_2009__ai__25,"Table 6 trace-element leaf conc; element=fe, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r433,043_Natali_2009,MATCH,043_Natali_2009__ai__35,"Table 6 trace-element leaf conc; element=fe, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r434,043_Natali_2009,MATCH,043_Natali_2009__ai__26,"Table 6 trace-element leaf conc; element=mn, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r435,043_Natali_2009,MATCH,043_Natali_2009__ai__36,"Table 6 trace-element leaf conc; element=mn, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r436,043_Natali_2009,MATCH,043_Natali_2009__ai__27,"Table 6 trace-element leaf conc; element=mo, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r437,043_Natali_2009,MATCH,043_Natali_2009__ai__37,"Table 6 trace-element leaf conc; element=mo, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r438,043_Natali_2009,MATCH,043_Natali_2009__ai__28,"Table 6 trace-element leaf conc; element=ni, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r439,043_Natali_2009,MATCH,043_Natali_2009__ai__38,"Table 6 trace-element leaf conc; element=ni, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r440,043_Natali_2009,MATCH,043_Natali_2009__ai__22,"Table 6 trace-element leaf conc; element=pb, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r441,043_Natali_2009,MATCH,043_Natali_2009__ai__32,"Table 6 trace-element leaf conc; element=pb, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r442,043_Natali_2009,MATCH,043_Natali_2009__ai__23,"Table 6 trace-element leaf conc; element=v, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r443,043_Natali_2009,MATCH,043_Natali_2009__ai__33,"Table 6 trace-element leaf conc; element=v, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r444,043_Natali_2009,MATCH,043_Natali_2009__ai__29,"Table 6 trace-element leaf conc; element=zn, species/site=liquidambar_styraciflua__duke (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r445,043_Natali_2009,MATCH,043_Natali_2009__ai__39,"Table 6 trace-element leaf conc; element=zn, species/site=liquidambar_styraciflua__ornl (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r816,043_Natali_2009,MATCH,043_Natali_2009__ai__10,"Table 6 trace-element leaf conc; element=al, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r817,043_Natali_2009,MATCH,043_Natali_2009__ai__11,"Table 6 trace-element leaf conc; element=co, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r818,043_Natali_2009,MATCH,043_Natali_2009__ai__14,"Table 6 trace-element leaf conc; element=cu, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r819,043_Natali_2009,MATCH,043_Natali_2009__ai__15,"Table 6 trace-element leaf conc; element=fe, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r820,043_Natali_2009,MATCH,043_Natali_2009__ai__16,"Table 6 trace-element leaf conc; element=mn, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r821,043_Natali_2009,MATCH,043_Natali_2009__ai__17,"Table 6 trace-element leaf conc; element=mo, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r822,043_Natali_2009,MATCH,043_Natali_2009__ai__18,"Table 6 trace-element leaf conc; element=ni, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r823,043_Natali_2009,MATCH,043_Natali_2009__ai__12,"Table 6 trace-element leaf conc; element=pb, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r824,043_Natali_2009,MATCH,043_Natali_2009__ai__13,"Table 6 trace-element leaf conc; element=v, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r825,043_Natali_2009,MATCH,043_Natali_2009__ai__19,"Table 6 trace-element leaf conc; element=zn, species/site=pinus_taeda__1yr_old (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r838,043_Natali_2009,MATCH,043_Natali_2009__ai__40,"Table 6 trace-element leaf conc; element=al, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r839,043_Natali_2009,MATCH,043_Natali_2009__ai__41,"Table 6 trace-element leaf conc; element=co, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r840,043_Natali_2009,MATCH,043_Natali_2009__ai__44,"Table 6 trace-element leaf conc; element=cu, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r841,043_Natali_2009,MATCH,043_Natali_2009__ai__45,"Table 6 trace-element leaf conc; element=fe, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r842,043_Natali_2009,MATCH,043_Natali_2009__ai__46,"Table 6 trace-element leaf conc; element=mn, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r843,043_Natali_2009,MATCH,043_Natali_2009__ai__47,"Table 6 trace-element leaf conc; element=mo, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r844,043_Natali_2009,MATCH,043_Natali_2009__ai__48,"Table 6 trace-element leaf conc; element=ni, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r845,043_Natali_2009,MATCH,043_Natali_2009__ai__42,"Table 6 trace-element leaf conc; element=pb, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r846,043_Natali_2009,MATCH,043_Natali_2009__ai__43,"Table 6 trace-element leaf conc; element=v, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r847,043_Natali_2009,MATCH,043_Natali_2009__ai__49,"Table 6 trace-element leaf conc; element=zn, species/site=quercus_chapmanii (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r859,043_Natali_2009,MATCH,043_Natali_2009__ai__50,"Table 6 trace-element leaf conc; element=al, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r860,043_Natali_2009,MATCH,043_Natali_2009__ai__51,"Table 6 trace-element leaf conc; element=co, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r861,043_Natali_2009,MATCH,043_Natali_2009__ai__54,"Table 6 trace-element leaf conc; element=cu, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r862,043_Natali_2009,MATCH,043_Natali_2009__ai__55,"Table 6 trace-element leaf conc; element=fe, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r863,043_Natali_2009,MATCH,043_Natali_2009__ai__56,"Table 6 trace-element leaf conc; element=mn, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r864,043_Natali_2009,MATCH,043_Natali_2009__ai__57,"Table 6 trace-element leaf conc; element=mo, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r865,043_Natali_2009,MATCH,043_Natali_2009__ai__58,"Table 6 trace-element leaf conc; element=ni, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r866,043_Natali_2009,MATCH,043_Natali_2009__ai__52,"Table 6 trace-element leaf conc; element=pb, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r867,043_Natali_2009,MATCH,043_Natali_2009__ai__53,"Table 6 trace-element leaf conc; element=v, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r868,043_Natali_2009,MATCH,043_Natali_2009__ai__59,"Table 6 trace-element leaf conc; element=zn, species/site=quercus_geminata (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r880,043_Natali_2009,MATCH,043_Natali_2009__ai__60,"Table 6 trace-element leaf conc; element=al, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r881,043_Natali_2009,MATCH,043_Natali_2009__ai__61,"Table 6 trace-element leaf conc; element=co, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r882,043_Natali_2009,MATCH,043_Natali_2009__ai__64,"Table 6 trace-element leaf conc; element=cu, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r883,043_Natali_2009,MATCH,043_Natali_2009__ai__65,"Table 6 trace-element leaf conc; element=fe, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r884,043_Natali_2009,MATCH,043_Natali_2009__ai__66,"Table 6 trace-element leaf conc; element=mn, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r885,043_Natali_2009,MATCH,043_Natali_2009__ai__67,"Table 6 trace-element leaf conc; element=mo, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r886,043_Natali_2009,NO_MATCH,,"Table 6, element=ni, species=quercus_myrtifolia",high
+gt__043_Natali_2009__r887,043_Natali_2009,MATCH,043_Natali_2009__ai__62,"Table 6 trace-element leaf conc; element=pb, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r888,043_Natali_2009,MATCH,043_Natali_2009__ai__63,"Table 6 trace-element leaf conc; element=v, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__043_Natali_2009__r889,043_Natali_2009,MATCH,043_Natali_2009__ai__68,"Table 6 trace-element leaf conc; element=zn, species/site=quercus_myrtifolia (GT 1yr_old Pinus=AI pinus_taeda__1yr_old__duke; GT eCO2 730/380 OTC=AI ambient+350=730).",high
+gt__044_Housman_2012__r34,044_Housman_2012,MATCH,044_Housman_2012__ai__4,"Table 1 green-leaf MN conc, ambrosia_dumosa; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__044_Housman_2012__r35,044_Housman_2012,MATCH,044_Housman_2012__ai__1,"Table 1 green-leaf N conc, ambrosia_dumosa; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__044_Housman_2012__r36,044_Housman_2012,MATCH,044_Housman_2012__ai__2,"Table 1 green-leaf P conc, ambrosia_dumosa; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__044_Housman_2012__r37,044_Housman_2012,MATCH,044_Housman_2012__ai__5,"Table 1 green-leaf ZN conc, ambrosia_dumosa; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__044_Housman_2012__r480,044_Housman_2012,MATCH,044_Housman_2012__ai__18,"Table 1 green-leaf MN conc, lycium_pallidum; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__044_Housman_2012__r481,044_Housman_2012,MATCH,044_Housman_2012__ai__15,"Table 1 green-leaf N conc, lycium_pallidum; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__044_Housman_2012__r482,044_Housman_2012,MATCH,044_Housman_2012__ai__16,"Table 1 green-leaf P conc, lycium_pallidum; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__044_Housman_2012__r483,044_Housman_2012,MATCH,044_Housman_2012__ai__19,"Table 1 green-leaf ZN conc, lycium_pallidum; GT 'avg of rainfalls'/pooled = AI across-rainfall Table 1 mean. AI re-extracted Table 1 several times; first canonical green-leaf cell chosen (ai10-39 are redundant duplicates of the same cell; Fig2 resorption & Fig4 senesced-leaf rows excluded).",high
+gt__046_Porter_1984__r705,046_Porter_1984,AMBIGUOUS,046_Porter_1984__ai__7,"Table II leaf CA conc, Phaseolus 'Seafarer', 1200 vs 330 ppm. Table II reports two timepoints (7d & 14d); GT specifies no day (AdditionalInfo blank). Two equally-plausible AI rows: 7d=046_Porter_1984__ai__6, 14d=046_Porter_1984__ai__7. Representative=14d (final-timepoint).",low
+gt__046_Porter_1984__r706,046_Porter_1984,AMBIGUOUS,046_Porter_1984__ai__5,"Table II leaf K conc, Phaseolus 'Seafarer', 1200 vs 330 ppm. Table II reports two timepoints (7d & 14d); GT specifies no day (AdditionalInfo blank). Two equally-plausible AI rows: 7d=046_Porter_1984__ai__4, 14d=046_Porter_1984__ai__5. Representative=14d (final-timepoint).",low
+gt__046_Porter_1984__r707,046_Porter_1984,AMBIGUOUS,046_Porter_1984__ai__9,"Table II leaf MG conc, Phaseolus 'Seafarer', 1200 vs 330 ppm. Table II reports two timepoints (7d & 14d); GT specifies no day (AdditionalInfo blank). Two equally-plausible AI rows: 7d=046_Porter_1984__ai__8, 14d=046_Porter_1984__ai__9. Representative=14d (final-timepoint).",low
+gt__046_Porter_1984__r708,046_Porter_1984,AMBIGUOUS,046_Porter_1984__ai__1,"Table II leaf N conc, Phaseolus 'Seafarer', 1200 vs 330 ppm. Table II reports two timepoints (7d & 14d); GT specifies no day (AdditionalInfo blank). Two equally-plausible AI rows: 7d=046_Porter_1984__ai__0, 14d=046_Porter_1984__ai__1. Representative=14d (final-timepoint).",low
+gt__046_Porter_1984__r709,046_Porter_1984,AMBIGUOUS,046_Porter_1984__ai__3,"Table II leaf P conc, Phaseolus 'Seafarer', 1200 vs 330 ppm. Table II reports two timepoints (7d & 14d); GT specifies no day (AdditionalInfo blank). Two equally-plausible AI rows: 7d=046_Porter_1984__ai__2, 14d=046_Porter_1984__ai__3. Representative=14d (final-timepoint).",low
+gt__047_Rodenkirchen_2009__r206,047_Rodenkirchen_2009,NO_MATCH,,"GT Boron, fagus_sylvatica. AI Table 4 has 10 elements (N,P,K,Ca,Mg,S,Cu,Zn,Fe,Mn), no Boron column.",high
+gt__047_Rodenkirchen_2009__r207,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__3,"Table 4 total-seedling CA content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__3, +N=047_Rodenkirchen_2009__ai__13.",low
+gt__047_Rodenkirchen_2009__r208,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__6,"Table 4 total-seedling CU content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__6, +N=047_Rodenkirchen_2009__ai__16.",low
+gt__047_Rodenkirchen_2009__r209,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__8,"Table 4 total-seedling FE content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__8, +N=047_Rodenkirchen_2009__ai__18.",low
+gt__047_Rodenkirchen_2009__r210,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__2,"Table 4 total-seedling K content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__2, +N=047_Rodenkirchen_2009__ai__12.",low
+gt__047_Rodenkirchen_2009__r211,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__4,"Table 4 total-seedling MG content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__4, +N=047_Rodenkirchen_2009__ai__14.",low
+gt__047_Rodenkirchen_2009__r212,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__9,"Table 4 total-seedling MN content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__9, +N=047_Rodenkirchen_2009__ai__19.",low
+gt__047_Rodenkirchen_2009__r213,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__0,"Table 4 total-seedling N content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__0, +N=047_Rodenkirchen_2009__ai__10.",low
+gt__047_Rodenkirchen_2009__r214,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__1,"Table 4 total-seedling P content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__1, +N=047_Rodenkirchen_2009__ai__11.",low
+gt__047_Rodenkirchen_2009__r215,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__5,"Table 4 total-seedling S content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__5, +N=047_Rodenkirchen_2009__ai__15.",low
+gt__047_Rodenkirchen_2009__r216,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__7,"Table 4 total-seedling ZN content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (fagus_sylvatica). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__7, +N=047_Rodenkirchen_2009__ai__17.",low
+gt__047_Rodenkirchen_2009__r732,047_Rodenkirchen_2009,NO_MATCH,,"GT Boron, karst. AI Table 4 has 10 elements (N,P,K,Ca,Mg,S,Cu,Zn,Fe,Mn), no Boron column.",high
+gt__047_Rodenkirchen_2009__r733,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__3,"Table 4 total-seedling CA content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__3, +N=047_Rodenkirchen_2009__ai__13.",low
+gt__047_Rodenkirchen_2009__r734,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__6,"Table 4 total-seedling CU content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__6, +N=047_Rodenkirchen_2009__ai__16.",low
+gt__047_Rodenkirchen_2009__r735,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__8,"Table 4 total-seedling FE content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__8, +N=047_Rodenkirchen_2009__ai__18.",low
+gt__047_Rodenkirchen_2009__r736,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__2,"Table 4 total-seedling K content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__2, +N=047_Rodenkirchen_2009__ai__12.",low
+gt__047_Rodenkirchen_2009__r737,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__4,"Table 4 total-seedling MG content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__4, +N=047_Rodenkirchen_2009__ai__14.",low
+gt__047_Rodenkirchen_2009__r738,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__9,"Table 4 total-seedling MN content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__9, +N=047_Rodenkirchen_2009__ai__19.",low
+gt__047_Rodenkirchen_2009__r739,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__0,"Table 4 total-seedling N content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__0, +N=047_Rodenkirchen_2009__ai__10.",low
+gt__047_Rodenkirchen_2009__r740,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__1,"Table 4 total-seedling P content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__1, +N=047_Rodenkirchen_2009__ai__11.",low
+gt__047_Rodenkirchen_2009__r741,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__5,"Table 4 total-seedling S content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__5, +N=047_Rodenkirchen_2009__ai__15.",low
+gt__047_Rodenkirchen_2009__r742,047_Rodenkirchen_2009,AMBIGUOUS,047_Rodenkirchen_2009__ai__7,"Table 4 total-seedling ZN content, Picea abies (Karst.), eCO2~700 vs ~400 (GT 685/385). Paper is spruce-only; 2 ECM fungal groups (P.croceum/T.submollis) x (noN/+N). GT splits into 2 pseudo-species (karst). AI has 4 element-blocks (noN ai0-9, +N ai10-19, duplicate blocks ai20-39) with NO fungal-species label, and GT gives no N-condition -> counterpart indeterminate. Candidates: noN=047_Rodenkirchen_2009__ai__7, +N=047_Rodenkirchen_2009__ai__17.",low
+gt__048_Khan_2013__r484,048_Khan_2013,MATCH,048_Khan_2013__ai__27,"Table 4 elemental C(%), cultivar Astra; GT Element=C maps to AI element 'C (%)' (Table 4), not Vitamin C (Table 3)",high
+gt__048_Khan_2013__r485,048_Khan_2013,MATCH,048_Khan_2013__ai__6,"Table 4 Ca(%), cultivar Astra",high
+gt__048_Khan_2013__r486,048_Khan_2013,MATCH,048_Khan_2013__ai__25,"Table 4 Cd, cultivar Astra",high
+gt__048_Khan_2013__r487,048_Khan_2013,MATCH,048_Khan_2013__ai__23,"Table 4 Cr, cultivar Astra",high
+gt__048_Khan_2013__r488,048_Khan_2013,MATCH,048_Khan_2013__ai__21,"Table 4 Cu, cultivar Astra",high
+gt__048_Khan_2013__r489,048_Khan_2013,MATCH,048_Khan_2013__ai__15,"Table 4 Fe, cultivar Astra",high
+gt__048_Khan_2013__r490,048_Khan_2013,MATCH,048_Khan_2013__ai__10,"Table 4 K(%), cultivar Astra",high
+gt__048_Khan_2013__r491,048_Khan_2013,MATCH,048_Khan_2013__ai__8,"Table 4 Mg(%), cultivar Astra",high
+gt__048_Khan_2013__r492,048_Khan_2013,MATCH,048_Khan_2013__ai__13,"Table 4 Mn, cultivar Astra",high
+gt__048_Khan_2013__r493,048_Khan_2013,MATCH,048_Khan_2013__ai__2,"Table 4 N(%), cultivar Astra",high
+gt__048_Khan_2013__r494,048_Khan_2013,MATCH,048_Khan_2013__ai__19,"Table 4 Ni, cultivar Astra",high
+gt__048_Khan_2013__r495,048_Khan_2013,MATCH,048_Khan_2013__ai__17,"Table 4 Pb, cultivar Astra",high
+gt__048_Khan_2013__r496,048_Khan_2013,MATCH,048_Khan_2013__ai__4,"Table 4 S(%), cultivar Astra",high
+gt__048_Khan_2013__r497,048_Khan_2013,MATCH,048_Khan_2013__ai__11,"Table 4 Zn, cultivar Astra",high
+gt__048_Khan_2013__r498,048_Khan_2013,MATCH,048_Khan_2013__ai__28,"Table 4 elemental C(%), cultivar Eureka; not Vitamin C",high
+gt__048_Khan_2013__r499,048_Khan_2013,MATCH,048_Khan_2013__ai__7,"Table 4 Ca(%), cultivar Eureka",high
+gt__048_Khan_2013__r500,048_Khan_2013,MATCH,048_Khan_2013__ai__26,"Table 4 Cd, cultivar Eureka",high
+gt__048_Khan_2013__r501,048_Khan_2013,MATCH,048_Khan_2013__ai__24,"Table 4 Cr, cultivar Eureka",high
+gt__048_Khan_2013__r502,048_Khan_2013,MATCH,048_Khan_2013__ai__22,"Table 4 Cu, cultivar Eureka",high
+gt__048_Khan_2013__r503,048_Khan_2013,MATCH,048_Khan_2013__ai__16,"Table 4 Fe, cultivar Eureka",high
+gt__048_Khan_2013__r504,048_Khan_2013,NO_MATCH,,"Table 4 K(%), cultivar Eureka; AI extracted K only for Astra (ai__10), no Eureka K row present",high
+gt__048_Khan_2013__r505,048_Khan_2013,MATCH,048_Khan_2013__ai__9,"Table 4 Mg(%), cultivar Eureka",high
+gt__048_Khan_2013__r506,048_Khan_2013,MATCH,048_Khan_2013__ai__14,"Table 4 Mn, cultivar Eureka",high
+gt__048_Khan_2013__r507,048_Khan_2013,MATCH,048_Khan_2013__ai__3,"Table 4 N(%), cultivar Eureka",high
+gt__048_Khan_2013__r508,048_Khan_2013,MATCH,048_Khan_2013__ai__20,"Table 4 Ni, cultivar Eureka",high
+gt__048_Khan_2013__r509,048_Khan_2013,MATCH,048_Khan_2013__ai__18,"Table 4 Pb, cultivar Eureka",high
+gt__048_Khan_2013__r510,048_Khan_2013,MATCH,048_Khan_2013__ai__5,"Table 4 S(%), cultivar Eureka",high
+gt__048_Khan_2013__r511,048_Khan_2013,MATCH,048_Khan_2013__ai__12,"Table 4 Zn, cultivar Eureka",high
+gt__049_Singh_2013__r72,049_Singh_2013,MATCH,049_Singh_2013__ai__1,"Table 4 grain Ca, year 2010-11 (GT '20010-11' typo = 2010-11); single Brassica juncea cultivar (Czern=Pusa Tarak EJ-13), NF+CO2 vs NF",high
+gt__049_Singh_2013__r73,049_Singh_2013,MATCH,049_Singh_2013__ai__0,"Table 4 grain Ca, year 2009-10",high
+gt__049_Singh_2013__r74,049_Singh_2013,MATCH,049_Singh_2013__ai__9,"Table 4 grain Fe, year 2010-11",high
+gt__049_Singh_2013__r75,049_Singh_2013,MATCH,049_Singh_2013__ai__8,"Table 4 grain Fe, year 2009-10",high
+gt__049_Singh_2013__r76,049_Singh_2013,MATCH,049_Singh_2013__ai__3,"Table 4 grain Mg, year 2010-11",high
+gt__049_Singh_2013__r77,049_Singh_2013,MATCH,049_Singh_2013__ai__2,"Table 4 grain Mg, year 2009-10",high
+gt__049_Singh_2013__r78,049_Singh_2013,MATCH,049_Singh_2013__ai__5,"Table 4 grain S, year 2010-11",high
+gt__049_Singh_2013__r79,049_Singh_2013,MATCH,049_Singh_2013__ai__4,"Table 4 grain S, year 2009-10",high
+gt__049_Singh_2013__r80,049_Singh_2013,MATCH,049_Singh_2013__ai__7,"Table 4 grain Zn, year 2010-11",high
+gt__049_Singh_2013__r81,049_Singh_2013,MATCH,049_Singh_2013__ai__6,"Table 4 grain Zn, year 2009-10",high
+gt__050_Polley_2011__r62,050_Polley_2011,NO_MATCH,,"GT = per-species Bouteloua curtipendula C; AI has no per-species rows, only 'no species' and pooled 'Combined biomass of dominant grasses'. AI also never extracted element C",high
+gt__050_Polley_2011__r63,050_Polley_2011,NO_MATCH,,"GT Bouteloua curtipendula Ca per-species; AI only has species-blank or 'Combined biomass of dominant grasses' (pooled across species), not the individual species cell",med
+gt__050_Polley_2011__r64,050_Polley_2011,NO_MATCH,,GT Bouteloua Cu; AI never extracted element Cu,high
+gt__050_Polley_2011__r65,050_Polley_2011,NO_MATCH,,GT Bouteloua Fe; AI never extracted element Fe,high
+gt__050_Polley_2011__r66,050_Polley_2011,NO_MATCH,,GT Bouteloua K per-species; AI only species-blank/pooled K,med
+gt__050_Polley_2011__r67,050_Polley_2011,NO_MATCH,,GT Bouteloua Mg per-species; AI only species-blank/pooled Mg,med
+gt__050_Polley_2011__r68,050_Polley_2011,NO_MATCH,,GT Bouteloua Mn per-species; AI only species-blank/pooled Mn,med
+gt__050_Polley_2011__r69,050_Polley_2011,NO_MATCH,,GT Bouteloua N; AI never extracted element N,high
+gt__050_Polley_2011__r70,050_Polley_2011,NO_MATCH,,GT Bouteloua P per-species; AI only species-blank/pooled P,med
+gt__050_Polley_2011__r71,050_Polley_2011,NO_MATCH,,GT Bouteloua Zn; AI never extracted element Zn,high
+gt__050_Polley_2011__r925,050_Polley_2011,NO_MATCH,,GT Schizachyrium scoparium C; AI has no per-species rows nor element C,high
+gt__050_Polley_2011__r926,050_Polley_2011,NO_MATCH,,GT Schizachyrium Ca per-species; AI only species-blank/pooled,med
+gt__050_Polley_2011__r927,050_Polley_2011,NO_MATCH,,GT Schizachyrium Cu; AI never extracted element Cu,high
+gt__050_Polley_2011__r928,050_Polley_2011,NO_MATCH,,GT Schizachyrium Fe; AI never extracted element Fe,high
+gt__050_Polley_2011__r929,050_Polley_2011,NO_MATCH,,GT Schizachyrium K per-species; AI only species-blank/pooled K,med
+gt__050_Polley_2011__r930,050_Polley_2011,NO_MATCH,,GT Schizachyrium Mg per-species; AI only species-blank/pooled Mg,med
+gt__050_Polley_2011__r931,050_Polley_2011,NO_MATCH,,GT Schizachyrium Mn per-species; AI only species-blank/pooled Mn,med
+gt__050_Polley_2011__r932,050_Polley_2011,NO_MATCH,,GT Schizachyrium N; AI never extracted element N,high
+gt__050_Polley_2011__r933,050_Polley_2011,NO_MATCH,,GT Schizachyrium P per-species; AI only species-blank/pooled P,med
+gt__050_Polley_2011__r934,050_Polley_2011,NO_MATCH,,GT Schizachyrium Zn; AI never extracted element Zn,high
+gt__050_Polley_2011__r1083,050_Polley_2011,NO_MATCH,,GT Sorghastrum nutans C; AI has no per-species rows nor element C,high
+gt__050_Polley_2011__r1084,050_Polley_2011,NO_MATCH,,GT Sorghastrum Ca per-species; AI only species-blank/pooled Ca,med
+gt__050_Polley_2011__r1085,050_Polley_2011,NO_MATCH,,GT Sorghastrum Cu; AI never extracted element Cu,high
+gt__050_Polley_2011__r1086,050_Polley_2011,NO_MATCH,,GT Sorghastrum Fe; AI never extracted element Fe,high
+gt__050_Polley_2011__r1087,050_Polley_2011,NO_MATCH,,GT Sorghastrum K per-species; AI only species-blank/pooled K,med
+gt__050_Polley_2011__r1088,050_Polley_2011,NO_MATCH,,GT Sorghastrum Mg per-species; AI only species-blank/pooled Mg,med
+gt__050_Polley_2011__r1089,050_Polley_2011,NO_MATCH,,GT Sorghastrum Mn per-species; AI only species-blank/pooled Mn,med
+gt__050_Polley_2011__r1090,050_Polley_2011,NO_MATCH,,GT Sorghastrum N; AI never extracted element N,high
+gt__050_Polley_2011__r1091,050_Polley_2011,NO_MATCH,,GT Sorghastrum P per-species; AI only species-blank/pooled P,med
+gt__050_Polley_2011__r1092,050_Polley_2011,NO_MATCH,,GT Sorghastrum Zn; AI never extracted element Zn,high
+gt__051_Niu_2013__r44,051_Niu_2013,NO_MATCH,,GT = P in shoots under NH4 N-source; all AI rows are NO3 (n3) only — AI never extracted the NH4 condition,high
+gt__051_Niu_2013__r45,051_Niu_2013,MATCH,051_Niu_2013__ai__3,"Figure 1d 'P concentration in shoots' (above_ground), NO3 (n3), eCO2 800 vs amb 350; matches GT shoots P NO3",high
+gt__058_ONeill_1987__r446,058_ONeill_1987,MATCH,058_ONeill_1987__ai__19,Table 2 Al foliar concentration (mg/g DW); GT foliar conc maps to AI concentration block (not total-content/plant). Al only in concentration block ai__19,high
+gt__058_ONeill_1987__r447,058_ONeill_1987,MATCH,058_ONeill_1987__ai__15,Table 2 B foliar concentration (mg/g DW); B present only in ai__15 concentration block,high
+gt__058_ONeill_1987__r448,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__24,Table 2 Ba concentration; appears in both concentration blocks (ai__24 mg/g DW and duplicate ai__45 'mg g-1 dry weight'); picked complete block ai__24,med
+gt__058_ONeill_1987__r449,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__21,Table 2 Ca concentration; duplicated in ai__21 and ai__43; picked complete block ai__21,med
+gt__058_ONeill_1987__r450,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__18,Table 2 Cu concentration; duplicated in ai__18 and ai__41; picked complete block ai__18,med
+gt__058_ONeill_1987__r451,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__20,Table 2 Fe concentration; duplicated in ai__20 and ai__42; picked complete block ai__20,med
+gt__058_ONeill_1987__r452,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__17,Table 2 K concentration; duplicated in ai__17 and ai__40; picked complete block ai__17,med
+gt__058_ONeill_1987__r453,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__22,Table 2 Mg concentration; duplicated in ai__22 and ai__44; picked complete block ai__22,med
+gt__058_ONeill_1987__r454,058_ONeill_1987,MATCH,058_ONeill_1987__ai__47,Table 2 Mn concentration; Mn absent from primary concentration block (ai__13-25); only concentration Mn row is ai__47 ('mg g-1 dry weight'),med
+gt__058_ONeill_1987__r455,058_ONeill_1987,MATCH,058_ONeill_1987__ai__13,Table 2 N foliar concentration (mg/g DW); N only in ai__13 concentration block,high
+gt__058_ONeill_1987__r456,058_ONeill_1987,MATCH,058_ONeill_1987__ai__16,Table 2 P foliar concentration (mg/g DW); P only in ai__16 concentration block,high
+gt__058_ONeill_1987__r457,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__14,Table 2 S concentration; duplicated in ai__14 and ai__39; picked complete block ai__14,med
+gt__058_ONeill_1987__r458,058_ONeill_1987,MATCH,058_ONeill_1987__ai__23,Table 2 Sr foliar concentration (mg/g DW); Sr only in ai__23 concentration block,high
+gt__058_ONeill_1987__r459,058_ONeill_1987,AMBIGUOUS,058_ONeill_1987__ai__25,Table 2 Zn concentration; duplicated in ai__25 and ai__46; picked complete block ai__25,med

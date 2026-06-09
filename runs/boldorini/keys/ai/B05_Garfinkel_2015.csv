@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+B05_Garfinkel_2015__ai__0,ai,B05_Garfinkel_2015,crop_yield_under_predator,kale,exclusion,none,0,pooled,single_cell,leaves,absolute_control,30.0,24.4,Table 5,0,T:Bird exclosure (predator_group=Birds) || C:Open || outcome=Salable leaves,ai-decode

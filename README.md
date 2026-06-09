@@ -1,118 +1,75 @@
-# Meta-Analysis Extractor
+# Reproducibility Repository for the Environmental Evidence Resubmission
 
-![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)
-![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+This curated repository contains only the files needed to reproduce the reported analyses in the revised manuscript:
 
-Automated AI extraction of quantitative data from scientific PDFs for meta-analysis. A single general-purpose AI agent (Claude Opus 4.6) reads source PDFs directly and produces structured JSON — no domain-specific prompt templates, few-shot examples, or multi-model consensus required. Validated against three published plant science ground-truth datasets (1,184 observations, 87 papers) with formal ICC, CCC, TOST equivalence testing, and Bland-Altman analysis. An independently developed multi-model consensus pipeline (also included) confirms results across 1,889 observations with all r > 0.93 without ground truth.
+Agreement Between an AI-Assisted, Scaffolded Extraction Workflow and Published Human-Extracted Meta-Analysis Datasets: A Scope-Matched Equivalence Study Across Five Agricultural Meta-Analyses
 
-**Companion code for:** Halpern, M. (2026). "Breaking the Extraction Bottleneck: A Single AI Agent Achieves Equivalence with Published Meta-Analysis Data Across Three Agricultural Datasets." *Research Synthesis Methods*. Agricultural Research Organization -- Volcani Center, Israel.
+Legacy false starts, exploratory multi-model consensus code, working audits, local paths, source PDFs, and status trackers are intentionally excluded.
 
----
+> The previous full development codebase (the extraction tool and exploratory analyses that formerly occupied this repository) is preserved, unchanged, on the `dev-archive-pre-curation` branch and the `v1.0.0` tag, for anyone who needs it.
 
-## Validation Summary (Agent Extraction)
+## Primary Reproduction
 
-| Dataset | Domain | Papers | Obs | r | CCC | MAE | ICC(3,1) | TOST ±3pp |
-|---|---|---|---|---|---|---|---|---|
-| Loladze 2014 | CO₂ × plant minerals | 46 | 655 | 0.848 | 0.844 | 5.4 pp | 0.845 | p = 0.003 |
-| Hui 2023 | Zinc × wheat | 25 | 461 | 0.942 | 0.942 | 7.4 pp | 0.942 | p = 0.047 |
-| Li 2022 | Biostimulants × yield | 16 | 68 | 0.968 | 0.966 | 1.6 pp | 0.966 | p < 0.001 |
-
-Agent cost: ~$0.15/paper | Pipeline cost: ~$0.37/paper
-
----
-
-## Quick Start
+Run:
 
 ```bash
-git clone https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture.git
-cd Meta-analysis-extractor-agriculture
-python -m venv venv && source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env   # Then add your API keys
+python scope_matched_equivalence.py
 ```
 
-Run extraction on your own dataset:
+This regenerates the central scope-matched equivalence table and paired TOST margin ladder from the cleaned key tables in `runs/`.
+
+Expected output is stored in `EXPECTED_OUTPUT.txt`. On Windows:
+
+```powershell
+python .\scope_matched_equivalence.py > my_output.txt
+fc .\EXPECTED_OUTPUT.txt .\my_output.txt
+```
+
+## Optional Figures
 
 ```bash
-python meta_extract.py \
-  --config configs/my_dataset.json \
-  --input-dir /path/to/pdfs \
-  --output-dir output/my_dataset
+python make_figures.py          # fig1_concordance.png (cell-level concordance, §3.5.1),
+                                # figS2_diff_forest.png (Fig S2), figS3_margin_grid.png (Fig S3)
+python bland_altman_figS6.py    # figS6_bland_altman.png (Fig S6) + the numeric 95% LoA table (Table S10)
 ```
 
-See [REPRODUCE.md](REPRODUCE.md) for full reproduction instructions.
+Both write to `figures/` and require `matplotlib`; the primary numeric reproduction does not. Manuscript Figures S1 (flow schematic) and S5 (variance coverage) are not regenerated here (they need author-supplied schematic/dispersion inputs).
 
----
+## Supporting Analysis (outcome-blind line-by-line matching, §3.3 / Table S6)
 
-## Repository Structure
+The *supporting* (secondary) line-by-line analysis is deposited as canonical outputs and a generic join tool:
 
-```
-meta_analysis_extractor/
-├── meta_extract.py                 # Main entry point (CLI)
-├── consensus_pipeline.py           # Multi-model consensus extraction
-├── config.py                       # Model configuration and API routing
-├── core/                           # Orchestrator, LLM wrapper, state management
-├── modules/                        # Recon, extraction, gap-fill, export
-├── prompts/                        # LLM prompt templates
-├── mcp_server/                     # MCP server + CLI (server.py, cli.py, gt_matcher.py)
-├── configs/                        # Dataset-specific JSON configurations
-├── scripts/                        # Reusable utilities
-│   ├── formal_statistics.py        #   ICC, TOST, Bland-Altman, Cohen's d
-│   ├── sensitivity_loo.py          #   Leave-one-out sensitivity
-│   ├── variance_imputation.py      #   Variance imputation module
-│   ├── generate_agent_figures.py   #   Publication figure generation
-│   └── ...                         #   (15 scripts total)
-├── validate_full_46.py             # Loladze 2014 pipeline validation
-├── validate_hui2023.py             # Hui 2023 pipeline validation
-├── validate_li2022.py              # Li 2022 pipeline validation
-├── validate_agent_extraction.py    # Agent extraction validation (Loladze)
-├── validate_hui2023_agent.py       # Agent extraction validation (Hui)
-├── validate_li2022_agent.py        # Agent extraction validation (Li)
-├── agent_pipeline_agreement.py     # GT-free cross-method agreement
-├── validate_replication.py         # Run-to-run reproducibility
-├── reproduce_all.py                # Master reproduction script
-├── output/                         # Pre-computed extraction results (do not modify)
-├── input*/                         # PDF inputs by dataset
-├── archive/                        # Superseded/one-off scripts (organized by category)
-├── data/                           # Ontology and few-shot examples
-├── requirements.txt
-├── REPRODUCE.md                    # Full reproduction guide
-├── RESULTS_COMPENDIUM.md           # Complete validated results
-├── CITATION.cff
-└── LICENSE                         # MIT
-```
+- `join_and_score.py` — the deterministic, outcome-blind equality-join tool (no outcome value is used to choose a pairing). Generic CLI: `python join_and_score.py --ai <ai_keys> --gt <gt_keys> --out <dir>`.
+- `line_by_line_results/<dataset>/` — the canonical `report.json` (coverage, on-matched agreement) and `classification.csv` (per reference row: MATCH/AMBIGUOUS/NO_MATCH) behind Table S6; see `line_by_line_results/README.md` for per-dataset provenance.
+- `bland_altman_figS6.py` reads the bundled blind pairings (`runs/<ds_version>/pairings/`) to reproduce Figure S6 and the numeric limits of agreement (Table S10).
 
----
+## Official Dataset Labels
 
-## How It Works
+| Internal directory | Manuscript label | Role |
+|---|---|---|
+| `runs/hui_v4` | Hui et al. 2025 | Validation; clean corpus after eight mislabelled PDFs were excluded |
+| `runs/li2022_v2` | Li J et al. 2022 | Validation |
+| `runs/biochar_v2` | Li X et al. 2024 | Prospective holdout |
+| `runs/boldorini` | Boldorini et al. 2024 | Validation |
+| `runs/loladze_v2` | Loladze 2014 | Development-adjacent |
 
-### Agent Mode (Paper's Primary Method)
-A single AI agent (Claude Opus 4.6) reads each PDF and extracts structured JSON with one natural-language instruction per dataset. No few-shot examples, vision pipelines, or multi-model voting. Cost: ~$0.15/paper.
+The internal directory names are implementation keys only. The manuscript and generated output use the official labels above. The `runs/biochar_v3`, `runs/loladze_v3`, and `runs/li2022_v4` directories hold only the frozen blind *pairings* (and, for `li2022_v4`, the decoded keys) used by the supporting line-by-line/Bland-Altman analysis; the primary analysis uses the `_v2`/`hui_v4` key tables above.
 
-### Pipeline Mode (Independent Comparator)
-Three models (Claude Sonnet 4, Kimi K2.5, Gemini 3 Flash) independently extract each paper. Majority-vote consensus reconciles outputs and assigns confidence tiers (HIGH / MEDIUM / LOW). Cost: ~$0.37/paper.
+## Included Files
 
-Both methods are validated against the same ground-truth datasets. Their cross-method agreement (r > 0.93 on 1,889 observations without ground truth) provides circularity-free validation.
+| Path | Purpose |
+|---|---|
+| `scope_matched_equivalence.py` | Primary analysis script for scope-matched aggregate agreement and paired TOST margin sensitivity |
+| `runs/` | Cleaned AI/reference key tables used by the primary analysis |
+| `EXPECTED_OUTPUT.txt` | Locked expected output from `scope_matched_equivalence.py` |
+| `make_figures.py` | Optional: regenerates fig1_concordance / figS2 / figS3 from the key tables |
+| `bland_altman_figS6.py` | Optional: regenerates Figure S6 (Bland-Altman) and the numeric LoA (Table S10) from bundled blind pairings |
+| `join_and_score.py` | Deterministic outcome-blind join tool for the supporting line-by-line analysis (§3.3) |
+| `line_by_line_results/` | Canonical line-by-line outputs (report.json + classification.csv) behind Table S6 |
+| `figures/` | Generated figures (fig1, figS2, figS3, figS6) |
+| `run.ps1`, `run.sh` | Convenience wrappers for the primary analysis |
+| `requirements.txt` | Notes core/optional dependencies |
 
----
+## Exclusions
 
-## Citation
-
-```bibtex
-@article{halpern2026extraction,
-  title   = {Breaking the Extraction Bottleneck: A Single {AI} Agent Achieves
-             Equivalence with Published Meta-Analysis Data Across Three
-             Agricultural Datasets},
-  author  = {Halpern, Moshe},
-  journal = {Research Synthesis Methods},
-  year    = {2026},
-  note    = {Agricultural Research Organization -- Volcani Center, Israel.
-             Code: https://github.com/halpernmoshe/Meta-analysis-extractor-agriculture}
-}
-```
-
----
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
+Source PDFs are not redistributed because of publisher copyright. Legacy exploratory code, stale status files, internal audit prompts, and local Dropbox path records are not included because they are not needed to reproduce the resubmitted manuscript and were a source of reviewer confusion.

@@ -1,0 +1,37 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+207_Liu_2019__ai__1,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,0,y2010,single_cell,kg/ha,cofactor_matched_control,8800.0,8500.0,Fig 1a (approximate),1,C20N0 vs C0N0; 2010,ai-decode
+207_Liu_2019__ai__2,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,0,y2010,single_cell,kg/ha,cofactor_matched_control,8300.0,8500.0,Fig 1a (approximate),1,C40N0 vs C0N0; 2010,ai-decode
+207_Liu_2019__ai__3,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,150,y2010,single_cell,kg/ha,cofactor_matched_control,9200.0,9500.0,Fig 1a (approximate),1,C20N1 vs C0N1; 2010,ai-decode
+207_Liu_2019__ai__4,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,150,y2010,single_cell,kg/ha,cofactor_matched_control,9300.0,9500.0,Fig 1a (approximate),1,C40N1 vs C0N1; 2010,ai-decode
+207_Liu_2019__ai__5,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,0,y2011,single_cell,kg/ha,cofactor_matched_control,7200.0,7000.0,Fig 1a (approximate),1,C20N0 vs C0N0; 2011,ai-decode
+207_Liu_2019__ai__6,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,0,y2011,single_cell,kg/ha,cofactor_matched_control,6500.0,7000.0,Fig 1a (approximate),1,C40N0 vs C0N0; 2011,ai-decode
+207_Liu_2019__ai__7,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,150,y2011,single_cell,kg/ha,cofactor_matched_control,8500.0,9000.0,Fig 1a (approximate),1,C20N1 vs C0N1; 2011,ai-decode
+207_Liu_2019__ai__8,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,150,y2011,single_cell,kg/ha,cofactor_matched_control,8500.0,9000.0,Fig 1a (approximate),1,C40N1 vs C0N1; 2011,ai-decode
+207_Liu_2019__ai__9,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,0,y2012,single_cell,kg/ha,cofactor_matched_control,8000.0,8000.0,Fig 1a (approximate),1,C20N0 vs C0N0; 2012,ai-decode
+207_Liu_2019__ai__10,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,0,y2012,single_cell,kg/ha,cofactor_matched_control,8000.0,8000.0,Fig 1a (approximate),1,C40N0 vs C0N0; 2012,ai-decode
+207_Liu_2019__ai__11,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,150,y2012,single_cell,kg/ha,cofactor_matched_control,10000.0,10000.0,Fig 1a (approximate),1,C20N1 vs C0N1; 2012,ai-decode
+207_Liu_2019__ai__12,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,150,y2012,single_cell,kg/ha,cofactor_matched_control,10000.0,10000.0,Fig 1a (approximate),1,C40N1 vs C0N1; 2012,ai-decode
+207_Liu_2019__ai__13,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,0,y2013,single_cell,kg/ha,cofactor_matched_control,8200.0,8000.0,Fig 1a (approximate),1,C20N0 vs C0N0; 2013,ai-decode
+207_Liu_2019__ai__14,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,0,y2013,single_cell,kg/ha,cofactor_matched_control,8000.0,8000.0,Fig 1a (approximate),1,C40N0 vs C0N0; 2013,ai-decode
+207_Liu_2019__ai__15,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,150,y2013,single_cell,kg/ha,cofactor_matched_control,10500.0,10500.0,Fig 1a (approximate),1,C20N1 vs C0N1; 2013,ai-decode
+207_Liu_2019__ai__16,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,150,y2013,single_cell,kg/ha,cofactor_matched_control,10300.0,10500.0,Fig 1a (approximate),1,C40N1 vs C0N1; 2013,ai-decode
+207_Liu_2019__ai__17,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,0,y2014,single_cell,kg/ha,cofactor_matched_control,8500.0,8500.0,Fig 1a (approximate),1,C20N0 vs C0N0; 2014,ai-decode
+207_Liu_2019__ai__18,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,0,y2014,single_cell,kg/ha,cofactor_matched_control,8500.0,8500.0,Fig 1a (approximate),1,C40N0 vs C0N0; 2014,ai-decode
+207_Liu_2019__ai__19,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,150,y2014,single_cell,kg/ha,cofactor_matched_control,10500.0,10500.0,Fig 1a (approximate),1,C20N1 vs C0N1; 2014,ai-decode
+207_Liu_2019__ai__20,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,150,y2014,single_cell,kg/ha,cofactor_matched_control,10500.0,10500.0,Fig 1a (approximate),1,C40N1 vs C0N1; 2014,ai-decode
+207_Liu_2019__ai__21,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,0,y2015,single_cell,kg/ha,cofactor_matched_control,9000.0,8500.0,Fig 1a (approximate),1,C20N0 vs C0N0; 2015,ai-decode
+207_Liu_2019__ai__22,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,0,y2015,single_cell,kg/ha,cofactor_matched_control,9000.0,8500.0,Fig 1a (approximate),1,C40N0 vs C0N0; 2015,ai-decode
+207_Liu_2019__ai__23,ai,207_Liu_2019,crop_yield,rice,20,nitrogen,150,y2015,single_cell,kg/ha,cofactor_matched_control,10800.0,10500.0,Fig 1a (approximate),1,C20N1 vs C0N1; 2015,ai-decode
+207_Liu_2019__ai__24,ai,207_Liu_2019,crop_yield,rice,40,nitrogen,150,y2015,single_cell,kg/ha,cofactor_matched_control,11000.0,10500.0,Fig 1a (approximate),1,C40N1 vs C0N1; 2015,ai-decode
+207_Liu_2019__ai__25,ai,207_Liu_2019,crop_yield,wheat,20,nitrogen,0,y2011,single_cell,kg/ha,cofactor_matched_control,3500.0,3500.0,Fig 1b (approximate),1,C20N0 vs C0N0; 2011,ai-decode
+207_Liu_2019__ai__26,ai,207_Liu_2019,crop_yield,wheat,40,nitrogen,0,y2011,single_cell,kg/ha,cofactor_matched_control,3200.0,3500.0,Fig 1b (approximate),1,C40N0 vs C0N0; 2011,ai-decode
+207_Liu_2019__ai__27,ai,207_Liu_2019,crop_yield,wheat,20,nitrogen,150,y2011,single_cell,kg/ha,cofactor_matched_control,4500.0,4500.0,Fig 1b (approximate),1,C20N1 vs C0N1; 2011,ai-decode
+207_Liu_2019__ai__28,ai,207_Liu_2019,crop_yield,wheat,40,nitrogen,150,y2011,single_cell,kg/ha,cofactor_matched_control,4300.0,4500.0,Fig 1b (approximate),1,C40N1 vs C0N1; 2011,ai-decode
+207_Liu_2019__ai__29,ai,207_Liu_2019,crop_yield,wheat,20,nitrogen,0,y2014,single_cell,kg/ha,cofactor_matched_control,3500.0,3500.0,Fig 1b (approximate),1,C20N0 vs C0N0; 2014,ai-decode
+207_Liu_2019__ai__30,ai,207_Liu_2019,crop_yield,wheat,40,nitrogen,0,y2014,single_cell,kg/ha,cofactor_matched_control,3500.0,3500.0,Fig 1b (approximate),1,C40N0 vs C0N0; 2014,ai-decode
+207_Liu_2019__ai__31,ai,207_Liu_2019,crop_yield,wheat,20,nitrogen,150,y2014,single_cell,kg/ha,cofactor_matched_control,5000.0,5000.0,Fig 1b (approximate),1,C20N1 vs C0N1; 2014,ai-decode
+207_Liu_2019__ai__32,ai,207_Liu_2019,crop_yield,wheat,40,nitrogen,150,y2014,single_cell,kg/ha,cofactor_matched_control,5000.0,5000.0,Fig 1b (approximate),1,C40N1 vs C0N1; 2014,ai-decode
+207_Liu_2019__ai__33,ai,207_Liu_2019,crop_yield,wheat,20,nitrogen,0,y2015,single_cell,kg/ha,cofactor_matched_control,5500.0,4000.0,Fig 1b (approximate),1,C20N0 vs C0N0; 2015,ai-decode
+207_Liu_2019__ai__34,ai,207_Liu_2019,crop_yield,wheat,40,nitrogen,0,y2015,single_cell,kg/ha,cofactor_matched_control,6000.0,4000.0,Fig 1b (approximate),1,C40N0 vs C0N0; 2015,ai-decode
+207_Liu_2019__ai__35,ai,207_Liu_2019,crop_yield,wheat,20,nitrogen,150,y2015,single_cell,kg/ha,cofactor_matched_control,7000.0,6000.0,Fig 1b (approximate),1,C20N1 vs C0N1; 2015,ai-decode
+207_Liu_2019__ai__36,ai,207_Liu_2019,crop_yield,wheat,40,nitrogen,150,y2015,single_cell,kg/ha,cofactor_matched_control,7100.0,6000.0,"Fig 1b (approximate), text confirms 18.3%",1,C40N1 vs C0N1; 2015,ai-decode

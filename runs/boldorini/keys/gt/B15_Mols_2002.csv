@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+gt__B15_Mols_2002__id_27,gt,B15_Mols_2002,crop_yield_under_predator,apple,birds,none,0,pooled,single_cell,kg,absolute_control,4.65,7.76,Results,0,author=Mols year=2002 crop=Apple/Malus predat_id=Birds treatment=Exclusion study_year=2000 mean_t=4.65 mean_c=7.76,gt-col-decode

@@ -1,0 +1,2 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+B16_Saunders_2016__ai__B16_01,ai,B16_Saunders_2016,crop_yield_under_predator,apple,vertebrates,none,0,pooled,single_cell,%,absolute_control,14.0,19.0,Results + Figure 1,0,outcome='Fruit set'; treat_desc='Vertebrate exclusion'; ctrl_desc='Open'; pred_group='Vertebrates'; unit='%'; src='Results + Figure 1',ai-decode

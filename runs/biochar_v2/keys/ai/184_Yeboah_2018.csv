@@ -1,0 +1,10 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+184_Yeboah_2018__ai__1,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,0,y2014,single_cell,kg/ha,cofactor_matched_control,1603.0,1305.0,Table 5,0,BN0 (biochar + 0 N) vs CN0 (no carbon + 0 N); 2014,ai-decode
+184_Yeboah_2018__ai__2,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,50,y2014,single_cell,kg/ha,cofactor_matched_control,1905.0,1538.0,Table 5,0,BN50 (biochar + 50 N) vs CN50 (no carbon + 50 N); 2014,ai-decode
+184_Yeboah_2018__ai__3,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,100,y2014,single_cell,kg/ha,cofactor_matched_control,2139.0,1770.0,Table 5,0,BN100 (biochar + 100 N) vs CN100 (no carbon + 100 N); 2014,ai-decode
+184_Yeboah_2018__ai__4,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,0,y2015,single_cell,kg/ha,cofactor_matched_control,1789.0,1500.0,Table 5,0,BN0 (biochar + 0 N) vs CN0 (no carbon + 0 N); 2015,ai-decode
+184_Yeboah_2018__ai__5,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,50,y2015,single_cell,kg/ha,cofactor_matched_control,2133.0,1896.0,Table 5,0,BN50 (biochar + 50 N) vs CN50 (no carbon + 50 N); 2015,ai-decode
+184_Yeboah_2018__ai__6,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,100,y2015,single_cell,kg/ha,cofactor_matched_control,2456.0,1927.0,Table 5,0,BN100 (biochar + 100 N) vs CN100 (no carbon + 100 N); 2015,ai-decode
+184_Yeboah_2018__ai__7,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,0,y2016,single_cell,kg/ha,cofactor_matched_control,1124.0,1009.0,Table 5,0,BN0 (biochar + 0 N) vs CN0 (no carbon + 0 N); 2016,ai-decode
+184_Yeboah_2018__ai__8,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,50,y2016,single_cell,kg/ha,cofactor_matched_control,1233.0,1043.0,Table 5,0,BN50 (biochar + 50 N) vs CN50 (no carbon + 50 N); 2016,ai-decode
+184_Yeboah_2018__ai__9,ai,184_Yeboah_2018,crop_yield,wheat,15,nitrogen,100,y2016,single_cell,kg/ha,cofactor_matched_control,1567.0,1144.0,Table 5,0,BN100 (biochar + 100 N) vs CN100 (no carbon + 100 N); 2016,ai-decode

@@ -1,0 +1,2 @@
+{"gt_row_id":"gt__051_Niu_2013__r44","ai_row_id":null,"ambiguous":false,"basis":"GT = P in shoots under NH4 N-source; all AI rows are NO3 (n3) only — AI never extracted the NH4 condition","confidence":"high","reason_if_unmatched":"AI did not extract the NH4 N-source treatment"}
+{"gt_row_id":"gt__051_Niu_2013__r45","ai_row_id":"051_Niu_2013__ai__3","ambiguous":false,"basis":"Figure 1d 'P concentration in shoots' (above_ground), NO3 (n3), eCO2 800 vs amb 350; matches GT shoots P NO3","confidence":"high","reason_if_unmatched":null}

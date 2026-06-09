@@ -1,0 +1,17 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+078_Wang_2012__ai__0,ai,078_Wang_2012,crop_yield,rice,25,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N upland,145.0,140.0,Fig. 2a (estimated from bar chart),1,T:B1 Nil N upland || C:B0 Nil N upland,ai-decode
+078_Wang_2012__ai__1,ai,078_Wang_2012,crop_yield,rice,50,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N upland,145.0,140.0,Fig. 2a (estimated from bar chart),1,T:B2 Nil N upland || C:B0 Nil N upland,ai-decode
+078_Wang_2012__ai__2,ai,078_Wang_2012,crop_yield,rice,25,nitrogen,200,pooled,single_cell,g pot-1,B0 N upland,440.0,370.0,Fig. 2a (estimated from bar chart),1,T:B1 N upland || C:B0 N upland,ai-decode
+078_Wang_2012__ai__3,ai,078_Wang_2012,crop_yield,rice,50,nitrogen,200,pooled,single_cell,g pot-1,B0 N upland,500.0,370.0,Fig. 2a (estimated from bar chart),1,T:B2 N upland || C:B0 N upland,ai-decode
+078_Wang_2012__ai__4,ai,078_Wang_2012,crop_yield,rice,25,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N paddy,60.0,55.0,Fig. 2b (estimated from bar chart),1,T:B1 Nil N paddy || C:B0 Nil N paddy,ai-decode
+078_Wang_2012__ai__5,ai,078_Wang_2012,crop_yield,rice,50,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N paddy,60.0,55.0,Fig. 2b (estimated from bar chart),1,T:B2 Nil N paddy || C:B0 Nil N paddy,ai-decode
+078_Wang_2012__ai__6,ai,078_Wang_2012,crop_yield,rice,25,nitrogen,200,pooled,single_cell,g pot-1,B0 N paddy,210.0,195.0,Fig. 2b (estimated from bar chart),1,T:B1 N paddy || C:B0 N paddy,ai-decode
+078_Wang_2012__ai__7,ai,078_Wang_2012,crop_yield,rice,50,nitrogen,200,pooled,single_cell,g pot-1,B0 N paddy,240.0,195.0,Fig. 2b (estimated from bar chart),1,T:B2 N paddy || C:B0 N paddy,ai-decode
+078_Wang_2012__ai__8,ai,078_Wang_2012,crop_yield,wheat,25,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N upland,48.0,45.0,Fig. 2c (estimated from bar chart),1,T:B1 Nil N upland || C:B0 Nil N upland,ai-decode
+078_Wang_2012__ai__9,ai,078_Wang_2012,crop_yield,wheat,50,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N upland,48.0,45.0,Fig. 2c (estimated from bar chart),1,T:B2 Nil N upland || C:B0 Nil N upland,ai-decode
+078_Wang_2012__ai__10,ai,078_Wang_2012,crop_yield,wheat,25,nitrogen,200,pooled,single_cell,g pot-1,B0 N upland,130.0,120.0,Fig. 2c (estimated from bar chart),1,T:B1 N upland || C:B0 N upland,ai-decode
+078_Wang_2012__ai__11,ai,078_Wang_2012,crop_yield,wheat,50,nitrogen,200,pooled,single_cell,g pot-1,B0 N upland,155.0,120.0,Fig. 2c (estimated from bar chart),1,T:B2 N upland || C:B0 N upland,ai-decode
+078_Wang_2012__ai__12,ai,078_Wang_2012,crop_yield,wheat,25,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N paddy,25.0,22.0,Fig. 2d (estimated from bar chart),1,T:B1 Nil N paddy || C:B0 Nil N paddy,ai-decode
+078_Wang_2012__ai__13,ai,078_Wang_2012,crop_yield,wheat,50,nitrogen,0,pooled,single_cell,g pot-1,B0 Nil N paddy,25.0,22.0,Fig. 2d (estimated from bar chart),1,T:B2 Nil N paddy || C:B0 Nil N paddy,ai-decode
+078_Wang_2012__ai__14,ai,078_Wang_2012,crop_yield,wheat,25,nitrogen,200,pooled,single_cell,g pot-1,B0 N paddy,62.0,50.0,Fig. 2d (estimated from bar chart),1,T:B1 N paddy || C:B0 N paddy,ai-decode
+078_Wang_2012__ai__15,ai,078_Wang_2012,crop_yield,wheat,50,nitrogen,200,pooled,single_cell,g pot-1,B0 N paddy,75.0,50.0,Fig. 2d (estimated from bar chart),1,T:B2 N paddy || C:B0 N paddy,ai-decode

@@ -1,0 +1,23 @@
+{
+  "dataset": "biochar",
+  "gt_rows_table": 260,
+  "gt_rows_figure_tier": 292,
+  "counts": {
+    "MATCH": 211,
+    "NO_MATCH": 41,
+    "AMBIGUOUS": 8
+  },
+  "match_rate_table": 0.8115,
+  "treatment_mean_agreement": {
+    "n": 211,
+    "r": 0.9837360216707095,
+    "mae": 105.59649289099526
+  },
+  "control_mean_agreement": {
+    "n": 211,
+    "r": 0.9479192579250199,
+    "mae": 451.0488151658768
+  },
+  "control_token_concordance": 0.44549763033175355,
+  "passes_75pct": true
+}

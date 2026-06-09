@@ -1,0 +1,17 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+130_Azeem_2019__ai__1,ai,130_Azeem_2019,crop_yield,mash_bean,5,none,0,y2013,single_cell,kg/ha,absolute_control,636.0,612.0,Table 5,0,B1F0 vs B0F0; biochar_tha=5; fert=none; season=2013-14,ai-decode
+130_Azeem_2019__ai__2,ai,130_Azeem_2019,crop_yield,mash_bean,10,none,0,y2013,single_cell,kg/ha,absolute_control,656.0,612.0,Table 5,0,B2F0 vs B0F0; biochar_tha=10; fert=none; season=2013-14,ai-decode
+130_Azeem_2019__ai__3,ai,130_Azeem_2019,crop_yield,mash_bean,5,npk,23,y2013,single_cell,kg/ha,cofactor_matched_control,721.0,690.0,Table 5,0,B1F1 vs B0F1; biochar_tha=5; fert=NPK; season=2013-14,ai-decode
+130_Azeem_2019__ai__4,ai,130_Azeem_2019,crop_yield,mash_bean,10,npk,23,y2013,single_cell,kg/ha,cofactor_matched_control,751.0,690.0,Table 5,0,B2F1 vs B0F1; biochar_tha=10; fert=NPK; season=2013-14,ai-decode
+130_Azeem_2019__ai__5,ai,130_Azeem_2019,crop_yield,wheat,5,none,0,y2013,single_cell,kg/ha,absolute_control,2312.0,2178.0,Table 5,0,B1F0 vs B0F0; biochar_tha=5; fert=none; season=2013-14,ai-decode
+130_Azeem_2019__ai__6,ai,130_Azeem_2019,crop_yield,wheat,10,none,0,y2013,single_cell,kg/ha,absolute_control,2443.0,2178.0,Table 5,0,B2F0 vs B0F0; biochar_tha=10; fert=none; season=2013-14,ai-decode
+130_Azeem_2019__ai__7,ai,130_Azeem_2019,crop_yield,wheat,5,npk,23,y2013,single_cell,kg/ha,cofactor_matched_control,2764.0,2617.0,Table 5,0,B1F1 vs B0F1; biochar_tha=5; fert=NPK; season=2013-14,ai-decode
+130_Azeem_2019__ai__8,ai,130_Azeem_2019,crop_yield,wheat,10,npk,23,y2013,single_cell,kg/ha,cofactor_matched_control,2894.0,2617.0,Table 5,0,B2F1 vs B0F1; biochar_tha=10; fert=NPK; season=2013-14,ai-decode
+130_Azeem_2019__ai__9,ai,130_Azeem_2019,crop_yield,mash_bean,5,none,0,y2014,single_cell,kg/ha,absolute_control,659.0,622.0,Table 5,0,B1F0 vs B0F0; biochar_tha=5; fert=none; season=2014-15,ai-decode
+130_Azeem_2019__ai__10,ai,130_Azeem_2019,crop_yield,mash_bean,10,none,0,y2014,single_cell,kg/ha,absolute_control,681.0,622.0,Table 5,0,B2F0 vs B0F0; biochar_tha=10; fert=none; season=2014-15,ai-decode
+130_Azeem_2019__ai__11,ai,130_Azeem_2019,crop_yield,mash_bean,5,npk,23,y2014,single_cell,kg/ha,cofactor_matched_control,750.0,715.0,Table 5,0,B1F1 vs B0F1; biochar_tha=5; fert=NPK; season=2014-15,ai-decode
+130_Azeem_2019__ai__12,ai,130_Azeem_2019,crop_yield,mash_bean,10,npk,23,y2014,single_cell,kg/ha,cofactor_matched_control,782.0,715.0,Table 5,0,B2F1 vs B0F1; biochar_tha=10; fert=NPK; season=2014-15,ai-decode
+130_Azeem_2019__ai__13,ai,130_Azeem_2019,crop_yield,wheat,5,none,0,y2014,single_cell,kg/ha,absolute_control,2202.0,2062.0,Table 5,0,B1F0 vs B0F0; biochar_tha=5; fert=none; season=2014-15,ai-decode
+130_Azeem_2019__ai__14,ai,130_Azeem_2019,crop_yield,wheat,10,none,0,y2014,single_cell,kg/ha,absolute_control,2519.0,2062.0,Table 5,0,B2F0 vs B0F0; biochar_tha=10; fert=none; season=2014-15,ai-decode
+130_Azeem_2019__ai__15,ai,130_Azeem_2019,crop_yield,wheat,5,npk,23,y2014,single_cell,kg/ha,cofactor_matched_control,2561.0,2716.0,Table 5,0,B1F1 vs B0F1; biochar_tha=5; fert=NPK; season=2014-15,ai-decode
+130_Azeem_2019__ai__16,ai,130_Azeem_2019,crop_yield,wheat,10,npk,23,y2014,single_cell,kg/ha,cofactor_matched_control,2954.0,2716.0,Table 5,0,B2F1 vs B0F1; biochar_tha=10; fert=NPK; season=2014-15,ai-decode

@@ -1,0 +1,3 @@
+row_id,side,paper_id,outcome_canonical,crop,treatment_level,co_amendment,co_amendment_level,timepoint,aggregation_level,unit_canonical,control_token,treatment_mean,control_mean,source_locator,is_figure,evidence,decoder
+B07_Gras_2016__ai__0,ai,B07_Gras_2016,crop_yield_under_predator,cacao,exclusion,bird,0,pooled,single_cell,kg/ha/yr,absolute_control,828,1346,Figure 2 weight,1,"T:Full exclosure (predator_group=Birds) || C:Control || outcome=Cacao yield weight",ai-decode
+B07_Gras_2016__ai__1,ai,B07_Gras_2016,crop_yield_under_predator,cacao,exclusion,bird,0,pooled,single_cell,fruits/ha/yr,absolute_control,17290,30028,Figure 2 count,1,"T:Full exclosure (predator_group=Birds) || C:Control || outcome=Cacao yield count",ai-decode
