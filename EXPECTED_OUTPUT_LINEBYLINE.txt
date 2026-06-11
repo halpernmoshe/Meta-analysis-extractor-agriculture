@@ -1,0 +1,18 @@
+==================================================================================================
+UNIFIED BIAS-FREE LINE-BY-LINE  (categorical-key pairing; values never used to pair)
+==================================================================================================
+Dataset                   n   cov  HEADLINE r  MAE pp  metric / notes
+--------------------------------------------------------------------------------------------------
+Boldorini et al. 2024    33   87%       0.999    1.00pp  treatment-mean r; raw means
+Li X et al. 2024        217   42%       0.987    8.43pp  treatment-mean r; raw means; dose-level structural key  [harmonized-ctrl effect r=0.935, 177 cells, AI+48% vs GT+47%]
+Hui et al. 2025          27   75%       0.988    4.86pp  treatment-mean r; cell-mean (GT pools sub-conditions)
+Loladze 2014            270   45%       0.863    4.82pp  effect r (GT stores effect); effect-based (GT stores ratio); MID key pools CO2/year
+Li J et al. 2022         36   21%       0.969    3.56pp  effect r (GT stores effect); study-level (+author-year crosswalk; product/crop tokens diverge)
+--------------------------------------------------------------------------------------------------
+HEADLINE r = bias-free agreement (categorical pairing). effect r/MAE on cell-mean effects; tmean r on raw means.
+pooled effect (AI vs GT) over shared cells:
+  Boldorini et al. 2024  AI=  -7.1%  GT=  -7.5%  diff=+0.38pp
+  Li X et al. 2024       AI= +47.9%  GT= +46.7%  diff=+1.25pp
+  Hui et al. 2025        AI= +60.1%  GT= +56.5%  diff=+3.68pp
+  Loladze 2014           AI=  -5.8%  GT=  -4.3%  diff=-1.50pp
+  Li J et al. 2022       AI= +19.8%  GT= +20.2%  diff=-0.38pp

@@ -1,0 +1,18 @@
+dataset,labeled_as,actual_pdf_content,handling,evidence
+Hui et al. 2025,11_Zhao_2020.pdf,"Mirbolook et al., Commun. Soil Sci. Plant Anal. (Zn-Gly vs ZnSO4)",EXCLUDE,"header ""A. MIRBOLOOK ET AL."""
+Hui et al. 2025,44_Cakmak_1997.pdf,"2016 paper, Plant Soil 401:331-346 (Portuguese INIAV wheat lines, Elvas, 2010-2013)",EXCLUDE,"header ""Plant Soil (2016) 401:331-346""; INIAV-1..10 lines"
+Hui et al. 2025,Liu_2014.pdf,"Uddin, Kaczmarczyk & Vincze (barley hordein transcripts & Zn, Aarhus)",EXCLUDE,title page
+Hui et al. 2025,Li_2013.pdf,"Impa, Morete et al., J. Exp. Bot. 2013 (rice grain Zn loading)",EXCLUDE,"title ""Zn uptake, translocation and grain Zn loading in rice"""
+Hui et al. 2025,Dong_2018.pdf,mislabeled (actual identity not separately documented in this audit),EXCLUDE,filename-vs-content mismatch (B2 source-verification)
+Hui et al. 2025,3_Zhang_2012.pdf,mislabeled (actual identity not separately documented in this audit),EXCLUDE,filename-vs-content mismatch (B2 source-verification)
+Hui et al. 2025,59_Khoshgoftarmanesh_2013.pdf,mislabeled (actual identity not separately documented in this audit),EXCLUDE,filename-vs-content mismatch (B2 source-verification)
+Hui et al. 2025,61_Kumar_2018.pdf,mislabeled (actual identity not separately documented in this audit),EXCLUDE,filename-vs-content mismatch (B2 source-verification)
+Loladze 2014,001_Ma_2007.pdf,"Fernando et al. 2012a, Food Chemistry 133:1307-1311 (AGFACE Yitpi wheat grain)",RELABEL_THEN_EXCLUDE,header/title verified
+Loladze 2014,010_Li_2010.pdf,"Hogy et al. 2009, Plant Biology 11(Suppl.1):60-69 (TRISO wheat grain, FACE)",RELABEL_THEN_EXCLUDE,header/title verified
+Loladze 2014,029_Kuehny_1991.pdf,"Cao & Tibbitts 1997, J. Plant Nutrition 20(7-8):871-881 (potato leaves)",RELABEL_THEN_EXCLUDE,header/title verified
+Loladze 2014,034_Johnson_1997.pdf,"Johnson et al. 2003, Ecological Applications 13(5):1388-1399 (scrub oak)",RELABEL_THEN_EXCLUDE,header/title verified
+Loladze 2014,037_de_2000.pdf,"Haase et al. 2008, J. Environ. Qual. 37:1254-1262 (barley Fe x eCO2)",RELABEL_THEN_EXCLUDE,header/title verified
+Loladze 2014,047_Rodenkirchen_2009.pdf,"Weigt et al. 2011, Mycorrhiza 21:375-391 (Norway spruce; Rodenkirchen co-author)",RELABEL_THEN_EXCLUDE,header/title verified
+Li J et al. 2022,124_Pramanick_2016.pdf,"Pramanick, Brahmachari & Ghosh 2013, AJAR 8(13):1180-1186 (green gram)",EXCLUDE,"true mislabel; PDF's real paper absent from GT; GT ""Pramanick 2016"" is a different blackgram study"
+Li J et al. 2022,al-tawaha-et-al-2011.pdf,"Al-Tawaha et al. 2006, Can. J. Plant Sci. 86:677-684 (field soybean isoflavones)",RELABEL_THEN_EXCLUDE,header/title verified
+Li X et al. 2024,082_Jose_2013.pdf,"Alburquerque et al. 2013, Agron. Sustain. Dev. 33:475-484 (""Jose"" = first name of first author Jose Antonio Alburquerque; durum wheat + biochar)",RELABEL_THEN_EXCLUDE,header/title verified
