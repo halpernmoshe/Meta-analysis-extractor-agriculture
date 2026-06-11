@@ -61,6 +61,18 @@ extracted observation, with structural key fields, `treatment_mean`/`control_mea
 score already-paired rows), `is_figure`, and an `evidence` audit quote. `corpus_mislabels_D2.csv`
 lists the 17 wrong-paper PDFs excluded as a sourcing error.
 
+**Structural key columns are generic slots, not fixed semantic types.** The key fields
+`treatment_level`, `co_amendment`, `co_amendment_level`, and `timepoint` are generic structural
+slots; the decoder packs each corpus's own design coordinates into them, so the column name does not
+describe the contents uniformly across datasets. For the biochar dataset they hold the biochar dose
+and co-applied amendment; for Loladze 2014 they hold the **element** (`treatment_level` = ca, fe,
+zn, n…), the plant **tissue** (`co_amendment` = grain, leaf…), and the **cultivar**
+(`co_amendment_level`); the other datasets pack their corresponding coordinates the same way. This
+does not affect the comparison: the identical decoder is applied to both the AI side and the GT side
+of each dataset, so the categorical key pairs like-for-like (element-to-element, dose-to-dose)
+regardless of the generic column label. The labels are slots; the pairing is on the values within
+matching slots.
+
 ## Notes
 
 - **Source PDFs are not redistributed** because of publisher copyright; the deposited key tables in
