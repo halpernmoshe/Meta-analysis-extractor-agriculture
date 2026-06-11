@@ -106,7 +106,7 @@ def matched_pairs(ds):
         for r in gt:
             e = effect(r)
             if e is not None: gtC[(remap(r),)].append(e)
-        cells = set(aiC) & set(gtC)
+        cells = sorted(set(aiC) & set(gtC), key=str)
         xs = [sum(aiC[c])/len(aiC[c]) for c in cells]; ys = [sum(gtC[c])/len(gtC[c]) for c in cells]
         return [x*100 for x in xs], [y*100 for y in ys], "% change"
     kfn = keyfn(ds)
@@ -124,7 +124,7 @@ def matched_pairs(ds):
         e = ef_gt(r)
         if e is not None: gtC[kfn(r)]["eff"].append(e)
         if raw_ok(r): gtC[kfn(r)]["raw"].append(ff(r.get("treatment_mean")))
-    cells = set(aiC) & set(gtC)
+    cells = sorted(set(aiC) & set(gtC), key=str)
     if METRIC[ds] == "raw":
         rc = [c for c in cells if aiC[c]["raw"] and gtC[c]["raw"]]
         xs = [sum(aiC[c]["raw"])/len(aiC[c]["raw"]) for c in rc]

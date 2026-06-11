@@ -6,4 +6,4 @@ Loladze 2014            270    -2.30   14.82   -31.34   +26.75    +0.00
 Hui et al. 2025          27    +3.82    8.45   -12.74   +20.37    +0.19
 Li J et al. 2022         33    -1.27    8.41   -17.76   +15.23    -0.00
 
-Wrote C:\Users\moshe\Dropbox\Testing metaanalyis program\meta_analysis_extractor\SUBMISSION_Environmental_Evidence\resubmission\real resubmission\repository_clean\figures\figS5_bland_altman.png
+Wrote figures/figS5_bland_altman.png

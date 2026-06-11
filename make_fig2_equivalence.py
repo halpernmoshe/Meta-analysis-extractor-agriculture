@@ -126,14 +126,14 @@ def main():
         col = "#1a7f37" if R["inside"] else "#b04a2f"
         ax.plot([R["lo"], R["hi"]], [y, y], color=col, lw=2, zorder=3)
         ax.plot(R["diff"], y, "o", color=col, ms=7, zorder=4)
-        ax.text(0.0, y+0.42, f"{R['diff']:+.2f} pp  [{R['lo']:+.2f}, {R['hi']:+.2f}]   margin +-{m:.1f} pp",
+        ax.text(0.0, y+0.42, f"{R['diff']:+.2f} pp  [{R['lo']:+.2f}, {R['hi']:+.2f}]   margin ±{m:.1f} pp",
                 ha="center", va="bottom", fontsize=7.5, color="#333333")
     ax.axvline(0, color="#999999", lw=0.8, ls=":")
     ax.set_yticks(ys); ax.set_yticklabels([DISPLAY[d] for d in order], fontsize=9)
     ax.set_xlabel("Paired AI - human difference in pooled effect (percentage points)", fontsize=9)
     ax.set_ylim(-0.7, len(order)-0.3)
     ax.tick_params(axis="x", labelsize=8)
-    ax.set_title("Aggregate equivalence: paired difference vs +-20%-of-effect margin", fontsize=10, fontweight="bold")
+    ax.set_title("Aggregate equivalence: paired difference vs ±20%-of-effect margin", fontsize=10, fontweight="bold")
     fig.tight_layout()
     out=os.path.join(FIGS,"fig2_equivalence.png")
     fig.savefig(out, dpi=200)
