@@ -1,0 +1,136 @@
+{
+  "paper_id": "016_Li_B_2016",
+  "title": "Dynamic responses of nitrous oxide emission and nitrogen use efficiency to nitrogen and biochar amendment in an intensified vegetable field in southeastern China",
+  "authors": "Bo Li, Zhichao Bi, Zhengqin Xiong",
+  "year": 2017,
+  "journal": "GCB Bioenergy",
+  "observations": [
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 318.0,
+      "control_mean": 317.0,
+      "effect_pct": 0.32,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha (fresh weight total over 9 crops)",
+      "data_source": "Figure 4c",
+      "treatment_description": "N0C1 (no N, biochar 20 t/ha) total vegetable yield",
+      "control_description": "N0C0 (no N, no biochar) total vegetable yield",
+      "moderators": {
+        "biochar_rate_tha": 20,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 400,
+        "crop": "mixed vegetables (9 consecutive crops)",
+        "soil_type": "Fimi-Orthic Anthrosol"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 340.0,
+      "control_mean": 317.0,
+      "effect_pct": 7.26,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha (fresh weight total over 9 crops)",
+      "data_source": "Figure 4c",
+      "treatment_description": "N0C2 (no N, biochar 40 t/ha) total vegetable yield",
+      "control_description": "N0C0 (no N, no biochar) total vegetable yield",
+      "moderators": {
+        "biochar_rate_tha": 40,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 400,
+        "crop": "mixed vegetables (9 consecutive crops)",
+        "soil_type": "Fimi-Orthic Anthrosol"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 440.0,
+      "control_mean": 390.0,
+      "effect_pct": 12.82,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha (fresh weight total over 9 crops)",
+      "data_source": "Figure 4c",
+      "treatment_description": "N1C1 (conv. N, biochar 20 t/ha) total vegetable yield",
+      "control_description": "N1C0 (conv. N, no biochar) total vegetable yield",
+      "moderators": {
+        "biochar_rate_tha": 20,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 400,
+        "crop": "mixed vegetables (9 consecutive crops)",
+        "soil_type": "Fimi-Orthic Anthrosol"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 476.0,
+      "control_mean": 390.0,
+      "effect_pct": 22.05,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha (fresh weight total over 9 crops)",
+      "data_source": "Figure 4c",
+      "treatment_description": "N1C2 (conv. N, biochar 40 t/ha) total vegetable yield",
+      "control_description": "N1C0 (conv. N, no biochar) total vegetable yield",
+      "moderators": {
+        "biochar_rate_tha": 40,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 400,
+        "crop": "mixed vegetables (9 consecutive crops)",
+        "soil_type": "Fimi-Orthic Anthrosol"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 425.0,
+      "control_mean": 380.0,
+      "effect_pct": 11.84,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha (fresh weight total over 9 crops)",
+      "data_source": "Figure 4c",
+      "treatment_description": "N2C1 (4/3 conv. N, biochar 20 t/ha) total vegetable yield",
+      "control_description": "N2C0 (4/3 conv. N, no biochar) total vegetable yield",
+      "moderators": {
+        "biochar_rate_tha": 20,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 400,
+        "crop": "mixed vegetables (9 consecutive crops)",
+        "soil_type": "Fimi-Orthic Anthrosol"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 450.0,
+      "control_mean": 380.0,
+      "effect_pct": 18.42,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha (fresh weight total over 9 crops)",
+      "data_source": "Figure 4c",
+      "treatment_description": "N2C2 (4/3 conv. N, biochar 40 t/ha) total vegetable yield",
+      "control_description": "N2C0 (4/3 conv. N, no biochar) total vegetable yield",
+      "moderators": {
+        "biochar_rate_tha": 40,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 400,
+        "crop": "mixed vegetables (9 consecutive crops)",
+        "soil_type": "Fimi-Orthic Anthrosol"
+      },
+      "source_type": "figure"
+    }
+  ],
+  "notes": "3x3 factorial: N (0, conventional, 4/3 conventional) x biochar (0, 20, 40 t/ha). Total fresh vegetable yield over 9 consecutive crops (Apr 2012 - Oct 2014) from Figure 4c. Exact values estimated from bar chart. Text states highest total yield was 476 t/ha for N1C2, 50% higher than N0C0. Text also states biochar increased yield 31% for N1 group and 18% for N2 group. Individual crop yields in Table 5 with SD values. The paper focuses primarily on N2O emissions; yield is a secondary outcome."
+}

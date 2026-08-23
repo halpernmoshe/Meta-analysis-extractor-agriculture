@@ -1,0 +1,94 @@
+{
+  "paper_id": "007_Gathorne-Hardy_2009",
+  "title": "Biochar as a soil amendment positively interacts with nitrogen fertiliser to improve barley yields in the UK",
+  "authors": "Alfred Gathorne-Hardy, J. Knight, J. Woods",
+  "year": 2009,
+  "journal": "IOP Conf. Ser.: Earth Environ. Sci.",
+  "observations": [
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 5,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "g/250cm2",
+      "data_source": "Figure 1",
+      "treatment_description": "Biochar 5 t/ha, 0 N kg/ha",
+      "control_description": "No biochar, 0 N kg/ha",
+      "moderators": {
+        "biochar_rate_tha": 5,
+        "feedstock": null,
+        "pyrolysis_temp_C": null,
+        "crop": "spring barley",
+        "soil_type": "light land"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 5,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "g/250cm2",
+      "data_source": "Figure 1",
+      "treatment_description": "Biochar 10 t/ha, 0 N kg/ha",
+      "control_description": "No biochar, 0 N kg/ha",
+      "moderators": {
+        "biochar_rate_tha": 10,
+        "feedstock": null,
+        "pyrolysis_temp_C": null,
+        "crop": "spring barley",
+        "soil_type": "light land"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 5,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "g/250cm2",
+      "data_source": "Figure 1",
+      "treatment_description": "Biochar 20 t/ha, 0 N kg/ha",
+      "control_description": "No biochar, 0 N kg/ha",
+      "moderators": {
+        "biochar_rate_tha": 20,
+        "feedstock": null,
+        "pyrolysis_temp_C": null,
+        "crop": "spring barley",
+        "soil_type": "light land"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": 30.0,
+      "n": 5,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "g/250cm2",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 50 t/ha, 100 N kg/ha",
+      "control_description": "No biochar, 100 N kg/ha",
+      "moderators": {
+        "biochar_rate_tha": 50,
+        "feedstock": null,
+        "pyrolysis_temp_C": null,
+        "crop": "spring barley",
+        "soil_type": "light land"
+      },
+      "source_type": "figure"
+    }
+  ],
+  "notes": "This is a short conference abstract with limited data. Yield data only in Figure 1 (bar chart) - exact numeric values not extractable. The text states 50 t/ha biochar increased yield by ~30% at high N levels. 5x5 factorial: biochar (0, 5, 10, 20, 50 t/ha) x N fertiliser (0, 25, 50, 70, 100 kgN/ha). 25 treatments x 5 reps. No significant effect of biochar alone; significant interaction (p=0.055) between biochar and N. Biochar feedstock and pyrolysis temperature not reported. Figure legend says N levels are 0, 10, 20, 80, 100 but text says 0, 25, 50, 70, 100 - discrepancy in the paper."
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "total_obs": 413,
+    "n_with_variance": 106,
+    "n_without_variance": 307,
+    "pct_with_variance": 25.7
+  },
+  "cv_statistics": {
+    "n_with_variance": 106,
+    "n_cv_values": 212,
+    "n_excluded_outliers": 0,
+    "mean_cv": 11.94,
+    "median_cv": 7.82,
+    "sd_cv": 12.82,
+    "q25_cv": 3.77,
+    "q75_cv": 13.95,
+    "min_cv": 0.18,
+    "max_cv": 68.56,
+    "cv_by_crop": {
+      "annual": {
+        "n": 6,
+        "mean_cv": 3.43,
+        "median_cv": 2.68,
+        "sd_cv": 1.89,
+        "min_cv": 1.42,
+        "max_cv": 6.78
+      },
+      "maize": {
+        "n": 66,
+        "mean_cv": 11.11,
+        "median_cv": 6.89,
+        "sd_cv": 9.44,
+        "min_cv": 0.2,
+        "max_cv": 47.67
+      },
+      "mash": {
+        "n": 16,
+        "mean_cv": 5.4,
+        "median_cv": 2.63,
+        "sd_cv": 9.65,
+        "min_cv": 0.18,
+        "max_cv": 40.21
+      },
+      "mustard": {
+        "n": 6,
+        "mean_cv": 15.91,
+        "median_cv": 15.04,
+        "sd_cv": 13.28,
+        "min_cv": 3.85,
+        "max_cv": 30.25
+      },
+      "rapeseed": {
+        "n": 12,
+        "mean_cv": 8.7,
+        "median_cv": 8.52,
+        "sd_cv": 1.13,
+        "min_cv": 6.78,
+        "max_cv": 10.42
+      },
+      "rice": {
+        "n": 16,
+        "mean_cv": 7.88,
+        "median_cv": 7.82,
+        "sd_cv": 3.81,
+        "min_cv": 2.86,
+        "max_cv": 14.87
+      },
+      "wheat": {
+        "n": 90,
+        "mean_cv": 15.16,
+        "median_cv": 9.06,
+        "sd_cv": 16.35,
+        "min_cv": 0.48,
+        "max_cv": 68.56
+      }
+    }
+  },
+  "imputation_validation": {
+    "n_matched_obs": 225,
+    "n_sd_pairs_compared": 450,
+    "imputed_vs_gt": {
+      "correlation_r": 0.4859,
+      "correlation_p": 0.0,
+      "mae": 0.353,
+      "median_ratio_imp_over_gt": 1.0427,
+      "mean_ratio": 2.0144
+    },
+    "extracted_vs_gt": {
+      "n_pairs": 122,
+      "correlation_r": 0.7947,
+      "mae": 0.2339,
+      "median_ratio": 1.0
+    }
+  },
+  "sensitivity": {
+    "real_variance_only": {
+      "pooled_lnRR": 0.086072,
+      "pooled_pct": 8.99,
+      "ci_lower_lnRR": 0.070944,
+      "ci_upper_lnRR": 0.1012,
+      "ci_lower_pct": 7.35,
+      "ci_upper_pct": 10.65,
+      "tau2": 0.002501,
+      "I2": 87.0,
+      "Q": 806.54,
+      "df": 105,
+      "p_heterogeneity": 0.0,
+      "n_obs": 106,
+      "n_skipped": 0
+    },
+    "method_a_global_cv": {
+      "pooled_lnRR": 0.093227,
+      "pooled_pct": 9.77,
+      "ci_lower_lnRR": 0.081559,
+      "ci_upper_lnRR": 0.104894,
+      "ci_lower_pct": 8.5,
+      "ci_upper_pct": 11.06,
+      "tau2": 0.010365,
+      "I2": 90.4,
+      "Q": 4303.89,
+      "df": 412,
+      "p_heterogeneity": 0.0,
+      "n_obs": 413,
+      "n_skipped": 0
+    },
+    "method_b_stratified_cv": {
+      "pooled_lnRR": 0.091281,
+      "pooled_pct": 9.56,
+      "ci_lower_lnRR": 0.079407,
+      "ci_upper_lnRR": 0.103155,
+      "ci_lower_pct": 8.26,
+      "ci_upper_pct": 10.87,
+      "tau2": 0.010602,
+      "I2": 90.5,
+      "Q": 4355.32,
+      "df": 412,
+      "p_heterogeneity": 0.0,
+      "n_obs": 413,
+      "n_skipped": 0
+    },
+    "method_c_hotdeck": {
+      "pooled_lnRR": 0.091252,
+      "pooled_pct": 9.55,
+      "ci_lower_lnRR": 0.078471,
+      "ci_upper_lnRR": 0.104033,
+      "ci_lower_pct": 8.16,
+      "ci_upper_pct": 10.96,
+      "tau2": 0.011888,
+      "I2": 96.4,
+      "Q": 11478.02,
+      "df": 412,
+      "p_heterogeneity": 0.0,
+      "n_obs": 413,
+      "n_skipped": 0
+    }
+  },
+  "sensitivity_spread_pp": 0.78,
+  "recommendation": "ROBUST: Imputation method has minimal effect on pooled estimate (<2pp spread). Method A (global median CV) recommended for simplicity - results nearly identical to hot-deck."
+}

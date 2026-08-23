@@ -1,0 +1,262 @@
+{
+  "paper_id": "077_Zhang_J_2019",
+  "title": "Three-year rice grain yield responses to coastal mudflat soil properties amended with straw biochar",
+  "authors": "Jining Zhang, Sheng Zhou, Huifeng Sun, Fan Lu, Pinjing He",
+  "year": 2019,
+  "journal": "Journal of Environmental Management",
+  "observations": [
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4200.0,
+      "control_mean": 4363.0,
+      "effect_pct": -3.74,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 5% (C-5), Year 1 (2015)",
+      "control_description": "Control (CK, 0% biochar), Year 1 (2015)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 5633.0,
+      "control_mean": 4363.0,
+      "effect_pct": 29.1,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 10% (C-10), Year 1 (2015)",
+      "control_description": "Control (CK, 0% biochar), Year 1 (2015)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 5856.0,
+      "control_mean": 4363.0,
+      "effect_pct": 34.2,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 15% (C-15), Year 1 (2015)",
+      "control_description": "Control (CK, 0% biochar), Year 1 (2015)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4200.0,
+      "control_mean": 4363.0,
+      "effect_pct": -3.74,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 20% (C-20), Year 1 (2015)",
+      "control_description": "Control (CK, 0% biochar), Year 1 (2015)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3022.0,
+      "control_mean": 2332.0,
+      "effect_pct": 29.6,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 5% (C-5), Year 2 (2016)",
+      "control_description": "Control (CK, 0% biochar), Year 2 (2016)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3200.0,
+      "control_mean": 2332.0,
+      "effect_pct": 37.2,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 10% (C-10), Year 2 (2016)",
+      "control_description": "Control (CK, 0% biochar), Year 2 (2016)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3540.0,
+      "control_mean": 2332.0,
+      "effect_pct": 51.8,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 15% (C-15), Year 2 (2016)",
+      "control_description": "Control (CK, 0% biochar), Year 2 (2016)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4571.0,
+      "control_mean": 2332.0,
+      "effect_pct": 96.0,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 20% (C-20), Year 2 (2016)",
+      "control_description": "Control (CK, 0% biochar), Year 2 (2016)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3000.0,
+      "control_mean": 3000.0,
+      "effect_pct": 0.0,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 5% (C-5), Year 3 (2017)",
+      "control_description": "Control (CK, 0% biochar), Year 3 (2017)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3000.0,
+      "control_mean": 3000.0,
+      "effect_pct": 0.0,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 10% (C-10), Year 3 (2017)",
+      "control_description": "Control (CK, 0% biochar), Year 3 (2017)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3000.0,
+      "control_mean": 3000.0,
+      "effect_pct": 0.0,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 15% (C-15), Year 3 (2017)",
+      "control_description": "Control (CK, 0% biochar), Year 3 (2017)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3000.0,
+      "control_mean": 3000.0,
+      "effect_pct": 0.0,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "kg/ha",
+      "data_source": "Figure 1 + text",
+      "treatment_description": "Biochar 20% (C-20), Year 3 (2017)",
+      "control_description": "Control (CK, 0% biochar), Year 3 (2017)",
+      "moderators": {
+        "biochar_rate_tha": null,
+        "feedstock": "wheat straw",
+        "pyrolysis_temp_C": 550,
+        "crop": "rice (Huayou 14)",
+        "soil_type": "coastal mudflat (saline alkaline)"
+      },
+      "source_type": "figure"
+    }
+  ],
+  "notes": "3-year pot trial (2015-2017). Biochar rates expressed as % of wet soil weight (5/10/15/20%), not as t/ha - absolute rates depend on pot soil mass (35 kg wet soil per pot). One-time biochar application in June 2015. Yield data primarily from Figure 1 bar chart - exact values estimated. Text provides key values: Year 1 CK=4363 kg/ha, C-10/C-15 increased 29.1-34.2%. Year 2 CK=2332 kg/ha, C-15/C-20 increased 51.8-96.0%. Year 3 all treatments ~3000 kg/ha (no significant differences). Wheat straw biochar at 500-600C. Rice cultivar Huayou 14. 3 replicate pots per treatment."
+}

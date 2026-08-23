@@ -1,0 +1,262 @@
+{
+  "paper_id": "001_Adekiya_2019",
+  "title": "Effects of biochar and poultry manure on soil characteristics and the yield of radish",
+  "authors": "A.O. Adekiya, T.M. Agbede, C.M. Aboyeji, O. Dunsin, V.T. Simeon",
+  "year": 2019,
+  "journal": "Scientia Horticulturae",
+  "observations": [
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.24,
+      "control_mean": 0.24,
+      "effect_pct": 0.0,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 25 t/ha, no PM, 2015",
+      "control_description": "No biochar, no PM, 2015",
+      "moderators": {
+        "biochar_rate_tha": 25,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.32,
+      "control_mean": 0.24,
+      "effect_pct": 33.33,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 50 t/ha, no PM, 2015",
+      "control_description": "No biochar, no PM, 2015",
+      "moderators": {
+        "biochar_rate_tha": 50,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.26,
+      "control_mean": 0.25,
+      "effect_pct": 4.0,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 25 t/ha, no PM, 2016",
+      "control_description": "No biochar, no PM, 2016",
+      "moderators": {
+        "biochar_rate_tha": 25,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.28,
+      "control_mean": 0.25,
+      "effect_pct": 12.0,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 50 t/ha, no PM, 2016",
+      "control_description": "No biochar, no PM, 2016",
+      "moderators": {
+        "biochar_rate_tha": 50,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.63,
+      "control_mean": 0.56,
+      "effect_pct": 12.5,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 25 t/ha + PM 2.5 t/ha, 2015",
+      "control_description": "No biochar + PM 2.5 t/ha, 2015",
+      "moderators": {
+        "biochar_rate_tha": 25,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.69,
+      "control_mean": 0.56,
+      "effect_pct": 23.21,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 50 t/ha + PM 2.5 t/ha, 2015",
+      "control_description": "No biochar + PM 2.5 t/ha, 2015",
+      "moderators": {
+        "biochar_rate_tha": 50,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.69,
+      "control_mean": 0.66,
+      "effect_pct": 4.55,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 25 t/ha + PM 5 t/ha, 2015",
+      "control_description": "No biochar + PM 5 t/ha, 2015",
+      "moderators": {
+        "biochar_rate_tha": 25,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.77,
+      "control_mean": 0.66,
+      "effect_pct": 16.67,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 50 t/ha + PM 5 t/ha, 2015",
+      "control_description": "No biochar + PM 5 t/ha, 2015",
+      "moderators": {
+        "biochar_rate_tha": 50,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.76,
+      "control_mean": 0.63,
+      "effect_pct": 20.63,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 25 t/ha + PM 2.5 t/ha, 2016",
+      "control_description": "No biochar + PM 2.5 t/ha, 2016",
+      "moderators": {
+        "biochar_rate_tha": 25,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.86,
+      "control_mean": 0.63,
+      "effect_pct": 36.51,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 50 t/ha + PM 2.5 t/ha, 2016",
+      "control_description": "No biochar + PM 2.5 t/ha, 2016",
+      "moderators": {
+        "biochar_rate_tha": 50,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.85,
+      "control_mean": 0.74,
+      "effect_pct": 14.86,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 25 t/ha + PM 5 t/ha, 2016",
+      "control_description": "No biochar + PM 5 t/ha, 2016",
+      "moderators": {
+        "biochar_rate_tha": 25,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.98,
+      "control_mean": 0.74,
+      "effect_pct": 32.43,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "kg/m2",
+      "data_source": "Table 6",
+      "treatment_description": "Biochar 50 t/ha + PM 5 t/ha, 2016",
+      "control_description": "No biochar + PM 5 t/ha, 2016",
+      "moderators": {
+        "biochar_rate_tha": 50,
+        "feedstock": "hardwood",
+        "pyrolysis_temp_C": 580,
+        "crop": "radish",
+        "soil_type": "sandy loam"
+      },
+      "source_type": "table"
+    }
+  ],
+  "notes": "3x3 factorial: biochar (0, 25, 50 t/ha) x poultry manure (0, 2.5, 5 t/ha). Root weight in kg/m2 from Table 6. Each biochar rate compared to no-biochar at the same PM level within each year. Biochar from hardwood at 580C. RCBD with 3 reps. No SE values reported in table (only letters for significance)."
+}

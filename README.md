@@ -3,7 +3,10 @@
 **Agreement Between AI-Assisted Extraction and Published Reference Data Across Five Agricultural and Ecological Datasets**
 
 This repository reproduces every reported mean- and effect-based analysis number and figure in the manuscript from the deposited
-key tables. The comparison is outcome-blind: each side's row metadata is decoded into a canonical
+key tables. It also deposits the 184 finalized JSON extraction artifacts (178 paper records plus six
+biochar auxiliaries) and verifies that the five
+AI-side decoders rebuild the frozen AI key tables byte-for-byte. The comparison is outcome-blind:
+each side's row metadata is decoded into a canonical
 categorical key, pairing is a deterministic categorical operation that never consults outcome
 values, multi-row cells are summarised by their mean, and effects are compared as the log response
 ratio. Pooled effects are back-transformed to percentage change for presentation, while aggregate
@@ -27,16 +30,18 @@ the AI side moved.
 **Boldorini et al. 2024.** That corpus had never been extracted by the evaluated workflow; its
 previously reported values were produced by hand-written scripts. It was re-extracted in August 2026
 and the comparison rebuilt. The resulting frozen AI-side key tables are deposited in
-`runs/boldorini/keys/ai/`. Raw model outputs and prompts are not redistributed because they can
-contain copyrighted source text and account-provenance material.
+`runs/boldorini/keys/ai/`; the corrected August 2026 JSON source records are deposited under
+`source_records/boldorini/`.
 
 `decoders/` holds the script that builds each dataset's AI-side key table, one per dataset, with a
 ledger recording every decision it makes and its vocabulary comparison against the reference side.
-These are the deposited AI-side decoding scripts. The published-reference side is supplied as frozen
-canonical key tables, rather than as rerunnable raw-label-to-key construction scripts. The final
-cross-dataset mappings can therefore be inspected row by row in the ledgers and key tables. The raw
-model outputs needed to rerun an AI-side decoder are not redistributed; the deposited frozen key
-tables are the reproducible inputs to every reported analysis.
+These are the deposited AI-side decoding scripts. The finalized inputs they read are under
+`source_records/`; `source_records/SHA256SUMS.txt` authenticates every JSON file. The
+published-reference side is supplied as frozen canonical key tables, rather than as rerunnable
+raw-label-to-key construction scripts. The final cross-dataset mappings can therefore be inspected
+row by row in the ledgers and key tables. `python verify_source_record_release.py` runs all five
+decoders in a temporary directory and requires their outputs to be byte-identical to the frozen AI
+key tables used by every reported analysis.
 
 Two key fields were restored for Boldorini specifically, both documented in its ledger:
 `unit_canonical` in the raw-mean comparison, because its reference stores percentages, gram weights
@@ -53,6 +58,14 @@ across the further structural descriptors. Both keys are outcome-blind. The 9-ce
 does not establish the source of the 16-cell effect difference.
 
 ## How to run
+
+Verify the 184 source records and reproduce the frozen AI keys first:
+
+```bash
+python verify_source_record_release.py
+```
+
+Then run the reported analyses:
 
 ```bash
 python line_by_line_scope_aware.py     # Part 1: conditional agreement   -> EXPECTED_OUTPUT_LINEBYLINE.txt
@@ -126,16 +139,20 @@ verified ground truth.
 
 ## Notes
 
-- **Source PDFs are not redistributed** because of publisher copyright; the deposited key tables in
-  `runs/` are the inputs to every script.
-- **Raw model outputs and prompts are not redistributed** because they can contain copyrighted source
-  text and account-provenance material. They are not needed to reproduce the reported analyses from
-  the deposited key tables.
+- **Source PDFs are not redistributed** because of publisher copyright. The finalized extraction
+  records under `source_records/` rebuild the AI-side keys; the frozen key tables in `runs/` remain
+  the direct inputs to every analysis script.
+- **The source-record release is deliberately bounded.** It excludes superseded extraction attempts,
+  consensus experiments, broad validation-result dumps, variance-only raw outputs, complete run
+  logs, conversational transcripts, and the contaminated March 2026 Boldorini set. The historical
+  public `dev-archive-pre-curation` branch contains older development JSON/prompt material and is
+  non-authoritative; it is retained only for provenance and no remote history was rewritten.
 - **Public source data for the Supplementary Material S7 variance screens** are listed in
   [`PUBLIC_SOURCE_DATA.md`](PUBLIC_SOURCE_DATA.md), including the two comparator article/data pages
   from which any reader can download the source material.
-- `decoders/` holds one AI-side decoder per dataset plus its ledger; these build the key
-  tables in `runs/*/keys/ai/` from the extraction outputs.
+- `decoders/` holds one AI-side decoder per dataset plus its ledger; these build temporary key tables
+  from `source_records/`. `verify_source_record_release.py` compares them byte-for-byte with
+  `runs/*/keys/ai/`.
 - `INCLUDED_SOURCE_PAPERS.md` is a candidate-input inventory, not an analytical inclusion ledger;
   the analysed-paper counts and bibliographies are in Supplementary Material S6 and S8.
 - The round-1 `superseded_v1/` tree is not carried into this deposit; nothing in the

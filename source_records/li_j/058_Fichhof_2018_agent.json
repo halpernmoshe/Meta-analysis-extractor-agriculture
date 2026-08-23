@@ -1,0 +1,201 @@
+{
+  "paper_id": "058_Fichhof_2018",
+  "title": "Management of Biostimulant and Silicon in Mineral Nutrition and Quality of Cotton Fiber",
+  "authors": "Fichhof, W.H., Silva, R.A., Oliveira, L.S., Silva, R.M.",
+  "year": 2018,
+  "species": "Gossypium hirsutum L.",
+  "crop": "cotton",
+  "experiment_type": "field",
+  "location": "Brazil",
+  "consensus_observations": [
+    {
+      "outcome": "fiber yield",
+      "tissue": "fiber",
+      "treatment_mean": 5922.37,
+      "control_mean": 5961.75,
+      "effect_pct": -0.66,
+      "n": 8,
+      "unit": "kg/ha",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "electrolyte leakage",
+      "tissue": "leaf",
+      "treatment_mean": 18.50,
+      "control_mean": 20.87,
+      "effect_pct": -11.36,
+      "n": 8,
+      "unit": "%",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "relative water content",
+      "tissue": "leaf",
+      "treatment_mean": 86.25,
+      "control_mean": 85.00,
+      "effect_pct": 1.47,
+      "n": 8,
+      "unit": "%",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 5",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "micronaire index",
+      "tissue": "fiber",
+      "treatment_mean": 3.87,
+      "control_mean": 4.00,
+      "effect_pct": -3.25,
+      "n": 8,
+      "unit": "ug/pol",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "fiber length",
+      "tissue": "fiber",
+      "treatment_mean": 29.75,
+      "control_mean": 30.12,
+      "effect_pct": -1.23,
+      "n": 8,
+      "unit": "mm",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "rupture strength",
+      "tissue": "fiber",
+      "treatment_mean": 30.37,
+      "control_mean": 30.87,
+      "effect_pct": -1.62,
+      "n": 8,
+      "unit": "gf/tex",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "length uniformity",
+      "tissue": "fiber",
+      "treatment_mean": 81.62,
+      "control_mean": 81.25,
+      "effect_pct": 0.46,
+      "n": 8,
+      "unit": "%",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "fiber elongation",
+      "tissue": "fiber",
+      "treatment_mean": 6.25,
+      "control_mean": 6.12,
+      "effect_pct": 2.12,
+      "n": 8,
+      "unit": "%",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    },
+    {
+      "outcome": "short fiber index",
+      "tissue": "fiber",
+      "treatment_mean": 9.87,
+      "control_mean": 9.75,
+      "effect_pct": 1.23,
+      "n": 8,
+      "unit": "%",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Veritas biostimulant 1 L/ha foliar, 4 applications (40, 60, 80, 100 DAE)",
+      "control_description": "No application (control)",
+      "moderators": {
+        "crop": "cotton",
+        "biostimulant_type": "other",
+        "application_method": "foliar",
+        "application_rate": "1 L/ha",
+        "biostimulant_product": "Veritas (CaT technology)"
+      }
+    }
+  ]
+}

@@ -71,10 +71,11 @@ import sys
 from collections import defaultdict, OrderedDict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-SRC = os.environ.get("BOLDORINI_SOURCE_DIR", os.path.join(ROOT, "model_outputs", "boldorini_extraction_2026-08"))
-OUT = os.path.join(ROOT, "runs", "boldorini", "keys", "ai")
-STATS = os.path.join(HERE, "boldorini_sterile_v2_decode_stats.json")
+ROOT = os.path.abspath(os.path.join(HERE, ".."))
+SRC = os.environ.get("BOLDORINI_SOURCE_DIR", os.path.join(ROOT, "source_records", "boldorini"))
+GENERATED_ROOT = os.environ.get("DECODER_OUTPUT_ROOT", os.path.join(ROOT, "generated_keys"))
+OUT = os.path.join(GENERATED_ROOT, "boldorini")
+STATS = os.path.join(GENERATED_ROOT, "boldorini_decode_stats.json")
 
 COLS = ["row_id", "side", "paper_id", "outcome_canonical", "crop", "treatment_level",
         "co_amendment", "co_amendment_level", "timepoint", "aggregation_level",
@@ -469,8 +470,7 @@ DESIGN_WORDS = {"exclusion", "addition"}
 
 def gt_treatment_form():
     """Per-paper FORM of the reference's `treatment_level`, read from the values-stripped
-    structural reference the spec provides for exactly this purpose
-    (`00_SPEC/vocab_reference/boldorini_gt_structural.csv`, no mean columns).
+    deposited frozen reference key tables (`runs/boldorini/keys/gt/*.csv`).
 
     The reference uses three forms with no derivable rule -- bare predator group (30 cells),
     bare design (8), compound group_design (9) -- and they vary paper to paper. A single
@@ -479,8 +479,8 @@ def gt_treatment_form():
 
     This selects the FORM only. Which predator group and which design are asserted still come
     entirely from the AI record, so a wrong taxon or a wrong design still fails to match; the
-    harmonisation cannot manufacture agreement about content. No outcome value is read -- the
-    source file has none.
+    harmonisation cannot manufacture agreement about content. No outcome value is read.
+    Only the structural `paper_id` and `treatment_level` columns are read.
 
     Precedent in the other datasets: hui normalised casing to the GT vocabulary and blanked
     `timepoint` because the GT compilation has no year column; li_j pinned `timepoint` to the
@@ -489,12 +489,13 @@ def gt_treatment_form():
     to the GT's vocabulary. This is finer-grained than any of those -- per paper rather than per
     column -- and is disclosed as investigator judgement in the joiner.
     """
-    path = os.path.join(ROOT, "00_SPEC", "vocab_reference", "boldorini_gt_structural.csv")
     by = defaultdict(set)
-    with open(path, encoding="utf-8-sig") as fh:
-        for r in csv.DictReader(fh):
-            by[(r.get("paper_id") or "").strip().lower()].add(
-                (r.get("treatment_level") or "").strip().lower())
+    pattern = os.path.join(ROOT, "runs", "boldorini", "keys", "gt", "*.csv")
+    for path in sorted(glob.glob(pattern)):
+        with open(path, encoding="utf-8-sig") as fh:
+            for r in csv.DictReader(fh):
+                by[(r.get("paper_id") or "").strip().lower()].add(
+                    (r.get("treatment_level") or "").strip().lower())
     forms = {}
     for p, toks in by.items():
         if any("_" in t and t.rsplit("_", 1)[-1] in DESIGN_WORDS for t in toks):

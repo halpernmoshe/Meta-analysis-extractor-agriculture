@@ -1,0 +1,234 @@
+{
+  "study_mapping": {
+    "001_Adekiya_2019": "1",
+    "007_Gathorne-Hardy_2009": "7",
+    "016_Li_B_2016": "16",
+    "021_Nobile_2022": "21",
+    "041_Guerena_2013": "41",
+    "063_Asai_2009": "63",
+    "077_Zhang_J_2019": "77",
+    "078_Wang_2012": "78",
+    "081_Deenik_2010": "81",
+    "082_Jose_2013": "82",
+    "101_Liang_Feng_2014": "101",
+    "116_Farrell_2014": "116",
+    "126_Arif_2017": "126",
+    "130_Azeem_2019": "130",
+    "133_Pandit_2018": "133",
+    "145_Omara_2020": "145",
+    "153_Wei_2022": "153",
+    "166_Haefele_2011": "166",
+    "184_Yeboah_2018": "184",
+    "193_Islami_2011": "193",
+    "207_Liu_2019": "207",
+    "219_Xie_2021": "219",
+    "223_Dong_2019": "223",
+    "227_Niu_2017": "227",
+    "229_Shi_2022": "229",
+    "231_Zhang_2021": "231",
+    "234_Malik_2018": "234",
+    "242_Liu_2014": "242"
+  },
+  "value_synonyms": {
+    "crop": {
+      "corn": "Maize",
+      "maize": "Maize",
+      "rice": "Rice",
+      "wheat": "Wheat",
+      "upland rice (Apo)": "Rice",
+      "upland rice (Vieng)": "Rice",
+      "spring barley": "Barley",
+      "radish": "Radish",
+      "lettuce": "Lettuce",
+      "mash bean": "Mung bean",
+      "mixed vegetables (9 consecutive crops)": "Vegetable"
+    }
+  },
+  "column_mapping": {
+    "gt_control_mean": "CropYield_CK",
+    "gt_treatment_mean": "CropYield_T",
+    "gt_control_sd": "CropYield_CK_SD",
+    "gt_treatment_sd": "CropYield_T _SD",
+    "gt_control_n": "CropYield_CK_N",
+    "gt_treatment_n": "CropYield_T _N",
+    "gt_effect_column": "CropYield_RR",
+    "gt_effect_format": "response_ratio",
+    "ext_control_field": "control_mean",
+    "ext_treatment_field": "treatment_mean",
+    "ext_effect_field": "effect_pct",
+    "ext_effect_format": "percent_change"
+  },
+  "gt_study_column": "StudyID",
+  "gt_author_column": "Author",
+  "gt_filter": null,
+  "scale_factors": [
+    1.0,
+    0.001,
+    0.01,
+    0.1,
+    10,
+    100,
+    1000,
+    10000,
+    0.0001,
+    0.4046944556859571,
+    2.471,
+    2.204585537918871,
+    0.4536
+  ],
+  "mean_match_tolerance": 0.2,
+  "effect_fallback_tolerance": 5.0,
+  "tost_margin": 3.0,
+  "match_keys": [],
+  "notes": [
+    "GT CropYield_T column has a trailing space: 'CropYield_T ' - use exact name with space",
+    "GT CropYield_T _SD and CropYield_T _N also have trailing spaces in column names",
+    "GT effect column is response ratio (RR = T/C), extraction uses percent change ((T-C)/C * 100); conversion: RR = 1 + effect_pct/100",
+    "Unit mismatches exist across papers: some extraction papers report kg/ha, others t/ha, g/pot, kg/m2",
+    "Paper 016_Li_B_2016 reports cumulative yield over 9 crops (t/ha total), GT may store per-season values",
+    "Paper 101_Liang_Feng_2014 reports total over 4 seasons, GT may store per-season values",
+    "Paper 078_Wang_2012 uses g/pot units which need conversion to match GT scale",
+    "Paper 081_Deenik_2010 uses g/pot (shoot DM) units",
+    "Paper 082_Jose_2013 uses g/pot (dry grain biomass) units",
+    "Paper 001_Adekiya_2019 uses kg/m2 which needs conversion to t/ha (factor 10) or match GT scale",
+    "Papers 077_Zhang_J_2019, 126_Arif_2017, 130_Azeem_2019, 153_Wei_2022, 184_Yeboah_2018, 219_Xie_2021, 227_Niu_2017, 242_Liu_2014 use kg/ha while GT may store t/ha",
+    "GT dataset has CropYield values ranging from 0.12 to 206, suggesting mixed units (some t/ha, some g/pot or other)",
+    "StudyIDs in GT go up to at least 80 based on sample, extraction papers map to IDs beyond 80 (101, 116, etc.) - verify these exist in full GT",
+    "The GT dataset is a subsample of ~40 studies from 367, so not all extraction papers may have GT matches"
+  ],
+  "ext_include_keywords": [
+    "crop_yield",
+    "grain yield",
+    "tuber yield",
+    "yield"
+  ],
+  "ext_exclude_keywords": [],
+  "sheets": null,
+  "unit_alignment": {
+    "001_Adekiya_2019": {
+      "factor": 10.0,
+      "reason": "Extraction in kg/m2 (range 0.24-0.98), GT likely in t/ha; 1 kg/m2 = 10 t/ha"
+    },
+    "016_Li_B_2016": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha total over 9 crops (range 317-476), GT range appears similar for cumulative yield"
+    },
+    "021_Nobile_2022": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 6.5-22), GT range consistent"
+    },
+    "041_Guerena_2013": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 4.74-9.26), GT range consistent"
+    },
+    "063_Asai_2009": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 0.7-4.8), GT range consistent"
+    },
+    "077_Zhang_J_2019": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 2332-5856), GT likely in t/ha"
+    },
+    "078_Wang_2012": {
+      "factor": 1.0,
+      "reason": "Extraction in g/pot (range 22-500), GT range 22-370 for CK suggests same g/pot units"
+    },
+    "081_Deenik_2010": {
+      "factor": 1.0,
+      "reason": "Extraction in g/pot shoot DM (range 0.08-13), GT range 0.12-206 could accommodate this"
+    },
+    "082_Jose_2013": {
+      "factor": 1.0,
+      "reason": "Extraction in g/pot dry grain (range 0.2-1.27), GT range consistent with small pot values"
+    },
+    "101_Liang_Feng_2014": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha total over 4 seasons (range 19.81-59.34), GT range consistent"
+    },
+    "116_Farrell_2014": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 1.5-3.2), GT range consistent"
+    },
+    "126_Arif_2017": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 1300-4500), GT likely in t/ha"
+    },
+    "130_Azeem_2019": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 612-2954), GT likely in t/ha"
+    },
+    "133_Pandit_2018": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 0.5-6.8), GT range consistent"
+    },
+    "145_Omara_2020": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 1.09-7.3), GT range consistent"
+    },
+    "153_Wei_2022": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 2694-11800), GT likely in t/ha"
+    },
+    "166_Haefele_2011": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 1.97-5.22), GT range consistent"
+    },
+    "184_Yeboah_2018": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 1009-2456), GT likely in t/ha"
+    },
+    "193_Islami_2011": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 0.71-22), GT range consistent"
+    },
+    "207_Liu_2019": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 3.5-11), GT range consistent"
+    },
+    "219_Xie_2021": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 7400-10300), GT likely in t/ha"
+    },
+    "223_Dong_2019": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 3.46-8.63), GT range consistent"
+    },
+    "227_Niu_2017": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 6200-11900), GT likely in t/ha"
+    },
+    "229_Shi_2022": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 3.64-15.01), GT range consistent"
+    },
+    "231_Zhang_2021": {
+      "factor": 1.0,
+      "reason": "Extraction in t/ha (range 2.4-9.2), GT range consistent"
+    },
+    "242_Liu_2014": {
+      "factor": 0.001,
+      "reason": "Extraction in kg/ha (range 1382-1880), GT likely in t/ha"
+    }
+  },
+  "match_constraints": [],
+  "gt_filters": {},
+  "id_parsing": null,
+  "effect_direction": {
+    "gt": "treatment_divided_by_control",
+    "extraction": "treatment_minus_control_over_control_percent",
+    "flip_needed": false,
+    "note": "GT uses RR = T/C (response ratio), extraction uses percent change = (T-C)/C * 100. Convert: RR = 1 + effect_pct/100. Both are positive when treatment > control."
+  },
+  "control_definition_notes": {
+    "gt": "Control (CK) - typically no biochar, may or may not include fertilizer depending on study design",
+    "extraction": "Control varies by paper - some are absolute no-amendment controls, others are fertilized controls without biochar",
+    "affected_papers": [
+      "021_Nobile_2022",
+      "063_Asai_2009",
+      "166_Haefele_2011",
+      "041_Guerena_2013"
+    ],
+    "note": "Some studies use factorial designs where control includes fertilizer but no biochar (BN treatment vs N treatment). GT CK definition should be verified per study."
+  },
+  "outcome_matching": null
+}

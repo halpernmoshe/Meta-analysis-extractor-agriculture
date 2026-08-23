@@ -1,0 +1,346 @@
+{
+  "paper_id": "041_Guerena_2013",
+  "title": "Nitrogen dynamics following field application of biochar in a temperate North American maize-based production system",
+  "authors": "David Guerena, Johannes Lehmann, Kelly Hanley, Akio Enders, Charles Hyland, Susan Riha",
+  "year": 2013,
+  "journal": "Plant and Soil",
+  "observations": [
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4.11,
+      "control_mean": 4.74,
+      "effect_pct": -13.29,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 3 t/ha, 90% N, 2007",
+      "control_description": "No biochar, 90% N, 2007",
+      "moderators": {
+        "biochar_rate_tha": 3,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4.19,
+      "control_mean": 4.74,
+      "effect_pct": -11.6,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 12 t/ha, 90% N, 2007",
+      "control_description": "No biochar, 90% N, 2007",
+      "moderators": {
+        "biochar_rate_tha": 12,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4.02,
+      "control_mean": 4.74,
+      "effect_pct": -15.19,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 30 t/ha, 90% N, 2007",
+      "control_description": "No biochar, 90% N, 2007",
+      "moderators": {
+        "biochar_rate_tha": 30,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4.05,
+      "control_mean": 4.74,
+      "effect_pct": -14.56,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 1 t/ha annually, 90% N, 2007",
+      "control_description": "No biochar, 90% N, 2007",
+      "moderators": {
+        "biochar_rate_tha": 1,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.8,
+      "control_mean": 9.26,
+      "effect_pct": -15.77,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 3 t/ha, 90% N, 2008",
+      "control_description": "No biochar, 90% N, 2008",
+      "moderators": {
+        "biochar_rate_tha": 3,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.14,
+      "control_mean": 9.26,
+      "effect_pct": -12.1,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 12 t/ha, 90% N, 2008",
+      "control_description": "No biochar, 90% N, 2008",
+      "moderators": {
+        "biochar_rate_tha": 12,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.66,
+      "control_mean": 9.26,
+      "effect_pct": -17.28,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 30 t/ha, 90% N, 2008",
+      "control_description": "No biochar, 90% N, 2008",
+      "moderators": {
+        "biochar_rate_tha": 30,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.48,
+      "control_mean": 9.26,
+      "effect_pct": -19.22,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 1 t/ha annually, 90% N, 2008",
+      "control_description": "No biochar, 90% N, 2008",
+      "moderators": {
+        "biochar_rate_tha": 1,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.51,
+      "control_mean": 8.5,
+      "effect_pct": 0.12,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 3 t/ha, 90% N, 2009",
+      "control_description": "No biochar, 90% N, 2009",
+      "moderators": {
+        "biochar_rate_tha": 3,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.93,
+      "control_mean": 8.5,
+      "effect_pct": -6.71,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 12 t/ha, 90% N, 2009",
+      "control_description": "No biochar, 90% N, 2009",
+      "moderators": {
+        "biochar_rate_tha": 12,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 6.59,
+      "control_mean": 8.5,
+      "effect_pct": -22.47,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 30 t/ha, 90% N, 2009",
+      "control_description": "No biochar, 90% N, 2009",
+      "moderators": {
+        "biochar_rate_tha": 30,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.56,
+      "control_mean": 8.5,
+      "effect_pct": 0.71,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 1 t/ha annually, 90% N, 2009",
+      "control_description": "No biochar, 90% N, 2009",
+      "moderators": {
+        "biochar_rate_tha": 1,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.6,
+      "control_mean": 8.69,
+      "effect_pct": -1.04,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 3 t/ha, 90% N, 2010",
+      "control_description": "No biochar, 90% N, 2010",
+      "moderators": {
+        "biochar_rate_tha": 3,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.62,
+      "control_mean": 8.69,
+      "effect_pct": -0.81,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 12 t/ha, 90% N, 2010",
+      "control_description": "No biochar, 90% N, 2010",
+      "moderators": {
+        "biochar_rate_tha": 12,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.81,
+      "control_mean": 8.69,
+      "effect_pct": -10.13,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 30 t/ha, 90% N, 2010",
+      "control_description": "No biochar, 90% N, 2010",
+      "moderators": {
+        "biochar_rate_tha": 30,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 9.08,
+      "control_mean": 8.69,
+      "effect_pct": 4.49,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 2",
+      "treatment_description": "Biochar 1 t/ha annually, 90% N, 2010",
+      "control_description": "No biochar, 90% N, 2010",
+      "moderators": {
+        "biochar_rate_tha": 1,
+        "feedstock": "maize stover",
+        "pyrolysis_temp_C": 600,
+        "crop": "maize",
+        "soil_type": "silt loam (Kendaia)"
+      },
+      "source_type": "table"
+    }
+  ],
+  "notes": "Maize grain yield from Table 2 (90% N rate = standard). Biochar applied once in April 2007 (except 1 t/ha annual). p(biochar effect) = 0.54 (2007), 0.33 (2008), 0.66 (2009), 0.49 (2010) - none significant. Table 3 has data at varying N rates for 0 and 12 t/ha biochar - also no significant biochar effects. Fertile temperate soil (pH 7.36, CEC 97.6). Conclusion: biochar up to 30 t/ha does not affect yield in fertile temperate soils. Low 2007 yields due to hot dry weather after fertilization."
+}

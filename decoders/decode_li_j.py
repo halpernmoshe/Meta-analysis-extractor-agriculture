@@ -10,7 +10,7 @@ Adapted from the submitted decoder
 
 Exactly one thing changes about the science: the AI-side SOURCE is now the frozen
 March-2026 single-model Claude agent JSONs
-    01_INPUTS_FROZEN/li_j/*_agent.json      (49 files, 1053 records)
+    source_records/li_j/*_agent.json      (49 files, 1053 records)
 instead of the three-model consensus files `output/li2022_combined/*_consensus.json`.
 
 All classification / inference logic below the "VERBATIM" banner is copied
@@ -21,14 +21,14 @@ HARD RULES OBSERVED
   * OUTCOME-BLIND: no key column is derived from, conditioned on, or selected
     using treatment_mean / control_mean / effect_pct / variance, and no GT value
     is ever read.  The only GT artefact consulted is the *paper_id vocabulary*
-    (structural column) in 03_KEYS/gt/li_j/*.csv, used for the paper crosswalk
+    (structural column) in runs/li2022_v2/keys/gt/*.csv, used for the paper crosswalk
     and for filename mirroring.
   * NO VALUE MATCHING: the deposited AI key tables are never read.
   * DETERMINISTIC: stdlib only, no randomness, sorted iteration everywhere.
   * NO SILENT DROPS: every source record is either a key row or is counted in
     the exclusion tally printed at the end.
 
-Output: one CSV per paper in 03_KEYS/ai_rebuilt/li_j/, canonical 18 columns.
+Output: one CSV per paper in generated_keys/li_j/, canonical 18 columns.
 """
 import csv
 import glob
@@ -48,11 +48,12 @@ import unicodedata
 #           with the same csv.DictWriter, so quoting behaviour is identical).
 # ---------------------------------------------------------------------------
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
+ROOT = os.path.abspath(os.path.join(HERE, ".."))
 
-SRC = os.path.join(ROOT, "01_INPUTS_FROZEN", "li_j")
-OUT = os.path.join(ROOT, "03_KEYS", "ai_rebuilt", "li_j")
-GT_KEYS = os.path.join(ROOT, "03_KEYS", "gt", "li_j")
+SRC = os.environ.get("LI_J_SOURCE_DIR", os.path.join(ROOT, "source_records", "li_j"))
+GENERATED_ROOT = os.environ.get("DECODER_OUTPUT_ROOT", os.path.join(ROOT, "generated_keys"))
+OUT = os.path.join(GENERATED_ROOT, "li_j")
+GT_KEYS = os.path.join(ROOT, "runs", "li2022_v2", "keys", "gt")
 
 DECODER = "rebuild_2026-08-19/li_j"
 
@@ -850,7 +851,7 @@ def main(outdir=None, emit=True, verbose=None):
 
     if verbose:
         print("=" * 78)
-        print("li_j AI-side rebuild  (source: 01_INPUTS_FROZEN/li_j)")
+        print("li_j AI-side rebuild  (source: source_records/li_j)")
         print("=" * 78)
         print("files_in            : %d" % len(files))
         print("records_in          : %d" % records_in)

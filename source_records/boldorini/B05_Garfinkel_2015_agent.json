@@ -1,0 +1,87 @@
+{
+  "paper_id": "B05_Garfinkel_2015",
+  "title": "Pest-removal services provided by birds on small organic farms in northern California",
+  "authors": "Garfinkel MB, Johnson MD",
+  "year": 2015,
+  "doi": "10.1016/j.agee.2015.04.023",
+  "journal": "Agriculture, Ecosystems and Environment",
+  "crop": "kale",
+  "species": "Brassica oleracea var. acephala (Lacinato kale)",
+  "experiment_type": "field exclusion (bird exclosure)",
+  "location": "7 organic farms, Sonoma County, northern California, USA",
+  "design": "Paired design on 7 farms; 5 Lacinato kale plants under 25mm mesh bird exclosure vs 5 unprotected control plants ~1m away; September 2012; ~5-week exclosure period. The 25mm mesh excluded all bird species observed at the sites. GLMM with farm as random effect; response variable was change over time in each outcome (not absolute values). Model coefficients represent the difference between treatments in the rate of change.",
+  "n_replicates": 7,
+  "notes": "This paper does NOT report raw treatment and control means for any outcome. Table 5 reports only GLMM coefficients (the estimated effect of exclosure treatment on the change over time in each response variable), their SEs, 95% CIs, and delta-AICc. The intercept of the model is not reported in Table 5, so even the control-arm change-over-time cannot be recovered. Furthermore, the response variable is the change over time (not an absolute yield or count), so even if the intercept were available, the values would not represent treatment_mean and control_mean in the protocol's sense (absolute yield or abundance). All four exclosure treatment effects were non-significant: all 95% CIs overlapped zero and all delta-AICc values were positive (null model preferred). A second experiment in the paper — sentinel pest depredation rates across 29 farms — is a correlational study of pest removal rates (not an exclusion vs. control comparison) and is not eligible for extraction. Background pest pressure was very low (~1 caterpillar/m²). The paper concludes that birds provided neither significant pest-removal services nor disservices on these small organic farms.",
+  "observations": [
+    {
+      "outcome": "crop yield",
+      "tissue": "salable leaves (change over exclosure period)",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 7,
+      "unit": "change in number of salable leaves per plant over ~5 weeks",
+      "variance_value": 3.543,
+      "variance_type": "SE",
+      "data_source": "Table 5, PDF page 7",
+      "treatment_description": "kale plants under 25mm mesh bird exclosure (birds excluded)",
+      "control_description": "unprotected kale plants ~1m from exclosure (birds had full access)",
+      "moderators": {
+        "predator_group": "birds (all species)",
+        "treatment_type": "exclusion",
+        "crop": "kale",
+        "study_year": "2012",
+        "country": "USA"
+      },
+      "figure_read": null,
+      "notes": "Table 5 reports GLMM coefficient for exclosure treatment effect on change in salable leaves: estimate = 3.471, SE = 3.543, 95% CI [-3.473, 10.415], delta-AICc = 1.30. Not significant. Raw treatment and control means are not reported anywhere in the paper. The coefficient represents the difference between exclosure and control in the change in salable leaf count over the study period, not an absolute mean."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "total leaves (change over exclosure period)",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 7,
+      "unit": "change in number of total leaves per plant over ~5 weeks",
+      "variance_value": 5.038,
+      "variance_type": "SE",
+      "data_source": "Table 5, PDF page 7",
+      "treatment_description": "kale plants under 25mm mesh bird exclosure (birds excluded)",
+      "control_description": "unprotected kale plants ~1m from exclosure (birds had full access)",
+      "moderators": {
+        "predator_group": "birds (all species)",
+        "treatment_type": "exclusion",
+        "crop": "kale",
+        "study_year": "2012",
+        "country": "USA"
+      },
+      "figure_read": null,
+      "notes": "Table 5 GLMM coefficient: estimate = 6.114, SE = 5.038, 95% CI [-3.760, 15.988], delta-AICc = 0.80. Not significant. No raw means reported."
+    },
+    {
+      "outcome": "pest abundance",
+      "tissue": null,
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 7,
+      "unit": "change in number of lepidopteran larvae per plant over ~5 weeks",
+      "variance_value": 0.839,
+      "variance_type": "SE",
+      "data_source": "Table 5, PDF page 7",
+      "treatment_description": "kale plants under 25mm mesh bird exclosure (birds excluded)",
+      "control_description": "unprotected kale plants ~1m from exclosure (birds had full access)",
+      "moderators": {
+        "predator_group": "birds (all species)",
+        "treatment_type": "exclusion",
+        "pest_taxon": "lepidopteran larvae",
+        "crop": "kale",
+        "study_year": "2012",
+        "country": "USA"
+      },
+      "figure_read": null,
+      "notes": "Table 5 GLMM coefficient: estimate = -1.057, SE = 0.839, 95% CI [-2.702, 0.588], delta-AICc = 0.68. Not significant. Negative coefficient means exclosure plots had a slightly greater decline (or lesser increase) in lepidopterans, which is the opposite of the expected direction (excluding birds should increase pests). However, the effect is non-significant. No raw means reported."
+    }
+  ]
+}

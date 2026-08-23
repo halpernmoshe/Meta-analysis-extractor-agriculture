@@ -1,0 +1,86 @@
+{
+  "paper_id": "B16_Saunders_2016",
+  "title": "Combining Costs and Benefits of Animal Activities to Assess Net Yield Outcomes in Apple Orchards",
+  "authors": "Saunders ME, Luck GW",
+  "year": 2016,
+  "doi": "10.1371/journal.pone.0158618",
+  "journal": "PLoS ONE",
+  "crop": "apple",
+  "species": "Malus domestica",
+  "experiment_type": "field exclusion",
+  "location": "Three apple-growing regions in south-eastern Australia: Batlow (NSW), Shepparton (Victoria), Harcourt (Victoria)",
+  "design": "Paired-branch design within trees. 6 orchards (2 per region, one high-intensity one low-intensity management), 10 focal trees per orchard (60 trees total). Two branches per tree at similar height on the same side: one covered with 15mm diamond mesh vertebrate exclusion netting ('exclusion'), one left open ('open'). Branches netted just prior to flowering (Oct 2014) through harvest (Jan 2015), covering entire fruit development. Netting excludes vertebrate predators (primarily birds and mammals) but allows arthropod access. GLMMs with branch nested in tree nested in orchard as random effects; treatment and cultivar as fixed effects.",
+  "n_replicates": 60,
+  "notes": "n=60 is the number of trees (paired branches). The 6 orchards are the highest-level independent units, but the analysis uses tree-level pairing with orchard as random effect. All yield variables are proportions: fruit set = fruitlets/blossoms, yield loss = damaged fruit/total fruit, net outcome = undamaged fruit/blossoms. The paper's key finding is that although vertebrate exclusion significantly reduced fruit set and significantly increased yield loss, the net outcome (undamaged fruit as proportion of blossoms) did not differ between treatments — the costs and benefits of vertebrate activity cancelled out. Multiple apple cultivars across orchards (unable to standardize cultivar). Arthropod sampling was per tree (not per branch), so no branch-level pest abundance data is available. SE = 0.1% reported for exclusion fruit set in text may be a typographical error — Fig 1 error bars appear much larger than 0.1 percentage points; possibly should read 1%.",
+  "observations": [
+    {
+      "outcome": "crop yield",
+      "tissue": "fruit set (initial fruitlets as proportion of blossoms open during flowering)",
+      "treatment_mean": 14,
+      "control_mean": 19,
+      "effect_pct": -26.3,
+      "n": 60,
+      "unit": "percentage (proportion × 100; fruitlets per blossom)",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results section 'Relationships between animal activities and yield outcomes', p6 (PDF page 6); confirmed by Table 1 and Fig 1",
+      "treatment_description": "exclusion branches — covered with 15mm diamond mesh vertebrate exclusion netting from just prior to flowering through harvest; vertebrate predators (birds, mammals) excluded but arthropod access maintained",
+      "control_description": "open branches — left uncovered for entire experiment duration; full access by vertebrate predators and all arthropods",
+      "moderators": {
+        "predator_group": "vertebrates (birds and mammals)",
+        "treatment_type": "exclusion",
+        "crop": "apple",
+        "study_year": "2014-2015",
+        "country": "Australia"
+      },
+      "figure_read": null,
+      "notes": "Text states: 'Average fruit set was higher on open branches (mean = 19%, SE = 2%) compared to exclusion branches (mean = 14%, SE = 0.1%).' Treatment SE = 0.1%, control SE = 2%. The exclusion SE of 0.1% appears inconsistent with the visible error bars in Fig 1, which span roughly ±3 percentage points; this may be a typo for 1%. The treatment effect in the GLMM (Table 1) is significant: estimate = 0.23 (SE 0.11), 95% CI = 0.02–0.44. Fruit set reflects pollination success and early fruit development. The paper notes insect pollinators were not deterred from visiting flowers inside nets. Direction: exclusion reduces fruit set — could reflect reduced thrip predation during flowering or microclimate effects of netting. This is a yield component, not final yield."
+    },
+    {
+      "outcome": "crop damage",
+      "tissue": "fruit (proportion of harvested fruit with major insect damage, >1 pinprick hole)",
+      "treatment_mean": 14,
+      "control_mean": 4,
+      "effect_pct": 250.0,
+      "n": 60,
+      "unit": "percentage (proportion × 100; damaged fruit per total fruit)",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results section 'Relationships between animal activities and yield outcomes', p6 (PDF page 6); confirmed by Table 1 and Fig 1",
+      "treatment_description": "exclusion branches — covered with 15mm diamond mesh vertebrate exclusion netting; vertebrate predators excluded",
+      "control_description": "open branches — uncovered, full vertebrate predator access",
+      "moderators": {
+        "predator_group": "vertebrates (birds and mammals)",
+        "treatment_type": "exclusion",
+        "crop": "apple",
+        "study_year": "2014-2015",
+        "country": "Australia"
+      },
+      "figure_read": null,
+      "notes": "Text states: 'average yield loss (quantified as arthropod damage) was significantly higher on exclusion branches (mean = 14% SE = 3%) compared to open branches (mean = 4% SE = 1%).' Treatment SE = 3%, control SE = 1%. GLMM treatment estimate = -2.69 (SE 0.69), 95% CI = -4.05 to -1.33, significant. Direction: exclusion increases arthropod damage — consistent with expected biocontrol effect. Vertebrates on open branches reduce arthropod pest damage to fruit. Damage was primarily from bud/fruit-feeding arthropods (thrips, apple dimpling bug, codling moth, weevils). The paper argues that vertebrates are most important for controlling fruit-damaging pests during maturation, less so during flowering."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "net outcome (number of undamaged fruit at harvest as proportion of blossoms open during flowering)",
+      "treatment_mean": 11,
+      "control_mean": 12,
+      "effect_pct": -8.3,
+      "n": 60,
+      "unit": "percentage (proportion × 100; undamaged fruit per blossom)",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results section 'Relationships between animal activities and yield outcomes', p6 (PDF page 6); confirmed by Table 1 and Fig 1",
+      "treatment_description": "exclusion branches — covered with 15mm diamond mesh vertebrate exclusion netting; vertebrate predators excluded",
+      "control_description": "open branches — uncovered, full vertebrate predator access",
+      "moderators": {
+        "predator_group": "vertebrates (birds and mammals)",
+        "treatment_type": "exclusion",
+        "crop": "apple",
+        "study_year": "2014-2015",
+        "country": "Australia"
+      },
+      "figure_read": null,
+      "notes": "Text states: 'Average net outcome did not differ between open (mean = 12% SE = 1%) and exclusion branches (mean = 11% SE = 1%).' Treatment SE = 1%, control SE = 1%. GLMM treatment estimate = 0.08 (SE 0.11), 95% CI = -0.15 to 0.31, NOT significant. This is the paper's primary yield outcome: it integrates fruit set (pollination/early development), fruit survival, and arthropod damage into a single measure of marketable yield potential per blossom. The key finding is that the significant reduction in fruit set and increase in arthropod damage under vertebrate exclusion cancel each other out, resulting in no net yield difference. Direction: exclusion slightly reduces net outcome — consistent with expected direction but not statistically significant. Regional medians (Mann-Whitney): Shepparton exclusion median=8% SD=5%, Batlow 11% SD=6%, Harcourt 13% SD=9%; Shepparton open 8% SD=6%, Batlow 12% SD=9%, Harcourt 15% SD=11%; H=2.13, p=0.35 (no regional difference)."
+    }
+  ]
+}

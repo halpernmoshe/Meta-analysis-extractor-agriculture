@@ -1,5 +1,9 @@
 # Li J 2022 (plant biostimulants) — AI-side decoder ledger, rebuild 2026-08-19
 
+**Release-path note (2026-08-23):** audit-era `01_INPUTS_FROZEN/li_j/` is now
+`source_records/li_j/`; the final output is `runs/li2022_v2/keys/ai/`. The decoder writes its scratch
+rebuild to `generated_keys/li_j/` for byte-level verification.
+
 ## 1. Source
 
 `01_INPUTS_FROZEN/li_j/*_agent.json` — **49 files, 1053 records**, copied from

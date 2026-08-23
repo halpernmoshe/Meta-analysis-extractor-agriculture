@@ -1,0 +1,103 @@
+{
+  "paper_id": "B13_Maas_2013",
+  "title": "Bats and birds increase crop yield in tropical agroforestry landscapes",
+  "authors": "Maas B, Clough Y, Tscharntke T",
+  "year": 2013,
+  "doi": "10.1111/ele.12194",
+  "journal": "Ecology Letters",
+  "crop": "cacao",
+  "species": "Theobroma cacao",
+  "experiment_type": "field exclusion",
+  "location": "Palu and Central Sulawesi (Kecamatan Lore Utara), Indonesia",
+  "design": "Bird and bat exclusion using bamboo-frame nylon monofilament exclosures (2x2 cm mesh) on individual cacao trees; 4 treatments per site: Day exclosure (bird exclusion), Night exclosure (bat exclusion), Full exclosure (day+night, bird+bat exclusion), Control (open); 15 cacao plantation sites; 120 trees total (8 per site, 2 per treatment); 15 months of data (May 2010 to August 2011); exclosure nets opened/closed at dawn (5:30 am) and dusk (6:30 pm); linear mixed effects models (lme) with site as random factor",
+  "n_replicates": 15,
+  "notes": "Yield reported as dry cacao bean weight. Control mean explicitly stated in text (0.1 kg/treatment/month = 1051.73 kg/ha/year based on 16.43 m² exclosure treatment area). Full exclosure reduction of 31% stated in text. Night exclosure significant (P=0.032) but no specific percentage or mean given. Day exclosure NOT significant for yield. Harvested cacao fruit count was significantly reduced in ALL experimental treatments (all P < 0.05, Tukey test; Fig. 4a) but no raw counts reported in text. All arthropod abundance data reported as log-transformed differences from control (Fig. 3) with 95% CI — no raw treatment means available. Leaf herbivory and fruit pest damage (Helopeltis, Conopomorpha) were NOT significantly affected by exclosure treatments. Figure 4 shows lme model effects (residuals), not raw group means — y-axis values go negative, confirming these are model outputs, not extractable means. Economic value of full exclosure yield loss: ~326 kg/ha/year = ~730 USD/ha/year at 2.25 USD/kg (2013 ICCO price).",
+  "observations": [
+    {
+      "outcome": "crop yield",
+      "tissue": "dry cacao beans",
+      "treatment_mean": 725.7,
+      "control_mean": 1051.73,
+      "effect_pct": -31.0,
+      "n": 15,
+      "unit": "kg/ha/year",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "text, Results p.1483-1484 (PDF pages 4-5) and Discussion p.1485 (PDF page 6)",
+      "treatment_description": "full exclosure — bamboo-frame cage with 2x2 cm nylon monofilament mesh closed during both day (5:30 am to 6:30 pm) and night, preventing access by all birds and bats",
+      "control_description": "control (open) — no cage, natural access by all birds and bats",
+      "moderators": {
+        "predator_group": "birds and bats",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (day+night)",
+        "crop": "cacao",
+        "study_year": "2010-2011",
+        "country": "Indonesia"
+      },
+      "figure_read": null,
+      "notes": "Control mean stated in text: '0.1 kg per treatment and month' = 1051.73 kg/ha/year (based on 16.43 m² exclosure area). Percentage reduction stated: 'mean crop yield in the full exclosures was reduced by 31%'. Treatment mean derived: 1051.73 × 0.69 = 725.69 ≈ 725.7 kg/ha/year. The paper also states this equals approximately 326 kg/ha/year lost. No SE/SD reported for raw treatment means — the paper reports only model coefficients and SEs. Figure 4a shows lme effects (y-axis goes negative), not raw means, so figure digitization is not applicable. P = 0.004 (Tukey test). Direction: full exclosure reduces yield as expected — removing bird and bat predators increases pest pressure and reduces yield."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "dry cacao beans",
+      "treatment_mean": null,
+      "control_mean": 1051.73,
+      "effect_pct": null,
+      "n": 15,
+      "unit": "kg/ha/year",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "text, Results p.1483 (PDF page 4-5)",
+      "treatment_description": "night exclosure — bamboo-frame cage with mesh closed during night only (6:30 pm to 5:30 am), preventing access by bats but allowing daytime bird access",
+      "control_description": "control (open) — no cage, natural access by all birds and bats",
+      "moderators": {
+        "predator_group": "bats",
+        "treatment_type": "exclusion",
+        "exclusion_level": "night only (bats excluded)",
+        "crop": "cacao",
+        "study_year": "2010-2011",
+        "country": "Indonesia"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 4a",
+        "pdf_page": 6,
+        "located_by": "caption search — Figure 4 found on PDF page 6",
+        "structure": "Panel (a) shows lme model results for cacao yield (kg/subplot). Three treatment groups on x-axis: Day, Night, Full Exclosure. Y-axis: 'Cacao yield (kg/subplot)' with values from approximately -2 to 1. Individual data points (gray dots) with horizontal mean lines. This is NOT a bar chart of raw means — the y-axis values include negative values, confirming these are model-predicted effects (differences from control, which would be at zero). No error bars (SEM/SD) shown — only individual site-level data points and means.",
+        "status": "bar_not_identifiable",
+        "evidence_note": "Figure 4a shows linear mixed effect model results, not raw treatment means. The y-axis 'Cacao yield (kg/subplot)' ranges from ~-2 to ~1, with control implicitly at zero. Values are model effects, not raw means. Cannot extract treatment_mean from this figure. The Night exclosure mean line appears at approximately -0.7 to -0.9 kg/subplot, but converting this model effect to raw mean in kg/ha/year requires the control mean in kg/subplot, which is not reported."
+      },
+      "notes": "Night exclosure significantly reduced yield (P = 0.032, Tukey test), but the paper does not report a specific percentage reduction or absolute mean for this treatment. Only the full exclosure percentage (31%) is stated. Figure 4a shows model effects, not raw means, and the unit (kg/subplot) differs from the text-reported unit (kg/ha/year). No conversion factor provided. Treatment_mean cannot be determined."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "dry cacao beans",
+      "treatment_mean": null,
+      "control_mean": 1051.73,
+      "effect_pct": null,
+      "n": 15,
+      "unit": "kg/ha/year",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "text, Results p.1483 (PDF page 4-5)",
+      "treatment_description": "day exclosure — bamboo-frame cage with mesh closed during daytime only (5:30 am to 6:30 pm), preventing access by birds but allowing nighttime bat access",
+      "control_description": "control (open) — no cage, natural access by all birds and bats",
+      "moderators": {
+        "predator_group": "birds",
+        "treatment_type": "exclusion",
+        "exclusion_level": "day only (birds excluded)",
+        "crop": "cacao",
+        "study_year": "2010-2011",
+        "country": "Indonesia"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 4a",
+        "pdf_page": 6,
+        "located_by": "caption search",
+        "structure": "Same as Night exclosure observation — see above. Day exclosure shown as leftmost group in panel (a).",
+        "status": "bar_not_identifiable",
+        "evidence_note": "Same limitation as Night exclosure: model effects, not raw means. Day exclosure mean line appears close to zero (~-0.2 to -0.4 kg/subplot), consistent with the non-significant result."
+      },
+      "notes": "Day exclosure did NOT significantly reduce yield compared to control (P > 0.05). No specific values reported. This indicates that bird exclusion alone (without bat exclusion) had no detectable effect on cacao yield, whereas bat exclusion (Night) and combined exclusion (Full) did. The significant bat effect may relate to bats' role in suppressing night-active arthropods (Orthoptera, Blattodea) that increased in night exclosures."
+    }
+  ]
+}

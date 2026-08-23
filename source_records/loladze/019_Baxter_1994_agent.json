@@ -1,0 +1,272 @@
+{
+  "paper_id": "019_Baxter_1994",
+  "title": "Effects of elevated carbon dioxide on three grass species from montane pasture. II. Nutrient uptake, allocation and efficiency of use",
+  "authors": "Baxter R, Gantley M, Ashenden TW, Farrar JF",
+  "year": 1994,
+  "journal": "Journal of Experimental Botany",
+  "species": "Agrostis capillaris, Poa alpina, Festuca vivipara",
+  "experiment_type": "Open-top chamber",
+  "co2_levels": {
+    "ambient": 340,
+    "elevated": 680,
+    "unit": "umol mol-1"
+  },
+  "notes": "Table 1 reports whole-plant total nutrient content (mg plant-1, extracted dry weight basis) for N, P, K, Mg, Ca. Tissue concentration data in Figures 1-2 (bar charts) show N, P, K, Mg, Ca per tissue (leaf, sheath, root) on structural dry weight basis (mg g-1 DW). n=4 replicates per treatment. A. capillaris harvested at 43d, P. alpina at 105d, F. vivipara at 189d.",
+  "consensus_observations": [
+    {
+      "element": "N",
+      "tissue": "whole plant",
+      "treatment_mean": 7.01,
+      "control_mean": 3.16,
+      "effect_pct": 121.84,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "whole plant",
+      "treatment_mean": 0.85,
+      "control_mean": 0.29,
+      "effect_pct": 193.10,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "whole plant",
+      "treatment_mean": 5.50,
+      "control_mean": 2.34,
+      "effect_pct": 135.04,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "whole plant",
+      "treatment_mean": 0.31,
+      "control_mean": 0.17,
+      "effect_pct": 82.35,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "whole plant",
+      "treatment_mean": 0.22,
+      "control_mean": 0.08,
+      "effect_pct": 175.00,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Agrostis capillaris",
+        "harvest_time": "43 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "whole plant",
+      "treatment_mean": 80.76,
+      "control_mean": 71.52,
+      "effect_pct": 12.92,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "whole plant",
+      "treatment_mean": 15.24,
+      "control_mean": 12.44,
+      "effect_pct": 22.51,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "whole plant",
+      "treatment_mean": 75.70,
+      "control_mean": 66.03,
+      "effect_pct": 14.64,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "whole plant",
+      "treatment_mean": 1.73,
+      "control_mean": 1.38,
+      "effect_pct": 25.36,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "whole plant",
+      "treatment_mean": 2.36,
+      "control_mean": 4.53,
+      "effect_pct": -47.90,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Poa alpina",
+        "harvest_time": "105 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "N",
+      "tissue": "whole plant",
+      "treatment_mean": 49.67,
+      "control_mean": 182.82,
+      "effect_pct": -72.83,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "whole plant",
+      "treatment_mean": 33.99,
+      "control_mean": 65.32,
+      "effect_pct": -47.97,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "whole plant",
+      "treatment_mean": 93.95,
+      "control_mean": 151.14,
+      "effect_pct": -37.84,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "whole plant",
+      "treatment_mean": 9.44,
+      "control_mean": 14.99,
+      "effect_pct": -37.02,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189 d",
+        "measurement": "total content"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "whole plant",
+      "treatment_mean": 13.26,
+      "control_mean": 24.21,
+      "effect_pct": -45.23,
+      "n": 4,
+      "unit": "mg plant-1",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 680 umol/mol",
+      "control_description": "Ambient CO2 340 umol/mol",
+      "moderators": {
+        "species": "Festuca vivipara",
+        "harvest_time": "189 d",
+        "measurement": "total content"
+      }
+    }
+  ]
+}

@@ -1,7 +1,11 @@
 # hui — AI-side decoder ledger (independent rebuild, 2026-08-19)
 
+**Release-path note (2026-08-23):** audit-era `01_INPUTS_FROZEN/hui/` is now
+`source_records/hui/`; the strict final output is `runs/hui_v4/keys/ai/`. The decoder writes scratch
+strict and sensitivity variants under `generated_keys/` for verification.
+
 Dataset: **Hui et al. 2025**, wheat grain-Zn biofortification. Outcome `grain_zn` (mg/kg).
-Decoder: `02_DECODERS/hui/decode_hui.py`, tag `rebuild_2026-08-19/hui`.
+Decoder: `decoders/decode_hui.py`, tag `rebuild_2026-08-19/hui`.
 
 **Two key sets are emitted**, identical in every column except `treatment_level`, so that the
 effect of the source change and the effect of the parser change can be attributed separately

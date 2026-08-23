@@ -1,0 +1,409 @@
+{
+  "paper_id": "021_Nobile_2022",
+  "title": "Biochar and compost addition increases soil organic carbon content and substitutes P and K fertilizer in three French cropping systems",
+  "authors": "Cecile Nobile, Manhattan Lebrun, Charlotte Vedere, Nicolas Honvault, Marie-Liesse Aubertin, Michel-Pierre Faucon, Cyril Girardin, Sabine Houot, Lea Kervroedan, Anne-Maimiti Dulaurent, Cornelia Rumpel, David Houben",
+  "year": 2022,
+  "journal": "Agronomy for Sustainable Development",
+  "observations": [
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.0,
+      "control_mean": 8.0,
+      "effect_pct": 0.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3a (Indre 2019 maize)",
+      "treatment_description": "Compost alone (8 t/ha), Indre, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Indre, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 0,
+        "feedstock": "green waste compost only",
+        "pyrolysis_temp_C": null,
+        "crop": "maize",
+        "soil_type": "loamy"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 10.0,
+      "control_mean": 8.0,
+      "effect_pct": 25.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3a (Indre 2019 maize)",
+      "treatment_description": "Comp + B-RS (compost + rapeseed biochar 4 t/ha), Indre, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Indre, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "rapeseed straw",
+        "pyrolysis_temp_C": 650,
+        "crop": "maize",
+        "soil_type": "loamy"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 10.0,
+      "control_mean": 8.0,
+      "effect_pct": 25.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3a (Indre 2019 maize)",
+      "treatment_description": "Comp + B-Misc (compost + Miscanthus biochar 4 t/ha), Indre, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Indre, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "Miscanthus",
+        "pyrolysis_temp_C": 550,
+        "crop": "maize",
+        "soil_type": "loamy"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 10.0,
+      "control_mean": 8.0,
+      "effect_pct": 25.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3a (Indre 2019 maize)",
+      "treatment_description": "Comp + B-Ref (compost + green waste residue biochar 4 t/ha), Indre, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Indre, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "green waste compost residue",
+        "pyrolysis_temp_C": 450,
+        "crop": "maize",
+        "soil_type": "loamy"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 13.0,
+      "control_mean": 12.0,
+      "effect_pct": 8.33,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3b (Oise 2019 maize)",
+      "treatment_description": "Comp + B-RS (compost + rapeseed biochar 4 t/ha), Oise, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Oise, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "rapeseed straw",
+        "pyrolysis_temp_C": 650,
+        "crop": "maize",
+        "soil_type": "silty-loam"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 13.0,
+      "control_mean": 12.0,
+      "effect_pct": 8.33,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3b (Oise 2019 maize)",
+      "treatment_description": "Comp + B-Misc (compost + Miscanthus biochar 4 t/ha), Oise, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Oise, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "Miscanthus",
+        "pyrolysis_temp_C": 550,
+        "crop": "maize",
+        "soil_type": "silty-loam"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 15.0,
+      "control_mean": 12.0,
+      "effect_pct": 25.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3b (Oise 2019 maize)",
+      "treatment_description": "Comp + B-Ref (compost + green waste residue biochar 4 t/ha), Oise, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Oise, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "green waste compost residue",
+        "pyrolysis_temp_C": 450,
+        "crop": "maize",
+        "soil_type": "silty-loam"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 22.0,
+      "control_mean": 22.0,
+      "effect_pct": 0.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3c (Haut-Rhin 2019 maize)",
+      "treatment_description": "Comp + B-RS (compost + rapeseed biochar 4 t/ha), Haut-Rhin, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Haut-Rhin, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "rapeseed straw",
+        "pyrolysis_temp_C": 650,
+        "crop": "maize",
+        "soil_type": "silty-loam (Fluvisol)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 22.0,
+      "control_mean": 22.0,
+      "effect_pct": 0.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3c (Haut-Rhin 2019 maize)",
+      "treatment_description": "Comp + B-Misc (compost + Miscanthus biochar 4 t/ha), Haut-Rhin, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Haut-Rhin, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "Miscanthus",
+        "pyrolysis_temp_C": 550,
+        "crop": "maize",
+        "soil_type": "silty-loam (Fluvisol)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 22.0,
+      "control_mean": 22.0,
+      "effect_pct": 0.0,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3c (Haut-Rhin 2019 maize)",
+      "treatment_description": "Comp + B-Ref (compost + green waste residue biochar 4 t/ha), Haut-Rhin, maize 2019",
+      "control_description": "Mineral fertilizer (MF), Haut-Rhin, maize 2019",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "green waste compost residue",
+        "pyrolysis_temp_C": 450,
+        "crop": "maize",
+        "soil_type": "silty-loam (Fluvisol)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.5,
+      "control_mean": 6.5,
+      "effect_pct": 15.38,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3d (Indre 2020 wheat)",
+      "treatment_description": "Comp + B-RS (compost + rapeseed biochar 4 t/ha), Indre, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Indre, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "rapeseed straw",
+        "pyrolysis_temp_C": 650,
+        "crop": "wheat",
+        "soil_type": "loamy"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.0,
+      "control_mean": 6.5,
+      "effect_pct": 7.69,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3d (Indre 2020 wheat)",
+      "treatment_description": "Comp + B-Misc (compost + Miscanthus biochar 4 t/ha), Indre, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Indre, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "Miscanthus",
+        "pyrolysis_temp_C": 550,
+        "crop": "wheat",
+        "soil_type": "loamy"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.0,
+      "control_mean": 6.5,
+      "effect_pct": 7.69,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3d (Indre 2020 wheat)",
+      "treatment_description": "Comp + B-Ref (compost + green waste residue biochar 4 t/ha), Indre, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Indre, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "green waste compost residue",
+        "pyrolysis_temp_C": 450,
+        "crop": "wheat",
+        "soil_type": "loamy"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.0,
+      "control_mean": 8.5,
+      "effect_pct": -5.88,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3e (Oise 2020 wheat)",
+      "treatment_description": "Comp + B-RS (compost + rapeseed biochar 4 t/ha), Oise, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Oise, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "rapeseed straw",
+        "pyrolysis_temp_C": 650,
+        "crop": "wheat",
+        "soil_type": "silty-loam"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.0,
+      "control_mean": 8.5,
+      "effect_pct": -5.88,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3e (Oise 2020 wheat)",
+      "treatment_description": "Comp + B-Misc (compost + Miscanthus biochar 4 t/ha), Oise, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Oise, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "Miscanthus",
+        "pyrolysis_temp_C": 550,
+        "crop": "wheat",
+        "soil_type": "silty-loam"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 7.5,
+      "control_mean": 8.5,
+      "effect_pct": -11.76,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3e (Oise 2020 wheat)",
+      "treatment_description": "Comp + B-Ref (compost + green waste residue biochar 4 t/ha), Oise, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Oise, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "green waste compost residue",
+        "pyrolysis_temp_C": 450,
+        "crop": "wheat",
+        "soil_type": "silty-loam"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.0,
+      "control_mean": 8.8,
+      "effect_pct": -9.09,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3f (Haut-Rhin 2020 wheat)",
+      "treatment_description": "Comp + B-RS (compost + rapeseed biochar 4 t/ha), Haut-Rhin, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Haut-Rhin, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "rapeseed straw",
+        "pyrolysis_temp_C": 650,
+        "crop": "wheat",
+        "soil_type": "silty-loam (Fluvisol)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.0,
+      "control_mean": 8.8,
+      "effect_pct": -9.09,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3f (Haut-Rhin 2020 wheat)",
+      "treatment_description": "Comp + B-Misc (compost + Miscanthus biochar 4 t/ha), Haut-Rhin, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Haut-Rhin, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "Miscanthus",
+        "pyrolysis_temp_C": 550,
+        "crop": "wheat",
+        "soil_type": "silty-loam (Fluvisol)"
+      },
+      "source_type": "figure"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 8.0,
+      "control_mean": 8.8,
+      "effect_pct": -9.09,
+      "n": 4,
+      "variance_type": "SE",
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Figure 3f (Haut-Rhin 2020 wheat)",
+      "treatment_description": "Comp + B-Ref (compost + green waste residue biochar 4 t/ha), Haut-Rhin, wheat 2020",
+      "control_description": "Mineral fertilizer (MF), Haut-Rhin, wheat 2020",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "green waste compost residue",
+        "pyrolysis_temp_C": 450,
+        "crop": "wheat",
+        "soil_type": "silty-loam (Fluvisol)"
+      },
+      "source_type": "figure"
+    }
+  ],
+  "notes": "Yield data from Figure 3 bar charts only (no numeric yield table). Values estimated from figure. Maize yields 4.6-23 t/ha, wheat yields 5.4-8.8 t/ha across 3 sites. The control is mineral fertilizer (MF) providing equivalent P and K. Compost-biochar mixtures = 8 t/ha compost + 4 t/ha biochar. No significant treatment effect on yield at any site. Three biochars from different feedstocks at different pyrolysis temperatures. 4 replicates, RCBD. Text states maize yields ranged 4.6-23 t/ha, wheat 5.4-8.8 t/ha. No differences among treatments were significant for any site or crop."
+}

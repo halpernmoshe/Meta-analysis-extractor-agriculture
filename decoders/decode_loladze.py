@@ -8,7 +8,7 @@ Exactly one substantive variable changes vs the submission: the AI-side SOURCE.
 The submitted decoder read the multi-model consensus folder
 `output/loladze_v3_combined/*_consensus.json`; this rebuild reads the FROZEN
 March-2026 single-model Claude agent JSONs
-`01_INPUTS_FROZEN/loladze/*_agent.json` (46 files, 1646 records).
+`source_records/loladze/*_agent.json` (46 files, 1646 records).
 
 All element / tissue / species / CO2 / suffix / pooling / effect logic is the
 submitted v3 logic, byte-for-byte, except for the changes enumerated in
@@ -41,8 +41,8 @@ import re
 # submitted: SRC = ".../output/loladze_v3_combined" ; glob "*_consensus.json"
 # ---------------------------------------------------------------------------
 _HERE = os.path.dirname(os.path.abspath(__file__))
-_ROOT = os.path.normpath(os.path.join(_HERE, "..", ".."))
-SRC = os.path.join(_ROOT, "01_INPUTS_FROZEN", "loladze")
+_ROOT = os.path.normpath(os.path.join(_HERE, ".."))
+SRC = os.environ.get("LOLADZE_SOURCE_DIR", os.path.join(_ROOT, "source_records", "loladze"))
 SRC_GLOB = "*_agent.json"
 
 # ---------------------------------------------------------------------------
@@ -50,7 +50,8 @@ SRC_GLOB = "*_agent.json"
 # same column order / quoting behaviour as the submitted `keys_from_jsonl.py`).
 # submitted: wrote .jsonl into runs/loladze_v2/jsonl/ai, converted in a 2nd pass.
 # ---------------------------------------------------------------------------
-OUTDIR = os.path.join(_ROOT, "03_KEYS", "ai_rebuilt", "loladze")
+GENERATED_ROOT = os.environ.get("DECODER_OUTPUT_ROOT", os.path.join(_ROOT, "generated_keys"))
+OUTDIR = os.path.join(GENERATED_ROOT, "loladze")
 
 COLS = ["row_id", "side", "paper_id", "outcome_canonical", "crop",
         "treatment_level", "co_amendment", "co_amendment_level", "timepoint",

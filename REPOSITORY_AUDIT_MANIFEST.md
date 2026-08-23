@@ -1,6 +1,6 @@
 # Repository Audit Manifest
 
-Audit date: 2026-08-20
+Audit date: 2026-08-23
 
 This repository reproduces the reported mean- and effect-based scope-aware analyses. Every
 analysis script is deterministic and reproduces its locked `EXPECTED_OUTPUT_*.txt` byte-for-byte.
@@ -25,6 +25,8 @@ carried here; it remains in the earlier deposit for provenance.
 | `make_fig3_reconciliation.py` | Figure 3 (reconciliation two-panel). | `figures/fig3_reconciliation.png` |
 | `corpus_mislabels_D2.csv` | Corpus-mislabel manifest (17 wrong-paper PDFs excluded): dataset, filename, actual content, handling, evidence. | — |
 | `runs/` | Cleaned AI/reference key tables for the five datasets (`boldorini`, `biochar_v2`, `loladze_v2`, `hui_v4`, `li2022_v2`). Inputs to every script. | — |
+| `source_records/` | The 184 finalized JSON extraction artifacts underlying the frozen AI key tables (178 paper records plus 6 biochar auxiliaries), with file-level SHA-256 manifest and provenance README. | `source_records/SHA256SUMS.txt` |
+| `verify_source_record_release.py` | Parses and authenticates every JSON, runs all five decoders in a temporary directory, and checks generated AI keys byte-for-byte against `runs/*/keys/ai/`. | 170 CSV files, 3,151 rows |
 | `figures/` | Generated manuscript figures (fig1–fig3, figS1_bland_altman). | — |
 | `README.md`, `REPOSITORY_AUDIT_MANIFEST.md` | Reproduction instructions and this manifest. | — |
 | `requirements.txt` | Dependencies (standard library for analysis; matplotlib for figures). | — |
@@ -34,9 +36,14 @@ carried here; it remains in the earlier deposit for provenance.
 
 ## Notes
 
-- Source PDFs are not redistributed because of publisher copyright; the `runs/` key tables are the inputs.
+- Source PDFs are not redistributed because of publisher copyright; finalized JSON source records
+  are under `source_records/`, while the `runs/` key tables are the direct analysis inputs.
 - The core analysis scripts reproduce their `EXPECTED_OUTPUT_*.txt` byte-for-byte; the figure scripts run without error and print values matching their captions.
 - The coverage/source-format analysis uses only the deposited key tables and reproduces its deposited CSV summaries.
 - `PUBLIC_SOURCE_DATA.md` gives public download addresses for the two comparator datasets used in
   the Supplementary Material S7 variance-provenance screens.
-- Source PDFs, raw model outputs, and prompts are not redistributed because they can contain copyrighted source text or account-provenance material.
+- Superseded extraction attempts, broad raw validation/variance outputs, complete logs,
+  conversational transcripts, and the contaminated March 2026 Boldorini set are not carried in the
+  corrected source-record release. The historical public `dev-archive-pre-curation` branch contains
+  older raw JSON/prompt material; it is explicitly non-authoritative and is retained only for
+  provenance. No history or remote ref was rewritten.

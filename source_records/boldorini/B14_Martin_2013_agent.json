@@ -1,0 +1,212 @@
+{
+  "paper_id": "B14_Martin_2013",
+  "title": "Natural enemy interactions constrain pest control in complex agricultural landscapes",
+  "authors": "Martin EA, Reineking B, Seo B, Steffan-Dewenter I",
+  "year": 2013,
+  "doi": "10.1073/pnas.1215725110",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "crop": "cabbage",
+  "species": "Brassica oleracea var. capitata",
+  "experiment_type": "field exclusion",
+  "location": "Haean, South Korea (128°5' to 128°11' E, 38°13' to 38°20' N)",
+  "design": "Field exclusion experiment in 18 fields across a 55-km² agricultural landscape; 6 natural enemy exclusion treatments per field plus 1 abiotic control: -B (birds excluded, chicken wire 1.5 cm mesh), -G (ground-dwellers excluded, plastic sheets + insect glue + pitfall traps), -F-B (flying insects + birds excluded, polyester mesh 0.8 mm + chicken wire), -G-B (ground-dwellers + birds excluded), -G-F-B (all enemies excluded), O (open, no exclusion); exclusion cages 50 × 150 × 100 cm with 20 m² plots; 4 cabbage plants per treatment per plot; initial pest densities standardized across exclosures; 60-day growth period (July-September 2010); (G)LMM with treatment × landscape complexity interaction; n = 318 for pest density (cage-level counts across rounds), n = 432 for herbivory and biomass (plant-level measurements)",
+  "n_replicates": 18,
+  "notes": "This paper's central finding is that natural enemy INTERACTIONS (particularly antagonistic intraguild predation by birds on flying insect predators) constrain pest control in complex landscapes. In simple landscapes, all enemy guilds contribute positively. In complex landscapes, birds reduce the effectiveness of flying insect predators through intraguild predation. This means the direction of the bird-exclusion effect depends on landscape complexity — averaged across all landscapes, -B vs O may be non-significant because opposite effects cancel out. The paper reports three response variables: pest larval density (Lepidoptera larvae per cage), herbivory (% leaf damage), and fresh biomass (g per plant). All three are measured at the end of the 60-day growth period. The overall effect of all enemy guilds combined (-G-F-B vs O) is stated in text: 43% lower pest density, 54% lower leaf damage, and 57% higher biomass for O relative to -G-F-B. These percentages are from model predictions (backtransformed, accounting for estimation uncertainty). Figure 1 shows raw means ± SEM per treatment. The bar ordering in Figure 1 corresponds to the 6 treatments shown with icon symbols indicating which guilds are excluded. Table 2 gives pairwise treatment comparisons for herbivory (slope and intercept differences). For the -B vs O comparison specifically: slope difference = 0.014, P(adjusted) = 0.254 (NS); intercept difference = -0.169, P(adjusted) = 0.813 (NS) — confirming no significant overall effect of bird exclusion alone on herbivory. Pest density was modeled with negative binomial, herbivory was logit-transformed, biomass modeled with Gamma distribution. Landscape complexity measured as % seminatural habitat at 300 m radius (AIC-selected scale).",
+  "observations": [
+    {
+      "outcome": "crop yield",
+      "tissue": "whole plant fresh biomass",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": -36.3,
+      "n": 18,
+      "unit": "g fresh biomass per plant",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results p.5534-5535 (PDF pages 1-2) and Fig. 1C (PDF page 2)",
+      "treatment_description": "-G-F-B: control excluding all natural enemies but including herbivores — cage constructed with all three exclusion materials (chicken wire 1.5 cm for vertebrates, polyester mesh 0.8 mm for flying insects, plastic sheets + insect glue + pitfall traps for ground-dwellers)",
+      "control_description": "O: open treatment without any exclusion — all three guilds of natural enemies (flying insects, ground-dwellers, birds/vertebrates) have full access to plants",
+      "moderators": {
+        "predator_group": "all natural enemies (flying insects + ground-dwellers + birds/vertebrates)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (-G-F-B)",
+        "crop": "cabbage",
+        "study_year": "2010",
+        "country": "South Korea"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 1C",
+        "pdf_page": 2,
+        "located_by": "caption search — Figure 1 found on PDF page 2",
+        "structure": "Panel C of three-panel figure. Six bars representing 6 exclusion treatments, each with mean ± SEM. Y-axis: Biomass (g), fresh biomass of individual plants. Ticks at 0, 50, 100, 150, 200, 250; spacing 50 g; linear. Error bars are SEM (caption: 'means ± SEM per treatment'). Tukey letters above bars (adjusted P < 0.05). Treatment identity shown by small guild icons below each bar — crossed-out symbols indicate excluded guilds (wasp = flying insects, beetle = ground-dwellers, bird = birds/vertebrates). The O (open) bar appears tallest; the bar with letter 'b' appears shortest.",
+        "axis_min": 0,
+        "axis_max": 250,
+        "log_axis": false,
+        "status": "too_crowded",
+        "evidence_note": "Figure has 6 bars with small guild-icon labels that are difficult to resolve at available PDF resolution. Cannot reliably match specific bars to specific treatments from the icon symbols alone. However, the text states O has 57% higher biomass than -G-F-B, which constrains the values. The tallest bar (O) reads approximately 185-195 g; -G-F-B should then be approximately 118-124 g (185-195 / 1.57). One bar with Tukey letter 'b' appears at approximately 80-100 g — this is likely NOT -G-F-B but rather a partial exclusion treatment affected by antagonistic interactions. Absolute means not reported in text."
+      },
+      "notes": "Text states: 'treatments accessible to all natural enemies led to... 57% higher biomass than controls excluding enemies.' This means O biomass = 1.57 × -G-F-B biomass. The effect_pct is calculated as: 100 × (1/1.57 - 1) = -36.3% (the -G-F-B treatment has 36.3% less biomass than O). Absolute means not stated in text. Figure 1C shows raw means ± SEM but the 6-bar figure with icon-based treatment labels cannot be reliably digitized at this PDF resolution — the specific bars for O and -G-F-B cannot be confidently identified. The 57% figure is from model predictions (backtransformed) per the Methods."
+    },
+    {
+      "outcome": "crop damage",
+      "tissue": "leaf",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": 117.4,
+      "n": 18,
+      "unit": "herbivory (% leaf area missing)",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results p.5534-5535 (PDF pages 1-2) and Fig. 1B (PDF page 2)",
+      "treatment_description": "-G-F-B: control excluding all natural enemies but including herbivores",
+      "control_description": "O: open treatment without any exclusion — all natural enemy guilds have full access",
+      "moderators": {
+        "predator_group": "all natural enemies (flying insects + ground-dwellers + birds/vertebrates)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (-G-F-B)",
+        "crop": "cabbage",
+        "study_year": "2010",
+        "country": "South Korea"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 1B",
+        "pdf_page": 2,
+        "located_by": "caption search",
+        "structure": "Panel B of three-panel figure. Six bars, means ± SEM. Y-axis: Herbivory (%), ticks at 0, 5, 10, 15, 20, 25; spacing 5%; linear. Error bars are SEM. Tukey letters above bars. Guild icons below each bar.",
+        "axis_min": 0,
+        "axis_max": 25,
+        "log_axis": false,
+        "status": "too_crowded",
+        "evidence_note": "Same limitation as biomass panel — 6 bars with icon labels that cannot be reliably resolved. Text states O has 54% lower leaf damage than -G-F-B, constraining the ratio. If -G-F-B ≈ 20% herbivory, O ≈ 9.2%. One bar appears notably tall (18-22%) and another low (~8-10%), but matching them to specific treatments from icons is uncertain."
+      },
+      "notes": "Text states: 'treatments accessible to all natural enemies led to... 54% lower leaf damage... than controls excluding enemies.' So -G-F-B has 1/(1-0.54) = 2.174× the herbivory of O. effect_pct = 100 × (2.174 - 1) = +117.4% (damage is higher in -G-F-B than O). Herbivory was logit-transformed for analysis. Values are model-predicted (backtransformed). P < 0.001 for treatment effect (Table 1). Direction: excluding all natural enemies increases crop damage as expected."
+    },
+    {
+      "outcome": "pest abundance",
+      "tissue": null,
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": 75.4,
+      "n": 18,
+      "unit": "Lepidoptera larvae per exclusion cage (total count per monitoring round)",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results p.5534-5535 (PDF pages 1-2) and Fig. 1A (PDF page 2)",
+      "treatment_description": "-G-F-B: control excluding all natural enemies but including herbivores",
+      "control_description": "O: open treatment without any exclusion — all natural enemy guilds have full access",
+      "moderators": {
+        "predator_group": "all natural enemies (flying insects + ground-dwellers + birds/vertebrates)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (-G-F-B)",
+        "crop": "cabbage",
+        "study_year": "2010",
+        "country": "South Korea"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 1A",
+        "pdf_page": 2,
+        "located_by": "caption search",
+        "structure": "Panel A of three-panel figure. Six bars, means ± SEM. Y-axis: Pest larval density (individuals per cage), ticks at 0, 2, 4, 6, 8; spacing 2; linear. Error bars are SEM. Tukey letters above bars. Guild icons below each bar.",
+        "axis_min": 0,
+        "axis_max": 8,
+        "log_axis": false,
+        "status": "too_crowded",
+        "evidence_note": "Same limitation — 6 bars with icon labels. Text states O has 43% lower pest density than -G-F-B. One bar has Tukey letter 'd' (significantly different from all others, highest) — likely -G-F-B. Another has letter 'b' (low) — could be O or -B. Pest density modeled with negative binomial. Specific bar heights: the 'd' bar appears at approximately 5-7 larvae/cage; the 'b' bar at approximately 1-3 larvae/cage."
+      },
+      "notes": "Text states: 'treatments accessible to all natural enemies led to 43% lower pest densities... than controls excluding enemies.' So -G-F-B has 1/(1-0.43) = 1.754× the pest density of O. effect_pct = +75.4%. Pest density = total number of Lepidoptera larvae (Pieris rapae, P. brassicae, Trichoplusia ni) per exclusion cage. Modeled with negative binomial distribution. P < 0.001 for treatment effect (Table 1). In complex landscapes, densities reached ~11 larvae/exclosure vs ~1 in simple landscapes. Direction: excluding all enemies increases pest abundance as expected."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "whole plant fresh biomass",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 18,
+      "unit": "g fresh biomass per plant",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Fig. 1C (PDF page 2)",
+      "treatment_description": "-B: exclusion of birds and vertebrates larger than 1.5 cm only — cage constructed with chicken wire (1.5 cm mesh size); flying insects and ground-dwellers retain full access",
+      "control_description": "O: open treatment without any exclusion — all natural enemy guilds have full access",
+      "moderators": {
+        "predator_group": "birds and vertebrates (>1.5 cm)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "birds only (-B)",
+        "crop": "cabbage",
+        "study_year": "2010",
+        "country": "South Korea"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 1C",
+        "pdf_page": 2,
+        "located_by": "caption search",
+        "structure": "Same panel as observation 1. Six bars with guild icons. The -B bar (bird symbol crossed out, wasp and beetle intact) and O bar (all symbols intact) need to be identified from icon patterns.",
+        "status": "too_crowded",
+        "evidence_note": "Cannot reliably identify the specific -B bar among the 6 bars from the icon symbols at available resolution. The -B bar likely shares Tukey letter 'ab' with O ('a'), indicating no significant difference. Table 2 confirms -B vs O herbivory intercept is non-significant (P adjusted = 0.813). Biomass comparison not separately reported in text."
+      },
+      "notes": "Bird-only exclusion (-B) vs open control (O). No specific percentage or mean difference stated in text for this comparison. Table 2 shows -B vs O is NOT significant for herbivory (slope P adj = 0.254, intercept P adj = 0.813). The paper's key finding is that bird effects are landscape-dependent: in simple landscapes, birds contribute positively to pest control; in complex landscapes, birds constrain flying insect predators through intraguild predation. Averaged across all 18 landscapes, the -B vs O comparison is non-significant. Figure 1 bars for -B and O appear similar but cannot be reliably digitized due to 6-bar density and icon-based labels."
+    },
+    {
+      "outcome": "crop damage",
+      "tissue": "leaf",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 18,
+      "unit": "herbivory (% leaf area missing)",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Fig. 1B (PDF page 2) and Table 2 (PDF page 4)",
+      "treatment_description": "-B: exclusion of birds and vertebrates larger than 1.5 cm only — cage with chicken wire (1.5 cm mesh); flying insects and ground-dwellers retain full access",
+      "control_description": "O: open treatment without any exclusion — all natural enemy guilds have full access",
+      "moderators": {
+        "predator_group": "birds and vertebrates (>1.5 cm)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "birds only (-B)",
+        "crop": "cabbage",
+        "study_year": "2010",
+        "country": "South Korea"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 1B",
+        "pdf_page": 2,
+        "located_by": "caption search",
+        "structure": "Same panel as observation 2.",
+        "status": "too_crowded",
+        "evidence_note": "Cannot identify specific -B bar. Table 2 provides slope and intercept comparisons: -B vs O slope difference = 0.014, SE = 0.010, P adjusted = 0.254 (NS); intercept difference = -0.169, SE = 0.289, P adjusted = 0.813 (NS)."
+      },
+      "notes": "Bird-only exclusion vs open is NOT significant for herbivory. Table 2 pairwise comparison: -B vs O slope P(adjusted) = 0.254, intercept P(adjusted) = 0.813. The non-significance is because bird effects are landscape-dependent: in simple landscapes birds reduce herbivory, in complex landscapes birds constrain flying insect predators (intraguild predation) which can paradoxically increase herbivory. These opposite effects cancel out across the landscape gradient."
+    },
+    {
+      "outcome": "pest abundance",
+      "tissue": null,
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 18,
+      "unit": "Lepidoptera larvae per exclusion cage",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "Fig. 1A (PDF page 2)",
+      "treatment_description": "-B: exclusion of birds and vertebrates larger than 1.5 cm only — cage with chicken wire (1.5 cm mesh); flying insects and ground-dwellers retain full access",
+      "control_description": "O: open treatment without any exclusion — all natural enemy guilds have full access",
+      "moderators": {
+        "predator_group": "birds and vertebrates (>1.5 cm)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "birds only (-B)",
+        "crop": "cabbage",
+        "study_year": "2010",
+        "country": "South Korea"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 1A",
+        "pdf_page": 2,
+        "located_by": "caption search",
+        "structure": "Same panel as observation 3.",
+        "status": "too_crowded",
+        "evidence_note": "Cannot identify specific -B bar. In simple landscapes, excluding birds (-B) increases pest density (reduced biocontrol). In complex landscapes, excluding birds decreases pest density (released flying insect predators from intraguild predation). Averaged effect likely non-significant."
+      },
+      "notes": "Bird-only exclusion vs open for pest density. No specific comparison stated in text. The paper reports that 'densities... showing lower densities and damage in treatments excluding birds, than in those including them (Fig. 1 A and B)', which suggests that AVERAGED across landscapes, -B may actually have LOWER pest density than O. This is the opposite of the simple biocontrol expectation and is the paper's key finding: birds can constrain pest control through intraguild predation. Direction check: if -B < O for pest density, this means excluding birds REDUCES pests — opposite to expected. This is a real finding, not a treatment/control swap. The paper explicitly discusses this as antagonistic natural enemy interactions. Re-checked assignment: -B is the bird-excluded arm (treatment), O is the open arm (control). The negative direction (excluding birds reduces pests) is correct for this system where birds suppress flying insect predators."
+    }
+  ]
+}

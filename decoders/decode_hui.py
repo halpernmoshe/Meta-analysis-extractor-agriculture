@@ -11,16 +11,16 @@ Adapted from the submitted two-stage chain:
            (canonical publication-level paper_id + corpus cleaning)
 
 Exactly one variable changes vs the submission: the AI-side SOURCE is now the frozen
-March-2026 single-model Claude agent JSONs (01_INPUTS_FROZEN/hui/*_agent.json) instead
+March-2026 single-model Claude agent JSONs (source_records/hui/*_agent.json) instead
 of the multi-model consensus folder output/hui2023_full_35/*_consensus.json.
 
 TWO KEY SETS ARE EMITTED, differing ONLY in how `treatment_level` is decoded, so that the
 effect of the source change and the effect of the parser change can be attributed separately:
 
-  03_KEYS/ai_rebuilt_strict/hui/   variant "strict" -- treatment_level from the
+  generated_keys/hui_strict/   variant "strict" -- treatment_level from the
         treatment_description ONLY, by a literal port of gen_ai_keys.py::app_type
         (no method-field precedence, no keyword-union additions). Like-for-like baseline.
-  03_KEYS/ai_rebuilt/hui/          variant "method_field_first" -- treatment_level from the
+  generated_keys/hui_method_field_first/   variant "method_field_first" -- treatment_level from the
         record's own explicit Zn-application-method field when present, descriptor keyword
         decode (union of the four submitted sibling decoders) as fallback.
 
@@ -53,14 +53,15 @@ from decimal import Decimal
 # paths / variants
 # --------------------------------------------------------------------------------------
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))          # claude_rebuild/
-IN_DIR = os.path.join(ROOT, "01_INPUTS_FROZEN", "hui")
+ROOT = os.path.abspath(os.path.join(HERE, ".."))
+IN_DIR = os.environ.get("HUI_SOURCE_DIR", os.path.join(ROOT, "source_records", "hui"))
+GENERATED_ROOT = os.environ.get("DECODER_OUTPUT_ROOT", os.path.join(ROOT, "generated_keys"))
 DECODER_TAG = "rebuild_2026-08-19/hui"
 
 # variant key -> output directory (relative to ROOT)
 VARIANTS = [
-    ("strict", os.path.join("03_KEYS", "ai_rebuilt_strict", "hui")),
-    ("method_field_first", os.path.join("03_KEYS", "ai_rebuilt", "hui")),
+    ("strict", "hui_strict"),
+    ("method_field_first", "hui_method_field_first"),
 ]
 
 HEADER = ["row_id", "side", "paper_id", "outcome_canonical", "crop", "treatment_level",
@@ -630,7 +631,7 @@ def report(variant, out_dir, stat):
 def main():
     stats = {}
     for variant, rel in VARIANTS:
-        out_dir = os.path.join(ROOT, rel)
+        out_dir = os.path.join(GENERATED_ROOT, rel)
         stats[variant] = decode(variant, out_dir)
         report(variant, rel, stats[variant])
 

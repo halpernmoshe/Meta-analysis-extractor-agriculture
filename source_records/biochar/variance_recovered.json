@@ -1,0 +1,1944 @@
+{
+  "summary": {
+    "n_papers": 28,
+    "total_obs": 432,
+    "already_had_variance": 62,
+    "recovered": 83,
+    "still_missing": 287,
+    "recovery_rate_of_missing": 22.4,
+    "method_counts": {
+      "letters_to_sd": 67,
+      "pvalue_to_sd": 16
+    },
+    "confidence_counts": {
+      "low": 83
+    },
+    "per_paper": [
+      {
+        "paper_id": "001_Adekiya_2019",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      },
+      {
+        "paper_id": "007_Gathorne-Hardy_2009",
+        "total_obs": 4,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 4
+      },
+      {
+        "paper_id": "016_Li_B_2016",
+        "total_obs": 6,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 6
+      },
+      {
+        "paper_id": "021_Nobile_2022",
+        "total_obs": 19,
+        "already_had": 0,
+        "recovered": 19,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "041_Guerena_2013",
+        "total_obs": 16,
+        "already_had": 0,
+        "recovered": 16,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "063_Asai_2009",
+        "total_obs": 18,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 18
+      },
+      {
+        "paper_id": "077_Zhang_J_2019",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 12,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "078_Wang_2012",
+        "total_obs": 16,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 16
+      },
+      {
+        "paper_id": "081_Deenik_2010",
+        "total_obs": 14,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 14
+      },
+      {
+        "paper_id": "082_Jose_2013",
+        "total_obs": 18,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 18
+      },
+      {
+        "paper_id": "101_Liang_Feng_2014",
+        "total_obs": 9,
+        "already_had": 9,
+        "recovered": 0,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "116_Farrell_2014",
+        "total_obs": 18,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 18
+      },
+      {
+        "paper_id": "126_Arif_2017",
+        "total_obs": 16,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 16
+      },
+      {
+        "paper_id": "130_Azeem_2019",
+        "total_obs": 16,
+        "already_had": 16,
+        "recovered": 0,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "133_Pandit_2018",
+        "total_obs": 30,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 30
+      },
+      {
+        "paper_id": "145_Omara_2020",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      },
+      {
+        "paper_id": "153_Wei_2022",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      },
+      {
+        "paper_id": "166_Haefele_2011",
+        "total_obs": 28,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 28
+      },
+      {
+        "paper_id": "184_Yeboah_2018",
+        "total_obs": 9,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 9
+      },
+      {
+        "paper_id": "193_Islami_2011",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      },
+      {
+        "paper_id": "207_Liu_2019",
+        "total_obs": 36,
+        "already_had": 0,
+        "recovered": 36,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "219_Xie_2021",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      },
+      {
+        "paper_id": "223_Dong_2019",
+        "total_obs": 16,
+        "already_had": 16,
+        "recovered": 0,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "227_Niu_2017",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      },
+      {
+        "paper_id": "229_Shi_2022",
+        "total_obs": 21,
+        "already_had": 21,
+        "recovered": 0,
+        "still_missing": 0
+      },
+      {
+        "paper_id": "231_Zhang_2021",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      },
+      {
+        "paper_id": "234_Malik_2018",
+        "total_obs": 14,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 14
+      },
+      {
+        "paper_id": "242_Liu_2014",
+        "total_obs": 12,
+        "already_had": 0,
+        "recovered": 0,
+        "still_missing": 12
+      }
+    ]
+  },
+  "papers": [
+    {
+      "paper_id": "001_Adekiya_2019",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "007_Gathorne-Hardy_2009",
+      "variance_recovery": {
+        "total_obs": 4,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 4,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "016_Li_B_2016",
+      "variance_recovery": {
+        "total_obs": 6,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 6,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "021_Nobile_2022",
+      "variance_recovery": {
+        "total_obs": 19,
+        "already_had_variance": 0,
+        "recovered": 19,
+        "still_missing": 0,
+        "recoveries": [
+          {
+            "obs_index": 0,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 1,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 2,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 3,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 4,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 5,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 6,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 7,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 8,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 9,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 10,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 11,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 12,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 13,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 14,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 15,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 16,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 17,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 18,
+            "method": "letters_to_sd",
+            "sd": 9.536316,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          }
+        ]
+      },
+      "observations_with_recovery": [
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.0,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.0,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.0,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 13.0,
+          "control_mean": 12.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 13.0,
+          "control_mean": 12.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 15.0,
+          "control_mean": 12.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 22.0,
+          "control_mean": 22.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 22.0,
+          "control_mean": 22.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 22.0,
+          "control_mean": 22.0,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 7.5,
+          "control_mean": 6.5,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 7.0,
+          "control_mean": 6.5,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 7.0,
+          "control_mean": 6.5,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 7.5,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.8,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.8,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.8,
+          "treatment_sd_recovered": 9.536316,
+          "control_sd_recovered": 9.536316,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 16.5000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 16.5 * sqrt(4) / (2.4469 * sqrt(2)) = 9.5363",
+          "recovery_source": "Inferred from 18 mean-letter pairs"
+        }
+      ]
+    },
+    {
+      "paper_id": "041_Guerena_2013",
+      "variance_recovery": {
+        "total_obs": 16,
+        "already_had_variance": 0,
+        "recovered": 16,
+        "still_missing": 0,
+        "recoveries": [
+          {
+            "obs_index": 0,
+            "method": "pvalue_to_sd",
+            "sd": 0.27594,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 1,
+            "method": "pvalue_to_sd",
+            "sd": 0.2409,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 2,
+            "method": "pvalue_to_sd",
+            "sd": 0.31536,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 3,
+            "method": "pvalue_to_sd",
+            "sd": 0.30222,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 4,
+            "method": "pvalue_to_sd",
+            "sd": 0.63948,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 5,
+            "method": "pvalue_to_sd",
+            "sd": 0.49056,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 6,
+            "method": "pvalue_to_sd",
+            "sd": 0.7008,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 7,
+            "method": "pvalue_to_sd",
+            "sd": 0.77964,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 8,
+            "method": "pvalue_to_sd",
+            "sd": 0.00438,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 9,
+            "method": "pvalue_to_sd",
+            "sd": 0.24966,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 10,
+            "method": "pvalue_to_sd",
+            "sd": 0.83658,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 11,
+            "method": "pvalue_to_sd",
+            "sd": 0.02628,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 12,
+            "method": "pvalue_to_sd",
+            "sd": 0.03942,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 13,
+            "method": "pvalue_to_sd",
+            "sd": 0.03066,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 14,
+            "method": "pvalue_to_sd",
+            "sd": 0.38544,
+            "confidence": "low",
+            "source_type": "p-value"
+          },
+          {
+            "obs_index": 15,
+            "method": "pvalue_to_sd",
+            "sd": 0.17082,
+            "confidence": "low",
+            "source_type": "p-value"
+          }
+        ]
+      },
+      "observations_with_recovery": [
+        {
+          "treatment_mean": 4.11,
+          "control_mean": 4.74,
+          "treatment_sd_recovered": 0.27594,
+          "control_sd_recovered": 0.27594,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.6300 / (2.7962 * 0.8165) = 0.2759",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 4.19,
+          "control_mean": 4.74,
+          "treatment_sd_recovered": 0.2409,
+          "control_sd_recovered": 0.2409,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.5500 / (2.7962 * 0.8165) = 0.2409",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 4.02,
+          "control_mean": 4.74,
+          "treatment_sd_recovered": 0.31536,
+          "control_sd_recovered": 0.31536,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.7200 / (2.7962 * 0.8165) = 0.3154",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 4.05,
+          "control_mean": 4.74,
+          "treatment_sd_recovered": 0.30222,
+          "control_sd_recovered": 0.30222,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.6900 / (2.7962 * 0.8165) = 0.3022",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 7.8,
+          "control_mean": 9.26,
+          "treatment_sd_recovered": 0.63948,
+          "control_sd_recovered": 0.63948,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 1.4600 / (2.7962 * 0.8165) = 0.6395",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 8.14,
+          "control_mean": 9.26,
+          "treatment_sd_recovered": 0.49056,
+          "control_sd_recovered": 0.49056,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 1.1200 / (2.7962 * 0.8165) = 0.4906",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 7.66,
+          "control_mean": 9.26,
+          "treatment_sd_recovered": 0.7008,
+          "control_sd_recovered": 0.7008,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 1.6000 / (2.7962 * 0.8165) = 0.7008",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 7.48,
+          "control_mean": 9.26,
+          "treatment_sd_recovered": 0.77964,
+          "control_sd_recovered": 0.77964,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 1.7800 / (2.7962 * 0.8165) = 0.7796",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 8.51,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.00438,
+          "control_sd_recovered": 0.00438,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.0100 / (2.7962 * 0.8165) = 0.0044",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 7.93,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.24966,
+          "control_sd_recovered": 0.24966,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.5700 / (2.7962 * 0.8165) = 0.2497",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 6.59,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.83658,
+          "control_sd_recovered": 0.83658,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 1.9100 / (2.7962 * 0.8165) = 0.8366",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 8.56,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.02628,
+          "control_sd_recovered": 0.02628,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.0600 / (2.7962 * 0.8165) = 0.0263",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 8.6,
+          "control_mean": 8.69,
+          "treatment_sd_recovered": 0.03942,
+          "control_sd_recovered": 0.03942,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.0900 / (2.7962 * 0.8165) = 0.0394",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 8.62,
+          "control_mean": 8.69,
+          "treatment_sd_recovered": 0.03066,
+          "control_sd_recovered": 0.03066,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.0700 / (2.7962 * 0.8165) = 0.0307",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 7.81,
+          "control_mean": 8.69,
+          "treatment_sd_recovered": 0.38544,
+          "control_sd_recovered": 0.38544,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.8800 / (2.7962 * 0.8165) = 0.3854",
+          "recovery_source": "Text match: 'p<0.05'"
+        },
+        {
+          "treatment_mean": 9.08,
+          "control_mean": 8.69,
+          "treatment_sd_recovered": 0.17082,
+          "control_sd_recovered": 0.17082,
+          "recovery_method": "pvalue_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "t = ppf(1-p/2, df=4) = 2.7962, SD = |mean1-mean2| / (t * sqrt(1/n1+1/n2)) = 0.3900 / (2.7962 * 0.8165) = 0.1708",
+          "recovery_source": "Text match: 'p<0.05'"
+        }
+      ]
+    },
+    {
+      "paper_id": "063_Asai_2009",
+      "variance_recovery": {
+        "total_obs": 18,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 18,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "077_Zhang_J_2019",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 12,
+        "still_missing": 0,
+        "recoveries": [
+          {
+            "obs_index": 0,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 1,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 2,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 3,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 4,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 5,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 6,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 7,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 8,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 9,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 10,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 11,
+            "method": "letters_to_sd",
+            "sd": 1385.821921,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          }
+        ]
+      },
+      "observations_with_recovery": [
+        {
+          "treatment_mean": 4200.0,
+          "control_mean": 4363.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 5633.0,
+          "control_mean": 4363.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 5856.0,
+          "control_mean": 4363.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 4200.0,
+          "control_mean": 4363.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3022.0,
+          "control_mean": 2332.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3200.0,
+          "control_mean": 2332.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3540.0,
+          "control_mean": 2332.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 4571.0,
+          "control_mean": 2332.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3000.0,
+          "control_mean": 3000.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3000.0,
+          "control_mean": 3000.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3000.0,
+          "control_mean": 3000.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3000.0,
+          "control_mean": 3000.0,
+          "treatment_sd_recovered": 1385.821921,
+          "control_sd_recovered": 1385.821921,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as 1.1 * lower bound = 3141.6000 (rough); then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 3141.6000000000004 * sqrt(3) / (2.7764 * sqrt(2)) = 1385.8219",
+          "recovery_source": "Inferred from 12 mean-letter pairs"
+        }
+      ]
+    },
+    {
+      "paper_id": "078_Wang_2012",
+      "variance_recovery": {
+        "total_obs": 16,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 16,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "081_Deenik_2010",
+      "variance_recovery": {
+        "total_obs": 14,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 14,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "082_Jose_2013",
+      "variance_recovery": {
+        "total_obs": 18,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 18,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "101_Liang_Feng_2014",
+      "variance_recovery": {
+        "total_obs": 9,
+        "already_had_variance": 9,
+        "recovered": 0,
+        "still_missing": 0,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "116_Farrell_2014",
+      "variance_recovery": {
+        "total_obs": 18,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 18,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "126_Arif_2017",
+      "variance_recovery": {
+        "total_obs": 16,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 16,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "130_Azeem_2019",
+      "variance_recovery": {
+        "total_obs": 16,
+        "already_had_variance": 16,
+        "recovered": 0,
+        "still_missing": 0,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "133_Pandit_2018",
+      "variance_recovery": {
+        "total_obs": 30,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 30,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "145_Omara_2020",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "153_Wei_2022",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "166_Haefele_2011",
+      "variance_recovery": {
+        "total_obs": 28,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 28,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "184_Yeboah_2018",
+      "variance_recovery": {
+        "total_obs": 9,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 9,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "193_Islami_2011",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "207_Liu_2019",
+      "variance_recovery": {
+        "total_obs": 36,
+        "already_had_variance": 0,
+        "recovered": 36,
+        "still_missing": 0,
+        "recoveries": [
+          {
+            "obs_index": 0,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 1,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 2,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 3,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 4,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 5,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 6,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 7,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 8,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 9,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 10,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 11,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 12,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 13,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 14,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 15,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 16,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 17,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 18,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 19,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 20,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 21,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 22,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 23,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 24,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 25,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 26,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 27,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 28,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 29,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 30,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 31,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 32,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 33,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 34,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          },
+          {
+            "obs_index": 35,
+            "method": "letters_to_sd",
+            "sd": 0.026467,
+            "confidence": "low",
+            "source_type": "letter_groups"
+          }
+        ]
+      },
+      "observations_with_recovery": [
+        {
+          "treatment_mean": 8.8,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.3,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 9.2,
+          "control_mean": 9.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 9.3,
+          "control_mean": 9.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 7.2,
+          "control_mean": 7.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 6.5,
+          "control_mean": 7.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.5,
+          "control_mean": 9.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.5,
+          "control_mean": 9.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.0,
+          "control_mean": 10.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.0,
+          "control_mean": 10.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.2,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.0,
+          "control_mean": 8.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.5,
+          "control_mean": 10.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.3,
+          "control_mean": 10.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.5,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 8.5,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.5,
+          "control_mean": 10.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.5,
+          "control_mean": 10.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 9.0,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 9.0,
+          "control_mean": 8.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 10.8,
+          "control_mean": 10.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 11.0,
+          "control_mean": 10.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3.5,
+          "control_mean": 3.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3.2,
+          "control_mean": 3.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 4.5,
+          "control_mean": 4.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 4.3,
+          "control_mean": 4.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3.5,
+          "control_mean": 3.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 3.5,
+          "control_mean": 3.5,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 5.0,
+          "control_mean": 5.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 5.0,
+          "control_mean": 5.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 5.5,
+          "control_mean": 4.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 6.0,
+          "control_mean": 4.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 7.0,
+          "control_mean": 6.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        },
+        {
+          "treatment_mean": 7.1,
+          "control_mean": 6.0,
+          "treatment_sd_recovered": 0.026467,
+          "control_sd_recovered": 0.026467,
+          "recovery_method": "letters_to_sd",
+          "recovery_confidence": "low",
+          "recovery_formula": "LSD estimated as midpoint of bounds [0.1200, 0.0000]; then SD = LSD * sqrt(n) / (t_crit * sqrt(2)) = 0.06000000000000005 * sqrt(3) / (2.7764 * sqrt(2)) = 0.0265",
+          "recovery_source": "Inferred from 3 mean-letter pairs"
+        }
+      ]
+    },
+    {
+      "paper_id": "219_Xie_2021",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "223_Dong_2019",
+      "variance_recovery": {
+        "total_obs": 16,
+        "already_had_variance": 16,
+        "recovered": 0,
+        "still_missing": 0,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "227_Niu_2017",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "229_Shi_2022",
+      "variance_recovery": {
+        "total_obs": 21,
+        "already_had_variance": 21,
+        "recovered": 0,
+        "still_missing": 0,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "231_Zhang_2021",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "234_Malik_2018",
+      "variance_recovery": {
+        "total_obs": 14,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 14,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    },
+    {
+      "paper_id": "242_Liu_2014",
+      "variance_recovery": {
+        "total_obs": 12,
+        "already_had_variance": 0,
+        "recovered": 0,
+        "still_missing": 12,
+        "recoveries": []
+      },
+      "observations_with_recovery": []
+    }
+  ]
+}

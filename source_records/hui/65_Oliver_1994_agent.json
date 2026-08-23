@@ -1,0 +1,12 @@
+{
+  "paper_id": "65_Oliver_1994",
+  "title": "The Effects of Zinc Fertilization on Cadmium Concentration in Wheat Grain",
+  "authors": ["Oliver, D.P.", "Hannam, R.", "Tiller, K.G.", "Wilhelm, N.S.", "Merry, R.H.", "Cozens, G.D."],
+  "year": 1994,
+  "journal": "Journal of Environmental Quality",
+  "species": "Triticum aestivum L.",
+  "experiment_type": "field",
+  "location": "South Australia",
+  "notes": "This paper examines the effect of Zn fertilization on CADMIUM concentration in wheat grain. It does NOT report grain Zn concentration. The dependent variable is Cd (mg/kg) in grain, not Zn. Therefore no Zn biofortification observations can be extracted for the Hui 2023 meta-analysis.",
+  "consensus_observations": []
+}

@@ -1,5 +1,11 @@
 # Boldorini march-style re-extraction — decode ledger
 
+**Release-path note (23 August 2026):** the corrected extraction files described below are deposited
+as `source_records/boldorini/`, and the final decoded tables are `runs/boldorini/keys/ai/`.
+`verify_source_record_release.py` rebuilds them in a temporary directory and compares them
+byte-for-byte. The earlier 18-file March set documented in `boldorini_DECODER_LEDGER.md` is not part
+of this release.
+
 **20 August 2026.** Source: `07_BOLDORINI_MARCH_STYLE/extraction/` (18 papers, 80 observations,
 extracted 20 Aug with the reconstructed March-style prompt). Reference side frozen as deposited.
 

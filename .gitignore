@@ -1,6 +1,12 @@
 # Kept local: may contain copyrighted source text or account-provenance material.
 model_outputs/
 
+# Decoder scratch outputs. The frozen analysis inputs remain under runs/.
+generated_keys/
+
+__pycache__/
+*.py[cod]
+
 # Kept local: variance-rerun development artifacts that depend on withheld raw outputs.
 round2_additional_analysis/*variance*
 round2_additional_analysis/VARIANCE_*

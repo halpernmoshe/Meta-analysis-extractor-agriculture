@@ -1,0 +1,81 @@
+{
+  "paper_id": "051_Niu_2013",
+  "title": "Effect of elevated CO2 on phosphorus nutrition of phosphate-deficient Arabidopsis thaliana (L.) Heynh under different nitrogen forms",
+  "species": "Arabidopsis thaliana",
+  "experiment_type": "growth_chamber",
+  "co2_ambient": 350,
+  "co2_elevated": 800,
+  "co2_unit": "ul/l",
+  "duration": "7 days treatment",
+  "notes": "P-deficient (0.5 uM) hydroponic culture. Two N forms: NO3- (2mM KNO3) and NH4+ (2mM NH4+). Wild-type ecotype. Data estimated from bar charts (Fig. 1d,e,g). Text states: eCO2 increased P conc by 32% (shoots) and 21% (roots) in NO3- plants; decreased P conc in shoots by 27% in NH4+ plants.",
+  "consensus_observations": [
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 3.9,
+      "control_mean": 3.0,
+      "effect_pct": 30.0,
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Fig. 1d",
+      "treatment_description": "elevated CO2 (800 ul/l), NO3- nutrition, P-deficient",
+      "control_description": "ambient CO2 (350 ul/l), NO3- nutrition, P-deficient",
+      "moderators": {
+        "n_form": "NO3-",
+        "p_status": "deficient",
+        "genotype": "wild-type"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "root",
+      "treatment_mean": 5.5,
+      "control_mean": 4.5,
+      "effect_pct": 22.2,
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Fig. 1e",
+      "treatment_description": "elevated CO2 (800 ul/l), NO3- nutrition, P-deficient",
+      "control_description": "ambient CO2 (350 ul/l), NO3- nutrition, P-deficient",
+      "moderators": {
+        "n_form": "NO3-",
+        "p_status": "deficient",
+        "genotype": "wild-type"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "shoot",
+      "treatment_mean": 2.55,
+      "control_mean": 3.5,
+      "effect_pct": -27.1,
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Fig. 1d",
+      "treatment_description": "elevated CO2 (800 ul/l), NH4+ nutrition, P-deficient",
+      "control_description": "ambient CO2 (350 ul/l), NH4+ nutrition, P-deficient",
+      "moderators": {
+        "n_form": "NH4+",
+        "p_status": "deficient",
+        "genotype": "wild-type"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "root",
+      "treatment_mean": 3.2,
+      "control_mean": 3.5,
+      "effect_pct": -8.6,
+      "n": 5,
+      "unit": "mg/g DW",
+      "data_source": "Fig. 1e",
+      "treatment_description": "elevated CO2 (800 ul/l), NH4+ nutrition, P-deficient",
+      "control_description": "ambient CO2 (350 ul/l), NH4+ nutrition, P-deficient",
+      "moderators": {
+        "n_form": "NH4+",
+        "p_status": "deficient",
+        "genotype": "wild-type"
+      }
+    }
+  ]
+}

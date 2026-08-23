@@ -1,0 +1,60 @@
+{
+  "paper_id": "Liu_2014",
+  "title": "Effects of Zn Fertilization on Hordein Transcripts at Early Developmental Stage of Barley Grain and Correlation with Increased Zn Concentration in the Mature Grain",
+  "authors": "Uddin MN, Kaczmarczyk A, Vincze E",
+  "year": 2014,
+  "species": "Hordeum vulgare (barley)",
+  "experiment_type": "greenhouse pot",
+  "location": "Research Centre Flakkebjerg, Slagelse, Denmark",
+  "note": "This paper studies BARLEY, not wheat. Three Zn treatments: Low (basic nutrient only), Medium (0.25 mM ZnSO4 soil + 1 mM foliar), High (1 mM ZnSO4 soil + 10 mM foliar). Grain Zn from Table 1.",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 151.1,
+      "control_mean": 65.0,
+      "effect_pct": 132.46,
+      "n_treatment": 9,
+      "n_control": 6,
+      "unit": "ug/g",
+      "variance_value": 12.4,
+      "variance_type": "SE",
+      "control_variance_value": 4.4,
+      "control_variance_type": "SE",
+      "data_source": "Table 1",
+      "treatment_description": "Medium Zn: 0.25 mM ZnSO4·7H2O soil + 1 mM foliar ZnSO4·7H2O",
+      "control_description": "Low Zn: basic nutrient solution only (no additional Zn)",
+      "moderators": {
+        "cultivar": "Golden Promise",
+        "zn_method": "soil + foliar",
+        "zn_rate": "0.25 mM soil + 1 mM foliar ZnSO4",
+        "zn_source": "ZnSO4·7H2O",
+        "plant_part": "grain"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 466.4,
+      "control_mean": 65.0,
+      "effect_pct": 617.54,
+      "n_treatment": 8,
+      "n_control": 6,
+      "unit": "ug/g",
+      "variance_value": 44.9,
+      "variance_type": "SE",
+      "control_variance_value": 4.4,
+      "control_variance_type": "SE",
+      "data_source": "Table 1",
+      "treatment_description": "High Zn: 1 mM ZnSO4·7H2O soil + 10 mM foliar ZnSO4·7H2O",
+      "control_description": "Low Zn: basic nutrient solution only (no additional Zn)",
+      "moderators": {
+        "cultivar": "Golden Promise",
+        "zn_method": "soil + foliar",
+        "zn_rate": "1 mM soil + 10 mM foliar ZnSO4",
+        "zn_source": "ZnSO4·7H2O",
+        "plant_part": "grain"
+      }
+    }
+  ]
+}

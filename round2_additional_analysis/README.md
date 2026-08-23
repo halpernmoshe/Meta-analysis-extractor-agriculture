@@ -10,4 +10,6 @@ Run from the repository root:
 python round2_additional_analysis/coverage_structural_complexity.py
 ```
 
-The reported coverage analysis is fully reproducible from the deposited key tables. Source PDFs, raw model outputs, and prompts are not redistributed because they can contain copyrighted source text or account-provenance material.
+The reported coverage analysis is fully reproducible from the deposited key tables. The finalized
+JSON records that build the AI-side keys are in `source_records/`; source PDFs and superseded or
+broader raw experimental archives are not included in this corrected release.

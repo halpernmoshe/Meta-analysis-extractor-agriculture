@@ -1,0 +1,483 @@
+{
+  "paper_id": "Li_2013",
+  "title": "Zn uptake, translocation and grain Zn loading in rice (Oryza sativa L.) genotypes selected for Zn deficiency tolerance and high grain Zn",
+  "authors": "Impa SM, Morete MJ, Ismail AM, Schulin R, Johnson-Beebout SE",
+  "year": 2013,
+  "species": "Oryza sativa (rice)",
+  "experiment_type": "greenhouse hydroponic (agar nutrient solution)",
+  "location": "IRRI, Metro Manila, Philippines",
+  "note": "This paper studies RICE, not wheat. It compares Zn-sufficient (1.5 uM ZnSO4) vs Zn-deficient (0.005 uM ZnSO4) conditions. Brown rice Zn concentration from Table 4. Zn tissue concentrations from Table 6.",
+  "consensus_observations": [
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 26,
+      "control_mean": 17,
+      "effect_pct": 52.94,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "IR64",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 24,
+      "control_mean": 12,
+      "effect_pct": 100.0,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "IR68144",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 21,
+      "control_mean": 16,
+      "effect_pct": 31.25,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "IR74",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 18,
+      "control_mean": 16,
+      "effect_pct": 12.5,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "IR82247",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 35,
+      "control_mean": 23,
+      "effect_pct": 52.17,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "IR69428",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 33,
+      "control_mean": 35,
+      "effect_pct": -5.71,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "Joryoongbyeo",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 26,
+      "control_mean": 20,
+      "effect_pct": 30.0,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "RIL-46",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 38,
+      "control_mean": 32,
+      "effect_pct": 18.75,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "SWHOO",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 32,
+      "control_mean": 10,
+      "effect_pct": 220.0,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "A69-1",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 20,
+      "control_mean": 7,
+      "effect_pct": 185.71,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "IR55179",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 30,
+      "control_mean": 18,
+      "effect_pct": 66.67,
+      "n": 5,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 4",
+      "treatment_description": "Zn-sufficient (1.5 uM ZnSO4·7H2O)",
+      "control_description": "Zn-deficient (0.005 uM ZnSO4·7H2O)",
+      "moderators": {
+        "cultivar": "IR69428",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "zn_rate": "1.5 uM vs 0.005 uM ZnSO4",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "root",
+      "treatment_mean": 105.0,
+      "control_mean": 58.0,
+      "effect_pct": 81.03,
+      "n": 40,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 8 genotypes, Experiment 2",
+      "control_description": "Zn-deficient, average of 8 genotypes, Experiment 2",
+      "moderators": {
+        "cultivar": "average of 8 genotypes",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "plant_part": "root"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "stem+sheath",
+      "treatment_mean": 23.2,
+      "control_mean": 16.0,
+      "effect_pct": 45.0,
+      "n": 40,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 8 genotypes, Experiment 2",
+      "control_description": "Zn-deficient, average of 8 genotypes, Experiment 2",
+      "moderators": {
+        "cultivar": "average of 8 genotypes",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "plant_part": "stem+sheath"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "leaf blade",
+      "treatment_mean": 21.8,
+      "control_mean": 18.0,
+      "effect_pct": 21.11,
+      "n": 40,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 8 genotypes, Experiment 2",
+      "control_description": "Zn-deficient, average of 8 genotypes, Experiment 2",
+      "moderators": {
+        "cultivar": "average of 8 genotypes",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "plant_part": "leaf blade"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "rachis",
+      "treatment_mean": 22.3,
+      "control_mean": 12.6,
+      "effect_pct": 76.98,
+      "n": 40,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 8 genotypes, Experiment 2",
+      "control_description": "Zn-deficient, average of 8 genotypes, Experiment 2",
+      "moderators": {
+        "cultivar": "average of 8 genotypes",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "plant_part": "rachis"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "hull",
+      "treatment_mean": 20.9,
+      "control_mean": 14.7,
+      "effect_pct": 42.18,
+      "n": 40,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 8 genotypes, Experiment 2",
+      "control_description": "Zn-deficient, average of 8 genotypes, Experiment 2",
+      "moderators": {
+        "cultivar": "average of 8 genotypes",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "plant_part": "hull"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 27.7,
+      "control_mean": 20.9,
+      "effect_pct": 32.54,
+      "n": 40,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 8 genotypes, Experiment 2",
+      "control_description": "Zn-deficient, average of 8 genotypes, Experiment 2",
+      "moderators": {
+        "cultivar": "average of 8 genotypes",
+        "experiment": "Experiment 2",
+        "zn_method": "nutrient solution",
+        "plant_part": "brown rice"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "root",
+      "treatment_mean": 357,
+      "control_mean": 35.2,
+      "effect_pct": 914.2,
+      "n": 20,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 4 genotypes, Experiment 3",
+      "control_description": "Zn-deficient, average of 4 genotypes, Experiment 3",
+      "moderators": {
+        "cultivar": "average of 4 genotypes",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "plant_part": "root"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "stem+sheath",
+      "treatment_mean": 22.7,
+      "control_mean": 11.0,
+      "effect_pct": 106.36,
+      "n": 20,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 4 genotypes, Experiment 3",
+      "control_description": "Zn-deficient, average of 4 genotypes, Experiment 3",
+      "moderators": {
+        "cultivar": "average of 4 genotypes",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "plant_part": "stem+sheath"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "leaf blade",
+      "treatment_mean": 21.3,
+      "control_mean": 14.0,
+      "effect_pct": 52.14,
+      "n": 20,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 4 genotypes, Experiment 3",
+      "control_description": "Zn-deficient, average of 4 genotypes, Experiment 3",
+      "moderators": {
+        "cultivar": "average of 4 genotypes",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "plant_part": "leaf blade"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "rachis",
+      "treatment_mean": 22.9,
+      "control_mean": 10.4,
+      "effect_pct": 120.19,
+      "n": 20,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 4 genotypes, Experiment 3",
+      "control_description": "Zn-deficient, average of 4 genotypes, Experiment 3",
+      "moderators": {
+        "cultivar": "average of 4 genotypes",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "plant_part": "rachis"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "hull",
+      "treatment_mean": 14.3,
+      "control_mean": 7.6,
+      "effect_pct": 88.16,
+      "n": 20,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 4 genotypes, Experiment 3",
+      "control_description": "Zn-deficient, average of 4 genotypes, Experiment 3",
+      "moderators": {
+        "cultivar": "average of 4 genotypes",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "plant_part": "hull"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "brown rice",
+      "treatment_mean": 23.5,
+      "control_mean": 12.6,
+      "effect_pct": 86.51,
+      "n": 20,
+      "unit": "mg/kg",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 6",
+      "treatment_description": "Zn-sufficient, average of 4 genotypes, Experiment 3",
+      "control_description": "Zn-deficient, average of 4 genotypes, Experiment 3",
+      "moderators": {
+        "cultivar": "average of 4 genotypes",
+        "experiment": "Experiment 3",
+        "zn_method": "nutrient solution",
+        "plant_part": "brown rice"
+      }
+    }
+  ]
+}

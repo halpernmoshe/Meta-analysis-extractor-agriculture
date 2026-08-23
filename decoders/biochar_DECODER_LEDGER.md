@@ -1,8 +1,12 @@
 # biochar — AI-side decoder ledger (independent rebuild, 2026-08-19)
 
+**Release-path note (2026-08-23):** audit-era `01_INPUTS_FROZEN/biochar/` is now
+`source_records/biochar/`; the final output is `runs/biochar_v2/keys/ai/`. The decoder writes a
+scratch rebuild to `generated_keys/biochar/`, which the release verifier compares byte-for-byte.
+
 Dataset: **biochar** (Li X 2024). Outcome: `crop_yield`.
-Deliverable decoder: `02_DECODERS/biochar/decode_biochar.py`
-Output keys: `03_KEYS/ai_rebuilt/biochar/*.csv` (28 files, 446 rows)
+Deliverable decoder: `decoders/decode_biochar.py`
+Final output keys: `runs/biochar_v2/keys/ai/*.csv` (28 files, 446 rows)
 Machine-generated companion log: `06_LEDGER/biochar_DECODER_AUDIT.md`
 Determinism: decoder run twice; the 28 CSVs are **byte-identical** across runs.
 Combined SHA-256 of the 28 CSVs (concatenated in filename order):

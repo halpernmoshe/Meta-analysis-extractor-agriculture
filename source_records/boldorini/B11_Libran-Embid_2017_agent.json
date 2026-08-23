@@ -1,0 +1,77 @@
+{
+  "paper_id": "B11_Libran-Embid_2017",
+  "title": "Bird and bat exclusion effects on arthropod communities and coffee fruit set in Brazilian agroforestry systems",
+  "authors": "Librán-Embid F, De Coster G, Metzger JP",
+  "year": 2017,
+  "doi": "10.1007/s10980-017-0542-x",
+  "journal": "Landscape Ecology",
+  "crop": "coffee",
+  "species": "Coffea arabica",
+  "experiment_type": "field exclusion",
+  "location": "Southern Bahia, Brazilian Atlantic Forest",
+  "design": "Bird and bat exclusion using exclosures on coffee plants; 32 experimental units across 8 landscape sectors (4 treatments × 8 landscapes); treatments: bird exclusion (day), bat exclusion (night), full exclusion (day+night), control (open); GLMM with landscape and local forest cover as continuous covariates and their interactions with treatment",
+  "n_replicates": 8,
+  "notes": "This paper reports NO simple treatment-vs-control means with variance. All results are presented as GLMM regression coefficients with landscape-level and local-level forest cover as continuous interaction terms (Table 1, Figs. 4–5). Leaf loss and fruit set are the two response variables. The treatment effects are inseparable from the landscape/local forest-cover interactions — the paper's central finding is that exclosure effects depend on surrounding forest cover. Figure 4 shows leaf loss as continuous regression lines against landscape forest cover (not bar charts). Figure 5 shows fruit set as regression lines and box plots stratified by local forest cover (low/high) × treatment. No figure or table provides group means ± SE/SD for treatment vs control independent of the forest-cover gradient. Therefore, no observation can carry a non-null treatment_mean or control_mean. The paper is eligible for the corpus (field exclosure on a crop with yield-proxy outcome) but its analytical framework precludes extraction of simple pairwise contrasts.",
+  "observations": [
+    {
+      "outcome": "crop damage",
+      "tissue": "leaf",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 8,
+      "unit": "leaf area loss (%)",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Table 1, Figs. 4a-c, PDF pages 8-10",
+      "treatment_description": "full exclusion (day+night netting preventing all bird and bat access to coffee plants)",
+      "control_description": "control (open — no netting, natural bird and bat access)",
+      "moderators": {
+        "predator_group": "birds and bats",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (day+night)",
+        "crop": "coffee",
+        "country": "Brazil"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 4",
+        "pdf_page": 10,
+        "located_by": "caption search",
+        "structure": "Three panels (a-c) showing leaf loss (%) as continuous regression lines against landscape forest cover (%). Each panel shows lines for 4 treatments (full exclosure, bird exclosure, bat exclosure, control). X-axis: landscape-level forest cover (%). Y-axis: leaf loss (%). Data presented as regression predictions, NOT as bar charts or group means. No single mean value can be read because the treatment effect varies continuously with forest cover.",
+        "status": "bar_not_identifiable",
+        "evidence_note": "Figure shows continuous regression lines, not discrete treatment means. Treatment effects are reported only as interaction coefficients with landscape forest cover. No extractable point estimate for a simple treatment vs control comparison."
+      },
+      "notes": "Leaf loss results reported only as GLMM coefficients with landscape × local forest cover interactions (Table 1). The full exclosure showed marginally higher leaf loss in some landscape contexts but the effect depends entirely on the forest cover gradient. No simple mean ± SE reported."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "fruit",
+      "treatment_mean": null,
+      "control_mean": null,
+      "effect_pct": null,
+      "n": 8,
+      "unit": "fruit set (number of fruits per branch)",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "Figs. 5a-c, PDF pages 11-12",
+      "treatment_description": "full exclusion (day+night netting preventing all bird and bat access to coffee plants)",
+      "control_description": "control (open — no netting, natural bird and bat access)",
+      "moderators": {
+        "predator_group": "birds and bats",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (day+night)",
+        "crop": "coffee",
+        "country": "Brazil"
+      },
+      "figure_read": {
+        "figure_ref": "Fig 5",
+        "pdf_page": 12,
+        "located_by": "caption search",
+        "structure": "Three panels showing fruit set. Panel (a): regression lines of fruit set vs landscape forest cover for 4 treatments. Panel (b): regression lines of fruit set vs local forest cover for 4 treatments. Panel (c): box plots of fruit set by treatment × local forest cover (low/high). Even the box plots in (c) are stratified by local forest cover, so there is no single treatment mean — each treatment has two box plots (low vs high local forest cover). Y-axis: number of fruits. No single extractable mean per treatment group.",
+        "status": "bar_not_identifiable",
+        "evidence_note": "Figure 5c shows box plots but stratified by local forest cover (low vs high), so each treatment appears as two separate distributions. No single treatment-level mean is extractable. The paper's regression framework does not separate the treatment effect from the forest-cover interaction."
+      },
+      "notes": "Fruit set results reported only as GLMM predictions dependent on landscape and local forest cover gradients. Figure 5c shows box plots stratified by local forest cover, but no overall treatment mean is reported or extractable. The paper explicitly states that exclosure effects on fruit set were not significant across the landscape gradient (P > 0.05)."
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # Loladze — AI-side decoder ledger (independent rebuild, 19 Aug 2026)
 
+**Release-path note (2026-08-23):** audit-era `01_INPUTS_FROZEN/loladze/` is now
+`source_records/loladze/`; the final output is `runs/loladze_v2/keys/ai/`. The decoder writes its
+scratch rebuild to `generated_keys/loladze/` for byte-level verification.
+
 Dataset: `loladze`. Side rebuilt: **AI only**. GT side untouched.
 Exactly one substantive variable changes vs the submitted analysis: the AI-side
 **source** is now the frozen March-2026 **single-model Claude** agent JSONs instead

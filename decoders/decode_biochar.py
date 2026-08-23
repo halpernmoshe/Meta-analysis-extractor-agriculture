@@ -8,7 +8,7 @@ conversions only) and are never used to choose a key, drop a row, or pick
 between candidate rows.
 
 SOURCE (the only thing that changes vs the submission):
-    01_INPUTS_FROZEN/biochar/*.json   -- frozen March 2026 single-model Claude
+    source_records/biochar/*.json   -- frozen March 2026 single-model Claude
                                          agent JSONs (mtime 2026-03-18), copied
                                          from output/biochar_extraction.
     The May 2026 PDF re-extractions of 016_Li_B_2016 / 063_Asai_2009 /
@@ -38,10 +38,11 @@ import re
 # paths
 # --------------------------------------------------------------------------
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-SRC = os.path.join(ROOT, "01_INPUTS_FROZEN", "biochar")
-OUT = os.path.join(ROOT, "03_KEYS", "ai_rebuilt", "biochar")
-LOGDIR = os.path.join(ROOT, "06_LEDGER")
+ROOT = os.path.abspath(os.path.join(HERE, ".."))
+SRC = os.environ.get("BIOCHAR_SOURCE_DIR", os.path.join(ROOT, "source_records", "biochar"))
+GENERATED_ROOT = os.environ.get("DECODER_OUTPUT_ROOT", os.path.join(ROOT, "generated_keys"))
+OUT = os.path.join(GENERATED_ROOT, "biochar")
+LOGDIR = os.path.join(GENERATED_ROOT, "_audit")
 
 DECODER = "rebuild_2026-08-19/biochar"
 
@@ -1191,7 +1192,7 @@ def main():
     lines = []
     lines.append("# biochar AI-side rebuild -- decoder audit log")
     lines.append("")
-    lines.append("source: 01_INPUTS_FROZEN/biochar (frozen March 2026 JSONs)")
+    lines.append("source: source_records/biochar (frozen March 2026 JSONs)")
     lines.append("decoder tag: %s" % DECODER)
     lines.append("")
     lines.append("input filter (structural, no filename hardcoding): a file is a "

@@ -1,0 +1,388 @@
+{
+  "paper_id": "063_Asai_2009",
+  "title": "Biochar amendment techniques for upland rice production in Northern Laos 1. Soil physical properties, leaf SPAD and grain yield",
+  "authors": "Hidetoshi Asai, Benjamin K. Samson, Haefele M. Stephan, Khamdok Songyikhangsuthor, Koki Homma, Yoshiyuki Kiyono, Yoshio Inoue, Tatsuhiko Shiraiwa, Takeshi Horie",
+  "year": 2009,
+  "journal": "Field Crops Research",
+  "observations": [
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 2.3,
+      "control_mean": 3.0,
+      "effect_pct": -23.33,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 4 t/ha, no N, Apo cultivar, HK1",
+      "control_description": "No biochar, no N, Apo cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 2.7,
+      "control_mean": 3.0,
+      "effect_pct": -10.0,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, HK1",
+      "control_description": "No biochar, no N, Apo cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 2.2,
+      "control_mean": 3.0,
+      "effect_pct": -26.67,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 16 t/ha, no N, Apo cultivar, HK1",
+      "control_description": "No biochar, no N, Apo cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 16,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3.2,
+      "control_mean": 2.8,
+      "effect_pct": 14.29,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 4 t/ha + N 50 kg/ha, Apo cultivar, HK1",
+      "control_description": "No biochar + N 50 kg/ha, Apo cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3.3,
+      "control_mean": 2.8,
+      "effect_pct": 17.86,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha + N 50 kg/ha, Apo cultivar, HK1",
+      "control_description": "No biochar + N 50 kg/ha, Apo cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 2.7,
+      "control_mean": 2.8,
+      "effect_pct": -3.57,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 16 t/ha + N 50 kg/ha, Apo cultivar, HK1",
+      "control_description": "No biochar + N 50 kg/ha, Apo cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 16,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.5,
+      "control_mean": 0.7,
+      "effect_pct": -28.57,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 4 t/ha, no N, Vieng cultivar, HK1",
+      "control_description": "No biochar, no N, Vieng cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Vieng)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.8,
+      "control_mean": 0.7,
+      "effect_pct": 14.29,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Vieng cultivar, HK1",
+      "control_description": "No biochar, no N, Vieng cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Vieng)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 1.5,
+      "control_mean": 0.7,
+      "effect_pct": 114.29,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 4 t/ha + N 50 kg/ha, Vieng cultivar, HK1",
+      "control_description": "No biochar + N 50 kg/ha, Vieng cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 4,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Vieng)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 1.0,
+      "control_mean": 0.7,
+      "effect_pct": 42.86,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha + N 50 kg/ha, Vieng cultivar, HK1",
+      "control_description": "No biochar + N 50 kg/ha, Vieng cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Vieng)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 0.8,
+      "control_mean": 0.7,
+      "effect_pct": 14.29,
+      "n": 4,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 16 t/ha + N 50 kg/ha, Vieng cultivar, HK1",
+      "control_description": "No biochar + N 50 kg/ha, Vieng cultivar, HK1",
+      "moderators": {
+        "biochar_rate_tha": 16,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Vieng)",
+        "soil_type": "clay (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4.7,
+      "control_mean": 4.2,
+      "effect_pct": 11.9,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, LO2",
+      "control_description": "No biochar, no N, Apo cultivar, LO2",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "loam (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 2.2,
+      "control_mean": 1.8,
+      "effect_pct": 22.22,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, HK3",
+      "control_description": "No biochar, no N, Apo cultivar, HK3",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay loam (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 2.7,
+      "control_mean": 2.4,
+      "effect_pct": 12.5,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, LO3",
+      "control_description": "No biochar, no N, Apo cultivar, LO3",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "loam (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 4.3,
+      "control_mean": 4.8,
+      "effect_pct": -10.42,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, HK2",
+      "control_description": "No biochar, no N, Apo cultivar, HK2",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "clay (high P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 1.7,
+      "control_mean": 1.9,
+      "effect_pct": -10.53,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, SO",
+      "control_description": "No biochar, no N, Apo cultivar, SO",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "loam (high P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 3.5,
+      "control_mean": 3.2,
+      "effect_pct": 9.38,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, SN",
+      "control_description": "No biochar, no N, Apo cultivar, SN",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "sandy loam (low P)"
+      },
+      "source_type": "table"
+    },
+    {
+      "outcome": "crop_yield",
+      "treatment_mean": 1.8,
+      "control_mean": 2.2,
+      "effect_pct": -18.18,
+      "n": 3,
+      "variance_type": null,
+      "variance_value": null,
+      "unit": "t/ha",
+      "data_source": "Table 3",
+      "treatment_description": "Biochar 8 t/ha, no N, Apo cultivar, LS",
+      "control_description": "No biochar, no N, Apo cultivar, LS",
+      "moderators": {
+        "biochar_rate_tha": 8,
+        "feedstock": "wood (teak/rosewood)",
+        "pyrolysis_temp_C": null,
+        "crop": "upland rice (Apo)",
+        "soil_type": "silty clay (high P)"
+      },
+      "source_type": "table"
+    }
+  ],
+  "notes": "Three experiments across 10 sites in northern Laos during 2007 wet season. Exp 1 (HK1, LO1): split-split-plot, 4 reps, biochar 0/4/8/16 t/ha x N 0/50 kg/ha x 2 cultivars. Exp 2 (7 sites): RCBD, 3 reps, biochar 0/8 t/ha only, Apo only. Exp 3 (HK4): split-plot, 3 reps, biochar 0/8 t/ha x N/P/NP fertilizer - data in Figure 1 only (estimated ~0.8 vs 1.0 t/ha for no fert, ~1.2 vs 1.5 for NP). LO1 data excluded due to severe lodging. Biochar from wood residues (teak, rosewood), earth mound method. CA improved yield at low-P sites (LO2, HK3 significant at p<0.05) but reduced yield at high-P sites."
+}

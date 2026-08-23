@@ -1,0 +1,177 @@
+{
+  "paper_id": "011_Huluka_1994",
+  "title": "Effects of elevated CO2 and water stress on mineral concentration of cotton",
+  "species": "Gossypium hirsutum L. cv. Deltapine 77",
+  "consensus_observations": [
+    {
+      "element": "N",
+      "tissue": "leaf",
+      "treatment_mean": 31.8,
+      "control_mean": 46.8,
+      "effect_pct": -32.05,
+      "n": 8,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "Ca",
+      "tissue": "leaf",
+      "treatment_mean": 24.4,
+      "control_mean": 35.9,
+      "effect_pct": -32.03,
+      "n": 8,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "leaf",
+      "treatment_mean": 15.5,
+      "control_mean": 20.1,
+      "effect_pct": -22.89,
+      "n": 8,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "Mg",
+      "tissue": "leaf",
+      "treatment_mean": 3.5,
+      "control_mean": 4.7,
+      "effect_pct": -25.53,
+      "n": 8,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "leaf",
+      "treatment_mean": 3.4,
+      "control_mean": 3.8,
+      "effect_pct": -10.53,
+      "n": 8,
+      "unit": "g/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "B",
+      "tissue": "leaf",
+      "treatment_mean": 76.2,
+      "control_mean": 93.6,
+      "effect_pct": -18.59,
+      "n": 8,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "Cu",
+      "tissue": "leaf",
+      "treatment_mean": 6.6,
+      "control_mean": 8.4,
+      "effect_pct": -21.43,
+      "n": 8,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "Fe",
+      "tissue": "leaf",
+      "treatment_mean": 208.0,
+      "control_mean": 276.0,
+      "effect_pct": -24.64,
+      "n": 8,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "Mn",
+      "tissue": "leaf",
+      "treatment_mean": 83.6,
+      "control_mean": 108.0,
+      "effect_pct": -22.59,
+      "n": 8,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "leaf",
+      "treatment_mean": 33.4,
+      "control_mean": 41.0,
+      "effect_pct": -18.54,
+      "n": 8,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "FACE ~550 umol/mol CO2",
+      "control_description": "Ambient ~370 umol/mol CO2",
+      "moderators": {
+        "sampling_date": "DOY 177 (26 June 1990)",
+        "cultivar": "Deltapine 77",
+        "method": "FACE"
+      }
+    }
+  ]
+}

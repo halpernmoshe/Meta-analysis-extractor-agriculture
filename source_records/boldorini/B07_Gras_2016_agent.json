@@ -1,0 +1,92 @@
+{
+  "paper_id": "B07_Gras_2016",
+  "title": "How ants, birds and bats affect crop yield along shade gradients in tropical cacao agroforestry",
+  "authors": "Gras P, Tscharntke T, Maas B, Tjoa A, Hafsah A, Clough Y",
+  "year": 2016,
+  "doi": "10.1111/1365-2664.12625",
+  "journal": "Journal of Applied Ecology",
+  "crop": "cacao",
+  "species": "Theobroma cacao",
+  "experiment_type": "field exclusion (factorial: ant × bird × bat)",
+  "location": "Napu valley, eastern border of Lore Lindu National Park, Central Sulawesi, Indonesia (1°23'31.8\"S, 120°18'57.55\"E, ~1130 m a.s.l.)",
+  "design": "Full 2×2×2 factorial exclusion of ants, birds, and bats across 15 smallholder cacao agroforests varying in shade-tree canopy cover (5–70%) and distance to forest margin (0–3000 m). Eight treatments per site: (i) control, (ii) ant exclusion, (iii) bird exclusion, (iv) bat exclusion, (v) ant+bird, (vi) ant+bat, (vii) bird+bat, (viii) ant+bird+bat. Two randomly positioned trees per treatment per site = 16 trees per site, 240 total. Bird exclusion: bamboo scaffolds + fishing nets (35×35 mm mesh), opened morning/closed evening. Bat exclusion: same nets, opened evening/closed morning. Ant exclusion: cone-shaped insect glue rings on trunks. Controls: open nets bound tightly to scaffolds (structural control). Study period April 2011 to June 2012; yield standardized to 12 months from 28 harvests. GLMM with agroforest as random factor; crown volume as permanent covariate; canopy cover, forest distance, and their interactions with exclusion treatments tested, non-significant terms removed via multi-model inference (MuMIn, AIC). No interactive effects among ant, bird, and bat exclusions were found.",
+  "n_replicates": 15,
+  "notes": "This paper does NOT report simple treatment vs control means. All yield results are modelled as functions of exclusion treatment interacting with canopy cover (continuous). The numerical comparisons below are model-predicted values at specific canopy cover levels, stated explicitly by the authors in the summary and discussion text as their primary quantitative results. These are regression predictions from the final GLMM, not raw group means. Variance around these point predictions is not reported (only Wald chi-squared statistics and P values for model terms). The independent replicate is the agroforest (n=15), but each agroforest contributes to the continuous canopy cover gradient, so n at any specific canopy level is not 15. Bat exclusion had no significant effect on any yield variable (marketable yield, flowers, aborted fruits, harvested fruits, fruit weight — all P > 0.25 for intercept). No interaction among the three exclusion treatments was detected, so single-exclusion effects are interpretable independently. Pest abundance and crop damage data are reported only as figures showing continuous relationships with canopy cover (Figs 3–5), with no tabulated or text-stated numerical means, and are therefore not extractable as treatment/control pairs.",
+  "observations": [
+    {
+      "outcome": "crop yield",
+      "tissue": "marketable cacao beans (dry weight)",
+      "treatment_mean": 300,
+      "control_mean": 600,
+      "effect_pct": -50.0,
+      "n": 15,
+      "unit": "kg/ha/year",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "text (Summary point 3, p953; Discussion p961); confirmed against Fig. 2, PDF page 4",
+      "treatment_description": "ant exclusion — cone-shaped insect glue rings fitted to tree trunks, preventing ant access to canopy; ants reduced by 60–90% compared to controls",
+      "control_description": "no exclusion — open nets bound to bamboo scaffolds (structural control), insect glue rings absent; full ant, bird, and bat access",
+      "moderators": {
+        "predator_group": "ants (49 species recorded, dominant arboreal community)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (ants only; birds and bats not excluded)",
+        "crop": "cacao",
+        "canopy_cover_pct": 15,
+        "study_year": "2011-2012",
+        "country": "Indonesia"
+      },
+      "figure_read": null,
+      "notes": "Model-predicted values at 15% canopy cover, stated in text: 'Ant exclusion strongly reduced yield (from 600 to 300 kg ha⁻¹ year⁻¹) at 15% canopy cover' (Summary) and 'Ant exclusion reduced yields at 15% canopy cover from 600 to 300 kg ha⁻¹ year⁻¹' (Discussion p961). Wald test for ant exclusion intercept: χ²=21.89, P<0.01; slope (canopy cover interaction): χ²=5.27, P=0.02. The effect is canopy-dependent: ant exclusion effects are strongest below 40% canopy cover and economically relevant only there. Direction as expected: removing ants reduces yield. Ants provide pest control by reducing herbivore (caterpillar, beetle) abundance and associated damage."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "marketable cacao beans (dry weight)",
+      "treatment_mean": 250,
+      "control_mean": 400,
+      "effect_pct": -37.5,
+      "n": 15,
+      "unit": "kg/ha/year",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "text (Summary point 3, p953; Discussion p961); confirmed against Fig. 2, PDF page 4",
+      "treatment_description": "bird exclusion — bamboo scaffolds with fishing nets (35×35 mm mesh size), opened at 05:30 and closed at 18:30 daily; excludes all diurnal birds",
+      "control_description": "no exclusion — open nets bound to scaffolds (structural control); full bird access",
+      "moderators": {
+        "predator_group": "birds (69 species recorded, 31 insectivorous; none feed directly on cacao fruit)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (birds only; ants and bats not excluded)",
+        "crop": "cacao",
+        "canopy_cover_pct": 60,
+        "study_year": "2011-2012",
+        "country": "Indonesia"
+      },
+      "figure_read": null,
+      "notes": "Model-predicted values at 60% canopy cover, stated in text: 'Bird exclusion impaired yield (from 400 to 250 kg ha⁻¹ year⁻¹) at 60%' (Summary) and 'Bird exclusion decreased yields at 60% canopy cover from 400 to 250 kg ha⁻¹ year⁻¹' (Discussion p961). Wald test for bird exclusion intercept: χ²=0.83, P=0.36; slope (canopy cover interaction): χ²=28.75, P<0.01. The slope term is highly significant, meaning the bird exclusion effect reverses direction with canopy cover. At high canopy cover (≥50%), excluding birds reduces yield — the expected direction for biocontrol service. Direction as expected at this canopy level."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "marketable cacao beans (dry weight)",
+      "treatment_mean": 900,
+      "control_mean": 600,
+      "effect_pct": 50.0,
+      "n": 15,
+      "unit": "kg/ha/year",
+      "variance_value": null,
+      "variance_type": null,
+      "data_source": "text (Summary point 3, p953; Discussion p961); confirmed against Fig. 2, PDF page 4",
+      "treatment_description": "bird exclusion — bamboo scaffolds with fishing nets (35×35 mm mesh size), opened at 05:30 and closed at 18:30 daily; excludes all diurnal birds",
+      "control_description": "no exclusion — open nets bound to scaffolds (structural control); full bird access",
+      "moderators": {
+        "predator_group": "birds (69 species recorded, 31 insectivorous)",
+        "treatment_type": "exclusion",
+        "exclusion_level": "full (birds only; ants and bats not excluded)",
+        "crop": "cacao",
+        "canopy_cover_pct": 15,
+        "study_year": "2011-2012",
+        "country": "Indonesia"
+      },
+      "figure_read": null,
+      "notes": "Model-predicted values at 15% canopy cover, stated in text: 'enhanced yield (from 600 to 900 kg ha⁻¹ year⁻¹) at 15% canopy cover' (Summary) and 'Unexpectedly, bird exclusion increased yields at 15% canopy cover from 600 to 900 kg ha⁻¹ year⁻¹' (Discussion p961). Direction OPPOSITE to expected: excluding birds INCREASED yield at low canopy cover. Treatment/control assignment re-checked — confirmed: bird exclosure = treatment, open = control. The paper explains this as mesopredator release: removing birds increases mesopredator abundance (spiders, earwigs) which then suppress herbivores more effectively under low-shade stress conditions. Amounts of non-infected and harvested fruits were significantly correlated with bird exclusion (χ²=32.87, P<0.01). This reversal relative to high-canopy conditions is the paper's central finding."
+    }
+  ]
+}

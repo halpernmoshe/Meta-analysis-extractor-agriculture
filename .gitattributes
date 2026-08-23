@@ -1,0 +1,4 @@
+# Extraction records are checksummed byte-for-byte; never rewrite their line endings.
+source_records/**/*.json binary
+
+source_records/SHA256SUMS.txt text eol=lf

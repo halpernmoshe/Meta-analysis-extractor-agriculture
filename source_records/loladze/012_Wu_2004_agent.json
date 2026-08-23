@@ -1,0 +1,77 @@
+{
+  "paper_id": "012_Wu_2004",
+  "title": "Effects of elevated CO2 concentration on growth, water use, yield and grain quality of wheat under two soil water levels",
+  "species": "Triticum aestivum L. cv. Ganmai 8139",
+  "experiment_type": "Growth chamber, factorial (2 CO2 x 2 soil moisture)",
+  "notes": "Table 1 reports grain nutrient concentrations only for the favorable soil water (80% FWC) condition. HC = ambient CO2 (350 uL/L) + high moisture (80% FWC); HD = elevated CO2 (700 uL/L) + high moisture (80% FWC). n=3 replicates for chemical analysis. No separate concentration data given for low moisture (40% FWC) treatments. Crude protein and lysine are not mineral elements but included for completeness. Crude starch excluded as not a mineral element.",
+  "consensus_observations": [
+    {
+      "element": "N",
+      "tissue": "grain",
+      "treatment_mean": 2.83,
+      "control_mean": 3.34,
+      "effect_pct": -15.27,
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 700 uL/L, 80% FWC",
+      "control_description": "Ambient CO2 350 uL/L, 80% FWC",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)"
+      }
+    },
+    {
+      "element": "P",
+      "tissue": "grain",
+      "treatment_mean": 0.417,
+      "control_mean": 0.658,
+      "effect_pct": -36.63,
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 700 uL/L, 80% FWC",
+      "control_description": "Ambient CO2 350 uL/L, 80% FWC",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)"
+      }
+    },
+    {
+      "element": "K",
+      "tissue": "grain",
+      "treatment_mean": 0.480,
+      "control_mean": 0.625,
+      "effect_pct": -23.20,
+      "n": 3,
+      "unit": "g/100g",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 700 uL/L, 80% FWC",
+      "control_description": "Ambient CO2 350 uL/L, 80% FWC",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)"
+      }
+    },
+    {
+      "element": "Zn",
+      "tissue": "grain",
+      "treatment_mean": 37.75,
+      "control_mean": 56.03,
+      "effect_pct": -32.61,
+      "n": 3,
+      "unit": "mg/kg",
+      "data_source": "Table 1",
+      "treatment_description": "Elevated CO2 700 uL/L, 80% FWC",
+      "control_description": "Ambient CO2 350 uL/L, 80% FWC",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Ganmai 8139",
+        "soil_moisture": "80% FWC (favorable)"
+      }
+    }
+  ]
+}

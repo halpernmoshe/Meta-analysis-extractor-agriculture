@@ -1,0 +1,63 @@
+{
+  "paper_id": "B06_Garfinkel_2020",
+  "title": "Birds suppress pests in corn but release them in soybean crops within a mixed prairie/agriculture system",
+  "authors": "Garfinkel MB, Minor ES, Whelan CJ",
+  "year": 2020,
+  "doi": "10.1093/condor/duaa009",
+  "journal": "The Condor: Ornithological Applications",
+  "crop": "corn and soybeans",
+  "species": "Zea mays (Bt corn) and Glycine max",
+  "experiment_type": "field exclusion (bird exclosure)",
+  "location": "Nachusa Grasslands, northern Illinois, USA (41.9048, -89.3231)",
+  "design": "Paired design; 6 bird exclosures in corn field and 6 in soybean field, each paired with a control plot 2 m away. Exclosure frames: PVC pipe covered with clear nylon monofilament netting (1.9 cm mesh, 3.8 cm stretch mesh). Exclosure footprint 1.5 x 0.6 m; height 1.5 m (soybeans) or 3 m (corn). Five marked central plants measured per exclosure and per control plot. Exclusion period ~3.5 months (mid-June to early October 2016). Grain yield = total dry biomass of kernels (corn) or pods (soybeans) per plant after oven-drying. Linear mixed effects model with plant replicates nested within exclosure/control plots as random effects; distance from prairie edge and treatment*distance interaction tested but removed (non-significant, P > 0.05, CIs overlap 0). Final model includes exclosure treatment only as fixed effect.",
+  "n_replicates": 6,
+  "notes": "Table 1 reports linear mixed effects model estimates, not raw group means. The intercept is the estimated control (open plot) mean; the exclosure treatment coefficient is the estimated difference (exclosure minus control). Treatment means below are derived as intercept + coefficient. The corn variety was Bt (Bacillus thuringiensis) transgenic; soybeans were sprayed with Hero broad-spectrum insecticide during the study. Despite these pest management inputs, bird effects were still detectable. Soybeans showed a significant DISservice (exclosure > control yield, P = 0.002), attributed to intraguild predation: birds consumed arthropod natural enemies in soybean fields, releasing pests. Corn showed a significant service (exclosure < control yield, P = 0.030). Economic valuation: +US $275/ha in corn, -US $348/ha in soybeans (Appendix Table 6).",
+  "observations": [
+    {
+      "outcome": "crop yield",
+      "tissue": "grain (dry mass of kernels per plant)",
+      "treatment_mean": 149.98,
+      "control_mean": 177.43,
+      "effect_pct": -15.5,
+      "n": 6,
+      "unit": "g/plant",
+      "variance_value": 12.01,
+      "variance_type": "SE",
+      "data_source": "Table 1, PDF page 5",
+      "treatment_description": "bird exclosure — PVC frame covered with 1.9 cm (3.8 cm stretch) clear nylon monofilament netting; excludes all bird species including smallest (Common Yellowthroats, Field Sparrows) but allows access by larger arthropods (grasshoppers, butterflies); corn field",
+      "control_description": "open control plot marked with small plastic plant tags, located 2 m from paired exclosure; full bird access; corn field",
+      "moderators": {
+        "predator_group": "birds (all species, primarily insectivorous Song Sparrows Melospiza melodia)",
+        "treatment_type": "exclusion",
+        "crop": "corn",
+        "study_year": "2016",
+        "country": "USA"
+      },
+      "figure_read": null,
+      "notes": "Values derived from Table 1 GLMM: intercept (control mean) = 177.43 g/plant (SE = 20.76), exclosure coefficient = -27.45 g/plant (SE = 12.01, 95% CI [-51.36, -3.54], P = 0.030). Treatment mean = 177.43 + (-27.45) = 149.98 g/plant. The SE reported (12.01) is the SE of the treatment coefficient (difference), not the SE of the individual treatment mean. Direction: excluding birds reduced corn yield, indicating birds provide pest-control services in corn. Consistent with expected direction. Corn was Bt transgenic. Appendix Table 6 confirms treatment effect = 27.45 g/plant."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "grain (dry mass of pods per plant)",
+      "treatment_mean": 15.65,
+      "control_mean": 11.60,
+      "effect_pct": 34.9,
+      "n": 6,
+      "unit": "g/plant",
+      "variance_value": 1.27,
+      "variance_type": "SE",
+      "data_source": "Table 1, PDF page 5",
+      "treatment_description": "bird exclosure — PVC frame covered with 1.9 cm (3.8 cm stretch) clear nylon monofilament netting; soybean field",
+      "control_description": "open control plot marked with small plastic plant tags, located 2 m from paired exclosure; full bird access; soybean field",
+      "moderators": {
+        "predator_group": "birds (all species)",
+        "treatment_type": "exclusion",
+        "crop": "soybean",
+        "study_year": "2016",
+        "country": "USA"
+      },
+      "figure_read": null,
+      "notes": "Values derived from Table 1 GLMM: intercept (control mean) = 11.60 g/plant (SE = 1.14), exclosure coefficient = +4.05 g/plant (SE = 1.27, 95% CI [1.54, 6.57], P = 0.002). Treatment mean = 11.60 + 4.05 = 15.65 g/plant. The SE reported (1.27) is the SE of the treatment coefficient (difference), not of the individual treatment mean. Direction: excluding birds INCREASED soybean yield — opposite to expected. This is a real finding: birds provided net DISservices in soybeans. Paper attributes this to intraguild predation (birds consumed arthropod natural enemies, principally spiders and predatory beetles, releasing herbivorous pest populations). Checked treatment/control assignment: exclosure = treatment, open = control — confirmed. Soybeans were sprayed with Hero broad-spectrum insecticide. Appendix Table 6 confirms treatment effect = 4.05 g/plant (listed as -4.05 to reflect disservice direction)."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "paper_id": "B15_Mols_2002",
+  "title": "Great tits can reduce caterpillar damage in apple orchards",
+  "authors": "Mols CMM, Visser ME",
+  "year": 2002,
+  "doi": null,
+  "journal": "Journal of Applied Ecology",
+  "crop": "apple",
+  "species": "Malus domestica",
+  "experiment_type": "field exclusion",
+  "location": "Experimental orchard 'De Schuilenburg', Kesteren, Netherlands (51°70'N, 5°31'E)",
+  "design": "Two experiments in 2000. Experiment 1: polyethylene nets (25x25mm mesh) placed over apple trees at different Julian dates (116-177) to exclude great tits (Parus major); 44 netted trees, 56 control trees never netted; 4 blocks of 'small spindle bush' apple (variety Elstar), planted 1984 and 1988. Experiment 2: caterpillars removed by hand at different dates then sprayed with insecticide (not a predator exclusion — excluded from yield extraction). Treatments distributed across blocks and rows; randomized within rows.",
+  "n_replicates": null,
+  "notes": "This is a gradient design: nets placed at progressively later dates create a continuous gradient of bird-foraging periods, not discrete treatment groups. The extractable contrast is between the earliest exclusion group (nets on Julian date 116 = always excluded) and the control group (never excluded, Julian date 177). The paper reports yield and damage as regression endpoints with SE, not as group means with SD. n values represent number of trees in each endpoint group. Experiment 2 manipulates caterpillars not predators, so only its damage data is noted; its yield data showed no treatment effect (mean 8.08 kg, SE 0.42, n=197). Weight per apple and number of apples also reported (Table 4) but yield (kg/tree) is the primary outcome. No pesticides used for caterpillar control in these blocks for at least 4 years prior.",
+  "observations": [
+    {
+      "outcome": "crop yield",
+      "tissue": "fruit (damaged and undamaged apples)",
+      "treatment_mean": 4.65,
+      "control_mean": 7.76,
+      "effect_pct": -40.1,
+      "n": null,
+      "unit": "kg apples per tree",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results section 'Yield', p7 (PDF page 7); also Table 4 and Fig. 3a",
+      "treatment_description": "great tits excluded from foraging by polyethylene nets placed over trees from Julian date 116 (earliest exclusion, start of experiment); n=44 trees",
+      "control_description": "great tits never excluded — open trees with full bird access throughout season (treatment date 177, control group); n=56 trees",
+      "moderators": {
+        "predator_group": "birds (great tits Parus major)",
+        "treatment_type": "exclusion",
+        "crop": "apple",
+        "study_year": "2000",
+        "country": "Netherlands"
+      },
+      "figure_read": null,
+      "notes": "Text states: 'The observed yield per tree increased from 4.65 kg (SE 0.59, n=44), when great tits were excluded on Julian date 116, to 7.76 kg (SE 0.69, n=56), when great tits were never excluded (treatment date 177).' These are endpoint values from a regression model; the design is a continuous gradient of exclusion dates, not a simple two-group comparison. SE values are per-group (treatment SE=0.59, control SE=0.69) but n values (44 and 56) are total trees in each endpoint group, not independent replicates. The 4 orchard blocks are the true replication unit. Direction check: exclusion yields less — consistent with expected biocontrol effect (P<0.05 for date effect on yield, Table 4). Yield was log-transformed for analysis (Fig. 3a shows residuals on log scale). Summary states yield increased significantly from 4.7 to 7.8 kg (P<0.05)."
+    },
+    {
+      "outcome": "crop damage",
+      "tissue": "fruit (proportion of apples with caterpillar damage)",
+      "treatment_mean": 13.8,
+      "control_mean": 11.2,
+      "effect_pct": 23.2,
+      "n": null,
+      "unit": "percentage of apples per tree with caterpillar damage",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results section 'Caterpillar damage', p7 (PDF page 7); also Table 3 and Fig. 2a",
+      "treatment_description": "great tits excluded from foraging by nets from Julian date 116 (earliest exclusion); n=44 trees; SE=1.0%",
+      "control_description": "great tits never excluded — open trees (treatment date 177, control group); n=56 trees; SE=0.9%",
+      "moderators": {
+        "predator_group": "birds (great tits Parus major)",
+        "treatment_type": "exclusion",
+        "crop": "apple",
+        "study_year": "2000",
+        "country": "Netherlands"
+      },
+      "figure_read": null,
+      "notes": "Text: 'observed damage decreasing from 13.8% (SE 1.0%, n=44), when great tits were excluded on Julian date 116, to 11.2% (SE 0.9%, n=56), when great tits were never excluded (treatment date 177).' Damage reduction was small (2.6 percentage points) but significant (P<0.05). The effect of the experimental treatment (block×date interaction) was not significant (Table 3), but the date main effect was significant (F=4.91, P<0.05). Summary reports reduction from 13.8% to 11.2%. Direction: exclusion increases damage — consistent with expected effect of removing biocontrol. SE values given are treatment SE=1.0, control SE=0.9. True replication is 4 blocks; n=44 and n=56 are individual trees."
+    },
+    {
+      "outcome": "crop yield",
+      "tissue": "weight per apple",
+      "treatment_mean": 119.1,
+      "control_mean": 117.7,
+      "effect_pct": 1.2,
+      "n": null,
+      "unit": "g per apple",
+      "variance_value": null,
+      "variance_type": "SE",
+      "data_source": "text, Results section 'Average weight per apple and number of apples', p8 (PDF page 8)",
+      "treatment_description": "great tits excluded from foraging (first treatment, Julian date 116); n=42 trees; SE=3.1 g",
+      "control_description": "great tits never excluded (control, Julian date 177); n=56 trees; SE=3.1 g",
+      "moderators": {
+        "predator_group": "birds (great tits Parus major)",
+        "treatment_type": "exclusion",
+        "crop": "apple",
+        "study_year": "2000",
+        "country": "Netherlands"
+      },
+      "figure_read": null,
+      "notes": "Text: 'on average the weight of each apple decreased from 119.1 g (SE 3.1, n=42) to 117.7 g (SE 3.1, n=56).' Average weight per apple was higher in the first treatment (where birds were excluded longer), with individual apples larger but fewer. This is the opposite direction from total yield — the yield increase with bird access comes from more apples, not heavier apples. Weight per apple actually decreased with increasing bird access (date effect significant in Table 4). This is recorded as a yield component, not the primary yield outcome."
+    }
+  ]
+}
