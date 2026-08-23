@@ -68,13 +68,13 @@ def lij_crosswalk(ai):
     return remap
 def keyfn(ds):
     # Boldorini: pool to (paper, crop, predator) — finer structural key over-splits its 16 studies.
-    if ds=="Boldorini": return lambda r:(npid(low(r,"paper_id")),low(r,"crop"),low(r,"treatment_level"))
+    if ds=="Boldorini": return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"crop"),low(r,"treatment_level"))
     if ds=="Biochar": return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"crop"),low(r,"treatment_level"),low(r,"co_amendment"),numtok(r,"co_amendment_level"),low(r,"timepoint"))
     if ds=="Hui":     return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"treatment_level"))
     if ds=="Loladze": return lambda r:(npid(low(r,"paper_id")),low(r,"treatment_level"),low(r,"co_amendment"),low(r,"co_amendment_level"))
     return None
 pct=lambda x:(math.exp(x)-1)*100
-print(f"{'Dataset':22} {'cells':>5} {'studies':>7} {'AI%':>7} {'GT%':>7} {'paired diff (90% CI)':>22}  TOST 5/10/15/20")
+print(f"{'Dataset':22} {'cells':>5} {'studies':>7} {'AI%':>7} {'GT%':>7} {'relative RR diff % (90% CI)':>27}  TOST 5/10/15/20")
 print("-"*108)
 for ds in ["Boldorini","Biochar","Hui","Loladze","Li2022"]:
     excl={npid(p) for p in EXCLUDE.get(ds,set())}

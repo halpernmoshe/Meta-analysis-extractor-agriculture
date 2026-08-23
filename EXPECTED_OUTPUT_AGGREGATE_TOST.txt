@@ -1,4 +1,4 @@
-Dataset                  AIn/GTn     AI%     GT%          diff (90% CI)  TOST 5/10/15/20  in/out-scope AI rows
+Dataset                  AIn/GTn     AI%     GT% relative RR diff % (90% CI)  TOST 5/10/15/20  in/out-scope AI rows
 ----------------------------------------------------------------------------------------------------------------
 Boldorini et al. 2024    12/13    -14.4%  -25.6% +15.08 [-7.69,+43.48]   . . . .   in=29 out=31
 Li X et al. 2024         19/20     27.0%   27.5%  -0.40 [-11.73,+12.38]   . . . .   in=270 out=49
@@ -6,4 +6,4 @@ Hui et al. 2025          18/18     39.8%   38.4%  +1.03 [-9.23,+12.46]   . . . .
 Loladze 2014             38/41     -9.0%  -12.3%  +3.83 [-1.84,+9.82]   . . . .   in=1215 out=148
 Li J et al. 2022         35/35     16.6%   16.3%  +0.28 [-5.53,+6.43]   . . . .   in=346 out=0
 ----------------------------------------------------------------------------------------------------------------
-Unpaired aggregate of EVERYTHING in scope (AI out-of-scope rows removed). P=90% CI of pooled diff within +-margin*|GT|.
+Unpaired aggregate of EVERYTHING in scope (AI out-of-scope rows removed). Displayed differences are relative response-ratio differences; P=90% CI of the lnRR difference within +-margin*|GT|.

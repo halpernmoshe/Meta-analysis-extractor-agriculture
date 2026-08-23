@@ -1,6 +1,6 @@
-# Included source papers, by dataset
+# Candidate input papers, by dataset
 
-The source papers the workflow extracted from, grouped by the five reference datasets. Each entry is the paper key (author and year). Papers excluded as mislabelled-PDF sourcing errors are marked. Source PDFs are not redistributed (publisher copyright).
+This is an inventory of candidate PDFs and records supplied during processing, grouped by the five reference datasets. It is not an analytical inclusion ledger: entries can be excluded as a sourcing error, be outside the final analytical scope, or fail to contribute an analysable record. The authoritative analysed-paper counts and bibliographies are in Supplementary Material S6 and S8: Boldorini 18, Biochar 27, Loladze 44, Hui 19, and Li J 43. Papers excluded as mislabelled-PDF sourcing errors are marked here. Source PDFs are not redistributed (publisher copyright).
 
 ## Boldorini et al. 2024 (predator biocontrol) — 18 papers
 

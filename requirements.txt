@@ -1,5 +1,5 @@
 # Core manuscript analyses use Python 3.8+ and the standard library.
-# Figure regeneration and the round-2 variance/weighting checks require:
+# Figure regeneration and optional coverage analysis require:
 matplotlib>=3.7
 numpy>=1.24
 pandas>=2.0

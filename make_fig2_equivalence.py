@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Figure 2 - equivalence forest. Per-dataset paired AI-minus-human difference in pooled
-effect (percentage points) with its 90% CI, plotted against the +-20%-of-effect
-equivalence margin. Datasets whose CI falls entirely inside the margin pass TOST at 20%.
+Figure 2 - equivalence forest. Per-dataset paired AI-minus-human relative response-ratio
+difference (%) with its 90% CI, plotted against the transformed 20%-of-effect equivalence
+bounds. TOST itself is evaluated on the lnRR scale.
 
 Reuses the paired scope-matched TOST machinery of scope_aware_paired_tost.py, so the
 plotted differences and CIs are exactly those in EXPECTED_OUTPUT_PAIRED_TOST.txt.
@@ -107,9 +107,8 @@ def compute(ds):
     margin=0.20*abs(gtp)
     inside = (plo>-margin and phi<margin)
     return dict(diff=pct(md), lo=pct(md-1.645*pse), hi=pct(md+1.645*pse),
-                margin=pct(gtp+margin)-pct(gtp), gtp=pct(gtp), ns=ns, inside=inside,
-                # symmetric margin in pp for plotting around 0
-                marg_pp=abs(gtp)*0.20*100)
+                margin_lo=pct(-margin), margin_hi=pct(margin), gtp=pct(gtp), ns=ns,
+                inside=inside)
 
 def main():
     order=["Boldorini","Biochar","Hui","Loladze","Li2022"]
@@ -118,28 +117,28 @@ def main():
     ys=list(range(len(order)))[::-1]
     for y, ds in zip(ys, order):
         R=res[ds]
-        m=R["marg_pp"]
-        # margin band
-        ax.add_patch(plt.Rectangle((-m, y-0.32), 2*m, 0.64, color="#e6eff7", zorder=0))
-        ax.plot([-m, -m], [y-0.32, y+0.32], color="#7aa6cf", lw=1, zorder=1)
-        ax.plot([ m,  m], [y-0.32, y+0.32], color="#7aa6cf", lw=1, zorder=1)
+        mlo, mhi=R["margin_lo"], R["margin_hi"]
+        # Transform the symmetric lnRR margin to its asymmetric response-ratio bounds.
+        ax.add_patch(plt.Rectangle((mlo, y-0.32), mhi-mlo, 0.64, color="#e6eff7", zorder=0))
+        ax.plot([mlo, mlo], [y-0.32, y+0.32], color="#7aa6cf", lw=1, zorder=1)
+        ax.plot([mhi, mhi], [y-0.32, y+0.32], color="#7aa6cf", lw=1, zorder=1)
         col = "#1a7f37" if R["inside"] else "#b04a2f"
         ax.plot([R["lo"], R["hi"]], [y, y], color=col, lw=2, zorder=3)
         ax.plot(R["diff"], y, "o", color=col, ms=7, zorder=4)
-        ax.text(0.0, y+0.42, f"{R['diff']:+.2f} pp  [{R['lo']:+.2f}, {R['hi']:+.2f}]   margin ±{m:.1f} pp",
+        ax.text(0.0, y+0.42, f"{R['diff']:+.2f}%  [{R['lo']:+.2f}, {R['hi']:+.2f}]   bounds [{mlo:+.1f}, {mhi:+.1f}]%",
                 ha="center", va="bottom", fontsize=7.5, color="#333333")
     ax.axvline(0, color="#999999", lw=0.8, ls=":")
     ax.set_yticks(ys); ax.set_yticklabels([DISPLAY[d] for d in order], fontsize=9)
-    ax.set_xlabel("Paired AI - human difference in pooled effect (percentage points)", fontsize=9)
+    ax.set_xlabel("Paired AI - human relative response-ratio difference (%)", fontsize=9)
     ax.set_ylim(-0.7, len(order)-0.3)
     ax.tick_params(axis="x", labelsize=8)
-    ax.set_title("Aggregate equivalence: paired difference vs ±20%-of-effect margin", fontsize=10, fontweight="bold")
+    ax.set_title("Aggregate equivalence: paired difference vs 20%-of-effect bounds", fontsize=10, fontweight="bold")
     fig.tight_layout()
     out=os.path.join(FIGS,"fig2_equivalence.png")
     fig.savefig(out, dpi=200)
     print("wrote", out)
     for ds in order:
-        R=res[ds]; print(f"  {DISPLAY[ds]:22} diff={R['diff']:+.2f} CI[{R['lo']:+.2f},{R['hi']:+.2f}] margin+-{R['marg_pp']:.2f} inside20%={R['inside']}")
+        R=res[ds]; print(f"  {DISPLAY[ds]:22} diff={R['diff']:+.2f}% CI[{R['lo']:+.2f},{R['hi']:+.2f}] bounds[{R['margin_lo']:+.2f},{R['margin_hi']:+.2f}]% inside20%={R['inside']}")
 
 if __name__ == "__main__":
     main()

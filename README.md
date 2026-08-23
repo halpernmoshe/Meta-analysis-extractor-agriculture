@@ -32,10 +32,11 @@ contain copyrighted source text and account-provenance material.
 
 `decoders/` holds the script that builds each dataset's AI-side key table, one per dataset, with a
 ledger recording every decision it makes and its vocabulary comparison against the reference side.
-These are the per-dataset matching scripts the Methods refers to; the bridging each one performs is
-metadata-only and is documented row by row in its ledger. The raw model outputs needed to rerun a
-decoder are not redistributed; the deposited frozen key tables are the reproducible inputs to every
-reported analysis.
+These are the deposited AI-side decoding scripts. The published-reference side is supplied as frozen
+canonical key tables, rather than as rerunnable raw-label-to-key construction scripts. The final
+cross-dataset mappings can therefore be inspected row by row in the ledgers and key tables. The raw
+model outputs needed to rerun an AI-side decoder are not redistributed; the deposited frozen key
+tables are the reproducible inputs to every reported analysis.
 
 Two key fields were restored for Boldorini specifically, both documented in its ledger:
 `unit_canonical` in the raw-mean comparison, because its reference stores percentages, gram weights
@@ -114,10 +115,10 @@ describe the contents uniformly across datasets. For the biochar dataset they ho
 and co-applied amendment; for Loladze 2014 they hold the **element** (`treatment_level` = ca, fe,
 zn, n…), the plant **tissue** (`co_amendment` = grain, leaf…), and the **cultivar**
 (`co_amendment_level`); the other datasets pack their corresponding coordinates the same way. This
-does not affect the comparison: the identical decoder is applied to both the AI side and the published-reference side
-of each dataset, so the categorical key pairs like-for-like (element-to-element, dose-to-dose)
-regardless of the generic column label. The labels are slots; the pairing is on the values within
-matching slots.
+does not affect the comparison: the deposited AI-side decoder and frozen published-reference key
+table use the same canonical slot structure, so categorical pairing is like-for-like
+(element-to-element, dose-to-dose) regardless of the generic column label. The labels are slots;
+the pairing is on the values within matching slots.
 
 The directory name `gt` is retained as an internal file identifier from the original analysis;
 throughout the manuscript it denotes the published reference data and does not imply independently
@@ -135,8 +136,10 @@ verified ground truth.
   from which any reader can download the source material.
 - `decoders/` holds one AI-side decoder per dataset plus its ledger; these build the key
   tables in `runs/*/keys/ai/` from the extraction outputs.
+- `INCLUDED_SOURCE_PAPERS.md` is a candidate-input inventory, not an analytical inclusion ledger;
+  the analysed-paper counts and bibliographies are in Supplementary Material S6 and S8.
 - The round-1 `superseded_v1/` tree is not carried into this deposit; nothing in the
   current manuscript depends on it, and it remains in the original deposit for provenance.
 - `requirements.txt` lists dependencies (standard library for the core analyses; `matplotlib` for
-  figures; `numpy` and `pandas` for the round-2 variance and weighting checks).
+  figures; `numpy` and `pandas` for the optional coverage analysis).
 - `TESTED_ENVIRONMENT.md` records the exact software versions used for the final audit run.

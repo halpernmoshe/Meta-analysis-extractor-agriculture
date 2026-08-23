@@ -67,7 +67,7 @@ def keyfn(ds):
     if ds=="Loladze": return lambda r:(npid(low(r,"paper_id")),low(r,"treatment_level"),low(r,"co_amendment"),low(r,"co_amendment_level"))
     return None
 pct=lambda x:(math.exp(x)-1)*100
-print(f"{'Dataset':22} {'cells':>5} {'studies':>7} {'AI%':>7} {'GT%':>7} {'paired diff (90% CI)':>22}  TOST 5/10/15/20")
+print(f"{'Dataset':22} {'cells':>5} {'studies':>7} {'AI%':>7} {'GT%':>7} {'relative RR diff % (90% CI)':>27}  TOST 5/10/15/20")
 print("-"*108)
 for ds in ["Boldorini","Biochar","Hui","Loladze","Li2022"]:
     excl={npid(p) for p in EXCLUDE.get(ds,set())}

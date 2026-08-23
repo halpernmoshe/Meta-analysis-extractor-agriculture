@@ -75,7 +75,7 @@ def scope_key(ds):
     if ds == "Boldorini":return lambda r:(npid(low(r,"paper_id")), low(r,"outcome_canonical"), low(r,"treatment_level"))
     return None   # Li2022 by remapped study below
 
-print(f"{'Dataset':22} {'AIn/GTn':>9} {'AI%':>7} {'GT%':>7} {'diff (90% CI)':>22}  TOST 5/10/15/20  in/out-scope AI rows")
+print(f"{'Dataset':22} {'AIn/GTn':>9} {'AI%':>7} {'GT%':>7} {'relative RR diff % (90% CI)':>27}  TOST 5/10/15/20  in/out-scope AI rows")
 print("-"*112)
 pct = lambda x: (math.exp(x)-1)*100
 for ds in ["Boldorini","Biochar","Hui","Loladze","Li2022"]:
@@ -125,4 +125,4 @@ for ds in ["Boldorini","Biochar","Hui","Loladze","Li2022"]:
     ladder = " ".join("P" if (plo > -m*abs(G["m"]) and phi < m*abs(G["m"])) else "." for m in (0.05,0.10,0.15,0.20))
     print(f"{DISPLAY[ds]:22} {A['n']:>4}/{G['n']:<4} {pct(A['m']):>6.1f}% {pct(G['m']):>6.1f}% {pct(diff):>+6.2f} [{pct(plo):>+5.2f},{pct(phi):>+5.2f}]   {ladder}   in={A['kept']} out={A['dropped']}")
 print("-"*112)
-print("Unpaired aggregate of EVERYTHING in scope (AI out-of-scope rows removed). P=90% CI of pooled diff within +-margin*|GT|.")
+print("Unpaired aggregate of EVERYTHING in scope (AI out-of-scope rows removed). Displayed differences are relative response-ratio differences; P=90% CI of the lnRR difference within +-margin*|GT|.")
