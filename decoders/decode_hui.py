@@ -588,7 +588,7 @@ def decode(variant, out_dir):
             ])
 
         with open(os.path.join(out_dir, token + ".csv"), "w", newline="", encoding="utf-8") as fh:
-            w = csv.writer(fh)
+            w = csv.writer(fh, lineterminator="\n")
             w.writerow(HEADER)
             w.writerows(rows)
         stat["rows_out"] += len(rows)

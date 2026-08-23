@@ -513,7 +513,7 @@ def main():
             })
         out = os.path.join(OUTDIR, pid + ".csv")
         with open(out, "w", newline="", encoding="utf-8") as fh:
-            w = csv.DictWriter(fh, fieldnames=COLS)
+            w = csv.DictWriter(fh, fieldnames=COLS, lineterminator="\n")
             w.writeheader(); w.writerows(rows)
         summary.append((pid, len(obs), len(rows), sum(1 for r in rows if r["treatment_level"])))
 

@@ -764,7 +764,7 @@ def main():
                         % sorted(distinct_years)[0])
 
         with open(os.path.join(OUT, pid + ".csv"), "w", newline="", encoding="utf-8") as fh:
-            w = csv.DictWriter(fh, fieldnames=COLS)
+            w = csv.DictWriter(fh, fieldnames=COLS, lineterminator="\n")
             w.writeheader()
             w.writerows(recs)
 

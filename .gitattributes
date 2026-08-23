@@ -2,3 +2,6 @@
 source_records/**/*.json binary
 
 source_records/SHA256SUMS.txt text eol=lf
+
+# Decoders emit LF-delimited canonical CSVs; preserve that form in every clone.
+runs/**/keys/ai/*.csv text eol=lf
