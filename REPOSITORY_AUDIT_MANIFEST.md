@@ -37,7 +37,6 @@ carried here; it remains in the earlier deposit for provenance.
 - Source PDFs are not redistributed because of publisher copyright; the `runs/` key tables are the inputs.
 - The core analysis scripts reproduce their `EXPECTED_OUTPUT_*.txt` byte-for-byte; the figure scripts run without error and print values matching their captions.
 - The coverage/source-format analysis uses only the deposited key tables and reproduces its deposited CSV summaries.
-- The Supplementary Material S7 variance-provenance counts rely on source comparator workbooks
-  whose row-level provenance inputs are not deposited; they are documented in the manuscript but
-  are not rerun by this release.
+- `PUBLIC_SOURCE_DATA.md` gives public download addresses for the two comparator datasets used in
+  the Supplementary Material S7 variance-provenance screens.
 - Source PDFs, raw model outputs, and prompts are not redistributed because they can contain copyrighted source text or account-provenance material.

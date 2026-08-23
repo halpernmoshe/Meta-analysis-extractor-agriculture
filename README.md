@@ -130,9 +130,9 @@ verified ground truth.
 - **Raw model outputs and prompts are not redistributed** because they can contain copyrighted source
   text and account-provenance material. They are not needed to reproduce the reported analyses from
   the deposited key tables.
-- **Variance-provenance counts in Supplementary Material S7** are documented from source comparator
-  workbooks, but their row-level provenance inputs are not included in this release and are not run
-  by the wrappers.
+- **Public source data for the Supplementary Material S7 variance screens** are listed in
+  [`PUBLIC_SOURCE_DATA.md`](PUBLIC_SOURCE_DATA.md), including the two comparator article/data pages
+  from which any reader can download the source material.
 - `decoders/` holds one AI-side decoder per dataset plus its ledger; these build the key
   tables in `runs/*/keys/ai/` from the extraction outputs.
 - The round-1 `superseded_v1/` tree is not carried into this deposit; nothing in the
