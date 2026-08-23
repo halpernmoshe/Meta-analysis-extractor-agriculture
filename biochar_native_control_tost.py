@@ -67,7 +67,7 @@ def lij_crosswalk(ai):
         return idx.get((fl(m.group(1)),m.group(2))) or idx.get((fl(m.group(1)),None)) or pid
     return remap
 def keyfn(ds):
-    # Boldorini: pool to (paper, crop, predator) — finer structural key over-splits its 16 studies.
+    # Boldorini uses the same 16-cell paired-effect key as the primary analysis.
     if ds=="Boldorini": return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"crop"),low(r,"treatment_level"))
     if ds=="Biochar": return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"crop"),low(r,"treatment_level"),low(r,"co_amendment"),numtok(r,"co_amendment_level"),low(r,"timepoint"))
     if ds=="Hui":     return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"treatment_level"))
