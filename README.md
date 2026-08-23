@@ -1,8 +1,8 @@
 # Reproducibility repository
 
-**Agreement Between AI-Assisted Extraction and Published Reference Data Across Five Agricultural Datasets**
+**Agreement Between AI-Assisted Extraction and Published Reference Data Across Five Agricultural and Ecological Datasets**
 
-This repository reproduces every reported number and figure in the manuscript from the deposited
+This repository reproduces every reported mean- and effect-based analysis number and figure in the manuscript from the deposited
 key tables. The comparison is outcome-blind: each side's row metadata is decoded into a canonical
 categorical key, pairing is a deterministic categorical operation that never consults outcome
 values, multi-row cells are summarised by their mean, and effects are compared as the log response
@@ -57,6 +57,7 @@ does not establish the source of the 16-cell effect difference.
 python line_by_line_scope_aware.py     # Part 1: conditional agreement   -> EXPECTED_OUTPUT_LINEBYLINE.txt
 python scope_aware_paired_tost.py      # Part 2: paired equivalence TOST -> EXPECTED_OUTPUT_PAIRED_TOST.txt
 python scope_aware_aggregate_tost.py   # Part 2: unpaired aggregate      -> EXPECTED_OUTPUT_AGGREGATE_TOST.txt
+python biochar_native_control_tost.py  # Biochar native-control comparison -> EXPECTED_OUTPUT_BIOCHAR_NATIVE_CONTROL.txt
 python reconciliation_analysis.py      # Table 5 / Fig 3 / power / Biostimulant  -> EXPECTED_OUTPUT_RECONCILIATION.txt
 python make_bland_altman.py            # Supplement S5 LoA + Figure S1   -> EXPECTED_OUTPUT_BLAND_ALTMAN.txt
 python make_fig1_fidelity.py           # Figure 1  -> figures/fig1_fidelity.png
@@ -81,6 +82,7 @@ coverage/source-format check. Both wrappers stop if any command fails.
 | `line_by_line_scope_aware.py` | Table 3 (conditional numerical agreement); Figure 1 | `EXPECTED_OUTPUT_LINEBYLINE.txt` |
 | `scope_aware_paired_tost.py` | Table 4 (paired equivalence); Figure 2 | `EXPECTED_OUTPUT_PAIRED_TOST.txt` |
 | `scope_aware_aggregate_tost.py` | Part 2 unpaired aggregate (power setup) | `EXPECTED_OUTPUT_AGGREGATE_TOST.txt` |
+| `biochar_native_control_tost.py` | Biochar native-control comparison reported beside Table 4 | `EXPECTED_OUTPUT_BIOCHAR_NATIVE_CONTROL.txt` |
 | `reconciliation_analysis.py` | Table 5; Figure 3; power paragraph; Elevated-CO₂ mineral nutrition per-element; Biostimulant | `EXPECTED_OUTPUT_RECONCILIATION.txt` |
 | `make_bland_altman.py` | Supplement S5 (Table S1, Figure S1) | `EXPECTED_OUTPUT_BLAND_ALTMAN.txt` |
 | `make_fig1_fidelity.py` | Figure 1 | `figures/fig1_fidelity.png` |
@@ -128,6 +130,9 @@ verified ground truth.
 - **Raw model outputs and prompts are not redistributed** because they can contain copyrighted source
   text and account-provenance material. They are not needed to reproduce the reported analyses from
   the deposited key tables.
+- **Variance-provenance counts in Supplementary Material S7** are documented from source comparator
+  workbooks, but their row-level provenance inputs are not included in this release and are not run
+  by the wrappers.
 - `decoders/` holds one AI-side decoder per dataset plus its ledger; these build the key
   tables in `runs/*/keys/ai/` from the extraction outputs.
 - The round-1 `superseded_v1/` tree is not carried into this deposit; nothing in the

@@ -2,8 +2,8 @@
 """
 PAIRED scope-matched TOST with the scope-aware corrections (lnRR).
 Cells matched by categorical key (no values). Paired per-cell lnRR diff, clustered by study.
-Corrections vs frozen: biochar control harmonized to absolute; Loladze MID key (effect from
-ratio); Li J study-level + author-year crosswalk. Question: does it pass MORE than 3/5@20%?
+Corrections: biochar control harmonized to absolute; Loladze MID key (effect from
+ratio); Li J study-level + author-year crosswalk.
 """
 import csv, glob, math, os, re, statistics
 from collections import defaultdict
@@ -69,7 +69,6 @@ def keyfn(ds):
 pct=lambda x:(math.exp(x)-1)*100
 print(f"{'Dataset':22} {'cells':>5} {'studies':>7} {'AI%':>7} {'GT%':>7} {'paired diff (90% CI)':>22}  TOST 5/10/15/20")
 print("-"*108)
-frozen={"Boldorini":". . . P","Biochar":". . . .","Hui":". . P P","Loladze":". . . .","Li2022":". . P P"}
 for ds in ["Boldorini","Biochar","Hui","Loladze","Li2022"]:
     excl={npid(p) for p in EXCLUDE.get(ds,set())}
     ai=load(f"{BASE[ds]}/ai",excl); gt=load(f"{BASE[ds]}/gt",excl)
@@ -102,6 +101,6 @@ for ds in ["Boldorini","Biochar","Hui","Loladze","Li2022"]:
     plo,phi=md-1.645*pse,md+1.645*pse
     gtp=sum(sum(v)/len(v) for v in bg.values())/len(bg)
     ladder=" ".join("P" if (plo>-m*abs(gtp) and phi<m*abs(gtp)) else "." for m in (0.05,0.10,0.15,0.20))
-    print(f"{DISPLAY[ds]:22} {len(shared):>5} {ns:>7} {pct(gtp+md):>6.1f}% {pct(gtp):>6.1f}% {pct(md):>+6.2f} [{pct(plo):>+5.2f},{pct(phi):>+5.2f}]   {ladder}   (frozen: {frozen[ds]})")
+    print(f"{DISPLAY[ds]:22} {len(shared):>5} {ns:>7} {pct(gtp+md):>6.1f}% {pct(gtp):>6.1f}% {pct(md):>+6.2f} [{pct(plo):>+5.2f},{pct(phi):>+5.2f}]   {ladder}")
 print("-"*108)
-print("P=pass. 'frozen' = the current paper's paired TOST ladder for comparison.")
+print("P=pass.")

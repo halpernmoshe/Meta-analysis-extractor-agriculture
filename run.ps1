@@ -4,6 +4,7 @@ $scripts = @(
     'line_by_line_scope_aware.py',
     'scope_aware_paired_tost.py',
     'scope_aware_aggregate_tost.py',
+    'biochar_native_control_tost.py',
     'reconciliation_analysis.py',
     'make_bland_altman.py',
     'make_fig1_fidelity.py',
