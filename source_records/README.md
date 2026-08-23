@@ -12,7 +12,7 @@ variance/matching provenance.
 | `biochar/` | Li X et al. 2024 | 34 | 617,518 | Frozen March 2026 set: 28 paper extractions plus 6 pipeline auxiliaries. The decoder accepts only objects with a top-level `paper_id` and `observations` list; the six auxiliaries are retained for a complete, checksummed provenance set but do not produce key rows. |
 | `boldorini/` | Boldorini et al. 2024 | 18 | 184,865 | Corrected August 2026 re-extraction used by the final analysis (80 decoded rows). This replaces the earlier March hand-authored/contaminated set. |
 | `hui/` | Hui et al. 2025 | 37 | 538,547 | Frozen March 2026 extraction set. Corpus and row exclusions are applied by the decoder and documented in `decoders/hui_DECODER_LEDGER.md`. |
-| `li_j/` | Li J et al. 2022 | 49 | 719,848 | Frozen March 2026 extraction set. The decoder uses published-reference paper identifiers only for the disclosed author-year crosswalk. |
+| `li_j/` | Li J et al. 2022 | 49 | 719,848 | Frozen March 2026 extraction set. Analysis uses published-reference paper identifiers only for the disclosed author-year crosswalk; two same-author/year collisions are excluded after source-title checks. |
 | `loladze/` | Loladze 2014 | 46 | 764,780 | Frozen March 2026 extraction set. All 1,646 source records are emitted as AI key rows; unpairable coordinates remain visible rather than being dropped. |
 | **Total** |  | **184** | **2,825,558** |  |
 
@@ -24,8 +24,10 @@ python verify_source_record_release.py
 ```
 
 The verification parses every JSON, checks the manifest, runs all five deposited decoders in a
-temporary directory, and requires the generated AI keys to be byte-identical to the frozen analysis
-inputs. The expected result is 170 generated CSV files containing 3,151 rows. Hui's frozen analysis
+temporary directory, and requires the generated AI keys to be content-identical to the frozen analysis
+inputs after normalizing CSV line endings. This preserves exact fields, ordering, and row values while
+accommodating the historical CRLF line endings in the frozen Boldorini keys. The expected result is
+170 generated CSV files containing 3,151 rows. Hui's frozen analysis
 input is the decoder's documented `strict` variant; `hui_method_field_first` is generated only as a
 sensitivity variant.
 

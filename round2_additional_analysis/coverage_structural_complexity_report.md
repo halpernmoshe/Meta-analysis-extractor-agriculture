@@ -8,7 +8,7 @@ Matched status was reconstructed using the exact outcome-blind structural keys a
 | Li X et al. 2024 | 517 | 517 | 0 | 204 | 39% | 39% |
 | Hui et al. 2025 | 36 | 34 | 2 | 33 | 92% | 97% |
 | Loladze 2014 | 605 | 558 | 47 | 177 | 29% | 32% |
-| Li J et al. 2022 | 171 | 35 | 136 | 35 | 20% | 100% |
+| Li J et al. 2022 | 172 | 35 | 137 | 35 | 20% | 100% |
 
 Same-paper presence means that the final published crosswalk identified at least one AI record from that paper. Absence can reflect a paper outside the processed corpus or an unresolved paper identifier; it is not classified as extraction difficulty.
 

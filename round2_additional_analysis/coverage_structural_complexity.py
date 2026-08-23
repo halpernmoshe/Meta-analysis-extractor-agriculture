@@ -185,6 +185,9 @@ def li2022_crosswalk(ai_rows: list[dict[str, str]]):
         )
         if not match:
             return paper
+        # Source-title audit: do not merge distinct same-author/year GT studies.
+        if paper in {"gt_study08", "gt_study146"}:
+            return paper
         author = first_last(match.group(1))
         year = match.group(2)
         if not author:
@@ -527,7 +530,7 @@ def main() -> None:
         "Biochar": (517, 204),
         "Hui": (36, 33),
         "Loladze": (605, 177),
-        "Li2022": (171, 35),
+        "Li2022": (172, 35),
     }
     for row in summary:
         code = next(key for key, value in DISPLAY.items() if value == row["dataset"])

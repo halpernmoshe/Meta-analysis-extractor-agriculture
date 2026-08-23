@@ -55,6 +55,8 @@ def lij_crosswalk(ai):
         if not pid.startswith("study") and not pid.startswith("gt_study"): return pid
         m=re.search(r"author='([^']+)'\s*[, ]*((?:19|20)\d{2})",r.get("evidence",""))
         if not m: return pid
+        # Source-title audit: do not merge distinct same-author/year GT studies.
+        if pid in {"gt_study08", "gt_study146"}: return pid
         return idx.get((fl(m.group(1)),m.group(2))) or idx.get((fl(m.group(1)),None)) or pid
     return remap
 def keyfn(ds):

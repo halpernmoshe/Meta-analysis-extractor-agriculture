@@ -70,9 +70,15 @@ def count_csv_rows(paths: list[Path]) -> int:
     return total
 
 
+def normalized_csv_sha256(path: Path) -> str:
+    """Hash CSV content independent of the historical CRLF/LF convention."""
+    data = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()
+
+
 def compare_csv_trees(generated: Path, frozen: Path) -> tuple[int, int]:
-    got = {p.name: sha256(p) for p in generated.glob("*.csv")}
-    want = {p.name: sha256(p) for p in frozen.glob("*.csv")}
+    got = {p.name: normalized_csv_sha256(p) for p in generated.glob("*.csv")}
+    want = {p.name: normalized_csv_sha256(p) for p in frozen.glob("*.csv")}
     if got != want:
         missing = sorted(want.keys() - got.keys())
         extra = sorted(got.keys() - want.keys())
@@ -130,7 +136,10 @@ def verify_decoders() -> tuple[int, int]:
                     f"{dataset}: expected {expected_files} files/{expected_rows} rows, "
                     f"found {files} files/{rows} rows"
                 )
-            print(f"{dataset}: {files} generated CSVs, {rows} rows, byte-identical to frozen AI keys")
+            print(
+                f"{dataset}: {files} generated CSVs, {rows} rows, content-identical "
+                "to frozen AI keys after CSV newline normalization"
+            )
             file_total += files
             row_total += rows
         return file_total, row_total

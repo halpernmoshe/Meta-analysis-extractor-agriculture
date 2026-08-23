@@ -14,13 +14,13 @@ differences, confidence intervals, and margins are reported on the 100 × lnRR s
 the reference dataset's absolute-control definition using control means the workflow had already
 extracted. This common-definition analysis is comparator-informed; the prospective biochar
 holdout result is the raw-mean comparison. Li J paper identifiers are crosswalked by author and
-year. All scripts are
+year where unique; two same-author/year collisions are excluded after source-title checks. All scripts are
 deterministic and require only the Python standard library, except the figure scripts, which also
 require `matplotlib`.
 
 ## What changed in this revision
 
-Two corrections are reflected throughout.
+Three corrections are reflected throughout.
 
 **The AI-side inputs.** Several comparisons had been run on earlier extraction attempts rather than
 on the extraction the Methods describe. Every key table under `runs/*/keys/ai/` is now rebuilt from
@@ -33,6 +33,11 @@ and the comparison rebuilt. The resulting frozen AI-side key tables are deposite
 `runs/boldorini/keys/ai/`; the corrected August 2026 JSON source records are deposited under
 `source_records/boldorini/`.
 
+**Li J et al. 2022 crosswalk.** A source-title check found two distinct reference studies that
+shared an author and year with an AI paper. The analysis now leaves those ambiguous studies
+unmatched rather than merging them. This changes the Li J paired relative response-ratio difference
+from +0.28% to +0.26% and does not change any equivalence conclusion.
+
 `decoders/` holds the script that builds each dataset's AI-side key table, one per dataset, with a
 ledger recording every decision it makes and its vocabulary comparison against the reference side.
 These are the deposited AI-side decoding scripts. The finalized inputs they read are under
@@ -40,7 +45,7 @@ These are the deposited AI-side decoding scripts. The finalized inputs they read
 published-reference side is supplied as frozen canonical key tables, rather than as rerunnable
 raw-label-to-key construction scripts. The final cross-dataset mappings can therefore be inspected
 row by row in the ledgers and key tables. `python verify_source_record_release.py` runs all five
-decoders in a temporary directory and requires their outputs to be byte-identical to the frozen AI
+decoders in a temporary directory and requires their outputs to be content-identical to the frozen AI
 key tables used by every reported analysis.
 
 Two key fields were restored for Boldorini specifically, both documented in its ledger:
@@ -151,7 +156,7 @@ verified ground truth.
   [`PUBLIC_SOURCE_DATA.md`](PUBLIC_SOURCE_DATA.md), including the two comparator article/data pages
   from which any reader can download the source material.
 - `decoders/` holds one AI-side decoder per dataset plus its ledger; these build temporary key tables
-  from `source_records/`. `verify_source_record_release.py` compares them byte-for-byte with
+  from `source_records/`. `verify_source_record_release.py` compares them field-for-field and row-for-row with
   `runs/*/keys/ai/`.
 - `INCLUDED_SOURCE_PAPERS.md` is a candidate-input inventory, not an analytical inclusion ledger;
   the analysed-paper counts and bibliographies are in Supplementary Material S6 and S8.
