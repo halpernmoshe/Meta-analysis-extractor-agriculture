@@ -1,9 +1,9 @@
 ====================================================================================
 (A) BIOCHAR (Li X 2024) control-definition reconciliation
 ====================================================================================
-  shared cells=177  studies=13
-  AI native MATCHED control (isolates biochar) = +18.7%
-  AI under ABSOLUTE control = +38.5%   human ABSOLUTE control = +37.7%   diff = +0.8 pp
+  shared cells=152  studies=12
+  AI native MATCHED control (isolates biochar) = +18.3%
+  AI under ABSOLUTE control = +37.0%   human ABSOLUTE control = +36.1%   diff = +0.9 pp
 
 ====================================================================================
 (B) LOLADZE per-element CO2 effect (lnRR, cluster by study): ALL cells vs all_data subset
@@ -11,49 +11,44 @@
 
   --- ALL shared cells ---
   elem  studies     AI%     GT%  diff pp
-  N          17   -15.0   -16.3     +1.2
-  P          16    -9.9   -11.9     +2.0
-  CA         15    -9.7    -4.6     -5.0
-  K          13   -10.9   -10.6     -0.3
-  MG         12   -15.1   -12.4     -2.6
-  ZN         12    -9.0    -8.0     -1.0
-  FE         10    -7.8    -2.8     -5.0
-  MN         10    -4.6    +0.3     -4.9
-  CU          8   -11.5    -6.8     -4.8
-  C           5    +5.8   +10.4     -4.6
-  B           3    -6.3    -2.2     -4.2
-  NA          3   -19.7   -20.8     +1.0
-  NI          3   -29.6   -29.6     +0.0
-  PB          3    -4.9    -4.7     -0.1
-  S           3    -2.1    +1.9     -4.0
+  K          10   -11.0   -10.3     -0.7
+  N          10   -15.2   -15.4     +0.2
+  P          10    -4.6    -5.6     +1.0
+  CA          7    -7.8    -3.5     -4.3
+  MG          7    -6.5    -5.0     -1.6
+  MN          7    -1.4    +0.1     -1.5
+  ZN          6    -2.3    -3.7     +1.4
+  CU          5    -5.6    -4.6     -1.1
+  FE          5    -6.0    +0.5     -6.5
+  C           3    +6.0    +6.3     -0.2
+  NA          3   -31.7   -39.5     +7.8
+  S           3    +3.8    -0.2     +4.0
 
   --- all_data only (Loladze applied NO documented condition selection) ---
   elem  studies     AI%     GT%  diff pp
-  CA          9    -9.3    -7.0     -2.2
-  K           8    -7.0    -6.6     -0.3
-  N           8   -16.8   -19.2     +2.4
-  MG          7   -13.5   -13.8     +0.3
-  P           6    -9.8   -13.0     +3.2
-  ZN          5   -11.5   -11.5     -0.1
-  FE          4    +2.9    +1.8     +1.1
-  MN          4    -4.4    -3.6     -0.7
-  CU          3    +7.5    +3.8     +3.7
+  K           4    -1.7    -1.6     -0.0
+  CA          3    -6.0    -8.6     +2.6
+  FE          3    +3.0    +4.7     -1.7
+  MG          3    -3.4    -5.5     +2.1
+  MN          3    +2.9    -0.5     +3.4
+  N           3   -14.0   -16.5     +2.6
+  ZN          3    -6.4    -7.0     +0.5
 
-  all_data OVERALL cell-level agreement: n=115  Pearson r=0.892  MAE=3.00 pp
+  all_data OVERALL cell-level agreement: n=55  Pearson r=0.891  MAE=2.92 pp
 
 ====================================================================================
 (C) POWER decomposition - Loladze: power runs on STUDIES, not observations
 ====================================================================================
-  AI observations extracted: 1538   ->   STUDIES (clustering unit): 23
-  between-study effect SD = 9.0 pp   -> pooled SE = 1.88 pp
-  per-study AI-GT paired-difference SD = 6.18 pp -> paired SE = 1.29 pp
-  Unpaired difference-CI ~ 1.645*sqrt(2)*1.88 = 4.4 pp (heterogeneity, doubled)
-  Paired   difference-CI ~ 1.645*1.29 = 2.1 pp (heterogeneity cancels)
+  AI observations extracted: 1363   ->   STUDIES (clustering unit): 14
+  between-study effect SD = 5.9 pp   -> pooled SE = 1.58 pp
+  per-study AI-GT paired-difference SD = 4.47 pp -> paired SE = 1.19 pp
+  Unpaired difference-CI ~ 1.645*sqrt(2)*1.58 = 3.7 pp (heterogeneity, doubled)
+  Paired   difference-CI ~ 1.645*1.19 = 2.0 pp (heterogeneity cancels)
 
 ====================================================================================
 (D) LI J 2022 units/tokens: study-level effect agreement (after author-year crosswalk)
 ====================================================================================
-  shared papers=36  study-level Pearson r=0.969
+  shared papers=35  study-level Pearson r=0.928
   (study-level pools all rows per paper; the units point is clearest at the single-row level below)
   worked grape example (single row, same observation): AI T=4460 C=4250 -> +4.94%  |  human T=1.4718 C=1.4025 -> +4.94%
   (identical +4.94% effect despite raw scales 4460 vs 1.47)

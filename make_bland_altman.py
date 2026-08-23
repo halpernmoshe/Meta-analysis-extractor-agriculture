@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Observation-level Bland-Altman limits of agreement on the SAME outcome-blind matched cells used
-by line_by_line_scope_aware.py (manuscript Supplement S5; Reviewer 1's numeric LoA request).
+Observation-level Bland-Altman limits of agreement on outcome-blind matched cells (manuscript
+Supplement S5; Reviewer 1's numeric LoA request). Biochar uses the 152-cell harmonized-control
+comparison, rather than the 204-cell raw-mean fidelity comparison.
 
 Per dataset, on the matched cells, the per-cell percentage-change effect difference (AI% - GT%)
 is summarised by its mean bias and 95% limits of agreement (mean +/- 1.96 SD), with the median.
 Effect is lnRR -> %; biochar uses the harmonized absolute control; Li J is study-level. Pairing is
-categorical and never consults outcome values. Deterministic; writes figures/figS5_bland_altman.png
+categorical and never consults outcome values. Deterministic; writes figures/figS1_bland_altman.png
 and prints the numeric table.
 """
 import csv, glob, math, os, re, statistics
@@ -16,7 +17,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 REPO = os.path.dirname(os.path.abspath(__file__)); RUNS = os.path.join(REPO, "runs")
-OUT = os.path.join(REPO, "figures", "figS5_bland_altman.png")
+OUT = os.path.join(REPO, "figures", "figS1_bland_altman.png")
 DISPLAY = {"Boldorini":"Boldorini et al. 2024","Biochar":"Li X et al. 2024","Loladze":"Loladze 2014","Hui":"Hui et al. 2025","Li2022":"Li J et al. 2022"}
 BASE = {"Boldorini":"boldorini/keys","Biochar":"biochar_v2/keys","Loladze":"loladze_v2/keys","Hui":"hui_v4/keys","Li2022":"li2022_v2/keys"}
 EXCLUDE = {"Hui":{"zhao_2020","cakmak_1997","liu_2014","dong_2018","li_2013","zhang_2012","khoshgoftarmanesh_2013","kumar_2018"},
@@ -50,8 +51,24 @@ def bc_ac(rows):
             c=ff(r.get("control_mean"))
             if c is not None: ac.setdefault(_bcbase(r),c)
     return ac
+def lij_crosswalk(ai):
+    L=re.compile(r"[a-z][a-z\-]+")
+    def fl(n):
+        m=L.search(n.lower()); return m.group(0) if m else None
+    idx={}
+    for r in ai:
+        p=npid(low(r,"paper_id")); yr=re.search(r"(19|20)\d{2}",p); la=fl(p)
+        if la: idx[(la,yr.group(0) if yr else None)]=p; idx.setdefault((la,None),p)
+    def remap(r):
+        pid=npid(low(r,"paper_id"))
+        if not pid.startswith("study") and not pid.startswith("gt_study"): return pid
+        m=re.search(r"author='([^']+)'\s*[, ]*((?:19|20)\d{2})",r.get("evidence",""))
+        if not m: return pid
+        return idx.get((fl(m.group(1)),m.group(2))) or idx.get((fl(m.group(1)),None)) or pid
+    return remap
 def keyfn(ds):
-    if ds in("Boldorini","Biochar"): return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"crop"),low(r,"treatment_level"),low(r,"co_amendment"),numtok(r,"co_amendment_level"),low(r,"timepoint"))
+    if ds=="Boldorini": return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"crop"),low(r,"treatment_level"),low(r,"co_amendment"),numtok(r,"co_amendment_level"),low(r,"timepoint"),low(r,"unit_canonical"))
+    if ds=="Biochar": return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"crop"),low(r,"treatment_level"),low(r,"co_amendment"),numtok(r,"co_amendment_level"),low(r,"timepoint"))
     if ds=="Hui": return lambda r:(npid(low(r,"paper_id")),low(r,"outcome_canonical"),low(r,"treatment_level"))
     if ds=="Loladze": return lambda r:(npid(low(r,"paper_id")),low(r,"treatment_level"),low(r,"co_amendment"),low(r,"co_amendment_level"))
     return lambda r:(npid(low(r,"paper_id")),)
@@ -63,7 +80,12 @@ print("-"*71)
 for i,ds in enumerate(order):
     excl={npid(p) for p in EXCLUDE.get(ds,set())}
     ai=load(f"{BASE[ds]}/ai",excl); gt=load(f"{BASE[ds]}/gt",excl)
-    kf=keyfn(ds)
+    remap=lij_crosswalk(ai) if ds=="Li2022" else None
+    if ds=="Li2022":
+        akf=lambda r:(npid(low(r,"paper_id")),)
+        gkf=lambda r:(remap(r),)
+    else:
+        akf=gkf=keyfn(ds)
     if ds=="Biochar":
         ac_a,ac_g=bc_ac(ai),bc_ac(gt)
         ea=lambda r:(math.log(ff(r['treatment_mean'])/ac_a[_bcbase(r)]) if (ff(r.get('treatment_mean')) and ac_a.get(_bcbase(r)) and ff(r['treatment_mean'])>0 and ac_a[_bcbase(r)]>0) else None)
@@ -73,10 +95,10 @@ for i,ds in enumerate(order):
     aiC,gtC=defaultdict(list),defaultdict(list)
     for r in ai:
         e=ea(r)
-        if e is not None: aiC[kf(r)].append(e)
+        if e is not None: aiC[akf(r)].append(e)
     for r in gt:
         e=eg(r)
-        if e is not None: gtC[kf(r)].append(e)
+        if e is not None: gtC[gkf(r)].append(e)
     diffs=[]; means=[]
     for c in sorted(set(aiC)&set(gtC)):
         a=pct(sum(aiC[c])/len(aiC[c])); g=pct(sum(gtC[c])/len(gtC[c]))
@@ -94,7 +116,7 @@ for i,ds in enumerate(order):
         ax.set_title(f"{DISPLAY[ds]} (n={n}, too few)",fontsize=9)
     ax.set_xlabel("mean of AI & human effect (%)",fontsize=8); ax.set_ylabel("AI - human effect (pp)",fontsize=8); ax.tick_params(labelsize=7)
 axes[5].axis("off")
-axes[5].text(0.02,0.9,"Figure S5. Bland-Altman agreement of the per-cell\npercentage-change effect (AI - human, pp) on the\noutcome-blind matched cells. Red = mean bias;\ndashed = 95% limits of agreement (mean +/- 1.96 SD).",va="top",ha="left",fontsize=9,family="monospace")
+axes[5].text(0.02,0.9,"Figure S1. Bland-Altman agreement of the per-cell\npercentage-change effect (AI - human, pp) on the\noutcome-blind matched cells. Red = mean bias;\ndashed = 95% limits of agreement (mean +/- 1.96 SD).",va="top",ha="left",fontsize=9,family="monospace")
 fig.suptitle("Observation-level limits of agreement (matched cells)",fontsize=13,y=0.995)
 fig.tight_layout(rect=[0,0,1,0.98]); os.makedirs(os.path.dirname(OUT),exist_ok=True); fig.savefig(OUT,dpi=200); plt.close(fig)
-print("\nWrote figures/figS5_bland_altman.png")
+print("\nWrote figures/figS1_bland_altman.png")

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Reproduce the full scope-aware analysis (numbers + figures).
+# Reproduce the deposited scope-aware analysis (numbers + figures).
+set -euo pipefail
 cd "$(dirname "$0")"
 python line_by_line_scope_aware.py
 python scope_aware_paired_tost.py
@@ -9,3 +10,4 @@ python make_bland_altman.py
 python make_fig1_fidelity.py
 python make_fig2_equivalence.py
 python make_fig3_reconciliation.py
+python round2_additional_analysis/coverage_structural_complexity.py

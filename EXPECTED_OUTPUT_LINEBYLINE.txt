@@ -3,16 +3,16 @@ UNIFIED BIAS-FREE LINE-BY-LINE  (categorical-key pairing; values never used to p
 ==================================================================================================
 Dataset                   n   cov  HEADLINE r  MAE pp  metric / notes
 --------------------------------------------------------------------------------------------------
-Boldorini et al. 2024    33   87%       0.999    1.00pp  treatment-mean r; raw means
-Li X et al. 2024        217   42%       0.987    8.43pp  treatment-mean r; raw means; dose-level structural key  [harmonized-ctrl effect r=0.935, 177 cells, AI+48% vs GT+47%]
-Hui et al. 2025          27   75%       0.988    4.86pp  treatment-mean r; cell-mean (GT pools sub-conditions)
-Loladze 2014            270   45%       0.863    4.82pp  effect r (GT stores effect); effect-based (GT stores ratio); MID key pools CO2/year
-Li J et al. 2022         36   21%       0.969    3.56pp  effect r (GT stores effect); study-level (+author-year crosswalk; product/crop tokens diverge)
+Boldorini et al. 2024     9   19%       0.966   13.98pp  treatment-mean r; raw means
+Li X et al. 2024        204   39%       0.995    9.82pp  treatment-mean r; raw means; dose-level structural key  [harmonized-ctrl effect r=0.923, 152 cells, AI+45% vs GT+44%]
+Hui et al. 2025          33   92%       0.988    5.33pp  treatment-mean r; cell-mean (GT pools sub-conditions)
+Loladze 2014            177   29%       0.832    4.33pp  effect r (GT stores effect); effect-based (GT stores ratio); MID key pools CO2/year
+Li J et al. 2022         35   20%       0.928    4.83pp  effect r (GT stores effect); study-level (+author-year crosswalk; product/crop tokens diverge)
 --------------------------------------------------------------------------------------------------
 HEADLINE r = bias-free agreement (categorical pairing). effect r/MAE on cell-mean effects; tmean r on raw means.
 pooled effect (AI vs GT) over shared cells:
-  Boldorini et al. 2024  AI=  -7.1%  GT=  -7.5%  diff=+0.38pp
-  Li X et al. 2024       AI= +47.9%  GT= +46.7%  diff=+1.25pp
-  Hui et al. 2025        AI= +60.1%  GT= +56.5%  diff=+3.68pp
-  Loladze 2014           AI=  -5.8%  GT=  -4.3%  diff=-1.50pp
-  Li J et al. 2022       AI= +19.8%  GT= +20.2%  diff=-0.38pp
+  Boldorini et al. 2024  AI=  -4.1%  GT= -16.6%  diff=+12.49pp
+  Li X et al. 2024       AI= +45.4%  GT= +43.9%  diff=+1.46pp
+  Hui et al. 2025        AI= +49.6%  GT= +51.1%  diff=-1.56pp
+  Loladze 2014           AI=  -4.7%  GT=  -3.7%  diff=-0.95pp
+  Li J et al. 2022       AI= +19.0%  GT= +18.4%  diff=+0.68pp

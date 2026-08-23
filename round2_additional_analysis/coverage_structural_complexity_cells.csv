@@ -1,0 +1,1377 @@
+﻿dataset,dataset_code,paper_id,cell_key,matched,same_paper_ai_records_present,reference_source_format,reference_rows_in_cell,reference_cells_in_paper,reference_rows_in_paper,distinct_outcome_canonical_in_paper,distinct_crop_in_paper,distinct_treatment_level_in_paper,distinct_co_amendment_in_paper,distinct_co_amendment_level_in_paper,distinct_timepoint_in_paper,distinct_aggregation_level_in_paper
+Boldorini et al. 2024,Boldorini,b01_ali_2018,b01_ali_2018 | crop_yield_under_predator | wheat | exclusion | none | 0 | pooled | kg/ha,0,1,figure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b02_bisseleua_2017,b02_bisseleua_2017 | crop_yield_under_predator | cacao | exclusion | none | 0 | pooled | kg/ha/yr,0,1,figure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b03_borkhataria_2012,b03_borkhataria_2012 | crop_yield_under_predator | rice | exclusion | none | 0 | season1 | g,0,1,nonfigure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b04_classen_2014,b04_classen_2014 | crop_yield_under_predator | coffee | vertebrates | none | 0 | pooled | fruits/branch,0,1,figure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b05_garfinkel_2015,b05_garfinkel_2015 | crop_yield_under_predator | kale | exclusion | none | 0 | pooled | leaves,0,1,nonfigure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b06_garfinkel_2020,b06_garfinkel_2020 | crop_yield_under_predator | corn | exclusion | none | 0 | pooled | g,1,1,nonfigure,1,2,2,1,2,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b06_garfinkel_2020,b06_garfinkel_2020 | crop_yield_under_predator | soybean | exclusion | none | 0 | pooled | g,1,1,nonfigure,1,2,2,1,2,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b07_gras_2016,b07_gras_2016 | crop_yield_under_predator | cacao | exclusion | none | 0 | pooled | fruits/ha/yr,0,1,figure,1,2,2,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b07_gras_2016,b07_gras_2016 | crop_yield_under_predator | cacao | exclusion | none | 0 | pooled | kg/ha/yr,1,1,figure,1,2,2,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b08_hooks_2003,b08_hooks_2003 | crop_yield_under_predator | broccoli | birds_exclusion | none | 0 | pooled | g,0,1,nonfigure,1,4,4,1,1,2,1,1,1,1
+Boldorini et al. 2024,Boldorini,b08_hooks_2003,b08_hooks_2003 | crop_yield_under_predator | broccoli | birds_exclusion | none | 0 | pooled | kg,0,1,nonfigure,1,4,4,1,1,2,1,1,1,1
+Boldorini et al. 2024,Boldorini,b08_hooks_2003,b08_hooks_2003 | crop_yield_under_predator | broccoli | spiders_exclusion | none | 0 | pooled | g,0,1,nonfigure,1,4,4,1,1,2,1,1,1,1
+Boldorini et al. 2024,Boldorini,b08_hooks_2003,b08_hooks_2003 | crop_yield_under_predator | broccoli | spiders_exclusion | none | 0 | pooled | kg,0,1,nonfigure,1,4,4,1,1,2,1,1,1,1
+Boldorini et al. 2024,Boldorini,b09_ismoilov_2020,b09_ismoilov_2020 | crop_yield_under_predator | tomato | invertebrates | none | 0 | pooled | kg/plant,1,1,figure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | beetles | none | 0 | pooled | %,0,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | beetles | none | 0 | pooled | g,1,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | beetles | none | 0 | pooled | plants,0,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | invertebrates | none | 0 | pooled | %,0,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | invertebrates | none | 0 | pooled | g,1,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | invertebrates | none | 0 | pooled | plants,0,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | spiders | none | 0 | pooled | %,0,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | spiders | none | 0 | pooled | g,1,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b10_lang_2003,b10_lang_2003 | crop_yield_under_predator | wheat | spiders | none | 0 | pooled | plants,0,1,nonfigure,1,9,9,1,1,3,1,1,1,1
+Boldorini et al. 2024,Boldorini,b11_libran-embid_2017,b11_libran-embid_2017 | crop_yield_under_predator | coffee | vertebrates | none | 0 | pooled | proportion,0,1,figure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b13_maas_2013,b13_maas_2013 | crop_yield_under_predator | cacao | birds | none | 0 | pooled | log(kg/ha/yr),0,1,figure,1,2,2,1,1,2,1,1,1,1
+Boldorini et al. 2024,Boldorini,b13_maas_2013,b13_maas_2013 | crop_yield_under_predator | cacao | vertebrates | none | 0 | pooled | log(kg/ha/yr),0,1,figure,1,2,2,1,1,2,1,1,1,1
+Boldorini et al. 2024,Boldorini,b14_martin_2013,b14_martin_2013 | crop_yield_under_predator | cabbage | birds | none | 0 | pooled | g,0,1,figure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b15_mols_2002,b15_mols_2002 | crop_yield_under_predator | apple | birds | none | 0 | pooled | kg,0,1,nonfigure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b16_saunders_2016,b16_saunders_2016 | crop_yield_under_predator | apple | vertebrates | none | 0 | pooled | %,1,1,nonfigure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | cucumber | beetles | none | 0 | y1997 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | cucumber | beetles | none | 0 | y1998 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | cucumber | invertebrates | none | 0 | y1997 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | cucumber | invertebrates | none | 0 | y1998 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | cucumber | spiders | none | 0 | y1997 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | cucumber | spiders | none | 0 | y1998 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | squash | beetles | none | 0 | y1997 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | squash | beetles | none | 0 | y1998 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | squash | invertebrates | none | 0 | y1997 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | squash | invertebrates | none | 0 | y1998 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | squash | spiders | none | 0 | y1997 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,b17_snyder_2001 | crop_yield_under_predator | squash | spiders | none | 0 | y1998 | kg,0,1,figure,1,12,12,1,2,3,1,1,2,1
+Boldorini et al. 2024,Boldorini,b18_suenaga_2015,b18_suenaga_2015 | crop_yield_under_predator | cabbage | spiders_addition | none | 0 | season_autumn | g,0,1,figure,1,4,4,1,1,2,1,1,2,1
+Boldorini et al. 2024,Boldorini,b18_suenaga_2015,b18_suenaga_2015 | crop_yield_under_predator | cabbage | spiders_addition | none | 0 | season_spring | g,0,1,figure,1,4,4,1,1,2,1,1,2,1
+Boldorini et al. 2024,Boldorini,b18_suenaga_2015,b18_suenaga_2015 | crop_yield_under_predator | cabbage | spiders_exclusion | none | 0 | season_autumn | g,0,1,figure,1,4,4,1,1,2,1,1,2,1
+Boldorini et al. 2024,Boldorini,b18_suenaga_2015,b18_suenaga_2015 | crop_yield_under_predator | cabbage | spiders_exclusion | none | 0 | season_spring | g,0,1,figure,1,4,4,1,1,2,1,1,2,1
+Boldorini et al. 2024,Boldorini,b19_vichitbandha_2002,b19_vichitbandha_2002 | crop_yield_under_predator | soybean | invertebrates_exclusion | none | 0 | pooled | kg/plot,1,1,figure,1,1,1,1,1,1,1,1,1,1
+Boldorini et al. 2024,Boldorini,liere_2015,liere_2015 | crop_yield_under_predator | soybean | beetles | none | 0 | pooled | count,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 25 | poultry_manure | 0 | y2015,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 25 | poultry_manure | 0 | y2016,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 25 | poultry_manure | 2.5 | y2015,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 25 | poultry_manure | 2.5 | y2016,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 25 | poultry_manure | 5 | y2015,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 25 | poultry_manure | 5 | y2016,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 50 | poultry_manure | 0 | y2015,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 50 | poultry_manure | 0 | y2016,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 50 | poultry_manure | 2.5 | y2015,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 50 | poultry_manure | 2.5 | y2016,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 50 | poultry_manure | 5 | y2015,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,adekiya_2019,adekiya_2019 | crop_yield | radish | 50 | poultry_manure | 5 | y2016,1,1,nonfigure,1,12,12,1,1,2,1,3,2,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | maize | 10 | farmyard_manure | 100 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | maize | 10 | farmyard_manure | 50 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | maize | 10 | farmyard_manure | 75 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | maize | 10 | none | 0 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | maize | 10 | poultry_manure | 100 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | maize | 10 | poultry_manure | 50 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | maize | 10 | poultry_manure | 75 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | wheat | 10 | farmyard_manure | 100 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | wheat | 10 | farmyard_manure | 50 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | wheat | 10 | farmyard_manure | 75 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | wheat | 10 | none | 0 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | wheat | 10 | poultry_manure | 100 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | wheat | 10 | poultry_manure | 50 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,arif_2017,arif_2017 | crop_yield | wheat | 10 | poultry_manure | 75 | pooled,1,1,figure,1,14,14,1,2,1,3,4,1,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | nitrogen | 50 | hk1_apo,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | nitrogen | 50 | hk1_vieng,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | nitrogen | 50 | lo1_apo,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | nitrogen | 50 | lo1_vieng,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | none | 0 | hk1_apo,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | none | 0 | hk1_vieng,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | none | 0 | lo1_apo,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 16 | none | 0 | lo1_vieng,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | nitrogen | 50 | exp1_unresolved,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | nitrogen | 50 | hk1_apo,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | nitrogen | 50 | hk1_vieng,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | nitrogen | 50 | lo1_apo,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | nitrogen | 50 | lo1_vieng,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | none | 0 | hk1_vieng,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | none | 0 | lo1_apo,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 4 | none | 0 | lo1_vieng,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | nitrogen | 50 | hk1_apo,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | nitrogen | 50 | hk1_vieng,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | nitrogen | 50 | hk4,0,1,figure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | nitrogen | 50 | lo1_apo,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | nitrogen | 50 | lo1_vieng,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | nitrogen_phosphorus | 50 | hk4,0,1,figure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | none | 0 | hk1_apo,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | none | 0 | hk1_vieng,1,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | none | 0 | lo1_apo,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | none | 0 | lo1_vieng,0,1,nonfigure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,asai_2009,asai_2009 | crop_yield | rice | 8 | phosphorus | 50 | hk4,0,1,figure,1,27,27,1,1,3,4,2,6,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 10 | none | 0 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 10 | none | 0 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 10 | npk | 23 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 10 | npk | 23 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 5 | none | 0 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 5 | none | 0 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 5 | npk | 23 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | mash_bean | 5 | npk | 23 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 10 | none | 0 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 10 | none | 0 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 10 | npk | 23 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 10 | npk | 23 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 5 | none | 0 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 5 | none | 0 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 5 | npk | 23 | y2013,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,azeem_2019,azeem_2019 | crop_yield | wheat | 5 | npk | 23 | y2014,1,1,nonfigure,1,16,16,1,2,2,2,2,2,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | lettuce | 10 | nitrogen | 200 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | lettuce | 10 | none | 0 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | lettuce | 20 | nitrogen | 200 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | lettuce | 20 | none | 0 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | lettuce | 5 | nitrogen | 200 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | lettuce | 5 | none | 0 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | maize | 10 | nitrogen | 100 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | maize | 10 | none | 0 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | maize | 20 | nitrogen | 100 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | maize | 20 | none | 0 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | maize | 5 | nitrogen | 100 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,deenik_2010,deenik_2010 | crop_yield | maize | 5 | none | 0 | season1,0,1,figure,1,12,12,1,2,3,2,3,1,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 20 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 20 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 30 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 30 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 40 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 40 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 60 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | rice | 60 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 20 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 20 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 30 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 30 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 40 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 40 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 60 | nitrogen | 250 | y2015,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,dong_2019,dong_2019 | crop_yield | wheat | 60 | nitrogen | 250 | y2016,1,1,nonfigure,1,16,16,1,2,4,1,1,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.035 | phosphorus | 0 | y2010,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.035 | phosphorus | 0 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.035 | phosphorus | 17.6 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.035 | phosphorus | 8.8 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.175 | phosphorus | 0 | y2010,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.175 | phosphorus | 17.6 | y2010,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.175 | phosphorus | 17.6 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 0.175 | phosphorus | 8.8 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 5 | phosphorus | 0 | y2010,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 5 | phosphorus | 0 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 5 | phosphorus | 17.6 | y2010,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 5 | phosphorus | 17.6 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 5 | phosphorus | 8.8 | y2010,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,farrell_2014,farrell_2014 | crop_yield | wheat | 5 | phosphorus | 8.8 | y2011,0,1,figure,1,14,14,1,1,3,1,3,2,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 10 | nitrogen | 0 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 10 | nitrogen | 10 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 10 | nitrogen | 100 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 10 | nitrogen | 20 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 10 | nitrogen | 80 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 20 | nitrogen | 0 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 20 | nitrogen | 10 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 20 | nitrogen | 100 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 20 | nitrogen | 20 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 20 | nitrogen | 80 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 5 | nitrogen | 0 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 5 | nitrogen | 10 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 5 | nitrogen | 100 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 5 | nitrogen | 20 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 5 | nitrogen | 80 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 50 | nitrogen | 0 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 50 | nitrogen | 10 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 50 | nitrogen | 100 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 50 | nitrogen | 20 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,gathorne-hardy_2009,gathorne-hardy_2009 | crop_yield | barley | 50 | nitrogen | 80 | y2008,0,1,figure,1,20,20,1,1,4,1,5,1,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 12 | nitrogen_fertilizer | 90pct | y2007,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 12 | nitrogen_fertilizer | 90pct | y2008,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 12 | nitrogen_fertilizer | 90pct | y2009,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 12 | nitrogen_fertilizer | 90pct | y2010,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 3 | nitrogen_fertilizer | 90pct | y2007,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 3 | nitrogen_fertilizer | 90pct | y2008,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 3 | nitrogen_fertilizer | 90pct | y2009,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 3 | nitrogen_fertilizer | 90pct | y2010,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 30 | nitrogen_fertilizer | 90pct | y2007,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 30 | nitrogen_fertilizer | 90pct | y2008,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 30 | nitrogen_fertilizer | 90pct | y2009,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,guerena_2013,guerena_2013 | crop_yield | maize | 30 | nitrogen_fertilizer | 90pct | y2010,1,1,nonfigure,1,12,12,1,1,3,1,1,4,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | irri_2005ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | irri_2006ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | irri_2007ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | siniloan_2005ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | siniloan_2007ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | siniloan_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | ubon_2005ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | ubon_2007ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | none | 0 | ubon_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | irri_2005ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | irri_2006ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | irri_2007ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | siniloan_2005ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | siniloan_2007ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | siniloan_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | ubon_2005ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | ubon_2007ws,1,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 41.3 | npk | medium | ubon_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | irri_2005ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | irri_2006ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | irri_2007ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | siniloan_2005ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | siniloan_2007ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | siniloan_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | ubon_2005ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | ubon_2007ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | none | 0 | ubon_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | irri_2005ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | irri_2006ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | irri_2007ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | siniloan_2005ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | siniloan_2007ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | siniloan_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | ubon_2005ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | ubon_2007ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,haefele_2011,haefele_2011 | crop_yield | rice | 49.5 | npk | medium | ubon_2008ws,0,1,nonfigure,1,36,36,1,1,2,2,2,9,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | cassava | 15 | cassava_stem_biochar | 0 | y2009,0,1,figure,2,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | cassava | 15 | cassava_stem_biochar | 0 | y2010,0,1,figure,2,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | cassava | 15 | fym_biochar | 0 | y2009,1,1,figure,2,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | cassava | 15 | fym_biochar | 0 | y2010,1,1,figure,2,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | maize | 15 | cassava_stem_biochar | 0 | y2009,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | maize | 15 | cassava_stem_biochar | 0 | y2010,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | maize | 15 | fym_biochar | 0 | y2009,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | maize | 15 | fym_biochar | 0 | y2010,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | peanut | 15 | cassava_stem_biochar | 0 | y2009,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | peanut | 15 | cassava_stem_biochar | 0 | y2010,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | peanut | 15 | fym_biochar | 0 | y2009,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,islami_2011,islami_2011 | crop_yield | peanut | 15 | fym_biochar | 0 | y2010,1,1,nonfigure,1,12,16,1,3,1,2,1,2,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 20 | nitrogen | 313 | season1,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 20 | nitrogen | 313 | season7,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 20 | nitrogen | 417 | season1,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 20 | nitrogen | 417 | season7,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 20 | none | 0 | season1,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 20 | none | 0 | season7,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 40 | nitrogen | 313 | season1,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 40 | nitrogen | 313 | season7,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 40 | nitrogen | 417 | season1,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 40 | nitrogen | 417 | season7,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 40 | none | 0 | season1,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | amaranth | 40 | none | 0 | season7,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 20 | nitrogen | 250 | season3,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 20 | nitrogen | 250 | season6,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 20 | nitrogen | 333 | season3,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 20 | nitrogen | 333 | season6,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 20 | none | 0 | season3,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 20 | none | 0 | season6,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 40 | nitrogen | 250 | season3,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 40 | nitrogen | 250 | season6,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 40 | nitrogen | 333 | season3,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 40 | nitrogen | 333 | season6,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 40 | none | 0 | season3,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | bok_choy | 40 | none | 0 | season6,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | coriander | 20 | nitrogen | 313 | season4,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | coriander | 20 | nitrogen | 417 | season4,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | coriander | 20 | none | 0 | season4,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | coriander | 40 | nitrogen | 313 | season4,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | coriander | 40 | nitrogen | 417 | season4,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | coriander | 40 | none | 0 | season4,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 20 | nitrogen | 600 | season2,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 20 | nitrogen | 600 | season5,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 20 | nitrogen | 800 | season2,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 20 | nitrogen | 800 | season5,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 20 | none | 0 | season2,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 20 | none | 0 | season5,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 40 | nitrogen | 600 | season2,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 40 | nitrogen | 600 | season5,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 40 | nitrogen | 800 | season2,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 40 | nitrogen | 800 | season5,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 40 | none | 0 | season2,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,li_b_2016,li_b_2016 | crop_yield | water_spinach | 40 | none | 0 | season5,0,1,nonfigure,1,42,42,1,4,2,2,7,7,1
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 30 | none | 0 | pooled,1,1,nonfigure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 30 | none | 0 | y2009,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 30 | none | 0 | y2010,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 30 | none | 0 | y2011,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 30 | none | 0 | y2012,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 60 | none | 0 | pooled,1,1,nonfigure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 60 | none | 0 | y2009,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 60 | none | 0 | y2010,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 60 | none | 0 | y2011,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 60 | none | 0 | y2012,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 90 | none | 0 | pooled,1,1,nonfigure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 90 | none | 0 | y2009,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 90 | none | 0 | y2010,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 90 | none | 0 | y2011,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | maize | 90 | none | 0 | y2012,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 30 | none | 0 | pooled,1,1,nonfigure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 30 | none | 0 | y2010,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 30 | none | 0 | y2011,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 30 | none | 0 | y2012,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 30 | none | 0 | y2013,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 60 | none | 0 | pooled,1,1,nonfigure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 60 | none | 0 | y2010,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 60 | none | 0 | y2011,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 60 | none | 0 | y2012,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 60 | none | 0 | y2013,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 90 | none | 0 | pooled,1,1,nonfigure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 90 | none | 0 | y2010,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 90 | none | 0 | y2011,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 90 | none | 0 | y2012,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liang_feng_2014,liang_feng_2014 | crop_yield | wheat | 90 | none | 0 | y2013,0,1,figure,1,30,30,1,2,3,1,1,6,2
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | rapeseed | 10 | none | 0 | season1,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | rapeseed | 2.5 | none | 0 | season1,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | rapeseed | 20 | none | 0 | season1,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | rapeseed | 30 | none | 0 | season1,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | rapeseed | 40 | none | 0 | season1,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | rapeseed | 5 | none | 0 | season1,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | sweet_potato | 10 | none | 0 | season2,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | sweet_potato | 2.5 | none | 0 | season2,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | sweet_potato | 20 | none | 0 | season2,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | sweet_potato | 30 | none | 0 | season2,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | sweet_potato | 40 | none | 0 | season2,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2014,liu_2014 | crop_yield | sweet_potato | 5 | none | 0 | season2,0,1,figure,1,12,12,1,2,6,1,1,2,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | nitrogen | 150 | y2011,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | nitrogen | 150 | y2012,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | nitrogen | 150 | y2013,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | nitrogen | 150 | y2014,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | nitrogen | 150 | y2015,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | nitrogen | 240 | y2010,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | none | 0 | y2010,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | none | 0 | y2011,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | none | 0 | y2012,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | none | 0 | y2013,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | none | 0 | y2014,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 20 | none | 0 | y2015,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | nitrogen | 150 | y2011,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | nitrogen | 150 | y2012,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | nitrogen | 150 | y2013,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | nitrogen | 150 | y2014,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | nitrogen | 150 | y2015,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | nitrogen | 240 | y2010,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | none | 0 | y2010,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | none | 0 | y2011,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | none | 0 | y2012,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | none | 0 | y2013,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | none | 0 | y2014,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | rice | 40 | none | 0 | y2015,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 20 | nitrogen | 150 | y2011,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 20 | nitrogen | 150 | y2014,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 20 | nitrogen | 150 | y2015,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 20 | none | 0 | y2011,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 20 | none | 0 | y2014,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 20 | none | 0 | y2015,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 40 | nitrogen | 150 | y2011,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 40 | nitrogen | 150 | y2014,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 40 | nitrogen | 150 | y2015,1,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 40 | none | 0 | y2011,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 40 | none | 0 | y2014,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,liu_2019,liu_2019 | crop_yield | wheat | 40 | none | 0 | y2015,0,1,figure,1,36,36,1,2,2,2,3,6,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | sludge_2pct | quicklime | 0 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | sludge_2pct | quicklime | 100 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | sludge_2pct | quicklime | 50 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | sludge_4pct | quicklime | 0 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | sludge_4pct | quicklime | 100 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | sludge_4pct | quicklime | 50 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | straw_2pct | quicklime | 0 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | straw_2pct | quicklime | 100 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | straw_2pct | quicklime | 50 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | straw_4pct | quicklime | 0 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | straw_4pct | quicklime | 100 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,malik_2018,malik_2018 | crop_yield | wheat | straw_4pct | quicklime | 50 | pooled,1,1,nonfigure,1,12,12,1,1,4,1,3,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | maize | 12 | none | 0 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | maize | 12 | npk_fertilizer | 200 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | maize | 3 | none | 0 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | maize | 3 | npk_fertilizer | 200 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | maize | 6 | none | 0 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | maize | 6 | npk_fertilizer | 200 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | wheat | 12 | none | 0 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | wheat | 12 | npk_fertilizer | 200 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | wheat | 3 | none | 0 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | wheat | 3 | npk_fertilizer | 200 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | wheat | 6 | none | 0 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,niu_2017,niu_2017 | crop_yield | wheat | 6 | npk_fertilizer | 200 | pooled,0,1,figure,1,12,12,1,2,3,2,2,1,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_green_waste_residue_biochar_haut_rhin | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_green_waste_residue_biochar_indre | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_green_waste_residue_biochar_oise | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_miscanthus_biochar_haut_rhin | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_miscanthus_biochar_indre | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_miscanthus_biochar_oise | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_rapeseed_biochar_haut_rhin | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_rapeseed_biochar_indre | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | maize | 4 | compost_rapeseed_biochar_oise | 8 | y2019,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_green_waste_residue_biochar_haut_rhin | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_green_waste_residue_biochar_indre | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_green_waste_residue_biochar_oise | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_miscanthus_biochar_haut_rhin | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_miscanthus_biochar_indre | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_miscanthus_biochar_oise | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_rapeseed_biochar_haut_rhin | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_rapeseed_biochar_indre | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,nobile_2022,nobile_2022 | crop_yield | wheat | 4 | compost_rapeseed_biochar_oise | 8 | y2020,0,1,figure,1,18,18,1,2,1,9,1,2,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | nitrogen | 100 | y2018_efaw,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | nitrogen | 100 | y2018_lcb,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | nitrogen | 100 | y2019_efaw,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | nitrogen | 100 | y2019_lcb,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | none | 0 | y2018_efaw,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | none | 0 | y2018_lcb,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | none | 0 | y2019_efaw,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 10 | none | 0 | y2019_lcb,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | nitrogen | 150 | y2018_efaw,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | nitrogen | 150 | y2018_lcb,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | nitrogen | 150 | y2019_efaw,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | nitrogen | 150 | y2019_lcb,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | none | 0 | y2018_efaw,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | none | 0 | y2018_lcb,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | none | 0 | y2019_efaw,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 15 | none | 0 | y2019_lcb,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | nitrogen | 50 | y2018_efaw,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | nitrogen | 50 | y2018_lcb,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | nitrogen | 50 | y2019_efaw,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | nitrogen | 50 | y2019_lcb,1,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | none | 0 | y2018_efaw,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | none | 0 | y2018_lcb,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | none | 0 | y2019_efaw,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,omara_2020,omara_2020 | crop_yield | maize | 5 | none | 0 | y2019_lcb,0,1,nonfigure,1,24,24,1,1,3,2,4,4,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 10 | none | 0 | y2014,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 10 | none | 0 | y2015,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 10 | none | 0 | y2016,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 15 | none | 0 | y2014,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 15 | none | 0 | y2015,1,1,nonfigure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 15 | none | 0 | y2016,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 25 | none | 0 | y2014,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 25 | none | 0 | y2015,1,1,nonfigure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 25 | none | 0 | y2016,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 40 | none | 0 | y2014,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 40 | none | 0 | y2015,1,1,nonfigure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 40 | none | 0 | y2016,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 5 | none | 0 | y2014,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 5 | none | 0 | y2015,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,pandit_2018,pandit_2018 | crop_yield | maize | 5 | none | 0 | y2016,1,1,figure,1,15,15,1,1,5,1,1,3,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 10 | none | 0 | y2016,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 10 | none | 0 | y2017,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 10 | none | 0 | y2018,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 20 | none | 0 | y2016,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 20 | none | 0 | y2017,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 20 | none | 0 | y2018,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 5 | none | 0 | y2016,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 5 | none | 0 | y2017,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | maize | 5 | none | 0 | y2018,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 10 | none | 0 | season2016_2017,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 10 | none | 0 | season2017_2018,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 10 | none | 0 | season2018_2019,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 20 | none | 0 | season2016_2017,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 20 | none | 0 | season2017_2018,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 20 | none | 0 | season2018_2019,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 5 | none | 0 | season2016_2017,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 5 | none | 0 | season2017_2018,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,shi_2022,shi_2022 | crop_yield | wheat | 5 | none | 0 | season2018_2019,1,1,nonfigure,1,18,18,1,2,3,1,1,6,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice | 10 | nitrogen_fertilizer | 200 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice | 10 | none | 0 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice | 25 | nitrogen_fertilizer | 200 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice | 25 | none | 0 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice | 50 | nitrogen_fertilizer | 200 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice | 50 | none | 0 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice_biomass | 25 | none | 0 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice_biomass | 50 | none | 0 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice_grain | 25 | none | 0 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | rice_grain | 50 | none | 0 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat | 10 | nitrogen_fertilizer | 200 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat | 10 | none | 0 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat | 25 | nitrogen_fertilizer | 200 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat | 25 | none | 0 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat | 50 | nitrogen_fertilizer | 200 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat | 50 | none | 0 | paddy,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat_biomass | 25 | nitrogen_fertilizer | 200 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat_biomass | 50 | nitrogen_fertilizer | 200 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat_grain | 25 | nitrogen_fertilizer | 200 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wang_2012,wang_2012 | crop_yield | wheat_grain | 50 | nitrogen_fertilizer | 200 | upland,0,1,figure,1,20,20,1,6,3,2,2,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | maize | 3 | nitrogen_fertilizer | 100 | y2019,1,1,nonfigure,2,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | maize | 3 | nitrogen_fertilizer | 100 | y2020,1,1,nonfigure,2,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | maize | 3 | nitrogen_fertilizer | 70 | y2019,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | maize | 3 | nitrogen_fertilizer | 70 | y2020,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | maize | 3 | nitrogen_fertilizer | 85 | y2019,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | maize | 3 | nitrogen_fertilizer | 85 | y2020,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | rapeseed | 3 | nitrogen_fertilizer | 100 | y2019,1,1,nonfigure,2,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | rapeseed | 3 | nitrogen_fertilizer | 100 | y2020,1,1,nonfigure,2,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | rapeseed | 3 | nitrogen_fertilizer | 70 | y2019,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | rapeseed | 3 | nitrogen_fertilizer | 70 | y2020,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | rapeseed | 3 | nitrogen_fertilizer | 85 | y2019,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,wei_2022,wei_2022 | crop_yield | rapeseed | 3 | nitrogen_fertilizer | 85 | y2020,1,1,nonfigure,1,12,16,1,2,1,1,3,2,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 13.5 | none | 0 | y2012,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 13.5 | none | 0 | y2013,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 13.5 | none | 0 | y2014,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 13.5 | none | 0 | y2015,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 13.5 | none | 0 | y2016,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 13.5 | none | 0 | y2017,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 13.5 | none | 0 | y2018,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 22.5 | none | 0 | y2012,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 22.5 | none | 0 | y2013,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 22.5 | none | 0 | y2014,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 22.5 | none | 0 | y2015,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 22.5 | none | 0 | y2016,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 22.5 | none | 0 | y2017,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 22.5 | none | 0 | y2018,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 4.5 | none | 0 | y2012,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 4.5 | none | 0 | y2013,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 4.5 | none | 0 | y2014,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 4.5 | none | 0 | y2015,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 4.5 | none | 0 | y2016,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 4.5 | none | 0 | y2017,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | maize | 4.5 | none | 0 | y2018,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 13.5 | none | 0 | y2012,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 13.5 | none | 0 | y2013,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 13.5 | none | 0 | y2014,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 13.5 | none | 0 | y2015,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 13.5 | none | 0 | y2016,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 13.5 | none | 0 | y2017,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 13.5 | none | 0 | y2018,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 22.5 | none | 0 | y2012,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 22.5 | none | 0 | y2013,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 22.5 | none | 0 | y2014,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 22.5 | none | 0 | y2015,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 22.5 | none | 0 | y2016,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 22.5 | none | 0 | y2017,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 22.5 | none | 0 | y2018,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 4.5 | none | 0 | y2012,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 4.5 | none | 0 | y2013,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 4.5 | none | 0 | y2014,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 4.5 | none | 0 | y2015,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 4.5 | none | 0 | y2016,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 4.5 | none | 0 | y2017,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,xie_2021,xie_2021 | crop_yield | wheat | 4.5 | none | 0 | y2018,0,1,figure,1,42,42,1,2,3,1,1,7,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 0 | straw_nitrogen | 100 | y2014,0,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 0 | straw_nitrogen | 100 | y2015,0,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 0 | straw_nitrogen | 100 | y2016,0,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 0 | straw_nitrogen | 50 | y2014,0,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 0 | straw_nitrogen | 50 | y2015,0,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 0 | straw_nitrogen | 50 | y2016,0,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 0 | y2014,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 0 | y2015,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 0 | y2016,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 100 | y2014,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 100 | y2015,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 100 | y2016,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 50 | y2014,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 50 | y2015,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,yeboah_2018,yeboah_2018 | crop_yield | wheat | 15 | nitrogen | 50 | y2016,1,1,nonfigure,1,15,15,1,1,2,2,3,3,1
+Li X et al. 2024,Biochar,zhang_2021,zhang_2021 | crop_yield | maize | 1.5 | none | 0 | y2017,0,1,figure,2,6,15,1,1,1,2,2,3,1
+Li X et al. 2024,Biochar,zhang_2021,zhang_2021 | crop_yield | maize | 1.5 | none | 0 | y2018,0,1,figure,2,6,15,1,1,1,2,2,3,1
+Li X et al. 2024,Biochar,zhang_2021,zhang_2021 | crop_yield | maize | 1.5 | none | 0 | y2019,0,1,figure,2,6,15,1,1,1,2,2,3,1
+Li X et al. 2024,Biochar,zhang_2021,zhang_2021 | crop_yield | maize | 1.5 | organic_fertilizer | 1.5 | y2017,0,1,figure,3,6,15,1,1,1,2,2,3,1
+Li X et al. 2024,Biochar,zhang_2021,zhang_2021 | crop_yield | maize | 1.5 | organic_fertilizer | 1.5 | y2018,0,1,figure,3,6,15,1,1,1,2,2,3,1
+Li X et al. 2024,Biochar,zhang_2021,zhang_2021 | crop_yield | maize | 1.5 | organic_fertilizer | 1.5 | y2019,0,1,figure,3,6,15,1,1,1,2,2,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 10 | none | 0 | y2015,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 10 | none | 0 | y2016,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 10 | none | 0 | y2017,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 15 | none | 0 | y2015,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 15 | none | 0 | y2016,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 15 | none | 0 | y2017,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 20 | none | 0 | y2015,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 20 | none | 0 | y2016,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 20 | none | 0 | y2017,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 5 | none | 0 | y2015,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 5 | none | 0 | y2016,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Li X et al. 2024,Biochar,zhang_j_2019,zhang_j_2019 | crop_yield | rice | 5 | none | 0 | y2017,0,1,figure,1,12,12,1,1,4,1,1,3,1
+Hui et al. 2025,Hui,bharti_2013,bharti_2013 | grain_zn | soil,1,1,nonfigure,20,2,40,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,bharti_2013,bharti_2013 | grain_zn | soil+foliar,1,1,nonfigure,20,2,40,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,chattha_2017,chattha_2017 | grain_zn | foliar,1,1,nonfigure,6,3,18,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,chattha_2017,chattha_2017 | grain_zn | soil,1,1,nonfigure,6,3,18,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,chattha_2017,chattha_2017 | grain_zn | soil+foliar,1,1,nonfigure,6,3,18,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,erdal_2002,erdal_2002 | grain_zn | soil,1,1,nonfigure,20,1,20,1,1,1,1,1,0,1
+Hui et al. 2025,Hui,forster_2018,forster_2018 | grain_zn | foliar,1,1,nonfigure,5,2,6,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,forster_2018,forster_2018 | grain_zn | soil,1,1,nonfigure,1,2,6,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,ghasal_2017,ghasal_2017 | grain_zn | soil,1,1,nonfigure,2,2,4,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,ghasal_2017,ghasal_2017 | grain_zn | soil+foliar,1,1,nonfigure,2,2,4,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,kalayci_1999,kalayci_1999 | grain_zn | soil,1,1,nonfigure,78,1,78,1,1,1,1,1,0,1
+Hui et al. 2025,Hui,liu_2019,liu_2019 | grain_zn | soil,1,1,nonfigure,10,1,10,1,1,1,1,1,0,1
+Hui et al. 2025,Hui,pahlavanrad_2009,pahlavanrad_2009 | grain_zn | foliar,1,1,nonfigure,1,2,3,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,pahlavanrad_2009,pahlavanrad_2009 | grain_zn | soil,1,1,nonfigure,2,2,3,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,peck_2008,peck_2008 | grain_zn | soil,1,1,nonfigure,10,2,18,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,peck_2008,peck_2008 | grain_zn | soil+foliar,1,1,nonfigure,8,2,18,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,ramzan_2020,ramzan_2020 | grain_zn | foliar,1,1,nonfigure,2,2,4,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,ramzan_2020,ramzan_2020 | grain_zn | soil,1,1,nonfigure,2,2,4,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,rashid_2019,rashid_2019 | grain_zn | soil,1,1,nonfigure,19,1,19,1,1,1,1,1,0,1
+Hui et al. 2025,Hui,rehman_2018,rehman_2018 | grain_zn | foliar,0,1,nonfigure,1,2,58,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,rehman_2018,rehman_2018 | grain_zn | soil,1,1,nonfigure,57,2,58,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,wang_2012,wang_2012 | grain_zn | foliar,1,1,nonfigure,13,3,21,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,wang_2012,wang_2012 | grain_zn | soil,1,1,nonfigure,6,3,21,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,wang_2012,wang_2012 | grain_zn | soil+foliar,1,1,nonfigure,2,3,21,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,yang_2011,yang_2011 | grain_zn | soil,1,1,nonfigure,5,1,5,1,1,1,1,1,0,1
+Hui et al. 2025,Hui,yilmaz_1997,yilmaz_1997 | grain_zn | foliar,1,1,nonfigure,4,3,12,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,yilmaz_1997,yilmaz_1997 | grain_zn | soil,1,1,nonfigure,4,3,12,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,yilmaz_1997,yilmaz_1997 | grain_zn | soil+foliar,1,1,nonfigure,4,3,12,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,yilmaz_1998,yilmaz_1998 | grain_zn | soil,1,1,nonfigure,3,1,3,1,1,1,1,1,0,1
+Hui et al. 2025,Hui,zhang_2017,zhang_2017 | grain_zn | foliar,0,0,nonfigure,42,2,50,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,zhang_2017,zhang_2017 | grain_zn | soil,0,0,nonfigure,8,2,50,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,zou_2012,zou_2012 | grain_zn | foliar,1,1,nonfigure,22,3,67,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,zou_2012,zou_2012 | grain_zn | soil,1,1,nonfigure,23,3,67,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,zou_2012,zou_2012 | grain_zn | soil+foliar,1,1,nonfigure,22,3,67,1,1,3,1,1,0,1
+Hui et al. 2025,Hui,zulfiqar_2020,zulfiqar_2020 | grain_zn | foliar,1,1,nonfigure,4,2,8,1,1,2,1,1,0,1
+Hui et al. 2025,Hui,zulfiqar_2020,zulfiqar_2020 | grain_zn | soil,1,1,nonfigure,4,2,8,1,1,2,1,1,0,1
+Loladze 2014,Loladze,al-rawahy_2013,al-rawahy_2013 | ca | foliar | victor,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,al-rawahy_2013,al-rawahy_2013 | fe | foliar | victor,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,al-rawahy_2013,al-rawahy_2013 | k | foliar | victor,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,al-rawahy_2013,al-rawahy_2013 | mg | foliar | victor,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,al-rawahy_2013,al-rawahy_2013 | n | foliar | victor,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,al-rawahy_2013,al-rawahy_2013 | p | foliar | victor,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,al-rawahy_2013,al-rawahy_2013 | zn | foliar | victor,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | c | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | c | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | ca | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | ca | edible | mino,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | ca | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cd | edible | grabe,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cd | edible | t_1_111,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cr | edible | grabe,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cr | edible | mino,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cr | edible | t_1_111,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cu | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cu | edible | mino,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | cu | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | fe | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | fe | edible | mino,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | fe | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | k | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | k | edible | mino,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | k | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | mg | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | mg | edible | mino,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | mg | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | mn | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | mn | edible | mino,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | mn | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | n | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | n | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | ni | edible | grabe,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | ni | edible | mino,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | ni | edible | t_1_111,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | pb | edible | grabe,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | pb | edible | mino,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | pb | edible | t_1_111,0,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | s | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | s | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | zn | edible | grabe,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | zn | edible | mino,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,azam_2013,azam_2013 | zn | edible | t_1_111,1,1,nonfigure,1,38,38,1,1,14,1,3,1,1
+Loladze 2014,Loladze,barnes_1992,barnes_1992 | ca | foliar | cherry_belle,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,barnes_1992,barnes_1992 | k | foliar | cherry_belle,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,barnes_1992,barnes_1992 | mg | foliar | cherry_belle,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,barnes_1992,barnes_1992 | n | foliar | cherry_belle,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,barnes_1992,barnes_1992 | p | foliar | cherry_belle,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,barnes_1992,barnes_1992 | s | foliar | cherry_belle,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,barnes_1992,barnes_1992 | zn | foliar | cherry_belle,0,1,nonfigure,1,7,7,1,1,7,1,1,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | c | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | c | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | ca | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | ca | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | cu | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | cu | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | fe | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | fe | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | k | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | k | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | mg | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | mg | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | mn | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | mn | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | n | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | n | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | p | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | p | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | zn | foliar | brm__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baslam_2012,baslam_2012 | zn | foliar | mv__inner_nm,0,1,nonfigure,1,20,20,1,1,10,1,2,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | ca | foliar | agrostis_capillaris,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | ca | foliar | festuca_vivipara,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | ca | foliar | poa_alpina,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | k | foliar | agrostis_capillaris,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | k | foliar | festuca_vivipara,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | k | foliar | poa_alpina,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | mg | foliar | agrostis_capillaris,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | mg | foliar | festuca_vivipara,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | mg | foliar | poa_alpina,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | n | foliar | agrostis_capillaris,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | n | foliar | festuca_vivipara,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | n | foliar | poa_alpina,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | p | foliar | agrostis_capillaris,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | p | foliar | festuca_vivipara,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,baxter_1994,baxter_1994 | p | foliar | poa_alpina,0,1,nonfigure,1,15,15,1,1,5,1,3,1,1
+Loladze 2014,Loladze,blank_2011,blank_2011 | ca | above_ground | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,blank_2011,blank_2011 | k | above_ground | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,blank_2011,blank_2011 | mg | above_ground | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,blank_2011,blank_2011 | mn | above_ground | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,blank_2011,blank_2011 | n | above_ground | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,blank_2011,blank_2011 | p | above_ground | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,campbell_2002,campbell_2002 | p | foliar | highp,0,1,nonfigure,1,2,2,1,1,1,1,2,1,1
+Loladze 2014,Loladze,campbell_2002,campbell_2002 | p | foliar | lowp,0,1,nonfigure,1,2,2,1,1,1,1,2,1,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | ca | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | ca | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | ca | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | ca | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | fe | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | fe | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | fe | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | fe | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | k | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | k | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | k | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | k | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mg | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mg | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mg | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mg | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mn | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mn | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mn | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | mn | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | n | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | n | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | n | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | n | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | p | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | p | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | p | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | p | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | zn | above_ground | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | zn | above_ground | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | zn | edible | bintje__nf,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fangmeier_2002,fangmeier_2002 | zn | edible | bintje__o3,0,1,nonfigure,1,32,32,1,1,8,2,2,2,1
+Loladze 2014,Loladze,fernando_2012a,fernando_2012a | cu | grain | yitpi,1,1,nonfigure,1,6,6,1,1,6,1,1,1,1
+Loladze 2014,Loladze,fernando_2012a,fernando_2012a | k | grain | yitpi,1,1,nonfigure,1,6,6,1,1,6,1,1,1,1
+Loladze 2014,Loladze,fernando_2012a,fernando_2012a | mg | grain | yitpi,1,1,nonfigure,1,6,6,1,1,6,1,1,1,1
+Loladze 2014,Loladze,fernando_2012a,fernando_2012a | mn | grain | yitpi,1,1,nonfigure,1,6,6,1,1,6,1,1,1,1
+Loladze 2014,Loladze,fernando_2012a,fernando_2012a | na | grain | yitpi,1,1,nonfigure,1,6,6,1,1,6,1,1,1,1
+Loladze 2014,Loladze,fernando_2012a,fernando_2012a | p | grain | yitpi,1,1,nonfigure,1,6,6,1,1,6,1,1,1,1
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | c | foliar | acer_rubrum,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | c | foliar | cercis_canadensis,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | c | foliar | cornus_florida,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | c | foliar | liquidambar_styraciflua,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | c | foliar | pinus_taeda,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | n | foliar | acer_rubrum,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | n | foliar | cercis_canadensis,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | n | foliar | cornus_florida,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | n | foliar | liquidambar_styraciflua,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | n | foliar | pinus_taeda,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | p | foliar | acer_rubrum,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | p | foliar | cercis_canadensis,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | p | foliar | cornus_florida,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | p | foliar | liquidambar_styraciflua,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,finzi_2001,finzi_2001 | p | foliar | pinus_taeda,1,1,nonfigure,1,15,15,1,1,3,1,5,2,2
+Loladze 2014,Loladze,guo_2011,guo_2011 | cd | above_ground | wu_xiang_jing__cd_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,guo_2011,guo_2011 | cd | above_ground | yangmai__cd_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,guo_2011,guo_2011 | cd | grain | wu_xiang_jing__cd_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,guo_2011,guo_2011 | cd | grain | yangmai__cd_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,guo_2011,guo_2011 | cu | above_ground | wu_xiang_jing__cu_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,guo_2011,guo_2011 | cu | above_ground | yangmai__cu_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,guo_2011,guo_2011 | cu | grain | wu_xiang_jing__cu_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,guo_2011,guo_2011 | cu | grain | yangmai__cu_0,0,1,nonfigure,2,8,16,1,1,2,2,4,3,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | b | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | b | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | ca | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | ca | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | cu | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | cu | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | fe | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | fe | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | k | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | k | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | mg | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | mg | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | mn | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | mn | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | n | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | n | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | p | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | p | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | s | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | s | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | zn | foliar | regal__ncr,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,heagle_1993,heagle_1993 | zn | foliar | regal__ncs,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | mn | foliar | ambrosia_dumosa,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | mn | foliar | lycium_pallidum,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | n | foliar | ambrosia_dumosa,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | n | foliar | lycium_pallidum,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | p | foliar | ambrosia_dumosa,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | p | foliar | lycium_pallidum,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | zn | foliar | ambrosia_dumosa,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,housman_2012,housman_2012 | zn | foliar | lycium_pallidum,1,1,nonfigure,1,8,8,1,1,4,1,2,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | b | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | c | foliar | deltapine_77,0,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | ca | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | cu | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | fe | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | k | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | mg | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | mn | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | mo | foliar | deltapine_77,0,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | n | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | p | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | si | foliar | deltapine_77,0,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,huluka_1994,huluka_1994 | zn | foliar | deltapine_77,1,1,nonfigure,1,13,13,1,1,13,1,1,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | b | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | b | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | ca | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | ca | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | cu | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | cu | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | fe | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | fe | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | k | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | k | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | mg | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | mg | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | mn | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | mn | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | n | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | n | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | p | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | p | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | s | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | s | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | zn | foliar | quercus_geminata,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,johnson_2003,johnson_2003 | zn | foliar | quercus_myrtifolia,0,0,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | ca | foliar | alphitonia_petriei__basalt,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | ca | foliar | alphitonia_petriei__rhyolite,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | ca | foliar | flindersia_brayleyana,0,1,nonfigure,2,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | k | foliar | alphitonia_petriei__basalt,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | k | foliar | alphitonia_petriei__rhyolite,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | k | foliar | flindersia_brayleyana,0,1,nonfigure,2,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | n | foliar | alphitonia_petriei__basalt,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | n | foliar | alphitonia_petriei__rhyolite,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | n | foliar | flindersia_brayleyana,0,1,nonfigure,2,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | na | foliar | alphitonia_petriei__basalt,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | na | foliar | alphitonia_petriei__rhyolite,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | na | foliar | flindersia_brayleyana,0,1,nonfigure,2,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | p | foliar | alphitonia_petriei__basalt,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | p | foliar | alphitonia_petriei__rhyolite,1,1,nonfigure,1,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,kanowski_2001,kanowski_2001 | p | foliar | flindersia_brayleyana,0,1,nonfigure,2,15,20,1,1,5,1,3,1,1
+Loladze 2014,Loladze,keutgen_2001,keutgen_2001 | ca | foliar | old_leaves,1,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,keutgen_2001,keutgen_2001 | k | foliar | old_leaves,1,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,keutgen_2001,keutgen_2001 | mg | foliar | old_leaves,1,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,keutgen_2001,keutgen_2001 | n | foliar | old_leaves,1,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,keutgen_2001,keutgen_2001 | p | foliar | old_leaves,1,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | c | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | c | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | ca | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | ca | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | cd | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | cd | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | cr | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | cr | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | cu | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | cu | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | fe | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | fe | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | k | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | k | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | mg | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | mg | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | mn | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | mn | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | n | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | n | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | ni | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | ni | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | pb | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | pb | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | s | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | s | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | zn | edible | astra,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,khan_2013,khan_2013 | zn | edible | eureka,0,1,nonfigure,1,28,28,1,1,14,1,2,1,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | b | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | cu | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | fe | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | k | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | mg | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | mn | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | mo | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | n | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | p | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | s | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,lieffering_2004,lieffering_2004 | zn | grain | akitakomachi,1,1,nonfigure,2,11,22,1,1,11,1,1,2,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | b | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | ca | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | cu | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | fe | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | k | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | mg | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | mn | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | n | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | p | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | s | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,luomala_2005,luomala_2005 | zn | foliar | ,0,1,nonfigure,1,11,11,1,1,11,1,0,1,1
+Loladze 2014,Loladze,mishra_2011,mishra_2011 | b | foliar | maverick_white,0,1,nonfigure,1,2,2,1,1,2,1,1,1,1
+Loladze 2014,Loladze,mishra_2011,mishra_2011 | p | foliar | maverick_white,0,1,nonfigure,1,2,2,1,1,2,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | ca | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | cu | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | fe | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | k | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | mg | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | mn | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | n | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | p | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,mjwara_1996,mjwara_1996 | zn | foliar | contender,0,1,nonfigure,1,9,9,1,1,9,1,1,1,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | al | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | al | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | al | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | al | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | al | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | al | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | co | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | co | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | co | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | co | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | co | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | co | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | cu | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | cu | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | cu | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | cu | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | cu | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | cu | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | fe | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | fe | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | fe | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | fe | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | fe | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | fe | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mn | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mn | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mn | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mn | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mn | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mn | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mo | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mo | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mo | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mo | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mo | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | mo | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | ni | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | ni | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | ni | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | ni | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | ni | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | ni | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | pb | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | pb | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | pb | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | pb | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | pb | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | pb | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | v | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | v | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | v | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | v | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | v | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | v | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | zn | foliar | liquidambar_styraciflua__duke,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | zn | foliar | liquidambar_styraciflua__ornl,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | zn | foliar | pinus_taeda__1yr_old,0,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | zn | foliar | quercus_chapmanii,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | zn | foliar | quercus_geminata,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,natali_2009,natali_2009 | zn | foliar | quercus_myrtifolia,1,1,nonfigure,1,60,60,1,1,10,1,6,3,1
+Loladze 2014,Loladze,newbery_1995,newbery_1995 | c | above_ground | ,1,1,nonfigure,1,4,4,1,1,4,1,0,1,1
+Loladze 2014,Loladze,newbery_1995,newbery_1995 | k | above_ground | ,1,1,nonfigure,1,4,4,1,1,4,1,0,1,1
+Loladze 2014,Loladze,newbery_1995,newbery_1995 | n | above_ground | ,1,1,nonfigure,1,4,4,1,1,4,1,0,1,1
+Loladze 2014,Loladze,newbery_1995,newbery_1995 | p | above_ground | ,1,1,nonfigure,1,4,4,1,1,4,1,0,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | ca | foliar | ,0,1,nonfigure,2,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | k | foliar | ,0,1,nonfigure,2,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | mg | foliar | highn,0,1,nonfigure,1,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | mg | foliar | lown,0,1,nonfigure,1,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | n | foliar | highn,0,1,nonfigure,1,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | n | foliar | lown,0,1,nonfigure,1,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | p | foliar | highn,0,1,nonfigure,1,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niinemets_1999,niinemets_1999 | p | foliar | lown,0,1,nonfigure,1,8,10,1,1,5,1,2,1,1
+Loladze 2014,Loladze,niu_2013,niu_2013 | p | above_ground | nh4,0,1,nonfigure,1,2,2,1,1,1,1,2,1,1
+Loladze 2014,Loladze,niu_2013,niu_2013 | p | above_ground | no3,0,1,nonfigure,1,2,2,1,1,1,1,2,1,1
+Loladze 2014,Loladze,nowak_2002,nowak_2002 | ca | foliar | ,0,0,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,nowak_2002,nowak_2002 | k | foliar | ,0,0,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,nowak_2002,nowak_2002 | mg | foliar | ,0,0,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,nowak_2002,nowak_2002 | n | foliar | ,0,0,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,nowak_2002,nowak_2002 | p | foliar | ,0,0,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | b | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | ca | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | cu | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | k | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | mg | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | mn | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | n | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | p | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | s | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oksanen_2005,oksanen_2005 | zn | foliar | roth,0,1,nonfigure,1,10,10,1,1,10,1,1,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | al | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | b | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | ba | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | ca | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | cu | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | fe | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | k | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | mg | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | mn | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | n | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | p | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | s | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | sr | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,oneill_1987,oneill_1987 | zn | foliar | ,0,1,nonfigure,1,14,14,1,1,14,1,0,1,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | ca | above_ground | acer_pseudoplatanus,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | ca | above_ground | fagus_sylvatica,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | ca | above_ground | festuca_pratensis,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | ca | above_ground | lolium_perenne,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | ca | above_ground | trifolium_pratense,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | ca | above_ground | trifolium_repens,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | fe | above_ground | acer_pseudoplatanus,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | fe | above_ground | fagus_sylvatica,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | k | above_ground | acer_pseudoplatanus,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | k | above_ground | fagus_sylvatica,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | k | above_ground | festuca_pratensis,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | k | above_ground | lolium_perenne,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | k | above_ground | trifolium_pratense,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | k | above_ground | trifolium_repens,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | mg | above_ground | acer_pseudoplatanus,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | mg | above_ground | fagus_sylvatica,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | mg | above_ground | festuca_pratensis,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | mg | above_ground | trifolium_pratense,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | mn | above_ground | acer_pseudoplatanus,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | mn | above_ground | fagus_sylvatica,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | n | above_ground | acer_pseudoplatanus,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | n | above_ground | fagus_sylvatica,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | n | above_ground | festuca_pratensis,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | n | above_ground | lolium_perenne,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | n | above_ground | trifolium_pratense,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | n | above_ground | trifolium_repens,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | p | above_ground | acer_pseudoplatanus,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | p | above_ground | fagus_sylvatica,1,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | p | above_ground | festuca_pratensis,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | p | above_ground | lolium_perenne,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | p | above_ground | trifolium_pratense,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | p | above_ground | trifolium_repens,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | zn | above_ground | festuca_pratensis,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,overdieck_1993,overdieck_1993 | zn | above_ground | trifolium_pratense,0,1,nonfigure,1,34,34,1,1,8,1,6,2,1
+Loladze 2014,Loladze,pal_2003,pal_2003 | c | foliar | pusa_jayant,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,pal_2003,pal_2003 | ca | foliar | pusa_jayant,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,pal_2003,pal_2003 | fe | foliar | pusa_jayant,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,pal_2003,pal_2003 | n | foliar | pusa_jayant,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,pal_2003,pal_2003 | p | foliar | pusa_jayant,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,peet_1986,peet_1986 | ca | foliar | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,peet_1986,peet_1986 | k | foliar | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,peet_1986,peet_1986 | mg | foliar | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,peet_1986,peet_1986 | mn | foliar | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,peet_1986,peet_1986 | n | foliar | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,peet_1986,peet_1986 | p | foliar | ,0,1,nonfigure,1,6,6,1,1,6,1,0,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | c | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | c | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | ca | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | ca | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | cu | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | cu | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | fe | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | fe | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | k | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | k | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | mg | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | mg | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | mn | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | mn | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | n | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | n | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | p | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | p | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | s | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | s | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | zn | foliar | karst__kminus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pfirrmann_1996,pfirrmann_1996 | zn | foliar | karst__kplus__needles,0,1,nonfigure,1,22,22,1,1,11,1,2,1,1
+Loladze 2014,Loladze,pleijel_2009,pleijel_2009 | zn | grain | dragon,1,1,nonfigure,3,1,3,1,1,1,1,1,3,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | c | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | c | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | c | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | ca | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | ca | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | ca | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | cu | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | cu | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | cu | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | fe | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | fe | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | fe | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | k | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | k | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | k | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | mg | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | mg | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | mg | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | mn | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | mn | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | mn | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | n | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | n | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | n | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | p | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | p | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | p | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | zn | above_ground | bouteloua_curtipendula,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | zn | above_ground | schizachyrium_scoparium,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,polley_2011,polley_2011 | zn | above_ground | sorghastrum_nutans,0,1,nonfigure,1,30,30,1,1,10,1,3,1,1
+Loladze 2014,Loladze,porter_1984,porter_1984 | ca | foliar | seafarer,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,porter_1984,porter_1984 | k | foliar | seafarer,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,porter_1984,porter_1984 | mg | foliar | seafarer,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,porter_1984,porter_1984 | n | foliar | seafarer,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,porter_1984,porter_1984 | p | foliar | seafarer,0,1,nonfigure,1,5,5,1,1,5,1,1,1,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | ca | above_ground | lolium_perenne,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | ca | above_ground | trifolium_repens,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | k | above_ground | lolium_perenne,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | k | above_ground | trifolium_repens,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | mg | above_ground | lolium_perenne,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | mg | above_ground | trifolium_repens,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | n | above_ground | lolium_perenne,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | n | above_ground | trifolium_repens,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | na | above_ground | lolium_perenne,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | na | above_ground | trifolium_repens,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | p | above_ground | lolium_perenne,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | p | above_ground | trifolium_repens,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | s | above_ground | lolium_perenne,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,schenk_1997,schenk_1997 | s | above_ground | trifolium_repens,1,1,nonfigure,2,14,28,1,1,7,1,2,2,1
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | ca | foliar | jarrah,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | ca | grain | jarrah__p0,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | ca | grain | jarrah__p120,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | ca | grain | jarrah__p240,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | ca | grain | jarrah__p30,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | ca | grain | jarrah__p480,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | ca | grain | jarrah__p60,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | fe | grain | jarrah__p0,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | fe | grain | jarrah__p120,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | fe | grain | jarrah__p240,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | fe | grain | jarrah__p30,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | fe | grain | jarrah__p480,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | fe | grain | jarrah__p60,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | n | foliar | jarrah,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | n | grain | jarrah__p0,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | n | grain | jarrah__p120,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | n | grain | jarrah__p240,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | n | grain | jarrah__p30,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | n | grain | jarrah__p480,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | n | grain | jarrah__p60,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | p | foliar | jarrah,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | p | grain | jarrah__p0,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | p | grain | jarrah__p120,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | p | grain | jarrah__p240,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | p | grain | jarrah__p30,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | p | grain | jarrah__p480,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | p | grain | jarrah__p60,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | zn | foliar | jarrah,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | zn | grain | jarrah__p0,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | zn | grain | jarrah__p120,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | zn | grain | jarrah__p240,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | zn | grain | jarrah__p30,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | zn | grain | jarrah__p480,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,seneweera_1997,seneweera_1997 | zn | grain | jarrah__p60,0,1,nonfigure,1,34,34,1,1,5,2,7,2,2
+Loladze 2014,Loladze,singh_2013,singh_2013 | ca | grain | czern,0,1,nonfigure,2,5,10,1,1,5,1,1,2,1
+Loladze 2014,Loladze,singh_2013,singh_2013 | fe | grain | czern,0,1,nonfigure,2,5,10,1,1,5,1,1,2,1
+Loladze 2014,Loladze,singh_2013,singh_2013 | mg | grain | czern,0,1,nonfigure,2,5,10,1,1,5,1,1,2,1
+Loladze 2014,Loladze,singh_2013,singh_2013 | s | grain | czern,0,1,nonfigure,2,5,10,1,1,5,1,1,2,1
+Loladze 2014,Loladze,singh_2013,singh_2013 | zn | grain | czern,0,1,nonfigure,2,5,10,1,1,5,1,1,2,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | b | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | ca | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | co | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | cu | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | fe | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | k | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | mg | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | mn | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | mo | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | n | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | na | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | p | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,wilsey_1994,wilsey_1994 | zn | foliar | ,0,1,nonfigure,1,13,13,1,1,13,1,0,1,1
+Loladze 2014,Loladze,woodin_1992,woodin_1992 | ca | foliar | ,0,1,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,woodin_1992,woodin_1992 | k | foliar | ,0,1,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,woodin_1992,woodin_1992 | mg | foliar | ,0,1,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,woodin_1992,woodin_1992 | n | foliar | ,0,1,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,woodin_1992,woodin_1992 | p | foliar | ,0,1,nonfigure,1,5,5,1,1,5,1,0,1,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | cu | grain | batis__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | cu | grain | batis__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | cu | grain | theresa__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | cu | grain | theresa__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | fe | grain | batis__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | fe | grain | batis__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | fe | grain | theresa__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | fe | grain | theresa__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | mn | grain | batis__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | mn | grain | batis__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | mn | grain | theresa__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | mn | grain | theresa__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | na | grain | batis__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | na | grain | batis__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | na | grain | theresa__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | na | grain | theresa__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | zn | grain | batis__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | zn | grain | batis__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | zn | grain | theresa__n100,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wroblewitz_2013,wroblewitz_2013 | zn | grain | theresa__n50,0,0,nonfigure,2,20,40,1,1,5,1,4,4,1
+Loladze 2014,Loladze,wu_2004,wu_2004 | k | grain | turbo,0,1,nonfigure,1,4,4,1,1,4,1,1,1,1
+Loladze 2014,Loladze,wu_2004,wu_2004 | n | grain | turbo,0,1,nonfigure,1,4,4,1,1,4,1,1,1,1
+Loladze 2014,Loladze,wu_2004,wu_2004 | p | grain | turbo,0,1,nonfigure,1,4,4,1,1,4,1,1,1,1
+Loladze 2014,Loladze,wu_2004,wu_2004 | zn | grain | turbo,0,1,nonfigure,1,4,4,1,1,4,1,1,1,1
+Loladze 2014,Loladze,ziska_1997,ziska_1997 | ca | grain | ir_72,1,1,nonfigure,1,2,2,1,1,2,1,1,1,1
+Loladze 2014,Loladze,ziska_1997,ziska_1997 | k | grain | ir_72,1,1,nonfigure,1,2,2,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,-s2.0-s0304423819306703-main,-s2.0-s0304423819306703-main,1,1,nonfigure,6,1,6,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,-s2.0-s0304423820302417-main,-s2.0-s0304423820302417-main,1,1,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,abdel-mawgoud_2010,abdel-mawgoud_2010,1,1,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,agriculture-10-00618-v2,agriculture-10-00618-v2,1,1,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,1,1,nonfigure,8,1,8,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,alabdulla_2019_effect of foliar application of humic ac,alabdulla_2019_effect of foliar application of humic ac,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,ali_2019_biostimulatory activities of ascophyllum nodosum e,ali_2019_biostimulatory activities of ascophyllum nodosum e,1,1,nonfigure,4,1,4,1,2,1,1,1,1,1
+Li J et al. 2022,Li2022,article1400838000_azarpour et al,article1400838000_azarpour et al,1,1,nonfigure,2,1,2,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,chen_2021_effects of seaweed extracts on the growt,chen_2021_effects of seaweed extracts on the growt,1,1,nonfigure,24,1,24,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,ciepiela_2019_the effect of biostimulants derived from,ciepiela_2019_the effect of biostimulants derived from,1,1,nonfigure,5,1,5,1,2,1,1,1,1,1
+Li J et al. 2022,Li2022,fichhof_2018_management of biostimulant and silicon i,fichhof_2018_management of biostimulant and silicon i,1,1,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,godlewska_2016,godlewska_2016,1,1,nonfigure,20,1,20,1,4,2,1,1,1,1
+Li J et al. 2022,Li2022,grabowska_2012_the effect of cultivar and biostimulant,grabowska_2012_the effect of cultivar and biostimulant,1,1,nonfigure,6,1,6,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study01,gt_study01,0,0,nonfigure,2,1,2,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study02,gt_study02,0,0,nonfigure,9,1,9,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study03,gt_study03,0,0,nonfigure,2,1,2,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study04,gt_study04,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study06,gt_study06,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study07,gt_study07,0,0,nonfigure,16,1,16,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study100,gt_study100,0,0,nonfigure,6,1,6,1,2,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study101,gt_study101,0,0,nonfigure,2,1,2,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study103,gt_study103,0,0,nonfigure,12,1,12,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study104,gt_study104,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study105,gt_study105,0,0,nonfigure,6,1,6,1,1,1,3,1,1,1
+Li J et al. 2022,Li2022,gt_study106,gt_study106,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study107,gt_study107,0,0,nonfigure,4,1,4,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study108,gt_study108,0,0,nonfigure,4,1,4,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study109,gt_study109,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study11,gt_study11,0,0,nonfigure,4,1,4,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study111,gt_study111,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study112,gt_study112,0,0,nonfigure,4,1,4,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study113,gt_study113,0,0,nonfigure,6,1,6,1,1,1,1,6,1,1
+Li J et al. 2022,Li2022,gt_study114,gt_study114,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study115,gt_study115,0,0,nonfigure,4,1,4,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study116,gt_study116,0,0,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study119,gt_study119,0,0,nonfigure,5,1,5,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study12,gt_study12,0,0,nonfigure,20,1,20,1,2,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study120,gt_study120,0,0,nonfigure,3,1,3,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study121,gt_study121,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study122,gt_study122,0,0,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study123,gt_study123,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study124,gt_study124,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study125,gt_study125,0,0,nonfigure,6,1,6,1,1,3,1,1,1,1
+Li J et al. 2022,Li2022,gt_study126,gt_study126,0,0,nonfigure,2,1,2,1,2,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study127,gt_study127,0,0,nonfigure,8,1,8,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study128,gt_study128,0,0,nonfigure,8,1,8,1,1,1,2,2,1,1
+Li J et al. 2022,Li2022,gt_study13,gt_study13,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study131,gt_study131,0,0,nonfigure,8,1,8,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study132,gt_study132,0,0,nonfigure,10,1,10,1,1,1,1,5,1,1
+Li J et al. 2022,Li2022,gt_study133,gt_study133,0,0,nonfigure,4,1,4,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study134,gt_study134,0,0,nonfigure,4,1,4,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study135,gt_study135,0,0,nonfigure,4,1,4,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study137,gt_study137,0,0,nonfigure,16,1,16,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study138,gt_study138,0,0,nonfigure,10,1,10,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study139,gt_study139,0,0,nonfigure,2,1,2,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study14,gt_study14,0,0,nonfigure,4,1,4,1,1,2,1,2,1,1
+Li J et al. 2022,Li2022,gt_study140,gt_study140,0,0,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study142,gt_study142,0,0,nonfigure,2,1,2,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study143,gt_study143,0,0,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study144,gt_study144,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study145,gt_study145,0,0,nonfigure,4,1,4,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study148,gt_study148,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study15,gt_study15,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study150,gt_study150,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study151,gt_study151,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study153,gt_study153,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study154,gt_study154,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study155,gt_study155,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study156,gt_study156,0,0,nonfigure,12,1,12,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study157,gt_study157,0,0,nonfigure,12,1,12,1,2,1,1,6,1,1
+Li J et al. 2022,Li2022,gt_study158,gt_study158,0,0,nonfigure,18,1,18,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study159,gt_study159,0,0,nonfigure,6,1,6,1,1,3,1,1,1,1
+Li J et al. 2022,Li2022,gt_study16,gt_study16,0,0,nonfigure,2,1,2,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study160,gt_study160,0,0,nonfigure,6,1,6,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study161,gt_study161,0,0,nonfigure,2,1,2,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study164,gt_study164,0,0,nonfigure,6,1,6,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study166,gt_study166,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study167,gt_study167,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study168,gt_study168,0,0,nonfigure,8,1,8,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study169,gt_study169,0,0,nonfigure,15,1,15,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study17,gt_study17,0,0,nonfigure,3,1,3,1,1,3,1,1,1,1
+Li J et al. 2022,Li2022,gt_study171,gt_study171,0,0,nonfigure,3,1,3,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study172,gt_study172,0,0,nonfigure,3,1,3,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study173,gt_study173,0,0,nonfigure,8,1,8,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study176,gt_study176,0,0,nonfigure,27,1,27,1,2,2,1,5,1,1
+Li J et al. 2022,Li2022,gt_study178,gt_study178,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study179,gt_study179,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study18,gt_study18,0,0,nonfigure,2,1,2,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study21,gt_study21,0,0,nonfigure,12,1,12,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study22,gt_study22,0,0,nonfigure,3,1,3,1,3,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study23,gt_study23,0,0,nonfigure,2,1,2,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study25,gt_study25,0,0,nonfigure,4,1,4,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study26,gt_study26,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study27,gt_study27,0,0,nonfigure,3,1,3,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study28,gt_study28,0,0,nonfigure,12,1,12,1,1,2,1,3,1,1
+Li J et al. 2022,Li2022,gt_study29,gt_study29,0,0,nonfigure,3,1,3,1,1,3,1,1,1,1
+Li J et al. 2022,Li2022,gt_study30,gt_study30,0,0,nonfigure,2,1,2,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study32,gt_study32,0,0,nonfigure,3,1,3,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study34,gt_study34,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study35,gt_study35,0,0,nonfigure,4,1,4,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study36,gt_study36,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study38,gt_study38,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study39,gt_study39,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study40,gt_study40,0,0,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study41,gt_study41,0,0,nonfigure,5,1,5,1,1,1,1,5,1,1
+Li J et al. 2022,Li2022,gt_study42,gt_study42,0,0,nonfigure,12,1,12,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study43,gt_study43,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study45,gt_study45,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study46,gt_study46,0,0,nonfigure,2,1,2,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study47,gt_study47,0,0,nonfigure,22,1,22,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study48,gt_study48,0,0,nonfigure,6,1,6,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study49,gt_study49,0,0,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study50,gt_study50,0,0,nonfigure,4,1,4,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study51,gt_study51,0,0,nonfigure,2,1,2,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study52,gt_study52,0,0,nonfigure,5,1,5,1,1,1,2,3,1,1
+Li J et al. 2022,Li2022,gt_study53,gt_study53,0,0,nonfigure,10,1,10,1,1,3,1,1,1,1
+Li J et al. 2022,Li2022,gt_study54,gt_study54,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study55,gt_study55,0,0,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study57,gt_study57,0,0,nonfigure,4,1,4,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study58,gt_study58,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study59,gt_study59,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study60,gt_study60,0,0,nonfigure,4,1,4,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study61,gt_study61,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study62,gt_study62,0,0,nonfigure,4,1,4,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study63,gt_study63,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study64,gt_study64,0,0,nonfigure,4,1,4,1,1,2,1,2,1,1
+Li J et al. 2022,Li2022,gt_study65,gt_study65,0,0,nonfigure,4,1,4,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study66,gt_study66,0,0,nonfigure,8,1,8,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study67,gt_study67,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study69,gt_study69,0,0,nonfigure,3,1,3,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study70,gt_study70,0,0,nonfigure,9,1,9,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study76,gt_study76,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study79,gt_study79,0,0,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,gt_study80,gt_study80,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study81,gt_study81,0,0,nonfigure,8,1,8,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study84,gt_study84,0,0,nonfigure,10,1,10,1,1,1,2,4,1,1
+Li J et al. 2022,Li2022,gt_study86,gt_study86,0,0,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,gt_study87,gt_study87,0,0,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study88,gt_study88,0,0,nonfigure,8,1,8,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,gt_study90,gt_study90,0,0,nonfigure,4,1,4,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,gt_study92,gt_study92,0,0,nonfigure,2,1,2,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,gt_study93,gt_study93,0,0,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study94,gt_study94,0,0,nonfigure,1,1,1,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study95,gt_study95,0,0,nonfigure,7,1,7,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study97,gt_study97,0,0,nonfigure,6,1,6,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,gt_study98,gt_study98,0,0,nonfigure,18,1,18,1,1,3,1,3,1,1
+Li J et al. 2022,Li2022,gt_study99,gt_study99,0,0,nonfigure,5,1,5,1,1,1,1,5,1,1
+Li J et al. 2022,Li2022,głosek-sobieraj_2018_the effect of growth regulators and a bi,głosek-sobieraj_2018_the effect of growth regulators and a bi,1,1,nonfigure,6,1,6,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,knapowski_2019_crop stimulants as a factor determining,knapowski_2019_crop stimulants as a factor determining,1,1,nonfigure,4,1,4,1,1,2,1,1,1,1
+Li J et al. 2022,Li2022,"kocira_2018_modeling biometric traits, yield and nut","kocira_2018_modeling biometric traits, yield and nut",1,1,nonfigure,36,1,36,1,1,1,1,2,1,1
+Li J et al. 2022,Li2022,kocira_2019_effect of amino acid biostimulant on the,kocira_2019_effect of amino acid biostimulant on the,1,1,nonfigure,66,1,66,1,3,2,1,3,1,1
+Li J et al. 2022,Li2022,kocira_2020_biochemical and economical effect of app,kocira_2020_biochemical and economical effect of app,0,0,nonfigure,24,1,24,1,1,2,1,2,1,1
+Li J et al. 2022,Li2022,kowalska_2021_effect of different forms of silicon on,kowalska_2021_effect of different forms of silicon on,1,1,nonfigure,4,1,4,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,kuisma_1989_the effect of foliar application of seaw,kuisma_1989_the effect of foliar application of seaw,1,1,nonfigure,3,1,3,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,"lola-luz_2014_effect on yield, total phenolic, total f","lola-luz_2014_effect on yield, total phenolic, total f",1,1,nonfigure,6,1,6,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,mattner_2018_increased growth response of strawberry,mattner_2018_increased growth response of strawberry,1,1,nonfigure,3,1,3,1,1,1,2,1,1,1
+Li J et al. 2022,Li2022,matysiak_2018_herbicides with natural and synthetic bi,matysiak_2018_herbicides with natural and synthetic bi,1,1,nonfigure,6,1,6,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,michalak_2016_evaluation of supercritical extracts of,michalak_2016_evaluation of supercritical extracts of,1,1,nonfigure,5,1,5,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,mondal_2013,mondal_2013,1,1,nonfigure,16,1,16,1,2,1,1,7,1,1
+Li J et al. 2022,Li2022,plants-09-01633,plants-09-01633,1,1,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,pohl_2019_the eggplant yield and fruit composition,pohl_2019_the eggplant yield and fruit composition,1,1,nonfigure,12,1,12,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,"popescu_2018_yield, berry quality and physiological r","popescu_2018_yield, berry quality and physiological r",1,1,nonfigure,12,1,12,1,1,1,1,3,1,1
+Li J et al. 2022,Li2022,pramanick_2016_effect of seaweed saps derived from two,pramanick_2016_effect of seaweed saps derived from two,1,1,nonfigure,8,1,8,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,procházka_2015_the possibilities of increasing the prod,procházka_2015_the possibilities of increasing the prod,1,1,nonfigure,6,1,6,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,prokkola_2007_effect of biological sprays on the incid,prokkola_2007_effect of biological sprays on the incid,1,1,nonfigure,6,1,6,1,1,3,1,1,1,1
+Li J et al. 2022,Li2022,radkowski_2018,radkowski_2018,1,1,nonfigure,15,1,15,1,2,1,1,3,1,1
+Li J et al. 2022,Li2022,rahman_2018_chitosan biopolymer promotes yield and s,rahman_2018_chitosan biopolymer promotes yield and s,1,1,nonfigure,4,1,4,1,1,1,1,4,1,1
+Li J et al. 2022,Li2022,soppelsa_2018_use of biostimulants for organic apple p,soppelsa_2018_use of biostimulants for organic apple p,1,1,nonfigure,9,1,9,1,1,5,1,1,1,1
+Li J et al. 2022,Li2022,sulakhudin_2019_application of coastal sediments and fol,sulakhudin_2019_application of coastal sediments and fol,1,1,nonfigure,3,1,3,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,sustainability-11-02171,sustainability-11-02171,1,1,nonfigure,2,1,2,1,1,1,1,1,1,1
+Li J et al. 2022,Li2022,wilczewski_2018_response of sugar beet to humic substanc,wilczewski_2018_response of sugar beet to humic substanc,1,1,nonfigure,1,1,1,1,1,1,1,1,1,1

@@ -109,7 +109,7 @@ def lij_crosswalk(ai):
 
 # per-dataset categorical key (no values); pid_fn lets Li J remap
 def keyfn(ds):
-    if ds == "Boldorini": return lambda r: (npid(low(r,"paper_id")), low(r,"outcome_canonical"), low(r,"crop"), low(r,"treatment_level"), low(r,"co_amendment"), numtok(r,"co_amendment_level"), low(r,"timepoint"))
+    if ds == "Boldorini": return lambda r: (npid(low(r,"paper_id")), low(r,"outcome_canonical"), low(r,"crop"), low(r,"treatment_level"), low(r,"co_amendment"), numtok(r,"co_amendment_level"), low(r,"timepoint"), low(r,"unit_canonical"))
     if ds == "Biochar":   return lambda r: (npid(low(r,"paper_id")), low(r,"outcome_canonical"), low(r,"crop"), low(r,"treatment_level"), low(r,"co_amendment"), numtok(r,"co_amendment_level"), low(r,"timepoint"))
     if ds == "Hui":       return lambda r: (npid(low(r,"paper_id")), low(r,"outcome_canonical"), low(r,"treatment_level"))
     if ds == "Loladze":   return lambda r: (npid(low(r,"paper_id")), low(r,"treatment_level"), low(r,"co_amendment"), low(r,"co_amendment_level"))

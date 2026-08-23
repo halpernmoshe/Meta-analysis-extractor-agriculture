@@ -177,7 +177,7 @@ def main():
     # legend
     from matplotlib.lines import Line2D
     handles = [Line2D([0],[0], marker="o", color="w", markerfacecolor="#b04a2f", ms=8, label="all shared cells"),
-               Line2D([0],[0], marker="o", color="w", markerfacecolor="#1a7f37", ms=8, label="all_data subset (no selection)")]
+               Line2D([0],[0], marker="o", color="w", markerfacecolor="#1a7f37", ms=8, label="no-selection subset")]
     axR.legend(handles=handles, fontsize=8, loc="lower right", frameon=False)
 
     fig.tight_layout()

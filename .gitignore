@@ -1,0 +1,8 @@
+# Kept local: may contain copyrighted source text or account-provenance material.
+model_outputs/
+
+# Kept local: variance-rerun development artifacts that depend on withheld raw outputs.
+round2_additional_analysis/*variance*
+round2_additional_analysis/VARIANCE_*
+round2_additional_analysis/common_reference_weight_sensitivity_final.*
+round2_additional_analysis/validate_round2_reported_numbers.py

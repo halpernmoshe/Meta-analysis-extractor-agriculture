@@ -1,0 +1,281 @@
+﻿dataset,dataset_code,paper_id,same_paper_ai_records_present,reference_cells,reference_rows,matched_cells,match_rate,median_reference_rows_per_cell
+Li X et al. 2024,Biochar,adekiya_2019,1,12,12,12,1.0,1.0
+Li X et al. 2024,Biochar,arif_2017,1,14,14,14,1.0,1.0
+Li X et al. 2024,Biochar,asai_2009,1,27,27,10,0.37037037037037035,1.0
+Li X et al. 2024,Biochar,azeem_2019,1,16,16,16,1.0,1.0
+Li X et al. 2024,Biochar,deenik_2010,1,12,12,0,0.0,1.0
+Li X et al. 2024,Biochar,dong_2019,1,16,16,16,1.0,1.0
+Li X et al. 2024,Biochar,farrell_2014,1,14,14,0,0.0,1.0
+Li X et al. 2024,Biochar,gathorne-hardy_2009,1,20,20,0,0.0,1.0
+Li X et al. 2024,Biochar,guerena_2013,1,12,12,12,1.0,1.0
+Li X et al. 2024,Biochar,haefele_2011,1,36,36,14,0.3888888888888889,1.0
+Li X et al. 2024,Biochar,islami_2011,1,12,16,10,0.8333333333333334,1.0
+Li X et al. 2024,Biochar,li_b_2016,1,42,42,0,0.0,1.0
+Li X et al. 2024,Biochar,liang_feng_2014,1,30,30,6,0.2,1.0
+Li X et al. 2024,Biochar,liu_2014,1,12,12,0,0.0,1.0
+Li X et al. 2024,Biochar,liu_2019,1,36,36,16,0.4444444444444444,1.0
+Li X et al. 2024,Biochar,malik_2018,1,12,12,12,1.0,1.0
+Li X et al. 2024,Biochar,niu_2017,1,12,12,0,0.0,1.0
+Li X et al. 2024,Biochar,nobile_2022,1,18,18,0,0.0,1.0
+Li X et al. 2024,Biochar,omara_2020,1,24,24,12,0.5,1.0
+Li X et al. 2024,Biochar,pandit_2018,1,15,15,15,1.0,1.0
+Li X et al. 2024,Biochar,shi_2022,1,18,18,18,1.0,1.0
+Li X et al. 2024,Biochar,wang_2012,1,20,20,0,0.0,1.0
+Li X et al. 2024,Biochar,wei_2022,1,12,16,12,1.0,1.0
+Li X et al. 2024,Biochar,xie_2021,1,42,42,0,0.0,1.0
+Li X et al. 2024,Biochar,yeboah_2018,1,15,15,9,0.6,1.0
+Li X et al. 2024,Biochar,zhang_2021,1,6,15,0,0.0,2.5
+Li X et al. 2024,Biochar,zhang_j_2019,1,12,12,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b01_ali_2018,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b02_bisseleua_2017,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b03_borkhataria_2012,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b04_classen_2014,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b05_garfinkel_2015,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b06_garfinkel_2020,1,2,2,2,1.0,1.0
+Boldorini et al. 2024,Boldorini,b07_gras_2016,1,2,2,1,0.5,1.0
+Boldorini et al. 2024,Boldorini,b08_hooks_2003,1,4,4,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b09_ismoilov_2020,1,1,1,1,1.0,1.0
+Boldorini et al. 2024,Boldorini,b10_lang_2003,1,9,9,3,0.3333333333333333,1.0
+Boldorini et al. 2024,Boldorini,b11_libran-embid_2017,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b13_maas_2013,1,2,2,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b14_martin_2013,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b15_mols_2002,1,1,1,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b16_saunders_2016,1,1,1,1,1.0,1.0
+Boldorini et al. 2024,Boldorini,b17_snyder_2001,1,12,12,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b18_suenaga_2015,1,4,4,0,0.0,1.0
+Boldorini et al. 2024,Boldorini,b19_vichitbandha_2002,1,1,1,1,1.0,1.0
+Boldorini et al. 2024,Boldorini,liere_2015,0,1,1,0,0.0,1.0
+Hui et al. 2025,Hui,bharti_2013,1,2,40,2,1.0,20.0
+Hui et al. 2025,Hui,chattha_2017,1,3,18,3,1.0,6.0
+Hui et al. 2025,Hui,erdal_2002,1,1,20,1,1.0,20.0
+Hui et al. 2025,Hui,forster_2018,1,2,6,2,1.0,3.0
+Hui et al. 2025,Hui,ghasal_2017,1,2,4,2,1.0,2.0
+Hui et al. 2025,Hui,kalayci_1999,1,1,78,1,1.0,78.0
+Hui et al. 2025,Hui,liu_2019,1,1,10,1,1.0,10.0
+Hui et al. 2025,Hui,pahlavanrad_2009,1,2,3,2,1.0,1.5
+Hui et al. 2025,Hui,peck_2008,1,2,18,2,1.0,9.0
+Hui et al. 2025,Hui,ramzan_2020,1,2,4,2,1.0,2.0
+Hui et al. 2025,Hui,rashid_2019,1,1,19,1,1.0,19.0
+Hui et al. 2025,Hui,rehman_2018,1,2,58,1,0.5,29.0
+Hui et al. 2025,Hui,wang_2012,1,3,21,3,1.0,6.0
+Hui et al. 2025,Hui,yang_2011,1,1,5,1,1.0,5.0
+Hui et al. 2025,Hui,yilmaz_1997,1,3,12,3,1.0,4.0
+Hui et al. 2025,Hui,yilmaz_1998,1,1,3,1,1.0,3.0
+Hui et al. 2025,Hui,zhang_2017,0,2,50,0,0.0,25.0
+Hui et al. 2025,Hui,zou_2012,1,3,67,3,1.0,22.0
+Hui et al. 2025,Hui,zulfiqar_2020,1,2,8,2,1.0,4.0
+Li J et al. 2022,Li2022,-s2.0-s0304423819306703-main,1,1,6,1,1.0,6.0
+Li J et al. 2022,Li2022,-s2.0-s0304423820302417-main,1,1,2,1,1.0,2.0
+Li J et al. 2022,Li2022,abdel-mawgoud_2010,1,1,8,1,1.0,8.0
+Li J et al. 2022,Li2022,agriculture-10-00618-v2,1,1,1,1,1.0,1.0
+Li J et al. 2022,Li2022,al-tawaha-et-al-2011-foliar-application-of-elicitors-alters-isoflavone-concentrations-and-other-seed-characteristics-of,1,1,8,1,1.0,8.0
+Li J et al. 2022,Li2022,alabdulla_2019_effect of foliar application of humic ac,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,ali_2019_biostimulatory activities of ascophyllum nodosum e,1,1,4,1,1.0,4.0
+Li J et al. 2022,Li2022,article1400838000_azarpour et al,1,1,2,1,1.0,2.0
+Li J et al. 2022,Li2022,chen_2021_effects of seaweed extracts on the growt,1,1,24,1,1.0,24.0
+Li J et al. 2022,Li2022,ciepiela_2019_the effect of biostimulants derived from,1,1,5,1,1.0,5.0
+Li J et al. 2022,Li2022,fichhof_2018_management of biostimulant and silicon i,1,1,2,1,1.0,2.0
+Li J et al. 2022,Li2022,godlewska_2016,1,1,20,1,1.0,20.0
+Li J et al. 2022,Li2022,grabowska_2012_the effect of cultivar and biostimulant,1,1,6,1,1.0,6.0
+Li J et al. 2022,Li2022,gt_study01,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study02,0,1,9,0,0.0,9.0
+Li J et al. 2022,Li2022,gt_study03,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study04,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study06,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study07,0,1,16,0,0.0,16.0
+Li J et al. 2022,Li2022,gt_study100,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study101,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study103,0,1,12,0,0.0,12.0
+Li J et al. 2022,Li2022,gt_study104,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study105,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study106,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study107,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study108,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study109,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study11,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study111,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study112,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study113,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study114,0,1,1,0,0.0,1.0
+Li J et al. 2022,Li2022,gt_study115,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study116,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study119,0,1,5,0,0.0,5.0
+Li J et al. 2022,Li2022,gt_study12,0,1,20,0,0.0,20.0
+Li J et al. 2022,Li2022,gt_study120,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study121,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study122,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study123,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study124,0,1,1,0,0.0,1.0
+Li J et al. 2022,Li2022,gt_study125,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study126,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study127,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study128,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study13,0,1,1,0,0.0,1.0
+Li J et al. 2022,Li2022,gt_study131,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study132,0,1,10,0,0.0,10.0
+Li J et al. 2022,Li2022,gt_study133,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study134,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study135,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study137,0,1,16,0,0.0,16.0
+Li J et al. 2022,Li2022,gt_study138,0,1,10,0,0.0,10.0
+Li J et al. 2022,Li2022,gt_study139,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study14,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study140,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study142,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study143,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study144,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study145,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study148,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study15,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study150,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study151,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study153,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study154,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study155,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study156,0,1,12,0,0.0,12.0
+Li J et al. 2022,Li2022,gt_study157,0,1,12,0,0.0,12.0
+Li J et al. 2022,Li2022,gt_study158,0,1,18,0,0.0,18.0
+Li J et al. 2022,Li2022,gt_study159,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study16,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study160,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study161,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study164,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study166,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study167,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study168,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study169,0,1,15,0,0.0,15.0
+Li J et al. 2022,Li2022,gt_study17,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study171,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study172,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study173,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study176,0,1,27,0,0.0,27.0
+Li J et al. 2022,Li2022,gt_study178,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study179,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study18,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study21,0,1,12,0,0.0,12.0
+Li J et al. 2022,Li2022,gt_study22,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study23,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study25,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study26,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study27,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study28,0,1,12,0,0.0,12.0
+Li J et al. 2022,Li2022,gt_study29,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study30,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study32,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study34,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study35,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study36,0,1,1,0,0.0,1.0
+Li J et al. 2022,Li2022,gt_study38,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study39,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study40,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study41,0,1,5,0,0.0,5.0
+Li J et al. 2022,Li2022,gt_study42,0,1,12,0,0.0,12.0
+Li J et al. 2022,Li2022,gt_study43,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study45,0,1,1,0,0.0,1.0
+Li J et al. 2022,Li2022,gt_study46,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study47,0,1,22,0,0.0,22.0
+Li J et al. 2022,Li2022,gt_study48,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study49,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study50,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study51,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study52,0,1,5,0,0.0,5.0
+Li J et al. 2022,Li2022,gt_study53,0,1,10,0,0.0,10.0
+Li J et al. 2022,Li2022,gt_study54,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study55,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study57,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study58,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study59,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study60,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study61,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study62,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study63,0,1,1,0,0.0,1.0
+Li J et al. 2022,Li2022,gt_study64,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study65,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study66,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study67,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study69,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study70,0,1,9,0,0.0,9.0
+Li J et al. 2022,Li2022,gt_study76,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study79,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study80,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study81,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study84,0,1,10,0,0.0,10.0
+Li J et al. 2022,Li2022,gt_study86,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study87,0,1,3,0,0.0,3.0
+Li J et al. 2022,Li2022,gt_study88,0,1,8,0,0.0,8.0
+Li J et al. 2022,Li2022,gt_study90,0,1,4,0,0.0,4.0
+Li J et al. 2022,Li2022,gt_study92,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study93,0,1,2,0,0.0,2.0
+Li J et al. 2022,Li2022,gt_study94,0,1,1,0,0.0,1.0
+Li J et al. 2022,Li2022,gt_study95,0,1,7,0,0.0,7.0
+Li J et al. 2022,Li2022,gt_study97,0,1,6,0,0.0,6.0
+Li J et al. 2022,Li2022,gt_study98,0,1,18,0,0.0,18.0
+Li J et al. 2022,Li2022,gt_study99,0,1,5,0,0.0,5.0
+Li J et al. 2022,Li2022,głosek-sobieraj_2018_the effect of growth regulators and a bi,1,1,6,1,1.0,6.0
+Li J et al. 2022,Li2022,knapowski_2019_crop stimulants as a factor determining,1,1,4,1,1.0,4.0
+Li J et al. 2022,Li2022,"kocira_2018_modeling biometric traits, yield and nut",1,1,36,1,1.0,36.0
+Li J et al. 2022,Li2022,kocira_2019_effect of amino acid biostimulant on the,1,1,66,1,1.0,66.0
+Li J et al. 2022,Li2022,kocira_2020_biochemical and economical effect of app,0,1,24,0,0.0,24.0
+Li J et al. 2022,Li2022,kowalska_2021_effect of different forms of silicon on,1,1,4,1,1.0,4.0
+Li J et al. 2022,Li2022,kuisma_1989_the effect of foliar application of seaw,1,1,3,1,1.0,3.0
+Li J et al. 2022,Li2022,"lola-luz_2014_effect on yield, total phenolic, total f",1,1,6,1,1.0,6.0
+Li J et al. 2022,Li2022,mattner_2018_increased growth response of strawberry,1,1,3,1,1.0,3.0
+Li J et al. 2022,Li2022,matysiak_2018_herbicides with natural and synthetic bi,1,1,6,1,1.0,6.0
+Li J et al. 2022,Li2022,michalak_2016_evaluation of supercritical extracts of,1,1,5,1,1.0,5.0
+Li J et al. 2022,Li2022,mondal_2013,1,1,16,1,1.0,16.0
+Li J et al. 2022,Li2022,plants-09-01633,1,1,2,1,1.0,2.0
+Li J et al. 2022,Li2022,pohl_2019_the eggplant yield and fruit composition,1,1,12,1,1.0,12.0
+Li J et al. 2022,Li2022,"popescu_2018_yield, berry quality and physiological r",1,1,12,1,1.0,12.0
+Li J et al. 2022,Li2022,pramanick_2016_effect of seaweed saps derived from two,1,1,8,1,1.0,8.0
+Li J et al. 2022,Li2022,procházka_2015_the possibilities of increasing the prod,1,1,6,1,1.0,6.0
+Li J et al. 2022,Li2022,prokkola_2007_effect of biological sprays on the incid,1,1,6,1,1.0,6.0
+Li J et al. 2022,Li2022,radkowski_2018,1,1,15,1,1.0,15.0
+Li J et al. 2022,Li2022,rahman_2018_chitosan biopolymer promotes yield and s,1,1,4,1,1.0,4.0
+Li J et al. 2022,Li2022,soppelsa_2018_use of biostimulants for organic apple p,1,1,9,1,1.0,9.0
+Li J et al. 2022,Li2022,sulakhudin_2019_application of coastal sediments and fol,1,1,3,1,1.0,3.0
+Li J et al. 2022,Li2022,sustainability-11-02171,1,1,2,1,1.0,2.0
+Li J et al. 2022,Li2022,wilczewski_2018_response of sugar beet to humic substanc,1,1,1,1,1.0,1.0
+Loladze 2014,Loladze,al-rawahy_2013,1,7,7,0,0.0,1.0
+Loladze 2014,Loladze,azam_2013,1,38,38,27,0.7105263157894737,1.0
+Loladze 2014,Loladze,barnes_1992,1,7,7,0,0.0,1.0
+Loladze 2014,Loladze,baslam_2012,1,20,20,0,0.0,1.0
+Loladze 2014,Loladze,baxter_1994,1,15,15,0,0.0,1.0
+Loladze 2014,Loladze,blank_2011,1,6,6,0,0.0,1.0
+Loladze 2014,Loladze,campbell_2002,1,2,2,0,0.0,1.0
+Loladze 2014,Loladze,fangmeier_2002,1,32,32,0,0.0,1.0
+Loladze 2014,Loladze,fernando_2012a,1,6,6,6,1.0,1.0
+Loladze 2014,Loladze,finzi_2001,1,15,15,15,1.0,1.0
+Loladze 2014,Loladze,guo_2011,1,8,16,0,0.0,2.0
+Loladze 2014,Loladze,heagle_1993,1,22,22,0,0.0,1.0
+Loladze 2014,Loladze,housman_2012,1,8,8,8,1.0,1.0
+Loladze 2014,Loladze,huluka_1994,1,13,13,10,0.7692307692307693,1.0
+Loladze 2014,Loladze,johnson_2003,0,22,22,0,0.0,1.0
+Loladze 2014,Loladze,kanowski_2001,1,15,20,10,0.6666666666666666,1.0
+Loladze 2014,Loladze,keutgen_2001,1,5,5,5,1.0,1.0
+Loladze 2014,Loladze,khan_2013,1,28,28,0,0.0,1.0
+Loladze 2014,Loladze,lieffering_2004,1,11,22,11,1.0,2.0
+Loladze 2014,Loladze,luomala_2005,1,11,11,0,0.0,1.0
+Loladze 2014,Loladze,mishra_2011,1,2,2,0,0.0,1.0
+Loladze 2014,Loladze,mjwara_1996,1,9,9,0,0.0,1.0
+Loladze 2014,Loladze,natali_2009,1,60,60,50,0.8333333333333334,1.0
+Loladze 2014,Loladze,newbery_1995,1,4,4,4,1.0,1.0
+Loladze 2014,Loladze,niinemets_1999,1,8,10,0,0.0,1.0
+Loladze 2014,Loladze,niu_2013,1,2,2,0,0.0,1.0
+Loladze 2014,Loladze,nowak_2002,0,5,5,0,0.0,1.0
+Loladze 2014,Loladze,oksanen_2005,1,10,10,0,0.0,1.0
+Loladze 2014,Loladze,oneill_1987,1,14,14,0,0.0,1.0
+Loladze 2014,Loladze,overdieck_1993,1,34,34,14,0.4117647058823529,1.0
+Loladze 2014,Loladze,pal_2003,1,5,5,0,0.0,1.0
+Loladze 2014,Loladze,peet_1986,1,6,6,0,0.0,1.0
+Loladze 2014,Loladze,pfirrmann_1996,1,22,22,0,0.0,1.0
+Loladze 2014,Loladze,pleijel_2009,1,1,3,1,1.0,3.0
+Loladze 2014,Loladze,polley_2011,1,30,30,0,0.0,1.0
+Loladze 2014,Loladze,porter_1984,1,5,5,0,0.0,1.0
+Loladze 2014,Loladze,schenk_1997,1,14,28,14,1.0,2.0
+Loladze 2014,Loladze,seneweera_1997,1,34,34,0,0.0,1.0
+Loladze 2014,Loladze,singh_2013,1,5,10,0,0.0,2.0
+Loladze 2014,Loladze,wilsey_1994,1,13,13,0,0.0,1.0
+Loladze 2014,Loladze,woodin_1992,1,5,5,0,0.0,1.0
+Loladze 2014,Loladze,wroblewitz_2013,0,20,40,0,0.0,2.0
+Loladze 2014,Loladze,wu_2004,1,4,4,0,0.0,1.0
+Loladze 2014,Loladze,ziska_1997,1,2,2,2,1.0,1.0
