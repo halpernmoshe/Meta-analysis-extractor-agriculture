@@ -1,0 +1,41 @@
+{
+  "study_name": "Biostimulant Effects on Crop Yield",
+  "description": "Effect of non-microbial plant biostimulants on crop yield in open-field trials. Biostimulant categories include seaweed extracts, protein hydrolysates, humic/fulvic acids, chitosan, silicon, and phosphite. Based on Li et al. 2022 (Frontiers in Plant Science 13:836702).",
+
+  "intervention": "Plant biostimulant application (seaweed extract, humic acid, fulvic acid, protein hydrolysate, chitosan, silicon, phosphite)",
+  "control": "No biostimulant application (untreated control)",
+
+  "primary_outcomes": [
+    "Fresh yield (kg/ha, t/ha, g/plant, kg/m2)"
+  ],
+
+  "expected_direction": "positive",
+  "typical_effect_size": "+17.9% average yield increase across all categories",
+
+  "moderators": [
+    "Biostimulant type (SWE, PHs, PE, HFA, Chi, Si, Phi)",
+    "Crop species",
+    "Application method (soil drench, foliar spray, seed treatment)",
+    "Application rate/concentration",
+    "Climate zone",
+    "Number of applications"
+  ],
+
+  "extraction_priorities": [
+    "1. CRITICAL: Extract EVERY treatment combination separately",
+    "2. Control = untreated/no biostimulant; treatment = with biostimulant",
+    "3. If multiple rates or application timings, extract EACH vs control",
+    "4. Get variance (SE/SD/LSD) and sample size (n)",
+    "5. Focus on FRESH YIELD as primary outcome",
+    "6. Watch for different units (g/plant vs kg/ha vs t/ha)"
+  ],
+
+  "tc_confusion_warnings": [
+    "Control is the untreated/no-biostimulant treatment",
+    "Some papers test multiple biostimulant products -- extract each vs control",
+    "Factorial designs (biostimulant x rate x timing): extract each combination",
+    "Watch for different units across papers"
+  ],
+
+  "notes": "Papers span many crop species and biostimulant types. Record both carefully as moderators."
+}

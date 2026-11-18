@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meta-Analysis Extraction Output",
+  "description": "Schema for structured data extracted from a single research paper for meta-analysis",
+  "type": "object",
+  "required": ["paper_id", "observations"],
+  "properties": {
+    "paper_id": {
+      "type": "string",
+      "description": "Unique identifier for the paper (e.g., 'Smith_2020' or filename stem)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Full title of the paper"
+    },
+    "authors": {
+      "type": "string",
+      "description": "Author list (e.g., 'Smith, J.; Jones, M.')"
+    },
+    "year": {
+      "type": "integer",
+      "description": "Publication year"
+    },
+    "journal": {
+      "type": "string",
+      "description": "Journal name"
+    },
+    "doi": {
+      "type": ["string", "null"],
+      "description": "Digital Object Identifier, or null if not found"
+    },
+    "extraction_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of extraction (YYYY-MM-DD)"
+    },
+    "config_used": {
+      "type": "string",
+      "description": "Name of the config file used for extraction"
+    },
+    "observations": {
+      "type": "array",
+      "description": "List of extracted data observations",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text notes about the extraction (e.g., data quality issues, ambiguities)"
+    }
+  },
+  "$defs": {
+    "observation": {
+      "type": "object",
+      "required": ["outcome", "treatment_mean", "control_mean"],
+      "properties": {
+        "outcome": {
+          "type": "string",
+          "description": "The measured outcome variable (e.g., 'Zn', 'grain_yield', 'N_concentration')"
+        },
+        "treatment_mean": {
+          "type": ["number", "null"],
+          "description": "Mean value under intervention/treatment condition. Null if not reported."
+        },
+        "control_mean": {
+          "type": ["number", "null"],
+          "description": "Mean value under control/comparison condition. Null if not reported."
+        },
+        "effect_pct": {
+          "type": ["number", "null"],
+          "description": "Percent change: (treatment - control) / |control| * 100. Null if control is 0 or means are missing."
+        },
+        "n": {
+          "type": ["integer", "null"],
+          "description": "Sample size per group (replicates). Null if not found in paper."
+        },
+        "variance_type": {
+          "type": ["string", "null"],
+          "enum": ["SE", "SD", "CI_95", "LSD", "CV", null],
+          "description": "Type of variance/dispersion measure reported. Null if no variance found."
+        },
+        "variance_value": {
+          "type": ["number", "null"],
+          "description": "Numeric variance value. For CI_95, report half-width. Null if not reported."
+        },
+        "variance_treatment": {
+          "type": ["number", "null"],
+          "description": "Variance value for treatment group specifically, if reported separately. Null otherwise."
+        },
+        "variance_control": {
+          "type": ["number", "null"],
+          "description": "Variance value for control group specifically, if reported separately. Null otherwise."
+        },
+        "unit": {
+          "type": ["string", "null"],
+          "description": "Measurement unit (e.g., 'mg/kg', 't/ha', 'g/plant', '%')"
+        },
+        "data_source": {
+          "type": "string",
+          "description": "Where the data was found (e.g., 'Table 2', 'Figure 3', 'text p.5')"
+        },
+        "treatment_description": {
+          "type": "string",
+          "description": "Description of the treatment condition (e.g., 'Elevated CO2 600 ppm')"
+        },
+        "control_description": {
+          "type": "string",
+          "description": "Description of the control condition (e.g., 'Ambient CO2 400 ppm')"
+        },
+        "moderators": {
+          "type": "object",
+          "description": "Key-value pairs for moderator variables (e.g., {\"species\": \"wheat\", \"tissue\": \"grain\"})",
+          "additionalProperties": {
+            "type": ["string", "number", "null"]
+          }
+        },
+        "p_value": {
+          "type": ["number", "string", "null"],
+          "description": "Reported p-value for the comparison, if available. Can be numeric (0.03) or string ('<0.001')."
+        },
+        "significance": {
+          "type": ["string", "null"],
+          "description": "Significance notation from paper (e.g., '*', '**', 'ns', 'a', 'b')"
+        }
+      }
+    }
+  }
+}

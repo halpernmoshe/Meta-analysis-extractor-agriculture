@@ -1,7 +1,15 @@
-# Extraction records are checksummed byte-for-byte; never rewrite their line endings.
-source_records/**/*.json binary
+# Extraction records are checked against SHA-256 digests; never rewrite their line endings.
+1_extraction/records/**/*.json binary
+1_extraction/records/SHA256SUMS.txt text eol=lf
 
-source_records/SHA256SUMS.txt text eol=lf
+# Decoders emit LF-delimited CSVs; keep that form in every clone.
+2_conversion/keys/*/ai/*.csv text eol=lf
 
-# Decoders emit LF-delimited canonical CSVs; preserve that form in every clone.
-runs/**/keys/ai/*.csv text eol=lf
+# Expected outputs are compared after line-ending normalisation; store them with LF.
+3_evaluation/expected_outputs/*.txt text eol=lf
+4_figures/expected_outputs/*.txt text eol=lf
+
+*.png binary
+
+# Published raw files are kept unmodified (their SHA-256 digests are listed in 0_sources/).
+0_sources/raw/** binary

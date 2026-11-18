@@ -1,0 +1,10 @@
+This folder is empty in the repository. The Hui et al. 2025 data workbook is not redistributed: no separate data
+licence is stated, and the article is published under CC BY-NC-ND 4.0.
+
+To re-run the Hui reference-side conversion, download
+  https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-58397-y/MediaObjects/41467_2025_58397_MOESM5_ESM.xlsx
+(Supplementary Data 1-6 of Hui X, Luo L, Chen Y, Palta JA, Wang Z. 2025. Nature Communications 16:3913,
+https://doi.org/10.1038/s41467-025-58397-y) and save it here unchanged as
+  41467_2025_58397_MOESM5_ESM.xlsx
+Expected SHA-256: 2e028151275ee1c8c626eb908bdd838d4aa957d6674b4da805624144e18ac634
+Expected size: 893537 bytes

@@ -1,0 +1,12 @@
+File: CO2 Dataset.xlsx
+SHA-256: 67f8591aadad25fc27f5e9c40b05c1da49b2d3bb2e4a6b881af289aaa7fbaf06
+Bytes: 180930
+
+Source:
+Loladze I. 2014. Data from: Hidden shift of the ionome of plants exposed to elevated CO2 depletes minerals at the base of human nutrition. Dryad Digital Repository. https://doi.org/10.5061/dryad.6356f
+Article: Loladze I. 2014. eLife 3:e02245. https://doi.org/10.7554/eLife.02245
+
+Version: Dryad version 1 (2014-05-16), member file of the version zip.
+Licence: CC0 1.0 (public domain dedication), stated by Dryad.
+
+The file is included unmodified.

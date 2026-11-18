@@ -1,0 +1,12 @@
+File: rspb20232522_si_005.csv
+SHA-256: 23a0ee8789422bb81eb51b7605e0721c9f0031a1de2de263167fb00f233c09db
+Bytes: 12108
+
+Source:
+Boldorini GX, McCary MA, Romero GQ, et al. 2024. Yield dataset from: Predators control pests and increase yield across crop types and climates: a meta-analysis. figshare. https://doi.org/10.6084/m9.figshare.25283296.v1
+Article: Boldorini GX et al. 2024. Proceedings of the Royal Society B 291:20232522. https://doi.org/10.1098/rspb.2023.2522
+
+Version: figshare version 1 (2024-02-24).
+Licence: CC BY 4.0, stated by figshare. Attribution: cite the dataset and the article above.
+
+The file is included unmodified.

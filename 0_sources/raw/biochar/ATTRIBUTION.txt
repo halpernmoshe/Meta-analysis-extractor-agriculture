@@ -1,0 +1,12 @@
+File: BiocharDS_V1.0.csv
+SHA-256: 808acad395c0cc3e69e70238ad235c07343f8947054a73d34a47f22331bc7372
+Bytes: 1579247
+
+Source:
+Zhang W, Li X, Wu D, et al. 2024. BiocharDS_V1.0.csv. figshare. https://doi.org/10.6084/m9.figshare.24781764.v1 (collection https://doi.org/10.6084/m9.figshare.c.6622375.v1)
+Article: Li X et al. 2024. Scientific Data 11:57. https://doi.org/10.1038/s41597-023-02867-9
+
+Version: figshare version 1 (2024-01-08).
+Licence: CC0, stated by figshare.
+
+The file is included unmodified.

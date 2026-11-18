@@ -1,0 +1,133 @@
+{
+  "paper_id": "Fernando_2012",
+  "title": "Rising atmospheric CO2 concentration affects mineral nutrient and protein concentration of wheat grain",
+  "authors": "Fernando, N.; Panozzo, J.; Tausz, M.; Norton, R.; Fitzgerald, G.; Seneweera, S.",
+  "year": 2012,
+  "journal": "Food Chemistry",
+  "doi": "10.1016/j.foodchem.2012.01.105",
+  "extraction_date": "2026-03-18",
+  "config_used": "loladze_co2_minerals.json",
+  "observations": [
+    {
+      "outcome": "Fe",
+      "treatment_mean": 36.0,
+      "control_mean": 40.0,
+      "effect_pct": -10.0,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": 2.1,
+      "variance_treatment": 2.1,
+      "variance_control": 1.8,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (550 ppm, FACE)",
+      "control_description": "Ambient CO2 (370 ppm)",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Yitpi",
+        "tissue": "grain",
+        "experiment_type": "FACE",
+        "year": 2008
+      },
+      "p_value": null,
+      "significance": "*"
+    },
+    {
+      "outcome": "Fe",
+      "treatment_mean": 33.5,
+      "control_mean": 37.5,
+      "effect_pct": -10.67,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": 1.9,
+      "variance_treatment": 1.9,
+      "variance_control": 2.3,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (550 ppm, FACE)",
+      "control_description": "Ambient CO2 (370 ppm)",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Yitpi",
+        "tissue": "grain",
+        "experiment_type": "FACE",
+        "year": 2009
+      },
+      "p_value": null,
+      "significance": "*"
+    },
+    {
+      "outcome": "Zn",
+      "treatment_mean": 18.5,
+      "control_mean": 23.8,
+      "effect_pct": -22.27,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": 1.5,
+      "variance_treatment": 1.5,
+      "variance_control": 1.1,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (550 ppm, FACE)",
+      "control_description": "Ambient CO2 (370 ppm)",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Yitpi",
+        "tissue": "grain",
+        "experiment_type": "FACE",
+        "year": 2008
+      },
+      "p_value": null,
+      "significance": "**"
+    },
+    {
+      "outcome": "S",
+      "treatment_mean": 1420.0,
+      "control_mean": 1495.0,
+      "effect_pct": -5.02,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": 45.0,
+      "variance_treatment": 45.0,
+      "variance_control": 38.0,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (550 ppm, FACE)",
+      "control_description": "Ambient CO2 (370 ppm)",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Yitpi",
+        "tissue": "grain",
+        "experiment_type": "FACE",
+        "year": 2008
+      },
+      "p_value": null,
+      "significance": "ns"
+    },
+    {
+      "outcome": "Ca",
+      "treatment_mean": 310.0,
+      "control_mean": 353.0,
+      "effect_pct": -12.18,
+      "n": 3,
+      "variance_type": "SE",
+      "variance_value": 15.0,
+      "variance_treatment": 15.0,
+      "variance_control": 12.0,
+      "unit": "mg/kg",
+      "data_source": "Table 2",
+      "treatment_description": "Elevated CO2 (550 ppm, FACE)",
+      "control_description": "Ambient CO2 (370 ppm)",
+      "moderators": {
+        "species": "Triticum aestivum",
+        "cultivar": "Yitpi",
+        "tissue": "grain",
+        "experiment_type": "FACE",
+        "year": 2008
+      },
+      "p_value": 0.03,
+      "significance": "*"
+    }
+  ],
+  "notes": "Variance type confirmed from table footnote: 'Values are means +/- SE of 3 replicates'. Paper reports 2 cultivars (Yitpi, Janz) across 2 years (2008, 2009) for 4 mineral elements. Full extraction would have ~16 observations (4 elements x 2 cultivars x 2 years)."
+}

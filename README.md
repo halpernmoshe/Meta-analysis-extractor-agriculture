@@ -1,167 +1,157 @@
-# Reproducibility repository
+# Agreement Between AI-Assisted and Human Data Extraction Across Five Agricultural and Ecological Datasets: Reading Fidelity versus Analytical Choice
 
-**Agreement Between AI-Assisted Extraction and Published Reference Data Across Five Agricultural and Ecological Datasets**
+This repository holds the code and data needed to reproduce the analyses in the paper above. The
+paper compares data extracted by an AI workflow (Claude Code agents) with five published reference
+datasets:
 
-This repository reproduces every reported mean- and effect-based analysis number and figure in the manuscript from the deposited
-key tables. It also deposits the 184 finalized JSON extraction artifacts (178 paper records plus six
-biochar auxiliaries) and verifies that the five
-AI-side decoders rebuild the frozen AI key tables byte-for-byte. The comparison is outcome-blind:
-each side's row metadata is decoded into a canonical
-categorical key, pairing is a deterministic categorical operation that never consults outcome
-values, multi-row cells are summarised by their mean, and effects are compared as the log response
-ratio. Pooled effects are back-transformed to percentage change for presentation, while aggregate
-differences, confidence intervals, and margins are reported on the 100 × lnRR scale. For the aggregate biochar comparison, the AI effect is harmonised to
-the reference dataset's absolute-control definition using control means the workflow had already
-extracted. This common-definition analysis is comparator-informed; the prospective biochar
-holdout result is the raw-mean comparison. Li J paper identifiers are crosswalked by author and
-year where unique; two same-author/year collisions are excluded after source-title checks. All scripts are
-deterministic and require only the Python standard library, except the figure scripts, which also
-require `matplotlib`.
+| Paper label | Topic | Key-table folder | Record and raw-data folder | AI-side decoder |
+|---|---|---|---|---|
+| Boldorini et al. 2024 | predator biocontrol | `boldorini` | `boldorini` | `decode_boldorini_march_v11.py` |
+| Li X et al. 2024 | biochar | `biochar_v2` | `biochar` | `decode_biochar.py` |
+| Hui et al. 2025 | zinc biofortification | `hui_v4` | `hui` | `decode_hui.py` |
+| Li J et al. 2022 | biostimulants | `li2022_v2` | `li_j` | `decode_li_j.py` |
+| Loladze 2014 | elevated CO2 and mineral nutrition | `loladze_v2` | `loladze` | `decode_loladze.py` |
 
-## What changed in this revision
+The folder names are internal identifiers kept from the analysis. Inside the scripts the same
+datasets are called `Boldorini`, `Biochar`, `Hui`, `Li2022` and `Loladze`. In file and column names,
+`ai` is the AI workflow, and the `gt` folders hold the published-reference tables. `gt` is a
+historical file label; it does not mean the reference data were independently verified.
 
-Three corrections are reflected throughout.
-
-**The AI-side inputs.** Several comparisons had been run on earlier extraction attempts rather than
-on the extraction the Methods describe. Every key table under `runs/*/keys/ai/` is now rebuilt from
-that extraction. The reference side, `runs/*/keys/gt/`, is unchanged from the original deposit: only
-the AI side moved.
-
-**Boldorini et al. 2024.** That corpus had never been extracted by the evaluated workflow; its
-previously reported values were produced by hand-written scripts. It was re-extracted in August 2026
-and the comparison rebuilt. The resulting frozen AI-side key tables are deposited in
-`runs/boldorini/keys/ai/`; the corrected August 2026 JSON source records are deposited under
-`source_records/boldorini/`.
-
-**Li J et al. 2022 crosswalk.** A source-title check found two distinct reference studies that
-shared an author and year with an AI paper. The analysis now leaves those ambiguous studies
-unmatched rather than merging them. This changes the Li J paired relative response-ratio difference
-from +0.28% to +0.26% and does not change any equivalence conclusion.
-
-`decoders/` holds the script that builds each dataset's AI-side key table, one per dataset, with a
-ledger recording every decision it makes and its vocabulary comparison against the reference side.
-These are the deposited AI-side decoding scripts. The finalized inputs they read are under
-`source_records/`; `source_records/SHA256SUMS.txt` authenticates every JSON file. The
-published-reference side is supplied as frozen canonical key tables, rather than as rerunnable
-raw-label-to-key construction scripts. The final cross-dataset mappings can therefore be inspected
-row by row in the ledgers and key tables. `python verify_source_record_release.py` runs all five
-decoders in a temporary directory and requires their outputs to be content-identical to the frozen AI
-key tables used by every reported analysis.
-
-Two key fields were restored for Boldorini specifically, both documented in its ledger:
-`unit_canonical` in the raw-mean comparison, because its reference stores percentages, gram weights
-and plant counts under one structural key, and `outcome_canonical` in the paired equivalence test,
-because the AI side also records pest abundance and crop damage, which the reference does not carry.
-
-### Boldorini analysis levels
-
-The two Boldorini results intentionally have different comparison units. Strict raw-treatment-mean
-fidelity, including the Bland--Altman result, uses paper, outcome, crop, treatment level,
-co-amendment, co-amendment level, time point, and unit, yielding 9 matched cells. The paired-effect
-TOST uses paper, outcome, crop, and treatment level, yielding 16 matched effect cells by pooling
-across the further structural descriptors. Both keys are outcome-blind. The 9-cell raw-mean result
-does not establish the source of the 16-cell effect difference.
-
-## How to run
-
-Verify the 184 source records and reproduce the frozen AI keys first:
+## Quick start
 
 ```bash
-python verify_source_record_release.py
+pip install -r requirements.txt     # matplotlib, openpyxl, pandas
+python verify.py                    # checks every stage below; prints a PASS/FAIL table
 ```
 
-Then run the reported analyses:
+`verify.py` takes under a minute on the tested machine and does not modify the repository. To
+regenerate the analysis outputs and figures in place, run `run_all.ps1` (Windows PowerShell) or
+`bash run_all.sh`. Every script finds its inputs from its own location, so it can be run from any
+working directory.
 
-```bash
-python line_by_line_scope_aware.py     # Part 1: conditional agreement   -> EXPECTED_OUTPUT_LINEBYLINE.txt
-python scope_aware_paired_tost.py      # Part 2: paired equivalence TOST -> EXPECTED_OUTPUT_PAIRED_TOST.txt
-python scope_aware_aggregate_tost.py   # Part 2: unpaired aggregate      -> EXPECTED_OUTPUT_AGGREGATE_TOST.txt
-python biochar_native_control_tost.py  # Biochar native-control comparison -> EXPECTED_OUTPUT_BIOCHAR_NATIVE_CONTROL.txt
-python reconciliation_analysis.py      # Table 5 / Fig 3 / power / Biostimulant  -> EXPECTED_OUTPUT_RECONCILIATION.txt
-python make_bland_altman.py            # Supplement S5 LoA + Figure S1   -> EXPECTED_OUTPUT_BLAND_ALTMAN.txt
-python make_fig1_fidelity.py           # Figure 1  -> figures/fig1_fidelity.png
-python make_fig2_equivalence.py        # Figure 2  -> figures/fig2_equivalence.png
-python make_fig3_reconciliation.py     # Figure 3  -> figures/fig3_reconciliation.png
-python round2_additional_analysis/coverage_structural_complexity.py
-```
+On Windows, keep the full path of the repository folder under about 150 characters. The longest
+file path inside the repository is 104 characters, and Windows rejects paths longer than 260
+characters unless long paths are enabled.
 
-Each analysis script prints to stdout; compare against the locked `EXPECTED_OUTPUT_*.txt`. On Windows:
+## The workflow, by stage
 
-```powershell
-python .\line_by_line_scope_aware.py > out.txt ; fc .\EXPECTED_OUTPUT_LINEBYLINE.txt .\out.txt
-```
+**`0_sources/`: where the inputs come from.** The five published reference datasets, with their
+locations, licences and SHA-256 digests (`comparator_datasets.csv`), and the 150 primary papers with
+DOIs (`source_papers.csv`). Four of the published data files are included unmodified in `raw/`. The
+Hui et al. 2025 workbook is not redistributed; `raw/hui/DOWNLOAD.txt` says where to get it. Source
+PDFs are not redistributed (publisher copyright).
 
-`run.sh` / `run.ps1` run the full set of deposited core analyses and the
-coverage/source-format check. Both wrappers stop if any command fails.
+**`1_extraction/`: AI extraction.** Claude Code agents (model Claude Opus 4.6) read each source PDF
+and wrote one JSON record per paper. The 178 records are the extraction outputs analysed in the
+paper; `records/SHA256SUMS.txt` lists the SHA-256 digest and size of each. The extraction protocol is
+deposited as a Claude Code skill, together with the written prompt used for the August 2026
+re-extraction of the Boldorini corpus. A hosted language model does not return identical output when
+re-run, so this stage is documented, not re-executed.
 
-## What each script produces
+**`2_conversion/`: conversion into canonical key tables.** Each side is converted into a shared set
+of categorical key fields, one CSV per paper. `ai_side/` holds the five decoders that build the
+AI-side tables from the records. `reference_side/` holds four scripts that build the reference
+tables from the published files, and a row trace for each dataset. `keys/<dataset>/ai/` and
+`keys/<dataset>/gt/` hold the key tables that every analysis reads.
 
-| Script | Manuscript element | Locked output |
+**`3_evaluation/`: evaluation metrics.** Matching, reading-fidelity statistics, paired and unpaired
+equivalence tests, reconciliation analyses, Bland-Altman limits of agreement, and the coverage
+analysis. Each script prints its results; `expected_outputs/` holds the expected text.
+
+**`4_figures/`: figures.** Scripts for Figures 1 to 3 and the generated PNG files. Figure S1 is
+written here by `3_evaluation/make_bland_altman.py`.
+
+`docs/` holds the decoder ledgers (the decoding decisions, per dataset), the tested software
+environment, a file map and the change log.
+
+## What can be re-run and what cannot
+
+- Stage 2 (AI side), stage 3 and stage 4 re-run deterministically from the deposited records and key
+  tables.
+- Stage 2 (reference side): the reference key tables are regenerated from the published files for
+  Loladze 2014 and Li J et al. 2022 (exactly), Hui et al. 2025 (exactly, after downloading the
+  workbook; the first step is a November 2026 reconstruction of a lost script) and Boldorini et al.
+  2024 (two rows differ in `crop` and `evidence` because of a documented hand correction). The Li X
+  et al. 2024 (biochar) reference tables were prepared with a language-model agent and cannot be
+  re-run as a script; `2_conversion/reference_side/row_trace/` gives the published row behind each
+  of their rows.
+- Stage 1 is documented by the protocol and by its output records. Re-running the extraction would
+  need the source PDFs and the hosted model, and would not return identical records.
+- Stage 0 documents where the inputs come from.
+
+## What `verify.py` checks
+
+In the printed table these checks are labelled 1, 2, 2r, 3 and 4.
+
+1. The 178 extraction records match `SHA256SUMS.txt` (digest and byte size) and parse as JSON.
+2. The five AI-side decoders, run into a temporary folder, produce CSV files with the same names as
+   the deposited `keys/<dataset>/ai/` tables and the same content after line endings are normalised
+   (170 files, 3,151 rows).
+3. The reference-side builders, run on the published files into a temporary folder, reproduce the
+   deposited `keys/<dataset>/gt/` tables after line-ending normalisation: Loladze and Li J in full;
+   Boldorini except the two documented rows, which may differ only in `crop` and `evidence`. The Hui
+   check is reported as SKIPPED unless the workbook has been downloaded. A trace check confirms that
+   every reference key row of all five datasets appears once in its row trace with a match flag and
+   the same means.
+4. Every analysis script runs, and its printed output matches its expected-output file when compared
+   as text after line-ending normalisation. The coverage tables are regenerated and compared with the
+   deposited copies.
+5. Every figure is regenerated. Printed figure values are compared with expected text. Each PNG is
+   compared with the deposited file: identical file, else identical decoded pixels. On the tested
+   environment (`docs/TESTED_ENVIRONMENT.md`) all four PNG files are reproduced identically. Other
+   matplotlib versions may render the same numbers slightly differently. A different image counts
+   as a failure unless `python verify.py --allow-image-differences` is used; that option reports
+   image differences as warnings and relies on the printed-value checks, which cover Figures 2, 3
+   and S1 but not Figure 1.
+
+## Manuscript items and the scripts that produce them
+
+| Manuscript item | Script | Output |
 |---|---|---|
-| `line_by_line_scope_aware.py` | Table 3 (conditional numerical agreement); Figure 1 | `EXPECTED_OUTPUT_LINEBYLINE.txt` |
-| `scope_aware_paired_tost.py` | Table 4 (paired equivalence); Figure 2 | `EXPECTED_OUTPUT_PAIRED_TOST.txt` |
-| `scope_aware_aggregate_tost.py` | Part 2 unpaired aggregate (power setup) | `EXPECTED_OUTPUT_AGGREGATE_TOST.txt` |
-| `biochar_native_control_tost.py` | Biochar native-control comparison reported beside Table 4 | `EXPECTED_OUTPUT_BIOCHAR_NATIVE_CONTROL.txt` |
-| `reconciliation_analysis.py` | Table 5; Figure 3; power paragraph; Elevated-CO₂ mineral nutrition per-element; Biostimulant | `EXPECTED_OUTPUT_RECONCILIATION.txt` |
-| `make_bland_altman.py` | Supplement S5 (Table S1, Figure S1) | `EXPECTED_OUTPUT_BLAND_ALTMAN.txt` |
-| `make_fig1_fidelity.py` | Figure 1 | `figures/fig1_fidelity.png` |
-| `make_fig2_equivalence.py` | Figure 2 | `figures/fig2_equivalence.png` |
-| `make_fig3_reconciliation.py` | Figure 3 | `figures/fig3_reconciliation.png` |
+| Table 3 (reading fidelity on matched cells), including the Loladze no-selection subset quoted in the text | `3_evaluation/line_by_line_scope_aware.py`; subset in `3_evaluation/reconciliation_analysis.py` block (B) | `EXPECTED_OUTPUT_LINEBYLINE.txt`, `EXPECTED_OUTPUT_RECONCILIATION.txt` |
+| Figure 1 | `4_figures/make_fig1_fidelity.py` | `4_figures/figures/fig1_fidelity.png` |
+| Table 4 (paired equivalence) | `3_evaluation/scope_aware_paired_tost.py` | `EXPECTED_OUTPUT_PAIRED_TOST.txt` |
+| Figure 2 | `4_figures/make_fig2_equivalence.py` | `4_figures/figures/fig2_equivalence.png` |
+| Biochar native-control comparison reported with Table 4 | `3_evaluation/biochar_native_control_tost.py` | `EXPECTED_OUTPUT_BIOCHAR_NATIVE_CONTROL.txt` |
+| Secondary unpaired comparison | `3_evaluation/scope_aware_aggregate_tost.py` | `EXPECTED_OUTPUT_AGGREGATE_TOST.txt` |
+| Table 5, biochar reconciliation, Loladze per-element comparison, power decomposition, Li J units example; Supplementary S1, S3 and the biochar and Li J parts of S2 | `3_evaluation/reconciliation_analysis.py` | `EXPECTED_OUTPUT_RECONCILIATION.txt` |
+| Figure 3 | `4_figures/make_fig3_reconciliation.py` | `4_figures/figures/fig3_reconciliation.png` |
+| Supplementary S5: Table S1 and Figure S1 | `3_evaluation/make_bland_altman.py` | `EXPECTED_OUTPUT_BLAND_ALTMAN.txt`, `4_figures/figures/figS1_bland_altman.png` |
+| Supplementary S6, Table S2 (flow and attrition counts) | counts printed by `line_by_line_scope_aware.py`, `scope_aware_aggregate_tost.py` and `scope_aware_paired_tost.py` | as above |
+| Coverage results (paper-level burden, figure versus table sources) | `3_evaluation/round2_additional_analysis/coverage_structural_complexity.py` | `EXPECTED_OUTPUT_COVERAGE.txt` and the CSV tables beside the script |
+| Supplementary S7 (variance provenance) | not reproduced by a script here; the two published files it uses are in `0_sources/raw/li_j/` and `0_sources/raw/biochar/` | |
+| Supplementary S8 (source papers) | | `0_sources/source_papers.csv` |
 
-The deposited coverage/source-format analysis is in `round2_additional_analysis/`. It uses only the
-frozen key tables and reproduces the descriptive coverage results reported in the manuscript.
+All expected-output files are in `3_evaluation/expected_outputs/` unless a path is given.
 
-## Datasets and roles
+## How effects and equivalence are computed
 
-| Directory (`runs/`) | Manuscript label | Role |
-|---|---|---|
-| `boldorini` | Boldorini et al. 2024 | Validation |
-| `biochar_v2` | Li X et al. 2024 | Prospective holdout for raw means; aggregate control harmonisation is post hoc |
-| `hui_v4` | Hui et al. 2025 | Validation (clean corpus after excluding 8 mislabelled PDFs) |
-| `li2022_v2` | Li J et al. 2022 | Validation |
-| `loladze_v2` | Loladze 2014 | Development-adjacent |
+Effects are log response ratios, ln(treatment mean / control mean). Rows are paired by categorical
+key fields only; outcome values are never used to choose a match. Where several rows share a key,
+the cell value is their mean.
 
-Each `runs/<dataset>/keys/{ai,gt}/*.csv` is a locked, single-side-decoded key table: one row per
-extracted observation, with structural key fields, `treatment_mean`/`control_mean` (used only to
-score already-paired rows), `is_figure`, and an `evidence` audit quote. `corpus_mislabels_D2.csv`
-lists the 17 wrong-paper PDFs excluded as a sourcing error.
+In the paired test (`scope_aware_paired_tost.py`), each matched cell gives an AI-minus-reference
+difference in mean log response ratio. These differences are averaged within each study, and the
+per-study values are averaged across studies. The standard error is the sample standard deviation
+of the per-study values divided by the square root of the number of studies. The 90% interval is
+the mean plus or minus 1.645 standard errors. A dataset passes at a margin of 5, 10, 15 or 20% when
+the interval lies inside plus or minus that fraction of the absolute mean reference log response
+ratio. Differences and intervals are computed on the log scale and reported as relative
+response-ratio differences, 100 × (exp(d) − 1), where d is the log-scale value. They are not
+percentage-point differences between the displayed effects.
 
-**Structural key columns are generic slots, not fixed semantic types.** The key fields
-`treatment_level`, `co_amendment`, `co_amendment_level`, and `timepoint` are generic structural
-slots; the decoder packs each corpus's own design coordinates into them, so the column name does not
-describe the contents uniformly across datasets. For the biochar dataset they hold the biochar dose
-and co-applied amendment; for Loladze 2014 they hold the **element** (`treatment_level` = ca, fe,
-zn, n…), the plant **tissue** (`co_amendment` = grain, leaf…), and the **cultivar**
-(`co_amendment_level`); the other datasets pack their corresponding coordinates the same way. This
-does not affect the comparison: the deposited AI-side decoder and frozen published-reference key
-table use the same canonical slot structure, so categorical pairing is like-for-like
-(element-to-element, dose-to-dose) regardless of the generic column label. The labels are slots;
-the pairing is on the values within matching slots.
+## Changes from the previous release
 
-The directory name `gt` is retained as an internal file identifier from the original analysis;
-throughout the manuscript it denotes the published reference data and does not imply independently
-verified ground truth.
+Files were reorganised into the stages above and path constants were updated. Added: `verify.py`,
+`run_all.ps1`, `run_all.sh`, the extraction protocol, the stage-0 source documentation with four
+published data files, and the reference-side conversion scripts and row traces. Removed: six
+auxiliary files from the biochar records, which no analysis reads. No retained data file, key table,
+record or analysis calculation was changed. Five expected-output files from the previous release were
+out of date for the Li J row and have been refreshed from the current output, which matches the
+manuscript. Details are in `docs/CHANGELOG.md`.
 
-## Notes
+## Licence
 
-- **Source PDFs are not redistributed** because of publisher copyright. The finalized extraction
-  records under `source_records/` rebuild the AI-side keys; the frozen key tables in `runs/` remain
-  the direct inputs to every analysis script.
-- **The source-record release is deliberately bounded.** It excludes superseded extraction attempts,
-  consensus experiments, broad validation-result dumps, variance-only raw outputs, complete run
-  logs, conversational transcripts, and the contaminated March 2026 Boldorini set. The historical
-  public `dev-archive-pre-curation` branch contains older development JSON/prompt material and is
-  non-authoritative; it is retained only for provenance and no remote history was rewritten.
-- **Public source data for the Supplementary Material S7 variance screens** are listed in
-  [`PUBLIC_SOURCE_DATA.md`](PUBLIC_SOURCE_DATA.md), including the two comparator article/data pages
-  from which any reader can download the source material.
-- `decoders/` holds one AI-side decoder per dataset plus its ledger; these build temporary key tables
-  from `source_records/`. `verify_source_record_release.py` compares them field-for-field and row-for-row with
-  `runs/*/keys/ai/`.
-- `INCLUDED_SOURCE_PAPERS.md` is a candidate-input inventory, not an analytical inclusion ledger;
-  the analysed-paper counts and bibliographies are in Supplementary Material S6 and S8.
-- The round-1 `superseded_v1/` tree is not carried into this deposit; nothing in the
-  current manuscript depends on it, and it remains in the original deposit for provenance.
-- `requirements.txt` lists dependencies (standard library for the core analyses; `matplotlib` for
-  figures; `numpy` and `pandas` for the optional coverage analysis).
-- `TESTED_ENVIRONMENT.md` records the exact software versions used for the final audit run.
+The code and documentation are under the MIT licence; see `LICENSE`. The published data files in
+`0_sources/raw/` keep their own terms, stated in the `ATTRIBUTION.txt` beside each file. The source
+papers and the published reference datasets remain under their publishers' terms.

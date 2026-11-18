@@ -1,0 +1,11 @@
+File: Data_Sheet_2.XLSX
+SHA-256: cb871f5855303305cdf42798b531d4b5cff9d931bfbb54b3a92830453821835b
+Bytes: 243259
+
+Source:
+Li J, Van Gerrewey T, Geelen D. 2022. A meta-analysis of biostimulant yield effectiveness in field trials. Frontiers in Plant Science 13:836702. https://doi.org/10.3389/fpls.2022.836702 (Supplementary Material, Data Sheet 2).
+
+Version: Publisher file, downloaded from the article's Supplementary Material.
+Licence: The article is published under CC BY 4.0. No separate licence is stated for the supplementary file.
+
+The file is included unmodified.

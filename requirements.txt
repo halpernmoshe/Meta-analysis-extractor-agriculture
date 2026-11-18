@@ -1,5 +1,7 @@
-# Core manuscript analyses use Python 3.8+ and the standard library.
-# Figure regeneration and optional coverage analysis require:
+# Analysis scripts, AI-side decoders and verify.py use only the Python standard library.
+# The figure scripts and the figure checks in verify.py need matplotlib (which installs NumPy).
+# The reference-side builders need openpyxl (Loladze, Li J, Hui) and pandas (Hui).
+# Tested with Python 3.12.10, matplotlib 3.10.8, openpyxl 3.1.5, pandas 2.3.3; see docs/TESTED_ENVIRONMENT.md.
 matplotlib>=3.7
-numpy>=1.24
+openpyxl>=3.1
 pandas>=2.0

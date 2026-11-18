@@ -1,0 +1,43 @@
+{
+  "_comment": "TEMPLATE: Copy this file and fill in your study details. Delete the example configs below.",
+
+  "study_name": "My Meta-Analysis Title",
+  "description": "Brief description of the research question",
+
+  "intervention": "The treatment or exposure being studied",
+  "control": "The comparison/baseline condition",
+
+  "primary_outcomes": [
+    "Outcome variable 1 (e.g., grain yield, mineral concentration)"
+  ],
+
+  "expected_direction": "positive|negative|mixed",
+  "typical_effect_size": "Expected range (e.g., +10% to +30%)",
+
+  "moderators": [
+    "Species/cultivar",
+    "Application method",
+    "Dose/rate",
+    "Country/region"
+  ],
+
+  "extraction_priorities": [
+    "1. Extract EVERY treatment combination separately",
+    "2. Get variance (SE/SD) and sample size (n)",
+    "3. Record moderator variables for subgroup analysis"
+  ],
+
+  "tc_confusion_warnings": [
+    "Describe common pitfalls for treatment/control identification in this domain"
+  ],
+
+  "ground_truth": {
+    "dataset": null,
+    "papers_dir": null,
+    "reference": null,
+    "total_observations": null,
+    "total_studies": null
+  },
+
+  "notes": "Any special instructions for extraction"
+}
